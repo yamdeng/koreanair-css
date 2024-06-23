@@ -17,7 +17,13 @@ export default defineConfig(({ mode }) => {
     pluginList.push(basicSsl());
   }
 
+  const currentFolderPath = resolve(__dirname);
+  console.log(`currentFolderPath : ${currentFolderPath}`);
+
   return {
+    define: {
+      __PROJECT_FOLDER_PATH: JSON.stringify(currentFolderPath),
+    },
     build: {
       rollupOptions: {
         input: {
