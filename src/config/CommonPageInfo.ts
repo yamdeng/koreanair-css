@@ -1,5 +1,5 @@
-import PReactSelect from '@/components/publish/PReactSelect';
-import PTestSample from '@/components/publish/PTestSample';
+import PReactSelect from '@/components/publish/common/PReactSelect';
+import PTestSample from '@/components/publish/common/PTestSample';
 
 const CommonPageInfo: any = {};
 
