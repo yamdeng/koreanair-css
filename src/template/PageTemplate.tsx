@@ -1,7 +1,7 @@
 function PageTemplate() {
   return (
     <>
-      <p>PageTemplates</p>
+      <div>PageTemplates</div>
     </>
   );
 }

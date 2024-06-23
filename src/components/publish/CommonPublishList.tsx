@@ -1,33 +1,39 @@
 import { Link } from 'react-router-dom';
+import CommonPageInfo from '@/config/CommonPageInfo';
+import Config from '@/config/Config';
+
+const moduleDirectoryPath = 'common/';
 
 function CommonPublishList() {
+  const list = CommonPageInfo.list;
   return (
     <div>
       <table className="publish-app-table">
-        <tr>
-          <th>
-            <Link to={`common/sample`}>sample</Link>
-          </th>
-          <th>Last Name</th>
-          <th>Points</th>
-        </tr>
-        <tr>
-          <td>
-            <Link to={`common/sample-react-select`}>Your Name</Link>
-          </td>
-          <td>Smith</td>
-          <td>50</td>
-        </tr>
-        <tr>
-          <td>Eve</td>
-          <td>Jackson</td>
-          <td>94</td>
-        </tr>
-        <tr>
-          <td>Adam</td>
-          <td>Johnson</td>
-          <td>67</td>
-        </tr>
+        <thead>
+          <tr>
+            <th>이름</th>
+            <th>파일</th>
+            <th>설명</th>
+          </tr>
+        </thead>
+        <tbody>
+          {list.map((menuInfo) => {
+            const { title, path, Component, description } = menuInfo;
+            const fileName = Component.name;
+            const hrefString = Config.hrefBasePath + moduleDirectoryPath + fileName + Config.publishReactFileExtension;
+            return (
+              <tr key={title}>
+                <td>
+                  <Link to={`${moduleDirectoryPath}${path}`}>{title}</Link>
+                </td>
+                <td>
+                  <a href={hrefString}>{fileName}</a>
+                </td>
+                <td>{description ? description : ''}</td>
+              </tr>
+            );
+          })}
+        </tbody>
       </table>
     </div>
   );

@@ -1,7 +1,7 @@
 import { useState } from 'react';
 
-import CommonApp from './components/publish/CommonPublishList';
-import AviationApp from './components/publish/AviationPublishList';
+import CommonPublishList from './components/publish/CommonPublishList';
+import AviationPublishList from './components/publish/AviationPublishList';
 import IndustryPublishList from './components/publish/IndustryPublishList';
 import ModalPublishList from './components/publish/ModalPublishList';
 
@@ -12,11 +12,11 @@ function PublishHome() {
     setTabIndex(tabIndex);
   };
 
-  let contentComponent = <CommonApp />;
+  let contentComponent = <CommonPublishList />;
   if (tabIndex === 1) {
-    contentComponent = <CommonApp />;
+    contentComponent = <CommonPublishList />;
   } else if (tabIndex === 2) {
-    contentComponent = <AviationApp />;
+    contentComponent = <AviationPublishList />;
   } else if (tabIndex === 3) {
     contentComponent = <IndustryPublishList />;
   } else if (tabIndex === 4) {

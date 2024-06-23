@@ -63,7 +63,11 @@ body {
   padding: 16px;
 }
 
-.publish-app-table tr:nth-child(even) {
+.publish-app-table thead tr {
+  background-color: #edf1c5;
+}
+
+.publish-app-table tbody tr:nth-child(even) {
   background-color: #f2f2f2;
 }
 
