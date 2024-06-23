@@ -1,4 +1,5 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
+import { useSearchParams, useNavigate } from 'react-router-dom';
 
 import CommonPublishList from './components/publish/CommonPublishList';
 import AviationPublishList from './components/publish/AviationPublishList';
@@ -7,6 +8,10 @@ import ModalPublishList from './components/publish/ModalPublishList';
 
 function PublishHome() {
   const [tabIndex, setTabIndex] = useState(1);
+  const [searchParams] = useSearchParams();
+  const navigate = useNavigate();
+
+  debugger;
 
   const changeTabIndex = (tabIndex) => {
     setTabIndex(tabIndex);
@@ -22,6 +27,13 @@ function PublishHome() {
   } else if (tabIndex === 4) {
     contentComponent = <ModalPublishList />;
   }
+
+  useEffect(() => {
+    const tabIndex = searchParams.get('tabIndex');
+    if (tabIndex) {
+      changeTabIndex(tabIndex);
+    }
+  }, []);
 
   return (
     <>

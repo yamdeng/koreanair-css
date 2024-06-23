@@ -1,0 +1,40 @@
+1.뒤로가기 시에 바로 직전의 tab 유지하기
+
+2.검색 기능 추가
+ -이름/파일 : [키워드]
+
+3.각각의 기본 Layout 구성하기
+ -AviationTopMenu, AviationLeftMenu
+ -IndustryTopMenu, IndustryLeftMenu
+
+4.행의 색깔을 통일시키고 succes:true인 경우 회색으로 변경하기
+
+5.message에 툴팁 적용하기
+ -공간이 적어서 일단 1차적으로 tooltip으로 나오게끔 반영
+ -메시지 누르면 클립보드로 내용 복사되게끔
+
+6.gitgub.io에 배포되게끔
+
+77.template 패턴 강화
+
+
+
+
+99.기본 가이드
+ -퍼블리싱 기준으로 모듈별이 4개가 존재함. 차후에 admin이 추가될 수도 있음 : 폴더명을 의미함
+  : common(공통), aviation(항공안전), industry(산업안전), modal(모달공통)
+ -아래의 파일만 수정하면 됨
+  #.페이지 설정 정보
+   1.src/config/CommonPageInfo.ts
+   2.src/config/AviationPageInfo.ts
+   3.src/config/IndustryPageInfo.ts
+   4.src/config/ModalPageInfo.ts
+  #.신규 페이지 생성
+   1.src/components/publish/aviation/PAviationPortal1.tsx
+    -신규 파일 생성
+   2.관련된 페이지 설정 정보 파일에 위의 정보 추가
+    -src/config/AviationPageInfo.ts
+ -최초 실행
+  1.yarn : 라이브러리 설치
+  2.docs/settings.json, docs/extension.json 설치하고 : 플러그인 설치
+  3.yarn dev로 명령어 실행
