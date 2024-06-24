@@ -26,7 +26,6 @@
   -산업안전 레이아웃 : src\components\publish\layout\IndustryLayout.tsx, src\components\publish\layout\IndustryTopMenu.tsx, src\components\publish\layout\IndustryLeftMenu.tsx
 
 
-
 #.{module} 설명 : 4개의 퍼블리싱 모듈로 구성됨(차후에 mobile, admin 추가 예정)
  : common(공통), aviation(항공안전), industry(산업안전), modal(모달공통)
 
@@ -41,3 +40,7 @@
  -항공안전 : src/config/AviationPageInfo.ts 파일에 신규 생성한 파일을 등록함
  -산업안전 : src/config/IndustryPageInfo.ts 파일에 신규 생성한 파일을 등록함
  -모달 : src/config/ModalPageInfo.ts 파일에 신규 생성한 파일을 등록함
+
+
+ #.css에 이미지 경로 반영하기
+  -background: url(../images/banner.png) no-repeat left top;
