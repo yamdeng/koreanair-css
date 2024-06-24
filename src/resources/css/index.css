@@ -83,4 +83,9 @@ body {
   background-color: #f3ff64;
 }
 
+.publish-tooltip { 
+  font-weight: bold;
+  color: blue;
+  text-decoration: underline;
+}
 /* 퍼블리싱 페이지 확인용 tab css : end */

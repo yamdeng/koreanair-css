@@ -2,6 +2,7 @@ import CommonPageInfo from '@/config/CommonPageInfo';
 import Config from '@/config/Config';
 import CommonUtil from '../../utils/CommonUtil';
 import { useMovePage } from '@/hooks/useMovePage';
+import CommonToolTip from '../common/CommonToolTip';
 
 const moduleDirectoryPath = 'common/';
 
@@ -25,6 +26,21 @@ function CommonPublishList({ keyword, checkedNewTab }) {
             const fileName = Component.name;
             const hrefString = Config.hrefBasePath + moduleDirectoryPath + fileName + Config.publishReactFileExtension;
             const trClassName = success ? 'success' : '';
+
+            let descriptionComponent = <div>{description}</div>;
+            const descriptionToolTipId = title;
+
+            if (description) {
+              descriptionComponent = (
+                <>
+                  <span data-tooltip-id={descriptionToolTipId} className="publish-tooltip">
+                    설명
+                  </span>
+                  <CommonToolTip toolTipId={descriptionToolTipId} message={description} />
+                </>
+              );
+            }
+
             return (
               <tr key={title} className={trClassName}>
                 <td>
@@ -44,7 +60,7 @@ function CommonPublishList({ keyword, checkedNewTab }) {
                     }}
                   />
                 </td>
-                <td>{description ? description : ''}</td>
+                <td>{descriptionComponent}</td>
               </tr>
             );
           })}
