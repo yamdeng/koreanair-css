@@ -1,4 +1,5 @@
 import { Routes, Route } from 'react-router-dom';
+import { ToastContainer } from 'react-toastify';
 import PublishHome from './PublishHome';
 import useCommonRoute from './components/publish/layout/useCommonRoute';
 import useAviationRoute from './components/publish/layout/useAviationRoute';
@@ -20,6 +21,7 @@ function App() {
         {industryRoute}
         {modalRoute}
       </Routes>
+      <ToastContainer autoClose={3000} hideProgressBar={true} />
     </div>
   );
 }

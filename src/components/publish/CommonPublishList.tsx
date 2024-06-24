@@ -1,3 +1,5 @@
+import { CopyToClipboard } from 'react-copy-to-clipboard';
+import { toast } from 'react-toastify';
 import CommonPageInfo from '@/config/CommonPageInfo';
 import Config from '@/config/Config';
 import CommonUtil from '../../utils/CommonUtil';
@@ -32,12 +34,14 @@ function CommonPublishList({ keyword, checkedNewTab }) {
 
             if (description) {
               descriptionComponent = (
-                <>
-                  <span data-tooltip-id={descriptionToolTipId} className="publish-tooltip">
-                    설명
-                  </span>
-                  <CommonToolTip toolTipId={descriptionToolTipId} message={description} />
-                </>
+                <CopyToClipboard text={description} onCopy={() => toast.success('설명 클립보드 복사 완료')}>
+                  <div>
+                    <span data-tooltip-id={descriptionToolTipId} className="publish-tooltip">
+                      설명
+                    </span>
+                    <CommonToolTip toolTipId={descriptionToolTipId} message={description} />
+                  </div>
+                </CopyToClipboard>
               );
             }
 
@@ -45,8 +49,11 @@ function CommonPublishList({ keyword, checkedNewTab }) {
               <tr key={title} className={trClassName}>
                 <td>
                   <a
-                    href="javascript:void(0)"
-                    onClick={() => movePage(`${moduleDirectoryPath}${path}`, checkedNewTab)}
+                    href={''}
+                    onClick={(event) => {
+                      event.preventDefault();
+                      movePage(`${moduleDirectoryPath}${path}`, checkedNewTab);
+                    }}
                     dangerouslySetInnerHTML={{
                       __html: CommonUtil.replaceHighlightMarkup(title, keyword),
                     }}

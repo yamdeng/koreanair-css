@@ -8,7 +8,7 @@ IndustryPageInfo.list = [
     title: '산업안전 포탈1',
     Component: PIndustryPortal1,
     path: 'portal1',
-    description: '',
+    description: 'aaa',
     success: false,
   },
   {

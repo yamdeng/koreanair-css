@@ -1,7 +1,10 @@
+import { CopyToClipboard } from 'react-copy-to-clipboard';
+import { toast } from 'react-toastify';
 import ModalPageInfo from '@/config/ModalPageInfo';
 import Config from '@/config/Config';
 import CommonUtil from '../../utils/CommonUtil';
 import { useMovePage } from '@/hooks/useMovePage';
+import CommonToolTip from '../common/CommonToolTip';
 
 const moduleDirectoryPath = 'modal/';
 
@@ -25,12 +28,31 @@ function ModalPublishList({ keyword, checkedNewTab }) {
             const fileName = Component.name;
             const hrefString = Config.hrefBasePath + moduleDirectoryPath + fileName + Config.publishReactFileExtension;
             const trClassName = success ? 'success' : '';
+
+            let descriptionComponent = <div>{description}</div>;
+            const descriptionToolTipId = title;
+
+            if (description) {
+              descriptionComponent = (
+                <CopyToClipboard text={description} onCopy={() => toast.success('설명 클립보드 복사 완료')}>
+                  <div>
+                    <span data-tooltip-id={descriptionToolTipId} className="publish-tooltip">
+                      설명
+                    </span>
+                    <CommonToolTip toolTipId={descriptionToolTipId} message={description} />
+                  </div>
+                </CopyToClipboard>
+              );
+            }
             return (
               <tr key={title} className={trClassName}>
                 <td>
                   <a
-                    href="javascript:void(0)"
-                    onClick={() => movePage(`${moduleDirectoryPath}${path}`, checkedNewTab)}
+                    href={''}
+                    onClick={(event) => {
+                      event.preventDefault();
+                      movePage(`${moduleDirectoryPath}${path}`, checkedNewTab);
+                    }}
                     dangerouslySetInnerHTML={{
                       __html: CommonUtil.replaceHighlightMarkup(title, keyword),
                     }}
@@ -44,7 +66,7 @@ function ModalPublishList({ keyword, checkedNewTab }) {
                     }}
                   />
                 </td>
-                <td>{description ? description : ''}</td>
+                <td>{descriptionComponent}</td>
               </tr>
             );
           })}
