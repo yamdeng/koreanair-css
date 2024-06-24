@@ -36,7 +36,7 @@ function ModalPublishList({ keyword, checkedNewTab }) {
               descriptionComponent = (
                 <CopyToClipboard text={description} onCopy={() => toast.success('설명 클립보드 복사 완료')}>
                   <div>
-                    <span data-tooltip-id={descriptionToolTipId} className="publish-tooltip">
+                    <span data-tooltip-id={descriptionToolTipId} className="publish-tooltip-description">
                       설명
                     </span>
                     <CommonToolTip toolTipId={descriptionToolTipId} message={description} />
