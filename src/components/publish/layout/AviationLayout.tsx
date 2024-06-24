@@ -1,9 +1,12 @@
 import { Outlet } from 'react-router-dom';
+import AviationLeftMenu from './AviationLeftMenu';
+import AviationTopMenu from './AviationTopMenu';
 
 export default function AviationLayout() {
   return (
     <div>
-      <h3>항공안전 레이아웃</h3>
+      <AviationTopMenu />
+      <AviationLeftMenu />
       <Outlet />
     </div>
   );

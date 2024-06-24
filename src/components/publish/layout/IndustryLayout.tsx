@@ -1,9 +1,12 @@
 import { Outlet } from 'react-router-dom';
+import IndustryLeftMenu from './IndustryLeftMenu';
+import IndustryTopMenu from './IndustryTopMenu';
 
 export default function IndustryLayout() {
   return (
     <div>
-      <h3>산업안전 레이아웃</h3>
+      <IndustryTopMenu />
+      <IndustryLeftMenu />
       <Outlet />
     </div>
   );
