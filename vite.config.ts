@@ -21,6 +21,7 @@ export default defineConfig(({ mode }) => {
       __PROJECT_FOLDER_PATH: JSON.stringify(currentFolderPath),
     },
     build: {
+      outDir: 'build',
       rollupOptions: {
         input: {
           main: resolve(__dirname, 'index.html'),
