@@ -39,7 +39,7 @@ CommonPageInfo.list = [
     title: 'react-select (autocomplete)',
     Component: PReactSelect,
     path: 'react-select',
-    description: '',
+    description: 'test',
     success: false,
   },
 ];
