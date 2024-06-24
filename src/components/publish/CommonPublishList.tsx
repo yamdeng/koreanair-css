@@ -1,21 +1,14 @@
-import { Link } from 'react-router-dom';
 import CommonPageInfo from '@/config/CommonPageInfo';
 import Config from '@/config/Config';
 import CommonUtil from '../../utils/CommonUtil';
+import { useMovePage } from '@/hooks/useMovePage';
 
 const moduleDirectoryPath = 'common/';
 
 function CommonPublishList({ keyword, checkedNewTab }) {
-  const list = CommonPageInfo.list;
-  const filtedList = list.filter((menuInfo) => {
-    const { title, Component } = menuInfo;
-    const fileName = Component.name;
-    if (keyword) {
-      return title.indexOf(keyword) !== -1 || fileName.indexOf(keyword) !== -1;
-    } else {
-      return true;
-    }
-  });
+  const list = CommonUtil.getFilterListByMenuList(CommonPageInfo.list, keyword);
+  const movePage = useMovePage();
+
   return (
     <div>
       <table className="publish-app-table">
@@ -27,7 +20,7 @@ function CommonPublishList({ keyword, checkedNewTab }) {
           </tr>
         </thead>
         <tbody>
-          {filtedList.map((menuInfo) => {
+          {list.map((menuInfo) => {
             const { title, path, Component, description, success } = menuInfo;
             const fileName = Component.name;
             const hrefString = Config.hrefBasePath + moduleDirectoryPath + fileName + Config.publishReactFileExtension;
@@ -35,8 +28,9 @@ function CommonPublishList({ keyword, checkedNewTab }) {
             return (
               <tr key={title} className={trClassName}>
                 <td>
-                  <Link
-                    to={`${moduleDirectoryPath}${path}`}
+                  <a
+                    href="javascript:void(0)"
+                    onClick={() => movePage(`${moduleDirectoryPath}${path}`, checkedNewTab)}
                     dangerouslySetInnerHTML={{
                       __html: CommonUtil.replaceHighlightMarkup(title, keyword),
                     }}

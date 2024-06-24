@@ -15,6 +15,7 @@ function PublishHome() {
 
   const changeTabIndex = (tabIndex) => {
     setTabIndex(tabIndex);
+    setKeyword('');
     navigate(`/?tabIndex=${tabIndex}`, { replace: true });
   };
 
@@ -22,11 +23,11 @@ function PublishHome() {
   if (tabIndex === 1) {
     contentComponent = <CommonPublishList keyword={keyword} checkedNewTab={checkedNewTab} />;
   } else if (tabIndex === 2) {
-    contentComponent = <AviationPublishList />;
+    contentComponent = <AviationPublishList keyword={keyword} checkedNewTab={checkedNewTab} />;
   } else if (tabIndex === 3) {
-    contentComponent = <IndustryPublishList />;
+    contentComponent = <IndustryPublishList keyword={keyword} checkedNewTab={checkedNewTab} />;
   } else if (tabIndex === 4) {
-    contentComponent = <ModalPublishList />;
+    contentComponent = <ModalPublishList keyword={keyword} checkedNewTab={checkedNewTab} />;
   }
 
   const changeKeyword = (event) => {

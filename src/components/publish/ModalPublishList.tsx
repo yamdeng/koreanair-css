@@ -1,11 +1,14 @@
-import { Link } from 'react-router-dom';
 import ModalPageInfo from '@/config/ModalPageInfo';
 import Config from '@/config/Config';
+import CommonUtil from '../../utils/CommonUtil';
+import { useMovePage } from '@/hooks/useMovePage';
 
 const moduleDirectoryPath = 'modal/';
 
-function ModalPublishList() {
-  const list = ModalPageInfo.list;
+function ModalPublishList({ keyword, checkedNewTab }) {
+  const list = CommonUtil.getFilterListByMenuList(ModalPageInfo.list, keyword);
+  const movePage = useMovePage();
+
   return (
     <div>
       <table className="publish-app-table">
@@ -25,10 +28,21 @@ function ModalPublishList() {
             return (
               <tr key={title} className={trClassName}>
                 <td>
-                  <Link to={`${moduleDirectoryPath}${path}`}>{title}</Link>
+                  <a
+                    href="javascript:void(0)"
+                    onClick={() => movePage(`${moduleDirectoryPath}${path}`, checkedNewTab)}
+                    dangerouslySetInnerHTML={{
+                      __html: CommonUtil.replaceHighlightMarkup(title, keyword),
+                    }}
+                  />
                 </td>
                 <td>
-                  <a href={hrefString}>{fileName}</a>
+                  <a
+                    href={hrefString}
+                    dangerouslySetInnerHTML={{
+                      __html: CommonUtil.replaceHighlightMarkup(fileName, keyword),
+                    }}
+                  />
                 </td>
                 <td>{description ? description : ''}</td>
               </tr>

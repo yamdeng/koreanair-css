@@ -1,11 +1,13 @@
-import { Link } from 'react-router-dom';
 import IndustryPageInfo from '@/config/IndustryPageInfo';
 import Config from '@/config/Config';
+import CommonUtil from '../../utils/CommonUtil';
+import { useMovePage } from '@/hooks/useMovePage';
 
 const moduleDirectoryPath = 'industry/';
 
-function IndustryPublishList() {
-  const list = IndustryPageInfo.list;
+function IndustryPublishList({ keyword, checkedNewTab }) {
+  const list = CommonUtil.getFilterListByMenuList(IndustryPageInfo.list, keyword);
+  const movePage = useMovePage();
   return (
     <div>
       <table className="publish-app-table">
@@ -25,10 +27,21 @@ function IndustryPublishList() {
             return (
               <tr key={title} className={trClassName}>
                 <td>
-                  <Link to={`${moduleDirectoryPath}${path}`}>{title}</Link>
+                  <a
+                    href="javascript:void(0)"
+                    onClick={() => movePage(`${moduleDirectoryPath}${path}`, checkedNewTab)}
+                    dangerouslySetInnerHTML={{
+                      __html: CommonUtil.replaceHighlightMarkup(title, keyword),
+                    }}
+                  />
                 </td>
                 <td>
-                  <a href={hrefString}>{fileName}</a>
+                  <a
+                    href={hrefString}
+                    dangerouslySetInnerHTML={{
+                      __html: CommonUtil.replaceHighlightMarkup(fileName, keyword),
+                    }}
+                  />
                 </td>
                 <td>{description ? description : ''}</td>
               </tr>

@@ -1,11 +1,9 @@
 import _ from 'lodash';
 
-// 개행 분자를 <br/> 태그로 변환
 const convertEnterStringToBrTag = function (value) {
   return value.replace(/\\r\\n|\r\n|\n|\\n/g, '<br/>');
 };
 
-// text 하이라이트 처리
 const replaceHighlightMarkup = function (text, highlightText) {
   let resultMarkup = text;
   if (text && highlightText) {
@@ -16,4 +14,18 @@ const replaceHighlightMarkup = function (text, highlightText) {
   return resultMarkup;
 };
 
-export default { convertEnterStringToBrTag, replaceHighlightMarkup };
+const getFilterListByMenuList = (menuList, keyword) => {
+  const list = menuList;
+  const filtedList = list.filter((menuInfo) => {
+    const { title, Component } = menuInfo;
+    const fileName = Component.name;
+    if (keyword) {
+      return title.indexOf(keyword) !== -1 || fileName.indexOf(keyword) !== -1;
+    } else {
+      return true;
+    }
+  });
+  return filtedList;
+};
+
+export default { convertEnterStringToBrTag, replaceHighlightMarkup, getFilterListByMenuList };
