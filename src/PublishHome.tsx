@@ -8,18 +8,19 @@ import ModalPublishList from './components/publish/ModalPublishList';
 
 function PublishHome() {
   const [tabIndex, setTabIndex] = useState(1);
+  const [keyword, setKeyword] = useState('');
+  const [checkedNewTab, setCheckedNewTab] = useState(false);
   const [searchParams] = useSearchParams();
   const navigate = useNavigate();
 
-  debugger;
-
   const changeTabIndex = (tabIndex) => {
     setTabIndex(tabIndex);
+    navigate(`/?tabIndex=${tabIndex}`, { replace: true });
   };
 
-  let contentComponent = <CommonPublishList />;
+  let contentComponent = <CommonPublishList keyword={keyword} checkedNewTab={checkedNewTab} />;
   if (tabIndex === 1) {
-    contentComponent = <CommonPublishList />;
+    contentComponent = <CommonPublishList keyword={keyword} checkedNewTab={checkedNewTab} />;
   } else if (tabIndex === 2) {
     contentComponent = <AviationPublishList />;
   } else if (tabIndex === 3) {
@@ -28,10 +29,20 @@ function PublishHome() {
     contentComponent = <ModalPublishList />;
   }
 
+  const changeKeyword = (event) => {
+    const value = event.target.value;
+    setKeyword(value);
+  };
+
+  const changeNewTab = (event) => {
+    const checked = event.target.checked;
+    setCheckedNewTab(checked);
+  };
+
   useEffect(() => {
     const tabIndex = searchParams.get('tabIndex');
     if (tabIndex) {
-      changeTabIndex(tabIndex);
+      setTabIndex(Number(tabIndex));
     }
   }, []);
 
@@ -50,6 +61,10 @@ function PublishHome() {
         <button className={tabIndex === 4 ? 'active' : ''} onClick={() => changeTabIndex(4)}>
           모달
         </button>
+      </div>
+      <div style={{ padding: 10, marginBottom: 10 }}>
+        이름/파일명 : <input style={{ padding: 5 }} value={keyword} onChange={changeKeyword} /> 새탭{' '}
+        <input type="checkbox" checked={checkedNewTab} onChange={changeNewTab} />
       </div>
       {contentComponent}
     </>

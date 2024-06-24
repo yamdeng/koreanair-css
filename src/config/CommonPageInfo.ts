@@ -40,7 +40,7 @@ CommonPageInfo.list = [
     Component: PReactSelect,
     path: 'react-select',
     description: '',
-    success: true,
+    success: false,
   },
 ];
 

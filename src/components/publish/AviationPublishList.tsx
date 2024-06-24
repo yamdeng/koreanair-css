@@ -18,11 +18,12 @@ function AviationPublishList() {
         </thead>
         <tbody>
           {list.map((menuInfo) => {
-            const { title, path, Component, description } = menuInfo;
+            const { title, path, Component, description, success } = menuInfo;
             const fileName = Component.name;
             const hrefString = Config.hrefBasePath + moduleDirectoryPath + fileName + Config.publishReactFileExtension;
+            const trClassName = success ? 'success' : '';
             return (
-              <tr key={title}>
+              <tr key={title} className={trClassName}>
                 <td>
                   <Link to={`${moduleDirectoryPath}${path}`}>{title}</Link>
                 </td>

@@ -65,10 +65,22 @@ body {
 
 .publish-app-table thead tr {
   background-color: #edf1c5;
+  border-bottom: 1px solid rgb(255, 255, 255);
 }
 
-.publish-app-table tbody tr:nth-child(even) {
-  background-color: #f2f2f2;
+.publish-app-table tbody tr {
+  border-bottom: 1px solid rgb(255, 255, 255);
+  background-color: #dcf0ff;
+}
+
+.publish-app-table .success {
+  background-color: rgb(168, 168, 168);
+}
+
+.publish-table-highlight {
+  font-weight: 700;
+  color: #000;
+  background-color: #f3ff64;
 }
 
 /* 퍼블리싱 페이지 확인용 tab css : end */
