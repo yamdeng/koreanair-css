@@ -25,7 +25,7 @@ CommonPageInfo.list = [
     title: '홈포탈 시안1',
     Component: PHomePortal1,
     path: 'home-portal1',
-    description: '',
+    description: 'asdasdasd',
     success: false,
   },
   {
