@@ -1,40 +1,43 @@
-1.뒤로가기 시에 바로 직전의 tab 유지하기
+### 가이드 ###
 
-2.검색 기능 추가
- -이름/파일 : [키워드]
+1.설치 및 툴 기본 사용법 가이드
+ -git
+  : https://git-scm.com/download/win : window
+  : https://git-scm.com/download/mac : mac
+ -node, yarn 설치
+  : https://nodejs.org/en/download/prebuilt-installer
+  : npm install -g yarn
+ -vscode
+  : https://code.visualstudio.com/download
+ -vscode 설정 파일 셋팅
+  : docs 폴더에 있는 파일(settings.json, extensions.json)
+ -github 가입하기 : 개인계정(7월중순 이후에 내부 git으로 한번 포팅합니다.)
+ -git clone
+ -vscode에서 git 사용법 가이드
 
-3.각각의 기본 Layout 구성하기
- -AviationTopMenu, AviationLeftMenu
- -IndustryTopMenu, IndustryLeftMenu
+2.react로 구성한 퍼블리싱 기본 가이드
+ 2-1.신규 파일 생성 방법 : src/template/PageTemplate.tsx, ModalTemplate.tsx 2개의 파일중 {신규파일}로 복사하고 이름을 변경한다
+  ㄱ.src/components/publish/{module}/{신규파일}.tsx
 
-4.행의 색깔을 통일시키고 succes:true인 경우 회색으로 변경하기
+ 2-2.2-1에서 생성한 파일을 해당하는 {module}PageInfo.ts 파일에 새로 등록한다
 
-5.message에 툴팁 적용하기
- -공간이 적어서 일단 1차적으로 tooltip으로 나오게끔 반영
- -메시지 누르면 클립보드로 내용 복사되게끔
-
-6.gitgub.io에 배포되게끔
-
-77.template 패턴 강화
+ 2-3.레이아웃 구성
+  -항공안전 레이아웃 : src\components\publish\layout\AviationLayout.tsx, src\components\publish\layout\AviationTopMenu.tsx, src\components\publish\layout\AviationLeftMenu.tsx
+  -산업안전 레이아웃 : src\components\publish\layout\IndustryLayout.tsx, src\components\publish\layout\IndustryTopMenu.tsx, src\components\publish\layout\IndustryLeftMenu.tsx
 
 
 
+#.{module} 설명 : 4개의 퍼블리싱 모듈로 구성됨(차후에 mobile, admin 추가 예정)
+ : common(공통), aviation(항공안전), industry(산업안전), modal(모달공통)
 
-99.기본 가이드
- -퍼블리싱 기준으로 모듈별이 4개가 존재함. 차후에 admin이 추가될 수도 있음 : 폴더명을 의미함
-  : common(공통), aviation(항공안전), industry(산업안전), modal(모달공통)
- -아래의 파일만 수정하면 됨
-  #.페이지 설정 정보
-   1.src/config/CommonPageInfo.ts
-   2.src/config/AviationPageInfo.ts
-   3.src/config/IndustryPageInfo.ts
-   4.src/config/ModalPageInfo.ts
-  #.신규 페이지 생성
-   1.src/components/publish/aviation/PAviationPortal1.tsx
-    -신규 파일 생성
-   2.관련된 페이지 설정 정보 파일에 위의 정보 추가
-    -src/config/AviationPageInfo.ts
- -최초 실행
-  1.yarn : 라이브러리 설치
-  2.docs/settings.json, docs/extension.json 설치하고 : 플러그인 설치
-  3.yarn dev로 명령어 실행
+#.신규 파일 생성시 관련 폴더 가이드
+ -공통/홈/레이아웃 : src/components/publish/common/ 하위 폴더에 파일 생성
+ -항공안전 : src/components/publish/aviation/ 하위 폴더에 파일 생성
+ -산업안전 : src/components/publish/industry/ 하위 폴더에 파일 생성
+ -모달 : src/components/publish/modal/ 하위 폴더에 파일 생성
+
+#.신규 파일 생성 이후에 설정 파일에 추가해 줘야함
+ -공통/홈/레이아웃 : src/config/CommonPageInfo.ts 파일에 신규 생성한 파일을 등록함
+ -항공안전 : src/config/AviationPageInfo.ts 파일에 신규 생성한 파일을 등록함
+ -산업안전 : src/config/IndustryPageInfo.ts 파일에 신규 생성한 파일을 등록함
+ -모달 : src/config/ModalPageInfo.ts 파일에 신규 생성한 파일을 등록함
