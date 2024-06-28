@@ -1,6 +1,6 @@
 module.exports = {
   root: true,
-  env: { browser: true, es2020: true, node: true },
+  env: { browser: true, es2020: true, node: true, jquery: true },
   settings: {
     react: {
       version: 'detect', // React version. "detect" automatically picks the version you have installed.
@@ -31,6 +31,7 @@ module.exports = {
     'sonarjs/no-small-switch': 'off',
     'react-hooks/exhaustive-deps': 'off',
     'react/prop-types': 'off',
+    'react/jsx-key': 'off',
     'react/react-in-jsx-scope': 'off',
     'react/jsx-no-target-blank': 'off',
     '@typescript-eslint/prefer-regexp-exec': 'off',
