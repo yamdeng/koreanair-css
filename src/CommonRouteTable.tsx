@@ -10,7 +10,7 @@ function CommonRouteTable({ moduleDirectoryPath, keyword, checkedNewTab, pageLis
   const movePage = useMovePage();
 
   return (
-    <div>
+    <div style={{ marginLeft: 216 }}>
       <table className="publish-app-table">
         <thead>
           <tr>

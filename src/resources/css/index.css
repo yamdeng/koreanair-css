@@ -93,26 +93,24 @@ body {
 
 .leftmenu {
   height: 100%;
-  width: 200px;
+  width: 210px;
   position: fixed;
   z-index: 1;
   top: 0;
   left: 0;
   background-color: #fff;
   overflow-x: hidden;
-  padding-top: 10px;
+  padding-top: 20px;
   border-right: 1px solid #cdcccc;
+  padding-left: 3px;
+  padding-right: 3px;
 }
 
 .leftmenu a {
-  padding: 3px 6px 3px 3px;
+  padding: 10px 6px 3px 7px;
   text-decoration: none;
   font-size: 25px;
   color: #818181;
   display: block;
   border-bottom: 1px solid #b5b0b0;
-}
-
-.main {
-  margin-left: 200px;
 }
