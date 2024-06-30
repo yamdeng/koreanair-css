@@ -1,4 +1,8 @@
 {
+  "files.associations": {
+    "*.jsx": "javascriptreact",
+    "*.tsx": "javascriptreact"
+  },
   // JSON
   "[json]": {
     "editor.defaultFormatter": "vscode.json-language-features"
