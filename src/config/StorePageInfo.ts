@@ -1,20 +1,20 @@
-import PAviationPortal1 from '@/components/publish/aviation/PAviationPortal1';
-import PAviationPortal2 from '@/components/publish/aviation/PAviationPortal2';
+import StoreGuideBasic from '@/components/guide/store/StoreGuideBasic';
+import StoreGuideMultipleStoreUse from '@/components/guide/store/StoreGuideMultipleStoreUse';
 
 const StorePageInfo: any = {};
 
 StorePageInfo.list = [
   {
-    title: 'store1',
-    Component: PAviationPortal1,
-    path: 'PAviationPortal1',
+    title: 'store basic',
+    Component: StoreGuideBasic,
+    path: 'StoreGuideBasic',
     description: '',
     success: false,
   },
   {
-    title: 'store2',
-    Component: PAviationPortal2,
-    path: 'PAviationPortal2',
+    title: '2개 이상의 store 사용',
+    Component: StoreGuideMultipleStoreUse,
+    path: 'StoreGuideMultipleStoreUse',
     description: '',
     success: false,
   },

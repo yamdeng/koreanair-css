@@ -2,6 +2,9 @@ import { useState, useEffect } from 'react';
 import { useSearchParams, useNavigate } from 'react-router-dom';
 import CommonRouteTable from './CommonRouteTable';
 import StorePageInfo from './config/StorePageInfo';
+import TablePageInfo from './config/TablePageInfo';
+import FormPageInfo from './config/FormPageInfo';
+import RouterPageInfo from './config/RouterPageInfo';
 
 function GuideHome() {
   const [menuName, setMenuName] = useState('store');
@@ -29,6 +32,33 @@ function GuideHome() {
       <CommonRouteTable
         moduleDirectoryPath="store/"
         pageList={StorePageInfo.list}
+        keyword={keyword}
+        checkedNewTab={checkedNewTab}
+      />
+    );
+  } else if (menuName === 'table') {
+    contentComponent = (
+      <CommonRouteTable
+        moduleDirectoryPath="table/"
+        pageList={TablePageInfo.list}
+        keyword={keyword}
+        checkedNewTab={checkedNewTab}
+      />
+    );
+  } else if (menuName === 'form') {
+    contentComponent = (
+      <CommonRouteTable
+        moduleDirectoryPath="form/"
+        pageList={FormPageInfo.list}
+        keyword={keyword}
+        checkedNewTab={checkedNewTab}
+      />
+    );
+  } else if (menuName === 'router') {
+    contentComponent = (
+      <CommonRouteTable
+        moduleDirectoryPath="router/"
+        pageList={RouterPageInfo.list}
         keyword={keyword}
         checkedNewTab={checkedNewTab}
       />
@@ -77,19 +107,19 @@ function GuideHome() {
           href={''}
           onClick={(event) => {
             event.preventDefault();
-            changeLeftMenu('router');
+            changeLeftMenu('form');
           }}
         >
-          Router
+          Form
         </a>
         <a
           href={''}
           onClick={(event) => {
             event.preventDefault();
-            changeLeftMenu('form');
+            changeLeftMenu('router');
           }}
         >
-          Form
+          Router
         </a>
       </div>
       <div style={{ padding: 10, marginBottom: 10, marginLeft: 216 }}>
