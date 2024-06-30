@@ -23,7 +23,7 @@ function CommonRouteTable({ moduleDirectoryPath, keyword, checkedNewTab, pageLis
           {list.map((menuInfo) => {
             const { title, path, Component, description, success } = menuInfo;
             const fileName = Component.name;
-            const hrefString = Config.hrefBasePath + moduleDirectoryPath + fileName + Config.publishReactFileExtension;
+            const hrefString = Config.hrefBasePath + moduleDirectoryPath + fileName + Config.reactFileExtension;
             const trClassName = success ? 'success' : '';
 
             let descriptionComponent = <div>{description}</div>;

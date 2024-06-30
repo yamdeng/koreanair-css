@@ -4,6 +4,7 @@ const hrefBasePath = `vscode://file/${profileFolderPath}${baseFilePath}`;
 
 const Config = {
   publishReactFileExtension: '.tsx',
+  reactFileExtension: '.tsx',
   hrefBasePath: hrefBasePath,
 };
 

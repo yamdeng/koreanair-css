@@ -2,7 +2,7 @@ import { Outlet } from 'react-router-dom';
 
 export default function GuideSourceLayout() {
   return (
-    <div>
+    <div style={{ padding: 5 }}>
       <Outlet />
     </div>
   );

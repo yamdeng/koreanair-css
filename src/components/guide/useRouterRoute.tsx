@@ -7,7 +7,7 @@ const useRouterRoute = () => {
     <>
       {RouterPageInfo.list.map((menuInfo, index) => {
         const { Component, path } = menuInfo;
-        return <Route key={index} path={path} element={<Component />} />;
+        return <Route key={index} path={path} element={<Component menuInfo={menuInfo} />} />;
       })}
     </>
   );
