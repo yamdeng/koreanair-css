@@ -24,6 +24,16 @@ function withSourceView(WrappedComponent) {
 
     const hrefString = Config.hrefBasePath + menuInfo.moduleDirectory + '/' + menuInfo.path + Config.reactFileExtension;
 
+    let urlDescriptionComponent = null;
+    if (menuInfo.url) {
+      urlDescriptionComponent = (
+        <>
+          <br />
+          참고 URL: <a href={menuInfo.url}>{menuInfo.url}</a>
+        </>
+      );
+    }
+
     return (
       <div style={{ marginRight: viewSource ? '50%' : 0 }}>
         <div className="guide-detail-top-common">
@@ -40,6 +50,7 @@ function withSourceView(WrappedComponent) {
             <option value="dark">dark</option>
             <option value="light">light</option>
           </select>{' '}
+          {urlDescriptionComponent}
         </div>
         <div className="source-raw-view" style={{ width: viewSource ? '50%' : 0 }}>
           <SyntaxHighlighter

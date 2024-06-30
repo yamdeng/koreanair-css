@@ -14,6 +14,7 @@ TablePageInfo.list = [
     description: '',
     success: false,
     fileRawString: TableGuideBasicRaw,
+    url: 'https://www.ag-grid.com/react-data-grid/getting-started/',
   },
   {
     title: 'table pagination(client)',
