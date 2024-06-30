@@ -21,8 +21,8 @@ function CommonRouteTable({ moduleDirectoryPath, keyword, checkedNewTab, pageLis
         </thead>
         <tbody>
           {list.map((menuInfo) => {
-            const { title, path, Component, description, success } = menuInfo;
-            const fileName = Component.name;
+            const { title, path, description, success } = menuInfo;
+            const fileName = path;
             const hrefString = Config.hrefBasePath + moduleDirectoryPath + fileName + Config.reactFileExtension;
             const trClassName = success ? 'success' : '';
 

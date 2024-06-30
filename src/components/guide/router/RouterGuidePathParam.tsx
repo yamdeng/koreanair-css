@@ -1,3 +1,5 @@
+import withSourceView from '@/hooks/withSourceView';
+
 function RouterGuidePathParam() {
   return (
     <>
@@ -6,4 +8,4 @@ function RouterGuidePathParam() {
   );
 }
 
-export default RouterGuidePathParam;
+export default withSourceView(RouterGuidePathParam);

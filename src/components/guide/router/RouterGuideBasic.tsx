@@ -1,3 +1,5 @@
+import withSourceView from '@/hooks/withSourceView';
+
 function RouterGuideBasic() {
   return (
     <>
@@ -6,4 +8,4 @@ function RouterGuideBasic() {
   );
 }
 
-export default RouterGuideBasic;
+export default withSourceView(RouterGuideBasic);

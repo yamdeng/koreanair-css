@@ -1,3 +1,5 @@
+import withSourceView from '@/hooks/withSourceView';
+
 function TableGuideBasic() {
   return (
     <>
@@ -6,4 +8,4 @@ function TableGuideBasic() {
   );
 }
 
-export default TableGuideBasic;
+export default withSourceView(TableGuideBasic);

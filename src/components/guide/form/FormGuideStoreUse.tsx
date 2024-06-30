@@ -1,3 +1,5 @@
+import withSourceView from '@/hooks/withSourceView';
+
 function FormGuideStoreUse() {
   return (
     <>
@@ -6,4 +8,4 @@ function FormGuideStoreUse() {
   );
 }
 
-export default FormGuideStoreUse;
+export default withSourceView(FormGuideStoreUse);

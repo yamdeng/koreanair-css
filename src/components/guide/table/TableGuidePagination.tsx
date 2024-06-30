@@ -1,3 +1,5 @@
+import withSourceView from '@/hooks/withSourceView';
+
 function TableGuidePagination() {
   return (
     <>
@@ -6,4 +8,4 @@ function TableGuidePagination() {
   );
 }
 
-export default TableGuidePagination;
+export default withSourceView(TableGuidePagination);

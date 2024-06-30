@@ -1,3 +1,5 @@
+import withSourceView from '@/hooks/withSourceView';
+
 function RouterGuideQueryString() {
   return (
     <>
@@ -6,4 +8,4 @@ function RouterGuideQueryString() {
   );
 }
 
-export default RouterGuideQueryString;
+export default withSourceView(RouterGuideQueryString);
