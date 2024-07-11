@@ -8,10 +8,7 @@ import 'react-tooltip/dist/react-tooltip.css';
 import 'react-toastify/dist/ReactToastify.css';
 
 // scss import
-// import './resources/css/import.scss';
-
-// css import
-import './resources/css/import.css';
+import './resources/css/import.scss';
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <BrowserRouter>
