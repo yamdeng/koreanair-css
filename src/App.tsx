@@ -4,6 +4,7 @@ import PublishHome from './PublishHome';
 import useCommonRoute from './components/publish/layout/useCommonRoute';
 import useAviationRoute from './components/publish/layout/useAviationRoute';
 import useIndustryRoute from './components/publish/layout/useIndustryRoute';
+import useAdminRoute from './components/publish/layout/useAdminRoute';
 import useModalRoute from './components/publish/layout/useModalRoute';
 
 function App() {
@@ -11,6 +12,7 @@ function App() {
   const aviationRoute = useAviationRoute();
   const industryRoute = useIndustryRoute();
   const modalRoute = useModalRoute();
+  const adminRoute = useAdminRoute();
 
   return (
     <div>
@@ -19,6 +21,7 @@ function App() {
         {commonRoute}
         {aviationRoute}
         {industryRoute}
+        {adminRoute}
         {modalRoute}
       </Routes>
       <ToastContainer autoClose={3000} hideProgressBar={true} />

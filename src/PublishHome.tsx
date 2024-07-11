@@ -4,6 +4,7 @@ import { useSearchParams, useNavigate } from 'react-router-dom';
 import CommonPublishList from './components/publish/CommonPublishList';
 import AviationPublishList from './components/publish/AviationPublishList';
 import IndustryPublishList from './components/publish/IndustryPublishList';
+import AdminPublishList from './components/publish/AdminPublishList';
 import ModalPublishList from './components/publish/ModalPublishList';
 
 function PublishHome() {
@@ -27,6 +28,8 @@ function PublishHome() {
   } else if (tabIndex === 3) {
     contentComponent = <IndustryPublishList keyword={keyword} checkedNewTab={checkedNewTab} />;
   } else if (tabIndex === 4) {
+    contentComponent = <AdminPublishList keyword={keyword} checkedNewTab={checkedNewTab} />;
+  } else if (tabIndex === 5) {
     contentComponent = <ModalPublishList keyword={keyword} checkedNewTab={checkedNewTab} />;
   }
 
@@ -60,6 +63,9 @@ function PublishHome() {
           산업안전
         </button>
         <button className={tabIndex === 4 ? 'active' : ''} onClick={() => changeTabIndex(4)}>
+          관리자
+        </button>
+        <button className={tabIndex === 5 ? 'active' : ''} onClick={() => changeTabIndex(5)}>
           모달
         </button>
       </div>
