@@ -1,5 +1,5 @@
 import AdminBasicList from '@/components/publish/admin/AdminBasicList';
-import AdminBasicFrom from '@/components/publish/admin/AdminBasicFrom';
+import AdminBasicForm from '@/components/publish/admin/AdminBasicForm';
 
 const AdminPageInfo: any = {};
 
@@ -13,7 +13,7 @@ AdminPageInfo.list = [
   },
   {
     title: '기본 폼',
-    Component: AdminBasicFrom,
+    Component: AdminBasicForm,
     path: 'basic-form',
     description: '',
     success: false,
