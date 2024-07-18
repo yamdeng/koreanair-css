@@ -330,3 +330,13 @@ input::placeholder{color:#999 !important;font-weight:300 !important}*/
         min-width:1060px
     }
 }
+
+
+.select-in-valid {
+  border: 1px solid red !important;
+}
+
+.editor-in-valid .toastui-editor-defaultUI {
+  border: 1px solid red !important;
+}
+
