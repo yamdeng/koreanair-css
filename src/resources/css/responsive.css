@@ -1,0 +1,39 @@
+@charset "utf-8";
+
+@media screen and (min-width: 1280px) and (max-width: 1600px){
+  .header .GNB  {display: none;}
+}
+
+
+@media screen and (min-width: 1024px) and (max-width: 1280px){
+  .header .GNB  {display: none;}
+  
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 1023px){
+  .header .GNB  {display: none;}
+  .LNB {display: block;}
+  
+}
+
+
+@media screen and (min-width: 375px) and (max-width: 767px){
+  .header .GNB  {display: none;}
+  .header .logo .top-logo {display: none;}
+  .header .logo {width: 40px;}
+  .LNB {display: none;}
+  .header .util .util-list .btn {display: none;}
+  .M-LNB {display: block;}
+}
+
+
+@media screen and (max-width: 375px) {  
+  .header .GNB  {display: none;}
+  .header .logo {width: 40px;}
+  .header .logo .top-logo {display: none;}
+  .LNB {display: none;}
+  .header .util .util-list .btn {display: none;}
+  .M-LNB {display: block;}
+  .M-LNB .m-lnb_side .m-lnb_top_logo a span {display: none;}
+}
