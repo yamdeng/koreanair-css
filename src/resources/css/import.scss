@@ -1,28 +1,10 @@
+// 사용자 : 항공안전, 산업안전
 // @import './font.css';
 // @import './variables';
 // @import './mixin';
-@import './common';
-// @import './index';
+// @import './common';
 // @import './popup';
-// @import './admin';
+@import './publish';
+@import './koreanair';
 @import './responsive';
 @import './reset';
-
-
-// #.관리자
-//  -reset.css
-//  -common.css : 써드라이브러리 클래스 및 input 공통 클래스
-//  -modal.css
-
-//  -admin.css 
-
-// #.사용자 : 항공안전, 산업안전
-//  -reset.css
-//  -common.css : 써드라이브러리 클래스 및 input 공통 클래스
-//  -modal.css
-
-//  -responsive.css : 항공안전, 산업안전 2개 같이 사용하는 공통 반응형 css 
-//  -koreanair.css : 항공안전, 산업안전 2개 같이 사용하는 공통 css
-//  -aviation.css
-//  -industry.css
-
