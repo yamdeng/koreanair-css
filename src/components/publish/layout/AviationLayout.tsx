@@ -8,7 +8,7 @@ import closeImage from '@resources/images/close.svg';
 
 export default function AviationLayout() {
   return (
-    <div>
+    <div className="wrap">
       <header className="header">
         <div className="logo">
           <div className="menu">
