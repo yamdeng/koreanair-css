@@ -8,6 +8,7 @@ import 'react-tooltip/dist/react-tooltip.css';
 import 'react-toastify/dist/ReactToastify.css';
 import 'ag-grid-community/styles/ag-grid.css'; // Mandatory CSS required by the grid
 import 'ag-grid-community/styles/ag-theme-quartz.css'; // Optional Theme applied to the grid
+import '@toast-ui/editor/dist/toastui-editor.css';
 
 // scss import
 import './resources/css/import.scss';
