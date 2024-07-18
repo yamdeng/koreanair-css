@@ -106,28 +106,6 @@ function AdminBasicList() {
       {/* //검색영역 */}
 
       <AppTable rowData={rowData} columns={columns} />
-
-      <div className="pagination">
-        <a className="first" href="#">
-          <span className="sr-only">이전</span>
-        </a>
-        <a className="prev" href="#">
-          <span className="sr-only">이전</span>
-        </a>
-        <span>
-          <a href="#">1</a>
-          <a href="#">2</a>
-          <strong title="현재페이지">3</strong>
-          <a href="#">4</a>
-          <a href="#">5</a>
-        </span>
-        <a className="next" href="#">
-          <span className="sr-only">다음</span>
-        </a>
-        <a className="last" href="#">
-          <span className="sr-only">다음</span>
-        </a>
-      </div>
     </>
   );
 }
