@@ -146,6 +146,7 @@ function AdminBasicFormOther() {
         />
         <span>tree-select error message</span>
       </div>
+
       <h3>Editor</h3>
       <div style={{ width: '50%' }}>
         <div className="editor-in-valid">
@@ -177,6 +178,65 @@ function AdminBasicFormOther() {
           />
         </div>
         <span>editor error message</span>
+      </div>
+
+      <h3>전체 나열</h3>
+      <div>
+        <DatePicker onChange={onChange} status="error" />
+        <TimePicker minuteStep={15} secondStep={10} hourStep={1} status="error" />
+        <RangePicker status="error" />
+        <TimePicker.RangePicker status="error" />
+        <Select
+          defaultValue={[]}
+          onChange={setSelectedOption}
+          options={options}
+          isMulti
+          name="colors"
+          classNames={{
+            control: (state) => (!state.isFocused ? 'select-in-valid' : ''),
+          }}
+        />
+        <TreeSelect
+          showSearch
+          treeCheckable
+          dropdownStyle={{
+            maxHeight: 400,
+            overflow: 'auto',
+          }}
+          placeholder="Please select"
+          allowClear
+          treeDefaultExpandAll
+          treeData={treeData}
+          value={selectedTreeData}
+          onChange={onTreeSelectChange}
+          status="error"
+        />
+        <Editor
+          hideModeSwitch={true}
+          initialEditType="wysiwyg"
+          previewStyle="vertical"
+          // initialValue={initValue}
+          height={'500px'}
+          // onChange={() => {}}
+          usageStatistics={false}
+          plugins={[colorSyntax, tableMergedCell]}
+          customHTMLSanitizer={(html) => {
+            return html;
+          }}
+          viewer={true}
+          autofocus={false}
+          customHTMLRenderer={{
+            htmlBlock: {
+              table(node) {
+                return [
+                  { type: 'openTag', tagName: 'table', outerNewLine: true, attributes: node.attrs },
+                  { type: 'html', content: node.childrenHTML },
+                  { type: 'closeTag', tagName: 'table', outerNewLine: true },
+                ];
+              },
+            },
+          }}
+        />
       </div>
     </>
   );
