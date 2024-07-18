@@ -212,7 +212,7 @@ function AppTable(props) {
 
   return (
     <>
-      <div style={{ padding: 3 }}>
+      {/* <div style={{ padding: 3 }}>
         <span>{CommonUtil.formatString(gridTotalCountTemplate, rowData.length)}</span>
         <button className="button" onClick={downloadCSVFile} style={{ display: displayCSVExportButton ? '' : 'none' }}>
           download csv
@@ -224,7 +224,23 @@ function AppTable(props) {
         >
           동적 필드 적용
         </button>
+      </div> */}
+
+      <div className="conts-subTit">
+        <span>{CommonUtil.formatString(gridTotalCountTemplate, rowData.length)}</span>
+        <div className="controlArea">
+          <button type="button" name="button" className="btn btn-control btn-darkblue">
+            신규
+          </button>
+          <span className="ml5">
+            <select className="searchSelect flex w100" data-title="선택해주세요.">
+              <option>전체</option>
+              <option>전체</option>
+            </select>
+          </span>
+        </div>
       </div>
+
       <div className="ag-theme-quartz" style={{ height: tableHeight }}>
         <AgGridReact
           ref={gridRef}

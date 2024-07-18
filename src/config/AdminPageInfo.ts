@@ -1,20 +1,28 @@
 import AdminBasicList from '@/components/publish/admin/AdminBasicList';
 import AdminBasicForm from '@/components/publish/admin/AdminBasicForm';
+import AdminBasicForm2 from '@/components/publish/admin/AdminBasicForm2';
 
 const AdminPageInfo: any = {};
 
 AdminPageInfo.list = [
   {
-    title: '기본 테이블',
+    title: '레이아웃-리스트',
     Component: AdminBasicList,
-    path: 'basic-list',
+    path: 'AdminBasicList',
+    description: '',
+    success: false,
+  },
+  {
+    title: '레이아웃-등록',
+    Component: AdminBasicForm,
+    path: 'AdminBasicForm',
     description: '',
     success: false,
   },
   {
     title: '기본 폼',
-    Component: AdminBasicForm,
-    path: 'basic-form',
+    Component: AdminBasicForm2,
+    path: 'AdminBasicForm2',
     description: '',
     success: false,
   },
