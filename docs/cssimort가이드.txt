@@ -1,23 +1,23 @@
 소차장님, 김차장님 협업해야할 TODO
 
  1.font.scss를 통일합니다.
- 2.common.css는 기존에는 김주희 차장님이 만들어놓은 파일인데 해당 이름의 파일은 관리자,사용자 모두 공통으로 사용될 css를 의미합니다.
+ 2.common.scss는 기존에는 김주희 차장님이 만들어놓은 파일인데 해당 이름의 파일은 관리자,사용자 모두 공통으로 사용될 css를 의미합니다.
   : 기존 common.css는 koreanair.css로 대체합니다.
  3.작업을 하실때 css가 충돌나지 않게 초반에 고민 잘해서 잘 작업 부탁드려요.
 
 
 #.관리자
-(공통) -reset.css
-(공통) -common.css : 써드라이브러리 클래스 및 input 공통 클래스
-(공통) -modal.css
-(전용) -admin.css : 관리자 전용
+(공통) -reset.scss
+(공통) -common.scss : 써드라이브러리 클래스 및 input 공통 클래스
+(공통) -modal.scss
+(전용) -admin.scss : 관리자 전용
 
 #.사용자 : 항공안전/산업안전
-(공통) -reset.css
-(공통) -common.css : 써드라이브러리 클래스 및 input 공통 클래스
-(공통) -modal.css
+(공통) -reset.scss
+(공통) -common.scss : 써드라이브러리 클래스 및 input 공통 클래스
+(공통) -modal.scss
 
-(전용) -responsive.css : 항공안전, 산업안전 2개 같이 사용하는 공통 반응형
-(전용) -koreanair.css : 항공안전, 산업안전 2개 같이 사용하는 공통
-(전용) -aviation.css : 항공안전 전용
-(전용) -industry.css : 산업안전 전용
+(전용) -responsive.scss : 항공안전, 산업안전 2개 같이 사용하는 공통 반응형
+(전용) -koreanair.scss : 항공안전, 산업안전 2개 같이 사용하는 공통
+(전용) -aviation.scss : 항공안전 전용
+(전용) -industry.scss : 산업안전 전용
