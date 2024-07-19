@@ -91,6 +91,29 @@ export default function AviationLayout() {
       </header>
       {/* LNB hide 처리 */}
       <div className={displayLeftMenu ? 'LNB' : 'LNB hide'}>
+        <div className="LNB_menu">
+          <div className="m-lnb_top_logo">
+            <a href="javascript:void(0);">
+              <img src={koreanairSymbolImage} />
+              <span>항공안전</span>
+            </a>
+          </div>
+          <div className="m-lnb_top_btn">
+            <div className="tab_btn">
+              <a href="javascript:void(0);">
+                <span className="active">항공</span>
+              </a>
+              <a href="javascript:void(0);">
+                <span>산업</span>
+              </a>
+            </div>
+            <div className="close">
+              <a href="javascript:void(0);">
+                <img src={closeImage} />
+              </a>
+            </div>
+          </div>
+        </div>
         <div className="LNB_side">
           <ul className="LNB_list">
             <li>
@@ -163,104 +186,8 @@ export default function AviationLayout() {
           </ul>
         </div>
       </div>
+      <div className="LNB_bg active"></div>
 
-      <div className="M-LNB active">
-        <div className="m-lnb_side">
-          <div className="m-lnb_list">
-            <div className="m-lnb_top_logo">
-              <a href="javascript:void(0);">
-                <img src={koreanairSymbolImage} />
-                <span>항공안전</span>
-              </a>
-            </div>
-            <div className="m-lnb_top_btn">
-              <div className="tab_btn">
-                <a href="javascript:void(0);">
-                  <span className="active">항공</span>
-                </a>
-                <a href="javascript:void(0);">
-                  <span>산업</span>
-                </a>
-              </div>
-              <div className="close">
-                <a href="javascript:void(0);">
-                  <img src={closeImage} />
-                </a>
-              </div>
-            </div>
-            <div className="m-lnb_menu">
-              <ul className="LNB_list">
-                <li>
-                  <a className="active" href="javascript:void(0);">
-                    안전보고서
-                  </a>
-                  <ul className="mu-2depth">
-                    <li className="active">
-                      <a href="javascript:void(0);">My Report</a>
-                      <ul className="mu-3depth">
-                        <li className="active">
-                          <a href="javascript:void(0);">3depth</a>
-                        </li>
-                        <li>
-                          <a href="javascript:void(0);">3depth</a>
-                        </li>
-                        <li>
-                          <a href="javascript:void(0);">3depth</a>
-                        </li>
-                        <li>
-                          <a href="javascript:void(0);">3depth</a>
-                        </li>
-                        <li>
-                          <a href="javascript:void(0);">3depth</a>
-                        </li>
-                      </ul>
-                    </li>
-                    <li>
-                      <a href="javascript:void(0);">Report List</a>
-                    </li>
-                  </ul>
-                </li>
-                <li>
-                  <a href="javascript:void(0);">안전정책</a>
-                </li>
-                <li>
-                  <a href="javascript:void(0);">안전위험관리</a>
-                </li>
-                <li>
-                  <a href="javascript:void(0);">안전보증</a>
-                </li>
-                <li>
-                  <a href="javascript:void(0);">안전증진</a>
-                </li>
-                <li>
-                  <a href="javascript:void(0);">AUDIT</a>
-                </li>
-                <li>
-                  <a href="javascript:void(0);">Admin</a>
-                </li>
-                <li>
-                  <a href="javascript:void(0);">AUDIT</a>
-                </li>
-                <li>
-                  <a href="javascript:void(0);">AUDIT</a>
-                </li>
-                <li>
-                  <a href="javascript:void(0);">AUDIT</a>
-                </li>
-                <li>
-                  <a href="javascript:void(0);">AUDIT</a>
-                </li>
-                <li>
-                  <a href="javascript:void(0);">AUDIT</a>
-                </li>
-                <li>
-                  <a href="javascript:void(0);">dddddd</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
       <div className="contents">
         <Outlet />
       </div>

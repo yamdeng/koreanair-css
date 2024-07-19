@@ -6,34 +6,29 @@
 
 
 @media screen and (min-width: 1024px) and (max-width: 1280px){
-  .header .GNB  {display: none;}
-  
+  .header .GNB  {display: none;} 
 }
 
 
 @media screen and (min-width: 768px) and (max-width: 1023px){
   .header .GNB  {display: none;}
-  .LNB {display: block;}
-  
+  .LNB_bg.active {display: block;} 
 }
 
 
-@media screen and (min-width: 375px) and (max-width: 767px){
+@media screen and (max-width: 767px){
   .header .GNB  {display: none;}
-  .header .logo .top-logo {display: none;}
   .header .logo {width: 40px;}
-  .LNB {display: none;}
+  .header .logo .top-logo {display: none;}
   .header .util .util-list .btn {display: none;}
-  .M-LNB {display: block;}
+  .LNB {margin-top: 0; max-width: none;}
+  .LNB .LNB_menu {display: block;}
+  .LNB .LNB_list {padding: 24px;}
 }
 
 
 @media screen and (max-width: 375px) {  
-  .header .GNB  {display: none;}
-  .header .logo {width: 40px;}
-  .header .logo .top-logo {display: none;}
-  .LNB {display: none;}
-  .header .util .util-list .btn {display: none;}
-  .M-LNB {display: block;}
-  .M-LNB .m-lnb_side .m-lnb_top_logo a span {display: none;}
+  .LNB .LNB_menu .m-lnb_top_logo a span {display: none;}
+
+
 }

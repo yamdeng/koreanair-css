@@ -1,49 +1,5 @@
 @charset "UTF-8";
 
-@font-face {
-	font-family: 'KoreanAirSans';
-  font-style:normal;
-  font-weight:400;
-		src: url('../font/KoreanAirSans-Regular_W.woff') format('woff'),
-		url('../font/KoreanAirSans-Regular_W.woff2') format('woff2');  
-}
-@font-face {
-	font-family: 'KoreanAirSans';
-  font-style:normal;
-  font-weight:700;
-		src: url('../font/KoreanAirSans-Bold_W.woff') format('woff'),
-		url('../font/KoreanAirSans-Bold_W.woff2') format('woff2');  
-}
-@font-face {
-	font-family: 'KoreanAirSans';
-  font-style:normal;
-  font-weight:300;
-		src: url('../font/KoreanAirSans-Light_W.woff') format('woff'),
-		url('../font/KoreanAirSans-Light_W.woff2') format('woff2');  
-}
-
-:root {
-  --color-darkblue100: #051766;
-  --color-lightblue10:#eef8fd;
-  --color-neutral10:#fff;
-  --color-neutral20:#f7f7f7;
-  --color-neutral30:#ededed;
-  --color-neutral40:#d9d9d9;
-  --color-neutral60:#a4a4a4;
-  --color-neutral80:#333;
- }
-
- body * {
-  word-break: keep-all;
-  word-wrap: break-word;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  font-family: 'KoreanAirSans';
-  line-height: 150%;
-  color: var(--color-text-body, #051766);
-}
-
 .wrap {
   display: flex; 
   box-sizing: border-box; 
@@ -57,11 +13,11 @@
   min-width: 320px;
   width: 100%; 
   /*max-width: 1920px;*/
-  height: 80px;
-  border-bottom: 3px solid #051766;
-  background-color: pink; 
+  height: 88px;
+  border-bottom: 3px solid var(--color-darkblue-100);
   z-index: 9;
   padding: 0 24px;
+  background-color: var(--color-neutral-10); 
 }
 .header .logo {
   float: left;
@@ -88,7 +44,7 @@
   margin: 0 10px;
 }
 .header .logo .top-logo a span {
-  color: var(--Dark-Blue-100, #051766);
+  color: var(--color-darkblue-100);
   font-family: "KoreanAirSans";
   font-size: 21px;
   font-style: normal;
@@ -106,7 +62,9 @@
   float: left;
   margin: 0px 8px;
   padding: 0 20px;
-  color: var(--Dark-Blue-100, #051766);
+}
+.header .GNB .gnb-list li a{
+  color: var(--color-darkblue-100);
   font-family: "KoreanAirSans";
   font-size: 21px;
   font-style: normal;
@@ -114,6 +72,7 @@
 }
 .header .GNB .gnb-list li a.active {
   font-weight: 700;
+  color: var(--color-darkblue-100);
 }
 .header .util {
   float: right;
@@ -135,8 +94,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #fff; 
-  border: 1px solid #ddd; 
+  background-color: var(--color-neutral-10); 
+  outline: 1px solid var(--color-neutral-30);
   border-radius: 30px; 
   height: 40px;
 }
@@ -146,9 +105,8 @@
   padding: 12px 20px;
 }
 .header .util .util-list .btn a span.active {
-
-  color: #fff;
-  background-color: #051766;
+  color: var(--color-neutral-10);
+  background-color: var(--color-darkblue-100);
   border-radius: 999px;
   padding: 12px 20px;
 }
@@ -163,7 +121,7 @@
   /*margin-top: 80px;*/
   width: 100%;
   max-width: 260px;
-  z-index: 1;
+  z-index: 10;
   overflow: hidden auto;
 }
 .LNB.hide {
@@ -171,12 +129,87 @@
   transition: width 0.3s ease;
   overflow: hidden;
 }
+.LNB_menu {
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 88px;
+  background-color: var(--color-neutral-10); 
+  padding: 24px;
+  min-width: 320px;
+}
+.LNB_menu .m-lnb_top_logo {
+  display: flex;
+  width: 40px;
+  height: 40px;
+  justify-content: left;
+  align-items: center;
+  float: left;
+}
+.LNB_menu .m-lnb_top_logo a {
+  display:inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+.LNB_menu .m-lnb_top_logo a img {
+  width: 30px;
+  height: 40px;
+  margin: 0 10px;
+}
+.LNB_menu .m-lnb_top_logo a span {
+  color: var(--color-darkblue-100);
+  font-family: "KoreanAirSans";
+  font-size: 21px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+}
+.LNB_menu .m-lnb_top_btn {
+  display: flex;
+  position: absolute;
+  right: 24px;
+}
+.LNB_menu .m-lnb_top_btn .tab_btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-neutral-10);
+  /*border: 1px solid #ddd; */
+  outline: 1px solid var(--color-neutral-30);
+  border-radius: 30px; 
+  height: 40px;
+  margin-right: 10px;
+}
+.LNB_menu .m-lnb_top_btn .tab_btn a span {
+  display: block;
+  font-size: 16px;
+  padding: 12px 15px;
+}
+.LNB_menu .m-lnb_top_btn .tab_btn a span.active {
+  color: var(--color-neutral-10);
+  background-color: var(--color-darkblue-100);
+  border-radius: 999px;
+  padding: 12px 20px;
+}
+.LNB_menu .m-lnb_side .m-lnb_top_btn {
+  display: flex;
+  width: 40px;
+  height: 40px;
+  justify-content: right;
+  align-items: center;
+  float: right;
+}
+.LNB_menu .m-lnb_side .m-lnb_top_btn .close a {
+  display: flex;
+}
+
+
 .LNB_side {
-  background-color: #fff;
-  border-right: 1px solid #D9D9D9;   
+  background-color: var(--color-neutral-10); 
+  border-right: 1px solid var(--color-neutral-40);  
   overflow-y: scroll;
   width: 100%;
-  margin-top: 80px;
+  margin-top: 88px;
 }
 .LNB_side::-webkit-Scrollbar {
   width:0.3em;
@@ -184,12 +217,12 @@
 }
 .LNB_side::-webkit-Scrollbar-thumb {
   border-radius:10px;
-  background:var(--color-neutral60);
+  background:var(--color-neutral-60);
   -webkit-tap-highlight-color: transparent;
 }
 .LNB_side::-webkit-Scrollbar Track {
   border-radius:0px;
-  background:var(--color-neutral30)
+  background:var(--color-neutral-30)
 }
 .LNB_list {
   padding: 12px;
@@ -200,9 +233,9 @@
   font-style: normal;
   font-weight: 400;
   line-height: 150%; /* 27px */
-  color: var(--color-text-body, #051766);
+  color: var(--color-darkblue-100);
   padding: 12px;
-  border-bottom: 1px solid #D9D9D9;  
+  border-bottom: 1px solid var(--color-neutral-40);  
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -212,6 +245,7 @@
 .LNB_list li a {
   width: 100%;
   background: url(../images/icon-arrow-up.svg) right center no-repeat;
+  color: var(--color-darkblue-100);
 }
 .LNB_list li a.active {
   background: url(../images/icon-arrow-down.svg) right center no-repeat;
@@ -228,21 +262,21 @@
   display: flex;
   padding: 8px 12px;
   align-items: flex-start;
-  gap: var(--size-1, 4px);
+  gap: 4px;
   align-self: stretch;
   border: 0;
 }
 .LNB_list li .mu-2depth li a {
   background: none;
   border: none;
-  color: var(--color-text-enabled, #5E5E5E);
+  color: var(--color-neutral-70);
 }
 .LNB_list li .mu-2depth li.active {
-  border-radius: var(--radius-small, 8px);
-  background: var(--color-background-container-highlight, #EEF8FD);
+  border-radius: 8px;
+  background: var(--color-lightblue-80);
 }
 .LNB_list li .mu-2depth li.active a {
-  color: var(--color-text-body, #051766);
+  color: var(--color-darkblue-100);
   font-weight: 600;
 }
 .LNB_list li .mu-2depth li .mu-3depth {
@@ -255,23 +289,31 @@
   background: url(../images/icon-dot.svg) no-repeat left center;
   border: none;
   font-size: 14px;
-  color: var(--color-text-enabled, #5E5E5E);
+  color: var(--color-neutral-70);
   display: flex;
   padding: 8px 12px;
   align-items: flex-start;
-  gap: var(--size-1, 4px);
+  gap: 4px;
   align-self: stretch; 
 }
 .LNB_list li .mu-2depth li .mu-3depth li a {
-  color: var(--color-text-enabled, #5E5E5E);
+  color: var(--color-neutral-70);
   font-weight: normal;
 }
 .LNB_list li .mu-2depth li .mu-3depth li.active a {
   text-decoration-line: underline;
-  color: var(--color-text-body, #051766);
+  color: var(--color-darkblue-100);
   font-weight: 600;
 }
-
+.LNB_bg.active {
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, .3);
+  position: fixed;
+  z-index: 5;
+  display: none;
+}
+/*
 .M-LNB {
   display: none;  
   z-index: 999;
@@ -286,7 +328,7 @@
 }
 .M-LNB .m-lnb_side {
   position: relative;
-  background-color: #fff;
+  background-color: var(--color-neutral-10);
   width: 100%;
   height: 100%;
   padding: 24px;
@@ -298,7 +340,7 @@
   width: 100%;
   height: 100dvh;
   padding: 24px;
-  background-color: #fff;
+  background-color: var(--color-neutral-10);
 }
 .M-LNB .m-lnb_side .m-lnb_top_logo {
   display: flex;
@@ -319,7 +361,7 @@
   margin: 0 10px;
 }
 .M-LNB .m-lnb_side .m-lnb_top_logo a span {
-  color: var(--Dark-Blue-100, #051766);
+  color: var(--color-darkblue-100);
   font-family: "KoreanAirSans";
   font-size: 21px;
   font-style: normal;
@@ -333,7 +375,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #fff; 
+  background-color: var(--color-neutral-10);
   border: 1px solid #ddd; 
   border-radius: 30px; 
   height: 40px;
@@ -346,16 +388,11 @@
 }
 .m-lnb_top_btn .tab_btn a span.active {
 
-  color: #fff;
-  background-color: var(--Dark-Blue-100, #051766);
+  color: var(--color-neutral-10);
+  background-color: var(--color-darkblue-100);
   border-radius: 999px;
   padding: 12px 20px;
 }
-
-
-
-
-
 
 .M-LNB .m-lnb_side .m-lnb_top_btn {
   display: flex;
@@ -383,9 +420,9 @@
 }
 .M-LNB .m-lnb_side .m-lnb_menu .LNB_list::-webkit-Scrollbar Track {
   border-radius:0px;
-  background:var(--color-neutral30)
+  background:var(--color-neutral-30);
 }
-
+*/
 .contents {
   flex: auto;
   overflow-y: auto;
@@ -394,9 +431,5 @@
   min-width: 0;
   margin-top: 80px;
   padding: 24px;
-  background-color: aquamarine;
-}
-.conts {
-  height: 100%;
-  background-color: #fff;
+  background-color: var(--color-neutral-10);
 }
