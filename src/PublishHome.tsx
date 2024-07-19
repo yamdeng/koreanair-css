@@ -1,11 +1,11 @@
 import { useState, useEffect } from 'react';
 import { useSearchParams, useNavigate } from 'react-router-dom';
-
-import CommonPublishList from './components/publish/CommonPublishList';
-import AviationPublishList from './components/publish/AviationPublishList';
-import IndustryPublishList from './components/publish/IndustryPublishList';
-import AdminPublishList from './components/publish/AdminPublishList';
-import ModalPublishList from './components/publish/ModalPublishList';
+import CommonPageInfo from './config/CommonPageInfo';
+import CommonRouteTable from './CommonRouteTable';
+import AviationPageInfo from './config/AviationPageInfo';
+import IndustryPageInfo from './config/IndustryPageInfo';
+import AdminPageInfo from './config/AdminPageInfo';
+import ModalPageInfo from './config/ModalPageInfo';
 
 function PublishHome() {
   const [tabIndex, setTabIndex] = useState(1);
@@ -20,17 +20,59 @@ function PublishHome() {
     navigate(`/?tabIndex=${tabIndex}`, { replace: true });
   };
 
-  let contentComponent = <CommonPublishList keyword={keyword} checkedNewTab={checkedNewTab} />;
+  let contentComponent = (
+    <CommonRouteTable
+      moduleDirectoryPath="common/"
+      pageList={CommonPageInfo.list}
+      keyword={keyword}
+      checkedNewTab={checkedNewTab}
+    />
+  );
   if (tabIndex === 1) {
-    contentComponent = <CommonPublishList keyword={keyword} checkedNewTab={checkedNewTab} />;
+    contentComponent = (
+      <CommonRouteTable
+        moduleDirectoryPath="common/"
+        pageList={CommonPageInfo.list}
+        keyword={keyword}
+        checkedNewTab={checkedNewTab}
+      />
+    );
   } else if (tabIndex === 2) {
-    contentComponent = <AviationPublishList keyword={keyword} checkedNewTab={checkedNewTab} />;
+    contentComponent = (
+      <CommonRouteTable
+        moduleDirectoryPath="aviation/"
+        pageList={AviationPageInfo.list}
+        keyword={keyword}
+        checkedNewTab={checkedNewTab}
+      />
+    );
   } else if (tabIndex === 3) {
-    contentComponent = <IndustryPublishList keyword={keyword} checkedNewTab={checkedNewTab} />;
+    contentComponent = (
+      <CommonRouteTable
+        moduleDirectoryPath="industry/"
+        pageList={IndustryPageInfo.list}
+        keyword={keyword}
+        checkedNewTab={checkedNewTab}
+      />
+    );
   } else if (tabIndex === 4) {
-    contentComponent = <AdminPublishList keyword={keyword} checkedNewTab={checkedNewTab} />;
+    contentComponent = (
+      <CommonRouteTable
+        moduleDirectoryPath="admin/"
+        pageList={AdminPageInfo.list}
+        keyword={keyword}
+        checkedNewTab={checkedNewTab}
+      />
+    );
   } else if (tabIndex === 5) {
-    contentComponent = <ModalPublishList keyword={keyword} checkedNewTab={checkedNewTab} />;
+    contentComponent = (
+      <CommonRouteTable
+        moduleDirectoryPath="modal/"
+        pageList={ModalPageInfo.list}
+        keyword={keyword}
+        checkedNewTab={checkedNewTab}
+      />
+    );
   }
 
   const changeKeyword = (event) => {
