@@ -2,6 +2,7 @@ import PBasicLayout from '@/components/publish/common/PBasicLayout';
 import PHomePortal1 from '@/components/publish/common/PHomePortal1';
 import PFileAttachList from '@/components/publish/common/PFileAttachList';
 import PTree from '@/components/publish/common/PTree';
+import PTableCustomColumn from '@/components/publish/common/PTableCustomColumn';
 
 const CommonPageInfo: any = {};
 
@@ -31,6 +32,13 @@ CommonPageInfo.list = [
     title: '트리',
     Component: PTree,
     path: 'tree',
+    description: '',
+    success: false,
+  },
+  {
+    title: '테이블 커스텀 컬럼',
+    Component: PTableCustomColumn,
+    path: 'PTableCustomColumn',
     description: '',
     success: false,
   },
