@@ -31,7 +31,13 @@
   --color-negative-bg:#FFF5F5; 
  }
 
- body * {
+ html {
+  /* 62.5% of 16px browser font size is 10px */
+  /* 16px * 0.625 = 10px */
+  font-size: 62.5%;
+}
+
+body * {
   word-break: keep-all;
   word-wrap: break-word;
   -webkit-box-sizing: border-box;
@@ -39,4 +45,130 @@
   box-sizing: border-box;
   font-family: 'KoreanAirSans';
   color: var(--color-neutral-70);
+  font-size: 1.6rem;
+    /* 1.6 * 10px = 16px */
 }
+
+.contents legend{visibility:hidden;height:0;line-height:0}
+
+
+.wid50{width:50%}
+.wid100{width:100%}
+.mr5{margin-right:5px !important}
+
+button, input, textarea, select, label{font-family:'KoreanAirSans';font-weight:400}
+/*버튼*/
+button,input{border:none;background:none}
+button,input,select{vertical-align:middle}
+
+select{border: 1px solid #bababa;padding: 3px 0 5px;background: #fff;vertical-align: middle;}
+.form-tag-select{
+  height: 35px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 0 10px;
+  width: 100%;
+  box-sizing: border-box;
+  color: #222;
+  outline: none !important;
+  position: relative;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background: #fff url(images/chevron-down-solid.svg) no-repeat right 10px center;
+  background-size:10px}
+
+input {margin:0;padding:0}
+button{cursor:pointer}
+button + button{margin-left:5px}
+.btn-sm{height:30px;line-height:30px;padding:0 20px;font-size:15px;font-weight:400;border:none;border-radius:9999px;align-items:center}
+
+.btn-darkblue{background:var(--color-darkblue-100);color:var(--color-neutral-10)}
+
+input[type=checkbox],input[type=radio]{padding:0;vertical-align: middle;margin-top: -3px;*margin-top: -2px}
+
+/* checkbox, radio */
+[class^='radio-wrap'] > label{position:relative;overflow:hidden;cursor:pointer}
+[class^='radio-wrap'] > label > input{position:absolute;top:0;left:0;width:0px;height:0px;opacity:0}
+
+/*input*/
+input,button{vertical-align:middle}
+.textBox{border:1px solid var(--color-neutral-40);color:var(--color-darkblue100);font-size:15px;border-radius:3px;padding:0 5px;transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out}
+.textBox:hover, .textBox:focus{border-color:var( --color-mblue-100)}
+textarea.textBox{width:100%;line-height:20px !important;padding:5px}
+input, select{font-family:'KoreanAirSans'}
+
+
+/* 기본형 */
+.radio-wrap {display:inline-block;line-height:0}
+.radio-wrap > label {display:inline-block; min-height:40px; padding:9px 9px 9px 30px; line-height:22px;}
+.radio-wrap > label > input + span {display:block; color:#666;}
+.radio-wrap > label > input:checked + span {color:rgba(34,34,34,1);}
+.radio-wrap > label > input + span:before, .radio-wrap > label > input + span:after{content:'';position:absolute; top:50%;}
+.radio-wrap > label > input + span:before {left:0; width:20px; height:20px; background:transparent; border:1px solid #b5b5b5; border-radius:50%; -webkit-transform:translateY(-50%); transform:translateY(-50%);}
+.radio-wrap > label > input[type="checkbox"] + span:after {left:8px; margin-top:-2px; width:8px; height:5px; border:solid #b5b5b5; border-width:0 0 1px 1px; -webkit-transform:rotate(-45deg) translateY(-50%); transform:rotate(-45deg) translateY(-50%);}
+.radio-wrap > label > input[type="radio"] + span:after {left:3px; width:14px; height:14px; border:1px solid #b5b5b5; border-radius:50%; -webkit-transform:translateY(-50%); transform:translateY(-50%);}
+.radio-wrap > label > input:checked + span:before {border-color:var(--color-darkblue-100); background:#fff}
+.radio-wrap > label > input:checked + span:after {background:var(--color-darkblue-100)}
+.bottom-area .list-toggle + .radio-wrap{margin:10px 0 30px 19px;}
+
+/*검색영역*/
+.boxForm{position:relative;padding:10px 20px 20px;background-color:#f7f7f7;border-radius:var(--radius-small, 8px)}
+.boxForm .form-table{display:flex;width:100%}
+.boxForm .form-table .form-cell{position: relative;flex-grow:1;padding-right:10px;padding-top:15px}
+.boxForm .form-table .form-group{display:inline-block;position:relative;vertical-align:middle}
+.form-group .f-label{display:inline-block;position:absolute;left:10px;top:8px;background: #fff;padding:2px 4px 4px;line-height:1em;transition: all .2s ease}
+.form-tag{position:relative;height:35px;border:1px solid #ccc;border-radius:5px;padding:0 10px;width:100%;box-sizing:border-box;color:#222;background:#fff;outline:none!important;text-indent:10px}
+.form-group .f-label .required{color:#ed2129}
+
+
+
+.container-fluid{width:100%;margin-right:auto;margin-left:auto}
+.border-box.topInputArea{margin-bottom:15px}
+.border-box{/*border:solid 1px var(--color-neutral-40);*/border-radius:3px;background-color:#f7f7f7;}
+.border-box .inpup-group-wrap{border:0}
+.border-box .inpup-group-wrap > .row{border-bottom:1px solid var(--color-neutral-40)}
+
+.inpup-group-wrap > .row{border-bottom:1px solid var(--color-neutral-40)}
+.inpup-group-wrap > .row:last-child{border-bottom:0}
+.inpup-group-wrap > .row > div{min-height:38px;line-height:38px}
+
+
+.input-group .input-tit{min-height:25px;color:var(--color-neutral-80)}
+.input-group .input-tit{width:145px;text-align:left;padding:5px 0 5px 10px;background:var(--color-neutral-20);height:100%;margin-left:-5px;margin-right:5px}
+
+
+
+.input-group{position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+  height:100%
+}
+.row {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  /*margin-right: -5px;
+  margin-left: -5px;*/
+}
+
+/*pagination*/
+.pagination{margin:30px 0 0px 0;text-align:center}
+.pagination .first{position:relative}
+.pagination .first:before{content:'';position:absolute;box-sizing:content-box;top:0%;left:0%;width:32px;height:32px;background:url(../images/first-prev.png)no-repeat center center}
+.pagination .prev{position:relative}
+.pagination .prev:before{content:'';position:absolute;box-sizing:content-box;top:50%;left:50%;width:6px;height:6px;transform:translate(-50%, -50%) rotate(45deg);margin-left:2px;border-left:1px solid #868e96; border-bottom:1px solid #868e96}
+.pagination .first, .pagination .prev, .pagination .next, .pagination .last{display:inline-block;width:32px;height:32px;vertical-align:top}
+.pagination span{display:inline-block;margin:0 9px}
+.pagination span a, .pagination span strong{display:inline-block;width:32px;height:32px;border-radius:9999px;text-align:center;color:var(--color-neutral80);font-size:15px;line-height:32px}
+.pagination span strong{background-color:var(--color-lightblue10);color:var(--color-darkblue100)}
+.pagination .next{position:relative}
+.pagination .next:before{content:'';position:absolute;box-sizing:content-box;top:50%;left:50%;width:6px;height:6px;transform:translate(-50%, -50%) rotate(45deg);margin-left:-2px;border-right:1px solid #868e96; border-top:1px solid #868e96}
+.pagination .last{position:relative}
+.pagination .last:before{content:'';position:absolute;box-sizing:content-box;top:0%;left:0%;width:32px;height:32px;background:url(../images/last-next.png)no-repeat center center}
+.sr-only{position:absolute; z-index: -1;overflow:hidden;width:1px;height:1px;margin: 0 !important;font-size:1px;line-height:2;opacity:0}
