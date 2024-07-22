@@ -129,6 +129,9 @@
   transition: width 0.3s ease;
   overflow: hidden;
 }
+.LNB.hide .LNB_menu {
+  display: none;
+}
 .LNB_menu {
   display: none;
   position: fixed;
