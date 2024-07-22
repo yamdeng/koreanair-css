@@ -10,14 +10,14 @@ ModalPageInfo.list = [
   {
     title: 'alert 공통',
     Component: PAlertModal,
-    path: 'alert',
+    path: 'PAlertModal',
     description: '',
     success: false,
   },
   {
     title: 'confirm 공통',
     Component: PConfirmModal,
-    path: 'confirm',
+    path: 'PConfirmModal',
     description: '',
     success: false,
   },

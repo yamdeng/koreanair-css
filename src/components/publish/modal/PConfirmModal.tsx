@@ -16,12 +16,17 @@ function ConfirmModal(props) {
     >
       <div className="popup-container">
         <h3 className="pop_title">제목</h3>
-        <p className="pop_cont" dangerouslySetInnerHTML={{ __html: '' }} />
+        <p
+          className="pop_cont"
+          dangerouslySetInnerHTML={{
+            __html: 'asdasdasdas dasd asd asd asd asd asd asd asd asd sd sd asd asd asd asd as d',
+          }}
+        />
         <div className="pop_btns">
-          <button className="btn_text btn_dark_gray" onClick={closeModal}>
+          <button className="btn_text text_color_neutral-90 btn_close" onClick={closeModal}>
             취소
           </button>
-          <button className="btn_text btn_green" onClick={closeModal}>
+          <button className="btn_text text_color_neutral-10 btn_confirm" onClick={closeModal}>
             확인
           </button>
         </div>
