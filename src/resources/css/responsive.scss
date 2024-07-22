@@ -18,12 +18,12 @@
 
 @media screen and (max-width: 767px){
   .header .GNB  {display: none;}
-  .header .logo {width: 40px;}
+  .header .logo {width: 4.0rem;}
   .header .logo .top-logo {display: none;}
   .header .util .util-list .btn {display: none;}
-  .LNB {margin-top: 0; max-width: none;}
+  .LNB {margin-top: 0; max-width: none; z-index: 11;}
   .LNB .LNB_menu {display: block;}
-  .LNB .LNB_list {padding: 24px;}
+  .LNB .LNB_list {padding: 2.4rem;}
 }
 
 
