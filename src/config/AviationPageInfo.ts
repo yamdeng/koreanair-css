@@ -1,5 +1,5 @@
 import PAviationPortal1 from '@/components/publish/aviation/PAviationPortal1';
-import PReportForm1 from '@/components/publish/aviation/PReportForm1';
+import PRiskForm1 from '@/components/publish/aviation/PRiskForm1';
 
 const AviationPageInfo: any = {};
 
@@ -12,9 +12,9 @@ AviationPageInfo.list = [
     success: false,
   },
   {
-    title: 'PReportForm1',
-    Component: PReportForm1,
-    path: 'PReportForm1',
+    title: '안전위험관리>안전조사-조사보고서',
+    Component: PRiskForm1,
+    path: 'PRiskForm1',
     description: '',
     success: false,
   },

@@ -1,21 +1,6 @@
 @charset "UTF-8";
 
-:root {
-    --color-darkblue100: #051766;
-    --color-mblue100:#0064de;
-    --color-lightblue10:#eef8fd;
-    --color-lightblue20:#ddf1fb;
-    --color-lightblue60:#98d5f3;
-    --color-lightgray0:#fafbfb;
-    --color-neutral10:#fff;
-    --color-neutral20:#f7f7f7;
-    --color-neutral30:#ededed;
-    --color-neutral40:#d9d9d9;
-    --color-neutral60:#a4a4a4;
-    --color-neutral80:#333;
-   }
-
-html, body, div, span, applet, object, iframe,
+/*html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
@@ -55,7 +40,7 @@ sup{vertical-align:super;font-size:0.5em}
 a,
 a:hover,
 a:focus {color:inherit;text-decoration:none}
-input::-webkit-search-cancel-button{display:none}
+input::-webkit-search-cancel-button{display:none}*/
 
 .Rightconts caption,.Rightconts legend{visibility:hidden;height:0;line-height:0}
 form {display:inline}
@@ -82,37 +67,25 @@ body, button, input, textarea, select, label{font-family:'KoreanAirSans';font-we
 .leftMenu .LNB_list li .mu-2depth li .mu-3depth li{background: url(../images/icon-dot.svg) no-repeat left center;border:none;font-size:16px;color:var(--color-text-enabled, #5E5E5E);display:flex;padding:8px 12px;align-items:flex-start;gap: var(--size-1, 4px);align-self:stretch}
 .leftMenu .LNB_list li .mu-2depth li .mu-3depth li.active{background: url(../images/icon-dot.svg) no-repeat left center;text-decoration-line:underline;color:var(--color-text-body, #051766);font-weight:600}
   
-.contentArea-wrap{position:relative;margin:0 0 0 260px;width:100%;padding:24px 30px 0px 30px;box-sizing:border-box;background-color:var(--color-neutral10);background-color:var(--color-lightgray0);}
-.contentArea-wrap .Rightconts{width:calc(100% - 260px)}
-.contentArea-wrap .Rightconts .conts-tit{display:flex;position:relative;padding:0 0 5px;border-bottom:solid 1px #d9d9d9;align-items:center}
-.contentArea-wrap .Rightconts .conts-tit h2{font-family:'KoreanAirSans';font-size:20px}
+.contents{position:relative;margin:0 0 0 260px;width:100%;padding:24px 30px 0px 30px;box-sizing:border-box;background-color:var(--color-neutral10);background-color:var(--color-lightgray0);}
+.contents .Rightconts{width:calc(100% - 260px)}
+.contents .conts-title{position:relative;border-bottom:solid 1px var(--color-neutral-40);align-items:center;padding:20px 0 40px 0px;margin-bottom:10px}
+.contents .conts-title h2{float:left;font-family:"KoreanAirSans";font-size:21px;color:var(--color-neutral-80);font-weight:700}
+.contents .btn-area{position:relative;right:0;top:0;float:right}
+
+.contents .Rightconts .conts-tit{display:flex;position:relative;padding:0 0 5px;border-bottom:solid 1px #d9d9d9;align-items:center}
+.contents .Rightconts .conts-tit h2{font-family:'KoreanAirSans';font-size:20px}
 
 .controlArea{flex:1;text-align:right}
 .controlArea .btn{height:35px;padding:0 20px;font-size:16px;font-weight:700;border:none;color:var(--color-neutral10);border-radius:9999px;opacity:1;transition:opacity 0.1s ease}
 .btn.btn-darkblue{background:var(--color-darkblue100);color:var(--color-neutral10)}
 
 
-.contentArea-wrap .Rightconts .conts-subTit{display:flex;align-items:end;padding-bottom:10px}
-.contentArea-wrap .Rightconts .conts-subTit span{font-size:15px;}
+.contents .Rightconts .conts-subTit{display:flex;align-items:end;padding-bottom:10px}
+.contents .Rightconts .conts-subTit span{font-size:15px;}
 
 
 
-.contentArea-wrap .Rightconts .boxForm{position:relative;padding:10px 0px;background-color:var(--color-neutral20)}
-.contentArea-wrap .Rightconts .boxForm .form-table{width:100%}
-
-.topInputArea .input-group .input-tit{background:var(--color-lightblue10)}
-/* input group Row 2개이상*/
-.input-group .input-tit{min-height:25px}
-.input-group .input-tit{width:145px;text-align:left;padding:5px 0 5px 5px;background: #f2f5f5;height:100%;margin-left:-5px;margin-right:5px}
-.topInputArea.border-box{margin-bottom:15px}
-.border-box{border:solid 1px #98d5f3;border-radius:3px}
-.border-box .inpup-group-wrap{border:0}
-.border-box .inpup-group-wrap > .row{border-bottom-color:var(--color-lightblue60)}
-.inpup-group-wrap > .row{border-bottom:1px dotted #999}
-.inpup-group-wrap > .row:last-child{border-bottom:0}
-.inpup-group-wrap > .row > div{min-height:38px;line-height:38px}
-
-.container-fluid{width:100%;/*padding-right:5px;padding-left:5px;*/margin-right:auto;margin-left:auto}
 
 
 

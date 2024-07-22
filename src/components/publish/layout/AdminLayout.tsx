@@ -98,7 +98,7 @@ export default function AdminLayout() {
             </ul>
           </div>
         </div>
-        <div className="contentArea-wrap">
+        <div className="contents">
           <div className="Rightconts">
             <Outlet />
           </div>
