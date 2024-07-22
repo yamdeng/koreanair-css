@@ -18,7 +18,7 @@ function AlertModal(props) {
         <h3 className="pop_title">제목</h3>
         <p className="pop_cont" dangerouslySetInnerHTML={{ __html: '' }} />
         <div className="pop_btns">
-          <button className="btn_text btn_green" onClick={closeModal}>
+          <button className="btn_text text_color_neutral-10 btn_confirm" onClick={closeModal}>
             확인
           </button>
         </div>

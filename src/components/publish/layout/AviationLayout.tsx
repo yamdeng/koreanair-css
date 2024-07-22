@@ -186,7 +186,6 @@ export default function AviationLayout() {
           </ul>
         </div>
       </div>
-      <div className="LNB_bg active"></div>
 
       <div className="contents">
         <Outlet />
