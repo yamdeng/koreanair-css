@@ -1,9 +1,17 @@
 import { useState } from 'react';
-import { DatePicker, TimePicker, TreeSelect } from 'antd';
+import { DatePicker, TimePicker, TreeSelect, Select as AntSelect } from 'antd';
 import Select from 'react-select';
 import colorSyntax from '@toast-ui/editor-plugin-color-syntax';
 import { Editor } from '@toast-ui/react-editor';
 import tableMergedCell from '@toast-ui/editor-plugin-table-merged-cell';
+
+const options2 = [];
+for (let i = 10; i < 36; i++) {
+  options2.push({
+    label: i.toString(36) + i,
+    value: i.toString(36) + i,
+  });
+}
 
 const options = [
   { value: 'chocolate', label: 'Chocolate Chocolate Chocolate ChocolateChocolateChocolateChocolate' },
@@ -79,35 +87,78 @@ function AdminBasicFormOther() {
   const onTreeSelectChange = (value) => {
     setSelectedTreeData(value);
   };
+
+  const h3Style = { marginTop: 20, marginBottom: 10 };
   return (
     <>
-      <h3>폼에서 사용하는 라이브러리 컴포넌트</h3>
+      <h3 style={h3Style}>폼에서 사용하는 라이브러리 컴포넌트</h3>
 
-      <h3>DatePicker</h3>
+      <h3 style={h3Style}>select component(single)</h3>
+      <div style={{ width: '50%' }}>
+        <AntSelect
+          style={{ width: '100%' }}
+          options={[
+            {
+              value: 'jack',
+              label: 'Jack',
+            },
+            {
+              value: 'lucy',
+              label: 'Lucy',
+            },
+            {
+              value: 'Yiminghe',
+              label: 'yiminghe',
+            },
+            {
+              value: 'disabled',
+              label: 'Disabled',
+              disabled: true,
+            },
+          ]}
+        />
+        <span>select(single) error message</span>
+      </div>
+
+      <h3 style={h3Style}>select component(multiple)</h3>
+      <div style={{ width: '50%' }}>
+        <AntSelect
+          mode="multiple"
+          allowClear
+          style={{
+            width: '100%',
+          }}
+          placeholder="Please select"
+          options={options2}
+        />
+        <span>select(multiple) error message</span>
+      </div>
+
+      <h3 style={h3Style}>DatePicker</h3>
       <div style={{ width: '50%' }}>
         <DatePicker onChange={onChange} style={{ width: '100%' }} status="error" />
         <span>data picker error message</span>
       </div>
 
-      <h3>TimePicker</h3>
+      <h3 style={h3Style}>TimePicker</h3>
       <div style={{ width: '50%' }}>
         <TimePicker minuteStep={15} secondStep={10} hourStep={1} style={{ width: '100%' }} status="error" />
         <span>time picker error message</span>
       </div>
 
-      <h3>DatePicker : Range</h3>
+      <h3 style={h3Style}>DatePicker : Range</h3>
       <div style={{ width: '50%' }}>
         <RangePicker style={{ width: '100%' }} status="error" />
         <span>date picker(range) error message</span>
       </div>
 
-      <h3>TimePicker : Range</h3>
+      <h3 style={h3Style}>TimePicker : Range</h3>
       <div style={{ width: '50%' }}>
         <TimePicker.RangePicker style={{ width: '100%' }} status="error" />
         <span>time picker(range) error message</span>
       </div>
 
-      <h3>AutoComplete</h3>
+      <h3 style={h3Style}>AutoComplete</h3>
       <div style={{ width: '50%' }}>
         <Select
           defaultValue={[]}
@@ -124,7 +175,7 @@ function AdminBasicFormOther() {
         <span>auto complete error message</span>
       </div>
 
-      <h3>TreeSelect</h3>
+      <h3 style={h3Style}>TreeSelect</h3>
       <div style={{ width: '50%' }}>
         <TreeSelect
           showSearch
@@ -147,7 +198,7 @@ function AdminBasicFormOther() {
         <span>tree-select error message</span>
       </div>
 
-      <h3>Editor</h3>
+      <h3 style={h3Style}>Editor</h3>
       <div style={{ width: '50%' }}>
         <div className="editor-in-valid">
           <Editor
@@ -180,8 +231,30 @@ function AdminBasicFormOther() {
         <span>editor error message</span>
       </div>
 
-      <h3>전체 나열</h3>
+      <h3 style={h3Style}>전체 나열</h3>
       <div>
+        <AntSelect
+          style={{ width: '100%' }}
+          options={[
+            {
+              value: 'jack',
+              label: 'Jack',
+            },
+            {
+              value: 'lucy',
+              label: 'Lucy',
+            },
+            {
+              value: 'Yiminghe',
+              label: 'yiminghe',
+            },
+            {
+              value: 'disabled',
+              label: 'Disabled',
+              disabled: true,
+            },
+          ]}
+        />
         <DatePicker onChange={onChange} status="error" />
         <TimePicker minuteStep={15} secondStep={10} hourStep={1} status="error" />
         <RangePicker status="error" />
