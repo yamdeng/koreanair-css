@@ -24,7 +24,7 @@ ModalPageInfo.list = [
   {
     title: '로딩바',
     Component: PLoadingBar,
-    path: 'loading',
+    path: 'PLoadingBar',
     description: '',
     success: false,
   },

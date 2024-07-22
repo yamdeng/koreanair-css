@@ -112,8 +112,9 @@ function PublishHome() {
         </button>
       </div>
       <div style={{ padding: 10, marginBottom: 10 }}>
-        이름/파일명 : <input style={{ padding: 5 }} value={keyword} onChange={changeKeyword} />
-        {/* 새탭 <input type="checkbox" checked={checkedNewTab} onChange={changeNewTab} /> */}
+        이름/파일명 :{' '}
+        <input style={{ padding: 5, border: '1px solid black' }} value={keyword} onChange={changeKeyword} />
+        새탭 <input type="checkbox" checked={checkedNewTab} onChange={changeNewTab} />
       </div>
       {contentComponent}
     </>

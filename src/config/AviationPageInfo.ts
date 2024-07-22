@@ -8,7 +8,7 @@ AviationPageInfo.list = [
   {
     title: '항공안전 포탈',
     Component: PAviationPortal1,
-    path: 'portal1',
+    path: 'PAviationPortal1',
     description: '',
     success: false,
   },
