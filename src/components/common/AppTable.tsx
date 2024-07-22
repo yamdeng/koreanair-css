@@ -6,6 +6,7 @@ import { produce } from 'immer';
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import GridActionButtonComponent from './GridActionButtonComponent';
 import GridLinkComponent from './GridLinkComponent';
+import { DatePicker, TimePicker, Select as AntSelect } from 'antd';
 
 const defaultColDef = {
   sortable: true,
@@ -232,11 +233,29 @@ function AppTable(props) {
           <button type="button" name="button" className="btn btn-control btn-darkblue">
             신규
           </button>
-          <span className="ml5">
-            <select className="searchSelect flex w100" data-title="선택해주세요.">
-              <option>전체</option>
-              <option>전체</option>
-            </select>
+          <span className="ml5 w100">
+            <AntSelect
+              style={{ width: '200px' }}
+              options={[
+                {
+                  value: 'jack',
+                  label: 'Jack',
+                },
+                {
+                  value: 'lucy',
+                  label: 'Lucy',
+                },
+                {
+                  value: 'Yiminghe',
+                  label: 'yiminghe',
+                },
+                {
+                  value: 'disabled',
+                  label: 'Disabled',
+                  disabled: true,
+                },
+              ]}
+            />
           </span>
         </div>
       </div>

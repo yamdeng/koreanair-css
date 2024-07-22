@@ -1,47 +1,5 @@
 @charset "UTF-8";
 
-/*html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video, p{margin:0;padding:0;border:0;list-style:none;color:#222;font-size:16px;font-family:inherit;font-weight:inherit;vertical-align:baseline;line-height:1.5;letter-spacing:-0.02em;word-break: break-all}
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section{display:block}
-html{box-sizing:border-box;box-sizing:border-box}
-*, *:before, *:after{box-sizing:border-box}
-img{width:100%;max-width:100%;vertical-align:top; -ms-interpolation-mode:bicubic}
-strong{font-weight:700}
-ol, ul, li{ list-style:none}
-blockquote, q {quotes:none}
-blockquote:before,
-blockquote:after,
-q:before, q:after{content:none}
-table {width:100%;border-collapse:collapse;border-spacing:0;table-layout:fixed}
-textarea{resize:none}
-input{-webkit-appearance:none;-moz-appearance:none;appearance:none;border-radius:0;outline:none}
-button{margin:0;padding:0;border:0;background:0;cursor:pointer;-webkit-appearance:none;color:inherit}
-button:disabled{cursor:default}
-a, a * {cursor:pointer}
-pre {white-space:pre-wrap}
-hr {margin:0;padding:0;border:0;outline:0}
-input[type="checkbox"],
-input[type="radio"] {opacity: 0; margin: 0; position: absolute; cursor: pointer; width: 100%; height:100%}
-input[type="checkbox"]:disabled + label span.info-text__item{color:#aaa}
-.radio__input[type="radio"]{width:0;height:0}
-sup{vertical-align:super;font-size:0.5em}
-a,
-a:hover,
-a:focus {color:inherit;text-decoration:none}
-input::-webkit-search-cancel-button{display:none}*/
-
 .Rightconts caption,.Rightconts legend{visibility:hidden;height:0;line-height:0}
 form {display:inline}
 .label{display:inline-block;font-weight:700;color:var(--color-darkblue100);margin-right:5px;line-height:1.1;vertical-align:middle}
@@ -52,6 +10,7 @@ body, button, input, textarea, select, label{font-family:'KoreanAirSans';font-we
 .ml5{margin-left:5px !important}
 .w100{width:100px !important}
 
+
 .wrap{position:relative;flex-direction:row;width:100%;height:calc(100vh - 0px);overflow-x:hidden}
 .leftMenu{position:relative;float:left;margin:0 0 0 -260px;height:calc(100vh - 0px)}
 .leftMenu .LNB_side{position:fixed;left:0;top:0px;max-width:260px;width:100%;height:100%;border-right:solid 1px #d9d9d9}
@@ -60,32 +19,32 @@ body, button, input, textarea, select, label{font-family:'KoreanAirSans';font-we
 .leftMenu .LNB_list li a{width:100%;background:url(../images/icon-arrow-up.svg) right center no-repeat}
 .leftMenu .LNB_list li a.active{background: url(../images/icon-arrow-down.svg) right center no-repeat;font-weight:600}
 .leftMenu .LNB_list li .mu-2depth{display:flex;width: 100%;flex-direction: column;align-items: flex-start}
-.leftMenu .LNB_list li .mu-2depth li{display:flex;font-size:16px;color:var(--color-text-enabled, #5E5E5E);padding:8px 12px;align-items:flex-start;gap:var(--size-1, 4px);align-self:stretch;border:0}
+.leftMenu .LNB_list li .mu-2depth li{display:flex;font-size:1.6rem;color:var(--color-text-enabled, #5E5E5E);padding:8px 12px;align-items:flex-start;gap:var(--size-1, 4px);align-self:stretch;border:0}
 .leftMenu .LNB_list li .mu-2depth li a{background:none;border:none}
 .leftMenu .LNB_list li .mu-2depth li.active{border-radius: var(--radius-small, 8px);background:var(--color-background-container-highlight, #EEF8FD);color:var(--color-text-body, #051766);font-weight:600}
 .leftMenu .LNB_list li .mu-2depth li .mu-3depth{display:flex;width: 100%;flex-direction:column;align-items:flex-start}
 .leftMenu .LNB_list li .mu-2depth li .mu-3depth li{background: url(../images/icon-dot.svg) no-repeat left center;border:none;font-size:16px;color:var(--color-text-enabled, #5E5E5E);display:flex;padding:8px 12px;align-items:flex-start;gap: var(--size-1, 4px);align-self:stretch}
 .leftMenu .LNB_list li .mu-2depth li .mu-3depth li.active{background: url(../images/icon-dot.svg) no-repeat left center;text-decoration-line:underline;color:var(--color-text-body, #051766);font-weight:600}
   
-.contents{position:relative;margin:0 0 0 260px;width:100%;padding:24px 30px 0px 30px;box-sizing:border-box;background-color:var(--color-neutral10);background-color:var(--color-lightgray0);}
+.contents{position:relative;margin:0 0 0 260px;width:100%;padding:2.4rem 3.0rem 3.0rem 3.0rem;box-sizing:border-box;background-color:var(--color-neutral10);background-color:var(--color-lightgray0);}
 .contents .Rightconts{width:calc(100% - 260px)}
 .contents .conts-title{position:relative;border-bottom:solid 1px var(--color-neutral-40);align-items:center;padding:20px 0 40px 0px;margin-bottom:10px}
 .contents .conts-title h2{float:left;font-family:"KoreanAirSans";font-size:21px;color:var(--color-neutral-80);font-weight:700}
 .contents .btn-area{position:relative;right:0;top:0;float:right}
-
 .contents .Rightconts .conts-tit{display:flex;position:relative;padding:0 0 5px;border-bottom:solid 1px #d9d9d9;align-items:center}
 .contents .Rightconts .conts-tit h2{font-family:'KoreanAirSans';font-size:20px}
-
-.controlArea{flex:1;text-align:right}
-.controlArea .btn{height:35px;padding:0 20px;font-size:16px;font-weight:700;border:none;color:var(--color-neutral10);border-radius:9999px;opacity:1;transition:opacity 0.1s ease}
-.btn.btn-darkblue{background:var(--color-darkblue100);color:var(--color-neutral10)}
-
-
 .contents .Rightconts .conts-subTit{display:flex;align-items:end;padding-bottom:10px}
-.contents .Rightconts .conts-subTit span{font-size:15px;}
+.contents .Rightconts .conts-subTit span{font-size:1.5rem}
+.controlArea{flex:1;text-align:right}
+.controlArea .btn{height:35px;padding:0 20px;font-size:16px;font-weight:700;border:none;color:var(--color-neutral-10);border-radius:9999px;opacity:1;transition:opacity 0.1s ease}
+.btn.btn-darkblue{background:var(--color-darkblue-100);color:var(--color-neutral-10)}
 
 
-
+/*scrollbar color*/
+.ag-root-wrapper{border-radius:0}
+::-webkit-scrollbar{width:0.3em;height:0.3em}
+::-webkit-scrollbar-track{border-radius:0px;background:var(--color-neutral-30)}
+::-webkit-scrollbar-thumb{border-radius:10px;background:var(--color-neutral-60)}
 
 
 

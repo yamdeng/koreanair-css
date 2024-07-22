@@ -109,7 +109,7 @@ function PRiskForm1() {
       {/* //검색영역 */}
 
       {/*그리드영역 */}
-      <div className=""></div>
+      <div className="">그리드영역</div>
       {/*//그리드영역 */}
 
       <div className="pagination">
