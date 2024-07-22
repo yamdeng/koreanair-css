@@ -52,7 +52,7 @@ function ModalTemplate() {
         신규파일명
         <p>
           <button className="button" onClick={() => setDisplayModal(true)}>
-            alert modal open
+            test modal open
           </button>
         </p>
         <TestModal displayModal={displayModal} closeModal={closeModal} />
