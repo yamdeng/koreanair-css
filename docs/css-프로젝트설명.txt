@@ -1,0 +1,47 @@
+#.소스 정보
+ -git url : https://github.com/yamdeng/koreanair-css.git
+
+#.프로젝트 실행 방법 : yarn 명령어로 라이브러리 설치
+ -사용자 퍼블리싱 실행 : yarn dev
+ -관리자 퍼블리싱 실행 : yarn dev:admin
+
+#.import.scss, importadmin.scss
+ -import.scss : 사용자에서 사용할 스타일 모음
+ -importadmin.scss : 관리자에서 사용할 스타일 모음
+
+#.퍼블리싱 작업 소통시 필요한 주요 폴더 설명
+ -src/config
+ -src/components/publish : 아래는 하위 폴더 설명
+  1.common : 공통/홈/레이아웃
+  2.aviation : 항공안전
+  3.occupation : 산업안전
+  4.admin : 관리자
+  5.modal : 모달
+  6.mobile : 모바일
+
+#.6가지 대분류 페이지 라우팅 설정 정보
+  1.common : 공통/홈/레이아웃 : src/config/CommonPageInfo.ts
+  2.aviation : 항공안전 : src/config/AviationPageInfo.ts
+  3.occupation : 산업안전 : src/config/OccupationPageInfo.ts
+  4.admin : 관리자 : src/config/AdminPageInfo.ts
+  5.modal : 모달 : src/config/ModalPageInfo.ts
+  6.mobile : 모바일 : src/config/MobilePageInfo.ts
+
+#.신규 퍼블리싱 파일 생성 방법
+ 1.src/components/publish/{분류}/신규생성파일.tsx 파일 생성
+  -{분류}는 위의 6개의 분류를 의미함
+  -신규 파일 생성시 복사할만한 파일
+   ㄱ.모달인 경우 src/template/ModalTemplate.tsx 파일을 복사해서 신규파일로 생성
+   ㄴ.일반 페이지인 경우 src/template/PageTemplate.tsx
+
+ 2.위 1번에서 신규 생성한 파일에 해당하는 설정 파일에 추가 : src/config/{분류}.ts
+
+
+
+
+
+
+
+
+
+

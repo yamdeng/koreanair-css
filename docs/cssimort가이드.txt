@@ -20,4 +20,4 @@
 (전용) -responsive.scss : 항공안전, 산업안전 2개 같이 사용하는 공통 반응형
 (전용) -koreanair.scss : 항공안전, 산업안전 2개 같이 사용하는 공통
 (전용) -aviation.scss : 항공안전 전용
-(전용) -industry.scss : 산업안전 전용
+(전용) -occupation.scss : 산업안전 전용
