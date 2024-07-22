@@ -6,6 +6,7 @@ import AviationPageInfo from './config/AviationPageInfo';
 import OccupationPageInfo from './config/OccupationPageInfo';
 import AdminPageInfo from './config/AdminPageInfo';
 import ModalPageInfo from './config/ModalPageInfo';
+import MobilePageInfo from './config/MobilePageInfo';
 
 function PublishHome() {
   const [tabIndex, setTabIndex] = useState(1);
@@ -73,6 +74,15 @@ function PublishHome() {
         checkedNewTab={checkedNewTab}
       />
     );
+  } else if (tabIndex === 6) {
+    contentComponent = (
+      <CommonRouteTable
+        moduleDirectoryPath="mobile/"
+        pageList={MobilePageInfo.list}
+        keyword={keyword}
+        checkedNewTab={checkedNewTab}
+      />
+    );
   }
 
   const changeKeyword = (event) => {
@@ -109,6 +119,9 @@ function PublishHome() {
         </button>
         <button className={tabIndex === 5 ? 'active' : ''} onClick={() => changeTabIndex(5)}>
           모달
+        </button>
+        <button className={tabIndex === 6 ? 'active' : ''} onClick={() => changeTabIndex(6)}>
+          모바일
         </button>
       </div>
       <div style={{ padding: 10, marginBottom: 10 }}>

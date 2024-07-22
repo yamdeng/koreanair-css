@@ -6,6 +6,7 @@ import useAviationRoute from './components/publish/layout/useAviationRoute';
 import useOccupationRoute from './components/publish/layout/useOccupationRoute';
 import useAdminRoute from './components/publish/layout/useAdminRoute';
 import useModalRoute from './components/publish/layout/useModalRoute';
+import useMobileRoute from './components/publish/layout/useMobileRoute';
 
 function App() {
   const commonRoute = useCommonRoute();
@@ -13,6 +14,7 @@ function App() {
   const occupationRoute = useOccupationRoute();
   const modalRoute = useModalRoute();
   const adminRoute = useAdminRoute();
+  const mobileRoute = useMobileRoute();
 
   return (
     <div>
@@ -23,6 +25,7 @@ function App() {
         {occupationRoute}
         {adminRoute}
         {modalRoute}
+        {mobileRoute}
       </Routes>
       <ToastContainer autoClose={3000} hideProgressBar={true} />
     </div>
