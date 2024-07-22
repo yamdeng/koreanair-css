@@ -1,15 +1,15 @@
 import { CopyToClipboard } from 'react-copy-to-clipboard';
 import { toast } from 'react-toastify';
-import IndustryPageInfo from '@/config/IndustryPageInfo';
+import OccupationPageInfo from '@/config/OccupationPageInfo';
 import Config from '@/config/Config';
 import CommonUtil from '../../utils/CommonUtil';
 import { useMovePage } from '@/hooks/useMovePage';
 import CommonToolTip from '../common/CommonToolTip';
 
-const moduleDirectoryPath = 'industry/';
+const moduleDirectoryPath = 'occupation/';
 
-function IndustryPublishList({ keyword, checkedNewTab }) {
-  const list = CommonUtil.getFilterListByMenuList(IndustryPageInfo.list, keyword);
+function OccupationPublishList({ keyword, checkedNewTab }) {
+  const list = CommonUtil.getFilterListByMenuList(OccupationPageInfo.list, keyword);
   const movePage = useMovePage();
   return (
     <div>
@@ -76,4 +76,4 @@ function IndustryPublishList({ keyword, checkedNewTab }) {
   );
 }
 
-export default IndustryPublishList;
+export default OccupationPublishList;

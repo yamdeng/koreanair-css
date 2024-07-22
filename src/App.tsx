@@ -3,14 +3,14 @@ import { ToastContainer } from 'react-toastify';
 import PublishHome from './PublishHome';
 import useCommonRoute from './components/publish/layout/useCommonRoute';
 import useAviationRoute from './components/publish/layout/useAviationRoute';
-import useIndustryRoute from './components/publish/layout/useIndustryRoute';
+import useOccupationRoute from './components/publish/layout/useOccupationRoute';
 import useAdminRoute from './components/publish/layout/useAdminRoute';
 import useModalRoute from './components/publish/layout/useModalRoute';
 
 function App() {
   const commonRoute = useCommonRoute();
   const aviationRoute = useAviationRoute();
-  const industryRoute = useIndustryRoute();
+  const occupationRoute = useOccupationRoute();
   const modalRoute = useModalRoute();
   const adminRoute = useAdminRoute();
 
@@ -20,7 +20,7 @@ function App() {
         <Route path="/" element={<PublishHome />} />
         {commonRoute}
         {aviationRoute}
-        {industryRoute}
+        {occupationRoute}
         {adminRoute}
         {modalRoute}
       </Routes>

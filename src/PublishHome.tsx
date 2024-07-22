@@ -3,7 +3,7 @@ import { useSearchParams, useNavigate } from 'react-router-dom';
 import CommonPageInfo from './config/CommonPageInfo';
 import CommonRouteTable from './CommonRouteTable';
 import AviationPageInfo from './config/AviationPageInfo';
-import IndustryPageInfo from './config/IndustryPageInfo';
+import OccupationPageInfo from './config/OccupationPageInfo';
 import AdminPageInfo from './config/AdminPageInfo';
 import ModalPageInfo from './config/ModalPageInfo';
 
@@ -49,8 +49,8 @@ function PublishHome() {
   } else if (tabIndex === 3) {
     contentComponent = (
       <CommonRouteTable
-        moduleDirectoryPath="industry/"
-        pageList={IndustryPageInfo.list}
+        moduleDirectoryPath="occupation/"
+        pageList={OccupationPageInfo.list}
         keyword={keyword}
         checkedNewTab={checkedNewTab}
       />
