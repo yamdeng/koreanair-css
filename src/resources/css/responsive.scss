@@ -24,19 +24,21 @@
   .LNB {margin-top: 0; max-width: none; z-index: 11;}
   .LNB .LNB_menu {display: block;}
   .LNB .LNB_list {padding: 2.4rem;}
+
+  .detail-form .detail-list .list{}
+  .detail-form .detail-list .list{display:block;position:relative;width:100%;padding:1.5rem 0;border-bottom:solid 1px var(--color-neutral-40)}
+
+  .detail-form .detail-list .list{display:block;position:relative;width:100%;padding:1.5rem 0;border-bottom:solid 1px var(--color-neutral-40)}
+  .detail-list{width:100%}
+  .detail-list .list{display:block;width:100%}
+  .detail-list .list .list-row{display:inline-block;width:100%;margin-left:0px}
+  .detail-form .detail-list .list .list-row + .list-row{margin-left:0px;margin-top:20px}
 }
 
 
 @media screen and (max-width: 375px) {  
   .LNB .LNB_menu .m-lnb_top_logo a span {display: none;}
 
-  .detail-form{}
-  .detail-form .detail-list .list{}
-  .detail-form .detail-list .list{display:block;position:relative;width:100%;padding:1.5rem 0;border-bottom:solid 1px var(--color-neutral-40)}
 
-  .detail-list{width:100%}
-  .detail-list .list{display:block;width:100%}
-  .detail-list .list .list-row{display:inline-block;width:100%;margin-left:0px}
-  .detail-form .detail-list .list .list-row + .list-row{margin-left:0px;margin-top:20px}
 
 }
