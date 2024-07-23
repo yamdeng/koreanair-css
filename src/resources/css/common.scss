@@ -58,7 +58,8 @@ body * {
 .mr5{margin-right:5px !important}
 
 button, input, textarea, select, label{font-family:'KoreanAirSans';font-weight:400}
-/*버튼*/
+.df{display:flex}
+.util{line-height:3.5rem;align-items:center;padding:0 0.2rem}
 button,input{border:none;background:none;vertical-align:middle}
 select{vertical-align:middle}
 input{margin:0;padding:0}

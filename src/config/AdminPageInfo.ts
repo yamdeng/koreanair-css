@@ -1,5 +1,6 @@
 import AdminBasicList from '@/components/publish/admin/AdminBasicList';
 import AdminBasicEdit from '@/components/publish/admin/AdminBasicEdit';
+import AdminBasicView from '@/components/publish/admin/AdminBasicView';
 import AdminBasicForm2 from '@/components/publish/admin/AdminBasicForm2';
 import AdminBasicFormOther from '@/components/publish/admin/AdminBasicFormOther';
 
@@ -11,14 +12,21 @@ AdminPageInfo.list = [
     Component: AdminBasicList,
     path: 'AdminBasicList',
     description: '',
-    success: false,
+    success: true,
   },
   {
     title: '레이아웃-등록',
     Component: AdminBasicEdit,
     path: 'AdminBasicEdit',
     description: '',
-    success: false,
+    success: true,
+  },
+  {
+    title: '레이아웃-상세',
+    Component: AdminBasicView,
+    path: 'AdminBasicView',
+    description: '',
+    success: true,
   },
   {
     title: '기본 폼',
