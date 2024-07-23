@@ -1,5 +1,5 @@
 import AdminBasicList from '@/components/publish/admin/AdminBasicList';
-import AdminBasicForm from '@/components/publish/admin/AdminBasicForm';
+import AdminBasicEdit from '@/components/publish/admin/AdminBasicEdit';
 import AdminBasicForm2 from '@/components/publish/admin/AdminBasicForm2';
 import AdminBasicFormOther from '@/components/publish/admin/AdminBasicFormOther';
 
@@ -15,8 +15,8 @@ AdminPageInfo.list = [
   },
   {
     title: '레이아웃-등록',
-    Component: AdminBasicForm,
-    path: 'AdminBasicForm',
+    Component: AdminBasicEdit,
+    path: 'AdminBasicEdit',
     description: '',
     success: false,
   },

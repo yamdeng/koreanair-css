@@ -12,15 +12,15 @@ function AdminBasicList() {
   return (
     <>
       <div className="conts-title">
-        <h2>조사보고서</h2>
+        <h2>타이틀</h2>
         <div className="btn-area">
-          <button type="button" name="button" className="btn-sm btn-darkblue">
+          <button type="button" name="button" className="btn-sm btn_text btn-darkblue-line">
             조회
           </button>
-          <button type="button" name="button" className="btn-sm btn-darkblue">
+          <button type="button" name="button" className="btn-sm btn_text btn-darkblue-line">
             신규
           </button>
-          <button type="button" name="button" className="btn-sm btn-darkblue">
+          <button type="button" name="button" className="btn-sm btn_text btn-darkblue-line">
             초기화
           </button>
         </div>

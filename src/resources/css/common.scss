@@ -50,6 +50,7 @@ body * {
 }
 
 .contents legend{visibility:hidden;height:0;line-height:0}
+.required{color:var(--color-negative)}
 
 .wid30{width:30%}
 .wid50{width:50%}
@@ -168,8 +169,10 @@ input, select{font-family:'KoreanAirSans'}
 .form-tag-select:focus, .form-tag-select.active {border:1px solid var(--color-mblue-100) !important;color:var(--color-mblue-100) !important}
 .form-tag:disabled + .f-label, .form-tag:focus + .f-label, .form-tag.active + .f-label, .form-tag:not([value=""]) + .f-label, .form-tag.invalid + .f-label{left:1.0rem;top:-0.8rem;font-size:1.3rem;transition: all 0.2s ease}
 .form-tag:not([value=""]) + .f-label{color:var(--color-neutral-80)}
+.form-tag:disabled{background:var(--color-neutral-20)}
+.form-tag:not([value=""]){border: 1px solid var(--color-neutral-40)}
 .form-tag.active+.f-label, .form-tag:focus+.f-label{color:var(--color-mblue-100) !important}
-.form-tag_select:disabled + .f-label, .form-tag-select:focus + .f-label, .form-tag-select.active + .f-label, .form-tag-select.isValue + .f-label, .form-tag-select.invalid + .f-label{left:1.0rem;top:-2.0rem;font-size:1.3rem;transition: all 0.3s ease}
+.form-tag-select:disabled + .f-label, .form-tag-select:focus + .f-label, .form-tag-select.active + .f-label, .form-tag-select.isValue + .f-label, .form-tag-select.invalid + .f-label{left:1.0rem;top:-2.0rem;font-size:1.3rem;transition: all 0.3s ease}
 
 /*toggle*/
 .info-wrap{padding:0px 2.0rem 2.6rem;border-top:1px solid var(--color-neutral-40)}
