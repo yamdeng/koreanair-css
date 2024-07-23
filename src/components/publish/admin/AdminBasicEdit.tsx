@@ -169,7 +169,7 @@ function AdminBasicEdit() {
                       <div className="wid100">
                         <DatePicker className="wid100" status="" /> {/* status="error" */}
                       </div>
-                      <span className="util">~</span>
+                      <span className="until">~</span>
                       <div className="wid100">
                         <DatePicker className="wid100" status="" />
                       </div>

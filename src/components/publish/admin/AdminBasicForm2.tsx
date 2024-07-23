@@ -103,7 +103,7 @@ function AdminBasicForm2() {
                 <div>
                   <DatePicker status="" /> {/* status="error" */}
                 </div>
-                <span className="util">~</span>
+                <span className="until">~</span>
                 <div>
                   <DatePicker status="" />
                   {/* <TimePicker minuteStep={15} secondStep={10} hourStep={1} status="error" /> */}

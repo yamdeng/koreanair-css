@@ -229,8 +229,8 @@ function AppTable(props) {
 
       <div className="conts-subTit">
         <span>{CommonUtil.formatString(gridTotalCountTemplate, rowData.length)}</span>
-        <div className="controlArea">
-          <button type="button" name="button" className="btn btn-control btn-darkblue">
+        <div className="btn-area">
+          <button type="button" name="button" className="btn-sm btn_text btn-darkblue-line">
             신규
           </button>
           <span className="ml5 w100">

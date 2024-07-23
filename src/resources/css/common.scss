@@ -60,7 +60,7 @@ body * {
 
 button, input, textarea, select, label{font-family:'KoreanAirSans';font-weight:400}
 .df{display:flex}
-.util{line-height:3.5rem;align-items:center;padding:0 0.2rem}
+.until{line-height:3.5rem;align-items:center;padding:0 0.2rem}
 button,input{border:none;background:none;vertical-align:middle}
 select{vertical-align:middle}
 input{margin:0;padding:0}
@@ -88,7 +88,7 @@ input, select{font-family:'KoreanAirSans'}
   button + button{margin-left:0.5rem}
   .btn_text{font-family:'KoreanAirSans';font-weight:400;font-size:1.5rem}
   .btn-darkblue-line{border:solid 1px var(--color-darkblue-100);color:var(--color-neutral-80);color:var(--color-darkblue-100)}
-  .btn-sm{padding:0.3rem 1.8rem;border-radius:99.9rem;align-items:center}
+  .btn-sm{padding:0.3rem 1.8rem;line-height:1.8rem;border-radius:99.9rem;align-items:center}
   position:relative;right:0;top:0;float:right;
   @include mobile {
     width:100%;
