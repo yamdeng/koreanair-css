@@ -47,7 +47,7 @@ body, button, input, textarea, select, label{font-family:'KoreanAirSans';font-we
 .form-table .form-cell{position:relative;flex-grow:1;padding-right:10px;padding-top:0}
 .form-table .form-cell:last-child{padding-right:0}
 
-/*컨텐츠상단버튼*/
+/*컨텐츠상단버튼
 .btn-area{
   > button{}
   button + button{margin-left:0.5rem}
@@ -68,7 +68,7 @@ body, button, input, textarea, select, label{font-family:'KoreanAirSans';font-we
       flex-grow:1;
     }
   }
-}
+}*/
 
 
 /*scrollbar color*/

@@ -88,7 +88,8 @@ input, select{font-family:'KoreanAirSans'}
   button + button{margin-left:0.5rem}
   .btn_text{font-family:'KoreanAirSans';font-weight:400;font-size:1.5rem}
   .btn-darkblue-line{border:solid 1px var(--color-darkblue-100);color:var(--color-neutral-80);color:var(--color-darkblue-100)}
-  .btn-sm{padding:0.3rem 1.8rem;line-height:1.8rem;border-radius:99.9rem;align-items:center}
+  .btn-lightblue{background-color:var(--color-lightblue-40);color:var(--color-darkblue-100)}
+  .btn-sm{padding:0.4rem 1.8rem;line-height:1.8rem;border-radius:99.9rem;align-items:center}
   position:relative;right:0;top:0;float:right;
   @include mobile {
     width:100%;
