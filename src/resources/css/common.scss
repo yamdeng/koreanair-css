@@ -109,6 +109,8 @@ input, select{font-family:'KoreanAirSans'}
   > button{margin:20px 2px}
   .btn_text{font-family:'KoreanAirSans';font-weight:400;font-size:1.6rem}
   .btn_confirm{padding:0.8rem 3.8rem;border-radius:99.9rem;background:var(--color-darkblue-100)}
+  .btn_close{padding:0.8rem 3.8rem;border-radius:99.9rem;background:var(--color-neutral-30)}
+  .btn_correct{padding:0.8rem 3.8rem;border-radius:99.9rem;background:var(--color-neutral-30)}
   text-align:right;
   @include mobile {
     width: 100%;

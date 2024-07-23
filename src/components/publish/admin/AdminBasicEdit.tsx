@@ -127,7 +127,7 @@ function AdminBasicEdit() {
       {/* 하단버튼영역 */}
       <div className="contents-btns">
         <button className="btn_text text_color_neutral-10 btn_confirm">저장</button>
-        <button className="btn_text text_color_neutral-10 btn_confirm">취소</button>
+        <button className="btn_text text_color_darkblue-100 btn_close">취소</button>
       </div>
       {/* //하단버튼영역 */}
     </>

@@ -26,7 +26,7 @@ body, button, input, textarea, select, label{font-family:'KoreanAirSans';font-we
 .leftMenu .LNB_list li .mu-2depth li .mu-3depth li{background: url(../images/icon-dot.svg) no-repeat left center;border:none;font-size:16px;color:var(--color-text-enabled, #5E5E5E);display:flex;padding:8px 12px;align-items:flex-start;gap: var(--size-1, 4px);align-self:stretch}
 .leftMenu .LNB_list li .mu-2depth li .mu-3depth li.active{background: url(../images/icon-dot.svg) no-repeat left center;text-decoration-line:underline;color:var(--color-text-body, #051766);font-weight:600}
   
-.contents{position:relative;margin:0 0 0 260px;width:100%;padding:2.4rem 3.0rem 3.0rem 3.0rem;box-sizing:border-box;background-color:var(--color-neutral10);background-color:var(--color-lightgray0);}
+.contents{position:relative;margin:0 0 0 260px;width:100%;padding:0 3.0rem 3.0rem 3.0rem;box-sizing:border-box;background-color:var(--color-neutral10);background-color:var(--color-lightgray0);}
 .contents .Rightconts{width:calc(100% - 260px)}
 .contents .conts-title{position:relative;border-bottom:solid 1px var(--color-neutral-40);align-items:center;padding:20px 0 40px 0px;margin-bottom:10px}
 .contents .conts-title h2{float:left;font-family:"KoreanAirSans";font-size:2.1rem;color:var(--color-neutral-80);font-weight:700}
