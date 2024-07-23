@@ -3,9 +3,10 @@ import Modal from 'react-modal';
 import { getAllData } from '@/data/grid/example-data-new';
 import { testColumnInfos } from '@/data/grid/table-column';
 import AppTable from '@/components/common/AppTable';
-import PBoxForm from '@/components/common/PBoxForm';
+import { DatePicker, Select as AntSelect } from 'antd';
 
-function TreeModal(props) {
+function ListModal(props) {
+  const [inputValue, setInputValue] = useState('');
   const { displayModal, closeModal } = props;
   const rowData = getAllData();
   const columns = testColumnInfos;
@@ -16,7 +17,7 @@ function TreeModal(props) {
       isOpen={displayModal}
       ariaHideApp={false}
       overlayClassName={'alert-modal-overlay'}
-      className={'org-select-modal-content'}
+      className={'list-common-modal-content'}
       onRequestClose={() => {
         closeModal();
       }}
@@ -26,17 +27,101 @@ function TreeModal(props) {
         <div className="pop_full_cont_box">
           <div className="pop_flex_group">
             <div className="pop_cont_form">
-              <PBoxForm />
+              <div className="boxForm">
+                <div className="form-table">
+                  <div className="form-cell wid50">
+                    <span className="form-group wid100 mr5">
+                      <input
+                        type="text"
+                        className="form-tag"
+                        name="title"
+                        value={inputValue}
+                        onChange={(event) => {
+                          setInputValue(event.target.value);
+                        }}
+                      />
+                      <label className="f-label">
+                        Sbject <span className="required">*</span>
+                      </label>
+                    </span>
+                  </div>
+                  <div className="form-cell wid50">
+                    <span className="form-group wid100">
+                      <AntSelect
+                        style={{ width: '100%' }}
+                        options={[
+                          {
+                            value: 'jack',
+                            label: 'Jack',
+                          },
+                          {
+                            value: 'lucy',
+                            label: 'Lucy',
+                          },
+                          {
+                            value: 'Yiminghe',
+                            label: 'yiminghe',
+                          },
+                          {
+                            value: 'disabled',
+                            label: 'Disabled',
+                            disabled: true,
+                          },
+                        ]}
+                      />
+                    </span>
+                  </div>
+                </div>
+
+                <div className="form-table">
+                  <div className="form-cell ">
+                    <span className="form-group wid100">
+                      <span className="form-group wid100">
+                        <AntSelect
+                          style={{ width: '100%' }}
+                          options={[
+                            {
+                              value: 'jack',
+                              label: 'Jack',
+                            },
+                            {
+                              value: 'lucy',
+                              label: 'Lucy',
+                            },
+                            {
+                              value: 'Yiminghe',
+                              label: 'yiminghe',
+                            },
+                            {
+                              value: 'disabled',
+                              label: 'Disabled',
+                              disabled: true,
+                            },
+                          ]}
+                        />
+                      </span>
+                    </span>
+                  </div>
+                  <div className="form-cell wid50">
+                    <span className="form-group form-glow">
+                      <DatePicker status="" /> {/* status="error" */}
+                      <span>~</span>
+                      <DatePicker status="" />
+                      {/* <TimePicker minuteStep={15} secondStep={10} hourStep={1} status="error" /> */}
+                    </span>
+                  </div>
+                </div>
+              </div>
               <AppTable rowData={rowData} columns={columns} />
             </div>
           </div>
         </div>
 
         <div className="pop_btns">
-          <button className="btn_text btn_dark_gray" onClick={closeModal}>
+          <button className="btn_text text_color_neutral-90 btn_close" onClick={closeModal}>
             취소
           </button>
-          <button className="btn_text btn_green" onClick={closeModal}>
+          <button className="btn_text text_color_neutral-10 btn_confirm" onClick={closeModal}>
             확인
           </button>
         </div>
@@ -63,7 +148,7 @@ function PListModal() {
             목록 모달 open
           </button>
         </p>
-        <TreeModal displayModal={displayModal} closeModal={closeModal} />
+        <ListModal displayModal={displayModal} closeModal={closeModal} />
       </div>
     </>
   );
