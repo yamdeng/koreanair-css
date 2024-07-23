@@ -228,7 +228,18 @@
   background-size: contain;
   cursor: pointer;
 }
-
+.text_color_darkblue-100 {
+  color: var(--color-darkblue-100); 
+}
+.text_color_neutral-90 {
+  color: var(--color-neutral-90); 
+}
+.text_color_neutral-40 {
+  color: var(--color-neutral-40); 
+}
+.text_color_neutral-10 {
+  color: var(--color-neutral-10); 
+}
 .pop_flex_group {
   display: flex;
   @include mobile {
