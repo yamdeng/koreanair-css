@@ -8,7 +8,7 @@ import iconSettingImage from '@resources/images/icon_setting.svg';
 import closeImage from '@resources/images/close.svg';
 
 export default function AviationLayout() {
-  const [displayLeftMenu, setDisplayLeftMenu] = useState(true);
+  const [displayLeftMenu, setDisplayLeftMenu] = useState(false);
   const toggleLeftMenu = () => {
     setDisplayLeftMenu(!displayLeftMenu);
   };

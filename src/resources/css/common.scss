@@ -147,15 +147,37 @@ input, select{font-family:'KoreanAirSans'}
 .controlArea{/*flex:1;text-align:right*/float:right}
 .controlArea .btn{height:35px;padding:0 20px;font-size:1.6rem;font-weight:700;border:none;color:var(--color-neutral-10);border-radius:9999px;opacity:1;transition:opacity 0.1s ease}
 
-/*등록*/
+/*등록
 .detail-form{margin-bottom:1.0rem}
-.detail-list .list{position:relative;padding:1.5rem 0;border-bottom:solid 1px var(--color-neutral-40)}
-.detail-list .list .f-label{position:absolute;left:0;top:50%;transform:translate(0, -50%);width:180px;text-align:left;color:var(--color-neutral-80);border-right:1px solid var(--color-neutral-40);padding-right:2.0rem;box-sizing:border-box}
+.detail-list .list{display:flex;position:relative;width:100%;padding:1.5rem 0;border-bottom:solid 1px var(--color-neutral-40)}
+.detail-list .list .list-row{display:inline-flex}
+.detail-list .list .list-row + .list-row{margin-left:20px}
+.detail-list .list .f-label{width:120px;text-align:left;color:var(--color-neutral-80);border-right:1px solid var(--color-neutral-40);padding-right:2.0rem;box-sizing:border-box}
 .detail-list .list .f-label .required{color:var(--color-negative)}
-.detail-list .list .cont{padding-left:200px;box-sizing:border-box}
+.detail-list .list .cont{display:inline;padding-left:20px;box-sizing:border-box;width:100%}
 .form-table{display:flex;width:100%}
 .form-table .form-cell{position:relative;flex-grow:1;padding-right:10px;padding-top:0}
-.form-table .form-cell:last-child{padding-right:0}
+.form-table .form-cell:last-child{padding-right:0}*/
+
+.detail-form{
+  .detail-list .list{display:flex;position:relative;width:100%;padding:1.5rem 0;border-bottom:solid 1px var(--color-neutral-40)}
+  .detail-list .list .list-row{/*display:flex;*/display:inline-flex}
+  .detail-list .list .list-row + .list-row{margin-left:20px}
+  .detail-list .list .f-label{/*position:absolute;left:0;top:50%;transform:translate(0, -50%);*/width:120px;text-align:left;color:var(--color-neutral-80);border-right:1px solid var(--color-neutral-40);padding-right:2.0rem;box-sizing:border-box}
+  .detail-list .list .f-label .required{color:var(--color-negative)}
+  .detail-list .list .cont{display:inline;padding-left:20px;box-sizing:border-box;width:100%}
+  .form-table{display:flex;width:100%}
+  .form-table .form-cell{position:relative;flex-grow:1;padding-right:10px;padding-top:0}
+  .form-table .form-cell:last-child{padding-right:0}
+  margin-bottom:1.0rem;
+  //@include mobile {
+  //  .detail-list{width:100%}
+  //  .detail-list .list{display:block;width:100%}
+  //  .detail-list .list .list-row{display:inline-block;width:100%;margin-left:0px}
+  //  .detail-list .list .list-row + .list-row{margin-left:0px}
+
+  //}
+}
 
 /*검색영역*/
 .boxForm{position:relative;padding:0px 2.0rem 2.0rem;margin-bottom:2.0rem;background-color:var(--color-neutral-20);border-radius:var(--radius-small, 8px)}

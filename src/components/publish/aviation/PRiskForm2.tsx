@@ -43,7 +43,88 @@ function PRiskForm2() {
             </button>
           </dt>
           <dd className="tg-conts">
-            <div className="edit-area">dfdfdfdf</div>
+            <div className="edit-area">
+              <div className="detail-form">
+                <ul className="detail-list">
+                  <li className="list">
+                    <div className="list-row wid50">
+                      <label className="f-label">
+                        발생일/시간(UTC) <span className="required">*</span>
+                      </label>
+                      <div className="cont">
+                        <div className="form-table">
+                          <div className="form-cell wid50">
+                            <span className="form-group wid100">
+                              <AntSelect
+                                style={{ width: '100%' }}
+                                status="error"
+                                options={[
+                                  {
+                                    value: 'jack',
+                                    label: 'Jack',
+                                  },
+                                  {
+                                    value: 'lucy',
+                                    label: 'Lucy',
+                                  },
+                                  {
+                                    value: 'Yiminghe',
+                                    label: 'yiminghe',
+                                  },
+                                  {
+                                    value: 'disabled',
+                                    label: 'Disabled',
+                                    disabled: true,
+                                  },
+                                ]}
+                              />
+                              <span className="errorText">data picker error message</span>
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="list-row wid50">
+                      <label className="f-label">
+                        Level 1 <span className="required">*</span>
+                      </label>
+                      <div className="cont">
+                        <div className="form-table">
+                          <div className="form-cell wid50">
+                            <span className="form-group wid100">
+                              <AntSelect
+                                style={{ width: '100%' }}
+                                status="error"
+                                options={[
+                                  {
+                                    value: 'jack',
+                                    label: 'Jack',
+                                  },
+                                  {
+                                    value: 'lucy',
+                                    label: 'Lucy',
+                                  },
+                                  {
+                                    value: 'Yiminghe',
+                                    label: 'yiminghe',
+                                  },
+                                  {
+                                    value: 'disabled',
+                                    label: 'Disabled',
+                                    disabled: true,
+                                  },
+                                ]}
+                              />
+                              <span className="errorText">data picker error message</span>
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
           </dd>
         </dl>
         <dl className="tg-item">
