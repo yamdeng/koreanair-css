@@ -67,6 +67,10 @@ function PRiskForm2() {
           </dd>
         </dl>
       </div>
+
+      {/* 하단버튼영역 */}
+      <div className="">하단버튼영역</div>
+      {/* //하단버튼영역 */}
     </>
   );
 }

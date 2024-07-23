@@ -60,13 +60,8 @@ button, input, textarea, select, label{font-family:'KoreanAirSans';font-weight:4
 /*버튼*/
 button,input{border:none;background:none;vertical-align:middle}
 select{vertical-align:middle}
-
 input{margin:0;padding:0}
 button{cursor:pointer}
-button + button{margin-left:0.5rem}
-.btn-sm{height:3.0rem;line-height:3.0rem;padding:0 2.0rem;font-size:1.5rem;font-weight:400;border:none;border-radius:9999px;align-items:center}
-
-.btn-darkblue{background:var(--color-darkblue-100);color:var(--color-neutral-10)}
 
 input[type=checkbox],input[type=radio]{padding:0;vertical-align:middle;margin-top:-0.3rem;*margin-top:-0.2rem}
 
@@ -83,6 +78,50 @@ input,button{vertical-align:middle}
 .textBox:hover, .textBox:focus{border-color:var( --color-mblue-100)}
 textarea.textBox{width:100%;line-height:2.0rem !important;padding:0.5rem}
 input, select{font-family:'KoreanAirSans'}
+
+/*컨텐츠상단버튼*/
+.btn-area{
+  > button{}
+  button + button{margin-left:0.5rem}
+  .btn_text{font-family:'KoreanAirSans';font-weight:400;font-size:1.5rem}
+  .btn-darkblue-line{border:solid 1px var(--color-darkblue-100);color:var(--color-neutral-80);color:var(--color-darkblue-100)}
+  .btn-sm{padding:0.3rem 1.8rem;border-radius:99.9rem;align-items:center}
+  position:relative;right:0;top:0;float:right;
+  @include mobile {
+    width:100%;
+    position:absolute;
+    left:0;
+    bottom:0;
+    display:flex;
+    > button {
+      border-radius: 0 !important;
+      margin:0 auto;
+      flex-basis:auto;
+      flex-grow:1;
+    }
+  }
+}
+
+/*컨텐츠하단버튼*/
+.contents-btns{
+  > button{margin:20px 2px}
+  .btn_text{font-family:'KoreanAirSans';font-weight:400;font-size:1.6rem}
+  .btn_confirm{padding:0.8rem 3.8rem;border-radius:99.9rem;background:var(--color-darkblue-100)}
+  text-align:right;
+  @include mobile {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    > button {
+      border-radius: 0 !important;
+      margin:0 auto;
+      flex-basis: auto;
+      flex-grow: 1;
+    }
+  }
+}
 
 
 /* 기본형 */

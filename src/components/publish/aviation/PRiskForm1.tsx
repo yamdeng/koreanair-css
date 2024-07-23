@@ -8,13 +8,13 @@ function PRiskForm1() {
       <div className="conts-title">
         <h2>조사보고서</h2>
         <div className="btn-area">
-          <button type="button" name="button" className="btn-sm btn-darkblue">
+          <button type="button" name="button" className="btn-sm btn_text btn-darkblue-line">
             조회
           </button>
-          <button type="button" name="button" className="btn-sm btn-darkblue">
+          <button type="button" name="button" className="btn-sm btn_text btn-darkblue-line">
             신규
           </button>
-          <button type="button" name="button" className="btn-sm btn-darkblue">
+          <button type="button" name="button" className="btn-sm btn_text btn-darkblue-line">
             초기화
           </button>
         </div>
@@ -137,6 +137,15 @@ function PRiskForm1() {
           <span className="sr-only">다음</span>
         </a>
       </div>
+
+      {/* 하단버튼영역 */}
+      <div className="contents-btns">
+        <button className="btn_text text_color_neutral-10 btn_confirm">출력</button>
+        <button className="btn_text text_color_neutral-10 btn_confirm">저장</button>
+        <button className="btn_text text_color_neutral-10 btn_confirm">제출</button>
+        <button className="btn_text text_color_neutral-10 btn_confirm">목록</button>
+      </div>
+      {/* //하단버튼영역 */}
     </>
   );
 }
