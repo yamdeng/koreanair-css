@@ -117,6 +117,56 @@ function AdminBasicList() {
             </span>
           </div>
         </div>
+        <div className="form-table">
+          <div className="form-cell wid50">
+            <span className="form-group wid100 mr5">
+              <input
+                type="text"
+                className="form-tag"
+                name="title"
+                value={inputValue}
+                onChange={(event) => {
+                  setInputValue(event.target.value);
+                }}
+              />
+              <label className="f-label">
+                장비번호 <span className="required">*</span>
+              </label>
+            </span>
+          </div>
+          <div className="form-cell wid50">
+            <span className="form-group wid100 mr5">
+              <input
+                type="text"
+                className="form-tag"
+                name="title"
+                value={inputValue}
+                onChange={(event) => {
+                  setInputValue(event.target.value);
+                }}
+              />
+              <label className="f-label">
+                장비명 <span className="required">*</span>
+              </label>
+            </span>
+          </div>
+          <div className="form-cell wid50">
+            <span className="form-group wid100 mr5">
+              <input
+                type="text"
+                className="form-tag"
+                name="title"
+                value={inputValue}
+                onChange={(event) => {
+                  setInputValue(event.target.value);
+                }}
+              />
+              <label className="f-label">
+                모델명 <span className="required">*</span>
+              </label>
+            </span>
+          </div>
+        </div>
       </div>
       {/* //검색영역 */}
 
