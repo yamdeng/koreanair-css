@@ -34,34 +34,38 @@ function PRiskForm2() {
       </div>
       {/* //검색영역 */}
 
-      <div className="conts-title">
-        <h3>발생정보</h3>
-      </div>
-
-      <div className="ux-accordion__group">
-        <div className=""></div>
-      </div>
-
-      <div className="pagination">
-        <a className="first" href="javascript:void(0)">
-          <span className="sr-only">이전</span>
-        </a>
-        <a className="prev" href="javascript:void(0)">
-          <span className="sr-only">이전</span>
-        </a>
-        <span>
-          <a href="javascript:void(0)">1</a>
-          <a href="javascript:void(0)">2</a>
-          <strong title="현재페이지">3</strong>
-          <a href="javascript:void(0)">4</a>
-          <a href="javascript:void(0)">5</a>
-        </span>
-        <a className="next" href="javascript:void(0)">
-          <span className="sr-only">다음</span>
-        </a>
-        <a className="last" href="javascript:void(0)">
-          <span className="sr-only">다음</span>
-        </a>
+      <div className="info-wrap toggle">
+        <dl className="tg-item active">
+          {/* toggle 선택되면  열어지면 active붙임*/}
+          <dt>
+            <button type="button" className="btn-tg">
+              발생정보
+            </button>
+          </dt>
+          <dd className="tg-conts">
+            <div className="edit-area">dfdfdfdf</div>
+          </dd>
+        </dl>
+        <dl className="tg-item">
+          <dt>
+            <button type="button" className="btn-tg">
+              비행정보
+            </button>
+          </dt>
+          <dd className="tg-conts">
+            <div className="edit-area">dfdfdfdf</div>
+          </dd>
+        </dl>
+        <dl className="tg-item">
+          <dt>
+            <button type="button" className="btn-tg">
+              조사보고서
+            </button>
+          </dt>
+          <dd className="tg-conts">
+            <div className="edit-area">dfdfdfdf</div>
+          </dd>
+        </dl>
       </div>
     </>
   );
