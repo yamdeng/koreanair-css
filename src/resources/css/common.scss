@@ -89,7 +89,7 @@ input, select{font-family:'KoreanAirSans'}
 .radio-wrap{display:inline-block;line-height:0}
 .radio-wrap > label {display:inline-block; min-height:4.0rem;padding:0.9rem 0.9rem 0.9rem 3.0rem;line-height:2.2rem}
 .radio-wrap > label > input + span {display:block;color:#666;}
-.radio-wrap > label > input:checked + span{color:rgba(34,34,34,1);}
+.radio-wrap > label > input:checked + span{color:rgba(34,34,34,1)}
 .radio-wrap > label > input + span:before, .radio-wrap > label > input + span:after{content:'';position:absolute;top:50%}
 .radio-wrap > label > input + span:before {left:0;width:2.0rem;height:2.0rem;background:transparent; border:1px solid #b5b5b5; border-radius:50%; -webkit-transform:translateY(-50%); transform:translateY(-50%);}
 .radio-wrap > label > input[type="checkbox"] + span:after{left:8px; margin-top:-2px; width:8px; height:5px; border:solid #b5b5b5; border-width:0 0 0.1rem 0.1rem; -webkit-transform:rotate(-45deg) translateY(-50%); transform:rotate(-45deg) translateY(-50%);}
@@ -105,7 +105,12 @@ input, select{font-family:'KoreanAirSans'}
 .boxForm .form-table + .form-table{padding-top:1.5rem}
 .boxForm .form-table .form-cell{position:relative;flex-grow:1;padding-right:10px;padding-top:0}
 .boxForm .form-table .form-cell:last-child{padding-right:0}
-
+/*검색영역-접기펴기 버튼영역*/
+.TopButton-area{position:relative;padding-top:20px}
+.TopButton-area .btn-fold{position:absolute;top:-5px;right:3px;font-size:1.4rem;border:1px solid var(--color-neutral-40);padding:3px 12px;background-color:var(--color-neutral-20);border-top-left-radius:var(--radius-small, 3px);border-top-right-radius:var(--radius-small, 3px);color:var(--color-neutral-8)}
+.btn-fold::after{content:'접기';font-weight:400}
+.btn-fold.open::after{content:'펴기';font-weight:400}
+.TopButton-area .btn-fold.open{border:1px solid var(--color-neutral-40);color:var(--color-neutral-8)}
 
 .form-group{position: relative;display:inline-block;vertical-align:middle}
 .form-group .invalid_txt{position:absolute;left:1.1rem;top:3.6rem;font-size:1rem;color:var(--color-negative)}

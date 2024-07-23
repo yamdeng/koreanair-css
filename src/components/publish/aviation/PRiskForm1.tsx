@@ -21,55 +21,29 @@ function PRiskForm1() {
       </div>
 
       {/*검색영역 */}
-      <div className="boxForm">
-        <div className="form-table">
-          <div className="form-cell wid50">
-            <span className="form-group wid100 mr5">
-              <input
-                type="text"
-                className="form-tag"
-                name="title"
-                value={inputValue}
-                onChange={(event) => {
-                  setInputValue(event.target.value);
-                }}
-              />
-              <label className="f-label">
-                Sbject <span className="required">*</span>
-              </label>
-            </span>
-          </div>
-          <div className="form-cell wid50">
-            <span className="form-group wid100">
-              <AntSelect
-                style={{ width: '100%' }}
-                options={[
-                  {
-                    value: 'jack',
-                    label: 'Jack',
-                  },
-                  {
-                    value: 'lucy',
-                    label: 'Lucy',
-                  },
-                  {
-                    value: 'Yiminghe',
-                    label: 'yiminghe',
-                  },
-                  {
-                    value: 'disabled',
-                    label: 'Disabled',
-                    disabled: true,
-                  },
-                ]}
-              />
-            </span>
-          </div>
-        </div>
+      <div className="TopButton-area">
+        {/*아코디언 - 펴기 버튼일때 btn-fold명 옆에 open붙이기  */}
+        <button type="button" name="button" className="btn-fold"></button>
 
-        <div className="form-table">
-          <div className="form-cell ">
-            <span className="form-group wid100">
+        <div className="boxForm">
+          <div className="form-table">
+            <div className="form-cell wid50">
+              <span className="form-group wid100 mr5">
+                <input
+                  type="text"
+                  className="form-tag"
+                  name="title"
+                  value={inputValue}
+                  onChange={(event) => {
+                    setInputValue(event.target.value);
+                  }}
+                />
+                <label className="f-label">
+                  Sbject <span className="required">*</span>
+                </label>
+              </span>
+            </div>
+            <div className="form-cell wid50">
               <span className="form-group wid100">
                 <AntSelect
                   style={{ width: '100%' }}
@@ -94,15 +68,45 @@ function PRiskForm1() {
                   ]}
                 />
               </span>
-            </span>
+            </div>
           </div>
-          <div className="form-cell wid50">
-            <span className="form-group form-glow">
-              <DatePicker status="" /> {/* status="error" */}
-              <span>~</span>
-              <DatePicker status="" />
-              {/* <TimePicker minuteStep={15} secondStep={10} hourStep={1} status="error" /> */}
-            </span>
+          <div className="form-table">
+            <div className="form-cell ">
+              <span className="form-group wid100">
+                <span className="form-group wid100">
+                  <AntSelect
+                    style={{ width: '100%' }}
+                    options={[
+                      {
+                        value: 'jack',
+                        label: 'Jack',
+                      },
+                      {
+                        value: 'lucy',
+                        label: 'Lucy',
+                      },
+                      {
+                        value: 'Yiminghe',
+                        label: 'yiminghe',
+                      },
+                      {
+                        value: 'disabled',
+                        label: 'Disabled',
+                        disabled: true,
+                      },
+                    ]}
+                  />
+                </span>
+              </span>
+            </div>
+            <div className="form-cell wid50">
+              <span className="form-group form-glow">
+                <DatePicker status="" /> {/* status="error" */}
+                <span>~</span>
+                <DatePicker status="" />
+                {/* <TimePicker minuteStep={15} secondStep={10} hourStep={1} status="error" /> */}
+              </span>
+            </div>
           </div>
         </div>
       </div>
