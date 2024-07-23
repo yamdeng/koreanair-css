@@ -1,11 +1,11 @@
 import { Outlet } from 'react-router-dom';
 import { useState } from 'react';
-import iconMenuFriesImage from '@resources/images/icon-menu-fries.svg';
-import koreanairSymbolImage from '@resources/images/koreanair-symbol.svg';
-import iconSearchImage from '@resources/images/icon_search.svg';
-import iconAlarmImage from '@resources/images/icon_alram.svg';
-import iconSettingImage from '@resources/images/icon_setting.svg';
-import closeImage from '@resources/images/close.svg';
+import iconMenuFriesImage from '@/resources/images/icon-menu-fries.svg';
+import koreanairSymbolImage from '@/resources/images/koreanair-symbol.svg';
+import iconSearchImage from '@/resources/images/icon_search.svg';
+import iconAlarmImage from '@/resources/images/icon_alram.svg';
+import iconSettingImage from '@/resources/images/icon_setting.svg';
+import closeImage from '@/resources/images/close.svg';
 
 export default function AviationLayout() {
   const [displayLeftMenu, setDisplayLeftMenu] = useState(false);
