@@ -30,10 +30,10 @@ function AdminBasicList() {
       <div className="boxForm">
         <div className="form-table">
           <div className="form-cell wid50">
-            <span className="form-group wid100 mr5">
+            <span className="form-group wid100 mr5 ">
               <input
                 type="text"
-                className="form-tag"
+                className="form-tag error"
                 name="title"
                 value={inputValue}
                 onChange={(event) => {
@@ -43,6 +43,7 @@ function AdminBasicList() {
               <label className="f-label">
                 Sbject <span className="required">*</span>
               </label>
+              <span className="errorText">error message</span>
             </span>
           </div>
           <div className="form-cell wid50">

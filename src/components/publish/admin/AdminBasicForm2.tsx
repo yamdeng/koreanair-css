@@ -25,9 +25,10 @@ function AdminBasicForm2() {
         <div className="form-table">
           <div className="form-cell wid50">
             <span className="form-group wid100 mr5">
+              {/*error일 경우 error 클래스명 추가*/}
               <input
                 type="text"
-                className="form-tag"
+                className="form-tag error"
                 name="title"
                 value={inputValue}
                 onChange={(event) => {
@@ -37,6 +38,7 @@ function AdminBasicForm2() {
               <label className="f-label">
                 2개일경우 <span className="required">*</span>
               </label>
+              <span className="errorText">error message</span>
             </span>
           </div>
           <div className="form-cell wid50">

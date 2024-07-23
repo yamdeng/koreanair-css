@@ -54,6 +54,7 @@ body * {
 
 .wid30{width:30%}
 .wid50{width:50%}
+.wid70{width:70%}
 .wid100{width:100%}
 .mr5{margin-right:5px !important}
 
@@ -166,6 +167,8 @@ input, select{font-family:'KoreanAirSans'}
 .form-tag.active, .form-tag:focus{border:1px solid var(--color-mblue-100) !important;color:var(--color-mblue-100) !important}
 
 .form-group .f-label .required{color:var(--color-negative)}
+.form-tag.error{border:solid 1px var(--color-negative)}
+.form-group span.errorText{display:block;color:var(--color-negative);font-size:1.3rem;padding:0.2rem 0.5rem}
 
 .form-table .form-cell .form-glow{flex: 1 1}
 .form-tag-select{position:relative;height:35px;border: 1px solid var(--color-neutral-40);border-radius:5px;padding: 0 10px;width:100%;box-sizing: border-box;color:var(--color-neutral-80); outline: none !important;  -webkit-appearance: none; -moz-appearance: none;background:var(--color-neutral-10) url(../images/chevron-down-solid.svg) no-repeat right 10px center;background-size:1.0rem}
