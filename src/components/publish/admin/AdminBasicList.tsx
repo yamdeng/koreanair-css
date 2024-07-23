@@ -104,10 +104,16 @@ function AdminBasicList() {
           </div>
           <div className="form-cell wid50">
             <span className="form-group form-glow">
-              <DatePicker status="" /> {/* status="error" */}
-              <span>~</span>
-              <DatePicker status="" />
-              {/* <TimePicker minuteStep={15} secondStep={10} hourStep={1} status="error" /> */}
+              <div className="df">
+                <div>
+                  <DatePicker status="" /> {/* status="error" */}
+                </div>
+                <span className="util">~</span>
+                <div>
+                  <DatePicker status="" />
+                  {/* <TimePicker minuteStep={15} secondStep={10} hourStep={1} status="error" /> */}
+                </div>
+              </div>
             </span>
           </div>
         </div>
