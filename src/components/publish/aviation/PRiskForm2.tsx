@@ -1,8 +1,10 @@
 import { useState } from 'react';
+import Select from 'react-select';
 import { DatePicker, TimePicker, Select as AntSelect } from 'antd';
 
 function PRiskForm2() {
   const [inputValue, setInputValue] = useState('');
+
   return (
     <>
       <div className="conts-title">
@@ -43,7 +45,62 @@ function PRiskForm2() {
             </button>
           </dt>
           <dd className="tg-conts">
-            <div className="edit-area">dfdfdfdf</div>
+            <div className="edit-area">
+              {/*등록 */}
+              <div className="detail-form">
+                <ul className="detail-list">
+                  <li className="list">
+                    <label className="f-label">
+                      발생일/시간(UTC)<span className="required">*</span>
+                    </label>
+                    <div className="cont">
+                      <div className="form-table">
+                        <div className="form-cell wid50">
+                          <span className="form-group form-glow">
+                            <div className="df">
+                              <div className="wid100">
+                                <DatePicker className="wid100" />
+                              </div>
+                            </div>
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li className="list">
+                    <label className="f-label">data picker1개</label>
+                    <div className="cont">
+                      <div className="form-table">
+                        <div className="form-cell wid50">
+                          <span className="form-group form-glow">
+                            <div className="df">
+                              <div className="wid100">
+                                <DatePicker className="wid100" />
+                              </div>
+                            </div>
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                    <label className="f-label">data picker1개</label>
+                    <div className="cont">
+                      <div className="form-table">
+                        <div className="form-cell wid50">
+                          <span className="form-group form-glow">
+                            <div className="df">
+                              <div className="wid100">
+                                <DatePicker className="wid100" />
+                              </div>
+                            </div>
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              {/*//등록 */}
+            </div>
           </dd>
         </dl>
         <dl className="tg-item">
