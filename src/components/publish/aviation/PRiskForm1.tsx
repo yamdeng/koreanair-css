@@ -33,7 +33,7 @@ function PRiskForm1() {
         <div className="boxForm">
           <div className="form-table">
             <div className="form-cell wid50">
-              <span className="form-group wid100 mr5">
+              <div className="form-group wid100 mr5">
                 <input
                   type="text"
                   className="form-tag"
@@ -46,10 +46,10 @@ function PRiskForm1() {
                 <label className="f-label">
                   Sbject <span className="required">*</span>
                 </label>
-              </span>
+              </div>
             </div>
             <div className="form-cell wid50">
-              <span className="form-group wid100">
+              <div className="form-group wid100">
                 <AntSelect
                   style={{ width: '100%' }}
                   options={[
@@ -72,45 +72,114 @@ function PRiskForm1() {
                     },
                   ]}
                 />
-              </span>
+              </div>
             </div>
           </div>
           <div className="form-table">
-            <div className="form-cell ">
-              <span className="form-group wid100">
-                <span className="form-group wid100">
-                  <AntSelect
-                    style={{ width: '100%' }}
-                    options={[
-                      {
-                        value: 'jack',
-                        label: 'Jack',
-                      },
-                      {
-                        value: 'lucy',
-                        label: 'Lucy',
-                      },
-                      {
-                        value: 'Yiminghe',
-                        label: 'yiminghe',
-                      },
-                      {
-                        value: 'disabled',
-                        label: 'Disabled',
-                        disabled: true,
-                      },
-                    ]}
-                  />
-                </span>
-              </span>
+            <div className="form-cell wid50">
+              <div className="form-group wid100">
+                <AntSelect
+                  style={{ width: '100%' }}
+                  options={[
+                    {
+                      value: 'jack',
+                      label: 'Jack',
+                    },
+                    {
+                      value: 'lucy',
+                      label: 'Lucy',
+                    },
+                    {
+                      value: 'Yiminghe',
+                      label: 'yiminghe',
+                    },
+                    {
+                      value: 'disabled',
+                      label: 'Disabled',
+                      disabled: true,
+                    },
+                  ]}
+                />
+              </div>
             </div>
             <div className="form-cell wid50">
-              <span className="form-group form-glow">
-                <DatePicker status="" /> {/* status="error" */}
-                <span>~</span>
+              <div className="form-group form-glow">
                 <DatePicker status="" />
-                {/* <TimePicker minuteStep={15} secondStep={10} hourStep={1} status="error" /> */}
-              </span>
+                <span className="unt">~</span>
+                <DatePicker status="" />
+              </div>
+            </div>
+          </div>
+          <div className="form-table">
+            <div className="form-cell wid50">
+              <div className="form-group wid100 mr5">
+                {/*Event Class */}
+                <AntSelect
+                  style={{ width: '100%' }}
+                  options={[
+                    {
+                      value: 'jack',
+                      label: 'Jack',
+                    },
+                    {
+                      value: 'lucy',
+                      label: 'Lucy',
+                    },
+                    {
+                      value: 'Yiminghe',
+                      label: 'yiminghe',
+                    },
+                    {
+                      value: 'disabled',
+                      label: 'Disabled',
+                      disabled: true,
+                    },
+                  ]}
+                />
+              </div>
+            </div>
+            <div className="form-cell wid50">
+              <div className="form-group wid100 mr5">
+                <input
+                  type="text"
+                  className="form-tag"
+                  name="title"
+                  value={inputValue}
+                  onChange={(event) => {
+                    setInputValue(event.target.value);
+                  }}
+                />
+                <label className="f-label">
+                  발생공항 <span className="required">*</span>
+                </label>
+              </div>
+            </div>
+            <div className="form-cell wid50">
+              <div className="form-group wid100 mr5">
+                {/*발생단계 */}
+                <AntSelect
+                  style={{ width: '100%' }}
+                  options={[
+                    {
+                      value: 'jack',
+                      label: 'Jack',
+                    },
+                    {
+                      value: 'lucy',
+                      label: 'Lucy',
+                    },
+                    {
+                      value: 'Yiminghe',
+                      label: 'yiminghe',
+                    },
+                    {
+                      value: 'disabled',
+                      label: 'Disabled',
+                      disabled: true,
+                    },
+                  ]}
+                />
+              </div>
             </div>
           </div>
         </div>

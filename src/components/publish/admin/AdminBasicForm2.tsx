@@ -24,7 +24,7 @@ function AdminBasicForm2() {
       <div className="boxForm">
         <div className="form-table">
           <div className="form-cell wid50">
-            <span className="form-group wid100 mr5">
+            <div className="form-group wid100 mr5">
               {/*error일 경우 error 클래스명 추가*/}
               <input
                 type="text"
@@ -39,12 +39,12 @@ function AdminBasicForm2() {
                 2개일경우 <span className="required">*</span>
               </label>
               <span className="errorText">error message</span>
-            </span>
+            </div>
           </div>
           <div className="form-cell wid50">
-            <span className="form-group wid100">
+            <div className="form-group wid100">
               <AntSelect
-                style={{ width: '100%' }}
+                className="wid100"
                 options={[
                   {
                     value: 'jack',
@@ -65,56 +65,54 @@ function AdminBasicForm2() {
                   },
                 ]}
               />
-            </span>
+            </div>
           </div>
         </div>
         <div className="form-table">
           <div className="form-cell ">
-            <span className="form-group wid100">
-              <span className="form-group wid100">
-                <AntSelect
-                  style={{ width: '100%' }}
-                  options={[
-                    {
-                      value: 'jack',
-                      label: 'Jack',
-                    },
-                    {
-                      value: 'lucy',
-                      label: 'Lucy',
-                    },
-                    {
-                      value: 'Yiminghe',
-                      label: 'yiminghe',
-                    },
-                    {
-                      value: 'disabled',
-                      label: 'Disabled',
-                      disabled: true,
-                    },
-                  ]}
-                />
-              </span>
-            </span>
+            <div className="form-group wid100">
+              <AntSelect
+                className="wid100"
+                options={[
+                  {
+                    value: 'jack',
+                    label: 'Jack',
+                  },
+                  {
+                    value: 'lucy',
+                    label: 'Lucy',
+                  },
+                  {
+                    value: 'Yiminghe',
+                    label: 'yiminghe',
+                  },
+                  {
+                    value: 'disabled',
+                    label: 'Disabled',
+                    disabled: true,
+                  },
+                ]}
+              />
+            </div>
           </div>
           <div className="form-cell wid50">
-            <span className="form-group form-glow">
+            <div className="form-group form-glow">
               <div className="df">
                 <div>
                   <DatePicker status="" /> {/* status="error" */}
                 </div>
-                <span className="until">~</span>
+                <span className="unt">~</span>
                 <div>
                   <DatePicker status="" />
                   {/* <TimePicker minuteStep={15} secondStep={10} hourStep={1} status="error" /> */}
                 </div>
               </div>
-            </span>
+            </div>
           </div>
         </div>
         <div className="form-table">
           <div className="form-cell wid100">
-            <span className="form-group wid100 mr5">
+            <div className="form-group wid100 mr5">
               <input
                 type="text"
                 className="form-tag"
@@ -127,7 +125,7 @@ function AdminBasicForm2() {
               <label className="f-label">
                 한개일경우 <span className="required">*</span>
               </label>
-            </span>
+            </div>
           </div>
         </div>
         <div className="form-table">

@@ -35,7 +35,7 @@ function AdminBasicEdit() {
               <div className="cont">
                 <div className="form-table">
                   <div className="form-cell wid100">
-                    <span className="form-group wid100">한 row로 사용시에 class명 form-cell에 wid100을 넣어주세요</span>
+                    <div className="form-group wid100">한 row로 사용시에 class명 form-cell에 wid100을 넣어주세요</div>
                   </div>
                 </div>
               </div>
@@ -55,7 +55,7 @@ function AdminBasicEdit() {
               <div className="cont">
                 <div className="form-table">
                   <div className="form-cell wid50">
-                    <span className="form-group wid100">내용</span>
+                    <div className="form-group wid100">내용</div>
                   </div>
                 </div>
               </div>
@@ -67,7 +67,7 @@ function AdminBasicEdit() {
               <div className="cont">
                 <div className="form-table">
                   <div className="form-cell wid50">
-                    <span className="form-group wid100">내용</span>
+                    <div className="form-group wid100">내용</div>
                   </div>
                 </div>
               </div>
