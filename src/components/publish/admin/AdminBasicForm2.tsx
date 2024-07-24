@@ -7,17 +7,6 @@ function AdminBasicForm2() {
     <>
       <div className="conts-title">
         <h2>Title Form list</h2>
-        <div className="btn-area">
-          <button type="button" name="button" className="btn-sm btn_text btn-darkblue-line">
-            조회
-          </button>
-          <button type="button" name="button" className="btn-sm btn_text btn-darkblue-line">
-            신규
-          </button>
-          <button type="button" name="button" className="btn-sm btn_text btn-darkblue-line">
-            초기화
-          </button>
-        </div>
       </div>
       {/*검색영역 상단일경우 */}
       <p>검색영역일경우</p>
@@ -144,6 +133,28 @@ function AdminBasicForm2() {
         </div>
       </div>
       {/* //검색영역 상단일경우 */}
+
+      <p>toggle</p>
+      <div className="info-wrap toggle">
+        <dl className="tg-item active">
+          {/* toggle 선택되면  열어지면 active붙임*/}
+          <dt>
+            <button type="button" className="btn-tg">
+              발생정보
+            </button>
+          </dt>
+          <dd className="tg-conts">
+            <div className="edit-area">내용</div>
+          </dd>
+        </dl>
+        <dl className="tg-item">
+          <dt>
+            <button type="button" className="btn-tg">
+              비행정보
+            </button>
+          </dt>
+        </dl>
+      </div>
     </>
   );
 }
