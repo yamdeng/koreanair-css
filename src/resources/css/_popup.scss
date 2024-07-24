@@ -245,6 +245,19 @@
 .pop_flex_group {
   display: flex;
   height: 100%;
+  ::-webkit-Scrollbar {
+    width:0.3em;
+    height:0.3em
+  }
+  ::-webkit-Scrollbar-thumb {
+    border-radius:1.0rem;
+    background:var(--color-neutral-30);
+    -webkit-tap-highlight-color: transparent;
+  }
+  ::-webkit-Scrollbar Track {
+    border-radius:0rem;
+    background:var(--color-neutral-30)
+  }
   @include mobile {
     display: block;
   }
@@ -257,10 +270,11 @@
   .pop_cont_form {
     width: 100%;
     height: 100%;
-    overflow-y: scroll;
-    padding-bottom: 30px;
+    overflow: auto;
+    padding-bottom: 3.0rem;
+    padding-right: 0.3rem;
     .box_form {
-      margin-bottom: 20px;
+      margin-bottom: 2.0rem;
       @include mobile {
         padding: 0;
         border: none;
@@ -303,12 +317,12 @@
   background: #fff;
   box-sizing: border-box;
   -webkit-overflow-scrolling: touch;
-  border-radius: 6px;
+  border-radius: 0.6rem;
   outline: none;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  box-shadow: 0 30px 60px 0 rgba(0, 0, 0, 0.15);
+  box-shadow: 0 3.0rem 6.0rem 0 rgba(0, 0, 0, 0.15);
   overflow: hidden;
   /*height: calc(100% - 50px);*/
   &::after {
