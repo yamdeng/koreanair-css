@@ -227,15 +227,15 @@ function AppTable(props) {
         </button>
       </div> */}
 
-      <div className="conts-subTit">
-        <span>{CommonUtil.formatString(gridTotalCountTemplate, rowData.length)}</span>
+      <div className="table-header">
+        <div className="count">{CommonUtil.formatString(gridTotalCountTemplate, rowData.length)}</div>
         <div className="btn-area">
           <button type="button" name="button" className="btn-sm btn_text btn-darkblue-line">
             신규
           </button>
-          <span className="ml5 w100">
+          <span>
             <AntSelect
-              style={{ width: '200px' }}
+              style={{ width: '100%' }}
               options={[
                 {
                   value: 'jack',

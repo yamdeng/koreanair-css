@@ -1,8 +1,13 @@
 import { useState } from 'react';
 import { DatePicker, TimePicker, Select as AntSelect } from 'antd';
+import AppTable from '@/components/common/AppTable';
+import { getAllData } from '@/data/grid/example-data-new';
+import { testColumnInfos } from '@/data/grid/table-column';
 
 function PRiskForm1() {
   const [inputValue, setInputValue] = useState('');
+  const rowData = getAllData();
+  const columns = testColumnInfos;
   return (
     <>
       <div className="conts-title">
@@ -113,30 +118,10 @@ function PRiskForm1() {
       {/* //검색영역 */}
 
       {/*그리드영역 */}
-      <div className="">그리드영역</div>
-      {/*//그리드영역 */}
-
-      <div className="pagination">
-        <a className="first" href="javascript:void(0)">
-          <span className="sr-only">이전</span>
-        </a>
-        <a className="prev" href="javascript:void(0)">
-          <span className="sr-only">이전</span>
-        </a>
-        <span>
-          <a href="javascript:void(0)">1</a>
-          <a href="javascript:void(0)">2</a>
-          <strong title="현재페이지">3</strong>
-          <a href="javascript:void(0)">4</a>
-          <a href="javascript:void(0)">5</a>
-        </span>
-        <a className="next" href="javascript:void(0)">
-          <span className="sr-only">다음</span>
-        </a>
-        <a className="last" href="javascript:void(0)">
-          <span className="sr-only">다음</span>
-        </a>
+      <div className="">
+        <AppTable rowData={rowData} columns={columns} />
       </div>
+      {/*//그리드영역 */}
 
       {/* 하단버튼영역 */}
       <div className="contents-btns">

@@ -122,6 +122,45 @@ function PRiskForm2() {
                       </div>
                     </div>
                   </li>
+                  <li className="list">
+                    <div className="list-row wid100">
+                      <label className="f-label">
+                        발생일/시간(UTC) <span className="required">*</span>
+                      </label>
+                      <div className="cont">
+                        <div className="form-table">
+                          <div className="form-cell wid50">
+                            <span className="form-group wid100">
+                              <AntSelect
+                                style={{ width: '100%' }}
+                                status="error"
+                                options={[
+                                  {
+                                    value: 'jack',
+                                    label: 'Jack',
+                                  },
+                                  {
+                                    value: 'lucy',
+                                    label: 'Lucy',
+                                  },
+                                  {
+                                    value: 'Yiminghe',
+                                    label: 'yiminghe',
+                                  },
+                                  {
+                                    value: 'disabled',
+                                    label: 'Disabled',
+                                    disabled: true,
+                                  },
+                                ]}
+                              />
+                              <span className="errorText">data picker error message</span>
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
                 </ul>
               </div>
             </div>
