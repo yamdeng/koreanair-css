@@ -36,22 +36,25 @@ function PRiskForm1() {
               <div className="form-group wid100 mr5">
                 <input
                   type="text"
-                  className="form-tag"
+                  className="form-tag error"
                   name="title"
                   value={inputValue}
                   onChange={(event) => {
                     setInputValue(event.target.value);
                   }}
                 />
+                {/**/}
                 <label className="f-label">
                   Sbject <span className="required">*</span>
                 </label>
+                <span className="errorText">error message</span>
               </div>
             </div>
             <div className="form-cell wid50">
               <div className="form-group wid100">
                 <AntSelect
                   style={{ width: '100%' }}
+                  status="error"
                   options={[
                     {
                       value: 'jack',
@@ -72,6 +75,7 @@ function PRiskForm1() {
                     },
                   ]}
                 />
+                <span className="errorText">auto complete error message</span>
               </div>
             </div>
           </div>

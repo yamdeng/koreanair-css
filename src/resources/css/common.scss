@@ -200,7 +200,7 @@ input, select{font-family:'KoreanAirSans'}
 .btn-fold.open::after{content:'펴기';font-weight:400}
 .TopButton-area .btn-fold.open{border:1px solid var(--color-neutral-40);color:var(--color-neutral-8)}
 
-.form-group{position:relative;display:inline-block;display:flex;vertical-align:middle}
+.form-group{position:relative;display:inline-block;vertical-align:middle}
 .form-group .invalid_txt{position:absolute;left:1.1rem;top:3.6rem;font-size:1rem;color:var(--color-negative)}
 
 .form-group .invalid-txt.textarea {top: 201px}
