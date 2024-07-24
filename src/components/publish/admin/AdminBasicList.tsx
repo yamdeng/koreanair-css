@@ -146,6 +146,7 @@ function AdminBasicList() {
               <label className="f-label">
                 장비명 <span className="required">*</span>
               </label>
+              <button type="button" className="icon-sch"></button>
             </div>
           </div>
           <div className="form-cell wid50">
