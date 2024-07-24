@@ -193,6 +193,47 @@ function PRiskForm1() {
       </div>
       {/* //검색영역 */}
 
+      {/*보고서 조회 버튼 */}
+      <div className="Report-list-wrap">
+        <ol className="Report-list">
+          <li className="Report-list-item">
+            <a href="javascript:void(0);">
+              <div className="imgbox active">
+                <span className="icon -document -size48 -msize24"></span>
+              </div>
+            </a>
+            <div className="Report-list-title">
+              작성<span>(6)</span>
+            </div>
+          </li>
+          <li className="Report-list-item">
+            <div className="imgbox">
+              <span className="icon -document -size48 -msize24"></span>
+            </div>
+            <div className="Report-list-title">
+              결제<span>(6)</span>
+            </div>
+          </li>
+          <li className="Report-list-item">
+            <div className="imgbox">
+              <span className="icon -document -size48 -msize24"></span>
+            </div>
+            <div className="Report-list-title">
+              결제<span>(6)</span>
+            </div>
+          </li>
+          <li className="Report-list-item -last">
+            <div className="imgbox">
+              <span className="icon -document -size48 -msize24"></span>
+            </div>
+            <div className="Report-list-title">
+              결제<span>(6)</span>
+            </div>
+          </li>
+        </ol>
+      </div>
+      {/*//보고서 조회 버튼 */}
+
       {/*그리드영역 */}
       <div className="">
         <AppTable rowData={rowData} columns={columns} />

@@ -130,7 +130,7 @@ input, select{font-family:'KoreanAirSans'}
 }
 /* 상단 타이틀 */
 .conts-title{position:relative;border-bottom:solid 0.1rem var(--color-neutral-40);align-items:center;padding:2.0rem 0 4.0rem 0;margin-bottom:1.0rem}
-.conts-title h2{float:left;font-family:"KoreanAirSans";font-size:2.4rem;color:var(--color-neutral-80);font-weight:700}
+.conts-title h2{float:left;font-family:"KoreanAirSans";font-size:2.6rem;color:var(--color-neutral-80);font-weight:700}
 .conts-title h2 span{font-size:1.8rem;color:var(--color-mblue-100)}
 
 /* 기본형 */
@@ -146,7 +146,7 @@ input, select{font-family:'KoreanAirSans'}
 .radio-wrap > label > input:checked + span:after {background:var(--color-darkblue-100)}
 .bottom-area .list-toggle + .radio-wrap{margin:1.0rem 0 3.0rem 1.9rem}
 
-.table-header{display:flex;position:relative;justify-content:end;align-items:center;-webkit-box-align:center;width:100%;line-height:3.5rem;padding-bottom:1.0rem}
+.table-header{display:flex;position:relative;justify-content:end;align-items:center;-webkit-box-align:center;width:100%;line-height:3.5rem;padding-bottom:1.2rem}
 .table-header .count{font-size:1.5rem;margin-right: auto;}
 .table-header >.btn-area{position:absolute;top:0;right:1.0rem;display:flex}/*display: flex;추가*/
 .controlArea{/*flex:1;text-align:right*/float:right}
@@ -174,7 +174,7 @@ input, select{font-family:'KoreanAirSans'}
 }
 
 /*검색영역*/
-.boxForm{position:relative;padding:0px 2.0rem 2.0rem;margin-bottom:2.0rem;background-color:var(--color-neutral-20);border-radius:var(--radius-small, 8px)}
+.boxForm{position:relative;padding:0px 2.0rem 2.0rem;margin-bottom:3.0rem;background-color:var(--color-neutral-20);border-radius:var(--radius-small, 8px)}
 .boxForm .form-table{display:flex;width:100%}
 .boxForm .form-table:first-child{padding-top:2.3rem}
 .boxForm .form-table + .form-table{padding-top:1.5rem}
@@ -250,6 +250,7 @@ input, select{font-family:'KoreanAirSans'}
 ::-webkit-scrollbar-thumb{border-radius:1.0rem;background:var(--color-neutral60)}
 
 /*라이브러리*/
+.ag-theme-quartz{border-top:solid 1px var(--color-darkblue-100)}
 :where(.css-dev-only-do-not-override-98ntnt).ant-picker .ant-picker-input >input{line-height:2.5rem}
 :where(.css-dev-only-do-not-override-98ntnt).ant-picker .ant-picker-input{display:flex}
 :where(.css-dev-only-do-not-override-98ntnt).ant-picker-outlined{border:0.1rem solid var(--color-neutral-40)}
