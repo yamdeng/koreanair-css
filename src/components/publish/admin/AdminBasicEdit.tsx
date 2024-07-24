@@ -188,7 +188,7 @@ function AdminBasicEdit() {
           </li>
           <li className="list">
             <div className="list-row wid50">
-              <label className="c">TimePicker1개</label>
+              <label className="f-label">TimePicker1개</label>
               <div className="cont">
                 <div className="form-table">
                   <div className="form-cell wid50">
