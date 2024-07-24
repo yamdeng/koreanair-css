@@ -193,7 +193,7 @@ function PRiskForm1() {
       </div>
       {/* //검색영역 */}
 
-      {/*보고서 조회 버튼 */}
+      {/*보고서 조회 버튼
       <div className="Report-list-wrap">
         <ol className="Report-list">
           <li className="Report-list-item">
@@ -232,7 +232,7 @@ function PRiskForm1() {
           </li>
         </ol>
       </div>
-      {/*//보고서 조회 버튼 */}
+     보고서 조회 버튼 */}
 
       {/*그리드영역 */}
       <div className="">
