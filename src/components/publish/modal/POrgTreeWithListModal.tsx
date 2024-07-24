@@ -59,6 +59,24 @@ function TreeModal(props) {
         <div className="pop_full_cont_box">
           <div className="pop_flex_group">
             <div className="tree_wrap">
+              <div className="tree_form">
+                <div className="pop-btn-box">버튼영역</div>
+                <div className="form-cell">
+                  <div className="form-group wid100 mr5">
+                    <input
+                      type="text"
+                      className="form-tag"
+                      name="title"
+                      value={inputValue}
+                      onChange={(event) => {
+                        setInputValue(event.target.value);
+                      }}
+                    />
+                    <label className="f-label">검색</label>
+                    <button type="button" className="icon-sch"></button>
+                  </div>
+                </div>
+              </div>
               <Tree
                 className="draggable-tree"
                 defaultExpandedKeys={expandedKeys}
