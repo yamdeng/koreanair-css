@@ -33,23 +33,55 @@ function PRiskForm1() {
         <div className="boxForm">
           <div className="form-table">
             <div className="form-cell wid50">
-              <span className="form-group wid100 mr5">
+              <div className="form-group wid100 mr5">
                 <input
                   type="text"
-                  className="form-tag"
+                  className="form-tag error"
                   name="title"
                   value={inputValue}
                   onChange={(event) => {
                     setInputValue(event.target.value);
                   }}
                 />
+                {/**/}
                 <label className="f-label">
                   Sbject <span className="required">*</span>
                 </label>
-              </span>
+                <span className="errorText">error message</span>
+              </div>
             </div>
             <div className="form-cell wid50">
-              <span className="form-group wid100">
+              <div className="form-group wid100">
+                <AntSelect
+                  style={{ width: '100%' }}
+                  status="error"
+                  options={[
+                    {
+                      value: 'jack',
+                      label: 'Jack',
+                    },
+                    {
+                      value: 'lucy',
+                      label: 'Lucy',
+                    },
+                    {
+                      value: 'Yiminghe',
+                      label: 'yiminghe',
+                    },
+                    {
+                      value: 'disabled',
+                      label: 'Disabled',
+                      disabled: true,
+                    },
+                  ]}
+                />
+                <span className="errorText">auto complete error message</span>
+              </div>
+            </div>
+          </div>
+          <div className="form-table">
+            <div className="form-cell ">
+              <div className="form-group wid100">
                 <AntSelect
                   style={{ width: '100%' }}
                   options={[
@@ -72,45 +104,89 @@ function PRiskForm1() {
                     },
                   ]}
                 />
-              </span>
+              </div>
+            </div>
+            <div className="form-cell wid50">
+              <div className="form-group form-glow">
+                <div className="df">
+                  <DatePicker status="" />
+                  <span className="unt">~</span>
+                  <DatePicker status="" />
+                </div>
+              </div>
             </div>
           </div>
           <div className="form-table">
-            <div className="form-cell ">
-              <span className="form-group wid100">
-                <span className="form-group wid100">
-                  <AntSelect
-                    style={{ width: '100%' }}
-                    options={[
-                      {
-                        value: 'jack',
-                        label: 'Jack',
-                      },
-                      {
-                        value: 'lucy',
-                        label: 'Lucy',
-                      },
-                      {
-                        value: 'Yiminghe',
-                        label: 'yiminghe',
-                      },
-                      {
-                        value: 'disabled',
-                        label: 'Disabled',
-                        disabled: true,
-                      },
-                    ]}
-                  />
-                </span>
-              </span>
+            <div className="form-cell wid50">
+              <div className="form-group wid100 mr5">
+                {/*Event Class */}
+                <AntSelect
+                  style={{ width: '100%' }}
+                  options={[
+                    {
+                      value: 'jack',
+                      label: 'Jack',
+                    },
+                    {
+                      value: 'lucy',
+                      label: 'Lucy',
+                    },
+                    {
+                      value: 'Yiminghe',
+                      label: 'yiminghe',
+                    },
+                    {
+                      value: 'disabled',
+                      label: 'Disabled',
+                      disabled: true,
+                    },
+                  ]}
+                />
+              </div>
             </div>
             <div className="form-cell wid50">
-              <span className="form-group form-glow">
-                <DatePicker status="" /> {/* status="error" */}
-                <span>~</span>
-                <DatePicker status="" />
-                {/* <TimePicker minuteStep={15} secondStep={10} hourStep={1} status="error" /> */}
-              </span>
+              <div className="form-group wid100 mr5">
+                <input
+                  type="text"
+                  className="form-tag"
+                  name="title"
+                  value={inputValue}
+                  onChange={(event) => {
+                    setInputValue(event.target.value);
+                  }}
+                />
+                <label className="f-label">
+                  발생공항 <span className="required">*</span>
+                </label>
+                <button type="button" className="icon-sch"></button>
+              </div>
+            </div>
+            <div className="form-cell wid50">
+              <div className="form-group wid100 mr5">
+                {/*발생단계 */}
+                <AntSelect
+                  style={{ width: '100%' }}
+                  options={[
+                    {
+                      value: 'jack',
+                      label: 'Jack',
+                    },
+                    {
+                      value: 'lucy',
+                      label: 'Lucy',
+                    },
+                    {
+                      value: 'Yiminghe',
+                      label: 'yiminghe',
+                    },
+                    {
+                      value: 'disabled',
+                      label: 'Disabled',
+                      disabled: true,
+                    },
+                  ]}
+                />
+              </div>
             </div>
           </div>
         </div>

@@ -12,37 +12,66 @@ function AdminBasicEdit() {
       <div className="conts-title">
         <h2>Taxonomy 상세</h2>
         <div className="btn-area">
-          <button type="button" name="button" className="btn-sm btn_text btn-darkblue-line">
+          <button type="button" name="button" className="btn-sm btn_text btn-lightblue">
             조회
           </button>
-          <button type="button" name="button" className="btn-sm btn_text btn-darkblue-line">
+          <button type="button" name="button" className="btn-sm btn_text btn-lightblue">
             신규
           </button>
-          <button type="button" name="button" className="btn-sm btn_text btn-darkblue-line">
+          <button type="button" name="button" className="btn-sm btn_text btn-lightblue">
             초기화
           </button>
         </div>
       </div>
       {/*등록 */}
+      <p>테이블이 cell이 한개의 row 되어있는 상세페이지 일경우</p>
       <div className="detail-form">
         <ul className="detail-list">
           <li className="list">
-            <label className="f-label">
-              Level 1 <span className="required">*</span>
-            </label>
-            <div className="cont">Supervision</div>
+            <div className="list-row wid50">
+              <label className="f-label">
+                Level 1 <span className="required">*</span>
+              </label>
+              <div className="cont">
+                <div className="form-table">
+                  <div className="form-cell wid100">
+                    <div className="form-group wid100">한 row로 사용시에 class명 form-cell에 wid100을 넣어주세요</div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </li>
+        </ul>
+      </div>
+
+      <p>테이블이 cell이 두개의 row 되어있는 상세페이지 일경우</p>
+      <div className="detail-form">
+        <ul className="detail-list">
           <li className="list">
-            <label className="f-label">
-              Level 2 <span className="required">*</span>
-            </label>
-            <div className="cont">Inadequate supervision of training</div>
-          </li>
-          <li className="list">
-            <label className="f-label">
-              Level 3 <span className="required">*</span>
-            </label>
-            <div className="cont">Training records incorrect</div>
+            <div className="list-row wid50">
+              <label className="f-label">
+                Level 1 <span className="required">*</span>
+              </label>
+              <div className="cont">
+                <div className="form-table">
+                  <div className="form-cell wid50">
+                    <div className="form-group wid100">내용</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="list-row wid50">
+              <label className="f-label">
+                Level 1 <span className="required">*</span>
+              </label>
+              <div className="cont">
+                <div className="form-table">
+                  <div className="form-cell wid50">
+                    <div className="form-group wid100">내용</div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </li>
         </ul>
       </div>

@@ -15,7 +15,7 @@ function PRiskForm2() {
       <div className="boxForm">
         <div className="form-table">
           <div className="form-cell wid100">
-            <span className="form-group wid100 mr5">
+            <div className="form-group wid100 mr5">
               <input
                 type="text"
                 className="form-tag"
@@ -28,7 +28,7 @@ function PRiskForm2() {
               <label className="f-label">
                 Sbject <span className="required">*</span>
               </label>
-            </span>
+            </div>
           </div>
         </div>
       </div>
@@ -54,7 +54,7 @@ function PRiskForm2() {
                       <div className="cont">
                         <div className="form-table">
                           <div className="form-cell wid50">
-                            <span className="form-group wid100">
+                            <div className="form-group wid100">
                               <AntSelect
                                 style={{ width: '100%' }}
                                 status="error"
@@ -79,7 +79,7 @@ function PRiskForm2() {
                                 ]}
                               />
                               <span className="errorText">data picker error message</span>
-                            </span>
+                            </div>
                           </div>
                         </div>
                       </div>
@@ -91,7 +91,7 @@ function PRiskForm2() {
                       <div className="cont">
                         <div className="form-table">
                           <div className="form-cell wid50">
-                            <span className="form-group wid100">
+                            <div className="form-group wid100">
                               <AntSelect
                                 style={{ width: '100%' }}
                                 status="error"
@@ -116,7 +116,7 @@ function PRiskForm2() {
                                 ]}
                               />
                               <span className="errorText">data picker error message</span>
-                            </span>
+                            </div>
                           </div>
                         </div>
                       </div>
@@ -130,7 +130,7 @@ function PRiskForm2() {
                       <div className="cont">
                         <div className="form-table">
                           <div className="form-cell wid50">
-                            <span className="form-group wid100">
+                            <div className="form-group wid100">
                               <AntSelect
                                 style={{ width: '100%' }}
                                 status="error"
@@ -155,7 +155,7 @@ function PRiskForm2() {
                                 ]}
                               />
                               <span className="errorText">data picker error message</span>
-                            </span>
+                            </div>
                           </div>
                         </div>
                       </div>

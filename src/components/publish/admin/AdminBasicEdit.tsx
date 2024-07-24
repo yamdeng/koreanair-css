@@ -109,7 +109,7 @@ function AdminBasicEdit() {
               <div className="cont">
                 <div className="form-table">
                   <div className="form-cell wid50">
-                    <span className="form-group wid100">
+                    <div className="form-group wid100">
                       <AntSelect
                         style={{ width: '100%' }}
                         status="error"
@@ -134,12 +134,12 @@ function AdminBasicEdit() {
                         ]}
                       />
                       <span className="errorText">data picker error message</span>
-                    </span>
+                    </div>
                   </div>
                   <div className="form-cell wid50">
-                    <span className="form-group wid100 mr5">
+                    <div className="form-group wid100 mr5">
                       <input type="text" className="form-tag" placeholder="" disabled />
-                    </span>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -151,13 +151,13 @@ function AdminBasicEdit() {
               <div className="cont">
                 <div className="form-table">
                   <div className="form-cell wid50">
-                    <span className="form-group form-glow">
+                    <div className="form-group form-glow">
                       <div className="df">
                         <div className="wid100">
                           <DatePicker className="wid100" />
                         </div>
                       </div>
-                    </span>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -169,7 +169,7 @@ function AdminBasicEdit() {
               <div className="cont">
                 <div className="form-table">
                   <div className="form-cell wid50">
-                    <span className="form-group form-glow">
+                    <div className="form-group form-glow">
                       <div className="df">
                         <div className="wid100">
                           <DatePicker className="wid100" status="" /> {/* status="error" */}
@@ -180,7 +180,7 @@ function AdminBasicEdit() {
                         </div>
                       </div>
                       <span className="errorText">time picker(range) error message</span>
-                    </span>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -188,17 +188,17 @@ function AdminBasicEdit() {
           </li>
           <li className="list">
             <div className="list-row wid50">
-              <label className="c">TimePicker1개</label>
+              <label className="f-label">TimePicker1개</label>
               <div className="cont">
                 <div className="form-table">
                   <div className="form-cell wid50">
-                    <span className="form-group form-glow">
+                    <div className="form-group form-glow">
                       <div className="df">
                         <div className="wid100">
                           <TimePicker className="wid100" minuteStep={15} secondStep={10} hourStep={1} status="" />
                         </div>
                       </div>
-                    </span>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -210,14 +210,14 @@ function AdminBasicEdit() {
               <div className="cont">
                 <div className="form-table">
                   <div className="form-cell wid50">
-                    <span className="form-group form-glow">
+                    <div className="form-group form-glow">
                       <div className="df">
                         <div className="wid100">
                           <TimePicker.RangePicker className="wid100" status="error" />
                           <span className="errorText">time picker(range) error message</span>
                         </div>
                       </div>
-                    </span>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -231,9 +231,9 @@ function AdminBasicEdit() {
               <div className="cont">
                 <div className="form-table">
                   <div className="form-cell wid100">
-                    <span className="form-group wid100 mr5">
+                    <div className="form-group wid100 mr5">
                       <input type="text" className="form-tag" name="" placeholder="" />
-                    </span>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -245,9 +245,9 @@ function AdminBasicEdit() {
               <div className="cont">
                 <div className="form-table">
                   <div className="form-cell wid100">
-                    <span className="form-group wid100 mr5">
+                    <div className="form-group wid100 mr5">
                       <input type="text" className="form-tag" name="" placeholder="" />
-                    </span>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -261,7 +261,7 @@ function AdminBasicEdit() {
               <div className="cont">
                 <div className="form-table">
                   <div className="form-cell wid100">
-                    <span className="form-group wid100 mr5">
+                    <div className="form-group wid100 mr5">
                       <AntSelect
                         mode="multiple"
                         allowClear
@@ -270,7 +270,7 @@ function AdminBasicEdit() {
                         options={options2}
                       />
                       <span className="errorText">select(multiple) error message</span>
-                    </span>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -284,7 +284,7 @@ function AdminBasicEdit() {
               <div className="cont">
                 <div className="form-table">
                   <div className="form-cell wid100">
-                    <span className="form-group wid100 mr5">
+                    <div className="form-group wid100 mr5">
                       <Select
                         defaultValue={[]}
                         options={options}
@@ -297,7 +297,7 @@ function AdminBasicEdit() {
                         }}
                       />
                       <span className="errorText">auto complete error message</span>
-                    </span>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -311,7 +311,7 @@ function AdminBasicEdit() {
               <div className="cont">
                 <div className="form-table">
                   <div className="form-cell wid100">
-                    <span className="form-group wid100 mr5">
+                    <div className="form-group wid100 mr5">
                       <TreeSelect
                         showSearch
                         treeCheckable
@@ -329,7 +329,7 @@ function AdminBasicEdit() {
                         status="error"
                       />
                       <span className="errorText">tree-select error message</span>
-                    </span>
+                    </div>
                   </div>
                 </div>
               </div>
