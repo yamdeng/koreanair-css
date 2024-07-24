@@ -80,7 +80,7 @@ function PRiskForm1() {
             </div>
           </div>
           <div className="form-table">
-            <div className="form-cell wid50">
+            <div className="form-cell ">
               <div className="form-group wid100">
                 <AntSelect
                   style={{ width: '100%' }}
@@ -108,9 +108,11 @@ function PRiskForm1() {
             </div>
             <div className="form-cell wid50">
               <div className="form-group form-glow">
-                <DatePicker status="" />
-                <span className="unt">~</span>
-                <DatePicker status="" />
+                <div className="df">
+                  <DatePicker status="" />
+                  <span className="unt">~</span>
+                  <DatePicker status="" />
+                </div>
               </div>
             </div>
           </div>
@@ -156,6 +158,7 @@ function PRiskForm1() {
                 <label className="f-label">
                   발생공항 <span className="required">*</span>
                 </label>
+                <button type="button" className="icon-sch"></button>
               </div>
             </div>
             <div className="form-cell wid50">
