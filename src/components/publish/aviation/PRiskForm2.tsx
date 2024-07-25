@@ -176,16 +176,6 @@ function PRiskForm2() {
             <div className="edit-area">dfdfdfdf</div>
           </dd>
         </dl>
-        <dl className="tg-item">
-          <dt>
-            <button type="button" className="btn-tg">
-              조사보고서
-            </button>
-          </dt>
-          <dd className="tg-conts">
-            <div className="edit-area">dfdfdfdf</div>
-          </dd>
-        </dl>
       </div>
 
       {/* 하단버튼영역 */}

@@ -185,8 +185,8 @@ input, select{font-family:'KoreanAirSans'}
 .conts-subTit span{font-size:1.5rem}
 
 /*검색영역-접기펴기 버튼영역*/
-.TopButton-area{position:relative;padding-top:2.0rem}
-.TopButton-area .btn-fold{position:absolute;top:-0.5rem;right:0.3rem;font-size:1.4rem;border:0.1rem solid var(--color-neutral-40);padding:0.3rem 1.2rem;background-color:var(--color-neutral-20);border-top-left-radius:var(--radius-small, 0.3rem);border-top-right-radius:var(--radius-small, 0.3rem);color:var(--color-neutral-8)}
+.TopButton-area{position:relative;/*padding-top:2.0rem*/}
+.TopButton-area .btn-fold{position:absolute;top:-0.5rem;right:0.3rem;z-index:999; font-size:1.4rem;border:0.1rem solid var(--color-neutral-40);padding:0.3rem 1.2rem;background-color:var(--color-neutral-20);border-top-left-radius:var(--radius-small, 0.3rem);border-top-right-radius:var(--radius-small, 0.3rem);color:var(--color-neutral-8)}
 .btn-fold::after{content:'접기';font-weight:400}
 .btn-fold.open::after{content:'펴기';font-weight:400}
 .TopButton-area .btn-fold.open{border:0.1rem solid var(--color-neutral-40);color:var(--color-neutral-8)}
@@ -197,7 +197,7 @@ input, select{font-family:'KoreanAirSans'}
 .form-group .invalid-txt.textarea{top: 201px}
 
 .form-group .f-label{display:inline-block;position:absolute;left:1.0rem;top:0.8rem;background:var(--color-neutral-10);padding:0.2rem 0.4rem 0.4rem;line-height:1em;font-size:1.4rem !important;transition: all .2s ease}
-.form-tag{position:relative;height:3.5rem;border:0.1rem solid var(--color-neutral-40);border-radius:0.5rem;padding:0 1.0rem;width:100%;box-sizing:border-box;color:var(--color-neutral-80);background:var(--color-neutral-10);outline:none!important;text-indent:1.0rem}
+.form-tag{position:relative;height:4rem;border:0.1rem solid var(--color-neutral-40);border-radius:0.5rem;padding:0 1.0rem;width:100%;box-sizing:border-box;color:var(--color-neutral-80);background:var(--color-neutral-10);outline:none!important;text-indent:1.0rem}
 .form-tag:not([value=""]){border:0.1rem solid var(--color-neutral-40)}
 .form-tag.active, .form-tag:focus{border:0.1rem solid var(--color-mblue-100) !important;color:var(--color-mblue-100) !important}
 
@@ -216,7 +216,7 @@ input, select{font-family:'KoreanAirSans'}
 .form-tag-select:disabled + .f-label, .form-tag-select:focus + .f-label, .form-tag-select.active + .f-label, .form-tag-select.isValue + .f-label, .form-tag-select.invalid + .f-label{left:1.0rem;top:-2.0rem;font-size:1.3rem;transition: all 0.3s ease}
 
 /*toggle*/
-.info-wrap{padding:0px 2.0rem 2.6rem;border-top:0.1rem solid var(--color-neutral-40)}
+.info-wrap{padding:0px 2.0rem 2.6rem;border-top:0.1rem solid var(--color-darkblue-100);background-color:var(--color-neutral-10)}
 .info-wrap > dl > dt{padding:1.8rem 0 1.7rem}
 .info-wrap > dl > dt .btn-tg{padding:0 6.7rem 0 0;font-family:"KoreanAirSans";font-size:1.8rem;color:var(--color-neutral-80);font-weight:500}
 .info-wrap > dl > dd{margin:0 -2.0rem 1.0rem}
@@ -244,13 +244,17 @@ input, select{font-family:'KoreanAirSans'}
 .sr-only{position:absolute; z-index: -1;overflow:hidden;width:0.1rem;height:0.1rem;margin: 0 !important;font-size:0.1rem;line-height:2;opacity:0}
 
 /*scrollbar color*/
-.ag-root-wrapper{border-radius:0}
+.ag-root-wrapper{border-radius:0;border:none}
 ::-webkit-scrollbar{width:0.3em;height:0.3em}
 ::-webkit-scrollbar-track{border-radius:0;background:var(--color-neutral-20)}
 ::-webkit-scrollbar-thumb{border-radius:1.0rem;background:var(--color-neutral-40)}
 
 
 /*라이브러리*/
+.ag-header-row{height:5.0rem !important}
+.ag-header.ag-header-allow-overflow .ag-header-row{background-color:var(--color-neutral-20) !important}
+.ag-ltr .ag-cell{height:45px !important}
+.ag-header-cell-text{color:var(--color-darkblue-100) !important}
 .ag-theme-quartz{border-top:solid 1px var(--color-darkblue-100)}
 :where(.css-dev-only-do-not-override-98ntnt).ant-picker .ant-picker-input >input{line-height:2.5rem}
 :where(.css-dev-only-do-not-override-98ntnt).ant-picker .ant-picker-input{display:flex}

@@ -193,6 +193,13 @@ function PRiskForm1() {
       </div>
       {/* //검색영역 */}
 
+      <div className="Report-process">
+        <ol className="Report-process-list">
+          <li className="Report-process-item">작성</li>
+          <li className="Report-process-item">작성</li>
+        </ol>
+      </div>
+
       {/*보고서 조회 버튼
       <div className="Report-list-wrap">
         <ol className="Report-list">

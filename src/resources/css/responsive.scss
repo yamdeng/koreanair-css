@@ -8,6 +8,7 @@
 @media screen and (min-width: 1024px) and (max-width: 1280px){
   .header .GNB  {display: none;} 
   .list-common-modal-content, .org-select-modal-content, .org-change-modal-content {width: 90%;}
+
 }
 
 
@@ -40,6 +41,7 @@
   .detail-list .list .list-row{display:inline-block;position:relative;width:100%;margin-left:0}
   .detail-form .detail-list .list .list-row + .list-row{margin-left:0;margin-top:2.0rem}
 }
+
 
 
 @media screen and (max-width: 375px) {  
