@@ -254,7 +254,8 @@ input, select{font-family:'KoreanAirSans'}
 .ag-header-row{height:5.0rem !important}
 .ag-header.ag-header-allow-overflow .ag-header-row{background-color:var(--color-neutral-20) !important}
 .ag-ltr .ag-cell{height:45px !important}
-.ag-header-cell-text{color:var(--color-darkblue-100) !important}
+.ag-header-cell-text{color:var(--color-darkblue-100) !important;}
+.ag-header-cell-label{display:inline;text-align:center;flex: 1 auto;align-self:auto}
 .ag-theme-quartz{border-top:solid 1px var(--color-darkblue-100)}
 :where(.css-dev-only-do-not-override-98ntnt).ant-picker .ant-picker-input >input{line-height:2.5rem}
 :where(.css-dev-only-do-not-override-98ntnt).ant-picker .ant-picker-input{display:flex}
