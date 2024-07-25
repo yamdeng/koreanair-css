@@ -13,14 +13,14 @@ AviationPageInfo.list = [
     success: false,
   },
   {
-    title: '안전위험관리>안전조사-조사보고서',
+    title: '안전위험관리>안전조사-조사보고서 리스트',
     Component: PRiskForm1,
     path: 'PRiskForm1',
     description: '',
     success: false,
   },
   {
-    title: '안전위험관리>안전조사-조사보고서 신규',
+    title: '안전위험관리>안전조사-조사보고서 뷰',
     Component: PRiskForm2,
     path: 'PRiskForm2',
     description: '',
