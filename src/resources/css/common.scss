@@ -28,7 +28,7 @@
   --color-Warning:#C84300;
   --color-Warning-BG:#FEF4E6;
   --color-negative:#DA291C;
-  --color-negative-bg:#FFF5F5; 
+  --color-negative-bg:#FFF5F5;
  }
 
  html {
@@ -87,9 +87,9 @@ input, select{font-family:'KoreanAirSans'}
   > button{}
   button + button{margin-left:0.5rem}
   .btn_text{font-family:'KoreanAirSans';font-weight:400;font-size:1.5rem}
-  .btn-darkblue-line{border:solid 0.1rem var(--color-darkblue-100);color:var(--color-neutral-80);color:var(--color-darkblue-100)}
-  .btn-lightblue{background-color:var(--color-lightblue-40);color:var(--color-darkblue-100)}
-  .btn-sm{padding:0.4rem 1.8rem;line-height:1.8rem;border-radius:99.9rem;align-items:center}
+  .btn-darkblue-line{border:solid 0.1rem var(--color-darkblue-100);color:var(--color-darkblue-100)}
+  .btn-lightblue{border:solid 0.1rem var(--color-lightblue-40);background-color:var(--color-lightblue-40);color:var(--color-darkblue-100)}
+  .btn-sm{padding:0.4rem 1.8rem;line-height:2.3rem;border-radius:99.9rem;align-items:center}
   position:relative;right:0;top:0;float:right;
   @include mobile {
     width:100%;
@@ -130,7 +130,7 @@ input, select{font-family:'KoreanAirSans'}
 }
 /* 상단 타이틀 */
 .conts-title{position:relative;border-bottom:solid 0.1rem var(--color-neutral-40);align-items:center;padding:2.0rem 0 4.0rem 0;margin-bottom:1.0rem}
-.conts-title h2{float:left;font-family:"KoreanAirSans";font-size:2.6rem;color:var(--color-neutral-80);font-weight:700}
+.conts-title h2{float:left;font-family:"KoreanAirSans";font-size:3rem;color:var(--color-neutral-80);font-weight:700}
 .conts-title h2 span{font-size:1.8rem;color:var(--color-mblue-100)}
 
 /* 기본형 */
@@ -174,9 +174,9 @@ input, select{font-family:'KoreanAirSans'}
 }
 
 /*검색영역*/
-.boxForm{position:relative;padding:0px 2.0rem 2.0rem;margin-bottom:3.0rem;background-color:var(--color-neutral-20);border-radius:var(--radius-small, 8px)}
+.boxForm{position:relative;padding:0px 3rem 3rem;margin-bottom:3.0rem;background-color:var(--color-neutral-20);border-radius:var(--radius-small, 8px)}
 .boxForm .form-table{display:flex;width:100%}
-.boxForm .form-table:first-child{padding-top:2.3rem}
+.boxForm .form-table:first-child{padding-top:3rem}
 .boxForm .form-table + .form-table{padding-top:1.5rem}
 .boxForm .form-table .form-cell{position:relative;flex-grow:1;padding-right:1.0rem;padding-top:0}
 .boxForm .form-table .form-cell:last-child{padding-right:0}
@@ -246,8 +246,9 @@ input, select{font-family:'KoreanAirSans'}
 /*scrollbar color*/
 .ag-root-wrapper{border-radius:0}
 ::-webkit-scrollbar{width:0.3em;height:0.3em}
-::-webkit-scrollbar-track{border-radius:0;background:var(--color-neutral30)}
-::-webkit-scrollbar-thumb{border-radius:1.0rem;background:var(--color-neutral60)}
+::-webkit-scrollbar-track{border-radius:0;background:var(--color-neutral-20)}
+::-webkit-scrollbar-thumb{border-radius:1.0rem;background:var(--color-neutral-40)}
+
 
 /*라이브러리*/
 .ag-theme-quartz{border-top:solid 1px var(--color-darkblue-100)}
