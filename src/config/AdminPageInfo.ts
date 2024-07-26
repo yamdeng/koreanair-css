@@ -3,6 +3,8 @@ import AdminBasicEdit from '@/components/publish/admin/AdminBasicEdit';
 import AdminBasicView from '@/components/publish/admin/AdminBasicView';
 import AdminBasicForm2 from '@/components/publish/admin/AdminBasicForm2';
 import AdminBasicFormOther from '@/components/publish/admin/AdminBasicFormOther';
+import AdminDeptSearch from '@/components/publish/admin/AdminDeptSearch';
+import AdminCodeManage from '@/components/publish/admin/AdminCodeManage';
 
 const AdminPageInfo: any = {};
 
@@ -39,6 +41,20 @@ AdminPageInfo.list = [
     title: 'AdminBasicFormOther',
     Component: AdminBasicFormOther,
     path: 'AdminBasicFormOther',
+    description: '',
+    success: false,
+  },
+  {
+    title: '부서검색',
+    Component: AdminDeptSearch,
+    path: 'AdminDeptSearch',
+    description: '',
+    success: false,
+  },
+  {
+    title: '코드관리',
+    Component: AdminCodeManage,
+    path: 'AdminCodeManage',
     description: '',
     success: false,
   },
