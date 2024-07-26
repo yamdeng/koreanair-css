@@ -1,4 +1,11 @@
+import {
+  DATE_PICKER_TYPE_DATE,
+  DATE_PICKER_TYPE_MONTH,
+  DATE_PICKER_TYPE_QUARTER,
+  DATE_PICKER_TYPE_YEAR,
+} from '@/config/CommonConstant';
 import _ from 'lodash';
+import dayjs from 'dayjs';
 
 const convertEnterStringToBrTag = function (value) {
   return value.replace(/\\r\\n|\r\n|\n|\\n/g, '<br/>');
@@ -98,6 +105,158 @@ const applyGroupingRowSpanByPageSize = (data, columnName, pageSize = 1000000) =>
   return _.cloneDeep(data);
 };
 
+// listToTreeData(deptList.result, 'DEPT_ID', 'PRNT_ID', '10073')
+function listToTreeData(items, treeKey, treeParentKey, rootValue) {
+  const rootItems = [];
+  const lookup = {};
+  for (const item of items) {
+    const lookUpTreeValue = item[treeKey];
+    const lookUpTreeParentValue = item[treeParentKey];
+    if (!lookup[lookUpTreeValue]) {
+      lookup[lookUpTreeValue] = { children: [] };
+    }
+    lookup[lookUpTreeValue] = { ...item, children: lookup[lookUpTreeValue].children };
+
+    // if (lookUpTreeParentValue == rootValue) {
+    // if (lookUpTreeValue == rootValue) {
+    if (lookUpTreeValue == rootValue) {
+      rootItems.push(lookup[lookUpTreeValue]);
+    } else {
+      if (!lookup[lookUpTreeParentValue]) {
+        lookup[lookUpTreeParentValue] = { children: [] };
+      }
+      lookup[lookUpTreeParentValue].children.push(lookup[lookUpTreeValue]);
+    }
+  }
+  return rootItems;
+}
+
+const getDateFormatByPickerType = (pickerType, useWithTimePicker, excludeSecondsTime) => {
+  if (pickerType === DATE_PICKER_TYPE_DATE) {
+    if (useWithTimePicker) {
+      if (excludeSecondsTime) {
+        return 'YYYY-MM-DD HH:mm';
+      } else {
+        return 'YYYY-MM-DD HH:mm:ss';
+      }
+    } else {
+      return 'YYYY-MM-DD';
+    }
+  } else if (pickerType === DATE_PICKER_TYPE_MONTH) {
+    return 'YYYY-MM';
+  } else if (pickerType === DATE_PICKER_TYPE_YEAR) {
+    return 'YYYY';
+  } else if (pickerType === DATE_PICKER_TYPE_QUARTER) {
+    return `YYYY-MM-DD`;
+  }
+};
+
+// 'YYYY-MM-DD'인 날짜를 분기 문자열로 변환
+const convertDateToQuarterValueString = (dateStringInfo) => {
+  let result = null;
+  if (dateStringInfo) {
+    if (Array.isArray(dateStringInfo)) {
+      if (dateStringInfo.length) {
+        result = dateStringInfo.map((dateString) => dayjs(dateString, 'YYYY-MM-DD').format('YYYY-[Q]Q'));
+      }
+    } else {
+      result = dayjs(dateStringInfo, 'YYYY-MM-DD').format('YYYY-[Q]Q');
+    }
+  }
+
+  return result;
+};
+
+// date util start
+
+// // '2021-09-01' ---> new Date 타입으로 변경
+// const stringToDate = function (dateString, format) {
+//   let resultDate = null;
+//   if (dateString) {
+//     resultDate = moment(dateString, format).toDate();
+//   }
+//   return resultDate;
+// };
+
+// // '14:59' ---> new Date 타입으로 변경
+// const stringToTime = function (timeString, format) {
+//   let resultDate = null;
+//   if (timeString) {
+//     resultDate = moment(timeString, format).toDate();
+//   }
+//   return resultDate;
+// };
+
+// const dateToString = function (date, format) {
+//   return moment(date).format(format);
+// };
+
+// // Date 타입 or moment 타입의 값이 오늘 날짜인지 체크
+// const isToday = function (date) {
+//   return moment(date).isSame(moment(), 'day');
+// };
+
+// // date value를 custom한 format으로 변환
+// const convertDate = function (value, valueFormat, displayFormat) {
+//   let displayDate = '';
+//   displayFormat = displayFormat || Config.defaultDateDisplayFormat;
+//   if (value) {
+//     displayDate = moment(value, valueFormat).format(displayFormat);
+//   }
+//   return displayDate;
+// };
+
+/**
+ *
+ * @param dateLabel : moment 라이브러리 add, substract 함수의 파라미터(문자열)
+ * 예시) dateLabel : '1 days', '10 minutes'
+ * https://momentjscom.readthedocs.io/en/latest/moment/03-manipulating/02-subtract/
+ * @returns
+ */
+// export const convertLabelToDate = (dateLabel: string): Date => {
+//   const dateLabelDetails = dateLabel.split(' ');
+//   const dateNumber = Number(dateLabelDetails[0]);
+//   const dateKind = dateLabelDetails[1] as moment.unitOfTime.DurationConstructor;
+
+//   return moment().subtract(dateNumber, dateKind).toDate();
+// };
+
+// TODO : convertLabelToDate 체크
+// TODO : 2개의 date 기준으로 차이값 반환하기
+// TODO : 1개의 date와 수로 결과값 반환 : 문자열, date
+// TODO : <DateValue value="" valueFormat="" displayFormat="" />, <TimeValue value="" valueFormat="" displayFormat="" />
+// <DateValue/>, <TimeValue/>의 기본 valueFormat과 displayFormat이 존재함
+
+// date util end
+
+/**
+ *
+ * @param params : query string으로 변환할 object
+ * 예시) { page:1, pageSize: 10} : ?page=1&pageSize=10
+ * https://developer.mozilla.org/ko/docs/Web/API/URLSearchParams
+ */
+const objectToQueryString = (params: object): string => {
+  const urlSearchParamsInstance = new URLSearchParams(params as Record<string, string>);
+
+  return urlSearchParamsInstance.toString() ? '?' + urlSearchParamsInstance.toString() : '';
+};
+
+const getQueryStringByArray = (parameterName: string, arr: string[]): string => {
+  let result = '';
+  if (arr && arr.length) {
+    for (let arrIndex = 0; arrIndex < arr.length; arrIndex++) {
+      const stringValue = arr[arrIndex];
+      if (arrIndex === 0) {
+        result = result + `?${encodeURIComponent(parameterName)}=` + stringValue;
+      } else {
+        result = result + `&${encodeURIComponent(parameterName)}=` + stringValue;
+      }
+    }
+  }
+
+  return result;
+};
+
 export default {
   convertEnterStringToBrTag,
   replaceHighlightMarkup,
@@ -108,4 +267,9 @@ export default {
   mergeColumnInfosByLocal,
   saveColumnInfos,
   applyGroupingRowSpanByPageSize,
+  listToTreeData,
+  getDateFormatByPickerType,
+  convertDateToQuarterValueString,
+  getQueryStringByArray,
+  objectToQueryString,
 };

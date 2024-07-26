@@ -1,12 +1,11 @@
 import Config from '@/config/Config';
 import CommonUtil from '@/utils/CommonUtil';
 import { AgGridReact } from 'ag-grid-react';
-import { Modal } from 'antd';
+import { Select as AntSelect, Modal } from 'antd';
 import { produce } from 'immer';
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import GridActionButtonComponent from './GridActionButtonComponent';
 import GridLinkComponent from './GridLinkComponent';
-import { DatePicker, TimePicker, Select as AntSelect } from 'antd';
 
 const defaultColDef = {
   sortable: true,
@@ -21,6 +20,7 @@ const convertColumns = (columns) => {
       columnInfo.cellRendererParams = {
         linkPath: columnInfo.linkPath,
         detailPath: columnInfo.detailPath,
+        isWindowOpen: columnInfo.isWindowOpen,
       };
     } else if (columnInfo.field === 'actionsByOption') {
       // action button cell convert
@@ -88,8 +88,15 @@ function AppTable(props) {
     useActionButtons = false,
     actionButtons = ['detail', 'delete'],
     actionButtonListPath = '',
+    getGridRef,
+    applyAutoHeight,
     search,
+    store = null,
+    hiddenPagination,
   } = props;
+
+  // store
+  const { currentPage, prevPage, nextPage, totalCount, displayPageIndexList = [], changePageSize } = store || {};
 
   // 컬럼 동적 셋팅 모달 open
   const [isColumnSettingModalOpen, setIsColumnSettingModalOpen] = useState(false);
@@ -110,7 +117,7 @@ function AppTable(props) {
       headerName: 'Actions',
       actionButtons: actionButtons,
       actionButtonListPath: actionButtonListPath,
-      search: search,
+      search: store ? store.search : search,
     });
   }
 
@@ -213,56 +220,48 @@ function AppTable(props) {
 
   return (
     <>
-      {/* <div style={{ padding: 3 }}>
-        <span>{CommonUtil.formatString(gridTotalCountTemplate, rowData.length)}</span>
-        <button className="button" onClick={downloadCSVFile} style={{ display: displayCSVExportButton ? '' : 'none' }}>
-          download csv
-        </button>
-        <button
-          className="button"
-          onClick={() => setIsColumnSettingModalOpen(true)}
-          style={{ display: useColumnDynamicSetting ? '' : 'none' }}
-        >
-          동적 필드 적용
-        </button>
-      </div> */}
-
       <div className="table-header">
-        <div className="count">{CommonUtil.formatString(gridTotalCountTemplate, rowData.length)}</div>
+        <div className="count">
+          {CommonUtil.formatString(gridTotalCountTemplate, store ? totalCount : rowData.length)}
+        </div>
         <div className="btn-area">
           <button type="button" name="button" className="btn-sm btn_text btn-darkblue-line">
             신규
           </button>
+          <button
+            name="button"
+            className="btn-sm btn_text btn-darkblue-line"
+            onClick={downloadCSVFile}
+            style={{ display: displayCSVExportButton ? '' : 'none' }}
+          >
+            download csv
+          </button>
+          <button
+            name="button"
+            className="btn-sm btn_text btn-darkblue-line"
+            onClick={() => setIsColumnSettingModalOpen(true)}
+            style={{ display: useColumnDynamicSetting ? '' : 'none' }}
+          >
+            동적 필드 적용
+          </button>
           <span>
             <AntSelect
-              style={{ width: '100%' }}
-              options={[
-                {
-                  value: 'jack',
-                  label: 'Jack',
-                },
-                {
-                  value: 'lucy',
-                  label: 'Lucy',
-                },
-                {
-                  value: 'Yiminghe',
-                  label: 'yiminghe',
-                },
-                {
-                  value: 'disabled',
-                  label: 'Disabled',
-                  disabled: true,
-                },
-              ]}
+              style={{ width: 150, display: hiddenPagination || enablePagination || !store ? 'none' : '' }}
+              onChange={(size) => {
+                changePageSize(size);
+              }}
+              value={store ? store.pageSize : pageSize}
+              options={pageSizeList.map((size) => {
+                return { value: size, label: size };
+              })}
             />
           </span>
         </div>
       </div>
-
       <div className="ag-theme-quartz" style={{ height: tableHeight }}>
         <AgGridReact
           ref={gridRef}
+          domLayout={applyAutoHeight ? 'autoHeight' : 'normal'}
           rowData={rowData}
           columnDefs={applyColumns}
           loadingOverlayComponent={loadingOverlayComponent}
@@ -272,7 +271,7 @@ function AppTable(props) {
           onRowDoubleClicked={handleRowDoubleClick}
           rowSelection={rowSelectMode}
           suppressRowClickSelection={true}
-          paginationPageSize={pageSize}
+          paginationPageSize={store ? store.pageSize : pageSize}
           paginationPageSizeSelector={pageSizeList}
           pagination={enablePagination}
           suppressRowTransform={searchRowSpanIndex !== -1 ? true : false}
@@ -282,6 +281,16 @@ function AppTable(props) {
           tooltipHideDelay={1000}
           tooltipMouseTrack={true}
           enableBrowserTooltips={false}
+          onGridReady={(params) => {
+            if (displayTableLoading) {
+              params.api.showLoadingOverlay();
+            } else {
+              params.api.hideOverlay();
+            }
+            if (getGridRef) {
+              getGridRef(params);
+            }
+          }}
           {...props}
         />
       </div>
@@ -309,24 +318,79 @@ function AppTable(props) {
         </Modal>
       )}
 
-      <div className="pagination">
-        <a className="first" href="#">
+      <div className="pagination" style={{ display: hiddenPagination || enablePagination ? 'none' : '' }}>
+        <a
+          className="first"
+          href=""
+          style={{ display: prevPage ? '' : 'none' }}
+          onClick={(event) => {
+            event.preventDefault();
+            store.goFirstPage();
+          }}
+        >
           <span className="sr-only">이전</span>
         </a>
-        <a className="prev" href="#">
+        <a
+          className="prev"
+          href=""
+          style={{ display: prevPage ? '' : 'none' }}
+          onClick={(event) => {
+            event.preventDefault();
+            store.changeCurrentPage(prevPage);
+          }}
+        >
           <span className="sr-only">이전</span>
         </a>
         <span>
-          <a href="#">1</a>
-          <a href="#">2</a>
-          <strong title="현재페이지">3</strong>
-          <a href="#">4</a>
-          <a href="#">5</a>
+          {displayPageIndexList.map((pageIndex) => {
+            let pageComponent = (
+              <a
+                href=""
+                key={pageIndex}
+                onClick={(event) => {
+                  event.preventDefault();
+                  store.changeCurrentPage(pageIndex);
+                }}
+              >
+                {pageIndex}
+              </a>
+            );
+            if (pageIndex === currentPage) {
+              pageComponent = (
+                <strong
+                  title="현재페이지"
+                  key={pageIndex}
+                  onClick={() => {
+                    store.changeCurrentPage(pageIndex);
+                  }}
+                >
+                  {pageIndex}
+                </strong>
+              );
+            }
+            return pageComponent;
+          })}
         </span>
-        <a className="next" href="#">
+        <a
+          className="next"
+          href=""
+          style={{ display: nextPage ? '' : 'none' }}
+          onClick={(event) => {
+            event.preventDefault();
+            store.changeCurrentPage(nextPage);
+          }}
+        >
           <span className="sr-only">다음</span>
         </a>
-        <a className="last" href="#">
+        <a
+          className="last"
+          href=""
+          style={{ display: nextPage ? '' : 'none' }}
+          onClick={(event) => {
+            event.preventDefault();
+            store.goLastPage();
+          }}
+        >
           <span className="sr-only">다음</span>
         </a>
       </div>
