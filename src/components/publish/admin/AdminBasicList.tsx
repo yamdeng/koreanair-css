@@ -56,6 +56,7 @@ function AdminBasicList() {
           <div className="form-cell wid50">
             <div className="form-group wid100 mr5 ">
               <input
+                id="firstInput"
                 type="text"
                 className="form-tag error"
                 name="title"
@@ -64,7 +65,7 @@ function AdminBasicList() {
                   setInputValue(event.target.value);
                 }}
               />
-              <label className="f-label">
+              <label className="f-label" htmlFor="firstInput">
                 Sbject <span className="required">*</span>
               </label>
               <span className="errorText">error message</span>
@@ -73,7 +74,9 @@ function AdminBasicList() {
           <div className="form-cell wid50">
             <div className="form-group wid100">
               <AntSelect
+                id="select1"
                 style={{ width: '100%' }}
+                className="label-select"
                 options={[
                   {
                     value: 'jack',
@@ -94,6 +97,10 @@ function AdminBasicList() {
                   },
                 ]}
               />
+              <label className="f-label" htmlFor="select1">
+                Sbject <span className="required">*</span>
+              </label>
+              <span className="errorText">error message</span>
             </div>
           </div>
         </div>
@@ -129,11 +136,15 @@ function AdminBasicList() {
             <div className="form-group form-glow">
               <div className="df">
                 <div>
-                  <DatePicker status="" /> {/* status="error" */}
+                  <DatePicker status="" id="date1" className="label-picker" placeholder="" /> {/* status="error" */}
+                  <label className="f-label" htmlFor="date1">
+                    date1-1 <span className="required">*</span>
+                  </label>
+                  <span className="errorText">date1 error</span>
                 </div>
                 <span className="unt">~</span>
                 <div>
-                  <DatePicker status="" />
+                  <DatePicker status="" className="label-picker" /> {/* status="error" */}
                 </div>
               </div>
             </div>
