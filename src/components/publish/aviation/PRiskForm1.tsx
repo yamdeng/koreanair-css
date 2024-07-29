@@ -35,6 +35,7 @@ function PRiskForm1() {
             <div className="form-cell wid50">
               <div className="form-group wid100 mr5">
                 <input
+                  id="firstInput"
                   type="text"
                   className="form-tag error"
                   name="title"
@@ -44,7 +45,7 @@ function PRiskForm1() {
                   }}
                 />
                 {/**/}
-                <label className="f-label">
+                <label className="f-label" htmlFor="firstInput">
                   Sbject <span className="required">*</span>
                 </label>
                 <span className="errorText">error message</span>
@@ -147,6 +148,7 @@ function PRiskForm1() {
             <div className="form-cell wid50">
               <div className="form-group wid100 mr5">
                 <input
+                  id="firstInput1"
                   type="text"
                   className="form-tag"
                   name="title"
@@ -155,7 +157,7 @@ function PRiskForm1() {
                     setInputValue(event.target.value);
                   }}
                 />
-                <label className="f-label">
+                <label className="f-label" htmlFor="firstInput1">
                   발생공항 <span className="required">*</span>
                 </label>
                 <button type="button" className="icon-sch"></button>

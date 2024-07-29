@@ -135,7 +135,7 @@ function AdminBasicList() {
           <div className="form-cell wid50">
             <div className="form-group form-glow">
               <div className="df">
-                <div>
+                <div className="date1">
                   <DatePicker status="" id="date1" className="label-picker" placeholder="" /> {/* status="error" */}
                   <label className="f-label" htmlFor="date1">
                     date1-1 <span className="required">*</span>
@@ -143,8 +143,12 @@ function AdminBasicList() {
                   <span className="errorText">date1 error</span>
                 </div>
                 <span className="unt">~</span>
-                <div>
-                  <DatePicker status="" className="label-picker" /> {/* status="error" */}
+                <div className="date2">
+                  <DatePicker status="" id="date2" className="label-picker" placeholder="" /> {/* status="error" */}
+                  <label className="f-label" htmlFor="date2">
+                    date1-2 <span className="required">*</span>
+                  </label>
+                  <span className="errorText">date2 error</span>
                 </div>
               </div>
             </div>
@@ -154,6 +158,7 @@ function AdminBasicList() {
           <div className="form-cell wid50">
             <div className="form-group wid100 mr5">
               <input
+                id="firstInput2"
                 type="text"
                 className="form-tag"
                 name="title"
@@ -162,7 +167,7 @@ function AdminBasicList() {
                   setInputValue(event.target.value);
                 }}
               />
-              <label className="f-label">
+              <label className="f-label" htmlFor="firstInput2">
                 장비번호 <span className="required">*</span>
               </label>
             </div>
@@ -170,6 +175,7 @@ function AdminBasicList() {
           <div className="form-cell wid50">
             <div className="form-group wid100 mr5">
               <input
+                id="firstInput3"
                 type="text"
                 className="form-tag"
                 name="title"
@@ -179,13 +185,16 @@ function AdminBasicList() {
                 }}
                 disabled
               />
-              <label className="f-label">부서명</label>
+              <label className="f-label" htmlFor="firstInput3">
+                부서명
+              </label>
               <button type="button" className="icon-sch"></button>
             </div>
           </div>
           <div className="form-cell wid50">
             <div className="form-group wid100 mr5">
               <input
+                id="firstInput4"
                 type="text"
                 className="form-tag"
                 name="title"
@@ -194,7 +203,7 @@ function AdminBasicList() {
                   setInputValue(event.target.value);
                 }}
               />
-              <label className="f-label">
+              <label className="f-label" htmlFor="firstInput4">
                 모델명 <span className="required">*</span>
               </label>
             </div>
