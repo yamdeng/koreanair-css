@@ -109,7 +109,9 @@ function AdminBasicList() {
           <div className="form-cell ">
             <div className="form-group wid100">
               <AntSelect
+                id="select2"
                 style={{ width: '100%' }}
+                className="label-select"
                 options={[
                   {
                     value: 'jack',
@@ -130,6 +132,10 @@ function AdminBasicList() {
                   },
                 ]}
               />
+              <label className="f-label" htmlFor="select2">
+                Event Date <span className="required"></span>
+              </label>
+              {/*<span className="errorText">auto complete error message</span>*/}
             </div>
           </div>
           <div className="form-cell wid50">

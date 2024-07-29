@@ -156,7 +156,7 @@ input, select{font-family:'KoreanAirSans'}
   .detail-list .list{display:flex;position:relative;width:100%;padding:1.5rem 0;border-bottom:solid 0.1rem var(--color-neutral-40)}
   .detail-list .list .list-row{/*display:flex;*/position:relative;display:inline-flex}
   .detail-list .list .list-row + .list-row{margin-left:2.0rem}
-  .detail-list .list .f-label{position:absolute;left:0;top:50%;transform:translate(0, -50%);width:130px;text-align:left;color:var(--color-neutral-80);border-right:0.1rem solid var(--color-neutral-40);padding-right:2.0rem;box-sizing:border-box}
+  .detail-list .list .f-label{background-color: #0064de;  position:absolute;left:0;top:50%;transform:translate(0, -50%);width:130px;text-align:left;color:var(--color-neutral-80);border-right:0.1rem solid var(--color-neutral-40);padding-right:2.0rem;box-sizing:border-box}
 
   .detail-list .list .f-label .required{color:var(--color-negative)}
   .detail-list .list .cont{display:inline;margin-left:150px;box-sizing:border-box;width:100%}
@@ -266,6 +266,8 @@ input, select{font-family:'KoreanAirSans'}
 :where(.css-dev-only-do-not-override-98ntnt).ant-picker .ant-picker-input >input{line-height:2.5rem}
 :where(.css-dev-only-do-not-override-98ntnt).ant-picker .ant-picker-input{display:flex}
 :where(.css-dev-only-do-not-override-98ntnt).ant-picker-outlined{border:0.1rem solid var(--color-neutral-40)}
-:where(.css-dev-only-do-not-override-98ntnt).ant-select-single .ant-select-selector{line-height:3.5rem}
-:where(.css-dev-only-do-not-override-98ntnt).ant-select-single{height:3.5rem !important}
+:where(.css-dev-only-do-not-override-98ntnt).ant-select-single .ant-select-selector{line-height:4rem}
+:where(.css-dev-only-do-not-override-98ntnt).ant-select-single{height:4rem !important}
 :where(.css-dev-only-do-not-override-98ntnt)[class^="ant-select"] [class^="ant-select"], :where(.css-dev-only-do-not-override-98ntnt)[class*=" ant-select"] [class^="ant-select"]{color:var(--color-mblue-100)}
+.label-select.ant-select-focused + .f-label, .label-picker.ant-picker-focused+ .f-label{left:1rem;top:-1rem}
+:where(.css-dev-only-do-not-override-98ntnt).ant-picker{height:4rem}

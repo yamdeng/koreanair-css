@@ -48,14 +48,16 @@ function PRiskForm1() {
                 <label className="f-label" htmlFor="firstInput">
                   Sbject <span className="required">*</span>
                 </label>
-                <span className="errorText">error message</span>
+                {/*<span className="errorText">error message</span>*/}
               </div>
             </div>
             <div className="form-cell wid50">
               <div className="form-group wid100">
                 <AntSelect
+                  id="select1"
                   style={{ width: '100%' }}
-                  status="error"
+                  className="label-select"
+                  status=""
                   options={[
                     {
                       value: 'jack',
@@ -76,7 +78,10 @@ function PRiskForm1() {
                     },
                   ]}
                 />
-                <span className="errorText">auto complete error message</span>
+                <label className="f-label" htmlFor="select1">
+                  Status <span className="required">*</span>
+                </label>
+                {/*<span className="errorText">auto complete error message</span>*/}
               </div>
             </div>
           </div>
@@ -84,7 +89,9 @@ function PRiskForm1() {
             <div className="form-cell ">
               <div className="form-group wid100">
                 <AntSelect
+                  id="select2"
                   style={{ width: '100%' }}
+                  className="label-select"
                   options={[
                     {
                       value: 'jack',
@@ -105,14 +112,30 @@ function PRiskForm1() {
                     },
                   ]}
                 />
+                <label className="f-label" htmlFor="select2">
+                  Event Date <span className="required"></span>
+                </label>
+                {/*<span className="errorText">auto complete error message</span>*/}
               </div>
             </div>
             <div className="form-cell wid50">
               <div className="form-group form-glow">
                 <div className="df">
-                  <DatePicker status="" />
+                  <div className="date1">
+                    <DatePicker status="" id="date1" className="label-picker" placeholder="" /> {/* status="error" */}
+                    <label className="f-label" htmlFor="date1">
+                      date1-1 <span className="required"></span>
+                    </label>
+                    {/*<span className="errorText">date1 error</span>*/}
+                  </div>
                   <span className="unt">~</span>
-                  <DatePicker status="" />
+                  <div className="date2">
+                    <DatePicker status="" id="date2" className="label-picker" placeholder="" /> {/* status="error" */}
+                    <label className="f-label" htmlFor="date2">
+                      date1-2 <span className="required"></span>
+                    </label>
+                    {/*<span className="errorText">date2 error</span>*/}
+                  </div>
                 </div>
               </div>
             </div>
@@ -122,7 +145,9 @@ function PRiskForm1() {
               <div className="form-group wid100 mr5">
                 {/*Event Class */}
                 <AntSelect
+                  id="select3"
                   style={{ width: '100%' }}
+                  className="label-select"
                   options={[
                     {
                       value: 'jack',
@@ -143,6 +168,10 @@ function PRiskForm1() {
                     },
                   ]}
                 />
+                <label className="f-label" htmlFor="select3">
+                  Event Class <span className="required"></span>
+                </label>
+                {/*<span className="errorText">auto complete error message</span>*/}
               </div>
             </div>
             <div className="form-cell wid50">
@@ -167,7 +196,9 @@ function PRiskForm1() {
               <div className="form-group wid100 mr5">
                 {/*발생단계 */}
                 <AntSelect
+                  id="select4"
                   style={{ width: '100%' }}
+                  className="label-select"
                   options={[
                     {
                       value: 'jack',
@@ -188,6 +219,10 @@ function PRiskForm1() {
                     },
                   ]}
                 />
+                <label className="f-label" htmlFor="select4">
+                  발생단계 <span className="required"></span>
+                </label>
+                {/*<span className="errorText">auto complete error message</span>*/}
               </div>
             </div>
           </div>
@@ -201,47 +236,6 @@ function PRiskForm1() {
           <li className="Report-process-item">작성</li>
         </ol>
       </div>
-
-      {/*보고서 조회 버튼
-      <div className="Report-list-wrap">
-        <ol className="Report-list">
-          <li className="Report-list-item">
-            <a href="javascript:void(0);">
-              <div className="imgbox active">
-                <span className="icon -document -size48 -msize24"></span>
-              </div>
-            </a>
-            <div className="Report-list-title">
-              작성<span>(6)</span>
-            </div>
-          </li>
-          <li className="Report-list-item">
-            <div className="imgbox">
-              <span className="icon -document -size48 -msize24"></span>
-            </div>
-            <div className="Report-list-title">
-              결제<span>(6)</span>
-            </div>
-          </li>
-          <li className="Report-list-item">
-            <div className="imgbox">
-              <span className="icon -document -size48 -msize24"></span>
-            </div>
-            <div className="Report-list-title">
-              결제<span>(6)</span>
-            </div>
-          </li>
-          <li className="Report-list-item -last">
-            <div className="imgbox">
-              <span className="icon -document -size48 -msize24"></span>
-            </div>
-            <div className="Report-list-title">
-              결제<span>(6)</span>
-            </div>
-          </li>
-        </ol>
-      </div>
-     보고서 조회 버튼 */}
 
       {/*그리드영역 */}
       <div className="">
