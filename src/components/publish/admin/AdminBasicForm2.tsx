@@ -130,6 +130,18 @@ function AdminBasicForm2() {
               </label>
             </div>
           </div>
+          <div className="form-cell wid50">
+            <div className="chk-wrap">
+              <label>
+                <input type="checkbox" checked />
+                <span>체크박스</span>
+              </label>
+              <label>
+                <input type="checkbox" />
+                <span>미체크</span>
+              </label>
+            </div>
+          </div>
         </div>
       </div>
       {/* //검색영역 상단일경우 */}

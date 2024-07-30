@@ -65,12 +65,27 @@ button,input{border:none;background:none;vertical-align:middle}
 select{vertical-align:middle}
 input{margin:0;padding:0}
 button{cursor:pointer}
+.hide{display:none !important}
 
 input[type=checkbox],input[type=radio]{padding:0;vertical-align:middle;margin-top:-0.3rem;*margin-top:-0.2rem}
 
 /* checkbox, radio */
 [class^='radio-wrap'] > label{position:relative;overflow:hidden;cursor:pointer}
 [class^='radio-wrap'] > label > input{position:absolute;top:0;left:0;width:0;height:0;opacity:0}
+
+[class^="chk-wrap"] > label {position:relative; overflow:hidden; cursor:pointer;}
+[class^="chk-wrap"] > label > input {position:absolute; top:0; left:0; width:0px; height:0px; opacity:0;}
+
+.chk-wrap {display:inline-block; line-height:0;}
+.chk-wrap > label {display:inline-block; min-height:40px; padding:9px 9px 9px 30px; line-height:22px;}
+.chk-wrap > label > input + span {display:block; color:#666;}
+.chk-wrap > label > input:checked + span {color:rgba(34,34,34,1);}
+.chk-wrap > label > input + span:before, .chk-wrap > label > input + span:after {content :""; position:absolute; top:50%;}
+.chk-wrap > label > input + span:before {left:0; width:20px; height:20px; background:transparent; border:1px solid #b5b5b5; border-radius:50%; -webkit-transform:translateY(-50%); transform:translateY(-50%);}
+.chk-wrap > label > input[type="checkbox"] + span:after {left:8px; margin-top:-2px; width:8px; height:5px; border:solid #b5b5b5; border-width:0 0 1px 1px; -webkit-transform:rotate(-45deg) translateY(-50%); transform:rotate(-45deg) translateY(-50%);}
+.chk-wrap > label > input[type="radio"] + span:after {left:5px; width:10px; height:10px; border:1px solid #b5b5b5; border-radius:50%; -webkit-transform:translateY(-50%); transform:translateY(-50%);}
+.chk-wrap > label > input:checked + span:before {border-color:var(--color-darkblue-100);background:var(--color-darkblue-100)}
+.chk-wrap > label > input:checked + span:after {border-color:#fff;}
 
 /*input*/
 input[type=file], input[type=search], input[type=text]{padding:0.4rem 0 0.4rem 0.4rem}
@@ -207,9 +222,9 @@ input, select{font-family:'KoreanAirSans'}
 
 /*검색영역-접기펴기 버튼영역*/
 .TopButton-area{position:relative;/*padding-top:2.0rem*/}
-.TopButton-area .btn-fold{position:absolute;top:-0.5rem;right:0.3rem;z-index:999; font-size:1.4rem;border:0.1rem solid var(--color-neutral-40);padding:0.3rem 1.2rem;background-color:var(--color-neutral-20);border-top-left-radius:var(--radius-small, 0.3rem);border-top-right-radius:var(--radius-small, 0.3rem);color:var(--color-neutral-8)}
-.btn-fold::after{content:'접기';font-weight:400}
-.btn-fold.open::after{content:'펴기';font-weight:400}
+.TopButton-area .btn-fold{position:absolute;top:0rem;right:1rem;z-index:999;width:20rem;height:20rem; background: url(../images/icon-arrow-down.svg) right top no-repeat}
+/*.btn-fold::after{content:'접기';font-weight:400}
+.btn-fold.open::after{content:'펴기';font-weight:400}*/
 .TopButton-area .btn-fold.open{border:0.1rem solid var(--color-neutral-40);color:var(--color-neutral-8)}
 
 .form-group{position:relative;/*display:inline-block;*/vertical-align:middle}
