@@ -158,20 +158,18 @@ function AdminBasicEdit() {
       <div className="boxForm">
         <div className="form-table">
           <div className="form-cell wid50">
-            <div className="form-group wid100 mr5">
+            <div className="form-group wid100">
               <div className="df">
-                <div className="date1 wid100">
-                  <DatePicker status="" id="date1" className="label-picker wid50" placeholder="" />{' '}
-                  {/* status="error" */}
+                <div className="date1 ">
+                  <DatePicker status="" id="date1" className="label-picker" placeholder="" /> {/* status="error" */}
                   <label className="f-label" htmlFor="date1">
                     date1-1 <span className="required"></span>
                   </label>
                   {/*<span className="errorText">date1 error</span>*/}
                 </div>
                 <span className="unt">~</span>
-                <div className="date2 wid100">
-                  <DatePicker status="" id="date2" className="label-picker wid50" placeholder="" />{' '}
-                  {/* status="error" */}
+                <div className="date2 wid50">
+                  <DatePicker status="" id="date2" className="label-picker" placeholder="" /> {/* status="error" */}
                   <label className="f-label" htmlFor="date2">
                     date1-1 <span className="required"></span>
                   </label>
@@ -179,6 +177,90 @@ function AdminBasicEdit() {
                 </div>
               </div>
               <span className="errorText">time picker(range) error message</span>
+            </div>
+          </div>
+          <div className="form-cell wid50">
+            <div className="form-group form-glow">
+              <div className="df">
+                <div className="date3 wid50">
+                  <TimePicker
+                    className="label-picker wid50"
+                    id="date3"
+                    minuteStep={15}
+                    secondStep={10}
+                    hourStep={1}
+                    status=""
+                  />
+                  <label className="f-label" htmlFor="date3">
+                    TimePicker1개 <span className="required">*</span>
+                  </label>
+                  {/*<span className="errorText">date1 error</span>*/}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="boxForm">
+        <div className="form-table">
+          <div className="form-cell wid50">
+            <div className="form-group form-glow">
+              <div className="df">
+                <div className="date3 wid50">
+                  <TimePicker.RangePicker className="wid100" status="error" />
+                  <label className="f-label" htmlFor="date3">
+                    TimePicker2개 <span className="required">*</span>
+                  </label>
+                  {/*<span className="errorText">date1 error</span>*/}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="boxForm">
+        <div className="form-table">
+          <div className="form-cell wid50">
+            <div className="form-group form-glow wid50">
+              <AntSelect
+                mode="multiple"
+                id="select2"
+                allowClear
+                className="label-select wid100"
+                placeholder="Please select"
+                options={options2}
+              />
+              <label className="f-label" htmlFor="select2">
+                select(multiple)1개 <span className="required">*</span>
+              </label>
+              <span className="errorText">auto complete error message</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="boxForm">
+        <div className="form-table">
+          <div className="form-cell wid50">
+            <div className="form-group form-glow wid50">
+              <Select
+                id="select4"
+                defaultValue={[]}
+                options={options}
+                isMulti
+                name="colors"
+                className="basic-multi-select"
+                classNamePrefix="select"
+                classNames={{
+                  control: (state) => (!state.isFocused ? 'select-in-valid' : ''),
+                }}
+              />
+              <label className="f-label" htmlFor="select4">
+                AutoComplete1개 <span className="required">*</span>
+              </label>
+              <span className="errorText">auto complete error message</span>
             </div>
           </div>
         </div>
@@ -245,119 +327,6 @@ function AdminBasicEdit() {
 
       <div className="detail-form">
         <ul className="detail-list">
-          <li className="list">
-            <div className="list-row wid50">
-              <label className="f-label">data picker</label>
-              <div className="cont">
-                <div className="form-table">
-                  <div className="form-cell wid50">
-                    <div className="form-group form-glow">
-                      <div className="df">
-                        <div className="wid100">
-                          <DatePicker className="wid100" status="" /> {/* status="error" */}
-                        </div>
-                        <span className="until">~</span>
-                        <div className="wid100">
-                          <DatePicker className="wid100" status="" />
-                        </div>
-                      </div>
-                      <span className="errorText">time picker(range) error message</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </li>
-          <li className="list">
-            <div className="list-row wid50">
-              <label className="f-label">TimePicker1개</label>
-              <div className="cont">
-                <div className="form-table">
-                  <div className="form-cell wid50">
-                    <div className="form-group form-glow">
-                      <div className="df">
-                        <div className="wid100">
-                          <TimePicker className="wid100" minuteStep={15} secondStep={10} hourStep={1} status="" />
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </li>
-          <li className="list">
-            <div className="list-row wid50">
-              <label className="f-label">TimePicker2개</label>
-              <div className="cont">
-                <div className="form-table">
-                  <div className="form-cell wid50">
-                    <div className="form-group form-glow">
-                      <div className="df">
-                        <div className="wid100">
-                          <TimePicker.RangePicker className="wid100" status="error" />
-                          <span className="errorText">time picker(range) error message</span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </li>
-          <li className="list">
-            <div className="list-row wid50">
-              <label className="f-label">
-                input1개 <span className="required">*</span>
-              </label>
-              <div className="cont">
-                <div className="form-table">
-                  <div className="form-cell wid100">
-                    <div className="form-group wid100 mr5">
-                      <input type="text" className="form-tag" name="" placeholder="" />
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="list-row wid50">
-              <label className="f-label">
-                input1개 <span className="required">*</span>
-              </label>
-              <div className="cont">
-                <div className="form-table">
-                  <div className="form-cell wid100">
-                    <div className="form-group wid100 mr5">
-                      <input type="text" className="form-tag" name="" placeholder="" />
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </li>
-          <li className="list">
-            <div className="list-row wid50">
-              <label className="f-label">
-                select(multiple)1개 <span className="required">*</span>
-              </label>
-              <div className="cont">
-                <div className="form-table">
-                  <div className="form-cell wid100">
-                    <div className="form-group wid100 mr5">
-                      <AntSelect
-                        mode="multiple"
-                        allowClear
-                        className="wid100"
-                        placeholder="Please select"
-                        options={options2}
-                      />
-                      <span className="errorText">select(multiple) error message</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </li>
           <li className="list">
             <div className="list-row wid50">
               <label className="f-label">

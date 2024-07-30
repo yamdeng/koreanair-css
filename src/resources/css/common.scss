@@ -120,9 +120,8 @@ input, select{font-family:'KoreanAirSans'}
     }
   }
 }
-.text_color_neutral-10 {
-  color: var(--color-neutral-10); 
-}
+.text_color_neutral-10{color:var(--color-neutral-10)}
+
 /*그리드 위버튼*/
 .btns-area{
   > button{margin:0 0.5rem}
