@@ -13,17 +13,6 @@ function AdminBasicList() {
     <>
       <div className="conts-title">
         <h2>타이틀</h2>
-        <div className="btn-area">
-          <button type="button" name="button" className="btn-sm btn_text btn-lightblue">
-            조회
-          </button>
-          <button type="button" name="button" className="btn-sm btn_text btn-lightblue">
-            신규
-          </button>
-          <button type="button" name="button" className="btn-sm btn_text btn-lightblue">
-            초기화
-          </button>
-        </div>
       </div>
 
       {/*검색영역 */}
@@ -214,6 +203,14 @@ function AdminBasicList() {
               </label>
             </div>
           </div>
+        </div>
+        <div className="btn-area">
+          <button type="button" name="button" className="btn-sm btn_text btn-darkblue-line">
+            조회
+          </button>
+          <button type="button" name="button" className="btn-sm btn_text btn-darkblue-line">
+            초기화
+          </button>
         </div>
       </div>
       {/* //검색영역 */}
