@@ -225,9 +225,6 @@ function AppTable(props) {
           {CommonUtil.formatString(gridTotalCountTemplate, store ? totalCount : rowData.length)}
         </div>
         <div className="btn-area">
-          <button type="button" name="button" className="btn-sm btn_text btn-darkblue-line">
-            신규
-          </button>
           <button
             name="button"
             className="btn-sm btn_text btn-darkblue-line"
