@@ -60,13 +60,12 @@ function TestModal(props) {
       <div className="popup-container">
         <h3 className="pop_title">제목</h3>
         <div className="user-checkbox">
-          <div className="checklist01">
+          <div className="checklist">
             <div className="listbox">
-              <span className="title">부서</span>
               <div className="tree_wrap tree-right-space">
                 <div className="tree_form">
                   <div className="form-cell">
-                    <div className="form-group wid100 mt30 pd-10">
+                    <div className="form-group wid100">
                       <AntSelect
                         id="select1"
                         style={{ width: '100%' }}
@@ -92,12 +91,12 @@ function TestModal(props) {
                         ]}
                       />
                       <label className="f-label" htmlFor="select1">
-                        Sbject <span className="required">*</span>
+                        부서
                       </label>
                     </div>
                   </div>
                 </div>
-                <div className="tree_box">
+                <div className="tree_box bg">
                   <Tree
                     className="draggable-tree"
                     defaultExpandedKeys={expandedKeys}
@@ -108,29 +107,108 @@ function TestModal(props) {
                 </div>
               </div>
             </div>
-          </div>
-          <div className="checklist02">
-            <div className="form-cell">
-              <div className="form-group wid100 mr5">
-                <input
-                  type="text"
-                  className="form-tag"
-                  name="title"
-                  value={inputValue}
-                  onChange={(event) => {
-                    setInputValue(event.target.value);
-                  }}
-                />
-                <label className="f-label">검색</label>
-                <button type="button" className="icon-sch"></button>
+            <div className="search_box">
+              <div className="search">
+                <div className="form-cell mb20">
+                  <div className="form-group wid100">
+                    <input
+                      type="text"
+                      className="form-tag"
+                      name="title"
+                      value={inputValue}
+                      onChange={(event) => {
+                        setInputValue(event.target.value);
+                      }}
+                    />
+                    <label className="f-label">사용자 검색</label>
+                    <button type="button" className="icon-sch"></button>
+                  </div>
+                </div>
+                <div className="search-list">
+                  <ul className="list">
+                    <li>
+                      <div className="form-cell">
+                        <div className="chk-wrap">
+                          <label>
+                            <input type="checkbox" checked />
+                            <span className="ck-list">지유진(YJJI) / - / 대한항공 KBSYS</span>
+                          </label>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div className="form-cell">
+                        <div className="chk-wrap">
+                          <label>
+                            <input type="checkbox" />
+                            <span className="ck-list">최윤정(YJCHOI) / - / 대한항공 KBSYS</span>
+                          </label>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div className="form-cell">
+                        <div className="chk-wrap">
+                          <label>
+                            <input type="checkbox" />
+                            <span className="ck-list">김영기(YKKIM) / 전산1급 / 대한항공 KBSYS</span>
+                          </label>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div className="form-cell">
+                        <div className="chk-wrap">
+                          <label>
+                            <input type="checkbox" />
+                            <span className="ck-list">이재덕(JDLEE) / 3급 / 대한항공 KBSYS</span>
+                          </label>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div className="form-cell">
+                        <div className="chk-wrap">
+                          <label>
+                            <input type="checkbox" />
+                            <span className="ck-list">이정회(JHLEE) / 기술1급 / 대한항공 KBSYS</span>
+                          </label>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div className="form-cell">
+                        <div className="chk-wrap">
+                          <label>
+                            <input type="checkbox" />
+                            <span className="ck-list">김영기(YKKIM) / 전산1급 / 대한항공 KBSYS</span>
+                          </label>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <p>이재덕(JDLEE) / 3급 / 대한항공 KBSYS</p>
+                    </li>
+                    <li>
+                      <p>이정회(JHLEE) / 기술1급 / 대한항공 KBSYS</p>
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
-          <div className="checklist03">fds111111</div>
+          <div className="checkbutton">
+            <button></button>
+          </div>
+          <div className="checklist03">
+            <div className="title">fdsafds</div>
+            <div>1111111</div>
+            <div>2222222</div>
+          </div>
         </div>
         <div className="pop_btns">
           <button className="btn_text text_color_neutral-10 btn_confirm" onClick={closeModal}>
-            확인
+            적용
           </button>
         </div>
         <span className="pop_close" onClick={closeModal}>
