@@ -228,12 +228,12 @@ function PRiskForm1() {
         </div>
       </div>
       {/* //검색영역 */}
-      <div className="Report-process">
+      {/* <div className="Report-process">
         <ol className="Report-process-list">
           <li className="Report-process-item">작성</li>
           <li className="Report-process-item">작성</li>
         </ol>
-      </div>
+      </div>*/}
       {/*그리드영역 */}
       <div className="">
         <AppTable rowData={rowData} columns={columns} />
