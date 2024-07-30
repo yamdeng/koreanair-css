@@ -16,30 +16,7 @@ function AdminBasicList() {
       </div>
 
       {/*검색영역 */}
-      <div className="form-group wid100 mb5">
-        <AntSelect
-          style={{ width: 150 }}
-          options={[
-            {
-              value: 'jack',
-              label: 'Jack',
-            },
-            {
-              value: 'lucy',
-              label: 'Lucy',
-            },
-            {
-              value: 'Yiminghe',
-              label: 'yiminghe',
-            },
-            {
-              value: 'disabled',
-              label: 'Disabled',
-              disabled: true,
-            },
-          ]}
-        />
-      </div>
+
       <div className="boxForm">
         <div className="form-table">
           <div className="form-cell wid50">

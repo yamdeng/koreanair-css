@@ -77,6 +77,7 @@ const treeData = [
 ];
 
 function AdminBasicEdit() {
+  const [inputValue, setInputValue] = useState('');
   const [selectedOption, setSelectedOption] = useState();
   const [selectedTreeData, setSelectedTreeData] = useState([]);
   const onTreeSelectChange = (value) => {
@@ -86,83 +87,164 @@ function AdminBasicEdit() {
     <>
       <div className="conts-title">
         <h2>Taxonomy 등록</h2>
-        <div className="btn-area">
-          <button type="button" name="button" className="btn-sm btn_text btn-lightblue">
-            조회
-          </button>
-          <button type="button" name="button" className="btn-sm btn_text btn-lightblue">
-            신규
-          </button>
-          <button type="button" name="button" className="btn-sm btn_text btn-lightblue">
-            초기화
-          </button>
-        </div>
       </div>
       {/*등록 */}
-      <div className="detail-form">
-        <ul className="detail-list">
-          <li className="list">
-            <div className="list-row wid50">
-              <label className="f-label">
+      <div className="boxForm">
+        <div className="form-table">
+          <div className="form-cell wid50">
+            <div className="form-group wid100">
+              <AntSelect
+                id="select1"
+                status="error"
+                style={{ width: '100%' }}
+                className="label-select"
+                options={[
+                  {
+                    value: 'jack',
+                    label: 'Jack',
+                  },
+                  {
+                    value: 'lucy',
+                    label: 'Lucy',
+                  },
+                  {
+                    value: 'Yiminghe',
+                    label: 'yiminghe',
+                  },
+                  {
+                    value: 'disabled',
+                    label: 'Disabled',
+                    disabled: true,
+                  },
+                ]}
+              />
+              <label className="f-label" htmlFor="select1">
                 Level 1 <span className="required">*</span>
               </label>
-              <div className="cont">
-                <div className="form-table">
-                  <div className="form-cell wid50">
-                    <div className="form-group wid100">
-                      <AntSelect
-                        style={{ width: '100%' }}
-                        status="error"
-                        options={[
-                          {
-                            value: 'jack',
-                            label: 'Jack',
-                          },
-                          {
-                            value: 'lucy',
-                            label: 'Lucy',
-                          },
-                          {
-                            value: 'Yiminghe',
-                            label: 'yiminghe',
-                          },
-                          {
-                            value: 'disabled',
-                            label: 'Disabled',
-                            disabled: true,
-                          },
-                        ]}
-                      />
-                      <span className="errorText">data picker error message</span>
-                    </div>
-                  </div>
-                  <div className="form-cell wid50">
-                    <div className="form-group wid100 mr5">
-                      <input type="text" className="form-tag" placeholder="" disabled />
-                    </div>
-                  </div>
+              <span className="errorText">auto complete error message</span>
+            </div>
+          </div>
+          <div className="form-cell wid50">
+            <div className="form-group wid100 mr5">
+              <input type="text" className="form-tag" placeholder="" disabled />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="boxForm">
+        <div className="form-table">
+          <div className="form-cell wid50">
+            <div className="form-group wid100 mr5">
+              {/*기상조건 */}
+              <input
+                id="firstInput3"
+                type="text"
+                className="form-tag"
+                name="title"
+                value={inputValue}
+                onChange={(event) => {
+                  setInputValue(event.target.value);
+                }}
+              />
+              <label className="f-label" htmlFor="firstInput3">
+                위해요인 내용 <span className="required">*</span>
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="boxForm">
+        <div className="form-table">
+          <div className="form-cell wid50">
+            <div className="form-group wid100 mr5">
+              <div className="df">
+                <div className="date1 wid100">
+                  <DatePicker status="" id="date1" className="label-picker wid50" placeholder="" />{' '}
+                  {/* status="error" */}
+                  <label className="f-label" htmlFor="date1">
+                    date1-1 <span className="required"></span>
+                  </label>
+                  {/*<span className="errorText">date1 error</span>*/}
+                </div>
+                <span className="unt">~</span>
+                <div className="date2 wid100">
+                  <DatePicker status="" id="date2" className="label-picker wid50" placeholder="" />{' '}
+                  {/* status="error" */}
+                  <label className="f-label" htmlFor="date2">
+                    date1-1 <span className="required"></span>
+                  </label>
+                  {/*<span className="errorText">date2 error</span>*/}
                 </div>
               </div>
+              <span className="errorText">time picker(range) error message</span>
             </div>
-          </li>
-          <li className="list">
-            <div className="list-row wid50">
-              <label className="f-label">data picker</label>
-              <div className="cont">
-                <div className="form-table">
-                  <div className="form-cell wid50">
-                    <div className="form-group form-glow">
-                      <div className="df">
-                        <div className="wid100">
-                          <DatePicker className="wid100" />
-                        </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="info-wrap toggle">
+        <dl className="tg-item active">
+          {/* toggle 선택되면  열어지면 active붙임*/}
+          <dt>
+            <button type="button" className="btn-tg">
+              Level 1 <span className="required">*</span>
+            </button>
+          </dt>
+          <dd className="tg-conts">
+            <div className="edit-area">
+              <div className="detail-form">
+                <div className="detail-list">
+                  <div className="form-table">
+                    <div className="form-cell wid50">
+                      <div className="form-group wid100">
+                        <AntSelect
+                          id="select1"
+                          status="error"
+                          style={{ width: '100%' }}
+                          className="label-select"
+                          options={[
+                            {
+                              value: 'jack',
+                              label: 'Jack',
+                            },
+                            {
+                              value: 'lucy',
+                              label: 'Lucy',
+                            },
+                            {
+                              value: 'Yiminghe',
+                              label: 'yiminghe',
+                            },
+                            {
+                              value: 'disabled',
+                              label: 'Disabled',
+                              disabled: true,
+                            },
+                          ]}
+                        />
+                        <label className="f-label" htmlFor="select1">
+                          Event Class <span className="required">*</span>
+                        </label>
+                        <span className="errorText">auto complete error message</span>
+                      </div>
+                    </div>
+                    <div className="form-cell wid50">
+                      <div className="form-group wid100 mr5">
+                        <input type="text" className="form-tag" placeholder="" disabled />
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-          </li>
+          </dd>
+        </dl>
+      </div>
+
+      <div className="detail-form">
+        <ul className="detail-list">
           <li className="list">
             <div className="list-row wid50">
               <label className="f-label">data picker</label>

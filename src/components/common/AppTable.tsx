@@ -224,20 +224,14 @@ function AppTable(props) {
         <div className="count">
           {CommonUtil.formatString(gridTotalCountTemplate, store ? totalCount : rowData.length)}
         </div>
-        <div className="btn-area">
-          <button
-            name="button"
-            className="btn-sm btn_text btn-darkblue-line"
-            onClick={downloadCSVFile}
-            style={{ display: displayCSVExportButton ? '' : 'none' }}
-          >
+        <div className="btns-area">
+          <button name="button" className="btn_text btn_confirm text_color_neutral-10" onClick={downloadCSVFile}>
             download csv
           </button>
           <button
             name="button"
-            className="btn-sm btn_text btn-darkblue-line"
+            className="btn_text btn_confirm text_color_neutral-10"
             onClick={() => setIsColumnSettingModalOpen(true)}
-            style={{ display: useColumnDynamicSetting ? '' : 'none' }}
           >
             동적 필드 적용
           </button>
@@ -253,6 +247,35 @@ function AppTable(props) {
               })}
             />
           </span>
+        </div>
+        <div className="form-group">
+          <AntSelect
+            id="select3"
+            style={{ width: 150 }}
+            className="label-select"
+            options={[
+              {
+                value: 'jack',
+                label: 'Jack',
+              },
+              {
+                value: 'lucy',
+                label: 'Lucy',
+              },
+              {
+                value: 'Yiminghe',
+                label: 'yiminghe',
+              },
+              {
+                value: 'disabled',
+                label: 'Disabled',
+                disabled: true,
+              },
+            ]}
+          />
+          <label className="f-label" htmlFor="select3">
+            Event Date <span className="required"></span>
+          </label>
         </div>
       </div>
       <div className="ag-theme-quartz" style={{ height: tableHeight }}>

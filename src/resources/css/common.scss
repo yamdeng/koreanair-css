@@ -104,8 +104,35 @@ input, select{font-family:'KoreanAirSans'}
   .btn_text{font-family:'KoreanAirSans';font-weight:700;font-size:1.6rem}
   .btn-darkblue-line{border:solid 0.2rem var(--color-darkblue-100);color:var(--color-darkblue-100)}
   .btn-lightblue{border:solid 0.1rem var(--color-lightblue-40);background-color:var(--color-lightblue-40);color:var(--color-darkblue-100)}
-  .btn-sm{padding:0.8rem 4.8rem;border-radius:99.9rem;align-items:center}
+  .btn-sm{padding:0.6rem 4.8rem;border-radius:99.9rem;align-items:center}
   /*position:relative;right:0;top:0;float:right;*/text-align:center;padding-top:2rem;
+  @include mobile {
+    width:100%;
+    position:absolute;
+    left:0;
+    bottom:0;
+    display:flex;
+    > button {
+      border-radius: 0 !important;
+      margin:0 auto;
+      flex-basis:auto;
+      flex-grow:1;
+    }
+  }
+}
+.text_color_neutral-10 {
+  color: var(--color-neutral-10); 
+}
+/*그리드 위버튼*/
+.btns-area{
+  > button{margin:0 0.5rem}
+  button + button{margin-left:0.5rem}
+  .btn_text{font-family:'KoreanAirSans';font-weight:700;font-size:1.6rem}
+  .btn-darkblue-line{border:solid 0.2rem var(--color-darkblue-100);color:var(--color-darkblue-100)}
+  .btn_confirm{padding:0.6rem 2.8rem;border-radius:99.9rem;background: var(--color-darkblue-100)}
+  .btn-lightblue{border:solid 0.1rem var(--color-lightblue-40);background-color:var(--color-lightblue-40);color:var(--color-darkblue-100)}
+  .btn-sm{padding:0.6rem 4.8rem;border-radius:99.9rem;align-items:center}
+  position:relative;right:0;top:0;float:right;text-align:center;
   @include mobile {
     width:100%;
     position:absolute;
@@ -213,7 +240,7 @@ input, select{font-family:'KoreanAirSans'}
 .boxForm .form-table{display:flex;width:100%}
 .boxForm .form-table:first-child{padding-top:3rem}
 .boxForm .form-table + .form-table{padding-top:1.5rem}
-.boxForm .form-table:last-child{padding-bottom:2.0rem}
+.boxForm .form-table:last-child{/*padding-bottom:2.0rem*/}
 .boxForm .form-table .form-cell{position:relative;flex-grow:1;padding-right:1.0rem;padding-top:0}
 .boxForm .form-table .form-cell:last-child{padding-right:0}
 
