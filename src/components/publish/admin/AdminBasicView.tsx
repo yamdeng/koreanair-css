@@ -14,7 +14,7 @@ function AdminBasicView() {
       <div className="conts-title">
         <h2>Taxonomy 상세</h2>
       </div>
-      {/*상세페이지에선 */}
+      {/*상세페이지 */}
       <div className="boxForm">
         <div className="form-table">
           <div className="form-cell wid50">

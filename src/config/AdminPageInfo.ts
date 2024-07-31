@@ -36,7 +36,7 @@ AdminPageInfo.list = [
     Component: AdminUseView,
     path: 'AdminUseView',
     description: '',
-    success: false,
+    success: true,
   },
   {
     title: '부서조회',

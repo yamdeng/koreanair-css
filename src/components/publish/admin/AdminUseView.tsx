@@ -14,8 +14,8 @@ function AdminUseView() {
       <div className="conts-title">
         <h2>사용자 상세</h2>
       </div>
-      {/*상세페이지에선 className="boxForm AD" */}
-      <div className="boxForm AD">
+      {/*상세페이지 */}
+      <div className="boxForm">
         <div className="form-table">
           <div className="form-cell wid50">
             <div className="form-group wid100">
@@ -23,33 +23,31 @@ function AdminUseView() {
                 <ul className="view-list">
                   <li className="accumlate-list">
                     <label className="t-label">
-                      사번 <span className="required"></span>
+                      사번 <span className="required">*</span>
                     </label>
-                    <span className="text-desc">211111</span>
+                    <span className="text-desc">123456789</span>
                   </li>
                 </ul>
               </div>
             </div>
           </div>
-
           <div className="form-cell wid50">
             <div className="form-group wid100">
               <div className="box-view-list">
                 <ul className="view-list">
                   <li className="accumlate-list">
                     <label className="t-label">
-                      사번 <span className="required"></span>
+                      사용자 명(한국어)
+                      <span className="required">*</span>
                     </label>
-                    <span className="text-desc">211111</span>
+                    <span className="text-desc">테스트1</span>
                   </li>
                 </ul>
               </div>
             </div>
           </div>
         </div>
-      </div>
-
-      <div className="boxForm AD">
+        <hr className="line"></hr>
         <div className="form-table">
           <div className="form-cell wid50">
             <div className="form-group wid100">
@@ -57,27 +55,81 @@ function AdminUseView() {
                 <ul className="view-list">
                   <li className="accumlate-list">
                     <label className="t-label">
-                      Level 1 <span className="required">*</span>
+                      사용자 명(영어)
+                      <span className="required">*</span>
                     </label>
-                    <span className="text-desc">
-                      내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용 내용내용내용내용내용내용내용
-                    </span>
+                    <span className="text-desc">Test1</span>
                   </li>
                 </ul>
               </div>
             </div>
           </div>
           <div className="form-cell wid50">
-            <div className="form-group wid100 mr5">
+            <div className="form-group wid100">
               <div className="box-view-list">
                 <ul className="view-list">
                   <li className="accumlate-list">
-                    {/*<span>Level 1 *</span>*/}
                     <label className="t-label">
-                      Level 1 <span className="required">*</span>
+                      사용자 명(중국어)
+                      <span className="required">*</span>
+                    </label>
+                    <span className="text-desc">Test1</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr className="line"></hr>
+        <div className="form-table">
+          <div className="form-cell wid50">
+            <div className="form-group wid100">
+              <div className="box-view-list">
+                <ul className="view-list">
+                  <li className="accumlate-list">
+                    <label className="t-label">
+                      사진 <span className="required">*</span>
+                    </label>
+
+                    <div className="imgBoxWrap">
+                      <div className="imgBox">
+                        <img src="../images/img01.png" alt="" />
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr className="line"></hr>
+        <div className="form-table">
+          <div className="form-cell wid50">
+            <div className="form-group wid100">
+              <div className="box-view-list">
+                <ul className="view-list">
+                  <li className="accumlate-list">
+                    <label className="t-label">
+                      사용자 명(영어)
+                      <span className="required">*</span>
+                    </label>
+                    <span className="text-desc">Test1</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div className="form-cell wid50">
+            <div className="form-group wid100">
+              <div className="box-view-list">
+                <ul className="view-list">
+                  <li className="accumlate-list">
+                    <label className="t-label">
+                      EMAIL
+                      <span className="required">*</span>
                     </label>
                     <span className="text-desc">
-                      내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용 내용내용내용내용내용내용내
+                      <a href="javascript:void(0);">test@test.com</a>
                     </span>
                   </li>
                 </ul>
@@ -85,46 +137,73 @@ function AdminUseView() {
             </div>
           </div>
         </div>
-      </div>
-
-      <div className="info-wrap toggle">
-        <dl className="tg-item active">
-          {/* toggle 선택되면  열어지면 active붙임*/}
-          <dt>
-            <button type="button" className="btn-tg">
-              Level 1 <span className="required">*</span>
-            </button>
-          </dt>
-          <dd className="tg-conts">
-            <div className="edit-area">
-              {/* 상세내용*/}
+        <hr className="line"></hr>
+        <div className="form-table">
+          <div className="form-cell wid50">
+            <div className="form-group wid100">
               <div className="box-view-list">
                 <ul className="view-list">
                   <li className="accumlate-list">
                     <label className="t-label">
-                      Level 1 <span className="required"></span>
+                      상태
+                      <span className="required">*</span>
                     </label>
-                    <span className="text-desc">
-                      내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용 내용내용내용내용내용내용내용
-                    </span>
-                  </li>
-
-                  <li className="accumlate-list">
-                    <label className="t-label">
-                      Level 1 <span className="required"></span>
-                    </label>
-                    <span className="text-desc">
-                      내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용 내용내용내용내용내용내용내용
-                    </span>
+                    <span className="text-desc">재직</span>
                   </li>
                 </ul>
               </div>
-              {/* //상세내용*/}
             </div>
-          </dd>
-        </dl>
+          </div>
+          <div className="form-cell wid50">
+            <div className="form-group wid100">
+              <div className="box-view-list">
+                <ul className="view-list">
+                  <li className="accumlate-list">
+                    <label className="t-label">
+                      부서
+                      <span className="required">*</span>
+                    </label>
+                    <span className="text-desc">IT기획팀</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr className="line"></hr>
+        <div className="form-table">
+          <div className="form-cell wid50">
+            <div className="form-group wid100">
+              <div className="box-view-list">
+                <ul className="view-list">
+                  <li className="accumlate-list">
+                    <label className="t-label">
+                      사내전화
+                      <span className="required">*</span>
+                    </label>
+                    <span className="text-desc">02-1234-5678</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div className="form-cell wid50">
+            <div className="form-group wid100">
+              <div className="box-view-list">
+                <ul className="view-list">
+                  <li className="accumlate-list">
+                    <label className="t-label">
+                      휴대전화
+                      <span className="required">*</span>
+                    </label>
+                    <span className="text-desc">010-1234-5678</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-
       {/*//상세 */}
 
       {/* 하단버튼영역 */}
