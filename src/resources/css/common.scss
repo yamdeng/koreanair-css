@@ -286,9 +286,9 @@ input, select{font-family:'KoreanAirSans'}
 .box-view-list .view-list + .view-list{padding-top:2.0rem}
 .box-view-list .view-list .accumlate-list{position:relative;display:block}
 .box-view-list .view-list .t-label{display:block;color:var(--color-neutral-70);font-weight:400;font-size:1.5rem;white-space:nowrap}
-.box-view-list .view-list .text-desc{width:100%;font-weight:400;font-size:1.6rem;color:var(--color-neutral-80);text-align:left;overflow: hidden;word-break:break-all;text-overflow: ellipsis;   }
-.imgBoxWrap{position:relative;border:2px solid var(--color-neutral-60);background-color:var(--color-neutral-30);}
-.imgBoxWrap .imgBox{overflow:hidden;text-align:center;height:150px;width:150px}
+.box-view-list .view-list .text-desc{width:100%;font-weight:400;font-size:1.6rem;color:var(--color-neutral-80);text-align:left;overflow:hidden;word-break:break-all;text-overflow:ellipsis}
+.imgBoxWrap{position:relative;border:0.1rem solid var(--color-darkblue-100);background-color:var(--color-neutral-30)}
+.imgBox{position:relative;overflow:hidden;text-align:center;height:100px;width:100px}
 
 
 

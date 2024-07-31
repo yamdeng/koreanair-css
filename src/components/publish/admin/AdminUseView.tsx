@@ -90,10 +90,10 @@ function AdminUseView() {
                     <label className="t-label">
                       사진 <span className="required">*</span>
                     </label>
-
+                    {/*사진이미지 */}
                     <div className="imgBoxWrap">
                       <div className="imgBox">
-                        <img src="../images/img01.png" alt="" />
+                        <img src="/src/resources/images/img01.png" alt="" />
                       </div>
                     </div>
                   </li>
