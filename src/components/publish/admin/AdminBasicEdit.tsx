@@ -4,6 +4,7 @@ import { testColumnInfos } from '@/data/grid/table-column';
 import { useState } from 'react';
 import Select from 'react-select';
 import { DatePicker, TimePicker, TreeSelect, Select as AntSelect } from 'antd';
+import AppAutoComplete from '@/components/common/AppAutoComplete';
 const options2 = [];
 for (let i = 10; i < 36; i++) {
   options2.push({
@@ -208,7 +209,7 @@ function AdminBasicEdit() {
             <div className="form-group form-glow">
               <div className="df">
                 <div className="date3 wid50">
-                  <TimePicker.RangePicker className="wid100" status="error" />
+                  <TimePicker.RangePicker className="label-picker wid100" status="error" />
                   <label className="f-label" htmlFor="date3">
                     TimePicker2개 <span className="required">*</span>
                   </label>
@@ -245,7 +246,7 @@ function AdminBasicEdit() {
         <div className="form-table">
           <div className="form-cell wid50">
             <div className="form-group form-glow wid50">
-              <Select
+              {/* <Select
                 id="select4"
                 defaultValue={[]}
                 options={options}
@@ -256,9 +257,34 @@ function AdminBasicEdit() {
                 classNames={{
                   control: (state) => (!state.isFocused ? 'select-in-valid' : ''),
                 }}
-              />
+              /> */}
+              <AppAutoComplete id="select4" />
               <label className="f-label" htmlFor="select4">
                 AutoComplete1개 <span className="required">*</span>
+              </label>
+              <span className="errorText">auto complete error message</span>
+            </div>
+          </div>
+          <div className="form-cell wid50">
+            <div className="form-group form-glow wid50">
+              <TreeSelect
+                id="select51"
+                showSearch
+                treeCheckable
+                className="label-select wid100"
+                dropdownStyle={{
+                  maxHeight: 400,
+                  overflow: 'auto',
+                }}
+                allowClear
+                treeDefaultExpandAll
+                treeData={treeData}
+                value={selectedTreeData}
+                onChange={onTreeSelectChange}
+                status="error"
+              />
+              <label className="f-label" htmlFor="select51">
+                tree <span className="required">*</span>
               </label>
               <span className="errorText">auto complete error message</span>
             </div>
@@ -366,7 +392,7 @@ function AdminBasicEdit() {
                       <TreeSelect
                         showSearch
                         treeCheckable
-                        className="wid100"
+                        className="label-select wid100"
                         dropdownStyle={{
                           maxHeight: 400,
                           overflow: 'auto',
