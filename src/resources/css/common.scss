@@ -221,7 +221,7 @@ input, select{font-family:'KoreanAirSans'}
   font-size:1.4rem
 }
   
-  margin-bottom:1.0rem;
+  //margin-bottom:1.0rem;
   //@include mobile {
   //  .detail-list{width:100%}
   //  .detail-list .list{display:block;width:100%}
@@ -236,9 +236,55 @@ input, select{font-family:'KoreanAirSans'}
 }
 
 /*부서검색*/
-.conts-box{position:relative}
+.conts-box{position:relative;height: calc(100vh - 18.5rem);overflow:hidden}
+.flex-group {
+  display: flex;
+  height: 100%;
+  ::-webkit-Scrollbar {
+    width:0.3em;
+    height:0.3em
+  }
+  ::-webkit-Scrollbar-thumb {
+    border-radius:1.0rem;
+    background:var(--color-neutral-30);
+    -webkit-tap-highlight-color: transparent;
+  }
+  ::-webkit-Scrollbar Track {
+    border-radius:0rem;
+    background:var(--color-neutral-30)
+  }
+  @include mobile {
+    display: block;
+  }
+  .andt-tree-container {
+    flex-grow: 1;
+    @include mobile {
+      display: none;
+    }
+  }
+  .pop_cont_form {
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    padding-bottom: 3.0rem;
+    padding-right: 0.3rem;
+    .box_form {
+      margin-bottom: 2.0rem;
+      @include mobile {
+        padding: 0;
+        border: none;
+        margin-bottom: 0;
+      }
+    }
+    @include mobile {
+      flex-grow: 1;
+      padding: 0;
+    }
+  }
+}
 
 /*검색영역*/
+.info-wrap .edit-area > .boxForm{padding:0}
 .boxForm{position:relative;padding:1.5rem 3rem 3rem;margin-bottom:3.0rem;background-color:var(--color-neutral-20);border-radius:var(--radius-small, 8px)}
 .boxForm .form-table{display:flex;width:100%}
 /*.boxForm .form-table:first-child{padding-top:3rem}*/
@@ -258,7 +304,7 @@ input, select{font-family:'KoreanAirSans'}
 .btn-fold.open::after{content:'펴기';font-weight:400}*/
 .TopButton-area .btn-fold.open{border:0.1rem solid var(--color-neutral-40);color:var(--color-neutral-8)}
 
-.form-group{position:relative;/*display:inline-block;*/vertical-align:middle}
+.form-group{position:relative;display:inline-block;vertical-align:middle}
 .form-group .invalid_txt{position:absolute;left:1.1rem;top:3.6rem;font-size:1rem;color:var(--color-negative)}
 
 .form-group .invalid-txt.textarea{top: 201px}
@@ -309,7 +355,7 @@ input, select{font-family:'KoreanAirSans'}
 .info-wrap > dl > dt{padding:1.8rem 0 1.7rem}
 .info-wrap > dl > dt .btn-tg{padding:0 6.7rem 0 0;font-family:"KoreanAirSans";font-size:2.0rem;color:var(--color-darkblue-100);font-weight:500}
 .info-wrap > dl > dd{margin:0 -2.0rem 1.0rem}
-.info-wrap .edit-area{/*padding:2.0rem 2.0rem;*/border-top:0.1rem solid var(--color-darkblue-100);border-bottom:0.1rem solid var(--color-neutral-30);background-color:var(--color-neutral-20);color:var(--color-neutral-80);line-height:2.0rem;font-size:1.6rem}
+.info-wrap .edit-area{padding:2.0rem 2.0rem;border-top:0.1rem solid var(--color-darkblue-100);border-bottom:0.1rem solid var(--color-neutral-30);background-color:var(--color-neutral-20);color:var(--color-neutral-80);line-height:2.0rem;font-size:1.6rem}
 .toggle .btn-tg{position:relative;font-family:"KoreanAirSans";font-size:1.6rem;color:var(--color-darkblue-100);background-color:var(--color-neutral-10);text-align:left;width:100%}
 .toggle .btn-tg:after{position:absolute;top:50%;right:0;content:'';display:inline-block;width:0.7rem;height:0.7rem;margin:0 0 0 1.3rem;border: solid var(--color-darkblue-100);border-width: 0 0.1rem 0.1rem 0;-webkit-transform: translateY(-50%) rotate(45deg);transform: translateY(-50%) rotate(45deg);-webkit-transform-origin: center;transform-origin:center}
 .toggle .active .btn-tg:after{-webkit-transform:translateY(-50%) rotate(-135deg);transform:translateY(-50%) rotate(-135deg)}

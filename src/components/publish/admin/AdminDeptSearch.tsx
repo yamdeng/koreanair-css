@@ -38,7 +38,6 @@ generateData(z);
 
 function AdminDeptSearch() {
   const [inputValue, setInputValue] = useState('');
-  const { displayModal, closeModal } = props;
   const [expandedKeys] = useState(['0-0', '0-0-0', '0-0-0-0']);
   const rowData = getAllData();
   const columns = testColumnInfos;
@@ -50,75 +49,105 @@ function AdminDeptSearch() {
       </div>
 
       {/* 부서조회 */}
-      <div className="conts_box">
+      <div className="conts-box">
         <div className="flex-group">
-          <div className="pop_flex_group">
-            <div className="tree_wrap">
-              <div className="tree_form">
-                <div className="pop-btn-box">버튼영역</div>
-                <div className="form-cell">
-                  <div className="form-group wid100 mr5">
-                    <input
-                      type="text"
-                      className="form-tag"
-                      name="title"
-                      value={inputValue}
-                      onChange={(event) => {
-                        setInputValue(event.target.value);
-                      }}
-                    />
-                    <label className="f-label">검색</label>
-                    <button type="button" className="icon-sch"></button>
-                  </div>
-                </div>
+          <div className="tree_wrap Dept">
+            <div className="tree_form">
+              <div className="btns-area">
+                <button name="button" className="btn_text btn_confirm text_color_neutral-10">
+                  추가
+                </button>
+                <button name="button" className="btn_text btn_confirm text_color_neutral-10">
+                  삭제
+                </button>
               </div>
-              <Tree
-                className="draggable-tree"
-                defaultExpandedKeys={expandedKeys}
-                draggable
-                blockNode
-                treeData={treeData}
-              />
+              <div className="form-group wid100">
+                {/*업무구분 */}
+                <AntSelect
+                  id="select1"
+                  className="label-select"
+                  style={{ width: '100%' }}
+                  options={[
+                    {
+                      value: 'jack',
+                      label: 'Jack',
+                    },
+                    {
+                      value: 'lucy',
+                      label: 'Lucy',
+                    },
+                    {
+                      value: 'Yiminghe',
+                      label: 'yiminghe',
+                    },
+                    {
+                      value: 'disabled',
+                      label: 'Disabled',
+                      disabled: true,
+                    },
+                  ]}
+                />
+                <label className="f-label" htmlFor="select1">
+                  업무구분 <span className="required">*</span>
+                </label>
+                {/*<span className="errorText">auto complete error message</span>*/}
+              </div>
+              <div className="form-group wid100">
+                {/*검색 */}
+                <input
+                  id="firstInput4"
+                  type="text"
+                  className="form-tag"
+                  name="title"
+                  value={inputValue}
+                  onChange={(event) => {
+                    setInputValue(event.target.value);
+                  }}
+                />
+                <label className="f-label" htmlFor="firstInput4">
+                  검색 <span className="required">*</span>
+                </label>
+                <button type="button" className="icon-sch"></button>
+              </div>
             </div>
-            <div className="pop_cont_form">
-              <div className="boxForm">
-                <div className="form-table">
-                  <div className="form-cell ">
+            <Tree
+              className="draggable-tree"
+              defaultExpandedKeys={expandedKeys}
+              draggable
+              blockNode
+              treeData={treeData}
+            />
+          </div>
+          <div className="pop_cont_form">
+            <div className="boxForm">
+              <div className="form-table">
+                <div className="form-cell ">
+                  <span className="form-group wid100">
                     <span className="form-group wid100">
-                      <span className="form-group wid100">
-                        <AntSelect
-                          style={{ width: '100%' }}
-                          options={[
-                            {
-                              value: 'jack',
-                              label: 'Jack',
-                            },
-                            {
-                              value: 'lucy',
-                              label: 'Lucy',
-                            },
-                            {
-                              value: 'Yiminghe',
-                              label: 'yiminghe',
-                            },
-                            {
-                              value: 'disabled',
-                              label: 'Disabled',
-                              disabled: true,
-                            },
-                          ]}
-                        />
-                      </span>
+                      <AntSelect
+                        style={{ width: '100%' }}
+                        options={[
+                          {
+                            value: 'jack',
+                            label: 'Jack',
+                          },
+                          {
+                            value: 'lucy',
+                            label: 'Lucy',
+                          },
+                          {
+                            value: 'Yiminghe',
+                            label: 'yiminghe',
+                          },
+                          {
+                            value: 'disabled',
+                            label: 'Disabled',
+                            disabled: true,
+                          },
+                        ]}
+                      />
                     </span>
-                  </div>
-                  <div className="form-cell wid50">
-                    <span className="form-group form-glow">
-                      <DatePicker status="" /> {/* status="error" */}
-                      <span>~</span>
-                      <DatePicker status="" />
-                      {/* <TimePicker minuteStep={15} secondStep={10} hourStep={1} status="error" /> */}
-                    </span>
-                  </div>
+                  </span>
                 </div>
               </div>
             </div>
