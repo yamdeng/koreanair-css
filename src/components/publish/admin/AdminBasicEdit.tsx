@@ -245,7 +245,7 @@ function AdminBasicEdit() {
       <div className="boxForm">
         <div className="form-table">
           <div className="form-cell wid50">
-            <div className="form-group form-glow wid50">
+            <div className="form-group form-glow wid100">
               {/* <Select
                 id="select4"
                 defaultValue={[]}
@@ -266,7 +266,7 @@ function AdminBasicEdit() {
             </div>
           </div>
           <div className="form-cell wid50">
-            <div className="form-group form-glow wid50">
+            <div className="form-group form-glow wid100">
               <TreeSelect
                 id="select51"
                 showSearch
@@ -351,69 +351,6 @@ function AdminBasicEdit() {
         </dl>
       </div>
 
-      <div className="detail-form">
-        <ul className="detail-list">
-          <li className="list">
-            <div className="list-row wid50">
-              <label className="f-label">
-                AutoComplete1개 <span className="required">*</span>
-              </label>
-              <div className="cont">
-                <div className="form-table">
-                  <div className="form-cell wid100">
-                    <div className="form-group wid100 mr5">
-                      <Select
-                        defaultValue={[]}
-                        options={options}
-                        isMulti
-                        name="colors"
-                        className="basic-multi-select"
-                        classNamePrefix="select"
-                        classNames={{
-                          control: (state) => (!state.isFocused ? 'select-in-valid' : ''),
-                        }}
-                      />
-                      <span className="errorText">auto complete error message</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </li>
-          <li className="list">
-            <div className="list-row wid50">
-              <label className="f-label">
-                TreeSelect1개 <span className="required">*</span>
-              </label>
-              <div className="cont">
-                <div className="form-table">
-                  <div className="form-cell wid100">
-                    <div className="form-group wid100 mr5">
-                      <TreeSelect
-                        showSearch
-                        treeCheckable
-                        className="label-select wid100"
-                        dropdownStyle={{
-                          maxHeight: 400,
-                          overflow: 'auto',
-                        }}
-                        placeholder="Please select"
-                        allowClear
-                        treeDefaultExpandAll
-                        treeData={treeData}
-                        value={selectedTreeData}
-                        onChange={onTreeSelectChange}
-                        status="error"
-                      />
-                      <span className="errorText">tree-select error message</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </li>
-        </ul>
-      </div>
       {/*//등록 */}
 
       {/* 하단버튼영역 */}
