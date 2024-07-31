@@ -33,6 +33,20 @@ function AdminBasicEdit() {
                     </span>
                   </li>
                 </ul>
+
+                <ul className="view-list">
+                  <li className="accumlate-list">
+                    {/*<span>Level 1 *</span>*/}
+                    <label className="t-label">
+                      Level 1 <span className="required">*</span>
+                    </label>
+                    <span className="text-desc">
+                      내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용 내용내용내용내용내용내용내용
+                      내용내용내용내용내용 내용내용내용내용내용 내용내용내용내용내용내용 내용내용내용내용내용내용
+                      내용내용내용내용내용 내용내용내용내용
+                    </span>
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
@@ -46,7 +60,6 @@ function AdminBasicEdit() {
               <div className="box-view-list">
                 <ul className="view-list">
                   <li className="accumlate-list">
-                    {/*<span>Level 1 *</span>*/}
                     <label className="t-label">
                       Level 1 <span className="required">*</span>
                     </label>
@@ -76,6 +89,44 @@ function AdminBasicEdit() {
             </div>
           </div>
         </div>
+      </div>
+
+      <div className="info-wrap toggle">
+        <dl className="tg-item active">
+          {/* toggle 선택되면  열어지면 active붙임*/}
+          <dt>
+            <button type="button" className="btn-tg">
+              Level 1 <span className="required">*</span>
+            </button>
+          </dt>
+          <dd className="tg-conts">
+            <div className="edit-area">
+              {/* 상세내용*/}
+              <div className="box-view-list">
+                <ul className="view-list">
+                  <li className="accumlate-list">
+                    <label className="t-label">
+                      Level 1 <span className="required"></span>
+                    </label>
+                    <span className="text-desc">
+                      내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용 내용내용내용내용내용내용내용
+                    </span>
+                  </li>
+
+                  <li className="accumlate-list">
+                    <label className="t-label">
+                      Level 1 <span className="required"></span>
+                    </label>
+                    <span className="text-desc">
+                      내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용 내용내용내용내용내용내용내용
+                    </span>
+                  </li>
+                </ul>
+              </div>
+              {/* //상세내용*/}
+            </div>
+          </dd>
+        </dl>
       </div>
 
       {/*//상세 */}

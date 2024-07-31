@@ -282,6 +282,7 @@ input, select{font-family:'KoreanAirSans'}
 /*상세리스트*/
 .box-view-list{}
 .box-view-list .view-list{display:flex;text-align:left;justify-content:space-between}
+.box-view-list .view-list + .view-list{padding-top:2.0rem}
 .box-view-list .view-list .accumlate-list{display:block}
 .box-view-list .view-list .t-label{display:block;padding-bottom: 12px;color:#222;font-weight:700;font-size:16px;white-space: nowrap}
 .box-view-list .view-list .text-desc{width:100%;text-align:left;overflow: hidden;word-break:break-all;text-overflow: ellipsis;   }
