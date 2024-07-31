@@ -187,10 +187,14 @@ function TestModal(props) {
                       </div>
                     </li>
                     <li>
-                      <p>이재덕(JDLEE) / 3급 / 대한항공 KBSYS</p>
-                    </li>
-                    <li>
-                      <p>이정회(JHLEE) / 기술1급 / 대한항공 KBSYS</p>
+                      <div className="form-cell">
+                        <div className="chk-wrap">
+                          <label>
+                            <input type="checkbox" />
+                            <span className="ck-list">김영기(YKKIM) / 전산1급 / 대한항공 KBSYS11111</span>
+                          </label>
+                        </div>
+                      </div>
                     </li>
                   </ul>
                 </div>
@@ -200,10 +204,24 @@ function TestModal(props) {
           <div className="checkbutton">
             <button></button>
           </div>
-          <div className="checklist03">
-            <div className="title">fdsafds</div>
-            <div>1111111</div>
-            <div>2222222</div>
+          <div className="selectlist">
+            <div className="title">
+              <p>
+                선택목록<span className="icon"></span>
+              </p>
+            </div>
+            <div className="uesrlist">
+              <p className="stitle">사용자 목록</p>
+              <ul>
+                <li>지유진(YJJI) / - / 대한항공 KBSYS</li>
+              </ul>
+            </div>
+            <div className="departmentlist">
+              <div className="stitle">부서 목록</div>
+              <ul>
+                <li>리스트</li>
+              </ul>
+            </div>
           </div>
         </div>
         <div className="pop_btns">

@@ -487,10 +487,17 @@
 .checklist .search .search-list {width: 100%;}
 .checklist .search .search-list .list {height: 30.0rem; overflow: auto;}
 .checklist .search .search-list .list li { background-color: #fff; height: 4.0rem; display: flex; justify-content: left; align-items: center; margin: 0 0 1.0rem 0; padding: 0 1.0rem; border-radius: 0.8rem; }
-.checklist .search .search-list .list li .ck-list {width: 100%; line-height: 4.0rem; overflow: hidden; text-overflow:ellipsis; white-space: nowrap;}
+.checklist .search .search-list .list li .ck-list {width: 29.0rem; line-height: 4.0rem; overflow: hidden; text-overflow:ellipsis; white-space: nowrap; font-size: 1.4rem;}
 .checkbutton {height: auto; display: flex; align-items: center; justify-content:center; padding: 0 0.5rem;}
 .checkbutton button {background: url(../images/pagination-last.svg) center center no-repeat; width: 4.0rem; height: 4.0rem;}
-.checklist03 {display: flex; width: 35.0rem; height: auto; border: 0rem solid var(--color-neutral-40);}
+.selectlist {width: 35.0rem; height: auto; border: 0rem solid var(--color-neutral-40);}
+.selectlist .title {position: relative; width: 100%; border-top: 0.1rem solid var(--color-darkblue-100); border-bottom: 0.1rem solid var(--color-neutral-40); margin-bottom: 1.0rem;}
+.selectlist .title p {display:flex; justify-content: center; align-items: center; height: 4.0rem; text-align: center;}
+.selectlist .title p .icon {position: absolute; right: 0; width: 4.0rem; height: 4.0rem; background: url(../images/delete.svg)center center no-repeat;}
+.selectlist .uesrlist {width: 100%;}
+.selectlist .uesrlist .stitle {width: 100%; height: 4.0rem; border-radius: 0.8rem; background-color: var(--color-lightblue-10); color: var(--color-darkblue-100); display: flex; align-items: center; justify-content: center;}
+.selectlist .departmentlist {width: 100%;}
+.selectlist .departmentlist .stitle {width: 100%; height: 4.0rem; border-radius: 0.8rem; background-color: var(--color-lightblue-10); color: var(--color-darkblue-100); display: flex; align-items: center; justify-content: center;}
 
 @media screen and (max-width: 479px) {  
   .alert-modal-content, .confirm-modal-content {}

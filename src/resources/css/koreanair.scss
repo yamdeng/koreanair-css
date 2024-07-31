@@ -14,6 +14,7 @@
   width: 100%; 
   /*max-width: 1920px;*/
   height: 8.8rem;
+  /*border-bottom: 0.3rem solid var(--color-darkblue-100);*/
   border-bottom: 0.3rem solid var(--color-darkblue-100);
   z-index: 10;
   padding: 0 2.4rem;
@@ -70,6 +71,7 @@
   font-style: normal;
   font-weight: 400;
 }
+.header .GNB .gnb-list li a:hover{text-decoration-line: underline;}
 .header .GNB .gnb-list li a.active {
   font-weight: 700;
   color: var(--color-darkblue-100);
@@ -249,6 +251,7 @@
   width: 100%; 
   color: var(--color-darkblue-100);
 }
+.LNB_list li a:hover{text-decoration-line: underline;}
 .LNB_list li a.up-icon {background: url(../images/icon-arrow-up.svg) right center no-repeat;}
 .LNB_list li a.down-icon {background: url(../images/icon-arrow-down.svg) right center no-repeat;}
 .LNB_list li a.active {
