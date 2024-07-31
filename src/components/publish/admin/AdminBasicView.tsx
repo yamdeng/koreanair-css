@@ -14,8 +14,7 @@ function AdminBasicEdit() {
       <div className="conts-title">
         <h2>Taxonomy 상세</h2>
       </div>
-      {/*상세 */}
-
+      {/*상세페이지에선 className="boxForm AD" */}
       <div className="boxForm AD">
         <div className="form-table">
           <div className="form-cell wid50">
