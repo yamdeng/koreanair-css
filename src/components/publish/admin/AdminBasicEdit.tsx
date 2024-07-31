@@ -90,7 +90,7 @@ function AdminBasicEdit() {
         <h2>Taxonomy 등록</h2>
       </div>
       {/*등록 */}
-      <div className="boxForm AD">
+      <div className="boxForm">
         <div className="form-table">
           <div className="form-cell wid50">
             <div className="form-group wid100">
@@ -131,9 +131,7 @@ function AdminBasicEdit() {
             </div>
           </div>
         </div>
-      </div>
-
-      <div className="boxForm AD">
+        <hr className="line"></hr>
         <div className="form-table">
           <div className="form-cell wid50">
             <div className="form-group wid100 mr5">
@@ -154,9 +152,7 @@ function AdminBasicEdit() {
             </div>
           </div>
         </div>
-      </div>
-
-      <div className="boxForm AD">
+        <hr className="line"></hr>
         <div className="form-table">
           <div className="form-cell wid50">
             <div className="form-group wid100">
@@ -201,9 +197,7 @@ function AdminBasicEdit() {
             </div>
           </div>
         </div>
-      </div>
-
-      <div className="boxForm AD">
+        <hr className="line"></hr>
         <div className="form-table">
           <div className="form-cell wid50">
             <div className="form-group form-glow">
@@ -219,9 +213,7 @@ function AdminBasicEdit() {
             </div>
           </div>
         </div>
-      </div>
-
-      <div className="boxForm AD">
+        <hr className="line"></hr>
         <div className="form-table">
           <div className="form-cell wid50">
             <div className="form-group form-glow wid50">
@@ -240,9 +232,7 @@ function AdminBasicEdit() {
             </div>
           </div>
         </div>
-      </div>
-
-      <div className="boxForm AD">
+        <hr className="line"></hr>
         <div className="form-table">
           <div className="form-cell wid50">
             <div className="form-group form-glow wid100">
@@ -302,46 +292,44 @@ function AdminBasicEdit() {
           </dt>
           <dd className="tg-conts">
             <div className="edit-area">
-              <div className="detail-form">
-                <div className="detail-list">
-                  <div className="form-table">
-                    <div className="form-cell wid50">
-                      <div className="form-group wid100">
-                        <AntSelect
-                          id="select1"
-                          status="error"
-                          style={{ width: '100%' }}
-                          className="label-select"
-                          options={[
-                            {
-                              value: 'jack',
-                              label: 'Jack',
-                            },
-                            {
-                              value: 'lucy',
-                              label: 'Lucy',
-                            },
-                            {
-                              value: 'Yiminghe',
-                              label: 'yiminghe',
-                            },
-                            {
-                              value: 'disabled',
-                              label: 'Disabled',
-                              disabled: true,
-                            },
-                          ]}
-                        />
-                        <label className="f-label" htmlFor="select1">
-                          Event Class <span className="required">*</span>
-                        </label>
-                        <span className="errorText">auto complete error message</span>
-                      </div>
+              <div className="boxForm tog">
+                <div className="form-table">
+                  <div className="form-cell wid50">
+                    <div className="form-group wid100">
+                      <AntSelect
+                        id="select1"
+                        status="error"
+                        style={{ width: '100%' }}
+                        className="label-select"
+                        options={[
+                          {
+                            value: 'jack',
+                            label: 'Jack',
+                          },
+                          {
+                            value: 'lucy',
+                            label: 'Lucy',
+                          },
+                          {
+                            value: 'Yiminghe',
+                            label: 'yiminghe',
+                          },
+                          {
+                            value: 'disabled',
+                            label: 'Disabled',
+                            disabled: true,
+                          },
+                        ]}
+                      />
+                      <label className="f-label" htmlFor="select1">
+                        Event Class <span className="required">*</span>
+                      </label>
+                      <span className="errorText">auto complete error message</span>
                     </div>
-                    <div className="form-cell wid50">
-                      <div className="form-group wid100 mr5">
-                        <input type="text" className="form-tag" placeholder="" disabled />
-                      </div>
+                  </div>
+                  <div className="form-cell wid50">
+                    <div className="form-group wid100 mr5">
+                      <input type="text" className="form-tag" placeholder="" disabled />
                     </div>
                   </div>
                 </div>

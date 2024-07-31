@@ -227,17 +227,30 @@ function PRiskForm1() {
         </div>
       </div>
       {/* //검색영역 */}
-      {/* <div className="Report-process">
-        <ol className="Report-process-list">
-          <li className="Report-process-item">작성</li>
-          <li className="Report-process-item">작성</li>
-        </ol>
-      </div>*/}
+
+      <div>
+        <ul className="Report-process">
+          <li>
+            <span>작성(6)</span>
+          </li>
+          <li>
+            <span>결제(4)</span>
+          </li>
+          <li>
+            <span>안전권고(7)</span>
+          </li>
+          <li className="last">
+            <span>종결(10)</span>
+          </li>
+        </ul>
+      </div>
+
       {/*그리드영역 */}
       <div className="">
         <AppTable rowData={rowData} columns={columns} />
       </div>
       {/*//그리드영역 */}
+
       {/* 하단버튼영역 */}
       <div className="contents-btns">
         <button type="button" name="button" className="btn_text text_color_neutral-10 btn_confirm">

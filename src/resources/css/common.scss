@@ -44,7 +44,7 @@ body * {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   font-family: 'KoreanAirSans';
-  color: var(--color-neutral-70);
+  color: var(--color-neutral-80);
   font-size: 1.6rem;
     /* 1.6 * 10px = 16px */
 }
@@ -66,6 +66,7 @@ select{vertical-align:middle}
 input{margin:0;padding:0}
 button{cursor:pointer}
 .hide{display:none !important}
+hr.line{border:none;height:0.1rem;background:var(--color-neutral-40);margin: 0;padding: 0;margin-top:1.5rem}
 
 input[type=checkbox],input[type=radio]{padding:0;vertical-align:middle;margin-top:-0.3rem;*margin-top:-0.2rem}
 
@@ -202,7 +203,7 @@ input, select{font-family:'KoreanAirSans'}
   .detail-list .list .f-label .required{color:var(--color-negative)}
   .detail-list .list .cont{display:inline;margin-left:150px;box-sizing:border-box;width:100%}
   .form-table{display:flex;width:100%}
-  .form-table .form-cell{position:relative;flex-grow:1;padding-right:1.0rem;padding-top:0}
+  .form-table .form-cell{position:relative;flex-grow:1;padding-right:1.0rem;padding-top:0x}
   .form-table .form-cell:last-child{padding-right:0}
 
   .group-box-wrap{
@@ -235,14 +236,14 @@ input, select{font-family:'KoreanAirSans'}
 }
 
 /*검색영역*/
-.boxForm.AD{margin-bottom:1.0rem}
-.boxForm{position:relative;padding:0px 3rem 3rem;margin-bottom:3.0rem;background-color:var(--color-neutral-20);border-radius:var(--radius-small, 8px)}
+.boxForm{position:relative;padding:1.5rem 3rem 3rem;margin-bottom:3.0rem;background-color:var(--color-neutral-20);border-radius:var(--radius-small, 8px)}
 .boxForm .form-table{display:flex;width:100%}
-.boxForm .form-table:first-child{padding-top:3rem}
-.boxForm .form-table + .form-table{padding-top:1.5rem}
+/*.boxForm .form-table:first-child{padding-top:3rem}*/
+.boxForm .form-table + .form-table{/*padding-top:1.5rem*/}
 .boxForm .form-table:last-child{/*padding-bottom:2.0rem*/}
-.boxForm .form-table .form-cell{position:relative;flex-grow:1;padding-right:1.0rem;padding-top:0}
+.boxForm .form-table .form-cell{position:relative;flex-grow:1;padding-right:1.0rem;padding-top:2.0rem}
 .boxForm .form-table .form-cell:last-child{padding-right:0}
+.boxForm.tog{margin-bottom:0rem;padding-top:0rem}
 
 .conts-subTit{width:100%;line-height:3.5rem;padding-bottom:1.0rem}
 .conts-subTit span{font-size:1.5rem}
@@ -283,9 +284,9 @@ input, select{font-family:'KoreanAirSans'}
 .box-view-list{}
 .box-view-list .view-list{display:flex;text-align:left;justify-content:space-between}
 .box-view-list .view-list + .view-list{padding-top:2.0rem}
-.box-view-list .view-list .accumlate-list{display:block}
-.box-view-list .view-list .t-label{display:block;padding-bottom: 12px;color:#222;font-weight:700;font-size:16px;white-space: nowrap}
-.box-view-list .view-list .text-desc{width:100%;text-align:left;overflow: hidden;word-break:break-all;text-overflow: ellipsis;   }
+.box-view-list .view-list .accumlate-list{position:relative;display:block}
+.box-view-list .view-list .t-label{display:block;color:var(--color-neutral-70);font-weight:400;font-size:1.5rem;white-space:nowrap}
+.box-view-list .view-list .text-desc{width:100%;font-weight:400;font-size:1.6rem;color:var(--color-neutral-80);text-align:left;overflow: hidden;word-break:break-all;text-overflow: ellipsis;   }
 /* ant-select focus, value 존재할때 label 처리 */
 .label-select.ant-select-focused + .f-label, label-select.selected + f-label {left:1.0rem;top:-2.0rem;font-size:1.3rem;transition: all 0.3s ease}
 
@@ -300,7 +301,7 @@ input, select{font-family:'KoreanAirSans'}
 .info-wrap > dl > dt{padding:1.8rem 0 1.7rem}
 .info-wrap > dl > dt .btn-tg{padding:0 6.7rem 0 0;font-family:"KoreanAirSans";font-size:2.0rem;color:var(--color-darkblue-100);font-weight:500}
 .info-wrap > dl > dd{margin:0 -2.0rem 1.0rem}
-.info-wrap .edit-area{padding:2.0rem 2.0rem;border-top:0.1rem solid var(--color-darkblue-100);border-bottom:0.1rem solid var(--color-neutral-30);background-color:var(--color-neutral-20);color:var(--color-neutral-80);line-height:2.0rem;font-size:1.6rem}
+.info-wrap .edit-area{/*padding:2.0rem 2.0rem;*/border-top:0.1rem solid var(--color-darkblue-100);border-bottom:0.1rem solid var(--color-neutral-30);background-color:var(--color-neutral-20);color:var(--color-neutral-80);line-height:2.0rem;font-size:1.6rem}
 .toggle .btn-tg{position:relative;font-family:"KoreanAirSans";font-size:1.6rem;color:var(--color-darkblue-100);background-color:var(--color-neutral-10);text-align:left;width:100%}
 .toggle .btn-tg:after{position:absolute;top:50%;right:0;content:'';display:inline-block;width:0.7rem;height:0.7rem;margin:0 0 0 1.3rem;border: solid var(--color-darkblue-100);border-width: 0 0.1rem 0.1rem 0;-webkit-transform: translateY(-50%) rotate(45deg);transform: translateY(-50%) rotate(45deg);-webkit-transform-origin: center;transform-origin:center}
 .toggle .active .btn-tg:after{-webkit-transform:translateY(-50%) rotate(-135deg);transform:translateY(-50%) rotate(-135deg)}

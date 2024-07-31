@@ -4,7 +4,7 @@ import { testColumnInfos } from '@/data/grid/table-column';
 import { DatePicker, TimePicker, Select as AntSelect } from 'antd';
 import { useState } from 'react';
 
-function AdminBasicView() {
+function AdminUseView() {
   const rowData = getAllData();
   const columns = testColumnInfos;
   const [inputValue, setInputValue] = useState('');
@@ -12,10 +12,10 @@ function AdminBasicView() {
   return (
     <>
       <div className="conts-title">
-        <h2>Taxonomy 상세</h2>
+        <h2>사용자 상세</h2>
       </div>
-      {/*상세페이지에선 */}
-      <div className="boxForm">
+      {/*상세페이지에선 className="boxForm AD" */}
+      <div className="boxForm AD">
         <div className="form-table">
           <div className="form-cell wid50">
             <div className="form-group wid100">
@@ -23,31 +23,33 @@ function AdminBasicView() {
                 <ul className="view-list">
                   <li className="accumlate-list">
                     <label className="t-label">
-                      사번 <span className="required">*</span>
+                      사번 <span className="required"></span>
                     </label>
-                    <span className="text-desc">123456789</span>
+                    <span className="text-desc">211111</span>
                   </li>
                 </ul>
               </div>
             </div>
           </div>
+
           <div className="form-cell wid50">
             <div className="form-group wid100">
               <div className="box-view-list">
                 <ul className="view-list">
                   <li className="accumlate-list">
                     <label className="t-label">
-                      사용자 명(한국어)
-                      <span className="required">*</span>
+                      사번 <span className="required"></span>
                     </label>
-                    <span className="text-desc">테스트1</span>
+                    <span className="text-desc">211111</span>
                   </li>
                 </ul>
               </div>
             </div>
           </div>
         </div>
-        <hr className="line"></hr>
+      </div>
+
+      <div className="boxForm AD">
         <div className="form-table">
           <div className="form-cell wid50">
             <div className="form-group wid100">
@@ -55,25 +57,28 @@ function AdminBasicView() {
                 <ul className="view-list">
                   <li className="accumlate-list">
                     <label className="t-label">
-                      사용자 명(영어)
-                      <span className="required">*</span>
+                      Level 1 <span className="required">*</span>
                     </label>
-                    <span className="text-desc">Test1</span>
+                    <span className="text-desc">
+                      내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용 내용내용내용내용내용내용내용
+                    </span>
                   </li>
                 </ul>
               </div>
             </div>
           </div>
           <div className="form-cell wid50">
-            <div className="form-group wid100">
+            <div className="form-group wid100 mr5">
               <div className="box-view-list">
                 <ul className="view-list">
                   <li className="accumlate-list">
+                    {/*<span>Level 1 *</span>*/}
                     <label className="t-label">
-                      사용자 명(중국어)
-                      <span className="required">*</span>
+                      Level 1 <span className="required">*</span>
                     </label>
-                    <span className="text-desc">Test1</span>
+                    <span className="text-desc">
+                      내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용 내용내용내용내용내용내용내
+                    </span>
                   </li>
                 </ul>
               </div>
@@ -93,38 +98,26 @@ function AdminBasicView() {
           <dd className="tg-conts">
             <div className="edit-area">
               {/* 상세내용*/}
-              <div className="boxForm tog">
-                <div className="form-table">
-                  <div className="form-cell wid50">
-                    <div className="form-group wid100">
-                      <div className="box-view-list">
-                        <ul className="view-list">
-                          <li className="accumlate-list">
-                            <label className="t-label">
-                              사번 <span className="required">*</span>
-                            </label>
-                            <span className="text-desc">123456789</span>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="form-cell wid50">
-                    <div className="form-group wid100">
-                      <div className="box-view-list">
-                        <ul className="view-list">
-                          <li className="accumlate-list">
-                            <label className="t-label">
-                              사용자 명(한국어)
-                              <span className="required">*</span>
-                            </label>
-                            <span className="text-desc">테스트1</span>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+              <div className="box-view-list">
+                <ul className="view-list">
+                  <li className="accumlate-list">
+                    <label className="t-label">
+                      Level 1 <span className="required"></span>
+                    </label>
+                    <span className="text-desc">
+                      내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용 내용내용내용내용내용내용내용
+                    </span>
+                  </li>
+
+                  <li className="accumlate-list">
+                    <label className="t-label">
+                      Level 1 <span className="required"></span>
+                    </label>
+                    <span className="text-desc">
+                      내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용 내용내용내용내용내용내용내용
+                    </span>
+                  </li>
+                </ul>
               </div>
               {/* //상세내용*/}
             </div>
@@ -144,4 +137,4 @@ function AdminBasicView() {
   );
 }
 
-export default AdminBasicView;
+export default AdminUseView;

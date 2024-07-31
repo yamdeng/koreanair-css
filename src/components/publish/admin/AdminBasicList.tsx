@@ -34,7 +34,7 @@ function AdminBasicList() {
               <label className="f-label" htmlFor="firstInput">
                 Sbject <span className="required">*</span>
               </label>
-              <span className="errorText">error message</span>
+              {/*<span className="errorText">error message</span>*/}
             </div>
           </div>
           <div className="form-cell wid50">
@@ -66,7 +66,7 @@ function AdminBasicList() {
               <label className="f-label" htmlFor="select1">
                 Sbject <span className="required">*</span>
               </label>
-              <span className="errorText">error message</span>
+              {/*<span className="errorText">error message</span>*/}
             </div>
           </div>
         </div>
@@ -112,7 +112,7 @@ function AdminBasicList() {
                   <label className="f-label" htmlFor="date1">
                     date1-1 <span className="required">*</span>
                   </label>
-                  <span className="errorText">date1 error</span>
+                  {/*<span className="errorText">date1 error</span>*/}
                 </div>
                 <span className="unt">~</span>
                 <div className="date2">
@@ -120,7 +120,7 @@ function AdminBasicList() {
                   <label className="f-label" htmlFor="date2">
                     date1-2 <span className="required">*</span>
                   </label>
-                  <span className="errorText">date2 error</span>
+                  {/*<span className="errorText">date2 error</span>*/}
                 </div>
               </div>
             </div>
