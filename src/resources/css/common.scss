@@ -235,6 +235,9 @@ input, select{font-family:'KoreanAirSans'}
   .form-table +.form-table{padding-top:1.5rem}
 }
 
+/*부서검색*/
+.conts-box{position:relative}
+
 /*검색영역*/
 .boxForm{position:relative;padding:1.5rem 3rem 3rem;margin-bottom:3.0rem;background-color:var(--color-neutral-20);border-radius:var(--radius-small, 8px)}
 .boxForm .form-table{display:flex;width:100%}

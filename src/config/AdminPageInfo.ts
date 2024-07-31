@@ -39,13 +39,6 @@ AdminPageInfo.list = [
     success: true,
   },
   {
-    title: '부서조회',
-    Component: AdminBasicView,
-    path: 'AdminBasicView',
-    description: '',
-    success: false,
-  },
-  {
     title: '기본 폼',
     Component: AdminBasicForm2,
     path: 'AdminBasicForm2',
