@@ -118,38 +118,99 @@ function AdminDeptSearch() {
               treeData={treeData}
             />
           </div>
-          <div className="pop_cont_form">
-            <div className="boxForm">
-              <div className="form-table">
-                <div className="form-cell ">
-                  <span className="form-group wid100">
-                    <span className="form-group wid100">
-                      <AntSelect
-                        style={{ width: '100%' }}
-                        options={[
-                          {
-                            value: 'jack',
-                            label: 'Jack',
-                          },
-                          {
-                            value: 'lucy',
-                            label: 'Lucy',
-                          },
-                          {
-                            value: 'Yiminghe',
-                            label: 'yiminghe',
-                          },
-                          {
-                            value: 'disabled',
-                            label: 'Disabled',
-                            disabled: true,
-                          },
-                        ]}
-                      />
-                    </span>
-                  </span>
-                </div>
-              </div>
+          <div className="cont_form">
+            <div className="info-wrap toggle">
+              <dl className="tg-item active">
+                {/* toggle 선택되면  열어지면 active붙임*/}
+                <dt>
+                  <button type="button" className="btn-tg">
+                    그룹상세 <span className="required">*</span>
+                  </button>
+                </dt>
+                <dd className="tg-conts">
+                  <div className="edit-area">
+                    <div className="boxForm tog">
+                      <div className="form-table">
+                        <div className="form-cell wid50">
+                          <div className="form-group wid100">
+                            <AntSelect
+                              id="select1"
+                              status=""
+                              style={{ width: '100%' }}
+                              className="label-select"
+                              options={[
+                                {
+                                  value: 'jack',
+                                  label: 'Jack',
+                                },
+                                {
+                                  value: 'lucy',
+                                  label: 'Lucy',
+                                },
+                                {
+                                  value: 'Yiminghe',
+                                  label: 'yiminghe',
+                                },
+                                {
+                                  value: 'disabled',
+                                  label: 'Disabled',
+                                  disabled: true,
+                                },
+                              ]}
+                            />
+                            <label className="f-label" htmlFor="select1">
+                              상위그룹 <span className="required">*</span>
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                      <hr className="line"></hr>
+                      <div className="form-table">
+                        <div className="form-cell wid50">
+                          <div className="form-group wid100 mr5">
+                            {/*그룹 명(KOR) */}
+                            <input
+                              id="firstInput3"
+                              type="text"
+                              className="form-tag"
+                              name="title"
+                              value={inputValue}
+                              onChange={(event) => {
+                                setInputValue(event.target.value);
+                              }}
+                            />
+                            <label className="f-label" htmlFor="firstInput3">
+                              그룹 명(KOR) <span className="required">*</span>
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                      <hr className="line"></hr>
+                      <div className="form-table">
+                        <div className="form-cell wid50">
+                          <div className="form-group wid100 mr5">
+                            {/*그룹 명(KOR) */}
+                            <input
+                              id="firstInput3"
+                              type="text"
+                              className="form-tag"
+                              name="title"
+                              value={inputValue}
+                              onChange={(event) => {
+                                setInputValue(event.target.value);
+                              }}
+                            />
+                            <label className="f-label" htmlFor="firstInput3">
+                              그룹 명(ENG) <span className="required">*</span>
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                      <hr className="line"></hr>
+                    </div>
+                  </div>
+                </dd>
+              </dl>
             </div>
           </div>
         </div>
