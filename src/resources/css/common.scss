@@ -235,6 +235,7 @@ input, select{font-family:'KoreanAirSans'}
 }
 
 /*검색영역*/
+.boxForm.AD{margin-bottom:1.0rem}
 .boxForm{position:relative;padding:0px 3rem 3rem;margin-bottom:3.0rem;background-color:var(--color-neutral-20);border-radius:var(--radius-small, 8px)}
 .boxForm .form-table{display:flex;width:100%}
 .boxForm .form-table:first-child{padding-top:3rem}
@@ -277,6 +278,13 @@ input, select{font-family:'KoreanAirSans'}
 .form-tag:not([value=""]){border:0.1rem solid var(--color-neutral-40)}
 .form-tag.active+.f-label, .form-tag:focus+.f-label{color:var(--color-mblue-100) !important}
 .form-tag-select:disabled + .f-label, .form-tag-select:focus + .f-label, .form-tag-select.active + .f-label, .form-tag-select.isValue + .f-label, .form-tag-select.invalid + .f-label{left:1.0rem;top:-2.0rem;font-size:1.3rem;transition: all 0.3s ease}
+
+/*상세리스트*/
+.box-view-list{}
+.box-view-list .view-list{display:flex;text-align:left;justify-content:space-between}
+.box-view-list .view-list .accumlate-list{display:block}
+.box-view-list .view-list .t-label{display:block;padding-bottom: 12px;color:#222;font-weight:700;font-size:16px;white-space: nowrap}
+.box-view-list .view-list .text-desc{width:100%;text-align:left;overflow: hidden;word-break:break-all;text-overflow: ellipsis;   }
 /* ant-select focus, value 존재할때 label 처리 */
 .label-select.ant-select-focused + .f-label, label-select.selected + f-label {left:1.0rem;top:-2.0rem;font-size:1.3rem;transition: all 0.3s ease}
 

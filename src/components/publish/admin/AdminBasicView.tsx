@@ -2,80 +2,84 @@ import AppTable from '@/components/common/AppTable';
 import { getAllData } from '@/data/grid/example-data-new';
 import { testColumnInfos } from '@/data/grid/table-column';
 import { DatePicker, TimePicker, Select as AntSelect } from 'antd';
+import { useState } from 'react';
 
 function AdminBasicEdit() {
   const rowData = getAllData();
   const columns = testColumnInfos;
+  const [inputValue, setInputValue] = useState('');
 
   return (
     <>
       <div className="conts-title">
         <h2>Taxonomy 상세</h2>
-        <div className="btn-area">
-          <button type="button" name="button" className="btn-sm btn_text btn-lightblue">
-            조회
-          </button>
-          <button type="button" name="button" className="btn-sm btn_text btn-lightblue">
-            신규
-          </button>
-          <button type="button" name="button" className="btn-sm btn_text btn-lightblue">
-            초기화
-          </button>
+      </div>
+      {/*상세 */}
+
+      <div className="boxForm AD">
+        <div className="form-table">
+          <div className="form-cell wid50">
+            <div className="form-group wid100">
+              <div className="box-view-list">
+                <ul className="view-list">
+                  <li className="accumlate-list">
+                    {/*<span>Level 1 *</span>*/}
+                    <label className="t-label">
+                      Level 1 <span className="required">*</span>
+                    </label>
+                    <span className="text-desc">
+                      내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용 내용내용내용내용내용내용내용
+                      내용내용내용내용내용 내용내용내용내용내용 내용내용내용내용내용내용 내용내용내용내용내용내용
+                      내용내용내용내용내용 내용내용내용내용
+                    </span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-      {/*등록 */}
-      <p>테이블이 cell이 한개의 row 되어있는 상세페이지 일경우</p>
-      <div className="detail-form">
-        <ul className="detail-list">
-          <li className="list">
-            <div className="list-row wid50">
-              <label className="f-label">
-                Level 1 <span className="required">*</span>
-              </label>
-              <div className="cont">
-                <div className="form-table">
-                  <div className="form-cell wid100">
-                    <div className="form-group wid100">한 row로 사용시에 class명 form-cell에 wid100을 넣어주세요</div>
-                  </div>
-                </div>
+
+      <div className="boxForm AD">
+        <div className="form-table">
+          <div className="form-cell wid50">
+            <div className="form-group wid100 mr5">
+              <div className="box-view-list">
+                <ul className="view-list">
+                  <li className="accumlate-list">
+                    {/*<span>Level 1 *</span>*/}
+                    <label className="t-label">
+                      Level 1 <span className="required">*</span>
+                    </label>
+                    <span className="text-desc">
+                      내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용 내용내용내용내용내용내용내용
+                    </span>
+                  </li>
+                </ul>
               </div>
             </div>
-          </li>
-        </ul>
+          </div>
+          <div className="form-cell wid50">
+            <div className="form-group wid100 mr5">
+              <div className="box-view-list">
+                <ul className="view-list">
+                  <li className="accumlate-list">
+                    {/*<span>Level 1 *</span>*/}
+                    <label className="t-label">
+                      Level 1 <span className="required">*</span>
+                    </label>
+                    <span className="text-desc">
+                      내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용 내용내용내용내용내용내용내
+                    </span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
 
-      <p>테이블이 cell이 두개의 row 되어있는 상세페이지 일경우</p>
-      <div className="detail-form">
-        <ul className="detail-list">
-          <li className="list">
-            <div className="list-row wid50">
-              <label className="f-label">
-                Level 1 <span className="required">*</span>
-              </label>
-              <div className="cont">
-                <div className="form-table">
-                  <div className="form-cell wid50">
-                    <div className="form-group wid100">내용</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="list-row wid50">
-              <label className="f-label">
-                Level 1 <span className="required">*</span>
-              </label>
-              <div className="cont">
-                <div className="form-table">
-                  <div className="form-cell wid50">
-                    <div className="form-group wid100">내용</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </li>
-        </ul>
-      </div>
-      {/*//등록 */}
+      {/*//상세 */}
 
       {/* 하단버튼영역 */}
       <div className="contents-btns">
