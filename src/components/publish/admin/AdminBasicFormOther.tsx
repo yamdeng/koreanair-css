@@ -205,6 +205,7 @@ function AdminBasicFormOther() {
             hideModeSwitch={true}
             initialEditType="wysiwyg"
             previewStyle="vertical"
+            placeholder="aaaaa"
             // initialValue={initValue}
             height={'500px'}
             // onChange={() => {}}

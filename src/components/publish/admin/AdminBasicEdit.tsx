@@ -1,3 +1,4 @@
+import { Editor } from '@toast-ui/react-editor';
 import AppTable from '@/components/common/AppTable';
 import { getAllData } from '@/data/grid/example-data-new';
 import { testColumnInfos } from '@/data/grid/table-column';
@@ -149,6 +150,60 @@ function AdminBasicEdit() {
               <label className="f-label" htmlFor="firstInput3">
                 위해요인 내용 <span className="required">*</span>
               </label>
+            </div>
+          </div>
+        </div>
+        <hr className="line"></hr>
+        <div className="form-table">
+          <div className="form-cell wid50">
+            <div className="form-group wid100 mr5">
+              {/*기상조건 */}
+              <textarea
+                id="testArea1"
+                className="form-tag"
+                style={{ width: '100%' }}
+                name="testArea1"
+                value={inputValue}
+                onChange={(event) => {
+                  setInputValue(event.target.value);
+                }}
+              />
+              <label className="f-label" htmlFor="testArea1">
+                텍스트 area <span className="required">*</span>
+              </label>
+            </div>
+          </div>
+        </div>
+        <hr className="line"></hr>
+        <div className="form-table">
+          <div className="form-cell wid50">
+            <div className="form-group wid100 mr5">
+              {/*기상조건 */}
+              <Editor
+                hideModeSwitch={true}
+                initialEditType="wysiwyg"
+                previewStyle="vertical"
+                // initialValue={initValue}
+                height={'500px'}
+                // onChange={() => {}}
+                usageStatistics={false}
+                customHTMLSanitizer={(html) => {
+                  return html;
+                }}
+                viewer={true}
+                autofocus={false}
+                customHTMLRenderer={{
+                  htmlBlock: {
+                    table(node) {
+                      return [
+                        { type: 'openTag', tagName: 'table', outerNewLine: true, attributes: node.attrs },
+                        { type: 'html', content: node.childrenHTML },
+                        { type: 'closeTag', tagName: 'table', outerNewLine: true },
+                      ];
+                    },
+                  },
+                }}
+              />
             </div>
           </div>
         </div>
