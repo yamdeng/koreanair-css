@@ -72,10 +72,11 @@
   font-weight: 400;
 }
 .header .GNB .gnb-list li a:hover{text-decoration-line: underline;}
-.header .GNB .gnb-list li a.active {
+.header .GNB .gnb-list li a.active {position: relative;
   font-weight: 700;
   color: var(--color-darkblue-100);
 }
+.header .GNB .gnb-list li a.active:after{content:'';position:absolute;top: 0;right: -10px;width: 5px;height: 5px;border-radius: 50%;background-color:var(--color-darkblue-100);transition: all .3s ease-in-out}
 .header .util {
   float: right;
   display: flex;
@@ -249,14 +250,12 @@
 }
 .LNB_list li a {
   width: 100%; 
-  color: var(--color-darkblue-100);
+  color: var(--color-darkblue-100);text-decoration:none;
 }
 .LNB_list li a:hover{text-decoration-line: underline;}
 .LNB_list li a.up-icon {background: url(../images/icon-arrow-up.svg) right center no-repeat;}
 .LNB_list li a.down-icon {background: url(../images/icon-arrow-down.svg) right center no-repeat;}
-.LNB_list li a.active {
-  font-weight: 700;
-}
+.LNB_list li a.active{position:relative;font-weight:700}
 .LNB_list li .mu-2depth {
   display: flex;
   width: 100%;
