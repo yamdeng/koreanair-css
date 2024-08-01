@@ -212,8 +212,25 @@ function TestModal(props) {
             </div>
             <div className="uesrlist">
               <p className="stitle">사용자 목록</p>
-              <ul>
-                <li>지유진(YJJI) / - / 대한항공 KBSYS</li>
+              <ul className="list">
+                <li>
+                  지유진(YJJI) / - / 대한항공 KBSYS
+                  <a href="javascript:void(0);">
+                    <span className="delete">X</span>
+                  </a>
+                </li>
+                <li>
+                  최윤정(YJCHOI) / - / 대한항공 KBSYS
+                  <a href="javascript:void(0);">
+                    <span className="delete">X</span>
+                  </a>
+                </li>
+                <li>
+                  김영기(YKKIM) / 전산1급 / 대한항공 KBSYS
+                  <a href="javascript:void(0);">
+                    <span className="delete">X</span>
+                  </a>
+                </li>
               </ul>
             </div>
             <div className="departmentlist">
