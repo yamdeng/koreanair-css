@@ -43,7 +43,7 @@ AdminPageInfo.list = [
     Component: AdminBasicForm2,
     path: 'AdminBasicForm2',
     description: '',
-    success: false,
+    success: true,
   },
   {
     title: 'AdminBasicFormOther',
