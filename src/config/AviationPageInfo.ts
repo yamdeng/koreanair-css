@@ -27,6 +27,13 @@ AviationPageInfo.list = [
     success: false,
   },
   {
+    title: '[04.안전보증] ',
+    Component: PRiskForm2,
+    path: 'PRiskForm2',
+    description: '',
+    success: false,
+  },
+  {
     title: '[AUDIT] ',
     Component: PRiskForm2,
     path: 'PRiskForm2',
