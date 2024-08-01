@@ -71,7 +71,7 @@ function AdminCodeManage() {
           </div>
         </div>
       </div>
-      <div className="btns-area">
+      <div className="btns-box">
         <button name="button" className="btn_text btn_confirm text_color_neutral-10">
           저장
         </button>
@@ -108,7 +108,7 @@ function AdminCodeManage() {
         </div>
       </div>
 
-      <div className="btns-area">
+      <div className="btns-box">
         <button name="button" className="btn_text text_color_neutral-90 btn_close">
           삭제
         </button>
