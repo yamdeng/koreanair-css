@@ -207,7 +207,10 @@ function TestModal(props) {
           <div className="selectlist">
             <div className="title">
               <p>
-                선택목록<span className="icon"></span>
+                선택목록
+                <a className="icon" href="javascript:void(0);">
+                  <span></span>
+                </a>
               </p>
             </div>
             <div className="uesrlist">
@@ -231,12 +234,53 @@ function TestModal(props) {
                     <span className="delete">X</span>
                   </a>
                 </li>
+                <li>
+                  김영기(YKKIM) / 전산1급 / 대한항공 KBSYS
+                  <a href="javascript:void(0);">
+                    <span className="delete">X</span>
+                  </a>
+                </li>
+                <li>
+                  김영기(YKKIM) / 전산1급 / 대한항공 KBSYS
+                  <a href="javascript:void(0);">
+                    <span className="delete">X</span>
+                  </a>
+                </li>
               </ul>
             </div>
             <div className="departmentlist">
               <div className="stitle">부서 목록</div>
-              <ul>
-                <li>리스트</li>
+              <ul className="list">
+                <li>
+                  김영기(YKKIM) / 전산1급 / 대한항공 KBSYS
+                  <a href="javascript:void(0);">
+                    <span className="delete">X</span>
+                  </a>
+                </li>
+                <li>
+                  김영기(YKKIM) / 전산1급 / 대한항공 KBSYS
+                  <a href="javascript:void(0);">
+                    <span className="delete">X</span>
+                  </a>
+                </li>
+                <li>
+                  김영기(YKKIM) / 전산1급 / 대한항공 KBSYS
+                  <a href="javascript:void(0);">
+                    <span className="delete">X</span>
+                  </a>
+                </li>
+                <li>
+                  김영기(YKKIM) / 전산1급 / 대한항공 KBSYS
+                  <a href="javascript:void(0);">
+                    <span className="delete">X</span>
+                  </a>
+                </li>
+                <li>
+                  김영기(YKKIM) / 전산1급 / 대한항공 KBSYS
+                  <a href="javascript:void(0);">
+                    <span className="delete">X</span>
+                  </a>
+                </li>
               </ul>
             </div>
           </div>
