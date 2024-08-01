@@ -20,7 +20,7 @@ function AdminBasicList() {
       <div className="boxForm">
         <div className="form-table">
           <div className="form-cell wid50">
-            <div className="form-group wid100 mr5 ">
+            <div className="form-group wid100">
               <input
                 id="firstInput"
                 type="text"

@@ -122,7 +122,7 @@ function AdminBasicEdit() {
               <label className="f-label" htmlFor="select1">
                 Level 1 <span className="required">*</span>
               </label>
-              <span className="errorText">auto complete error message</span>
+              {/*<span className="errorText">auto complete error message</span>*/}
             </div>
           </div>
           <div className="form-cell wid50">
@@ -179,9 +179,9 @@ function AdminBasicEdit() {
           <div className="form-cell wid50">
             <div className="form-group form-glow">
               <div className="df">
-                <div className="date3 wid50">
+                <div className="date3 wid100">
                   <TimePicker
-                    className="label-picker wid50"
+                    className="label-picker wid100"
                     id="date3"
                     minuteStep={15}
                     secondStep={10}
@@ -189,7 +189,7 @@ function AdminBasicEdit() {
                     status=""
                   />
                   <label className="f-label" htmlFor="date3">
-                    TimePicker1개 <span className="required">*</span>
+                    TimePicker1 <span className="required">*</span>
                   </label>
                   {/*<span className="errorText">date1 error</span>*/}
                 </div>
@@ -202,10 +202,10 @@ function AdminBasicEdit() {
           <div className="form-cell wid50">
             <div className="form-group form-glow">
               <div className="df">
-                <div className="date3 wid50">
-                  <TimePicker.RangePicker className="label-picker wid100" status="error" />
-                  <label className="f-label" htmlFor="date3">
-                    TimePicker2개 <span className="required">*</span>
+                <div className="date4 wid100">
+                  <TimePicker.RangePicker className="label-picker wid100" id="date4" status="error" />
+                  <label className="f-label" htmlFor="date4">
+                    TimePicker2 <span className="required">*</span>
                   </label>
                   {/*<span className="errorText">date1 error</span>*/}
                 </div>

@@ -64,7 +64,7 @@ AdminPageInfo.list = [
     Component: AdminCodeManage,
     path: 'AdminCodeManage',
     description: '',
-    success: false,
+    success: true,
   },
 ];
 
