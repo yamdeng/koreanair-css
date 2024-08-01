@@ -57,7 +57,7 @@ AdminPageInfo.list = [
     Component: AdminDeptSearch,
     path: 'AdminDeptSearch',
     description: '',
-    success: false,
+    success: true,
   },
   {
     title: '코드관리',
