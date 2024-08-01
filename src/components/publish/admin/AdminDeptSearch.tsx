@@ -55,10 +55,13 @@ function AdminDeptSearch() {
             <div className="tree_form">
               <div className="btns-area">
                 <button name="button" className="btn_text btn_confirm text_color_neutral-10">
-                  추가
+                  신규
+                </button>
+                <button name="button" className="btn_text text_color_neutral-90 btn_close">
+                  삭제
                 </button>
                 <button name="button" className="btn_text btn_confirm text_color_neutral-10">
-                  삭제
+                  저장
                 </button>
               </div>
               <div className="form-group wid100">
@@ -111,7 +114,7 @@ function AdminDeptSearch() {
               </div>
             </div>
             <Tree
-              className="draggable-tree"
+              className="draggable-tree bg"
               defaultExpandedKeys={expandedKeys}
               draggable
               blockNode
@@ -119,9 +122,9 @@ function AdminDeptSearch() {
             />
           </div>
           <div className="cont_form">
-            <div className="info-wrap toggle">
-              <dl className="tg-item active">
-                {/* toggle 선택되면  열어지면 active붙임*/}
+            {/*그룹상세 */}
+            <div className="info-wrap">
+              <dl className="tg-item">
                 <dt>
                   <button type="button" className="btn-tg">
                     그룹상세 <span className="required">*</span>
@@ -211,6 +214,130 @@ function AdminDeptSearch() {
                   </div>
                 </dd>
               </dl>
+
+              {/*버튼*/}
+              <div className="btns-area">
+                <button name="button" className="btn_text btn_confirm text_color_neutral-10">
+                  신규
+                </button>
+                <button name="button" className="btn_text text_color_neutral-90 btn_close">
+                  삭제
+                </button>
+                <button name="button" className="btn_text btn_confirm text_color_neutral-10">
+                  저장
+                </button>
+              </div>
+            </div>
+
+            {/*그룹관리자 */}
+            <div className="info-wrap">
+              <dl className="tg-item">
+                <dt>
+                  <button type="button" className="btn-tg">
+                    그룹관리자 <span className="required">*</span>
+                  </button>
+                </dt>
+                <dd className="tg-conts">
+                  <div className="edit-area">
+                    <div className="boxForm tog">
+                      <div className="form-table">
+                        <div className="form-cell wid50">
+                          <div className="form-group wid100">
+                            <ul className="list">
+                              <li>
+                                관리자(ADMIN) / 상무대우수석사무장 / ㈜대한항공
+                                <a href="javascript:void(0);">
+                                  <span className="delete">X</span>
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                      <hr className="line"></hr>
+                      <div className="form-table">
+                        <div className="form-cell wid50">
+                          <div className="form-group wid100">
+                            <ul className="list">
+                              <li>
+                                사외이사실(BOD)
+                                <a href="javascript:void(0);">
+                                  <span className="delete">X</span>
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </dd>
+              </dl>
+              {/*버튼*/}
+              <div className="btns-area">
+                <button name="button" className="btn_text btn_confirm text_color_neutral-10">
+                  신규
+                </button>
+                <button name="button" className="btn_text text_color_neutral-90 btn_close">
+                  전체삭제
+                </button>
+              </div>
+            </div>
+
+            {/*그룹 멤버 */}
+            <div className="info-wrap">
+              <dl className="tg-item">
+                <dt>
+                  <button type="button" className="btn-tg">
+                    그룹멤버
+                    <span className="required">*</span>
+                  </button>
+                </dt>
+                <dd className="tg-conts">
+                  <div className="edit-area">
+                    <div className="boxForm tog">
+                      <div className="form-table">
+                        <div className="form-cell wid50">
+                          <div className="form-group wid100">
+                            <ul className="list">
+                              <li>
+                                관리자(ADMIN) / 상무대우수석사무장 / ㈜대한항공
+                                <a href="javascript:void(0);">
+                                  <span className="delete">X</span>
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                      <hr className="line"></hr>
+                      <div className="form-table">
+                        <div className="form-cell wid50">
+                          <div className="form-group wid100">
+                            <ul className="list">
+                              <li>
+                                사외이사실(BOD)
+                                <a href="javascript:void(0);">
+                                  <span className="delete">X</span>
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </dd>
+              </dl>
+              {/*버튼*/}
+              <div className="btns-area">
+                <button name="button" className="btn_text btn_confirm text_color_neutral-10">
+                  신규
+                </button>
+                <button name="button" className="btn_text text_color_neutral-90 btn_close">
+                  전체삭제
+                </button>
+              </div>
             </div>
           </div>
         </div>

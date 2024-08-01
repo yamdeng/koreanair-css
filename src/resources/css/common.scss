@@ -132,6 +132,12 @@ input, select{font-family:'KoreanAirSans'}
   .btn_confirm{padding:0.6rem 2.8rem;border-radius:99.9rem;background: var(--color-darkblue-100)}
   .btn-lightblue{border:solid 0.1rem var(--color-lightblue-40);background-color:var(--color-lightblue-40);color:var(--color-darkblue-100)}
   .btn-sm{padding:0.6rem 4.8rem;border-radius:99.9rem;align-items:center}
+  .btn_close {
+    padding:0.6rem 2.8rem;
+    /* border: 0.2rem solid var(--color-darkblue-100); */
+    border-radius: 99.9rem;
+    background: var(--color-neutral-30);
+}
   position:relative;right:0;top:0;float:right;text-align:center;
   @include mobile {
     width:100%;
@@ -306,8 +312,11 @@ input, select{font-family:'KoreanAirSans'}
 
 .form-group{position:relative;display:inline-block;vertical-align:middle}
 .form-group .invalid_txt{position:absolute;left:1.1rem;top:3.6rem;font-size:1rem;color:var(--color-negative)}
-
 .form-group .invalid-txt.textarea{top: 201px}
+
+.form-group .list{}
+.form-group .list li{position:relative;text-overflow:ellipsis;white-space:nowrap;overflow:hidden}
+.form-group .list li .delete{position:absolute;right:0;background: url(/src/resources/images/delete-text.svg) center center no-repeat;font-size: 0;width: 2rem;height: 2rem}
 
 .form-group .date1, .form-group .date2{position:relative}
 .form-group .f-label{display:inline-block;position:absolute;left:1.0rem;top:0.8rem;background:var(--color-neutral-10);padding:0.2rem 0.4rem 0.4rem;line-height:1em;font-size:1.4rem !important;transition: all .2s ease}

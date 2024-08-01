@@ -70,8 +70,10 @@
     box-sizing: border-box;
     min-width: 32.0rem;
     max-height: 100dvh;
-    padding-right: 1.0rem;
+    //padding: 1.3rem;
     margin-right: 2.0rem;
+    //background-color:var(--color-neutral-20);
+    .draggable-tree.bg{background-color:var(--color-neutral-20);padding:1.3rem}
     @include mobile {
       display: none;
     }
