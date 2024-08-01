@@ -107,6 +107,7 @@ function AdminCodeManage() {
           </div>
         </div>
       </div>
+
       <div className="btns-area">
         <button name="button" className="btn_text text_color_neutral-90 btn_close">
           삭제
