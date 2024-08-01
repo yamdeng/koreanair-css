@@ -94,7 +94,7 @@ export default function OccupationLayout() {
           <div className="m-lnb_top_logo">
             <a href="javascript:void(0);">
               <img src={koreanairSymbolImage} />
-              <span>항공안전</span>
+              <span>산업안전</span>
             </a>
           </div>
           <div className="m-lnb_top_btn">
