@@ -353,10 +353,10 @@ input, select{font-family:'KoreanAirSans'}
 .form-tag.active, .form-tag:focus{border:0.1rem solid var(--color-mblue-100) !important;color:var(--color-mblue-100) !important}
 .form-group .btnClear {
   position: absolute;
-  top: 0.5rem;
+  top: 0.7rem;
   right: 1.0rem;
-  width: 3.0rem;
-  height: 3.0rem;
+  width: 2.5rem;
+  height: 2.5rem;
   background: url(../images/delete-text.svg) center center no-repeat;
   background-size: cover;
   border: none;
@@ -379,10 +379,10 @@ input, select{font-family:'KoreanAirSans'}
 .form-tag-select:disabled + .f-label, .form-tag-select:focus + .f-label, .form-tag-select.active + .f-label, .form-tag-select.isValue + .f-label, .form-tag-select.invalid + .f-label{left:1.0rem;top:-2.0rem;font-size:1.3rem;transition: all 0.3s ease}
 .form-group .sch-btnClear {
   position: absolute;
-  top: 0.5rem;
+  top: 0.7rem;
   right: 4.0rem;
-  width: 3.0rem;
-  height: 3.0rem;
+  width: 2.5rem;
+  height: 2.5rem;
   background: url(../images/delete-text.svg) center center no-repeat;
   background-size: cover;
   border: none;
@@ -468,7 +468,9 @@ input, select{font-family:'KoreanAirSans'}
 
 
 /*폼아이콘변경*/
-:where(.css-dev-only-do-not-override-98ntnt).ant-select .ant-select-arrow .anticon >svg {background: url(../images/arrow-down.svg)center center no-repeat; background-size: cover; width: 2.4rem; height: 2.4rem;}
+:where(.css-dev-only-do-not-override-98ntnt).ant-select .ant-select-arrow .anticon >svg {background: url(../images/arrow-down.svg)center center no-repeat; background-size: cover;}
 :where(.css-dev-only-do-not-override-98ntnt).ant-select .ant-select-arrow .anticon >svg path {display: none;}
 :where(.css-dev-only-do-not-override-98ntnt).ant-picker .ant-picker-suffix .anticon svg {background: url(../images/calendar.svg)center center no-repeat; background-size: cover; width: 2.4rem; height: 2.4rem;}
 :where(.css-dev-only-do-not-override-98ntnt).ant-picker .ant-picker-suffix .anticon svg path {display: none;}
+:where(.css-dev-only-do-not-override-98ntnt).ant-picker .ant-picker-suffix .anticon-clock-circle svg {background: url(../images/arrival-time.svg)center center no-repeat; background-size: cover;}
+:where(.css-dev-only-do-not-override-98ntnt).ant-picker .ant-picker-suffix .anticon-clock-circle svg path {display: none;}
