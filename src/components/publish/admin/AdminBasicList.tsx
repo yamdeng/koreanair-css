@@ -34,6 +34,7 @@ function AdminBasicList() {
               <label className="f-label" htmlFor="firstInput">
                 Sbject <span className="required">*</span>
               </label>
+              <button className="btnClear"></button>
               {/*<span className="errorText">error message</span>*/}
             </div>
           </div>
@@ -142,6 +143,7 @@ function AdminBasicList() {
               <label className="f-label" htmlFor="firstInput2">
                 장비번호 <span className="required">*</span>
               </label>
+              <button className="btnClear"></button>
             </div>
           </div>
           <div className="form-cell wid50">
@@ -178,6 +180,7 @@ function AdminBasicList() {
               <label className="f-label" htmlFor="firstInput4">
                 모델명 <span className="required">*</span>
               </label>
+              <button className="btnClear"></button>
             </div>
           </div>
         </div>
