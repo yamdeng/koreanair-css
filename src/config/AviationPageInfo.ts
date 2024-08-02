@@ -1,6 +1,7 @@
 import PAviationPortal1 from '@/components/publish/aviation/PAviationPortal1';
 import PRiskForm1 from '@/components/publish/aviation/PRiskForm1';
 import PRiskForm2 from '@/components/publish/aviation/PRiskForm2';
+import SPIInfo1 from '@/components/publish/aviation/SPIInfo1';
 
 const AviationPageInfo: any = {};
 
@@ -27,9 +28,9 @@ AviationPageInfo.list = [
     success: false,
   },
   {
-    title: '[04.안전보증] ',
-    Component: PRiskForm2,
-    path: 'PRiskForm2',
+    title: '[04.안전보증] SPI/SPT > 운영 현황> 운항 정보',
+    Component: SPIInfo1,
+    path: 'SPIInfo1',
     description: '',
     success: false,
   },
