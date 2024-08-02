@@ -162,6 +162,7 @@ function AdminBasicList() {
               <label className="f-label" htmlFor="firstInput3">
                 부서명
               </label>
+              <button className="sch-btnClear"></button>
               <button type="button" className="icon-sch"></button>
             </div>
           </div>

@@ -204,7 +204,7 @@ input, select{font-family:'KoreanAirSans'}
   }
 }
 /* 상단 타이틀 */
-.conts-title{position:relative;border-bottom:solid 0.1rem var(--color-neutral-40);align-items:center;padding:2.0rem 0 4.0rem 0;margin-bottom:1.0rem}
+.conts-title{position:relative;/*border-bottom:solid 0.1rem var(--color-neutral-40);*/align-items:center;padding:2.0rem 0 4.0rem 0;margin-bottom:1.0rem}
 .conts-title h2{float:left;font-family:"KoreanAirSans";font-size:3rem;color:var(--color-neutral-80);font-weight:700;letter-spacing:-0.1rem}
 .conts-title h2 span{font-size:2.5rem;color:var(--color-mblue-100)}
 
@@ -377,6 +377,19 @@ input, select{font-family:'KoreanAirSans'}
 .form-tag:not([value=""]){border:0.1rem solid var(--color-neutral-40)}
 .form-tag.active+.f-label, .form-tag:focus+.f-label{color:var(--color-mblue-100) !important}
 .form-tag-select:disabled + .f-label, .form-tag-select:focus + .f-label, .form-tag-select.active + .f-label, .form-tag-select.isValue + .f-label, .form-tag-select.invalid + .f-label{left:1.0rem;top:-2.0rem;font-size:1.3rem;transition: all 0.3s ease}
+.form-group .sch-btnClear {
+  position: absolute;
+  top: 0.5rem;
+  right: 4.0rem;
+  width: 3.0rem;
+  height: 3.0rem;
+  background: url(../images/delete-text.svg) center center no-repeat;
+  background-size: cover;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
 
 /*상세리스트*/
 .box-view-list{}
