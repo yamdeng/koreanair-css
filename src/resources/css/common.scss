@@ -316,6 +316,12 @@ input, select{font-family:'KoreanAirSans'}
   }
 }
 
+/*탭*/
+.menu-tab{display:flex;flex-wrap: nowrap;margin:0 0 3.0rem 0;border-radius:0.8rem;overflow: auto hidden;scroll-behavior: smooth;gap: 1.2rem 0px;}
+.menu-tab:after{content:'';display:block;clear:both}
+.menu-tab a{display:inline-flex;font-size:1.8rem;line-height:1.5;min-width:19rem;min-height:4.4rem;border:1px solid var(--color-neutral-40);background-color:var(--color-neutral-10); color:var(--color-neutral-80);padding:0;align-items:center;justify-content:center;text-align:center}
+.menu-tab a.active{background-color:var(--color-darkblue-100);color:var(--color-neutral-10)}
+
 /*검색영역*/
 .info-wrap .edit-area > .boxForm{padding:0}
 .boxForm{position:relative;padding:1.5rem 3rem 3rem;margin-bottom:2.0rem;background-color:var(--color-neutral-20);border-radius:var(--radius-small, 8px)}
@@ -390,6 +396,8 @@ input, select{font-family:'KoreanAirSans'}
   cursor: pointer;
 }
 
+.form-group .df.row1{justify-content: center;}
+.form-group .df.row1 > .btn-area{padding-top:0}
 
 /*상세리스트*/
 .box-view-list{}

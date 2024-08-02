@@ -13,6 +13,15 @@ function PRiskForm1() {
       <div className="conts-title">
         <h2>운영현황</h2>
       </div>
+      {/*탭 */}
+      <div className="menu-tab">
+        <a href="javascript:void(0);" className="active" data-label="운항정보">
+          운항정보
+        </a>
+        <a href="javascript:void(0);" data-label="SPI지표별 현황">
+          SPI지표별 현황
+        </a>
+      </div>
       {/*검색영역 */}
       <div className="TopButton-area">
         {/*아코디언 - 펴기 버튼일때 btn-fold명 옆에 open붙이기  */}
@@ -22,41 +31,9 @@ function PRiskForm1() {
 
         <div className="boxForm">
           <div className="form-table">
-            <div className="form-cell ">
-              <div className="form-group wid100">
-                <AntSelect
-                  id="select2"
-                  style={{ width: '100%' }}
-                  className="label-select"
-                  options={[
-                    {
-                      value: 'jack',
-                      label: 'Jack',
-                    },
-                    {
-                      value: 'lucy',
-                      label: 'Lucy',
-                    },
-                    {
-                      value: 'Yiminghe',
-                      label: 'yiminghe',
-                    },
-                    {
-                      value: 'disabled',
-                      label: 'Disabled',
-                      disabled: true,
-                    },
-                  ]}
-                />
-                <label className="f-label" htmlFor="select2">
-                  Event Date <span className="required"></span>
-                </label>
-                {/*<span className="errorText">auto complete error message</span>*/}
-              </div>
-            </div>
             <div className="form-cell wid50">
               <div className="form-group form-glow">
-                <div className="df">
+                <div className="df row1">
                   <div className="date1">
                     <DatePicker status="" id="date1" className="label-picker" placeholder="" /> {/* status="error" */}
                     <label className="f-label" htmlFor="date1">
@@ -64,46 +41,21 @@ function PRiskForm1() {
                     </label>
                     {/*<span className="errorText">date1 error</span>*/}
                   </div>
-                  <span className="unt">~</span>
-                  <div className="date2">
-                    <DatePicker status="" id="date2" className="label-picker" placeholder="" /> {/* status="error" */}
-                    <label className="f-label" htmlFor="date2">
-                      date1-2 <span className="required"></span>
-                    </label>
-                    {/*<span className="errorText">date2 error</span>*/}
+                  <div className="btn-area">
+                    <button type="button" name="button" className="btn-sm btn_text btn-darkblue-line">
+                      조회
+                    </button>
+                    <button type="button" name="button" className="btn-sm btn_text btn-darkblue-line">
+                      초기화
+                    </button>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <div className="btn-area">
-            <button type="button" name="button" className="btn-sm btn_text btn-darkblue-line">
-              조회
-            </button>
-            <button type="button" name="button" className="btn-sm btn_text btn-darkblue-line">
-              초기화
-            </button>
-          </div>
         </div>
       </div>
       {/* //검색영역 */}
-
-      <div>
-        <ul className="Report-process">
-          <li>
-            <span>작성(6)</span>
-          </li>
-          <li>
-            <span>결제(4)</span>
-          </li>
-          <li>
-            <span>안전권고(7)</span>
-          </li>
-          <li className="last">
-            <span>종결(10)</span>
-          </li>
-        </ul>
-      </div>
 
       {/*그리드영역 */}
       <div className="">
