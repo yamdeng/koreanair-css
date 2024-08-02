@@ -333,7 +333,7 @@ input, select{font-family:'KoreanAirSans'}
 
 /*검색영역-접기펴기 버튼영역*/
 .TopButton-area{position:relative;/*padding-top:2.0rem*/}
-.TopButton-area .btn-fold{position:absolute;top:0rem;right:1rem;z-index:999;width:20rem;height:20rem; background: url(../images/icon-arrow-down.svg) right top no-repeat}
+.TopButton-area .btn-fold{position:absolute;left:50%;transform: translate(-50%, -50%);bottom:-5.0rem;z-index:999;width:5rem;height:5rem; background: url(../images/icon-arrow-up.svg) center center no-repeat; background-color: var(--color-neutral-30); background-size:3.5rem; border-radius: 50%;}
 /*.btn-fold::after{content:'접기';font-weight:400}
 .btn-fold.open::after{content:'펴기';font-weight:400}*/
 .TopButton-area .btn-fold.open{border:0.1rem solid var(--color-neutral-40);color:var(--color-neutral-8)}
@@ -465,3 +465,10 @@ input, select{font-family:'KoreanAirSans'}
 :where(.css-dev-only-do-not-override-98ntnt).ant-picker{padding:4px 20px 4px !important}
 :where(.css-dev-only-do-not-override-98ntnt).ant-select{height:4rem !important}
 .label-select .css-13cymwt-control{min-height:4rem !important;height:4rem !important}
+
+
+/*폼아이콘변경*/
+:where(.css-dev-only-do-not-override-98ntnt).ant-select .ant-select-arrow .anticon >svg {background: url(../images/arrow-down.svg)center center no-repeat; background-size: cover; width: 2.4rem; height: 2.4rem;}
+:where(.css-dev-only-do-not-override-98ntnt).ant-select .ant-select-arrow .anticon >svg path {display: none;}
+:where(.css-dev-only-do-not-override-98ntnt).ant-picker .ant-picker-suffix .anticon svg {background: url(../images/calendar.svg)center center no-repeat; background-size: cover; width: 2.4rem; height: 2.4rem;}
+:where(.css-dev-only-do-not-override-98ntnt).ant-picker .ant-picker-suffix .anticon svg path {display: none;}
