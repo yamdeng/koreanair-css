@@ -351,6 +351,18 @@ input, select{font-family:'KoreanAirSans'}
 .form-tag{position:relative;height:4rem;border:0.1rem solid var(--color-neutral-40);border-radius:0.5rem;padding:0 1.0rem;width:100%;box-sizing:border-box;color:var(--color-neutral-80);background:var(--color-neutral-10);outline:none!important;text-indent:1.0rem}
 .form-tag:not([value=""]){border:0.1rem solid var(--color-neutral-40)}
 .form-tag.active, .form-tag:focus{border:0.1rem solid var(--color-mblue-100) !important;color:var(--color-mblue-100) !important}
+.form-group .btnClear {
+  position: absolute;
+  top: 0.5rem;
+  right: 1.0rem;
+  width: 3.0rem;
+  height: 3.0rem;
+  background: url(../images/delete-text.svg) center center no-repeat;
+  background-size: cover;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
 
 .form-group .f-label .required{color:var(--color-negative)}
 .form-tag.error{border:solid 0.1rem var(--color-negative)}
