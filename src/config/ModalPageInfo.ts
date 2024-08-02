@@ -7,6 +7,8 @@ import PUserDeptSelectModal from '@/components/publish/modal/PUserDeptSelectModa
 import POnlyTreeModal from '@/components/publish/modal/POnlyTreeModal';
 import PEditFormModal from '@/components/publish/modal/PEditFormModal';
 import PDetailFormModal from '@/components/publish/modal/PDetailFormModal';
+import PUserEditModal from '@/components/publish/modal/PUserEditModal';
+import PUserViewModal from '@/components/publish/modal/PUserViewModal';
 
 const ModalPageInfo: any = {};
 
@@ -71,6 +73,20 @@ ModalPageInfo.list = [
     title: '상세-팝업',
     Component: PDetailFormModal,
     path: 'PDetailFormModal',
+    description: '',
+    success: true,
+  },
+  {
+    title: '사용자등록모달',
+    Component: PUserEditModal,
+    path: 'PUserEditModal',
+    description: '',
+    success: true,
+  },
+  {
+    title: '사용자상세모달',
+    Component: PUserViewModal,
+    path: 'PUserViewModal',
     description: '',
     success: true,
   },
