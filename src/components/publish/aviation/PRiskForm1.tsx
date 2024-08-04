@@ -1,11 +1,37 @@
 import { useState } from 'react';
 import { DatePicker, TimePicker, Select as AntSelect } from 'antd';
 import AppTable from '@/components/common/AppTable';
+import AppSearchnput from '@/components/common/AppSearchnput';
+import AppTextInput from '@/components/common/AppTextInput';
+import AppSelect from '@/components/common/AppSelect';
+import AppDatePicker from '@/components/common/AppDatePicker';
+import AppRangeDatePicker from '@/components/common/AppRangeDatePicker';
 import { getAllData } from '@/data/grid/example-data-new';
 import { testColumnInfos } from '@/data/grid/table-column';
 
+const options = [
+  {
+    value: 'jack',
+    label: 'Jack',
+  },
+  {
+    value: 'lucy',
+    label: 'Lucy',
+  },
+  {
+    value: 'Yiminghe',
+    label: 'yiminghe',
+  },
+  {
+    value: 'disabled',
+    label: 'Disabled',
+    disabled: true,
+  },
+];
+
 function PRiskForm1() {
   const [inputValue, setInputValue] = useState('');
+  const [selectValue, setSelectValue] = useState('');
   const rowData = getAllData();
   const columns = testColumnInfos;
   return (
@@ -24,107 +50,52 @@ function PRiskForm1() {
           <div className="form-table">
             <div className="form-cell wid50">
               <div className="form-group wid100 mr5">
-                <input
-                  id="firstInput"
-                  type="text"
-                  className="form-tag error"
-                  name="title"
+                <AppSearchnput
                   value={inputValue}
-                  onChange={(event) => {
-                    setInputValue(event.target.value);
+                  label="검색 input(엔터키)"
+                  onChange={(value) => {
+                    setInputValue(value);
+                  }}
+                  search={() => {
+                    // TODO : 검색 핸들러를 지정해주세요.
+                    alert('검색 핸들러');
                   }}
                 />
-                {/**/}
-                <label className="f-label" htmlFor="firstInput">
-                  Sbject <span className="required">*</span>
-                </label>
-                {/*<span className="errorText">error message</span>*/}
               </div>
             </div>
             <div className="form-cell wid50">
               <div className="form-group wid100">
-                <AntSelect
-                  id="select1"
-                  style={{ width: '100%' }}
-                  className="label-select"
-                  status=""
-                  options={[
-                    {
-                      value: 'jack',
-                      label: 'Jack',
-                    },
-                    {
-                      value: 'lucy',
-                      label: 'Lucy',
-                    },
-                    {
-                      value: 'Yiminghe',
-                      label: 'yiminghe',
-                    },
-                    {
-                      value: 'disabled',
-                      label: 'Disabled',
-                      disabled: true,
-                    },
-                  ]}
+                <AppSelect
+                  label={'select'}
+                  applyAllSelect
+                  value={selectValue}
+                  onChange={(value) => setSelectValue(value)}
+                  options={options}
                 />
-                <label className="f-label" htmlFor="select1">
-                  Status <span className="required">*</span>
-                </label>
-                {/*<span className="errorText">auto complete error message</span>*/}
               </div>
             </div>
           </div>
           <div className="form-table">
             <div className="form-cell ">
               <div className="form-group wid100">
-                <AntSelect
-                  id="select2"
-                  style={{ width: '100%' }}
-                  className="label-select"
-                  options={[
-                    {
-                      value: 'jack',
-                      label: 'Jack',
-                    },
-                    {
-                      value: 'lucy',
-                      label: 'Lucy',
-                    },
-                    {
-                      value: 'Yiminghe',
-                      label: 'yiminghe',
-                    },
-                    {
-                      value: 'disabled',
-                      label: 'Disabled',
-                      disabled: true,
-                    },
-                  ]}
+                <AppSelect
+                  label={'select'}
+                  applyAllSelect
+                  value={selectValue}
+                  onChange={(value) => setSelectValue(value)}
+                  options={options}
                 />
-                <label className="f-label" htmlFor="select2">
-                  Event Date <span className="required"></span>
-                </label>
-                {/*<span className="errorText">auto complete error message</span>*/}
               </div>
             </div>
             <div className="form-cell wid50">
               <div className="form-group form-glow">
                 <div className="df">
                   <div className="date1">
-                    <DatePicker status="" id="date1" className="label-picker" placeholder="" /> {/* status="error" */}
-                    <label className="f-label" htmlFor="date1">
-                      date1-1 <span className="required"></span>
-                    </label>
-                    {/*<span className="errorText">date1 error</span>*/}
+                    <AppDatePicker label={'date1'} />
                   </div>
                   <span className="unt">~</span>
                   <div className="date2">
-                    <DatePicker status="" id="date2" className="label-picker" placeholder="" /> {/* status="error" */}
-                    <label className="f-label" htmlFor="date2">
-                      date1-2 <span className="required"></span>
-                    </label>
-                    {/*<span className="errorText">date2 error</span>*/}
+                    <AppDatePicker label={'date2'} />
                   </div>
                 </div>
               </div>
@@ -134,85 +105,35 @@ function PRiskForm1() {
             <div className="form-cell wid50">
               <div className="form-group wid100 mr5">
                 {/*Event Class */}
-                <AntSelect
-                  id="select3"
-                  style={{ width: '100%' }}
-                  className="label-select"
-                  options={[
-                    {
-                      value: 'jack',
-                      label: 'Jack',
-                    },
-                    {
-                      value: 'lucy',
-                      label: 'Lucy',
-                    },
-                    {
-                      value: 'Yiminghe',
-                      label: 'yiminghe',
-                    },
-                    {
-                      value: 'disabled',
-                      label: 'Disabled',
-                      disabled: true,
-                    },
-                  ]}
+                <AppSelect
+                  label={'select'}
+                  applyAllSelect
+                  value={selectValue}
+                  onChange={(value) => setSelectValue(value)}
+                  options={options}
                 />
-                <label className="f-label" htmlFor="select3">
-                  Event Class <span className="required"></span>
-                </label>
-                {/*<span className="errorText">auto complete error message</span>*/}
               </div>
             </div>
             <div className="form-cell wid50">
               <div className="form-group wid100 mr5">
-                <input
-                  id="firstInput1"
-                  type="text"
-                  className="form-tag"
-                  name="title"
+                <AppTextInput
                   value={inputValue}
-                  onChange={(event) => {
-                    setInputValue(event.target.value);
+                  label="발생공항"
+                  onChange={(value) => {
+                    setInputValue(value);
                   }}
                 />
-                <label className="f-label" htmlFor="firstInput1">
-                  발생공항 <span className="required">*</span>
-                </label>
-                <button type="button" className="icon-sch"></button>
               </div>
             </div>
             <div className="form-cell wid50">
               <div className="form-group wid100 mr5">
                 {/*발생단계 */}
-                <AntSelect
-                  id="select4"
-                  style={{ width: '100%' }}
-                  className="label-select"
-                  options={[
-                    {
-                      value: 'jack',
-                      label: 'Jack',
-                    },
-                    {
-                      value: 'lucy',
-                      label: 'Lucy',
-                    },
-                    {
-                      value: 'Yiminghe',
-                      label: 'yiminghe',
-                    },
-                    {
-                      value: 'disabled',
-                      label: 'Disabled',
-                      disabled: true,
-                    },
-                  ]}
+                <AppSelect
+                  label={'발생단계'}
+                  value={selectValue}
+                  onChange={(value) => setSelectValue(value)}
+                  options={options}
                 />
-                <label className="f-label" htmlFor="select4">
-                  발생단계 <span className="required"></span>
-                </label>
-                {/*<span className="errorText">auto complete error message</span>*/}
               </div>
             </div>
           </div>
