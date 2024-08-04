@@ -108,7 +108,7 @@ export default function AviationLayout() {
               </a>
             </div>
             <div className="close">
-              <a href="javascript:void(0);">
+              <a href="javascript:void(0);" onClick={toggleLeftMenu}>
                 <img src={closeImage} />
               </a>
             </div>
