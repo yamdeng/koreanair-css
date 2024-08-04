@@ -1,5 +1,3 @@
-import PBasicTable1 from '@/components/publish/common/PBasicTable1';
-import PBasicTable2 from '@/components/publish/common/PBasicTable2';
 import PAviationPortal1 from '@/components/publish/aviation/PAviationPortal1';
 import PRiskForm1 from '@/components/publish/aviation/PRiskForm1';
 import PRiskForm2 from '@/components/publish/aviation/PRiskForm2';
@@ -8,20 +6,6 @@ import SPIInfo1 from '@/components/publish/aviation/SPIInfo1';
 const AviationPageInfo: any = {};
 
 AviationPageInfo.list = [
-  {
-    title: '검색-목록 패턴1',
-    Component: PBasicTable1,
-    path: 'PBasicTable1',
-    description: '',
-    success: false,
-  },
-  {
-    title: '검색-목록 패턴2',
-    Component: PBasicTable2,
-    path: 'PBasicTable2',
-    description: '',
-    success: false,
-  },
   {
     title: '항공안전 포탈',
     Component: PAviationPortal1,

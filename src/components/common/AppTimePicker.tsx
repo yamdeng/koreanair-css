@@ -2,7 +2,7 @@ import { TimePicker } from 'antd';
 import dayjs from 'dayjs';
 import CommonUtil from '@/utils/CommonUtil';
 
-function AppTimePikcer(props) {
+function AppTimePicker(props) {
   const {
     id = CommonUtil.getUUID(),
     name,
@@ -73,4 +73,4 @@ function AppTimePikcer(props) {
   );
 }
 
-export default AppTimePikcer;
+export default AppTimePicker;

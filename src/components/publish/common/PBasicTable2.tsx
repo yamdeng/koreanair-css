@@ -7,7 +7,7 @@ import AppTextInput from '@/components/common/AppTextInput';
 import AppSelect from '@/components/common/AppSelect';
 import AppDatePicker from '@/components/common/AppDatePicker';
 import AppRangeDatePicker from '@/components/common/AppRangeDatePicker';
-import AppTimePikcer from '@/components/common/AppTimePicker';
+import AppTimePicker from '@/components/common/AppTimePicker';
 
 /*
 
@@ -24,7 +24,6 @@ import AppTimePikcer from '@/components/common/AppTimePicker';
 
    3.disabled 부서 선택 : <UserSelectInput />
    4.disabled 사용자 선택 : <DeptSelectInput />
-   5.테이블 buttons 확인
 
 */
 
@@ -59,6 +58,21 @@ function PBasicTable2() {
   const rowData = getAllData();
   const columns = testColumnInfos;
 
+  const customButtons = [
+    {
+      title: '행추가',
+      onClick: () => {
+        alert('행추가');
+      },
+    },
+    {
+      title: '전체삭제',
+      onClick: () => {
+        alert('전체삭제');
+      },
+    },
+  ];
+
   const changeSelect = (selectValue) => {
     setSelectValue(selectValue);
   };
@@ -73,23 +87,20 @@ function PBasicTable2() {
       <div className="boxForm">
         {/* 1행 start */}
         <div className="form-table">
+          {/* 라벨이 없는 경우 : radio */}
           <div className="form-cell wid50">
-            <div className="form-group wid100">
-              <input
-                id="firstInput3"
-                type="text"
-                className="form-tag"
-                name="title"
-                value={inputValue}
-                onChange={(event) => {
-                  setInputValue(event.target.value);
-                }}
-              />
-              <label className="f-label" htmlFor="firstInput3">
-                기상조건 <span className="required">*</span>
+            <div className="radio-wrap">
+              <label>
+                <input type="radio" checked />
+                <span>체크</span>
+              </label>
+              <label>
+                <input type="radio" />
+                <span>미체크</span>
               </label>
             </div>
           </div>
+          {/* 라벨이 있는 경우 : radio */}
           <div className="group-box-wrap wid50">
             <span className="txt">
               SPI 여부<span className="required">*</span>
@@ -110,17 +121,20 @@ function PBasicTable2() {
 
         {/* 2행 start */}
         <div className="form-table">
+          {/* 라벨이 없는 경우 : checkbox */}
           <div className="form-cell wid50">
-            <div className="form-group wid100">
-              <AppTextInput
-                value={inputValue2}
-                label="일반 text-input"
-                onChange={(value) => {
-                  setInputValue2(value);
-                }}
-              />
+            <div className="chk-wrap">
+              <label>
+                <input type="checkbox" checked />
+                <span>체크박스</span>
+              </label>
+              <label>
+                <input type="checkbox" />
+                <span>미체크</span>
+              </label>
             </div>
           </div>
+          {/* 라벨이 있는 경우 : checkbox */}
           <div className="form-cell wid50">
             <div className="chk-wrap">
               <label>
@@ -190,7 +204,7 @@ function PBasicTable2() {
       </div>
       {/* //검색영역 */}
 
-      <AppTable rowData={rowData} columns={columns} />
+      <AppTable rowData={rowData} columns={columns} customButtons={customButtons} />
 
       {/* 하단버튼영역 */}
       <div className="contents-btns">

@@ -55,6 +55,7 @@ function AppSelect(props) {
     <>
       <Select
         {...props}
+        status={errorMessage ? 'error' : ''}
         style={style}
         className={applyClassName}
         id={id}

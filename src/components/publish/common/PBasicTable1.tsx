@@ -7,7 +7,7 @@ import AppTextInput from '@/components/common/AppTextInput';
 import AppSelect from '@/components/common/AppSelect';
 import AppDatePicker from '@/components/common/AppDatePicker';
 import AppRangeDatePicker from '@/components/common/AppRangeDatePicker';
-import AppTimePikcer from '@/components/common/AppTimePicker';
+import AppTimePicker from '@/components/common/AppTimePicker';
 
 /*
 
@@ -19,6 +19,7 @@ import AppTimePikcer from '@/components/common/AppTimePicker';
     -바탕이 하얀색일 경우 : 바탕이 white인 경우와 gray인 경우 같이 고려
     -바탕이 회색일 경우 : disabled일 경우 스타일과 같이 고려해야 함
    4.<AppTable/>의 pageSize <Select/> 반영했던 스타일이 맞는지 확인
+   5.component.scss 않쓰는거면 삭제
 
 */
 
@@ -146,7 +147,7 @@ function PBasicTable1() {
         <div className="form-table">
           <div className="form-cell wid50">
             <div className="form-group wid100">
-              <AppTimePikcer
+              <AppTimePicker
                 label={'time'}
                 onChange={(value) => setFirstTimeValue(value)}
                 value={firstTimeValue}

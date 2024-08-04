@@ -1,6 +1,6 @@
 import { Route } from 'react-router-dom';
 import CommonPageInfo from '@/config/CommonPageInfo';
-import CommonLayout from './CommonLayout';
+import AviationLayout from './AviationLayout';
 
 const useCommonRoute = () => {
   const routes = (
@@ -13,7 +13,7 @@ const useCommonRoute = () => {
   );
 
   return (
-    <Route path="/common" element={<CommonLayout />}>
+    <Route path="/common" element={<AviationLayout />}>
       {routes}
     </Route>
   );

@@ -73,10 +73,12 @@ function AppTable(props) {
   const {
     rowData,
     columns,
+    customButtons = [],
     tableHeight = Config.defaultGridHeight,
     noDataMessage = Config.defaultGridNoDataMessage,
     displayTableLoading = false,
     handleRowDoubleClick,
+    handleRowSingleClick,
     handleRowSelect,
     rowSelectMode = 'multiple',
     enableCheckBox = false,
@@ -94,10 +96,16 @@ function AppTable(props) {
     search,
     store = null,
     hiddenPagination,
+    editable = false,
   } = props;
 
   // store
   const { currentPage, prevPage, nextPage, totalCount, displayPageIndexList = [], changePageSize } = store || {};
+
+  let editType = '';
+  if (editable) {
+    editType = 'fullRow';
+  }
 
   // 컬럼 동적 셋팅 모달 open
   const [isColumnSettingModalOpen, setIsColumnSettingModalOpen] = useState(false);
@@ -226,21 +234,35 @@ function AppTable(props) {
           {CommonUtil.formatString(gridTotalCountTemplate, store ? totalCount : rowData.length)}
         </div>
         <div className="btns-area">
-          {displayCSVExportButton ? (
-            <button name="button" className="btn_text btn_confirm text_color_neutral-10" onClick={downloadCSVFile}>
-              csv
-            </button>
-          ) : null}
-          {useColumnDynamicSetting ? (
-            <button
-              name="button"
-              className="btn_text btn_confirm text_color_neutral-10"
-              onClick={() => setIsColumnSettingModalOpen(true)}
-            >
-              field
-            </button>
-          ) : null}
-
+          {customButtons.map((info) => {
+            const { title, onClick } = info;
+            return (
+              <button
+                key={title}
+                name="button"
+                className="btn_text btn_confirm text_color_neutral-10"
+                onClick={onClick}
+              >
+                {title}
+              </button>
+            );
+          })}
+          <button
+            name="button"
+            className="btn_text btn_confirm text_color_neutral-10"
+            onClick={downloadCSVFile}
+            style={{ display: displayCSVExportButton ? '' : 'none' }}
+          >
+            download csv
+          </button>
+          <button
+            name="button"
+            className="btn_text btn_confirm text_color_neutral-10"
+            onClick={() => setIsColumnSettingModalOpen(true)}
+            style={{ display: useColumnDynamicSetting ? '' : 'none' }}
+          >
+            동적 필드 적용
+          </button>
           <span>
             <AppSelect
               style={{ width: 150, display: hiddenPagination || enablePagination || !store ? 'none' : '' }}
@@ -257,6 +279,7 @@ function AppTable(props) {
       </div>
       <div className="ag-theme-quartz" style={{ height: tableHeight }}>
         <AgGridReact
+          {...props}
           ref={gridRef}
           domLayout={applyAutoHeight ? 'autoHeight' : 'normal'}
           rowData={rowData}
@@ -266,6 +289,7 @@ function AppTable(props) {
           overlayNoRowsTemplate={noDataMessage}
           onSelectionChanged={onSelectionChanged}
           onRowDoubleClicked={handleRowDoubleClick}
+          onRowClicked={handleRowSingleClick}
           rowSelection={rowSelectMode}
           suppressRowClickSelection={true}
           paginationPageSize={store ? store.pageSize : pageSize}
@@ -278,6 +302,7 @@ function AppTable(props) {
           tooltipHideDelay={1000}
           tooltipMouseTrack={true}
           enableBrowserTooltips={false}
+          editType={editType}
           onGridReady={(params) => {
             if (displayTableLoading) {
               params.api.showLoadingOverlay();
@@ -288,7 +313,6 @@ function AppTable(props) {
               getGridRef(params);
             }
           }}
-          {...props}
         />
       </div>
       {useColumnDynamicSetting && (
