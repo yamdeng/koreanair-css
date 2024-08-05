@@ -275,7 +275,7 @@ function PBasicForm1() {
         <div className="form-table">
           <div className="form-cell wid50">
             <div className="form-group form-glow wid50">
-              <AppSelect mode="multiple" allowClear options={options2} label="멀티select" />
+              <AppSelect mode="multiple" options={options2} label="멀티select" />
             </div>
           </div>
         </div>

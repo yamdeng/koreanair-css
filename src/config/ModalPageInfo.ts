@@ -8,6 +8,7 @@ import POnlyTreeModal from '@/components/publish/modal/POnlyTreeModal';
 import PEditFormModal from '@/components/publish/modal/PEditFormModal';
 import PDetailFormModal from '@/components/publish/modal/PDetailFormModal';
 import PUserEditModal from '@/components/publish/modal/PUserEditModal';
+import PUserEditModal2 from '@/components/publish/modal/PUserEditModal2';
 import PUserViewModal from '@/components/publish/modal/PUserViewModal';
 
 const ModalPageInfo: any = {};
@@ -87,6 +88,13 @@ ModalPageInfo.list = [
     title: '사용자상세모달',
     Component: PUserViewModal,
     path: 'PUserViewModal',
+    description: '',
+    success: true,
+  },
+  {
+    title: '사용자등록모달2',
+    Component: PUserEditModal2,
+    path: 'PUserEditModal2',
     description: '',
     success: true,
   },
