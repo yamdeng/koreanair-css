@@ -330,7 +330,7 @@ input, select{font-family:'KoreanAirSans'}
 /*검색영역*/
 .info-wrap .edit-area > .boxForm{padding:0}
 .boxForm{position:relative;padding:1.5rem 3rem 3rem;margin-bottom:2.0rem;background-color:var(--color-neutral-20);border-radius:0.8rem}
-.boxForm::after{content:'';clear:both;display:block}
+.boxForm::after{content:'';clear:both;display:inline-block}
 .boxForm .form-table{display:flex;width:100%}
 /*.boxForm .form-table:first-child{padding-top:3rem}*/
 .boxForm .form-table + .form-table{/*padding-top:1.5rem*/}
