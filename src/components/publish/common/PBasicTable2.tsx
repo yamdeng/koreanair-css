@@ -21,10 +21,6 @@ import AppTimePicker from '@/components/common/AppTimePicker';
     -검색에서 체크박스는 보통 하나가 하나의 그룹이므로 라벨이 필요없기는 함
     -단, 폼 영역에서 체크박스 사용시 라벨이 필요한지 화면 기획서 확인 필요
 
-
-   3.disabled 부서 선택 : <UserSelectInput />
-   4.disabled 사용자 선택 : <DeptSelectInput />
-
 */
 
 const options = [

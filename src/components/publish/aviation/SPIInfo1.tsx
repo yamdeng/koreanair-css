@@ -3,8 +3,9 @@ import { DatePicker, TimePicker, Select as AntSelect } from 'antd';
 import AppTable from '@/components/common/AppTable';
 import { getAllData } from '@/data/grid/example-data-new';
 import { testColumnInfos } from '@/data/grid/table-column';
+import AppDatePicker from '@/components/common/AppDatePicker';
 
-function PRiskForm1() {
+function SPIInfo1() {
   const [inputValue, setInputValue] = useState('');
   const rowData = getAllData();
   const columns = testColumnInfos;
@@ -35,11 +36,7 @@ function PRiskForm1() {
               <div className="form-group form-glow">
                 <div className="df row1">
                   <div className="date1">
-                    <DatePicker status="" id="date1" className="label-picker" placeholder="" /> {/* status="error" */}
-                    <label className="f-label" htmlFor="date1">
-                      date1-1 <span className="required"></span>
-                    </label>
-                    {/*<span className="errorText">date1 error</span>*/}
+                    <AppDatePicker label="date1" required />
                   </div>
                   <div className="btn-area">
                     <button type="button" name="button" className="btn-sm btn_text btn-darkblue-line">
@@ -74,4 +71,4 @@ function PRiskForm1() {
   );
 }
 
-export default PRiskForm1;
+export default SPIInfo1;

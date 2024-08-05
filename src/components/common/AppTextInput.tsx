@@ -31,6 +31,7 @@ function AppTextInput(props) {
     errorMessage,
     hiddenClearButton = false,
     style = {},
+    disabled = false,
   } = props;
   return (
     <>
@@ -45,6 +46,7 @@ function AppTextInput(props) {
           onChange(event.target.value, event);
         }}
         placeholder={placeholder}
+        disabled={disabled}
       />
       <label className="f-label" htmlFor={id} style={{ display: label ? '' : 'none' }}>
         {label} {required ? <span className="required">*</span> : null}

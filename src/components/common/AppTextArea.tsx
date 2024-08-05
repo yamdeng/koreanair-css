@@ -29,6 +29,7 @@ function AppTextArea(props) {
     required = false,
     errorMessage,
     style = { width: '100%', height: '200px' },
+    disabled = false,
   } = props;
   return (
     <>
@@ -42,6 +43,7 @@ function AppTextArea(props) {
           onChange(event.target.value, event);
         }}
         placeholder={placeholder}
+        disabled={disabled}
       />
       <label className="f-label" htmlFor={id} style={{ display: label ? '' : 'none' }}>
         {label} {required ? <span className="required">*</span> : null}

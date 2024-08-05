@@ -1,37 +1,12 @@
-import { useState } from 'react';
-import { DatePicker, TimePicker, Select as AntSelect } from 'antd';
-import AppTable from '@/components/common/AppTable';
-import AppSearchnput from '@/components/common/AppSearchnput';
-import AppTextInput from '@/components/common/AppTextInput';
-import AppSelect from '@/components/common/AppSelect';
 import AppDatePicker from '@/components/common/AppDatePicker';
-import AppRangeDatePicker from '@/components/common/AppRangeDatePicker';
+import AppSearchnput from '@/components/common/AppSearchnput';
+import AppSelect from '@/components/common/AppSelect';
+import AppTable from '@/components/common/AppTable';
+import AppTextInput from '@/components/common/AppTextInput';
 import { getAllData } from '@/data/grid/example-data-new';
 import { testColumnInfos } from '@/data/grid/table-column';
 
-const options = [
-  {
-    value: 'jack',
-    label: 'Jack',
-  },
-  {
-    value: 'lucy',
-    label: 'Lucy',
-  },
-  {
-    value: 'Yiminghe',
-    label: 'yiminghe',
-  },
-  {
-    value: 'disabled',
-    label: 'Disabled',
-    disabled: true,
-  },
-];
-
 function PRiskForm1() {
-  const [inputValue, setInputValue] = useState('');
-  const [selectValue, setSelectValue] = useState('');
   const rowData = getAllData();
   const columns = testColumnInfos;
   return (
@@ -50,41 +25,19 @@ function PRiskForm1() {
           <div className="form-table">
             <div className="form-cell wid50">
               <div className="form-group wid100 mr5">
-                <AppSearchnput
-                  value={inputValue}
-                  label="검색 input(엔터키)"
-                  onChange={(value) => {
-                    setInputValue(value);
-                  }}
-                  search={() => {
-                    // TODO : 검색 핸들러를 지정해주세요.
-                    alert('검색 핸들러');
-                  }}
-                />
+                <AppSearchnput label="검색 input(엔터키)" />
               </div>
             </div>
             <div className="form-cell wid50">
               <div className="form-group wid100">
-                <AppSelect
-                  label={'select'}
-                  applyAllSelect
-                  value={selectValue}
-                  onChange={(value) => setSelectValue(value)}
-                  options={options}
-                />
+                <AppSelect label={'select'} />
               </div>
             </div>
           </div>
           <div className="form-table">
             <div className="form-cell ">
               <div className="form-group wid100">
-                <AppSelect
-                  label={'select'}
-                  applyAllSelect
-                  value={selectValue}
-                  onChange={(value) => setSelectValue(value)}
-                  options={options}
-                />
+                <AppSelect label={'select'} />
               </div>
             </div>
             <div className="form-cell wid50">
@@ -105,35 +58,18 @@ function PRiskForm1() {
             <div className="form-cell wid50">
               <div className="form-group wid100 mr5">
                 {/*Event Class */}
-                <AppSelect
-                  label={'select'}
-                  applyAllSelect
-                  value={selectValue}
-                  onChange={(value) => setSelectValue(value)}
-                  options={options}
-                />
+                <AppSelect label={'Event Class'} />
               </div>
             </div>
             <div className="form-cell wid50">
               <div className="form-group wid100 mr5">
-                <AppTextInput
-                  value={inputValue}
-                  label="발생공항"
-                  onChange={(value) => {
-                    setInputValue(value);
-                  }}
-                />
+                <AppTextInput label="발생공항" />
               </div>
             </div>
             <div className="form-cell wid50">
               <div className="form-group wid100 mr5">
                 {/*발생단계 */}
-                <AppSelect
-                  label={'발생단계'}
-                  value={selectValue}
-                  onChange={(value) => setSelectValue(value)}
-                  options={options}
-                />
+                <AppSelect label={'발생단계'} />
               </div>
             </div>
           </div>

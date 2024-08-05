@@ -18,8 +18,9 @@ import AppTimePicker from '@/components/common/AppTimePicker';
    3.label background color case를 조사해서 반영할 필요가 있음
     -바탕이 하얀색일 경우 : 바탕이 white인 경우와 gray인 경우 같이 고려
     -바탕이 회색일 경우 : disabled일 경우 스타일과 같이 고려해야 함
-   4.<AppTable/>의 pageSize <Select/> 반영했던 스타일이 맞는지 확인
-   5.component.scss 않쓰는거면 삭제
+   4.<AppTable/>의 pageSize <Select/> 반영했던 스타일이 맞는지 확인   
+   5.<AppTable/> 영역을 밖에 <div></div>로 감쌀지 말지를 공통 가이드 필요
+   6.component.scss 않쓰는 걸로 이해함
 
 */
 

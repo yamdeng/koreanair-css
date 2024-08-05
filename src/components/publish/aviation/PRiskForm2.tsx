@@ -1,5 +1,10 @@
 import { useState } from 'react';
 import { DatePicker, TimePicker, Select as AntSelect } from 'antd';
+import AppDatePicker from '@/components/common/AppDatePicker';
+import AppSearchnput from '@/components/common/AppSearchnput';
+import AppSelect from '@/components/common/AppSelect';
+import AppTable from '@/components/common/AppTable';
+import AppTextInput from '@/components/common/AppTextInput';
 
 function PRiskForm2() {
   const [inputValue, setInputValue] = useState('');
@@ -16,19 +21,7 @@ function PRiskForm2() {
         <div className="form-table">
           <div className="form-cell wid100">
             <div className="form-group wid100">
-              <input
-                id="firstInput"
-                type="text"
-                className="form-tag"
-                name="title"
-                value={inputValue}
-                onChange={(event) => {
-                  setInputValue(event.target.value);
-                }}
-              />
-              <label className="f-label" htmlFor="firstInput">
-                Sbject <span className="required">*</span>
-              </label>
+              <AppSearchnput label="보고서검색" />
             </div>
           </div>
         </div>
@@ -50,12 +43,7 @@ function PRiskForm2() {
                     <div className="form-cell">
                       <div className="form-group">
                         <div className="date1">
-                          <DatePicker status="" id="date1" className="label-picker" placeholder="" />{' '}
-                          {/* status="error" */}
-                          <label className="f-label" htmlFor="date1">
-                            발생일/시간(UTC) <span className="required">*</span>
-                          </label>
-                          {/*<span className="errorText">date1 error</span>*/}
+                          <AppDatePicker label="발생일/시간(UTC)" />
                         </div>
                       </div>
                     </div>
@@ -64,67 +52,12 @@ function PRiskForm2() {
                     <div className="form-cell wid50">
                       <div className="form-group wid100">
                         {/*발생단계 */}
-                        <AntSelect
-                          id="select1"
-                          style={{ width: '100%' }}
-                          className="label-select"
-                          options={[
-                            {
-                              value: 'jack',
-                              label: 'Jack',
-                            },
-                            {
-                              value: 'lucy',
-                              label: 'Lucy',
-                            },
-                            {
-                              value: 'Yiminghe',
-                              label: 'yiminghe',
-                            },
-                            {
-                              value: 'disabled',
-                              label: 'Disabled',
-                              disabled: true,
-                            },
-                          ]}
-                        />
-                        <label className="f-label" htmlFor="select1">
-                          Event Class <span className="required">*</span>
-                        </label>
-                        {/*<span className="errorText">auto complete error message</span>*/}
+                        <AppSelect label="발생단계" required />
                       </div>
                     </div>
                     <div className="form-cell wid50">
                       <div className="form-group wid100">
-                        {/*발생단계 */}
-                        <AntSelect
-                          id="select2"
-                          style={{ width: '100%' }}
-                          className="label-select"
-                          options={[
-                            {
-                              value: 'jack',
-                              label: 'Jack',
-                            },
-                            {
-                              value: 'lucy',
-                              label: 'Lucy',
-                            },
-                            {
-                              value: 'Yiminghe',
-                              label: 'yiminghe',
-                            },
-                            {
-                              value: 'disabled',
-                              label: 'Disabled',
-                              disabled: true,
-                            },
-                          ]}
-                        />
-                        <label className="f-label" htmlFor="select2">
-                          Event Type <span className="required">*</span>
-                        </label>
-                        {/*<span className="errorText">auto complete error message</span>*/}
+                        <AppSelect label="Event Type" />
                       </div>
                     </div>
                   </div>
@@ -132,54 +65,12 @@ function PRiskForm2() {
                     <div className="form-cell wid50">
                       <div className="form-group wid100">
                         {/*발생공항 */}
-                        <input
-                          id="firstInput4"
-                          type="text"
-                          className="form-tag"
-                          name="title"
-                          value={inputValue}
-                          onChange={(event) => {
-                            setInputValue(event.target.value);
-                          }}
-                          disabled
-                        />
-                        <label className="f-label" htmlFor="firstInput4">
-                          발생공항 <span className="required">*</span>
-                        </label>
-                        <button type="button" className="icon-sch"></button>
+                        <AppSearchnput label="발생공항" disabled />
                       </div>
                     </div>
                     <div className="form-cell wid50">
                       <div className="form-group wid100">
-                        {/*발생단계 */}
-                        <AntSelect
-                          id="select2"
-                          style={{ width: '100%' }}
-                          className="label-select"
-                          options={[
-                            {
-                              value: 'jack',
-                              label: 'Jack',
-                            },
-                            {
-                              value: 'lucy',
-                              label: 'Lucy',
-                            },
-                            {
-                              value: 'Yiminghe',
-                              label: 'yiminghe',
-                            },
-                            {
-                              value: 'disabled',
-                              label: 'Disabled',
-                              disabled: true,
-                            },
-                          ]}
-                        />
-                        <label className="f-label" htmlFor="select2">
-                          발생단계 <span className="required">*</span>
-                        </label>
-                        {/*<span className="errorText">auto complete error message</span>*/}
+                        <AppSelect label={'발생단계'} />
                       </div>
                     </div>
                   </div>
@@ -187,19 +78,7 @@ function PRiskForm2() {
                     <div className="form-cell wid50">
                       <div className="form-group wid100">
                         {/*기상조건 */}
-                        <input
-                          id="firstInput3"
-                          type="text"
-                          className="form-tag"
-                          name="title"
-                          value={inputValue}
-                          onChange={(event) => {
-                            setInputValue(event.target.value);
-                          }}
-                        />
-                        <label className="f-label" htmlFor="firstInput3">
-                          기상조건 <span className="required">*</span>
-                        </label>
+                        <AppTextInput label="기상조건" />
                       </div>
                     </div>
                     <div className="group-box-wrap wid50">
@@ -222,19 +101,7 @@ function PRiskForm2() {
                     <div className="form-cell wid50">
                       <div className="form-group wid100">
                         {/*발생위치 */}
-                        <input
-                          id="firstInput1"
-                          type="text"
-                          className="form-tag"
-                          name="title"
-                          value={inputValue}
-                          onChange={(event) => {
-                            setInputValue(event.target.value);
-                          }}
-                        />
-                        <label className="f-label" htmlFor="firstInput1">
-                          발생위치 <span className="required">*</span>
-                        </label>
+                        <AppTextInput label="발생위치" />
                       </div>
                     </div>
                   </div>
@@ -257,12 +124,7 @@ function PRiskForm2() {
                     <div className="form-cell">
                       <div className="form-group">
                         <div className="date2">
-                          <DatePicker status="" id="date2" className="label-picker" placeholder="" />{' '}
-                          {/* status="error" */}
-                          <label className="f-label" htmlFor="date2">
-                            출발일자(UTC) <span className="required"></span>
-                          </label>
-                          {/*<span className="errorText">date1 error</span>*/}
+                          <AppDatePicker label="출발일자(UTC)" />
                         </div>
                       </div>
                     </div>
@@ -270,68 +132,12 @@ function PRiskForm2() {
                   <div className="form-table">
                     <div className="form-cell wid50">
                       <div className="form-group wid100">
-                        {/*발생단계 */}
-                        <AntSelect
-                          id="select1"
-                          style={{ width: '100%' }}
-                          className="label-select"
-                          options={[
-                            {
-                              value: 'jack',
-                              label: 'Jack',
-                            },
-                            {
-                              value: 'lucy',
-                              label: 'Lucy',
-                            },
-                            {
-                              value: 'Yiminghe',
-                              label: 'yiminghe',
-                            },
-                            {
-                              value: 'disabled',
-                              label: 'Disabled',
-                              disabled: true,
-                            },
-                          ]}
-                        />
-                        <label className="f-label" htmlFor="select1">
-                          Event Class <span className="required">*</span>
-                        </label>
-                        {/*<span className="errorText">auto complete error message</span>*/}
+                        <AppSelect label={'event'} />
                       </div>
                     </div>
                     <div className="form-cell wid50">
                       <div className="form-group wid100">
-                        {/*발생단계 */}
-                        <AntSelect
-                          id="select2"
-                          style={{ width: '100%' }}
-                          className="label-select"
-                          options={[
-                            {
-                              value: 'jack',
-                              label: 'Jack',
-                            },
-                            {
-                              value: 'lucy',
-                              label: 'Lucy',
-                            },
-                            {
-                              value: 'Yiminghe',
-                              label: 'yiminghe',
-                            },
-                            {
-                              value: 'disabled',
-                              label: 'Disabled',
-                              disabled: true,
-                            },
-                          ]}
-                        />
-                        <label className="f-label" htmlFor="select2">
-                          Event Type <span className="required">*</span>
-                        </label>
-                        {/*<span className="errorText">auto complete error message</span>*/}
+                        <AppSelect label={'event type'} />
                       </div>
                     </div>
                   </div>
@@ -339,54 +145,13 @@ function PRiskForm2() {
                     <div className="form-cell wid50">
                       <div className="form-group wid100">
                         {/*발생공항 */}
-                        <input
-                          id="firstInput4"
-                          type="text"
-                          className="form-tag"
-                          name="title"
-                          value={inputValue}
-                          onChange={(event) => {
-                            setInputValue(event.target.value);
-                          }}
-                          disabled
-                        />
-                        <label className="f-label" htmlFor="firstInput4">
-                          발생공항 <span className="required">*</span>
-                        </label>
-                        <button type="button" className="icon-sch"></button>
+                        <AppSearchnput label="발생공항" disabled />
                       </div>
                     </div>
                     <div className="form-cell wid50">
                       <div className="form-group wid100">
                         {/*발생단계 */}
-                        <AntSelect
-                          id="select2"
-                          style={{ width: '100%' }}
-                          className="label-select"
-                          options={[
-                            {
-                              value: 'jack',
-                              label: 'Jack',
-                            },
-                            {
-                              value: 'lucy',
-                              label: 'Lucy',
-                            },
-                            {
-                              value: 'Yiminghe',
-                              label: 'yiminghe',
-                            },
-                            {
-                              value: 'disabled',
-                              label: 'Disabled',
-                              disabled: true,
-                            },
-                          ]}
-                        />
-                        <label className="f-label" htmlFor="select2">
-                          발생단계 <span className="required">*</span>
-                        </label>
-                        {/*<span className="errorText">auto complete error message</span>*/}
+                        <AppSelect label={'발생단계'} />
                       </div>
                     </div>
                   </div>
@@ -394,19 +159,7 @@ function PRiskForm2() {
                     <div className="form-cell wid50">
                       <div className="form-group wid100">
                         {/*기상조건 */}
-                        <input
-                          id="firstInput3"
-                          type="text"
-                          className="form-tag"
-                          name="title"
-                          value={inputValue}
-                          onChange={(event) => {
-                            setInputValue(event.target.value);
-                          }}
-                        />
-                        <label className="f-label" htmlFor="firstInput3">
-                          기상조건 <span className="required">*</span>
-                        </label>
+                        <AppTextInput label="기상조건" />
                       </div>
                     </div>
                     <div className="group-box-wrap wid50">
@@ -429,26 +182,7 @@ function PRiskForm2() {
                     <div className="form-cell wid50">
                       <div className="form-group wid100">
                         {/*발생위치 */}
-                        <input
-                          id="firstInput1"
-                          type="text"
-                          className="form-tag"
-                          name="title"
-                          value={inputValue}
-                          onChange={(event) => {
-                            setInputValue(event.target.value);
-                          }}
-                        />
-                        <label className="f-label" htmlFor="firstInput1">
-                          발생위치 <span className="required"></span>
-                        </label>
-                        <button type="button" className="ant-btn ant-btn-text ant-btn-icon-only">
-                          <span
-                            role="img"
-                            aria-label="question-circle"
-                            className="anticon anticon-question-circle"
-                          ></span>
-                        </button>
+                        <AppSearchnput label="발생위치" />
                       </div>
                     </div>
                   </div>
