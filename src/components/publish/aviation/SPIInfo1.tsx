@@ -34,7 +34,7 @@ function SPIInfo1() {
           <div className="form-table">
             <div className="form-cell wid50">
               <div className="form-group form-glow">
-                <div className="df row1">
+                <div className="row1">
                   <div className="date1">
                     <AppDatePicker label="date1" required />
                   </div>

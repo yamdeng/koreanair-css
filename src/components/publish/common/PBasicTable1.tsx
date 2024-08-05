@@ -71,28 +71,12 @@ function PBasicTable1() {
         <div className="form-table">
           <div className="form-cell wid50">
             <div className="form-group wid100">
-              <AppSearchnput
-                value={inputValue}
-                label="검색 input(엔터키)"
-                onChange={(value) => {
-                  setInputValue(value);
-                }}
-                search={() => {
-                  // TODO : 검색 핸들러를 지정해주세요.
-                  alert('검색 핸들러');
-                }}
-              />
+              <AppSearchnput label="검색 input(엔터키)" />
             </div>
           </div>
           <div className="form-cell wid50">
             <div className="form-group wid100">
-              <AppSelect
-                label={'select(전체적용)'}
-                applyAllSelect
-                value={selectValue}
-                onChange={changeSelect}
-                options={options}
-              />
+              <AppSelect label={'select(전체적용)'} />
             </div>
           </div>
         </div>
@@ -102,23 +86,12 @@ function PBasicTable1() {
         <div className="form-table">
           <div className="form-cell wid50">
             <div className="form-group wid100">
-              <AppTextInput
-                value={inputValue2}
-                label="일반 text-input"
-                onChange={(value) => {
-                  setInputValue2(value);
-                }}
-              />
+              <AppTextInput label="일반 text-input" />
             </div>
           </div>
           <div className="form-cell wid50">
             <div className="form-group wid100">
-              <AppSelect
-                label={'일반 select'}
-                value={selectValue2}
-                onChange={(value) => setSelectValue2(value)}
-                options={options}
-              />
+              <AppSelect label={'일반 select'} />
             </div>
           </div>
         </div>
