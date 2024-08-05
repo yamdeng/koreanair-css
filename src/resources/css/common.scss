@@ -59,7 +59,7 @@ body * {
 .mr5{margin-right:0.5rem !important}
 
 button, input, textarea, select, label{font-family:'KoreanAirSans';font-weight:400}
-.df{display:flex}
+.df{display:flex;width: 100%;}
 .unt{line-height:3.5rem;align-items:center;padding:0 0.2rem}
 button,input{border:none;background:none;vertical-align:middle}
 select{vertical-align:middle}
@@ -352,8 +352,8 @@ input, select{font-family:'KoreanAirSans'}
 .form-group .list li{position:relative;text-overflow:ellipsis;white-space:nowrap;overflow:hidden}
 .form-group .list li .delete{position:absolute;right:0;background: url(/src/resources/images/delete-text.svg) center center no-repeat;font-size: 0;width: 2rem;height: 2rem}
 
-.form-group .date1, .form-group .date2{position:relative}
-.form-group .f-label{display:inline-block;position:absolute;left:1.0rem;top:0.8rem;background:var(--color-neutral-10);padding:0.2rem 0.4rem 0.4rem;line-height:1em;font-size:1.4rem !important;transition: all .2s ease}
+.form-group .date1, .form-group .date2{position:relative; width: 100%;}
+.form-group .f-label{display:inline-block;position:absolute;left:1.0rem;top:0.8rem;background:var(--color-neutral-10);padding:0.2rem 0.4rem 0.4rem;line-height:1.4em;font-size:1.4rem !important;transition: all .2s ease}
 .form-tag{position:relative;height:4rem;border:0.1rem solid var(--color-neutral-40);border-radius:0.5rem;padding:0 1.0rem;width:100%;box-sizing:border-box;color:var(--color-neutral-80);background:var(--color-neutral-10);outline:none!important;text-indent:1.0rem}
 .form-tag:not([value=""]){border:0.1rem solid var(--color-neutral-40)}
 .form-tag.active, .form-tag:focus{border:0.1rem solid var(--color-mblue-100) !important;color:var(--color-mblue-100) !important}
@@ -374,7 +374,7 @@ input, select{font-family:'KoreanAirSans'}
 .form-tag.error{border:solid 0.1rem var(--color-negative)}
 .form-group span.errorText{display:block;color:var(--color-negative);font-size:1.3rem;padding:0.2rem 0.5rem}
 .form-group .icon-sch{position:absolute;top:0.8rem;right:1.2rem;width:2.4rem;height:2.4rem;background:url(../images/icon--search.svg)50% 50% / 2.4rem 2.4rem no-repeat}
-.form-table .form-cell .form-glow{flex: 1 1}
+.form-table .form-cell .form-glow{flex: 1 1; width: 100%;}
 .form-tag-select{position:relative;height:3.5rem;border:0.1rem solid var(--color-neutral-40);border-radius:0.5rem;padding: 0 1.0rem;width:100%;box-sizing: border-box;color:var(--color-neutral-80); outline: none !important;  -webkit-appearance: none; -moz-appearance: none;background:var(--color-neutral-10) url(../images/chevron-down-solid.svg) no-repeat right 1.0rem center;background-size:1.0rem}
 .form-tag-select:focus, .form-tag-select.active {border:0.1rem solid var(--color-mblue-100) !important;color:var(--color-mblue-100) !important}
 .form-tag:disabled + .f-label, .form-tag:focus + .f-label, .form-tag.active + .f-label, .form-tag:not([value=""]) + .f-label, .form-tag.invalid + .f-label{left:1.0rem;top:-0.8rem;font-size:1.3rem;transition: all 0.2s ease}
