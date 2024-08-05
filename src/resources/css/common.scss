@@ -474,20 +474,10 @@ input, select{font-family:'KoreanAirSans'}
   border: 1px solid red !important;
 }
 
-/* select 공통 컴포넌트 유효성 체크 실패시 border red 적용 */
-// .select-in-valid {
-//   border: 1px solid red !important;
-// }
-
-/* ant-select focus, value 존재할때 label 처리 */
-// .label-select.ant-select-focused + .f-label, label-select.selected + f-label {left:1.0rem;top:-2.0rem;font-size:1.3rem;transition: all 0.3s ease}
-
-/* autocomplete focus, value 존재할때 label 처리 */
-// .label-select.focused + .f-label, label-select.selected + f-label {left:1.0rem;top:-2.0rem;font-size:1.3rem;transition: all 0.3s ease}
-
-/* datepicker focus, value 존재할때 label 처리 */
-// .label-picker.ant-picker-focused + .f-label, label-picker.selected + f-label {left:1.0rem;top:-2.0rem;font-size:1.3rem;transition: all 0.3s ease}
-
+/* autocomplete 공통 컴포넌트 유효성 체크 실패시 border red 적용 */
+.select-in-valid {
+  border: 1px solid red !important;
+}
 
 /*폼아이콘변경*/
 :where(.css-dev-only-do-not-override-98ntnt).ant-select .ant-select-arrow .anticon >svg {background: url(../images/arrow-down.svg)center center no-repeat; background-size: cover;}
