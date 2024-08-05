@@ -380,7 +380,7 @@ input, select{font-family:'KoreanAirSans'}
 .form-table .form-cell .form-glow{flex: 1 1; width: 100%;}
 .form-tag-select{position:relative;height:3.5rem;border:0.1rem solid var(--color-neutral-40);border-radius:0.5rem;padding: 0 1.0rem;width:100%;box-sizing: border-box;color:var(--color-neutral-80); outline: none !important;  -webkit-appearance: none; -moz-appearance: none;background:var(--color-neutral-10) url(../images/chevron-down-solid.svg) no-repeat right 1.0rem center;background-size:1.0rem}
 .form-tag-select:focus, .form-tag-select.active {border:0.1rem solid var(--color-mblue-100) !important;color:var(--color-mblue-100) !important}
-.form-tag:disabled + .f-label, .form-tag:focus + .f-label, .form-tag.active + .f-label, .form-tag:not([value=""]) + .f-label, .form-tag.invalid + .f-label{left:1.0rem;top:-0.8rem;font-size:1.3rem;transition: all 0.2s ease}
+.label-select.disabled + .f-label, .ant-picker-disabled + .f-label, .ant-select-disabled + .f-label, .form-tag:disabled + .f-label, .form-tag:focus + .f-label, .form-tag.active + .f-label, .form-tag:not([value=""]) + .f-label, .form-tag.invalid + .f-label{left:1.0rem;top:-0.8rem;font-size:1.3rem;transition: all 0.2s ease}
 .form-tag:not([value=""]) + .f-label{color:var(--color-neutral-80)}
 .form-tag:disabled{background:var(--color-neutral-20)}
 .form-tag:not([value=""]){border:0.1rem solid var(--color-neutral-40)}
@@ -461,10 +461,10 @@ input, select{font-family:'KoreanAirSans'}
 :where(.css-dev-only-do-not-override-98ntnt).ant-select-single .ant-select-selector{line-height:4rem}
 :where(.css-dev-only-do-not-override-98ntnt).ant-select-single{height:4rem !important}
 :where(.css-dev-only-do-not-override-98ntnt)[class^="ant-select"] [class^="ant-select"], :where(.css-dev-only-do-not-override-98ntnt)[class*=" ant-select"] [class^="ant-select"]{color:var(--color-mblue-100)}
-.label-select.ant-select-focused + .f-label, .label-select.selected + .f-label, .label-picker.ant-picker-focused + .f-label, .label-picker.selected + .f-label {left:1rem;top:-1rem}
+.label-select.focused + .f-label, .label-select.ant-select-focused + .f-label, .label-select.selected + .f-label, .label-picker.ant-picker-focused + .f-label, .label-picker.selected + .f-label {left:1rem;top:-1rem}
 :where(.css-dev-only-do-not-override-98ntnt).ant-picker{height:4rem}
 :where(.css-dev-only-do-not-override-98ntnt).ant-picker{padding:4px 20px 4px !important;width: 100%;}
-:where(.css-dev-only-do-not-override-98ntnt).ant-select{height:4rem !important}
+:where(.css-dev-only-do-not-override-98ntnt).ant-select{min-height:4rem !important}
 .label-select .css-13cymwt-control{min-height:4rem !important;height:4rem !important}
 
 /* 에디터 메뉴 툴팁 text override */

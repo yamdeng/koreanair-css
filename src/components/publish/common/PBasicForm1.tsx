@@ -186,6 +186,8 @@ function PBasicForm1() {
                 onChange={(value) => {
                   setInputValue(value);
                 }}
+                errorMessage="textarea-error"
+                required
               />
             </div>
           </div>
@@ -244,12 +246,7 @@ function PBasicForm1() {
         <div className="form-table">
           <div className="form-cell wid50">
             <div className="form-group wid100">
-              <AppDatePicker
-                label={'date'}
-                onChange={(value) => setFirstDateValue(value)}
-                value={firstDateValue}
-                errorMessage="errorTest"
-              />
+              <AppDatePicker label={'date'} onChange={(value) => setFirstDateValue(value)} value={firstDateValue} />
             </div>
           </div>
           <div className="form-cell wid50">
@@ -258,59 +255,40 @@ function PBasicForm1() {
                 label={'time'}
                 onChange={(value) => setFirstTimeValue(value)}
                 value={firstTimeValue}
-                errorMessage="errorTest"
+                errorMessage="time-errorTest"
               />
             </div>
           </div>
         </div>
 
-        {/* 이전 */}
+        <hr className="line"></hr>
+        {/* 8행 */}
         <div className="form-table">
           <div className="form-cell wid50">
             <div className="form-group wid100">
               <div className="df">
                 <div className="date1 ">
-                  <DatePicker status="" id="date1" className="label-picker" placeholder="" /> {/* status="error" */}
-                  <label className="f-label" htmlFor="date1">
-                    date1-1 <span className="required"></span>
-                  </label>
-                  {/*<span className="errorText">date1 error</span>*/}
+                  <AppDatePicker label="start" />
                 </div>
                 <span className="unt">~</span>
                 <div className="date2 wid50">
-                  <DatePicker status="" id="date2" className="label-picker" placeholder="" /> {/* status="error" */}
-                  <label className="f-label" htmlFor="date2">
-                    date1-1 <span className="required"></span>
-                  </label>
-                  {/*<span className="errorText">date2 error</span>*/}
+                  <AppDatePicker label="end" />
                 </div>
               </div>
-              <span className="errorText">time picker(range) error message</span>
             </div>
           </div>
           <div className="form-cell wid50">
             <div className="form-group form-glow">
               <div className="df">
                 <div className="date3 wid100">
-                  <TimePicker
-                    className="label-picker wid100"
-                    id="date3"
-                    minuteStep={15}
-                    secondStep={10}
-                    hourStep={1}
-                    status=""
-                  />
-                  <label className="f-label" htmlFor="date3">
-                    TimePicker1 <span className="required">*</span>
-                  </label>
-                  {/*<span className="errorText">date1 error</span>*/}
+                  <AppTimePicker label="시간" />
                 </div>
               </div>
             </div>
           </div>
         </div>
         <hr className="line"></hr>
-        <div className="form-table">
+        {/* <div className="form-table">
           <div className="form-cell wid50">
             <div className="form-group form-glow">
               <div className="df">
@@ -319,28 +297,16 @@ function PBasicForm1() {
                   <label className="f-label" htmlFor="date4">
                     TimePicker2 <span className="required">*</span>
                   </label>
-                  {/*<span className="errorText">date1 error</span>*/}
                 </div>
               </div>
             </div>
           </div>
-        </div>
-        <hr className="line"></hr>
+        </div> */}
+        {/* 9행 */}
         <div className="form-table">
           <div className="form-cell wid50">
             <div className="form-group form-glow wid50">
-              <AntSelect
-                mode="multiple"
-                id="select2"
-                allowClear
-                className="label-select wid100"
-                placeholder="Please select"
-                options={options2}
-              />
-              <label className="f-label" htmlFor="select2">
-                select(multiple)1개 <span className="required">*</span>
-              </label>
-              <span className="errorText">auto complete error message</span>
+              <AppSelect mode="multiple" allowClear options={options2} label="멀티select" />
             </div>
           </div>
         </div>
@@ -348,29 +314,12 @@ function PBasicForm1() {
         <div className="form-table">
           <div className="form-cell wid50">
             <div className="form-group form-glow wid100">
-              {/* <Select
-                id="select4"
-                defaultValue={[]}
-                options={options}
-                isMulti
-                name="colors"
-                className="basic-multi-select"
-                classNamePrefix="select"
-                classNames={{
-                  control: (state) => (!state.isFocused ? 'select-in-valid' : ''),
-                }}
-              /> */}
-              <AppAutoComplete id="select4" />
-              <label className="f-label" htmlFor="select4">
-                AutoComplete1개 <span className="required">*</span>
-              </label>
-              <span className="errorText">auto complete error message</span>
+              <AppAutoComplete label="auto검색" />
             </div>
           </div>
           <div className="form-cell wid50">
             <div className="form-group form-glow wid100">
               <TreeSelect
-                id="select51"
                 showSearch
                 treeCheckable
                 className="label-select wid100"
@@ -383,7 +332,7 @@ function PBasicForm1() {
                 treeData={treeData}
                 value={selectedTreeData}
                 onChange={onTreeSelectChange}
-                status="error"
+                status=""
               />
               <label className="f-label" htmlFor="select51">
                 tree <span className="required">*</span>
@@ -393,65 +342,6 @@ function PBasicForm1() {
           </div>
         </div>
       </div>
-
-      <div className="info-wrap toggle">
-        <dl className="tg-item active">
-          {/* toggle 선택되면  열어지면 active붙임*/}
-          <dt>
-            <button type="button" className="btn-tg">
-              Level 1 <span className="required">*</span>
-            </button>
-          </dt>
-          <dd className="tg-conts">
-            <div className="edit-area">
-              <div className="boxForm tog">
-                <div className="form-table">
-                  <div className="form-cell wid50">
-                    <div className="form-group wid100">
-                      <AntSelect
-                        id="select1"
-                        status="error"
-                        style={{ width: '100%' }}
-                        className="label-select"
-                        options={[
-                          {
-                            value: 'jack',
-                            label: 'Jack',
-                          },
-                          {
-                            value: 'lucy',
-                            label: 'Lucy',
-                          },
-                          {
-                            value: 'Yiminghe',
-                            label: 'yiminghe',
-                          },
-                          {
-                            value: 'disabled',
-                            label: 'Disabled',
-                            disabled: true,
-                          },
-                        ]}
-                      />
-                      <label className="f-label" htmlFor="select1">
-                        Event Class <span className="required">*</span>
-                      </label>
-                      <span className="errorText">auto complete error message</span>
-                    </div>
-                  </div>
-                  <div className="form-cell wid50">
-                    <div className="form-group wid100 mr5">
-                      <input type="text" className="form-tag" placeholder="" disabled />
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </dd>
-        </dl>
-      </div>
-
-      {/*//등록 */}
 
       {/* 하단버튼영역 */}
       <div className="contents-btns">

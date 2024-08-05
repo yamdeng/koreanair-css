@@ -1,11 +1,15 @@
 import { useState } from 'react';
-import Select from 'react-select';
+import Select, { components } from 'react-select';
+import CommonUtil from '@/utils/CommonUtil';
+import classNames from 'classnames';
 
-const options = [
-  { value: 'chocolate', label: 'Chocolate Chocolate Chocolate ChocolateChocolateChocolateChocolate' },
-  { value: 'strawberry', label: 'StrawberryStrawberryStrawberryStrawberryStrawberryStrawberryStrawberry' },
-  { value: 'vanilla', label: 'VanillaVanillaVanillaVanillaVanillaVanillaVanilla' },
-];
+const CustomDropdownIndicator = (props) => {
+  return (
+    <components.DropdownIndicator {...props}>
+      <button type="button" className="icon-sch" style={{ position: 'inherit' }}></button>
+    </components.DropdownIndicator>
+  );
+};
 
 function AppAutoComplete(props) {
   const [isFocused, setIsFocused] = useState(false);
@@ -18,23 +22,55 @@ function AppAutoComplete(props) {
     setIsFocused(false);
   };
 
+  const {
+    name = '',
+    id = CommonUtil.getUUID(),
+    label,
+    value,
+    options = [],
+    onChange,
+    placeHolder = '',
+    required = false,
+    errorMessage,
+    style = { width: '100%' },
+    isMulti = false,
+    disabled = false,
+  } = props;
+
+  const applyClassName = classNames('label-select', {
+    focused: isFocused,
+    disabled: disabled,
+  });
+
   return (
-    <div className={isFocused ? 'label-select focused' : 'label-select'}>
-      <Select
-        {...props}
-        onFocus={handleFocus}
-        onBlur={handleBlur}
-        defaultValue={[]}
-        options={options}
-        isMulti
-        name="colors"
-        className="basic-multi-select"
-        classNamePrefix="select"
-        classNames={{
-          control: (state) => (!state.isFocused ? 'select-in-valid' : ''),
-        }}
-      />
-    </div>
+    <>
+      <div className={applyClassName}>
+        <Select
+          {...props}
+          components={{ DropdownIndicator: CustomDropdownIndicator }}
+          id={id}
+          name={name}
+          value={value}
+          onFocus={handleFocus}
+          onBlur={handleBlur}
+          onChange={onChange}
+          options={options}
+          isMulti={isMulti}
+          classNames={{
+            control: (state) => (!state.isFocused && errorMessage ? 'select-in-valid' : ''),
+          }}
+          placeHolder={placeHolder}
+          style={style}
+          isDisabled={disabled}
+        />
+      </div>
+      <label className="f-label" htmlFor={id} style={{ display: label ? '' : 'none' }}>
+        {label} {required ? <span className="required">*</span> : null}
+      </label>
+      <span className="errorText" style={{ display: errorMessage ? '' : 'none' }}>
+        {errorMessage}
+      </span>
+    </>
   );
 }
 

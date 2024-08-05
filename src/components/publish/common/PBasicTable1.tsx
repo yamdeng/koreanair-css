@@ -8,6 +8,7 @@ import AppSelect from '@/components/common/AppSelect';
 import AppDatePicker from '@/components/common/AppDatePicker';
 import AppRangeDatePicker from '@/components/common/AppRangeDatePicker';
 import AppTimePicker from '@/components/common/AppTimePicker';
+import AppAutoComplete from '@/components/common/AppAutoComplete';
 
 /*
 
@@ -21,6 +22,8 @@ import AppTimePicker from '@/components/common/AppTimePicker';
    4.<AppTable/>의 pageSize <Select/> 반영했던 스타일이 맞는지 확인   
    5.<AppTable/> 영역을 밖에 <div></div>로 감쌀지 말지를 공통 가이드 필요
    6.component.scss 않쓰는 걸로 이해함
+   7.<AppAutoComplete /> : 디자인 보완 필요
+    -제가 우측에 검색 아이콘 반영해놓음 : 스타일 확인 필요
 
 */
 
@@ -153,6 +156,20 @@ function PBasicTable1() {
             </div>
           </div>
         </div>
+        {/* 5행 start */}
+        <div className="form-table">
+          <div className="form-cell wid50">
+            <div className="form-group wid100">
+              <AppAutoComplete label={'사용자검색'} disabled />
+            </div>
+          </div>
+          <div className="form-cell wid50">
+            <div className="form-group wid100">
+              <AppAutoComplete label={'공항검색'} />
+            </div>
+          </div>
+        </div>
+        {/* 5행 end */}
         <div className="btn-area">
           <button type="button" name="button" className="btn-sm btn_text btn-darkblue-line">
             조회

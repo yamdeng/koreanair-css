@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import { Select } from 'antd';
 import CommonUtil from '@/utils/CommonUtil';
 import classNames from 'classnames';
@@ -37,6 +38,17 @@ function AppSelect(props) {
     style = { width: '100%' },
     labelOnlyTop = false,
   } = props;
+
+  const [isFocused, setIsFocused] = useState(false);
+
+  const handleFocus = () => {
+    setIsFocused(true);
+  };
+
+  const handleBlur = () => {
+    setIsFocused(false);
+  };
+
   const applyOptions = applyAllSelect ? [{ label: '전체', value: allValue }, ...options] : options;
   let isSelectedClass = false;
   if (value) {
@@ -55,7 +67,7 @@ function AppSelect(props) {
     <>
       <Select
         {...props}
-        status={errorMessage ? 'error' : ''}
+        status={!isFocused && errorMessage ? 'error' : ''}
         style={style}
         className={applyClassName}
         id={id}
@@ -64,6 +76,8 @@ function AppSelect(props) {
         options={applyOptions}
         placeholder={placeHolder}
         onChange={onChange}
+        onFocus={handleFocus}
+        onBlur={handleBlur}
       ></Select>
       <label className="f-label" htmlFor={id} style={{ display: label ? '' : 'none' }}>
         {label} {required ? <span className="required">*</span> : null}
