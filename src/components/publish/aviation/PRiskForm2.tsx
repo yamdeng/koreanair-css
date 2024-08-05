@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { DatePicker, TimePicker, Select as AntSelect } from 'antd';
 import AppDatePicker from '@/components/common/AppDatePicker';
-import AppSearchnput from '@/components/common/AppSearchnput';
+import AppSearchInput from '@/components/common/AppSearchInput';
 import AppSelect from '@/components/common/AppSelect';
 import AppTable from '@/components/common/AppTable';
 import AppTextInput from '@/components/common/AppTextInput';
@@ -21,7 +21,7 @@ function PRiskForm2() {
         <div className="form-table">
           <div className="form-cell wid100">
             <div className="form-group wid100">
-              <AppSearchnput label="보고서검색" />
+              <AppSearchInput label="보고서검색" />
             </div>
           </div>
         </div>
@@ -65,7 +65,7 @@ function PRiskForm2() {
                     <div className="form-cell wid50">
                       <div className="form-group wid100">
                         {/*발생공항 */}
-                        <AppSearchnput label="발생공항" disabled />
+                        <AppSearchInput label="발생공항" disabled />
                       </div>
                     </div>
                     <div className="form-cell wid50">
@@ -145,7 +145,7 @@ function PRiskForm2() {
                     <div className="form-cell wid50">
                       <div className="form-group wid100">
                         {/*발생공항 */}
-                        <AppSearchnput label="발생공항" disabled />
+                        <AppSearchInput label="발생공항" disabled />
                       </div>
                     </div>
                     <div className="form-cell wid50">
@@ -182,7 +182,7 @@ function PRiskForm2() {
                     <div className="form-cell wid50">
                       <div className="form-group wid100">
                         {/*발생위치 */}
-                        <AppSearchnput label="발생위치" />
+                        <AppSearchInput label="발생위치" />
                       </div>
                     </div>
                   </div>

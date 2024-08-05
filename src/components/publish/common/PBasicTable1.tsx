@@ -2,7 +2,7 @@ import AppTable from '@/components/common/AppTable';
 import { getAllData } from '@/data/grid/example-data-new';
 import { testColumnInfos } from '@/data/grid/table-column';
 import { useState } from 'react';
-import AppSearchnput from '@/components/common/AppSearchnput';
+import AppSearchInput from '@/components/common/AppSearchInput';
 import AppTextInput from '@/components/common/AppTextInput';
 import AppSelect from '@/components/common/AppSelect';
 import AppDatePicker from '@/components/common/AppDatePicker';
@@ -74,7 +74,7 @@ function PBasicTable1() {
         <div className="form-table">
           <div className="form-cell wid50">
             <div className="form-group wid100">
-              <AppSearchnput label="검색 input(엔터키)" />
+              <AppSearchInput label="검색 input(엔터키)" />
             </div>
           </div>
           <div className="form-cell wid50">

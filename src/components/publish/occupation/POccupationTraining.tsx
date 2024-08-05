@@ -3,7 +3,7 @@ import { DatePicker, TimePicker, Select as AntSelect } from 'antd';
 import AppTable from '@/components/common/AppTable';
 import { getAllData } from '@/data/grid/example-data-new';
 import { testColumnInfos } from '@/data/grid/table-column';
-import AppSearchnput from '@/components/common/AppSearchnput';
+import AppSearchInput from '@/components/common/AppSearchInput';
 import AppTextInput from '@/components/common/AppTextInput';
 import AppSelect from '@/components/common/AppSelect';
 import AppDatePicker from '@/components/common/AppDatePicker';
@@ -30,7 +30,7 @@ function POccupationTraining() {
             </div>
             <div className="form-cell wid50">
               <div className="form-group wid100 mr5">
-                <AppSearchnput label="부서" />
+                <AppSearchInput label="부서" />
               </div>
             </div>
             <div className="form-cell wid50">
@@ -55,7 +55,7 @@ function POccupationTraining() {
             </div>
             <div className="form-cell wid100">
               <div className="form-group wid100">
-                <AppSearchnput label="훈련명" />
+                <AppSearchInput label="훈련명" />
               </div>
             </div>
           </div>

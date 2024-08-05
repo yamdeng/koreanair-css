@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import AppSearchnput from '@/components/common/AppSearchnput';
+import AppSearchInput from '@/components/common/AppSearchInput';
 import AppSelect from '@/components/common/AppSelect';
 import AppDatePicker from '@/components/common/AppDatePicker';
 
@@ -39,7 +39,7 @@ function POccupationPortal2() {
             </div>
             <div className="form-cell wid100">
               <div className="form-group wid100">
-                <AppSearchnput label="검색" />
+                <AppSearchInput label="검색" />
               </div>
             </div>
             <div className="btn-area">
