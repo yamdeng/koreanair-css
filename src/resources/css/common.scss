@@ -186,8 +186,8 @@ input, select{font-family:'KoreanAirSans'}
   > button{margin:2.0rem 0.2rem}
   .btn_text{font-family:'KoreanAirSans';font-weight:700;font-size:1.6rem}
   .btn_confirm{padding:0.6rem 4.8rem;border-radius:99.9rem;background:var(--color-darkblue-100);align-items:center}
-  .btn_close{padding:0.8rem 3.8rem;border-radius:99.9rem;background:var(--color-neutral-30)}
-  .btn_correct{padding:0.8rem 3.8rem;border-radius:99.9rem;background:var(--color-neutral-30)}
+  .btn_close{padding:0.8rem 4.8rem;border-radius:99.9rem;background:var(--color-neutral-30)}
+  .btn_correct{padding:0.8rem 4.8rem;border-radius:99.9rem;background:var(--color-neutral-30)}
   text-align:right;
   @include mobile {
     width: 100%;
@@ -241,16 +241,16 @@ input, select{font-family:'KoreanAirSans'}
 
   .group-box-wrap{
     position: relative;
-    padding:0 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    padding:0 1.0rem;
+    border: 0.1rem solid #ccc;
+    border-radius: 0.5rem;
 }
 .group-box-wrap .txt {
   background: #fff;
-  padding: 4px 5px;
+  padding: 0 0.5rem;
   position: absolute;
-  left: 10px;
-  top: -12px;
+  left: 1.0rem;
+  top: -1.2rem;
   font-size:1.4rem
 }
   
@@ -486,3 +486,5 @@ input, select{font-family:'KoreanAirSans'}
 :where(.css-dev-only-do-not-override-98ntnt).ant-picker .ant-picker-suffix .anticon svg path {display: none;}
 :where(.css-dev-only-do-not-override-98ntnt).ant-picker .ant-picker-suffix .anticon-clock-circle svg {background: url(../images/arrival-time.svg)center center no-repeat; background-size: cover;}
 :where(.css-dev-only-do-not-override-98ntnt).ant-picker .ant-picker-suffix .anticon-clock-circle svg path {display: none;}
+.css-tj5bde-Svg {background: url(../images/icon-arrow-down.svg)center center no-repeat; background-size: cover;}
+.css-tj5bde-Svg path {display: none;}
