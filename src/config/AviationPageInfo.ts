@@ -2,6 +2,7 @@ import PAviationPortal1 from '@/components/publish/aviation/PAviationPortal1';
 import PRiskForm1 from '@/components/publish/aviation/PRiskForm1';
 import PRiskForm2 from '@/components/publish/aviation/PRiskForm2';
 import SPIInfo1 from '@/components/publish/aviation/SPIInfo1';
+import Checklist1 from '@/components/publish/aviation/Checklist1';
 
 const AviationPageInfo: any = {};
 
@@ -35,9 +36,9 @@ AviationPageInfo.list = [
     success: false,
   },
   {
-    title: '[AUDIT] ',
-    Component: PRiskForm2,
-    path: 'PRiskForm2',
+    title: '[AUDIT] Checklist',
+    Component: Checklist1,
+    path: 'Checklist1',
     description: '',
     success: false,
   },
