@@ -6,31 +6,33 @@
 .Report-process li.last:before{display:none}
 @media (max-width:1024px) {
     .Report-process li span { width: 110px;height: 110px;padding-top: 45px; }
-    .Report-process li:before { width: 20px;height: 38px;background-size: 20px;margin-top: -19px; }
+    .Report-process li:before { width: 20px;height: 38px;background-size: 20px;margin-top:-19px}
 }
 @media (max-width:768px) {
     .Report-process{overflow: hidden;float:none}
-    .Report-process li{width:100%;margin-bottom:40px;}
-    .Report-process li span:first-child { width: 100px;height: 100px;padding: 0 5px; padding-top: 40px; }
-    .Report-process li:before { left:50%;margin-left:-12px;transform: rotate(90deg);right: auto;
-        bottom: -40px;
-        top: auto;
-        margin-top: 0;}
-        .Report-process li span, .Report-process li span:first-child {
-            font-size: 18px;
-            width: 100%;
-            height: 100px;
-            padding: 0 5px;
-            padding-top: 40px;
-            border-radius: 0;
-        }
+    .Report-process li{width:100%;margin-bottom:40px}
+    .Report-process li span:first-child{width:100px;height:100px;padding:0 5px;padding-top:4.0rem}
+    .Report-process li:before{ left:50%;margin-left:-12px;transform: rotate(90deg);right:auto;bottom:-4.0rem;top:auto;margin-top:0}
+    .Report-process li span, .Report-process li span:first-child{font-size:1.8rem;width:100%;height: 100px;padding: 0 5px;padding-top:4.0rem;border-radius:0}
 }
 
 @media (max-width:375px){
-    .Report-process li { width: 100%;margin-bottom: 40px; }
-    .Report-process li br{ display: none; }
-    .Report-process li span{ width: 100%;height: auto;border-radius: 0;padding: 20px; }
-    .Report-process li:before{ left: 50%;margin-left: -12px;transform: rotate(90deg);right: auto;bottom: -40px;top: auto;margin-top: 0; }
+    .Report-process li {width:100%;margin-bottom:4.0rem}
+    .Report-process li br{display: none; }
+    .Report-process li span{width: 100%;height: auto;border-radius: 0;padding:2.0rem}
+    .Report-process li:before{left: 50%;margin-left: -12px;transform: rotate(90deg);right: auto;bottom: -40px;top: auto;margin-top: 0; }
+    .Report-process li span, .Report-process li span:first-child {font-size:18px;width:100%;height: 100px;padding: 0 5px; padding-top:4.0rem;border-radius:0}
+}
 
-    .Report-process li span, .Report-process li span:first-child { font-size:18px;width:100%;height: 100px;padding: 0 5px; padding-top: 40px; border-radius:0}
+.checklist-contents{display:flex;width:100%}
+.checklist-contents::after{content:'';display:block;clear:both}
+.checklist-contents h4{font-weight:700;border-bottom:0.1rem solid rgb(188, 188, 205);}
+.checklist-contents .checklist-row{flex-flow: row wrap;}
+.checklist-col{position: relative;    min-height: 1px;}
+.checklist-col-xs-24{flex: 0 0 100% !important;}
+@media (max-width:768px) {.checklist-col-md-8 {
+    display: block;
+    flex: 0 0 33.33333333%;
+    max-width: 33.33333333%;
+}
 }
