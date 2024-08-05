@@ -1,5 +1,5 @@
 import AppDatePicker from '@/components/common/AppDatePicker';
-import AppSearchnput from '@/components/common/AppSearchnput';
+import AppSearchInput from '@/components/common/AppSearchInput';
 import AppSelect from '@/components/common/AppSelect';
 import AppTable from '@/components/common/AppTable';
 import AppTextInput from '@/components/common/AppTextInput';
@@ -25,7 +25,7 @@ function PRiskForm1() {
           <div className="form-table">
             <div className="form-cell wid50">
               <div className="form-group wid100 mr5">
-                <AppSearchnput label="검색 input(엔터키)" />
+                <AppSearchInput label="검색 input(엔터키)" />
               </div>
             </div>
             <div className="form-cell wid50">
