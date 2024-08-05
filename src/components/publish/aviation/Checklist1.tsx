@@ -62,22 +62,335 @@ function SPIInfo1() {
       </div>
       {/* //검색영역 */}
 
-      <div className="checklist-contents">
-        <div className="checklist-row list">
-          <div className="checklist-col checklist-col-xs-24 checklist-col-md-8">
+      <div className="cont-row checklist-contents">
+        <div className="checklist-row list ">
+          <div className="checklist-col  ">
             <h4>
-              <button type="button" name="button" className="">
-                <img src="" />
-              </button>
-              <a href="javascript:void(0);">해외공항 안전평가 점검표 (ko)12</a>
+              <label>
+                <button type="button" name="button" className="">
+                  <img src="" />
+                </button>
+                <a href="javascript:void(0);">해외공항 원격 안전평가 점검표 (ko)10</a>
+              </label>
             </h4>
             <ul>
-              <li></li>
+              <li className="list-space">
+                <button type="button" className="list-btn editChapter"></button>
+                <div className="">
+                  <a href="javascript:void(0);">
+                    안전보안일반12 <i>(29)</i>
+                  </a>
+                </div>
+              </li>
+              <li className="list-space">
+                <button type="button" className="list-btn editChapter"></button>
+                <div className="">
+                  <a href="javascript:void(0);">
+                    종합통제12 <i>(29)</i>
+                  </a>
+                </div>
+              </li>
+              <li className="list-space">
+                <button type="button" className="list-btn editChapter"></button>
+                <div className="">
+                  <a href="javascript:void(0);">
+                    정비관리12 <i>(50)</i>
+                  </a>
+                </div>
+              </li>
+              <li className="list-space">
+                <button type="button" className="list-btn editChapter"></button>
+                <div className="">
+                  <a href="javascript:void(0);">
+                    여객운송12 <i>(29)</i>
+                  </a>
+                </div>
+              </li>
+              <li className="list-space">
+                <button type="button" className="list-btn editChapter"></button>
+                <div className="">
+                  <a href="javascript:void(0);">
+                    여객운송12 <i>(29)</i>
+                  </a>
+                </div>
+              </li>
+              <li className="list-space">
+                <button type="button" className="list-btn editChapter"></button>
+                <div className="">
+                  <a href="javascript:void(0);">
+                    여객운송12 <i>(29)</i>
+                  </a>
+                </div>
+              </li>
             </ul>
           </div>
-          <div className="checklist-col checklist-col-xs-24 checklist-col-md-8"></div>
-          <div className="checklist-col checklist-col-xs-24 checklist-col-md-8"></div>
-          <div className="checklist-col checklist-col-xs-24 checklist-col-md-8"></div>
+          <div className="checklist-col  "></div>
+          <div className="checklist-col  "></div>
+          <div className="checklist-col  "></div>
+        </div>
+
+        <div className="checklist-row list ">
+          <div className="checklist-col  ">
+            <h4>
+              <label>
+                <button type="button" name="button" className="">
+                  <img src="" />
+                </button>
+                <a href="javascript:void(0);">해외공항 원격 안전평가 점검표 (ko)10</a>
+              </label>
+            </h4>
+            <ul>
+              <li className="list-space">
+                <button type="button" className="list-btn editChapter"></button>
+                <div className="">
+                  <a href="javascript:void(0);">
+                    안전보안일반12 <i>(29)</i>
+                  </a>
+                </div>
+              </li>
+              <li className="list-space">
+                <button type="button" className="list-btn editChapter"></button>
+                <div className="">
+                  <a href="javascript:void(0);">
+                    종합통제12 <i>(29)</i>
+                  </a>
+                </div>
+              </li>
+              <li className="list-space">
+                <button type="button" className="list-btn editChapter"></button>
+                <div className="">
+                  <a href="javascript:void(0);">
+                    정비관리12 <i>(50)</i>
+                  </a>
+                </div>
+              </li>
+              <li className="list-space">
+                <button type="button" className="list-btn editChapter"></button>
+                <div className="">
+                  <a href="javascript:void(0);">
+                    여객운송12 <i>(29)</i>
+                  </a>
+                </div>
+              </li>
+              <li className="list-space">
+                <button type="button" className="list-btn editChapter"></button>
+                <div className="">
+                  <a href="javascript:void(0);">
+                    여객운송12 <i>(29)</i>
+                  </a>
+                </div>
+              </li>
+              <li className="list-space">
+                <button type="button" className="list-btn editChapter"></button>
+                <div className="">
+                  <a href="javascript:void(0);">
+                    여객운송12 <i>(29)</i>
+                  </a>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div className="checklist-col  "></div>
+          <div className="checklist-col  "></div>
+          <div className="checklist-col  "></div>
+        </div>
+
+        <div className="checklist-row list ">
+          <div className="checklist-col  ">
+            <h4>
+              <label>
+                <button type="button" name="button" className="">
+                  <img src="" />
+                </button>
+                <a href="javascript:void(0);">해외공항 원격 안전평가 점검표 (ko)10</a>
+              </label>
+            </h4>
+            <ul>
+              <li className="list-space">
+                <button type="button" className="list-btn editChapter"></button>
+                <div className="">
+                  <a href="javascript:void(0);">
+                    안전보안일반12 <i>(29)</i>
+                  </a>
+                </div>
+              </li>
+              <li className="list-space">
+                <button type="button" className="list-btn editChapter"></button>
+                <div className="">
+                  <a href="javascript:void(0);">
+                    종합통제12 <i>(29)</i>
+                  </a>
+                </div>
+              </li>
+              <li className="list-space">
+                <button type="button" className="list-btn editChapter"></button>
+                <div className="">
+                  <a href="javascript:void(0);">
+                    정비관리12 <i>(50)</i>
+                  </a>
+                </div>
+              </li>
+              <li className="list-space">
+                <button type="button" className="list-btn editChapter"></button>
+                <div className="">
+                  <a href="javascript:void(0);">
+                    여객운송12 <i>(29)</i>
+                  </a>
+                </div>
+              </li>
+              <li className="list-space">
+                <button type="button" className="list-btn editChapter"></button>
+                <div className="">
+                  <a href="javascript:void(0);">
+                    여객운송12 <i>(29)</i>
+                  </a>
+                </div>
+              </li>
+              <li className="list-space">
+                <button type="button" className="list-btn editChapter"></button>
+                <div className="">
+                  <a href="javascript:void(0);">
+                    여객운송12 <i>(29)</i>
+                  </a>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div className="checklist-col  "></div>
+          <div className="checklist-col  "></div>
+          <div className="checklist-col  "></div>
+        </div>
+
+        <div className="checklist-row list ">
+          <div className="checklist-col  ">
+            <h4>
+              <label>
+                <button type="button" name="button" className="">
+                  <img src="" />
+                </button>
+                <a href="javascript:void(0);">해외공항 원격 안전평가 점검표 (en)3</a>
+              </label>
+            </h4>
+            <ul>
+              <li className="list-space">
+                <button type="button" className="list-btn editChapter"></button>
+                <div className="">
+                  <a href="javascript:void(0);">
+                    안전보안일반12 <i>(29)</i>
+                  </a>
+                </div>
+              </li>
+              <li className="list-space">
+                <button type="button" className="list-btn editChapter"></button>
+                <div className="">
+                  <a href="javascript:void(0);">
+                    종합통제12 <i>(29)</i>
+                  </a>
+                </div>
+              </li>
+              <li className="list-space">
+                <button type="button" className="list-btn editChapter"></button>
+                <div className="">
+                  <a href="javascript:void(0);">
+                    정비관리12 <i>(50)</i>
+                  </a>
+                </div>
+              </li>
+              <li className="list-space">
+                <button type="button" className="list-btn editChapter"></button>
+                <div className="">
+                  <a href="javascript:void(0);">
+                    여객운송12 <i>(29)</i>
+                  </a>
+                </div>
+              </li>
+              <li className="list-space">
+                <button type="button" className="list-btn editChapter"></button>
+                <div className="">
+                  <a href="javascript:void(0);">
+                    여객운송12 <i>(29)</i>
+                  </a>
+                </div>
+              </li>
+              <li className="list-space">
+                <button type="button" className="list-btn editChapter"></button>
+                <div className="">
+                  <a href="javascript:void(0);">
+                    여객운송12 <i>(29)</i>
+                  </a>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div className="checklist-col  "></div>
+          <div className="checklist-col  "></div>
+          <div className="checklist-col  "></div>
+        </div>
+
+        <div className="checklist-row list ">
+          <div className="checklist-col  ">
+            <h4>
+              <label>
+                <button type="button" name="button" className="">
+                  <img src="" />
+                </button>
+                <a href="javascript:void(0);">해외공항 원격 안전평가 점검표 (en)3</a>
+              </label>
+            </h4>
+            <ul>
+              <li className="list-space">
+                <button type="button" className="list-btn editChapter"></button>
+                <div className="">
+                  <a href="javascript:void(0);">
+                    안전보안일반12 <i>(29)</i>
+                  </a>
+                </div>
+              </li>
+              <li className="list-space">
+                <button type="button" className="list-btn editChapter"></button>
+                <div className="">
+                  <a href="javascript:void(0);">
+                    종합통제12 <i>(29)</i>
+                  </a>
+                </div>
+              </li>
+              <li className="list-space">
+                <button type="button" className="list-btn editChapter"></button>
+                <div className="">
+                  <a href="javascript:void(0);">
+                    정비관리12 <i>(50)</i>
+                  </a>
+                </div>
+              </li>
+              <li className="list-space">
+                <button type="button" className="list-btn editChapter"></button>
+                <div className="">
+                  <a href="javascript:void(0);">
+                    여객운송12 <i>(29)</i>
+                  </a>
+                </div>
+              </li>
+              <li className="list-space">
+                <button type="button" className="list-btn editChapter"></button>
+                <div className="">
+                  <a href="javascript:void(0);">
+                    여객운송12 <i>(29)</i>
+                  </a>
+                </div>
+              </li>
+              <li className="list-space">
+                <button type="button" className="list-btn editChapter"></button>
+                <div className="">
+                  <a href="javascript:void(0);">
+                    여객운송12 <i>(29)</i>
+                  </a>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div className="checklist-col  "></div>
+          <div className="checklist-col  "></div>
+          <div className="checklist-col  "></div>
         </div>
       </div>
     </>
