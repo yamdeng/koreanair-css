@@ -17,7 +17,7 @@ function POccupationTraining() {
   return (
     <>
       <div className="conts-title">
-        <h2>중대재해대응훈련 </h2>
+        <h2>중대재해대응훈련</h2>
       </div>
       {/*검색영역 */}
       <div className="TopButton-area">
@@ -64,7 +64,7 @@ function POccupationTraining() {
       {/* //검색영역 */}
 
       {/*그리드영역 */}
-      <div className=""></div>
+      <div className="">그리드영역</div>
       {/*//그리드영역 */}
 
       {/* 하단버튼영역 */}
