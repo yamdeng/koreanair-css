@@ -465,6 +465,9 @@ input, select{font-family:'KoreanAirSans'}
 :where(.css-dev-only-do-not-override-98ntnt).ant-picker{height:4rem}
 :where(.css-dev-only-do-not-override-98ntnt).ant-picker{padding:4px 20px 4px !important;width: 100%;}
 :where(.css-dev-only-do-not-override-98ntnt).ant-select{min-height:4rem !important}
+.ant-select-selector {
+  min-height:4rem !important
+}
 .label-select .css-13cymwt-control{min-height:4rem !important;height:4rem !important}
 
 /* 에디터 메뉴 툴팁 text override */
