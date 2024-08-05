@@ -52,7 +52,55 @@ function POccupationPortal2() {
       </div>
       {/* //검색영역 */}
       {/*그리드영역 */}
-      <div className="">그리드영역</div>
+      <div className="">
+        <table className="notice-board">
+          <colgroup>
+            <col width="10%" />
+            <col width="40%" />
+            <col width="30%" />
+            <col width="20%" />
+          </colgroup>
+          <tr>
+            <th>번호</th>
+            <th>제목</th>
+            <th>본부</th>
+            <th>등록일자</th>
+          </tr>
+          <tr className="fix-bg">
+            <td className="fix">상위노출</td>
+            <td className="left">
+              <a href="javascript:void(0);">제목입니다.</a>
+            </td>
+            <td>산업안전</td>
+            <td>2024-08-05</td>
+          </tr>
+          <tr className="fix-bg">
+            <td className="fix">상위노출</td>
+            <td className="left">
+              <a href="javascript:void(0);">제목입니다.</a>
+            </td>
+            <td>산업안전</td>
+            <td>2024-08-05</td>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td className="left">
+              <a href="javascript:void(0);">제목입니다.</a>
+            </td>
+            <td>산업안전</td>
+            <td>2024-08-05</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td className="left">
+              <a href="javascript:void(0);">제목입니다.</a>
+            </td>
+            <td>산업안전</td>
+            <td>2024-08-05</td>
+          </tr>
+        </table>
+        <div className="pagination"></div>
+      </div>
       {/*//그리드영역 */}
 
       {/* 하단버튼영역 */}

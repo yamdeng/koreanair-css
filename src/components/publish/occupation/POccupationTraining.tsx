@@ -64,7 +64,9 @@ function POccupationTraining() {
       {/* //검색영역 */}
 
       {/*그리드영역 */}
-      <div className="">그리드영역</div>
+      <div className="">
+        <AppTable rowData={rowData} columns={columns} />
+      </div>
       {/*//그리드영역 */}
 
       {/* 하단버튼영역 */}
