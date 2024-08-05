@@ -1,18 +1,13 @@
-import AppTable from '@/components/common/AppTable';
-import { getAllData } from '@/data/grid/example-data-new';
-import { testColumnInfos } from '@/data/grid/table-column';
-import { useState } from 'react';
-import Select from 'react-select';
-import { DatePicker, TimePicker, TreeSelect, Select as AntSelect } from 'antd';
 import AppAutoComplete from '@/components/common/AppAutoComplete';
-import AppSearchnput from '@/components/common/AppSearchnput';
-import AppTextInput from '@/components/common/AppTextInput';
-import AppTextArea from '@/components/common/AppTextArea';
-import AppSelect from '@/components/common/AppSelect';
 import AppDatePicker from '@/components/common/AppDatePicker';
-import AppRangeDatePicker from '@/components/common/AppRangeDatePicker';
-import AppTimePicker from '@/components/common/AppTimePicker';
 import AppEditor from '@/components/common/AppEditor';
+import AppSelect from '@/components/common/AppSelect';
+import AppTextArea from '@/components/common/AppTextArea';
+import AppTextInput from '@/components/common/AppTextInput';
+import AppTimePicker from '@/components/common/AppTimePicker';
+import AppTreeSelect from '@/components/common/AppTreeSelect';
+import { DatePicker } from 'antd';
+import { useState } from 'react';
 
 /*
 
@@ -22,18 +17,6 @@ import AppEditor from '@/components/common/AppEditor';
      -textarea 작성시 첫행이 들여쓰기가 됨
 
    2.에디터 라벨 및 필수 여부 어떻게 할지 고민 필요
-
-   
-   3.datepicker, timepicker
-
-   
-   6.datepicker 2개
-   
-   7.timepiker 1개
-   
-   8.autocomplete
-   
-   9.tree-select
 
 */
 const options2 = [];
@@ -288,20 +271,6 @@ function PBasicForm1() {
           </div>
         </div>
         <hr className="line"></hr>
-        {/* <div className="form-table">
-          <div className="form-cell wid50">
-            <div className="form-group form-glow">
-              <div className="df">
-                <div className="date4 wid100">
-                  <TimePicker.RangePicker className="label-picker wid100" id="date4" status="error" />
-                  <label className="f-label" htmlFor="date4">
-                    TimePicker2 <span className="required">*</span>
-                  </label>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div> */}
         {/* 9행 */}
         <div className="form-table">
           <div className="form-cell wid50">
@@ -319,25 +288,13 @@ function PBasicForm1() {
           </div>
           <div className="form-cell wid50">
             <div className="form-group form-glow wid100">
-              <TreeSelect
-                showSearch
-                treeCheckable
-                className="label-select wid100"
-                dropdownStyle={{
-                  maxHeight: 400,
-                  overflow: 'auto',
-                }}
-                allowClear
-                treeDefaultExpandAll
+              <AppTreeSelect
                 treeData={treeData}
                 value={selectedTreeData}
                 onChange={onTreeSelectChange}
-                status=""
+                treeDefaultExpandAll
+                label="treeSelect"
               />
-              <label className="f-label" htmlFor="select51">
-                tree <span className="required">*</span>
-              </label>
-              <span className="errorText">auto complete error message</span>
             </div>
           </div>
         </div>
