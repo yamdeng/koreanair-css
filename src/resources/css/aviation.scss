@@ -39,8 +39,8 @@ html ul {
 .checklist-contents .checklist-row.list ul{display:flex;flex-direction: column;padding: 16px 0px;}
 .checklist-contents .checklist-row.list li.list-space{display:inline-flex;font-size:1.5rem;}
 .checklist-contents .checklist-row.list li.list-space a:hover{text-decoration:underline;}
-.checklist-contents .checklist-row.list li button.editChapter{visibility:hidden;opacity: 0;    margin-right: 2px}
-.list-btn{width:32px;height:32px;padding:2.4px 0;font-size:1.6rem;    border-radius: 2px;vertical-align: -3px;}
+.checklist-contents .checklist-row.list li button.editChapter{visibility:hidden;opacity: 0;margin-right:2rem}
+.list-btn{width:32px;height:32px;padding:2.4px 0;font-size:1.6rem;border-radius:2rem;vertical-align:-0.3rem}
 .checklist-col{position:relative}
-.cont-row{display:flex;flex-flow:row wrap;row-gap:24px}
+.cont-row{display:flex;flex-flow:row wrap;row-gap:2.4rem}
 
