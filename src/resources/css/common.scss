@@ -353,7 +353,7 @@ input, select{font-family:'KoreanAirSans'}
 .form-group .list li .delete{position:absolute;right:0;background: url(/src/resources/images/delete-text.svg) center center no-repeat;font-size: 0;width: 2rem;height: 2rem}
 
 .form-group .date1, .form-group .date2{position:relative; width: 100%;}
-.form-group .f-label{display:inline-block;position:absolute;left:1.0rem;top:0.8rem;background:var(--color-neutral-10);padding:0.2rem 0.4rem 0.4rem;line-height:1.4em;font-size:1.4rem !important;transition: all .2s ease}
+.form-group .f-label{display:inline-block;position:absolute;left:1.0rem;top:0.9rem;background:var(--color-neutral-10);padding:0 0.4rem;line-height:1.4em;font-size:1.4rem !important;transition: all .2s ease}
 .form-tag{position:relative;height:4rem;border:0.1rem solid var(--color-neutral-40);border-radius:0.5rem;padding:0 1.0rem;width:100%;box-sizing:border-box;color:var(--color-neutral-80);background:var(--color-neutral-10);outline:none!important;text-indent:1.0rem}
 .form-tag:not([value=""]){border:0.1rem solid var(--color-neutral-40)}
 .form-tag.active, .form-tag:focus{border:0.1rem solid var(--color-mblue-100) !important;color:var(--color-mblue-100) !important}
@@ -460,7 +460,7 @@ input, select{font-family:'KoreanAirSans'}
 :where(.css-dev-only-do-not-override-98ntnt)[class^="ant-select"] [class^="ant-select"], :where(.css-dev-only-do-not-override-98ntnt)[class*=" ant-select"] [class^="ant-select"]{color:var(--color-mblue-100)}
 .label-select.ant-select-focused + .f-label, .label-select.selected + .f-label, .label-picker.ant-picker-focused + .f-label, .label-picker.selected + .f-label {left:1rem;top:-1rem}
 :where(.css-dev-only-do-not-override-98ntnt).ant-picker{height:4rem}
-:where(.css-dev-only-do-not-override-98ntnt).ant-picker{padding:4px 20px 4px !important}
+:where(.css-dev-only-do-not-override-98ntnt).ant-picker{padding:4px 20px 4px !important;width: 100%;}
 :where(.css-dev-only-do-not-override-98ntnt).ant-select{height:4rem !important}
 .label-select .css-13cymwt-control{min-height:4rem !important;height:4rem !important}
 
