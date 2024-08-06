@@ -104,7 +104,7 @@ ModalPageInfo.list = [
     Component: PChecklistModal,
     path: 'PChecklistModal',
     description: '',
-    success: false,
+    success: true,
   },
 ];
 
