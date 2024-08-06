@@ -71,8 +71,8 @@ function POccupationPortal2() {
             <td className="left">
               <a href="javascript:void(0);">제목입니다.</a>
             </td>
-            <td className="department">산업안전</td>
-            <td className="date">2024-08-05</td>
+            <td>산업안전</td>
+            <td>2024-08-05</td>
           </tr>
           <tr className="fix-bg">
             <td className="fix">상위노출</td>
@@ -99,7 +99,27 @@ function POccupationPortal2() {
             <td>2024-08-05</td>
           </tr>
         </table>
-        <div className="pagination"></div>
+        <div className="pagination">
+          <a href="javascript:void(0);" className="first">
+            <span className="sr-only">이전</span>
+          </a>
+          <a href="javascript:void(0);" className="prev">
+            <span className="sr-only">이전</span>
+          </a>
+          <span>
+            <a href="javascript:void(0);">1</a>
+            <a href="javascript:void(0);">2</a>
+            <strong title="현재페이지">3</strong>
+            <a href="javascript:void(0);">4</a>
+            <a href="javascript:void(0);">5</a>
+          </span>
+          <a href="javascript:void(0);" className="next">
+            <span className="sr-only">다음</span>
+          </a>
+          <a href="javascript:void(0);" className="last">
+            <span className="sr-only">다음</span>
+          </a>
+        </div>
       </div>
       {/*//그리드영역 */}
 
