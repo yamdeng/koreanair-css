@@ -1,5 +1,7 @@
 import POccupationPortal1 from '@/components/publish/occupation/POccupationPortal1';
 import POccupationPortal2 from '@/components/publish/occupation/POccupationPortal2';
+import POccupationPortal2edit from '@/components/publish/occupation/POccupationPortal2edit';
+import POccupationPortal2detail from '@/components/publish/occupation/POccupationPortal2detail';
 import POccupationTraining from '@/components/publish/occupation/POccupationTraining';
 
 const OccupationPageInfo: any = {};
@@ -13,9 +15,23 @@ OccupationPageInfo.list = [
     success: false,
   },
   {
-    title: '안전경영 > 공지사항',
+    title: '안전경영 > 공지사항-리스트',
     Component: POccupationPortal2,
     path: 'POccupationPortal2',
+    description: '',
+    success: false,
+  },
+  {
+    title: '안전경영 > 공지사항-입력',
+    Component: POccupationPortal2edit,
+    path: 'POccupationPortal2edit',
+    description: '',
+    success: false,
+  },
+  {
+    title: '안전경영 > 공지사항-상세',
+    Component: POccupationPortal2detail,
+    path: 'POccupationPortal2detail',
     description: '',
     success: false,
   },

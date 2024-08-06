@@ -215,6 +215,7 @@ input, select{font-family:'KoreanAirSans'}
       flex-grow: 1;
     }
   }*/
+  .share {background: url(../images/share.svg)left center no-repeat; display: inline-flex; align-items: center; justify-content: left; width: 2.4rem; height: 2.4rem; padding-left: 3.0rem; color: var(--color-neutral-10);}
 }
 /* 상단 타이틀 */
 .conts-title{position:relative;/*border-bottom:solid 0.1rem var(--color-neutral-40);*/align-items:center;padding:2.0rem 0 4.0rem 0;margin-bottom:1.0rem}
