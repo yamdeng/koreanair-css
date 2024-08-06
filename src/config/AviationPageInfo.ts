@@ -41,7 +41,7 @@ AviationPageInfo.list = [
     Component: Checklist1,
     path: 'Checklist1',
     description: '',
-    success: false,
+    success: true,
   },
   {
     title: '[07.관리자] HAZARD > Taxonomy',

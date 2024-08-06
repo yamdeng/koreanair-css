@@ -10,6 +10,7 @@ import PDetailFormModal from '@/components/publish/modal/PDetailFormModal';
 import PUserEditModal from '@/components/publish/modal/PUserEditModal';
 import PUserEditModal2 from '@/components/publish/modal/PUserEditModal2';
 import PUserViewModal from '@/components/publish/modal/PUserViewModal';
+import PChecklistModal from '@/components/publish/modal/PChecklistModal';
 
 const ModalPageInfo: any = {};
 
@@ -97,6 +98,13 @@ ModalPageInfo.list = [
     path: 'PUserEditModal2',
     description: '',
     success: true,
+  },
+  {
+    title: '[ADUIT] Checklist 팝업창',
+    Component: PChecklistModal,
+    path: 'PChecklistModal',
+    description: '',
+    success: false,
   },
 ];
 
