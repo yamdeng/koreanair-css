@@ -1,6 +1,7 @@
 import PBasicTable1 from '@/components/publish/common/PBasicTable1';
 import PBasicTable2 from '@/components/publish/common/PBasicTable2';
 import PBasicForm1 from '@/components/publish/common/PBasicForm1';
+import PFileForm from '@/components/publish/common/PFileForm';
 
 const CommonPageInfo: any = {};
 
@@ -23,6 +24,13 @@ CommonPageInfo.list = [
     title: 'form 패턴1',
     Component: PBasicForm1,
     path: 'PBasicForm1',
+    description: '',
+    success: false,
+  },
+  {
+    title: '파일폼',
+    Component: PFileForm,
+    path: 'PFileForm',
     description: '',
     success: false,
   },
