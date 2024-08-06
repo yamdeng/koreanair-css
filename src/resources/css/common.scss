@@ -392,8 +392,8 @@ input, select{font-family:'KoreanAirSans'}
 
 /*검색영역-접기펴기 버튼영역*/
 .TopButton-area{position:relative;/*padding-top:2.0rem*/}
-.TopButton-area .btn-fold{position:absolute;left:50%;transform: translate(-50%, -50%);bottom:-3.0rem;z-index:999;width:5rem;height:5rem; background: url(../images/icon-arrow-up.svg) center center no-repeat;background-color:var(--color-neutral-30);background-size:3.5rem;border-radius: 50%}
-.TopButton-area .btn-fold.open{border:0.1rem solid var(--color-neutral-40);color:var(--color-neutral-8)}
+.TopButton-area .btn-fold{position:absolute;left:50%;transform:translate(-50%, -50%);bottom:-1.0rem;z-index:999;width:5rem;height:5rem; background: url(../images/icon-arrow-up.svg) center center no-repeat;/*background-color:var(--color-neutral-30);*/background-size:3.5rem;border-radius: 50%}
+.TopButton-area .btn-fold.open{position:absolute;left:50%;top:1.5rem;transform:translate(-50%, -50%);background: url(../images/icon-arrow-down.svg) center center no-repeat;width:5rem;height:5rem;background-size:3.5rem}
 
 .form-group{position:relative;display:inline-block;vertical-align:middle}
 .form-group .invalid_txt{position:absolute;left:1.1rem;top:3.6rem;font-size:1rem;color:var(--color-negative)}
@@ -470,7 +470,6 @@ input, select{font-family:'KoreanAirSans'}
 .toggle .btn-tg{position:relative;font-family:"KoreanAirSans";font-size:1.6rem;color:var(--color-darkblue-100);background-color:var(--color-neutral-10);text-align:left;width:100%}
 .toggle .btn-tg:after{position:absolute;top:50%;right:0;content:'';display:inline-block;width:0.7rem;height:0.7rem;margin:0 0 0 1.3rem;border: solid var(--color-darkblue-100);border-width: 0 0.1rem 0.1rem 0;-webkit-transform: translateY(-50%) rotate(45deg);transform: translateY(-50%) rotate(45deg);-webkit-transform-origin: center;transform-origin:center}
 .toggle .active .btn-tg:after{-webkit-transform:translateY(-50%) rotate(-135deg);transform:translateY(-50%) rotate(-135deg)}
-.toggle .active .tg-conts{display:block}
 .toggle .active .tg-conts{display:block}
 
 /*pagination*/
