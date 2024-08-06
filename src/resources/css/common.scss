@@ -367,7 +367,7 @@ input, select{font-family:'KoreanAirSans'}
 .menu-tab{display:flex;flex-wrap:nowrap;margin:0 0 3.0rem 0;border-radius:0.8rem;overflow: auto hidden;scroll-behavior:smooth;gap:1.2rem 0}
 .menu-tab:after{content:'';display:block;clear:both}
 .menu-tab a:last-child{border-top-right-radius:0.8rem;border-bottom-right-radius:0.8rem}
-.menu-tab a{display:inline-flex;font-size:1.8rem;line-height:1.5;min-height:4.4rem;border:1px solid var(--color-neutral-40);background-color:var(--color-neutral-10);color:var(--color-neutral-80);padding:0 1.5rem;align-items:center;justify-content:center;text-align:center}
+.menu-tab a{display:inline-flex;font-size:1.6rem;line-height:1.5;min-height:4.4rem;border:1px solid var(--color-neutral-40);background-color:var(--color-neutral-10);color:var(--color-neutral-80);padding:0 1.5rem;align-items:center;justify-content:center;text-align:center}
 .menu-tab a.active{background-color:var(--color-darkblue-100);color:var(--color-neutral-10)}
 
 /*AUDIT-체크리스트 상단 탭*/
@@ -392,13 +392,16 @@ input, select{font-family:'KoreanAirSans'}
 .conts-subTit{width:100%;line-height:3.5rem;padding-bottom:1.0rem}
 .conts-subTit span{font-size:1.5rem}
 
-/*검색영역-접기펴기 버튼영역*/
-.TopButton-area{position:relative;/*padding-top:2.0rem*/}
-.TopButton-area .btn-fold{position:absolute;left:50%;top:1.5rem;transform:translate(-50%, -50%);z-index:999;width:5rem;height:5rem; background: url(../images/icon-arrow-up.svg) center center no-repeat;/*background-color:var(--color-neutral-30);*/background-size:3.5rem;border-radius: 50%}
-.TopButton-area .btn-fold.open{position:absolute;left:50%;top:0;bottom:-3.0rem;transform:translate(-50%, -50%);background: url(../images/icon-arrow-down.svg) center center no-repeat;width:5rem;height:5rem;background-size:3.5rem}
-.TopButton-area .boxForm .area-detail{display:none;position:relative;width:100%; /* overflow:hidden;height:10px;*/}
+/*검색영역-접기펴기 버튼영역
+.TopButton-area{position:relative}*/
+.btn-fold{position:absolute;left:50%;top:1.5rem;transform:translate(-50%, -50%);z-index:999;width:5rem;height:5rem; background: url(../images/icon-arrow-up.svg) center center no-repeat;/*background-color:var(--color-neutral-30);*/background-size:3.5rem;border-radius: 50%}
+.btn-fold.open{position:absolute;left:50%;top:0;bottom:-3.0rem;transform:translate(-50%, -50%);background: url(../images/icon-arrow-down.svg) center center no-repeat;width:5rem;height:5rem;background-size:3.5rem}
+.boxForm .area-detail{display:none;position:relative;width:100%; /* overflow:hidden;height:10px;*/}
 
-.TopButton-area .boxForm .area-detail.open{display:block;width:100%;}
+.boxForm .area-detail.open{display:block;width:100%}
+.button.__small{}
+.boxForm button.arrow
+
 
 .form-group{position:relative;display:inline-block;vertical-align:middle}
 .form-group .invalid_txt{position:absolute;left:1.1rem;top:3.6rem;font-size:1rem;color:var(--color-negative)}
