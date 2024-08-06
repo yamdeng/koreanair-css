@@ -317,6 +317,7 @@ input, select{font-family:'KoreanAirSans'}
     }
   }
 }
+
 /*탭*/
 .menu-tab-nav{display:flex}
 .menu-tab{display:flex;flex-wrap:nowrap;margin:0 0 3.0rem 0;border-radius:0.8rem;overflow: auto hidden;scroll-behavior:smooth;gap:1.2rem 0}
@@ -329,7 +330,6 @@ input, select{font-family:'KoreanAirSans'}
   display: flex;
   align-self: stretch;border:solid 1px red
 }
-
 
 
 
@@ -351,9 +351,7 @@ input, select{font-family:'KoreanAirSans'}
 
 /*검색영역-접기펴기 버튼영역*/
 .TopButton-area{position:relative;/*padding-top:2.0rem*/}
-.TopButton-area .btn-fold{position:absolute;left:50%;transform: translate(-50%, -50%);bottom:-5.0rem;z-index:999;width:5rem;height:5rem; background: url(../images/icon-arrow-up.svg) center center no-repeat; background-color: var(--color-neutral-30); background-size:3.5rem; border-radius: 50%;}
-/*.btn-fold::after{content:'접기';font-weight:400}
-.btn-fold.open::after{content:'펴기';font-weight:400}*/
+.TopButton-area .btn-fold{position:absolute;left:50%;transform: translate(-50%, -50%);bottom:-3.0rem;z-index:999;width:5rem;height:5rem; background: url(../images/icon-arrow-up.svg) center center no-repeat;background-color:var(--color-neutral-30);background-size:3.5rem;border-radius: 50%}
 .TopButton-area .btn-fold.open{border:0.1rem solid var(--color-neutral-40);color:var(--color-neutral-8)}
 
 .form-group{position:relative;display:inline-block;vertical-align:middle}
