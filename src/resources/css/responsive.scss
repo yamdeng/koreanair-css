@@ -73,7 +73,10 @@
   .checklist-contents {display: flex; align-items: flex-end; justify-content: flex-start; flex-wrap: wrap; width: 100%;}
   .checklist-contents .checklist-row.list {display: flex; align-items: flex-end; justify-content: flex-start; flex-wrap: wrap; width: 100%; padding-right: 0; margin: 0;}
   .notice-board th, colgroup {display: none;}
-  .notice-board tr {}}
+  .notice-board tr {display: flex; flex-wrap: wrap;}
+  .notice-board td {display: inline-block; border-bottom: 0;}
+  .notice-board td:nth-child(1) {}
+  .notice-board td:nth-child(2) {width: 100%;}
 }
 
 
