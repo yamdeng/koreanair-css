@@ -62,14 +62,6 @@
   .contents-btns > button {width: 100%;}
 
   .checklist-contents {}
-
-  /*등록테이블이 2개일경우
-  .detail-form .detail-list .list{display:block;position:relative;width:100%;padding:1.5rem 0;border-bottom:solid 0.1rem var(--color-neutral-40)}
-  .detail-list{width:100%}
-  .detail-list .list{display:block;width:100%}
-  .detail-list .list .list-row{display:inline-block;position:relative;width:100%;margin-left:0}
-  .detail-form .detail-list .list .list-row + .list-row{margin-left:0;margin-top:2.0rem}*/
-
   .checklist-contents {display: flex; align-items: flex-end; justify-content: flex-start; flex-wrap: wrap; width: 100%;}
   .checklist-contents .checklist-row.list {display: flex; align-items: flex-end; justify-content: flex-start; flex-wrap: wrap; width: 100%; padding-right: 0; margin: 0;}
   .notice-board th, colgroup {display: none;}

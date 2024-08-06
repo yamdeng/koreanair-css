@@ -317,13 +317,20 @@ input, select{font-family:'KoreanAirSans'}
     }
   }
 }
-
 /*탭*/
+.menu-tab-nav{display:flex}
 .menu-tab{display:flex;flex-wrap:nowrap;margin:0 0 3.0rem 0;border-radius:0.8rem;overflow: auto hidden;scroll-behavior:smooth;gap:1.2rem 0}
 .menu-tab:after{content:'';display:block;clear:both}
 .menu-tab a:last-child{border-top-right-radius:0.8rem;border-bottom-right-radius:0.8rem}
-.menu-tab a{display:inline-flex;font-size:1.8rem;line-height:1.5;min-width:19rem;min-height:4.4rem;border:1px solid var(--color-neutral-40);background-color:var(--color-neutral-10);color:var(--color-neutral-80);padding:0 1.5rem;align-items:center;justify-content:center;text-align:center}
+.menu-tab a{display:inline-flex;font-size:1.8rem;line-height:1.5;min-height:4.4rem;border:1px solid var(--color-neutral-40);background-color:var(--color-neutral-10);color:var(--color-neutral-80);padding:0 1.5rem;align-items:center;justify-content:center;text-align:center}
 .menu-tab a.active{background-color:var(--color-darkblue-100);color:var(--color-neutral-10)}
+.menu-tab-nav > .menu-tab-nav-more{position:relative;padding:0.8rem 1.6rem;background-color:transparent;border:solid 1px red}
+.menu-tab-nav>.menu-tab .ant-tabs-nav-operations{height:44px;
+  display: flex;
+  align-self: stretch;border:solid 1px red
+}
+
+
 
 
 
