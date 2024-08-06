@@ -1,21 +1,83 @@
-import { useState } from 'react';
-import AppSearchInput from '@/components/common/AppSearchInput';
-import AppSelect from '@/components/common/AppSelect';
+import AppAutoComplete from '@/components/common/AppAutoComplete';
 import AppDatePicker from '@/components/common/AppDatePicker';
+import AppEditor from '@/components/common/AppEditor';
+import AppSelect from '@/components/common/AppSelect';
+import AppTextArea from '@/components/common/AppTextArea';
+import AppTextInput from '@/components/common/AppTextInput';
+import AppTimePicker from '@/components/common/AppTimePicker';
+import AppTreeSelect from '@/components/common/AppTreeSelect';
+import { DatePicker } from 'antd';
+import { useState } from 'react';
 
-function POccupationPortal2input() {
-  const [inputValue, setInputValue] = useState('');
+function POccupationPortal2edit() {
   return (
     <>
       <div className="conts-title">
         <h2>공지사항</h2>
       </div>
-      {/*등록 */}
+      {/* 입력영역 */}
       <div className="editbox">
-        <div className="form-table"></div>
-      </div>
+        <div className="form-table">
+          <div className="form-cell wid50">
+            <div className="form-group wid100 mr5">
+              <AppTextInput label="본부" />
+            </div>
+          </div>
+          <div className="form-cell wid50">
+            <div className="form-group wid100 mr5">
+              <AppTextInput label="등록자" />
+            </div>
+          </div>
+          <div className="form-cell wid50">
+            <div className="form-group wid100 mr5">
+              <AppTextInput disabled label="등록일자" />
+            </div>
+          </div>
+          <div className="form-cell wid50">
+            <div className="form-group wid100">
+              <AppSelect label={'KSMS 사이렌 여부'} />
+            </div>
+          </div>
+          <div className="form-cell wid50">
+            <div className="form-group wid100">
+              <AppSelect label={'상위 표출 여부'} />
+            </div>
+          </div>
+        </div>
+        <hr className="line"></hr>
+        <div className="form-table">
+          <div className="form-cell wid100">
+            <div className="form-group wid100 mr5">
+              <AppTextInput label="제목" />
+            </div>
+          </div>
+        </div>
+        <hr className="line"></hr>
+        <div className="form-table">
+          <div className="form-cell wid50">
+            <div className="form-group wid100 mr5">
+              <AppEditor placeholder="입력해주세요." />
+            </div>
+          </div>
+        </div>
+        <hr className="line"></hr>
+        <div className="form-table">
+          <div className="form-cell wid100">
+            <div className="form-group wid100 mr5">
+              <div className="filebox">
+                <input type="file" id="file" />
+                <input className="upload-name" value="첨부파일" placeholder="첨부파일" />
+                <label htmlFor="file">파일찾기</label>
 
-      {/*//등록 */}
+                <button>추가</button>
+                <button>삭제</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr className="line"></hr>
+      </div>
+      {/*//입력영역*/}
       {/* 하단버튼영역 */}
       <div className="contents-btns">
         <button type="button" name="button" className="btn_text text_color_neutral-10 btn_confirm">
@@ -36,4 +98,4 @@ function POccupationPortal2input() {
   );
 }
 
-export default POccupationPortal2input;
+export default POccupationPortal2edit;

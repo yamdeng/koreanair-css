@@ -52,7 +52,7 @@ function POccupationPortal2() {
       </div>
       {/* //검색영역 */}
       {/*그리드영역 */}
-      <div className="">
+      <div>
         <table className="notice-board">
           <colgroup>
             <col width="10%" />
