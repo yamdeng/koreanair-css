@@ -65,10 +65,12 @@
   .checklist-contents {display: flex; align-items: flex-end; justify-content: flex-start; flex-wrap: wrap; width: 100%;}
   .checklist-contents .checklist-row.list {display: flex; align-items: flex-end; justify-content: flex-start; flex-wrap: wrap; width: 100%; padding-right: 0; margin: 0;}
   .notice-board th, colgroup {display: none;}
-  .notice-board tr {display: flex; flex-wrap: wrap;}
+  .notice-board tr {display: flex; flex-wrap: wrap; border-bottom: 0.1rem solid var(--color-neutral-30);}
   .notice-board td {display: inline-block; border-bottom: 0;}
-  .notice-board td:nth-child(1) {}
-  .notice-board td:nth-child(2) {width: 100%;}
+  .notice-board td:nth-child(1) {width: 5.0rem; display: flex; align-items: center; justify-content:center}
+  .notice-board td:nth-child(2) {width: calc(100% - 5.0rem);}
+  .notice-board td:nth-child(3) {font-size: 1.4rem; padding: 0 1.0rem 1.0rem 5.0rem;}
+  .notice-board td:nth-child(4) {font-size: 1.4rem; padding: 0 0 1.0rem;}
 }
 
 
