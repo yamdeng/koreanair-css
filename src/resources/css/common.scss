@@ -462,16 +462,16 @@ input, select{font-family:'KoreanAirSans'}
 .ag-header-cell-text{color:var(--color-darkblue-100) !important;}
 .ag-header-cell-label{display:inline;text-align:center;flex: 1 auto;align-self:auto}
 .ag-theme-quartz{border-top:solid 1px var(--color-darkblue-100)}
-:where(.css-dev-only-do-not-override-98ntnt).ant-picker .ant-picker-input >input{line-height:2.5rem}
-:where(.css-dev-only-do-not-override-98ntnt).ant-picker .ant-picker-input{display:flex}
-:where(.css-dev-only-do-not-override-98ntnt).ant-picker-outlined{border:0.1rem solid var(--color-neutral-40)}
-:where(.css-dev-only-do-not-override-98ntnt).ant-select-single .ant-select-selector{line-height:4rem}
-:where(.css-dev-only-do-not-override-98ntnt).ant-select-single{height:4rem !important}
+.ant-picker .ant-picker-input >input{line-height:2.5rem}
+.ant-picker .ant-picker-input{display:flex}
+.ant-picker-outlined{border:0.1rem solid var(--color-neutral-40)}
+.ant-select-single .ant-select-selector{line-height:4rem}
+.ant-select-single{height:4rem !important}
 :where(.css-dev-only-do-not-override-98ntnt)[class^="ant-select"] [class^="ant-select"], :where(.css-dev-only-do-not-override-98ntnt)[class*=" ant-select"] [class^="ant-select"]{color:var(--color-mblue-100)}
 .label-select.focused + .f-label, .label-select.ant-select-focused + .f-label, .label-select.selected + .f-label, .label-picker.ant-picker-focused + .f-label, .label-picker.selected + .f-label {left:1rem;top:-1rem}
-:where(.css-dev-only-do-not-override-98ntnt).ant-picker{height:4rem}
-:where(.css-dev-only-do-not-override-98ntnt).ant-picker{padding:4px 20px 4px !important;width: 100%;}
-:where(.css-dev-only-do-not-override-98ntnt).ant-select{min-height:4rem !important}
+.ant-picker{height:4rem}
+.ant-picker{padding:4px 20px 4px !important;width: 100%;}
+.ant-select{min-height:4rem !important}
 .ant-select-selector {
   min-height:4rem !important
 }
@@ -493,14 +493,14 @@ input, select{font-family:'KoreanAirSans'}
 }
 
 /*폼아이콘변경*/
-:where(.css-dev-only-do-not-override-98ntnt).ant-select .ant-select-arrow .anticon >svg {background: url(../images/arrow-down.svg)center center no-repeat; background-size: cover;}
-:where(.css-dev-only-do-not-override-98ntnt).ant-select .ant-select-arrow .anticon >svg path {display: none;}
-:where(.css-dev-only-do-not-override-98ntnt).ant-picker .ant-picker-suffix .anticon svg {background: url(../images/calendar.svg)center center no-repeat; background-size: cover; width: 2.4rem; height: 2.4rem;}
-:where(.css-dev-only-do-not-override-98ntnt).ant-picker .ant-picker-suffix .anticon svg path {display: none;}
-:where(.css-dev-only-do-not-override-98ntnt).ant-picker .ant-picker-suffix .anticon-clock-circle svg {background: url(../images/arrival-time.svg)center center no-repeat; background-size: cover;}
-:where(.css-dev-only-do-not-override-98ntnt).ant-picker .ant-picker-suffix .anticon-clock-circle svg path {display: none;}
+.ant-select .ant-select-arrow .anticon >svg {background: url(../images/arrow-down.svg)center center no-repeat; background-size: cover;}
+.ant-select .ant-select-arrow .anticon >svg path {display: none;}
+.ant-picker .ant-picker-suffix .anticon svg {background: url(../images/calendar.svg)center center no-repeat; background-size: cover; width: 2.4rem; height: 2.4rem;}
+.ant-picker .ant-picker-suffix .anticon svg path {display: none;}
+.ant-picker .ant-picker-suffix .anticon-clock-circle svg {background: url(../images/arrival-time.svg)center center no-repeat; background-size: cover;}
+.ant-picker .ant-picker-suffix .anticon-clock-circle svg path {display: none;}
 .css-tj5bde-Svg {background: url(../images/icon-arrow-down.svg)center center no-repeat; background-size: cover;}
 .css-tj5bde-Svg path {display: none;}
 
 /*공통컴포넌트 달력 숫자 센터정렬*/
-:where(.css-dev-only-do-not-override-98ntnt).ant-picker-dropdown .ant-picker-cell .ant-picker-cell-inner{text-align:center !important}
+.ant-picker-dropdown .ant-picker-cell .ant-picker-cell-inner{text-align:center !important}
