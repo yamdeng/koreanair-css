@@ -33,21 +33,21 @@ function SPIInfo1() {
         <div className="boxForm">
           <div className="form-table">
             <div className="form-cell wid50">
-              <div className="form-group form-glow">
+              <div className="form-group wid30">
                 <div className="row1">
                   <div className="date1">
                     <AppDatePicker label="date1" required />
                   </div>
-                  <div className="btn-area">
-                    <button type="button" name="button" className="btn-sm btn_text btn-darkblue-line">
-                      조회
-                    </button>
-                    <button type="button" name="button" className="btn-sm btn_text btn-darkblue-line">
-                      초기화
-                    </button>
-                  </div>
                 </div>
               </div>
+            </div>
+            <div className="btn-area">
+              <button type="button" name="button" className="btn-sm btn_text btn-darkblue-line">
+                조회
+              </button>
+              <button type="button" name="button" className="btn-sm btn_text btn-darkblue-line">
+                초기화
+              </button>
             </div>
           </div>
         </div>

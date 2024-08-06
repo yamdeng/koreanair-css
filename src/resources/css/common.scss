@@ -357,6 +357,7 @@ input, select{font-family:'KoreanAirSans'}
 .form-group{position:relative;display:inline-block;vertical-align:middle}
 .form-group .invalid_txt{position:absolute;left:1.1rem;top:3.6rem;font-size:1rem;color:var(--color-negative)}
 .form-group .invalid-txt.textarea{top: 201px}
+.form-group .row1{display:flex}
 
 .form-group .list{}
 .form-group .list li{position:relative;text-overflow:ellipsis;white-space:nowrap;overflow:hidden}
@@ -403,10 +404,9 @@ input, select{font-family:'KoreanAirSans'}
   background-size: cover;
   border: none;
   outline: none;
-  cursor: pointer;
-}
+  cursor: pointer}
 
-.form-group .df.row1{justify-content: center;}
+.form-group .df.row1{justify-content:center}
 .form-group .df.row1 > .btn-area{padding-top:0}
 
 /*상세리스트*/
