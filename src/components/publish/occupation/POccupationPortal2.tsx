@@ -71,8 +71,8 @@ function POccupationPortal2() {
             <td className="left">
               <a href="javascript:void(0);">제목입니다.</a>
             </td>
-            <td>산업안전</td>
-            <td>2024-08-05</td>
+            <td className="department">산업안전</td>
+            <td className="date">2024-08-05</td>
           </tr>
           <tr className="fix-bg">
             <td className="fix">상위노출</td>
