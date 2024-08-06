@@ -325,11 +325,10 @@ input, select{font-family:'KoreanAirSans'}
 .menu-tab a:last-child{border-top-right-radius:0.8rem;border-bottom-right-radius:0.8rem}
 .menu-tab a{display:inline-flex;font-size:1.8rem;line-height:1.5;min-height:4.4rem;border:1px solid var(--color-neutral-40);background-color:var(--color-neutral-10);color:var(--color-neutral-80);padding:0 1.5rem;align-items:center;justify-content:center;text-align:center}
 .menu-tab a.active{background-color:var(--color-darkblue-100);color:var(--color-neutral-10)}
-.menu-tab-nav > .menu-tab-nav-more{position:relative;padding:0.8rem 1.6rem;background-color:transparent;border:solid 1px red}
-.menu-tab-nav>.menu-tab .ant-tabs-nav-operations{height:44px;
-  display: flex;
-  align-self: stretch;border:solid 1px red
-}
+
+/*AUDIT-체크리스트 상단 탭*/
+.menu-tab-nav > .menu-tab-nav-operations{display:flex;position:relative;align-self:stretch}
+.menu-tab-nav > .menu-tab-nav-operations .menu-tab-nav-more{position:absolute;left:1rem;top:0.5rem;width:3.2rem;height:3.2rem;font-size:0;background:url(../images/icon-option.svg)center center no-repeat;align-items:center}
 
 
 

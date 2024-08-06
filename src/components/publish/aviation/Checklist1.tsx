@@ -43,8 +43,8 @@ function SPIInfo1() {
           </a>
         </div>
         <div className="menu-tab-nav-operations">
-          <button type="button" className="menu-tab-nav-more">
-            <img src="" alt="이미지" />
+          <button type="button" name="button" className="menu-tab-nav-more">
+            <span className="hide">더보기</span>
           </button>
         </div>
       </div>
@@ -66,7 +66,7 @@ function SPIInfo1() {
             <h4>
               <label>
                 <button type="button" name="button" className="btn-list">
-                  <span></span>
+                  <span className="hide">등록</span>
                 </button>
                 <a href="javascript:void(0);">
                   <span>해외공항 원격 안전평가 점검표 (ko)10</span>
@@ -75,37 +75,49 @@ function SPIInfo1() {
             </h4>
             <ul>
               <li className="list-space">
-                <button type="button" className="btn-list editChapter"></button>
+                <button type="button" className="btn-list editChapter">
+                  <span className="hide">등록</span>
+                </button>
                 <a href="javascript:void(0);">
                   안전보안일반12 <i>(29)</i>
                 </a>
               </li>
               <li className="list-space">
-                <button type="button" className="btn-list editChapter"></button>
+                <button type="button" className="btn-list editChapter">
+                  <span className="hide">등록</span>
+                </button>
                 <a href="javascript:void(0);">
                   종합통제12 <i>(29)</i>
                 </a>
               </li>
               <li className="list-space">
-                <button type="button" className="btn-list editChapter"></button>
+                <button type="button" className="btn-list editChapter">
+                  <span className="hide">등록</span>
+                </button>
                 <a href="javascript:void(0);">
                   정비관리12 <i>(50)</i>
                 </a>
               </li>
               <li className="list-space">
-                <button type="button" className="btn-list editChapter"></button>
+                <button type="button" className="btn-list editChapter">
+                  <span className="hide">등록</span>
+                </button>
                 <a href="javascript:void(0);">
                   여객운송12 <i>(29)</i>
                 </a>
               </li>
               <li className="list-space">
-                <button type="button" className="btn-list editChapter"></button>
+                <button type="button" className="btn-list editChapter">
+                  <span className="hide">등록</span>
+                </button>
                 <a href="javascript:void(0);">
                   여객운송12 <i>(29)</i>
                 </a>
               </li>
               <li className="list-space">
-                <button type="button" className="btn-list editChapter"></button>
+                <button type="button" className="btn-list editChapter">
+                  <span className="hide">등록</span>
+                </button>
                 <a href="javascript:void(0);">
                   여객운송12 <i>(29)</i>
                 </a>
@@ -119,7 +131,7 @@ function SPIInfo1() {
             <h4>
               <label>
                 <button type="button" name="button" className="btn-list">
-                  <span></span>
+                  <span className="hide">등록</span>
                 </button>
                 <a href="javascript:void(0);">
                   <span>해외공항 안전평가 점검표 (ko)12</span>
@@ -128,37 +140,49 @@ function SPIInfo1() {
             </h4>
             <ul>
               <li className="list-space">
-                <button type="button" className="btn-list editChapter"></button>
+                <button type="button" className="btn-list editChapter">
+                  <span className="hide">등록</span>
+                </button>
                 <a href="javascript:void(0);">
                   안전보안일반12 <i>(29)</i>
                 </a>
               </li>
               <li className="list-space">
-                <button type="button" className="btn-list editChapter"></button>
+                <button type="button" className="btn-list editChapter">
+                  <span className="hide">등록</span>
+                </button>
                 <a href="javascript:void(0);">
                   종합통제12 <i>(29)</i>
                 </a>
               </li>
               <li className="list-space">
-                <button type="button" className="btn-list editChapter"></button>
+                <button type="button" className="btn-list editChapter">
+                  <span className="hide">등록</span>
+                </button>
                 <a href="javascript:void(0);">
                   정비관리12 <i>(50)</i>
                 </a>
               </li>
               <li className="list-space">
-                <button type="button" className="btn-list editChapter"></button>
+                <button type="button" className="btn-list editChapter">
+                  <span className="hide">등록</span>
+                </button>
                 <a href="javascript:void(0);">
                   여객운송12 <i>(29)</i>
                 </a>
               </li>
               <li className="list-space">
-                <button type="button" className="btn-list editChapter"></button>
+                <button type="button" className="btn-list editChapter">
+                  <span className="hide">등록</span>
+                </button>
                 <a href="javascript:void(0);">
                   여객운송12 <i>(29)</i>
                 </a>
               </li>
               <li className="list-space">
-                <button type="button" className="btn-list editChapter"></button>
+                <button type="button" className="btn-list editChapter">
+                  <span className="hide">등록</span>
+                </button>
                 <a href="javascript:void(0);">
                   램프운영12 <i>(29)</i>
                 </a>
@@ -172,7 +196,7 @@ function SPIInfo1() {
             <h4>
               <label>
                 <button type="button" name="button" className="btn-list">
-                  <span></span>
+                  <span className="hide">등록</span>
                 </button>
                 <a href="javascript:void(0);">
                   <span>해외공항 원격 안전평가 점검표 (en)5</span>
@@ -181,37 +205,49 @@ function SPIInfo1() {
             </h4>
             <ul>
               <li className="list-space">
-                <button type="button" className="btn-list editChapter"></button>
+                <button type="button" className="btn-list editChapter">
+                  <span className="hide">등록</span>
+                </button>
                 <a href="javascript:void(0);">
                   안전보안일반 <i>(29)</i>
                 </a>
               </li>
               <li className="list-space">
-                <button type="button" className="btn-list editChapter"></button>
+                <button type="button" className="btn-list editChapter">
+                  <span className="hide">등록</span>
+                </button>
                 <a href="javascript:void(0);">
                   종합통제12 <i>(29)</i>
                 </a>
               </li>
               <li className="list-space">
-                <button type="button" className="btn-list editChapter"></button>
+                <button type="button" className="btn-list editChapter">
+                  <span className="hide">등록</span>
+                </button>
                 <a href="javascript:void(0);">
                   정비관리12 <i>(50)</i>
                 </a>
               </li>
               <li className="list-space">
-                <button type="button" className="btn-list editChapter"></button>
+                <button type="button" className="btn-list editChapter">
+                  <span className="hide">등록</span>
+                </button>
                 <a href="javascript:void(0);">
                   여객운송12 <i>(29)</i>
                 </a>
               </li>
               <li className="list-space">
-                <button type="button" className="btn-list editChapter"></button>
+                <button type="button" className="btn-list editChapter">
+                  <span className="hide">등록</span>
+                </button>
                 <a href="javascript:void(0);">
                   여객운송12 <i>(29)</i>
                 </a>
               </li>
               <li className="list-space">
-                <button type="button" className="btn-list editChapter"></button>
+                <button type="button" className="btn-list editChapter">
+                  <span className="hide">등록</span>
+                </button>
                 <a href="javascript:void(0);">
                   여객운송12 <i>(29)</i>
                 </a>
@@ -225,7 +261,7 @@ function SPIInfo1() {
             <h4>
               <label>
                 <button type="button" name="button" className="btn-list">
-                  <span></span>
+                  <span className="hide">등록</span>
                 </button>
                 <a href="javascript:void(0);">
                   <span>해외공항 원격 안전평가 점검표 (ko)10</span>
@@ -234,37 +270,49 @@ function SPIInfo1() {
             </h4>
             <ul>
               <li className="list-space">
-                <button type="button" className="btn-list editChapter"></button>
+                <button type="button" className="btn-list editChapter">
+                  <span className="hide">등록</span>
+                </button>
                 <a href="javascript:void(0);">
                   안전보안일반2 <i>(11)</i>
                 </a>
               </li>
               <li className="list-space">
-                <button type="button" className="btn-list editChapter"></button>
+                <button type="button" className="btn-list editChapter">
+                  <span className="hide">등록</span>
+                </button>
                 <a href="javascript:void(0);">
                   종합통제2 <i>(29)</i>
                 </a>
               </li>
               <li className="list-space">
-                <button type="button" className="btn-list editChapter"></button>
+                <button type="button" className="btn-list editChapter">
+                  <span className="hide">등록</span>
+                </button>
                 <a href="javascript:void(0);">
                   정비관리12 <i>(50)</i>
                 </a>
               </li>
               <li className="list-space">
-                <button type="button" className="btn-list editChapter"></button>
+                <button type="button" className="btn-list editChapter">
+                  <span className="hide">등록</span>
+                </button>
                 <a href="javascript:void(0);">
                   여객운송12 <i>(29)</i>
                 </a>
               </li>
               <li className="list-space">
-                <button type="button" className="btn-list editChapter"></button>
+                <button type="button" className="btn-list editChapter">
+                  <span className="hide">등록</span>
+                </button>
                 <a href="javascript:void(0);">
                   여객운송12 <i>(29)</i>
                 </a>
               </li>
               <li className="list-space">
-                <button type="button" className="btn-list editChapter"></button>
+                <button type="button" className="btn-list editChapter">
+                  <span className="hide">등록</span>
+                </button>
                 <a href="javascript:void(0);">
                   여객운송12 <i>(29)</i>
                 </a>
@@ -278,7 +326,7 @@ function SPIInfo1() {
             <h4>
               <label>
                 <button type="button" name="button" className="btn-list">
-                  <span></span>
+                  <span className="hide">등록</span>
                 </button>
                 <a href="javascript:void(0);">
                   <span>객실 승무편조 안전평가 점검표</span>
@@ -287,19 +335,25 @@ function SPIInfo1() {
             </h4>
             <ul>
               <li className="list-space">
-                <button type="button" className="btn-list editChapter"></button>
+                <button type="button" className="btn-list editChapter">
+                  <span className="hide">등록</span>
+                </button>
                 <a href="javascript:void(0);">
                   승무편조3-1 <i>(2)</i>
                 </a>
               </li>
               <li className="list-space">
-                <button type="button" className="btn-list editChapter"></button>
+                <button type="button" className="btn-list editChapter">
+                  <span className="hide">등록</span>
+                </button>
                 <a href="javascript:void(0);">
                   편조규정3 <i>(2)</i>
                 </a>
               </li>
               <li className="list-space">
-                <button type="button" className="btn-list editChapter"></button>
+                <button type="button" className="btn-list editChapter">
+                  <span className="hide">등록</span>
+                </button>
                 <a href="javascript:void(0);">
                   편조시스템 운용3 <i>(2)</i>
                 </a>
@@ -313,7 +367,7 @@ function SPIInfo1() {
             <h4>
               <label>
                 <button type="button" name="button" className="btn-list">
-                  <span></span>
+                  <span className="hide">등록</span>
                 </button>
                 <a href="javascript:void(0);">
                   <span>운항승무원편조 및 승무자격 안전평가 점검표 | 운항승무원편조 및 승무자격 안전평가 점검표</span>
@@ -322,19 +376,107 @@ function SPIInfo1() {
             </h4>
             <ul>
               <li className="list-space">
-                <button type="button" className="btn-list editChapter"></button>
+                <button type="button" className="btn-list editChapter">
+                  <span className="hide">등록</span>
+                </button>
                 <a href="javascript:void(0);">
                   승무편조 일반 승무편조 일반 승무편조 일반 승무편조 일반 승무편조 일반 <i>(4)</i>
                 </a>
               </li>
               <li className="list-space">
-                <button type="button" className="btn-list editChapter"></button>
+                <button type="button" className="btn-list editChapter">
+                  <span className="hide">등록</span>
+                </button>
                 <a href="javascript:void(0);">
                   편조규정3 <i>(2)</i>
                 </a>
               </li>
               <li className="list-space">
-                <button type="button" className="btn-list editChapter"></button>
+                <button type="button" className="btn-list editChapter">
+                  <span className="hide">등록</span>
+                </button>
+                <a href="javascript:void(0);">
+                  편조시스템 운용 <i>(2)</i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div className="checklist-row list">
+          <div className="checklist-col">
+            <h4>
+              <label>
+                <button type="button" name="button" className="btn-list">
+                  <span className="hide">등록</span>
+                </button>
+                <a href="javascript:void(0);">
+                  <span>운항승무원편조 및 승무자격 안전평가 점검표 | 운항승무원편조 및 승무자격 안전평가 점검표</span>
+                </a>
+              </label>
+            </h4>
+            <ul>
+              <li className="list-space">
+                <button type="button" className="btn-list editChapter">
+                  <span className="hide">등록</span>
+                </button>
+                <a href="javascript:void(0);">
+                  승무편조 일반 승무편조 일반 승무편조 일반 승무편조 일반 승무편조 일반 <i>(4)</i>
+                </a>
+              </li>
+              <li className="list-space">
+                <button type="button" className="btn-list editChapter">
+                  <span className="hide">등록</span>
+                </button>
+                <a href="javascript:void(0);">
+                  편조규정3 <i>(2)</i>
+                </a>
+              </li>
+              <li className="list-space">
+                <button type="button" className="btn-list editChapter">
+                  <span className="hide">등록</span>
+                </button>
+                <a href="javascript:void(0);">
+                  편조시스템 운용 <i>(2)</i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div className="checklist-row list">
+          <div className="checklist-col">
+            <h4>
+              <label>
+                <button type="button" name="button" className="btn-list">
+                  <span className="hide">등록</span>
+                </button>
+                <a href="javascript:void(0);">
+                  <span>운항승무원편조 및 승무자격 안전평가 점검표 | 운항승무원편조 및 승무자격 안전평가 점검표</span>
+                </a>
+              </label>
+            </h4>
+            <ul>
+              <li className="list-space">
+                <button type="button" className="btn-list editChapter">
+                  <span className="hide">등록</span>
+                </button>
+                <a href="javascript:void(0);">
+                  승무편조 일반 승무편조 일반 승무편조 일반 승무편조 일반 승무편조 일반 <i>(4)</i>
+                </a>
+              </li>
+              <li className="list-space">
+                <button type="button" className="btn-list editChapter">
+                  <span className="hide">등록</span>
+                </button>
+                <a href="javascript:void(0);">
+                  편조규정3 <i>(2)</i>
+                </a>
+              </li>
+              <li className="list-space">
+                <button type="button" className="btn-list editChapter">
+                  <span className="hide">등록</span>
+                </button>
                 <a href="javascript:void(0);">
                   편조시스템 운용 <i>(2)</i>
                 </a>
