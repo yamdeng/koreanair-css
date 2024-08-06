@@ -60,15 +60,17 @@ function SPIInfo1() {
       </div>
       {/* //검색영역 */}
 
-      <div className="cont-row checklist-contents">
-        <div className="checklist-row list ">
-          <div className="checklist-col  ">
+      <div className="checklist-contents">
+        <div className="checklist-row list">
+          <div className="checklist-col">
             <h4>
               <label>
-                <button type="button" name="button" className="">
-                  <img src="" />
+                <button type="button" name="button" className="btn-list">
+                  <span></span>
                 </button>
-                <a href="javascript:void(0);">해외공항 원격 안전평가 점검표 (ko)10</a>
+                <a href="javascript:void(0);">
+                  <span>해외공항 원격 안전평가 점검표 (ko)10</span>
+                </a>
               </label>
             </h4>
             <ul>
@@ -128,10 +130,12 @@ function SPIInfo1() {
           <div className="checklist-col">
             <h4>
               <label>
-                <button type="button" name="button" className="">
-                  <img src="" />
+                <button type="button" name="button" className="btn-list">
+                  <span></span>
                 </button>
-                <a href="javascript:void(0);">해외공항 안전평가 점검표 (ko)12</a>
+                <a href="javascript:void(0);">
+                  <span>해외공항 안전평가 점검표 (ko)12</span>
+                </a>
               </label>
             </h4>
             <ul>
@@ -191,10 +195,12 @@ function SPIInfo1() {
           <div className="checklist-col">
             <h4>
               <label>
-                <button type="button" name="button" className="">
-                  <img src="" />
+                <button type="button" name="button" className="btn-list">
+                  <span></span>
                 </button>
-                <a href="javascript:void(0);">해외공항 원격 안전평가 점검표 (en)5</a>
+                <a href="javascript:void(0);">
+                  <span>해외공항 원격 안전평가 점검표 (en)5</span>
+                </a>
               </label>
             </h4>
             <ul>
@@ -254,10 +260,12 @@ function SPIInfo1() {
           <div className="checklist-col">
             <h4>
               <label>
-                <button type="button" name="button" className="">
-                  <img src="" />
+                <button type="button" name="button" className="btn-list">
+                  <span></span>
                 </button>
-                <a href="javascript:void(0);">해외공항 원격 안전평가 점검표 (ko)10</a>
+                <a href="javascript:void(0);">
+                  <span>해외공항 원격 안전평가 점검표 (ko)10</span>
+                </a>
               </label>
             </h4>
             <ul>
@@ -317,10 +325,12 @@ function SPIInfo1() {
           <div className="checklist-col">
             <h4>
               <label>
-                <button type="button" name="button" className="">
-                  <img src="" />
+                <button type="button" name="button" className="btn-list">
+                  <span></span>
                 </button>
-                <a href="javascript:void(0);">객실 승무편조 안전평가 점검표</a>
+                <a href="javascript:void(0);">
+                  <span>객실 승무편조 안전평가 점검표</span>
+                </a>
               </label>
             </h4>
             <ul>
@@ -356,11 +366,11 @@ function SPIInfo1() {
           <div className="checklist-col">
             <h4>
               <label>
-                <button type="button" name="button" className="">
-                  <img src="" />
+                <button type="button" name="button" className="btn-list">
+                  <span></span>
                 </button>
                 <a href="javascript:void(0);">
-                  운항승무원편조 및 승무자격 안전평가 점검표 | 운항승무원편조 및 승무자격 안전평가 점검표
+                  <span>운항승무원편조 및 승무자격 안전평가 점검표 | 운항승무원편조 및 승무자격 안전평가 점검표</span>
                 </a>
               </label>
             </h4>
