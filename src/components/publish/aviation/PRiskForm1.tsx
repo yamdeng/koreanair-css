@@ -15,77 +15,78 @@ function PRiskForm1() {
         <h2>조사보고서</h2>
       </div>
       {/*검색영역 */}
-      <div className="TopButton-area">
-        {/*아코디언 - 펴기 버튼일때 btn-fold명 옆에 open붙이기  */}
-        <button type="button" name="button" className="btn-fold ">
-          <span className="hide">접기</span>
-        </button>
-
+      <div className="TopButton-area ">
         <div className="boxForm">
-          <div className="form-table">
-            <div className="form-cell wid50">
-              <div className="form-group wid100 mr5">
-                <AppSearchInput label="검색 input(엔터키)" />
+          <div id="" className="area-detail open">
+            <div className="form-table">
+              <div className="form-cell wid50">
+                <div className="form-group wid100 mr5">
+                  <AppSearchInput label="검색 input(엔터키)" />
+                </div>
+              </div>
+              <div className="form-cell wid50">
+                <div className="form-group wid100">
+                  <AppSelect label={'select'} />
+                </div>
               </div>
             </div>
-            <div className="form-cell wid50">
-              <div className="form-group wid100">
-                <AppSelect label={'select'} />
+            <div className="form-table">
+              <div className="form-cell ">
+                <div className="form-group wid100">
+                  <AppSelect label={'select'} />
+                </div>
               </div>
-            </div>
-          </div>
-          <div className="form-table">
-            <div className="form-cell ">
-              <div className="form-group wid100">
-                <AppSelect label={'select'} />
-              </div>
-            </div>
-            <div className="form-cell wid50">
-              <div className="form-group form-glow">
-                <div className="df">
-                  <div className="date1">
-                    <AppDatePicker label={'date1'} />
-                  </div>
-                  <span className="unt">~</span>
-                  <div className="date2">
-                    <AppDatePicker label={'date2'} />
+              <div className="form-cell wid50">
+                <div className="form-group form-glow">
+                  <div className="df">
+                    <div className="date1">
+                      <AppDatePicker label={'date1'} />
+                    </div>
+                    <span className="unt">~</span>
+                    <div className="date2">
+                      <AppDatePicker label={'date2'} />
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div className="form-table">
-            <div className="form-cell wid50">
-              <div className="form-group wid100 mr5">
-                {/*Event Class */}
-                <AppSelect label={'Event Class'} />
+            <div className="form-table">
+              <div className="form-cell wid50">
+                <div className="form-group wid100 mr5">
+                  {/*Event Class */}
+                  <AppSelect label={'Event Class'} />
+                </div>
+              </div>
+              <div className="form-cell wid50">
+                <div className="form-group wid100 mr5">
+                  <AppTextInput label="발생공항" />
+                </div>
+              </div>
+              <div className="form-cell wid50">
+                <div className="form-group wid100 mr5">
+                  {/*발생단계 */}
+                  <AppSelect label={'발생단계'} />
+                </div>
               </div>
             </div>
-            <div className="form-cell wid50">
-              <div className="form-group wid100 mr5">
-                <AppTextInput label="발생공항" />
-              </div>
-            </div>
-            <div className="form-cell wid50">
-              <div className="form-group wid100 mr5">
-                {/*발생단계 */}
-                <AppSelect label={'발생단계'} />
-              </div>
+            <div className="btn-area">
+              <button type="button" name="button" className="btn-sm btn_text btn-darkblue-line">
+                조회
+              </button>
+              <button type="button" name="button" className="btn-sm btn_text btn-darkblue-line">
+                초기화
+              </button>
             </div>
           </div>
-          <div className="btn-area">
-            <button type="button" name="button" className="btn-sm btn_text btn-darkblue-line">
-              조회
-            </button>
-            <button type="button" name="button" className="btn-sm btn_text btn-darkblue-line">
-              초기화
-            </button>
-          </div>
+          {/*아코디언 - 펴기 버튼일때 btn-fold명 옆에 open붙이기  */}
+          <button type="button" name="button" className="btn-fold open">
+            <span className="hide">접기</span>
+          </button>
         </div>
       </div>
       {/* //검색영역 */}
 
-      <div>
+      {/*<div>
         <ul className="Report-process">
           <li>
             <span>작성(6)</span>
@@ -100,7 +101,7 @@ function PRiskForm1() {
             <span>종결(10)</span>
           </li>
         </ul>
-      </div>
+      </div>*/}
 
       {/*그리드영역 */}
       <div className="">

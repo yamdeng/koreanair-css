@@ -63,11 +63,13 @@ function POccupationPortal2edit() {
         <hr className="line"></hr>
         <div className="form-table">
           <div className="form-cell wid100">
-            <div className="form-group wid100 mr5">
+            <div className="form-group wid100">
               <div className="filebox">
-                <input type="file" id="file" />
                 <input className="upload-name" value="첨부파일" placeholder="첨부파일" />
-                <label htmlFor="file">파일찾기</label>
+                <input type="file" id="file" />
+                <label htmlFor="file" className="f-label">
+                  파일찾기
+                </label>
 
                 <button>추가</button>
                 <button>삭제</button>
@@ -75,7 +77,6 @@ function POccupationPortal2edit() {
             </div>
           </div>
         </div>
-        <hr className="line"></hr>
       </div>
       {/*//입력영역*/}
       {/* 하단버튼영역 */}
