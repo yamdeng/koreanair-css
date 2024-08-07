@@ -364,7 +364,7 @@ input, select{font-family:'KoreanAirSans'}
 
 /*탭*/
 .menu-tab-nav{display:flex}
-.menu-tab{display:flex;flex-wrap:nowrap;margin:0 0 3.0rem 0;border-radius:0.8rem;overflow: auto hidden;scroll-behavior:smooth;gap:1.2rem 0}
+.menu-tab{display:flex;flex-wrap:nowrap;border-radius:0.8rem;overflow: auto hidden;scroll-behavior:smooth;gap:1.2rem 0}
 .menu-tab:after{content:'';display:block;clear:both}
 .menu-tab a:last-child{border-top-right-radius:0.8rem;border-bottom-right-radius:0.8rem}
 .menu-tab a{display:inline-flex;font-size:1.6rem;line-height:1.5;min-height:4.4rem;border:1px solid var(--color-neutral-40);background-color:var(--color-neutral-10);color:var(--color-neutral-80);padding:0 1.5rem;align-items:center;justify-content:center;text-align:center}
@@ -379,7 +379,7 @@ input, select{font-family:'KoreanAirSans'}
 
 /*검색영역*/
 .info-wrap .edit-area > .boxForm{padding:0}
-.boxForm{position:relative;display:inline-table;width:100%;padding:1.5rem 3rem 3rem;margin-bottom:2.0rem;background-color:var(--color-neutral-20);border-radius:0.8rem}
+.boxForm{position:relative;display:inline-table;width:100%;padding:1.5rem 3rem 1.5rem;margin-bottom:2.0rem;background-color:var(--color-neutral-20);border-radius:0.8rem}
 .boxForm::after{content:'';clear:both;display:block}
 .boxForm .form-table{display:flex;width:100%}
 /*.boxForm .form-table:first-child{padding-top:3rem}*/
@@ -396,12 +396,10 @@ input, select{font-family:'KoreanAirSans'}
 .TopButton-area{position:relative}
 .btn-fold{position:absolute;left:50%;top:1.5rem;transform:translate(-50%, -50%);z-index:999;width:5rem;height:5rem; background: url(../images/icon-arrow-up.svg) center center no-repeat;background-size:3.5rem;border-radius: 50%}
 .btn-fold.active{position:absolute;left:50%;top:0;bottom:-3.0rem;transform:translate(-50%, -50%);background: url(../images/icon-arrow-down.svg) center center no-repeat;width:5rem;height:5rem;background-size:3.5rem}*/
-.boxForm .area-detail{display:none;position:relative;width:100%;margin-top:2.0rem /* overflow:hidden;height:10px;*/}
-
+/*검색영역-접기펴기 버튼영역*/
+.boxForm .area-detail{display:none;position:relative;width:100%}
 .boxForm .area-detail.active{display:block;width:100%}
-.button.__control.active {
-  transform: rotate(180deg);
-}
+.button.__control.active{transform:rotate(180deg)}
 .boxForm button.arrow.button{display:block;width:100%;height:3.6rem;background: url(../images/icon-arrow-down.svg) center center no-repeat}
 
 

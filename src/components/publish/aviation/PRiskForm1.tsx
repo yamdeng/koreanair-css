@@ -16,10 +16,11 @@ function PRiskForm1() {
       </div>
       {/*검색영역 */}
       <div className="boxForm">
+        {/*area-detail명 옆에 active  */}
         <div id="" className="area-detail active">
           <div className="form-table">
             <div className="form-cell wid50">
-              <div className="form-group wid100 mr5">
+              <div className="form-group wid100">
                 <AppSearchInput label="검색 input(엔터키)" />
               </div>
             </div>
@@ -51,18 +52,18 @@ function PRiskForm1() {
           </div>
           <div className="form-table">
             <div className="form-cell wid50">
-              <div className="form-group wid100 mr5">
+              <div className="form-group wid100">
                 {/*Event Class */}
                 <AppSelect label={'Event Class'} />
               </div>
             </div>
             <div className="form-cell wid50">
-              <div className="form-group wid100 mr5">
+              <div className="form-group wid100">
                 <AppTextInput label="발생공항" />
               </div>
             </div>
             <div className="form-cell wid50">
-              <div className="form-group wid100 mr5">
+              <div className="form-group wid100">
                 {/*발생단계 */}
                 <AppSelect label={'발생단계'} />
               </div>
@@ -77,7 +78,7 @@ function PRiskForm1() {
             </button>
           </div>
         </div>
-        {/*아코디언 - 펴기 버튼일때 btn-fold명 옆에 open붙이기  */}
+        {/*__control명 옆에 active  */}
         <button type="button" name="button" className="arrow button __small __control active">
           <span className="hide">접기</span>
         </button>
