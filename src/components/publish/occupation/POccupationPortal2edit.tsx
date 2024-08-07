@@ -19,17 +19,17 @@ function POccupationPortal2edit() {
       <div className="editbox">
         <div className="form-table">
           <div className="form-cell wid50">
-            <div className="form-group wid100 mr5">
+            <div className="form-group wid100">
               <AppTextInput label="본부" />
             </div>
           </div>
           <div className="form-cell wid50">
-            <div className="form-group wid100 mr5">
+            <div className="form-group wid100">
               <AppTextInput label="등록자" />
             </div>
           </div>
           <div className="form-cell wid50">
-            <div className="form-group wid100 mr5">
+            <div className="form-group wid100">
               <AppTextInput disabled label="등록일자" />
             </div>
           </div>
@@ -47,7 +47,7 @@ function POccupationPortal2edit() {
         <hr className="line"></hr>
         <div className="form-table">
           <div className="form-cell wid100">
-            <div className="form-group wid100 mr5">
+            <div className="form-group wid100">
               <AppTextInput label="제목" />
             </div>
           </div>
@@ -55,7 +55,7 @@ function POccupationPortal2edit() {
         <hr className="line"></hr>
         <div className="form-table">
           <div className="form-cell wid50">
-            <div className="form-group wid100 mr5">
+            <div className="form-group wid100">
               <AppEditor placeholder="입력해주세요." />
             </div>
           </div>
@@ -81,9 +81,6 @@ function POccupationPortal2edit() {
       {/*//입력영역*/}
       {/* 하단버튼영역 */}
       <div className="contents-btns">
-        <button type="button" name="button" className="btn_text text_color_neutral-10 btn_confirm">
-          <span className="share">공유</span>
-        </button>
         <button type="button" name="button" className="btn_text text_color_neutral-10 btn_confirm">
           저장
         </button>

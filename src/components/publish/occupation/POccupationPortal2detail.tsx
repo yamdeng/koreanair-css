@@ -10,6 +10,9 @@ function POccupationPortal2detail() {
       {/* 하단버튼영역 */}
       <div className="contents-btns">
         <button type="button" name="button" className="btn_text text_color_neutral-10 btn_confirm">
+          <span className="share">공유</span>
+        </button>
+        <button type="button" name="button" className="btn_text text_color_neutral-10 btn_confirm">
           신규
         </button>
       </div>
