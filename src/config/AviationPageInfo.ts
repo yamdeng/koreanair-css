@@ -7,6 +7,7 @@ import Taxonomy1 from '@/components/publish/aviation/Taxonomy1';
 import SafetyList from '@/components/publish/aviation/SafetyList';
 import SafetyEdit from '@/components/publish/aviation/SafetyEdit';
 import SafetyDetail from '@/components/publish/aviation/SafetyDetail';
+import SafetyManual from '@/components/publish/aviation/SafetyManual';
 
 const AviationPageInfo: any = {};
 
@@ -73,6 +74,13 @@ AviationPageInfo.list = [
     path: 'SafetyDetail',
     description: '',
     success: true,
+  },
+  {
+    title: '[02.안정정책] 안전정책 > 매뉴얼',
+    Component: SafetyManual,
+    path: 'SafetyManual',
+    description: '',
+    success: false,
   },
 ];
 

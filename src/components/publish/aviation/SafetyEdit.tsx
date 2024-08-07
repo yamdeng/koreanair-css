@@ -74,7 +74,7 @@ function SafetyList() {
         <div className="form-table">
           <div className="form-cell wid50">
             <div className="form-group wid100">
-              <AppSelect label={'정책구분'} />
+              <AppSelect label={'정책구분'} required />
             </div>
           </div>
         </div>
@@ -82,7 +82,7 @@ function SafetyList() {
         <div className="form-table">
           <div className="form-cell wid100">
             <div className="form-group wid100">
-              <AppTextInput label="제목" />
+              <AppTextInput label="제목" required />
             </div>
           </div>
         </div>
@@ -98,7 +98,7 @@ function SafetyList() {
         <div className="form-table">
           <div className="form-cell wid100">
             <div className="form-group wid100">
-              <AppSelect label={'사용여부'} />
+              <AppSelect label={'사용여부'} required />
             </div>
           </div>
         </div>

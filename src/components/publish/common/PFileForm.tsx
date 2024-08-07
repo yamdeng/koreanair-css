@@ -95,7 +95,9 @@ function PBasicForm1() {
           <div className="form-cell wid50">
             <div className="form-group wid100">
               <Upload {...props}>
-                <button>Upload</button>
+                <button type="button" name="button" className="btn_text">
+                  Upload
+                </button>
               </Upload>
             </div>
           </div>
