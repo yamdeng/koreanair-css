@@ -113,8 +113,15 @@ function POccupationMu1P1detail() {
               <div className="box-view-list">
                 <ul className="view-list">
                   <li className="accumlate-list">
-                    <label className="t-label">첨부파일(작업중)</label>
-                    <span className="text-desc-type1">첨부파일입니다.</span>
+                    <label className="t-label">첨부파일</label>
+                    <span className="text-desc-type1">
+                      <div className="desc-file">
+                        <a href="javascript:void(0);">
+                          <span>첨부파일.zip</span>
+                          <span className="download"></span>
+                        </a>
+                      </div>
+                    </span>
                   </li>
                 </ul>
               </div>
