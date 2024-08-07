@@ -4,6 +4,7 @@ import PRiskForm2 from '@/components/publish/aviation/PRiskForm2';
 import SPIInfo1 from '@/components/publish/aviation/SPIInfo1';
 import Checklist1 from '@/components/publish/aviation/Checklist1';
 import Taxonomy1 from '@/components/publish/aviation/Taxonomy1';
+import SafetyList from '@/components/publish/aviation/SafetyList';
 
 const AviationPageInfo: any = {};
 
@@ -47,6 +48,13 @@ AviationPageInfo.list = [
     title: '[07.관리자] HAZARD > Taxonomy',
     Component: Taxonomy1,
     path: 'Taxonomy1',
+    description: '',
+    success: false,
+  },
+  {
+    title: '[07.관리자] 안전정책 > 리스트',
+    Component: SafetyList,
+    path: 'SafetyList',
     description: '',
     success: false,
   },
