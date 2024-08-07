@@ -88,7 +88,7 @@ AviationPageInfo.list = [
     Component: SafetyManualDetail,
     path: 'SafetyManualDetail',
     description: '',
-    success: false,
+    success: true,
   },
 ];
 

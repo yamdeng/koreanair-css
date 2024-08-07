@@ -155,15 +155,11 @@ function SafetyDetail() {
                     <label className="t-label">원문 첨부파일 </label>
                     <span className="text-desc-type1">
                       <div className="desc-file">
-                        <a href="javascript:void(0);" className="">
-                          <span>첨부파일.zip</span>
+                        <a href="javascript:void(0);">
                           <span className="download"></span>
+                          <span>첨부파일.zip</span>
                         </a>
                       </div>
-
-                      {/*<button type="button" className="delete">
-                        X
-                      </button>*/}
                     </span>
                   </li>
                 </ul>
@@ -176,7 +172,14 @@ function SafetyDetail() {
                 <ul className="view-list">
                   <li className="accumlate-list">
                     <label className="t-label">신구대조표 첨부파일</label>
-                    <span className="text-desc-type1">첨부파일.ppt</span>
+                    <span className="text-desc-type1">
+                      <div className="desc-file">
+                        <a href="javascript:void(0);">
+                          <span className="download"></span>
+                          <span>첨부파일.zip</span>
+                        </a>
+                      </div>
+                    </span>
                   </li>
                 </ul>
               </div>
