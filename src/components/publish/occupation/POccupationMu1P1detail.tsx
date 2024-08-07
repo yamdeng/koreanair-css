@@ -1,6 +1,6 @@
 import shareImage from '@/resources/images/share.svg';
 
-function POccupationPortal2detail() {
+function POccupationMu1P1detail() {
   return (
     <>
       <div className="conts-title">
@@ -145,4 +145,4 @@ function POccupationPortal2detail() {
   );
 }
 
-export default POccupationPortal2detail;
+export default POccupationMu1P1detail;
