@@ -97,7 +97,7 @@ function PBasicForm1() {
               <Upload {...props}>
                 <div className="btn-area">
                   <button type="button" name="button" className="btn-big btn_text btn-darkblue-line">
-                    Upload
+                    + Upload
                   </button>
                 </div>
               </Upload>
