@@ -68,7 +68,7 @@ function POccupationPortal2edit() {
                 <input className="upload-name" value="첨부파일" placeholder="첨부파일" />
                 <input type="file" id="file" />
                 <label htmlFor="file" className="f-label">
-                  파일찾기
+                  파일찾기(작업중)
                 </label>
 
                 <button>추가</button>
