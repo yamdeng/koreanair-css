@@ -65,14 +65,14 @@ AviationPageInfo.list = [
     Component: SafetyEdit,
     path: 'SafetyEdit',
     description: '',
-    success: false,
+    success: true,
   },
   {
     title: '[07.관리자] 안전정책 > 상세',
     Component: SafetyDetail,
     path: 'SafetyDetail',
     description: '',
-    success: false,
+    success: true,
   },
 ];
 

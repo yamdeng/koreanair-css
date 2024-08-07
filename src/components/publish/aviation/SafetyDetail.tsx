@@ -69,12 +69,19 @@ function SafetyDetail() {
       <div className="conts-title">
         <h2>안전정책 상세</h2>
       </div>
-      {/* 입력영역 */}
+      {/*상세페이지*/}
       <div className="editbox">
         <div className="form-table">
-          <div className="form-cell wid50">
+          <div className="form-cell wid100">
             <div className="form-group wid100">
-              <AppSelect label={'정책구분'} />
+              <div className="box-view-list">
+                <ul className="view-list">
+                  <li className="accumlate-list">
+                    <label className="t-label">정책구분</label>
+                    <span className="text-desc-type1"> AMO</span>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
@@ -82,23 +89,14 @@ function SafetyDetail() {
         <div className="form-table">
           <div className="form-cell wid100">
             <div className="form-group wid100">
-              <AppTextInput label="제목" />
-            </div>
-          </div>
-        </div>
-        <hr className="line"></hr>
-        <div className="form-table">
-          <div className="form-cell wid50">
-            <div className="form-group wid100">
-              <AppTextArea label="내용" errorMessage="" required />
-            </div>
-          </div>
-        </div>
-        <hr className="line"></hr>
-        <div className="form-table">
-          <div className="form-cell wid100">
-            <div className="form-group wid100">
-              <AppSelect label={'사용여부'} />
+              <div className="box-view-list">
+                <ul className="view-list">
+                  <li className="accumlate-list">
+                    <label className="t-label">제목</label>
+                    <span className="text-desc-type1">안전정책에 대한 제목입니다.</span>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
@@ -106,34 +104,64 @@ function SafetyDetail() {
         <div className="form-table">
           <div className="form-cell wid100">
             <div className="form-group wid100">
-              {/* 파일첨부영역 : drag */}
-              <Dragger {...props}>
-                <p className="ant-upload-text">Click or drag file to this area to upload</p>
-              </Dragger>
-            </div>
-            <div className="filebox">
-              <input className="upload-name" value="첨부파일" placeholder="첨부파일" />
-              <input type="file" id="file" />
-              <label htmlFor="file" className="f-label">
-                파일찾기(작업중)
-              </label>
-
-              <button>추가</button>
-              <button>삭제</button>
+              <div className="box-view-list">
+                <ul className="view-list">
+                  <li className="accumlate-list">
+                    <label className="t-label">내용</label>
+                    <span className="text-desc-type1">
+                      내용은 필수입력란은 아닙니다. 내용은 필수입력란은 아닙니다. 내용은 필수입력란은 아닙니다. 내용은
+                      필수입력란은 아닙니다. 내용은 필수입력란은 아닙니다. 내용은 필수입력란은 아닙니다. 내용은
+                      필수입력란은 아닙니다. 내용은 필수입력란은 아닙니다. 내용은 필수입력란은 아닙니다. 내용은
+                      필수입력란은 아닙니다. 내용은 필수입력란은 아닙니다. 내용은 필수입력란은 아닙니다. 내용은
+                      필수입력란은 아닙니다.
+                    </span>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
+        <hr className="line"></hr>
+        <div className="form-table">
+          <div className="form-cell wid100">
+            <div className="form-group wid100">
+              <div className="box-view-list">
+                <ul className="view-list">
+                  <li className="accumlate-list">
+                    <label className="t-label">사용여부</label>
+                    <span className="text-desc-type1">Y</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div className="form-cell wid100">
+            <div className="form-group wid100">
+              <div className="box-view-list">
+                <ul className="view-list">
+                  <li className="accumlate-list">
+                    <label className="t-label">첨부파일(작업중)</label>
+                    <span className="text-desc-type1">첨부파일.png</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr className="line"></hr>
       </div>
-
-      {/*//입력영역*/}
+      {/*//상세페이지*/}
 
       {/* 하단버튼영역 */}
       <div className="contents-btns">
         <button type="button" name="button" className="btn_text text_color_neutral-10 btn_confirm">
-          저장
+          수정
         </button>
         <button type="button" name="button" className="btn_text btn-del">
-          취소
+          삭제
+        </button>
+        <button type="button" name="button" className="btn_text btn_list">
+          목록
         </button>
       </div>
       {/*//하단버튼영역*/}
