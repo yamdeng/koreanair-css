@@ -13,7 +13,7 @@ function POccupationPortal2detail() {
                 <ul className="view-list">
                   <li className="accumlate-list">
                     <label className="t-label">본부</label>
-                    <span className="text-desc">정비</span>
+                    <span className="text-desc-type1">정비</span>
                   </li>
                 </ul>
               </div>
@@ -25,7 +25,7 @@ function POccupationPortal2detail() {
                 <ul className="view-list">
                   <li className="accumlate-list">
                     <label className="t-label">등록자</label>
-                    <span className="text-desc">홍길동</span>
+                    <span className="text-desc-type1">홍길동</span>
                   </li>
                 </ul>
               </div>
@@ -37,7 +37,7 @@ function POccupationPortal2detail() {
                 <ul className="view-list">
                   <li className="accumlate-list">
                     <label className="t-label">등록일자</label>
-                    <span className="text-desc">2024-08-01</span>
+                    <span className="text-desc-type1">2024-08-01</span>
                   </li>
                 </ul>
               </div>
@@ -49,7 +49,7 @@ function POccupationPortal2detail() {
                 <ul className="view-list">
                   <li className="accumlate-list">
                     <label className="t-label">KSMS 사이렌 여부</label>
-                    <span className="text-desc">아니오</span>
+                    <span className="text-desc-type1">아니오</span>
                   </li>
                 </ul>
               </div>
@@ -61,7 +61,7 @@ function POccupationPortal2detail() {
                 <ul className="view-list">
                   <li className="accumlate-list">
                     <label className="t-label">상위 표출 여부</label>
-                    <span className="text-desc">아니오</span>
+                    <span className="text-desc-type1">아니오</span>
                   </li>
                 </ul>
               </div>
@@ -76,7 +76,7 @@ function POccupationPortal2detail() {
                 <ul className="view-list">
                   <li className="accumlate-list">
                     <label className="t-label">제목</label>
-                    <span className="text-desc">공지사항 제목입니다.</span>
+                    <span className="text-desc-type1">공지사항 제목입니다.</span>
                   </li>
                 </ul>
               </div>
@@ -91,7 +91,7 @@ function POccupationPortal2detail() {
                 <ul className="view-list">
                   <li className="accumlate-list">
                     <label className="t-label">내용</label>
-                    <span className="text-desc">
+                    <span className="text-desc-type1">
                       공지사항 내용입니다.
                       <br />
                       공지사항 내용입니다.공지사항 내용입니다.
@@ -112,7 +112,7 @@ function POccupationPortal2detail() {
                 <ul className="view-list">
                   <li className="accumlate-list">
                     <label className="t-label">첨부파일(작업중)</label>
-                    <span className="text-desc">첨부파일입니다.</span>
+                    <span className="text-desc-type1">첨부파일입니다.</span>
                   </li>
                 </ul>
               </div>
@@ -124,16 +124,16 @@ function POccupationPortal2detail() {
       {/*//상세페이지*/}
       {/* 하단버튼영역 */}
       <div className="contents-btns">
-        <button type="button" name="button" className="btn_text text_color_neutral-10 btn_confirm">
-          <span className="share">공유</span>
+        <button type="button" name="button" className="btn_text btn-share">
+          공유
         </button>
         <button type="button" name="button" className="btn_text text_color_neutral-10 btn_confirm">
           수정
         </button>
-        <button type="button" name="button" className="btn_text text_color_neutral-10 btn_confirm">
+        <button type="button" name="button" className="btn_text btn-del">
           삭제
         </button>
-        <button type="button" name="button" className="btn_text text_color_neutral-10 btn_confirm">
+        <button type="button" name="button" className="btn_text btn_list">
           목록
         </button>
       </div>

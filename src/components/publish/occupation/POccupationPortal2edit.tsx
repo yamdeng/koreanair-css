@@ -84,10 +84,10 @@ function POccupationPortal2edit() {
         <button type="button" name="button" className="btn_text text_color_neutral-10 btn_confirm">
           저장
         </button>
-        <button type="button" name="button" className="btn_text text_color_neutral-10 btn_confirm">
+        <button type="button" name="button" className="btn_text btn-del">
           삭제
         </button>
-        <button type="button" name="button" className="btn_text text_color_neutral-10 btn_confirm">
+        <button type="button" name="button" className="btn_text btn_list">
           목록
         </button>
       </div>
