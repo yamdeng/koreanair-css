@@ -15,7 +15,7 @@ function AdminBasicView() {
         <h2>Taxonomy 상세</h2>
       </div>
       {/*상세페이지 */}
-      <div className="boxForm">
+      <div className="editbox">
         <div className="form-table">
           <div className="form-cell wid50">
             <div className="form-group wid100">

@@ -91,9 +91,9 @@ function AdminBasicEdit() {
         <h2>Taxonomy 등록</h2>
       </div>
       {/*등록 */}
-      <div className="boxForm">
+      <div className="editbox">
         <div className="form-table">
-          <div className="form-cell wid50">
+          <div className="form-cell wid100">
             <div className="form-group wid100">
               <AntSelect
                 id="select1"

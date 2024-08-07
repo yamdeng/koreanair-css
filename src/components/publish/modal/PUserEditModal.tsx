@@ -106,7 +106,7 @@ function UserEditModal(props) {
           <div className="pop_flex_group">
             <div className="pop_cont_form">
               {/*등록 */}
-              <div className="boxForm">
+              <div className="editbox">
                 <div className="form-table">
                   <div className="form-cell wid50">
                     <div className="form-group wid100">

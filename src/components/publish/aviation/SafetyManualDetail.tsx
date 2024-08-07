@@ -154,7 +154,16 @@ function SafetyDetail() {
                   <li className="accumlate-list">
                     <label className="t-label">원문 첨부파일 </label>
                     <span className="text-desc-type1">
-                      <a href="javascript:void(0);">첨부파일.zip</a>
+                      <div className="desc-file">
+                        <a href="javascript:void(0);" className="">
+                          <span>첨부파일.zip</span>
+                          <span className="download"></span>
+                        </a>
+                      </div>
+
+                      {/*<button type="button" className="delete">
+                        X
+                      </button>*/}
                     </span>
                   </li>
                 </ul>
