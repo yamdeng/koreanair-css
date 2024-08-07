@@ -20,8 +20,9 @@ function POccupationTraining() {
         <h2>중대재해대응훈련</h2>
       </div>
       {/*검색영역 */}
-      <div className="TopButton-area">
-        <div className="boxForm">
+      <div className="boxForm">
+        {/*area-detail명 옆에 active  */}
+        <div id="" className="area-detail active">
           <div className="form-table">
             <div className="form-cell wid50">
               <div className="form-group wid100">
@@ -60,6 +61,10 @@ function POccupationTraining() {
             </div>
           </div>
         </div>
+        {/*__control명 옆에 active  */}
+        <button type="button" name="button" className="arrow button _control active">
+          <span className="hide">접기</span>
+        </button>
       </div>
       {/* //검색영역 */}
 

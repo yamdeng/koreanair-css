@@ -196,7 +196,7 @@ function AdminBasicList() {
           </div>
         </div>
         {/*__control명 옆에 active  */}
-        <button type="button" name="button" className="arrow button __small __control active">
+        <button type="button" name="button" className="arrow button _control active">
           <span className="hide">접기</span>
         </button>
       </div>

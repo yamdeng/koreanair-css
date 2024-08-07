@@ -379,28 +379,24 @@ input, select{font-family:'KoreanAirSans'}
 
 /*검색영역*/
 .info-wrap .edit-area > .boxForm{padding:0}
-.boxForm{position:relative;display:inline-table;width:100%;padding:1.5rem 3rem 1.5rem;margin-bottom:2.0rem;background-color:var(--color-neutral-20);border-radius:0.8rem}
+.boxForm{position:relative;display:inline-table;width:100%;padding:1.0rem 3rem 1.0rem;margin-bottom:2.0rem;background-color:var(--color-neutral-20);border-radius:0.8rem}
 .boxForm::after{content:'';clear:both;display:block}
 .boxForm .form-table{display:flex;width:100%}
-/*.boxForm .form-table:first-child{padding-top:3rem}*/
 .boxForm .form-table + .form-table{/*padding-top:1.5rem*/}
-.boxForm .form-table:last-child{/*padding-bottom:2.0rem*/}
+.boxForm .form-table:last-child{padding-bottom:1.5rem}
 .boxForm .form-table .form-cell{position:relative;flex-grow:1;padding-right:1.0rem;padding-top:1.2rem}
+
 .boxForm .form-table .form-cell:last-child{padding-right:0}
 .boxForm.tog{margin-bottom:0rem;padding-top:0rem}
 
 .conts-subTit{width:100%;line-height:3.5rem;padding-bottom:1.0rem}
 .conts-subTit span{font-size:1.5rem}
 
-/*검색영역-접기펴기 버튼영역
-.TopButton-area{position:relative}
-.btn-fold{position:absolute;left:50%;top:1.5rem;transform:translate(-50%, -50%);z-index:999;width:5rem;height:5rem; background: url(../images/icon-arrow-up.svg) center center no-repeat;background-size:3.5rem;border-radius: 50%}
-.btn-fold.active{position:absolute;left:50%;top:0;bottom:-3.0rem;transform:translate(-50%, -50%);background: url(../images/icon-arrow-down.svg) center center no-repeat;width:5rem;height:5rem;background-size:3.5rem}*/
 /*검색영역-접기펴기 버튼영역*/
 .boxForm .area-detail{display:none;position:relative;width:100%}
 .boxForm .area-detail.active{display:block;width:100%}
-.button.__control.active{transform:rotate(180deg)}
-.boxForm button.arrow.button{display:block;width:100%;height:3.6rem;background: url(../images/icon-arrow-down.svg) center center no-repeat}
+.button._control.active{transform:rotate(180deg)}
+.boxForm button.arrow.button{display:block;width:100%;height:2.6rem;background: url(../images/icon-arrow-down.svg) center center no-repeat}
 
 
 .form-group{position:relative;display:inline-block;vertical-align:middle}

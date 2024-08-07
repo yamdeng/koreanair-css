@@ -15,13 +15,9 @@ function PRiskForm1() {
         <h2>Taxonomy 관리</h2>
       </div>
       {/*검색영역 */}
-      <div className="TopButton-area">
-        {/*아코디언 - 펴기 버튼일때 btn-fold명 옆에 open붙이기  */}
-        <button type="button" name="button" className="btn-fold">
-          <span className="hide">펴기</span>
-        </button>
-
-        <div className="boxForm">
+      <div className="boxForm">
+        {/*area-detail명 옆에 active  */}
+        <div id="" className="area-detail active">
           <div className="form-table">
             <div className="form-cell wid50">
               <div className="form-group wid100 mr5">
@@ -82,6 +78,10 @@ function PRiskForm1() {
             </button>
           </div>
         </div>
+        {/*__control명 옆에 active  */}
+        <button type="button" name="button" className="arrow button _control active">
+          <span className="hide">접기</span>
+        </button>
       </div>
       {/* //검색영역 */}
 
