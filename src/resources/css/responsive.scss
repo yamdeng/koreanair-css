@@ -71,8 +71,8 @@
   .btn-area > button + button {width: 50%;}
   .btn-area > button {margin: 0;}
 
-  .contents-btns {display: flex; width: 100%;}
-  .contents-btns > button {width: 100%;}
+  .contents-btns {display: block; width: 100%;}
+  .contents-btns > button {width: 100%; margin: 1.0rem 0;}
 
   .checklist-contents {}
   .checklist-contents {display: flex; align-items: flex-end; justify-content: flex-start; flex-wrap: wrap; width: 100%;}
