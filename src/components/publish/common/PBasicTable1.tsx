@@ -70,114 +70,121 @@ function PBasicTable1() {
 
       {/*검색영역 */}
       <div className="boxForm">
-        {/* 1행 start */}
-        <div className="form-table">
-          <div className="form-cell wid50">
-            <div className="form-group wid100">
-              <AppSearchInput label="검색 input(엔터키)" />
+        {/*area-detail명 옆에 active  */}
+        <div id="" className="area-detail active">
+          {/* 1행 start */}
+          <div className="form-table">
+            <div className="form-cell wid50">
+              <div className="form-group wid100">
+                <AppSearchInput label="검색 input(엔터키)" />
+              </div>
+            </div>
+            <div className="form-cell wid50">
+              <div className="form-group wid100">
+                <AppSelect label={'select(전체적용)'} />
+              </div>
             </div>
           </div>
-          <div className="form-cell wid50">
-            <div className="form-group wid100">
-              <AppSelect label={'select(전체적용)'} />
-            </div>
-          </div>
-        </div>
-        {/* 1행 end */}
+          {/* 1행 end */}
 
-        {/* 2행 start */}
-        <div className="form-table">
-          <div className="form-cell wid50">
-            <div className="form-group wid100">
-              <AppTextInput label="일반 text-input" />
+          {/* 2행 start */}
+          <div className="form-table">
+            <div className="form-cell wid50">
+              <div className="form-group wid100">
+                <AppTextInput label="일반 text-input" />
+              </div>
+            </div>
+            <div className="form-cell wid50">
+              <div className="form-group wid100">
+                <AppSelect label={'일반 select'} />
+              </div>
             </div>
           </div>
-          <div className="form-cell wid50">
-            <div className="form-group wid100">
-              <AppSelect label={'일반 select'} />
-            </div>
-          </div>
-        </div>
-        {/* 2행 end */}
+          {/* 2행 end */}
 
-        {/* 3행 start */}
-        <div className="form-table">
-          <div className="form-cell wid50">
-            <div className="form-group wid100">
-              <AppDatePicker label={'date'} onChange={(value) => setFirstDateValue(value)} value={firstDateValue} />
+          {/* 3행 start */}
+          <div className="form-table">
+            <div className="form-cell wid50">
+              <div className="form-group wid100">
+                <AppDatePicker label={'date'} onChange={(value) => setFirstDateValue(value)} value={firstDateValue} />
+              </div>
+            </div>
+            <div className="form-cell wid50">
+              <div className="form-group wid100">
+                <AppRangeDatePicker
+                  label={'range-date'}
+                  onChange={(value) => setFirstDateRangeValue(value)}
+                  value={firstDateRangeValue}
+                  showNow={false}
+                />
+              </div>
             </div>
           </div>
-          <div className="form-cell wid50">
-            <div className="form-group wid100">
-              <AppRangeDatePicker
-                label={'range-date'}
-                onChange={(value) => setFirstDateRangeValue(value)}
-                value={firstDateRangeValue}
-                showNow={false}
-              />
-            </div>
-          </div>
-        </div>
-        {/* 3행 end */}
+          {/* 3행 end */}
 
-        {/* 4행 start */}
-        <div className="form-table">
-          <div className="form-cell wid50">
-            <div className="form-group wid100">
-              <AppTimePicker
-                label={'time'}
-                onChange={(value) => setFirstTimeValue(value)}
-                value={firstTimeValue}
-                showNow={true}
-                needConfirm={true}
-              />
+          {/* 4행 start */}
+          <div className="form-table">
+            <div className="form-cell wid50">
+              <div className="form-group wid100">
+                <AppTimePicker
+                  label={'time'}
+                  onChange={(value) => setFirstTimeValue(value)}
+                  value={firstTimeValue}
+                  showNow={true}
+                  needConfirm={true}
+                />
+              </div>
             </div>
-          </div>
-          <div className="form-cell wid50">
-            {/* start-date ~ end-date */}
-            <div className="form-group form-glow">
-              <div className="df">
-                <div className="date1">
-                  <AppDatePicker
-                    label={'start-date'}
-                    onChange={(value) => setFirstDateValue(value)}
-                    value={firstDateValue}
-                  />
-                </div>
-                <span className="unt">~</span>
-                <div className="date2">
-                  <AppDatePicker
-                    label={'end-date'}
-                    onChange={(value) => setFirstDateValue(value)}
-                    value={firstDateValue}
-                  />
+            <div className="form-cell wid50">
+              {/* start-date ~ end-date */}
+              <div className="form-group form-glow">
+                <div className="df">
+                  <div className="date1">
+                    <AppDatePicker
+                      label={'start-date'}
+                      onChange={(value) => setFirstDateValue(value)}
+                      value={firstDateValue}
+                    />
+                  </div>
+                  <span className="unt">~</span>
+                  <div className="date2">
+                    <AppDatePicker
+                      label={'end-date'}
+                      onChange={(value) => setFirstDateValue(value)}
+                      value={firstDateValue}
+                    />
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-        {/* 5행 start */}
-        <div className="form-table">
-          <div className="form-cell wid50">
-            <div className="form-group wid100">
-              <AppAutoComplete label={'사용자검색'} disabled />
+          {/* 5행 start */}
+          <div className="form-table">
+            <div className="form-cell wid50">
+              <div className="form-group wid100">
+                <AppAutoComplete label={'사용자검색'} disabled />
+              </div>
+            </div>
+            <div className="form-cell wid50">
+              <div className="form-group wid100">
+                <AppAutoComplete label={'공항검색'} />
+              </div>
             </div>
           </div>
-          <div className="form-cell wid50">
-            <div className="form-group wid100">
-              <AppAutoComplete label={'공항검색'} />
-            </div>
+          {/* 5행 end */}
+          <div className="btn-area">
+            <button type="button" name="button" className="btn-sm btn_text btn-darkblue-line">
+              조회
+            </button>
+            <button type="button" name="button" className="btn-sm btn_text btn-darkblue-line">
+              초기화
+            </button>
           </div>
         </div>
-        {/* 5행 end */}
-        <div className="btn-area">
-          <button type="button" name="button" className="btn-sm btn_text btn-darkblue-line">
-            조회
-          </button>
-          <button type="button" name="button" className="btn-sm btn_text btn-darkblue-line">
-            초기화
-          </button>
-        </div>
+        {/*__control명 옆에 active  */}
+        <button type="button" name="button" className="arrow button _control active">
+          <span className="hide">접기</span>
+        </button>
       </div>
       {/* //검색영역 */}
 

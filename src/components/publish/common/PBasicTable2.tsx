@@ -81,122 +81,129 @@ function PBasicTable2() {
 
       {/*검색영역 */}
       <div className="boxForm">
-        {/* 1행 start */}
-        <div className="form-table">
-          {/* 라벨이 없는 경우 : radio */}
-          <div className="form-cell wid50">
-            <div className="radio-wrap">
-              <label>
-                <input type="radio" checked />
-                <span>체크</span>
-              </label>
-              <label>
-                <input type="radio" />
-                <span>미체크</span>
-              </label>
+        {/*area-detail명 옆에 active  */}
+        <div id="" className="area-detail active">
+          {/* 1행 start */}
+          <div className="form-table">
+            {/* 라벨이 없는 경우 : radio */}
+            <div className="form-cell wid50">
+              <div className="radio-wrap">
+                <label>
+                  <input type="radio" checked />
+                  <span>체크</span>
+                </label>
+                <label>
+                  <input type="radio" />
+                  <span>미체크</span>
+                </label>
+              </div>
+            </div>
+            {/* 라벨이 있는 경우 : radio */}
+            <div className="group-box-wrap wid50">
+              <span className="txt">
+                SPI 여부<span className="required">*</span>
+              </span>
+              <div className="radio-wrap">
+                <label>
+                  <input type="radio" checked />
+                  <span>YES</span>
+                </label>
+                <label>
+                  <input type="radio" />
+                  <span>NO</span>
+                </label>
+              </div>
             </div>
           </div>
-          {/* 라벨이 있는 경우 : radio */}
-          <div className="group-box-wrap wid50">
-            <span className="txt">
-              SPI 여부<span className="required">*</span>
-            </span>
-            <div className="radio-wrap">
-              <label>
-                <input type="radio" checked />
-                <span>YES</span>
-              </label>
-              <label>
-                <input type="radio" />
-                <span>NO</span>
-              </label>
-            </div>
-          </div>
-        </div>
-        {/* 1행 end */}
+          {/* 1행 end */}
 
-        {/* 2행 start */}
-        <div className="form-table">
-          {/* 라벨이 없는 경우 : checkbox */}
-          <div className="form-cell wid50">
-            <div className="chk-wrap">
-              <label>
-                <input type="checkbox" checked />
-                <span>체크박스</span>
-              </label>
-              <label>
-                <input type="checkbox" />
-                <span>미체크</span>
-              </label>
+          {/* 2행 start */}
+          <div className="form-table">
+            {/* 라벨이 없는 경우 : checkbox */}
+            <div className="form-cell wid50">
+              <div className="chk-wrap">
+                <label>
+                  <input type="checkbox" checked />
+                  <span>체크박스</span>
+                </label>
+                <label>
+                  <input type="checkbox" />
+                  <span>미체크</span>
+                </label>
+              </div>
+            </div>
+            {/* 라벨이 있는 경우 : checkbox */}
+            <div className="form-cell wid50">
+              <div className="chk-wrap">
+                <label>
+                  <input type="checkbox" checked />
+                  <span>체크박스</span>
+                </label>
+                <label>
+                  <input type="checkbox" />
+                  <span>미체크</span>
+                </label>
+              </div>
             </div>
           </div>
-          {/* 라벨이 있는 경우 : checkbox */}
-          <div className="form-cell wid50">
-            <div className="chk-wrap">
-              <label>
-                <input type="checkbox" checked />
-                <span>체크박스</span>
-              </label>
-              <label>
-                <input type="checkbox" />
-                <span>미체크</span>
-              </label>
-            </div>
-          </div>
-        </div>
-        {/* 2행 end */}
+          {/* 2행 end */}
 
-        {/* 3행 start */}
-        <div className="form-table">
-          <div className="form-cell wid50">
-            <div className="form-group wid100 mr5">
-              <input
-                id="firstInput3"
-                type="text"
-                className="form-tag"
-                name="title"
-                value={inputValue}
-                onChange={(event) => {
-                  setInputValue(event.target.value);
-                }}
-                disabled
-              />
-              <label className="f-label" htmlFor="firstInput3">
-                사용자
-              </label>
-              <button className="sch-btnClear"></button>
-              <button type="button" className="icon-sch"></button>
+          {/* 3행 start */}
+          <div className="form-table">
+            <div className="form-cell wid50">
+              <div className="form-group wid100 mr5">
+                <input
+                  id="firstInput3"
+                  type="text"
+                  className="form-tag"
+                  name="title"
+                  value={inputValue}
+                  onChange={(event) => {
+                    setInputValue(event.target.value);
+                  }}
+                  disabled
+                />
+                <label className="f-label" htmlFor="firstInput3">
+                  사용자
+                </label>
+                <button className="sch-btnClear"></button>
+                <button type="button" className="icon-sch"></button>
+              </div>
+            </div>
+            <div className="form-cell wid50">
+              <div className="form-group wid100 mr5">
+                <input
+                  id="firstInput3"
+                  type="text"
+                  className="form-tag"
+                  name="title"
+                  value={inputValue}
+                  onChange={(event) => {
+                    setInputValue(event.target.value);
+                  }}
+                  disabled
+                />
+                <label className="f-label" htmlFor="firstInput3">
+                  부서
+                </label>
+                <button className="sch-btnClear"></button>
+                <button type="button" className="icon-sch"></button>
+              </div>
             </div>
           </div>
-          <div className="form-cell wid50">
-            <div className="form-group wid100 mr5">
-              <input
-                id="firstInput3"
-                type="text"
-                className="form-tag"
-                name="title"
-                value={inputValue}
-                onChange={(event) => {
-                  setInputValue(event.target.value);
-                }}
-                disabled
-              />
-              <label className="f-label" htmlFor="firstInput3">
-                부서
-              </label>
-              <button className="sch-btnClear"></button>
-              <button type="button" className="icon-sch"></button>
-            </div>
+          <div className="btn-area">
+            <button type="button" name="button" className="btn-sm btn_text btn-darkblue-line">
+              조회
+            </button>
+            <button type="button" name="button" className="btn-sm btn_text btn-darkblue-line">
+              초기화
+            </button>
           </div>
         </div>
-        <div className="btn-area">
-          <button type="button" name="button" className="btn-sm btn_text btn-darkblue-line">
-            조회
-          </button>
-          <button type="button" name="button" className="btn-sm btn_text btn-darkblue-line">
-            초기화
-          </button>
-        </div>
+        {/*__control명 옆에 active  */}
+        <button type="button" name="button" className="arrow button _control active">
+          <span className="hide">접기</span>
+        </button>
       </div>
       {/* //검색영역 */}
 
