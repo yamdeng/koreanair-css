@@ -241,12 +241,14 @@ input, select{font-family:'KoreanAirSans'}
 .contents-btns{
   > button{margin:2.0rem 0.2rem}
   .btn_text{font-family:'KoreanAirSans';font-weight:700;font-size:1.6rem}
-  .btn_confirm{padding:0.6rem 4.8rem;border-radius:99.9rem;background:var(--color-darkblue-100);align-items:center}
-  .btn_close{padding:0.8rem 4.8rem;border-radius:99.9rem;background:var(--color-neutral-30)}
-  .btn_correct{padding:0.8rem 4.8rem;border-radius:99.9rem;background:var(--color-neutral-30)}
-  .btn_list{padding:0.8rem 4.8rem;border-radius:99.9rem;border:solid 0.2rem var(--color-neutral-60);color:var(--color-neutral-60)}
-  .btn-del{padding:0.8rem 4.8rem;border-radius:99.9rem;background:var(--color-neutral-30);color:var(--color-neutral-70)}
-  .btn-share {padding:0.8rem 4.8rem;border-radius:99.9rem;background: url(../images/share.svg)left center no-repeat;}
+  .btn_confirm{padding:0.6rem 3.8rem;border-radius:99.9rem;background:var(--color-darkblue-100);align-items:center}
+  .btn_close{padding:0.8rem 3.8rem;border-radius:99.9rem;background:var(--color-neutral-30)}
+  .btn_correct{padding:0.8rem 3.8rem;border-radius:99.9rem;background:var(--color-neutral-30)}
+  .btn_list{padding:0.8rem 3.8rem;border-radius:99.9rem;border:solid 0.2rem var(--color-neutral-60);color:var(--color-neutral-60)}
+  .btn-del{padding:0.8rem 3.8rem;border-radius:99.9rem;background:var(--color-neutral-30);color:var(--color-neutral-70)}
+  .btn-share {padding:0.8rem 3.8rem;border-radius:99.9rem;background-color: var(--color-darkblue-100);color: var(--color-neutral-10);}
+  .btn-share img {padding-right: 0.5rem; display: grid; place-items: center;}
+  .btn-share span {vertical-align: middle;}
   text-align:right;
   /*@include mobile {
     width: 100%;

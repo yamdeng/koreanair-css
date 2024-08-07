@@ -1,3 +1,5 @@
+import shareImage from '@/resources/images/share.svg';
+
 function POccupationPortal2detail() {
   return (
     <>
@@ -125,7 +127,8 @@ function POccupationPortal2detail() {
       {/* 하단버튼영역 */}
       <div className="contents-btns">
         <button type="button" name="button" className="btn_text btn-share">
-          공유
+          <img src={shareImage} />
+          <span>공유</span>
         </button>
         <button type="button" name="button" className="btn_text text_color_neutral-10 btn_confirm">
           수정
