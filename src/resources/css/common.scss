@@ -364,9 +364,9 @@ input, select{font-family:'KoreanAirSans'}
 .boxForm .form-table{display:flex;width:100%}
 .boxForm .form-table + .form-table{/*padding-top:1.5rem*/}
 .boxForm .form-table:last-child{padding-bottom:1.5rem}
-.boxForm .form-table .form-cell{position:relative;flex-grow:1;padding-right:1.0rem;padding-top:1.2rem}
+.boxForm .form-table .form-cell{position:relative;flex-grow:1;padding:0 0.5rem;padding-top:1.2rem}
 
-.boxForm .form-table .form-cell:last-child{padding-right:0}
+/*.boxForm .form-table .form-cell:last-child{padding-right:0}*/
 .boxForm.tog{margin-bottom:0rem;padding-top:0rem}
 
 .conts-subTit{width:100%;line-height:3.5rem;padding-bottom:1.0rem}
