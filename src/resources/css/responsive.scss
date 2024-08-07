@@ -72,7 +72,8 @@
   .btn-area > button {margin: 0;}
 
   .contents-btns {display: block; width: 100%;}
-  .contents-btns > button {width: 100%; margin: 1.0rem 0;}
+  .contents-btns > button {width: calc(50% - 0.2rem); margin: 1.0rem 0;}
+  .contents-btns > button:nth-child(odd) {margin-right:0.2rem;}
 
   .checklist-contents {}
   .checklist-contents {display: flex; align-items: flex-end; justify-content: flex-start; flex-wrap: wrap; width: 100%;}
@@ -112,5 +113,5 @@
   .checklist-contents {display: flex; width: 100%;}
   .checklist-contents .checklist-row {width: 100% !important; margin: 0 !important;}
 
-  
+  .contents-btns > button {width: 100%; margin: 1.0rem 0;}  
 }
