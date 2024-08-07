@@ -393,13 +393,15 @@ input, select{font-family:'KoreanAirSans'}
 .conts-subTit span{font-size:1.5rem}
 
 /*검색영역-접기펴기 버튼영역
-.TopButton-area{position:relative}*/
-.btn-fold{position:absolute;left:50%;top:1.5rem;transform:translate(-50%, -50%);z-index:999;width:5rem;height:5rem; background: url(../images/icon-arrow-up.svg) center center no-repeat;/*background-color:var(--color-neutral-30);*/background-size:3.5rem;border-radius: 50%}
-.btn-fold.open{position:absolute;left:50%;top:0;bottom:-3.0rem;transform:translate(-50%, -50%);background: url(../images/icon-arrow-down.svg) center center no-repeat;width:5rem;height:5rem;background-size:3.5rem}
-.boxForm .area-detail{display:none;position:relative;width:100%; /* overflow:hidden;height:10px;*/}
+.TopButton-area{position:relative}
+.btn-fold{position:absolute;left:50%;top:1.5rem;transform:translate(-50%, -50%);z-index:999;width:5rem;height:5rem; background: url(../images/icon-arrow-up.svg) center center no-repeat;background-size:3.5rem;border-radius: 50%}
+.btn-fold.active{position:absolute;left:50%;top:0;bottom:-3.0rem;transform:translate(-50%, -50%);background: url(../images/icon-arrow-down.svg) center center no-repeat;width:5rem;height:5rem;background-size:3.5rem}*/
+.boxForm .area-detail{display:none;position:relative;width:100%;margin-top:2.0rem /* overflow:hidden;height:10px;*/}
 
-.boxForm .area-detail.open{display:block;width:100%}
-.button.__small{}
+.boxForm .area-detail.active{display:block;width:100%}
+.button.__control.active {
+  transform: rotate(180deg);
+}
 .boxForm button.arrow.button{display:block;width:100%;height:3.6rem;background: url(../images/icon-arrow-down.svg) center center no-repeat}
 
 

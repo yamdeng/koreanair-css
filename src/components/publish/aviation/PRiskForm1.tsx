@@ -16,7 +16,7 @@ function PRiskForm1() {
       </div>
       {/*검색영역 */}
       <div className="boxForm">
-        <div id="" className="area-detail open">
+        <div id="" className="area-detail active">
           <div className="form-table">
             <div className="form-cell wid50">
               <div className="form-group wid100 mr5">
@@ -78,7 +78,7 @@ function PRiskForm1() {
           </div>
         </div>
         {/*아코디언 - 펴기 버튼일때 btn-fold명 옆에 open붙이기  */}
-        <button type="button" name="button" className="arrow button __small btn-fold open">
+        <button type="button" name="button" className="arrow button __small __control active">
           <span className="hide">접기</span>
         </button>
       </div>
