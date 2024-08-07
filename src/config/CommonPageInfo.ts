@@ -2,6 +2,7 @@ import PBasicTable1 from '@/components/publish/common/PBasicTable1';
 import PBasicTable2 from '@/components/publish/common/PBasicTable2';
 import PBasicForm1 from '@/components/publish/common/PBasicForm1';
 import PFileForm from '@/components/publish/common/PFileForm';
+import Table from '@/components/publish/common/Table';
 
 const CommonPageInfo: any = {};
 
@@ -31,6 +32,13 @@ CommonPageInfo.list = [
     title: '파일폼',
     Component: PFileForm,
     path: 'PFileForm',
+    description: '',
+    success: false,
+  },
+  {
+    title: '테이블&버튼',
+    Component: Table,
+    path: 'Table',
     description: '',
     success: false,
   },
