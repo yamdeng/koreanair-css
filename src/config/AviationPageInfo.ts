@@ -5,6 +5,8 @@ import SPIInfo1 from '@/components/publish/aviation/SPIInfo1';
 import Checklist1 from '@/components/publish/aviation/Checklist1';
 import Taxonomy1 from '@/components/publish/aviation/Taxonomy1';
 import SafetyList from '@/components/publish/aviation/SafetyList';
+import SafetyEdit from '@/components/publish/aviation/SafetyEdit';
+import SafetyDetail from '@/components/publish/aviation/SafetyDetail';
 
 const AviationPageInfo: any = {};
 
@@ -55,6 +57,20 @@ AviationPageInfo.list = [
     title: '[07.관리자] 안전정책 > 리스트',
     Component: SafetyList,
     path: 'SafetyList',
+    description: '',
+    success: true,
+  },
+  {
+    title: '[07.관리자] 안전정책 > 등록',
+    Component: SafetyEdit,
+    path: 'SafetyEdit',
+    description: '',
+    success: false,
+  },
+  {
+    title: '[07.관리자] 안전정책 > 상세',
+    Component: SafetyDetail,
+    path: 'SafetyDetail',
     description: '',
     success: false,
   },

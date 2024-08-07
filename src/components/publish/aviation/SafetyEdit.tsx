@@ -1,8 +1,13 @@
-import AppEditor from '@/components/common/AppEditor';
+import AppDatePicker from '@/components/common/AppDatePicker';
+import AppSearchInput from '@/components/common/AppSearchInput';
+import AppTextArea from '@/components/common/AppTextArea';
+import AppSelect from '@/components/common/AppSelect';
+import AppTable from '@/components/common/AppTable';
 import AppTextInput from '@/components/common/AppTextInput';
+import { getAllData } from '@/data/grid/example-data-new';
+import { testColumnInfos } from '@/data/grid/table-column';
 import { Upload } from 'antd';
 const { Dragger } = Upload;
-
 const props: any = {
   name: 'file',
   multiple: true,
@@ -56,26 +61,50 @@ const props: any = {
   },
 };
 
-function PBasicForm1() {
+function SafetyList() {
+  const rowData = getAllData();
+  const columns = testColumnInfos;
   return (
     <>
       <div className="conts-title">
-        <h2>Taxonomy 등록</h2>
+        <h2>안전정책 신규입력</h2>
       </div>
-      {/*등록 */}
+      {/* 입력영역 */}
       <div className="editbox">
-        {/* 1행 
         <div className="form-table">
           <div className="form-cell wid50">
             <div className="form-group wid100">
-              <AppTextInput label="일반 text-input" required />
+              <AppSelect label={'정책구분'} />
             </div>
           </div>
         </div>
-        <hr className="line"></hr>*/}
-        {/* 파일첨부영역 : drag */}
+        <hr className="line"></hr>
+        <div className="form-table">
+          <div className="form-cell wid100">
+            <div className="form-group wid100">
+              <AppTextInput label="제목" />
+            </div>
+          </div>
+        </div>
+        <hr className="line"></hr>
         <div className="form-table">
           <div className="form-cell wid50">
+            <div className="form-group wid100">
+              <AppTextArea label="내용" errorMessage="" required />
+            </div>
+          </div>
+        </div>
+        <hr className="line"></hr>
+        <div className="form-table">
+          <div className="form-cell wid100">
+            <div className="form-group wid100">
+              <AppSelect label={'사용여부'} />
+            </div>
+          </div>
+        </div>
+        <hr className="line"></hr>
+        <div className="form-table">
+          <div className="form-cell wid100">
             <div className="form-group wid100">
               {/* 파일첨부영역 : drag */}
               <div className="filebox">
@@ -86,30 +115,34 @@ function PBasicForm1() {
                   첨부파일 <span className="required">*</span>
                 </label>
               </div>
-            </div>
-          </div>
-        </div>
-        <hr className="line"></hr>
-        {/* 파일첨부영역 : button */}
-        <div className="form-table">
-          <div className="form-cell wid50">
-            <div className="form-group wid100">
-              <Upload {...props}>
-                <button>Upload</button>
-              </Upload>
+              {/*<div className="filebox">
+                <input className="upload-name" value="첨부파일" placeholder="첨부파일" />
+                <input type="file" id="file" />
+                <label htmlFor="file" className="f-label">
+                  파일찾기(작업중)
+                </label>
+
+                <button>추가</button>
+                <button>삭제</button>
+              </div>*/}
             </div>
           </div>
         </div>
       </div>
+      {/*//입력영역*/}
 
       {/* 하단버튼영역 */}
       <div className="contents-btns">
-        <button className="btn_text text_color_neutral-10 btn_confirm">저장</button>
-        <button className="btn_text text_color_darkblue-100 btn_close">취소</button>
+        <button type="button" name="button" className="btn_text text_color_neutral-10 btn_confirm">
+          저장
+        </button>
+        <button type="button" name="button" className="btn_text btn-del">
+          취소
+        </button>
       </div>
-      {/* //하단버튼영역 */}
+      {/*//하단버튼영역*/}
     </>
   );
 }
 
-export default PBasicForm1;
+export default SafetyList;

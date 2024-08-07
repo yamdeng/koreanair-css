@@ -114,7 +114,7 @@ function PBasicForm1() {
         <h2>Taxonomy 등록</h2>
       </div>
       {/*등록 */}
-      <div className="boxForm">
+      <div className="editbox">
         {/* 1행 */}
         <div className="form-table">
           <div className="form-cell wid50">
