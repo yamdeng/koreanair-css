@@ -10,7 +10,7 @@ import AppDatePicker from '@/components/common/AppDatePicker';
 import AppRangeDatePicker from '@/components/common/AppRangeDatePicker';
 import AppTimePicker from '@/components/common/AppTimePicker';
 
-function POccupationMu1P5() {
+function POccupationMu1P5list() {
   const [inputValue, setInputValue] = useState('');
   const rowData = getAllData();
   const columns = testColumnInfos;
@@ -65,8 +65,15 @@ function POccupationMu1P5() {
         <AppTable rowData={rowData} columns={columns} />
       </div>
       {/*//그리드영역 */}
+      {/* 하단버튼영역 */}
+      <div className="contents-btns">
+        <button type="button" name="button" className="btn_text text_color_neutral-10 btn_confirm">
+          등록
+        </button>
+      </div>
+      {/*//하단버튼영역*/}
     </>
   );
 }
 
-export default POccupationMu1P5;
+export default POccupationMu1P5list;
