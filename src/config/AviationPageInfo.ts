@@ -8,6 +8,7 @@ import SafetyList from '@/components/publish/aviation/SafetyList';
 import SafetyEdit from '@/components/publish/aviation/SafetyEdit';
 import SafetyDetail from '@/components/publish/aviation/SafetyDetail';
 import SafetyManual from '@/components/publish/aviation/SafetyManual';
+import SafetyManualDetail from '@/components/publish/aviation/SafetyManualDetail';
 
 const AviationPageInfo: any = {};
 
@@ -79,6 +80,13 @@ AviationPageInfo.list = [
     title: '[02.안정정책] 안전정책 > 매뉴얼',
     Component: SafetyManual,
     path: 'SafetyManual',
+    description: '',
+    success: true,
+  },
+  {
+    title: '[02.안정정책] 안전정책 > 매뉴얼 상세',
+    Component: SafetyManualDetail,
+    path: 'SafetyManualDetail',
     description: '',
     success: false,
   },
