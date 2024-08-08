@@ -3,7 +3,8 @@ import PRiskForm1 from '@/components/publish/aviation/PRiskForm1';
 import PRiskForm2 from '@/components/publish/aviation/PRiskForm2';
 import SPIInfo1 from '@/components/publish/aviation/SPIInfo1';
 import Checklist1 from '@/components/publish/aviation/Checklist1';
-import Taxonomy1 from '@/components/publish/aviation/Taxonomy1';
+import TaxonomyList from '@/components/publish/aviation/TaxonomyList';
+import TaxonomyEdit from '@/components/publish/aviation/TaxonomyEdit';
 import SafetyList from '@/components/publish/aviation/SafetyList';
 import SafetyEdit from '@/components/publish/aviation/SafetyEdit';
 import SafetyDetail from '@/components/publish/aviation/SafetyDetail';
@@ -50,9 +51,16 @@ AviationPageInfo.list = [
     success: true,
   },
   {
-    title: '[07.관리자] HAZARD > Taxonomy',
-    Component: Taxonomy1,
-    path: 'Taxonomy1',
+    title: '[07.관리자] HAZARD관리 > Taxonomy > 리스트',
+    Component: TaxonomyList,
+    path: 'TaxonomyList',
+    description: '',
+    success: true,
+  },
+  {
+    title: '[07.관리자] HAZARD관리 > Taxonomy > 등록',
+    Component: TaxonomyEdit,
+    path: 'TaxonomyEdit',
     description: '',
     success: false,
   },
