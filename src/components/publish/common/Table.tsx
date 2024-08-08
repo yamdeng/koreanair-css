@@ -1,3 +1,5 @@
+import shareImage from '@/resources/images/share.svg';
+
 function Table() {
   return (
     <>
@@ -78,11 +80,14 @@ function Table() {
       {/* 하단버튼영역 - 4개이상일경우 class명 btn-type01 추가 */}
       <div className="contents-btns">
         <button className="btn_text text_color_neutral-10 btn_confirm btn-type01">저장</button>
-        <button className="btn_text text_color_darkblue-100 btn_close btn-type01">취소</button>
-        <button className="btn_text text_color_neutral-10 btn_confirm btn-type01">목록</button>
-        <button className="btn_text text_color_neutral-10 btn_confirm btn-type01">공유</button>
-        <button className="btn_text text_color_neutral-10 btn_confirm btn-type01">수정</button>
-        <button className="btn_text text_color_neutral-10 btn_confirm btn-type01">수정</button>
+        <button className="btn_text btn-del">취소</button>
+        <button className="btn_text btn_list">목록</button>
+        <button type="button" name="button" className="btn_text btn-share">
+          <img src={shareImage} />
+          <span>공유</span>
+        </button>
+        <button className="btn_text text_color_neutral-10 btn_confirm btn-type01">인쇄</button>
+        <button className="btn_text btn-disabled">삭제</button>
       </div>
       {/* //하단버튼영역 */}
     </>

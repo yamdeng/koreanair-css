@@ -363,6 +363,9 @@ function UserEditModal(props) {
           <button className="btn_text text_color_neutral-90 btn_close" onClick={closeModal}>
             취소
           </button>
+          <button className="btn_text text_color_neutral-90 btn-disabled" onClick={closeModal}>
+            취소
+          </button>
           <button className="btn_text text_color_neutral-10 btn_confirm" onClick={closeModal}>
             확인
           </button>

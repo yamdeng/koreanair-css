@@ -201,6 +201,12 @@
     border-radius: 99.9rem; 
     background: var(--color-darkblue-100);
   }
+  .btn-disabled {
+    padding: 0.8rem 4.8rem;
+    border-radius: 99.9rem;
+    background: var(--color-neutral-30); 
+    color: var(--color-neutral-50);
+  }
   text-align: center;
   @include mobile {
     width: 100%;
