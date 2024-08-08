@@ -16,7 +16,7 @@ function POccupationMu1P5detail() {
         </div>
       </div>
       <div className="editbox">
-        <div className="form-table">
+        <div className="form-table line">
           <div className="form-cell wid100">
             <div className="form-group wid100">
               <div className="box-view-list">

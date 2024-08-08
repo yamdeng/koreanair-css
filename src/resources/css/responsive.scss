@@ -20,7 +20,8 @@
   .editbox .form-table {display: flex; align-items: flex-end; justify-content: flex-start; flex-wrap: wrap; width: 100%;}
   .editbox .form-table .form-cell {display: flex; align-items: flex-end; justify-content: flex-start; flex-wrap: wrap; width: 33.3%; padding: 0.5rem 1.0rem 0.5rem  0;}
   .editbox .form-table .form-cell:nth-child(3) {padding-right: 0;}
-  .editbox hr.line {margin: 1.0rem 0;}
+  .editbox .line .form-cell {border-bottom: 0.1rem solid var(--color-neutral-40);}
+  /*.editbox hr.line {margin: 1.0rem 0;}*/
 
   .contents-btns > button.btn-type01 {width: calc(50% - 0.2rem); margin: 1.0rem 0;}
   .contents-btns > button.btn-type01:nth-child(odd) {margin-right:0.2rem;}
@@ -37,7 +38,8 @@
   .editbox .form-table {display: flex; align-items: flex-end; justify-content: flex-start; flex-wrap: wrap; width: 100%;}
   .editbox .form-table .form-cell {display: flex; align-items: flex-end; justify-content: flex-start; flex-wrap: wrap; width: 33.3%; padding: 0.5rem 1.0rem 0.5rem  0;}
   .editbox .form-table .form-cell:nth-child(3) {padding-right: 0;}
-  .editbox hr.line {margin: 1.0rem 0;}
+  /*.editbox hr.line {margin: 1.0rem 0;}*/
+  .editbox .line .form-cell {border-bottom: 0.1rem solid var(--color-neutral-40);}
   
   .btn-area {display:flex; width: 100%;}
   .btn-area .btn-sm {width: 100%;}
@@ -102,7 +104,9 @@
   .editbox .form-table {display: flex; align-items: flex-end; justify-content: flex-start; flex-wrap: wrap; width: 100%;}
   .editbox .form-table .form-cell {display: flex; align-items: flex-end; justify-content: flex-start; flex-wrap: wrap; width: 50%; padding: 0.5rem 1.0rem 0.5rem  0;}
   .editbox .form-table .form-cell:nth-child(even) {padding-right: 0;}
-  .editbox hr.line {margin: 1.0rem 0;}
+  /*.editbox hr.line {margin: 1.0rem 0;}*/
+  .editbox .line .form-cell {border-bottom: 0.1rem solid var(--color-neutral-40);}
+
 
   .group-box-wrap {display: block; height: auto !important;}
   .file-link {height: auto !important; line-height: auto !important;}
