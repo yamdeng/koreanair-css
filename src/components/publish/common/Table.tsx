@@ -87,7 +87,9 @@ function Table() {
           <span>공유</span>
         </button>
         <button className="btn_text text_color_neutral-10 btn_confirm btn-type01">인쇄</button>
-        <button className="btn_text btn-disabled">삭제</button>
+        <button disabled className="btn_text btn-disabled">
+          삭제
+        </button>
       </div>
       {/* //하단버튼영역 */}
     </>
