@@ -146,7 +146,7 @@ function PBasicForm1() {
             </div>
           </div>
           <div className="form-cell wid50">
-            <div className="form-group wid100 mr5">
+            <div className="form-group wid100">
               <AppTextInput
                 inputType="number"
                 value={inputValue2}
@@ -162,7 +162,7 @@ function PBasicForm1() {
         {/* 3행 */}
         <div className="form-table">
           <div className="form-cell wid50">
-            <div className="form-group wid100 mr5">
+            <div className="form-group wid100">
               <AppTextArea
                 value={inputValue}
                 label="일반 textarea"
@@ -179,7 +179,7 @@ function PBasicForm1() {
         {/* 4행 */}
         <div className="form-table">
           <div className="form-cell wid50">
-            <div className="form-group wid100 mr5">
+            <div className="form-group wid100">
               <AppEditor placeholder="입력해주세요." errorMessage="editor error" />
             </div>
           </div>
@@ -199,7 +199,7 @@ function PBasicForm1() {
             </div>
           </div>
           <div className="form-cell wid50">
-            <div className="form-group wid100 mr5">
+            <div className="form-group wid100">
               <AppSelect
                 label={'select'}
                 value={selectValue}

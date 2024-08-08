@@ -16,6 +16,7 @@ import PotentialConEdit from '@/components/publish/aviation/PotentialConEdit';
 import EventtypeList from '@/components/publish/aviation/EventtypeList';
 import EventtypeEdit from '@/components/publish/aviation/EventtypeEdit';
 import AdminSafetyManualList from '@/components/publish/aviation/AdminSafetyManualList';
+import AdminSafetyManualEdit from '@/components/publish/aviation/AdminSafetyManualEdit';
 
 import { fa } from '@faker-js/faker';
 
@@ -124,6 +125,13 @@ AviationPageInfo.list = [
     title: '[07.관리자] 안전매뉴얼 > 리스트',
     Component: AdminSafetyManualList,
     path: 'AdminSafetyManualList',
+    description: '',
+    success: true,
+  },
+  {
+    title: '[07.관리자] 안전매뉴얼 > 등록',
+    Component: AdminSafetyManualEdit,
+    path: 'AdminSafetyManualEdit',
     description: '',
     success: false,
   },
