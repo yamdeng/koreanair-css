@@ -96,7 +96,7 @@ AviationPageInfo.list = [
     Component: SafetyPolicy,
     path: 'SafetyPolicy',
     description: '',
-    success: false,
+    success: true,
   },
 ];
 

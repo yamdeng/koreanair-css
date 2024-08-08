@@ -1,16 +1,6 @@
-import AppDatePicker from '@/components/common/AppDatePicker';
-import AppSearchInput from '@/components/common/AppSearchInput';
-import AppTextArea from '@/components/common/AppTextArea';
-import AppSelect from '@/components/common/AppSelect';
-import AppTable from '@/components/common/AppTable';
-import AppTextInput from '@/components/common/AppTextInput';
-import { getAllData } from '@/data/grid/example-data-new';
-import { testColumnInfos } from '@/data/grid/table-column';
 import SafetyImage from '@/resources/images/img-SafetyPolicy.jpg';
 
 function SafetyPolicy() {
-  const rowData = getAllData();
-  const columns = testColumnInfos;
   return (
     <>
       <div className="conts-title">
