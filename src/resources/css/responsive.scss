@@ -101,6 +101,9 @@
   .editbox .form-table .form-cell {display: flex; align-items: flex-end; justify-content: flex-start; flex-wrap: wrap; width: 50%; padding: 0.5rem 1.0rem 0.5rem  0;}
   .editbox .form-table .form-cell:nth-child(even) {padding-right: 0;}
   .editbox hr.line {margin: 1.0rem 0;}
+
+  .group-box-wrap {display: block; height: auto !important;}
+  .file-link {height: auto !important; line-height: auto !important;}
 }
 
 

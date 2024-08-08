@@ -105,9 +105,10 @@ function POccupationMu1P5edit() {
         </div>
         <hr className="line"></hr>
         <div className="form-table">
-          <div className="group-box-wrap wid100">
-            <span className="txt">첨부파일 Link{/*<span className="required">*</span>*/}</span>
-            {/*<div className="radio-wrap">
+          <div className="form-cell wid50">
+            <div className="group-box-wrap wid100">
+              <span className="txt">첨부파일 Link{/*<span className="required">*</span>*/}</span>
+              {/*<div className="radio-wrap">
               <label>
                 <input type="radio" checked />
                 <span>YES</span>
@@ -117,33 +118,34 @@ function POccupationMu1P5edit() {
                 <span>NO</span>
               </label>
             </div>*/}
-            <button type="button" name="button" className="btn-plus">
-              추가
-            </button>
-            <div className="file-link">
-              <div className="link-box">
-                <a href="javascript:void(0);">첨부Link</a>
-                <a href="javascript:void(0);">
-                  <span className="close-btn">close</span>
-                </a>
-              </div>
-              <div className="link-box">
-                <a href="javascript:void(0);">첨부Link</a>
-                <a href="javascript:void(0);">
-                  <span className="close-btn">close</span>
-                </a>
-              </div>
-              <div className="link-box">
-                <a href="javascript:void(0);">첨부Link</a>
-                <a href="javascript:void(0);">
-                  <span className="close-btn">close</span>
-                </a>
-              </div>
-              <div className="link-box">
-                <a href="javascript:void(0);">첨부Link</a>
-                <a href="javascript:void(0);">
-                  <span className="close-btn">close</span>
-                </a>
+              <button type="button" name="button" className="btn-plus">
+                추가
+              </button>
+              <div className="file-link">
+                <div className="link-box">
+                  <a href="javascript:void(0);">첨부Link첨부Link첨부Link</a>
+                  <a href="javascript:void(0);">
+                    <span className="close-btn">close</span>
+                  </a>
+                </div>
+                <div className="link-box">
+                  <a href="javascript:void(0);">첨부Link</a>
+                  <a href="javascript:void(0);">
+                    <span className="close-btn">close</span>
+                  </a>
+                </div>
+                <div className="link-box">
+                  <a href="javascript:void(0);">첨부Link</a>
+                  <a href="javascript:void(0);">
+                    <span className="close-btn">close</span>
+                  </a>
+                </div>
+                <div className="link-box">
+                  <a href="javascript:void(0);">첨부Link</a>
+                  <a href="javascript:void(0);">
+                    <span className="close-btn">close</span>
+                  </a>
+                </div>
               </div>
             </div>
           </div>
