@@ -1,4 +1,4 @@
-import shareImage from '@/resources/images/share.svg';
+import AppSelect from '@/components/common/AppSelect';
 
 function POccupationMu1P5detail() {
   return (
@@ -7,6 +7,14 @@ function POccupationMu1P5detail() {
         <h2>규정/지침/매뉴얼/양식</h2>
       </div>
       {/*상세페이지*/}
+      <div className="number">
+        <div className="title">개정번호</div>
+        <div className="form-cell wd-300">
+          <div className="form-group wid100">
+            <AppSelect label={'개정번호'} />
+          </div>
+        </div>
+      </div>
       <div className="editbox">
         <div className="form-table">
           <div className="form-cell wid100">
@@ -171,12 +179,8 @@ function POccupationMu1P5detail() {
       {/*//상세페이지*/}
       {/* 하단버튼영역 */}
       <div className="contents-btns">
-        <button type="button" name="button" className="btn_text btn-share">
-          <img src={shareImage} />
-          <span>공유</span>
-        </button>
         <button type="button" name="button" className="btn_text text_color_neutral-10 btn_confirm">
-          수정
+          저장
         </button>
         <button type="button" name="button" className="btn_text btn-del">
           삭제
