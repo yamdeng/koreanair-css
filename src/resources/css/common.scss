@@ -454,6 +454,8 @@ input, select{font-family:'KoreanAirSans'}
 .box-view-list .view-list .text-desc-type1 .desc-file a{position:relative;width:100%}
 .box-view-list .view-list .text-desc-type1 .desc-file a span:hover{color:var(--color-mblue-100)}
 .box-view-list .view-list .text-desc-type1 .desc-file .download{float:right;margin-right:1rem;background:url(/src/resources/images/icon-download.svg) center center no-repeat;font-size:0;width:2.3rem;height:2.3rem}
+.box-view-list .view-list .text-desc-type2{position:relative;display: inline-block;width:auto;padding-right:0.8rem;font-weight:400;font-size:1.6rem;color:var(--color-neutral-80);text-align:left;overflow:hidden;word-break:break-all;text-overflow:ellipsis;margin-right: 1.5rem;}
+.box-view-list .view-list .text-desc-type2 a:hover {text-decoration: underline;}
 
 .imgBoxWrap{position:relative;border:0.1rem solid var(--color-darkblue-100);background-color:var(--color-neutral-30)}
 .imgBox{position:relative;overflow:hidden;text-align:center;height:100px;width:100px}

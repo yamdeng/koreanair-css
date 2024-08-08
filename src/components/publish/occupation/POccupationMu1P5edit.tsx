@@ -67,7 +67,7 @@ function POccupationMu1P5edit() {
   return (
     <>
       <div className="conts-title">
-        <h2>규정/지침/매뉴얼/양식 개정</h2>
+        <h2>규정/지침/매뉴얼/양식</h2>
       </div>
       {/* 입력영역 */}
       <div className="editbox">

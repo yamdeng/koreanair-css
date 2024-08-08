@@ -4,6 +4,7 @@ import POccupationMu1P1edit from '@/components/publish/occupation/POccupationMu1
 import POccupationMu1P1detail from '@/components/publish/occupation/POccupationMu1P1detail';
 import POccupationMu1P5list from '@/components/publish/occupation/POccupationMu1P5list';
 import POccupationMu1P5edit from '@/components/publish/occupation/POccupationMu1P5edit';
+import POccupationMu1P5detail from '@/components/publish/occupation/POccupationMu1P5detail';
 import POccupationTraining from '@/components/publish/occupation/POccupationTraining';
 
 const OccupationPageInfo: any = {};
@@ -48,6 +49,13 @@ OccupationPageInfo.list = [
     title: '안전경영 > 규정/지침/메뉴얼/양식-입력',
     Component: POccupationMu1P5edit,
     path: 'POccupationMu1P5edit',
+    description: '',
+    success: false,
+  },
+  {
+    title: '안전경영 > 규정/지침/메뉴얼/양식-상세',
+    Component: POccupationMu1P5detail,
+    path: 'POccupationMu1P5detail',
     description: '',
     success: false,
   },
