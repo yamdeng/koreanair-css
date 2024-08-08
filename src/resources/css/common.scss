@@ -268,11 +268,11 @@ input, select{font-family:'KoreanAirSans'}
   .group-box-wrap{
     position: relative;
     padding:0 1.0rem;
-    border: 0.1rem solid #ccc;
+    border: 0.1rem solid var(--color-neutral-40);
     border-radius: 0.5rem;
 }
 .group-box-wrap .txt {
-  background: #fff;
+  background:var(--color-neutral-10);
   padding: 0 0.5rem;
   position: absolute;
   left: 1.0rem;
@@ -293,6 +293,9 @@ input, select{font-family:'KoreanAirSans'}
   .detail-list .form-table{display:flex;width:100%}
   .form-table +.form-table{padding-top:1.5rem}
 }
+
+.group-box-wrap{position:relative;padding:0 1.0rem;border:0.1rem solid var(--color-neutral-40);border-radius:0.5rem}
+.group-box-wrap .txt{position:absolute;left:1.0rem;top:-1.2rem;background:var(--color-neutral-10);padding:0 0.5rem;font-size:1.4rem}
 
 /*부서검색*/
 .conts-box{position:relative;height: calc(100vh - 18.5rem);overflow:hidden}

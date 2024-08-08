@@ -73,9 +73,6 @@ function PRiskForm1() {
             <button type="button" name="button" className="btn-sm btn_text btn-darkblue-line">
               조회
             </button>
-            <button type="button" name="button" className="btn-sm btn_text btn-darkblue-line">
-              초기화
-            </button>
           </div>
         </div>
         {/*__control명 옆에 active  */}
