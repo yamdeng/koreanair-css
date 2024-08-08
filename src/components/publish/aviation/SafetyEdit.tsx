@@ -61,7 +61,7 @@ const props: any = {
   },
 };
 
-function SafetyList() {
+function SafetyEdit() {
   const rowData = getAllData();
   const columns = testColumnInfos;
   return (
@@ -135,4 +135,4 @@ function SafetyList() {
   );
 }
 
-export default SafetyList;
+export default SafetyEdit;

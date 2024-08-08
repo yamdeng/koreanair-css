@@ -5,7 +5,7 @@ import { getAllData } from '@/data/grid/example-data-new';
 import { testColumnInfos } from '@/data/grid/table-column';
 import AppDatePicker from '@/components/common/AppDatePicker';
 
-function SPIInfo1() {
+function Checklist1() {
   const [inputValue, setInputValue] = useState('');
   const rowData = getAllData();
   const columns = testColumnInfos;
@@ -489,4 +489,4 @@ function SPIInfo1() {
   );
 }
 
-export default SPIInfo1;
+export default Checklist1;

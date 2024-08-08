@@ -6,13 +6,13 @@ import AppTextInput from '@/components/common/AppTextInput';
 import { getAllData } from '@/data/grid/example-data-new';
 import { testColumnInfos } from '@/data/grid/table-column';
 
-function TaxonomyList() {
+function EventtypeList() {
   const rowData = getAllData();
   const columns = testColumnInfos;
   return (
     <>
       <div className="conts-title">
-        <h2>Taxonomy 관리</h2>
+        <h2>EVENT TYPE </h2>
       </div>
       {/*검색영역 */}
       <div className="boxForm">
@@ -21,44 +21,22 @@ function TaxonomyList() {
           <div className="form-table">
             <div className="form-cell wid50">
               <div className="form-group wid100">
-                <AppTextInput label="Level1" />
+                <AppSelect label="리포트구분" />
               </div>
             </div>
             <div className="form-cell wid50">
               <div className="form-group wid100">
-                <AppTextInput label={'Level2'} />
-              </div>
-            </div>
-            <div className="form-cell wid50">
-              <div className="form-group wid100">
-                <AppTextInput label={'Level3'} />
+                <AppTextInput label={'이벤트명'} />
               </div>
             </div>
           </div>
           <div className="form-table">
-            <div className="form-cell ">
-              <div className="form-group wid100">
-                <AppTextInput label={'위해요인내용'} />
-              </div>
-            </div>
-          </div>
-          <div className="form-table">
-            <div className="form-cell wid50">
-              <div className="form-group wid100">
-                <AppTextInput label={'출처'} />
-              </div>
-            </div>
-            <div className="form-cell wid50">
-              <div className="form-group wid100">
-                <AppTextInput label={'잠재결과'} />
-              </div>
-            </div>
             <div className="form-cell wid50">
               <div className="form-group wid100">
                 <AppSelect label={'사용여부'} />
               </div>
             </div>
-            <div className="form-cell wid50">
+            <div className="form-cell wid100">
               <div className="form-group wid100">
                 <AppTextInput label={'비고'} />
               </div>
@@ -94,4 +72,4 @@ function TaxonomyList() {
   );
 }
 
-export default TaxonomyList;
+export default EventtypeList;

@@ -61,7 +61,7 @@ const props: any = {
   },
 };
 
-function SafetyDetail() {
+function SafetyManualDetail() {
   const rowData = getAllData();
   const columns = testColumnInfos;
   return (
@@ -201,4 +201,4 @@ function SafetyDetail() {
   );
 }
 
-export default SafetyDetail;
+export default SafetyManualDetail;

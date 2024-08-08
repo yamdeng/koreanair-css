@@ -61,25 +61,20 @@ const props: any = {
   },
 };
 
-function TaxonomyEdit() {
+function PotentialConEdit() {
   const rowData = getAllData();
   const columns = testColumnInfos;
   return (
     <>
       <div className="conts-title">
-        <h2>Taxonomy 신규</h2>
+        <h2>Potential Consequence</h2>
       </div>
       {/* 입력영역 */}
       <div className="editbox">
         <div className="form-table">
           <div className="form-cell wid50">
             <div className="form-group wid100">
-              <AppSelect label={'Level1'} required />
-            </div>
-          </div>
-          <div className="form-cell wid100">
-            <div className="form-group wid100">
-              <AppTextInput label="Level1" disabled />
+              <AppSelect label={'리포트구분'} required />
             </div>
           </div>
         </div>
@@ -87,59 +82,25 @@ function TaxonomyEdit() {
         <div className="form-table">
           <div className="form-cell wid50">
             <div className="form-group wid100">
-              <AppSelect label={'Level2'} required />
+              <AppTextInput label={'잠재적결과(KOR)'} required />
             </div>
           </div>
-          <div className="form-cell wid100">
+          <div className="form-cell wid50">
             <div className="form-group wid100">
-              <AppTextInput label="Level2" disabled />
+              <AppTextInput label="잠재적결과(ENG)" required />
             </div>
           </div>
         </div>
         <hr className="line"></hr>
         <div className="form-table">
-          <div className="form-cell wid50">
-            <div className="form-group wid100">
-              <AppTextInput label={'Level3'} required />
-            </div>
-          </div>
-        </div>
-        <hr className="line"></hr>
-        <div className="form-table">
-          <div className="form-cell wid50">
-            <div className="form-group wid100">
-              <AppTextInput label={'위해요인 내용'} />
-            </div>
-          </div>
-        </div>
-        <hr className="line"></hr>
-        <div className="form-table">
-          <div className="form-cell wid50">
-            <div className="form-group wid100">
-              <AppTextInput label={'출처'} />
-            </div>
-          </div>
-          <div className="form-cell wid50">
-            <div className="form-group wid100">
-              <AppTextInput label={'잠재결과'} />
-            </div>
-          </div>
           <div className="form-cell wid50">
             <div className="form-group wid100">
               <AppSelect label={'사용여부'} />
             </div>
           </div>
-          <div className="form-cell wid50">
+          <div className="form-cell wid100">
             <div className="form-group wid100">
               <AppTextInput label={'비고'} />
-            </div>
-          </div>
-        </div>
-        <hr className="line"></hr>
-        <div className="form-table">
-          <div className="form-cell wid50">
-            <div className="form-group wid100">
-              <AppTextInput label={'정렬순서'} />
             </div>
           </div>
         </div>
@@ -160,4 +121,4 @@ function TaxonomyEdit() {
   );
 }
 
-export default TaxonomyEdit;
+export default PotentialConEdit;

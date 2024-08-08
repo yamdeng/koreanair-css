@@ -11,6 +11,13 @@ import SafetyDetail from '@/components/publish/aviation/SafetyDetail';
 import SafetyManual from '@/components/publish/aviation/SafetyManual';
 import SafetyManualDetail from '@/components/publish/aviation/SafetyManualDetail';
 import SafetyPolicy from '@/components/publish/aviation/SafetyPolicy';
+import PotentialConList from '@/components/publish/aviation/PotentialConList';
+import PotentialConEdit from '@/components/publish/aviation/PotentialConEdit';
+import EventtypeList from '@/components/publish/aviation/EventtypeList';
+import EventtypeEdit from '@/components/publish/aviation/EventtypeEdit';
+import AdminSafetyManualList from '@/components/publish/aviation/AdminSafetyManualList';
+
+import { fa } from '@faker-js/faker';
 
 const AviationPageInfo: any = {};
 
@@ -62,7 +69,35 @@ AviationPageInfo.list = [
     Component: TaxonomyEdit,
     path: 'TaxonomyEdit',
     description: '',
-    success: false,
+    success: true,
+  },
+  {
+    title: '[07.관리자] HAZARD관리 > PotentialConsequence > 리스트',
+    Component: PotentialConList,
+    path: 'PotentialConList',
+    description: '',
+    success: true,
+  },
+  {
+    title: '[07.관리자] HAZARD관리 > PotentialConsequence > 등록',
+    Component: PotentialConEdit,
+    path: 'PotentialConEdit',
+    description: '',
+    success: true,
+  },
+  {
+    title: '[07.관리자] EVENT TYPE관리 > 리스트',
+    Component: EventtypeList,
+    path: 'EventtypeList',
+    description: '',
+    success: true,
+  },
+  {
+    title: '[07.관리자] EVENT TYPE관리 > 등록',
+    Component: EventtypeEdit,
+    path: 'EventtypeEdit',
+    description: '',
+    success: true,
   },
   {
     title: '[07.관리자] 안전정책 > 리스트',
@@ -84,6 +119,13 @@ AviationPageInfo.list = [
     path: 'SafetyDetail',
     description: '',
     success: true,
+  },
+  {
+    title: '[07.관리자] 안전매뉴얼 > 리스트',
+    Component: AdminSafetyManualList,
+    path: 'AdminSafetyManualList',
+    description: '',
+    success: false,
   },
   {
     title: '[02.안정정책] 안전정책 > 매뉴얼',
