@@ -238,10 +238,10 @@ input, select{font-family:'KoreanAirSans'}
   .btn-share img {display: inline-block; vertical-align: bottom;}
   .btn-share span {display: inline-block; color: var(--color-neutral-10); vertical-align: top;}
   .btn-type01 {}
-  text-align:right;
+  text-align:right
 }
 /* 상단 타이틀 */
-.conts-title{position:relative;align-items:center;padding:2.0rem 0 4.0rem 0;margin-bottom:1.0rem}
+.conts-title{position:relative;align-items:center;padding:2.0rem 0 4.0rem 0;/*margin-bottom:1.0rem*/}
 .conts-title h2{float:left;font-family:"KoreanAirSans";font-size:3rem;color:var(--color-neutral-80);font-weight:700;letter-spacing:-0.1rem}
 .conts-title h2 span{font-size:2.5rem;color:var(--color-mblue-100)}
 
@@ -370,13 +370,13 @@ input, select{font-family:'KoreanAirSans'}
   padding: 0;
   margin:1.5rem 0;
 }
-.editbox .form-table{display:flex; width:100%}
-/* .editbox .form-table:first-child{padding-top:3rem}*/
+.editbox .form-table{display:flex;width:100%}
 .editbox .form-table + .form-table{/*padding-top:1.5rem*/}
 .editbox .form-table:last-child{/*padding-bottom:2.0rem*/}
 .editbox .form-table .form-cell{position:relative; flex-grow:1; padding-right:1.0rem;}
 .editbox .form-table .form-cell:last-child{padding-right:0}
 .editbox.tog{margin-bottom:0rem; padding-top:0rem}
+.editbox.NoLine{border-top:0} 
 
 /*검색영역*/
 .info-wrap .edit-area > .boxForm{padding:0}
@@ -454,6 +454,10 @@ input, select{font-family:'KoreanAirSans'}
 
 .form-group .df.row1{justify-content:center}
 .form-group .df.row1 > .btn-area{padding-top:0}
+.form-group .img{width:100%;height:100%;margin:0 auto;overflow:hidden}
+.form-group .img .img-thumbnail{width:100%;
+  height:100%;
+  object-fit:cover;}
 
 
 /*상세리스트*/
