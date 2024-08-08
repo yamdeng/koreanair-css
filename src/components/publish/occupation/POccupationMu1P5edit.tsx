@@ -105,8 +105,20 @@ function POccupationMu1P5edit() {
         </div>
         <hr className="line"></hr>
         <div className="form-table">
-          <div className="form-cell wid100">
-            <div className="form-group wid100">첨부파일링크</div>
+          <div className="group-box-wrap wid50">
+            <span className="txt">
+              SPI 여부<span className="required">*</span>
+            </span>
+            <div className="radio-wrap">
+              <label>
+                <input type="radio" checked />
+                <span>YES</span>
+              </label>
+              <label>
+                <input type="radio" />
+                <span>NO</span>
+              </label>
+            </div>
           </div>
         </div>
         <hr className="line"></hr>
