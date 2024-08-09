@@ -12,6 +12,7 @@ import PUserEditModal2 from '@/components/publish/modal/PUserEditModal2';
 import PUserViewModal from '@/components/publish/modal/PUserViewModal';
 import PChecklistModal from '@/components/publish/modal/PChecklistModal';
 import PRightCommentLayer from '@/components/publish/modal/PRightCommentLayer';
+import MU1P5detail2Modal from '@/components/publish/modal/MU1P5detail2Modal';
 
 const ModalPageInfo: any = {};
 
@@ -111,6 +112,13 @@ ModalPageInfo.list = [
     title: '우측 댓글 영역',
     Component: PRightCommentLayer,
     path: 'PRightCommentLayer',
+    description: '',
+    success: true,
+  },
+  {
+    title: '산업안전 > 안전경영 > 첨부링크 팝업창',
+    Component: MU1P5detail2Modal,
+    path: 'MU1P5detail2Modal',
     description: '',
     success: true,
   },
