@@ -51,7 +51,6 @@ body * {
 
 .contents legend{visibility:hidden;height:0;line-height:0}
 .required{color:var(--color-negative)}
-.tc{text-align:center !important}
 
 .wid30{width:30%}
 .wid50{width:50%}
@@ -344,7 +343,7 @@ input, select{font-family:'KoreanAirSans'}
   border-top: 0.1rem solid var(--color-darkblue-100);
   display:inline-block;
   width:100%;
-  padding:1.5rem 0;
+  /*padding:1.5rem 0;*/
 }
 .editbox hr.line {
   border:none;
@@ -352,12 +351,12 @@ input, select{font-family:'KoreanAirSans'}
   background:var(--color-neutral-40);
   margin: 0;
   padding: 0;
-  margin:1.5rem 0;
+  /*margin:1.5rem 0;*/
 }
 .editbox .form-table{display:flex;width:100%}
 .editbox .form-table + .form-table{/*padding-top:1.5rem*/}
 .editbox .form-table:last-child{/*padding-bottom:2.0rem*/}
-.editbox .form-table .form-cell{position:relative; flex-grow:1; padding-right:1.0rem;}
+.editbox .form-table .form-cell{position:relative; flex-grow:1; padding:2.0rem 1.0rem 2.0rem 0;}
 .editbox .form-table .form-cell:last-child{padding-right:0}
 .editbox.tog{margin-bottom:0rem; padding-top:0rem}
 .editbox.NoLine{border-top:0} 
@@ -370,7 +369,7 @@ input, select{font-family:'KoreanAirSans'}
 .boxForm .form-table + .form-table{/*padding-top:1.5rem*/}
 .boxForm .form-table:last-child{padding-bottom:1.5rem}
 .boxForm .form-table .form-cell{position:relative;flex-grow:1;padding:0 0.5rem;padding-top:1.2rem}
-
+.boxForm .form-table .wid-300 {max-width: 30.0rem;}
 /*.boxForm .form-table .form-cell:last-child{padding-right:0}*/
 .boxForm.tog{margin-bottom:0rem;padding-top:0rem}
 
@@ -389,7 +388,7 @@ input, select{font-family:'KoreanAirSans'}
 .form-group .invalid-txt.textarea{top: 201px}
 .form-group .row1{display:flex}
 
-.form-group .list{}
+
 .form-group .list li{position:relative;text-overflow:ellipsis;white-space:nowrap;overflow:hidden}
 .form-group .list li .delete{position:absolute;right:0;background: url(/src/resources/images/delete-text.svg) center center no-repeat;font-size: 0;width: 2rem;height: 2rem}
 
@@ -455,6 +454,8 @@ input, select{font-family:'KoreanAirSans'}
 .box-view-list .view-list .text-desc-type1 .desc-file a{position:relative;width:100%}
 .box-view-list .view-list .text-desc-type1 .desc-file a span:hover{color:var(--color-mblue-100)}
 .box-view-list .view-list .text-desc-type1 .desc-file .download{float:right;margin-right:1rem;background:url(/src/resources/images/icon-download.svg) center center no-repeat;font-size:0;width:2.3rem;height:2.3rem}
+.box-view-list .view-list .text-desc-type2{position:relative;display: inline-block;width:auto;padding-right:0.8rem;font-weight:400;font-size:1.6rem;color:var(--color-neutral-80);text-align:left;overflow:hidden;word-break:break-all;text-overflow:ellipsis;margin-right: 1.5rem;}
+.box-view-list .view-list .text-desc-type2 a:hover {text-decoration: underline;}
 
 .imgBoxWrap{position:relative;border:0.1rem solid var(--color-darkblue-100);background-color:var(--color-neutral-30)}
 .imgBox{position:relative;overflow:hidden;text-align:center;height:100px;width:100px}
