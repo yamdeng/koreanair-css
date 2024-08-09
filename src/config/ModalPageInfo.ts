@@ -11,6 +11,7 @@ import PUserEditModal from '@/components/publish/modal/PUserEditModal';
 import PUserEditModal2 from '@/components/publish/modal/PUserEditModal2';
 import PUserViewModal from '@/components/publish/modal/PUserViewModal';
 import PChecklistModal from '@/components/publish/modal/PChecklistModal';
+import PRightCommentLayer from '@/components/publish/modal/PRightCommentLayer';
 
 const ModalPageInfo: any = {};
 
@@ -103,6 +104,13 @@ ModalPageInfo.list = [
     title: '[ADUIT] Checklist 팝업창',
     Component: PChecklistModal,
     path: 'PChecklistModal',
+    description: '',
+    success: true,
+  },
+  {
+    title: '우측 댓글 영역',
+    Component: PRightCommentLayer,
+    path: 'PRightCommentLayer',
     description: '',
     success: true,
   },

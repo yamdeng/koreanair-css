@@ -3,6 +3,7 @@ import PBasicTable2 from '@/components/publish/common/PBasicTable2';
 import PBasicForm1 from '@/components/publish/common/PBasicForm1';
 import PFileForm from '@/components/publish/common/PFileForm';
 import Table from '@/components/publish/common/Table';
+import PTableCustomColumn from '@/components/publish/common/PTableCustomColumn';
 
 const CommonPageInfo: any = {};
 
@@ -39,6 +40,13 @@ CommonPageInfo.list = [
     title: '테이블&버튼',
     Component: Table,
     path: 'Table',
+    description: '',
+    success: false,
+  },
+  {
+    title: '테이블 cell custom column',
+    Component: PTableCustomColumn,
+    path: 'PTableCustomColumn',
     description: '',
     success: false,
   },
