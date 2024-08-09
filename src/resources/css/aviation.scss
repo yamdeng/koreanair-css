@@ -27,23 +27,22 @@
 /*우측레이어*/
 .RightLayer-Wrap{border:solid 1px red}
 
-/* 리포트 프로세스 */
+/* 리포트 프로세스
 .Report-process-wrap{display:flex;width:100%;justify-content:space-between}
 .Report-process-wrap::after{content:'';display:block;clear:both}
 .Report-process-wrap .process-box{position:relative;display:flex;width:100%;flex-wrap:nowrap;overflow:auto hidden;scroll-behavior:smooth;gap:0 1.0rem}
 .Report-process-wrap .process-box:after{content:'';display:block;clear:both}
-.Report-process-wrap .process-box a:last-child{/*border-top-right-radius:0.8rem;border-bottom-right-radius:0.8rem*/}
 .Report-process-wrap .process-box a{display:inline-flex;width:100%;font-size:1.6rem;line-height:1.5;min-height:4.4rem;border:1px solid var(--color-neutral-40);background-color:var(--color-neutral-10);color:var(--color-neutral-80);padding:0 1.5rem;align-items:center;justify-content:center;text-align:center}
-.Report-process-wrap .process-box a.active{/*background-color:var(--color-darkblue-100);*/border:solid 0.2rem var(--color-darkblue-100);color:var(--color-darkblue-100);font-weight:700;}
+.Report-process-wrap .process-box a.active{border:solid 0.2rem var(--color-darkblue-100);color:var(--color-darkblue-100);font-weight:700;}
 .Report-process-wrap .process-box a:nth-child(1){width:25%;border-radius:0.8rem;}
 .Report-process-wrap .process-box a:nth-child(2){width:25%;border-radius:0.8rem;}
 .Report-process-wrap .process-box a:nth-child(3){width:25%;border-radius:0.8rem;}
 .Report-process-wrap .process-box a:nth-child(4){width:25%;border-radius:0.8rem;}
-.Report-process-wrap .process-box a:nth-child(5){width:25%;border-radius:0.8rem;}
+.Report-process-wrap .process-box a:nth-child(5){width:25%;border-radius:0.8rem;} */
 .process-btns{position:relative;width:100%}
 
-/*.c-step-wrap.bg-white[class*=c-step-list-type]{background-color: #fff;}
-.c-step-wrap ol{justify-content:center}*/
+.c-step-wrap.bg-white[class*=c-step-list-type-5]{background-color: #fff;}
+/*.c-step-wrap ol{justify-content:center}*/
 
 
 [class*=c-step-list-type]{display:flex;justify-content:flex-start;border:1px solid var(--color-neutral-40);background-color:var(--color-neutral-20);border-radius:0.8rem;overflow:hidden;counter-reset: stepCounter}

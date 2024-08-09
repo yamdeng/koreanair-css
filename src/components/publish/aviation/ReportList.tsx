@@ -92,7 +92,7 @@ function ReportList() {
       {/* //검색영역 */}
 
       {/* 리포트 프로세스 */}
-      <div className="Report-process-wrap">
+      {/* <div className="Report-process-wrap">
         <div className="process-box ">
           <a href="javascript:void(0);" className="active" data-label="접수">
             접수
@@ -110,8 +110,7 @@ function ReportList() {
             종결
           </a>
         </div>
-      </div>
-      <br></br>
+      </div>*/}
 
       <div className="c-step-wrap bg-white">
         <ol className="c-step-list-type-5">
@@ -159,27 +158,6 @@ function ReportList() {
         <button type="button">보고서 묶기 처리</button>
       </div>
       {/* //  업무관련 버튼 */}
-
-      {/* //리포트 프로세스 */}
-      {/*<div>
-        <ul className="Report-process">
-          <li>
-            <span>접수</span>
-          </li>
-          <li>
-            <span>1차 위험평가</span>
-          </li>
-          <li>
-            <span>경감조치</span>
-          </li>
-          <li>
-            <span>2차 위험평가</span>
-          </li>
-          <li className="last">
-            <span>종결(10)</span>
-          </li>
-        </ul>
-      </div>*/}
 
       {/*그리드영역 */}
       <div className="">
