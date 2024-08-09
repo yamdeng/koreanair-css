@@ -71,7 +71,7 @@ function POccupationMu1P5edit() {
       </div>
       {/* 입력영역 */}
       <div className="editbox">
-        <div className="form-table">
+        <div className="form-table line">
           <div className="form-cell wid50">
             <div className="form-group wid100">
               <AppSelect label={'본부'} />
@@ -103,8 +103,8 @@ function POccupationMu1P5edit() {
             </div>
           </div>
         </div>
-        <hr className="line"></hr>
-        <div className="form-table">
+        <hr className="line dp-n"></hr>
+        <div className="form-table line">
           <div className="form-cell wid50">
             <div className="group-box-wrap wid100">
               <span className="txt">첨부파일 Link{/*<span className="required">*</span>*/}</span>
@@ -150,7 +150,7 @@ function POccupationMu1P5edit() {
             </div>
           </div>
         </div>
-        <hr className="line"></hr>
+        <hr className="line dp-n"></hr>
         <div className="form-table">
           <div className="form-cell wid100">
             <div className="form-group wid100">

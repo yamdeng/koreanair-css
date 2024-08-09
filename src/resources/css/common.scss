@@ -356,7 +356,7 @@ input, select{font-family:'KoreanAirSans'}
 .editbox .form-table{display:flex;width:100%}
 .editbox .form-table + .form-table{/*padding-top:1.5rem*/}
 .editbox .form-table:last-child{/*padding-bottom:2.0rem*/}
-.editbox .form-table .form-cell{position:relative; flex-grow:1; padding:1.0rem 1.0rem 1.0rem 0;}
+.editbox .form-table .form-cell{position:relative; flex-grow:1; padding:2.0rem 1.0rem 2.0rem 0;}
 .editbox .form-table .form-cell:last-child{padding-right:0}
 .editbox.tog{margin-bottom:0rem; padding-top:0rem}
 .editbox.NoLine{border-top:0} 
@@ -388,7 +388,7 @@ input, select{font-family:'KoreanAirSans'}
 .form-group .invalid-txt.textarea{top: 201px}
 .form-group .row1{display:flex}
 
-.form-group .list{}
+
 .form-group .list li{position:relative;text-overflow:ellipsis;white-space:nowrap;overflow:hidden}
 .form-group .list li .delete{position:absolute;right:0;background: url(/src/resources/images/delete-text.svg) center center no-repeat;font-size: 0;width: 2rem;height: 2rem}
 

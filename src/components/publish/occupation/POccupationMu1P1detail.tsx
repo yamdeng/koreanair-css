@@ -8,7 +8,7 @@ function POccupationMu1P1detail() {
       </div>
       {/*상세페이지*/}
       <div className="editbox">
-        <div className="form-table">
+        <div className="form-table line">
           <div className="form-cell wid100">
             <div className="form-group wid100">
               <div className="box-view-list">
@@ -70,7 +70,7 @@ function POccupationMu1P1detail() {
             </div>
           </div>
         </div>
-        <hr className="line"></hr>
+        <hr className="line dp-n"></hr>
         <div className="form-table">
           <div className="form-cell wid100">
             <div className="form-group wid100">

@@ -71,7 +71,7 @@ function POccupationMu1P1edit() {
       </div>
       {/* 입력영역 */}
       <div className="editbox">
-        <div className="form-table">
+        <div className="form-table line">
           <div className="form-cell wid50">
             <div className="form-group wid100">
               <AppTextInput label="본부" />
@@ -98,7 +98,7 @@ function POccupationMu1P1edit() {
             </div>
           </div>
         </div>
-        <hr className="line"></hr>
+        <hr className="line dp-n"></hr>
         <div className="form-table">
           <div className="form-cell wid100">
             <div className="form-group wid100">
