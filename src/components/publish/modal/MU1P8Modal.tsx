@@ -2,6 +2,7 @@ import { useState } from 'react';
 import Modal from 'react-modal';
 import { DatePicker, TimePicker, TreeSelect, Select as AntSelect } from 'antd';
 import AppTextInput from '@/components/common/AppTextInput';
+import AppAutoComplete from '@/components/common/AppAutoComplete';
 
 const options = [
   { value: 'chocolate', label: 'Chocolate Chocolate Chocolate ChocolateChocolateChocolateChocolate' },
@@ -23,13 +24,13 @@ function ChecklistModal(props) {
       }}
     >
       <div className="popup-container">
-        <h3 className="pop_title">첨부 Link</h3>
+        <h3 className="pop_title">법령</h3>
         <div className="pop_cont">
           <div className="editbox">
             <div className="form-table">
               <div className="form-cell wid50">
                 <div className="form-group wid100">
-                  <AppTextInput label="주제" />
+                  <AppAutoComplete label={'법규명'} />
                 </div>
               </div>
             </div>
@@ -37,7 +38,15 @@ function ChecklistModal(props) {
             <div className="form-table">
               <div className="form-cell wid50">
                 <div className="form-group wid100">
-                  <AppTextInput label="URL" />
+                  <AppTextInput label="법령 일련번호" />
+                </div>
+              </div>
+            </div>
+            <hr className="line"></hr>
+            <div className="form-table">
+              <div className="form-cell wid50">
+                <div className="form-group wid100">
+                  <AppTextInput label="주관부서" />
                 </div>
               </div>
             </div>
