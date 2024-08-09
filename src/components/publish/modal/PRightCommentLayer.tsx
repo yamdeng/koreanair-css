@@ -5,7 +5,7 @@ function PRightCommentLayer() {
   const handleClick = () => {
     setIsOpen(true);
   };
-  let applyClassName = 'laye-test';
+  let applyClassName = 'RightLayer-Wrap';
   if (isOpen) {
     applyClassName = applyClassName + ' active';
   }

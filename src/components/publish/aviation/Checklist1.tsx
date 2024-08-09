@@ -11,9 +11,9 @@ function Checklist1() {
   const columns = testColumnInfos;
   return (
     <>
-      <div className="conts-title">
+      {/*<div className="conts-title">
         <h2>Checklist</h2>
-      </div>
+      </div>*/}
       {/*탭 */}
       <div className="menu-tab-nav">
         <div className="menu-tab">

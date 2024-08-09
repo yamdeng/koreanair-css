@@ -17,6 +17,8 @@ import EventtypeList from '@/components/publish/aviation/EventtypeList';
 import EventtypeEdit from '@/components/publish/aviation/EventtypeEdit';
 import AdminSafetyManualList from '@/components/publish/aviation/AdminSafetyManualList';
 import AdminSafetyManualEdit from '@/components/publish/aviation/AdminSafetyManualEdit';
+import ReportList from '@/components/publish/aviation/ReportList';
+import ReportDetail from '@/components/publish/aviation/ReportDetail';
 
 import { fa } from '@faker-js/faker';
 
@@ -41,6 +43,20 @@ AviationPageInfo.list = [
     title: '[03.안전위험관리] 안전조사 > 조사보고서 뷰',
     Component: PRiskForm2,
     path: 'PRiskForm2',
+    description: '',
+    success: false,
+  },
+  {
+    title: '[03.안전위험관리] 보고서분석 > 리스트',
+    Component: ReportList,
+    path: 'ReportList',
+    description: '',
+    success: false,
+  },
+  {
+    title: '[03.안전위험관리] 보고서분석 > 상세',
+    Component: ReportDetail,
+    path: 'ReportDetail',
     description: '',
     success: false,
   },

@@ -56,6 +56,8 @@
   .contents-btns > button.btn-type01:nth-child(odd) {margin-right:0.2rem;}
 
   .group-box-wrap {display: block; height: auto !important;}
+
+  .c-step-wrap ol{position:relative;display:flex;width:100%;flex-wrap:nowrap;overflow:auto hidden;scroll-behavior:smooth;justify-content:center}
 }
 
 
@@ -113,6 +115,8 @@
 
   .group-box-wrap {display: block; height: auto !important;}
   .file-link {height: auto !important; line-height: auto !important;}
+
+  .c-step-wrap ol{position:relative;display:flex;width:100%;flex-wrap:nowrap;overflow:auto hidden;scroll-behavior:smooth;/*justify-content:center*/}
 }
 
 
@@ -138,4 +142,6 @@
 
   .editbox .form-table .form-cell {width: 100%; padding-right: 0;}
   .dp-n {display: none;}
+
+  .c-step-wrap ol{overflow:auto hidden;scroll-behavior:smooth}
 }

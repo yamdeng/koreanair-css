@@ -3,7 +3,7 @@ import { getAllData } from '@/data/grid/example-data-new';
 import { testColumnInfos } from '@/data/grid/table-column';
 
 function CustomColumnComponent1() {
-  return <div style={{ fontWeight: 'bold', textDecoration: 'underline' }}>custom 컴포넌트1</div>;
+  return <div style={{ fontWeight: 'bold', textDecoration: 'underline' }}>custom 컴포넌트aaa1</div>;
 }
 
 function CustomColumnComponent2() {
