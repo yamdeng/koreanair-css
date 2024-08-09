@@ -90,6 +90,7 @@ function SafetyDetail() {
         <hr className="line dp-n"></hr>
       </div>
       //상세페이지*/}
+      <div className="h3">ASR-100308</div>
       <div className="c-step-wrap">
         <ol className="c-step-list-type-5">
           <li>

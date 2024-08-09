@@ -7,7 +7,7 @@ import AppTable from '@/components/common/AppTable';
 import { DatePicker, Select as AntSelect } from 'antd';
 
 /* treeData 가공 */
-const x = 3;
+const x = 5;
 const y = 2;
 const z = 1;
 const treeData = [];

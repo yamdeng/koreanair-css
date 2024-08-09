@@ -123,7 +123,7 @@ function ReportList() {
             </a>
             <span className="after-arrow"></span>
           </li>
-          <li className="active">
+          <li className="">
             <a href="javascript:void(0);" data-label="1차 위험평가">
               <p className="info-title">
                 <span className="hide">2단계</span>
