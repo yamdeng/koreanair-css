@@ -23,12 +23,12 @@ function POccupationMu1P7list() {
       {/*검색영역 */}
       <div className="boxForm">
         <div className="form-table">
-          <div className="form-cell wid50">
+          <div className="form-cell wid-300">
             <div className="form-group wid100">
               <AppAutoComplete label={'부서'} />
             </div>
           </div>
-          <div className="form-cell wid50">
+          <div className="form-cell wid-300">
             <div className="form-group wid100">
               <AppTextInput label="달성 목표 배수" />
             </div>
