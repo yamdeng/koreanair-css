@@ -87,7 +87,7 @@ function EventtypeEdit() {
           </div>
         </div>
         <hr className="line"></hr>
-        <div className="form-table">
+        <div className="form-table line">
           <div className="form-cell wid50">
             <div className="form-group wid100">
               <AppSelect label={'사용여부'} />
@@ -99,6 +99,7 @@ function EventtypeEdit() {
             </div>
           </div>
         </div>
+        <hr className="line dp-n"></hr>
       </div>
       {/*//입력영역*/}
 

@@ -118,6 +118,7 @@ function SafetyEdit() {
             </div>
           </div>
         </div>
+        <hr className="line"></hr>
       </div>
       {/*//입력영역*/}
 

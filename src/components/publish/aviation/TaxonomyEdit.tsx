@@ -71,7 +71,7 @@ function TaxonomyEdit() {
       </div>
       {/* 입력영역 */}
       <div className="editbox">
-        <div className="form-table">
+        <div className="form-table line">
           <div className="form-cell wid50">
             <div className="form-group wid100">
               <AppSelect label={'Level1'} required />
@@ -83,8 +83,8 @@ function TaxonomyEdit() {
             </div>
           </div>
         </div>
-        <hr className="line"></hr>
-        <div className="form-table">
+        <hr className="line dp-n"></hr>
+        <div className="form-table line">
           <div className="form-cell wid50">
             <div className="form-group wid100">
               <AppSelect label={'Level2'} required />
@@ -96,15 +96,15 @@ function TaxonomyEdit() {
             </div>
           </div>
         </div>
-        <hr className="line"></hr>
-        <div className="form-table">
+        <hr className="line dp-n"></hr>
+        <div className="form-table line">
           <div className="form-cell wid50">
             <div className="form-group wid100">
               <AppTextInput label={'Level3'} required />
             </div>
           </div>
         </div>
-        <hr className="line"></hr>
+        <hr className="line dp-n"></hr>
         <div className="form-table">
           <div className="form-cell wid50">
             <div className="form-group wid100">
@@ -113,7 +113,7 @@ function TaxonomyEdit() {
           </div>
         </div>
         <hr className="line"></hr>
-        <div className="form-table">
+        <div className="form-table line">
           <div className="form-cell wid50">
             <div className="form-group wid100">
               <AppTextInput label={'출처'} />
@@ -135,7 +135,7 @@ function TaxonomyEdit() {
             </div>
           </div>
         </div>
-        <hr className="line"></hr>
+        <hr className="line dp-n"></hr>
         <div className="form-table">
           <div className="form-cell wid50">
             <div className="form-group wid100">
@@ -143,6 +143,7 @@ function TaxonomyEdit() {
             </div>
           </div>
         </div>
+        <hr className="line"></hr>
       </div>
       {/*//입력영역*/}
 

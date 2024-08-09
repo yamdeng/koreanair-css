@@ -71,7 +71,7 @@ function SafetyManualDetail() {
       </div>
       {/*상세페이지*/}
       <div className="editbox">
-        <div className="form-table">
+        <div className="form-table line">
           <div className="form-cell wid100">
             <div className="form-group wid100">
               <div className="box-view-list">
@@ -97,8 +97,8 @@ function SafetyManualDetail() {
             </div>
           </div>
         </div>
-        <hr className="line"></hr>
-        <div className="form-table">
+        <hr className="line dp-n"></hr>
+        <div className="form-table line">
           <div className="form-cell wid100">
             <div className="form-group wid100">
               <div className="box-view-list">
@@ -124,7 +124,7 @@ function SafetyManualDetail() {
             </div>
           </div>
         </div>
-        <hr className="line"></hr>
+        <hr className="line dp-n"></hr>
         <div className="form-table">
           <div className="form-cell wid100">
             <div className="form-group wid100">
@@ -146,7 +146,7 @@ function SafetyManualDetail() {
           </div>
         </div>
         <hr className="line"></hr>
-        <div className="form-table">
+        <div className="form-table line">
           <div className="form-cell wid100">
             <div className="form-group wid100">
               <div className="box-view-list">
@@ -186,7 +186,7 @@ function SafetyManualDetail() {
             </div>
           </div>
         </div>
-        <hr className="line"></hr>
+        <hr className="line dp-n"></hr>
       </div>
       {/*//상세페이지*/}
 

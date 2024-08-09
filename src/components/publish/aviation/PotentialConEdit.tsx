@@ -79,7 +79,7 @@ function PotentialConEdit() {
           </div>
         </div>
         <hr className="line"></hr>
-        <div className="form-table">
+        <div className="form-table line">
           <div className="form-cell wid50">
             <div className="form-group wid100">
               <AppTextInput label={'잠재적결과(KOR)'} required />
@@ -91,8 +91,8 @@ function PotentialConEdit() {
             </div>
           </div>
         </div>
-        <hr className="line"></hr>
-        <div className="form-table">
+        <hr className="line dp-n"></hr>
+        <div className="form-table line">
           <div className="form-cell wid50">
             <div className="form-group wid100">
               <AppSelect label={'사용여부'} />
@@ -104,6 +104,7 @@ function PotentialConEdit() {
             </div>
           </div>
         </div>
+        <hr className="line dp-n"></hr>
       </div>
       {/*//입력영역*/}
 

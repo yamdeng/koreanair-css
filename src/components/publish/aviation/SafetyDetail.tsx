@@ -122,7 +122,7 @@ function SafetyDetail() {
           </div>
         </div>
         <hr className="line"></hr>
-        <div className="form-table">
+        <div className="form-table line">
           <div className="form-cell wid100">
             <div className="form-group wid100">
               <div className="box-view-list">
@@ -148,7 +148,7 @@ function SafetyDetail() {
             </div>
           </div>
         </div>
-        <hr className="line"></hr>
+        <hr className="line dp-n"></hr>
       </div>
       {/*//상세페이지*/}
 
