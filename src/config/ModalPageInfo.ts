@@ -13,6 +13,7 @@ import PUserViewModal from '@/components/publish/modal/PUserViewModal';
 import PChecklistModal from '@/components/publish/modal/PChecklistModal';
 import PRightCommentLayer from '@/components/publish/modal/PRightCommentLayer';
 import MU1P5detail2Modal from '@/components/publish/modal/MU1P5detail2Modal';
+import PReportListModal from '@/components/publish/modal/PReportListModal';
 
 const ModalPageInfo: any = {};
 
@@ -119,6 +120,13 @@ ModalPageInfo.list = [
     title: '산업안전 > 안전경영 > 첨부링크 팝업창',
     Component: MU1P5detail2Modal,
     path: 'MU1P5detail2Modal',
+    description: '',
+    success: true,
+  },
+  {
+    title: '[항공안전>안전위험관리] 보고서분석 팝업창',
+    Component: PReportListModal,
+    path: 'PReportListModal',
     description: '',
     success: true,
   },

@@ -112,9 +112,9 @@ function ReportList() {
         </div>
       </div>*/}
 
-      <div className="c-step-wrap bg-white">
+      <div className="c-step-wrap ">
         <ol className="c-step-list-type-5">
-          <li>
+          <li className="">
             <a href="javascript:void(0);" data-label="접수">
               <p className="info-title">
                 <span className="hide">1단계</span>
@@ -123,33 +123,40 @@ function ReportList() {
             </a>
             <span className="after-arrow"></span>
           </li>
-          <li>
-            <p className="info-title">
-              <span className="hide">2단계</span>
-              1차 위험평가
-            </p>
+          <li className="active">
+            <a href="javascript:void(0);" data-label="1차 위험평가">
+              <p className="info-title">
+                <span className="hide">2단계</span>
+                1차 위험평가
+              </p>
+            </a>
             <span className="after-arrow"></span>
           </li>
           <li>
-            <p className="info-title">
-              <span className="hide">3단계</span>
-              경감조치
-            </p>
+            <a href="javascript:void(0);" data-label="경감조치">
+              <p className="info-title">
+                <span className="hide">3단계</span>
+                경감조치
+              </p>
+            </a>
             <span className="after-arrow"></span>
           </li>
           <li>
-            <p className="info-title">
-              <span className="hide">4단계</span>
-              2차 위험평가
-            </p>
+            <a href="javascript:void(0);" data-label="2차 위험평가">
+              <p className="info-title">
+                <span className="hide">4단계</span>
+                2차 위험평가
+              </p>
+            </a>
             <span className="after-arrow"></span>
           </li>
           <li>
-            <p className="info-title">
-              <span className="hide">5단계</span>
-              종결
-            </p>
-            <span className="after-arrow"></span>
+            <a href="javascript:void(0);" data-label="종결">
+              <p className="info-title">
+                <span className="hide">5단계</span>
+                종결
+              </p>
+            </a>
           </li>
         </ol>
       </div>
