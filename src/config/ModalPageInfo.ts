@@ -14,6 +14,7 @@ import PChecklistModal from '@/components/publish/modal/PChecklistModal';
 import PRightCommentLayer from '@/components/publish/modal/PRightCommentLayer';
 import MU1P5detail2Modal from '@/components/publish/modal/MU1P5detail2Modal';
 import PReportListModal from '@/components/publish/modal/PReportListModal';
+import MU1P8Modal from '@/components/publish/modal/MU1P8Modal';
 
 const ModalPageInfo: any = {};
 
@@ -129,6 +130,13 @@ ModalPageInfo.list = [
     path: 'PReportListModal',
     description: '',
     success: true,
+  },
+  {
+    title: '산업안전 > 안전경영 > 법규등록대장 팝업창',
+    Component: MU1P8Modal,
+    path: 'MU1P8Modal',
+    description: '',
+    success: false,
   },
 ];
 

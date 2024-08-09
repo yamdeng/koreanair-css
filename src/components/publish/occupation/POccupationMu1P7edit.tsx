@@ -10,59 +10,6 @@ import { DatePicker } from 'antd';
 import { useState } from 'react';
 import { Upload } from 'antd';
 
-const props: any = {
-  name: 'file',
-  multiple: true,
-  defaultFileList: [
-    {
-      uid: '1',
-      name: 'xxx.png',
-      // status: 'uploading',
-      url: 'http://www.baidu.com/xxx.png',
-      percent: 33,
-    },
-    {
-      uid: '2',
-      name: 'yyy.png',
-      status: 'done',
-      url: 'http://www.baidu.com/yyy.png',
-    },
-    {
-      uid: '3',
-      name: 'zzz.png',
-      status: 'error',
-      response: 'Server Error 500',
-      // custom error message to show
-      url: 'http://www.baidu.com/zzz.png',
-    },
-  ],
-  action: 'https://660d2bd96ddfa2943b33731c.mockapi.io/api/upload',
-
-  onChange(info) {
-    const { status } = info.file;
-    if (status !== 'uploading') {
-      console.log(info.file, info.fileList);
-    }
-    if (status === 'done') {
-      alert(`${info.file.name} file uploaded successfully.`);
-    } else if (status === 'error') {
-      alert(`${info.file.name} file upload failed.`);
-    }
-  },
-
-  onRemove(file) {
-    return false;
-  },
-
-  onPreview(file) {
-    return false;
-  },
-
-  onDrop(e) {
-    console.log('Dropped files', e.dataTransfer.files);
-  },
-};
-
 function POccupationMu1P7edit() {
   return (
     <>
@@ -72,53 +19,10 @@ function POccupationMu1P7edit() {
       {/* 입력영역 */}
       <div className="editbox">
         <div className="form-table">
-          <div className="form-cell wid100">
-            <div className="form-group wid100">
-              <AppTextInput label="제목" />
-            </div>
-          </div>
-        </div>
-        <hr className="line"></hr>
-        <div className="form-table">
-          <div className="form-cell wid50">
-            <div className="form-group wid100">
-              <AppEditor placeholder="입력해주세요." />
-            </div>
-          </div>
-        </div>
-        <hr className="line"></hr>
-        <div className="form-table line">
-          <div className="form-cell wid50">
-            <div className="group-box-wrap wid100">
-              <span className="txt">첨부파일 Link{/*<span className="required">*</span>*/}</span>
-              <button type="button" name="button" className="btn-plus">
-                추가
-              </button>
-              <div className="file-link">
-                <div className="link-box">
-                  <a href="javascript:void(0);">첨부Link첨부Link첨부Link</a>
-                  <a href="javascript:void(0);">
-                    <span className="close-btn">close</span>
-                  </a>
-                </div>
-                <div className="link-box">
-                  <a href="javascript:void(0);">첨부Link</a>
-                  <a href="javascript:void(0);">
-                    <span className="close-btn">close</span>
-                  </a>
-                </div>
-                <div className="link-box">
-                  <a href="javascript:void(0);">첨부Link</a>
-                  <a href="javascript:void(0);">
-                    <span className="close-btn">close</span>
-                  </a>
-                </div>
-                <div className="link-box">
-                  <a href="javascript:void(0);">첨부Link</a>
-                  <a href="javascript:void(0);">
-                    <span className="close-btn">close</span>
-                  </a>
-                </div>
+          <div className="form-table line">
+            <div className="form-cell wid50">
+              <div className="form-group wid100">
+                <AppAutoComplete label={'부서'} />
               </div>
             </div>
           </div>
@@ -127,45 +31,42 @@ function POccupationMu1P7edit() {
         <div className="form-table line">
           <div className="form-cell wid50">
             <div className="form-group wid100">
-              <AppSelect label={'본부'} />
+              <AppTextInput label="달성 목표 배수" />
             </div>
           </div>
           <div className="form-cell wid50">
             <div className="form-group wid100">
-              <AppTextInput label="등록자" />
+              <AppTextInput label="총 목표일수" />
             </div>
           </div>
           <div className="form-cell wid50">
             <div className="form-group wid100">
-              <AppDatePicker label={'등록일자'} />
+              <AppTextInput label="기준 목표일수" />
+            </div>
+          </div>
+          <div className="form-cell wid50">
+            <div className="form-group wid100">
+              <AppTextInput label="현 목표일수" />
+            </div>
+          </div>
+          <div className="form-cell wid50">
+            <div className="form-group wid100">
+              <AppDatePicker label={'개시일'} />
+            </div>
+          </div>
+          <div className="form-cell wid50">
+            <div className="form-group wid100">
+              <AppDatePicker label={'달성 목표일'} />
             </div>
           </div>
         </div>
         <hr className="line dp-n"></hr>
-        {/* 파일첨부영역 : button */}
-        <div className="form-table">
-          <div className="form-cell wid50">
-            <div className="form-group wid100">
-              <Upload {...props}>
-                <div className="btn-area">
-                  <button type="button" name="button" className="btn-big btn_text btn-darkblue-line">
-                    + Upload
-                  </button>
-                </div>
-              </Upload>
-            </div>
-          </div>
-        </div>
-        <hr className="line"></hr>
       </div>
       {/*//입력영역*/}
       {/* 하단버튼영역 */}
       <div className="contents-btns">
         <button type="button" name="button" className="btn_text text_color_neutral-10 btn_confirm">
           저장
-        </button>
-        <button type="button" name="button" className="btn_text btn-del">
-          삭제
         </button>
         <button type="button" name="button" className="btn_text btn_list">
           목록

@@ -12,6 +12,7 @@ import POccupationMu1P6detail from '@/components/publish/occupation/POccupationM
 import POccupationMu1P7list from '@/components/publish/occupation/POccupationMu1P7list';
 import POccupationMu1P7edit from '@/components/publish/occupation/POccupationMu1P7edit';
 import POccupationMu1P7detail from '@/components/publish/occupation/POccupationMu1P7detail';
+import POccupationMu1P8list from '@/components/publish/occupation/POccupationMu1P8list';
 import POccupationTraining from '@/components/publish/occupation/POccupationTraining';
 
 const OccupationPageInfo: any = {};
@@ -112,6 +113,13 @@ OccupationPageInfo.list = [
     title: '안전경영 > 무재해운동-상세',
     Component: POccupationMu1P7detail,
     path: 'POccupationMu1P7detail',
+    description: '',
+    success: false,
+  },
+  {
+    title: '안전경영 > 법규등록대장기준정보-리스트',
+    Component: POccupationMu1P8list,
+    path: 'POccupationMu1P8list',
     description: '',
     success: false,
   },
