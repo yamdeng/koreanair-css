@@ -68,10 +68,10 @@ function SafetyDetail() {
     <>
       <div className="conts-title">
         <h2>
-          보고서 보기 <div>ASR-100308</div>
+          보고서 보기 <span>ASR-100308</span>
         </h2>
       </div>
-      {/*상세페이지*/}
+      {/*상세페이지
       <div className="editbox">
         <div className="form-table">
           <div className="form-cell wid100">
@@ -87,72 +87,57 @@ function SafetyDetail() {
             </div>
           </div>
         </div>
-        <hr className="line"></hr>
-        <div className="form-table">
-          <div className="form-cell wid100">
-            <div className="form-group wid100">
-              <div className="box-view-list">
-                <ul className="view-list">
-                  <li className="accumlate-list">
-                    <label className="t-label">제목</label>
-                    <span className="text-desc-type1">안전정책에 대한 제목입니다.</span>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-        <hr className="line"></hr>
-        <div className="form-table">
-          <div className="form-cell wid100">
-            <div className="form-group wid100">
-              <div className="box-view-list">
-                <ul className="view-list">
-                  <li className="accumlate-list">
-                    <label className="t-label">내용</label>
-                    <span className="text-desc-type1">
-                      내용은 필수입력란은 아닙니다. 내용은 필수입력란은 아닙니다. 내용은 필수입력란은 아닙니다. 내용은
-                      필수입력란은 아닙니다. 내용은 필수입력란은 아닙니다. 내용은 필수입력란은 아닙니다. 내용은
-                      필수입력란은 아닙니다. 내용은 필수입력란은 아닙니다. 내용은 필수입력란은 아닙니다. 내용은
-                      필수입력란은 아닙니다. 내용은 필수입력란은 아닙니다. 내용은 필수입력란은 아닙니다. 내용은
-                      필수입력란은 아닙니다.
-                    </span>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-        <hr className="line"></hr>
-        <div className="form-table line">
-          <div className="form-cell wid100">
-            <div className="form-group wid100">
-              <div className="box-view-list">
-                <ul className="view-list">
-                  <li className="accumlate-list">
-                    <label className="t-label">사용여부</label>
-                    <span className="text-desc-type1">Y</span>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div className="form-cell wid100">
-            <div className="form-group wid100">
-              <div className="box-view-list">
-                <ul className="view-list">
-                  <li className="accumlate-list">
-                    <label className="t-label">첨부파일(작업중)</label>
-                    <span className="text-desc-type1">첨부파일.png</span>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
         <hr className="line dp-n"></hr>
       </div>
-      {/*//상세페이지*/}
+      //상세페이지*/}
+      <div className="c-step-wrap">
+        <ol className="c-step-list-type-5">
+          <li>
+            <a href="javascript:void(0);" data-label="접수">
+              <p className="info-title">
+                <span className="hide">1단계</span>
+                접수
+              </p>
+            </a>
+            <span className="after-arrow"></span>
+          </li>
+          <li>
+            <a href="javascript:void(0);" data-label="1차 위험평가">
+              <p className="info-title">
+                <span className="hide">2단계</span>
+                1차 위험평가
+              </p>
+            </a>
+            <span className="after-arrow"></span>
+          </li>
+          <li>
+            <a href="javascript:void(0);" data-label="경감조치">
+              <p className="info-title">
+                <span className="hide">3단계</span>
+                경감조치
+              </p>
+            </a>
+            <span className="after-arrow"></span>
+          </li>
+          <li>
+            <a href="javascript:void(0);" data-label="2차 위험평가">
+              <p className="info-title">
+                <span className="hide">4단계</span>
+                2차 위험평가
+              </p>
+            </a>
+            <span className="after-arrow"></span>
+          </li>
+          <li>
+            <a href="javascript:void(0);" data-label="종결">
+              <p className="info-title">
+                <span className="hide">5단계</span>
+                종결
+              </p>
+            </a>
+          </li>
+        </ol>
+      </div>
 
       {/* 하단버튼영역 */}
       <div className="contents-btns">

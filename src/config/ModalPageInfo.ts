@@ -125,7 +125,7 @@ ModalPageInfo.list = [
     success: true,
   },
   {
-    title: '[항공안전>안전위험관리] 보고서분석 팝업창',
+    title: '[항공안전>안전위험관리] 보고서분석 > 반려사유 팝업창',
     Component: PReportListModal,
     path: 'PReportListModal',
     description: '',

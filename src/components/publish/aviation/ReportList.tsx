@@ -112,7 +112,7 @@ function ReportList() {
         </div>
       </div>*/}
 
-      <div className="c-step-wrap ">
+      <div className="c-step-wrap">
         <ol className="c-step-list-type-5">
           <li className="">
             <a href="javascript:void(0);" data-label="접수">
