@@ -129,6 +129,7 @@ function POccupationMu1P1edit() {
             </div>
           </div>
         </div>
+        <hr className="line"></hr>
       </div>
       {/*//입력영역*/}
       {/* 하단버튼영역 */}

@@ -63,61 +63,34 @@ const props: any = {
   },
 };
 
-function POccupationMu1P5edit() {
+function POccupationMu1P7edit() {
   return (
     <>
       <div className="conts-title">
-        <h2>규정/지침/매뉴얼/양식</h2>
+        <h2>무재해운동</h2>
       </div>
       {/* 입력영역 */}
       <div className="editbox">
-        <div className="form-table line">
-          <div className="form-cell wid50">
+        <div className="form-table">
+          <div className="form-cell wid100">
             <div className="form-group wid100">
-              <AppSelect label={'본부'} />
-            </div>
-          </div>
-          <div className="form-cell wid50">
-            <div className="form-group wid100">
-              <AppTextInput label="등록자" />
-            </div>
-          </div>
-          <div className="form-cell wid50">
-            <div className="form-group wid100">
-              <AppSelect label={'구분'} />
-            </div>
-          </div>
-          <div className="form-cell wid50">
-            <div className="form-group wid100">
-              <AppTextInput label="개정번호" />
-            </div>
-          </div>
-          <div className="form-cell wid50">
-            <div className="form-group wid100">
-              <AppDatePicker label={'제정일자'} />
-            </div>
-          </div>
-          <div className="form-cell wid50">
-            <div className="form-group wid100">
-              <AppDatePicker label={'개정일자'} />
+              <AppTextInput label="제목" />
             </div>
           </div>
         </div>
-        <hr className="line dp-n"></hr>
+        <hr className="line"></hr>
+        <div className="form-table">
+          <div className="form-cell wid50">
+            <div className="form-group wid100">
+              <AppEditor placeholder="입력해주세요." />
+            </div>
+          </div>
+        </div>
+        <hr className="line"></hr>
         <div className="form-table line">
           <div className="form-cell wid50">
             <div className="group-box-wrap wid100">
               <span className="txt">첨부파일 Link{/*<span className="required">*</span>*/}</span>
-              {/*<div className="radio-wrap">
-              <label>
-                <input type="radio" checked />
-                <span>YES</span>
-              </label>
-              <label>
-                <input type="radio" />
-                <span>NO</span>
-              </label>
-            </div>*/}
               <button type="button" name="button" className="btn-plus">
                 추가
               </button>
@@ -151,23 +124,24 @@ function POccupationMu1P5edit() {
           </div>
         </div>
         <hr className="line dp-n"></hr>
-        <div className="form-table">
-          <div className="form-cell wid100">
-            <div className="form-group wid100">
-              <AppTextInput label="제목" />
-            </div>
-          </div>
-        </div>
-
-        <hr className="line"></hr>
-        <div className="form-table">
+        <div className="form-table line">
           <div className="form-cell wid50">
             <div className="form-group wid100">
-              <AppEditor placeholder="입력해주세요." />
+              <AppSelect label={'본부'} />
+            </div>
+          </div>
+          <div className="form-cell wid50">
+            <div className="form-group wid100">
+              <AppTextInput label="등록자" />
+            </div>
+          </div>
+          <div className="form-cell wid50">
+            <div className="form-group wid100">
+              <AppDatePicker label={'등록일자'} />
             </div>
           </div>
         </div>
-        <hr className="line"></hr>
+        <hr className="line dp-n"></hr>
         {/* 파일첨부영역 : button */}
         <div className="form-table">
           <div className="form-cell wid50">
@@ -190,6 +164,9 @@ function POccupationMu1P5edit() {
         <button type="button" name="button" className="btn_text text_color_neutral-10 btn_confirm">
           저장
         </button>
+        <button type="button" name="button" className="btn_text btn-del">
+          삭제
+        </button>
         <button type="button" name="button" className="btn_text btn_list">
           목록
         </button>
@@ -199,4 +176,4 @@ function POccupationMu1P5edit() {
   );
 }
 
-export default POccupationMu1P5edit;
+export default POccupationMu1P7edit;
