@@ -1,12 +1,14 @@
-import { Editor } from '@toast-ui/react-editor';
-import { useState } from 'react';
-import Modal from 'react-modal';
+import AppAutoComplete from '@/components/common/AppAutoComplete';
+import AppDatePicker from '@/components/common/AppDatePicker';
+import AppTimePicker from '@/components/common/AppTimePicker';
+import AppSelect from '@/components/common/AppSelect';
 import { getAllData } from '@/data/grid/example-data-new';
 import { testColumnInfos } from '@/data/grid/table-column';
-import AppTable from '@/components/common/AppTable';
-import Select from 'react-select';
-import { DatePicker, TimePicker, TreeSelect, Select as AntSelect } from 'antd';
-import AppAutoComplete from '@/components/common/AppAutoComplete';
+import { Editor } from '@toast-ui/react-editor';
+import { DatePicker, TreeSelect } from 'antd';
+import { useState } from 'react';
+import Modal from 'react-modal';
+import AppTreeSelect from '@/components/common/AppTreeSelect';
 const options2 = [];
 for (let i = 10; i < 36; i++) {
   options2.push({
@@ -110,7 +112,7 @@ function UserEditModal(props) {
                 <div className="form-table">
                   <div className="form-cell wid50">
                     <div className="form-group wid100">
-                      <AntSelect
+                      <AppSelect
                         id="select1"
                         status="error"
                         style={{ width: '100%' }}
@@ -228,7 +230,7 @@ function UserEditModal(props) {
                     <div className="form-group wid100">
                       <div className="df">
                         <div className="date1 ">
-                          <DatePicker status="" id="date1" className="label-picker" placeholder="" />{' '}
+                          <AppDatePicker status="" id="date1" className="label-picker" placeholder="" />{' '}
                           {/* status="error" */}
                           <label className="f-label" htmlFor="date1">
                             date1-1 <span className="required"></span>
@@ -237,7 +239,7 @@ function UserEditModal(props) {
                         </div>
                         <span className="unt">~</span>
                         <div className="date2 wid50">
-                          <DatePicker status="" id="date2" className="label-picker" placeholder="" />{' '}
+                          <AppDatePicker status="" id="date2" className="label-picker" placeholder="" />{' '}
                           {/* status="error" */}
                           <label className="f-label" htmlFor="date2">
                             date1-1 <span className="required"></span>
@@ -252,7 +254,7 @@ function UserEditModal(props) {
                     <div className="form-group form-glow">
                       <div className="df">
                         <div className="date3 wid100">
-                          <TimePicker
+                          <AppTimePicker
                             className="label-picker wid100"
                             id="date3"
                             minuteStep={15}
@@ -272,24 +274,8 @@ function UserEditModal(props) {
                 <hr className="line"></hr>
                 <div className="form-table">
                   <div className="form-cell wid50">
-                    <div className="form-group form-glow">
-                      <div className="df">
-                        <div className="date4 wid100">
-                          <TimePicker.RangePicker className="label-picker wid100" id="date4" status="error" />
-                          <label className="f-label" htmlFor="date4">
-                            TimePicker2 <span className="required">*</span>
-                          </label>
-                          {/*<span className="errorText">date1 error</span>*/}
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <hr className="line"></hr>
-                <div className="form-table">
-                  <div className="form-cell wid50">
                     <div className="form-group form-glow wid50">
-                      <AntSelect
+                      <AppSelect
                         mode="multiple"
                         id="select2"
                         allowClear
@@ -308,18 +294,6 @@ function UserEditModal(props) {
                 <div className="form-table">
                   <div className="form-cell wid50">
                     <div className="form-group form-glow wid100">
-                      {/* <Select
-                id="select4"
-                defaultValue={[]}
-                options={options}
-                isMulti
-                name="colors"
-                className="basic-multi-select"
-                classNamePrefix="select"
-                classNames={{
-                  control: (state) => (!state.isFocused ? 'select-in-valid' : ''),
-                }}
-              /> */}
                       <AppAutoComplete id="select4" />
                       <label className="f-label" htmlFor="select4">
                         AutoComplete1개 <span className="required">*</span>
@@ -329,7 +303,7 @@ function UserEditModal(props) {
                   </div>
                   <div className="form-cell wid50">
                     <div className="form-group form-glow wid100">
-                      <TreeSelect
+                      <AppTreeSelect
                         id="select51"
                         showSearch
                         treeCheckable

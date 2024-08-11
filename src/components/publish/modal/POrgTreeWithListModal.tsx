@@ -1,10 +1,12 @@
-import { useState } from 'react';
-import { Tree } from 'antd';
-import Modal from 'react-modal';
+import AppSelect from '@/components/common/AppSelect';
+import AppTable from '@/components/common/AppTable';
 import { getAllData } from '@/data/grid/example-data-new';
 import { testColumnInfos } from '@/data/grid/table-column';
-import AppTable from '@/components/common/AppTable';
-import { DatePicker, Select as AntSelect } from 'antd';
+import { Tree } from 'antd';
+import { useState } from 'react';
+import Modal from 'react-modal';
+import AppDatePicker from '@/components/common/AppDatePicker';
+import AppTimePicker from '@/components/common/AppTimePicker';
 
 /* treeData 가공 */
 const x = 3;
@@ -107,7 +109,7 @@ function TreeModal(props) {
                     </div>
                     <div className="form-cell wid50">
                       <span className="form-group wid100">
-                        <AntSelect
+                        <AppSelect
                           style={{ width: '100%' }}
                           options={[
                             {
@@ -137,7 +139,7 @@ function TreeModal(props) {
                     <div className="form-cell ">
                       <span className="form-group wid100">
                         <span className="form-group wid100">
-                          <AntSelect
+                          <AppSelect
                             style={{ width: '100%' }}
                             options={[
                               {
@@ -165,10 +167,10 @@ function TreeModal(props) {
                     <div className="form-cell wid50">
                       <div className="form-group form-glow">
                         <div className="df">
-                          <DatePicker status="" /> {/* status="error" */}
+                          <AppDatePicker status="" /> {/* status="error" */}
                           <span className="unt">~</span>
-                          <DatePicker status="" />
-                          {/* <TimePicker minuteStep={15} secondStep={10} hourStep={1} status="error" /> */}
+                          <AppDatePicker status="" />
+                          {/* <AppTimePicker minuteStep={15} secondStep={10} hourStep={1} status="error" /> */}
                         </div>
                       </div>
                     </div>

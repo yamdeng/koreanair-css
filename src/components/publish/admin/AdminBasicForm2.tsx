@@ -1,5 +1,7 @@
+import AppSelect from '@/components/common/AppSelect';
+import AppDatePicker from '@/components/common/AppDatePicker';
+import AppTimePicker from '@/components/common/AppTimePicker';
 import { useState } from 'react';
-import { DatePicker, TimePicker, Select as AntSelect } from 'antd';
 
 function AdminBasicForm2() {
   const [inputValue, setInputValue] = useState('');
@@ -32,7 +34,7 @@ function AdminBasicForm2() {
           </div>
           <div className="form-cell wid50">
             <div className="form-group wid100">
-              <AntSelect
+              <AppSelect
                 className="wid100"
                 options={[
                   {
@@ -60,7 +62,7 @@ function AdminBasicForm2() {
         <div className="form-table">
           <div className="form-cell ">
             <div className="form-group wid100">
-              <AntSelect
+              <AppSelect
                 className="wid100"
                 options={[
                   {
@@ -88,12 +90,12 @@ function AdminBasicForm2() {
             <div className="form-group form-glow">
               <div className="df">
                 <div>
-                  <DatePicker status="" /> {/* status="error" */}
+                  <AppDatePicker status="" /> {/* status="error" */}
                 </div>
                 <span className="unt">~</span>
                 <div>
-                  <DatePicker status="" />
-                  {/* <TimePicker minuteStep={15} secondStep={10} hourStep={1} status="error" /> */}
+                  <AppDatePicker status="" />
+                  {/* <AppTimePicker minuteStep={15} secondStep={10} hourStep={1} status="error" /> */}
                 </div>
               </div>
             </div>

@@ -1,10 +1,4 @@
-import AppTable from '@/components/common/AppTable';
-import { getAllData } from '@/data/grid/example-data-new';
-import { testColumnInfos } from '@/data/grid/table-column';
 import { useState } from 'react';
-import Select from 'react-select';
-import { DatePicker, TimePicker, TreeSelect, Select as AntSelect } from 'antd';
-import AppAutoComplete from '@/components/common/AppAutoComplete';
 
 function AdminCodeManage() {
   const [inputValue, setInputValue] = useState('');

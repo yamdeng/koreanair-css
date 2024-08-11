@@ -1,10 +1,8 @@
-import { useState } from 'react';
-import { DatePicker, TimePicker, Select as AntSelect } from 'antd';
 import AppDatePicker from '@/components/common/AppDatePicker';
 import AppSearchInput from '@/components/common/AppSearchInput';
 import AppSelect from '@/components/common/AppSelect';
-import AppTable from '@/components/common/AppTable';
 import AppTextInput from '@/components/common/AppTextInput';
+import { useState } from 'react';
 
 function PRiskForm2() {
   const [inputValue, setInputValue] = useState('');
@@ -217,7 +215,7 @@ function PRiskForm2() {
                         <div className="form-table">
                           <div className="form-cell wid50">
                             <div className="form-group wid100">
-                              <AntSelect
+                              <AppSelect
                                 style={{ width: '100%' }}
                                 status="error"
                                 options={[
@@ -253,7 +251,7 @@ function PRiskForm2() {
                             <div className="form-group form-glow">
                               <div className="df">
                                 <div className="date1">
-                                  <DatePicker status="" id="date1" className="label-picker" placeholder="" />
+                                  <AppDatePicker status="" id="date1" className="label-picker" placeholder="" />
                                   <label className="f-label" htmlFor="date1">
                                     발생일/시간(UTC) <span className="required">*</span>
                                   </label>
@@ -274,7 +272,7 @@ function PRiskForm2() {
                         <div className="form-table">
                           <div className="form-cell wid50">
                             <div className="form-group wid100">
-                              <AntSelect
+                              <AppSelect
                                 style={{ width: '100%' }}
                                 status="error"
                                 options={[

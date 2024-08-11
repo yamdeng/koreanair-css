@@ -1,9 +1,15 @@
 import { useState } from 'react';
-import { DatePicker, TimePicker, TreeSelect, Select as AntSelect } from 'antd';
+import { DatePicker, TimePicker, TreeSelect } from 'antd';
 import Select from 'react-select';
 import colorSyntax from '@toast-ui/editor-plugin-color-syntax';
 import { Editor } from '@toast-ui/react-editor';
 import tableMergedCell from '@toast-ui/editor-plugin-table-merged-cell';
+import AppSelect from '@/components/common/AppSelect';
+import AppRangeDatePicker from '@/components/common/AppRangeDatePicker';
+import AppDatePicker from '@/components/common/AppDatePicker';
+import AppTimePicker from '@/components/common/AppTimePicker';
+import AppTreeSelect from '@/components/common/AppTreeSelect';
+import AppAutoComplete from '@/components/common/AppAutoComplete';
 
 const options2 = [];
 for (let i = 10; i < 36; i++) {
@@ -95,7 +101,7 @@ function AdminBasicFormOther() {
 
       <h3 style={h3Style}>select component(single)</h3>
       <div style={{ width: '50%' }}>
-        <AntSelect
+        <AppSelect
           style={{ width: '100%' }}
           options={[
             {
@@ -122,7 +128,7 @@ function AdminBasicFormOther() {
 
       <h3 style={h3Style}>select component(multiple)</h3>
       <div style={{ width: '50%' }}>
-        <AntSelect
+        <AppSelect
           mode="multiple"
           allowClear
           style={{
@@ -136,13 +142,13 @@ function AdminBasicFormOther() {
 
       <h3 style={h3Style}>DatePicker</h3>
       <div style={{ width: '50%' }}>
-        <DatePicker onChange={onChange} style={{ width: '100%' }} status="error" />
+        <AppDatePicker onChange={onChange} style={{ width: '100%' }} status="error" />
         <span>data picker error message</span>
       </div>
 
       <h3 style={h3Style}>TimePicker</h3>
       <div style={{ width: '50%' }}>
-        <TimePicker minuteStep={15} secondStep={10} hourStep={1} style={{ width: '100%' }} status="error" />
+        <AppTimePicker minuteStep={15} secondStep={10} hourStep={1} style={{ width: '100%' }} status="error" />
         <span>time picker error message</span>
       </div>
 
@@ -152,15 +158,9 @@ function AdminBasicFormOther() {
         <span>date picker(range) error message</span>
       </div>
 
-      <h3 style={h3Style}>TimePicker : Range</h3>
-      <div style={{ width: '50%' }}>
-        <TimePicker.RangePicker style={{ width: '100%' }} status="error" />
-        <span>time picker(range) error message</span>
-      </div>
-
       <h3 style={h3Style}>AutoComplete</h3>
       <div style={{ width: '50%' }}>
-        <Select
+        <AppAutoComplete
           defaultValue={[]}
           onChange={setSelectedOption}
           options={options}
@@ -177,7 +177,7 @@ function AdminBasicFormOther() {
 
       <h3 style={h3Style}>TreeSelect</h3>
       <div style={{ width: '50%' }}>
-        <TreeSelect
+        <AppTreeSelect
           showSearch
           treeCheckable
           style={{
@@ -234,7 +234,7 @@ function AdminBasicFormOther() {
 
       <h3 style={h3Style}>전체 나열</h3>
       <div>
-        <AntSelect
+        <AppSelect
           style={{ width: '100%' }}
           options={[
             {
@@ -256,11 +256,10 @@ function AdminBasicFormOther() {
             },
           ]}
         />
-        <DatePicker onChange={onChange} status="error" />
-        <TimePicker minuteStep={15} secondStep={10} hourStep={1} status="error" />
-        <RangePicker status="error" />
-        <TimePicker.RangePicker status="error" />
-        <Select
+        <AppDatePicker onChange={onChange} status="error" />
+        <AppTimePicker minuteStep={15} secondStep={10} hourStep={1} status="error" />
+        <AppRangeDatePicker status="error" />
+        <AppAutoComplete
           defaultValue={[]}
           onChange={setSelectedOption}
           options={options}
@@ -270,7 +269,7 @@ function AdminBasicFormOther() {
             control: (state) => (!state.isFocused ? 'select-in-valid' : ''),
           }}
         />
-        <TreeSelect
+        <AppTreeSelect
           showSearch
           treeCheckable
           dropdownStyle={{

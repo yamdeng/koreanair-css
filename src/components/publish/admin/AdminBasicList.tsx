@@ -1,8 +1,9 @@
+import AppSelect from '@/components/common/AppSelect';
 import AppTable from '@/components/common/AppTable';
 import { getAllData } from '@/data/grid/example-data-new';
 import { testColumnInfos } from '@/data/grid/table-column';
 import { useState } from 'react';
-import { DatePicker, TimePicker, Select as AntSelect } from 'antd';
+import AppDatePicker from '@/components/common/AppDatePicker';
 
 function AdminBasicList() {
   const [inputValue, setInputValue] = useState('');
@@ -41,7 +42,7 @@ function AdminBasicList() {
             </div>
             <div className="form-cell wid50">
               <div className="form-group wid100">
-                <AntSelect
+                <AppSelect
                   id="select1"
                   style={{ width: '100%' }}
                   className="label-select"
@@ -76,7 +77,7 @@ function AdminBasicList() {
           <div className="form-table">
             <div className="form-cell ">
               <div className="form-group wid100">
-                <AntSelect
+                <AppSelect
                   id="select2"
                   style={{ width: '100%' }}
                   className="label-select"
@@ -110,7 +111,8 @@ function AdminBasicList() {
               <div className="form-group form-glow">
                 <div className="df">
                   <div className="date1">
-                    <DatePicker status="" id="date1" className="label-picker" placeholder="" /> {/* status="error" */}
+                    <AppDatePicker status="" id="date1" className="label-picker" placeholder="" />{' '}
+                    {/* status="error" */}
                     <label className="f-label" htmlFor="date1">
                       date1-1 <span className="required">*</span>
                     </label>
@@ -118,7 +120,8 @@ function AdminBasicList() {
                   </div>
                   <span className="unt">~</span>
                   <div className="date2">
-                    <DatePicker status="" id="date2" className="label-picker" placeholder="" /> {/* status="error" */}
+                    <AppDatePicker status="" id="date2" className="label-picker" placeholder="" />{' '}
+                    {/* status="error" */}
                     <label className="f-label" htmlFor="date2">
                       date1-2 <span className="required">*</span>
                     </label>

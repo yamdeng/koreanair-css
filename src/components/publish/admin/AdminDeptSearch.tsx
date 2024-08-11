@@ -1,10 +1,8 @@
-import { useState } from 'react';
-import { Tree } from 'antd';
-import Modal from 'react-modal';
 import { getAllData } from '@/data/grid/example-data-new';
 import { testColumnInfos } from '@/data/grid/table-column';
-import AppTable from '@/components/common/AppTable';
-import { DatePicker, Select as AntSelect } from 'antd';
+import { Select as AntSelect, Tree } from 'antd';
+import { useState } from 'react';
+import AppSelect from '@/components/common/AppSelect';
 
 /* treeData 가공 */
 const x = 5;
@@ -66,7 +64,7 @@ function AdminDeptSearch() {
               </div>
               <div className="form-group wid100">
                 {/*업무구분 */}
-                <AntSelect
+                <AppSelect
                   id="select1"
                   className="label-select"
                   style={{ width: '100%' }}
@@ -136,7 +134,7 @@ function AdminDeptSearch() {
                       <div className="form-table">
                         <div className="form-cell wid50">
                           <div className="form-group wid100">
-                            <AntSelect
+                            <AppSelect
                               id="select1"
                               status=""
                               style={{ width: '100%' }}

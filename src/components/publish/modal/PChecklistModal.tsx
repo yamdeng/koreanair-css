@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import Modal from 'react-modal';
-import { DatePicker, TimePicker, TreeSelect, Select as AntSelect } from 'antd';
+import AppSelect from '@/components/common/AppSelect';
 
 const options = [
   { value: 'chocolate', label: 'Chocolate Chocolate Chocolate ChocolateChocolateChocolateChocolate' },
@@ -28,7 +28,7 @@ function ChecklistModal(props) {
             <div className="form-table">
               <div className="form-cell wid50">
                 <div className="form-group wid100">
-                  <AntSelect
+                  <AppSelect
                     id="select1"
                     status=""
                     style={{ width: '100%' }}
@@ -64,7 +64,7 @@ function ChecklistModal(props) {
             <div className="form-table">
               <div className="form-cell wid50">
                 <div className="form-group wid100">
-                  <AntSelect
+                  <AppSelect
                     id="select2"
                     status=""
                     style={{ width: '100%' }}

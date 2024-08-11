@@ -1,7 +1,7 @@
+import { Tree } from 'antd';
 import { useState } from 'react';
 import Modal from 'react-modal';
-import { Tree } from 'antd';
-import { DatePicker, TimePicker, Select as AntSelect } from 'antd';
+import AppSelect from '@/components/common/AppSelect';
 
 function TestModal(props) {
   const { isOpen, closeModal } = props;
@@ -63,7 +63,7 @@ function TestModal(props) {
           <div className="tree_form">
             <div className="form-cell">
               <div className="form-group wid100 mt30">
-                <AntSelect
+                <AppSelect
                   id="select1"
                   style={{ width: '100%' }}
                   className="label-select"
