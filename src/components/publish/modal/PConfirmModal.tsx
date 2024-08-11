@@ -2,11 +2,11 @@ import { useState } from 'react';
 import Modal from 'react-modal';
 
 function ConfirmModal(props) {
-  const { displayModal, closeModal } = props;
+  const { isOpen, closeModal } = props;
   return (
     <Modal
       shouldCloseOnOverlayClick={false}
-      isOpen={displayModal}
+      isOpen={isOpen}
       ariaHideApp={false}
       overlayClassName={'alert-modal-overlay'}
       className={'confirm-modal-content'}
@@ -37,9 +37,9 @@ function ConfirmModal(props) {
 }
 
 function PConfirmModal() {
-  const [displayModal, setDisplayModal] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
   const closeModal = () => {
-    setDisplayModal(false);
+    setIsOpen(false);
   };
 
   return (
@@ -47,11 +47,11 @@ function PConfirmModal() {
       <div>
         PConfirmModal
         <p>
-          <button className="button" onClick={() => setDisplayModal(true)}>
+          <button className="button" onClick={() => setIsOpen(true)}>
             confirm modal open
           </button>
         </p>
-        <ConfirmModal displayModal={displayModal} closeModal={closeModal} />
+        <ConfirmModal isOpen={isOpen} closeModal={closeModal} />
       </div>
     </>
   );

@@ -10,11 +10,11 @@ const options = [
 ];
 
 function ChecklistModal(props) {
-  const { displayModal, closeModal } = props;
+  const { isOpen, closeModal } = props;
   return (
     <Modal
       shouldCloseOnOverlayClick={false}
-      isOpen={displayModal}
+      isOpen={isOpen}
       ariaHideApp={false}
       overlayClassName={'alert-modal-overlay'}
       className={'confirm-modal-content'}
@@ -60,9 +60,9 @@ function ChecklistModal(props) {
 }
 
 function MU1P5detail2Modal() {
-  const [displayModal, setDisplayModal] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
   const closeModal = () => {
-    setDisplayModal(false);
+    setIsOpen(false);
   };
 
   return (
@@ -70,11 +70,11 @@ function MU1P5detail2Modal() {
       <div>
         MU1P5detail2Modal
         <p>
-          <button className="button" onClick={() => setDisplayModal(true)}>
+          <button className="button" onClick={() => setIsOpen(true)}>
             Checklist modal open
           </button>
         </p>
-        <ChecklistModal displayModal={displayModal} closeModal={closeModal} />
+        <ChecklistModal isOpen={isOpen} closeModal={closeModal} />
       </div>
     </>
   );

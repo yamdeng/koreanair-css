@@ -2,11 +2,11 @@ import { useState } from 'react';
 import Modal from 'react-modal';
 
 function EditFormModal(props) {
-  const { displayModal, closeModal } = props;
+  const { isOpen, closeModal } = props;
   return (
     <Modal
       shouldCloseOnOverlayClick={false}
-      isOpen={displayModal}
+      isOpen={isOpen}
       ariaHideApp={false}
       overlayClassName={'alert-modal-overlay'}
       className={'alert-modal-content'}
@@ -31,9 +31,9 @@ function EditFormModal(props) {
 }
 
 function PEditFormModal() {
-  const [displayModal, setDisplayModal] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
   const closeModal = () => {
-    setDisplayModal(false);
+    setIsOpen(false);
   };
 
   return (
@@ -41,11 +41,11 @@ function PEditFormModal() {
       <div>
         PEditFormModal
         <p>
-          <button className="button" onClick={() => setDisplayModal(true)}>
+          <button className="button" onClick={() => setIsOpen(true)}>
             PEditFormModal modal open
           </button>
         </p>
-        <EditFormModal displayModal={displayModal} closeModal={closeModal} />
+        <EditFormModal isOpen={isOpen} closeModal={closeModal} />
       </div>
     </>
   );

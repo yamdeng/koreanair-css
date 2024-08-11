@@ -7,14 +7,14 @@ import { DatePicker, Select as AntSelect } from 'antd';
 
 function ListModal(props) {
   const [inputValue, setInputValue] = useState('');
-  const { displayModal, closeModal } = props;
+  const { isOpen, closeModal } = props;
   const rowData = getAllData();
   const columns = testColumnInfos;
 
   return (
     <Modal
       shouldCloseOnOverlayClick={false}
-      isOpen={displayModal}
+      isOpen={isOpen}
       ariaHideApp={false}
       overlayClassName={'alert-modal-overlay'}
       className={'list-common-modal-content'}
@@ -143,9 +143,9 @@ function ListModal(props) {
 }
 
 function PListModal() {
-  const [displayModal, setDisplayModal] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
   const closeModal = () => {
-    setDisplayModal(false);
+    setIsOpen(false);
   };
 
   return (
@@ -153,11 +153,11 @@ function PListModal() {
       <div>
         <h3>목록 모달</h3>
         <p>
-          <button className="button" onClick={() => setDisplayModal(true)}>
+          <button className="button" onClick={() => setIsOpen(true)}>
             목록 모달 open
           </button>
         </p>
-        <ListModal displayModal={displayModal} closeModal={closeModal} />
+        <ListModal isOpen={isOpen} closeModal={closeModal} />
       </div>
     </>
   );

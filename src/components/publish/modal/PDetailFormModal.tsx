@@ -2,11 +2,11 @@ import { useState } from 'react';
 import Modal from 'react-modal';
 
 function DetailFormModal(props) {
-  const { displayModal, closeModal } = props;
+  const { isOpen, closeModal } = props;
   return (
     <Modal
       shouldCloseOnOverlayClick={false}
-      isOpen={displayModal}
+      isOpen={isOpen}
       ariaHideApp={false}
       overlayClassName={'alert-modal-overlay'}
       className={'alert-modal-content'}
@@ -31,9 +31,9 @@ function DetailFormModal(props) {
 }
 
 function PDetailFormModal() {
-  const [displayModal, setDisplayModal] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
   const closeModal = () => {
-    setDisplayModal(false);
+    setIsOpen(false);
   };
 
   return (
@@ -41,11 +41,11 @@ function PDetailFormModal() {
       <div>
         PDetailFormModal
         <p>
-          <button className="button" onClick={() => setDisplayModal(true)}>
+          <button className="button" onClick={() => setIsOpen(true)}>
             PDetailFormModal modal open
           </button>
         </p>
-        <DetailFormModal displayModal={displayModal} closeModal={closeModal} />
+        <DetailFormModal isOpen={isOpen} closeModal={closeModal} />
       </div>
     </>
   );

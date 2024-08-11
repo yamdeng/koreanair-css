@@ -38,7 +38,7 @@ generateData(z);
 
 function TreeModal(props) {
   const [inputValue, setInputValue] = useState('');
-  const { displayModal, closeModal } = props;
+  const { isOpen, closeModal } = props;
   const [expandedKeys] = useState(['0-0', '0-0-0', '0-0-0-0']);
   const rowData = getAllData();
   const columns = testColumnInfos;
@@ -46,7 +46,7 @@ function TreeModal(props) {
   return (
     <Modal
       shouldCloseOnOverlayClick={false}
-      isOpen={displayModal}
+      isOpen={isOpen}
       ariaHideApp={false}
       overlayClassName={'alert-modal-overlay'}
       className={'org-select-modal-content'}
@@ -201,9 +201,9 @@ function TreeModal(props) {
 }
 
 function POrgTreeWithListModal() {
-  const [displayModal, setDisplayModal] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
   const closeModal = () => {
-    setDisplayModal(false);
+    setIsOpen(false);
   };
 
   return (
@@ -211,11 +211,11 @@ function POrgTreeWithListModal() {
       <div>
         <h3>좌측 트리, 우측 목록 모달</h3>
         <p>
-          <button className="button" onClick={() => setDisplayModal(true)}>
+          <button className="button" onClick={() => setIsOpen(true)}>
             조직도 목록 모달 open
           </button>
         </p>
-        <TreeModal displayModal={displayModal} closeModal={closeModal} />
+        <TreeModal isOpen={isOpen} closeModal={closeModal} />
       </div>
     </>
   );

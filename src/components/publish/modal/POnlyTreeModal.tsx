@@ -4,7 +4,7 @@ import { Tree } from 'antd';
 import { DatePicker, TimePicker, Select as AntSelect } from 'antd';
 
 function TestModal(props) {
-  const { displayModal, closeModal } = props;
+  const { isOpen, closeModal } = props;
   const [inputValue, setInputValue] = useState('');
   const [expandedKeys] = useState(['0-0', '0-0-0', '0-0-0-0']);
 
@@ -49,7 +49,7 @@ function TestModal(props) {
   return (
     <Modal
       shouldCloseOnOverlayClick={false}
-      isOpen={displayModal}
+      isOpen={isOpen}
       ariaHideApp={false}
       overlayClassName={'alert-modal-overlay'}
       className={'alert-modal-content'}
@@ -120,9 +120,9 @@ function TestModal(props) {
 }
 
 function POnlyTreeModal() {
-  const [displayModal, setDisplayModal] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
   const closeModal = () => {
-    setDisplayModal(false);
+    setIsOpen(false);
   };
 
   return (
@@ -130,11 +130,11 @@ function POnlyTreeModal() {
       <div>
         트리만존재하는 모달
         <p>
-          <button className="button" onClick={() => setDisplayModal(true)}>
+          <button className="button" onClick={() => setIsOpen(true)}>
             트리만존재하는 modal open
           </button>
         </p>
-        <TestModal displayModal={displayModal} closeModal={closeModal} />
+        <TestModal isOpen={isOpen} closeModal={closeModal} />
       </div>
     </>
   );

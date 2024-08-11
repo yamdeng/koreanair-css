@@ -2,11 +2,11 @@ import { useState } from 'react';
 import Modal from 'react-modal';
 
 function AlertModal(props) {
-  const { displayModal, closeModal } = props;
+  const { isOpen, closeModal } = props;
   return (
     <Modal
       shouldCloseOnOverlayClick={false}
-      isOpen={displayModal}
+      isOpen={isOpen}
       ariaHideApp={false}
       overlayClassName={'alert-modal-overlay'}
       className={'alert-modal-content'}
@@ -31,9 +31,9 @@ function AlertModal(props) {
 }
 
 function PAlertModal() {
-  const [displayModal, setDisplayModal] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
   const closeModal = () => {
-    setDisplayModal(false);
+    setIsOpen(false);
   };
 
   return (
@@ -41,11 +41,11 @@ function PAlertModal() {
       <div>
         PAlertModal
         <p>
-          <button className="button" onClick={() => setDisplayModal(true)}>
+          <button className="button" onClick={() => setIsOpen(true)}>
             alert modal open
           </button>
         </p>
-        <AlertModal displayModal={displayModal} closeModal={closeModal} />
+        <AlertModal isOpen={isOpen} closeModal={closeModal} />
       </div>
     </>
   );

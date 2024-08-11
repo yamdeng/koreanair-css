@@ -2,11 +2,11 @@ import { useState } from 'react';
 import Modal from 'react-modal';
 
 function ReportListModal(props) {
-  const { displayModal, closeModal } = props;
+  const { isOpen, closeModal } = props;
   return (
     <Modal
       shouldCloseOnOverlayClick={false}
-      isOpen={displayModal}
+      isOpen={isOpen}
       ariaHideApp={false}
       overlayClassName={'alert-modal-overlay'}
       className={'alert-modal-content'}
@@ -36,9 +36,9 @@ function ReportListModal(props) {
 }
 
 function PReportListModal() {
-  const [displayModal, setDisplayModal] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
   const closeModal = () => {
-    setDisplayModal(false);
+    setIsOpen(false);
   };
 
   return (
@@ -46,11 +46,11 @@ function PReportListModal() {
       <div>
         PReportListModal
         <p>
-          <button className="button" onClick={() => setDisplayModal(true)}>
+          <button className="button" onClick={() => setIsOpen(true)}>
             ReportList modal open
           </button>
         </p>
-        <ReportListModal displayModal={displayModal} closeModal={closeModal} />
+        <ReportListModal isOpen={isOpen} closeModal={closeModal} />
       </div>
     </>
   );

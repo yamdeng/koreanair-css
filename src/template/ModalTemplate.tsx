@@ -2,7 +2,7 @@ import { useState } from 'react';
 import Modal from 'react-modal';
 
 function TestModal(props) {
-  const { displayModal, closeModal } = props;
+  const { isOpen, closeModal } = props;
 
   /*
 
@@ -16,7 +16,7 @@ function TestModal(props) {
   return (
     <Modal
       shouldCloseOnOverlayClick={false}
-      isOpen={displayModal}
+      isOpen={isOpen}
       ariaHideApp={false}
       overlayClassName={'alert-modal-overlay'}
       className={'alert-modal-content'}
@@ -41,9 +41,9 @@ function TestModal(props) {
 }
 
 function ModalTemplate() {
-  const [displayModal, setDisplayModal] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
   const closeModal = () => {
-    setDisplayModal(false);
+    setIsOpen(false);
   };
 
   return (
@@ -51,11 +51,11 @@ function ModalTemplate() {
       <div>
         신규파일명
         <p>
-          <button className="button" onClick={() => setDisplayModal(true)}>
+          <button className="button" onClick={() => setIsOpen(true)}>
             test modal open
           </button>
         </p>
-        <TestModal displayModal={displayModal} closeModal={closeModal} />
+        <TestModal isOpen={isOpen} closeModal={closeModal} />
       </div>
     </>
   );
