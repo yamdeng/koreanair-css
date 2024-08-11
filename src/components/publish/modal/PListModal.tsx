@@ -135,7 +135,7 @@ function ListModal(props) {
           </button>
         </div>
         <span className="pop_close" onClick={closeModal}>
-          {/* <i className="fas fa-times"></i> */}X
+          X
         </span>
       </div>
     </Modal>

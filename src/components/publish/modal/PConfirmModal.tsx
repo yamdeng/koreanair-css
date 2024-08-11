@@ -30,7 +30,7 @@ function ConfirmModal(props) {
             확인
           </button>
         </div>
-        <span className="pop_close">{/* <i className="fas fa-times"></i> */}X</span>
+        <span className="pop_close">X</span>
       </div>
     </Modal>
   );

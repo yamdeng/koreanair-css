@@ -1,93 +1,8 @@
-import { Editor } from '@toast-ui/react-editor';
 import { useState } from 'react';
 import Modal from 'react-modal';
-import { getAllData } from '@/data/grid/example-data-new';
-import { testColumnInfos } from '@/data/grid/table-column';
-import AppTable from '@/components/common/AppTable';
-import Select from 'react-select';
-import { DatePicker, TimePicker, TreeSelect, Select as AntSelect } from 'antd';
-import AppAutoComplete from '@/components/common/AppAutoComplete';
-const options2 = [];
-for (let i = 10; i < 36; i++) {
-  options2.push({
-    label: i.toString(36) + i,
-    value: i.toString(36) + i,
-  });
-}
-
-const options = [
-  { value: 'chocolate', label: 'Chocolate Chocolate Chocolate ChocolateChocolateChocolateChocolate' },
-  { value: 'strawberry', label: 'StrawberryStrawberryStrawberryStrawberryStrawberryStrawberryStrawberry' },
-  { value: 'vanilla', label: 'VanillaVanillaVanillaVanillaVanillaVanillaVanilla' },
-];
-const { RangePicker } = DatePicker;
-const treeData = [
-  {
-    value: 'parent 1',
-    title: 'parent 1',
-    children: [
-      {
-        value: 'parent 1-0',
-        title: 'parent 1-0',
-        children: [
-          {
-            value: 'leaf1',
-            title: 'leaf1222223333333333333333333333333333333333333333',
-          },
-          {
-            value: 'leaf2',
-            title: 'leaf1222223333333333333333333333333333333333333333',
-          },
-          {
-            value: 'leaf3',
-            title: 'leaf1222223333333333333333333333333333333333333333',
-          },
-          {
-            value: 'leaf4',
-            title: 'leaf1222223333333333333333333333333333333333333333',
-          },
-          {
-            value: 'leaf5',
-            title: 'leaf1222223333333333333333333333333333333333333333',
-          },
-          {
-            value: 'leaf6',
-            title: 'leaf1222223333333333333333333333333333333333333333',
-          },
-        ],
-      },
-      {
-        value: 'parent 1-1',
-        title: 'parent 1-1',
-        children: [
-          {
-            value: 'leaf11',
-            title: (
-              <b
-                style={{
-                  color: '#08c',
-                }}
-              >
-                leaf11
-              </b>
-            ),
-          },
-        ],
-      },
-    ],
-  },
-];
 
 function UserViewModal(props) {
-  const [inputValue, setInputValue] = useState('');
-  const [selectedOption, setSelectedOption] = useState();
   const { isOpen, closeModal } = props;
-  const rowData = getAllData();
-  const columns = testColumnInfos;
-  const [selectedTreeData, setSelectedTreeData] = useState([]);
-  const onTreeSelectChange = (value) => {
-    setSelectedTreeData(value);
-  };
 
   return (
     <Modal
@@ -237,7 +152,7 @@ function UserViewModal(props) {
           </button>
         </div>
         <span className="pop_close" onClick={closeModal}>
-          {/* <i className="fas fa-times"></i> */}X
+          X
         </span>
       </div>
     </Modal>
