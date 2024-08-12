@@ -15,6 +15,7 @@ import POccupationMu1P7detail from '@/components/publish/occupation/POccupationM
 import POccupationMu1P8list from '@/components/publish/occupation/POccupationMu1P8list';
 import POccupationMu1P9list from '@/components/publish/occupation/POccupationMu1P9list';
 import POccupationMu1P9edit from '@/components/publish/occupation/POccupationMu1P9edit';
+import POccupationMu1P10list from '@/components/publish/occupation/POccupationMu1P10list';
 import POccupationTraining from '@/components/publish/occupation/POccupationTraining';
 
 const OccupationPageInfo: any = {};
@@ -32,70 +33,70 @@ OccupationPageInfo.list = [
     Component: POccupationMu1P1list,
     path: 'POccupationMu1P1list',
     description: '',
-    success: false,
+    success: true,
   },
   {
     title: '안전경영 > 공지사항-입력',
     Component: POccupationMu1P1edit,
     path: 'POccupationMu1P1edit',
     description: '',
-    success: false,
+    success: true,
   },
   {
     title: '안전경영 > 공지사항-상세',
     Component: POccupationMu1P1detail,
     path: 'POccupationMu1P1detail',
     description: '',
-    success: false,
+    success: true,
   },
   {
     title: '안전경영 > 규정/지침/메뉴얼/양식-리스트',
     Component: POccupationMu1P5list,
     path: 'POccupationMu1P5list',
     description: '',
-    success: false,
+    success: true,
   },
   {
     title: '안전경영 > 규정/지침/메뉴얼/양식-입력',
     Component: POccupationMu1P5edit,
     path: 'POccupationMu1P5edit',
     description: '',
-    success: false,
+    success: true,
   },
   {
     title: '안전경영 > 규정/지침/메뉴얼/양식-상세',
     Component: POccupationMu1P5detail,
     path: 'POccupationMu1P5detail',
     description: '',
-    success: false,
+    success: true,
   },
   {
     title: '안전경영 > 규정/지침/메뉴얼/양식-개정',
     Component: POccupationMu1P5detail2,
     path: 'POccupationMu1P5detail2',
     description: '',
-    success: false,
+    success: true,
   },
   {
     title: '안전경영 > 산업안전보건위원회-리스트',
     Component: POccupationMu1P6list,
     path: 'POccupationMu1P6list',
     description: '',
-    success: false,
+    success: true,
   },
   {
     title: '안전경영 > 산업안전보건위원회-입력',
     Component: POccupationMu1P6edit,
     path: 'POccupationMu1P6edit',
     description: '',
-    success: false,
+    success: true,
   },
   {
     title: '안전경영 > 산업안전보건위원회-상세',
     Component: POccupationMu1P6detail,
     path: 'POccupationMu1P6detail',
     description: '',
-    success: false,
+    success: true,
   },
   {
     title: '안전경영 > 무재해운동-리스트',
@@ -136,6 +137,13 @@ OccupationPageInfo.list = [
     title: '안전경영 > 법규등록대장-입력',
     Component: POccupationMu1P9edit,
     path: 'POccupationMu1P9edit',
+    description: '',
+    success: false,
+  },
+  {
+    title: '안전경영 > 안전보건협의체-리스트',
+    Component: POccupationMu1P10list,
+    path: 'POccupationMu1P10list',
     description: '',
     success: false,
   },

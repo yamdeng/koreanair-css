@@ -89,7 +89,7 @@ function POccupationMu1P6edit() {
         <hr className="line"></hr>
         <div className="form-table line">
           <div className="form-cell wid50">
-            <div className="group-box-wrap wid100">
+            <div className="group-box-wrap line wid100">
               <span className="txt">첨부파일 Link{/*<span className="required">*</span>*/}</span>
               <button type="button" name="button" className="btn-plus">
                 추가
