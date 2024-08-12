@@ -13,6 +13,8 @@ import POccupationMu1P7list from '@/components/publish/occupation/POccupationMu1
 import POccupationMu1P7edit from '@/components/publish/occupation/POccupationMu1P7edit';
 import POccupationMu1P7detail from '@/components/publish/occupation/POccupationMu1P7detail';
 import POccupationMu1P8list from '@/components/publish/occupation/POccupationMu1P8list';
+import POccupationMu1P9list from '@/components/publish/occupation/POccupationMu1P9list';
+import POccupationMu1P9edit from '@/components/publish/occupation/POccupationMu1P9edit';
 import POccupationTraining from '@/components/publish/occupation/POccupationTraining';
 
 const OccupationPageInfo: any = {};
@@ -120,6 +122,20 @@ OccupationPageInfo.list = [
     title: '안전경영 > 법규등록대장기준정보-리스트',
     Component: POccupationMu1P8list,
     path: 'POccupationMu1P8list',
+    description: '',
+    success: false,
+  },
+  {
+    title: '안전경영 > 법규등록대장-리스트',
+    Component: POccupationMu1P9list,
+    path: 'POccupationMu1P9list',
+    description: '',
+    success: false,
+  },
+  {
+    title: '안전경영 > 법규등록대장-입력',
+    Component: POccupationMu1P9edit,
+    path: 'POccupationMu1P9edit',
     description: '',
     success: false,
   },

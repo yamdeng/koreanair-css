@@ -171,6 +171,7 @@
   + .pop_btns {
     /*border-top: 1px solid #{$col-gray350};*/
     padding-top: 2.0rem;
+    :disabled {background:var(--color-neutral-30);color:var(--color-neutral-50);border:0;}
     @include mobile {
       border-top: none;
     }
