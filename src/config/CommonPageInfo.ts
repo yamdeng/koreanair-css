@@ -1,6 +1,7 @@
 import PBasicTable1 from '@/components/publish/common/PBasicTable1';
 import PBasicTable2 from '@/components/publish/common/PBasicTable2';
 import PBasicForm1 from '@/components/publish/common/PBasicForm1';
+import PBasicForm2 from '@/components/publish/common/PBasicForm2';
 import PFileForm from '@/components/publish/common/PFileForm';
 import Table from '@/components/publish/common/Table';
 import PTableCustomColumn from '@/components/publish/common/PTableCustomColumn';
@@ -26,6 +27,13 @@ CommonPageInfo.list = [
     title: 'form 패턴1',
     Component: PBasicForm1,
     path: 'PBasicForm1',
+    description: '',
+    success: false,
+  },
+  {
+    title: 'form 패턴2',
+    Component: PBasicForm2,
+    path: 'PBasicForm2',
     description: '',
     success: false,
   },

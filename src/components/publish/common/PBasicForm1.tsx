@@ -6,6 +6,9 @@ import AppTextArea from '@/components/common/AppTextArea';
 import AppTextInput from '@/components/common/AppTextInput';
 import AppTimePicker from '@/components/common/AppTimePicker';
 import AppTreeSelect from '@/components/common/AppTreeSelect';
+import AppRadioGroup from '@/components/common/AppRadioGroup';
+import AppCheckboxGroup from '@/components/common/AppCheckboxGroup';
+import AppCheckbox from '@/components/common/AppCheckbox';
 import { DatePicker } from 'antd';
 import { useState } from 'react';
 
@@ -101,6 +104,9 @@ function PBasicForm1() {
   const [firstTimeValue, setFirstTimeValue] = useState('22:25:50');
   const [selectedOption, setSelectedOption] = useState();
   const [selectedTreeData, setSelectedTreeData] = useState([]);
+  const [radioValue, setRadioValue] = useState('');
+  const [checkboxValueList, setCheckboxValueList] = useState(['111', '222']);
+  const [checkboxValue, setCheckboxValue] = useState(true);
   const onTreeSelectChange = (value) => {
     setSelectedTreeData(value);
   };
@@ -108,6 +114,19 @@ function PBasicForm1() {
   const changeSelect = (selectValue) => {
     setSelectValue(selectValue);
   };
+
+  const onRaidoChange = (selectValue) => {
+    setRadioValue(selectValue);
+  };
+
+  const onCheckboxGroupChange = (selectValue) => {
+    setCheckboxValueList(selectValue);
+  };
+
+  const onCheckboxChange = (selectValue) => {
+    setCheckboxValue(selectValue);
+  };
+
   return (
     <>
       <div className="conts-title">
@@ -118,13 +137,35 @@ function PBasicForm1() {
         {/* 1행 */}
         <div className="form-table">
           <div className="form-cell wid50">
-            <div className="form-group wid100">
-              <AppTextInput
-                value={inputValue}
-                label="일반 text-input"
-                onChange={(value) => {
-                  setInputValue(value);
-                }}
+            <div className="group-box-wrap wid100">
+              <span className="txt">
+                SPI 여부<span className="required">*</span>
+              </span>
+              <div className="radio-wrap error">
+                <label>
+                  <input type="radio" checked />
+                  <span>YES</span>
+                </label>
+                <label>
+                  <input type="radio" />
+                  <span>NO</span>
+                </label>
+              </div>
+              <span className="errorText">error</span>
+            </div>
+          </div>
+          <div className="form-cell wid50">
+            <div className="group-box-wrap wid100">
+              <AppRadioGroup
+                label="SPI여부"
+                options={[
+                  { value: 'Y', label: 'YES' },
+                  { value: 'N', label: 'NO' },
+                ]}
+                value={radioValue}
+                errorMessage="aaa"
+                onChange={onRaidoChange}
+                noBorder={false}
                 required
               />
             </div>
@@ -134,26 +175,42 @@ function PBasicForm1() {
         {/* 2행 */}
         <div className="form-table">
           <div className="form-cell wid50">
-            <div className="form-group wid100">
-              <AppTextInput
-                value={inputValue}
-                label="일반 text-input"
-                onChange={(value) => {
-                  setInputValue(value);
-                }}
-                errorMessage="bbbb"
-              />
+            <div className="form-cell wid50">
+              <div className="group-box-wrap wid100">
+                <span className="txt">
+                  타이틀<span className="required">*</span>
+                </span>
+                <div className="radio-wrap error">
+                  <label>
+                    <input type="checkbox" checked />
+                    <span>체크박스</span>
+                  </label>
+                  <label>
+                    <input type="checkbox" />
+                    <span>미체크</span>
+                  </label>
+                </div>
+                <span className="errorText">error</span>
+              </div>
             </div>
           </div>
           <div className="form-cell wid50">
-            <div className="form-group wid100">
-              <AppTextInput
-                inputType="number"
-                value={inputValue2}
-                label="일반 number-input"
-                onChange={(value) => {
-                  setInputValue2(value);
-                }}
+            <div className="group-box-wrap wid100">
+              <AppCheckboxGroup
+                label="SPI여부2"
+                options={[
+                  { value: '111', label: '111_LABEL' },
+                  { value: '222', label: '222_LABEL' },
+                  { value: '333', label: '333_LABEL' },
+                  { value: '444', label: '444_LABEL' },
+                  { value: '555', label: '555_LABEL' },
+                  { value: '666', label: '666_LABEL' },
+                ]}
+                value={checkboxValueList}
+                errorMessage="aaa"
+                onChange={onCheckboxGroupChange}
+                noBorder={false}
+                required
               />
             </div>
           </div>
@@ -162,14 +219,13 @@ function PBasicForm1() {
         {/* 3행 */}
         <div className="form-table">
           <div className="form-cell wid50">
-            <div className="form-group wid100">
-              <AppTextArea
-                value={inputValue}
-                label="일반 textarea"
-                onChange={(value) => {
-                  setInputValue(value);
-                }}
-                errorMessage="textarea-error"
+            <div className="group-box-wrap wid100">
+              <AppCheckbox
+                label="체크박스테스트"
+                value={checkboxValue}
+                errorMessage="aaa"
+                onChange={onCheckboxChange}
+                noBorder={false}
                 required
               />
             </div>
