@@ -19,50 +19,146 @@ function ReportLevelModal(props) {
         <h3 className="pop_title">위험레벨 조회</h3>
         <div className="pop_full_cont_box">
           <div className="RiskLevel-box">
-            <div className="RiskLevel-checklist">
-              <div className="list-box-a">
-                <div className="title">
-                  <p>Potential Consequence</p>
-                </div>
-                <div className="boxlist-wrap tree-right-space">
-                  <div className="form-cell">
-                    <div className="form-group wid100">
-                      <AppSelect
-                        id="select1"
-                        style={{ width: '100%' }}
-                        className="label-select"
-                        options={[
-                          {
-                            value: 'jack',
-                            label: 'Jack',
-                          },
-                          {
-                            value: 'lucy',
-                            label: 'Lucy',
-                          },
-                          {
-                            value: 'Yiminghe',
-                            label: 'yiminghe',
-                          },
-                          {
-                            value: 'disabled',
-                            label: 'Disabled',
-                            disabled: true,
-                          },
-                        ]}
-                      />
-                      <label className="f-label" htmlFor="select1">
-                        부서
-                      </label>
+            <div className="RiskLevel-list">
+              <div className="RiskLevel-top-box">
+                <div className="">
+                  <div className="h4-tit">Potential Consequence</div>
+                  <div className="boxlist-wrap">
+                    <div className="form-cell">
+                      <div className="form-group wid100">
+                        <AppSelect
+                          id="select1"
+                          style={{ width: '100%' }}
+                          className="label-select"
+                          options={[
+                            {
+                              value: 'jack',
+                              label: 'Jack',
+                            },
+                            {
+                              value: 'lucy',
+                              label: 'Lucy',
+                            },
+                            {
+                              value: 'Yiminghe',
+                              label: 'yiminghe',
+                            },
+                            {
+                              value: 'disabled',
+                              label: 'Disabled',
+                              disabled: true,
+                            },
+                          ]}
+                        />
+                        <label className="f-label" htmlFor="select1">
+                          선택
+                        </label>
+                      </div>
                     </div>
+                  </div>
+                </div>
+                <div className="">
+                  <div className="h4-tit">Hazard Taxonomy</div>
+                  <div className="boxlist-wrap">
+                    <div className="form-cell">
+                      <div className="form-group wid100">
+                        <AppSelect
+                          id="select1"
+                          style={{ width: '100%' }}
+                          className="label-select"
+                          options={[
+                            {
+                              value: 'jack',
+                              label: 'Jack',
+                            },
+                            {
+                              value: 'lucy',
+                              label: 'Lucy',
+                            },
+                            {
+                              value: 'Yiminghe',
+                              label: 'yiminghe',
+                            },
+                            {
+                              value: 'disabled',
+                              label: 'Disabled',
+                              disabled: true,
+                            },
+                          ]}
+                        />
+                        <label className="f-label" htmlFor="select1">
+                          선택
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div>버튼영역</div>
+              </div>
+
+              <div className="df">
+                <div className="list-box-a">
+                  <div className="search_box">
+                    <ul className="list">
+                      <li>
+                        <a href="javascript:void(0);" className="active">
+                          Aircraft Change
+                        </a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0);">Boarding Refusal</a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0);">Bomb threat</a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0);">Cabin Crew Illness</a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0);">Cabin Crew Incapacitation due to injury</a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0);">COVID-19 Cluster Infection</a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0);">Crew/Pax Injury</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div className="list-box-b">
+                  <div className="search_box">
+                    <ul className="list">
+                      <li>
+                        <a href="javascript:void(0);">Hail(300)</a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0);" className="active">
+                          Lightning strike(200)
+                        </a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0);">Sandstorm(145)</a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0);">Heavy rain(67)</a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0);">Thunderstorm(20)</a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0);">Typhoon/Cyclone(13)</a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0);">Snow/Slush encounter(9)</a>
+                      </li>
+                    </ul>
                   </div>
                 </div>
               </div>
             </div>
             <div className="RiskLevel-area">
-              <div className="title">
-                <p>Risk Level</p>
-              </div>
+              <div className="h4-tit">Potential Consequence</div>
               <div className="search-area">ㅇㅇㅇ</div>
               <div className="Level-area">
                 <div className="LevelLeft">
@@ -141,88 +237,88 @@ function ReportLevelModal(props) {
                           5A<span>(25)</span>
                         </td>
                         <td className="level1">
-                          5B<span>23</span>
+                          5B<span>(23)</span>
                         </td>
                         <td className="level1">
-                          5C<span>20</span>
+                          5C<span>(20)</span>
                         </td>
                         <td className="level2">
-                          5D<span>16</span>
+                          5D<span>(16)</span>
                         </td>
                         <td className="level3">
-                          5E<span>11</span>
+                          5E<span>(11)</span>
                         </td>
                       </tr>
                       <tr>
                         <th>4</th>
                         <td className="level1">
-                          4A<span>24</span>
+                          4A<span>(24)</span>
                         </td>
                         <td className="level1">
-                          4B<span>21</span>
+                          4B<span>(21)</span>
                         </td>
                         <td className="level2">
-                          4C<span>17</span>
+                          4C<span>(17)</span>
                         </td>
                         <td className="level3">
-                          4D<span>12</span>
+                          4D<span>(12)</span>
                         </td>
                         <td className="level4">
-                          4E<span>7</span>
+                          4E<span>(7)</span>
                         </td>
                       </tr>
                       <tr>
                         <th>3</th>
                         <td className="level1">
-                          3A<span>22</span>
+                          3A<span>(22)</span>
                         </td>
                         <td className="level2">
-                          3B<span>21</span>
+                          3B<span>(21)</span>
                         </td>
                         <td className="level3">
-                          3C<span>17</span>
+                          3C<span>(17)</span>
                         </td>
                         <td className="level3">
-                          3D<span>12</span>
+                          3D<span>(12)</span>
                         </td>
                         <td className="level4">
-                          3E<span>4</span>
+                          3E<span>(4)</span>
                         </td>
                       </tr>
                       <tr>
                         <th>2</th>
                         <td className="level2">
-                          2A<span>22</span>
+                          2A<span>(22)</span>
                         </td>
                         <td className="level3">
-                          2B<span>21</span>
+                          2B<span>(21)</span>
                         </td>
                         <td className="level3">
-                          2C<span>17</span>
+                          2C<span>(17)</span>
                         </td>
                         <td className="level4">
-                          2D<span>12</span>
+                          2D<span>(12)</span>
                         </td>
                         <td className="level4">
-                          2E<span>4</span>
+                          2E<span>(4)</span>
                         </td>
                       </tr>
                       <tr>
                         <th>1</th>
                         <td className="level2">
-                          1A<span>22</span>
+                          1A<span>(22)</span>
                         </td>
                         <td className="level3">
-                          1B<span>21</span>
+                          1B<span>(21)</span>
                         </td>
                         <td className="level4">
-                          1C<span>17</span>
+                          1C<span>(17)</span>
                         </td>
                         <td className="level4">
-                          1D<span>12</span>
+                          1D<span>(12)</span>
                         </td>
                         <td className="level4">
-                          1E<span>4</span>
+                          1E<span>(4)</span>
                         </td>
                       </tr>
                     </tbody>
@@ -231,7 +327,7 @@ function ReportLevelModal(props) {
               </div>
               <div className="Level-area-bottom">
                 <p className="h4-tit">심각도</p>
-                <table className="RiskLevelTable">
+                <table className="RiskLevelTable severity">
                   <caption></caption>
                   <colgroup></colgroup>
                   <thead>
