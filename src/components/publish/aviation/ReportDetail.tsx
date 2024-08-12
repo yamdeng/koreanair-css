@@ -139,6 +139,16 @@ function SafetyDetail() {
           </li>
         </ol>
       </div>
+      <div className="c-step-wrap flex-e -mb-8n-3">
+        <ol className="c-step-list default">
+          <li className="is-active">
+            <p className="info-title">
+              <span className="hide">1단계</span> 조회
+              <span className="hide">현재 </span>
+            </p>
+          </li>
+        </ol>
+      </div>
 
       {/* 하단버튼영역 */}
       <div className="contents-btns">

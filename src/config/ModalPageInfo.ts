@@ -15,6 +15,7 @@ import PRightCommentLayer from '@/components/publish/modal/PRightCommentLayer';
 import MU1P5detail2Modal from '@/components/publish/modal/MU1P5detail2Modal';
 import PReportListModal from '@/components/publish/modal/PReportListModal';
 import MU1P8Modal from '@/components/publish/modal/MU1P8Modal';
+import PReportLevelModal from '@/components/publish/modal/PReportLevelModal';
 
 const ModalPageInfo: any = {};
 
@@ -135,6 +136,13 @@ ModalPageInfo.list = [
     title: '산업안전 > 안전경영 > 법규등록대장 팝업창',
     Component: MU1P8Modal,
     path: 'MU1P8Modal',
+    description: '',
+    success: false,
+  },
+  {
+    title: '[항공안전>안전위험관리] 보고서분석 > 위험레벨조회 팝업창',
+    Component: PReportLevelModal,
+    path: 'PReportLevelModal',
     description: '',
     success: false,
   },

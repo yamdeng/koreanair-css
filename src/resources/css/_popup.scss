@@ -9,6 +9,21 @@
   }
 }
 
+.risk-level-search-content {
+  width: 180.0rem;
+  box-sizing: border-box;
+  padding: 2.0rem 3.0rem;
+  @include mobile {
+    width: 100%;
+    padding: 0;
+    height: 100%;
+    border-radius: 0 !important;
+    .popup-container {
+      height: 100%;
+    }
+  }
+}
+
 .subj-org-appoint-modal-content {
   width: 50.0rem;
   box-sizing: border-box;
