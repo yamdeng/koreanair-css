@@ -87,31 +87,36 @@ function PBasicTable2() {
           <div className="form-table">
             {/* 라벨이 없는 경우 : radio */}
             <div className="form-cell wid50">
-              <div className="radio-wrap">
-                <label>
-                  <input type="radio" checked />
-                  <span>체크</span>
-                </label>
-                <label>
-                  <input type="radio" />
-                  <span>미체크</span>
-                </label>
+              <div className="group-box-wrap wid100">
+                <div className="radio-wrap border-no">
+                  <label>
+                    <input type="radio" checked />
+                    <span>체크</span>
+                  </label>
+                  <label>
+                    <input type="radio" />
+                    <span>미체크</span>
+                  </label>
+                </div>
               </div>
             </div>
             {/* 라벨이 있는 경우 : radio */}
-            <div className="group-box-wrap wid50">
-              <span className="txt">
-                SPI 여부<span className="required">*</span>
-              </span>
-              <div className="radio-wrap">
-                <label>
-                  <input type="radio" checked />
-                  <span>YES</span>
-                </label>
-                <label>
-                  <input type="radio" />
-                  <span>NO</span>
-                </label>
+            <div className="form-cell wid50">
+              <div className="group-box-wrap wid100">
+                <span className="txt">
+                  SPI 여부<span className="required">*</span>
+                </span>
+                <div className="radio-wrap error">
+                  <label>
+                    <input type="radio" checked />
+                    <span>YES</span>
+                  </label>
+                  <label>
+                    <input type="radio" />
+                    <span>NO</span>
+                  </label>
+                </div>
+                <span className="errorText">error</span>
               </div>
             </div>
           </div>
@@ -121,28 +126,36 @@ function PBasicTable2() {
           <div className="form-table">
             {/* 라벨이 없는 경우 : checkbox */}
             <div className="form-cell wid50">
-              <div className="chk-wrap">
-                <label>
-                  <input type="checkbox" checked />
-                  <span>체크박스</span>
-                </label>
-                <label>
-                  <input type="checkbox" />
-                  <span>미체크</span>
-                </label>
+              <div className="group-box-wrap wid100">
+                <div className="radio-wrap border-no">
+                  <label>
+                    <input type="checkbox" checked />
+                    <span>체크박스</span>
+                  </label>
+                  <label>
+                    <input type="checkbox" />
+                    <span>미체크</span>
+                  </label>
+                </div>
               </div>
             </div>
             {/* 라벨이 있는 경우 : checkbox */}
             <div className="form-cell wid50">
-              <div className="chk-wrap">
-                <label>
-                  <input type="checkbox" checked />
-                  <span>체크박스</span>
-                </label>
-                <label>
-                  <input type="checkbox" />
-                  <span>미체크</span>
-                </label>
+              <div className="group-box-wrap wid100">
+                <span className="txt">
+                  타이틀<span className="required">*</span>
+                </span>
+                <div className="radio-wrap error">
+                  <label>
+                    <input type="checkbox" checked />
+                    <span>체크박스</span>
+                  </label>
+                  <label>
+                    <input type="checkbox" />
+                    <span>미체크</span>
+                  </label>
+                </div>
+                <span className="errorText">error</span>
               </div>
             </div>
           </div>
