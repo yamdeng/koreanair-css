@@ -343,12 +343,12 @@ input, select{font-family:'KoreanAirSans'}
 
 /*탭*/
 .menu-tab-nav{display:flex}
-.menu-tab{display:flex;flex-wrap:nowrap;border-radius:0.8rem;overflow: auto hidden;scroll-behavior:smooth;gap:1.2rem 0}
+.menu-tab{display:flex;flex-wrap:nowrap;border-radius:0.8rem;overflow: auto hidden;scroll-behavior:smooth;gap:1.2rem 0;margin: 2.0rem 0;}
 .menu-tab:after{content:'';display:block;clear:both}
-.menu-tab a:nth-child(1){border-right:0}
+/*.menu-tab a:nth-child(1){border-right:0}
 .menu-tab a:nth-child(2){border-right:0}
 .menu-tab a:nth-child(3){border-right:0}
-.menu-tab a:nth-child(4){border-right:0}
+.menu-tab a:nth-child(4){border-right:0}*/
 .menu-tab a:last-child{border-right:1px solid var(--color-neutral-40);border-top-right-radius:0.8rem;border-bottom-right-radius:0.8rem}
 .menu-tab a{display:inline-flex;font-size:1.6rem;line-height:1.5;min-height:4.4rem;border:1px solid var(--color-neutral-40);background-color:var(--color-neutral-10);color:var(--color-neutral-80);padding:0 1.5rem;align-items:center;justify-content:center;text-align:center}
 .menu-tab a.active{background-color:var(--color-darkblue-100);color:var(--color-neutral-10)}

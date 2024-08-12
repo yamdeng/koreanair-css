@@ -18,8 +18,18 @@ function POccupationMu1P10list() {
   return (
     <>
       <div className="conts-title">
-        <h2>법규등록대장</h2>
+        <h2>안전보건협의체</h2>
       </div>
+      {/*탭 */}
+      <div className="menu-tab">
+        <a href="javascript:void(0);" className="active" data-label="현황">
+          현황
+        </a>
+        <a href="javascript:void(0);" data-label="목록">
+          목록
+        </a>
+      </div>
+      {/*//탭 */}
       {/*검색영역 */}
       <div className="boxForm">
         {/*area-detail명 옆에 active  */}
