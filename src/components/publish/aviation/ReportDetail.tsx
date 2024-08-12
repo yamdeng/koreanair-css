@@ -68,7 +68,10 @@ function SafetyDetail() {
     <>
       <div className="conts-title">
         <h2>
-          보고서 보기 <span>ASR-100308</span>
+          보고서 보기{' '}
+          <span>
+            <a href="javascript:void(0);">ASR-100308</a>
+          </span>
         </h2>
       </div>
       {/*상세페이지
@@ -90,12 +93,13 @@ function SafetyDetail() {
         <hr className="line dp-n"></hr>
       </div>
       //상세페이지*/}
-      <div className="h3">ASR-100308</div>
       <div className="c-step-wrap">
         <ol className="c-step-list-type-5">
-          <li>
+          <li className="active">
+            {/* 선택된 class명에 active */}
             <a href="javascript:void(0);" data-label="접수">
-              <p className="info-title">
+              {/* 선택된 class명에 active */}
+              <p className="info-title active">
                 <span className="hide">1단계</span>
                 접수
               </p>

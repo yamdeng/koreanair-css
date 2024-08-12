@@ -255,7 +255,8 @@ input, select{font-family:'KoreanAirSans'}
 /* 상단 타이틀 */
 .conts-title{position:relative;align-items:center;padding:2.0rem 0 4.0rem 0;/*margin-bottom:1.0rem*/}
 .conts-title h2{float:left;font-family:"KoreanAirSans";font-size:3rem;color:var(--color-neutral-80);font-weight:700;letter-spacing:-0.1rem}
-.conts-title h2 span{font-size:2.5rem;color:var(--color-mblue-100)}
+.conts-title h2 span a{position:relative;font-size:2.5rem;color:var(--color-mblue-100);padding-left:1.0rem}
+.conts-title h2 span a:after{content:'';position:absolute;box-sizing:content-box;right:-3.5rem;width:3.0rem;height:3.0rem;background:url(../images/icon-documents.svg)no-repeat center center;cursor:pointer}
 
 
 
@@ -480,7 +481,7 @@ input, select{font-family:'KoreanAirSans'}
 .info-wrap > dl > dd{margin:0 -2.0rem 1.0rem}
 .info-wrap .edit-area{padding:2.0rem 2.0rem;border-top:0.1rem solid var(--color-darkblue-100);border-bottom:0.1rem solid var(--color-neutral-30);background-color:var(--color-neutral-20);color:var(--color-neutral-80);line-height:2.0rem;font-size:1.6rem}
 .toggle .btn-tg{position:relative;font-family:"KoreanAirSans";font-size:1.6rem;color:var(--color-darkblue-100);background-color:var(--color-neutral-10);text-align:left;width:100%}
-.toggle .btn-tg:after{position:absolute;top:50%;right:0;content:'';display:inline-block;width:0.7rem;height:0.7rem;margin:0 0 0 1.3rem;border: solid var(--color-darkblue-100);border-width: 0 0.1rem 0.1rem 0;-webkit-transform: translateY(-50%) rotate(45deg);transform: translateY(-50%) rotate(45deg);-webkit-transform-origin: center;transform-origin:center}
+.toggle .btn-tg:after{position:absolute;top:50%;right:0;content:'';display:inline-block;width:0.7rem;height:0.7rem;margin:0 0 0 1.3rem;border: solid var(--color-darkblue-100);border-width:0 0.1rem 0.1rem 0;-webkit-transform:translateY(-50%) rotate(45deg);transform: translateY(-50%) rotate(45deg);-webkit-transform-origin:center;transform-origin:center}
 .toggle .active .btn-tg:after{-webkit-transform:translateY(-50%) rotate(-135deg);transform:translateY(-50%) rotate(-135deg)}
 .toggle .active .tg-conts{display:block}
 
