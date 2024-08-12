@@ -22,10 +22,11 @@
 
 .c-step-wrap.bg-white [class*=c-step-list-type] {background-color:var(--color-neutral-10)}
 .flex-e{display:flex;justify-content:flex-end !important}
-.c-step-list.default{display:flex;font-size: 12px;text-align: center; margin-left: -15px;}
+.c-step-list.default{display:flex;font-size:12px;text-align:center;margin-left:-5px}
 .c-step-list{counter-reset:stepCounter}
 .c-step-wrap ol{/*justify-content: center;*/}
-.c-step-list.default>li {position:relative;min-width: 112px;padding:0 10px}
+.c-step-list.default>li {position:relative;min-width:145px;padding:0 1.5rem;}
+.c-step-list.default>li:nth-child(2){min-width:145px;}
 .c-step-list>li{counter-increment:stepCounter}
 .c-step-list.default .is-active .info-title{color:var(--color-mblue-100)}
 .c-step-list.default>li .info-title{color:var(--color-neutral-90)}
@@ -80,6 +81,7 @@
 /*[class*=c-step-list-type][class*=-list-type-5]>li.active .after-arrow{position:absolute;top:calc(50% - 0.8rem);right:-0.9rem;height:1.6rem;width:1.6rem;transform:rotate(315deg);background:var(--color-neutral-10);z-index:10}
 [class*=c-step-list-type][class*=-list-type-5]>li.active .after-arrow:after{content:'';display:inline-block;position:absolute;width:1.6rem;height:1.6rem;left:0;top:0;border-left-color:var(--color-neutral-40);border-bottom:0.2rem solid var(--color-darkblue-100);border-right:0.2rem solid var(--color-darkblue-100);border-top-color:var(--color-darkblue-100)}*/
 
+.detailForm{padding:1.5rem 0.5rem;}
 
 /*AUDIT 체크리스트*/
 .checklist-contents{display:flex;align-items:flex-end;justify-content:flex-start;flex-wrap:wrap;width:100%;box-sizing:border-box;margin-top:1.0rem}

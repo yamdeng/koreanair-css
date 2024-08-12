@@ -199,35 +199,72 @@ function SafetyDetail() {
               <span className="hide">현재 </span>
             </p>
           </li>
-          <li className="">
-            <p className="info-title">
-              <span className="hide">10단계</span> 조회
-              <span className="hide">현재 </span>
-            </p>
-          </li>
         </ol>
       </div>
       {/* 보고서 상세 toggle*/}
       <div className="info-wrap toggle">
         <dl className="tg-item active">
-          {/* toggle 선택되면  열어지면 active붙임*/}
           <dt>
             <button type="button" className="btn-tg">
-              보고서 내용보기
+              {/* toggle 열어지면 active붙임*/}
+              보고서 내용보기<span className=""></span>
             </button>
           </dt>
           <dd className="tg-conts">
-            <div className="edit-area"></div>
+            <div className="edit-area">
+              <div className="detailForm"></div>
+              <div className="contents-btns">
+                <button type="button" name="button" className="btn_text text_color_neutral-10 btn_conblue">
+                  재작성요청
+                </button>
+                <button type="button" name="button" className="btn_text text_color_neutral-10 btn_confirm">
+                  Notify
+                </button>
+                <button type="button" name="button" className="btn_text text_color_neutral-10 btn_confirm">
+                  Void
+                </button>
+                <button type="button" name="button" className="btn_text text_color_neutral-10 btn_confirm">
+                  수정
+                </button>
+                <button type="button" name="button" className="btn_text btn-del">
+                  인쇄
+                </button>
+                <button type="button" name="button" className="btn_text btn_list">
+                  목록
+                </button>
+              </div>
+            </div>
           </dd>
         </dl>
         <dl className="tg-item">
           <dt>
             <button type="button" className="btn-tg">
-              보고서 분석
+              보고서 분석<span className="active"></span>
             </button>
           </dt>
           <dd className="tg-conts">
-            <div className="edit-area"></div>
+            <div className="edit-area">
+              <div className="detailForm">
+                {/*탭 */}
+                <div className="menu-tab">
+                  <a href="javascript:void(0);" className="active" data-label="접수">
+                    접수
+                  </a>
+                  <a href="javascript:void(0);" data-label="1차 위험도 평가">
+                    1차 위험도 평가
+                  </a>
+                  <a href="javascript:void(0);" data-label="경감조치">
+                    경감조치
+                  </a>
+                  <a href="javascript:void(0);" data-label="2차 위험도 평가">
+                    2차 위험도 평가
+                  </a>
+                  <a href="javascript:void(0);" data-label="종결">
+                    종결
+                  </a>
+                </div>
+              </div>
+            </div>
           </dd>
         </dl>
       </div>
