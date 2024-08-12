@@ -11,6 +11,59 @@ import { DatePicker } from 'antd';
 import { useState } from 'react';
 import { Upload } from 'antd';
 
+const props: any = {
+  name: 'file',
+  multiple: true,
+  defaultFileList: [
+    {
+      uid: '1',
+      name: 'xxx.png',
+      // status: 'uploading',
+      url: 'http://www.baidu.com/xxx.png',
+      percent: 33,
+    },
+    {
+      uid: '2',
+      name: 'yyy.png',
+      status: 'done',
+      url: 'http://www.baidu.com/yyy.png',
+    },
+    {
+      uid: '3',
+      name: 'zzz.png',
+      status: 'error',
+      response: 'Server Error 500',
+      // custom error message to show
+      url: 'http://www.baidu.com/zzz.png',
+    },
+  ],
+  action: 'https://660d2bd96ddfa2943b33731c.mockapi.io/api/upload',
+
+  onChange(info) {
+    const { status } = info.file;
+    if (status !== 'uploading') {
+      console.log(info.file, info.fileList);
+    }
+    if (status === 'done') {
+      alert(`${info.file.name} file uploaded successfully.`);
+    } else if (status === 'error') {
+      alert(`${info.file.name} file upload failed.`);
+    }
+  },
+
+  onRemove(file) {
+    return false;
+  },
+
+  onPreview(file) {
+    return false;
+  },
+
+  onDrop(e) {
+    console.log('Dropped files', e.dataTransfer.files);
+  },
+};
+
 function PPOccupationMu1P9edit() {
   return (
     <>
@@ -121,6 +174,19 @@ function PPOccupationMu1P9edit() {
                     <div className="form-cell wid50">
                       <div className="form-group wid100">
                         <AppSelect label="승인자" required />
+                      </div>
+                    </div>
+                  </div>
+                  <div className="form-table">
+                    <div className="form-cell wid50">
+                      <div className="form-group wid100">
+                        <Upload {...props}>
+                          <div className="btn-area">
+                            <button type="button" name="button" className="btn-big btn_text btn-darkblue-line">
+                              + Upload
+                            </button>
+                          </div>
+                        </Upload>
                       </div>
                     </div>
                   </div>
