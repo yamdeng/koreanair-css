@@ -10,6 +10,9 @@ import AppSearchInput from '@/components/common/AppSearchInput';
 import { DatePicker } from 'antd';
 import { useState } from 'react';
 import { Upload } from 'antd';
+import AppTable from '@/components/common/AppTable';
+import { getAllData } from '@/data/grid/example-data-new';
+import { testColumnInfos } from '@/data/grid/table-column';
 
 const props: any = {
   name: 'file',
@@ -65,6 +68,8 @@ const props: any = {
 };
 
 function PPOccupationMu1P9edit() {
+  const rowData = getAllData();
+  const columns = testColumnInfos;
   return (
     <>
       <div className="conts-title">
@@ -177,20 +182,19 @@ function PPOccupationMu1P9edit() {
                       </div>
                     </div>
                   </div>
-                  <div className="form-table">
-                    <div className="form-cell wid50">
-                      <div className="form-group wid100">
-                        <Upload {...props}>
-                          <div className="btn-area">
-                            <button type="button" name="button" className="btn-big btn_text btn-darkblue-line">
-                              + Upload
-                            </button>
-                          </div>
-                        </Upload>
-                      </div>
-                    </div>
-                  </div>
                 </div>
+              </div>
+            </div>
+          </dd>
+          <dt>
+            <button type="button" className="btn-tg">
+              해당 부서<span className="active"></span>
+            </button>
+          </dt>
+          <dd className="tg-conts">
+            <div className="edit-area">
+              <div className="detail-form">
+                <div className="detail-list">그리드영역</div>
               </div>
             </div>
           </dd>
