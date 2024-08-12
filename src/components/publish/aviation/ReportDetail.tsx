@@ -143,16 +143,95 @@ function SafetyDetail() {
           </li>
         </ol>
       </div>
-      <div className="c-step-wrap flex-e -mb-8n-3">
+      <div className="c-step-wrap -mb-8n-3">
         <ol className="c-step-list default">
           <li className="is-active">
             <p className="info-title">
-              <span className="hide">1단계</span> 조회
+              <span className="hide">1단계</span> 보고서접수
+              <span className="hide">현재 </span>
+            </p>
+          </li>
+          <li className="">
+            <p className="info-title">
+              <span className="hide">2단계</span> 조회
+              <span className="hide">현재 </span>
+            </p>
+          </li>
+          <li className="">
+            <p className="info-title">
+              <span className="hide">3단계</span> 조회
+              <span className="hide">현재 </span>
+            </p>
+          </li>
+          <li className="">
+            <p className="info-title">
+              <span className="hide">4단계</span> 조회
+              <span className="hide">현재 </span>
+            </p>
+          </li>
+          <li className="">
+            <p className="info-title">
+              <span className="hide">5단계</span> 조회
+              <span className="hide">현재 </span>
+            </p>
+          </li>
+          <li className="">
+            <p className="info-title">
+              <span className="hide">6단계</span> 조회
+              <span className="hide">현재 </span>
+            </p>
+          </li>
+          <li className="">
+            <p className="info-title">
+              <span className="hide">7단계</span> 조회
+              <span className="hide">현재 </span>
+            </p>
+          </li>
+          <li className="">
+            <p className="info-title">
+              <span className="hide">8단계</span> 조회
+              <span className="hide">현재 </span>
+            </p>
+          </li>
+          <li className="">
+            <p className="info-title">
+              <span className="hide">9단계</span> 조회
+              <span className="hide">현재 </span>
+            </p>
+          </li>
+          <li className="">
+            <p className="info-title">
+              <span className="hide">10단계</span> 조회
               <span className="hide">현재 </span>
             </p>
           </li>
         </ol>
       </div>
+      {/* 보고서 상세 toggle*/}
+      <div className="info-wrap toggle">
+        <dl className="tg-item active">
+          {/* toggle 선택되면  열어지면 active붙임*/}
+          <dt>
+            <button type="button" className="btn-tg">
+              보고서 내용보기
+            </button>
+          </dt>
+          <dd className="tg-conts">
+            <div className="edit-area"></div>
+          </dd>
+        </dl>
+        <dl className="tg-item">
+          <dt>
+            <button type="button" className="btn-tg">
+              보고서 분석
+            </button>
+          </dt>
+          <dd className="tg-conts">
+            <div className="edit-area"></div>
+          </dd>
+        </dl>
+      </div>
+      {/* //보고서 상세 toggle*/}
 
       {/* 하단버튼영역 */}
       <div className="contents-btns">

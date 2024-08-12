@@ -4,7 +4,7 @@
 .h3{position:relative;font-size:2.2rem;font-weight:700;height:4.0rem;letter-spacing:-0.01rem}
 .h3:after{content:'';display:block}
 .flex-e{display:flex;justify-content:flex-end !important}
-.-mb-8n-3 {margin-bottom:2.4rem !important}
+.-mb-8n-3{margin:2.4rem 2.4rem 0 !important}
 .c-step-list{counter-reset:stepCounter}
 .c-step-list.default{display:flex;font-size:1.2rem;text-align:center;margin-left:-1.5rem}
 
@@ -13,9 +13,7 @@
 
 /* 리포트 프로세스*/
 .process-btns{position:relative;margin-top:1.0rem}
-.process-btns > button {
-    margin: 0 0.5rem;
-}
+.process-btns > button{margin:0 0.5rem}
 .process-btns .btn-sm{padding:0.5rem 2.8rem;border-radius:99.9rem}
 .process-btns .btn_text{font-family:"KoreanAirSans";font-weight:400;font-size:1.6rem}
 .process-btns .btn-blue{background-color:var(--color-lightblue-100);color:var(--color-neutral-10)}
@@ -23,6 +21,45 @@
 
 
 .c-step-wrap.bg-white [class*=c-step-list-type] {background-color:var(--color-neutral-10)}
+.flex-e{display:flex;justify-content:flex-end !important}
+.c-step-list.default{display:flex;font-size: 12px;text-align: center; margin-left: -15px;}
+.c-step-list{counter-reset:stepCounter}
+.c-step-wrap ol{/*justify-content: center;*/}
+.c-step-list.default>li {position:relative;min-width: 112px;padding:0 10px}
+.c-step-list>li{counter-increment:stepCounter}
+.c-step-list.default .is-active .info-title{color:var(--color-mblue-100)}
+.c-step-list.default>li .info-title{color:var(--color-neutral-90)}
+.c-step-list.default .is-active .info-title:before{background-color:var(--color-neutral-10);border-width: 2px;border-color:var(--color-mblue-100);color:var(--color-mblue-100);font-weight:700}
+.c-step-list.default .info-title:before {
+    content: counter(stepCounter);
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: #fff;
+    border: 1px solid #666;
+    margin: 0 auto 8px;
+}
+.c-step-list.default>li:after {
+    content: "";
+    position: absolute;
+    top: 16px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #ddd;
+}
+.c-step-list.default>li:last-of-type:after {
+    left: auto;
+    right: 50%;
+}
+.c-step-list.default>li:first-of-type:after {
+    left: 50%;
+}
 [class*=c-step-list-type]{display:flex;justify-content:flex-start;border:1px solid var(--color-neutral-40);background-color:var(--color-neutral-10);border-radius:0.8rem;overflow:hidden;counter-reset:stepCounter}
 [class*=c-step-list-type]>li{position:relative;flex:1}
 [class*=c-step-list-type]>li.active{border-bottom:solid 0.2rem var(--color-darkblue-100)}
