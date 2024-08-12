@@ -207,12 +207,12 @@ function SafetyDetail() {
           <dt>
             <button type="button" className="btn-tg">
               {/* toggle 열어지면 active붙임*/}
-              보고서 내용보기<span className=""></span>
+              보고서 내용보기<span className="active"></span>
             </button>
           </dt>
           <dd className="tg-conts">
             <div className="edit-area">
-              <div className="detailForm"></div>
+              <div className="detailForm">보고서내용</div>
               <div className="contents-btns">
                 <button type="button" name="button" className="btn_text text_color_neutral-10 btn_conblue">
                   재작성요청
