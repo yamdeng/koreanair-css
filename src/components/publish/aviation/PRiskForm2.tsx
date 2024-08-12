@@ -79,19 +79,21 @@ function PRiskForm2() {
                         <AppTextInput label="기상조건" />
                       </div>
                     </div>
-                    <div className="group-box-wrap wid50">
-                      <span className="txt">
-                        SPI 여부<span className="required">*</span>
-                      </span>
-                      <div className="radio-wrap">
-                        <label>
-                          <input type="radio" checked />
-                          <span>YES</span>
-                        </label>
-                        <label>
-                          <input type="radio" />
-                          <span>NO</span>
-                        </label>
+                    <div className="form-cell wid50">
+                      <div className="group-box-wrap wid100">
+                        <span className="txt">
+                          SPI 여부<span className="required">*</span>
+                        </span>
+                        <div className="radio-wrap error">
+                          <label>
+                            <input type="radio" checked />
+                            <span>YES</span>
+                          </label>
+                          <label>
+                            <input type="radio" />
+                            <span>NO</span>
+                          </label>
+                        </div>
                       </div>
                     </div>
                   </div>

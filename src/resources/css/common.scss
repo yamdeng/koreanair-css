@@ -29,6 +29,12 @@
   --color-Warning-BG:#FEF4E6;
   --color-negative:#DA291C;
   --color-negative-bg:#FFF5F5;
+  /*위험도컬러*/
+  --color-Level:#EE4E10;
+  --color-Leve2:#FF884D;
+  --color-Leve3:#FFC247;
+  --color-Leve4:#02C27F;
+
  }
 
  html {
@@ -78,7 +84,9 @@ input[type=checkbox],input[type=radio]{padding:0;vertical-align:middle;margin-to
 [class^="chk-wrap"] > label > input {position:absolute;top:0;left:0;width:0;height:0;opacity:0}
 
 /* 기본형 */
-.radio-wrap{/*display:inline-block;*/line-height:0}
+.radio-wrap{/*display:inline-block;*/position: relative; line-height:0;border:0.1rem solid var(--color-neutral-40);border-radius:0.5rem;padding: 0 1.0rem;}
+.radio-wrap.border-no {border: 0;}
+.radio-wrap .input-box {position: relative;}
 .radio-wrap > label {display:inline-block;/*min-height:4.0rem;*/padding:0rem 0.9rem 0.2rem 2.5rem;line-height:2.2rem;margin:1.2rem 0 0 0.2rem}
 .radio-wrap > label > input + span {display:block;color:var(--color-neutral-60);font-size:1.4rem}
 .radio-wrap > label > input:checked + span{color:var(--color-neutral-80);font-size:1.4rem}
@@ -88,7 +96,10 @@ input[type=checkbox],input[type=radio]{padding:0;vertical-align:middle;margin-to
 .radio-wrap > label > input[type="radio"] + span:after{left:0.3rem;width:1.0rem;height:1.0rem;border:0.1rem solid var(--color-neutral-60); border-radius:50%; -webkit-transform:translateY(-50%); transform:translateY(-50%)}
 .radio-wrap > label > input:checked + span:before{border-color:var(--color-darkblue-100);background:var(--color-neutral-10)}
 .radio-wrap > label > input:checked + span:after{background:var(--color-darkblue-100)}
+.radio-wrap > label > input:checked[type="checkbox"] + span:before{border-color:var(--color-darkblue-100);background:var(--color-darkblue-100)}
+.radio-wrap > label > input:checked[type="checkbox"] + span:after{border-color:var(--color-neutral-10)}
 .bottom-area .list-toggle + .radio-wrap{margin:1.0rem 0 3.0rem 1.9rem}
+.radio-wrap.error{border:solid 0.1rem var(--color-negative)}
 
 .chk-wrap {display:inline-block;line-height:0}
 .chk-wrap > label {display:inline-block;/*min-height:4.0rem;*/padding:0rem 0.9rem 0.2rem 2.5rem;line-height:2.2rem;margin: 1.2rem 0 0 0.2rem}
@@ -267,15 +278,16 @@ input, select{font-family:'KoreanAirSans'}
   .form-table .form-cell:last-child{padding-right:0}
 
   .group-box-wrap{position: relative;padding:0 1.0rem;height:4.0rem;border: 0.1rem solid var(--color-neutral-40);border-radius: 0.5rem}
-  .group-box-wrap .txt {position:absolute;left: 1.0rem;top: -1.2rem;background:var(--color-neutral-10);padding: 0 0.5rem;font-size:1.4rem}
+  .group-box-wrap .txt {position:absolute;left: 1.0rem;top: -1.2rem;background:var(--color-neutral-10);padding: 0 0.5rem;font-size:1.4rem;}
 }
 .detail-form{
   .detail-list .form-table{display:flex;width:100%}
   .form-table +.form-table{padding-top:1.5rem}
 }
 
-.group-box-wrap{position:relative;padding:0 1.0rem;height:4.0rem;border:0.1rem solid var(--color-neutral-40);border-radius:0.5rem}
-.group-box-wrap .txt{position:absolute;left:1.0rem;top:-1.2rem;background:var(--color-neutral-10);padding:0 0.5rem;font-size:1.4rem}
+.group-box-wrap{position:relative;/*height:4.0rem;padding:0 1.0rem;border:0.1rem solid var(--color-neutral-40);border-radius:0.5rem*/}
+.group-box-wrap .txt{position:absolute;left:1.0rem;top:-1.2rem;background:var(--color-neutral-10);padding:0 0.5rem;font-size:1.4rem; z-index: 1;}
+.group-box-wrap span.errorText {display: block;color: var(--color-negative); font-size: 1.3rem; padding: 0.2rem 0.5rem;}
 
 /*부서검색*/
 .conts-box{position:relative;height: calc(100vh - 18.5rem);overflow:hidden}
@@ -368,7 +380,7 @@ input, select{font-family:'KoreanAirSans'}
 .boxForm .form-table{display:flex;width:100%}
 .boxForm .form-table + .form-table{/*padding-top:1.5rem*/}
 .boxForm .form-table:last-child{padding-bottom:1.5rem}
-.boxForm .form-table .form-cell{position:relative;flex-grow:1;padding:0 0.5rem;padding-top:1.2rem}
+.boxForm .form-table .form-cell{position:relative;flex-grow:1;padding:0 0.5rem;padding-top:1.2rem /*padding: 2rem 1rem 2rem 0;*/}
 .boxForm .form-table .wid-300 {max-width: 30.0rem;}
 /*.boxForm .form-table .form-cell:last-child{padding-right:0}*/
 .boxForm.tog{margin-bottom:0rem;padding-top:0rem}
