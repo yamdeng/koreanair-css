@@ -92,40 +92,22 @@ function ReportList() {
       {/* //검색영역 */}
 
       {/* 리포트 프로세스 */}
-      {/* <div className="Report-process-wrap">
-        <div className="process-box ">
-          <a href="javascript:void(0);" className="active" data-label="접수">
-            접수
-          </a>
-          <a href="javascript:void(0);" className="" data-label="1차 위험평가">
-            1차 위험평가
-          </a>
-          <a href="javascript:void(0);" className="" data-label="경감조치">
-            경감조치
-          </a>
-          <a href="javascript:void(0);" className="" data-label="2차 위험평가">
-            2차 위험평가
-          </a>
-          <a href="javascript:void(0);" className="" data-label="종결">
-            종결
-          </a>
-        </div>
-      </div>*/}
-
       <div className="c-step-wrap">
         <ol className="c-step-list-type-5">
           <li className="">
+            {/* 선택된 class명에 active */}
             <a href="javascript:void(0);" data-label="접수">
-              <p className="info-title">
+              <p className="info-title ">
+                {/* 선택된 class명에 active */}
                 <span className="hide">1단계</span>
                 접수
               </p>
             </a>
             <span className="after-arrow"></span>
           </li>
-          <li className="">
+          <li className="active">
             <a href="javascript:void(0);" data-label="1차 위험평가">
-              <p className="info-title">
+              <p className="info-title active">
                 <span className="hide">2단계</span>
                 1차 위험평가
               </p>
@@ -162,7 +144,15 @@ function ReportList() {
       </div>
       {/* 업무관련 버튼 */}
       <div className="process-btns">
-        <button type="button">보고서 묶기 처리</button>
+        <button type="button" className="btn-sm btn_text btn-blue">
+          보고서 묶기 처리
+        </button>
+        <button type="button" className="btn-sm btn_text btn-blue">
+          SRC Approval
+        </button>
+        <button type="button" className="btn-sm btn_text btn-blue">
+          SRC Reject
+        </button>
       </div>
       {/* //  업무관련 버튼 */}
 
