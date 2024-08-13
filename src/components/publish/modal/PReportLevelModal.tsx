@@ -233,7 +233,7 @@ function ReportLevelModal(props) {
                     <tbody>
                       <tr>
                         <th>5</th>
-                        <td className="level1">
+                        <td className="level1 selected">
                           5A<span>(25)</span>
                         </td>
                         <td className="level1">

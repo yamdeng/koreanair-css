@@ -3,35 +3,57 @@ import { getAllData } from '@/data/grid/example-data-new';
 import { testColumnInfos } from '@/data/grid/table-column';
 
 function CustomColumnComponent1() {
-  return <div style={{ fontWeight: 'bold', textDecoration: 'underline' }}>custom 컴포넌트aaa1</div>;
+  return (
+    <div className="Safety-table-cell">
+      <a href="javascript:void(0);">링크되는 텍스트</a>
+    </div>
+  );
 }
 
 function CustomColumnComponent2() {
-  return <div style={{ fontWeight: 'bold', textDecoration: 'underline' }}>custom 컴포넌트2</div>;
+  return (
+    <div className="Safety-table-cell">
+      <span>일반 텍스트</span>
+    </div>
+  );
 }
 function CustomColumnComponent3() {
-  return <div style={{ fontWeight: 'bold', textDecoration: 'underline' }}>custom 컴포넌트3</div>;
+  return (
+    <div className="Safety-table-cell">
+      <span className="">일반 텍스트</span>
+    </div>
+  );
 }
 function CustomColumnComponent4() {
-  return <div style={{ fontWeight: 'bold', textDecoration: 'underline' }}>custom 컴포넌트4</div>;
+  return (
+    <div className="Safety-table-cell">
+      <span className="Safety-tag riskLevel level4">1C</span>
+      <span className="Safety-tag riskLevel level3">2C</span>
+      <span className="Safety-tag riskLevel level2">1A</span>
+    </div>
+  );
 }
 function CustomColumnComponent5(paams) {
-  return <div style={{ fontWeight: 'bold', textDecoration: 'underline' }}>custom 컴포넌트5</div>;
+  return (
+    <div className="Safety-table-cell">
+      <span className="Safety-tag riskLevel level1">5A</span>
+    </div>
+  );
 }
 function CustomColumnComponent6() {
-  return <div style={{ fontWeight: 'bold', textDecoration: 'underline' }}>custom 컴포넌트6</div>;
+  return <div style={{ fontWeight: 'normal', textDecoration: 'underline' }}>custom 컴포넌트6</div>;
 }
 function CustomColumnComponent7() {
-  return <div style={{ fontWeight: 'bold', textDecoration: 'underline' }}>custom 컴포넌트7</div>;
+  return <div style={{ fontWeight: 'normal', textDecoration: 'underline' }}>custom 컴포넌트7</div>;
 }
 function CustomColumnComponent8() {
-  return <div style={{ fontWeight: 'bold', textDecoration: 'underline' }}>custom 컴포넌트8</div>;
+  return <div style={{ fontWeight: 'normal', textDecoration: 'underline' }}>custom 컴포넌트8</div>;
 }
 function CustomColumnComponent9() {
-  return <div style={{ fontWeight: 'bold', textDecoration: 'underline' }}>custom 컴포넌트9</div>;
+  return <div style={{ fontWeight: 'normal', textDecoration: 'underline' }}>custom 컴포넌트9</div>;
 }
 function CustomColumnComponent10() {
-  return <div style={{ fontWeight: 'bold', textDecoration: 'underline' }}>custom 컴포넌트10</div>;
+  return <div style={{ fontWeight: 'normal', textDecoration: 'underline' }}>custom 컴포넌트10</div>;
 }
 
 function PTableCustomColumn() {

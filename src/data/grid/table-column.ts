@@ -2,10 +2,10 @@ import _ from 'lodash';
 
 export const testColumnKeyList = [
   'id',
-  'sabun',
+  '문서번호',
   'position',
   'name',
-  'nameEn',
+  '1차위험도평가',
   'deptName',
   'sex',
   'createdDate',

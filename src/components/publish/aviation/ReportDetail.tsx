@@ -74,132 +74,115 @@ function SafetyDetail() {
           </span>
         </h2>
       </div>
-      {/*상세페이지
-      <div className="editbox">
-        <div className="form-table">
-          <div className="form-cell wid100">
-            <div className="form-group wid100">
-              <div className="box-view-list">
-                <ul className="view-list">
-                  <li className="accumlate-list">
-                    <label className="t-label">정책구분</label>
-                    <span className="text-desc-type1"> AMO</span>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-        <hr className="line dp-n"></hr>
-      </div>
-      //상세페이지*/}
-      <div className="c-step-wrap">
-        <ol className="c-step-list-type-5">
-          <li className="active">
-            {/* 선택된 class명에 active */}
-            <a href="javascript:void(0);" data-label="접수">
+      <div className="Report-step-area">
+        <div className="c-step-wrap">
+          <ol className="c-step-list-type-5">
+            <li className="active">
               {/* 선택된 class명에 active */}
-              <p className="info-title active">
-                <span className="hide">1단계</span>
-                접수
-              </p>
-            </a>
-            <span className="after-arrow"></span>
-          </li>
-          <li>
-            <a href="javascript:void(0);" data-label="1차 위험평가">
+              <a href="javascript:void(0);" data-label="접수">
+                {/* 선택된 class명에 active */}
+                <p className="info-title active">
+                  <span className="hide">1단계</span>
+                  접수
+                </p>
+              </a>
+              <span className="after-arrow"></span>
+            </li>
+            <li>
+              <a href="javascript:void(0);" data-label="1차 위험평가">
+                <p className="info-title">
+                  <span className="hide">2단계</span>
+                  1차 위험평가
+                </p>
+              </a>
+              <span className="after-arrow"></span>
+            </li>
+            <li>
+              <a href="javascript:void(0);" data-label="경감조치">
+                <p className="info-title">
+                  <span className="hide">3단계</span>
+                  경감조치
+                </p>
+              </a>
+              <span className="after-arrow"></span>
+            </li>
+            <li>
+              <a href="javascript:void(0);" data-label="2차 위험평가">
+                <p className="info-title">
+                  <span className="hide">4단계</span>
+                  2차 위험평가
+                </p>
+              </a>
+              <span className="after-arrow"></span>
+            </li>
+            <li>
+              <a href="javascript:void(0);" data-label="종결">
+                <p className="info-title">
+                  <span className="hide">5단계</span>
+                  종결
+                </p>
+              </a>
+            </li>
+          </ol>
+        </div>
+        <div className="c-step-wrap -mb-8n-3">
+          <ol className="c-step-list default">
+            <li className="active">
               <p className="info-title">
-                <span className="hide">2단계</span>
-                1차 위험평가
+                <span className="hide">1단계</span> 보고서접수
+                <span className="hide">현재 </span>
               </p>
-            </a>
-            <span className="after-arrow"></span>
-          </li>
-          <li>
-            <a href="javascript:void(0);" data-label="경감조치">
+            </li>
+            <li className="">
               <p className="info-title">
-                <span className="hide">3단계</span>
-                경감조치
+                <span className="hide">2단계</span> 조회
+                <span className="hide">현재 </span>
               </p>
-            </a>
-            <span className="after-arrow"></span>
-          </li>
-          <li>
-            <a href="javascript:void(0);" data-label="2차 위험평가">
+            </li>
+            <li className="">
               <p className="info-title">
-                <span className="hide">4단계</span>
-                2차 위험평가
+                <span className="hide">3단계</span> 조회
+                <span className="hide">현재 </span>
               </p>
-            </a>
-            <span className="after-arrow"></span>
-          </li>
-          <li>
-            <a href="javascript:void(0);" data-label="종결">
+            </li>
+            <li className="">
               <p className="info-title">
-                <span className="hide">5단계</span>
-                종결
+                <span className="hide">4단계</span> 조회
+                <span className="hide">현재 </span>
               </p>
-            </a>
-          </li>
-        </ol>
-      </div>
-      <div className="c-step-wrap -mb-8n-3">
-        <ol className="c-step-list default">
-          <li className="is-active">
-            <p className="info-title">
-              <span className="hide">1단계</span> 보고서접수
-              <span className="hide">현재 </span>
-            </p>
-          </li>
-          <li className="">
-            <p className="info-title">
-              <span className="hide">2단계</span> 조회
-              <span className="hide">현재 </span>
-            </p>
-          </li>
-          <li className="">
-            <p className="info-title">
-              <span className="hide">3단계</span> 조회
-              <span className="hide">현재 </span>
-            </p>
-          </li>
-          <li className="">
-            <p className="info-title">
-              <span className="hide">4단계</span> 조회
-              <span className="hide">현재 </span>
-            </p>
-          </li>
-          <li className="">
-            <p className="info-title">
-              <span className="hide">5단계</span> 조회
-              <span className="hide">현재 </span>
-            </p>
-          </li>
-          <li className="">
-            <p className="info-title">
-              <span className="hide">6단계</span> 조회
-              <span className="hide">현재 </span>
-            </p>
-          </li>
-          <li className="">
-            <p className="info-title">
-              <span className="hide">7단계</span> 조회
-              <span className="hide">현재 </span>
-            </p>
-          </li>
-          <li className="">
-            <p className="info-title">
-              <span className="hide">8단계</span> 조회
-              <span className="hide">현재 </span>
-            </p>
-          </li>
-          <li className="">
-            <p className="info-title">
-              <span className="hide">9단계</span> 조회
-              <span className="hide">현재 </span>
-            </p>
-          </li>
-        </ol>
+            </li>
+            <li className="">
+              <p className="info-title">
+                <span className="hide">5단계</span> 조회
+                <span className="hide">현재 </span>
+              </p>
+            </li>
+            <li className="">
+              <p className="info-title">
+                <span className="hide">6단계</span> 조회
+                <span className="hide">현재 </span>
+              </p>
+            </li>
+            <li className="">
+              <p className="info-title">
+                <span className="hide">7단계</span> 조회
+                <span className="hide">현재 </span>
+              </p>
+            </li>
+            <li className="">
+              <p className="info-title">
+                <span className="hide">8단계</span> 조회
+                <span className="hide">현재 </span>
+              </p>
+            </li>
+            <li className="">
+              <p className="info-title">
+                <span className="hide">9단계</span> 조회
+                <span className="hide">현재 </span>
+              </p>
+            </li>
+          </ol>
+        </div>
       </div>
       {/* 보고서 상세 toggle*/}
       <div className="info-wrap toggle">
@@ -246,23 +229,176 @@ function SafetyDetail() {
             <div className="edit-area">
               <div className="detailForm">
                 {/*탭 */}
-                <div className="menu-tab">
-                  <a href="javascript:void(0);" className="active" data-label="접수">
-                    접수
-                  </a>
-                  <a href="javascript:void(0);" data-label="1차 위험도 평가">
-                    1차 위험도 평가
-                  </a>
-                  <a href="javascript:void(0);" data-label="경감조치">
-                    경감조치
-                  </a>
-                  <a href="javascript:void(0);" data-label="2차 위험도 평가">
-                    2차 위험도 평가
-                  </a>
-                  <a href="javascript:void(0);" data-label="종결">
-                    종결
-                  </a>
+                <div className="menu-tab-nav">
+                  <div className="menu-tab">
+                    <a href="javascript:void(0);" id="1" className="" data-label="접수">
+                      접수
+                    </a>
+                    <a href="javascript:void(0);" id="2" className="active" data-label="1차 위험도 평가">
+                      1차 위험도 평가
+                    </a>
+                    <a href="javascript:void(0);" id="3" className="" data-label="경감조치">
+                      경감조치
+                    </a>
+                    <a href="javascript:void(0);" id="4" className="" data-label="2차 위험도 평가">
+                      2차 위험도 평가
+                    </a>
+                    <a href="javascript:void(0);" id="5" className="" data-label="종결">
+                      종결
+                    </a>
+                  </div>
                 </div>
+                {/*//탭 */}
+                {/*탭상세-접수처리*/}
+                <div id="1" className="detailForm-detail list-group" style={{ display: 'none' }}>
+                  <div className="detailForm-detail list-group">
+                    <div className="list bx-toggle">
+                      <dl className="tg-item rbox01 ">
+                        <dt>
+                          <button type="button" className="tg-btn">
+                            보고서접수<span className=""></span>
+                          </button>
+                        </dt>
+                        <dd className="tg-conts" style={{ display: 'none' }}>
+                          <div className="edit-area">dfddfd</div>
+                        </dd>
+                      </dl>
+                    </div>
+                  </div>
+                </div>
+                {/*//탭상세*/}
+
+                {/*탭상세-1차 위험도 평가*/}
+                <div id="2" style={{ display: 'none' }}>
+                  <div className="detailForm-detail list-group">
+                    <div className="list bx-toggle">
+                      <dl className="tg-item rbox01 ">
+                        <dt>
+                          <button type="button" className="tg-btn">
+                            위험평가<span className=""></span>
+                          </button>
+                        </dt>
+                        <dd className="tg-conts" style={{ display: 'none' }}>
+                          <div className="edit-area">dfddfd</div>
+                        </dd>
+                      </dl>
+                    </div>
+                  </div>
+                  <div className="detailForm-detail list-group">
+                    <div className="list bx-toggle">
+                      <dl className="tg-item rbox01">
+                        <dt>
+                          <button type="button" className="tg-btn">
+                            SRC리뷰<span className="active"></span>
+                          </button>
+                        </dt>
+                        <dd className="tg-conts">
+                          <div className="edit-area">dfddfd</div>
+                        </dd>
+                      </dl>
+                    </div>
+                  </div>
+                </div>
+                {/*//탭상세*/}
+                {/*탭상세-경감조치*/}
+                <div id="3">
+                  <div className="detailForm-detail list-group">
+                    <div className="list bx-toggle">
+                      <dl className="tg-item rbox01 ">
+                        <dt>
+                          <button type="button" className="tg-btn">
+                            경감지정<span className=""></span>
+                          </button>
+                        </dt>
+                        <dd className="tg-conts" style={{ display: 'none' }}>
+                          <div className="edit-area">dfddfd</div>
+                        </dd>
+                      </dl>
+                    </div>
+                  </div>
+                  <div className="detailForm-detail list-group">
+                    <div className="list bx-toggle">
+                      <dl className="tg-item rbox01">
+                        <dt>
+                          <button type="button" className="tg-btn">
+                            경감계획<span className="active"></span>
+                          </button>
+                        </dt>
+                        <dd className="tg-conts" style={{ display: 'none' }}>
+                          <div className="edit-area">dfddfd</div>
+                        </dd>
+                      </dl>
+                    </div>
+                  </div>
+                  <div className="detailForm-detail list-group">
+                    <div className="list bx-toggle">
+                      <dl className="tg-item rbox01">
+                        <dt>
+                          <button type="button" className="tg-btn">
+                            경감실행
+                            <span className="active"></span>
+                          </button>
+                        </dt>
+                        <dd className="tg-conts" style={{ display: 'none' }}>
+                          <div className="edit-area">dfddfd</div>
+                        </dd>
+                      </dl>
+                    </div>
+                  </div>
+                </div>
+                {/*//탭상세*/}
+
+                {/*탭상세-2차 위험도 평가*/}
+                <div id="4" style={{ display: 'none' }}>
+                  <div className="detailForm-detail list-group">
+                    <div className="list bx-toggle">
+                      <dl className="tg-item rbox01 ">
+                        <dt>
+                          <button type="button" className="tg-btn">
+                            위험평가<span className=""></span>
+                          </button>
+                        </dt>
+                        <dd className="tg-conts" style={{ display: 'none' }}>
+                          <div className="edit-area">dfddfd</div>
+                        </dd>
+                      </dl>
+                    </div>
+                  </div>
+                  <div className="detailForm-detail list-group">
+                    <div className="list bx-toggle">
+                      <dl className="tg-item rbox01">
+                        <dt>
+                          <button type="button" className="tg-btn">
+                            SRC리뷰<span className="active"></span>
+                          </button>
+                        </dt>
+                        <dd className="tg-conts">
+                          <div className="edit-area">dfddfd</div>
+                        </dd>
+                      </dl>
+                    </div>
+                  </div>
+                </div>
+                {/*//탭상세*/}
+
+                {/*탭상세-종결*/}
+                <div id="5" className="detailForm-detail list-group" style={{ display: 'none' }}>
+                  <div className="detailForm-detail list-group">
+                    <div className="list bx-toggle">
+                      <dl className="tg-item rbox01 ">
+                        <dt>
+                          <button type="button" className="tg-btn">
+                            종결처리<span className=""></span>
+                          </button>
+                        </dt>
+                        <dd className="tg-conts" style={{ display: 'none' }}>
+                          <div className="edit-area">dfddfd</div>
+                        </dd>
+                      </dl>
+                    </div>
+                  </div>
+                </div>
+                {/*//탭상세*/}
               </div>
             </div>
           </dd>
