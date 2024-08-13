@@ -20,8 +20,8 @@ import POccupationMu1P10edit from '@/components/publish/occupation/POccupationMu
 import POccupationMu3P1list from '@/components/publish/occupation/POccupationMu3P1list';
 import POccupationMu3P1edit from '@/components/publish/occupation/POccupationMu3P1edit';
 import POccupationMu3P2list from '@/components/publish/occupation/POccupationMu3P2list';
+import POccupationMu3P2list1 from '@/components/publish/occupation/POccupationMu3P2list1';
 import POccupationMu3P2edit from '@/components/publish/occupation/POccupationMu3P2edit';
-import POccupationMu3P2detail from '@/components/publish/occupation/POccupationMu3P2detail';
 import POccupationMu3P3list from '@/components/publish/occupation/POccupationMu3P3list';
 import POccupationMu3P3edit from '@/components/publish/occupation/POccupationMu3P3edit';
 
@@ -176,23 +176,23 @@ OccupationPageInfo.list = [
     success: false,
   },
   {
-    title: '안전관리 > 위험기계기구-리스트',
+    title: '안전관리 > 위험기계기구-현황',
     Component: POccupationMu3P2list,
     path: 'POccupationMu3P2list',
     description: '',
     success: false,
   },
   {
-    title: '안전관리 > 위험기계기구-등록',
-    Component: POccupationMu3P2edit,
-    path: 'POccupationMu3P2edit',
+    title: '안전관리 > 위험기계기구-조회',
+    Component: POccupationMu3P2list1,
+    path: 'POccupationMu3P2list1',
     description: '',
     success: false,
   },
   {
-    title: '안전관리 > 위험기계기구-상세',
-    Component: POccupationMu3P2detail,
-    path: 'POccupationMu3P2detail',
+    title: '안전관리 > 위험기계기구-조회-등록',
+    Component: POccupationMu3P2edit,
+    path: 'POccupationMu3P2edit',
     description: '',
     success: false,
   },

@@ -21,13 +21,15 @@ function POccupationMu1P10list() {
         <h2>안전보건협의체</h2>
       </div>
       {/*탭 */}
-      <div className="menu-tab">
-        <a href="javascript:void(0);" className="active" data-label="현황">
-          현황
-        </a>
-        <a href="javascript:void(0);" data-label="목록">
-          목록
-        </a>
+      <div className="menu-tab-nav">
+        <div className="menu-tab">
+          <a href="javascript:void(0);" className="active" data-label="현황">
+            현황
+          </a>
+          <a href="javascript:void(0);" data-label="목록">
+            목록
+          </a>
+        </div>
       </div>
       {/*//탭 */}
       {/*검색영역 */}

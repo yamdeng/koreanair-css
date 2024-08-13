@@ -20,73 +20,50 @@ function POPOccupationMu3P2list() {
       <div className="conts-title">
         <h2>위험기계기구</h2>
       </div>
-      {/*검색영역 */}
-      <div className="boxForm">
-        {/*area-detail명 옆에 active  */}
-        <div id="" className="area-detail active">
-          <div className="form-table">
-            <div className="form-cell wid50">
-              <div className="form-group wid100">
-                <AppSelect label={'부문'} />
-              </div>
-            </div>
-            <div className="form-cell wid50">
-              <div className="form-group wid100 mr5">
-                <AppAutoComplete label={'부서'} />
-              </div>
-            </div>
-            <div className="form-cell wid50">
-              <div className="form-group wid100">
-                <AppSelect label={'재난유형'} />
-              </div>
-            </div>
-          </div>
-          <div className="form-table">
-            <div className="form-cell wid50">
-              <div className="form-group form-glow">
-                <div className="df">
-                  <div className="date1">
-                    <AppDatePicker label="훈련실시시간" />
-                  </div>
-                  <span className="unt">~</span>
-                  <div className="date2">
-                    <AppDatePicker label="훈련실시시간2" />
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="form-cell wid100">
-              <div className="form-group wid100">
-                <AppTextInput label="훈련명" />
-              </div>
-            </div>
-          </div>
-          <div className="btn-area">
-            <button type="button" name="button" className="btn-sm btn_text btn-darkblue-line">
-              조회
-            </button>
-          </div>
+      {/*탭 */}
+      <div className="menu-tab-nav">
+        <div className="menu-tab">
+          <a href="javascript:void(0);" className="active" data-label="현황">
+            현황
+          </a>
+          <a href="javascript:void(0);" data-label="조회">
+            조회
+          </a>
         </div>
-        {/*__control명 옆에 active  */}
-        <button type="button" name="button" className="arrow button _control active">
-          <span className="hide">접기</span>
-        </button>
       </div>
-      {/* //검색영역 */}
-
-      {/*그리드영역 */}
-      <div className="">
-        <AppTable rowData={rowData} columns={columns} />
+      {/*//탭 */}
+      {/*테이블영역 */}
+      <div className="conts-title">
+        <h3>전사 위험기계기구 보유 현황: 100대</h3>
       </div>
-      {/*//그리드영역 */}
-
-      {/* 하단버튼영역 */}
-      <div className="contents-btns">
-        <button type="button" name="button" className="btn_text text_color_neutral-10 btn_confirm">
-          등록
-        </button>
+      <div className="table-box">
+        <div className="left-table">
+          <table>
+            <col width="25%" />
+            <col width="25%" />
+            <col width="25%" />
+            <col width="25%" />
+            <tr>
+              <th>프레스</th>
+              <th>전단기</th>
+              <th>절곡기</th>
+              <th>크레인</th>
+            </tr>
+            <tr>
+              <td>20</td>
+              <td>5</td>
+              <td>10</td>
+              <td>8</td>
+            </tr>
+            <tr>
+              <th>프레스</th>
+              <td>20</td>
+            </tr>
+          </table>
+        </div>
+        <div className="right-table">오른쪽영역</div>
       </div>
-      {/*//하단버튼영역*/}
+      {/* //테이블영역 */}
     </>
   );
 }
