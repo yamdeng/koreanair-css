@@ -78,11 +78,11 @@ function PBasicForm1() {
           <div className="form-cell wid50">
             <div className="form-group wid100">
               {/* 파일첨부영역 : drag */}
-              <div className="filebox" style={{ border: '1px solid red' }}>
+              <div className="filebox error">
                 <Dragger {...props}>
                   <p className="ant-upload-text ">+ 이 곳을 클릭하거나 마우스로 업로드할 파일을 끌어서 놓으세요.</p>
                 </Dragger>
-                <label htmlFor="file" className="f-label">
+                <label htmlFor="file" className="file-label">
                   첨부파일 <span className="required">*</span>
                 </label>
               </div>
@@ -95,14 +95,17 @@ function PBasicForm1() {
         <div className="form-table">
           <div className="form-cell wid50">
             <div className="form-group wid100">
-              <div className="filebox" style={{ border: '1px solid red' }}>
+              <div className="filebox error">
                 <Upload {...props}>
                   <div className="btn-area">
-                    <button type="button" name="button" className="btn-big btn_text btn-darkblue-line">
+                    <button type="button" name="button" className="btn-big btn_text btn-darkblue-line mg-n">
                       + Upload
                     </button>
                   </div>
                 </Upload>
+                <label htmlFor="file" className="file-label">
+                  첨부파일 <span className="required">*</span>
+                </label>
               </div>
               <span className="errorText">fileerror</span>
             </div>
