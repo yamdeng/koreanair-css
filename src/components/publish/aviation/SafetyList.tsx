@@ -11,6 +11,21 @@ function SafetyList() {
   const columns = testColumnInfos;
   return (
     <>
+      {/*경로 */}
+      <div className="Breadcrumb">
+        <ol>
+          <li className="breadcrumb-item">
+            <a href="javascript:void(0);">홈</a>
+          </li>
+          <li className="breadcrumb-item">
+            <a href="javascript:void(0);">관리자</a>
+          </li>
+          <li className="breadcrumb-item">
+            <a href="javascript:void(0);">안전정책</a>
+          </li>
+        </ol>
+      </div>
+      {/*경로 */}
       <div className="conts-title">
         <h2>안전정책</h2>
       </div>

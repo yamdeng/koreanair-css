@@ -66,6 +66,24 @@ function TaxonomyEdit() {
   const columns = testColumnInfos;
   return (
     <>
+      {/*경로 */}
+      <div className="Breadcrumb">
+        <ol>
+          <li className="breadcrumb-item">
+            <a href="javascript:void(0);">홈</a>
+          </li>
+          <li className="breadcrumb-item">
+            <a href="javascript:void(0);">관리자</a>
+          </li>
+          <li className="breadcrumb-item">
+            <a href="javascript:void(0);">HAZARD관리</a>
+          </li>
+          <li className="breadcrumb-item">
+            <a href="javascript:void(0);">Taxonomy신규</a>
+          </li>
+        </ol>
+      </div>
+      {/*경로 */}
       <div className="conts-title">
         <h2>Taxonomy 신규</h2>
       </div>

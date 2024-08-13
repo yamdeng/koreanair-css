@@ -8,6 +8,24 @@ function PRiskForm2() {
   const [inputValue, setInputValue] = useState('');
   return (
     <>
+      {/*경로 */}
+      <div className="Breadcrumb">
+        <ol>
+          <li className="breadcrumb-item">
+            <a href="javascript:void(0);">홈</a>
+          </li>
+          <li className="breadcrumb-item">
+            <a href="javascript:void(0);">안전위험관리</a>
+          </li>
+          <li className="breadcrumb-item">
+            <a href="javascript:void(0);">안전조사</a>
+          </li>
+          <li className="breadcrumb-item">
+            <a href="javascript:void(0);">조사보고서</a>
+          </li>
+        </ol>
+      </div>
+      {/*경로 */}
       <div className="conts-title">
         <h2>
           보고서 번호 : <span>20240715(Aa)</span>

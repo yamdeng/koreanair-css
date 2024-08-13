@@ -104,7 +104,7 @@ function CheckEdit() {
           <button type="button" name="button" className="menu-tab-nav-more">
             <span className="hide">더보기</span>
           </button>
-          <button type="button" name="button" className="c-tab-btn-next swiper__uid_329_next swiper-button-disabled">
+          <button type="button" name="button" className="c-tab-btn-next">
             <span className="hide">다음 탭메뉴</span>
           </button>
         </div>
