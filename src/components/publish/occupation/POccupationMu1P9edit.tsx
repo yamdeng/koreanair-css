@@ -91,29 +91,31 @@ function PPOccupationMu1P9edit() {
                   <div className="form-table">
                     <div className="form-cell wid50">
                       <div className="form-group wid100">
-                        <AppSelect label="법규명" required />
-                      </div>
-                    </div>
-                    <div className="form-cell wid50">
-                      <div className="form-group wid100">
-                        <AppSelect label="법령 일련번호" />
-                      </div>
-                    </div>
-                    <div className="form-cell wid50">
-                      <div className="form-group wid100">
-                        <AppSelect label="법령종류" required />
-                      </div>
-                    </div>
-                    <div className="form-cell wid50">
-                      <div className="form-group wid100">
-                        <AppSelect label="공포일자(개정)" required />
+                        <AppTextInput label="법규명" />
                       </div>
                     </div>
                   </div>
                   <div className="form-table">
                     <div className="form-cell wid50">
                       <div className="form-group wid100">
-                        <AppSelect label="시행일자" required />
+                        <AppTextInput label="법령 일련번호" />
+                      </div>
+                    </div>
+                    <div className="form-cell wid50">
+                      <div className="form-group wid100">
+                        <AppTextInput label="법령종류" />
+                      </div>
+                    </div>
+                    <div className="form-cell wid50">
+                      <div className="form-group wid100">
+                        <AppDatePicker label="공포일자(개정)" />
+                      </div>
+                    </div>
+                  </div>
+                  <div className="form-table">
+                    <div className="form-cell wid50">
+                      <div className="form-group wid100">
+                        <AppDatePicker label="시행일자" />
                       </div>
                     </div>
                     <div className="form-cell wid50">
@@ -123,22 +125,57 @@ function PPOccupationMu1P9edit() {
                     </div>
                     <div className="form-cell wid50">
                       <div className="form-group wid100">
-                        <AppSelect label="소관부처" required />
+                        <AppAutoComplete label="소관부처" />
                       </div>
                     </div>
+                  </div>
+                  <div className="form-table">
                     <div className="form-cell wid50">
-                      <div className="form-group wid100">
-                        <AppSelect label="법령상세링크" required />
+                      <div className="group-box-wrap line wid100">
+                        <span className="txt">법령상세링크{/*<span className="required">*</span>*/}</span>
+                        <button type="button" name="button" className="btn-plus">
+                          추가
+                        </button>
+                        <div className="file-link">
+                          <div className="link-box">
+                            <a href="javascript:void(0);">첨부Link첨부Link첨부Link</a>
+                            <a href="javascript:void(0);">
+                              <span className="close-btn">close</span>
+                            </a>
+                          </div>
+                          <div className="link-box">
+                            <a href="javascript:void(0);">첨부Link</a>
+                            <a href="javascript:void(0);">
+                              <span className="close-btn">close</span>
+                            </a>
+                          </div>
+                          <div className="link-box">
+                            <a href="javascript:void(0);">첨부Link</a>
+                            <a href="javascript:void(0);">
+                              <span className="close-btn">close</span>
+                            </a>
+                          </div>
+                          <div className="link-box">
+                            <a href="javascript:void(0);">첨부Link</a>
+                            <a href="javascript:void(0);">
+                              <span className="close-btn">close</span>
+                            </a>
+                          </div>
+                        </div>
                       </div>
                     </div>
-                    <div className="form-cell wid50">
+                  </div>
+                  <div className="form-table">
+                    <div className="form-cell wid100">
                       <div className="form-group wid100">
-                        <AppSelect label="주관 부서" required />
+                        <AppAutoComplete label="주관 부서" />
                       </div>
                     </div>
-                    <div className="form-cell wid50">
-                      <div className="form-group wid100">
-                        <AppSelect label="보기" />
+                    <div className="form-cell wid100">
+                      <div className="btn-area">
+                        <button type="button" name="button" className="btn-sm btn_text btn-darkblue-line">
+                          법령 보기
+                        </button>
                       </div>
                     </div>
                   </div>
@@ -158,27 +195,31 @@ function PPOccupationMu1P9edit() {
                   <div className="form-table">
                     <div className="form-cell wid50">
                       <div className="form-group wid100">
-                        <AppSelect label="개정 내용" required />
+                        <AppTextInput label="개정 내용" />
+                      </div>
+                    </div>
+                  </div>
+                  <div className="form-table">
+                    <div className="form-cell wid50">
+                      <div className="form-group wid100">
+                        <AppTextInput label="영향도 평가" />
                       </div>
                     </div>
                     <div className="form-cell wid50">
                       <div className="form-group wid100">
-                        <AppSelect label="영향도 평가" />
+                        <AppTextInput label="Keyword" />
+                      </div>
+                    </div>
+                  </div>
+                  <div className="form-table">
+                    <div className="form-cell wid50">
+                      <div className="form-group wid100">
+                        <AppTextInput label="평가자" />
                       </div>
                     </div>
                     <div className="form-cell wid50">
                       <div className="form-group wid100">
-                        <AppSelect label="Keyword" required />
-                      </div>
-                    </div>
-                    <div className="form-cell wid50">
-                      <div className="form-group wid100">
-                        <AppSelect label="평가자" required />
-                      </div>
-                    </div>
-                    <div className="form-cell wid50">
-                      <div className="form-group wid100">
-                        <AppSelect label="승인자" required />
+                        <AppAutoComplete label="승인자" />
                       </div>
                     </div>
                   </div>

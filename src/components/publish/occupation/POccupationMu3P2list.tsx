@@ -9,8 +9,9 @@ import AppSelect from '@/components/common/AppSelect';
 import AppDatePicker from '@/components/common/AppDatePicker';
 import AppRangeDatePicker from '@/components/common/AppRangeDatePicker';
 import AppTimePicker from '@/components/common/AppTimePicker';
+import AppAutoComplete from '@/components/common/AppAutoComplete';
 
-function POccupationTraining() {
+function POPOccupationMu3P2list() {
   const [inputValue, setInputValue] = useState('');
   const rowData = getAllData();
   const columns = testColumnInfos;
@@ -31,7 +32,7 @@ function POccupationTraining() {
             </div>
             <div className="form-cell wid50">
               <div className="form-group wid100 mr5">
-                <AppSearchInput label="부서" />
+                <AppAutoComplete label={'부서'} />
               </div>
             </div>
             <div className="form-cell wid50">
@@ -56,9 +57,14 @@ function POccupationTraining() {
             </div>
             <div className="form-cell wid100">
               <div className="form-group wid100">
-                <AppSearchInput label="훈련명" />
+                <AppTextInput label="훈련명" />
               </div>
             </div>
+          </div>
+          <div className="btn-area">
+            <button type="button" name="button" className="btn-sm btn_text btn-darkblue-line">
+              조회
+            </button>
           </div>
         </div>
         {/*__control명 옆에 active  */}
@@ -85,4 +91,4 @@ function POccupationTraining() {
   );
 }
 
-export default POccupationTraining;
+export default POPOccupationMu3P2list;

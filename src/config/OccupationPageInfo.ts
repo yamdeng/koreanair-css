@@ -16,7 +16,13 @@ import POccupationMu1P8list from '@/components/publish/occupation/POccupationMu1
 import POccupationMu1P9list from '@/components/publish/occupation/POccupationMu1P9list';
 import POccupationMu1P9edit from '@/components/publish/occupation/POccupationMu1P9edit';
 import POccupationMu1P10list from '@/components/publish/occupation/POccupationMu1P10list';
-import POccupationTraining from '@/components/publish/occupation/POccupationTraining';
+import POccupationMu1P10edit from '@/components/publish/occupation/POccupationMu1P10edit';
+import POccupationMu3P1list from '@/components/publish/occupation/POccupationMu3P1list';
+import POccupationMu3P1edit from '@/components/publish/occupation/POccupationMu3P1edit';
+import POccupationMu3P1detail from '@/components/publish/occupation/POccupationMu3P1detail';
+import POccupationMu3P2list from '@/components/publish/occupation/POccupationMu3P2list';
+import POccupationMu3P2edit from '@/components/publish/occupation/POccupationMu3P2edit';
+import POccupationMu3P2detail from '@/components/publish/occupation/POccupationMu3P2detail';
 
 const OccupationPageInfo: any = {};
 
@@ -103,21 +109,21 @@ OccupationPageInfo.list = [
     Component: POccupationMu1P7list,
     path: 'POccupationMu1P7list',
     description: '',
-    success: false,
+    success: true,
   },
   {
     title: '안전경영 > 무재해운동-입력',
     Component: POccupationMu1P7edit,
     path: 'POccupationMu1P7edit',
     description: '',
-    success: false,
+    success: true,
   },
   {
     title: '안전경영 > 무재해운동-상세',
     Component: POccupationMu1P7detail,
     path: 'POccupationMu1P7detail',
     description: '',
-    success: false,
+    success: true,
   },
   {
     title: '안전경영 > 법규등록대장기준정보-리스트',
@@ -134,7 +140,7 @@ OccupationPageInfo.list = [
     success: false,
   },
   {
-    title: '안전경영 > 법규등록대장-입력',
+    title: '안전경영 > 법규등록대장-등록',
     Component: POccupationMu1P9edit,
     path: 'POccupationMu1P9edit',
     description: '',
@@ -148,9 +154,51 @@ OccupationPageInfo.list = [
     success: false,
   },
   {
-    title: '안전관리 > 중대재해대응훈련',
-    Component: POccupationTraining,
-    path: 'POccupationTraining',
+    title: '안전경영 > 안전보건협의체-등록',
+    Component: POccupationMu1P10edit,
+    path: 'POccupationMu1P10edit',
+    description: '',
+    success: false,
+  },
+  {
+    title: '안전관리 > 중대재해대응훈련-리스트',
+    Component: POccupationMu3P1list,
+    path: 'POccupationMu3P1list',
+    description: '',
+    success: false,
+  },
+  {
+    title: '안전관리 > 중대재해대응훈련-등록',
+    Component: POccupationMu3P1edit,
+    path: 'POccupationMu3P1edit',
+    description: '',
+    success: false,
+  },
+  {
+    title: '안전관리 > 중대재해대응훈련-상세',
+    Component: POccupationMu3P1detail,
+    path: 'POccupationMu3P1detail',
+    description: '',
+    success: false,
+  },
+  {
+    title: '안전관리 > 위험기계기구-리스트',
+    Component: POccupationMu3P2edit,
+    path: 'POccupationMu3P2edit',
+    description: '',
+    success: false,
+  },
+  {
+    title: '안전관리 > 위험기계기구-등록',
+    Component: POccupationMu3P2list,
+    path: 'POccupationMu3P2list',
+    description: '',
+    success: false,
+  },
+  {
+    title: '안전관리 > 위험기계기구-상세',
+    Component: POccupationMu3P2detail,
+    path: 'POccupationMu3P2list',
     description: '',
     success: false,
   },
