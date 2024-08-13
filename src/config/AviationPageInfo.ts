@@ -3,6 +3,7 @@ import PRiskForm1 from '@/components/publish/aviation/PRiskForm1';
 import PRiskForm2 from '@/components/publish/aviation/PRiskForm2';
 import SPIInfo1 from '@/components/publish/aviation/SPIInfo1';
 import SPIInfo2 from '@/components/publish/aviation/SPIInfo2';
+import SPIBoardList from '@/components/publish/aviation/SPIBoardList';
 import Checklist1 from '@/components/publish/aviation/Checklist1';
 import TaxonomyList from '@/components/publish/aviation/TaxonomyList';
 import TaxonomyEdit from '@/components/publish/aviation/TaxonomyEdit';
@@ -72,6 +73,13 @@ AviationPageInfo.list = [
     title: '[04.안전보증] SPI/SPT > 운영 현황> SPI 지표별 현황',
     Component: SPIInfo2,
     path: 'SPIInfo2',
+    description: '',
+    success: true,
+  },
+  {
+    title: '[04.안전보증] SPI/SPT > 게시판 > 리스트',
+    Component: SPIBoardList,
+    path: 'SPIBoardList',
     description: '',
     success: false,
   },

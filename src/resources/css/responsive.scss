@@ -69,6 +69,8 @@
   .detail-form .detail-list .form-table {display: flex; align-items: flex-end; justify-content: flex-start; flex-wrap: wrap; width: 100%;}
   .detail-form .detail-list .form-table .form-cell {width: 33.3%;}
 
+
+
 }
 
 
@@ -134,6 +136,8 @@
   [class*=c-step-list-type][class*=-list-type-5]>li:before{display:block;position:static;content:"0" counter(stepCounter);font-weight:400;font-size:1.4rem;line-height:1.4rem}
   [class*=c-step-list-type][class*=-list-type-5] .info-title{font-weight:400;font-size:1.5rem !important;line-height:1.5rem}
 
+  .Status-area .Status-chart{display:block;height: auto !important}
+
 }
 
 
@@ -163,5 +167,7 @@
   .c-step-wrap ol{overflow:auto hidden;scroll-behavior:smooth}
   [class*=c-step-list-type][class*=-list-type-5]>li:before{display:block;position:static;content:"0" counter(stepCounter);font-weight:400;font-size:1.4rem;line-height:1.4rem}
   [class*=c-step-list-type][class*=-list-type-5] .info-title{font-weight:400;font-size:1.5rem !important;line-height:1.5rem}
+
+  .Status-area .Status-chart{display:block;height: auto !important}
 
 }

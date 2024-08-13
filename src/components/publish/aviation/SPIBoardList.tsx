@@ -6,26 +6,16 @@ import { testColumnInfos } from '@/data/grid/table-column';
 import AppDatePicker from '@/components/common/AppDatePicker';
 import AppSelect from '@/components/common/AppSelect';
 
-function SPIInfo2() {
+function SPIBoardList() {
   const [inputValue, setInputValue] = useState('');
   const rowData = getAllData();
   const columns = testColumnInfos;
   return (
     <>
       <div className="conts-title">
-        <h2>운영현황</h2>
+        <h2>게시판</h2>
       </div>
-      {/*탭 */}
-      <div className="menu-tab-nav">
-        <div className="menu-tab">
-          <a href="javascript:void(0);" className="" data-label="운항정보">
-            운항정보
-          </a>
-          <a href="javascript:void(0);" className="active" data-label="SPI지표별 현황">
-            SPI지표별 현황
-          </a>
-        </div>
-      </div>
+
       {/*검색영역 */}
 
       <div className="boxForm">
@@ -104,4 +94,4 @@ function SPIInfo2() {
   );
 }
 
-export default SPIInfo2;
+export default SPIBoardList;
