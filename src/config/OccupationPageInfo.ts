@@ -19,7 +19,6 @@ import POccupationMu1P10list from '@/components/publish/occupation/POccupationMu
 import POccupationMu1P10edit from '@/components/publish/occupation/POccupationMu1P10edit';
 import POccupationMu3P1list from '@/components/publish/occupation/POccupationMu3P1list';
 import POccupationMu3P1edit from '@/components/publish/occupation/POccupationMu3P1edit';
-import POccupationMu3P1detail from '@/components/publish/occupation/POccupationMu3P1detail';
 import POccupationMu3P2list from '@/components/publish/occupation/POccupationMu3P2list';
 import POccupationMu3P2edit from '@/components/publish/occupation/POccupationMu3P2edit';
 import POccupationMu3P2detail from '@/components/publish/occupation/POccupationMu3P2detail';
@@ -173,13 +172,6 @@ OccupationPageInfo.list = [
     title: '안전관리 > 중대재해대응훈련-등록',
     Component: POccupationMu3P1edit,
     path: 'POccupationMu3P1edit',
-    description: '',
-    success: false,
-  },
-  {
-    title: '안전관리 > 중대재해대응훈련-상세',
-    Component: POccupationMu3P1detail,
-    path: 'POccupationMu3P1detail',
     description: '',
     success: false,
   },
