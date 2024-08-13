@@ -4,6 +4,7 @@ import AppTable from '@/components/common/AppTable';
 import { getAllData } from '@/data/grid/example-data-new';
 import { testColumnInfos } from '@/data/grid/table-column';
 import AppDatePicker from '@/components/common/AppDatePicker';
+import AppSelect from '@/components/common/AppSelect';
 
 function SPIInfo1() {
   const [inputValue, setInputValue] = useState('');
@@ -16,10 +17,10 @@ function SPIInfo1() {
       </div>
       {/*탭 */}
       <div className="menu-tab">
-        <a href="javascript:void(0);" className="active" data-label="운항정보">
+        <a href="javascript:void(0);" className="" data-label="운항정보">
           운항정보
         </a>
-        <a href="javascript:void(0);" className="" data-label="SPI지표별 현황">
+        <a href="javascript:void(0);" className="active" data-label="SPI지표별 현황">
           SPI지표별 현황
         </a>
       </div>
@@ -27,13 +28,21 @@ function SPIInfo1() {
 
       <div className="boxForm">
         <div className="form-table">
-          <div className="form-cell wid50">
-            <div className="form-group wid30">
-              <div className="row1">
-                <div className="date1">
-                  <AppDatePicker label="date1" required />
-                </div>
+          <div className="form-cell wid20">
+            <div className="form-group wid100">
+              <div className="date1">
+                <AppDatePicker label="date1" required />
               </div>
+            </div>
+          </div>
+          <div className="form-cell wid20">
+            <div className="form-group wid100">
+              <AppSelect label={'지표구분'} />
+            </div>
+          </div>
+          <div className="form-cell wid20">
+            <div className="form-group wid100">
+              <AppSelect label={'지표명'} />
             </div>
           </div>
           <div className="btn-area">
