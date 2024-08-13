@@ -402,6 +402,6 @@
     .table-box {
       display: block;
       width: 100%;
-    .left-table {display: inline-block;}
-    .right-table {display: inline-block;}
+    .left-table {display: inline-block; width: auto;}
+    .right-table {display: inline-block; width: auto;}
     }

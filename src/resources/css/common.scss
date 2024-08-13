@@ -354,7 +354,12 @@ input, select{font-family:'KoreanAirSans'}
 .menu-tab a{display:inline-flex;font-size:1.6rem;line-height:1.5;min-height:4.4rem;background-color:var(--color-neutral-10);color:var(--color-neutral-80);padding:0 3rem;align-items:center;justify-content:center;text-align:center}
 .menu-tab a.active{background-color:var(--color-darkblue-100);color:var(--color-neutral-10)}
 
-
+/*경로*/
+.Breadcrumb {display: flex; width: 100%; margin-bottom: 2.0rem; background: url(../images/home.svg) left center no-repeat; background-size: 2.2rem; padding-left: 2.6rem;}
+.Breadcrumb .breadcrumb-item {font-size: 1.2rem; display: inline-block;}
+.Breadcrumb .breadcrumb-item a {color: var(--color-darkblue-100); text-decoration: none;}
+.Breadcrumb .breadcrumb-item a:hover {color: var(--color-mblue-100); text-decoration: underline;}
+.Breadcrumb li+li:before {padding: 0.5rem; content: "/";}
 
 .editbox {
   position: relative; 
