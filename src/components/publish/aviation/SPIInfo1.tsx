@@ -15,13 +15,15 @@ function SPIInfo1() {
         <h2>운영현황</h2>
       </div>
       {/*탭 */}
-      <div className="menu-tab">
-        <a href="javascript:void(0);" className="active" data-label="운항정보">
-          운항정보
-        </a>
-        <a href="javascript:void(0);" className="" data-label="SPI지표별 현황">
-          SPI지표별 현황
-        </a>
+      <div className="menu-tab-nav">
+        <div className="menu-tab">
+          <a href="javascript:void(0);" className="active" data-label="운항정보">
+            운항정보
+          </a>
+          <a href="javascript:void(0);" className="" data-label="SPI지표별 현황">
+            SPI지표별 현황
+          </a>
+        </div>
       </div>
       {/*검색영역 */}
 
