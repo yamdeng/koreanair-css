@@ -11,6 +11,24 @@ function SPIInfo1() {
   const columns = testColumnInfos;
   return (
     <>
+      {/*경로 */}
+      <div className="Breadcrumb">
+        <ol>
+          <li className="breadcrumb-item">
+            <a href="javascript:void(0);">홈</a>
+          </li>
+          <li className="breadcrumb-item">
+            <a href="javascript:void(0);">안전보증</a>
+          </li>
+          <li className="breadcrumb-item">
+            <a href="javascript:void(0);">운영현황</a>
+          </li>
+          <li className="breadcrumb-item">
+            <a href="javascript:void(0);">운항정보</a>
+          </li>
+        </ol>
+      </div>
+      {/*경로 */}
       <div className="conts-title">
         <h2>운영현황</h2>
       </div>
@@ -26,7 +44,6 @@ function SPIInfo1() {
         </div>
       </div>
       {/*검색영역 */}
-
       <div className="boxForm">
         <div className="form-table">
           <div className="form-cell wid50">
@@ -49,7 +66,6 @@ function SPIInfo1() {
         </div>
       </div>
       {/* //검색영역 */}
-
       {/*테이블영역*/}
       <div className="info-box">
         <p className="h4">PAX/CGO 별 비행편 수</p>

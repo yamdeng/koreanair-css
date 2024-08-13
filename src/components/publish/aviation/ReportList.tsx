@@ -11,6 +11,21 @@ function ReportList() {
   const columns = testColumnInfos;
   return (
     <>
+      {/*경로 */}
+      <div className="Breadcrumb">
+        <ol>
+          <li className="breadcrumb-item">
+            <a href="javascript:void(0);">홈</a>
+          </li>
+          <li className="breadcrumb-item">
+            <a href="javascript:void(0);">안전위험관리</a>
+          </li>
+          <li className="breadcrumb-item">
+            <a href="javascript:void(0);">보고서분석</a>
+          </li>
+        </ol>
+      </div>
+      {/*경로 */}
       <div className="conts-title">
         <h2>보고서분석</h2>
       </div>

@@ -3,9 +3,10 @@ import { DatePicker, TimePicker, Select as AntSelect } from 'antd';
 import AppTable from '@/components/common/AppTable';
 import { getAllData } from '@/data/grid/example-data-new';
 import { testColumnInfos } from '@/data/grid/table-column';
+import AppTextInput from '@/components/common/AppTextInput';
 import AppDatePicker from '@/components/common/AppDatePicker';
 
-function Checklist1() {
+function CheckEdit() {
   const [inputValue, setInputValue] = useState('');
   const rowData = getAllData();
   const columns = testColumnInfos;
@@ -26,37 +27,85 @@ function Checklist1() {
         </ol>
       </div>
       {/*경로 */}
+      <div className="CheckList-Title">
+        <div className="boxForm">
+          <div className="form-table">
+            <div className="form-cell wid100">
+              <div className="form-group wid100">
+                <AppTextInput label="해외공항 안전평가 점검표 (ko)12" />
+              </div>
+            </div>
+            <div className="form-cell wid50">Revision</div>
+          </div>
+        </div>
+      </div>
       {/*탭 */}
       <div className="menu-tab-nav">
         <div className="menu-tab">
-          <a href="javascript:void(0);" className="active" data-label="안전품질평가(OYE)">
-            안전품질평가(OYE)
+          <a href="javascript:void(0);" className="active" data-label="안전보안일반12">
+            안전보안일반12 (29)
+            <button type="button" className="tabs-tab-remove">
+              <span className="delete">X</span>
+            </button>
           </a>
           <a href="javascript:void(0);" data-label="항공보안(OYA)">
             항공보안(OYA)
+            <button type="button" className="tabs-tab-remove">
+              <span className="delete">X</span>
+            </button>
           </a>
           <a href="javascript:void(0);" data-label="운항품질(OQA)">
             운항품질(OQA)
+            <button type="button" className="tabs-tab-remove">
+              <span className="delete">X</span>
+            </button>
           </a>
           <a href="javascript:void(0);" data-label="정비품질보증(M&E)">
             정비품질보증(M&E)
+            <button type="button" className="tabs-tab-remove">
+              <span className="delete">X</span>
+            </button>
           </a>
           <a href="javascript:void(0);" data-label="종합통제(OC)">
             종합통제(OC)
+            <button type="button" className="tabs-tab-remove">
+              <span className="delete">X</span>
+            </button>
           </a>
           <a href="javascript:void(0);" data-label="객실품질심사(UFQA)">
             객실품질심사(UFQA)
+            <button type="button" className="tabs-tab-remove">
+              <span className="delete">X</span>
+            </button>
           </a>
           <a href="javascript:void(0);" data-label="여객안전보안보건(CTPN)">
             여객안전보안보건(CTPN)
+            <button type="button" className="tabs-tab-remove">
+              <span className="delete">X</span>
+            </button>
           </a>
           <a href="javascript:void(0);" data-label="운송서비스(FT)">
             운송서비스(FT)
+            <button type="button" className="tabs-tab-remove">
+              <span className="delete">X</span>
+            </button>
           </a>
         </div>
-        <div className="menu-tab-nav-operations">
+        {/*<div className="menu-tab-nav-operations">
           <button type="button" name="button" className="menu-tab-nav-more">
             <span className="hide">더보기</span>
+          </button>
+          <button type="button" name="button" className="c-tab-btn-next swiper__uid_329_next swiper-button-disabled">
+            <span className="hide">다음 탭메뉴</span>
+          </button>
+        </div>*/}
+
+        <div className="c-tab-btn-group">
+          <button type="button" name="button" className="menu-tab-nav-more">
+            <span className="hide">더보기</span>
+          </button>
+          <button type="button" name="button" className="c-tab-btn-next swiper__uid_329_next swiper-button-disabled">
+            <span className="hide">다음 탭메뉴</span>
           </button>
         </div>
       </div>
@@ -501,4 +550,4 @@ function Checklist1() {
   );
 }
 
-export default Checklist1;
+export default CheckEdit;

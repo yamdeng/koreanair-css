@@ -88,7 +88,13 @@
 .detailForm-detail.list-group .list .edit-area {padding:2.0rem;margin-top:0.8rem;background-color: #fbfbfb;border-top:dotted 0.1rem var(--color-darkblue-60);color: #666;line-height: 20px;font-size:1.6rem}
 .bx-toggle .tg-btn {position: relative;font-size:1.6rem; color: #666;background-color: #fff;text-align:left}
 
+.CheckList-Title{display:flex;width:100%;align-items:center;vertical-align:middle}
 
+.tabs-tab-remove{position:relative}
+.tabs-tab-remove .delete{position:absolute;top:-0.8rem;background: url(/src/resources/images/delete-text.svg) center center no-repeat;font-size:0;width:2rem;height:2rem}
+    
+
+    
 /*AUDIT 체크리스트*/
 .checklist-contents{display:flex;align-items:flex-end;justify-content:flex-start;flex-wrap:wrap;width:100%;box-sizing:border-box;margin-top:1.0rem}
 .checklist-contents::after{content:'';display:block;clear:both}
@@ -107,8 +113,17 @@
 .checklist-contents .checklist-row.list li.list-space button.btn-list .editChapter{visibility:hidden;opacity:0;margin-right:2rem}
 
 /*AUDIT-체크리스트 상단 탭*/
-.menu-tab-nav > .menu-tab-nav-operations{display:flex;position:relative;align-self:stretch}
+.menu-tab-nav > .menu-tab-nav-operations{display:flex;position:relative;align-self:stretch;border: 1px solid #222;}
 .menu-tab-nav > .menu-tab-nav-operations .menu-tab-nav-more{position:absolute;left:1rem;top:30%;width:3.2rem;height:3.2rem;font-size:0;background:url(../images/icon-option.svg)center center no-repeat;align-items:center}
+.menu-tab-nav{position: relative;}
+.menu-tab-nav .c-tab-btn-group {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: flex-start;
+    z-index: 1;
+}
 
 /*공통테이블*/
 .Safety-table-cell{text-align:center;align-items:center}

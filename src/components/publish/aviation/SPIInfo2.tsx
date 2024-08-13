@@ -12,6 +12,24 @@ function SPIInfo2() {
   const columns = testColumnInfos;
   return (
     <>
+      {/*경로 */}
+      <div className="Breadcrumb">
+        <ol>
+          <li className="breadcrumb-item">
+            <a href="javascript:void(0);">홈</a>
+          </li>
+          <li className="breadcrumb-item">
+            <a href="javascript:void(0);">안전보증</a>
+          </li>
+          <li className="breadcrumb-item">
+            <a href="javascript:void(0);">운영현황</a>
+          </li>
+          <li className="breadcrumb-item">
+            <a href="javascript:void(0);">SPI지표별 현황</a>
+          </li>
+        </ol>
+      </div>
+      {/*경로 */}
       <div className="conts-title">
         <h2>운영현황</h2>
       </div>

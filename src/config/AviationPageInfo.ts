@@ -5,6 +5,7 @@ import SPIInfo1 from '@/components/publish/aviation/SPIInfo1';
 import SPIInfo2 from '@/components/publish/aviation/SPIInfo2';
 import SPIBoardList from '@/components/publish/aviation/SPIBoardList';
 import Checklist1 from '@/components/publish/aviation/Checklist1';
+import CheckEdit from '@/components/publish/aviation/CheckEdit';
 import TaxonomyList from '@/components/publish/aviation/TaxonomyList';
 import TaxonomyEdit from '@/components/publish/aviation/TaxonomyEdit';
 import SafetyList from '@/components/publish/aviation/SafetyList';
@@ -89,6 +90,13 @@ AviationPageInfo.list = [
     path: 'Checklist1',
     description: '',
     success: true,
+  },
+  {
+    title: '[06.AUDIT] CheckEdit',
+    Component: CheckEdit,
+    path: 'CheckEdit',
+    description: '',
+    success: false,
   },
   {
     title: '[07.관리자] HAZARD관리 > Taxonomy > 리스트',
