@@ -19,7 +19,7 @@
 .process-btns .btn-blue{background-color:var(--color-lightblue-100);color:var(--color-neutral-10)}
 
 
-.Report-step-area{margin-bottom:2rem}
+.Report-step-area{position:relative;background-color:var(--color-neutral-20);padding:2.5rem;border-radius:0.8rem;margin-bottom:2rem}
 .c-step-wrap.bg-white[class*=c-step-list-type] {background-color:var(--color-neutral-10)}
 .flex-e{display:flex;justify-content:flex-end !important}
 .c-step-list.default{display:flex;font-size:12px;text-align:center;margin-left:-0.5rem}
