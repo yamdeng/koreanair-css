@@ -63,7 +63,7 @@ function POPOccupationMu3P1list() {
           </div>
           <div className="btn-area">
             <button type="button" name="button" className="btn-sm btn_text btn-darkblue-line">
-              조회
+              검색
             </button>
           </div>
         </div>

@@ -18,7 +18,7 @@ function POPOccupationMu3P2detail() {
   return (
     <>
       <div className="conts-title">
-        <h2>중대재해대응훈련</h2>
+        <h2>위험기계기구</h2>
       </div>
       {/*검색영역 */}
       <div className="boxForm">

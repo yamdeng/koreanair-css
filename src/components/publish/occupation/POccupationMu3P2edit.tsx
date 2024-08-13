@@ -1,15 +1,18 @@
+import AppAutoComplete from '@/components/common/AppAutoComplete';
+import AppDatePicker from '@/components/common/AppDatePicker';
+import AppEditor from '@/components/common/AppEditor';
+import AppSelect from '@/components/common/AppSelect';
+import AppTextArea from '@/components/common/AppTextArea';
+import AppTextInput from '@/components/common/AppTextInput';
+import AppTimePicker from '@/components/common/AppTimePicker';
+import AppTreeSelect from '@/components/common/AppTreeSelect';
+import AppSearchInput from '@/components/common/AppSearchInput';
+import { DatePicker } from 'antd';
 import { useState } from 'react';
-import { DatePicker, TimePicker, Select as AntSelect } from 'antd';
+import { Upload } from 'antd';
 import AppTable from '@/components/common/AppTable';
 import { getAllData } from '@/data/grid/example-data-new';
 import { testColumnInfos } from '@/data/grid/table-column';
-import AppSearchInput from '@/components/common/AppSearchInput';
-import AppTextInput from '@/components/common/AppTextInput';
-import AppSelect from '@/components/common/AppSelect';
-import AppDatePicker from '@/components/common/AppDatePicker';
-import AppRangeDatePicker from '@/components/common/AppRangeDatePicker';
-import AppTimePicker from '@/components/common/AppTimePicker';
-import AppAutoComplete from '@/components/common/AppAutoComplete';
 
 function POPOccupationMu3P2edit() {
   const [inputValue, setInputValue] = useState('');
@@ -18,61 +21,83 @@ function POPOccupationMu3P2edit() {
   return (
     <>
       <div className="conts-title">
-        <h2>중대재해대응훈련</h2>
+        <h2>위험기계기구</h2>
       </div>
-      {/*검색영역 */}
-      <div className="boxForm">
-        {/*area-detail명 옆에 active  */}
-        <div id="" className="area-detail active">
-          <div className="form-table">
-            <div className="form-cell wid50">
-              <div className="form-group wid100">
-                <AppSelect label={'부문'} />
-              </div>
-            </div>
-            <div className="form-cell wid50">
-              <div className="form-group wid100 mr5">
-                <AppAutoComplete label={'부서'} />
-              </div>
-            </div>
-            <div className="form-cell wid50">
-              <div className="form-group wid100">
-                <AppSelect label={'재난유형'} />
-              </div>
+      {/* 입력영역 */}
+      <div className="editbox">
+        <div className="form-table line">
+          <div className="form-cell wid50">
+            <div className="form-group wid100">
+              <AppTextInput label="작성자" required disabled />
             </div>
           </div>
-          <div className="form-table">
-            <div className="form-cell wid50">
-              <div className="form-group form-glow">
-                <div className="df">
-                  <div className="date1">
-                    <AppDatePicker label="훈련실시시간" />
-                  </div>
-                  <span className="unt">~</span>
-                  <div className="date2">
-                    <AppDatePicker label="훈련실시시간2" />
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="form-cell wid100">
-              <div className="form-group wid100">
-                <AppTextInput label="훈련명" />
-              </div>
+
+          <div className="form-cell wid50">
+            <div className="form-group wid100">
+              <AppTextInput label="작성일자" required disabled />
             </div>
           </div>
-          <div className="btn-area">
-            <button type="button" name="button" className="btn-sm btn_text btn-darkblue-line">
-              조회
-            </button>
+          <div className="form-cell wid50">
+            <div className="form-group wid100">
+              <AppAutoComplete label={'부문'} required disabled />
+            </div>
           </div>
         </div>
-        {/*__control명 옆에 active  */}
-        <button type="button" name="button" className="arrow button _control active">
-          <span className="hide">접기</span>
-        </button>
+        <hr className="line dp-n"></hr>
+        <div className="form-table line">
+          <div className="form-cell wid50">
+            <div className="form-group wid100">
+              <AppAutoComplete label={'부서'} required disabled />
+            </div>
+          </div>
+          <div className="form-cell wid50">
+            <div className="form-group wid100">
+              <AppSelect label="재난유형" required />
+            </div>
+          </div>
+          <div className="form-cell wid50">
+            <div className="form-group wid100">
+              <AppTextInput label="기타유형" required disabled />
+            </div>
+          </div>
+        </div>
+        <hr className="line dp-n"></hr>
+        <div className="form-table line">
+          <div className="form-cell wid50">
+            <div className="form-group wid100">
+              <AppDatePicker label="훈련 실시일" />
+            </div>
+          </div>
+          <div className="form-cell wid50">
+            <div className="form-group wid100">
+              <AppTextInput label="훈련장소" required />
+            </div>
+          </div>
+          <div className="form-cell wid50">
+            <div className="form-group wid100">
+              <AppTextInput label="참석자" required />
+            </div>
+          </div>
+        </div>
+        <hr className="line dp-n"></hr>
+        <div className="form-table">
+          <div className="form-cell wid50">
+            <div className="form-group wid100">
+              <AppTextInput label="훈련명" required />
+            </div>
+          </div>
+        </div>
+        <hr className="line"></hr>
+        <div className="form-table">
+          <div className="form-cell wid50">
+            <div className="form-group wid100">
+              <AppEditor placeholder="입력해주세요." />
+            </div>
+          </div>
+        </div>
+        <hr className="line"></hr>
       </div>
-      {/* //검색영역 */}
+      {/*//입력영역*/}
 
       {/*그리드영역 */}
       <div className="">

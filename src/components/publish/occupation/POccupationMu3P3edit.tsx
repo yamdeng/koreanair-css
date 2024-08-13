@@ -18,7 +18,7 @@ function POPOccupationMu3P3edit() {
   return (
     <>
       <div className="conts-title">
-        <h2>중대재해대응훈련</h2>
+        <h2>작업환경측정</h2>
       </div>
       {/*검색영역 */}
       <div className="boxForm">

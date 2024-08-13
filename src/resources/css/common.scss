@@ -541,7 +541,8 @@ input, select{font-family:'KoreanAirSans'}
 .ant-select-selector {
   min-height:4rem !important
 }
-.label-select .css-13cymwt-control{min-height:4rem !important;height:4rem !important}
+.label-select .css-13cymwt-control{height: 4.0rem; border-color: var(--color-neutral-40);}
+.css-t3ipsp-control {height: 4.0rem; box-shadow: none !important;}
 
 /* 에디터 메뉴 툴팁 text override */
 .toastui-editor-tooltip .text{color:var(--color-neutral-10)}

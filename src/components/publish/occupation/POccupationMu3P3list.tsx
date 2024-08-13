@@ -18,7 +18,7 @@ function POPOccupationMu3P3list() {
   return (
     <>
       <div className="conts-title">
-        <h2>중대재해대응훈련</h2>
+        <h2>작업환경측정</h2>
       </div>
       {/*검색영역 */}
       <div className="boxForm">
@@ -27,50 +27,31 @@ function POPOccupationMu3P3list() {
           <div className="form-table">
             <div className="form-cell wid50">
               <div className="form-group wid100">
-                <AppSelect label={'부문'} />
+                <AppDatePicker label={'측정년도'} />
               </div>
             </div>
             <div className="form-cell wid50">
               <div className="form-group wid100 mr5">
-                <AppAutoComplete label={'부서'} />
+                <AppAutoComplete label={'반기'} />
               </div>
             </div>
             <div className="form-cell wid50">
               <div className="form-group wid100">
-                <AppSelect label={'재난유형'} />
+                <AppSelect label={'구분'} />
               </div>
             </div>
-          </div>
-          <div className="form-table">
             <div className="form-cell wid50">
-              <div className="form-group form-glow">
-                <div className="df">
-                  <div className="date1">
-                    <AppDatePicker label="훈련실시시간" />
-                  </div>
-                  <span className="unt">~</span>
-                  <div className="date2">
-                    <AppDatePicker label="훈련실시시간2" />
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="form-cell wid100">
               <div className="form-group wid100">
-                <AppTextInput label="훈련명" />
+                <AppSelect label={'권역'} />
               </div>
             </div>
-          </div>
-          <div className="btn-area">
-            <button type="button" name="button" className="btn-sm btn_text btn-darkblue-line">
-              조회
-            </button>
+            <div className="btn-area">
+              <button type="button" name="button" className="btn-sm btn_text btn-darkblue-line">
+                검색
+              </button>
+            </div>
           </div>
         </div>
-        {/*__control명 옆에 active  */}
-        <button type="button" name="button" className="arrow button _control active">
-          <span className="hide">접기</span>
-        </button>
       </div>
       {/* //검색영역 */}
 
