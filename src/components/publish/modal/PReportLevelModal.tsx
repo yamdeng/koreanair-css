@@ -98,7 +98,7 @@ function ReportLevelModal(props) {
 
               <div className="df">
                 <div className="list-box-a">
-                  <div className="search_box">
+                  <div className="box-list">
                     <ul className="list">
                       <li>
                         <a href="javascript:void(0);" className="active">
@@ -127,7 +127,7 @@ function ReportLevelModal(props) {
                   </div>
                 </div>
                 <div className="list-box-b">
-                  <div className="search_box">
+                  <div className="box-list">
                     <ul className="list">
                       <li>
                         <a href="javascript:void(0);">Hail(300)</a>
@@ -159,7 +159,9 @@ function ReportLevelModal(props) {
             </div>
             <div className="RiskLevel-area">
               <div className="h4-tit">Potential Consequence</div>
+              {/*검색영역*/}
               <div className="search-area">ㅇㅇㅇ</div>
+              {/*//검색영역*/}
               <div className="Level-area">
                 <div className="LevelLeft">
                   <p className="h4-tit">발생 가능성</p>
@@ -233,6 +235,7 @@ function ReportLevelModal(props) {
                     <tbody>
                       <tr>
                         <th>5</th>
+                        {/*class에 selected를 붙이면 선택되어짐 */}
                         <td className="level1 selected">
                           5A<span>(25)</span>
                         </td>

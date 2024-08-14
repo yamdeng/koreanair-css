@@ -22,7 +22,7 @@ import AdminSafetyManualList from '@/components/publish/aviation/AdminSafetyManu
 import AdminSafetyManualEdit from '@/components/publish/aviation/AdminSafetyManualEdit';
 import ReportList from '@/components/publish/aviation/ReportList';
 import ReportDetail from '@/components/publish/aviation/ReportDetail';
-
+import CentralizedReportList from '@/components/publish/aviation/CentralizedReportList';
 import { fa } from '@faker-js/faker';
 
 const AviationPageInfo: any = {};
@@ -32,6 +32,13 @@ AviationPageInfo.list = [
     title: '항공안전 포탈',
     Component: PAviationPortal1,
     path: 'PAviationPortal1',
+    description: '',
+    success: false,
+  },
+  {
+    title: '[01.안전보고서] Centralized Report 리스트',
+    Component: CentralizedReportList,
+    path: 'CentralizedReportList',
     description: '',
     success: false,
   },
