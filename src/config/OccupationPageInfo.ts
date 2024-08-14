@@ -25,6 +25,17 @@ import POccupationMu3P2list1 from '@/components/publish/occupation/POccupationMu
 import POccupationMu3P2edit from '@/components/publish/occupation/POccupationMu3P2edit';
 import POccupationMu3P3list from '@/components/publish/occupation/POccupationMu3P3list';
 import POccupationMu3P3edit from '@/components/publish/occupation/POccupationMu3P3edit';
+import POccupationMu3P4list from '@/components/publish/occupation/POccupationMu3P4list';
+import POccupationMu3P4list1 from '@/components/publish/occupation/POccupationMu3P4list1';
+import POccupationMu3P4edit from '@/components/publish/occupation/POccupationMu3P4edit';
+import POccupationMu3P5list from '@/components/publish/occupation/POccupationMu3P5list';
+import POccupationMu3P8list from '@/components/publish/occupation/POccupationMu3P8list';
+import POccupationMu3P8edit from '@/components/publish/occupation/POccupationMu3P8edit';
+import POccupationMu4P1list from '@/components/publish/occupation/POccupationMu4P1list';
+import POccupationMu4P1edit from '@/components/publish/occupation/POccupationMu4P1edit';
+import POccupationMu4P2list from '@/components/publish/occupation/POccupationMu4P2list';
+import POccupationMu4P2list1 from '@/components/publish/occupation/POccupationMu4P2list1';
+import POccupationMu4P2edit from '@/components/publish/occupation/POccupationMu4P2edit';
 
 const OccupationPageInfo: any = {};
 
@@ -217,6 +228,83 @@ OccupationPageInfo.list = [
     path: 'POccupationMu3P3edit',
     description: '',
     success: true,
+  },
+  {
+    title: '안전관리 > 외주작업허가-현황-리스트',
+    Component: POccupationMu3P4list,
+    path: 'POccupationMu3P4list',
+    description: '',
+    success: false,
+  },
+  {
+    title: '안전관리 > 외주작업허가-조회-리스트',
+    Component: POccupationMu3P4list1,
+    path: 'POccupationMu3P4list1',
+    description: '',
+    success: false,
+  },
+  {
+    title: '안전관리 > 외주작업허가-등록',
+    Component: POccupationMu3P4edit,
+    path: 'POccupationMu3P4edit',
+    description: '',
+    success: false,
+  },
+  {
+    title: '안전관리 > 협력업체-리스트',
+    Component: POccupationMu3P5list,
+    path: 'POccupationMu3P5list',
+    description: '',
+    success: false,
+  },
+  {
+    title: '안전관리 > 관리감독자평가-리스트',
+    Component: POccupationMu3P8list,
+    path: 'POccupationMu3P8list',
+    description: '',
+    success: false,
+  },
+  {
+    title: '안전관리 > 관리감독자평가-등록',
+    Component: POccupationMu3P8edit,
+    path: 'POccupationMu3P8edit',
+    description: '',
+    success: false,
+  },
+  {
+    title: '안전점검 > 점검표관리-리스트',
+    Component: POccupationMu4P1list,
+    path: 'POccupationMu4P1list',
+    description: '',
+    success: false,
+  },
+  {
+    title: '안전점검 > 점검표관리-등록',
+    Component: POccupationMu4P1edit,
+    path: 'POccupationMu4P1edit',
+    description: '',
+    success: false,
+  },
+  {
+    title: '안전점검 > 작업장순회점검-현황-리스트',
+    Component: POccupationMu4P2list,
+    path: 'POccupationMu4P2list',
+    description: '',
+    success: false,
+  },
+  {
+    title: '안전점검 > 작업장순회점검-조회-리스트',
+    Component: POccupationMu4P2list1,
+    path: 'POccupationMu4P2list1',
+    description: '',
+    success: false,
+  },
+  {
+    title: '안전점검 > 점작업장순회점검-등록',
+    Component: POccupationMu4P2edit,
+    path: 'POccupationMu4P2edit',
+    description: '',
+    success: false,
   },
 ];
 export default OccupationPageInfo;
