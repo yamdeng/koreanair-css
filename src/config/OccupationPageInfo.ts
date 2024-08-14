@@ -174,14 +174,14 @@ OccupationPageInfo.list = [
     Component: POccupationMu3P1list,
     path: 'POccupationMu3P1list',
     description: '',
-    success: false,
+    success: true,
   },
   {
     title: '안전관리 > 중대재해대응훈련-등록',
     Component: POccupationMu3P1edit,
     path: 'POccupationMu3P1edit',
     description: '',
-    success: false,
+    success: true,
   },
   {
     title: '안전관리 > 위험기계기구-현황',
@@ -209,14 +209,14 @@ OccupationPageInfo.list = [
     Component: POccupationMu3P3list,
     path: 'POccupationMu3P3list',
     description: '',
-    success: false,
+    success: true,
   },
   {
     title: '안전관리 > 작업환경측정-등록',
     Component: POccupationMu3P3edit,
     path: 'POccupationMu3P3edit',
     description: '',
-    success: false,
+    success: true,
   },
 ];
 export default OccupationPageInfo;
