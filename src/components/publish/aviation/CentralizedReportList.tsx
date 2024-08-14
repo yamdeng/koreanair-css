@@ -65,29 +65,9 @@ function CentralizedReportList() {
             </div>
           </div>
           <div className="form-table">
-            <div className="form-cell wid50">
+            <div className="form-cell wid100">
               <div className="form-group wid100">
-                <AppSelect label={'select'} />
-              </div>
-            </div>
-          </div>
-
-          <div className="form-table">
-            <div className="form-cell wid50">
-              <div className="form-group wid100">
-                {/*Event Class */}
-                <AppSelect label={'Event Class'} />
-              </div>
-            </div>
-            <div className="form-cell wid50">
-              <div className="form-group wid100">
-                <AppTextInput label="발생공항" />
-              </div>
-            </div>
-            <div className="form-cell wid50">
-              <div className="form-group wid100">
-                {/*발생단계 */}
-                <AppSelect label={'발생단계'} />
+                <AppTextInput label={'제목'} />
               </div>
             </div>
           </div>
@@ -106,23 +86,6 @@ function CentralizedReportList() {
         </button>
       </div>
       {/* //검색영역 */}
-
-      {/*<div>
-        <ul className="Report-process">
-          <li>
-            <span>작성(6)</span>
-          </li>
-          <li>
-            <span>결제(4)</span>
-          </li>
-          <li>
-            <span>안전권고(7)</span>
-          </li>
-          <li className="last">
-            <span>종결(10)</span>
-          </li>
-        </ul>
-      </div>*/}
 
       {/*그리드영역 */}
       <div className="">
