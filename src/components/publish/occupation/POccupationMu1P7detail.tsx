@@ -3,6 +3,21 @@ import AppSelect from '@/components/common/AppSelect';
 function POccupationMu1P7detail() {
   return (
     <>
+      {/*경로 */}
+      <div className="Breadcrumb">
+        <ol>
+          <li className="breadcrumb-item">
+            <a href="javascript:void(0);">홈</a>
+          </li>
+          <li className="breadcrumb-item">
+            <a href="javascript:void(0);">안전관리</a>
+          </li>
+          <li className="breadcrumb-item">
+            <a href="javascript:void(0);">위험기계기구</a>
+          </li>
+        </ol>
+      </div>
+      {/*경로 */}
       <div className="conts-title">
         <h2>무재해운동</h2>
       </div>

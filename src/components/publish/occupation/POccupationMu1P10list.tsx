@@ -17,6 +17,21 @@ function POccupationMu1P10list() {
   const columns = testColumnInfos;
   return (
     <>
+      {/*경로 */}
+      <div className="Breadcrumb">
+        <ol>
+          <li className="breadcrumb-item">
+            <a href="javascript:void(0);">홈</a>
+          </li>
+          <li className="breadcrumb-item">
+            <a href="javascript:void(0);">안전관리</a>
+          </li>
+          <li className="breadcrumb-item">
+            <a href="javascript:void(0);">위험기계기구</a>
+          </li>
+        </ol>
+      </div>
+      {/*경로 */}
       <div className="conts-title">
         <h2>안전보건협의체</h2>
       </div>

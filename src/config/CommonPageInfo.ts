@@ -3,6 +3,7 @@ import PBasicTable2 from '@/components/publish/common/PBasicTable2';
 import PBasicForm1 from '@/components/publish/common/PBasicForm1';
 import PBasicForm2 from '@/components/publish/common/PBasicForm2';
 import PFileForm from '@/components/publish/common/PFileForm';
+import PFileForm2 from '@/components/publish/common/PFileForm2';
 import Table from '@/components/publish/common/Table';
 import PTableCustomColumn from '@/components/publish/common/PTableCustomColumn';
 
@@ -41,6 +42,13 @@ CommonPageInfo.list = [
     title: '파일폼',
     Component: PFileForm,
     path: 'PFileForm',
+    description: '',
+    success: false,
+  },
+  {
+    title: '파일폼2',
+    Component: PFileForm2,
+    path: 'PFileForm2',
     description: '',
     success: false,
   },
