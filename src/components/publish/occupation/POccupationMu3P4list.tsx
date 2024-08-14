@@ -27,14 +27,26 @@ function POccupationMu3P4list() {
             <a href="javascript:void(0);">안전관리</a>
           </li>
           <li className="breadcrumb-item">
-            <a href="javascript:void(0);">위험기계기구</a>
+            <a href="javascript:void(0);">외주작업허가</a>
           </li>
         </ol>
       </div>
       {/*경로 */}
       <div className="conts-title">
-        <h2>작업환경측정</h2>
+        <h2>외주작업허가</h2>
       </div>
+      {/*탭 */}
+      <div className="menu-tab-nav">
+        <div className="menu-tab">
+          <a href="javascript:void(0);" className="active" data-label="현황">
+            현황
+          </a>
+          <a href="javascript:void(0);" data-label="조회">
+            조회
+          </a>
+        </div>
+      </div>
+      {/*//탭 */}
       {/*검색영역 */}
       <div className="boxForm">
         {/*area-detail명 옆에 active  */}

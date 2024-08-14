@@ -27,13 +27,13 @@ function POccupationMu3P5list() {
             <a href="javascript:void(0);">안전관리</a>
           </li>
           <li className="breadcrumb-item">
-            <a href="javascript:void(0);">위험기계기구</a>
+            <a href="javascript:void(0);">협력업체</a>
           </li>
         </ol>
       </div>
       {/*경로 */}
       <div className="conts-title">
-        <h2>작업환경측정</h2>
+        <h2>협력업체</h2>
       </div>
       {/*검색영역 */}
       <div className="boxForm">
@@ -42,22 +42,22 @@ function POccupationMu3P5list() {
           <div className="form-table">
             <div className="form-cell wid50">
               <div className="form-group wid100">
-                <AppDatePicker label={'측정년도'} />
+                <AppTextInput label={'업체명'} />
               </div>
             </div>
             <div className="form-cell wid50">
               <div className="form-group wid100 mr5">
-                <AppAutoComplete label={'반기'} />
+                <AppSelect label={'사업장 분류'} />
               </div>
             </div>
             <div className="form-cell wid50">
               <div className="form-group wid100">
-                <AppSelect label={'구분'} />
+                <AppSelect label={'사용부문'} />
               </div>
             </div>
             <div className="form-cell wid50">
               <div className="form-group wid100">
-                <AppSelect label={'권역'} />
+                <AppAutoComplete label={'관리부서'} />
               </div>
             </div>
             <div className="btn-area">

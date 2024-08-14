@@ -27,14 +27,26 @@ function POccupationMu3P4list1() {
             <a href="javascript:void(0);">안전관리</a>
           </li>
           <li className="breadcrumb-item">
-            <a href="javascript:void(0);">위험기계기구</a>
+            <a href="javascript:void(0);">외주작업허가</a>
           </li>
         </ol>
       </div>
       {/*경로 */}
       <div className="conts-title">
-        <h2>작업환경측정</h2>
+        <h2>외주작업허가</h2>
       </div>
+      {/*탭 */}
+      <div className="menu-tab-nav">
+        <div className="menu-tab">
+          <a href="javascript:void(0);" data-label="현황">
+            현황
+          </a>
+          <a href="javascript:void(0);" className="active" data-label="조회">
+            조회
+          </a>
+        </div>
+      </div>
+      {/*//탭 */}
       {/*검색영역 */}
       <div className="boxForm">
         {/*area-detail명 옆에 active  */}
@@ -42,31 +54,72 @@ function POccupationMu3P4list1() {
           <div className="form-table">
             <div className="form-cell wid50">
               <div className="form-group wid100">
-                <AppDatePicker label={'측정년도'} />
+                <AppSelect label={'부문'} />
               </div>
             </div>
             <div className="form-cell wid50">
               <div className="form-group wid100 mr5">
-                <AppAutoComplete label={'반기'} />
+                <AppAutoComplete label={'부서'} />
               </div>
             </div>
             <div className="form-cell wid50">
               <div className="form-group wid100">
-                <AppSelect label={'구분'} />
+                <AppAutoComplete label={'신청자'} />
               </div>
             </div>
             <div className="form-cell wid50">
-              <div className="form-group wid100">
-                <AppSelect label={'권역'} />
+              <div className="form-group form-glow">
+                <div className="df">
+                  <div className="date1">
+                    <AppDatePicker label="기간" />
+                  </div>
+                  <span className="unt">~</span>
+                  <div className="date2">
+                    <AppDatePicker label="기간" />
+                  </div>
+                </div>
               </div>
-            </div>
-            <div className="btn-area">
-              <button type="button" name="button" className="btn-sm btn_text btn-darkblue-line">
-                검색
-              </button>
             </div>
           </div>
+          <div className="form-table">
+            <div className="form-cell wid50">
+              <div className="form-group wid100">
+                <AppSelect label={'신청상태'} />
+              </div>
+            </div>
+            <div className="form-cell wid50">
+              <div className="form-group wid100">
+                <AppSelect label={'공사구분'} />
+              </div>
+            </div>
+            <div className="form-cell wid50">
+              <div className="form-group wid100">
+                <AppSelect label={'공사장소'} />
+              </div>
+            </div>
+            <div className="form-cell wid50">
+              <div className="form-group wid100">
+                <AppSelect label={'작업상태'} />
+              </div>
+            </div>
+          </div>
+          <div className="form-table">
+            <div className="form-cell wid50">
+              <div className="form-group wid100">
+                <AppTextInput label={'공사명'} />
+              </div>
+            </div>
+          </div>
+          <div className="btn-area">
+            <button type="button" name="button" className="btn-sm btn_text btn-darkblue-line">
+              검색
+            </button>
+          </div>
         </div>
+        {/*__control명 옆에 active  */}
+        <button type="button" name="button" className="arrow button _control active">
+          <span className="hide">접기</span>
+        </button>
       </div>
       {/* //검색영역 */}
 

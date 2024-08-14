@@ -136,6 +136,7 @@ input, select{font-family:'KoreanAirSans'}
   border-radius: 0.3rem;
   overflow: hidden;
 }
+.filebox {border:  0.1rem solid var(--color-neutral-40); border-radius: 1.0rem; padding: 1.0rem;}
 .filebox.error {border:  0.1rem solid var(--color-negative); border-radius: 1.0rem; padding: 1.0rem;}
 .filebox .file-label{display: inline-block;
   position: absolute;
