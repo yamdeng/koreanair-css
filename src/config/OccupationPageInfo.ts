@@ -79,7 +79,7 @@ OccupationPageInfo.list = [
     Component: POccupationMu1P2list,
     path: 'POccupationMu1P2list',
     description: '',
-    success: false,
+    success: true,
   },
   {
     title: '안전경영 > 산업안전보건 조직도',
