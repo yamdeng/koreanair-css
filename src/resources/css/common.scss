@@ -354,7 +354,7 @@ input, select{font-family:'KoreanAirSans'}
 }
 
 /*탭*/
-.menu-tab-nav{display:flex}
+.menu-tab-nav{display:flex;position:relative;width:100%}
 .menu-tab{display:flex;flex-wrap:nowrap;border:0.1rem solid var(--color-neutral-40);border-radius:0.8rem;overflow:auto hidden;scroll-behavior:smooth;gap:1.2rem 0;margin:2.0rem 0}
 .menu-tab:after{content:'';display:block;clear:both}
 .menu-tab a:nth-child(n){border-right:0.1rem solid var(--color-neutral-40)}

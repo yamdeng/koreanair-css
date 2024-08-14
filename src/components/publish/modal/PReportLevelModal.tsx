@@ -57,6 +57,7 @@ function ReportLevelModal(props) {
                     </div>
                   </div>
                 </div>
+                <div className=""></div>
                 <div className="">
                   <div className="h4-tit">Hazard Taxonomy</div>
                   <div className="boxlist-wrap">

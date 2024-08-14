@@ -40,7 +40,7 @@ AviationPageInfo.list = [
     Component: CentralizedReportList,
     path: 'CentralizedReportList',
     description: '',
-    success: false,
+    success: true,
   },
   {
     title: '[03.안전위험관리] 안전조사 > 조사보고서 리스트',
