@@ -2,6 +2,7 @@ import POccupationPortal1 from '@/components/publish/occupation/POccupationPorta
 import POccupationMu1P1list from '@/components/publish/occupation/POccupationMu1P1list';
 import POccupationMu1P1edit from '@/components/publish/occupation/POccupationMu1P1edit';
 import POccupationMu1P1detail from '@/components/publish/occupation/POccupationMu1P1detail';
+import POccupationMu1P2list from '@/components/publish/occupation/POccupationMu1P2list';
 import POccupationMu1P5list from '@/components/publish/occupation/POccupationMu1P5list';
 import POccupationMu1P5edit from '@/components/publish/occupation/POccupationMu1P5edit';
 import POccupationMu1P5detail from '@/components/publish/occupation/POccupationMu1P5detail';
@@ -18,6 +19,10 @@ import POccupationMu1P9edit from '@/components/publish/occupation/POccupationMu1
 import POccupationMu1P10list from '@/components/publish/occupation/POccupationMu1P10list';
 import POccupationMu1P10list1 from '@/components/publish/occupation/POccupationMu1P10list1';
 import POccupationMu1P10edit from '@/components/publish/occupation/POccupationMu1P10edit';
+import POccupationMu1P11list from '@/components/publish/occupation/POccupationMu1P11list';
+import POccupationMu1P11list1 from '@/components/publish/occupation/POccupationMu1P11list1';
+import POccupationMu1P11edit from '@/components/publish/occupation/POccupationMu1P11edit';
+import POccupationMu1P11detail from '@/components/publish/occupation/POccupationMu1P11detail';
 import POccupationMu3P1list from '@/components/publish/occupation/POccupationMu3P1list';
 import POccupationMu3P1edit from '@/components/publish/occupation/POccupationMu3P1edit';
 import POccupationMu3P2list from '@/components/publish/occupation/POccupationMu3P2list';
@@ -67,6 +72,13 @@ OccupationPageInfo.list = [
     path: 'POccupationMu1P1detail',
     description: '',
     success: true,
+  },
+  {
+    title: '안전경영 > 산업안전보건 조직도',
+    Component: POccupationMu1P2list,
+    path: 'POccupationMu1P2list',
+    description: '',
+    success: false,
   },
   {
     title: '안전경영 > 규정/지침/메뉴얼/양식-리스트',
@@ -136,7 +148,7 @@ OccupationPageInfo.list = [
     Component: POccupationMu1P7detail,
     path: 'POccupationMu1P7detail',
     description: '',
-    success: true,
+    success: false,
   },
   {
     title: '안전경영 > 법규등록대장기준정보-리스트',
@@ -179,6 +191,34 @@ OccupationPageInfo.list = [
     path: 'POccupationMu1P10edit',
     description: '',
     success: true,
+  },
+  {
+    title: '안전경영 > 산업안전보건관리비-현황-리스트',
+    Component: POccupationMu1P11list,
+    path: 'POccupationMu1P11list',
+    description: '',
+    success: false,
+  },
+  {
+    title: '안전경영 > 산업안전보건관리비-목록-리스트',
+    Component: POccupationMu1P11list1,
+    path: 'POccupationMu1P11list1',
+    description: '',
+    success: false,
+  },
+  {
+    title: '안전경영 > 산업안전보건관리비-등록',
+    Component: POccupationMu1P11edit,
+    path: 'POccupationMu1P11edit',
+    description: '',
+    success: false,
+  },
+  {
+    title: '안전경영 > 산업안전보건관리비-상세',
+    Component: POccupationMu1P11detail,
+    path: 'POccupationMu1P11detail',
+    description: '',
+    success: false,
   },
   {
     title: '안전관리 > 중대재해대응훈련-리스트',
