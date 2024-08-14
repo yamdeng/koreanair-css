@@ -14,6 +14,22 @@ function POccupationMu1P1list() {
   const [inputValue, setInputValue] = useState('');
   const rowData = getAllData();
   const columns = testColumnInfos;
+
+  const customButtons = [
+    {
+      title: '행추가',
+      onClick: () => {
+        alert('행추가');
+      },
+    },
+    {
+      title: '전체삭제',
+      onClick: () => {
+        alert('전체삭제');
+      },
+    },
+  ];
+
   return (
     <>
       {/*경로 */}
@@ -75,7 +91,7 @@ function POccupationMu1P1list() {
       {/* //검색영역 */}
       {/*그리드영역 상단상위표출체크시 번호-아이콘으로 표시 아이콘명:pin.svg */}
       <div>
-        <AppTable rowData={rowData} columns={columns} />
+        <AppTable rowData={rowData} columns={columns} customButtons={customButtons} />
       </div>
       {/*//그리드영역 */}
 

@@ -246,6 +246,42 @@ function POccupationMu3P8edit() {
                       </div>
                     </div>
                   </div>
+                  <div className="form-table">
+                    <div className="form-cell wid50">
+                      <div className="group-box-wrap line wid100">
+                        <span className="txt">링크첨부{/*<span className="required">*</span>*/}</span>
+                        <button type="button" name="button" className="btn-plus">
+                          추가
+                        </button>
+                        <div className="file-link">
+                          <div className="link-box">
+                            <a href="javascript:void(0);">첨부Link첨부Link첨부Link</a>
+                            <a href="javascript:void(0);">
+                              <span className="close-btn">close</span>
+                            </a>
+                          </div>
+                          <div className="link-box">
+                            <a href="javascript:void(0);">첨부Link</a>
+                            <a href="javascript:void(0);">
+                              <span className="close-btn">close</span>
+                            </a>
+                          </div>
+                          <div className="link-box">
+                            <a href="javascript:void(0);">첨부Link</a>
+                            <a href="javascript:void(0);">
+                              <span className="close-btn">close</span>
+                            </a>
+                          </div>
+                          <div className="link-box">
+                            <a href="javascript:void(0);">첨부Link</a>
+                            <a href="javascript:void(0);">
+                              <span className="close-btn">close</span>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
