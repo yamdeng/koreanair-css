@@ -186,7 +186,7 @@ function PPOccupationMu1P9edit() {
                         <AppAutoComplete label="주관 부서" />
                       </div>
                     </div>
-                    <div className="form-cell wid100">
+                    <div className="form-cell wid50">
                       <div className="btn-area">
                         <button type="button" name="button" className="btn-sm btn_text btn-darkblue-line">
                           법령 보기

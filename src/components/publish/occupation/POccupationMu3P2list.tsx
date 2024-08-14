@@ -71,8 +71,60 @@ function POPOccupationMu3P2list() {
               <td>8</td>
             </tr>
             <tr>
-              <th>프레스</th>
+              <th>리프트</th>
+              <th>압력용기</th>
+              <th>롤러기</th>
+              <th>사출성형기</th>
+            </tr>
+            <tr>
               <td>20</td>
+              <td>5</td>
+              <td>10</td>
+              <td>8</td>
+            </tr>
+            <tr>
+              <th>기계톱</th>
+              <th>연삭기/연마기</th>
+              <th>산업용로봇</th>
+              <th>혼합기</th>
+            </tr>
+            <tr>
+              <td>20</td>
+              <td>5</td>
+              <td>10</td>
+              <td>8</td>
+            </tr>
+            <tr>
+              <th>식품가공용기계</th>
+              <th>컨베이어</th>
+              <th>공작기계</th>
+              <th>인쇄기</th>
+            </tr>
+            <tr>
+              <td>20</td>
+              <td>5</td>
+              <td>10</td>
+              <td>8</td>
+            </tr>
+            <tr>
+              <th>곤돌라</th>
+              <th>파쇄기/분쇄기</th>
+              <th>고소작업대</th>
+              <th>국소배기장치</th>
+            </tr>
+            <tr>
+              <td>20</td>
+              <td>5</td>
+              <td>10</td>
+              <td>8</td>
+            </tr>
+            <tr>
+              <th>원심기</th>
+              <th>기타</th>
+            </tr>
+            <tr>
+              <td>20</td>
+              <td>5</td>
             </tr>
           </table>
         </div>

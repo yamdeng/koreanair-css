@@ -67,7 +67,7 @@ function POccupationMu1P9list() {
           <div className="form-table">
             <div className="form-cell wid50">
               <div className="form-group wid100">
-                <AppTextInput label="법규명" />
+                <AppTextInput label="제개정종류" />
               </div>
             </div>
             <div className="form-cell wid50">

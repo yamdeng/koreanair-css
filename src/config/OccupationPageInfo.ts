@@ -16,6 +16,7 @@ import POccupationMu1P8list from '@/components/publish/occupation/POccupationMu1
 import POccupationMu1P9list from '@/components/publish/occupation/POccupationMu1P9list';
 import POccupationMu1P9edit from '@/components/publish/occupation/POccupationMu1P9edit';
 import POccupationMu1P10list from '@/components/publish/occupation/POccupationMu1P10list';
+import POccupationMu1P10list1 from '@/components/publish/occupation/POccupationMu1P10list1';
 import POccupationMu1P10edit from '@/components/publish/occupation/POccupationMu1P10edit';
 import POccupationMu3P1list from '@/components/publish/occupation/POccupationMu3P1list';
 import POccupationMu3P1edit from '@/components/publish/occupation/POccupationMu3P1edit';
@@ -131,35 +132,42 @@ OccupationPageInfo.list = [
     Component: POccupationMu1P8list,
     path: 'POccupationMu1P8list',
     description: '',
-    success: false,
+    success: true,
   },
   {
     title: '안전경영 > 법규등록대장-리스트',
     Component: POccupationMu1P9list,
     path: 'POccupationMu1P9list',
     description: '',
-    success: false,
+    success: true,
   },
   {
     title: '안전경영 > 법규등록대장-등록',
     Component: POccupationMu1P9edit,
     path: 'POccupationMu1P9edit',
     description: '',
-    success: false,
+    success: true,
   },
   {
-    title: '안전경영 > 안전보건협의체-리스트',
+    title: '안전경영 > 안전보건협의체-현황-리스트',
     Component: POccupationMu1P10list,
     path: 'POccupationMu1P10list',
     description: '',
-    success: false,
+    success: true,
+  },
+  {
+    title: '안전경영 > 안전보건협의체-목록-리스트',
+    Component: POccupationMu1P10list1,
+    path: 'POccupationMu1P10list1',
+    description: '',
+    success: true,
   },
   {
     title: '안전경영 > 안전보건협의체-등록',
     Component: POccupationMu1P10edit,
     path: 'POccupationMu1P10edit',
     description: '',
-    success: false,
+    success: true,
   },
   {
     title: '안전관리 > 중대재해대응훈련-리스트',

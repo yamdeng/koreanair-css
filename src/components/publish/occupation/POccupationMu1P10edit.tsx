@@ -153,7 +153,22 @@ function PPOccupationMu1P10edit() {
               <Upload {...props}>
                 <div className="btn-area">
                   <button type="button" name="button" className="btn-big btn_text btn-darkblue-line">
-                    + Upload
+                    회의록 업로드(pdf, 그림 파일)
+                  </button>
+                </div>
+              </Upload>
+            </div>
+          </div>
+        </div>
+        <hr className="line"></hr>
+        {/* 파일첨부영역 : button */}
+        <div className="form-table">
+          <div className="form-cell wid50">
+            <div className="form-group wid100">
+              <Upload {...props}>
+                <div className="btn-area">
+                  <button type="button" name="button" className="btn-big btn_text btn-darkblue-line">
+                    회의자료 업로드(ppt)
                   </button>
                 </div>
               </Upload>
@@ -164,7 +179,7 @@ function PPOccupationMu1P10edit() {
         <div className="form-table line">
           <div className="form-cell wid50">
             <div className="group-box-wrap line wid100">
-              <span className="txt">첨부파일 Link</span>
+              <span className="txt">보고문서 Link</span>
 
               <button type="button" name="button" className="btn-plus">
                 추가
