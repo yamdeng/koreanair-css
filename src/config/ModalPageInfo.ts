@@ -138,14 +138,14 @@ ModalPageInfo.list = [
     Component: MU1P8Modal,
     path: 'MU1P8Modal',
     description: '',
-    success: false,
+    success: true,
   },
   {
     title: '산업안전 > 안전경영 > 법규등록대장 팝업창2',
     Component: MU1P8Modal2,
     path: 'MU1P8Modal2',
     description: '',
-    success: false,
+    success: true,
   },
   {
     title: '[항공안전>안전위험관리] 보고서분석 > 위험레벨조회 팝업창',
