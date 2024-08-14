@@ -14,7 +14,7 @@ import AppTable from '@/components/common/AppTable';
 import { getAllData } from '@/data/grid/example-data-new';
 import { testColumnInfos } from '@/data/grid/table-column';
 
-function POPOccupationMu3P2edit() {
+function POccupationMu3P2edit() {
   const [inputValue, setInputValue] = useState('');
   const rowData = getAllData();
   const columns = testColumnInfos;
@@ -197,4 +197,4 @@ function POPOccupationMu3P2edit() {
   );
 }
 
-export default POPOccupationMu3P2edit;
+export default POccupationMu3P2edit;

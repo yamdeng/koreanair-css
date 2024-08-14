@@ -67,7 +67,7 @@ const props: any = {
   },
 };
 
-function POPOccupationMu3P1edit() {
+function POccupationMu3P1edit() {
   const [inputValue, setInputValue] = useState('');
   const rowData = getAllData();
   const columns = testColumnInfos;
@@ -234,4 +234,4 @@ function POPOccupationMu3P1edit() {
   );
 }
 
-export default POPOccupationMu3P1edit;
+export default POccupationMu3P1edit;

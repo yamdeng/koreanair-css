@@ -67,7 +67,7 @@ const props: any = {
   },
 };
 
-function PPOccupationMu1P10edit() {
+function POccupationMu1P10edit() {
   const rowData = getAllData();
   const columns = testColumnInfos;
   return (
@@ -233,4 +233,4 @@ function PPOccupationMu1P10edit() {
   );
 }
 
-export default PPOccupationMu1P10edit;
+export default POccupationMu1P10edit;

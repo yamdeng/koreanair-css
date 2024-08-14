@@ -11,7 +11,7 @@ import AppRangeDatePicker from '@/components/common/AppRangeDatePicker';
 import AppTimePicker from '@/components/common/AppTimePicker';
 import AppAutoComplete from '@/components/common/AppAutoComplete';
 
-function POPOccupationMu3P3list() {
+function POccupationMu3P3list() {
   const [inputValue, setInputValue] = useState('');
   const rowData = getAllData();
   const columns = testColumnInfos;
@@ -87,4 +87,4 @@ function POPOccupationMu3P3list() {
   );
 }
 
-export default POPOccupationMu3P3list;
+export default POccupationMu3P3list;
