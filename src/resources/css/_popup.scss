@@ -554,11 +554,16 @@
 .RiskLevel-box .RiskLevel-area .Level-area .LevelRight{float:right;width:60%}
 .RiskLevel-box .RiskLevel-area .Level-area-bottom{display:block;width:100%;margin-top:0.5rem}
 
+.tableTop{border-top:0.1rem solid var(--color-darkblue-100)}
 .RiskLevelTable{width:100%;border-collapse:collapse}
 .RiskLevelTable.left th{height:4.0rem}
 .RiskLevelTable.left td{padding:1.0rem;text-align:center;vertical-align:middle;border:solid 0.1rem var(--color-neutral-40)}
-.RiskLevelTable th{width:2.0rem;height:2.0rem;line-height:1.8rem;vertical-align:middle;background-color:var(--color-neutral-20);color:var(--color-neutral-80);font-size:1.4rem;border:solid 0.1rem var(--color-neutral-40)}
+.RiskLevelTable th{width:2.0rem;height:2.0rem;line-height:1.6rem;vertical-align:middle;background-color:var(--color-neutral-20);color:var(--color-neutral-80);font-size:1.4rem;border:solid 0.1rem var(--color-neutral-40)}
 .RiskLevelTable td{width:100px;height:50px;font-size:1.4rem;text-align:center;color:var(--color-neutral-90);border:solid 0.1rem var(--color-neutral-20)}
+.RiskLevelTable.left td a{font-size:1.4rem}
+.RiskLevelTable.left td a, a:visited{color:var(--color-mblue-100)}
+.RiskLevelTable.left td a:hover, a:focus{color:var(--color-darkblue-100)}
+
 
 .RiskLevelTable td.level1{background-color:var(--color-Level)}
 .RiskLevelTable td.level2{background-color:var(--color-Leve2)}
