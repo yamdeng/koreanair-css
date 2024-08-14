@@ -539,8 +539,9 @@
 .RiskLevel-box .RiskLevel-top-box{display:flex;justify-content:space-between;margin-bottom:1.0rem;}
 
 .h4-tit{font-size:1.8rem;font-weight:600}
+.h5-tit{font-size:1.6rem;font-weight:600;line-height:1.8}
 .RiskLevel-box .RiskLevel-list .list-box-a{height:100%}
-.RiskLevel-box .RiskLevel-list .box-list .list{position:relative;width:28rem;margin:1rem 0;height:23rem;overflow:auto}
+.RiskLevel-box .RiskLevel-list .box-list .list{position:relative;width:28rem;height:100%;margin:1rem 0;overflow:auto}
 .RiskLevel-box .RiskLevel-list .box-list .list li{width:25rem;height:3rem;margin:0.3rem 0;text-overflow:ellipsis;white-space:nowrap;overflow:hidden}
 .RiskLevel-box .RiskLevel-list .box-list .list li a.active{font-weight:700}
 .RiskLevel-box .RiskLevel-list .list-box-b{height:100%;margin-left:1rem}

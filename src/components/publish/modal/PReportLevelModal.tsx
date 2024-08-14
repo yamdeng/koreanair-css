@@ -158,13 +158,13 @@ function ReportLevelModal(props) {
               </div>
             </div>
             <div className="RiskLevel-area">
-              <div className="h4-tit">Potential Consequence</div>
+              <div className="h4-tit">Risk Level</div>
               {/*검색영역*/}
               <div className="search-area">ㅇㅇㅇ</div>
               {/*//검색영역*/}
               <div className="Level-area">
                 <div className="LevelLeft">
-                  <p className="h4-tit">발생 가능성</p>
+                  <p className="h5-tit">발생 가능성</p>
                   <table className="RiskLevelTable left">
                     <caption></caption>
                     <colgroup></colgroup>
@@ -211,7 +211,7 @@ function ReportLevelModal(props) {
                   </table>
                 </div>
                 <div className="LevelRight">
-                  <p className="h4-tit">Risk</p>
+                  <p className="h5-tit">Risk</p>
                   <table className="RiskLevelTable Risk">
                     <caption></caption>
                     <colgroup></colgroup>
@@ -329,7 +329,7 @@ function ReportLevelModal(props) {
                 </div>
               </div>
               <div className="Level-area-bottom">
-                <p className="h4-tit">심각도</p>
+                <p className="h5-tit">심각도</p>
                 <table className="RiskLevelTable severity">
                   <caption></caption>
                   <colgroup></colgroup>

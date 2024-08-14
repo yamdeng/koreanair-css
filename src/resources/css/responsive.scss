@@ -30,6 +30,7 @@
   .contents-btns > button.btn-type01:nth-child(odd) {margin-right:0.2rem;}
   .RiskLevel-box{display:block}
   .RiskLevel-box .RiskLevel-list{width:100%}
+  .RiskLevel-box .RiskLevel-area{width:100%}
 
 
 }
@@ -146,6 +147,11 @@
   .menu-tab a{display: inline-flex;font-size:1.4rem;line-height:1.4;min-height:4.4rem}
   .RiskLevel-box{display:block}
   .RiskLevel-box .RiskLevel-list{width:100%}
+  .RiskLevel-box .RiskLevel-area{width:100%}
+  .RiskLevel-box .RiskLevel-area .Level-area{display:block}
+  .RiskLevel-box .RiskLevel-area .Level-area .LevelLeft{width:100%}
+  .RiskLevel-box .RiskLevel-area .Level-area .LevelRight{width:100%}
+  .RiskLevel-area .h4-tit{display:block;margin-top:2.0rem}
 
 }
 
