@@ -25,6 +25,8 @@ import ReportDetail from '@/components/publish/aviation/ReportDetail';
 import CentralizedReportList from '@/components/publish/aviation/CentralizedReportList';
 import AdminSafetyCultureList from '@/components/publish/aviation/AdminSafetyCultureList';
 import AdminSafetyCultureEdit from '@/components/publish/aviation/AdminSafetyCultureEdit';
+import AdminSafetyCultureDetail from '@/components/publish/aviation/AdminSafetyCultureDetail';
+import SafetyMeetingList from '@/components/publish/aviation/SafetyMeetingList';
 import { fa } from '@faker-js/faker';
 
 const AviationPageInfo: any = {};
@@ -62,6 +64,13 @@ AviationPageInfo.list = [
     title: '[02.안정정책] 안전정책',
     Component: SafetyPolicy,
     path: 'SafetyPolicy',
+    description: '',
+    success: true,
+  },
+  {
+    title: '[02.안정정책] 안전정책 > 안전회의체 리스트',
+    Component: SafetyMeetingList,
+    path: 'SafetyMeetingList',
     description: '',
     success: true,
   },
@@ -217,7 +226,14 @@ AviationPageInfo.list = [
     Component: AdminSafetyCultureEdit,
     path: 'AdminSafetyCultureEdit',
     description: '',
-    success: false,
+    success: true,
+  },
+  {
+    title: '[07.관리자] 안전문화설문관리 > 상세',
+    Component: AdminSafetyCultureDetail,
+    path: 'AdminSafetyCultureDetail',
+    description: '',
+    success: true,
   },
 ];
 

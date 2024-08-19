@@ -9,59 +9,6 @@ import AppTextArea from '@/components/common/AppTextArea';
 import { Upload } from 'antd';
 import { useState } from 'react';
 import { DatePicker } from 'antd';
-const { Dragger } = Upload;
-const props: any = {
-  name: 'file',
-  multiple: true,
-  defaultFileList: [
-    {
-      uid: '1',
-      name: 'xxx.png',
-      // status: 'uploading',
-      url: 'http://www.baidu.com/xxx.png',
-      percent: 33,
-    },
-    {
-      uid: '2',
-      name: 'yyy.png',
-      status: 'done',
-      url: 'http://www.baidu.com/yyy.png',
-    },
-    {
-      uid: '3',
-      name: 'zzz.png',
-      status: 'error',
-      response: 'Server Error 500',
-      // custom error message to show
-      url: 'http://www.baidu.com/zzz.png',
-    },
-  ],
-  action: 'https://660d2bd96ddfa2943b33731c.mockapi.io/api/upload',
-
-  onChange(info) {
-    const { status } = info.file;
-    if (status !== 'uploading') {
-      console.log(info.file, info.fileList);
-    }
-    if (status === 'done') {
-      alert(`${info.file.name} file uploaded successfully.`);
-    } else if (status === 'error') {
-      alert(`${info.file.name} file upload failed.`);
-    }
-  },
-
-  onRemove(file) {
-    return false;
-  },
-
-  onPreview(file) {
-    return false;
-  },
-
-  onDrop(e) {
-    console.log('Dropped files', e.dataTransfer.files);
-  },
-};
 
 function AdminSafetyCultureEdit() {
   const rowData = getAllData();
@@ -92,12 +39,7 @@ function AdminSafetyCultureEdit() {
       <div className="editbox">
         <div className="form-table line">
           <div className="form-cell wid50">
-            <div className="form-group wid100">
-              <AppSelect label={'업무구분'} required />
-            </div>
-          </div>
-          <div className="form-cell wid50">
-            <div className="form-group wid100">
+            <div className="form-group wid30">
               <AppDatePicker label={'개정일자 '} required />
             </div>
           </div>
@@ -106,7 +48,7 @@ function AdminSafetyCultureEdit() {
         <div className="form-table">
           <div className="form-cell wid100">
             <div className="form-group wid100">
-              <AppTextInput label="메뉴얼명" required />
+              <AppTextInput label="설문제목" required />
             </div>
           </div>
         </div>
@@ -114,65 +56,12 @@ function AdminSafetyCultureEdit() {
         <div className="form-table line">
           <div className="form-cell wid50">
             <div className="form-group wid100">
-              <AppTextInput label={'언어구분'} required />
+              <AppTextInput label={'설문링크'} required disabled />
             </div>
           </div>
           <div className="form-cell wid50">
             <div className="form-group wid100">
-              <AppTextInput label={'사용여부'} required />
-            </div>
-          </div>
-        </div>
-        <hr className="line dp-n"></hr>
-        <div className="form-table">
-          <div className="form-cell wid50">
-            <div className="form-group wid100">
-              <AppTextArea
-                value={inputValue}
-                label="비고"
-                onChange={(value) => {
-                  setInputValue(value);
-                }}
-                errorMessage=""
-                required
-              />
-            </div>
-          </div>
-        </div>
-
-        <hr className="line"></hr>
-        {/* 파일첨부영역 : drag */}
-        <div className="form-table">
-          <div className="form-cell wid50">
-            <div className="form-group wid100">
-              {/* 파일첨부영역 : drag */}
-              <div className="filebox error">
-                <Dragger {...props}>
-                  <p className="ant-upload-text ">+ 이 곳을 클릭하거나 마우스로 업로드할 파일을 끌어서 놓으세요.</p>
-                </Dragger>
-                <label htmlFor="file" className="file-label">
-                  원문 첨부파일 <span className="required">*</span>
-                </label>
-              </div>
-              <span className="errorText">fileerror</span>
-            </div>
-          </div>
-        </div>
-        <hr className="line"></hr>
-        {/* 파일첨부영역 : drag */}
-        <div className="form-table">
-          <div className="form-cell wid50">
-            <div className="form-group wid100">
-              {/* 파일첨부영역 : drag */}
-              <div className="filebox error">
-                <Dragger {...props}>
-                  <p className="ant-upload-text ">+ 이 곳을 클릭하거나 마우스로 업로드할 파일을 끌어서 놓으세요.</p>
-                </Dragger>
-                <label htmlFor="file" className="file-label">
-                  신구대조표 첨부파일 <span className="required">*</span>
-                </label>
-              </div>
-              <span className="errorText">fileerror</span>
+              <AppTextInput label={'답변링크'} required disabled />
             </div>
           </div>
         </div>

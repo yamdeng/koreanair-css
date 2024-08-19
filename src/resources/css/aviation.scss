@@ -2,6 +2,8 @@
 :root {
     --color-neutral-01:#ebebeb;
     --color-aviation-mainBg:#F5F7FA;
+    --color-btn-blue1:#eff5fe;
+    --color-btn-blue2:#2c8dd9;
 }
 
 .tc{text-align:center}
@@ -152,3 +154,12 @@
 .Safety-tag.riskLevel.level1{background-color:var(--color-Level)}
 .Safety-tag.riskLevel{font-weight:600;text-align:center;color: var(--color-neutral-10) !important}
 
+/*안전회의체 신규버튼*/
+.info-field{position:relative;width:100%;padding-bottom:1.5rem}
+.info-field .inp-btns{display:block;width:calc(100% + 0.4rem);margin-left:-0.4rem}
+.info-field .inp-btns:after{content:'';clear:both;display:block}
+.info-field .inp-btn{display:inline-block;position:relative;float:left;width:33.3%;height:4rem;padding-left:0.4rem;box-sizing:border-box}
+.info-field .inp-btn input{position:absolute;top:0;left:0;width:0.5rem;height:0.5rem;opacity:0}
+.info-field .inp-btn label{display:inline-block;width:100%;height:100%;border-radius:0.6rem;font-size:1.5rem;line-height:4rem;font-family:'KoreanAirSans';border:0.1rem solid var(--color-neutral-40);background:var(--color-neutral-10);color:var(--color-neutral-80);text-align:center;box-sizing:border-box}
+.info-field .inp-btn input[type="radio"]:checked + label{background-color:var(--color-btn-blue1);border-color:var(--color-btn-blue2);color:var(--color-btn-blue2);font-weight:600}
+.info-field .inp-btn{margin-top:0.4rem}
