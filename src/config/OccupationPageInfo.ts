@@ -36,6 +36,10 @@ import POccupationMu3P4list from '@/components/publish/occupation/POccupationMu3
 import POccupationMu3P4list1 from '@/components/publish/occupation/POccupationMu3P4list1';
 import POccupationMu3P4edit from '@/components/publish/occupation/POccupationMu3P4edit';
 import POccupationMu3P5list from '@/components/publish/occupation/POccupationMu3P5list';
+import POccupationMu3P6list from '@/components/publish/occupation/POccupationMu3P6list';
+import POccupationMu3P6edit from '@/components/publish/occupation/POccupationMu3P6edit';
+import POccupationMu3P6list1 from '@/components/publish/occupation/POccupationMu3P6list1';
+import POccupationMu3P6edit1 from '@/components/publish/occupation/POccupationMu3P6edit1';
 import POccupationMu3P8list from '@/components/publish/occupation/POccupationMu3P8list';
 import POccupationMu3P8edit from '@/components/publish/occupation/POccupationMu3P8edit';
 import POccupationMu4P1list from '@/components/publish/occupation/POccupationMu4P1list';
@@ -43,6 +47,14 @@ import POccupationMu4P1edit from '@/components/publish/occupation/POccupationMu4
 import POccupationMu4P2list from '@/components/publish/occupation/POccupationMu4P2list';
 import POccupationMu4P2list1 from '@/components/publish/occupation/POccupationMu4P2list1';
 import POccupationMu4P2edit from '@/components/publish/occupation/POccupationMu4P2edit';
+import POccupationMu4P3list from '@/components/publish/occupation/POccupationMu4P3list';
+import POccupationMu4P3edit from '@/components/publish/occupation/POccupationMu4P3edit';
+import POccupationMu4P4list from '@/components/publish/occupation/POccupationMu4P4list';
+import POccupationMu4P4edit from '@/components/publish/occupation/POccupationMu4P4edit';
+import POccupationMu4P5list from '@/components/publish/occupation/POccupationMu4P5list';
+import POccupationMu4P5edit from '@/components/publish/occupation/POccupationMu4P5edit';
+import POccupationMu5P1list from '@/components/publish/occupation/POccupationMu5P1list';
+import POccupationMu5P2edit from '@/components/publish/occupation/POccupationMu5P2edit';
 
 const OccupationPageInfo: any = {};
 
@@ -314,6 +326,34 @@ OccupationPageInfo.list = [
     success: true,
   },
   {
+    title: '안전관리 > 적격수급업체평가-평가-리스트',
+    Component: POccupationMu3P6list,
+    path: 'POccupationMu3P6list',
+    description: '',
+    success: false,
+  },
+  {
+    title: '안전관리 > 적격수급업체평가-평가-등록',
+    Component: POccupationMu3P6edit,
+    path: 'POccupationMu3P6edit',
+    description: '',
+    success: false,
+  },
+  {
+    title: '안전관리 > 적격수급업체평가-계약관리-리스트',
+    Component: POccupationMu3P6list1,
+    path: 'POccupationMu3P6list1',
+    description: '',
+    success: false,
+  },
+  {
+    title: '안전관리 > 적격수급업체평가-계약관리-등록',
+    Component: POccupationMu3P6edit1,
+    path: 'POccupationMu3P6edit1',
+    description: '',
+    success: false,
+  },
+  {
     title: '안전관리 > 관리감독자평가-리스트',
     Component: POccupationMu3P8list,
     path: 'POccupationMu3P8list',
@@ -359,6 +399,62 @@ OccupationPageInfo.list = [
     title: '안전점검 > 작업장순회점검-등록',
     Component: POccupationMu4P2edit,
     path: 'POccupationMu4P2edit',
+    description: '',
+    success: false,
+  },
+  {
+    title: '안전점검 > 합동 안전 보건 점검-리스트',
+    Component: POccupationMu4P3list,
+    path: 'POccupationMu4P3list',
+    description: '',
+    success: false,
+  },
+  {
+    title: '안전점검 > 합동 안전 보건 점검-등록',
+    Component: POccupationMu4P3edit,
+    path: 'POccupationMu4P3list',
+    description: '',
+    success: false,
+  },
+  {
+    title: '안전점검 > 반기/비정기 점검-리스트',
+    Component: POccupationMu4P4list,
+    path: 'POccupationMu4P4list',
+    description: '',
+    success: false,
+  },
+  {
+    title: '안전점검 > 반기/비정기 점검-등록',
+    Component: POccupationMu4P4edit,
+    path: 'POccupationMu4P4list',
+    description: '',
+    success: false,
+  },
+  {
+    title: '안전점검 > 통합개선 관리-리스트',
+    Component: POccupationMu4P5list,
+    path: 'POccupationMu4P5list',
+    description: '',
+    success: false,
+  },
+  {
+    title: '안전점검 > 통합개선 관리-등록',
+    Component: POccupationMu4P5edit,
+    path: 'POccupationMu4P5list',
+    description: '',
+    success: false,
+  },
+  {
+    title: '위험성평가 > 위험성 평가 조회-리스트',
+    Component: POccupationMu5P1list,
+    path: 'POccupationMu5P1list',
+    description: '',
+    success: false,
+  },
+  {
+    title: '안전점검 > 위험성 평가-등록-사전준비',
+    Component: POccupationMu5P2edit,
+    path: 'POccupationMu5P2edit',
     description: '',
     success: false,
   },
