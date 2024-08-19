@@ -91,138 +91,96 @@ function POccupationMu1P11edit() {
         <h2>산업안전보건관리비</h2>
       </div>
       {/* 입력영역 */}
-      <div className="editbox">
-        <div className="form-table line">
-          <div className="form-cell wid50">
-            <div className="form-group wid100">
-              <AppAutoComplete label={'본부'} />
-            </div>
-          </div>
-
-          <div className="form-cell wid50">
-            <div className="form-group wid100">
-              <AppAutoComplete label="부서" />
-            </div>
-          </div>
-          <div className="form-cell wid50">
-            <div className="form-group wid100">
-              <AppAutoComplete label="팀" />
-            </div>
-          </div>
-        </div>
-        <hr className="line dp-n"></hr>
-        <div className="form-table line">
-          <div className="form-cell wid50">
-            <div className="form-group wid100">
-              <AppTextInput label="작성자" />
-            </div>
-          </div>
-          <div className="form-cell wid50">
-            <div className="form-group wid100">
-              <AppDatePicker label="작성일자" />
-            </div>
-          </div>
-
-          <div className="form-cell wid50">
-            <div className="form-group wid100">
-              <AppDatePicker label={'해당연월'} />
-            </div>
-          </div>
-        </div>
-        <hr className="line dp-n"></hr>
-        <div className="form-table">
-          <div className="form-cell wid50">
-            <div className="form-group wid100">
-              <AppTextInput label="제목" />
-            </div>
-          </div>
-        </div>
-        <hr className="line"></hr>
-        <div className="form-table">
-          <div className="form-cell wid50">
-            <div className="form-group wid100">
-              <AppEditor placeholder="입력해주세요." />
-            </div>
-          </div>
-        </div>
-        <hr className="line"></hr>
-        {/* 파일첨부영역 : button */}
-        <div className="form-table">
-          <div className="form-cell wid50">
-            <div className="form-group wid100">
-              <Upload {...props}>
-                <div className="btn-area">
-                  <button type="button" name="button" className="btn-big btn_text btn-darkblue-line">
-                    회의록 업로드(pdf, 그림 파일)
-                  </button>
-                </div>
-              </Upload>
-            </div>
-          </div>
-        </div>
-        <hr className="line"></hr>
-        {/* 파일첨부영역 : button */}
-        <div className="form-table">
-          <div className="form-cell wid50">
-            <div className="form-group wid100">
-              <Upload {...props}>
-                <div className="btn-area">
-                  <button type="button" name="button" className="btn-big btn_text btn-darkblue-line">
-                    회의자료 업로드(ppt)
-                  </button>
-                </div>
-              </Upload>
-            </div>
-          </div>
-        </div>
-        <hr className="line"></hr>
-        <div className="form-table line">
-          <div className="form-cell wid50">
-            <div className="group-box-wrap line wid100">
-              <span className="txt">보고문서 Link</span>
-
-              <button type="button" name="button" className="btn-plus">
-                추가
-              </button>
-              <div className="file-link">
-                <div className="link-box">
-                  <a href="javascript:void(0);">첨부Link첨부Link첨부Link</a>
-                  <a href="javascript:void(0);">
-                    <span className="close-btn">close</span>
-                  </a>
-                </div>
-                <div className="link-box">
-                  <a href="javascript:void(0);">첨부Link</a>
-                  <a href="javascript:void(0);">
-                    <span className="close-btn">close</span>
-                  </a>
-                </div>
-                <div className="link-box">
-                  <a href="javascript:void(0);">첨부Link</a>
-                  <a href="javascript:void(0);">
-                    <span className="close-btn">close</span>
-                  </a>
-                </div>
-                <div className="link-box">
-                  <a href="javascript:void(0);">첨부Link</a>
-                  <a href="javascript:void(0);">
-                    <span className="close-btn">close</span>
-                  </a>
+      <div className="info-wrap toggle">
+        <dl className="tg-item active">
+          {/* toggle 선택되면  열어지면 active붙임*/}
+          <dt>
+            <button type="button" className="btn-tg">
+              계획<span className="hide"></span>
+            </button>
+          </dt>
+          <dd className="tg-conts">
+            <div className="edit-area">
+              <div className="detail-form">
+                <div className="detail-list">
+                  <div className="form-table">
+                    <div className="form-cell wid50">
+                      <div className="form-group wid100">
+                        <AppDatePicker label="년도" />
+                      </div>
+                    </div>
+                    <div className="form-cell wid50">
+                      <div className="form-group wid100">
+                        <AppSelect label="Department" />
+                      </div>
+                    </div>
+                    <div className="form-cell wid50">
+                      <div className="form-group wid100">
+                        <AppSelect label="Cost Center" />
+                      </div>
+                    </div>
+                    <div className="form-cell wid50">
+                      <div className="form-group wid100">
+                        <AppSelect label="Item" />
+                      </div>
+                    </div>
+                  </div>
+                  <div className="form-table">
+                    <div className="form-cell wid50">
+                      <div className="form-group wid100">
+                        <AppSelect label="Account Name" />
+                      </div>
+                    </div>
+                    <div className="form-cell wid50">
+                      <div className="form-group wid100">
+                        <AppTextInput label="Account" />
+                      </div>
+                    </div>
+                    <div className="form-cell wid50">
+                      <div className="form-group wid100">
+                        <AppSelect label="Payterm" />
+                      </div>
+                    </div>
+                    <div className="form-cell wid50">
+                      <div className="form-group wid100">
+                        <AppTextInput label="Amount" />
+                      </div>
+                    </div>
+                  </div>
+                  <div className="form-table">
+                    <div className="form-cell wid50">
+                      <div className="form-group wid100">
+                        <AppTextInput label="Total Amount" />
+                      </div>
+                    </div>
+                    <div className="form-cell wid50">
+                      <div className="form-group wid100">
+                        <AppTextInput label="Description" />
+                      </div>
+                    </div>
+                    <div className="form-cell wid50">
+                      <div className="form-group wid100">
+                        <AppTextInput label="등록자" />
+                      </div>
+                    </div>
+                    <div className="form-cell wid50">
+                      <div className="form-group wid100">
+                        <AppDatePicker label="등록일자" />
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-        <hr className="line"></hr>
+          </dd>
+        </dl>
       </div>
       {/*//입력영역*/}
+
       {/* 하단버튼영역 */}
       <div className="contents-btns">
         <button type="button" name="button" className="btn_text text_color_neutral-10 btn_confirm">
           저장
-        </button>
-        <button type="button" name="button" className="btn_text btn-del">
-          삭제
         </button>
         <button type="button" name="button" className="btn_text btn_list">
           목록

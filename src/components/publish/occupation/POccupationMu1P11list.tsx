@@ -54,17 +54,22 @@ function POccupationMu1P11list() {
           <div className="form-table">
             <div className="form-cell wid50">
               <div className="form-group wid100">
-                <AppDatePicker label={'해당연도'} />
+                <AppDatePicker label={'년도'} />
               </div>
             </div>
             <div className="form-cell wid50">
               <div className="form-group wid100">
-                <AppSelect label="본부" />
+                <AppSelect label="Department" />
               </div>
             </div>
             <div className="form-cell wid50">
               <div className="form-group wid100">
-                <AppAutoComplete label={'해당부서'} />
+                <AppTextInput label="Cost Center" />
+              </div>
+            </div>
+            <div className="form-cell wid50">
+              <div className="form-group wid100">
+                <AppTextInput label="Account Name" />
               </div>
             </div>
             <div className="btn-area">
@@ -81,13 +86,6 @@ function POccupationMu1P11list() {
         <AppTable rowData={rowData} columns={columns} />
       </div>
       {/*//그리드영역 */}
-      {/* 하단버튼영역 */}
-      <div className="contents-btns">
-        <button type="button" name="button" className="btn_text text_color_neutral-10 btn_confirm">
-          등록
-        </button>
-      </div>
-      {/*//하단버튼영역*/}
     </>
   );
 }

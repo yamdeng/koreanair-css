@@ -18,6 +18,7 @@ import MU1P8Modal from '@/components/publish/modal/MU1P8Modal';
 import PReportLevelModal from '@/components/publish/modal/PReportLevelModal';
 import MU1P8Modal2 from '@/components/publish/modal/MU1P8Modal2';
 import MU1P7Modal from '@/components/publish/modal/MU1P7Modal';
+import MU1P11Modal from '@/components/publish/modal/MU1P11Modal';
 
 const ModalPageInfo: any = {};
 
@@ -159,6 +160,13 @@ ModalPageInfo.list = [
     title: '산업안전 > 안전경영 > 무재해운동시작 팝업창',
     Component: MU1P7Modal,
     path: 'MU1P7Modal',
+    description: '',
+    success: true,
+  },
+  {
+    title: '산업안전 > 안전경영 > 산업안전보건관리비 실적등록 팝업창',
+    Component: MU1P11Modal,
+    path: 'MU1P11Modal',
     description: '',
     success: false,
   },

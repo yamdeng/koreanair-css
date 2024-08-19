@@ -38,10 +38,10 @@ function POccupationMu1P11list1() {
       {/*탭 */}
       <div className="menu-tab-nav">
         <div className="menu-tab">
-          <a href="javascript:void(0);" className="active" data-label="현황">
+          <a href="javascript:void(0);" data-label="현황">
             현황
           </a>
-          <a href="javascript:void(0);" data-label="목록">
+          <a href="javascript:void(0);" className="active" data-label="목록">
             목록
           </a>
         </div>
@@ -54,26 +54,42 @@ function POccupationMu1P11list1() {
           <div className="form-table">
             <div className="form-cell wid50">
               <div className="form-group wid100">
-                <AppDatePicker label={'해당연도'} />
+                <AppDatePicker label={'년도'} />
               </div>
             </div>
             <div className="form-cell wid50">
               <div className="form-group wid100">
-                <AppSelect label="본부" />
+                <AppSelect label="Department" />
               </div>
             </div>
             <div className="form-cell wid50">
               <div className="form-group wid100">
-                <AppAutoComplete label={'해당부서'} />
+                <AppTextInput label="Cost Center" />
               </div>
-            </div>
-            <div className="btn-area">
-              <button type="button" name="button" className="btn-sm btn_text btn-darkblue-line">
-                조회
-              </button>
             </div>
           </div>
+          <div className="form-table">
+            <div className="form-cell wid50">
+              <div className="form-group wid100">
+                <AppSelect label="item" />
+              </div>
+            </div>
+            <div className="form-cell wid50">
+              <div className="form-group wid100">
+                <AppTextInput label="Account Name" />
+              </div>
+            </div>
+          </div>
+          <div className="btn-area">
+            <button type="button" name="button" className="btn-sm btn_text btn-darkblue-line">
+              조회
+            </button>
+          </div>
         </div>
+        {/*__control명 옆에 active  */}
+        <button type="button" name="button" className="arrow button _control active">
+          <span className="hide">접기</span>
+        </button>
       </div>
       {/* //검색영역 */}
       {/*그리드영역 */}
