@@ -17,6 +17,7 @@ import PReportListModal from '@/components/publish/modal/PReportListModal';
 import MU1P8Modal from '@/components/publish/modal/MU1P8Modal';
 import PReportLevelModal from '@/components/publish/modal/PReportLevelModal';
 import MU1P8Modal2 from '@/components/publish/modal/MU1P8Modal2';
+import MU1P7Modal from '@/components/publish/modal/MU1P7Modal';
 
 const ModalPageInfo: any = {};
 
@@ -151,6 +152,13 @@ ModalPageInfo.list = [
     title: '[항공안전>안전위험관리] 보고서분석 > 위험레벨조회 팝업창',
     Component: PReportLevelModal,
     path: 'PReportLevelModal',
+    description: '',
+    success: false,
+  },
+  {
+    title: '산업안전 > 안전경영 > 무재해운동시작 팝업창',
+    Component: MU1P7Modal,
+    path: 'MU1P7Modal',
     description: '',
     success: false,
   },

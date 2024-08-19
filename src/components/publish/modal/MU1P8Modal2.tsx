@@ -23,34 +23,39 @@ function ChecklistModal(props) {
       isOpen={isOpen}
       ariaHideApp={false}
       overlayClassName={'alert-modal-overlay'}
-      className={'org-select-modal-content'}
+      className={'list-common-modal-content'}
       onRequestClose={() => {
         closeModal();
       }}
     >
       <div className="popup-container">
         <h3 className="pop_title">법령</h3>
-        <div className="pop_cont">
-          <div className="boxForm">
-            <div className="form-table">
-              <div className="form-cell wid50">
-                <div className="form-group wid100">
-                  <AppTextInput label="법규명" />
+        <div className="pop_full_cont_box">
+          <div className="pop_flex_group">
+            <div className="pop_cont_form">
+              <div className="boxForm">
+                <div className="form-table">
+                  <div className="form-cell wid50">
+                    <div className="form-group wid100">
+                      <AppTextInput label="법규명" />
+                    </div>
+                  </div>
+                  <div className="btn-area">
+                    <button type="button" name="button" className="btn-sm btn_text btn-darkblue-line">
+                      조회
+                    </button>
+                  </div>
                 </div>
               </div>
-              <div className="btn-area">
-                <button type="button" name="button" className="btn-sm btn_text btn-darkblue-line">
-                  조회
-                </button>
+              {/*그리드영역 */}
+              <div className="table-box">
+                <AppTable rowData={rowData} columns={columns} />
               </div>
+              {/*//그리드영역 */}
             </div>
           </div>
         </div>
-        {/*그리드영역 */}
-        <div className="table-box">
-          <AppTable rowData={rowData} columns={columns} />
-        </div>
-        {/*//그리드영역 */}
+
         <div className="pop_btns">
           <button className="btn_text text_color_neutral-90 btn_close" onClick={closeModal}>
             닫기
