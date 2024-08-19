@@ -15,6 +15,22 @@ function POccupationMu3P2list1() {
   const [inputValue, setInputValue] = useState('');
   const rowData = getAllData();
   const columns = testColumnInfos;
+
+  const customButtons = [
+    {
+      title: '행추가',
+      onClick: () => {
+        alert('행추가');
+      },
+    },
+    {
+      title: '전체삭제',
+      onClick: () => {
+        alert('전체삭제');
+      },
+    },
+  ];
+
   return (
     <>
       {/*경로 */}
@@ -120,7 +136,7 @@ function POccupationMu3P2list1() {
 
       {/*그리드영역 */}
       <div className="">
-        <AppTable rowData={rowData} columns={columns} />
+        <AppTable rowData={rowData} columns={columns} customButtons={customButtons} />
       </div>
       {/*//그리드영역 */}
 

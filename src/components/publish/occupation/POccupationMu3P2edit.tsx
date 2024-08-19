@@ -174,14 +174,16 @@ function POccupationMu3P2edit() {
           </div>
         </div>
         <hr className="line"></hr>
+        <div className="form-table">
+          <div className="form-cell wid50">
+            <div className="form-group wid100">
+              <AppEditor placeholder="입력해주세요." />
+            </div>
+          </div>
+        </div>
+        <hr className="line"></hr>
       </div>
       {/*//입력영역*/}
-
-      {/*그리드영역 */}
-      <div className="">
-        <AppTable rowData={rowData} columns={columns} />
-      </div>
-      {/*//그리드영역 */}
 
       {/* 하단버튼영역 */}
       <div className="contents-btns">

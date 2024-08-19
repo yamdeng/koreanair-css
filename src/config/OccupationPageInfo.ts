@@ -262,7 +262,7 @@ OccupationPageInfo.list = [
     Component: POccupationMu3P2list1,
     path: 'POccupationMu3P2list1',
     description: '',
-    success: false,
+    success: true,
   },
   {
     title: '안전관리 > 위험기계기구-조회-등록',
