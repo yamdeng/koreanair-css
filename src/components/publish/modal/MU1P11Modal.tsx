@@ -107,7 +107,7 @@ function UserEditModal(props) {
     >
       <div className="popup-container">
         <h3 className="pop_title">실적 등록</h3>
-        <div className="pop_full_cont_box">
+        <div className="pop_lg_cont_box">
           <div className="pop_flex_group">
             <div className="pop_cont_form">
               {/*등록 */}

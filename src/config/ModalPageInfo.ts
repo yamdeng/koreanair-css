@@ -168,7 +168,7 @@ ModalPageInfo.list = [
     Component: MU1P11Modal,
     path: 'MU1P11Modal',
     description: '',
-    success: false,
+    success: true,
   },
 ];
 
