@@ -43,7 +43,7 @@ function CustomColumnComponent5(paams) {
 function CustomColumnComponent6() {
   return (
     <div style={{ fontWeight: 'normal', textDecoration: 'underline' }}>
-      <button type="button" className="">
+      <button type="button" className="btn-togo">
         바로가기
       </button>
     </div>

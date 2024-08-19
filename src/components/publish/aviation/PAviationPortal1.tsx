@@ -3,10 +3,10 @@ import { useState } from 'react';
 function PAviationPortal1() {
   return (
     <>
-      <div className="left-box">
-        <div className="tree-box">dfdfd</div>
+      <div className="left-box1">
+        <div className="">dfdfd</div>
       </div>
-      <div className="right-box">dfdf</div>
+      <div className="right-box1">dfdf</div>
       {/*<div className="main_slide">
         <div className="title-area">
           <div className="h2-tit">Top10 RISK AREAS</div>

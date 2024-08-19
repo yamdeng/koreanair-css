@@ -13,11 +13,10 @@
 .c-step-list{counter-reset:stepCounter}
 .c-step-list.default{display:flex;font-size:1.2rem;text-align:center;margin-left:-1.5rem}
 
-.contents.Aviation{background-color:var(--color-aviation-mainBg)}
+/*.contents.Aviation{background-color:var(--color-aviation-mainBg)}*/
 
 /*메인*/
 .left-box1{display: inline-block; width: 60%; vertical-align: top; padding-right: 3.0rem; border:solid 1px red}
-
 .right-box1{display: inline-block; height: 100vh; width: 40%; vertical-align: top;border:solid 1px blue}
 
 
@@ -151,5 +150,5 @@
 .Safety-tag.riskLevel.level3{background-color:var(--color-Leve3)}
 .Safety-tag.riskLevel.level2{background-color:var(--color-Leve2)}
 .Safety-tag.riskLevel.level1{background-color:var(--color-Level)}
-.Safety-tag.riskLevel{font-weight:600;text-align:center;color: var(--color-neutral-10) !important;}
+.Safety-tag.riskLevel{font-weight:600;text-align:center;color: var(--color-neutral-10) !important}
 

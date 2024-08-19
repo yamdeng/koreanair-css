@@ -24,6 +24,7 @@ import ReportList from '@/components/publish/aviation/ReportList';
 import ReportDetail from '@/components/publish/aviation/ReportDetail';
 import CentralizedReportList from '@/components/publish/aviation/CentralizedReportList';
 import AdminSafetyCultureList from '@/components/publish/aviation/AdminSafetyCultureList';
+import AdminSafetyCultureEdit from '@/components/publish/aviation/AdminSafetyCultureEdit';
 import { fa } from '@faker-js/faker';
 
 const AviationPageInfo: any = {};
@@ -210,6 +211,13 @@ AviationPageInfo.list = [
     path: 'AdminSafetyCultureList',
     description: '',
     success: true,
+  },
+  {
+    title: '[07.관리자] 안전문화설문관리 > 등록',
+    Component: AdminSafetyCultureEdit,
+    path: 'AdminSafetyCultureEdit',
+    description: '',
+    success: false,
   },
 ];
 
