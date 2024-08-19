@@ -88,7 +88,7 @@ function POccupationMu1P10edit() {
       </div>
       {/*경로 */}
       <div className="conts-title">
-        <h2>법규등록대장</h2>
+        <h2>안전보건협의체</h2>
       </div>
       {/* 입력영역 */}
       <div className="editbox">
@@ -107,6 +107,11 @@ function POccupationMu1P10edit() {
           <div className="form-cell wid50">
             <div className="form-group wid100">
               <AppAutoComplete label="팀" />
+            </div>
+          </div>
+          <div className="form-cell wid50">
+            <div className="form-group wid100">
+              <AppAutoComplete label="그룹" />
             </div>
           </div>
         </div>

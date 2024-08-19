@@ -20,6 +20,7 @@ import POccupationMu1P9edit from '@/components/publish/occupation/POccupationMu1
 import POccupationMu1P10list from '@/components/publish/occupation/POccupationMu1P10list';
 import POccupationMu1P10list1 from '@/components/publish/occupation/POccupationMu1P10list1';
 import POccupationMu1P10edit from '@/components/publish/occupation/POccupationMu1P10edit';
+import POccupationMu1P10detail from '@/components/publish/occupation/POccupationMu1P10detail';
 import POccupationMu1P11list from '@/components/publish/occupation/POccupationMu1P11list';
 import POccupationMu1P11list1 from '@/components/publish/occupation/POccupationMu1P11list1';
 import POccupationMu1P11edit from '@/components/publish/occupation/POccupationMu1P11edit';
@@ -197,6 +198,13 @@ OccupationPageInfo.list = [
     title: '안전경영 > 안전보건협의체-등록',
     Component: POccupationMu1P10edit,
     path: 'POccupationMu1P10edit',
+    description: '',
+    success: true,
+  },
+  {
+    title: '안전경영 > 안전보건협의체-상세',
+    Component: POccupationMu1P10detail,
+    path: 'POccupationMu1P10detail',
     description: '',
     success: true,
   },
