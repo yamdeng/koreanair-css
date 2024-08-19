@@ -239,15 +239,29 @@ function ReportLevelModal(props) {
                         {/*class에 selected를 붙이면 선택되어짐 */}
                         <td className="level1 selected">
                           5A<span>(25)</span>
+                          <div className="flag-tag">
+                            <span className="icon-flag txt btn-wh">233</span>
+                            <span className="icon-flag txt btn-blue">1차추천</span>
+                          </div>
                         </td>
                         <td className="level1">
                           5B<span>(23)</span>
+                          <div className="flag-tag">
+                            <span className="icon-flag txt btn-wh">23</span>
+                          </div>
                         </td>
                         <td className="level1">
                           5C<span>(20)</span>
+                          <div className="flag-tag">
+                            <span className="icon-flag txt btn-wh">99</span>
+                            <span className="icon-flag txt btn-blue">1차추천</span>
+                          </div>
                         </td>
                         <td className="level2">
                           5D<span>(16)</span>
+                          <div className="flag-tag">
+                            <span className="icon-flag txt btn-wh">23</span>
+                          </div>
                         </td>
                         <td className="level3">
                           5E<span>(11)</span>
