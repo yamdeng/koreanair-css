@@ -6,7 +6,7 @@ import AppTextInput from '@/components/common/AppTextInput';
 import { getAllData } from '@/data/grid/example-data-new';
 import { testColumnInfos } from '@/data/grid/table-column';
 
-function AdminSafetyManualList() {
+function AdminSafetyCultureList() {
   const rowData = getAllData();
   const columns = testColumnInfos;
   return (
@@ -21,13 +21,13 @@ function AdminSafetyManualList() {
             <a href="javascript:void(0);">관리자</a>
           </li>
           <li className="breadcrumb-item">
-            <a href="javascript:void(0);">안전메뉴얼</a>
+            <a href="javascript:void(0);">안전문화설문 관리</a>
           </li>
         </ol>
       </div>
       {/*경로 */}
       <div className="conts-title">
-        <h2>안전메뉴얼</h2>
+        <h2>안전문화설문 관리</h2>
       </div>
       {/*검색영역 */}
       <div className="boxForm">
@@ -35,23 +35,22 @@ function AdminSafetyManualList() {
         <div id="" className="area-detail active">
           <div className="form-table">
             <div className="form-cell wid50">
-              <div className="form-group wid100">
-                <AppSelect label="업무구분" />
+              <div className="form-group form-glow">
+                <div className="df">
+                  <div className="date1">
+                    <AppDatePicker label={'설문일자'} />
+                  </div>
+                  <span className="unt">~</span>
+                  <div className="date2">
+                    <AppDatePicker label={'설문일자'} />
+                  </div>
+                </div>
               </div>
             </div>
-            <div className="form-cell wid100">
-              <div className="form-group wid100">
-                <AppTextInput label={'메뉴얼명'} />
-              </div>
-            </div>
+
             <div className="form-cell wid50">
               <div className="form-group wid100">
-                <AppSelect label={'언어구분'} />
-              </div>
-            </div>
-            <div className="form-cell wid100">
-              <div className="form-group wid100">
-                <AppTextInput label={'사용여부'} />
+                <AppTextInput label={'제목'} />
               </div>
             </div>
             <div className="btn-area df">
@@ -84,4 +83,4 @@ function AdminSafetyManualList() {
   );
 }
 
-export default AdminSafetyManualList;
+export default AdminSafetyCultureList;

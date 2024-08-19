@@ -23,6 +23,7 @@ import AdminSafetyManualEdit from '@/components/publish/aviation/AdminSafetyManu
 import ReportList from '@/components/publish/aviation/ReportList';
 import ReportDetail from '@/components/publish/aviation/ReportDetail';
 import CentralizedReportList from '@/components/publish/aviation/CentralizedReportList';
+import AdminSafetyCultureList from '@/components/publish/aviation/AdminSafetyCultureList';
 import { fa } from '@faker-js/faker';
 
 const AviationPageInfo: any = {};
@@ -39,6 +40,27 @@ AviationPageInfo.list = [
     title: '[01.안전보고서] Centralized Report 리스트',
     Component: CentralizedReportList,
     path: 'CentralizedReportList',
+    description: '',
+    success: true,
+  },
+  {
+    title: '[02.안정정책] 안전정책 > 매뉴얼',
+    Component: SafetyManual,
+    path: 'SafetyManual',
+    description: '',
+    success: true,
+  },
+  {
+    title: '[02.안정정책] 안전정책 > 매뉴얼 > 매뉴얼 상세',
+    Component: SafetyManualDetail,
+    path: 'SafetyManualDetail',
+    description: '',
+    success: true,
+  },
+  {
+    title: '[02.안정정책] 안전정책',
+    Component: SafetyPolicy,
+    path: 'SafetyPolicy',
     description: '',
     success: true,
   },
@@ -180,26 +202,12 @@ AviationPageInfo.list = [
     Component: AdminSafetyManualEdit,
     path: 'AdminSafetyManualEdit',
     description: '',
-    success: false,
-  },
-  {
-    title: '[02.안정정책] 안전정책 > 매뉴얼',
-    Component: SafetyManual,
-    path: 'SafetyManual',
-    description: '',
     success: true,
   },
   {
-    title: '[02.안정정책] 안전정책 > 매뉴얼 > 매뉴얼 상세',
-    Component: SafetyManualDetail,
-    path: 'SafetyManualDetail',
-    description: '',
-    success: true,
-  },
-  {
-    title: '[02.안정정책] 안전정책',
-    Component: SafetyPolicy,
-    path: 'SafetyPolicy',
+    title: '[07.관리자] 안전문화설문관리 > 리스트',
+    Component: AdminSafetyCultureList,
+    path: 'AdminSafetyCultureList',
     description: '',
     success: true,
   },

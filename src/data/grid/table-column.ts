@@ -7,7 +7,7 @@ export const testColumnKeyList = [
   'name',
   '1차위험도평가',
   'deptName',
-  'sex',
+  '버튼형식',
   'createdDate',
   'updatedDate',
   'email',

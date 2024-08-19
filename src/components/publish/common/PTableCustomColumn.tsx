@@ -5,7 +5,7 @@ import { testColumnInfos } from '@/data/grid/table-column';
 function CustomColumnComponent1() {
   return (
     <div className="Safety-table-cell">
-      <a href="javascript:void(0);">링크되는 텍스트</a>
+      <a href="javascript:void(0);">링크되는 텍스트 형식</a>
     </div>
   );
 }
@@ -41,7 +41,13 @@ function CustomColumnComponent5(paams) {
   );
 }
 function CustomColumnComponent6() {
-  return <div style={{ fontWeight: 'normal', textDecoration: 'underline' }}>custom 컴포넌트6</div>;
+  return (
+    <div style={{ fontWeight: 'normal', textDecoration: 'underline' }}>
+      <button type="button" className="">
+        바로가기
+      </button>
+    </div>
+  );
 }
 function CustomColumnComponent7() {
   return <div style={{ fontWeight: 'normal', textDecoration: 'underline' }}>custom 컴포넌트7</div>;
