@@ -157,7 +157,7 @@ OccupationPageInfo.list = [
     Component: POccupationMu1P7detail,
     path: 'POccupationMu1P7detail',
     description: '',
-    success: false,
+    success: true,
   },
   {
     title: '안전경영 > 법규등록대장기준정보-리스트',

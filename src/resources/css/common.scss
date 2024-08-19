@@ -189,6 +189,7 @@ input, select{font-family:'KoreanAirSans'}
   button + button{margin-left:0.5rem}
   .btn_text{font-family:'KoreanAirSans';font-weight:700;font-size:1.6rem}
   .btn-darkblue-line{border:solid 0.2rem var(--color-darkblue-100);color:var(--color-darkblue-100)}
+  .btn_confirm{padding:0.6rem 2.8rem;border-radius:99.9rem;background: var(--color-darkblue-100)}
   .btn-lightblue{border:solid 0.1rem var(--color-lightblue-40);background-color:var(--color-lightblue-40);color:var(--color-darkblue-100)}
   .btn-sm{padding:0.6rem 4.8rem;border-radius:99.9rem;align-items:center}
   .btn-big{display:block;width:100%;text-align:center;height:3.5rem;border-radius:0.8rem;align-items:center;box-sizing:border-box}
@@ -590,3 +591,4 @@ input, select{font-family:'KoreanAirSans'}
 .left-box .tree-box {height: 100vh; width: 100%; overflow-y: auto;}
 .right-box {display: inline-block; height: 100vh; width: 80%; vertical-align: top;}
 .mb-10 {margin-bottom: 1.0rem;}
+.mt-30 {margin-top: 3.0rem;}
