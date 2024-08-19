@@ -139,8 +139,66 @@ function SafetyDetail() {
               </a>
             </li>
           </ol>
+          <div className="c-step-wrap -mb-8n-3">
+            <ol className="c-step-list default">
+              <li className="active">
+                <p className="info-title">
+                  <span className="hide">1단계</span> 보고서접수
+                  <span className="hide">현재 </span>
+                </p>
+              </li>
+              <li className="">
+                <p className="info-title">
+                  <span className="hide">2단계</span> 위험평가
+                  <span className="hide">현재 </span>
+                </p>
+              </li>
+              <li className="">
+                <p className="info-title">
+                  <span className="hide">3단계</span> SRC리뷰
+                  <span className="hide">현재 </span>
+                </p>
+              </li>
+              <li className="">
+                <p className="info-title">
+                  <span className="hide">4단계</span> 조회
+                  <span className="hide">현재 </span>
+                </p>
+              </li>
+              <li className="">
+                <p className="info-title">
+                  <span className="hide">5단계</span> 조회
+                  <span className="hide">현재 </span>
+                </p>
+              </li>
+              <li className="">
+                <p className="info-title">
+                  <span className="hide">6단계</span> 조회
+                  <span className="hide">현재 </span>
+                </p>
+              </li>
+              <li className="">
+                <p className="info-title">
+                  <span className="hide">7단계</span> 조회
+                  <span className="hide">현재 </span>
+                </p>
+              </li>
+              <li className="">
+                <p className="info-title">
+                  <span className="hide">8단계</span> 조회
+                  <span className="hide">현재 </span>
+                </p>
+              </li>
+              <li className="">
+                <p className="info-title">
+                  <span className="hide">9단계</span> 조회
+                  <span className="hide">현재 </span>
+                </p>
+              </li>
+            </ol>
+          </div>
         </div>
-        <div className="c-step-wrap -mb-8n-3">
+        {/* <div className="c-step-wrap -mb-8n-3">
           <ol className="c-step-list default">
             <li className="active">
               <p className="info-title">
@@ -197,7 +255,7 @@ function SafetyDetail() {
               </p>
             </li>
           </ol>
-        </div>
+        </div>*/}
       </div>
       {/* 보고서 상세 toggle*/}
       <div className="info-wrap toggle">

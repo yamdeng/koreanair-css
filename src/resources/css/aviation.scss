@@ -49,13 +49,20 @@
 
 
 .Report-step-area{position:relative;background-color:var(--color-neutral-20);padding:2.5rem;border-radius:0.8rem;margin-bottom:2rem}
-.c-step-wrap.bg-white[class*=c-step-list-type] {background-color:var(--color-neutral-10)}
+.c-step-wrap.bg-white[class*=c-step-list-type]{background-color:var(--color-neutral-10)}
 .flex-e{display:flex;justify-content:flex-end !important}
-.c-step-list.default{display:flex;font-size:12px;text-align:center;margin-left:-0.5rem}
+.c-step-list.default{display:flex;font-size:12px;text-align:center;overflow-x:auto}
 .c-step-list{counter-reset:stepCounter}
-.c-step-wrap ol{/*justify-content: center;*/}
-.c-step-list.default>li {position:relative;min-width:145px;padding:0 1.5rem}
-.c-step-list.default>li:nth-child(2){min-width:145px;}
+.c-step-list.default>li{position:relative}
+.c-step-list.default>li:nth-child(1){min-width:27.0rem}
+.c-step-list.default>li:nth-child(2){min-width:18.5rem}
+.c-step-list.default>li:nth-child(3){min-width:16.5rem}
+.c-step-list.default>li:nth-child(4){min-width:13.0rem}
+.c-step-list.default>li:nth-child(5){min-width:13.0rem}
+.c-step-list.default>li:nth-child(6){min-width:13.0rem}
+.c-step-list.default>li:nth-child(7){min-width:15.0rem}
+.c-step-list.default>li:nth-child(8){min-width:15.0rem}
+.c-step-list.default>li:nth-child(9){min-width:16.5rem}
 .c-step-list>li{counter-increment:stepCounter}
 .c-step-list.default .active .info-title{color:var(--color-mblue-100)}
 .c-step-list.default>li .info-title{color:var(--color-neutral-90)}
@@ -163,3 +170,15 @@
 .info-field .inp-btn label{display:inline-block;width:100%;height:100%;border-radius:0.6rem;font-size:1.5rem;line-height:4rem;font-family:'KoreanAirSans';border:0.1rem solid var(--color-neutral-40);background:var(--color-neutral-10);color:var(--color-neutral-80);text-align:center;box-sizing:border-box}
 .info-field .inp-btn input[type="radio"]:checked + label{background-color:var(--color-btn-blue1);border-color:var(--color-btn-blue2);color:var(--color-btn-blue2);font-weight:600}
 .info-field .inp-btn{margin-top:0.4rem}
+
+/*spi 테이블*/
+.info-box + .info-box{margin-top:2.5rem}
+.info-box{overflow:auto hidden;scroll-behavior:smooth}
+.info-box .h4{color:var(--color-darkblue-100);font-weight:500;font-size:1.8rem;line-height:2.5;letter-spacing:-0.1rem}
+.info-board{width:100%}
+.info-board th{background:var(--color-neutral-20);color:var(--color-darkblue-100);font-size:1.6rem; text-align:center;padding:1.2rem 0;border-top: 0.1rem solid var(--color-darkblue-100);border-right: 0.1rem solid var(--color-neutral-40);border-bottom: 0.1rem solid var(--color-neutral-40)}
+.info-board th:last-child{border-right:0}
+.info-board td.right{text-align:right;padding-right:0.8rem}
+.info-board td{text-align:center;padding:1.0rem 0;border-bottom:0.1rem solid var(--color-neutral-40);border-right: 0.1rem solid var(--color-neutral-40)}
+.info-board td:last-child{border-right:0}
+.info-board tr.cons-bottom{background-color:var(--color-neutral-20)}
