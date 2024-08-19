@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { DatePicker, TimePicker, Select as AntSelect } from 'antd';
+import { DatePicker, TimePicker, Select as AntSelect, Tree } from 'antd';
 import AppTable from '@/components/common/AppTable';
 import { getAllData } from '@/data/grid/example-data-new';
 import { testColumnInfos } from '@/data/grid/table-column';
@@ -9,26 +9,43 @@ import AppSelect from '@/components/common/AppSelect';
 import AppDatePicker from '@/components/common/AppDatePicker';
 import AppRangeDatePicker from '@/components/common/AppRangeDatePicker';
 import AppTimePicker from '@/components/common/AppTimePicker';
+import AppAutoComplete from '@/components/common/AppAutoComplete';
+
+/* treeData 가공 */
+const x = 5;
+const y = 2;
+const z = 1;
+const treeData = [];
+
+const generateData = (_level, _preKey = null, _tns = null) => {
+  const preKey = _preKey || '0';
+  const tns = _tns || treeData;
+
+  const children = [];
+  for (let i = 0; i < x; i++) {
+    const key = `${preKey}-${i}`;
+    tns.push({ title: key, key });
+    if (i < y) {
+      children.push(key);
+    }
+  }
+  if (_level < 0) {
+    return tns;
+  }
+  const level = _level - 1;
+  children.forEach((key, index) => {
+    tns[index].children = [];
+    return generateData(level, key, tns[index].children);
+  });
+};
+generateData(z);
+/* treeData 가공 end*/
 
 function POccupationMu1P3list() {
   const [inputValue, setInputValue] = useState('');
   const rowData = getAllData();
   const columns = testColumnInfos;
-
-  const customButtons = [
-    {
-      title: '행추가',
-      onClick: () => {
-        alert('행추가');
-      },
-    },
-    {
-      title: '전체삭제',
-      onClick: () => {
-        alert('전체삭제');
-      },
-    },
-  ];
+  const [expandedKeys] = useState(['0-0', '0-0-0', '0-0-0-0']);
 
   return (
     <>
@@ -48,60 +65,76 @@ function POccupationMu1P3list() {
       </div>
       {/*경로 */}
       <div className="conts-title">
-        <h2>공지사항</h2>
+        <h2>산업안전보건 조직도</h2>
       </div>
-      {/*검색영역 */}
-      <div className="boxForm">
-        <div className="form-table">
-          <div className="form-cell wid50">
-            <div className="form-group wid100">
-              <AppSelect label={'본부'} />
+      <div className="left-box">
+        <div className="tree-box">
+          <Tree
+            className="draggable-tree bg"
+            defaultExpandedKeys={expandedKeys}
+            draggable
+            blockNode
+            treeData={treeData}
+          />
+        </div>
+      </div>
+      <div className="right-box">
+        {/*검색영역 */}
+
+        <div className="boxForm">
+          <div className="form-table">
+            <div className="form-cell wid50">
+              <div className="form-group wid100">
+                <AppAutoComplete label={'본부'} />
+              </div>
             </div>
-          </div>
-          <div className="form-cell wid100">
-            <div className="form-group form-glow">
-              <div className="df">
-                <div className="date1">
-                  <AppDatePicker label="등록일자" />
-                </div>
-                <span className="unt">~</span>
-                <div className="date2">
-                  <AppDatePicker label="등록일자" />
-                </div>
+            <div className="form-cell wid50">
+              <div className="form-group wid100">
+                <AppAutoComplete label={'부서'} />
+              </div>
+            </div>
+            <div className="form-cell wid50">
+              <div className="form-group wid100">
+                <AppAutoComplete label={'팀'} />
+              </div>
+            </div>
+            <div className="form-cell wid50">
+              <div className="form-group wid100">
+                <AppAutoComplete label={'그룹'} />
               </div>
             </div>
           </div>
-          <div className="form-cell wid50">
-            <div className="form-group wid100">
-              <AppSelect label={'구분'} />
+          <div className="form-table">
+            <div className="form-cell wid50">
+              <div className="form-group wid100">
+                <AppAutoComplete label={'반'} />
+              </div>
+            </div>
+            <div className="form-cell wid50">
+              <div className="form-group wid100">
+                <AppAutoComplete label={'직책'} />
+              </div>
+            </div>
+            <div className="form-cell wid50">
+              <div className="form-group wid100">
+                <AppTextInput label={'성명'} />
+              </div>
             </div>
           </div>
-          <div className="form-cell wid100">
-            <div className="form-group wid100">
-              <AppSearchInput label="검색" />
-            </div>
-          </div>
-          <div className="btn-area">
+          <div className="btn-area mb-10">
             <button type="button" name="button" className="btn-sm btn_text btn-darkblue-line">
               조회
             </button>
           </div>
         </div>
-      </div>
-      {/* //검색영역 */}
-      {/*그리드영역 상단상위표출체크시 번호-아이콘으로 표시 아이콘명:pin.svg */}
-      <div>
-        <AppTable rowData={rowData} columns={columns} customButtons={customButtons} />
-      </div>
-      {/*//그리드영역 */}
+        {/* //검색영역 */}
 
-      {/* 하단버튼영역 */}
-      <div className="contents-btns">
-        <button type="button" name="button" className="btn_text text_color_neutral-10 btn_confirm">
-          신규
-        </button>
+        {/*그리드영역 상단상위표출체크시 번호-아이콘으로 표시 아이콘명:pin.svg */}
+        <div>
+          <AppTable rowData={rowData} columns={columns} />
+        </div>
+        {/*//그리드영역 */}
       </div>
-      {/*//하단버튼영역*/}
     </>
   );
 }

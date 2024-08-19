@@ -585,3 +585,7 @@ input, select{font-family:'KoreanAirSans'}
 .ant-upload-wrapper .ant-upload-list .ant-upload-list-item .ant-upload-list-item-actions .ant-btn-icon .anticon >svg path{display:none}
 
 
+.left-box {display: inline-block; width: 20%; vertical-align: top; padding-right: 3.0rem;}
+.left-box .tree-box {height: 100vh; width: 100%; overflow-y: auto;}
+.right-box {display: inline-block; height: 100vh; width: 80%; vertical-align: top;}
+.mb-10 {margin-bottom: 1.0rem;}
