@@ -187,7 +187,7 @@ export default function AviationLayout() {
         </div>
       </div>
 
-      <div className="contents">
+      <div className="contents Aviation">
         <Outlet />
       </div>
     </div>

@@ -12,13 +12,15 @@
 .-mb-8n-3{margin:2.4rem 2.4rem 0 !important}
 .c-step-list{counter-reset:stepCounter}
 .c-step-list.default{display:flex;font-size:1.2rem;text-align:center;margin-left:-1.5rem}
-/*메인*/
-.aviation-wrap{position: relative;width:100%;border:solid 5px red}
-.aviation-wrap .section_1{ display: flex;width:100%;height:100%; overflow: hidden;flex-wrap:wrap}
-.aviation-wrap .section_1 .main_slide{width:60%;margin-right:0.8rem; background-color: #666;height:100%;}
-.aviation-wrap .section_1 .main_grap{position: relative;  width:38%;background-color:#ddd;height:100%;}
 
-.aviation-wrap .section_2{display:block;  width:100%;margin-top:20px;background-color:#ddd}
+.contents.Aviation{background-color:var(--color-aviation-mainBg)}
+
+/*메인*/
+.left-box{display: inline-block; width: 60%; vertical-align: top; padding-right: 3.0rem; border:solid 1px red}
+
+.right-box{display: inline-block; height: 100vh; width: 40%; vertical-align: top;border:solid 1px blue}
+
+
 
 
 
