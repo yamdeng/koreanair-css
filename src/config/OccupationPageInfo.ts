@@ -277,7 +277,7 @@ OccupationPageInfo.list = [
     Component: POccupationMu1P11detail,
     path: 'POccupationMu1P11detail',
     description: '',
-    success: true,
+    success: false,
   },
   {
     title: '안전교육 > 교육현황조회-개인별-리스트',

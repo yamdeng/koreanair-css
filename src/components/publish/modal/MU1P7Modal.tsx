@@ -107,30 +107,29 @@ function UserEditModal(props) {
     >
       <div className="popup-container">
         <h3 className="pop_title">무재해운동 시작</h3>
-        <div className="pop_full_cont_box">
+        <div className="pop_lg_cont_box">
           <div className="pop_flex_group">
             <div className="pop_cont_form">
               {/*등록 */}
               <div className="editbox">
-                <div className="form-table">
-                  <div className="form-table line">
-                    <div className="form-cell wid50">
-                      <div className="form-group wid100">
-                        <AppAutoComplete label={'부서'} />
-                      </div>
+                <div className="form-table line">
+                  <div className="form-cell wid50">
+                    <div className="form-group wid100">
+                      <AppAutoComplete label={'부서'} />
                     </div>
-                    <div className="form-cell wid50">
-                      <div className="form-group wid100">
-                        <AppTextInput label="달성 목표 배수" />
-                      </div>
+                  </div>
+                  <div className="form-cell wid50">
+                    <div className="form-group wid100">
+                      <AppTextInput label="달성 목표 배수" />
                     </div>
-                    <div className="form-cell wid50">
-                      <div className="form-group wid100">
-                        <AppTextInput label="총 목표일수" />
-                      </div>
+                  </div>
+                  <div className="form-cell wid50">
+                    <div className="form-group wid100">
+                      <AppTextInput label="총 목표일수" />
                     </div>
                   </div>
                 </div>
+
                 <hr className="line dp-n"></hr>
                 <div className="form-table line">
                   <div className="form-cell wid50">
@@ -157,11 +156,54 @@ function UserEditModal(props) {
                 <hr className="line dp-n"></hr>
               </div>
               {/*//등록 */}
-              {/*그리드영역 */}
-              <div>
-                <AppTable rowData={rowData} columns={columns} />
+              {/* 입력폼 */}
+              <div className="mt-30">
+                <h3 className="table-tit">무재해운동 이력</h3>
+                <div className="editbox">
+                  <div className="form-table line">
+                    <div className="form-cell wid50">
+                      <div className="form-group wid100">
+                        <AppTextInput label={'배수'} />
+                      </div>
+                    </div>
+                    <div className="form-cell wid50">
+                      <div className="form-group wid100">
+                        <AppDatePicker label={'개시일'} />
+                      </div>
+                    </div>
+                    <div className="form-cell wid50">
+                      <div className="form-group wid100">
+                        <AppTextInput label={'달성 목표일'} />
+                      </div>
+                    </div>
+                    <div className="form-cell wid50">
+                      <div className="form-group wid100">
+                        <AppTextInput label={'현 배수 목표일'} />
+                      </div>
+                    </div>
+                  </div>
+                  <hr className="line dp-n"></hr>
+                  <div className="form-table line">
+                    <div className="form-cell wid50">
+                      <div className="form-group wid100">
+                        <AppTextInput label={'총 목표일수'} />
+                      </div>
+                    </div>
+                    <div className="form-cell wid50">
+                      <div className="form-group wid100">
+                        <AppTextInput label={'실패일'} />
+                      </div>
+                    </div>
+                    <div className="form-cell wid50">
+                      <div className="form-group wid100">
+                        <AppTextInput label={'비고(실패사유)'} />
+                      </div>
+                    </div>
+                  </div>
+                  <hr className="line dp-n"></hr>
+                </div>
               </div>
-              {/*//그리드영역 */}
+              {/*//입력폼 */}
             </div>
           </div>
         </div>

@@ -145,6 +145,7 @@ function POccupationMu1P7detail() {
 
       {/*그리드영역 상단상위표출체크시 번호-아이콘으로 표시 아이콘명:pin.svg */}
       <div className="mt-30">
+        <h3 className="table-tit">무재해운동 이력</h3>
         <AppTable rowData={rowData} columns={columns} customButtons={customButtons} />
       </div>
       {/*//그리드영역 */}
