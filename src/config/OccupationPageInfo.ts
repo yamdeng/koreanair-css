@@ -55,6 +55,18 @@ import POccupationMu4P5list from '@/components/publish/occupation/POccupationMu4
 import POccupationMu4P5edit from '@/components/publish/occupation/POccupationMu4P5edit';
 import POccupationMu5P1list from '@/components/publish/occupation/POccupationMu5P1list';
 import POccupationMu5P2edit from '@/components/publish/occupation/POccupationMu5P2edit';
+import POccupationMu5P3list from '@/components/publish/occupation/POccupationMu5P3list';
+import POccupationMu5P3edit from '@/components/publish/occupation/POccupationMu5P3edit';
+import POccupationMu5P4list from '@/components/publish/occupation/POccupationMu5P4list';
+import POccupationMu5P4edit from '@/components/publish/occupation/POccupationMu5P4edit';
+import POccupationMu5P5list from '@/components/publish/occupation/POccupationMu5P5list';
+import POccupationMu5P5list1 from '@/components/publish/occupation/POccupationMu5P5list1';
+import POccupationMu6P3list from '@/components/publish/occupation/POccupationMu6P3list';
+import POccupationMu6P3list1 from '@/components/publish/occupation/POccupationMu6P3list1';
+import POccupationMu6P4list from '@/components/publish/occupation/POccupationMu6P4list';
+import POccupationMu6P4list1 from '@/components/publish/occupation/POccupationMu6P4list1';
+import POccupationMu6P4list2 from '@/components/publish/occupation/POccupationMu6P4list2';
+import POccupationMu6P4list3 from '@/components/publish/occupation/POccupationMu6P4list3';
 
 const OccupationPageInfo: any = {};
 
@@ -449,14 +461,98 @@ OccupationPageInfo.list = [
     Component: POccupationMu5P1list,
     path: 'POccupationMu5P1list',
     description: '',
-    success: false,
+    success: true,
   },
   {
-    title: '안전점검 > 위험성 평가-등록-사전준비',
+    title: '위험성평가 > 위험성 평가-등록-사전준비',
     Component: POccupationMu5P2edit,
     path: 'POccupationMu5P2edit',
     description: '',
     success: false,
+  },
+  {
+    title: '위험성평가 > 감소대책 수립 및 실시-리스트',
+    Component: POccupationMu5P3list,
+    path: 'POccupationMu5P3list',
+    description: '',
+    success: true,
+  },
+  {
+    title: '위험성평가 > 감소대책 수립 및 실시-등록',
+    Component: POccupationMu5P3edit,
+    path: 'POccupationMu5P3edit',
+    description: '',
+    success: false,
+  },
+  {
+    title: '위험성평가 > 협력사 위험성 평가-리스트',
+    Component: POccupationMu5P4list,
+    path: 'POccupationMu5P4list',
+    description: '',
+    success: true,
+  },
+  {
+    title: '위험성평가 > 협력사 위험성 평가-등록',
+    Component: POccupationMu5P4edit,
+    path: 'POccupationMu5P4edit',
+    description: '',
+    success: true,
+  },
+  {
+    title: '위험성평가 > 중요 위험관리-위험성평가현황',
+    Component: POccupationMu5P5list,
+    path: 'POccupationMu5P5list',
+    description: '',
+    success: true,
+  },
+  {
+    title: '위험성평가 > 중요 위험관리-개선진행현황',
+    Component: POccupationMu5P5list1,
+    path: 'POccupationMu5P5list1',
+    description: '',
+    success: true,
+  },
+  {
+    title: '안전신고 > 관리지표-재해율-리스트',
+    Component: POccupationMu6P3list,
+    path: 'POccupationMu6P3list',
+    description: '',
+    success: true,
+  },
+  {
+    title: '안전신고 > 관리지표-강도율-리스트',
+    Component: POccupationMu6P3list1,
+    path: 'POccupationMu6P3list1',
+    description: '',
+    success: true,
+  },
+  {
+    title: '안전신고 > 재해분석-재해유형-리스트',
+    Component: POccupationMu6P4list,
+    path: 'POccupationMu6P4list',
+    description: '',
+    success: true,
+  },
+  {
+    title: '안전신고 > 재해분석-발생유형-리스트',
+    Component: POccupationMu6P4list1,
+    path: 'POccupationMu6P4list1',
+    description: '',
+    success: true,
+  },
+  {
+    title: '안전신고 > 재해분석-근로손실일-리스트',
+    Component: POccupationMu6P4list2,
+    path: 'POccupationMu6P4list2',
+    description: '',
+    success: true,
+  },
+  {
+    title: '안전신고 > 재해분석-근속연수-리스트',
+    Component: POccupationMu6P4list3,
+    path: 'POccupationMu6P4list3',
+    description: '',
+    success: true,
   },
 ];
 export default OccupationPageInfo;

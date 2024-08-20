@@ -11,26 +11,10 @@ import AppRangeDatePicker from '@/components/common/AppRangeDatePicker';
 import AppTimePicker from '@/components/common/AppTimePicker';
 import AppAutoComplete from '@/components/common/AppAutoComplete';
 
-function POccupationMu5P1list() {
+function POccupationMu5P4list() {
   const [inputValue, setInputValue] = useState('');
   const rowData = getAllData();
   const columns = testColumnInfos;
-
-  const customButtons = [
-    {
-      title: '행추가',
-      onClick: () => {
-        alert('행추가');
-      },
-    },
-    {
-      title: '전체삭제',
-      onClick: () => {
-        alert('전체삭제');
-      },
-    },
-  ];
-
   return (
     <>
       {/*경로 */}
@@ -43,13 +27,13 @@ function POccupationMu5P1list() {
             <a href="javascript:void(0);">위험성평가</a>
           </li>
           <li className="breadcrumb-item">
-            <a href="javascript:void(0);">위험성평가조회</a>
+            <a href="javascript:void(0);">협력사 위험성 평가</a>
           </li>
         </ol>
       </div>
       {/*경로 */}
       <div className="conts-title">
-        <h2>위험성평가조회</h2>
+        <h2>협력사 위험성 평가</h2>
       </div>
       {/*검색영역 */}
       <div className="boxForm">
@@ -58,9 +42,29 @@ function POccupationMu5P1list() {
           <div className="form-table">
             <div className="form-cell wid50">
               <div className="form-group wid100">
+                <AppSelect label={'작성자'} />
+              </div>
+            </div>
+            <div className="form-cell wid100">
+              <div className="form-group form-glow">
+                <div className="df">
+                  <div className="date1">
+                    <AppDatePicker label="작성기간" />
+                  </div>
+                  <span className="unt">~</span>
+                  <div className="date2">
+                    <AppDatePicker label="작성기간" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="form-cell wid50">
+              <div className="form-group wid100">
                 <AppSelect label={'부문'} />
               </div>
             </div>
+          </div>
+          <div className="form-table">
             <div className="form-cell wid50">
               <div className="form-group wid100">
                 <AppAutoComplete label={'부서'} />
@@ -68,31 +72,24 @@ function POccupationMu5P1list() {
             </div>
             <div className="form-cell wid50">
               <div className="form-group wid100">
-                <AppAutoComplete label={'작성자'} />
+                <AppTextInput label={'협력사'} />
               </div>
             </div>
-          </div>
-          <div className="form-table">
+            <div className="form-cell wid50">
+              <div className="form-group wid100">
+                <AppSelect label={'평가구분'} />
+              </div>
+            </div>
             <div className="form-cell wid50">
               <div className="form-group wid100">
                 <AppDatePicker label={'평가년도'} />
               </div>
             </div>
-            <div className="form-cell wid50">
-              <div className="form-group wid100">
-                <AppSelect label={'평가시기'} />
-              </div>
-            </div>
-            <div className="form-cell wid50">
-              <div className="form-group wid100">
-                <AppTextInput label="문서번호" />
-              </div>
-            </div>
           </div>
           <div className="form-table">
             <div className="form-cell wid50">
               <div className="form-group wid100">
-                <AppTextInput label="제목" />
+                <AppTextInput label={'제목'} />
               </div>
             </div>
           </div>
@@ -111,7 +108,7 @@ function POccupationMu5P1list() {
 
       {/*그리드영역 */}
       <div className="">
-        <AppTable rowData={rowData} columns={columns} customButtons={customButtons} />
+        <AppTable rowData={rowData} columns={columns} />
       </div>
       {/*//그리드영역 */}
 
@@ -126,4 +123,4 @@ function POccupationMu5P1list() {
   );
 }
 
-export default POccupationMu5P1list;
+export default POccupationMu5P4list;

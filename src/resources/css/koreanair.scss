@@ -398,3 +398,18 @@
     .left-table th, td {padding: 1.0rem 2.4rem; text-align: center;}
     .right-table {display: inline-block; width: auto; vertical-align: top; background-color: brown;}
     }
+
+
+    .table-tit {
+      color: var(--color-darkblue-100);
+      font-size: 1.8rem;
+      font-weight: 700;
+      padding-bottom: 1.0rem;
+    }
+    .graph {
+      width: 100%;
+      padding: 2.0rem;
+      margin-bottom: 3.0rem;
+      text-align: center;
+      overflow: auto;
+    }

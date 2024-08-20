@@ -11,7 +11,7 @@ import AppRangeDatePicker from '@/components/common/AppRangeDatePicker';
 import AppTimePicker from '@/components/common/AppTimePicker';
 import AppAutoComplete from '@/components/common/AppAutoComplete';
 
-function POccupationMu5P1list() {
+function POccupationMu5P3list() {
   const [inputValue, setInputValue] = useState('');
   const rowData = getAllData();
   const columns = testColumnInfos;
@@ -43,13 +43,13 @@ function POccupationMu5P1list() {
             <a href="javascript:void(0);">위험성평가</a>
           </li>
           <li className="breadcrumb-item">
-            <a href="javascript:void(0);">위험성평가조회</a>
+            <a href="javascript:void(0);">감소대책 수립 및 실시</a>
           </li>
         </ol>
       </div>
       {/*경로 */}
       <div className="conts-title">
-        <h2>위험성평가조회</h2>
+        <h2>감소대책 수립 및 실시</h2>
       </div>
       {/*검색영역 */}
       <div className="boxForm">
@@ -68,7 +68,7 @@ function POccupationMu5P1list() {
             </div>
             <div className="form-cell wid50">
               <div className="form-group wid100">
-                <AppAutoComplete label={'작성자'} />
+                <AppSelect label={'개선상태'} />
               </div>
             </div>
           </div>
@@ -85,14 +85,24 @@ function POccupationMu5P1list() {
             </div>
             <div className="form-cell wid50">
               <div className="form-group wid100">
-                <AppTextInput label="문서번호" />
+                <AppAutoComplete label={'감소대책 수립'} />
               </div>
             </div>
           </div>
           <div className="form-table">
             <div className="form-cell wid50">
               <div className="form-group wid100">
-                <AppTextInput label="제목" />
+                <AppSelect label={'위험요인'} />
+              </div>
+            </div>
+            <div className="form-cell wid50">
+              <div className="form-group wid100">
+                <AppSelect label={'위험성'} />
+              </div>
+            </div>
+            <div className="form-cell wid50">
+              <div className="form-group wid100">
+                <AppAutoComplete label={'위험성 결정'} />
               </div>
             </div>
           </div>
@@ -114,16 +124,8 @@ function POccupationMu5P1list() {
         <AppTable rowData={rowData} columns={columns} customButtons={customButtons} />
       </div>
       {/*//그리드영역 */}
-
-      {/* 하단버튼영역 */}
-      <div className="contents-btns">
-        <button type="button" name="button" className="btn_text text_color_neutral-10 btn_confirm">
-          등록
-        </button>
-      </div>
-      {/*//하단버튼영역*/}
     </>
   );
 }
 
-export default POccupationMu5P1list;
+export default POccupationMu5P3list;
