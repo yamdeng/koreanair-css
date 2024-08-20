@@ -25,6 +25,21 @@ import POccupationMu1P11list from '@/components/publish/occupation/POccupationMu
 import POccupationMu1P11list1 from '@/components/publish/occupation/POccupationMu1P11list1';
 import POccupationMu1P11edit from '@/components/publish/occupation/POccupationMu1P11edit';
 import POccupationMu1P11detail from '@/components/publish/occupation/POccupationMu1P11detail';
+import POccupationMu2P1list from '@/components/publish/occupation/POccupationMu2P1list';
+import POccupationMu2P1list1 from '@/components/publish/occupation/POccupationMu2P1list1';
+import POccupationMu2P2list from '@/components/publish/occupation/POccupationMu2P2list';
+import POccupationMu2P3list from '@/components/publish/occupation/POccupationMu2P3list';
+import POccupationMu2P4list from '@/components/publish/occupation/POccupationMu2P4list';
+import POccupationMu2P5list from '@/components/publish/occupation/POccupationMu2P5list';
+import POccupationMu2P6list from '@/components/publish/occupation/POccupationMu2P6list';
+import POccupationMu2P6edit from '@/components/publish/occupation/POccupationMu2P6edit';
+import POccupationMu2P7list from '@/components/publish/occupation/POccupationMu2P7list';
+import POccupationMu2P7list1 from '@/components/publish/occupation/POccupationMu2P7list1';
+import POccupationMu2P7edit from '@/components/publish/occupation/POccupationMu2P7edit';
+import POccupationMu2P8list from '@/components/publish/occupation/POccupationMu2P8list';
+import POccupationMu2P8edit from '@/components/publish/occupation/POccupationMu2P8edit';
+import POccupationMu2P9list from '@/components/publish/occupation/POccupationMu2P9list';
+import POccupationMu2P9edit from '@/components/publish/occupation/POccupationMu2P9edit';
 import POccupationMu3P1list from '@/components/publish/occupation/POccupationMu3P1list';
 import POccupationMu3P1edit from '@/components/publish/occupation/POccupationMu3P1edit';
 import POccupationMu3P2list from '@/components/publish/occupation/POccupationMu3P2list';
@@ -263,6 +278,111 @@ OccupationPageInfo.list = [
     path: 'POccupationMu1P11detail',
     description: '',
     success: true,
+  },
+  {
+    title: '안전교육 > 교육현황조회-개인별-리스트',
+    Component: POccupationMu2P1list,
+    path: 'POccupationMu2P1list',
+    description: '',
+    success: false,
+  },
+  {
+    title: '안전교육 > 교육현황조회-교육유형별-리스트',
+    Component: POccupationMu2P1list1,
+    path: 'POccupationMu2P1list1',
+    description: '',
+    success: false,
+  },
+  {
+    title: '안전교육 > 근로자 정기교육-리스트',
+    Component: POccupationMu2P2list,
+    path: 'POccupationMu2P2list',
+    description: '',
+    success: false,
+  },
+  {
+    title: '안전교육 > 관리감독자 정기교육-리스트',
+    Component: POccupationMu2P3list,
+    path: 'POccupationMu2P3list',
+    description: '',
+    success: false,
+  },
+  {
+    title: '안전교육 > 직무교육-리스트',
+    Component: POccupationMu2P4list,
+    path: 'POccupationMu2P4list',
+    description: '',
+    success: false,
+  },
+  {
+    title: '안전교육 > 채용시 교육-리스트',
+    Component: POccupationMu2P5list,
+    path: 'POccupationMu2P5list',
+    description: '',
+    success: false,
+  },
+  {
+    title: '안전교육 > 작업내용 변경시 교육-리스트',
+    Component: POccupationMu2P6list,
+    path: 'POccupationMu2P6list',
+    description: '',
+    success: false,
+  },
+  {
+    title: '안전교육 > 작업내용 변경시 교육-등록',
+    Component: POccupationMu2P6edit,
+    path: 'POccupationMu2P6edit',
+    description: '',
+    success: false,
+  },
+  {
+    title: '안전교육 > 특별교육-교육현황-리스트',
+    Component: POccupationMu2P7list,
+    path: 'POccupationMu2P7list',
+    description: '',
+    success: false,
+  },
+  {
+    title: '안전교육 > 특별교육-개인별현황-리스트',
+    Component: POccupationMu2P7list1,
+    path: 'POccupationMu2P7list1',
+    description: '',
+    success: false,
+  },
+  {
+    title: '안전교육 > 특별교육-등록',
+    Component: POccupationMu2P7edit,
+    path: 'POccupationMu2P7edit',
+    description: '',
+    success: false,
+  },
+  {
+    title: '안전교육 > TBM-리스트',
+    Component: POccupationMu2P8list,
+    path: 'POccupationMu2P8list',
+    description: '',
+    success: false,
+  },
+  {
+    title: '안전교육 > TBM-등록',
+    Component: POccupationMu2P8edit,
+    path: 'POccupationMu2P8edit',
+    description: '',
+    success: false,
+  },
+  {
+    title: '안전교육 > 서명지관리-리스트',
+    Component: POccupationMu2P9list,
+    path: 'POccupationMu2P9list',
+    description: '',
+    success: false,
+  },
+  {
+    title: '안전교육 > 서명지관리-등록',
+    Component: POccupationMu2P9edit,
+    path: 'POccupationMu2P9edit',
+    description: '',
+    success: false,
   },
   {
     title: '안전관리 > 중대재해대응훈련-리스트',
