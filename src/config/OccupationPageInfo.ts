@@ -36,6 +36,7 @@ import POccupationMu3P4list from '@/components/publish/occupation/POccupationMu3
 import POccupationMu3P4list1 from '@/components/publish/occupation/POccupationMu3P4list1';
 import POccupationMu3P4edit from '@/components/publish/occupation/POccupationMu3P4edit';
 import POccupationMu3P5list from '@/components/publish/occupation/POccupationMu3P5list';
+import POccupationMu3P5edit from '@/components/publish/occupation/POccupationMu3P5edit';
 import POccupationMu3P6list from '@/components/publish/occupation/POccupationMu3P6list';
 import POccupationMu3P6edit from '@/components/publish/occupation/POccupationMu3P6edit';
 import POccupationMu3P6list1 from '@/components/publish/occupation/POccupationMu3P6list1';
@@ -55,6 +56,9 @@ import POccupationMu4P5list from '@/components/publish/occupation/POccupationMu4
 import POccupationMu4P5edit from '@/components/publish/occupation/POccupationMu4P5edit';
 import POccupationMu5P1list from '@/components/publish/occupation/POccupationMu5P1list';
 import POccupationMu5P2edit from '@/components/publish/occupation/POccupationMu5P2edit';
+import POccupationMu5P2edit1 from '@/components/publish/occupation/POccupationMu5P2edit1';
+import POccupationMu5P2edit2 from '@/components/publish/occupation/POccupationMu5P2edit2';
+import POccupationMu5P2edit3 from '@/components/publish/occupation/POccupationMu5P2edit3';
 import POccupationMu5P3list from '@/components/publish/occupation/POccupationMu5P3list';
 import POccupationMu5P3edit from '@/components/publish/occupation/POccupationMu5P3edit';
 import POccupationMu5P4list from '@/components/publish/occupation/POccupationMu5P4list';
@@ -338,6 +342,13 @@ OccupationPageInfo.list = [
     success: true,
   },
   {
+    title: '안전관리 > 협력업체-등록',
+    Component: POccupationMu3P5edit,
+    path: 'POccupationMu3P5edit',
+    description: '',
+    success: false,
+  },
+  {
     title: '안전관리 > 적격수급업체평가-평가-리스트',
     Component: POccupationMu3P6list,
     path: 'POccupationMu3P6list',
@@ -363,7 +374,7 @@ OccupationPageInfo.list = [
     Component: POccupationMu3P6edit1,
     path: 'POccupationMu3P6edit1',
     description: '',
-    success: false,
+    success: true,
   },
   {
     title: '안전관리 > 관리감독자평가-리스트',
@@ -467,6 +478,27 @@ OccupationPageInfo.list = [
     title: '위험성평가 > 위험성 평가-등록-사전준비',
     Component: POccupationMu5P2edit,
     path: 'POccupationMu5P2edit',
+    description: '',
+    success: false,
+  },
+  {
+    title: '위험성평가 > 위험성 평가-등록-유해 위험요인 파악',
+    Component: POccupationMu5P2edit1,
+    path: 'POccupationMu5P2edit1',
+    description: '',
+    success: false,
+  },
+  {
+    title: '위험성평가 > 위험성 평가-등록-위험성 결정',
+    Component: POccupationMu5P2edit2,
+    path: 'POccupationMu5P2edit2',
+    description: '',
+    success: false,
+  },
+  {
+    title: '위험성평가 > 위험성 평가-등록-첨부문서',
+    Component: POccupationMu5P2edit3,
+    path: 'POccupationMu5P2edit3',
     description: '',
     success: false,
   },

@@ -173,7 +173,26 @@ function POccupationMu3P6edit1() {
                   <div className="form-table">
                     <div className="form-cell wid50">
                       <div className="form-group wid100">
-                        <AppTextInput label="주요업무" />
+                        <AppTextInput label="계약명" required />
+                      </div>
+                    </div>
+                  </div>
+                  <div className="form-table">
+                    <div className="form-cell wid50">
+                      <div className="form-group wid100 mr5">
+                        <textarea
+                          id="testArea1"
+                          className="form-tag"
+                          style={{ width: '100%' }}
+                          name="testArea1"
+                          value={inputValue}
+                          onChange={(event) => {
+                            setInputValue(event.target.value);
+                          }}
+                        />
+                        <label className="f-label" htmlFor="testArea1">
+                          주요업무 {/*<span className="required">*</span>*/}
+                        </label>
                       </div>
                     </div>
                   </div>
