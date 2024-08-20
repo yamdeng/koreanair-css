@@ -83,7 +83,7 @@ function SafetyDetail() {
       {/*경로 */}
       <div className="conts-title">
         <h2>
-          보고서 보기{' '}
+          보고서 보기
           <span>
             <a href="javascript:void(0);">ASR-100308</a>
           </span>
@@ -139,8 +139,10 @@ function SafetyDetail() {
               </a>
             </li>
           </ol>
+          {/*접수단계 step*/}
           <div className="c-step-wrap -mb-8n-3">
             <ol className="c-step-list default">
+              {/*선택되는 부분에 class명 active붙이기*/}
               <li className="active">
                 <p className="info-title">
                   <span className="hide">1단계</span> 보고서접수
@@ -197,65 +199,8 @@ function SafetyDetail() {
               </li>
             </ol>
           </div>
+          {/*//접수단계 step*/}
         </div>
-        {/* <div className="c-step-wrap -mb-8n-3">
-          <ol className="c-step-list default">
-            <li className="active">
-              <p className="info-title">
-                <span className="hide">1단계</span> 보고서접수
-                <span className="hide">현재 </span>
-              </p>
-            </li>
-            <li className="">
-              <p className="info-title">
-                <span className="hide">2단계</span> 조회
-                <span className="hide">현재 </span>
-              </p>
-            </li>
-            <li className="">
-              <p className="info-title">
-                <span className="hide">3단계</span> 조회
-                <span className="hide">현재 </span>
-              </p>
-            </li>
-            <li className="">
-              <p className="info-title">
-                <span className="hide">4단계</span> 조회
-                <span className="hide">현재 </span>
-              </p>
-            </li>
-            <li className="">
-              <p className="info-title">
-                <span className="hide">5단계</span> 조회
-                <span className="hide">현재 </span>
-              </p>
-            </li>
-            <li className="">
-              <p className="info-title">
-                <span className="hide">6단계</span> 조회
-                <span className="hide">현재 </span>
-              </p>
-            </li>
-            <li className="">
-              <p className="info-title">
-                <span className="hide">7단계</span> 조회
-                <span className="hide">현재 </span>
-              </p>
-            </li>
-            <li className="">
-              <p className="info-title">
-                <span className="hide">8단계</span> 조회
-                <span className="hide">현재 </span>
-              </p>
-            </li>
-            <li className="">
-              <p className="info-title">
-                <span className="hide">9단계</span> 조회
-                <span className="hide">현재 </span>
-              </p>
-            </li>
-          </ol>
-        </div>*/}
       </div>
       {/* 보고서 상세 toggle*/}
       <div className="info-wrap toggle">
@@ -269,6 +214,7 @@ function SafetyDetail() {
           <dd className="tg-conts">
             <div className="edit-area">
               <div className="detailForm">보고서내용</div>
+              {/* 버튼*/}
               <div className="contents-btns">
                 <button type="button" name="button" className="btn_text text_color_neutral-10 btn_conblue">
                   재작성요청
@@ -289,6 +235,7 @@ function SafetyDetail() {
                   목록
                 </button>
               </div>
+              {/* //버튼*/}
             </div>
           </dd>
         </dl>
@@ -301,13 +248,48 @@ function SafetyDetail() {
           <dd className="tg-conts">
             <div className="edit-area">
               <div className="detailForm">
+                <div className="detailForm-detail list-group">
+                  <div className="detailForm-detail list-group">
+                    <div className="list bx-toggle">
+                      <dl className="tg-item rbox01 ">
+                        <dt>
+                          <button type="button" className="tg-btn">
+                            접수<span className=""></span>
+                          </button>
+                        </dt>
+                        <dd className="tg-conts">
+                          <div className="edit-area">
+                            {/*상세-보고서접수*/}
+                            <div>
+                              <div className="detailForm-detail list-group">
+                                <div className="list bx-toggle">
+                                  <dl className="tg-item rbox01 ">
+                                    <dt>
+                                      <button type="button" className="tg-btn">
+                                        보고서접수<span className=""></span>
+                                      </button>
+                                    </dt>
+                                    <dd className="tg-conts" style={{ display: 'none' }}>
+                                      <div className="edit-area">dfddfd</div>
+                                    </dd>
+                                  </dl>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </dd>
+                      </dl>
+                    </div>
+                  </div>
+                </div>
+
                 {/*탭 */}
                 <div className="menu-tab-nav">
                   <div className="menu-tab">
-                    <a href="javascript:void(0);" id="1" className="" data-label="접수">
+                    <a href="javascript:void(0);" id="1" className="active" data-label="접수">
                       접수
                     </a>
-                    <a href="javascript:void(0);" id="2" className="active" data-label="1차 위험도 평가">
+                    <a href="javascript:void(0);" id="2" className="" data-label="1차 위험도 평가">
                       1차 위험도 평가
                     </a>
                     <a href="javascript:void(0);" id="3" className="" data-label="경감조치">

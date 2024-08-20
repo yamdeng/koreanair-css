@@ -311,6 +311,9 @@
 .text_color_neutral-10 {
   color: var(--color-neutral-10); 
 }
+.text_color-Warning{
+  color: var( --color-Warning); 
+}
 .pop_flex_group {
   display: flex;
   height: 100%;
@@ -623,6 +626,8 @@
 
 .RiskLevel-box .RiskLevel-area .Level-area .LevelLeft{float:left;width:40%}
 .RiskLevel-box .RiskLevel-area .Level-area .LevelRight{float:right;width:60%}
+.RiskLevel-box .RiskLevel-area .Level-area .LevelRight .flex-box{display:flex;justify-content:space-between;width:100%}
+.RiskLevel-box .RiskLevel-area .Level-area .LevelRight .flex-box .total{margin:1.6rem 0 1.0rem 0;font-size:1.6rem}
 .RiskLevel-box .RiskLevel-area .Level-area-bottom{display:block;width:100%;margin-top:0.5rem}
 
 .tableTop{border-top:0.1rem solid var(--color-darkblue-100)}

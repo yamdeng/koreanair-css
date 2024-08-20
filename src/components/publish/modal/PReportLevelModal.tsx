@@ -341,7 +341,13 @@ function ReportLevelModal(props) {
                   </table>
                 </div>
                 <div className="LevelRight">
-                  <p className="h5-tit">Risk</p>
+                  <div className="flex-box">
+                    <div className="h5-tit">Risk</div>
+                    <span className="total">
+                      총 : <span className="text_color-Warning">861</span>건
+                    </span>
+                  </div>
+
                   <table className="RiskLevelTable Risk">
                     <caption></caption>
                     <colgroup></colgroup>
