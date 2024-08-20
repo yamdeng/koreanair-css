@@ -6,8 +6,11 @@ import iconSearchImage from '@/resources/images/icon_search.svg';
 import iconAlarmImage from '@/resources/images/icon_alram.svg';
 import iconSettingImage from '@/resources/images/icon_setting.svg';
 import closeImage from '@/resources/images/close.svg';
+import { useStore } from 'zustand';
+import useAppStore from '@/store/useAppStore';
 
 export default function AviationLayout() {
+  const { isAviationPortal } = useStore(useAppStore, (state) => state) as any;
   const [displayLeftMenu, setDisplayLeftMenu] = useState(false);
   const toggleLeftMenu = () => {
     setDisplayLeftMenu(!displayLeftMenu);
@@ -187,7 +190,7 @@ export default function AviationLayout() {
         </div>
       </div>
 
-      <div className="contents Aviation">
+      <div className={isAviationPortal ? 'contents Aviation' : 'contents'}>
         <Outlet />
       </div>
     </div>

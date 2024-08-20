@@ -1,12 +1,22 @@
-import { useState } from 'react';
+import { useEffect } from 'react';
+import { useStore } from 'zustand';
+import useAppStore from '@/store/useAppStore';
 
 function PAviationPortal1() {
+  const { setIsAviationPortal } = useStore(useAppStore, (state) => state) as any;
+
+  useEffect(() => {
+    setIsAviationPortal(true);
+    return () => {
+      setIsAviationPortal(false);
+    };
+  }, []);
   return (
     <>
       <div className="left-box1">
         <div className="">dfdfd</div>
       </div>
-      <div className="right-box1">dfdf</div>
+      <div className="right-setIsAviationPortalbox1">dfdf</div>
       {/*<div className="main_slide">
         <div className="title-area">
           <div className="h2-tit">Top10 RISK AREAS</div>
