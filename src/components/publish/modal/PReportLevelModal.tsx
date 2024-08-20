@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import Modal from 'react-modal';
 import AppSelect from '@/components/common/AppSelect';
+import AppDatePicker from '@/components/common/AppDatePicker';
 
 function ReportLevelModal(props) {
   const { isOpen, closeModal } = props;
@@ -95,7 +96,7 @@ function ReportLevelModal(props) {
                   </div>
                 </div>
                 {/*버튼 */}
-                <div className="pop_btns">
+                <div className="pop_btns_">
                   <button className="btn_text text_color_neutral-10 btn_confirm">초기화</button>
                 </div>
               </div>
@@ -225,7 +226,71 @@ function ReportLevelModal(props) {
             <div className="RiskLevel-area">
               <div className="h4-tit">Risk Level</div>
               {/*검색영역*/}
-              <div className="search-area">ㅇㅇㅇ</div>
+              <div className="search-area">
+                <div className="form-table">
+                  <div className="form-cell wid50">
+                    <div className="chk-wrap">
+                      <label>
+                        <input type="checkbox" checked />
+                        <span>
+                          이벤트 타입 : <span className="txt">Bird Strike</span>
+                        </span>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div className="form-table">
+                  <div className="form-cell wid50">
+                    <div className="chk-wrap">
+                      <label>
+                        <input type="checkbox" />
+                        <span>
+                          Potential Consequence : <span className="txt">Aircraft Change</span>
+                        </span>
+                      </label>
+                    </div>
+                  </div>
+                  <div className="form-cell wid50">
+                    <div className="chk-wrap">
+                      <label>
+                        <input type="checkbox" />
+                        <span>
+                          Hazard Taxonomy : <span className="txt">Snow/Slush encounter</span>
+                        </span>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <hr className="line"></hr>
+                <div className="flex-e form-table mt10">
+                  <div className="form-area">
+                    <div className="flag-tag1">
+                      <span className="icon-flag1 txt btn-lightblue">기간선택</span>
+                      <span className="icon-flag1 txt btn-lightblue">전체</span>
+                      <span className="icon-flag1 txt btn-lightblue">최근3년</span>
+                      <span className="icon-flag1 txt btn-lightblue">1년</span>
+                      <span className="icon-flag1 txt btn-lightblue active">6개월</span>
+                      {/* 선택되는 부분은 class명에 active 표시*/}
+                    </div>
+                    <div className="form-cell">
+                      <div className="form-group">
+                        <div className="df">
+                          <div className="date1">
+                            <AppDatePicker label={'날짜선택'} />
+                          </div>
+                          <span className="unt">~</span>
+                          <div className="date2">
+                            <AppDatePicker label={'날짜선택'} />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="pop_btns_">
+                    <button className="btn_text text_color_neutral-10 btn_confirm">조회</button>
+                  </div>
+                </div>
+              </div>
               {/*//검색영역*/}
               <div className="Level-area">
                 <div className="LevelLeft">
@@ -245,32 +310,32 @@ function ReportLevelModal(props) {
                       <tr>
                         <th>5</th>
                         <td className="">매우높음</td>
-                        <td className="">일상적으로 발생할 것으로 예상됨</td>
-                        <td className="">5일 단위(1년 중 65건 이상)</td>
+                        <td className="tl">일상적으로 발생할 것으로 예상됨</td>
+                        <td className="tl">5일 단위(1년 중 65건 이상)</td>
                       </tr>
                       <tr>
                         <th>4</th>
                         <td className="">높음</td>
-                        <td className="">일상적으로 발생할 것으로 예상됨</td>
-                        <td className="">5일~월 단위(1년 중 65건 이상)</td>
+                        <td className="tl">일상적으로 발생할 것으로 예상됨</td>
+                        <td className="tl">5일~월 단위(1년 중 65건 이상)</td>
                       </tr>
                       <tr>
                         <th>3</th>
                         <td className="">보통</td>
-                        <td className="">일상적으로 발생할 것으로 예상됨</td>
-                        <td className="">월~년 단위(1년 중 65건 이상)</td>
+                        <td className="tl">일상적으로 발생할 것으로 예상됨</td>
+                        <td className="tl">월~년 단위(1년 중 65건 이상)</td>
                       </tr>
                       <tr>
                         <th>2</th>
                         <td className="">낮음</td>
-                        <td className="">일상적으로 발생할 것으로 예상됨</td>
-                        <td className="">년~10년 단위(1년 중 65건 이상)</td>
+                        <td className="tl">일상적으로 발생할 것으로 예상됨</td>
+                        <td className="tl">년~10년 단위(1년 중 65건 이상)</td>
                       </tr>
                       <tr>
                         <th>1</th>
                         <td className="">매우 낮음</td>
-                        <td className="">일상적으로 발생할 것으로 예상됨</td>
-                        <td className="">10년 이상에 헤당하는 단위</td>
+                        <td className="tl">일상적으로 발생할 것으로 예상됨</td>
+                        <td className="tl">10년 이상에 헤당하는 단위</td>
                       </tr>
                     </tbody>
                   </table>

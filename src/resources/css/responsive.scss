@@ -129,6 +129,7 @@
   .pop_btns {width: 100%; position: absolute; left: 0; bottom: 0; display: flex;}
   .pop_btns > button {border-radius: 0 !important; margin: 0; flex-basis: auto; flex-grow: 1;}
 
+
   .table-header .btns-area {display: none;}
   .boxForm .form-table {display: block;}
   .boxForm .form-table .form-cell {width: 100%; padding-right:0;}
@@ -188,7 +189,13 @@
   .RiskLevel-box .RiskLevel-area .Level-area .LevelLeft{width:100%}
   .RiskLevel-box .RiskLevel-area .Level-area .LevelRight{width:100%}
   .RiskLevel-area .h4-tit{display:block;margin-top:2.0rem}
-  
+  .RiskLevel-box .RiskLevel-area .search-area{overflow:hidden}
+  .RiskLevel-box .RiskLevel-area .search-area .form-table{display:block;width:100%}
+  .RiskLevel-box .RiskLevel-area .search-area .form-table .form-cell{width:100%}
+  .RiskLevel-box .RiskLevel-area .search-area .form-table .form-area{display:block}
+  .RiskLevel-box .RiskLevel-area .search-area .form-table .form-area .flag-tag1:first-child{gap:0}
+  .RiskLevel-box .RiskLevel-area .search-area .form-table .form-area .flag-tag1 span + span{margin-left:0.2rem}
+  .RiskLevel-box .RiskLevel-area .search-area .form-table .form-area .form-group{display:block;margin:1rem 0 1.5rem 0}
 
   
   .left-box {display: block; width: 100%; margin-bottom: 3.0rem; padding-right: 0;}
