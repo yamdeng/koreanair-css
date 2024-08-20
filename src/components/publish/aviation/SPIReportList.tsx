@@ -33,31 +33,42 @@ function SPIReportList() {
       </div>
 
       {/*검색영역 */}
-
       <div className="boxForm">
-        <div className="form-table">
-          <div className="form-cell wid20">
-            <div className="form-group wid100">
-              <AppSelect label={'게시판구분'} />
+        {/*area-detail명 옆에 active  */}
+        <div id="" className="area-detail active">
+          <div className="form-table">
+            <div className="form-cell wid30">
+              <div className="form-group wid100">
+                <AppSelect label={'게시판구분'} required />
+              </div>
             </div>
-          </div>
-          <div className="form-cell wid30">
-            <div className="form-group form-glow">
-              <div className="df">
-                <div className="date1">
-                  <AppDatePicker label={'작성일'} />
-                </div>
-                <span className="unt">~</span>
-                <div className="date2">
-                  <AppDatePicker label={'작성일'} />
+            <div className="form-cell wid30">
+              <div className="form-group form-glow">
+                <div className="df">
+                  <div className="date1">
+                    <AppDatePicker label={'작성일'} />
+                  </div>
+                  <span className="unt">~</span>
+                  <div className="date2">
+                    <AppDatePicker label={'작성일'} />
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-
-          <div className="form-cell wid30">
-            <div className="form-group wid100">
-              <AppTextInput label="제목" />
+            <div className="form-cell wid30">
+              <div className="form-group wid100">
+                <AppSelect label={'보고서구분'} required />
+              </div>
+            </div>
+            <div className="form-cell wid20">
+              <div className="form-group wid100">
+                <AppSelect label={'SPI 등록여부'} required />
+              </div>
+            </div>
+            <div className="form-cell wid20">
+              <div className="form-group wid100">
+                <AppSelect label={'N/A여부'} required />
+              </div>
             </div>
           </div>
           <div className="btn-area">
@@ -69,6 +80,10 @@ function SPIReportList() {
             </button>
           </div>
         </div>
+        {/*__control명 옆에 active  */}
+        <button type="button" name="button" className="arrow button _control active">
+          <span className="hide">접기</span>
+        </button>
       </div>
       {/* //검색영역 */}
 

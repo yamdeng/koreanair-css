@@ -137,7 +137,7 @@ AviationPageInfo.list = [
     Component: SPIReportList,
     path: 'SPIReportList',
     description: '',
-    success: false,
+    success: true,
   },
   {
     title: '[06.AUDIT] Checklist',
