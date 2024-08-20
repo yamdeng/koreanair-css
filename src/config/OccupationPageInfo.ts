@@ -342,7 +342,7 @@ OccupationPageInfo.list = [
     Component: POccupationMu3P6list,
     path: 'POccupationMu3P6list',
     description: '',
-    success: false,
+    success: true,
   },
   {
     title: '안전관리 > 적격수급업체평가-평가-등록',
@@ -352,14 +352,14 @@ OccupationPageInfo.list = [
     success: false,
   },
   {
-    title: '안전관리 > 적격수급업체평가-계약관리-리스트',
+    title: '안전관리 > 적격수급업체평가-업체관리-리스트',
     Component: POccupationMu3P6list1,
     path: 'POccupationMu3P6list1',
     description: '',
     success: false,
   },
   {
-    title: '안전관리 > 적격수급업체평가-계약관리-등록',
+    title: '안전관리 > 적격수급업체평가-업체관리-등록',
     Component: POccupationMu3P6edit1,
     path: 'POccupationMu3P6edit1',
     description: '',
@@ -419,7 +419,7 @@ OccupationPageInfo.list = [
     Component: POccupationMu4P3list,
     path: 'POccupationMu4P3list',
     description: '',
-    success: false,
+    success: true,
   },
   {
     title: '안전점검 > 합동 안전 보건 점검-등록',
@@ -433,7 +433,7 @@ OccupationPageInfo.list = [
     Component: POccupationMu4P4list,
     path: 'POccupationMu4P4list',
     description: '',
-    success: false,
+    success: true,
   },
   {
     title: '안전점검 > 반기/비정기 점검-등록',

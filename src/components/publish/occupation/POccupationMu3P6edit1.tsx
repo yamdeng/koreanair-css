@@ -13,6 +13,7 @@ import { Upload } from 'antd';
 import AppTable from '@/components/common/AppTable';
 import { getAllData } from '@/data/grid/example-data-new';
 import { testColumnInfos } from '@/data/grid/table-column';
+import AppRangeDatePicker from '@/components/common/AppRangeDatePicker';
 
 const props: any = {
   name: 'file',
@@ -70,6 +71,10 @@ function POccupationMu3P6edit1() {
   const [inputValue, setInputValue] = useState('');
   const rowData = getAllData();
   const columns = testColumnInfos;
+  const [firstDateValue, setFirstDateValue] = useState('');
+  const [firstDateRangeValue, setFirstDateRangeValue] = useState(['', '']);
+  const [firstTimeValue, setFirstTimeValue] = useState('22:25:50');
+
   return (
     <>
       {/*경로 */}
@@ -82,143 +87,101 @@ function POccupationMu3P6edit1() {
             <a href="javascript:void(0);">안전관리</a>
           </li>
           <li className="breadcrumb-item">
-            <a href="javascript:void(0);">외주작업허가</a>
+            <a href="javascript:void(0);">적격수급업체평가</a>
           </li>
         </ol>
       </div>
       {/*경로 */}
       <div className="conts-title">
-        <h2>외주작업허가</h2>
+        <h2>업체 등록</h2>
       </div>
       {/* 입력영역 */}
-      <div className="editbox">
-        <div className="form-table line">
-          <div className="form-cell wid50">
-            <div className="form-group wid100">
-              <AppTextInput label="작성일자" required disabled />
-            </div>
-          </div>
-          <div className="form-cell wid50">
-            <div className="form-group wid100">
-              <AppTextInput label="작성자" required disabled />
-            </div>
-          </div>
-          <div className="form-cell wid50">
-            <div className="form-group wid100">
-              <AppSelect label={'측정년도'} required />
-            </div>
-          </div>
-        </div>
-        <hr className="line dp-n"></hr>
-        <div className="form-table line">
-          <div className="form-cell wid50">
-            <div className="form-group wid100">
-              <AppSelect label={'반기'} required />
-            </div>
-          </div>
-          <div className="form-cell wid50">
-            <div className="form-group wid100">
-              <AppSelect label="구분" required />
-            </div>
-          </div>
-          <div className="form-cell wid50">
-            <div className="form-group wid100">
-              <AppSelect label="권역" required />
-            </div>
-          </div>
-        </div>
-        <hr className="line dp-n"></hr>
-        <div className="form-table line">
-          <div className="form-cell wid50">
-            <div className="form-group form-glow">
-              <div className="df">
-                <div className="date1">
-                  <AppDatePicker label="측정기간" required />
-                </div>
-                <span className="unt">~</span>
-                <div className="date2">
-                  <AppDatePicker label="측정기간" required />
+      <div className="info-wrap toggle">
+        <dl className="tg-item active">
+          {/* toggle 선택되면  열어지면 active붙임*/}
+          <dt>
+            <button type="button" className="btn-tg">
+              평가자 정보 <span className="active"></span>
+            </button>
+          </dt>
+          <dd className="tg-conts">
+            <div className="edit-area">
+              <div className="detail-form">
+                <div className="detail-list">
+                  <div className="form-table">
+                    <div className="form-cell wid50">
+                      <div className="form-group wid100">
+                        <AppSelect label="부문" />
+                      </div>
+                    </div>
+                    <div className="form-cell wid50">
+                      <div className="form-group wid100">
+                        <AppAutoComplete label="부서" />
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div className="form-cell wid50">
-            <div className="form-group wid100">
-              <AppTextInput label="측정기관" required />
-            </div>
-          </div>
-        </div>
-        <hr className="line dp-n"></hr>
-        <div className="form-table">
-          <div className="form-cell wid50">
-            <div className="form-group wid100">
-              <textarea
-                id="testArea1"
-                className="form-tag custom_textarea"
-                style={{ width: '100%' }}
-                name="testArea1"
-                value={inputValue}
-                onChange={(event) => {
-                  setInputValue(event.target.value);
-                }}
-              />
-              <label className="f-label" htmlFor="testArea1">
-                측정결과 <span className="required">*</span>
-              </label>
-            </div>
-          </div>
-        </div>
-        <hr className="line"></hr>
-        <div className="form-table">
-          <div className="form-cell wid50">
-            <div className="form-group wid100">
-              <textarea
-                id="testArea1"
-                className="form-tag custom_textarea"
-                style={{ width: '100%' }}
-                name="testArea1"
-                value={inputValue}
-                onChange={(event) => {
-                  setInputValue(event.target.value);
-                }}
-              />
-              <label className="f-label" htmlFor="testArea1">
-                의견
-              </label>
-            </div>
-          </div>
-        </div>
-        <hr className="line"></hr>
-        {/* 파일첨부영역 : button */}
-        <div className="form-table">
-          <div className="form-cell wid50">
-            <div className="form-group wid100">
-              <Upload {...props}>
-                <div className="btn-area">
-                  <button type="button" name="button" className="btn-big btn_text btn-darkblue-line">
-                    결과보고서 업로드
-                  </button>
+          </dd>
+          <dt>
+            <button type="button" className="btn-tg">
+              평가대상 정보 <span className="active"></span>
+            </button>
+          </dt>
+          <dd className="tg-conts">
+            <div className="edit-area">
+              <div className="detail-form">
+                <div className="detail-list">
+                  <div className="form-table">
+                    <div className="form-cell wid50">
+                      <div className="form-group wid100">
+                        <AppTextInput label="업체명" required />
+                      </div>
+                    </div>
+                    <div className="form-cell wid50">
+                      <div className="form-group wid100">
+                        <AppTextInput label="대표자" />
+                      </div>
+                    </div>
+                  </div>
+                  <div className="form-table">
+                    <div className="form-cell wid50">
+                      <div className="form-group wid100">
+                        <AppTextInput label="주소" />
+                      </div>
+                    </div>
+                  </div>
+                  <div className="form-table">
+                    <div className="form-cell wid50">
+                      <div className="form-group wid100">
+                        <AppRangeDatePicker
+                          label={'점검등록기간'}
+                          required
+                          onChange={(value) => setFirstDateRangeValue(value)}
+                          value={firstDateRangeValue}
+                          showNow={false}
+                        />
+                      </div>
+                    </div>
+                    <div className="form-cell wid50">
+                      <div className="form-group wid100">
+                        <AppTextInput label="계약기간" required />
+                      </div>
+                    </div>
+                  </div>
+                  <div className="form-table">
+                    <div className="form-cell wid50">
+                      <div className="form-group wid100">
+                        <AppTextInput label="주요업무" />
+                      </div>
+                    </div>
+                  </div>
                 </div>
-              </Upload>
+              </div>
             </div>
-          </div>
-        </div>
-        <hr className="line"></hr>
-        {/* 파일첨부영역 : button */}
-        <div className="form-table">
-          <div className="form-cell wid50">
-            <div className="form-group wid100">
-              <Upload {...props}>
-                <div className="btn-area">
-                  <button type="button" name="button" className="btn-big btn_text btn-darkblue-line">
-                    화학물질 사용량조사 업로드
-                  </button>
-                </div>
-              </Upload>
-            </div>
-          </div>
-        </div>
-        <hr className="line"></hr>
+          </dd>
+        </dl>
       </div>
       {/*//입력영역*/}
 

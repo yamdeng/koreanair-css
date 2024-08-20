@@ -20,6 +20,7 @@ import MU1P8Modal2 from '@/components/publish/modal/MU1P8Modal2';
 import MU1P7Modal from '@/components/publish/modal/MU1P7Modal';
 import MU1P11Modal from '@/components/publish/modal/MU1P11Modal';
 import MU3P5Modal from '@/components/publish/modal/MU3P5Modal';
+import MU4P1Modal from '@/components/publish/modal/MU4P1Modal';
 
 const ModalPageInfo: any = {};
 
@@ -175,6 +176,13 @@ ModalPageInfo.list = [
     title: '산업안전 > 안전관리 > 협력업체검색 팝업창',
     Component: MU3P5Modal,
     path: 'MU3P5Modal',
+    description: '',
+    success: true,
+  },
+  {
+    title: '산업안전 > 안전점검 > 점검표검색 팝업창',
+    Component: MU4P1Modal,
+    path: 'MU4P1Modal',
     description: '',
     success: true,
   },
