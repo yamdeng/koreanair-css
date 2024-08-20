@@ -22,6 +22,7 @@ import MU1P11Modal from '@/components/publish/modal/MU1P11Modal';
 import MU3P5Modal from '@/components/publish/modal/MU3P5Modal';
 import MU4P1Modal from '@/components/publish/modal/MU4P1Modal';
 import MU3P4Modal from '@/components/publish/modal/MU3P4Modal';
+import MU1P4Modal from '@/components/publish/modal/MU1P4Modal';
 
 const ModalPageInfo: any = {};
 
@@ -125,6 +126,20 @@ ModalPageInfo.list = [
     success: true,
   },
   {
+    title: '[항공안전>안전위험관리] 보고서분석 > 반려사유 팝업창',
+    Component: PReportListModal,
+    path: 'PReportListModal',
+    description: '',
+    success: true,
+  },
+  {
+    title: '[항공안전>안전위험관리] 보고서분석 > 위험레벨조회 팝업창',
+    Component: PReportLevelModal,
+    path: 'PReportLevelModal',
+    description: '',
+    success: true,
+  },
+  {
     title: '산업안전 > 안전경영 > 첨부링크 팝업창',
     Component: MU1P5detail2Modal,
     path: 'MU1P5detail2Modal',
@@ -132,11 +147,11 @@ ModalPageInfo.list = [
     success: true,
   },
   {
-    title: '[항공안전>안전위험관리] 보고서분석 > 반려사유 팝업창',
-    Component: PReportListModal,
-    path: 'PReportListModal',
+    title: '산업안전 > 안전경영 > 사용자정보 팝업창',
+    Component: MU1P4Modal,
+    path: 'MU1P4Modal',
     description: '',
-    success: true,
+    success: false,
   },
   {
     title: '산업안전 > 안전경영 > 법규등록대장 팝업창',
@@ -149,13 +164,6 @@ ModalPageInfo.list = [
     title: '산업안전 > 안전경영 > 법규등록대장 팝업창2',
     Component: MU1P8Modal2,
     path: 'MU1P8Modal2',
-    description: '',
-    success: true,
-  },
-  {
-    title: '[항공안전>안전위험관리] 보고서분석 > 위험레벨조회 팝업창',
-    Component: PReportLevelModal,
-    path: 'PReportLevelModal',
     description: '',
     success: true,
   },
