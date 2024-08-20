@@ -155,7 +155,7 @@ ModalPageInfo.list = [
     Component: PReportLevelModal,
     path: 'PReportLevelModal',
     description: '',
-    success: false,
+    success: true,
   },
   {
     title: '산업안전 > 안전경영 > 무재해운동시작 팝업창',
