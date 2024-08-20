@@ -21,7 +21,7 @@ function ReportLevelModal(props) {
           <div className="RiskLevel-box">
             <div className="RiskLevel-list">
               <div className="RiskLevel-top-box">
-                <div className="">
+                <div className="RiskLevel-Left">
                   <div className="h4-tit">Potential Consequence</div>
                   <div className="boxlist-wrap">
                     <div className="form-cell">
@@ -57,8 +57,8 @@ function ReportLevelModal(props) {
                     </div>
                   </div>
                 </div>
-                <div className=""></div>
-                <div className="">
+
+                <div className="RiskLevel-Right">
                   <div className="h4-tit">Hazard Taxonomy</div>
                   <div className="boxlist-wrap">
                     <div className="form-cell">
@@ -94,23 +94,87 @@ function ReportLevelModal(props) {
                     </div>
                   </div>
                 </div>
-                <div>버튼영역</div>
+                {/*버튼 */}
+                <div className="pop_btns">
+                  <button className="btn_text text_color_neutral-10 btn_confirm">초기화</button>
+                </div>
               </div>
 
               <div className="df">
                 <div className="list-box-a">
                   <div className="box-list">
                     <ul className="list">
-                      <li>
-                        <a href="javascript:void(0);" className="active">
-                          Aircraft Change
-                        </a>
+                      <li className="active">
+                        <a href="javascript:void(0);">Aircraft Change</a>
                       </li>
                       <li>
                         <a href="javascript:void(0);">Boarding Refusal</a>
                       </li>
                       <li>
                         <a href="javascript:void(0);">Bomb threat</a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0);">Cabin Crew Illness</a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0);">Cabin Crew Incapacitation due to injury</a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0);">COVID-19 Cluster Infection</a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0);">Crew/Pax Injury</a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0);">Boarding Refusal</a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0);">Bomb threat</a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0);">Cabin Crew Illness</a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0);">Cabin Crew Incapacitation due to injury</a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0);">COVID-19 Cluster Infection</a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0);">Crew/Pax Injury</a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0);">Boarding Refusal</a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0);">Bomb threat</a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0);">Cabin Crew Illness</a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0);">Cabin Crew Incapacitation due to injury</a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0);">COVID-19 Cluster Infection</a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0);">Crew/Pax Injury</a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0);">Bomb threat</a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0);">Cabin Crew Illness</a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0);">Cabin Crew Incapacitation due to injury</a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0);">COVID-19 Cluster Infection</a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0);">Crew/Pax Injury</a>
                       </li>
                       <li>
                         <a href="javascript:void(0);">Cabin Crew Illness</a>
