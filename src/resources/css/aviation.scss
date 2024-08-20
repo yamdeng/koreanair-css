@@ -196,3 +196,20 @@
 .info-board td{text-align:center;padding:1.0rem 0;border-bottom:0.1rem solid var(--color-neutral-40);border-right: 0.1rem solid var(--color-neutral-40)}
 .info-board td:last-child{border-right:0}
 .info-board tr.cons-bottom{background-color:var(--color-neutral-20)}
+
+/*보고서접수상세*/
+.editbox.report{position:relative;border-top:0;display:inline-block;width:100%}
+.editbox.report .header-tit{font-size:1.8rem;color:var(--color-mblue-100);font-weight:600}
+.ant-row{display:flex;flex-flow:row wrap}
+.ant-col{position:relative;max-width:100%;min-height:0.1rem}
+.text-desc-type1 .ant-col[role="label"]{display:inline-flex;font-weight:500;color:var(--color-neutral-90);font-size:1.3rem}
+.text-desc-type1 .ant-col[role="data"]{color:var(--color-mblue-100);margin-right:0.3rem}
+.ant-col-md-2{display:block;flex:0 0 8.33333333%;max-width:9.33333333%}
+.ant-col-xs-24 {flex:0 0 100% !important}
+
+.text-desc-type1 .MemberClass{display:flex;justify-content:start}
+.text-desc-type1 .MemberClass ul{width:100%;align-self:flex-start}
+.text-desc-type1 .MemberClass > ul li{position:relative;display:flex;-webkit-box-pack:start;justify-content:start;-webkit-box-align:center;align-items:center}
+.ant-tag{display:inline-block;box-sizing:border-box;line-height:1.5715;list-style:none;height:auto;margin:0 0.3rem 0 0;padding:0 0.7rem;font-size:1.2rem;white-space:nowrap;background:#fafafa;border: 1px solid #d9d9d9;border-radius:0.8rem;opacity: 1;transition: all .3s}
+.text-desc-type1 .MemberClass > ul li .InfoBox{display: inline-flex;justify-content:center;align-items:center;width:3.6rem;height:3.6rem;border-radius:50%;overflow:hidden;margin-right:0.8rem;background:url(/src/resources/images/icon-download.svg) 50% 50% / 100% no-repeat rgb(204, 204, 204)}
+.Info .Dept{font-size:1.2rem}

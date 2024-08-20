@@ -482,11 +482,11 @@ input, select{font-family:'KoreanAirSans'}
 .box-view-list .view-list .text-desc-type1 .desc-file a{position:relative;width:100%}
 .box-view-list .view-list .text-desc-type1 .desc-file a span:hover{color:var(--color-mblue-100)}
 .box-view-list .view-list .text-desc-type1 .desc-file .download{float:right;margin-right:1rem;background:url(/src/resources/images/icon-download.svg) center center no-repeat;font-size:0;width:2.3rem;height:2.3rem}
-.box-view-list .view-list .text-desc-type2{position:relative;display: inline-block;width:auto;padding-right:0.8rem;font-weight:400;font-size:1.6rem;color:var(--color-neutral-80);text-align:left;overflow:hidden;word-break:break-all;text-overflow:ellipsis;margin-right: 1.5rem;}
+.box-view-list .view-list .text-desc-type2{position:relative;display:inline-block;width:auto;padding-right:0.8rem;font-weight:400;font-size:1.6rem;color:var(--color-neutral-80);text-align:left;overflow:hidden;word-break:break-all;text-overflow:ellipsis;margin-right: 1.5rem;}
 .box-view-list .view-list .text-desc-type2 a:hover {text-decoration: underline;}
 
-.imgBoxWrap{position:relative;border:0.1rem solid var(--color-darkblue-100);background-color:var(--color-neutral-30)}
-.imgBox{position:relative;overflow:hidden;text-align:center;height:100px;width:100px}
+.imgBoxWrap{position:relative;display:inline-block;border:0.1rem solid var( --color-neutral-60);background-color:var(--color-neutral-30);border-radius:99.9rem;}
+.imgBox{position:relative;overflow:hidden;text-align:center;height:10.0rem;width:10.0rem}
 
 
 /*toggle*/
@@ -501,6 +501,8 @@ input, select{font-family:'KoreanAirSans'}
 .toggle .btn-tg:after{position:absolute;top:50%;right:0;content:'';display:inline-block;/*width:0.7rem;height:0.7rem;transform: translateY(-50%) rotate(45deg);*/margin:0 0 0 1.3rem;-webkit-transform: translateY(-50%) rotate(45deg);-webkit-transform-origin: center;transform-origin:center}
 .toggle .active .btn-tg:after{-webkit-transform:translateY(-50%) rotate(-135deg);transform:translateY(-50%) rotate(-135deg)}
 .toggle .active .tg-conts{display:block}
+
+.info-wrap .edit-area .detailForm > .editbox.report + .editbox.report{margin-top:2.5rem}
 
 /*pagination*/
 .pagination{margin:3.0rem 0 0 0;text-align:center}
