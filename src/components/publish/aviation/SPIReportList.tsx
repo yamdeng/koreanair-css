@@ -7,7 +7,7 @@ import AppDatePicker from '@/components/common/AppDatePicker';
 import AppSelect from '@/components/common/AppSelect';
 import AppTextInput from '@/components/common/AppTextInput';
 
-function SPIBoardList() {
+function SPIReportList() {
   const [inputValue, setInputValue] = useState('');
   const rowData = getAllData();
   const columns = testColumnInfos;
@@ -20,16 +20,16 @@ function SPIBoardList() {
             <a href="javascript:void(0);">홈</a>
           </li>
           <li className="breadcrumb-item">
-            <a href="javascript:void(0);">안전보증</a>
+            <a href="javascript:void(0);">SPI/SPT</a>
           </li>
           <li className="breadcrumb-item">
-            <a href="javascript:void(0);">게시판</a>
+            <a href="javascript:void(0);">Report List</a>
           </li>
         </ol>
       </div>
       {/*경로 */}
       <div className="conts-title">
-        <h2>게시판</h2>
+        <h2>Report List</h2>
       </div>
 
       {/*검색영역 */}
@@ -81,4 +81,4 @@ function SPIBoardList() {
   );
 }
 
-export default SPIBoardList;
+export default SPIReportList;
