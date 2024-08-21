@@ -3,6 +3,7 @@ import AppDatePicker from '@/components/common/AppDatePicker';
 import AppSelect from '@/components/common/AppSelect';
 import AppTextInput from '@/components/common/AppTextInput';
 import { useState } from 'react';
+import AppAutoComplete from '@/components/common/AppAutoComplete';
 import AppTextArea from '@/components/common/AppTextArea';
 import { Upload } from 'antd';
 const { Dragger } = Upload;
@@ -371,17 +372,15 @@ function SafetyDetail() {
                             <li className="accumlate-list">
                               <label className="t-label">Flight Crew</label>
                               <span className="text-desc-type1">
-                                <div role="data" className="ant-col ant-col-xs-24 MemberClass ">
-                                  <ul>
-                                    <li>
-                                      <span className="ant-tag">PF</span>
-                                      <span className="InfoBox">홍길동</span>
-                                      <div className="Info">
-                                        <div className="Name">김민준 (170****)</div>
-                                        <div className="Dept">3급 / 정책지원팀</div>
-                                      </div>
-                                    </li>
-                                  </ul>
+                                <div className="MemberClass">
+                                  <div className="flex-e">
+                                    <span className="ant-tag">PF</span>
+                                    <span className="InfoBox"></span>
+                                    <div className="Info">
+                                      <div className="Name">홍길동 (170****)</div>
+                                      <div className="Dept">상무대우수석사무장 / (주)대한항공</div>
+                                    </div>
+                                  </div>
                                 </div>
                               </span>
                             </li>
@@ -696,9 +695,13 @@ function SafetyDetail() {
                                               </div>
                                             </div>
                                           </div>
-                                          <div className="form-cell wid100">
-                                            <div className="group-box-wrap wid100">
-                                              <button type="button" className="btn-togo">
+                                          <div className="form-cell wid50">
+                                            <div className="btn-area">
+                                              <button
+                                                type="button"
+                                                name="button"
+                                                className="btn-sm btn_text btn-darkblue-line"
+                                              >
                                                 Report Links
                                               </button>
                                             </div>
@@ -727,11 +730,52 @@ function SafetyDetail() {
                                         <div className="form-table">
                                           <div className="form-cell wid50">
                                             <div className="form-group wid100">
-                                              <AppTextInput label={'정렬순서'} />
+                                              <AppSelect label={'LSC Member'} />
+                                            </div>
+                                          </div>
+                                          <div className="form-cell wid50">
+                                            <div className="form-group wid100">
+                                              <AppAutoComplete label={'LSC Member'} />
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div className="form-table SelList">
+                                          <div className="form-cell wid50">
+                                            <div className="form-group wid100">
+                                              <div className="SelectedList memberClass">
+                                                <ul>
+                                                  <li>
+                                                    <span className="InfoBox"></span>
+                                                    <div className="Info">
+                                                      <div className="Name">홍길동 (170****)</div>
+                                                      <div className="Dept">상무대우수석사무장 / (주)대한항공</div>
+                                                    </div>
+                                                    <span className="class leader">Leader</span>
+                                                  </li>
+                                                  <li>
+                                                    <span className="InfoBox"></span>
+                                                    <div className="Info">
+                                                      <div className="Name">홍길동 (170****)</div>
+                                                      <div className="Dept">상무대우수석사무장 / (주)대한항공</div>
+                                                    </div>
+                                                    <span className="class ">Leader</span>
+                                                  </li>
+                                                </ul>
+                                              </div>
                                             </div>
                                           </div>
                                         </div>
                                         <hr className="line"></hr>
+                                      </div>
+
+                                      <div className="btn-area">
+                                        <button
+                                          type="button"
+                                          name="button"
+                                          className="btn-sm btn_text btn-darkblue-line"
+                                        >
+                                          LSC Group 설정
+                                        </button>
                                       </div>
                                       {/*보고서접수-ASR*/}
                                     </div>

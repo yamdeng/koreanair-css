@@ -67,6 +67,7 @@
   .editbox .form-table .form-cell:nth-child(3) {padding-right: 0;}
   .editbox .line .form-cell {border-bottom: 0.1rem solid var(--color-neutral-40);}
   .dp-n {display: none;}
+  .editbox .form-table + .form-table.SelList{margin-top:-2.0rem}
   
   .btn-area {display:flex; width: 100%;}
   .btn-area .btn-sm {width: 100%;}
@@ -136,6 +137,10 @@
   .boxForm .form-table {display: block;}
   .boxForm .form-table .form-cell {width: 100%; padding-right:0;}
   .boxForm .form-table .wid-300 {max-width: 100%;}
+  .editbox .form-table + .form-table.SelList{margin-top:-2.0rem}
+  .SelectedList{width:100%}
+  .SelectedList > ul li{margin-bottom:1rem}
+  .SelectedList > ul li:last-child{margin-bottom:0}
 
   .btn-area {display:flex; width: 100%;}
   .btn-area .btn-sm {width: 100%;}
