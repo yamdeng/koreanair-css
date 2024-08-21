@@ -1,70 +1,12 @@
-import AppDatePicker from '@/components/common/AppDatePicker';
-import AppSearchInput from '@/components/common/AppSearchInput';
-import AppTextArea from '@/components/common/AppTextArea';
-import AppSelect from '@/components/common/AppSelect';
-import AppTable from '@/components/common/AppTable';
-import AppTextInput from '@/components/common/AppTextInput';
 import { getAllData } from '@/data/grid/example-data-new';
 import { testColumnInfos } from '@/data/grid/table-column';
-import InfoImage from '@/resources/images/img01.png';
-import { Upload } from 'antd';
-const { Dragger } = Upload;
-const props: any = {
-  name: 'file',
-  multiple: true,
-  defaultFileList: [
-    {
-      uid: '1',
-      name: 'xxx.png',
-      // status: 'uploading',
-      url: 'http://www.baidu.com/xxx.png',
-      percent: 33,
-    },
-    {
-      uid: '2',
-      name: 'yyy.png',
-      status: 'done',
-      url: 'http://www.baidu.com/yyy.png',
-    },
-    {
-      uid: '3',
-      name: 'zzz.png',
-      status: 'error',
-      response: 'Server Error 500',
-      // custom error message to show
-      url: 'http://www.baidu.com/zzz.png',
-    },
-  ],
-  action: 'https://660d2bd96ddfa2943b33731c.mockapi.io/api/upload',
-
-  onChange(info) {
-    const { status } = info.file;
-    if (status !== 'uploading') {
-      console.log(info.file, info.fileList);
-    }
-    if (status === 'done') {
-      alert(`${info.file.name} file uploaded successfully.`);
-    } else if (status === 'error') {
-      alert(`${info.file.name} file upload failed.`);
-    }
-  },
-
-  onRemove(file) {
-    return false;
-  },
-
-  onPreview(file) {
-    return false;
-  },
-
-  onDrop(e) {
-    console.log('Dropped files', e.dataTransfer.files);
-  },
-};
+import { useState } from 'react';
 
 function SafetyDetail() {
-  const rowData = getAllData();
-  const columns = testColumnInfos;
+  const [firstExpaned, setFirstExpaned] = useState(true);
+  const [secondExpaned, setSecondExpaned] = useState(true);
+  const [thirdExpaned, setThirdExpaned] = useState(true);
+  const [fourExpaned, setFourExpaned] = useState(true);
   return (
     <>
       {/*경로 */}
@@ -205,14 +147,14 @@ function SafetyDetail() {
       </div>
       {/* 보고서 상세 toggle*/}
       <div className="info-wrap toggle">
-        <dl className="tg-item active">
-          <dt>
+        <dl className={firstExpaned ? 'tg-item active' : 'tg-item'}>
+          <dt onClick={() => setFirstExpaned(!firstExpaned)}>
             <button type="button" className="btn-tg">
               {/* toggle 열어지면 active붙임*/}
-              1. 보고서 내용보기<span className="active"></span>
+              1. 보고서 내용보기<span className={firstExpaned ? 'active' : ''}></span>
             </button>
           </dt>
-          <dd className="tg-conts">
+          <dd className="tg-conts" style={{ display: firstExpaned ? '' : 'none' }}>
             <div className="edit-area">
               <div className="detailForm">
                 {/* 보고서내용보기 상세*/}
@@ -604,37 +546,37 @@ function SafetyDetail() {
             </div>
           </dd>
         </dl>
-        <dl className="tg-item">
-          <dt>
+        <dl className={secondExpaned ? 'tg-item active' : 'tg-item'}>
+          <dt onClick={() => setSecondExpaned(!secondExpaned)}>
             <button type="button" className="btn-tg">
-              2. 보고서 분석<span className="active"></span>
+              2. 보고서 분석<span className={secondExpaned ? 'active' : ''}></span>
             </button>
           </dt>
-          <dd className="tg-conts">
+          <dd className="tg-conts" style={{ display: secondExpaned ? '' : 'none' }}>
             <div className="edit-area">
               <div className="detailForm">
                 <div className="detailForm-detail-box list-group">
                   <div className="detailForm-detail list-group">
                     <div className="list bx-toggle">
                       <dl className="tg-item rbox01 ">
-                        <dt>
+                        <dt onClick={() => setThirdExpaned(!thirdExpaned)}>
                           <button type="button" className="tg-btn">
-                            2-1 접수<span className=""></span>
+                            2-1 접수<span className={thirdExpaned ? 'active' : ''}></span>
                           </button>
                         </dt>
-                        <dd className="tg-conts">
+                        <dd className="tg-conts" style={{ display: thirdExpaned ? '' : 'none' }}>
                           <div className="edit-area">
                             {/*보고서접수 상세*/}
                             <div>
                               <div className="detailForm-detail-3deps list-group">
                                 <div className="list bx-toggle">
                                   <dl className="tg-item rbox01 ">
-                                    <dt>
+                                    <dt onClick={() => setFourExpaned(!fourExpaned)}>
                                       <button type="button" className="tg-btn">
-                                        보고서접수<span className=""></span>
+                                        보고서접수<span className={fourExpaned ? 'active' : ''}></span>
                                       </button>
                                     </dt>
-                                    <dd className="tg-conts">
+                                    <dd className="tg-conts" style={{ display: fourExpaned ? '' : 'none' }}>
                                       <div className="edit-area">dfddfd</div>
                                     </dd>
                                   </dl>
