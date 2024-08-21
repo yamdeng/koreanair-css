@@ -41,10 +41,10 @@
 .RightLayer-Wrap{border:solid 1px red}
 
 /*지표정보*/
-.Status-area{position:relative}
-.Status-chart{display:flex;gap:0 2.0rem}
+.Status-area{position:relative;display:inline-table;width:100%}
+.Status-chart{display:flex;gap:0 2.0rem;width:100%}
 .Status-chart + .Status-chart{margin-top:2.5rem}
-.Status-chart .Status-col{position:relative;min-height: 1px;width:100%}
+.Status-chart .Status-col{position:relative;width:50%}
 .Status-chart .Status-col .h4{color:var(--color-darkblue-100);font-weight:500;font-size:1.8rem;line-height:2.5;letter-spacing:-0.1rem}
 .Status-chart .Status-col .h4 span{color:var(--color-negative)}
 .Status-chart .Status-col .Chart-box{border-radius:0.8rem;padding: 1rem;border:solid 0.1rem var(--color-neutral-01);background-color:var(--color-neutral-10);box-shadow:0 0.2rem 0.4rem 0 rgba(0, 0, 0, .05)}
