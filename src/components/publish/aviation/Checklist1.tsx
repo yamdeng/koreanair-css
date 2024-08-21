@@ -84,9 +84,6 @@ function Checklist1() {
             <button type="button" name="button" className="menu-tab-nav-more">
               <span className="hide">더보기</span>
             </button>
-            <button type="button" name="button" className="menu-tab-btn-next">
-              <span className="hide">다음 탭메뉴</span>
-            </button>
           </div>
         </div>
       </div>
@@ -117,20 +114,24 @@ function Checklist1() {
             </h4>
             <ul>
               <li className="list-space">
-                <button type="button" className="btn-list editChapter">
-                  <span className="hide">등록</span>
-                </button>
-                <a href="javascript:void(0);">
-                  안전보안일반12 <i>(29)</i>
-                </a>
+                <div className="ant-space">
+                  <button type="button" className="btn-list editChapter" style={{ display: 'none' }}>
+                    <span className="hide">등록</span>
+                  </button>
+                  <a href="javascript:void(0);">
+                    안전보안일반12 <i>(29)</i>
+                  </a>
+                </div>
               </li>
               <li className="list-space">
-                <button type="button" className="btn-list editChapter">
-                  <span className="hide">등록</span>
-                </button>
-                <a href="javascript:void(0);">
-                  종합통제12 <i>(29)</i>
-                </a>
+                <div className="ant-space">
+                  <button type="button" className="btn-list editChapter">
+                    <span className="hide">등록</span>
+                  </button>
+                  <a href="javascript:void(0);">
+                    종합통제12 <i>(29)</i>
+                  </a>
+                </div>
               </li>
               <li className="list-space">
                 <button type="button" className="btn-list editChapter">

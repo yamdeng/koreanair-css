@@ -14,7 +14,7 @@
   --color-lightblue-40:#BCE4F7;
   --color-lightblue-20:#DDF1FB;
   --color-lightblue-10:#EEF8FD;
-  --color-neutral-90:#252525;  
+  --color-neutral-90:#222222;  
   --color-neutral-80:#333333;
   --color-neutral-70:#5E5E5E;
   --color-neutral-60:#A4A4A4;
@@ -80,15 +80,14 @@ input[type=checkbox],input[type=radio]{padding:0;vertical-align:middle;margin-to
 /* checkbox, radio */
 [class^='radio-wrap'] > label{position:relative;overflow:hidden;cursor:pointer}
 [class^='radio-wrap'] > label > input{position:absolute;top:0;left:0;width:0;height:0;opacity:0}
-
 [class^="chk-wrap"] > label {position:relative;overflow:hidden;cursor:pointer}
 [class^="chk-wrap"] > label > input {position:absolute;top:0;left:0;width:0;height:0;opacity:0}
 
 /* 기본형 */
-.radio-wrap{/*display:inline-block;*/position: relative; line-height:0;border:0.1rem solid var(--color-neutral-40);border-radius:0.5rem;padding: 0 1.0rem;}
-.radio-wrap.border-no {border: 0;}
-.radio-wrap .input-box {position: relative;}
-.radio-wrap > label {display:inline-block;/*min-height:4.0rem;*/padding:0rem 0.9rem 0.2rem 2.5rem;line-height:2.2rem;margin:1.2rem 0 0 0.2rem}
+.radio-wrap{position:relative;line-height:0;border:0.1rem solid var(--color-neutral-40);border-radius:0.5rem;padding:0 1.0rem}
+.radio-wrap.border-no{border:0}
+.radio-wrap .input-box{position:relative}
+.radio-wrap > label{display:inline-block;padding:0rem 0.9rem 0.2rem 2.5rem;line-height:2.2rem;margin:1.2rem 0 0 0.2rem}
 .radio-wrap > label > input + span {display:block;color:var(--color-neutral-60);font-size:1.4rem}
 .radio-wrap > label > input:checked + span{color:var(--color-neutral-80);font-size:1.4rem}
 .radio-wrap > label > input + span:before, .radio-wrap > label > input + span:after{content:'';position:absolute;top:50%}
@@ -103,8 +102,8 @@ input[type=checkbox],input[type=radio]{padding:0;vertical-align:middle;margin-to
 .radio-wrap.error{border:solid 0.1rem var(--color-negative)}
 
 .chk-wrap {display:inline-block;line-height:0}
-.chk-wrap > label {display:inline-block;/*min-height:4.0rem;*/padding:0rem 0.9rem 0.2rem 2.5rem;line-height:2.2rem;margin: 1.2rem 0 0 0.2rem}
-.chk-wrap > label > input + span {display:block;color:var(--color-neutral-60);font-size:1.4rem}
+.chk-wrap > label {display:inline-block;padding:0rem 0.9rem 0.2rem 2.5rem;line-height:2.2rem;margin:1.2rem 0 0 0.2rem}
+.chk-wrap > label > input + span {display:block;color:var(--color-neutral-90);font-size:1.4rem}
 .chk-wrap > label > input:checked + span{color:var(--color-neutral-80);font-size:1.4rem}
 .chk-wrap > label > input + span:before, .chk-wrap > label > input + span:after{content:'';position:absolute;top:50%}
 .chk-wrap > label > input + span:before{left:0;width:1.6rem;height:1.6rem;background:transparent;border:0.1rem solid var(--color-neutral-60);border-radius:50%;-webkit-transform:translateY(-50%);transform:translateY(-50%)}
@@ -137,35 +136,17 @@ input, select{font-family:'KoreanAirSans'}
   border-radius: 0.3rem;
   overflow: hidden;
 }
-.filebox {border:  0.1rem solid var(--color-neutral-40); border-radius: 1.0rem; padding: 1.0rem;}
-.filebox.error {border:  0.1rem solid var(--color-negative); border-radius: 1.0rem; padding: 1.0rem;}
-.filebox .file-label{display: inline-block;
-  position: absolute;
+.filebox{border:0.1rem solid var(--color-neutral-40); border-radius: 1.0rem; padding:1.0rem}
+.filebox.error{border:0.1rem solid var(--color-negative);border-radius:1.0rem;padding:1.0rem}
+.filebox .file-label{display:inline-block;
+  position:absolute;
   left: 1rem;
   top: -1.4rem;
   background: var(--color-neutral-10);
   padding: 0 0.4rem;
   line-height: 1.4em;
   font-size: 1.4rem !important;
-  transition: all 0.2s ease;}
-/*.filebox label {
-  display: inline-block;
-  padding: 10px 20px;
-  color: #fff;
-  vertical-align: middle;
-  background-color: #999999;
-  cursor: pointer;
-  
-  margin-left: 10px;
-  display: inline-block;
-  position: absolute;
-  right: 0;
-  padding: 1.0rem;
-  height: 3.6rem;
-  font-size: 0;
-  background: url(../images/file.svg)center center no-repeat;
-  background-size: cover;
-}*/
+  transition: all 0.2s ease}
 .filebox input[type="file"] {
   position: absolute;
   width: 0;
@@ -478,7 +459,7 @@ input, select{font-family:'KoreanAirSans'}
 .box-view-list .view-list .accumlate-list{position:relative;display:block}
 .box-view-list .view-list .t-label{display:block;color:var(--color-neutral-70);font-weight:400;font-size:1.5rem;white-space:nowrap}
 .box-view-list .view-list .text-desc{display:block;width:100%;margin-top:2rem;font-weight:400;font-size:1.6rem;color:var(--color-neutral-80);text-align:left;overflow:hidden;word-break:break-all;text-overflow:ellipsis}
-.box-view-list .view-list .text-desc-type1{position:relative;display:block;width:100%;padding-right:0.8rem;font-weight:400;font-size:1.6rem;color:var(--color-neutral-80);text-align:left;overflow:hidden;word-break:break-all;text-overflow:ellipsis}
+.box-view-list .view-list .text-desc-type1{position:relative;display:block;width:100%;padding-right:0.8rem;font-weight:400;font-size:1.6rem;color:var(--color-neutral-90);text-align:left;overflow:hidden;word-break:break-all;text-overflow:ellipsis}
 .box-view-list .view-list .text-desc-type1 .desc-file a{position:relative;width:100%}
 .box-view-list .view-list .text-desc-type1 .desc-file a span:hover{color:var(--color-mblue-100)}
 .box-view-list .view-list .text-desc-type1 .desc-file .download{float:right;margin-right:1rem;background:url(/src/resources/images/icon-download.svg) center center no-repeat;font-size:0;width:2.3rem;height:2.3rem}
@@ -490,11 +471,11 @@ input, select{font-family:'KoreanAirSans'}
 
 
 /*toggle*/
-.info-wrap{/*padding:0px 2.0rem 0rem;*/border-top:0rem solid var(--color-darkblue-100);background-color:var(--color-neutral-10)}
+.info-wrap{border-top:0rem solid var(--color-darkblue-100);background-color:var(--color-neutral-10)}
 .info-wrap > dl > dt{padding:1.8rem 0 1.0rem;}
-.info-wrap > dl > dt .btn-tg{/*padding:0 6.7rem 0 0;*/font-family:"KoreanAirSans";font-size:2.0rem;color:var(--color-darkblue-100);font-weight:500}
+.info-wrap > dl > dt .btn-tg{font-family:"KoreanAirSans";font-size:2.0rem;color:var(--color-darkblue-100);font-weight:500}
 .info-wrap > dl > dd{/*margin:0 -2.0rem 1.0rem*/}
-.info-wrap .edit-area{/*padding:2.0rem 0;*/border-top:0.1rem solid var(--color-darkblue-100);/*border-bottom:0.1rem solid var(--color-neutral-30);background-color:var(--color-neutral-20);*/color:var(--color-neutral-80);line-height:2.0rem;font-size:1.6rem}
+.info-wrap .edit-area{border-top:0.1rem solid var(--color-darkblue-100);/*border-bottom:0.1rem solid var(--color-neutral-30);background-color:var(--color-neutral-20);*/color:var(--color-neutral-80);line-height:2.0rem;font-size:1.6rem}
 .toggle .btn-tg{position:relative;font-family:"KoreanAirSans";font-size:1.6rem;color:var(--color-darkblue-100);text-align:left;width:100%}
 .toggle .btn-tg span {background: url(../images/arrow-down.svg)center right no-repeat; background-size: 3.2rem;display: inline-block; width: 3.2rem; height: 3.2rem; vertical-align:middle; float: right;}
 .toggle .btn-tg span.active {transform: rotate(180deg);}
@@ -502,7 +483,7 @@ input, select{font-family:'KoreanAirSans'}
 .toggle .active .btn-tg:after{-webkit-transform:translateY(-50%) rotate(-135deg);transform:translateY(-50%) rotate(-135deg)}
 .toggle .active .tg-conts{display:block}
 
-.info-wrap .edit-area .detailForm > .editbox.report + .editbox.report{margin-top:2.5rem}
+.info-wrap .edit-area .detailForm > .editbox.report + .editbox.report{margin-top:4rem}
 
 /*pagination*/
 .pagination{margin:3.0rem 0 0 0;text-align:center}

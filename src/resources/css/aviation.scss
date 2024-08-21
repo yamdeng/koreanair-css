@@ -111,21 +111,34 @@
 
 
 .detailForm{padding:1.5rem 0.5rem}
-.detailForm-detail-box{position:relative;overflow:hidden;padding:1.0rem 0rem;width:100%;border:0}
-.detailForm-detail{position:relative;overflow:hidden;padding:1.0rem;width:100%;border:0.1rem solid #eeeeee;border-radius:0.8rem}
+.detailForm-detail-box{position:relative;overflow:hidden;padding:0.8rem 0rem;width:100%;border:0}
+.detailForm-detail{position:relative;overflow:hidden;padding:1.0rem;width:100%;border:0.1rem solid var(--color-neutral-30);border-radius:0.8rem}
+.detailForm-detail-2deps{position:relative;overflow:hidden;padding:1.0rem;width:100%;border:0.1rem solid var(--color-neutral-30);border-radius:0.8rem}
+.detailForm-detail-2deps::after{content:'';display:block;position:absolute;left:0rem;top:0.1rem;bottom:0.1rem;width:0.5rem;border-radius:0.8rem 0 0 0.8rem}
+.detailForm-detail-2deps.rbox:after{background-color:var(--color-darkblue-20)}
 .detailForm-detail-3deps{border:0;overflow:hidden}
 
 .detailForm-detail.list-group + .detailForm-detail.list-group{margin-top:0.8rem}
 .detailForm-detail.list-group .list > dl > dt{padding:0.8rem 0 0.8rem 0.8rem}
 .detailForm-detail.list-group .list > dl > dd{margin:0 -2.0rem -1.0rem -1.0rem}
+.detailForm-detail-2deps.list-group .list > dl > dt{padding:0.8rem 1.8rem 0.8rem 1.2rem}
+.detailForm-detail-2deps.list-group .list > dl > dd{margin:0 -2.0rem -1.0rem -1.0rem}
+.detailForm-detail-3deps.list-group .list > dl > dt{padding:0.8rem 3rem 0rem 1.2rem}
+.detailForm-detail-3deps.list-group .list > dl > dd{margin:0 -0rem -1.0rem -1.0rem}
 .detailForm-detail.list-group .list > dl > dt .tg-btn{font-family:"KoreanAirSans";font-size:1.8rem;font-weight:500;color:var(--color-darkblue-100)}
-.bx-toggle .tg-btn span.active{transform: rotate(180deg)}
+.bx-toggle .tg-btn span.active{transform:rotate(180deg)}
 .bx-toggle span.active .tg-conts{display:block}
-.bx-toggle .tg-btn span{display:inline-block;float:right;background: url(/src/resources/images/arrow-down.svg) center right no-repeat;background-size:2.8rem;width:2.8rem;height:2.8rem;vertical-align:middle}
+.bx-toggle .tg-btn span{display:inline-block;float:right;background:url(/src/resources/images/arrow-down.svg) center right no-repeat;background-size:2.8rem;width:2.8rem;height:2.8rem;vertical-align:middle}
 .bx-toggle .tg-btn{position:relative;font-family:"KoreanAirSans";font-size:1.6rem;color:var(--color-darkblue-100);text-align:left;width:100%}
 
 .detailForm-detail.list-group .list .edit-area{padding:2.0rem;margin-top:0.8rem;border-top:dotted 0.1rem var(--color-darkblue-60);color:var(--color-neutral-70);line-height:2rem;font-size:1.6rem}
-.bx-toggle .tg-btn {position: relative;font-size:1.6rem;color:var(--color-neutral-70);background-color:var(--color-neutral-10);text-align:left}
+.detailForm-detail-2deps.list-group .list .edit-area{padding:2.0rem;margin-top:0.8rem;border-top:solid 0.1rem var(--color-neutral-30);color:var(--color-neutral-70);line-height:2rem;font-size:1.6rem}
+.detailForm-detail-2deps.list-group .list > dl > dt .tg-btn {font-family: "KoreanAirSans";font-size:1.8rem;font-weight:500;color:var(--color-darkblue-100)}
+.detailForm-detail-2deps.list-group .list.bx-toggle .tg-btn span{display:inline-block;float:right;background: url(/src/resources/images/arrow-down.svg) center right no-repeat;background-size:2.8rem;width:2.8rem;height:2.8rem;vertical-align:middle}
+
+.detailForm-detail-3deps.list-group .list.bx-toggle .tg-btn span{display:inline-block;float:right;background: url(/src/resources/images/arrow-down.svg) center right no-repeat;background-size:2.8rem;width:2.8rem;height:2.8rem;vertical-align:middle}
+.detailForm-detail-3deps.list-group .list .edit-area{padding:2.0rem;margin-top:0;border-top:0;color:var(--color-neutral-70);line-height:2rem;font-size:1.6rem}
+.detailForm-detail-3deps.list-group .list > dl > dt .tg-btn{font-family:"KoreanAirSans";font-size: 1.8rem;font-weight:500;color:var(--color-darkblue-100)}
 
 .CheckList-Title{display:flex;width:100%;align-items:center;vertical-align:middle}
 
@@ -151,6 +164,7 @@
 
 .checklist-contents .checklist-row.list ul{position:relative;display:flex;flex-direction:column;padding:1.0rem}
 .checklist-contents .checklist-row.list li.list-space{position:relative;display:inline-flex;align-items:center;font-size:1.5rem;line-height:2.0}
+.checklist-contents .checklist-row.list li.list-space .ant-space{gap:0.8rem}
 .checklist-contents .checklist-row.list li.list-space a{padding-left:1rem;font-size:1.5rem}
 .checklist-contents .checklist-row.list li.list-space a:hover{text-decoration:underline}
 .checklist-contents .checklist-row.list li.list-space button.btn-list{width:2.3rem;height:2rem;font-size:0;background:url(../images/icon-register.svg)center center no-repeat;align-items:center}

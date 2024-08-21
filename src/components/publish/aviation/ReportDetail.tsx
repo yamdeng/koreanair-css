@@ -1,12 +1,72 @@
-import { getAllData } from '@/data/grid/example-data-new';
 import { testColumnInfos } from '@/data/grid/table-column';
+import AppDatePicker from '@/components/common/AppDatePicker';
+import AppSelect from '@/components/common/AppSelect';
+import AppTextInput from '@/components/common/AppTextInput';
 import { useState } from 'react';
+import AppTextArea from '@/components/common/AppTextArea';
+import { Upload } from 'antd';
+const { Dragger } = Upload;
+const props: any = {
+  name: 'file',
+  multiple: true,
+  defaultFileList: [
+    {
+      uid: '1',
+      name: 'xxx.png',
+      // status: 'uploading',
+      url: 'http://www.baidu.com/xxx.png',
+      percent: 33,
+    },
+    {
+      uid: '2',
+      name: 'yyy.png',
+      status: 'done',
+      url: 'http://www.baidu.com/yyy.png',
+    },
+    {
+      uid: '3',
+      name: 'zzz.png',
+      status: 'error',
+      response: 'Server Error 500',
+      // custom error message to show
+      url: 'http://www.baidu.com/zzz.png',
+    },
+  ],
+  action: 'https://660d2bd96ddfa2943b33731c.mockapi.io/api/upload',
+
+  onChange(info) {
+    const { status } = info.file;
+    if (status !== 'uploading') {
+      console.log(info.file, info.fileList);
+    }
+    if (status === 'done') {
+      alert(`${info.file.name} file uploaded successfully.`);
+    } else if (status === 'error') {
+      alert(`${info.file.name} file upload failed.`);
+    }
+  },
+
+  onRemove(file) {
+    return false;
+  },
+
+  onPreview(file) {
+    return false;
+  },
+
+  onDrop(e) {
+    console.log('Dropped files', e.dataTransfer.files);
+  },
+};
 
 function SafetyDetail() {
+  const [inputValue, setInputValue] = useState('');
   const [firstExpaned, setFirstExpaned] = useState(true);
   const [secondExpaned, setSecondExpaned] = useState(true);
   const [thirdExpaned, setThirdExpaned] = useState(true);
   const [fourExpaned, setFourExpaned] = useState(true);
+  const [fiveExpaned, setFiveExpaned] = useState(true);
+
   return (
     <>
       {/*경로 */}
@@ -556,7 +616,7 @@ function SafetyDetail() {
             <div className="edit-area">
               <div className="detailForm">
                 <div className="detailForm-detail-box list-group">
-                  <div className="detailForm-detail list-group">
+                  <div className="detailForm-detail-2deps rbox list-group">
                     <div className="list bx-toggle">
                       <dl className="tg-item rbox01 ">
                         <dt onClick={() => setThirdExpaned(!thirdExpaned)}>
@@ -567,22 +627,119 @@ function SafetyDetail() {
                         <dd className="tg-conts" style={{ display: thirdExpaned ? '' : 'none' }}>
                           <div className="edit-area">
                             {/*보고서접수 상세*/}
-                            <div>
-                              <div className="detailForm-detail-3deps list-group">
-                                <div className="list bx-toggle">
-                                  <dl className="tg-item rbox01 ">
-                                    <dt onClick={() => setFourExpaned(!fourExpaned)}>
-                                      <button type="button" className="tg-btn">
-                                        보고서접수<span className={fourExpaned ? 'active' : ''}></span>
-                                      </button>
-                                    </dt>
-                                    <dd className="tg-conts" style={{ display: fourExpaned ? '' : 'none' }}>
-                                      <div className="edit-area">dfddfd</div>
-                                    </dd>
-                                  </dl>
-                                </div>
+                            <div className="detailForm-detail-3deps list-group">
+                              <div className="list bx-toggle">
+                                <dl className="tg-item rbox01 ">
+                                  <dt onClick={() => setFourExpaned(!fourExpaned)}>
+                                    <button type="button" className="tg-btn">
+                                      보고서접수<span className={fourExpaned ? 'active' : ''}></span>
+                                    </button>
+                                  </dt>
+                                  <dd className="tg-conts" style={{ display: fourExpaned ? '' : 'none' }}>
+                                    <div className="edit-area">
+                                      {/*보고서접수-ASR*/}
+                                      <div className="editbox">
+                                        <div className="form-table line">
+                                          <div className="form-cell wid50">
+                                            <div className="form-group wid100">
+                                              <AppSelect label={'이벤트타입'} />
+                                            </div>
+                                          </div>
+                                          <div className="form-cell wid100">
+                                            <div className="chk-wrap">
+                                              <label>
+                                                <input type="checkbox" />
+                                                <span>SPI 지표포함</span>
+                                              </label>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <hr className="line dp-n"></hr>
+                                        <div className="form-table line">
+                                          <div className="form-cell wid50">
+                                            <div className="form-group wid100">
+                                              <AppSelect label={'ATA Chapter'} />
+                                            </div>
+                                          </div>
+                                          <div className="form-cell wid50">
+                                            <div className="form-group wid100">
+                                              <AppSelect label={'규제기관 보고'} />
+                                            </div>
+                                          </div>
+                                          <div className="form-cell wid50">
+                                            <div className="form-group wid100">
+                                              <AppSelect label={'보고항목 구분'} />
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <hr className="line dp-n"></hr>
+                                        <div className="form-table line">
+                                          <div className="form-cell wid50">
+                                            <div className="form-group wid100">
+                                              <AppTextArea label={'Event Summary'} />
+                                            </div>
+                                          </div>
+                                          <div className="form-cell wid50">
+                                            <div className="form-group wid100">
+                                              <AppTextArea label={'Event Follow up'} />
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <hr className="line dp-n"></hr>
+                                        <div className="form-table">
+                                          <div className="form-cell wid20">
+                                            <div className="form-group wid100">
+                                              <div className="row1">
+                                                <div className="date1">
+                                                  <AppDatePicker label="Due Date" required />
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                          <div className="form-cell wid100">
+                                            <div className="group-box-wrap wid100">
+                                              <button type="button" className="btn-togo">
+                                                Report Links
+                                              </button>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <hr className="line"></hr>
+                                        <div className="form-table line">
+                                          <div className="form-cell wid50">
+                                            <div className="form-group wid100">
+                                              {/* 파일첨부영역 : drag */}
+                                              <div className="filebox error">
+                                                <Dragger {...props}>
+                                                  <p className="ant-upload-text ">
+                                                    + 이 곳을 클릭하거나 마우스로 업로드할 파일을 끌어서 놓으세요.
+                                                  </p>
+                                                </Dragger>
+                                                <label htmlFor="file" className="file-label">
+                                                  Attachment <span className="required"></span>
+                                                </label>
+                                              </div>
+                                              <span className="errorText">fileerror</span>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <hr className="line dp-n"></hr>
+                                        <div className="form-table">
+                                          <div className="form-cell wid50">
+                                            <div className="form-group wid100">
+                                              <AppTextInput label={'정렬순서'} />
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <hr className="line"></hr>
+                                      </div>
+                                      {/*보고서접수-ASR*/}
+                                    </div>
+                                  </dd>
+                                </dl>
                               </div>
                             </div>
+                            {/*//보고서접수 상세*/}
                           </div>
                         </dd>
                       </dl>
@@ -590,16 +747,16 @@ function SafetyDetail() {
                   </div>
                 </div>
 
-                <div className="detailForm-detail-box list-group">
-                  <div className="detailForm-detail list-group">
+                <div className="detailForm-detail-box  list-group">
+                  <div className="detailForm-detail-2deps rbox list-group">
                     <div className="list bx-toggle">
                       <dl className="tg-item rbox01 ">
-                        <dt>
+                        <dt onClick={() => setFiveExpaned(!fiveExpaned)}>
                           <button type="button" className="tg-btn">
-                            2-2 1차위험도평가<span className=""></span>
+                            2-2 1차위험도평가<span className={fiveExpaned ? 'active' : ''}></span>
                           </button>
                         </dt>
-                        <dd className="tg-conts">
+                        <dd className="tg-conts" style={{ display: fiveExpaned ? '' : 'none' }}>
                           <div className="edit-area">
                             {/*위험평가 상세*/}
                             <div className="detailForm-detail-3deps list-group">
@@ -637,54 +794,6 @@ function SafetyDetail() {
                     </div>
                   </div>
                 </div>
-
-                {/*탭상세-경감조치
-                <div>
-                  <div className="detailForm-detail list-group">
-                    <div className="list bx-toggle">
-                      <dl className="tg-item rbox01 ">
-                        <dt>
-                          <button type="button" className="tg-btn">
-                            경감지정<span className=""></span>
-                          </button>
-                        </dt>
-                        <dd className="tg-conts" style={{ display: 'none' }}>
-                          <div className="edit-area">dfddfd</div>
-                        </dd>
-                      </dl>
-                    </div>
-                  </div>
-                  <div className="detailForm-detail list-group">
-                    <div className="list bx-toggle">
-                      <dl className="tg-item rbox01">
-                        <dt>
-                          <button type="button" className="tg-btn">
-                            경감계획<span className="active"></span>
-                          </button>
-                        </dt>
-                        <dd className="tg-conts" style={{ display: 'none' }}>
-                          <div className="edit-area">dfddfd</div>
-                        </dd>
-                      </dl>
-                    </div>
-                  </div>
-                  <div className="detailForm-detail list-group">
-                    <div className="list bx-toggle">
-                      <dl className="tg-item rbox01">
-                        <dt>
-                          <button type="button" className="tg-btn">
-                            경감실행
-                            <span className="active"></span>
-                          </button>
-                        </dt>
-                        <dd className="tg-conts" style={{ display: 'none' }}>
-                          <div className="edit-area">dfddfd</div>
-                        </dd>
-                      </dl>
-                    </div>
-                  </div>
-                </div>
-                탭상세*/}
               </div>
             </div>
           </dd>
@@ -694,11 +803,14 @@ function SafetyDetail() {
 
       {/* 하단버튼영역 */}
       <div className="contents-btns">
-        <button type="button" name="button" className="btn_text text_color_neutral-10 btn_confirm">
-          수정
-        </button>
         <button type="button" name="button" className="btn_text btn-del">
-          삭제
+          인쇄
+        </button>
+        <button type="button" name="button" className="btn_text text_color_neutral-10 btn_confirm">
+          저장
+        </button>
+        <button type="button" name="button" className="btn_text text_color_neutral-10 btn_confirm">
+          Submit
         </button>
         <button type="button" name="button" className="btn_text btn_list">
           목록
