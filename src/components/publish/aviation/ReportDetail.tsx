@@ -209,7 +209,7 @@ function SafetyDetail() {
           <dt>
             <button type="button" className="btn-tg">
               {/* toggle 열어지면 active붙임*/}
-              보고서 내용보기<span className="active"></span>
+              1. 보고서 내용보기<span className="active"></span>
             </button>
           </dt>
           <dd className="tg-conts">
@@ -607,26 +607,26 @@ function SafetyDetail() {
         <dl className="tg-item">
           <dt>
             <button type="button" className="btn-tg">
-              보고서 분석<span className="active"></span>
+              2. 보고서 분석<span className="active"></span>
             </button>
           </dt>
           <dd className="tg-conts">
             <div className="edit-area">
               <div className="detailForm">
-                <div className="detailForm-detail list-group">
+                <div className="detailForm-detail-box list-group">
                   <div className="detailForm-detail list-group">
                     <div className="list bx-toggle">
                       <dl className="tg-item rbox01 ">
                         <dt>
                           <button type="button" className="tg-btn">
-                            접수<span className=""></span>
+                            2-1 접수<span className=""></span>
                           </button>
                         </dt>
                         <dd className="tg-conts">
                           <div className="edit-area">
-                            {/*상세-보고서접수*/}
+                            {/*보고서접수 상세*/}
                             <div>
-                              <div className="detailForm-detail list-group">
+                              <div className="detailForm-detail-3deps list-group">
                                 <div className="list bx-toggle">
                                   <dl className="tg-item rbox01 ">
                                     <dt>
@@ -634,7 +634,7 @@ function SafetyDetail() {
                                         보고서접수<span className=""></span>
                                       </button>
                                     </dt>
-                                    <dd className="tg-conts" style={{ display: 'none' }}>
+                                    <dd className="tg-conts">
                                       <div className="edit-area">dfddfd</div>
                                     </dd>
                                   </dl>
@@ -648,80 +648,56 @@ function SafetyDetail() {
                   </div>
                 </div>
 
-                {/*탭 */}
-                <div className="menu-tab-nav">
-                  <div className="menu-tab">
-                    <a href="javascript:void(0);" id="1" className="active" data-label="접수">
-                      접수
-                    </a>
-                    <a href="javascript:void(0);" id="2" className="" data-label="1차 위험도 평가">
-                      1차 위험도 평가
-                    </a>
-                    <a href="javascript:void(0);" id="3" className="" data-label="경감조치">
-                      경감조치
-                    </a>
-                    <a href="javascript:void(0);" id="4" className="" data-label="2차 위험도 평가">
-                      2차 위험도 평가
-                    </a>
-                    <a href="javascript:void(0);" id="5" className="" data-label="종결">
-                      종결
-                    </a>
-                  </div>
-                </div>
-                {/*//탭 */}
-                {/*탭상세-접수처리*/}
-                <div id="1" className="detailForm-detail list-group" style={{ display: 'none' }}>
+                <div className="detailForm-detail-box list-group">
                   <div className="detailForm-detail list-group">
                     <div className="list bx-toggle">
                       <dl className="tg-item rbox01 ">
                         <dt>
                           <button type="button" className="tg-btn">
-                            보고서접수<span className=""></span>
-                          </button>
-                        </dt>
-                        <dd className="tg-conts" style={{ display: 'none' }}>
-                          <div className="edit-area">dfddfd</div>
-                        </dd>
-                      </dl>
-                    </div>
-                  </div>
-                </div>
-                {/*//탭상세*/}
-
-                {/*탭상세-1차 위험도 평가*/}
-                <div id="2" style={{ display: 'none' }}>
-                  <div className="detailForm-detail list-group">
-                    <div className="list bx-toggle">
-                      <dl className="tg-item rbox01 ">
-                        <dt>
-                          <button type="button" className="tg-btn">
-                            위험평가<span className=""></span>
-                          </button>
-                        </dt>
-                        <dd className="tg-conts" style={{ display: 'none' }}>
-                          <div className="edit-area">dfddfd</div>
-                        </dd>
-                      </dl>
-                    </div>
-                  </div>
-                  <div className="detailForm-detail list-group">
-                    <div className="list bx-toggle">
-                      <dl className="tg-item rbox01">
-                        <dt>
-                          <button type="button" className="tg-btn">
-                            SRC리뷰<span className="active"></span>
+                            2-2 1차위험도평가<span className=""></span>
                           </button>
                         </dt>
                         <dd className="tg-conts">
-                          <div className="edit-area">dfddfd</div>
+                          <div className="edit-area">
+                            {/*위험평가 상세*/}
+                            <div className="detailForm-detail-3deps list-group">
+                              <div className="list bx-toggle">
+                                <dl className="tg-item rbox01 ">
+                                  <dt>
+                                    <button type="button" className="tg-btn">
+                                      - 위험평가<span className=""></span>
+                                    </button>
+                                  </dt>
+                                  <dd className="tg-conts">
+                                    <div className="edit-area"></div>
+                                  </dd>
+                                </dl>
+                              </div>
+                            </div>
+                            {/*SRC리뷰 상세*/}
+                            <div className="detailForm-detail-3deps list-group">
+                              <div className="list bx-toggle">
+                                <dl className="tg-item rbox01 ">
+                                  <dt>
+                                    <button type="button" className="tg-btn">
+                                      - SRC리뷰<span className=""></span>
+                                    </button>
+                                  </dt>
+                                  <dd className="tg-conts" style={{ display: 'none' }}>
+                                    <div className="edit-area"></div>
+                                  </dd>
+                                </dl>
+                              </div>
+                            </div>
+                          </div>
                         </dd>
                       </dl>
                     </div>
                   </div>
                 </div>
-                {/*//탭상세*/}
-                {/*탭상세-경감조치*/}
-                <div id="3">
+
+                {/*탭상세-경감조치
+                <div>
                   <div className="detailForm-detail list-group">
                     <div className="list bx-toggle">
                       <dl className="tg-item rbox01 ">
@@ -766,59 +742,7 @@ function SafetyDetail() {
                     </div>
                   </div>
                 </div>
-                {/*//탭상세*/}
-
-                {/*탭상세-2차 위험도 평가*/}
-                <div id="4" style={{ display: 'none' }}>
-                  <div className="detailForm-detail list-group">
-                    <div className="list bx-toggle">
-                      <dl className="tg-item rbox01 ">
-                        <dt>
-                          <button type="button" className="tg-btn">
-                            위험평가<span className=""></span>
-                          </button>
-                        </dt>
-                        <dd className="tg-conts" style={{ display: 'none' }}>
-                          <div className="edit-area">dfddfd</div>
-                        </dd>
-                      </dl>
-                    </div>
-                  </div>
-                  <div className="detailForm-detail list-group">
-                    <div className="list bx-toggle">
-                      <dl className="tg-item rbox01">
-                        <dt>
-                          <button type="button" className="tg-btn">
-                            SRC리뷰<span className="active"></span>
-                          </button>
-                        </dt>
-                        <dd className="tg-conts">
-                          <div className="edit-area">dfddfd</div>
-                        </dd>
-                      </dl>
-                    </div>
-                  </div>
-                </div>
-                {/*//탭상세*/}
-
-                {/*탭상세-종결*/}
-                <div id="5" className="detailForm-detail list-group" style={{ display: 'none' }}>
-                  <div className="detailForm-detail list-group">
-                    <div className="list bx-toggle">
-                      <dl className="tg-item rbox01 ">
-                        <dt>
-                          <button type="button" className="tg-btn">
-                            종결처리<span className=""></span>
-                          </button>
-                        </dt>
-                        <dd className="tg-conts" style={{ display: 'none' }}>
-                          <div className="edit-area">dfddfd</div>
-                        </dd>
-                      </dl>
-                    </div>
-                  </div>
-                </div>
-                {/*//탭상세*/}
+                탭상세*/}
               </div>
             </div>
           </dd>

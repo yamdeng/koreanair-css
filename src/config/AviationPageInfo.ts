@@ -29,6 +29,7 @@ import AdminSafetyCultureDetail from '@/components/publish/aviation/AdminSafetyC
 import SafetyMeetingList from '@/components/publish/aviation/SafetyMeetingList';
 import SPIBoardDetail from '@/components/publish/aviation/SPIBoardDetail';
 import SPIReportList from '@/components/publish/aviation/SPIReportList';
+import SPIIndicatorList from '@/components/publish/aviation/SPIIndicatorList';
 import { fa } from '@faker-js/faker';
 
 const AviationPageInfo: any = {};
@@ -136,6 +137,13 @@ AviationPageInfo.list = [
     title: '[04.안전보증] SPI/SPT > Report List',
     Component: SPIReportList,
     path: 'SPIReportList',
+    description: '',
+    success: true,
+  },
+  {
+    title: '[04.안전보증] SPI/SPT > 지표관리',
+    Component: SPIIndicatorList,
+    path: 'SPIIndicatorList',
     description: '',
     success: true,
   },

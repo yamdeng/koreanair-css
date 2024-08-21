@@ -110,20 +110,22 @@
 
 
 
-.detailForm{ padding:1.5rem 0.5rem}
-.detailForm-detail{position:relative;overflow:hidden;padding:1.0rem;width:100%;border: 1px solid #eeeeee;border-radius:0.8rem}
+.detailForm{padding:1.5rem 0.5rem}
+.detailForm-detail-box{position:relative;overflow:hidden;padding:1.0rem 0rem;width:100%;border:0}
+.detailForm-detail{position:relative;overflow:hidden;padding:1.0rem;width:100%;border:0.1rem solid #eeeeee;border-radius:0.8rem}
+.detailForm-detail-3deps{border:0;overflow:hidden}
 
 .detailForm-detail.list-group + .detailForm-detail.list-group{margin-top:0.8rem}
 .detailForm-detail.list-group .list > dl > dt{padding:0.8rem 0 0.8rem 0.8rem}
-.detailForm-detail.list-group .list > dl > dd{margin: 0 -20px -10px -10px}
-.detailForm-detail.list-group .list > dl > dt .tg-btn{font-family:"KoreanAirSans";font-size:1.6rem;font-weight:500;color:var(--color-darkblue-100)}
+.detailForm-detail.list-group .list > dl > dd{margin:0 -2.0rem -1.0rem -1.0rem}
+.detailForm-detail.list-group .list > dl > dt .tg-btn{font-family:"KoreanAirSans";font-size:1.8rem;font-weight:500;color:var(--color-darkblue-100)}
 .bx-toggle .tg-btn span.active{transform: rotate(180deg)}
 .bx-toggle span.active .tg-conts{display:block}
 .bx-toggle .tg-btn span{display:inline-block;float:right;background: url(/src/resources/images/arrow-down.svg) center right no-repeat;background-size:2.8rem;width:2.8rem;height:2.8rem;vertical-align:middle}
-.bx-toggle .tg-btn{position:relative;font-family:"KoreanAirSans";font-size:1.6rem;color:var(--color-darkblue-100);text-align: left;width:100%}
+.bx-toggle .tg-btn{position:relative;font-family:"KoreanAirSans";font-size:1.6rem;color:var(--color-darkblue-100);text-align:left;width:100%}
 
-.detailForm-detail.list-group .list .edit-area {padding:2.0rem;margin-top:0.8rem;background-color: #fbfbfb;border-top:dotted 0.1rem var(--color-darkblue-60);color: #666;line-height: 20px;font-size:1.6rem}
-.bx-toggle .tg-btn {position: relative;font-size:1.6rem; color: #666;background-color: #fff;text-align:left}
+.detailForm-detail.list-group .list .edit-area{padding:2.0rem;margin-top:0.8rem;border-top:dotted 0.1rem var(--color-darkblue-60);color:var(--color-neutral-70);line-height:2rem;font-size:1.6rem}
+.bx-toggle .tg-btn {position: relative;font-size:1.6rem;color:var(--color-neutral-70);background-color:var(--color-neutral-10);text-align:left}
 
 .CheckList-Title{display:flex;width:100%;align-items:center;vertical-align:middle}
 

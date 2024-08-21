@@ -31,34 +31,31 @@ function SafetyMeetingList() {
       </div>
       {/*검색영역 */}
       <div className="boxForm">
-        {/*area-detail명 옆에 active  */}
-        <div id="" className="area-detail active">
-          <div className="form-table">
-            <div className="form-cell wid30">
-              <div className="form-group wid100">
-                <AppSelect label={'부문'} />
-              </div>
+        <div className="form-table">
+          <div className="form-cell wid30">
+            <div className="form-group wid100">
+              <AppSelect label={'부문'} />
             </div>
-            <div className="form-cell wid30">
-              <div className="form-group wid100">
-                <div className="row1">
-                  <div className="date1">
-                    <AppDatePicker label="연도" required />
-                  </div>
+          </div>
+          <div className="form-cell wid30">
+            <div className="form-group wid100">
+              <div className="row1">
+                <div className="date1">
+                  <AppDatePicker label="연도" required />
                 </div>
               </div>
             </div>
-            <div className="form-cell wid50">
-              <div className="form-group wid100">
-                <AppTextInput label="제목" />
-              </div>
+          </div>
+          <div className="form-cell wid50">
+            <div className="form-group wid100">
+              <AppTextInput label="제목" />
             </div>
+          </div>
 
-            <div className="btn-area df">
-              <button type="button" name="button" className="btn-sm btn_text btn-darkblue-line">
-                조회
-              </button>
-            </div>
+          <div className="btn-area df">
+            <button type="button" name="button" className="btn-sm btn_text btn-darkblue-line">
+              조회
+            </button>
           </div>
         </div>
       </div>
