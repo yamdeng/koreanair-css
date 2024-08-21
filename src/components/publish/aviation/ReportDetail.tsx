@@ -767,7 +767,7 @@ function SafetyDetail() {
                                         </div>
                                         <hr className="line"></hr>
                                       </div>
-
+                                      {/*보고서접수-ASR*/}
                                       <div className="btn-area">
                                         <button
                                           type="button"
@@ -777,12 +777,12 @@ function SafetyDetail() {
                                           LSC Group 설정
                                         </button>
                                       </div>
-                                      {/*보고서접수-ASR*/}
                                     </div>
                                   </dd>
                                 </dl>
                               </div>
                             </div>
+
                             {/*//보고서접수 상세*/}
                           </div>
                         </dd>
