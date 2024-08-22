@@ -27,6 +27,8 @@ import PReportEmailModal from '@/components/publish/modal/PReportEmailModal';
 import PSPIcharacteristicModal from '@/components/publish/modal/PSPIcharacteristicModal';
 import PSPILoadModal from '@/components/publish/modal/PSPILoadModal';
 import PSPINewModal from '@/components/publish/modal/PSPINewModal';
+import PAdminSafetyModal from '@/components/publish/modal/PAdminSafetyModal';
+import PAdminSafetyDetailModal from '@/components/publish/modal/PAdminSafetyDetailModal';
 
 const ModalPageInfo: any = {};
 
@@ -141,12 +143,26 @@ ModalPageInfo.list = [
     Component: PSPINewModal,
     path: 'PSPINewModal',
     description: '',
-    success: false,
+    success: true,
   },
   {
     title: '[항공안전> 04.안전보증] SPI/SPT > 지표관리 > 지표불러오기 팝업창',
     Component: PSPILoadModal,
     path: 'PSPILoadModal',
+    description: '',
+    success: true,
+  },
+  {
+    title: '[항공안전> ADMIN] 게시판 관리 > 안전목표 > 안전목표 신규 팝업창',
+    Component: PAdminSafetyModal,
+    path: 'PAdminSafetyModal',
+    description: '',
+    success: true,
+  },
+  {
+    title: '[항공안전> ADMIN] 게시판 관리 > 안전목표 > 안전목표 상세 팝업창',
+    Component: PAdminSafetyDetailModal,
+    path: 'PAdminSafetyDetailModal',
     description: '',
     success: true,
   },

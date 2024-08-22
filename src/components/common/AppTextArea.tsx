@@ -28,7 +28,7 @@ function AppTextArea(props) {
     placeholder = '',
     required = false,
     errorMessage,
-    style = { width: '100%', height: '200px' },
+    style = { width: '100%', height: '150px' },
     disabled = false,
   } = props;
   return (

@@ -271,6 +271,12 @@
     background: var(--color-neutral-30); 
     color: var(--color-neutral-50);
   }
+  .btn_conblue {
+    padding: 0.8rem 3.8rem;
+    border-radius: 99.9rem;
+    background: var(--color-lightblue-100);
+    align-items: center;
+}
   text-align: center;
   @include mobile {
     width: 100%;

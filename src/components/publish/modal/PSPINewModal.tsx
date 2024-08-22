@@ -2,6 +2,8 @@ import { Tree } from 'antd';
 import { useState } from 'react';
 import Modal from 'react-modal';
 import AppSelect from '@/components/common/AppSelect';
+import AppTextInput from '@/components/common/AppTextInput';
+import AppTextArea from '@/components/common/AppTextArea';
 
 function TestModal(props) {
   const { isOpen, closeModal } = props;
@@ -58,7 +60,7 @@ function TestModal(props) {
       }}
     >
       <div className="popup-container">
-        <h3 className="pop_title">SPI 지표 추가</h3>
+        <h3 className="pop_title">지표 신규</h3>
         <div className="pop_full_cont_box">
           <div className="pop_flex_group">
             <div className="pop_cont_form">
@@ -66,16 +68,7 @@ function TestModal(props) {
                 <div className="form-table">
                   <div className="form-cell wid100">
                     <div className="form-group wid100">
-                      <div className="box-view-list">
-                        <ul className="view-list">
-                          <li className="accumlate-list">
-                            <label className="t-label">
-                              Doc No <span className="required">*</span>
-                            </label>
-                            <span className="text-desc-type1"> ASR-100305 </span>
-                          </li>
-                        </ul>
-                      </div>
+                      <AppTextInput label="연도" placeholder="2024" required disabled />
                     </div>
                   </div>
                 </div>
@@ -83,16 +76,7 @@ function TestModal(props) {
                 <div className="form-table">
                   <div className="form-cell wid100">
                     <div className="form-group wid100">
-                      <div className="box-view-list">
-                        <ul className="view-list">
-                          <li className="accumlate-list">
-                            <label className="t-label">
-                              Departure Date <span className="required">*</span>
-                            </label>
-                            <span className="text-desc-type1"> 2024-08-05</span>
-                          </li>
-                        </ul>
-                      </div>
+                      <AppTextInput label=" 지표구분" placeholder="국가연계지표" required disabled />
                     </div>
                   </div>
                 </div>
@@ -100,16 +84,7 @@ function TestModal(props) {
                 <div className="form-table">
                   <div className="form-cell wid100">
                     <div className="form-group wid100">
-                      <div className="box-view-list">
-                        <ul className="view-list">
-                          <li className="accumlate-list">
-                            <label className="t-label">
-                              Aircraft Type <span className="required">*</span>
-                            </label>
-                            <span className="text-desc-type1"> 773</span>
-                          </li>
-                        </ul>
-                      </div>
+                      <AppSelect label={'지표분류'} required />
                     </div>
                   </div>
                 </div>
@@ -117,143 +92,7 @@ function TestModal(props) {
                 <div className="form-table">
                   <div className="form-cell wid100">
                     <div className="form-group wid100">
-                      <div className="box-view-list">
-                        <ul className="view-list">
-                          <li className="accumlate-list">
-                            <label className="t-label">
-                              Fleet <span className="required">*</span>
-                            </label>
-                            <span className="text-desc-type1"> A330</span>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <hr className="line"></hr>
-                <div className="form-table">
-                  <div className="form-cell wid100">
-                    <div className="form-group wid100">
-                      <div className="box-view-list">
-                        <ul className="view-list">
-                          <li className="accumlate-list">
-                            <label className="t-label">
-                              Registration No <span className="required">*</span>
-                            </label>
-                            <span className="text-desc-type1"> HL7530</span>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <hr className="line"></hr>
-                <div className="form-table">
-                  <div className="form-cell wid100">
-                    <div className="form-group wid100">
-                      <div className="box-view-list">
-                        <ul className="view-list">
-                          <li className="accumlate-list">
-                            <label className="t-label">
-                              Flight No <span className="required">*</span>
-                            </label>
-                            <span className="text-desc-type1"> KE071</span>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <hr className="line"></hr>
-                <div className="form-table">
-                  <div className="form-cell wid100">
-                    <div className="form-group wid100">
-                      <div className="box-view-list">
-                        <ul className="view-list">
-                          <li className="accumlate-list">
-                            <label className="t-label">
-                              From <span className="required">*</span>
-                            </label>
-                            <span className="text-desc-type1"> LAX</span>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <hr className="line"></hr>
-                <div className="form-table">
-                  <div className="form-cell wid100">
-                    <div className="form-group wid100">
-                      <div className="box-view-list">
-                        <ul className="view-list">
-                          <li className="accumlate-list">
-                            <label className="t-label">
-                              To <span className="required">*</span>
-                            </label>
-                            <span className="text-desc-type1"> GMP</span>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <hr className="line"></hr>
-                <div className="form-table">
-                  <div className="form-cell wid100">
-                    <div className="form-group wid100">
-                      <div className="box-view-list">
-                        <ul className="view-list">
-                          <li className="accumlate-list">
-                            <label className="t-label">
-                              Airport <span className="required">*</span>
-                            </label>
-                            <span className="text-desc-type1"> LAX</span>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <hr className="line"></hr>
-                <div className="form-table">
-                  <div className="form-cell wid100">
-                    <div className="form-group wid100">
-                      <div className="box-view-list">
-                        <ul className="view-list">
-                          <li className="accumlate-list">
-                            <label className="t-label">
-                              Subject <span className="required">*</span>
-                            </label>
-                            <span className="text-desc-type1"> 지연운항 보고</span>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <hr className="line"></hr>
-                <div className="form-table">
-                  <div className="form-cell wid100">
-                    <div className="form-group wid100">
-                      <div className="box-view-list">
-                        <ul className="view-list">
-                          <li className="accumlate-list">
-                            <label className="t-label">
-                              Event Type <span className="required">*</span>
-                            </label>
-                            <span className="text-desc-type1"> ACP Reset</span>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <hr className="line"></hr>
-                <div className="form-table">
-                  <div className="form-cell wid100">
-                    <div className="form-group wid100">
-                      <AppSelect label={'지표구분'} required />
+                      <AppSelect label={'산출기준'} required />
                     </div>
                   </div>
                 </div>
@@ -269,21 +108,66 @@ function TestModal(props) {
                 <div className="form-table">
                   <div className="form-cell wid100">
                     <div className="form-group wid100">
-                      <div className="box-view-list">
-                        <ul className="view-list">
-                          <li className="accumlate-list">
-                            <label className="t-label">
-                              SPI 위험도 <span className="required">*</span>
-                            </label>
-                            <span className="text-desc-type1">
-                              <span className="Safety-tag riskLevel level4">2E</span>
-                              <button type="button" className="btn-class choice">
-                                위험도 선택
-                              </button>
-                            </span>
-                          </li>
-                        </ul>
+                      <AppTextArea label="지표정의" errorMessage="" required />
+                    </div>
+                  </div>
+                </div>
+                <hr className="line"></hr>
+                <div className="form-table">
+                  <div className="form-cell wid100">
+                    <div className="form-group wid100">
+                      <AppTextInput inputType="number" label="주의" placeholder="0.262" required />
+                    </div>
+                  </div>
+                </div>
+                <hr className="line"></hr>
+                <div className="form-table">
+                  <div className="form-cell wid100">
+                    <div className="form-group wid100">
+                      <div className="form-group wid100">
+                        <AppTextInput inputType="number" label="경계" placeholder="0.468" required />
                       </div>
+                    </div>
+                  </div>
+                </div>
+                <hr className="line"></hr>
+                <div className="form-table">
+                  <div className="form-cell wid100">
+                    <div className="form-group wid100">
+                      <div className="form-group wid100">
+                        <AppTextInput inputType="number" label="심각" placeholder="0.468" required />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <hr className="line"></hr>
+                <div className="form-table">
+                  <div className="form-cell wid100">
+                    <div className="form-group wid100">
+                      <div className="form-group wid100">
+                        <AppTextInput inputType="number" label="목표치(SPT)" placeholder="0.468" required />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <hr className="line"></hr>
+                <div className="form-table">
+                  <div className="form-cell wid100">
+                    <div className="group-box-wrap wid100">
+                      <span className="txt">
+                        사용여부<span className="required">*</span>
+                      </span>
+                      <div className="radio-wrap ">
+                        <label>
+                          <input type="checkbox" checked />
+                          <span>예</span>
+                        </label>
+                        <label>
+                          <input type="checkbox" />
+                          <span>아니오</span>
+                        </label>
+                      </div>
+                      <span className="errorText"></span>
                     </div>
                   </div>
                 </div>
@@ -292,12 +176,13 @@ function TestModal(props) {
             </div>
           </div>
         </div>
+
         <div className="pop_btns">
+          <button className="btn_text text_color_neutral-10 btn_confirm" onClick={closeModal}>
+            수정
+          </button>
           <button className="btn_text text_color_neutral-90 btn_close" onClick={closeModal}>
             닫기
-          </button>
-          <button className="btn_text text_color_neutral-10 btn_confirm" onClick={closeModal}>
-            저장
           </button>
         </div>
         <span className="pop_close" onClick={closeModal}>
