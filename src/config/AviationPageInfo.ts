@@ -33,6 +33,8 @@ import SPIIndicatorList from '@/components/publish/aviation/SPIIndicatorList';
 import SafetyMeetingEdit from '@/components/publish/aviation/SafetyMeetingEdit';
 import SafetyMeetingDetail from '@/components/publish/aviation/SafetyMeetingDetail';
 import AdminSafetyList from '@/components/publish/aviation/AdminSafetyList';
+import AdminBoardList from '@/components/publish/aviation/AdminBoardList';
+import AdminBoardEdit from '@/components/publish/aviation/AdminBoardEdit';
 import { fa } from '@faker-js/faker';
 
 const AviationPageInfo: any = {};
@@ -168,6 +170,20 @@ AviationPageInfo.list = [
     title: '[ADMIN] 게시판 관리 > 안전목표 List',
     Component: AdminSafetyList,
     path: 'AdminSafetyList',
+    description: '',
+    success: true,
+  },
+  {
+    title: '[ADMIN] 게시판 관리 > SPI게시판 List',
+    Component: AdminBoardList,
+    path: 'AdminBoardList',
+    description: '',
+    success: true,
+  },
+  {
+    title: '[ADMIN] 게시판 관리 > SPI게시판 등록',
+    Component: AdminBoardEdit,
+    path: 'AdminBoardEdit',
     description: '',
     success: true,
   },
