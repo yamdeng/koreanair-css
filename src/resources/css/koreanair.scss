@@ -253,6 +253,7 @@
 .LNB_list li a {
   width: 100%; 
   color: var(--color-darkblue-100);text-decoration:none;
+  font-size: 1.6rem;
 }
 .LNB_list li a:hover{text-decoration-line: underline;}
 .LNB_list li a.up-icon {background: url(../images/icon-arrow-up.svg) right center no-repeat;}
@@ -277,6 +278,7 @@
   background: none;
   border: none;
   color: var(--color-neutral-70);
+  font-size: 1.6rem;
 }
 .LNB_list li .mu-2depth li.active {
   border-radius: 0.8rem;
@@ -285,6 +287,7 @@
 .LNB_list li .mu-2depth li.active a {
   color: var(--color-darkblue-100);
   font-weight: 700;
+  font-size: 1.6rem;
 }
 .LNB_list li .mu-2depth li .mu-3depth {
   display: flex;
@@ -306,6 +309,7 @@
 .LNB_list li .mu-2depth li .mu-3depth li a {
   color: var(--color-neutral-70);
   font-weight: 400;
+  font-size: 1.4rem;
 }
 .LNB_list li .mu-2depth li .mu-3depth li.active {
   background: url(../images/icon-dot-dark.svg) no-repeat left center;
@@ -314,6 +318,7 @@
   text-decoration-line: underline;
   color: var(--color-darkblue-100);
   font-weight: 700;
+  font-size: 1.4rem;
 }
 .LNB_bg.active {
   width: 100%;

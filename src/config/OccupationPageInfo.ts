@@ -14,6 +14,7 @@ import POccupationMu1P6detail from '@/components/publish/occupation/POccupationM
 import POccupationMu1P7list from '@/components/publish/occupation/POccupationMu1P7list';
 import POccupationMu1P7edit from '@/components/publish/occupation/POccupationMu1P7edit';
 import POccupationMu1P7detail from '@/components/publish/occupation/POccupationMu1P7detail';
+import POccupationMu1P7modify from '@/components/publish/occupation/POccupationMu1P7modify';
 import POccupationMu1P8list from '@/components/publish/occupation/POccupationMu1P8list';
 import POccupationMu1P9list from '@/components/publish/occupation/POccupationMu1P9list';
 import POccupationMu1P9edit from '@/components/publish/occupation/POccupationMu1P9edit';
@@ -199,6 +200,13 @@ OccupationPageInfo.list = [
     title: '안전경영 > 무재해운동-상세',
     Component: POccupationMu1P7detail,
     path: 'POccupationMu1P7detail',
+    description: '',
+    success: true,
+  },
+  {
+    title: '안전경영 > 무재해운동-상세-수정',
+    Component: POccupationMu1P7modify,
+    path: 'POccupationMu1P7modify',
     description: '',
     success: true,
   },
