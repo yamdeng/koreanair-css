@@ -90,6 +90,7 @@ function SafetyDetail() {
           보고서 보기
           <span>
             <a href="javascript:void(0);">ASR-100308</a>
+            <em>(3)</em>
           </span>
         </h2>
       </div>

@@ -24,7 +24,7 @@ function ChecklistModal(props) {
       <div className="popup-container">
         <h3 className="pop_title">Checklist 추가</h3>
         <div className="pop_cont">
-          <div className="boxForm">
+          <div className="editbox">
             <div className="form-table">
               <div className="form-cell wid50">
                 <div className="form-group wid100">

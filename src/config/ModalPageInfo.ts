@@ -129,7 +129,7 @@ ModalPageInfo.list = [
     Component: PRightCommentLayer,
     path: 'PRightCommentLayer',
     description: '',
-    success: true,
+    success: false,
   },
   {
     title: '[항공안전> 04.안전보증] SPI/SPT > Report List > SPI 지표 추가 팝업창',
