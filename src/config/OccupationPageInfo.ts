@@ -341,7 +341,7 @@ OccupationPageInfo.list = [
     Component: POccupationMu2P6edit,
     path: 'POccupationMu2P6edit',
     description: '',
-    success: false,
+    success: true,
   },
   {
     title: '안전교육 > 특별교육-교육현황-리스트',

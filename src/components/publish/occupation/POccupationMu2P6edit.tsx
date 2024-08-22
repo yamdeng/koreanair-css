@@ -105,13 +105,12 @@ function POccupationMu2P6edit() {
       </div>
       {/*경로 */}
       <div className="conts-title">
-        <h2>작업내용 변경시 교육</h2>
-        {/* 버튼영역 */}
-        <div className="btn-area">
-          <button type="button" name="button" className="btn_text text_color_neutral-10 btn_confirm">
-            무재해운동 시작
-          </button>
-        </div>
+        <h2>
+          작업내용 변경시 교육
+          <span>
+            <a href="javascript:void(0);"></a>
+          </span>
+        </h2>
         {/*//버튼영역*/}
       </div>
       {/* 입력영역 */}
@@ -173,6 +172,11 @@ function POccupationMu2P6edit() {
                       </div>
                     </div>
                     <div className="form-cell wid50">
+                      <div className="form-group wid100">
+                        <AppDatePicker label="교육일자" />
+                      </div>
+                    </div>
+                    <div className="form-cell wid50">
                       <div className="form-group form-glow">
                         <div className="df">
                           <div className="date3 wid100">
@@ -180,7 +184,7 @@ function POccupationMu2P6edit() {
                           </div>
                           <span className="unt">~</span>
                           <div className="date3 wid100">
-                            <AppTimePicker label="교육시작시간" />
+                            <AppTimePicker label="교육시작시간2" />
                           </div>
                         </div>
                       </div>
@@ -238,11 +242,11 @@ function POccupationMu2P6edit() {
       </div>
       <div className="mt-30">
         <h3 className="table-tit">입과자 정보</h3>
-        <AppTable rowData={rowData} columns={columns} customButtons={customButtons} />
+        그리드영역
       </div>
       <div className="mt-30">
         <h3 className="table-tit">결재자 정보</h3>
-        <AppTable rowData={rowData} columns={columns} customButtons={customButtons} />
+        그리드영역
       </div>
       {/*//그리드영역 */}
 
