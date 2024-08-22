@@ -354,6 +354,7 @@
         margin-bottom: 0;
       }
     }
+    .editbox .form-table .form-cell{padding:1.0rem 1.0rem 1.0rem 0}
     @include mobile {
       flex-grow: 1;
       padding: 0;
@@ -654,3 +655,5 @@
 .RiskLevelTable.severity th{height:4.0rem}
 .RiskLevelTable.severity td{text-align:left;line-height:1.4;color:var(--color-neutral-80);border:solid 0.1rem var(--color-neutral-40)}
 
+.btn-class{position:relative;line-height:2rem;border-width:0.1rem;border-style:solid;border-radius:99.9rem;font-size:1.2rem;text-align:center;background-color:var(--color-neutral-10)}
+.btn-class.choice{color:var(--color-mblue-100);border-color:var(--color-mblue-100)}

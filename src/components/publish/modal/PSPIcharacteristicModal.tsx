@@ -97,16 +97,207 @@ function TestModal(props) {
                   </div>
                 </div>
                 <hr className="line"></hr>
+                <div className="form-table">
+                  <div className="form-cell wid100">
+                    <div className="form-group wid100">
+                      <div className="box-view-list">
+                        <ul className="view-list">
+                          <li className="accumlate-list">
+                            <label className="t-label">
+                              Aircraft Type <span className="required">*</span>
+                            </label>
+                            <span className="text-desc-type1"> 773</span>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <hr className="line"></hr>
+                <div className="form-table">
+                  <div className="form-cell wid100">
+                    <div className="form-group wid100">
+                      <div className="box-view-list">
+                        <ul className="view-list">
+                          <li className="accumlate-list">
+                            <label className="t-label">
+                              Fleet <span className="required">*</span>
+                            </label>
+                            <span className="text-desc-type1"> A330</span>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <hr className="line"></hr>
+                <div className="form-table">
+                  <div className="form-cell wid100">
+                    <div className="form-group wid100">
+                      <div className="box-view-list">
+                        <ul className="view-list">
+                          <li className="accumlate-list">
+                            <label className="t-label">
+                              Registration No <span className="required">*</span>
+                            </label>
+                            <span className="text-desc-type1"> HL7530</span>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <hr className="line"></hr>
+                <div className="form-table">
+                  <div className="form-cell wid100">
+                    <div className="form-group wid100">
+                      <div className="box-view-list">
+                        <ul className="view-list">
+                          <li className="accumlate-list">
+                            <label className="t-label">
+                              Flight No <span className="required">*</span>
+                            </label>
+                            <span className="text-desc-type1"> KE071</span>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <hr className="line"></hr>
+                <div className="form-table">
+                  <div className="form-cell wid100">
+                    <div className="form-group wid100">
+                      <div className="box-view-list">
+                        <ul className="view-list">
+                          <li className="accumlate-list">
+                            <label className="t-label">
+                              From <span className="required">*</span>
+                            </label>
+                            <span className="text-desc-type1"> LAX</span>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <hr className="line"></hr>
+                <div className="form-table">
+                  <div className="form-cell wid100">
+                    <div className="form-group wid100">
+                      <div className="box-view-list">
+                        <ul className="view-list">
+                          <li className="accumlate-list">
+                            <label className="t-label">
+                              To <span className="required">*</span>
+                            </label>
+                            <span className="text-desc-type1"> GMP</span>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <hr className="line"></hr>
+                <div className="form-table">
+                  <div className="form-cell wid100">
+                    <div className="form-group wid100">
+                      <div className="box-view-list">
+                        <ul className="view-list">
+                          <li className="accumlate-list">
+                            <label className="t-label">
+                              Airport <span className="required">*</span>
+                            </label>
+                            <span className="text-desc-type1"> LAX</span>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <hr className="line"></hr>
+                <div className="form-table">
+                  <div className="form-cell wid100">
+                    <div className="form-group wid100">
+                      <div className="box-view-list">
+                        <ul className="view-list">
+                          <li className="accumlate-list">
+                            <label className="t-label">
+                              Subject <span className="required">*</span>
+                            </label>
+                            <span className="text-desc-type1"> 지연운항 보고</span>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <hr className="line"></hr>
+                <div className="form-table">
+                  <div className="form-cell wid100">
+                    <div className="form-group wid100">
+                      <div className="box-view-list">
+                        <ul className="view-list">
+                          <li className="accumlate-list">
+                            <label className="t-label">
+                              Event Type <span className="required">*</span>
+                            </label>
+                            <span className="text-desc-type1"> ACP Reset</span>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <hr className="line"></hr>
+                <div className="form-table">
+                  <div className="form-cell wid100">
+                    <div className="form-group wid100">
+                      <AppSelect label={'지표구분'} required />
+                    </div>
+                  </div>
+                </div>
+                <hr className="line"></hr>
+                <div className="form-table">
+                  <div className="form-cell wid100">
+                    <div className="form-group wid100">
+                      <AppSelect label={'지표명'} required />
+                    </div>
+                  </div>
+                </div>
+                <hr className="line"></hr>
+                <div className="form-table">
+                  <div className="form-cell wid100">
+                    <div className="form-group wid100">
+                      <div className="box-view-list">
+                        <ul className="view-list">
+                          <li className="accumlate-list">
+                            <label className="t-label">
+                              SPI 위험도 <span className="required">*</span>
+                            </label>
+                            <span className="text-desc-type1">
+                              <span className="Safety-tag riskLevel level4">2E</span>
+                              <button type="button" className="btn-class choice">
+                                위험도 선택
+                              </button>
+                            </span>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <hr className="line"></hr>
               </div>
             </div>
           </div>
         </div>
         <div className="pop_btns">
           <button className="btn_text text_color_neutral-90 btn_close" onClick={closeModal}>
-            취소
+            닫기
           </button>
           <button className="btn_text text_color_neutral-10 btn_confirm" onClick={closeModal}>
-            확인
+            저장
           </button>
         </div>
         <span className="pop_close" onClick={closeModal}>
