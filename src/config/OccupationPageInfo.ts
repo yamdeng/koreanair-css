@@ -334,7 +334,7 @@ OccupationPageInfo.list = [
     Component: POccupationMu2P6list,
     path: 'POccupationMu2P6list',
     description: '',
-    success: false,
+    success: true,
   },
   {
     title: '안전교육 > 작업내용 변경시 교육-등록',

@@ -82,13 +82,13 @@ function POccupationMu2P6edit() {
             <a href="javascript:void(0);">안전관리</a>
           </li>
           <li className="breadcrumb-item">
-            <a href="javascript:void(0);">위험기계기구</a>
+            <a href="javascript:void(0);">작업내용 변경시 교육</a>
           </li>
         </ol>
       </div>
       {/*경로 */}
       <div className="conts-title">
-        <h2>산업안전보건관리비</h2>
+        <h2>작업내용 변경시 교육</h2>
       </div>
       {/* 입력영역 */}
       <div className="info-wrap toggle">
