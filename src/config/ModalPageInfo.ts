@@ -24,6 +24,7 @@ import MU4P1Modal from '@/components/publish/modal/MU4P1Modal';
 import MU3P4Modal from '@/components/publish/modal/MU3P4Modal';
 import MU1P4Modal from '@/components/publish/modal/MU1P4Modal';
 import PReportEmailModal from '@/components/publish/modal/PReportEmailModal';
+import PSPIcharacteristicModal from '@/components/publish/modal/PSPIcharacteristicModal';
 
 const ModalPageInfo: any = {};
 
@@ -125,6 +126,13 @@ ModalPageInfo.list = [
     path: 'PRightCommentLayer',
     description: '',
     success: true,
+  },
+  {
+    title: '[항공안전> 04.안전보증] SPI/SPT > Report List > SPI 지표 추가 팝업창',
+    Component: PSPIcharacteristicModal,
+    path: 'PSPIcharacteristicModal',
+    description: '',
+    success: false,
   },
   {
     title: '[항공안전>안전위험관리] 보고서분석 > 반려사유 팝업창',

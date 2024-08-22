@@ -327,7 +327,6 @@ function UserEditModal(props) {
                   </div>
                 </div>
               </div>
-
               {/*//등록 */}
             </div>
           </div>

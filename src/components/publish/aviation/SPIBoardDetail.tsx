@@ -102,7 +102,7 @@ function SPIBoardDetail() {
             </div>
           </div>
           <div className="form-cell wid50">
-            <div className="form-group wid30">
+            <div className="form-group">
               <div className="box-view-list">
                 <ul className="view-list">
                   <li className="accumlate-list">
