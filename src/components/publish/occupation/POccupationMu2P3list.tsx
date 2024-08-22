@@ -27,26 +27,14 @@ function POccupationMu2P3list() {
             <a href="javascript:void(0);">안전경영</a>
           </li>
           <li className="breadcrumb-item">
-            <a href="javascript:void(0);">산업안전보건관리비</a>
+            <a href="javascript:void(0);">관리감독자 정기교육</a>
           </li>
         </ol>
       </div>
       {/*경로 */}
       <div className="conts-title">
-        <h2>산업안전보건관리비</h2>
+        <h2>관리감독자 정기교육</h2>
       </div>
-      {/*탭 */}
-      <div className="menu-tab-nav">
-        <div className="menu-tab">
-          <a href="javascript:void(0);" className="active" data-label="현황">
-            현황
-          </a>
-          <a href="javascript:void(0);" data-label="목록">
-            목록
-          </a>
-        </div>
-      </div>
-      {/*//탭 */}
       {/*검색영역 */}
       <div className="boxForm">
         {/*area-detail명 옆에 active  */}
@@ -54,22 +42,22 @@ function POccupationMu2P3list() {
           <div className="form-table">
             <div className="form-cell wid50">
               <div className="form-group wid100">
-                <AppDatePicker label={'년도'} />
+                <AppSelect label="부문" />
               </div>
             </div>
             <div className="form-cell wid50">
               <div className="form-group wid100">
-                <AppSelect label="Department" />
+                <AppAutoComplete label="부서" />
               </div>
             </div>
             <div className="form-cell wid50">
               <div className="form-group wid100">
-                <AppTextInput label="Cost Center" />
+                <AppAutoComplete label="이름" />
               </div>
             </div>
             <div className="form-cell wid50">
               <div className="form-group wid100">
-                <AppTextInput label="Account Name" />
+                <AppDatePicker label={'교육연도'} />
               </div>
             </div>
             <div className="btn-area">

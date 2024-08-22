@@ -27,13 +27,18 @@ function POccupationMu2P7edit() {
             <a href="javascript:void(0);">안전경영</a>
           </li>
           <li className="breadcrumb-item">
-            <a href="javascript:void(0);">산업안전보건관리비</a>
+            <a href="javascript:void(0);">특별 교육</a>
           </li>
         </ol>
       </div>
       {/*경로 */}
       <div className="conts-title">
-        <h2>산업안전보건관리비</h2>
+        <h2>
+          특별 교육
+          <span>
+            <a href="javascript:void(0);"></a>
+          </span>
+        </h2>
       </div>
       {/*탭 */}
       <div className="menu-tab-nav">

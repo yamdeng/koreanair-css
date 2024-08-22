@@ -27,49 +27,35 @@ function POccupationMu2P2list() {
             <a href="javascript:void(0);">안전경영</a>
           </li>
           <li className="breadcrumb-item">
-            <a href="javascript:void(0);">산업안전보건관리비</a>
+            <a href="javascript:void(0);">근로자 정기교육</a>
           </li>
         </ol>
       </div>
       {/*경로 */}
       <div className="conts-title">
-        <h2>산업안전보건관리비</h2>
+        <h2>근로자 정기교육</h2>
       </div>
-      {/*탭 */}
-      <div className="menu-tab-nav">
-        <div className="menu-tab">
-          <a href="javascript:void(0);" className="active" data-label="현황">
-            현황
-          </a>
-          <a href="javascript:void(0);" data-label="목록">
-            목록
-          </a>
-        </div>
-      </div>
-      {/*//탭 */}
       {/*검색영역 */}
       <div className="boxForm">
         {/*area-detail명 옆에 active  */}
         <div className="area-detail active">
           <div className="form-table">
             <div className="form-cell wid50">
-              <div className="form-group wid100">
-                <AppDatePicker label={'년도'} />
+              <div className="form-group form-glow">
+                <div className="df">
+                  <div className="date1">
+                    <AppDatePicker label="교육이수 기간" />
+                  </div>
+                  <span className="unt">~</span>
+                  <div className="date2">
+                    <AppDatePicker label="교육이수 기간" />
+                  </div>
+                </div>
               </div>
             </div>
             <div className="form-cell wid50">
               <div className="form-group wid100">
-                <AppSelect label="Department" />
-              </div>
-            </div>
-            <div className="form-cell wid50">
-              <div className="form-group wid100">
-                <AppTextInput label="Cost Center" />
-              </div>
-            </div>
-            <div className="form-cell wid50">
-              <div className="form-group wid100">
-                <AppTextInput label="Account Name" />
+                <AppTextInput label="과정명" />
               </div>
             </div>
             <div className="btn-area">
