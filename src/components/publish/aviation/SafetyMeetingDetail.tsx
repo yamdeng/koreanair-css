@@ -183,9 +183,12 @@ function SafetyMeetingDetail() {
       {/* 하단버튼영역 */}
       <div className="contents-btns">
         <button type="button" name="button" className="btn_text text_color_neutral-10 btn_confirm">
-          저장
+          수정
         </button>
-        <button className="btn_text btn-del btn-type01">취소</button>
+        <button disabled className="btn_text btn-disabled btn-type01">
+          삭제
+        </button>
+        <button className="btn_text btn_list btn-type01">목록</button>
       </div>
       {/*//하단버튼영역*/}
     </>
