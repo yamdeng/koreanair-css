@@ -11,6 +11,20 @@ function SPIIndicatorList() {
   const [inputValue, setInputValue] = useState('');
   const rowData = getAllData();
   const columns = testColumnInfos;
+  const customButtons = [
+    {
+      title: '불러오기',
+      onClick: () => {
+        alert('불러오기');
+      },
+    },
+    {
+      title: '편집',
+      onClick: () => {
+        alert('편집');
+      },
+    },
+  ];
   return (
     <>
       {/*경로 */}
@@ -67,8 +81,8 @@ function SPIIndicatorList() {
       {/* //검색영역 */}
 
       {/*그리드영역 */}
-      <div className="">
-        <AppTable rowData={rowData} columns={columns} />
+      <div>
+        <AppTable rowData={rowData} columns={columns} customButtons={customButtons} />
       </div>
       {/*//그리드영역 */}
     </>
