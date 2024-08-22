@@ -30,6 +30,8 @@ import SafetyMeetingList from '@/components/publish/aviation/SafetyMeetingList';
 import SPIBoardDetail from '@/components/publish/aviation/SPIBoardDetail';
 import SPIReportList from '@/components/publish/aviation/SPIReportList';
 import SPIIndicatorList from '@/components/publish/aviation/SPIIndicatorList';
+import SafetyMeetingEdit from '@/components/publish/aviation/SafetyMeetingEdit';
+import SafetyMeetingDetail from '@/components/publish/aviation/SafetyMeetingDetail';
 import { fa } from '@faker-js/faker';
 
 const AviationPageInfo: any = {};
@@ -74,6 +76,20 @@ AviationPageInfo.list = [
     title: '[02.안정정책] 안전정책 > 안전회의체 리스트',
     Component: SafetyMeetingList,
     path: 'SafetyMeetingList',
+    description: '',
+    success: true,
+  },
+  {
+    title: '[02.안정정책] 안전정책 > 안전회의체 등록',
+    Component: SafetyMeetingEdit,
+    path: 'SafetyMeetingEdit',
+    description: '',
+    success: true,
+  },
+  {
+    title: '[02.안정정책] 안전정책 > 안전회의체 상세',
+    Component: SafetyMeetingDetail,
+    path: 'SafetyMeetingDetail',
     description: '',
     success: true,
   },
