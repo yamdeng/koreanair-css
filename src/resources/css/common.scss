@@ -459,11 +459,11 @@ input, select{font-family:'KoreanAirSans'}
 .box-view-list .view-list .accumlate-list{position:relative;display:block}
 .box-view-list .view-list .t-label{display:block;color:var(--color-neutral-70);font-weight:400;font-size:1.5rem;white-space:nowrap}
 .box-view-list .view-list .text-desc{display:block;width:100%;margin-top:2rem;font-weight:400;font-size:1.6rem;color:var(--color-neutral-80);text-align:left;overflow:hidden;word-break:break-all;text-overflow:ellipsis}
-.box-view-list .view-list .text-desc-type1{position:relative;display:block;width:100%;padding-right:0.8rem;font-weight:400;font-size:1.6rem;color:var(--color-neutral-90);text-align:left;overflow:hidden;word-break:break-all;text-overflow:ellipsis}
-.box-view-list .view-list .text-desc-type1 .desc-file a{position:relative;width:100%;}
+.box-view-list .view-list .text-desc-type1{position:relative;display:block;width:100%;/*padding-right:0.8rem;*/font-weight:400;font-size:1.6rem;color:var(--color-neutral-90);text-align:left;overflow:hidden;word-break:break-all;text-overflow:ellipsis}
+.box-view-list .view-list .text-desc-type1 .desc-file {position:relative;width:100%;}
 .box-view-list .view-list .text-desc-type1 .desc-file a span {font-size: 1.6rem;}
 .box-view-list .view-list .text-desc-type1 .desc-file a span:hover{color:var(--color-mblue-100)}
-.box-view-list .view-list .text-desc-type1 .desc-file .download{float:right;margin-right:1rem;background:url(/src/resources/images/icon-download.svg) center center no-repeat;font-size:0;width:2.3rem;height:2.3rem}
+.box-view-list .view-list .text-desc-type1 .desc-file .download{/*float:right;margin-right:1rem;*/display: inline-block; position: absolute; right: 0; vertical-align: bottom; background:url(/src/resources/images/icon-download.svg) center center no-repeat;font-size:0;width:2.3rem;height:2.3rem}
 .box-view-list .view-list .text-desc-type2{position:relative;display:inline-block;width:auto;padding-right:0.8rem;font-weight:400;font-size:1.6rem;color:var(--color-neutral-80);text-align:left;overflow:hidden;word-break:break-all;text-overflow:ellipsis;margin-right: 1.5rem;}
 .box-view-list .view-list .text-desc-type2 a {font-size: 1.6rem;}
 .box-view-list .view-list .text-desc-type2 a:hover {text-decoration: underline;}
