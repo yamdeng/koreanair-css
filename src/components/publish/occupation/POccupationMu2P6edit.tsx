@@ -70,6 +70,23 @@ const props: any = {
 function POccupationMu2P6edit() {
   const rowData = getAllData();
   const columns = testColumnInfos;
+  const [inputValue, setInputValue] = useState('');
+
+  const customButtons = [
+    {
+      title: '행추가',
+      onClick: () => {
+        alert('행추가');
+      },
+    },
+    {
+      title: '전체삭제',
+      onClick: () => {
+        alert('전체삭제');
+      },
+    },
+  ];
+
   return (
     <>
       {/*경로 */}
@@ -89,6 +106,13 @@ function POccupationMu2P6edit() {
       {/*경로 */}
       <div className="conts-title">
         <h2>작업내용 변경시 교육</h2>
+        {/* 버튼영역 */}
+        <div className="btn-area">
+          <button type="button" name="button" className="btn_text text_color_neutral-10 btn_confirm">
+            무재해운동 시작
+          </button>
+        </div>
+        {/*//버튼영역*/}
       </div>
       {/* 입력영역 */}
       <div className="info-wrap toggle">
@@ -96,7 +120,7 @@ function POccupationMu2P6edit() {
           {/* toggle 선택되면  열어지면 active붙임*/}
           <dt>
             <button type="button" className="btn-tg">
-              계획<span className="hide"></span>
+              교육 정보<span className="active"></span>
             </button>
           </dt>
           <dd className="tg-conts">
@@ -106,66 +130,97 @@ function POccupationMu2P6edit() {
                   <div className="form-table">
                     <div className="form-cell wid50">
                       <div className="form-group wid100">
-                        <AppDatePicker label="년도" />
+                        <AppTextInput label="본부" required disabled />
                       </div>
                     </div>
                     <div className="form-cell wid50">
                       <div className="form-group wid100">
-                        <AppSelect label="Department" />
+                        <AppTextInput label="부서" required disabled />
                       </div>
                     </div>
                     <div className="form-cell wid50">
                       <div className="form-group wid100">
-                        <AppSelect label="Cost Center" />
-                      </div>
-                    </div>
-                    <div className="form-cell wid50">
-                      <div className="form-group wid100">
-                        <AppSelect label="Item" />
+                        <AppTextInput label="팀" required disabled />
                       </div>
                     </div>
                   </div>
                   <div className="form-table">
                     <div className="form-cell wid50">
                       <div className="form-group wid100">
-                        <AppSelect label="Account Name" />
+                        <AppTextInput label="그룹" required disabled />
                       </div>
                     </div>
                     <div className="form-cell wid50">
                       <div className="form-group wid100">
-                        <AppTextInput label="Account" />
+                        <AppTextInput label="반/섹션" required disabled />
                       </div>
                     </div>
                     <div className="form-cell wid50">
                       <div className="form-group wid100">
-                        <AppSelect label="Payterm" />
-                      </div>
-                    </div>
-                    <div className="form-cell wid50">
-                      <div className="form-group wid100">
-                        <AppTextInput label="Amount" />
+                        <AppTextInput label="작성자" required disabled />
                       </div>
                     </div>
                   </div>
                   <div className="form-table">
                     <div className="form-cell wid50">
                       <div className="form-group wid100">
-                        <AppTextInput label="Total Amount" />
+                        <AppTextInput label="교육유형" disabled />
                       </div>
                     </div>
                     <div className="form-cell wid50">
                       <div className="form-group wid100">
-                        <AppTextInput label="Description" />
+                        <AppDatePicker label="교육일자" />
+                      </div>
+                    </div>
+                    <div className="form-cell wid50">
+                      <div className="form-group form-glow">
+                        <div className="df">
+                          <div className="date3 wid100">
+                            <AppTimePicker label="교육시작시간" />
+                          </div>
+                          <span className="unt">~</span>
+                          <div className="date3 wid100">
+                            <AppTimePicker label="교육시작시간" />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="form-table">
+                    <div className="form-cell wid50">
+                      <div className="form-group wid100">
+                        <AppTextInput label="교육인원" disabled />
                       </div>
                     </div>
                     <div className="form-cell wid50">
                       <div className="form-group wid100">
-                        <AppTextInput label="등록자" />
+                        <AppTextInput label="교육장소" />
                       </div>
                     </div>
+                  </div>
+                  <div className="form-table">
                     <div className="form-cell wid50">
                       <div className="form-group wid100">
-                        <AppDatePicker label="등록일자" />
+                        <AppSelect label="작업내용" />
+                      </div>
+                    </div>
+                  </div>
+                  <div className="form-table">
+                    <div className="form-cell wid50">
+                      <div className="form-group wid100">
+                        <textarea
+                          id="testArea1"
+                          className="form-tag custom_textarea"
+                          style={{ width: '100%' }}
+                          name="testArea1"
+                          value={inputValue}
+                          onChange={(event) => {
+                            setInputValue(event.target.value);
+                          }}
+                        />
+                        <label className="f-label" htmlFor="testArea1">
+                          교육내용
+                        </label>
                       </div>
                     </div>
                   </div>
@@ -176,11 +231,28 @@ function POccupationMu2P6edit() {
         </dl>
       </div>
       {/*//입력영역*/}
+      {/*그리드영역 */}
+      <div className="mt-30">
+        <h3 className="table-tit">강사 정보</h3>
+        <AppTable rowData={rowData} columns={columns} customButtons={customButtons} />
+      </div>
+      <div className="mt-30">
+        <h3 className="table-tit">입과자 정보</h3>
+        <AppTable rowData={rowData} columns={columns} customButtons={customButtons} />
+      </div>
+      <div className="mt-30">
+        <h3 className="table-tit">결재자 정보</h3>
+        <AppTable rowData={rowData} columns={columns} customButtons={customButtons} />
+      </div>
+      {/*//그리드영역 */}
 
       {/* 하단버튼영역 */}
       <div className="contents-btns">
         <button type="button" name="button" className="btn_text text_color_neutral-10 btn_confirm">
           저장
+        </button>
+        <button type="button" name="button" className="btn_text btn-del">
+          삭제
         </button>
         <button type="button" name="button" className="btn_text btn_list">
           목록

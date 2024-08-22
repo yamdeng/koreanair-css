@@ -218,21 +218,15 @@ function POccupationMu1P11detail() {
               </div>
             </div>
           </dd>
-          <dt className="mt-30">
-            <button type="button" className="btn-tg">
-              실적<span className="hide"></span>
-            </button>
-          </dt>
-          <dd className="tg-conts">
-            {/*그리드영역 */}
-            <div className="edit-area pt-20">
-              <AppTable rowData={rowData} columns={columns} customButtons={customButtons} />
-            </div>
-            {/*//그리드영역 */}
-          </dd>
         </dl>
       </div>
       {/*//상세영역*/}
+      {/*그리드영역 */}
+      <div className="edit-area pt-20">
+        <h3 className="table-tit">실적</h3>
+        <AppTable rowData={rowData} columns={columns} customButtons={customButtons} />
+      </div>
+      {/*//그리드영역 */}
 
       {/* 하단버튼영역 */}
       <div className="contents-btns">
