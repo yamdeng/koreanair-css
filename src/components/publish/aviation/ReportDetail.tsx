@@ -86,12 +86,29 @@ function SafetyDetail() {
       </div>
       {/*경로 */}
       <div className="conts-title">
-        <h2>
+        <h2 className="reportview">
           보고서 보기
           <span>
             <a href="javascript:void(0);">ASR-100308</a>
-            <em>(3)</em>
           </span>
+          <ul className="section-button">
+            <li className="icon_share tooltip">
+              <div className="sub_info">
+                <ul className="info-box">
+                  <li>
+                    <a href="javascript:void(0);">ASR-100308</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0);">ASR-100314</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0);">ASR-100309</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <em>(3)</em>
+          </ul>
         </h2>
       </div>
       <div className="Report-step-area">

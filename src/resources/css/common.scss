@@ -248,16 +248,26 @@ input, select{font-family:'KoreanAirSans'}
 }
 /* 상단 타이틀 */
 .conts-title{position:relative;align-items:center;padding:2.0rem 0 4.0rem 0;margin-bottom:1.0rem}
-.conts-title h2{float:left;font-family:"KoreanAirSans";font-size:3rem;color:var(--color-neutral-80);font-weight:700;letter-spacing:-0.1rem}
+.conts-title h2{display:flex;float:left;font-family:"KoreanAirSans";font-size:3rem;color:var(--color-neutral-80);font-weight:700;letter-spacing:-0.1rem}
 .conts-title h2 span a{position:relative;font-size:2.5rem;color:var(--color-mblue-100);padding-left:1.0rem}
 .conts-title h2 span a:after{content:'';position:absolute;box-sizing:content-box;right:-3.5rem;width:3.0rem;height:3.0rem;background:url(../images/icon-documents.svg)no-repeat center center;cursor:pointer}
-.conts-title h2 span em{padding-left:3.3rem}
-.conts-title h3 {float:left;font-family:"KoreanAirSans";font-size:2rem;color:var(--color-neutral-80);font-weight:500;letter-spacing:-0.1rem}
+.conts-title h2.reportview span a{position:relative;font-size:2.5rem;color:var(--color-mblue-100);padding-left:1.0rem}
+.conts-title h2.reportview span a:after{display:none}
+.conts-title h2.reportview ul.section-button{position:relative;display:flex}
+.conts-title h2.reportview ul.section-button .icon_share{width:3.0rem;height:3.0rem;background:url(../images/icon-documents.svg)no-repeat center center;border:0;cursor:pointer;vertical-align: top;  }
+.conts-title h2.reportview ul.section-button em{}
+.conts-title h2.reportview ul.section-button .sub_info{/*display:none*/}
+.conts-title h2.reportview ul.section-button .sub_info:before{content:'';display:block;position:absolute;top:1.5rem;left:1rem;width:0; border-width:0 1.3rem 1.5rem 1.3rem;border-style:solid;border-color:var(--color-neutral-30) transparent}
+.conts-title h2.reportview ul.section-button .info-box{position:absolute;right:-5rem;top:3rem;width:12.0rem;height:10.3rem;overflow-y:auto;border:solid 0.1rem var(--color-neutral-30);background:var(--color-neutral-10);text-align:left;z-index:999}
+.conts-title h2.reportview ul.section-button .info-box li{display:block;font-weight:400;font-size:1.2rem;padding:0.7rem;border-bottom:0.1rem solid var(--color-neutral-30);height:3.3rem}
+.conts-title h2.reportview ul.section-button .info-box li:last-child{border-bottom:0}
+.conts-title h2.reportview ul.section-button .info-box li:hover{background-color:var(--color-lightblue-10)}
+.conts-title h3{float:left;font-family:"KoreanAirSans";font-size:2rem;color:var(--color-neutral-80);font-weight:500;letter-spacing:-0.1rem}
 
 
 
 .table-header{display:flex;position:relative;justify-content:end;align-items:center;-webkit-box-align:center;width:100%;line-height:3.5rem;padding-bottom:1.2rem}
-.table-header .count{font-size:1.5rem;margin-right: auto;}
+.table-header .count{font-size:1.5rem;margin-right:auto}
 .table-header >.btn-area{position:absolute;top:0;right:1.0rem;display:flex}/*display: flex;추가*/
 .controlArea{/*flex:1;text-align:right*/float:right}
 .controlArea .btn{height:3.5rem;padding:0 2.0rem;font-size:1.6rem;font-weight:700;border:none;color:var(--color-neutral-10);border-radius:99.9rem;opacity:1;transition:opacity 0.1s ease}
