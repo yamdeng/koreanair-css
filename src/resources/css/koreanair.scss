@@ -418,3 +418,29 @@
       text-align: center;
       overflow: auto;
     }
+    .ck-box-tit {
+      color: var(--color-darkblue-100);
+      font-size: 1.6rem;
+      font-weight: normal;
+      padding: 1.0rem 0;
+    }
+    .input-box-tit {
+      color: var(--color-darkblue-100);
+      font-size: 1.6rem;
+      font-weight: normal;
+      padding: 1.0rem 0 0;
+    }
+    .ck-edit-box {
+      width: 100%; 
+      padding: 1.0rem 0 0;
+      .ck-list {
+        display: inline-block;
+        width: 50%;
+        background-color: aqua;
+      }
+      .ck-edit {
+        display: inline-block;
+        width: 50%;
+        background-color: yellowgreen;
+      }
+    }

@@ -111,7 +111,7 @@ function POccupationMu6P2edit() {
                     </div>
                     <div className="form-cell wid50">
                       <div className="form-group wid100">
-                        <AppTextInput label="작성일자" disabled />
+                        <AppDatePicker label="작성일자" disabled />
                       </div>
                     </div>
                     <div className="form-cell wid50">
@@ -136,88 +136,88 @@ function POccupationMu6P2edit() {
                   <div className="form-table">
                     <div className="form-cell wid50">
                       <div className="form-group wid100">
-                        <AppTextInput label="성명" required />
+                        <AppAutoComplete label="성명" />
                       </div>
                     </div>
                     <div className="form-cell wid50">
                       <div className="form-group wid100">
-                        <AppTextInput label="사번" required disabled />
+                        <AppTextInput label="사번" disabled />
                       </div>
                     </div>
                     <div className="form-cell wid50">
                       <div className="form-group wid100">
-                        <AppTextInput label="주민번호" required disabled />
-                      </div>
-                    </div>
-                  </div>
-                  <div className="form-table">
-                    <div className="form-cell wid50">
-                      <div className="form-group wid100">
-                        <AppTextInput label="성별" required disabled />
-                      </div>
-                    </div>
-                    <div className="form-cell wid50">
-                      <div className="form-group wid100">
-                        <AppTextInput label="휴대전화" required />
-                      </div>
-                    </div>
-                    <div className="form-cell wid50">
-                      <div className="form-group wid100">
-                        <AppTextInput label="주소" required />
+                        <AppTextInput label="주민번호" disabled />
                       </div>
                     </div>
                   </div>
                   <div className="form-table">
                     <div className="form-cell wid50">
                       <div className="form-group wid100">
-                        <AppTextInput label="본부" required disabled />
+                        <AppTextInput label="성별" disabled />
                       </div>
                     </div>
                     <div className="form-cell wid50">
                       <div className="form-group wid100">
-                        <AppTextInput label="부서" required />
+                        <AppTextInput label="휴대전화" />
                       </div>
                     </div>
                     <div className="form-cell wid50">
                       <div className="form-group wid100">
-                        <AppTextInput label="팀" required />
-                      </div>
-                    </div>
-                    <div className="form-cell wid50">
-                      <div className="form-group wid100">
-                        <AppTextInput label="그룹" required disabled />
-                      </div>
-                    </div>
-                    <div className="form-cell wid50">
-                      <div className="form-group wid100">
-                        <AppTextInput label="반/섹션" required />
+                        <AppTextInput label="주소" />
                       </div>
                     </div>
                   </div>
                   <div className="form-table">
                     <div className="form-cell wid50">
                       <div className="form-group wid100">
-                        <AppTextInput label="직종/직급" required />
+                        <AppSelect label="본부" />
                       </div>
                     </div>
                     <div className="form-cell wid50">
                       <div className="form-group wid100">
-                        <AppTextInput label="입사일" required />
+                        <AppAutoComplete label="부서" />
                       </div>
                     </div>
                     <div className="form-cell wid50">
                       <div className="form-group wid100">
-                        <AppTextInput label="근속기간" required disabled />
+                        <AppTextInput label="팀" disabled />
                       </div>
                     </div>
                     <div className="form-cell wid50">
                       <div className="form-group wid100">
-                        <AppTextInput label="고용형태" required />
+                        <AppTextInput label="그룹" disabled />
                       </div>
                     </div>
                     <div className="form-cell wid50">
                       <div className="form-group wid100">
-                        <AppTextInput label="근무형태" required />
+                        <AppTextInput label="반/섹션" disabled />
+                      </div>
+                    </div>
+                  </div>
+                  <div className="form-table">
+                    <div className="form-cell wid50">
+                      <div className="form-group wid100">
+                        <AppTextInput label="직종/직급" disabled />
+                      </div>
+                    </div>
+                    <div className="form-cell wid50">
+                      <div className="form-group wid100">
+                        <AppDatePicker label="입사일" />
+                      </div>
+                    </div>
+                    <div className="form-cell wid50">
+                      <div className="form-group wid100">
+                        <AppTextInput label="근속기간" disabled />
+                      </div>
+                    </div>
+                    <div className="form-cell wid50">
+                      <div className="form-group wid100">
+                        <AppSelect label="고용형태" />
+                      </div>
+                    </div>
+                    <div className="form-cell wid50">
+                      <div className="form-group wid100">
+                        <AppSelect label="근무형태" />
                       </div>
                     </div>
                   </div>
@@ -252,6 +252,731 @@ function POccupationMu6P2edit() {
                       </div>
                     </div>
                   </div>
+                  {/* 라디오버튼 '예' 선택시 입력창 */}
+                  <div className="form-table">
+                    <div className="form-cell wid50">
+                      <div className="form-group wid100">
+                        <AppTextInput label="팀번호" />
+                      </div>
+                    </div>
+                    <div className="form-cell wid50">
+                      <div className="form-group wid100">
+                        <AppTextInput label="비행시간" />
+                      </div>
+                    </div>
+                    <div className="form-cell wid50">
+                      <div className="form-group wid100">
+                        <AppTextInput label="항공기 HL" />
+                      </div>
+                    </div>
+                    <div className="form-cell wid50">
+                      <div className="form-group wid100">
+                        <AppTextInput label="항공기 편명 KE" />
+                      </div>
+                    </div>
+                    <div className="form-cell wid50">
+                      <div className="form-group wid100">
+                        <AppSelect label="비행기 기종" />
+                      </div>
+                    </div>
+                  </div>
+                  <div className="form-table">
+                    <div className="form-cell wid50">
+                      <div className="form-group wid100">
+                        <AppTextInput label="기타 내용" />
+                      </div>
+                    </div>
+                    <div className="form-cell wid50">
+                      <div className="form-group wid100">
+                        <AppDatePicker label="항공기 ITNRY" />
+                      </div>
+                    </div>
+                    <div className="form-cell wid50">
+                      <div className="form-group wid100">
+                        <AppTextInput label="Duty" />
+                      </div>
+                    </div>
+                    <div className="form-cell wid50">
+                      <div className="form-group wid100">
+                        <AppSelect label="발생장소" />
+                      </div>
+                    </div>
+                    <div className="form-cell wid50">
+                      <div className="form-group wid100">
+                        <AppSelect label="발생노선" />
+                      </div>
+                    </div>
+                  </div>
+                  {/* 라디오버튼 '예' 선택시 입력창 End */}
+                </div>
+              </div>
+            </div>
+          </dd>
+          <dt>
+            <button type="button" className="btn-tg">
+              재해경위 및 재발방지 대책 수립 계획<span className="active"></span>
+            </button>
+          </dt>
+          <dd className="tg-conts">
+            <div className="edit-area">
+              <div className="detail-form">
+                <div className="detail-list">
+                  <div className="form-table">
+                    <div className="form-cell wid50">
+                      <div className="form-group wid100">
+                        <AppSelect label="재해 유형" />
+                      </div>
+                    </div>
+                    <div className="form-cell wid50">
+                      <div className="form-group wid100">
+                        <AppDatePicker label="발생 일시" />
+                      </div>
+                    </div>
+                    <div className="form-cell wid50">
+                      <div className="form-group wid100">
+                        <AppTextInput label="발생 장소" />
+                      </div>
+                    </div>
+                  </div>
+                  <div className="form-table">
+                    <div className="form-cell wid50">
+                      <div className="form-group wid100">
+                        <AppTextInput label="발생 개요" />
+                      </div>
+                    </div>
+                  </div>
+                  <div className="form-table">
+                    <div className="form-cell wid50">
+                      <div className="form-group wid100">
+                        <textarea
+                          id="testArea1"
+                          className="form-tag custom_textarea"
+                          style={{ width: '100%' }}
+                          name="testArea1"
+                          value={inputValue}
+                          onChange={(event) => {
+                            setInputValue(event.target.value);
+                          }}
+                        />
+                        <label className="f-label" htmlFor="testArea1">
+                          발생 경위
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="form-table">
+                    <div className="form-cell wid50">
+                      <div className="group-box-wrap wid100">
+                        <span className="txt">발생 형태</span>
+                        <div className="radio-wrap">
+                          <label>
+                            <input type="radio" />
+                            <span>떨어짐</span>
+                          </label>
+                          <label>
+                            <input type="radio" />
+                            <span>넘어짐</span>
+                          </label>
+                          <label>
+                            <input type="radio" />
+                            <span>부딪힘</span>
+                          </label>
+                          <label>
+                            <input type="radio" />
+                            <span>물체에 맞음</span>
+                          </label>
+                          <label>
+                            <input type="radio" />
+                            <span>무너짐</span>
+                          </label>
+                          <label>
+                            <input type="radio" />
+                            <span>끼 임</span>
+                          </label>
+                          <label>
+                            <input type="radio" />
+                            <span>절단·베임·찔림</span>
+                          </label>
+                          <label>
+                            <input type="radio" />
+                            <span>감 전</span>
+                          </label>
+                          <label>
+                            <input type="radio" />
+                            <span>폭발·파열</span>
+                          </label>
+                          <label>
+                            <input type="radio" />
+                            <span>화재</span>
+                          </label>
+                          <label>
+                            <input type="radio" />
+                            <span>깔림·뒤집힘</span>
+                          </label>
+                          <label>
+                            <input type="radio" />
+                            <span>이상온도 접촉</span>
+                          </label>
+                          <label>
+                            <input type="radio" />
+                            <span>빠짐·익사</span>
+                          </label>
+                          <label>
+                            <input type="radio" />
+                            <span>무리한 동작</span>
+                          </label>
+                          <label>
+                            <input type="radio" />
+                            <span>산소 결핍</span>
+                          </label>
+                          <label>
+                            <input type="radio" />
+                            <span>체육행사</span>
+                          </label>
+                          <label>
+                            <input type="radio" />
+                            <span>폭력행위</span>
+                          </label>
+                          <label>
+                            <input type="radio" />
+                            <span>동물상해</span>
+                          </label>
+                          <label>
+                            <input type="radio" />
+                            <span>교통사고</span>
+                          </label>
+                          <label>
+                            <input type="radio" />
+                            <span>업무상 질병</span>
+                          </label>
+                          <label>
+                            <input type="radio" />
+                            <span>분류불능</span>
+                          </label>
+                          <div>
+                            <label>
+                              <input type="radio" />
+                              <span>기타</span>
+                            </label>
+                            <input type="text" placeholder="기타" />
+                          </div>
+                        </div>
+                        {/*<span className="errorText">error</span>*/}
+                      </div>
+                    </div>
+                  </div>
+                  <div className="form-table">
+                    <div className="form-cell wid50">
+                      <div className="group-box-wrap wid100">
+                        <span className="txt">상해 부위</span>
+                        <div className="radio-wrap">
+                          <label>
+                            <input type="checkbox" />
+                            <span>두 부</span>
+                          </label>
+                          <label>
+                            <input type="checkbox" />
+                            <span>눈</span>
+                          </label>
+                          <label>
+                            <input type="checkbox" />
+                            <span>귀</span>
+                          </label>
+                          <label>
+                            <input type="checkbox" />
+                            <span>안면부</span>
+                          </label>
+                          <label>
+                            <input type="checkbox" />
+                            <span>목</span>
+                          </label>
+                          <label>
+                            <input type="checkbox" />
+                            <span>팔</span>
+                          </label>
+                          <label>
+                            <input type="checkbox" />
+                            <span>손·손가락</span>
+                          </label>
+                          <label>
+                            <input type="checkbox" />
+                            <span>가슴·등</span>
+                          </label>
+                          <label>
+                            <input type="checkbox" />
+                            <span>허 리</span>
+                          </label>
+                          <label>
+                            <input type="checkbox" />
+                            <span>엉덩이</span>
+                          </label>
+                          <label>
+                            <input type="checkbox" />
+                            <span>다 리</span>
+                          </label>
+                          <label>
+                            <input type="checkbox" />
+                            <span>발·발가락</span>
+                          </label>
+                          <label>
+                            <input type="checkbox" />
+                            <span>복합부위</span>
+                          </label>
+                          <label>
+                            <input type="checkbox" />
+                            <span>순환기관</span>
+                          </label>
+                          <label>
+                            <input type="checkbox" />
+                            <span>호흡기관</span>
+                          </label>
+                          <label>
+                            <input type="checkbox" />
+                            <span>소화기관</span>
+                          </label>
+                          <label>
+                            <input type="checkbox" />
+                            <span>비뇨·생식기관</span>
+                          </label>
+                          <label>
+                            <input type="checkbox" />
+                            <span>신경계통</span>
+                          </label>
+                          <label>
+                            <input type="checkbox" />
+                            <span>복 부</span>
+                          </label>
+                          <label>
+                            <input type="checkbox" />
+                            <span>전 신</span>
+                          </label>
+                          <label>
+                            <input type="checkbox" />
+                            <span>분류불능</span>
+                          </label>
+                          <div>
+                            <label>
+                              <input type="checkbox" />
+                              <span>기타</span>
+                            </label>
+                            <input type="text" placeholder="기타" />
+                          </div>
+                        </div>
+                        {/*<span className="errorText">error</span>*/}
+                      </div>
+                    </div>
+                  </div>
+                  <div className="form-table">
+                    <div className="form-cell wid50">
+                      <div className="group-box-wrap wid100">
+                        <span className="txt">상해 종류</span>
+                        <div className="radio-wrap">
+                          <label>
+                            <input type="checkbox" />
+                            <span>골 절</span>
+                          </label>
+                          <label>
+                            <input type="checkbox" />
+                            <span>동 상</span>
+                          </label>
+                          <label>
+                            <input type="checkbox" />
+                            <span>부 종</span>
+                          </label>
+                          <label>
+                            <input type="checkbox" />
+                            <span>찔 림</span>
+                          </label>
+                          <label>
+                            <input type="checkbox" />
+                            <span>타박상(염좌)</span>
+                          </label>
+                          <label>
+                            <input type="checkbox" />
+                            <span>절 단</span>
+                          </label>
+                          <label>
+                            <input type="checkbox" />
+                            <span>중독 및 질식</span>
+                          </label>
+                          <label>
+                            <input type="checkbox" />
+                            <span>찰과상</span>
+                          </label>
+                          <label>
+                            <input type="checkbox" />
+                            <span>베 임</span>
+                          </label>
+                          <label>
+                            <input type="checkbox" />
+                            <span>화 상</span>
+                          </label>
+                          <label>
+                            <input type="checkbox" />
+                            <span>뇌진탕</span>
+                          </label>
+                          <label>
+                            <input type="checkbox" />
+                            <span>추간판탈출증</span>
+                          </label>
+                          <label>
+                            <input type="checkbox" />
+                            <span>익 사</span>
+                          </label>
+                          <label>
+                            <input type="checkbox" />
+                            <span>피부병</span>
+                          </label>
+                          <label>
+                            <input type="checkbox" />
+                            <span>청력장애</span>
+                          </label>
+                          <label>
+                            <input type="checkbox" />
+                            <span>시력장애</span>
+                          </label>
+                          <div>
+                            <label>
+                              <input type="checkbox" />
+                              <span>기타</span>
+                            </label>
+                            <input type="text" placeholder="기타" />
+                          </div>
+                        </div>
+                        {/*<span className="errorText">error</span>*/}
+                      </div>
+                    </div>
+                  </div>
+                  {/*재해자가 객실본부 소속이 아닌 경우 입력항목*/}
+                  <div className="form-table">
+                    <div className="form-cell wid50">
+                      <div className="group-box-wrap wid100">
+                        <span className="txt">작업 내용</span>
+                        <div className="radio-wrap">
+                          <label>
+                            <input type="radio" />
+                            <span>기계·장치 설비 작동</span>
+                          </label>
+                          <div>
+                            <label>
+                              <input type="radio" />
+                              <span>기타</span>
+                            </label>
+                            <input type="text" placeholder="기타" />
+                          </div>
+                        </div>
+                        {/*<span className="errorText">error</span>*/}
+                      </div>
+                    </div>
+                  </div>
+                  <div className="form-table">
+                    <div className="form-cell wid50">
+                      <div className="group-box-wrap wid100">
+                        <span className="txt">
+                          기인물<i>아이콘</i>
+                        </span>
+                        <div className="radio-wrap">
+                          <label>
+                            <input type="radio" />
+                            <span>건축물 및 구조물</span>
+                          </label>
+                          <div>
+                            <label>
+                              <input type="radio" />
+                              <span>기타</span>
+                            </label>
+                            <input type="text" placeholder="기타" />
+                          </div>
+                        </div>
+                        {/*<span className="errorText">error</span>*/}
+                      </div>
+                    </div>
+                  </div>
+                  {/*재해자가 객실본부 소속이 아닌 경우 입력항목 End*/}
+                  {/*재해자가 객실본부 소속인 경우 입력항목*/}
+                  <div className="form-table">
+                    <div className="form-cell wid50">
+                      <div className="group-box-wrap wid100">
+                        <span className="txt">작업 내용</span>
+                        <div className="radio-wrap">
+                          <label>
+                            <input type="radio" />
+                            <span>재해자가 객실본부 소속인 경우</span>
+                          </label>
+                          <div>
+                            <label>
+                              <input type="radio" />
+                              <span>기타</span>
+                            </label>
+                            <input type="text" placeholder="기타" />
+                          </div>
+                        </div>
+                        {/*<span className="errorText">error</span>*/}
+                      </div>
+                    </div>
+                  </div>
+                  <div className="form-table">
+                    <div className="form-cell wid50">
+                      <div className="group-box-wrap wid100">
+                        <span className="txt">
+                          기인물<i>아이콘</i>
+                        </span>
+                        <div className="radio-wrap">
+                          <label>
+                            <input type="radio" />
+                            <span>기내 구조물(Door, 계단, O/H Bin 등)</span>
+                          </label>
+                          <div>
+                            <label>
+                              <input type="radio" />
+                              <span>기타</span>
+                            </label>
+                            <input type="text" placeholder="기타" />
+                          </div>
+                        </div>
+                        {/*<span className="errorText">error</span>*/}
+                      </div>
+                    </div>
+                  </div>
+                  <div className="form-table">
+                    <div className="form-cell wid50">
+                      <div className="form-group wid100">
+                        <AppTextInput label="사고기물" />
+                      </div>
+                    </div>
+                  </div>
+                  {/*재해자가 객실본부 소속인 경우 입력항목 End*/}
+                  <h3 className="ck-box-tit">관리적 원인</h3>
+                  <div className="form-table">
+                    <div className="form-cell wid50">
+                      <div className="group-box-wrap wid100">
+                        <span className="txt">기술적 원인</span>
+                        <div className="radio-wrap">
+                          <label>
+                            <input type="radio" />
+                            <span>구조물·기계장비 설치불량</span>
+                          </label>
+                          <div>
+                            <label>
+                              <input type="radio" />
+                              <span>기타</span>
+                            </label>
+                            <input type="text" placeholder="기타" />
+                          </div>
+                        </div>
+                        {/*<span className="errorText">error</span>*/}
+                      </div>
+                    </div>
+                  </div>
+                  <div className="form-table">
+                    <div className="form-cell wid50">
+                      <div className="group-box-wrap wid100">
+                        <span className="txt">교육적 원인</span>
+                        <div className="radio-wrap">
+                          <label>
+                            <input type="radio" />
+                            <span>안전지식의 부족</span>
+                          </label>
+                          <div>
+                            <label>
+                              <input type="radio" />
+                              <span>기타</span>
+                            </label>
+                            <input type="text" placeholder="기타" />
+                          </div>
+                        </div>
+                        {/*<span className="errorText">error</span>*/}
+                      </div>
+                    </div>
+                  </div>
+                  <div className="form-table">
+                    <div className="form-cell wid50">
+                      <div className="group-box-wrap wid100">
+                        <span className="txt">직업관리상의 원인</span>
+                        <div className="radio-wrap">
+                          <label>
+                            <input type="radio" />
+                            <span>안전관리 조직결함</span>
+                          </label>
+                          <div>
+                            <label>
+                              <input type="radio" />
+                              <span>기타</span>
+                            </label>
+                            <input type="text" placeholder="기타" />
+                          </div>
+                        </div>
+                        {/*<span className="errorText">error</span>*/}
+                      </div>
+                    </div>
+                  </div>
+                  <h3 className="ck-box-tit">직접 원인</h3>
+                  <div className="form-table">
+                    <div className="form-cell wid50">
+                      <div className="group-box-wrap wid100">
+                        <span className="txt">불안전 상태</span>
+                        <div className="radio-wrap">
+                          <label>
+                            <input type="radio" />
+                            <span>기물·장비 자체 결함</span>
+                          </label>
+                          <div>
+                            <label>
+                              <input type="radio" />
+                              <span>기타</span>
+                            </label>
+                            <input type="text" placeholder="기타" />
+                          </div>
+                        </div>
+                        {/*<span className="errorText">error</span>*/}
+                      </div>
+                    </div>
+                  </div>
+                  <div className="form-table">
+                    <div className="form-cell wid50">
+                      <div className="group-box-wrap wid100">
+                        <span className="txt">불안전 행동</span>
+                        <div className="radio-wrap">
+                          <label>
+                            <input type="radio" />
+                            <span>위험장소 접근</span>
+                          </label>
+                          <div>
+                            <label>
+                              <input type="radio" />
+                              <span>기타</span>
+                            </label>
+                            <input type="text" placeholder="기타" />
+                          </div>
+                        </div>
+                        {/*<span className="errorText">error</span>*/}
+                      </div>
+                    </div>
+                  </div>
+                  <div className="form-table">
+                    <div className="form-cell wid50">
+                      <div className="form-group wid100">
+                        <textarea
+                          id="testArea1"
+                          className="form-tag custom_textarea"
+                          style={{ width: '100%' }}
+                          name="testArea1"
+                          value={inputValue}
+                          onChange={(event) => {
+                            setInputValue(event.target.value);
+                          }}
+                        />
+                        <label className="f-label" htmlFor="testArea1">
+                          재발방지 대책
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="form-table">
+                    <div className="form-cell wid50">
+                      <div className="form-group wid100">
+                        <AppTextInput label="진단명" />
+                      </div>
+                    </div>
+                  </div>
+                  <div className="form-table">
+                    <div className="form-cell wid100">
+                      <div className="form-group form-glow">
+                        <div className="df">
+                          <div className="date1">
+                            <AppDatePicker label="진단기간" />
+                          </div>
+                          <span className="unt">~</span>
+                          <div className="date2">
+                            <AppDatePicker label="진단기간" />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="form-cell wid100">
+                      <div className="form-group form-glow">
+                        <div className="df">
+                          <div className="date1">
+                            <AppDatePicker label="예상근로 손실기간" />
+                          </div>
+                          <span className="unt">~</span>
+                          <div className="date2">
+                            <AppDatePicker label="예상근로 손실기간" />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="form-cell wid50">
+                      <div className="form-group wid100">
+                        <AppTextInput label=" 예상 근로 손실 일수" disabled />
+                      </div>
+                    </div>
+                  </div>
+                  {/* 파일첨부영역 : button */}
+                  <div className="form-table">
+                    <div className="form-cell wid50">
+                      <div className="form-group wid100">
+                        <div className="filebox ">
+                          <Upload {...props}>
+                            <div className="btn-area">
+                              <button type="button" name="button" className="btn-big btn_text btn-darkblue-line mg-n">
+                                + Upload
+                              </button>
+                            </div>
+                          </Upload>
+                          <label htmlFor="file" className="file-label">
+                            파일 첨부 <span className="required">*</span>
+                          </label>
+                        </div>
+                        {/*<span className="errorText">fileerror</span>*/}
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </dd>
+          <dt>
+            <button type="button" className="btn-tg">
+              산재신청<span className="active"></span>
+            </button>
+          </dt>
+          <dd className="tg-conts">
+            <div className="edit-area">
+              <div className="detail-form">
+                <div className="detail-list">
+                  <div className="form-table">
+                    <div className="form-cell wid50">
+                      <div className="group-box-wrap wid100">
+                        <span className="txt">신청하시겠습니까?</span>
+                        <div className="radio-wrap">
+                          <label>
+                            <input type="radio" checked />
+                            <span>예</span>
+                          </label>
+                          <label>
+                            <input type="radio" />
+                            <span>아니오</span>
+                          </label>
+                        </div>
+                        {/*<span className="errorText">error</span>*/}
+                      </div>
+                    </div>
+                  </div>
+                  {/*산재신청 '예'선택시*/}
+                  <h3 className="input-box-tit">요양승인</h3>
+                  <div className="form-table">
+                    <div className="form-cell wid50">
+                      <div className="form-group wid100">
+                        <AppSelect label=" 요양승인 상태" />
+                      </div>
+                      <div className="ck-edit-box">
+                        <div className="ck-list">그리드영역</div>
+                        <div className="ck-edit">입력폼영역</div>
+                      </div>
+                    </div>
+                  </div>
+                  {/*산재신청 '예'선택시 End*/}
                 </div>
               </div>
             </div>
@@ -267,6 +992,9 @@ function POccupationMu6P2edit() {
         </button>
         <button type="button" name="button" className="btn_text btn-del">
           삭제
+        </button>
+        <button type="button" name="button" className="btn_text btn-del">
+          취소
         </button>
       </div>
       {/*//하단버튼영역*/}
