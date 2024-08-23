@@ -100,7 +100,7 @@ function UserEditModal(props) {
       isOpen={isOpen}
       ariaHideApp={false}
       overlayClassName={'alert-modal-overlay'}
-      className={'list-common-modal-content'}
+      className={'confirm-modal-content'}
       onRequestClose={() => {
         closeModal();
       }}
@@ -110,38 +110,133 @@ function UserEditModal(props) {
         <div className="pop_full_cont_box">
           <div className="pop_flex_group">
             <div className="pop_cont_form">
-              {/*검색영역 */}
-              <div className="boxForm">
-                {/*area-detail명 옆에 active  */}
-                <div id="" className="area-detail active">
-                  <div className="form-table">
-                    <div className="form-cell wid50">
-                      <div className="form-group wid100">
-                        <AppAutoComplete label={'부문'} disabled />
-                      </div>
-                    </div>
-                    <div className="form-cell wid50">
-                      <div className="form-group wid100">
-                        <AppAutoComplete label={'부서'} />
-                      </div>
-                    </div>
-                  </div>
-                  <div className="form-table">
-                    <div className="form-cell wid50">
-                      <div className="form-group wid100">
-                        <AppSelect label={'제목'} />
+              {/*상세영역 */}
+              <div className="editbox">
+                <div className="form-table line">
+                  <div className="form-cell wid100">
+                    <div className="form-group wid100">
+                      <div className="box-view-list">
+                        <ul className="view-list">
+                          <li className="accumlate-list">
+                            <label className="t-label">본부</label>
+                            <span className="text-desc-type1">본부</span>
+                          </li>
+                        </ul>
                       </div>
                     </div>
                   </div>
-
-                  <div className="btn-area mb-10">
-                    <button type="button" name="button" className="btn-sm btn_text btn-darkblue-line">
-                      검색
-                    </button>
+                  <div className="form-cell wid100">
+                    <div className="form-group wid100">
+                      <div className="box-view-list">
+                        <ul className="view-list">
+                          <li className="accumlate-list">
+                            <label className="t-label">부서</label>
+                            <span className="text-desc-type1">부서</span>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
                   </div>
                 </div>
+                <hr className="line"></hr>
+                <div className="form-table line">
+                  <div className="form-cell wid100">
+                    <div className="form-group wid100">
+                      <div className="box-view-list">
+                        <ul className="view-list">
+                          <li className="accumlate-list">
+                            <label className="t-label">팀</label>
+                            <span className="text-desc-type1">팀</span>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="form-cell wid100">
+                    <div className="form-group wid100">
+                      <div className="box-view-list">
+                        <ul className="view-list">
+                          <li className="accumlate-list">
+                            <label className="t-label">그룹</label>
+                            <span className="text-desc-type1">그룹</span>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <hr className="line dp-n"></hr>
+                <div className="form-table line">
+                  <div className="form-cell wid100">
+                    <div className="form-group wid100">
+                      <div className="box-view-list">
+                        <ul className="view-list">
+                          <li className="accumlate-list">
+                            <label className="t-label">반</label>
+                            <span className="text-desc-type1">반</span>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="form-cell wid100">
+                    <div className="form-group wid100">
+                      <div className="box-view-list">
+                        <ul className="view-list">
+                          <li className="accumlate-list">
+                            <label className="t-label">직책</label>
+                            <span className="text-desc-type1">직책</span>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <hr className="line dp-n"></hr>
+                <div className="form-table line">
+                  <div className="form-cell wid100">
+                    <div className="form-group wid100">
+                      <div className="box-view-list">
+                        <ul className="view-list">
+                          <li className="accumlate-list">
+                            <label className="t-label">사번</label>
+                            <span className="text-desc-type1">사번</span>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="form-cell wid100">
+                    <div className="form-group wid100">
+                      <div className="box-view-list">
+                        <ul className="view-list">
+                          <li className="accumlate-list">
+                            <label className="t-label">성명</label>
+                            <span className="text-desc-type1">성명</span>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <hr className="line dp-n"></hr>
+                <div className="form-table">
+                  <div className="form-cell wid100">
+                    <div className="form-group wid100">
+                      <div className="box-view-list">
+                        <ul className="view-list">
+                          <li className="accumlate-list">
+                            <label className="t-label">발행일자</label>
+                            <span className="text-desc-type1">발행일자</span>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <hr className="line dp-n"></hr>
               </div>
-              {/* //검색영역 */}
+              {/* //상세영역 */}
               {/*그리드영역 */}
               <div>
                 <AppTable rowData={rowData} columns={columns} />
@@ -153,7 +248,7 @@ function UserEditModal(props) {
 
         <div className="pop_btns">
           <button className="btn_text text_color_neutral-90 btn_close" onClick={closeModal}>
-            취소
+            닫기
           </button>
         </div>
         <span className="pop_close" onClick={closeModal}>

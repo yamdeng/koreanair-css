@@ -143,11 +143,6 @@ function UserEditModal(props) {
                 </div>
               </div>
               {/* //검색영역 */}
-              {/*그리드영역 */}
-              <div>
-                <AppTable rowData={rowData} columns={columns} customButtons={customButtons} />
-              </div>
-              {/*//그리드영역 */}
             </div>
           </div>
         </div>
