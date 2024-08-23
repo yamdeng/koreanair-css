@@ -19,6 +19,7 @@ import PReportLevelModal from '@/components/publish/modal/PReportLevelModal';
 import MU1P8Modal2 from '@/components/publish/modal/MU1P8Modal2';
 import MU1P7Modal from '@/components/publish/modal/MU1P7Modal';
 import MU1P11Modal from '@/components/publish/modal/MU1P11Modal';
+import MU2P1Modal from '@/components/publish/modal/MU2P1Modal';
 import MU3P5Modal from '@/components/publish/modal/MU3P5Modal';
 import MU4P1Modal from '@/components/publish/modal/MU4P1Modal';
 import MU3P4Modal from '@/components/publish/modal/MU3P4Modal';
@@ -230,11 +231,18 @@ ModalPageInfo.list = [
     success: true,
   },
   {
+    title: '산업안전 > 안전교육 > 사용자검색 팝업창',
+    Component: MU2P1Modal,
+    path: 'MU2P1Modal',
+    description: '',
+    success: true,
+  },
+  {
     title: '산업안전 > 안전관리 > 공사장소 관리 팝업창',
     Component: MU3P4Modal,
     path: 'MU3P4Modal',
     description: '',
-    success: false,
+    success: true,
   },
   {
     title: '산업안전 > 안전관리 > 협력업체검색 팝업창',

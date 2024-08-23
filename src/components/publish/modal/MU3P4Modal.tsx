@@ -94,6 +94,15 @@ function UserEditModal(props) {
     setSelectedTreeData(value);
   };
 
+  const customButtons = [
+    {
+      title: '추가',
+      onClick: () => {
+        alert('추가');
+      },
+    },
+  ];
+
   return (
     <Modal
       shouldCloseOnOverlayClick={false}
@@ -106,7 +115,7 @@ function UserEditModal(props) {
       }}
     >
       <div className="popup-container">
-        <h3 className="pop_title">점검표 검색</h3>
+        <h3 className="pop_title">공사장소 관리</h3>
         <div className="pop_full_cont_box">
           <div className="pop_flex_group">
             <div className="pop_cont_form">
@@ -117,34 +126,26 @@ function UserEditModal(props) {
                   <div className="form-table">
                     <div className="form-cell wid50">
                       <div className="form-group wid100">
-                        <AppAutoComplete label={'부문'} disabled />
+                        <AppAutoComplete label={'공사장소'} />
                       </div>
                     </div>
                     <div className="form-cell wid50">
                       <div className="form-group wid100">
-                        <AppAutoComplete label={'부서'} />
+                        <AppSelect label={'사용여부'} />
                       </div>
                     </div>
-                  </div>
-                  <div className="form-table">
-                    <div className="form-cell wid50">
-                      <div className="form-group wid100">
-                        <AppSelect label={'제목'} />
-                      </div>
+                    <div className="btn-area mb-10">
+                      <button type="button" name="button" className="btn-sm btn_text btn-darkblue-line">
+                        검색
+                      </button>
                     </div>
-                  </div>
-
-                  <div className="btn-area mb-10">
-                    <button type="button" name="button" className="btn-sm btn_text btn-darkblue-line">
-                      검색
-                    </button>
                   </div>
                 </div>
               </div>
               {/* //검색영역 */}
               {/*그리드영역 */}
               <div>
-                <AppTable rowData={rowData} columns={columns} />
+                <AppTable rowData={rowData} columns={columns} customButtons={customButtons} />
               </div>
               {/*//그리드영역 */}
             </div>
@@ -152,8 +153,8 @@ function UserEditModal(props) {
         </div>
 
         <div className="pop_btns">
-          <button className="btn_text text_color_neutral-90 btn_close" onClick={closeModal}>
-            취소
+          <button className="btn_text text_color_neutral-10 btn_confirm" onClick={closeModal}>
+            저장
           </button>
         </div>
         <span className="pop_close" onClick={closeModal}>
