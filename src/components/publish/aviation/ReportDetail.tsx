@@ -92,7 +92,8 @@ function SafetyDetail() {
             <a href="javascript:void(0);">ASR-100308</a>
           </span>
           <ul className="section-button">
-            <li className="icon_share tooltip">
+            {/*tooltip */}
+            <li className="icon_report tooltip">
               <div className="sub_info">
                 <ul className="info-box">
                   <li>
