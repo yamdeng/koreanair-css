@@ -22,7 +22,10 @@ import MU1P11Modal from '@/components/publish/modal/MU1P11Modal';
 import MU2P1Modal from '@/components/publish/modal/MU2P1Modal';
 import MU3P5Modal from '@/components/publish/modal/MU3P5Modal';
 import MU4P1Modal from '@/components/publish/modal/MU4P1Modal';
+import MU3P4ModalS from '@/components/publish/modal/MU3P4ModalS';
+import MU3P4ModalE from '@/components/publish/modal/MU3P4ModalE';
 import MU3P4Modal from '@/components/publish/modal/MU3P4Modal';
+import MU3P4Modal1 from '@/components/publish/modal/MU3P4Modal1';
 import MU1P4Modal from '@/components/publish/modal/MU1P4Modal';
 import PReportEmailModal from '@/components/publish/modal/PReportEmailModal';
 import PSPIcharacteristicModal from '@/components/publish/modal/PSPIcharacteristicModal';
@@ -236,6 +239,27 @@ ModalPageInfo.list = [
     path: 'MU2P1Modal',
     description: '',
     success: true,
+  },
+  {
+    title: '산업안전 > 안전관리 > 외주업체허가-특별교육 팝업창',
+    Component: MU3P4Modal1,
+    path: 'MU3P4Modal1',
+    description: '',
+    success: false,
+  },
+  {
+    title: '산업안전 > 안전관리 > 외주업체허가-작업시작 팝업창',
+    Component: MU3P4ModalS,
+    path: 'MU3P4ModalS',
+    description: '',
+    success: false,
+  },
+  {
+    title: '산업안전 > 안전관리 > 외주업체허가-작업종료 팝업창',
+    Component: MU3P4ModalE,
+    path: 'MU3P4ModalE',
+    description: '',
+    success: false,
   },
   {
     title: '산업안전 > 안전관리 > 공사장소 관리 팝업창',

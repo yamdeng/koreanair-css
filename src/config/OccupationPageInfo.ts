@@ -57,6 +57,8 @@ import POccupationMu3P6list from '@/components/publish/occupation/POccupationMu3
 import POccupationMu3P6edit from '@/components/publish/occupation/POccupationMu3P6edit';
 import POccupationMu3P6list1 from '@/components/publish/occupation/POccupationMu3P6list1';
 import POccupationMu3P6edit1 from '@/components/publish/occupation/POccupationMu3P6edit1';
+import POccupationMu3P7list from '@/components/publish/occupation/POccupationMu3P7list';
+import POccupationMu3P7edit from '@/components/publish/occupation/POccupationMu3P7edit';
 import POccupationMu3P8list from '@/components/publish/occupation/POccupationMu3P8list';
 import POccupationMu3P8edit from '@/components/publish/occupation/POccupationMu3P8edit';
 import POccupationMu4P1list from '@/components/publish/occupation/POccupationMu4P1list';
@@ -81,12 +83,15 @@ import POccupationMu5P4list from '@/components/publish/occupation/POccupationMu5
 import POccupationMu5P4edit from '@/components/publish/occupation/POccupationMu5P4edit';
 import POccupationMu5P5list from '@/components/publish/occupation/POccupationMu5P5list';
 import POccupationMu5P5list1 from '@/components/publish/occupation/POccupationMu5P5list1';
+import POccupationMu6P1edit from '@/components/publish/occupation/POccupationMu6P1edit';
+import POccupationMu6P2edit from '@/components/publish/occupation/POccupationMu6P2edit';
 import POccupationMu6P3list from '@/components/publish/occupation/POccupationMu6P3list';
 import POccupationMu6P3list1 from '@/components/publish/occupation/POccupationMu6P3list1';
 import POccupationMu6P4list from '@/components/publish/occupation/POccupationMu6P4list';
 import POccupationMu6P4list1 from '@/components/publish/occupation/POccupationMu6P4list1';
 import POccupationMu6P4list2 from '@/components/publish/occupation/POccupationMu6P4list2';
 import POccupationMu6P4list3 from '@/components/publish/occupation/POccupationMu6P4list3';
+import POccupationMu6P5list from '@/components/publish/occupation/POccupationMu6P5list';
 
 const OccupationPageInfo: any = {};
 
@@ -505,6 +510,20 @@ OccupationPageInfo.list = [
     success: true,
   },
   {
+    title: '안전관리 > 밀페공간현황-리스트',
+    Component: POccupationMu3P7list,
+    path: 'POccupationMu3P7list',
+    description: '',
+    success: false,
+  },
+  {
+    title: '안전관리 > 밀페공간현황-등록',
+    Component: POccupationMu3P7edit,
+    path: 'POccupationMu3P7edit',
+    description: '',
+    success: false,
+  },
+  {
     title: '안전관리 > 관리감독자평가-리스트',
     Component: POccupationMu3P8list,
     path: 'POccupationMu3P8list',
@@ -673,6 +692,20 @@ OccupationPageInfo.list = [
     success: true,
   },
   {
+    title: '안전신고 > Hazard Report-등록',
+    Component: POccupationMu6P1edit,
+    path: 'POccupationMu6P1edit',
+    description: '',
+    success: false,
+  },
+  {
+    title: '안전신고 > 재해발생보고-등록',
+    Component: POccupationMu6P2edit,
+    path: 'POccupationMu6P2edit',
+    description: '',
+    success: false,
+  },
+  {
     title: '안전신고 > 관리지표-재해율-리스트',
     Component: POccupationMu6P3list,
     path: 'POccupationMu6P3list',
@@ -713,6 +746,13 @@ OccupationPageInfo.list = [
     path: 'POccupationMu6P4list3',
     description: '',
     success: true,
+  },
+  {
+    title: '안전신고 > 재해현황-리스트',
+    Component: POccupationMu6P5list,
+    path: 'POccupationMu6P5list',
+    description: '',
+    success: false,
   },
 ];
 export default OccupationPageInfo;
