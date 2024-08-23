@@ -114,7 +114,7 @@
 
   .ant-col-md-2{display:block;flex:0 0 8.33333333%;max-width:11.33333333%}
 
-  .menu-tab a{display: inline-flex;font-size:1.3rem;line-height:1.3;min-height:4rem}
+  .menu-tab a{display:inline-flex;font-size:1.3rem;line-height:1.3;min-height:4rem}
 
   .ck-edit-box .ck-list {display: block; width: 100%;}
   .ck-edit-box .ck-edit {display: block; width: 100%;}
@@ -260,5 +260,12 @@
    /*위험레벨조회 팝업*/
   .RiskLevel-box{display:block}
   .RiskLevel-box .RiskLevel-list{width:100%}
+
+  .menu-tab a{display:inline-flex;font-size:1.3rem;line-height:1.3;min-height:4rem}
+
+  .btn-area {display:block; width: 100%;}
+  .btn-area .btn-sm {width: 100%;}
+  .btn-area > button + button {width: 50%;}
+  .btn-area > button {margin: 0;}
 
 }
