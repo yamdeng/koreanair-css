@@ -147,6 +147,8 @@
 .tabs-tab-remove .delete{position:absolute;top:-0.8rem;background: url(/src/resources/images/delete-text.svg) center center no-repeat;font-size:0;width:2rem;height:2rem}
     
 .editbox .form-table + .form-table.SelList{margin-top:-3.0rem}
+.editbox .form-table .form-cell .form-group.Position-end{position:absolute;right:0}
+
 .SelectedList{position:relative;display:flex;float:right;width:50%;min-height:4.0rem;max-height:16.0rem;overflow:auto;border:0.1rem solid var(--color-neutral-40);border-radius:0.8rem;padding:1rem;align-items:center}
 .SelectedList > ul{width:100%;align-self:flex-start}
 .SelectedList > ul li{position:relative;display:flex;-webkit-box-pack:start;justify-content:start;-webkit-box-align:center;align-items:center;margin-bottom:1rem}

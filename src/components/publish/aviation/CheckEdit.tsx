@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { DatePicker, TimePicker, Select as AntSelect } from 'antd';
 import AppTable from '@/components/common/AppTable';
+import AppSelect from '@/components/common/AppSelect';
 import { getAllData } from '@/data/grid/example-data-new';
 import { testColumnInfos } from '@/data/grid/table-column';
 import AppTextInput from '@/components/common/AppTextInput';
@@ -28,14 +29,19 @@ function CheckEdit() {
       </div>
       {/*경로 */}
       <div className="editbox">
-        <div className="form-table">
-          <div className="form-cell wid100">
-            <div className="form-group wid100">
+        <div className="form-table line">
+          <div className="form-cell wid50">
+            <div className="form-group wid100 Position-w">
               <AppTextInput label="해외공항 안전평가 점검표 (ko)12" />
             </div>
           </div>
-          <div className="form-cell wid50">Revision</div>
+          <div className="form-cell wid30 ">
+            <div className="form-group wid30 Position-end">
+              <AppSelect label={'Revision'} placeholder="14" disabled />
+            </div>
+          </div>
         </div>
+        <hr className="line dp-n"></hr>
       </div>
       {/*탭 */}
       <div className="menu-tab-nav">

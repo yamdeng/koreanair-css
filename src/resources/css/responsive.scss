@@ -174,6 +174,9 @@
   .editbox .line .form-cell {border-bottom: 0.1rem solid var(--color-neutral-40);}
   .dp-n {display: none;}
 
+  .editbox .form-table .form-cell .form-group.Position-w{width:65%}
+  .editbox .form-table .form-cell .form-group.Position-end{position:absolute;right:0;top:-5.5rem}
+
   .detail-form .detail-list .form-table {display: flex; align-items: flex-end; justify-content: flex-start; flex-wrap: wrap; width: 100%;}
   .detail-form .detail-list .form-table .form-cell {width: 100%;}
 
