@@ -188,7 +188,7 @@ AviationPageInfo.list = [
     success: true,
   },
   {
-    title: '[06.AUDIT] Checklist',
+    title: '[06.AUDIT] CheckList',
     Component: Checklist1,
     path: 'Checklist1',
     description: '',
