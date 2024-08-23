@@ -113,6 +113,8 @@
 
   .ant-col-md-2{display:block;flex:0 0 8.33333333%;max-width:11.33333333%}
 
+  .menu-tab a{display: inline-flex;font-size:1.3rem;line-height:1.3;min-height:4rem}
+
 }
 
 
@@ -185,7 +187,7 @@
   .Status-area .Status-chart{display:block;height: auto !important}
   .Status-area .Status-chart .Status-col{width:100%}
 
-  .menu-tab a{display: inline-flex;font-size:1.4rem;line-height:1.4;min-height:4.4rem}
+
 
    /*위험레벨조회 팝업*/
   .RiskLevel-box{display:block}

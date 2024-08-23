@@ -180,10 +180,10 @@
 
 /*AUDIT-체크리스트 상단 탭*/
 .menu-tab-nav .swiper-container{position:relative;display:flex;overflow:hidden;width:100%}
-.menu-tab-nav .swiper-container > .menu-tab-nav-operations{position:absolute;top:23%;right:0;display:flex;justify-content:flex-start;z-index: 1;gap:0 0.5rem;background-color:var(--color-neutral-10);}
+.menu-tab-nav .swiper-container > .menu-tab-nav-operations{position:absolute;top:0;right:0;display:flex;justify-content:flex-start;z-index:1;background-color:var(--color-neutral-10);}
 .menu-tab-nav .swiper-container > .menu-tab-nav-operations .menu-tab-nav-more{width:3.2rem;height:4.7rem;padding:0 3rem;border:solid 0.1rem var(--color-neutral-40);font-size:0;background:url(../images/icon-option.svg)center center no-repeat;align-items:center}
-.menu-tab-nav .swiper-container > .menu-tab-nav-operations .menu-tab-btn-next{width:3.2rem;height:4.7rem;padding:0 3rem;border:solid 0.1rem var(--color-neutral-40)}
-
+.menu-tab-nav .swiper-container > .menu-tab-nav-operations .menu-tab-btn-next{width:3.2rem;height:4.7rem;padding:0 3rem;border-left:0;border-right:solid 0.1rem var(--color-neutral-40)}
+.menu-tab-nav .swiper-container > .menu-tab{margin-top:0}
 
 /*공통테이블*/
 .Safety-table-cell{text-align:center;align-items:center}

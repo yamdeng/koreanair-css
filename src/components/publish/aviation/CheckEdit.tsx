@@ -22,21 +22,19 @@ function CheckEdit() {
             <a href="javascript:void(0);">AUDIT</a>
           </li>
           <li className="breadcrumb-item">
-            <a href="javascript:void(0);">Checklist</a>
+            <a href="javascript:void(0);">CheckList</a>
           </li>
         </ol>
       </div>
       {/*경로 */}
-      <div className="CheckList-Title">
-        <div className="boxForm">
-          <div className="form-table">
-            <div className="form-cell wid100">
-              <div className="form-group wid100">
-                <AppTextInput label="해외공항 안전평가 점검표 (ko)12" />
-              </div>
+      <div className="editbox">
+        <div className="form-table">
+          <div className="form-cell wid100">
+            <div className="form-group wid100">
+              <AppTextInput label="해외공항 안전평가 점검표 (ko)12" />
             </div>
-            <div className="form-cell wid50">Revision</div>
           </div>
+          <div className="form-cell wid50">Revision</div>
         </div>
       </div>
       {/*탭 */}
@@ -103,17 +101,6 @@ function CheckEdit() {
           </div>
         </div>
       </div>
-
-      {/*검색영역 */}
-      <div className="btn-area">
-        <button type="button" name="button" className="btn-sm btn_text btn-darkblue-line">
-          Checklist Upload
-        </button>
-        <button type="button" name="button" className="btn-sm btn_text btn-darkblue-line">
-          Add Checklist
-        </button>
-      </div>
-      {/* //검색영역 */}
 
       <div className="checklist-contents">
         <div className="checklist-row list">
