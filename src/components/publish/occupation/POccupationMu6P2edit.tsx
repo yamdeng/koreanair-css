@@ -657,6 +657,82 @@ function POccupationMu6P2edit() {
                             <input type="radio" />
                             <span>기계·장치 설비 작동</span>
                           </label>
+                          <label>
+                            <input type="radio" />
+                            <span>기계·장치 설비 수리보수</span>
+                          </label>
+                          <label>
+                            <input type="radio" />
+                            <span>기계·장치 설비 신규설치</span>
+                          </label>
+                          <label>
+                            <input type="radio" />
+                            <span>원자재 및 화학물질 취급</span>
+                          </label>
+                          <label>
+                            <input type="radio" />
+                            <span>정전 및 활선 작업</span>
+                          </label>
+                          <label>
+                            <input type="radio" />
+                            <span>건축 토목공사</span>
+                          </label>
+                          <label>
+                            <input type="radio" />
+                            <span>건축구조물 수리보수</span>
+                          </label>
+                          <label>
+                            <input type="radio" />
+                            <span>운송장비의 조작 운전</span>
+                          </label>
+                          <label>
+                            <input type="radio" />
+                            <span>운송장비 수리보수</span>
+                          </label>
+                          <label>
+                            <input type="radio" />
+                            <span>서무 및 행정업무</span>
+                          </label>
+                          <label>
+                            <input type="radio" />
+                            <span>서비스 업무 (객실)</span>
+                          </label>
+                          <label>
+                            <input type="radio" />
+                            <span>서비스 업무 (여객운송)</span>
+                          </label>
+                          <label>
+                            <input type="radio" />
+                            <span>서비스 업무 (여객예약)</span>
+                          </label>
+                          <label>
+                            <input type="radio" />
+                            <span>서비스 업무 (화물운송)</span>
+                          </label>
+                          <label>
+                            <input type="radio" />
+                            <span>서비스 업무 (기타)</span>
+                          </label>
+                          <label>
+                            <input type="radio" />
+                            <span>기내이동</span>
+                          </label>
+                          <label>
+                            <input type="radio" />
+                            <span>지상이동 (옥외)</span>
+                          </label>
+                          <label>
+                            <input type="radio" />
+                            <span>지상이동 (옥내)</span>
+                          </label>
+                          <label>
+                            <input type="radio" />
+                            <span>출퇴근</span>
+                          </label>
+                          <label>
+                            <input type="radio" />
+                            <span>당해 업무 수행중이 아님</span>
+                          </label>
                           <div className="radio-wrap-type01">
                             <label>
                               <input type="radio" />
@@ -705,6 +781,50 @@ function POccupationMu6P2edit() {
                             <input type="radio" />
                             <span>건축물 및 구조물</span>
                           </label>
+                          <label>
+                            <input type="radio" />
+                            <span>설비 및 기계</span>
+                          </label>
+                          <label>
+                            <input type="radio" />
+                            <span>부품·부속물 및 재료</span>
+                          </label>
+                          <label>
+                            <input type="radio" />
+                            <span>화학물질 및 화학제품</span>
+                          </label>
+                          <label>
+                            <input type="radio" />
+                            <span>용기·용품·가구 및 기구</span>
+                          </label>
+                          <label>
+                            <input type="radio" />
+                            <span>사람 및 동·식물</span>
+                          </label>
+                          <label>
+                            <input type="radio" />
+                            <span>자연현상</span>
+                          </label>
+                          <label>
+                            <input type="radio" />
+                            <span>휴대용 및 인력용 기계기구</span>
+                          </label>
+                          <label>
+                            <input type="radio" />
+                            <span>교통수단</span>
+                          </label>
+                          <label>
+                            <input type="radio" />
+                            <span>서비스 용품(BSCT) 등</span>
+                          </label>
+                          <label>
+                            <input type="radio" />
+                            <span>수하물</span>
+                          </label>
+                          <label>
+                            <input type="radio" />
+                            <span>질병</span>
+                          </label>
                           <div className="radio-wrap-type01">
                             <label>
                               <input type="radio" />
@@ -726,7 +846,87 @@ function POccupationMu6P2edit() {
                         <div className="radio-wrap">
                           <label>
                             <input type="radio" />
-                            <span>재해자가 객실본부 소속인 경우</span>
+                            <span>중량물 올리기/내리기 등 (수하물, C/B 등)</span>
+                          </label>
+                          <label>
+                            <input type="radio" />
+                            <span>Cart 밀기/끌기 등</span>
+                          </label>
+                          <label>
+                            <input type="radio" />
+                            <span>(Cart, Comp’t, Coatroom 등) Door 열기/꺼내기</span>
+                          </label>
+                          <label>
+                            <input type="radio" />
+                            <span>Hot Item H/D</span>
+                          </label>
+                          <label>
+                            <input type="radio" />
+                            <span>Door Open/Close</span>
+                          </label>
+                          <label>
+                            <input type="radio" />
+                            <span>서비스 준비/정리</span>
+                          </label>
+                          <label>
+                            <input type="radio" />
+                            <span>식음료 서비스</span>
+                          </label>
+                          <label>
+                            <input type="radio" />
+                            <span>기타 서비스(서류, headphone 등)</span>
+                          </label>
+                          <label>
+                            <input type="radio" />
+                            <span>기판 서비스</span>
+                          </label>
+                          <label>
+                            <input type="radio" />
+                            <span>WCHR, BSCT, Serving Cart 등 조작/설치</span>
+                          </label>
+                          <label>
+                            <input type="radio" />
+                            <span>이/착륙 준비</span>
+                          </label>
+                          <label>
+                            <input type="radio" />
+                            <span>장비 및 보안점검</span>
+                          </label>
+                          <label>
+                            <input type="radio" />
+                            <span>환자 H/D</span>
+                          </label>
+                          <label>
+                            <input type="radio" />
+                            <span>불법방해행위 H/D</span>
+                          </label>
+                          <label>
+                            <input type="radio" />
+                            <span>Jumpseat 착석</span>
+                          </label>
+                          <label>
+                            <input type="radio" />
+                            <span>비상탈출</span>
+                          </label>
+                          <label>
+                            <input type="radio" />
+                            <span>항공기 계단 이동 (step car 포함)</span>
+                          </label>
+                          <label>
+                            <input type="radio" />
+                            <span>기내 이동 (계단 제외)</span>
+                          </label>
+                          <label>
+                            <input type="radio" />
+                            <span>공항 내 이동</span>
+                          </label>
+                          <label>
+                            <input type="radio" />
+                            <span>Crew Bus 탑승/하차</span>
+                          </label>
+                          <label>
+                            <input type="radio" />
+                            <span>추로티근</span>
                           </label>
                           <div className="radio-wrap-type01">
                             <label>
@@ -766,6 +966,50 @@ function POccupationMu6P2edit() {
                             <input type="radio" />
                             <span>기내 구조물(Door, 계단, O/H Bin 등)</span>
                           </label>
+                          <label>
+                            <input type="radio" />
+                            <span>기내 장착 설비(OVEN, 냉장고, Hot Cup, Water Boiler 등)</span>
+                          </label>
+                          <label>
+                            <input type="radio" />
+                            <span>서비스 기물 (Cart, Coffe Pot 등)</span>
+                          </label>
+                          <label>
+                            <input type="radio" />
+                            <span>서비스 Item (Hot Beverage, BSCT 등)</span>
+                          </label>
+                          <label>
+                            <input type="radio" />
+                            <span>Turbulence</span>
+                          </label>
+                          <label>
+                            <input type="radio" />
+                            <span>수하물</span>
+                          </label>
+                          <label>
+                            <input type="radio" />
+                            <span>타인(승객)</span>
+                          </label>
+                          <label>
+                            <input type="radio" />
+                            <span>타인(정비사, 조업사 직원)</span>
+                          </label>
+                          <label>
+                            <input type="radio" />
+                            <span>타인 (동료 승무원)</span>
+                          </label>
+                          <label>
+                            <input type="radio" />
+                            <span>착륙충격</span>
+                          </label>
+                          <label>
+                            <input type="radio" />
+                            <span>교통수단</span>
+                          </label>
+                          <label>
+                            <input type="radio" />
+                            <span>질명</span>
+                          </label>
                           <div className="radio-wrap-type01">
                             <label>
                               <input type="radio" />
@@ -796,6 +1040,22 @@ function POccupationMu6P2edit() {
                             <input type="radio" />
                             <span>구조물·기계장비 설치불량</span>
                           </label>
+                          <label>
+                            <input type="radio" />
+                            <span>구조재료의 부적합</span>
+                          </label>
+                          <label>
+                            <input type="radio" />
+                            <span>생산방법의 부적당</span>
+                          </label>
+                          <label>
+                            <input type="radio" />
+                            <span>점검·정비·보존 불량</span>
+                          </label>
+                          <label>
+                            <input type="radio" />
+                            <span>미해당</span>
+                          </label>
                           <div className="radio-wrap-type01">
                             <label>
                               <input type="radio" />
@@ -817,6 +1077,26 @@ function POccupationMu6P2edit() {
                             <input type="radio" />
                             <span>안전지식의 부족</span>
                           </label>
+                          <label>
+                            <input type="radio" />
+                            <span>안전수칙의 오해</span>
+                          </label>
+                          <label>
+                            <input type="radio" />
+                            <span>경험훈련의 미숙</span>
+                          </label>
+                          <label>
+                            <input type="radio" />
+                            <span>작업방법 교육의 불충분</span>
+                          </label>
+                          <label>
+                            <input type="radio" />
+                            <span>유해위험작업 교육의 불충분</span>
+                          </label>
+                          <label>
+                            <input type="radio" />
+                            <span>미해당</span>
+                          </label>
                           <div className="radio-wrap-type01">
                             <label>
                               <input type="radio" />
@@ -837,6 +1117,26 @@ function POccupationMu6P2edit() {
                           <label>
                             <input type="radio" />
                             <span>안전관리 조직결함</span>
+                          </label>
+                          <label>
+                            <input type="radio" />
+                            <span>작업수칙 미제정</span>
+                          </label>
+                          <label>
+                            <input type="radio" />
+                            <span>작업준비 불충분</span>
+                          </label>
+                          <label>
+                            <input type="radio" />
+                            <span>인원배치 부적당</span>
+                          </label>
+                          <label>
+                            <input type="radio" />
+                            <span>작업지시 부적당</span>
+                          </label>
+                          <label>
+                            <input type="radio" />
+                            <span>미해당</span>
                           </label>
                           <div className="radio-wrap-type01">
                             <label>
@@ -860,6 +1160,34 @@ function POccupationMu6P2edit() {
                             <input type="radio" />
                             <span>기물·장비 자체 결함</span>
                           </label>
+                          <label>
+                            <input type="radio" />
+                            <span>안전방호장치 결함</span>
+                          </label>
+                          <label>
+                            <input type="radio" />
+                            <span>복장보호구의 결함</span>
+                          </label>
+                          <label>
+                            <input type="radio" />
+                            <span>기물·장비 배치 및 장소 불량</span>
+                          </label>
+                          <label>
+                            <input type="radio" />
+                            <span>작업환경의 결함</span>
+                          </label>
+                          <label>
+                            <input type="radio" />
+                            <span>작업공정의 결함</span>
+                          </label>
+                          <label>
+                            <input type="radio" />
+                            <span>경계표시·설비결함</span>
+                          </label>
+                          <label>
+                            <input type="radio" />
+                            <span>미해당</span>
+                          </label>
                           <div className="radio-wrap-type01">
                             <label>
                               <input type="radio" />
@@ -880,6 +1208,46 @@ function POccupationMu6P2edit() {
                           <label>
                             <input type="radio" />
                             <span>위험장소 접근</span>
+                          </label>
+                          <label>
+                            <input type="radio" />
+                            <span>안전장치 기능제거</span>
+                          </label>
+                          <label>
+                            <input type="radio" />
+                            <span>복장·보호구의 오사용</span>
+                          </label>
+                          <label>
+                            <input type="radio" />
+                            <span>기계·기구의 오사용</span>
+                          </label>
+                          <label>
+                            <input type="radio" />
+                            <span>운전 중인 기계장치 손질</span>
+                          </label>
+                          <label>
+                            <input type="radio" />
+                            <span>불안전한 속도조작</span>
+                          </label>
+                          <label>
+                            <input type="radio" />
+                            <span>유해·위험물 취급 부주의</span>
+                          </label>
+                          <label>
+                            <input type="radio" />
+                            <span>불안전한 상태방치</span>
+                          </label>
+                          <label>
+                            <input type="radio" />
+                            <span>불안전한 자세·동작</span>
+                          </label>
+                          <label>
+                            <input type="radio" />
+                            <span>감독 및 연락 불충분</span>
+                          </label>
+                          <label>
+                            <input type="radio" />
+                            <span>미해당</span>
                           </label>
                           <div className="radio-wrap-type01">
                             <label>
@@ -1007,14 +1375,14 @@ function POccupationMu6P2edit() {
                   <h3 className="input-box-tit">요양승인</h3>
                   <div className="form-table">
                     <div className="form-cell wid50">
-                      <div className="form-group wid100">
+                      <div className="form-group wid-300">
                         <AppSelect label=" 요양승인 상태" />
                       </div>
-                      <div className="ck-edit-box">
-                        <div className="ck-list">그리드영역</div>
-                        <div className="ck-edit">입력폼영역</div>
-                      </div>
                     </div>
+                  </div>
+                  <div className="ck-edit-box">
+                    <div className="ck-list">그리드영역</div>
+                    <div className="ck-edit">입력폼영역</div>
                   </div>
                   {/*산재신청 '예'선택시 End*/}
                 </div>
