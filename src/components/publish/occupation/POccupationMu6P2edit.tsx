@@ -672,9 +672,34 @@ function POccupationMu6P2edit() {
                   <div className="form-table">
                     <div className="form-cell wid50">
                       <div className="group-box-wrap wid100">
-                        <span className="txt">
-                          기인물<i>아이콘</i>
-                        </span>
+                        <div className="txt">
+                          기인물
+                          <div className="tooltip">
+                            <span className="tooltiptext tooltip-right">
+                              <ul>
+                                <li>설비·기계: 동력에 의해 작동되는 기계기구 및 특정한 공정에 사용된 장치 등의 설비</li>
+                                <li>휴대용·인력용 기계: 동력 또는 인력에 의해 작동되는 휴대용 공구와 기계기구 부품</li>
+                                <li>
+                                  부속물 및 재료: 설비·기계기구 등의 부속물과 건축물·구조물 등의 부속물 또는 재료 등
+                                </li>
+                                <li>
+                                  건축물·구조물: 완료되었거나 시공중인 건축물 또는 구조물과 공사를 위하여 설치된 가설
+                                  구조물 등
+                                </li>
+                                <li>
+                                  용기·용품·가구·기구: 물품의 운반 등에 사용되는 산업용·비산업용 용기, 용품, 가구 및
+                                  기구 등
+                                </li>
+                                <li>
+                                  화학물질·화학제품: 액체·가스·흄·증기 및 고체 등 다양한 상태의 화학물질과 화학제품
+                                </li>
+                                <li>교통수단: 육상, 수상 등 교통수단</li>
+                                <li>사람, 동·식물: 사람, 동·식물과 식품 및 바이러스 등을 포함</li>
+                                <li>자연현상: 난기류 및 비정상적인 고·저 기압, 자연재해 등</li>
+                              </ul>
+                            </span>
+                          </div>
+                        </div>
                         <div className="radio-wrap">
                           <label>
                             <input type="radio" />
@@ -719,7 +744,10 @@ function POccupationMu6P2edit() {
                     <div className="form-cell wid50">
                       <div className="group-box-wrap wid100">
                         <span className="txt">
-                          기인물<i>아이콘</i>
+                          기인물
+                          <div className="tooltip">
+                            <span className="tooltiptext tooltip-right">툴팁</span>
+                          </div>
                         </span>
                         <div className="radio-wrap">
                           <label>
