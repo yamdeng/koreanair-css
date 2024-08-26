@@ -1,8 +1,9 @@
-import { useCallback, useState } from 'react';
 import { DATE_PICKER_TYPE_QUARTER } from '@/config/CommonConstant';
 import CommonUtil from '@/utils/CommonUtil';
 import { DatePicker } from 'antd';
 import dayjs from 'dayjs';
+import { useCallback } from 'react';
+import CommonInputError from './CommonInputError';
 
 /*
 
@@ -66,15 +67,7 @@ const AppDatePicker = (props) => {
     style = { width: '100%' },
   } = props;
 
-  const [isFocused, setIsFocused] = useState(false);
-
-  const handleFocus = () => {
-    setIsFocused(true);
-  };
-
-  const handleBlur = () => {
-    setIsFocused(false);
-  };
+  // const [open, setOpen] = useState(false);
 
   let applyDateValueFormat = CommonUtil.getDateFormatByPickerType(pickerType, showTime, excludeSecondsTime);
   if (valueFormat) {
@@ -119,11 +112,27 @@ const AppDatePicker = (props) => {
     [disabledHoiloday, disabledDates]
   );
 
+  const renderFooter = () => (
+    <button
+      onClick={() => {
+        const dateString = CommonUtil.getNowByServerTime(showTime ? 'dateTime' : 'date');
+        onChange(dateString, dayjs(dateString));
+        // setOpen(false);
+        // setTimeout(() => {
+        //   onChange(dateString, dayjs(dateString));
+        // }, 100);
+      }}
+    >
+      Now
+    </button>
+  );
+
   return (
     <>
       <DatePicker
-        className={value ? 'label-picker selected' : 'label-picker'}
-        status={!isFocused && errorMessage ? 'error' : ''}
+        {...props}
+        className={value || placeholder ? 'label-picker selected' : 'label-picker'}
+        status={errorMessage ? 'error' : ''}
         style={style}
         id={id}
         name={name}
@@ -145,21 +154,18 @@ const AppDatePicker = (props) => {
             ? { format: applyTimeFormat, hourStep: hourStep, minuteStep: minuteStep, secondStep: secondStep }
             : false
         }
-        showNow={showNow}
+        showNow={false}
         needConfirm={needConfirm}
         minDate={applyMinDate}
         maxDate={applyMaxDate}
         disabled={disabled}
         disabledDate={disabledDate}
-        onFocus={handleFocus}
-        onBlur={handleBlur}
+        renderExtraFooter={showNow ? renderFooter : null}
       />
       <label className="f-label" htmlFor={id} style={{ display: label ? '' : 'none' }}>
         {label} {required ? <span className="required">*</span> : null}
       </label>
-      <span className="errorText" style={{ display: errorMessage ? '' : 'none' }}>
-        {errorMessage}
-      </span>
+      <CommonInputError errorMessage={errorMessage} label={label} />
     </>
   );
 };

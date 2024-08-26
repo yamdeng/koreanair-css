@@ -1,4 +1,5 @@
 import CommonUtil from '@/utils/CommonUtil';
+import CommonInputError from './CommonInputError';
 
 /*
 
@@ -28,15 +29,17 @@ function AppTextArea(props) {
     placeholder = '',
     required = false,
     errorMessage,
-    style = { width: '100%', height: '150px' },
+    style = { width: '100%', height: '200px' },
     disabled = false,
+    ...rest
   } = props;
   return (
     <>
       <textarea
+        {...rest}
         id={id}
         style={style}
-        className={errorMessage ? 'form-tag error' : 'form-tag custom_textarea'}
+        className={errorMessage ? 'form-tag error' : 'label-select form-tag'}
         name={name}
         value={value}
         onChange={(event) => {
@@ -48,9 +51,7 @@ function AppTextArea(props) {
       <label className="f-label" htmlFor={id} style={{ display: label ? '' : 'none' }}>
         {label} {required ? <span className="required">*</span> : null}
       </label>
-      <span className="errorText" style={{ display: errorMessage ? '' : 'none' }}>
-        {errorMessage}
-      </span>
+      <CommonInputError errorMessage={errorMessage} label={label} />
     </>
   );
 }

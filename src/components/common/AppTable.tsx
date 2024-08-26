@@ -8,9 +8,9 @@ import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import GridActionButtonComponent from './GridActionButtonComponent';
 import GridLinkComponent from './GridLinkComponent';
 
-const defaultColDef = {
-  sortable: true,
-  filter: true,
+const basicDefaultColDef = {
+  sortable: false,
+  filter: false,
   flex: 1,
   minWidth: 100,
 };
@@ -100,6 +100,7 @@ function AppTable(props) {
     hiddenPagination,
     hiddenTableHeader = false,
     readOnlyEdit = true,
+    defaultColDef = basicDefaultColDef,
   } = props;
 
   // store
@@ -308,6 +309,8 @@ function AppTable(props) {
             if (getGridRef) {
               getGridRef(params);
             }
+            // params.api.sizeColumnsToFit();
+            params.api.autoSizeAllColumns();
           }}
         />
       </div>

@@ -1,7 +1,9 @@
-import { useCallback, useState } from 'react';
 import { DATE_PICKER_TYPE_QUARTER } from '@/config/CommonConstant';
 import CommonUtil from '@/utils/CommonUtil';
 import { DatePicker } from 'antd';
+import { useCallback } from 'react';
+import CommonInputError from './CommonInputError';
+
 const { RangePicker } = DatePicker;
 
 import dayjs from 'dayjs';
@@ -35,16 +37,6 @@ const AppRangeDatePicker = (props) => {
     style = { width: '100%' },
     placeholder = ['', ''],
   } = props;
-
-  const [isFocused, setIsFocused] = useState(false);
-
-  const handleFocus = () => {
-    setIsFocused(true);
-  };
-
-  const handleBlur = () => {
-    setIsFocused(false);
-  };
 
   let applyDateValueFormat = CommonUtil.getDateFormatByPickerType(pickerType, showTime, excludeSecondsTime);
   if (valueFormat) {
@@ -98,8 +90,8 @@ const AppRangeDatePicker = (props) => {
   return (
     <>
       <RangePicker
-        className={value ? 'label-picker selected' : 'label-picker'}
-        status={!isFocused && errorMessage ? 'error' : ''}
+        className={value || placeholder ? 'label-picker selected' : 'label-picker'}
+        status={errorMessage ? 'error' : ''}
         style={style}
         id={{
           start: id,
@@ -136,15 +128,11 @@ const AppRangeDatePicker = (props) => {
         maxDate={applyMaxDate}
         disabled={disabled}
         disabledDate={disabledDate}
-        onFocus={handleFocus}
-        onBlur={handleBlur}
       />
       <label className="f-label" htmlFor={id} style={{ display: label ? '' : 'none' }}>
         {label} {required ? <span className="required">*</span> : null}
       </label>
-      <span className="errorText" style={{ display: errorMessage ? '' : 'none' }}>
-        {errorMessage}
-      </span>
+      <CommonInputError errorMessage={errorMessage} label={label} />
     </>
   );
 };

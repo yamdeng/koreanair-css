@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { TreeSelect } from 'antd';
 import CommonUtil from '@/utils/CommonUtil';
 import classNames from 'classnames';
+import CommonInputError from './CommonInputError';
 
 /*
 
@@ -29,13 +30,14 @@ function AppTreeSelect(props) {
     value,
     treeData = [],
     onChange,
-    placeHolder = '',
+    placeholder = '',
     required = false,
     errorMessage,
     style = { width: '100%' },
     labelOnlyTop = false,
     showSearch = false,
     treeCheckable = true,
+    ...rest
   } = props;
 
   const [isFocused, setIsFocused] = useState(false);
@@ -59,12 +61,14 @@ function AppTreeSelect(props) {
     }
   }
   const applyClassName = classNames('label-select', {
-    selected: isSelectedClass || labelOnlyTop,
+    selected: isSelectedClass || labelOnlyTop || placeholder,
   });
+
+  const applyValue = value ? value : null;
   return (
     <>
       <TreeSelect
-        {...props}
+        {...rest}
         status={!isFocused && errorMessage ? 'error' : ''}
         style={style}
         className={applyClassName}
@@ -74,8 +78,8 @@ function AppTreeSelect(props) {
         }}
         id={id}
         name={name}
-        value={value}
-        placeholder={placeHolder}
+        value={applyValue}
+        placeholder={placeholder}
         onChange={onChange}
         onFocus={handleFocus}
         onBlur={handleBlur}
@@ -86,9 +90,7 @@ function AppTreeSelect(props) {
       <label className="f-label" htmlFor={id} style={{ display: label ? '' : 'none' }}>
         {label} {required ? <span className="required">*</span> : null}
       </label>
-      <span className="errorText" style={{ display: errorMessage ? '' : 'none' }}>
-        {errorMessage}
-      </span>
+      <CommonInputError errorMessage={errorMessage} label={label} />
     </>
   );
 }
