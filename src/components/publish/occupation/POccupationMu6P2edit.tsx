@@ -1380,9 +1380,88 @@ function POccupationMu6P2edit() {
                       </div>
                     </div>
                   </div>
-                  <div className="ck-edit-box">
-                    <div className="ck-list">그리드영역</div>
-                    <div className="ck-edit">입력폼영역</div>
+                  <div className="form-table">
+                    <div className="form-cell wid50">
+                      <div className="ck-edit-box">
+                        <div className="ck-list">그리드 영역</div>
+                        <div className="ck-edit">
+                          <div className="boxForm">
+                            <div className="form-table">
+                              <div className="form-cell wid100">
+                                <div className="form-group form-glow">
+                                  <div className="df">
+                                    <div className="date1">
+                                      <AppDatePicker label="요양기간" />
+                                    </div>
+                                    <span className="unt">~</span>
+                                    <div className="date2">
+                                      <AppDatePicker label="요양기간" />
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div className="form-table">
+                              <div className="form-cell wid50">
+                                <div className="form-group wid100">
+                                  <AppTextInput label="요양 일수" disabled />
+                                </div>
+                              </div>
+                              <div className="form-cell wid50">
+                                <div className="form-group wid100">
+                                  <AppSelect label="요양 구분" />
+                                </div>
+                              </div>
+                            </div>
+                            <div className="form-table">
+                              <div className="form-cell wid100">
+                                <div className="form-group form-glow">
+                                  <div className="df">
+                                    <div className="date1">
+                                      <AppDatePicker label="비고" />
+                                    </div>
+                                    <span className="unt">~</span>
+                                    <div className="date2">
+                                      <AppDatePicker label="비고" />
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div className="form-table">
+                              <div className="form-cell wid50">
+                                <div className="form-group wid100">
+                                  <div className="filebox">
+                                    <Upload {...props}>
+                                      <div className="btn-area">
+                                        <button
+                                          type="button"
+                                          name="button"
+                                          className="btn-big btn_text btn-darkblue-line mg-n"
+                                        >
+                                          + Upload
+                                        </button>
+                                      </div>
+                                    </Upload>
+                                    <label htmlFor="file" className="file-label">
+                                      첨부파일
+                                    </label>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div className="btn-area mg-top">
+                              <button type="button" name="button" className="btn_text btn_confirm">
+                                추가
+                              </button>
+                              <button type="button" name="button" className="btn_text btn_close">
+                                삭제
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                   {/*산재신청 '예'선택시 End*/}
                 </div>
