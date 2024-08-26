@@ -369,6 +369,10 @@
   }
 }
 
+.global-alert-modal-overlay {
+  z-index: 70;
+}
+
 .alert-modal-overlay {
   z-index: 50;
 }
