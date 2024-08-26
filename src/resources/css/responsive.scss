@@ -27,6 +27,9 @@
   .editbox .line .form-cell {border-bottom: 0.1rem solid var(--color-neutral-40);}
   .dp-n {display: none;}
 
+  .editbox.edit-detile > .form-table {display: flex; align-items: flex-end; justify-content: flex-start; flex-wrap: wrap; width: 100%}
+  .editbox.edit-detile > .form-table .form-cell{width:50%}
+
   .contents-btns > button.btn-type01 {width: calc(50% - 0.2rem); margin: 1.0rem 0;}
   .contents-btns > button.btn-type01:nth-child(odd) {margin-right:0.2rem;}
   /*위험레벨조회 팝업*/
@@ -69,6 +72,9 @@
   .editbox .line .form-cell {border-bottom: 0.1rem solid var(--color-neutral-40);}
   .dp-n {display: none;}
   .editbox .form-table + .form-table.SelList{margin-top:-2.0rem}
+
+  .editbox.edit-detile > .form-table {display: flex; align-items: flex-end; justify-content: flex-start; flex-wrap: wrap; width: 100%}
+  .editbox.edit-detile > .form-table .form-cell{width:50%}
   
   .btn-area {display:flex; width: 100%;}
   .btn-area .btn-sm {width: 100%;}
@@ -271,4 +277,8 @@
   .btn-area > button{margin:0}
 
   .tooltip .tooltiptext {width:24rem !important;}
+
+  .checklist-contents.edit > .editbox.edit-detile .editarea-box{display:block}
+  .checklist-contents.edit > .editbox.edit-detile .editarea-box .form-group{width:100%}
+  .checklist-contents.edit > .editbox.edit-detile .editarea-box .label-box{margin-top:1rem}
 }

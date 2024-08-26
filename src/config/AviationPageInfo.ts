@@ -35,6 +35,7 @@ import SafetyMeetingDetail from '@/components/publish/aviation/SafetyMeetingDeta
 import AdminSafetyList from '@/components/publish/aviation/AdminSafetyList';
 import AdminBoardList from '@/components/publish/aviation/AdminBoardList';
 import AdminBoardEdit from '@/components/publish/aviation/AdminBoardEdit';
+import CheckDetail from '@/components/publish/aviation/CheckDetail';
 import { fa } from '@faker-js/faker';
 
 const AviationPageInfo: any = {};
@@ -199,7 +200,14 @@ AviationPageInfo.list = [
     Component: CheckEdit,
     path: 'CheckEdit',
     description: '',
-    success: false,
+    success: true,
+  },
+  {
+    title: '[06.AUDIT] CheckDetail',
+    Component: CheckDetail,
+    path: 'CheckDetail',
+    description: '',
+    success: true,
   },
   {
     title: '[07.관리자] HAZARD관리 > Taxonomy > 리스트',
