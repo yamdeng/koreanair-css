@@ -33,6 +33,9 @@ import PSPILoadModal from '@/components/publish/modal/PSPILoadModal';
 import PSPINewModal from '@/components/publish/modal/PSPINewModal';
 import PAdminSafetyModal from '@/components/publish/modal/PAdminSafetyModal';
 import PAdminSafetyDetailModal from '@/components/publish/modal/PAdminSafetyDetailModal';
+import PChapterAddModal from '@/components/publish/modal/PChapterAddModal';
+import PChapterSaveModal from '@/components/publish/modal/PChapterSaveModal';
+import PChapterDeleteModal from '@/components/publish/modal/PChapterDeleteModal';
 
 const ModalPageInfo: any = {};
 
@@ -122,18 +125,39 @@ ModalPageInfo.list = [
     success: true,
   },
   {
-    title: '[ADUIT] Checklist 팝업창',
+    title: '우측 댓글 영역',
+    Component: PRightCommentLayer,
+    path: 'PRightCommentLayer',
+    description: '',
+    success: false,
+  },
+  {
+    title: '[항공안전 > ADUIT] Checklist 팝업창',
     Component: PChecklistModal,
     path: 'PChecklistModal',
     description: '',
     success: true,
   },
   {
-    title: '우측 댓글 영역',
-    Component: PRightCommentLayer,
-    path: 'PRightCommentLayer',
+    title: '[항공안전 > ADUIT] Chapter 추가 팝업창',
+    Component: PChapterAddModal,
+    path: 'PChapterAddModal',
     description: '',
-    success: false,
+    success: true,
+  },
+  {
+    title: '[항공안전 > ADUIT] Chapter 저장 팝업창',
+    Component: PChapterSaveModal,
+    path: 'PChapterSaveModal',
+    description: '',
+    success: true,
+  },
+  {
+    title: '[항공안전 > ADUIT] Chapter 삭제 팝업창',
+    Component: PChapterDeleteModal,
+    path: 'PChapterDeleteModal',
+    description: '',
+    success: true,
   },
   {
     title: '[항공안전> 04.안전보증] SPI/SPT > Report List > SPI 지표 추가 팝업창',
