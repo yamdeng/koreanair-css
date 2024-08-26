@@ -36,6 +36,7 @@ import AdminSafetyList from '@/components/publish/aviation/AdminSafetyList';
 import AdminBoardList from '@/components/publish/aviation/AdminBoardList';
 import AdminBoardEdit from '@/components/publish/aviation/AdminBoardEdit';
 import CheckDetail from '@/components/publish/aviation/CheckDetail';
+import MyAuditList from '@/components/publish/aviation/MyAuditList';
 import { fa } from '@faker-js/faker';
 
 const AviationPageInfo: any = {};
@@ -187,6 +188,13 @@ AviationPageInfo.list = [
     path: 'AdminBoardEdit',
     description: '',
     success: true,
+  },
+  {
+    title: '[06.AUDIT] MyAuditList',
+    Component: MyAuditList,
+    path: 'MyAuditList',
+    description: '',
+    success: false,
   },
   {
     title: '[06.AUDIT] CheckList',

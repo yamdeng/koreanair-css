@@ -36,7 +36,7 @@ function ReportList() {
           <div className="form-table">
             <div className="form-cell wid50">
               <div className="form-group wid100">
-                <AppTextInput label="Subject" />
+                <AppTextInput label="subject" />
               </div>
             </div>
             <div className="form-cell wid50">
