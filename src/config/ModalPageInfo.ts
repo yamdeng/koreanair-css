@@ -36,6 +36,8 @@ import PAdminSafetyDetailModal from '@/components/publish/modal/PAdminSafetyDeta
 import PChapterAddModal from '@/components/publish/modal/PChapterAddModal';
 import PChapterSaveModal from '@/components/publish/modal/PChapterSaveModal';
 import PChapterDeleteModal from '@/components/publish/modal/PChapterDeleteModal';
+import PChecklistSaveModal from '@/components/publish/modal/PChecklistSaveModal';
+import PChecklistDeleteModal from '@/components/publish/modal/PChecklistDeleteModal';
 
 const ModalPageInfo: any = {};
 
@@ -132,9 +134,23 @@ ModalPageInfo.list = [
     success: false,
   },
   {
-    title: '[항공안전 > ADUIT] Checklist 팝업창',
+    title: '[항공안전 > ADUIT] Checklist 추가 팝업창',
     Component: PChecklistModal,
     path: 'PChecklistModal',
+    description: '',
+    success: true,
+  },
+  {
+    title: '[항공안전 > ADUIT] Checklist 저장 팝업창',
+    Component: PChecklistSaveModal,
+    path: 'PChecklistSaveModal',
+    description: '',
+    success: true,
+  },
+  {
+    title: '[항공안전 > ADUIT] Checklist 삭제 팝업창',
+    Component: PChecklistDeleteModal,
+    path: 'PChecklistDeleteeModal',
     description: '',
     success: true,
   },

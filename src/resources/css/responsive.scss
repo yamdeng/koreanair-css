@@ -178,7 +178,8 @@
   .dp-n {display: none;}
 
   .editbox .form-table .form-cell .form-group.Position-w{width:65%}
-  .editbox .form-table .form-cell .form-group.Position-end{position:absolute;right:0;top:-5.5rem}
+  .editbox .form-table .form-cell .Position-end{position:absolute;right:0;top:-5.5rem;width:15.0rem}
+
 
   .detail-form .detail-list .form-table {display: flex; align-items: flex-end; justify-content: flex-start; flex-wrap: wrap; width: 100%;}
   .detail-form .detail-list .form-table .form-cell {width: 100%;}

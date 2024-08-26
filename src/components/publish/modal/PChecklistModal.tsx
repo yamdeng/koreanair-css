@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import Modal from 'react-modal';
 import AppSelect from '@/components/common/AppSelect';
-
+import AppTextInput from '@/components/common/AppTextInput';
 const options = [
   { value: 'chocolate', label: 'Chocolate Chocolate Chocolate ChocolateChocolateChocolateChocolate' },
   { value: 'strawberry', label: 'StrawberryStrawberryStrawberryStrawberryStrawberryStrawberryStrawberry' },
@@ -64,34 +64,7 @@ function ChecklistModal(props) {
             <div className="form-table">
               <div className="form-cell wid50">
                 <div className="form-group wid100">
-                  <AppSelect
-                    id="select2"
-                    status=""
-                    style={{ width: '100%' }}
-                    className="label-select"
-                    options={[
-                      {
-                        value: 'jack',
-                        label: 'Jack',
-                      },
-                      {
-                        value: 'lucy',
-                        label: 'Lucy',
-                      },
-                      {
-                        value: 'Yiminghe',
-                        label: 'yiminghe',
-                      },
-                      {
-                        value: 'disabled',
-                        label: 'Disabled',
-                        disabled: true,
-                      },
-                    ]}
-                  />
-                  <label className="f-label" htmlFor="select2">
-                    Checklist Type <span className="required">*</span>
-                  </label>
+                  <AppTextInput label="Checklist Title" />
                   {/*<span className="errorText">auto complete error message</span>*/}
                 </div>
               </div>
