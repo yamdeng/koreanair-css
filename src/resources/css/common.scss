@@ -107,7 +107,8 @@ input[type=checkbox],input[type=radio]{padding:0;vertical-align:middle;margin-to
 .radio-wrap-type01.border-no{border:0}
 .radio-wrap-type01 .input-box{position:relative}
 .radio-wrap-type01 > label{display:inline-block;padding:0rem 0.9rem 0.2rem 2.5rem;line-height:2.2rem;margin:1.2rem 0 0 0.2rem}
-.radio-wrap-type01 > input:checked, .radio-wrap-type01 > input {border-bottom: 0.1rem solid var(--color-darkblue-100); vertical-align: text-bottom; width: calc(100% - auto); margin-bottom: 0.5rem; padding: 0.5rem 1rem 0.2rem 1rem;}
+.radio-wrap-type01 > input:checked, .radio-wrap-type01 > input {border-bottom: 0.1rem solid var(--color-darkblue-100); vertical-align: text-bottom; width: calc(100% - auto); margin-bottom: 0.5rem; padding: 0.5rem 0.5rem 0.2rem 0.5rem !important;}
+.radio-wrap-type01 > input:checked, .radio-wrap-type01 > input:focus {outline:none;}
 .radio-wrap-type01 > label + input:disabled {border:none; font-size: 0;}
 .radio-wrap-type01 > label > input + span {display:block;color:var(--color-neutral-60);font-size:1.4rem}
 .radio-wrap-type01 > label > input:checked + span{color:var(--color-neutral-80);font-size:1.4rem}

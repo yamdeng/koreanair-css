@@ -458,7 +458,7 @@ function POccupationMu6P2edit() {
                               <input type="radio" checked />
                               <span>기타</span>
                             </label>
-                            <input className="input" type="text" placeholder="기타" />
+                            <input type="text" placeholder="기타" />
                           </div>
                         </div>
                         {/*<span className="errorText">error</span>*/}
