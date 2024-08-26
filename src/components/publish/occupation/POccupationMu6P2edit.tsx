@@ -453,12 +453,12 @@ function POccupationMu6P2edit() {
                             <input type="radio" />
                             <span>분류불능</span>
                           </label>
-                          <div>
+                          <div className="radio-wrap-type01">
                             <label>
-                              <input type="radio" />
+                              <input type="radio" checked />
                               <span>기타</span>
                             </label>
-                            <input type="text" placeholder="기타" />
+                            <input className="input" type="text" placeholder="기타" />
                           </div>
                         </div>
                         {/*<span className="errorText">error</span>*/}
@@ -554,12 +554,12 @@ function POccupationMu6P2edit() {
                             <input type="checkbox" />
                             <span>분류불능</span>
                           </label>
-                          <div>
+                          <div className="radio-wrap-type01">
                             <label>
                               <input type="checkbox" />
                               <span>기타</span>
                             </label>
-                            <input type="text" placeholder="기타" />
+                            <input type="text" placeholder="기타" disabled />
                           </div>
                         </div>
                         {/*<span className="errorText">error</span>*/}
@@ -635,12 +635,12 @@ function POccupationMu6P2edit() {
                             <input type="checkbox" />
                             <span>시력장애</span>
                           </label>
-                          <div>
+                          <div className="radio-wrap-type01">
                             <label>
                               <input type="checkbox" />
                               <span>기타</span>
                             </label>
-                            <input type="text" placeholder="기타" />
+                            <input type="text" placeholder="기타" disabled />
                           </div>
                         </div>
                         {/*<span className="errorText">error</span>*/}
@@ -657,12 +657,12 @@ function POccupationMu6P2edit() {
                             <input type="radio" />
                             <span>기계·장치 설비 작동</span>
                           </label>
-                          <div>
+                          <div className="radio-wrap-type01">
                             <label>
                               <input type="radio" />
                               <span>기타</span>
                             </label>
-                            <input type="text" placeholder="기타" />
+                            <input type="text" placeholder="기타" disabled />
                           </div>
                         </div>
                         {/*<span className="errorText">error</span>*/}
@@ -705,12 +705,12 @@ function POccupationMu6P2edit() {
                             <input type="radio" />
                             <span>건축물 및 구조물</span>
                           </label>
-                          <div>
+                          <div className="radio-wrap-type01">
                             <label>
                               <input type="radio" />
                               <span>기타</span>
                             </label>
-                            <input type="text" placeholder="기타" />
+                            <input type="text" placeholder="기타" disabled />
                           </div>
                         </div>
                         {/*<span className="errorText">error</span>*/}
@@ -728,12 +728,12 @@ function POccupationMu6P2edit() {
                             <input type="radio" />
                             <span>재해자가 객실본부 소속인 경우</span>
                           </label>
-                          <div>
+                          <div className="radio-wrap-type01">
                             <label>
                               <input type="radio" />
                               <span>기타</span>
                             </label>
-                            <input type="text" placeholder="기타" />
+                            <input type="text" placeholder="기타" disabled />
                           </div>
                         </div>
                         {/*<span className="errorText">error</span>*/}
@@ -746,7 +746,19 @@ function POccupationMu6P2edit() {
                         <span className="txt">
                           기인물
                           <div className="tooltip">
-                            <span className="tooltiptext tooltip-right">툴팁</span>
+                            <span className="tooltiptext tooltip-right">
+                              <ul>
+                                <li>기내 구조물: Door, CRA, Overhead Bin, 계단 등 기내 구조물</li>
+                                <li>
+                                  기내 장착 설비: 기내에 장착되어 조작/작동시킬 수 있는 설비 (Oven, 냉장고, Water
+                                  Boiler, Cart Lift 등)
+                                </li>
+                                <li>
+                                  서비스 Item: Hot Beverage / Hot Meal, 와인병, Onboard WCHR, BSCT 등 서비스에
+                                  직접적으로 사용/제공되는 별도의 탑재품
+                                </li>
+                              </ul>
+                            </span>
                           </div>
                         </span>
                         <div className="radio-wrap">
@@ -754,12 +766,12 @@ function POccupationMu6P2edit() {
                             <input type="radio" />
                             <span>기내 구조물(Door, 계단, O/H Bin 등)</span>
                           </label>
-                          <div>
+                          <div className="radio-wrap-type01">
                             <label>
                               <input type="radio" />
                               <span>기타</span>
                             </label>
-                            <input type="text" placeholder="기타" />
+                            <input type="text" placeholder="기타" disabled />
                           </div>
                         </div>
                         {/*<span className="errorText">error</span>*/}
@@ -784,12 +796,12 @@ function POccupationMu6P2edit() {
                             <input type="radio" />
                             <span>구조물·기계장비 설치불량</span>
                           </label>
-                          <div>
+                          <div className="radio-wrap-type01">
                             <label>
                               <input type="radio" />
                               <span>기타</span>
                             </label>
-                            <input type="text" placeholder="기타" />
+                            <input type="text" placeholder="기타" disabled />
                           </div>
                         </div>
                         {/*<span className="errorText">error</span>*/}
@@ -805,12 +817,12 @@ function POccupationMu6P2edit() {
                             <input type="radio" />
                             <span>안전지식의 부족</span>
                           </label>
-                          <div>
+                          <div className="radio-wrap-type01">
                             <label>
                               <input type="radio" />
                               <span>기타</span>
                             </label>
-                            <input type="text" placeholder="기타" />
+                            <input type="text" placeholder="기타" disabled />
                           </div>
                         </div>
                         {/*<span className="errorText">error</span>*/}
@@ -826,12 +838,12 @@ function POccupationMu6P2edit() {
                             <input type="radio" />
                             <span>안전관리 조직결함</span>
                           </label>
-                          <div>
+                          <div className="radio-wrap-type01">
                             <label>
                               <input type="radio" />
                               <span>기타</span>
                             </label>
-                            <input type="text" placeholder="기타" />
+                            <input type="text" placeholder="기타" disabled />
                           </div>
                         </div>
                         {/*<span className="errorText">error</span>*/}
@@ -848,12 +860,12 @@ function POccupationMu6P2edit() {
                             <input type="radio" />
                             <span>기물·장비 자체 결함</span>
                           </label>
-                          <div>
+                          <div className="radio-wrap-type01">
                             <label>
                               <input type="radio" />
                               <span>기타</span>
                             </label>
-                            <input type="text" placeholder="기타" />
+                            <input type="text" placeholder="기타" disabled />
                           </div>
                         </div>
                         {/*<span className="errorText">error</span>*/}
@@ -869,12 +881,12 @@ function POccupationMu6P2edit() {
                             <input type="radio" />
                             <span>위험장소 접근</span>
                           </label>
-                          <div>
+                          <div className="radio-wrap-type01">
                             <label>
                               <input type="radio" />
                               <span>기타</span>
                             </label>
-                            <input type="text" placeholder="기타" />
+                            <input type="text" placeholder="기타" disabled />
                           </div>
                         </div>
                         {/*<span className="errorText">error</span>*/}
