@@ -5,6 +5,7 @@ import AppTable from '@/components/common/AppTable';
 import AppTextInput from '@/components/common/AppTextInput';
 import { getAllData } from '@/data/grid/example-data-new';
 import { testColumnInfos } from '@/data/grid/table-column';
+import AppAutoComplete from '@/components/common/AppAutoComplete';
 
 function PRiskList() {
   const rowData = getAllData();
@@ -59,17 +60,17 @@ function PRiskList() {
           <div className="form-table">
             <div className="form-cell wid50">
               <div className="form-group wid100">
-                <AppTextInput label="Fleet" />
+                <AppSelect label={'Event Class'} />
               </div>
             </div>
             <div className="form-cell wid50">
               <div className="form-group wid100">
-                <AppTextInput label="Reg No." />
+                <AppAutoComplete label={'발생공항'} />
               </div>
             </div>
             <div className="form-cell wid50">
               <div className="form-group wid100">
-                <AppSelect label={'부문'} />
+                <AppSelect label={'발생단계'} />
               </div>
             </div>
           </div>
@@ -92,40 +93,31 @@ function PRiskList() {
       {/* 리포트 프로세스 */}
       <div className="c-step-wrap">
         <ol className="c-step-list-type-5">
-          <li className="">
-            {/* 선택된 class명에 active */}
-            <a href="javascript:void(0);" data-label="접수">
-              <p className="info-title ">
+          {/* 선택된 class명에 active */}
+          <li className="active">
+            <a href="javascript:void(0);" data-label="작성">
+              <p className="info-title active">
                 {/* 선택된 class명에 active */}
                 <span className="hide">1단계</span>
-                접수
+                작성
               </p>
             </a>
             <span className="after-arrow"></span>
           </li>
-          <li className="active">
-            <a href="javascript:void(0);" data-label="1차 위험평가">
-              <p className="info-title active">
+          <li className="">
+            <a href="javascript:void(0);" data-label="결제">
+              <p className="info-title ">
                 <span className="hide">2단계</span>
-                1차 위험평가
+                결제
               </p>
             </a>
             <span className="after-arrow"></span>
           </li>
           <li>
-            <a href="javascript:void(0);" data-label="경감조치">
+            <a href="javascript:void(0);" data-label="안전권고">
               <p className="info-title">
                 <span className="hide">3단계</span>
-                경감조치
-              </p>
-            </a>
-            <span className="after-arrow"></span>
-          </li>
-          <li>
-            <a href="javascript:void(0);" data-label="2차 위험평가">
-              <p className="info-title">
-                <span className="hide">4단계</span>
-                2차 위험평가
+                안전권고
               </p>
             </a>
             <span className="after-arrow"></span>
@@ -133,26 +125,13 @@ function PRiskList() {
           <li>
             <a href="javascript:void(0);" data-label="종결">
               <p className="info-title">
-                <span className="hide">5단계</span>
+                <span className="hide">4단계</span>
                 종결
               </p>
             </a>
           </li>
         </ol>
       </div>
-      {/* 업무관련 버튼 */}
-      <div className="process-btns">
-        <button type="button" className="btn-sm btn_text btn-blue">
-          보고서 묶기 처리
-        </button>
-        <button type="button" className="btn-sm btn_text btn-blue">
-          SRC Approval
-        </button>
-        <button type="button" className="btn-sm btn_text btn-blue">
-          SRC Reject
-        </button>
-      </div>
-      {/* //  업무관련 버튼 */}
 
       {/*그리드영역 */}
       <div className="">
