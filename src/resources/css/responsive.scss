@@ -28,6 +28,9 @@
   .editbox .line .form-cell {border-bottom: 0.1rem solid var(--color-neutral-40);}
   .dp-n {display: none;}
 
+  .editbox.report .form-table{align-items:normal}
+  .editbox.report .form-group{height:100%}
+
   .editbox.edit-detile > .form-table {display: flex; align-items: flex-end; justify-content: flex-start; flex-wrap: wrap; width: 100%}
   .editbox.edit-detile > .form-table .form-cell{width:50%}
 
@@ -74,6 +77,9 @@
   .editbox .line .form-cell {border-bottom: 0.1rem solid var(--color-neutral-40);}
   .dp-n {display: none;}
   .editbox .form-table + .form-table.SelList{margin-top:-2.0rem}
+
+  .editbox.report .form-table{align-items:normal}
+  .editbox.report .form-group{height:100%}
 
   .editbox.edit-detile > .form-table {display: flex; align-items: flex-end; justify-content: flex-start; flex-wrap: wrap; width: 100%}
   .editbox.edit-detile > .form-table .form-cell{width:50%}

@@ -231,7 +231,7 @@ function SafetyDetail() {
           <dt onClick={() => setFirstExpaned(!firstExpaned)}>
             <button type="button" className="btn-tg">
               {/* toggle 열어지면 active붙임*/}
-              1. 보고서 내용보기<span className={firstExpaned ? 'active' : ''}></span>
+              보고서 내용보기<span className={firstExpaned ? 'active' : ''}></span>
             </button>
           </dt>
           <dd className="tg-conts" style={{ display: firstExpaned ? '' : 'none' }}>
@@ -627,7 +627,7 @@ function SafetyDetail() {
         <dl className={secondExpaned ? 'tg-item active' : 'tg-item'}>
           <dt onClick={() => setSecondExpaned(!secondExpaned)}>
             <button type="button" className="btn-tg">
-              2. 보고서 분석<span className={secondExpaned ? 'active' : ''}></span>
+              보고서 분석<span className={secondExpaned ? 'active' : ''}></span>
             </button>
           </dt>
           <dd className="tg-conts" style={{ display: secondExpaned ? '' : 'none' }}>
