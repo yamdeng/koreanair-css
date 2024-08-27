@@ -28,35 +28,7 @@ function ChecklistModal(props) {
             <div className="form-table">
               <div className="form-cell wid50">
                 <div className="form-group wid100">
-                  <AppSelect
-                    id="select1"
-                    status=""
-                    style={{ width: '100%' }}
-                    className="label-select"
-                    options={[
-                      {
-                        value: 'jack',
-                        label: 'Jack',
-                      },
-                      {
-                        value: 'lucy',
-                        label: 'Lucy',
-                      },
-                      {
-                        value: 'Yiminghe',
-                        label: 'yiminghe',
-                      },
-                      {
-                        value: 'disabled',
-                        label: 'Disabled',
-                        disabled: true,
-                      },
-                    ]}
-                  />
-                  <label className="f-label" htmlFor="select1">
-                    Audit Type <span className="required">*</span>
-                  </label>
-                  {/*<span className="errorText">auto complete error message</span>*/}
+                  <AppSelect label={'Audit Type'} required />
                 </div>
               </div>
             </div>
