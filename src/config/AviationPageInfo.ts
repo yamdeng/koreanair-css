@@ -38,6 +38,9 @@ import AdminBoardEdit from '@/components/publish/aviation/AdminBoardEdit';
 import CheckDetail from '@/components/publish/aviation/CheckDetail';
 import MyAuditList from '@/components/publish/aviation/MyAuditList';
 import AdminMailList from '@/components/publish/aviation/AdminMailList';
+import AdminMailEdit from '@/components/publish/aviation/AdminMailEdit';
+import AdminMailDetail from '@/components/publish/aviation/AdminMailDetail';
+
 import { fa } from '@faker-js/faker';
 
 const AviationPageInfo: any = {};
@@ -321,7 +324,21 @@ AviationPageInfo.list = [
     Component: AdminMailList,
     path: 'AdminMailList',
     description: '',
-    success: false,
+    success: true,
+  },
+  {
+    title: '[07.관리자] 메일양식관리 > 둥록',
+    Component: AdminMailEdit,
+    path: 'AdminMailEdit',
+    description: '',
+    success: true,
+  },
+  {
+    title: '[07.관리자] 메일양식관리 > 상세',
+    Component: AdminMailDetail,
+    path: 'AdminMailDetail',
+    description: '',
+    success: true,
   },
 ];
 
