@@ -6,6 +6,7 @@ import PFileForm from '@/components/publish/common/PFileForm';
 import PFileForm2 from '@/components/publish/common/PFileForm2';
 import Table from '@/components/publish/common/Table';
 import PTableCustomColumn from '@/components/publish/common/PTableCustomColumn';
+import PSelectMultiUser from '@/components/publish/common/PSelectMultiUser';
 
 const CommonPageInfo: any = {};
 
@@ -63,6 +64,13 @@ CommonPageInfo.list = [
     title: '테이블 cell custom column',
     Component: PTableCustomColumn,
     path: 'PTableCustomColumn',
+    description: '',
+    success: false,
+  },
+  {
+    title: '사용자 멀티 검색',
+    Component: PSelectMultiUser,
+    path: 'PSelectMultiUser',
     description: '',
     success: false,
   },

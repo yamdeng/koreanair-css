@@ -12,6 +12,7 @@ import PUserEditModal2 from '@/components/publish/modal/PUserEditModal2';
 import PUserViewModal from '@/components/publish/modal/PUserViewModal';
 import PChecklistModal from '@/components/publish/modal/PChecklistModal';
 import PRightCommentLayer from '@/components/publish/modal/PRightCommentLayer';
+import PColumnUserSaveModal from '@/components/publish/modal/PColumnUserSaveModal';
 import MU1P5detail2Modal from '@/components/publish/modal/MU1P5detail2Modal';
 import PReportListModal from '@/components/publish/modal/PReportListModal';
 import MU1P8Modal from '@/components/publish/modal/MU1P8Modal';
@@ -130,6 +131,13 @@ ModalPageInfo.list = [
     title: '우측 댓글 영역',
     Component: PRightCommentLayer,
     path: 'PRightCommentLayer',
+    description: '',
+    success: false,
+  },
+  {
+    title: '컬럼 저장 목록 모달',
+    Component: PColumnUserSaveModal,
+    path: 'PColumnUserSaveModal',
     description: '',
     success: false,
   },
