@@ -133,6 +133,11 @@ input[type=checkbox],input[type=radio]{padding:0;vertical-align:middle;margin-to
 .chk-wrap > label > input:checked + span:before {border-color:var(--color-darkblue-100);background:var(--color-darkblue-100)}
 .chk-wrap > label > input:checked + span:after{border-color:var(--color-neutral-10)}
 
+.chk-wrap.center {vertical-align: middle;}
+.chk-wrap > label.text-no {padding:0rem 0.9rem 0.2rem;margin:0;}
+.chk-wrap > label > input + span.text-no {height: 1.8rem;}
+
+
 /*input*/
 input[type=file], input[type=search], input[type=text]{padding:0.4rem 0 0.4rem 0.4rem}
 [role=button],a,area,button,input:not([type=range]),label,select,summary,textarea {touch-action: manipulation}

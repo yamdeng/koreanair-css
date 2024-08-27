@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import Modal from 'react-modal';
+import AppTextInput from '@/components/common/AppTextInput';
 
 function ColumnUserSaveModal(props) {
   const { isOpen, closeModal } = props;
@@ -26,10 +27,59 @@ function ColumnUserSaveModal(props) {
     >
       <div className="popup-container">
         <h3 className="pop_title">컬럼 저장 모달</h3>
-        <p className="pop_cont" dangerouslySetInnerHTML={{ __html: '' }} />
+        <div className="pop_cont">
+          <div className="tablebox">
+            <table className="columntable">
+              <colgroup>
+                <col width="10%" />
+                <col width="*" />
+                <col width="40%" />
+              </colgroup>
+              <thead>
+                <tr>
+                  <th>
+                    <div className="chk-wrap center">
+                      <label className="text-no">
+                        <input type="checkbox" />
+                        <span className="text-no"></span>
+                      </label>
+                    </div>
+                  </th>
+                  <th>Display Text</th>
+                  <th>Width</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <div className="chk-wrap center">
+                      <label className="text-no">
+                        <input type="checkbox" />
+                        <span className="text-no"></span>
+                      </label>
+                    </div>
+                  </td>
+                  <td>
+                    <div className="form-group wid100">
+                      <AppTextInput placeholder="Dept" />
+                    </div>
+                  </td>
+                  <td>
+                    <div className="form-group wid100">
+                      <AppTextInput placeholder="150" />
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
         <div className="pop_btns">
           <button className="btn_text text_color_neutral-10 btn_confirm" onClick={closeModal}>
-            확인
+            저장
+          </button>
+          <button className="btn_text text_color_neutral-90 btn_close" onClick={closeModal}>
+            취소
           </button>
         </div>
         <span className="pop_close" onClick={closeModal}>
