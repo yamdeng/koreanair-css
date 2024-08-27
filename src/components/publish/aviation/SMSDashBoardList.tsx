@@ -1,0 +1,119 @@
+import { useState } from 'react';
+import { DatePicker, TimePicker, Select as AntSelect } from 'antd';
+import AppTable from '@/components/common/AppTable';
+import { getAllData } from '@/data/grid/example-data-new';
+import { testColumnInfos } from '@/data/grid/table-column';
+import AppDatePicker from '@/components/common/AppDatePicker';
+import AppSelect from '@/components/common/AppSelect';
+
+function SMSDashBoardList() {
+  const [inputValue, setInputValue] = useState('');
+  const rowData = getAllData();
+  const columns = testColumnInfos;
+  return (
+    <>
+      {/*경로 */}
+      <div className="Breadcrumb">
+        <ol>
+          <li className="breadcrumb-item">
+            <a href="javascript:void(0);">홈</a>
+          </li>
+          <li className="breadcrumb-item">
+            <a href="javascript:void(0);">안전보증</a>
+          </li>
+          <li className="breadcrumb-item">
+            <a href="javascript:void(0);">SMS종합분석현황</a>
+          </li>
+          <li className="breadcrumb-item">
+            <a href="javascript:void(0);">대시보드</a>
+          </li>
+          <li className="breadcrumb-item">
+            <a href="javascript:void(0);">HZR 전사 TOP RISK 분석 현황</a>
+          </li>
+        </ol>
+      </div>
+      {/*경로 */}
+      <div className="conts-title">
+        <h2>대시보드</h2>
+      </div>
+      {/*탭 */}
+      <div className="menu-tab-nav">
+        <div className="menu-tab">
+          <a href="javascript:void(0);" className="active" data-label="HZR 전사 TOP RISK 분석 현황">
+            HZR 전사 TOP RISK 분석 현황
+          </a>
+          <a href="javascript:void(0);" className="" data-label="TOP EVENT 현황">
+            TOP EVENT 현황
+          </a>
+        </div>
+      </div>
+      {/*검색영역 */}
+
+      <div className="boxForm">
+        <div className="form-table">
+          <div className="form-cell wid20">
+            <div className="form-group wid100">
+              <div className="date1">
+                <AppSelect label={'부문'} />
+              </div>
+            </div>
+          </div>
+          <div className="form-cell wid20">
+            <div className="form-group wid100">
+              <AppSelect label={'보고서구분'} />
+            </div>
+          </div>
+          <div className="form-cell wid50">
+            <div className="form-group wid50">
+              <div className="df">
+                <div className="date1">
+                  <AppDatePicker label={'게시기간'} />
+                </div>
+                <span className="unt">~</span>
+                <div className="date2">
+                  <AppDatePicker label={'게시기간'} />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="btn-area">
+            <button type="button" name="button" className="btn-sm btn_text btn-darkblue-line">
+              조회
+            </button>
+          </div>
+        </div>
+      </div>
+      {/* //검색영역 */}
+
+      {/*지표정보*/}
+      <div className="Status-area">
+        <div className="Status-chart">
+          <div className="Status-col">
+            <p className="h4">1. Risk 값 합계</p>
+            <div className="Chart-box">
+              <AppTable rowData={rowData} columns={columns} />
+            </div>
+          </div>
+          <div className="Status-col">
+            <p className="h4">2. 부문 단일 Risk값</p>
+            <div className="Chart-box">
+              <AppTable rowData={rowData} columns={columns} />
+            </div>
+          </div>
+        </div>
+        <div className="Status-chart">
+          <div className="Status-col">
+            <p className="h4">3. Risk 값 평균</p>
+            <div className="Chart-box">
+              <AppTable rowData={rowData} columns={columns} />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/*//지표정보 */}
+    </>
+  );
+}
+
+export default SMSDashBoardList;

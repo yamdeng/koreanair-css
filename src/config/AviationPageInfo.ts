@@ -40,6 +40,7 @@ import MyAuditList from '@/components/publish/aviation/MyAuditList';
 import AdminMailList from '@/components/publish/aviation/AdminMailList';
 import AdminMailEdit from '@/components/publish/aviation/AdminMailEdit';
 import AdminMailDetail from '@/components/publish/aviation/AdminMailDetail';
+import SMSDashBoardList from '@/components/publish/aviation/SMSDashBoardList';
 
 import { fa } from '@faker-js/faker';
 
@@ -169,6 +170,13 @@ AviationPageInfo.list = [
     title: '[04.안전보증] SPI/SPT > 지표관리',
     Component: SPIIndicatorList,
     path: 'SPIIndicatorList',
+    description: '',
+    success: true,
+  },
+  {
+    title: '[04.안전보증] SMS종합분석현황 > 대시보드',
+    Component: SMSDashBoardList,
+    path: 'SMSDashBoardList',
     description: '',
     success: true,
   },
