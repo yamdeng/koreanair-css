@@ -128,7 +128,7 @@
 
 /*인풋박스 안 툴팁*/
 .contents .form-table .form-cell .form-group{position:relative}
-.contents .form-table .form-cell .form-group  .tooltip{position:absolute;top:-0.1rem;left:6.0rem;background: url(../images/tooltip.svg) left center no-repeat; background-size: 2.4rem; display: block; font-size: 0; width: 2.4rem;height: 2.4rem;cursor: pointer;}
+.contents .form-table .form-cell .form-group  .tooltip{float: inline-end; background: url(../images/tooltip.svg) left center no-repeat; background-size: 2.4rem; display: block; font-size: 0; width: 2.4rem;height: 2.4rem;cursor: pointer;}
 .contents .form-table .form-cell .form-group  .tooltip .tooltiptext{visibility:hidden;position: absolute; z-index:1;width:25.0rem;font-size:1.2rem;background-color: var(--color-neutral-80);  color: var(--color-neutral-10);text-align: left; border-radius:0.8rem;padding: 1.5rem 2.0rem}
 .contents .form-table .form-cell .form-group .tooltip .tooltiptext li::marker{content:''; color: var(--color-neutral-10);font-size: 1rem}
 .contents .form-table .form-cell .form-group .tooltip .tooltiptext ul li{font-size: 1.2rem; color: var(--color-neutral-10);  display: list-item; padding-left: 0.6rem;}
