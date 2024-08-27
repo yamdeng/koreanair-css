@@ -1,6 +1,107 @@
 import shareImage from '@/resources/images/share.svg';
+import { Viewer } from '@toast-ui/react-editor';
+import { useState } from 'react';
+
+import { Upload } from 'antd';
+import ReactUtil from '@/utils/ReactUtil';
+
+const props: any = {
+  name: 'file',
+  multiple: true,
+  defaultFileList: [
+    {
+      uid: '1',
+      name: 'xxx.png',
+      // status: 'uploading',
+      url: 'http://www.baidu.com/xxx.png',
+      percent: 33,
+    },
+    {
+      uid: '2',
+      name: 'yyy.png',
+      status: 'done',
+      url: 'http://www.baidu.com/yyy.png',
+    },
+    {
+      uid: '3',
+      name: 'zzz.png',
+      status: 'error',
+      response: 'Server Error 500',
+      // custom error message to show
+      url: 'http://www.baidu.com/zzz.png',
+    },
+  ],
+  action: 'https://660d2bd96ddfa2943b33731c.mockapi.io/api/upload',
+
+  onChange(info) {
+    const { status } = info.file;
+    if (status !== 'uploading') {
+      console.log(info.file, info.fileList);
+    }
+    if (status === 'done') {
+      alert(`${info.file.name} file uploaded successfully.`);
+    } else if (status === 'error') {
+      alert(`${info.file.name} file upload failed.`);
+    }
+  },
+
+  onRemove(file) {
+    return false;
+  },
+
+  onPreview(file) {
+    return false;
+  },
+
+  onDrop(e) {
+    console.log('Dropped files', e.dataTransfer.files);
+  },
+};
+const editorValue =
+  '<table class=""><thead><tr><th><p><br></p></th><th><p><br></p></th><th><p><br></p></th><th><p><br></p></th></tr></thead><tbody><tr><td><p>asd</p></td><td><p>asd</p></td><td><p>asd</p></td><td><p>asd</p></td></tr></tbody></table><p><br></p><p><a href="http://www.naver.com">네이버</a></p><p><br></p><p><br></p><ol><li><p>1111</p></li><li><p>222</p></li><li><p>333</p></li></ol><p><br></p><p><br></p>';
+
+const textAreaValue = 'aaaa\nbbbb\n';
 
 function POccupationMu1P1detail() {
+  const [fileList, setFileList] = useState<any>([
+    {
+      uid: '-1',
+      name: 'image.png',
+      status: 'done',
+      url: 'https://zos.alipayobjects.com/rmsportal/jkjgkEfvpUPVyRjUImniVslZfWPnJuuZ.png',
+    },
+    {
+      uid: '-2',
+      name: 'image.png',
+      status: 'done',
+      url: 'https://zos.alipayobjects.com/rmsportal/jkjgkEfvpUPVyRjUImniVslZfWPnJuuZ.png',
+    },
+    {
+      uid: '-3',
+      name: 'image.png',
+      status: 'done',
+      url: 'https://zos.alipayobjects.com/rmsportal/jkjgkEfvpUPVyRjUImniVslZfWPnJuuZ.png',
+    },
+    {
+      uid: '-4',
+      name: 'image.png',
+      status: 'done',
+      url: 'https://zos.alipayobjects.com/rmsportal/jkjgkEfvpUPVyRjUImniVslZfWPnJuuZ.png',
+    },
+    {
+      uid: '-xxx',
+      percent: 50,
+      name: 'image.png',
+      status: 'uploading',
+      url: 'https://zos.alipayobjects.com/rmsportal/jkjgkEfvpUPVyRjUImniVslZfWPnJuuZ.png',
+    },
+    {
+      uid: '-5',
+      name: 'image.png',
+      status: 'error',
+    },
+  ]);
+
   return (
     <>
       {/*경로 */}
@@ -107,13 +208,52 @@ function POccupationMu1P1detail() {
               <div className="box-view-list">
                 <ul className="view-list">
                   <li className="accumlate-list">
-                    <label className="t-label">내용</label>
+                    <label className="t-label">내용(editor)</label>
                     <span className="text-desc-type1">
-                      공지사항 내용입니다.
-                      <br />
-                      공지사항 내용입니다.공지사항 내용입니다.
-                      <br />
-                      공지사항 내용입니다.공지사항 내용입니다.공지사항 내용입니다.공지사항 내용입니다.
+                      <Viewer initialValue={editorValue} />
+                    </span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr className="line"></hr>
+        <div className="form-table">
+          <div className="form-cell wid100">
+            <div className="form-group wid100">
+              <div className="box-view-list">
+                <ul className="view-list">
+                  <li className="accumlate-list">
+                    <label className="t-label">내용(textarea)</label>
+                    <span
+                      className="text-desc-type1"
+                      dangerouslySetInnerHTML={{ __html: ReactUtil.convertEnterStringToBrTag(textAreaValue) }}
+                    ></span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr className="line"></hr>
+        <div className="form-table">
+          <div className="form-cell wid100">
+            <div className="form-group wid100">
+              <div className="box-view-list">
+                <ul className="view-list">
+                  <li className="accumlate-list">
+                    <label className="t-label">첨부파일</label>
+                    <span className="text-desc-type1">
+                      <div className="filebox view">
+                        <Upload {...props}>
+                          <div className="btn-area" style={{ display: 'none' }}>
+                            <button type="button" name="button" className="btn-big btn_text btn-darkblue-line mg-n">
+                              + Upload
+                            </button>
+                          </div>
+                        </Upload>
+                      </div>
                     </span>
                   </li>
                 </ul>
@@ -130,11 +270,14 @@ function POccupationMu1P1detail() {
                   <li className="accumlate-list">
                     <label className="t-label">첨부파일</label>
                     <span className="text-desc-type1">
-                      <div className="desc-file">
-                        <a href="javascript:void(0);">
-                          <span>첨부파일.zip</span>
-                          <span className="download"></span>
-                        </a>
+                      <div className="filebox view">
+                        <Upload {...props} listType="picture-card" fileList={fileList}>
+                          <div className="btn-area" style={{ display: 'none' }}>
+                            <button type="button" name="button" className="btn-big btn_text btn-darkblue-line mg-n">
+                              + Upload
+                            </button>
+                          </div>
+                        </Upload>
                       </div>
                     </span>
                   </li>
@@ -143,7 +286,6 @@ function POccupationMu1P1detail() {
             </div>
           </div>
         </div>
-        <hr className="line"></hr>
       </div>
       {/*//상세페이지*/}
       {/* 하단버튼영역 */}
