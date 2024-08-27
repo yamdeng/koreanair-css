@@ -1,5 +1,5 @@
 import PAviationPortal1 from '@/components/publish/aviation/PAviationPortal1';
-import PRiskForm1 from '@/components/publish/aviation/PRiskForm1';
+import PRiskList from '@/components/publish/aviation/PRiskList';
 import PRiskForm2 from '@/components/publish/aviation/PRiskForm2';
 import SPIInfo1 from '@/components/publish/aviation/SPIInfo1';
 import SPIInfo2 from '@/components/publish/aviation/SPIInfo2';
@@ -100,8 +100,8 @@ AviationPageInfo.list = [
   },
   {
     title: '[03.안전위험관리] 안전조사 > 조사보고서 리스트',
-    Component: PRiskForm1,
-    path: 'PRiskForm1',
+    Component: PRiskList,
+    path: 'PRiskList',
     description: '',
     success: false,
   },

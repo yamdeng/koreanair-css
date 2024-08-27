@@ -310,7 +310,7 @@ input, select{font-family:'KoreanAirSans'}
   }
 
   .group-box-wrap{position: relative; display: inline-block; /*padding:0 1.0rem;*/height:4.0rem;/*border: 0.1rem solid var(--color-neutral-40);border-radius: 0.5rem*/}
-  .group-box-wrap .txt {position:absolute;left: 1.0rem;top: -1.2rem;background:var(--color-neutral-10);padding: 0 0.5rem;font-size:1.3rem; display: flex;}
+  .group-box-wrap .txt {position:absolute;left:1.0rem;top: -1.2rem;background:var(--color-neutral-10);padding: 0 0.5rem;font-size:1.3rem; display: flex;}
   .tooltip {background: url(../images/tooltip.svg) left center no-repeat; background-size: 2.4rem; display: block; font-size: 0; width: 2.4rem; position: relative; cursor: pointer;}
   .tooltip .tooltiptext {
     visibility: hidden; 
@@ -356,7 +356,7 @@ input, select{font-family:'KoreanAirSans'}
 }
 
 .group-box-wrap{position:relative}
-.group-box-wrap .txt{position:absolute;left:1.0rem;top:-0.7rem;background:var(--color-neutral-10);padding:0 0.5rem;font-size:1.3rem; z-index: 1;}
+.group-box-wrap .txt{position:absolute;left:1.0rem;top:-1.0rem;background:var(--color-neutral-10);padding:0 0.5rem;font-size:1.3rem; z-index: 1;}
 .group-box-wrap span.errorText {display: block;color: var(--color-negative); font-size: 1.3rem; padding: 0.2rem 0.5rem;}
 .group-box-wrap.line {border: 0.1rem solid var(--color-neutral-40); border-radius: 0.5rem;}
 
