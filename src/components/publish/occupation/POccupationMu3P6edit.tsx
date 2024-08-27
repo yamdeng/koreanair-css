@@ -82,13 +82,13 @@ function POccupationMu3P6edit() {
             <a href="javascript:void(0);">안전관리</a>
           </li>
           <li className="breadcrumb-item">
-            <a href="javascript:void(0);">외주작업허가</a>
+            <a href="javascript:void(0);">업체 등록</a>
           </li>
         </ol>
       </div>
       {/*경로 */}
       <div className="conts-title">
-        <h2>외주작업허가</h2>
+        <h2>업체 등록</h2>
       </div>
       {/* 입력영역 */}
       <div className="editbox">

@@ -15,6 +15,15 @@ function POccupationMu3P7list() {
   const [inputValue, setInputValue] = useState('');
   const rowData = getAllData();
   const columns = testColumnInfos;
+  const customButtons = [
+    {
+      title: '다운로드',
+      onClick: () => {
+        alert('다운로드');
+      },
+    },
+  ];
+
   return (
     <>
       {/*경로 */}
@@ -27,13 +36,13 @@ function POccupationMu3P7list() {
             <a href="javascript:void(0);">안전관리</a>
           </li>
           <li className="breadcrumb-item">
-            <a href="javascript:void(0);">관리감독자평가</a>
+            <a href="javascript:void(0);">밀폐공간현황</a>
           </li>
         </ol>
       </div>
       {/*경로 */}
       <div className="conts-title">
-        <h2>관리감독자평가</h2>
+        <h2>밀폐공간현황</h2>
       </div>
       {/*검색영역 */}
       <div className="boxForm">
@@ -52,12 +61,7 @@ function POccupationMu3P7list() {
             </div>
             <div className="form-cell wid50">
               <div className="form-group wid100">
-                <AppDatePicker label={'평가년도'} />
-              </div>
-            </div>
-            <div className="form-cell wid50">
-              <div className="form-group wid100">
-                <AppSelect label={'반기'} />
+                <AppSelect label={'권역'} />
               </div>
             </div>
             <div className="btn-area">
@@ -72,7 +76,7 @@ function POccupationMu3P7list() {
 
       {/*그리드영역 */}
       <div className="">
-        <AppTable rowData={rowData} columns={columns} />
+        <AppTable rowData={rowData} columns={columns} customButtons={customButtons} />
       </div>
       {/*//그리드영역 */}
 

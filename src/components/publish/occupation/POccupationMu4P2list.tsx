@@ -15,6 +15,16 @@ function POccupationMu4P2list() {
   const [inputValue, setInputValue] = useState('');
   const rowData = getAllData();
   const columns = testColumnInfos;
+
+  const customButtons = [
+    {
+      title: '다운로드',
+      onClick: () => {
+        alert('다운로드');
+      },
+    },
+  ];
+
   return (
     <>
       {/*경로 */}
@@ -27,14 +37,26 @@ function POccupationMu4P2list() {
             <a href="javascript:void(0);">안전관리</a>
           </li>
           <li className="breadcrumb-item">
-            <a href="javascript:void(0);">위험기계기구</a>
+            <a href="javascript:void(0);">작업장 순회 점검 현황</a>
           </li>
         </ol>
       </div>
       {/*경로 */}
       <div className="conts-title">
-        <h2>작업환경측정</h2>
+        <h2>작업장 순회 점검 현황</h2>
       </div>
+      {/*탭 */}
+      <div className="menu-tab-nav">
+        <div className="menu-tab">
+          <a href="javascript:void(0);" className="active" data-label="현황">
+            현황
+          </a>
+          <a href="javascript:void(0);" data-label="조회">
+            조회
+          </a>
+        </div>
+      </div>
+      {/*//탭 */}
       {/*검색영역 */}
       <div className="boxForm">
         {/*area-detail명 옆에 active  */}
@@ -42,22 +64,23 @@ function POccupationMu4P2list() {
           <div className="form-table">
             <div className="form-cell wid50">
               <div className="form-group wid100">
-                <AppDatePicker label={'측정년도'} />
-              </div>
-            </div>
-            <div className="form-cell wid50">
-              <div className="form-group wid100 mr5">
-                <AppAutoComplete label={'반기'} />
+                <AppAutoComplete label={'부문'} disabled />
               </div>
             </div>
             <div className="form-cell wid50">
               <div className="form-group wid100">
-                <AppSelect label={'구분'} />
+                <AppAutoComplete label={'부서'} />
               </div>
             </div>
             <div className="form-cell wid50">
               <div className="form-group wid100">
-                <AppSelect label={'권역'} />
+                <AppDatePicker label={'점검연월'} />
+              </div>
+            </div>
+
+            <div className="form-cell wid50">
+              <div className="form-group wid100">
+                <AppSelect label={'사업장 구분'} />
               </div>
             </div>
             <div className="btn-area">
@@ -71,18 +94,15 @@ function POccupationMu4P2list() {
       {/* //검색영역 */}
 
       {/*그리드영역 */}
-      <div className="">
+      <div>
+        <h3 className="table-tit">점검 현황</h3>
+        <AppTable rowData={rowData} columns={columns} customButtons={customButtons} />
+      </div>
+      <div className="pt-20">
+        <h3 className="table-tit">부적합 사항</h3>
         <AppTable rowData={rowData} columns={columns} />
       </div>
       {/*//그리드영역 */}
-
-      {/* 하단버튼영역 */}
-      <div className="contents-btns">
-        <button type="button" name="button" className="btn_text text_color_neutral-10 btn_confirm">
-          등록
-        </button>
-      </div>
-      {/*//하단버튼영역*/}
     </>
   );
 }

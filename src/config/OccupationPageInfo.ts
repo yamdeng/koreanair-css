@@ -514,14 +514,14 @@ OccupationPageInfo.list = [
     Component: POccupationMu3P7list,
     path: 'POccupationMu3P7list',
     description: '',
-    success: false,
+    success: true,
   },
   {
     title: '안전관리 > 밀페공간현황-등록',
     Component: POccupationMu3P7edit,
     path: 'POccupationMu3P7edit',
     description: '',
-    success: false,
+    success: true,
   },
   {
     title: '안전관리 > 관리감독자평가-리스트',
@@ -556,7 +556,7 @@ OccupationPageInfo.list = [
     Component: POccupationMu4P2list,
     path: 'POccupationMu4P2list',
     description: '',
-    success: false,
+    success: true,
   },
   {
     title: '안전점검 > 작업장순회점검-조회-리스트',
@@ -703,7 +703,7 @@ OccupationPageInfo.list = [
     Component: POccupationMu6P2edit,
     path: 'POccupationMu6P2edit',
     description: '',
-    success: false,
+    success: true,
   },
   {
     title: '안전신고 > 관리지표-재해율-리스트',

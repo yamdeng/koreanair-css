@@ -58,7 +58,7 @@ function POccupationMu4P2list1() {
               </div>
             </div>
             <div className="form-cell wid50">
-              <div className="form-group wid100 mr5">
+              <div className="form-group wid100">
                 <AppAutoComplete label={'부서'} />
               </div>
             </div>
@@ -78,7 +78,7 @@ function POccupationMu4P2list1() {
               </div>
             </div>
             <div className="form-cell wid50">
-              <div className="form-group wid100 mr5">
+              <div className="form-group wid100">
                 <AppAutoComplete label={'점검자'} />
               </div>
             </div>

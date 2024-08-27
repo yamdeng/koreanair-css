@@ -1,18 +1,20 @@
 import AppAutoComplete from '@/components/common/AppAutoComplete';
-import AppDatePicker from '@/components/common/AppDatePicker';
-import AppEditor from '@/components/common/AppEditor';
 import AppSelect from '@/components/common/AppSelect';
-import AppTextArea from '@/components/common/AppTextArea';
 import AppTextInput from '@/components/common/AppTextInput';
-import AppTimePicker from '@/components/common/AppTimePicker';
-import AppTreeSelect from '@/components/common/AppTreeSelect';
-import AppSearchInput from '@/components/common/AppSearchInput';
-import { DatePicker } from 'antd';
-import { useState } from 'react';
-import { Upload } from 'antd';
-import AppTable from '@/components/common/AppTable';
 import { getAllData } from '@/data/grid/example-data-new';
 import { testColumnInfos } from '@/data/grid/table-column';
+import { PlusOutlined } from '@ant-design/icons';
+import { Image, Upload } from 'antd';
+import { useState } from 'react';
+const { Dragger } = Upload;
+
+const getBase64 = (file) =>
+  new Promise((resolve, reject) => {
+    const reader = new FileReader();
+    reader.readAsDataURL(file);
+    reader.onload = () => resolve(reader.result);
+    reader.onerror = (error) => reject(error);
+  });
 
 const props: any = {
   name: 'file',
@@ -70,6 +72,74 @@ function POccupationMu3P7edit() {
   const [inputValue, setInputValue] = useState('');
   const rowData = getAllData();
   const columns = testColumnInfos;
+  const [previewOpen, setPreviewOpen] = useState(false);
+  const [previewImage, setPreviewImage] = useState('');
+  const [fileList, setFileList] = useState<any>([
+    {
+      uid: '-1',
+      name: 'image.png',
+      status: 'done',
+      url: 'https://zos.alipayobjects.com/rmsportal/jkjgkEfvpUPVyRjUImniVslZfWPnJuuZ.png',
+    },
+    {
+      uid: '-2',
+      name: 'image.png',
+      status: 'done',
+      url: 'https://zos.alipayobjects.com/rmsportal/jkjgkEfvpUPVyRjUImniVslZfWPnJuuZ.png',
+    },
+    {
+      uid: '-3',
+      name: 'image.png',
+      status: 'done',
+      url: 'https://zos.alipayobjects.com/rmsportal/jkjgkEfvpUPVyRjUImniVslZfWPnJuuZ.png',
+    },
+    {
+      uid: '-4',
+      name: 'image.png',
+      status: 'done',
+      url: 'https://zos.alipayobjects.com/rmsportal/jkjgkEfvpUPVyRjUImniVslZfWPnJuuZ.png',
+    },
+    {
+      uid: '-xxx',
+      percent: 50,
+      name: 'image.png',
+      status: 'uploading',
+      url: 'https://zos.alipayobjects.com/rmsportal/jkjgkEfvpUPVyRjUImniVslZfWPnJuuZ.png',
+    },
+    {
+      uid: '-5',
+      name: 'image.png',
+      status: 'error',
+    },
+  ]);
+
+  const handlePreview = async (file) => {
+    if (!file.url && !file.preview) {
+      file.preview = await getBase64(file.originFileObj);
+    }
+    setPreviewImage(file.url || file.preview);
+    setPreviewOpen(true);
+  };
+  const handleChange = ({ fileList: newFileList }) => setFileList(newFileList);
+  const uploadButton = (
+    <button
+      style={{
+        border: 0,
+        background: 'none',
+      }}
+      type="button"
+    >
+      <PlusOutlined />
+      <div
+        style={{
+          marginTop: 8,
+        }}
+      >
+        Upload
+      </div>
+    </button>
+  );
+
   return (
     <>
       {/*경로 */}
@@ -82,211 +152,178 @@ function POccupationMu3P7edit() {
             <a href="javascript:void(0);">안전관리</a>
           </li>
           <li className="breadcrumb-item">
-            <a href="javascript:void(0);">관리감독자평가</a>
+            <a href="javascript:void(0);">밀폐공간 등록</a>
           </li>
         </ol>
       </div>
       {/*경로 */}
       <div className="conts-title">
-        <h2>관리감독자평가</h2>
+        <h2>밀폐공간 등록</h2>
       </div>
       {/* 입력영역 */}
-      <div className="info-wrap toggle">
-        <dl className="tg-item active">
-          {/* toggle 선택되면  열어지면 active붙임*/}
-          <dt>
-            <button type="button" className="btn-tg">
-              기본정보<span className="active"></span>
-            </button>
-          </dt>
-          <dd className="tg-conts">
-            <div className="edit-area">
-              <div className="detail-form">
-                <div className="detail-list">
-                  <div className="form-table">
-                    <div className="form-cell wid50">
-                      <div className="form-group wid100">
-                        <AppDatePicker label="년도" disabled />
-                      </div>
-                    </div>
-                    <div className="form-cell wid50">
-                      <div className="form-group wid100">
-                        <AppSelect label="분기" />
-                      </div>
-                    </div>
-                  </div>
-                  <div className="form-table">
-                    <div className="form-cell wid50">
-                      <div className="form-group wid100">
-                        <AppTextInput label="제목" />
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+      <div className="editbox">
+        <div className="form-table line">
+          <div className="form-cell wid50">
+            <div className="form-group wid100">
+              <AppTextInput label="작성자" disabled />
             </div>
-          </dd>
-          <dt>
-            <button type="button" className="btn-tg">
-              평가자 정보<span className="active"></span>
-            </button>
-          </dt>
-          <dd className="tg-conts">
-            <div className="edit-area">
-              <div className="detail-form">
-                <div className="detail-list">
-                  <div className="form-table">
-                    <div className="form-cell wid50">
-                      <div className="form-group wid100">
-                        <AppTextInput label="부문" disabled />
-                      </div>
-                    </div>
-                    <div className="form-cell wid50">
-                      <div className="form-group wid100">
-                        <AppTextInput label="부서" disabled />
-                      </div>
-                    </div>
-                    <div className="form-cell wid50">
-                      <div className="form-group wid100">
-                        <AppTextInput label="팀" disabled />
-                      </div>
-                    </div>
-                  </div>
-                  <div className="form-table">
-                    <div className="form-cell wid50">
-                      <div className="form-group wid100">
-                        <AppTextInput label="그룹" disabled />
-                      </div>
-                    </div>
-                    <div className="form-cell wid50">
-                      <div className="form-group wid100">
-                        <AppAutoComplete label="반/섹션" disabled />
-                      </div>
-                    </div>
-                    <div className="form-cell wid50">
-                      <div className="form-group wid100">
-                        <AppAutoComplete label="이름" />
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+          </div>
+          <div className="form-cell wid50">
+            <div className="form-group wid100">
+              <AppTextInput label="작성일자" disabled />
             </div>
-          </dd>
-          <dt>
-            <button type="button" className="btn-tg">
-              피평가자 정보<span className="active"></span>
-            </button>
-          </dt>
-          <dd className="tg-conts">
-            <div className="edit-area">
-              <div className="detail-form">
-                <div className="detail-list">
-                  <div className="form-table">
-                    <div className="form-cell wid50">
-                      <div className="form-group wid100">
-                        <AppSelect label="부문" />
-                      </div>
-                    </div>
-                    <div className="form-cell wid50">
-                      <div className="form-group wid100">
-                        <AppTextInput label="평가인원" />
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+          </div>
+          <div className="form-cell wid50">
+            <div className="form-group wid100">
+              <AppSelect label={'부문'} required disabled />
             </div>
-          </dd>
-          <dt>
-            <button type="button" className="btn-tg">
-              평가 입력<span className="active"></span>
-            </button>
-          </dt>
-          <dd className="tg-conts">
-            <div className="edit-area">
-              <div className="detail-form">
-                <div className="detail-list">
-                  <div className="form-table">
-                    <div className="form-cell wid50">
-                      <div className="form-group wid100">
-                        <textarea
-                          id="testArea1"
-                          className="form-tag custom_textarea"
-                          style={{ width: '100%' }}
-                          name="testArea1"
-                          value={inputValue}
-                          onChange={(event) => {
-                            setInputValue(event.target.value);
-                          }}
-                        />
-                        <label className="f-label" htmlFor="testArea1">
-                          비고
-                        </label>
-                      </div>
-                    </div>
-                  </div>
-                  {/* 파일첨부영역 : button */}
-                  <div className="form-table">
-                    <div className="form-cell wid50">
-                      <div className="form-group wid100">
-                        <div className="filebox ">
-                          <Upload {...props}>
-                            <div className="btn-area">
-                              <button type="button" name="button" className="btn-big btn_text btn-darkblue-line mg-n">
-                                + Upload
-                              </button>
-                            </div>
-                          </Upload>
-                          <label htmlFor="file" className="file-label">
-                            첨부파일 <span className="required">*</span>
-                          </label>
-                        </div>
-                        {/*<span className="errorText">fileerror</span>*/}
-                      </div>
-                    </div>
-                  </div>
-                  <div className="form-table">
-                    <div className="form-cell wid50">
-                      <div className="group-box-wrap line wid100">
-                        <span className="txt">링크첨부{/*<span className="required">*</span>*/}</span>
-                        <button type="button" name="button" className="btn-plus">
-                          추가
-                        </button>
-                        <div className="file-link">
-                          <div className="link-box">
-                            <a href="javascript:void(0);">첨부Link첨부Link첨부Link</a>
-                            <a href="javascript:void(0);">
-                              <span className="close-btn">close</span>
-                            </a>
-                          </div>
-                          <div className="link-box">
-                            <a href="javascript:void(0);">첨부Link</a>
-                            <a href="javascript:void(0);">
-                              <span className="close-btn">close</span>
-                            </a>
-                          </div>
-                          <div className="link-box">
-                            <a href="javascript:void(0);">첨부Link</a>
-                            <a href="javascript:void(0);">
-                              <span className="close-btn">close</span>
-                            </a>
-                          </div>
-                          <div className="link-box">
-                            <a href="javascript:void(0);">첨부Link</a>
-                            <a href="javascript:void(0);">
-                              <span className="close-btn">close</span>
-                            </a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+          </div>
+          <div className="form-cell wid50">
+            <div className="form-group wid100">
+              <AppAutoComplete label={'부서'} required />
             </div>
-          </dd>
-        </dl>
+          </div>
+        </div>
+        <hr className="line dp-n"></hr>
+        <div className="form-table line">
+          <div className="form-cell wid50">
+            <div className="form-group wid100">
+              <AppSelect label="권역" required disabled />
+            </div>
+          </div>
+          <div className="form-cell wid50">
+            <div className="form-group wid100">
+              <AppTextInput label="사업장" required />
+            </div>
+          </div>
+          <div className="form-cell wid50">
+            <div className="form-group wid100">
+              <AppTextInput label="위치분류1" required />
+            </div>
+          </div>
+          <div className="form-cell wid50">
+            <div className="form-group wid100">
+              <AppTextInput label="위치분류2" />
+            </div>
+          </div>
+        </div>
+        <hr className="line dp-n"></hr>
+        <div className="form-table line">
+          <div className="form-cell wid50">
+            <div className="form-group wid100">
+              <AppTextInput label="취급화학물질" />
+            </div>
+          </div>
+          <div className="form-cell wid50">
+            <div className="form-group wid100">
+              <AppTextInput label="유해인자" />
+            </div>
+          </div>
+        </div>
+        <hr className="line dp-n"></hr>
+        <div className="form-table line">
+          <div className="form-cell wid50">
+            <div className="form-group wid100">
+              <AppSelect label="기준에 관한 규칙" required />
+              <span className="sm-txt">※ 산업안전보건기준에 관한 규칙 [별표 18] 밀폐공간(제618조제1호 관련)</span>
+            </div>
+          </div>
+        </div>
+        <hr className="line dp-n"></hr>
+        <div className="form-table line">
+          <div className="form-cell wid50">
+            <div className="form-group wid100">
+              <AppTextInput label="작업업체" required />
+            </div>
+          </div>
+          <div className="form-cell wid50">
+            <div className="form-group wid100">
+              <AppTextInput label="출입주기" required />
+            </div>
+          </div>
+        </div>
+        <hr className="line dp-n"></hr>
+        <div className="form-table">
+          <div className="form-cell wid50">
+            <div className="form-group wid100">
+              <AppTextInput label="출입 시 작업내용" required />
+            </div>
+          </div>
+        </div>
+        <hr className="line"></hr>
+        {/* 파일첨부영역 : button */}
+        <div className="form-table">
+          <div className="form-cell wid50">
+            <div className="form-group wid100">
+              <div className="filebox">
+                <Upload
+                  action="https://660d2bd96ddfa2943b33731c.mockapi.io/api/upload"
+                  listType="picture-card"
+                  fileList={fileList}
+                  onPreview={handlePreview}
+                  onChange={handleChange}
+                >
+                  {fileList.length >= 8 ? null : uploadButton}
+                </Upload>
+                <label htmlFor="file" className="file-label">
+                  참고사진1 <span className="required">*</span>
+                </label>
+              </div>
+              {/*<span className="errorText">fileerror</span>*/}
+            </div>
+            {previewImage && (
+              <Image
+                wrapperStyle={{
+                  display: 'none',
+                }}
+                preview={{
+                  visible: previewOpen,
+                  onVisibleChange: (visible) => setPreviewOpen(visible),
+                  afterOpenChange: (visible) => !visible && setPreviewImage(''),
+                }}
+                src={previewImage}
+              />
+            )}
+          </div>
+        </div>
+        <hr className="line"></hr>
+        {/* 파일첨부영역 : button */}
+        <div className="form-table">
+          <div className="form-cell wid50">
+            <div className="form-group wid100">
+              <div className="filebox error">
+                <Upload
+                  action="https://660d2bd96ddfa2943b33731c.mockapi.io/api/upload"
+                  listType="picture-card"
+                  fileList={fileList}
+                  onPreview={handlePreview}
+                  onChange={handleChange}
+                >
+                  {fileList.length >= 8 ? null : uploadButton}
+                </Upload>
+                <label htmlFor="file" className="file-label">
+                  참고사진2<span className="required">*</span>
+                </label>
+              </div>
+              <span className="errorText">fileerror</span>
+            </div>
+            {previewImage && (
+              <Image
+                wrapperStyle={{
+                  display: 'none',
+                }}
+                preview={{
+                  visible: previewOpen,
+                  onVisibleChange: (visible) => setPreviewOpen(visible),
+                  afterOpenChange: (visible) => !visible && setPreviewImage(''),
+                }}
+                src={previewImage}
+              />
+            )}
+          </div>
+        </div>
+
+        <hr className="line"></hr>
       </div>
       {/*//입력영역*/}
 
