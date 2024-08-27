@@ -138,6 +138,19 @@ function PRiskEdit() {
                       </div>
                     </div>
                   </div>
+                  <div className="form-table">
+                    <div className="form-cell wid50">
+                      <div className="group-box-wrap wid50">
+                        <span className="txt">참고문서번호</span>
+                        <div className="radio-wrap">
+                          <label>
+                            <input type="radio" checked />
+                            <span>YES</span>
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>

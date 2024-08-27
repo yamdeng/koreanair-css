@@ -745,23 +745,12 @@ function SafetyDetail() {
                                             </div>
                                           </div>
                                         </div>
-                                        <hr className="line dp-n"></hr>
                                         <div className="form-table">
                                           <div className="form-cell wid50">
-                                            <div className="form-group wid100">
+                                            <div className="form-group wid50">
                                               <AppSelect label={'LSC Member'} />
-                                            </div>
-                                          </div>
-                                          <div className="form-cell wid50">
-                                            <div className="form-group wid100">
-                                              <AppAutoComplete label={'LSC Member'} />
-                                            </div>
-                                          </div>
-                                        </div>
-                                        <div className="form-table SelList">
-                                          <div className="form-cell wid50">
-                                            <div className="form-group wid100">
-                                              <div className="SelectedList memberClass">
+                                              <AppAutoComplete label="사용자선택 파이널" required disabled />
+                                              <div className="SelectedList memberClass wid100">
                                                 <ul>
                                                   <li>
                                                     <span className="InfoBox"></span>
@@ -782,6 +771,124 @@ function SafetyDetail() {
                                                 </ul>
                                               </div>
                                             </div>
+                                          </div>
+                                        </div>
+                                        <hr className="line dp-n"></hr>
+                                        <div className="form-table">
+                                          <div className="form-cell wid50">
+                                            <div className="form-group wid100">
+                                              <AppSelect label={'LSC Member'} />
+                                            </div>
+                                          </div>
+                                          <div className="form-cell wid50">
+                                            <div className="form-group wid100">
+                                              <div className="SelectedList memberClass wid100">
+                                                <ul>
+                                                  <li>
+                                                    <span className="InfoBox"></span>
+                                                    <div className="Info">
+                                                      <div className="Name">홍길동 (170****)</div>
+                                                      <div className="Dept">상무대우수석사무장 / (주)대한항공</div>
+                                                    </div>
+                                                    <span className="class leader">Leader</span>
+                                                  </li>
+                                                  <li>
+                                                    <span className="InfoBox"></span>
+                                                    <div className="Info">
+                                                      <div className="Name">홍길동 (170****)</div>
+                                                      <div className="Dept">상무대우수석사무장 / (주)대한항공</div>
+                                                    </div>
+                                                    <span className="class ">Leader</span>
+                                                  </li>
+                                                </ul>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div className="form-table">
+                                          <div className="form-cell wid50">
+                                            <div className="form-group wid100">
+                                              <AppSelect label={'LSC Member2'} />
+                                              {/* <div className="SelectedList memberClass wid100">
+                                                <ul>
+                                                  <li>
+                                                    <span className="InfoBox"></span>
+                                                    <div className="Info">
+                                                      <div className="Name">홍길동 (170****)</div>
+                                                      <div className="Dept">상무대우수석사무장 / (주)대한항공</div>
+                                                    </div>
+                                                    <span className="class leader">Leader</span>
+                                                  </li>
+                                                  <li>
+                                                    <span className="InfoBox"></span>
+                                                    <div className="Info">
+                                                      <div className="Name">홍길동 (170****)</div>
+                                                      <div className="Dept">상무대우수석사무장 / (주)대한항공</div>
+                                                    </div>
+                                                    <span className="class ">Leader</span>
+                                                  </li>
+                                                </ul>
+                                              </div> */}
+                                            </div>
+                                          </div>
+
+                                          <div className="form-cell wid50">
+                                            <div className="form-group wid100">
+                                              <AppAutoComplete label={'LSC Member'} />
+                                              {/* <div className="SelectedList memberClass wid100">
+                                                <ul>
+                                                  <li>
+                                                    <span className="InfoBox"></span>
+                                                    <div className="Info">
+                                                      <div className="Name">홍길동 (170****)</div>
+                                                      <div className="Dept">상무대우수석사무장 / (주)대한항공</div>
+                                                    </div>
+                                                    <span className="class leader">Leader</span>
+                                                  </li>
+                                                  <li>
+                                                    <span className="InfoBox"></span>
+                                                    <div className="Info">
+                                                      <div className="Name">홍길동 (170****)</div>
+                                                      <div className="Dept">상무대우수석사무장 / (주)대한항공</div>
+                                                    </div>
+                                                    <span className="class ">Leader</span>
+                                                  </li>
+                                                </ul>
+                                              </div> */}
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div className="form-table">
+                                          <div className="form-cell wid50">
+                                            <div className="form-group wid100">
+                                              <div className="SelectedList memberClass wid100">
+                                                <ul>
+                                                  <li>
+                                                    <span className="InfoBox"></span>
+                                                    <div className="Info">
+                                                      <div className="Name">홍길동 (170****)</div>
+                                                      <div className="Dept">상무대우수석사무장 / (주)대한항공</div>
+                                                    </div>
+                                                    <span className="class leader">Leader</span>
+                                                  </li>
+                                                  <li>
+                                                    <span className="InfoBox"></span>
+                                                    <div className="Info">
+                                                      <div className="Name">홍길동 (170****)</div>
+                                                      <div className="Dept">상무대우수석사무장 / (주)대한항공</div>
+                                                    </div>
+                                                    <span className="class ">Leader</span>
+                                                  </li>
+                                                </ul>
+                                              </div>
+                                            </div>
+                                          </div>
+
+                                          {/* END */}
+                                        </div>
+                                        <div className="form-table SelList">
+                                          <div className="form-cell wid50">
+                                            <div className="form-group wid100"></div>
                                           </div>
                                         </div>
                                         <hr className="line"></hr>
