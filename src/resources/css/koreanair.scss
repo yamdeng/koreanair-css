@@ -438,7 +438,6 @@
         display: inline-block;
         width: 50%;
         vertical-align: top;
-        background-color: aqua;
         height: max-content;
         height: 100%;
       }
@@ -457,7 +456,7 @@
         .boxForm .form-table{display:flex;width:100%}
         .boxForm .form-table:last-child{padding-bottom:1.5rem}
         .boxForm .form-table .form-cell{position:relative;flex-grow:1;/*padding-right:1.0rem;padding-top:0*/ padding: 1.5rem 0.5rem;border-bottom: 0.1rem solid var(--color-neutral-40);}
-        .btn-area {
+        .btn-area-type01 {
           text-align:center;
             > button{margin:0 0.5rem}
             button + button{margin-left:0.5rem}

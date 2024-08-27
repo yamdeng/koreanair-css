@@ -133,7 +133,9 @@
   .ck-edit-box .ck-list {display: block; width: 100%; margin-bottom: 2.0rem;}
   .ck-edit-box .ck-edit {display: block; width: 100%; margin-left: 0;}
   .ck-edit-box .ck-edit .boxForm {padding: 0 1rem;}
-  .ck-edit-box .ck-edit .btn-area > button + button {width: 50% !important;}
+  .ck-edit-box .ck-edit .mg-top {margin: 1.2rem 0;}
+  .ck-edit-box .ck-edit .btn-area-type01 > button {width: 50%; margin:0;}
+  .ck-edit-box .ck-edit .btn-area-type01 > button + button {width: calc(50% - 0.5rem);}
 }
 
 
@@ -247,6 +249,9 @@
   .ck-edit-box .ck-list {display: block; width: 100%; margin-bottom: 2.0rem;}
   .ck-edit-box .ck-edit {display: block; width: 100%; margin-left: 0;}
   .ck-edit-box .ck-edit .boxForm {padding: 0 1rem;}
+  .ck-edit-box .ck-edit .mg-top {margin: 1.2rem 0;}
+  .ck-edit-box .ck-edit .btn-area-type01 > button {width: 50%; margin:0;}
+  .ck-edit-box .ck-edit .btn-area-type01 > button + button {width: calc(50% - 0.5rem);}
 }
 
 

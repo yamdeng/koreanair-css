@@ -1450,7 +1450,7 @@ function POccupationMu6P2edit() {
                                 </div>
                               </div>
                             </div>
-                            <div className="btn-area mg-top">
+                            <div className="btn-area-type01 mg-top">
                               <button type="button" name="button" className="btn_text btn_confirm">
                                 추가
                               </button>
