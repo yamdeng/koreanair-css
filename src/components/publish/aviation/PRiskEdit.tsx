@@ -95,7 +95,7 @@ function PRiskEdit() {
                     </div>
                     <div className="form-cell wid50">
                       <div className="form-group wid100">
-                        <AppSelect label={'발생단계'} />
+                        <AppSelect label={'발생단계'} required />
                       </div>
                     </div>
                   </div>
@@ -125,10 +125,20 @@ function PRiskEdit() {
                     </div>
                   </div>
                   <div className="form-table">
-                    <div className="form-cell wid50">
+                    <div className="form-cell wid50 ">
                       <div className="form-group wid100">
                         {/*발생위치 */}
-                        <AppTextInput label="발생위치" />
+                        <div className="tooltip-area">
+                          <div className="tooltip">
+                            <span className="tooltiptext tooltip-right">
+                              <ul>
+                                <li>설비·기계: 동력에 의해 작동되는 기계기구 및 특정한 공정에 사용된 장치 등의 설비</li>
+                                <li>휴대용·인력용 기계: 동력 또는 인력에 의해 작동되는 휴대용 공구와 기계기구 부품</li>
+                              </ul>
+                            </span>
+                          </div>
+                          <AppTextInput inputType="text" placeholder="" label="발생위치" />
+                        </div>
                       </div>
                     </div>
                   </div>

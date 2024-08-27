@@ -126,6 +126,48 @@
 .detailForm-detail-2deps.rbox:after{background-color:var(--color-darkblue-20)}
 .detailForm-detail-3deps{border:0;overflow:hidden}
 
+.detail-form .form-table .form-cell .form-group .tooltip-area{position: relative;}
+.detail-form .form-table .form-cell .form-group .tooltip-area .tooltip {position: relative;background: url(../images/tooltip.svg) left center no-repeat; background-size: 2.4rem; display: block; font-size: 0; width: 2.4rem;cursor: pointer;}
+.detail-form .form-table .form-cell .form-group .tooltip-area .tooltip .tooltiptext {
+  visibility: hidden; 
+  width: 50.0rem; 
+  font-size: 1.2rem;
+  background-color: var(--color-neutral-80); 
+  color: var(--color-neutral-10);
+  text-align: left; 
+  border-radius: 0.8rem; 
+  padding: 1.5rem 2.0rem; 
+  position: absolute; 
+  z-index: 1;
+}
+.tooltip .tooltiptext ul {
+    
+}
+.tooltip .tooltiptext li::marker {
+  content: "-"; 
+  color: var(--color-neutral-10);
+  font-size: 1rem;
+}
+.tooltip .tooltiptext ul li {font-size: 1.2rem; color: var(--color-neutral-10);  display: list-item; padding-left: 0.6rem;}
+.tooltip:hover .tooltiptext {visibility: visible;}
+.tooltip .tooltiptext::after {
+  content: " ";
+  position: absolute;
+  border-style: solid;
+  border-width: 0.5rem;
+}
+.tooltip .tooltip-right {
+  top: -0.6rem;
+  left: 155%;
+}
+.tooltip .tooltip-right::after {
+  top: 1.6rem;                
+  right: 100%;             
+  margin-top: -0.5rem;
+  border-color: transparent var(--color-neutral-80) transparent transparent;
+}
+
+
 .detailForm-detail.list-group + .detailForm-detail.list-group{margin-top:0.8rem}
 .detailForm-detail.list-group .list > dl > dt{padding:0.8rem 0 0.8rem 0.8rem}
 .detailForm-detail.list-group .list > dl > dd{margin:0 -2.0rem -1.0rem -1.0rem}
