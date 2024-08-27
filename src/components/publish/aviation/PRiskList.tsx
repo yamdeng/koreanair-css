@@ -10,14 +10,7 @@ import AppAutoComplete from '@/components/common/AppAutoComplete';
 function PRiskList() {
   const rowData = getAllData();
   const columns = testColumnInfos;
-  const customButtons = [
-    {
-      title: '동적 필드 적용',
-      onClick: () => {
-        alert('동적 필드 적용');
-      },
-    },
-  ];
+
   return (
     <>
       {/*경로 */}
@@ -143,7 +136,7 @@ function PRiskList() {
 
       {/*그리드영역 */}
       <div className="">
-        <AppTable rowData={rowData} columns={columns} customButtons={customButtons} />
+        <AppTable rowData={rowData} columns={columns} useColumnDynamicSetting />
       </div>
       {/*//그리드영역 */}
 

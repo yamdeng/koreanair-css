@@ -1,6 +1,7 @@
 import CommonUtil from '@/utils/CommonUtil';
 import classNames from 'classnames';
 import CommonInputError from './CommonInputError';
+import ReactUtil from '@/utils/ReactUtil';
 
 /*
 
@@ -38,6 +39,7 @@ function AppTextInput(props) {
     style = {},
     hiddenClearButton = false,
     inputType = 'text',
+    toolTipMessage = '',
     ...rest
   } = props;
   let isActiveClass = false;
@@ -71,6 +73,14 @@ function AppTextInput(props) {
       />
       <label className="f-label" htmlFor={id} style={{ display: label ? '' : 'none' }}>
         {label} {required ? <span className="required">*</span> : null}
+        {toolTipMessage ? (
+          <div className="tooltip">
+            <span
+              className="tooltiptext tooltip-right"
+              dangerouslySetInnerHTML={{ __html: ReactUtil.convertEnterStringToBrTag(toolTipMessage) }}
+            />
+          </div>
+        ) : null}
       </label>
       {disabled || inputType === 'number' || hiddenClearButton || !value ? null : (
         <button className="btnClear" onClick={() => onChange('')}></button>
