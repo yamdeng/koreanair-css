@@ -2,10 +2,16 @@ import AppDatePicker from '@/components/common/AppDatePicker';
 import AppSearchInput from '@/components/common/AppSearchInput';
 import AppSelect from '@/components/common/AppSelect';
 import AppTextInput from '@/components/common/AppTextInput';
+import AppAutoComplete from '@/components/common/AppAutoComplete';
 import { useState } from 'react';
 
-function PRiskForm2() {
+function PRiskEdit() {
   const [inputValue, setInputValue] = useState('');
+  const [firstExpaned, setFirstExpaned] = useState(true);
+  const [secondExpaned, setSecondExpaned] = useState(true);
+  const [thirdExpaned, setThirdExpaned] = useState(true);
+  const [fourExpaned, setFourExpaned] = useState(true);
+  const [fiveExpaned, setFiveExpaned] = useState(true);
   return (
     <>
       {/*경로 */}
@@ -27,8 +33,11 @@ function PRiskForm2() {
       </div>
       {/*경로 */}
       <div className="conts-title">
-        <h2>
-          보고서 번호 : <span>20240715(Aa)</span>
+        <h2 className="reportview">
+          보고서 번호
+          <span>
+            <a href="javascript:void(0);">ASR-100308</a>
+          </span>
         </h2>
       </div>
 
@@ -37,29 +46,29 @@ function PRiskForm2() {
         <div className="form-table">
           <div className="form-cell wid100">
             <div className="form-group wid100">
-              <AppSearchInput label="보고서검색" />
+              <AppTextInput label="subject" required />
             </div>
           </div>
         </div>
       </div>
       {/* //검색영역 */}
       <div className="info-wrap toggle">
-        <dl className="tg-item active">
+        <dl className="{firstExpaned ? 'tg-item active' : 'tg-item'}">
           {/* toggle 선택되면  열어지면 active붙임*/}
-          <dt>
+          <dt onClick={() => setFirstExpaned(!firstExpaned)}>
             <button type="button" className="btn-tg">
-              발생정보
+              발생정보<span className={firstExpaned ? 'active' : ''}></span>
             </button>
           </dt>
-          <dd className="tg-conts">
+          <dd className="tg-conts" style={{ display: firstExpaned ? '' : 'none' }}>
             <div className="edit-area">
               <div className="detail-form">
                 <div className="detail-list">
                   <div className="form-table">
                     <div className="form-cell">
-                      <div className="form-group">
+                      <div className="form-group wid20">
                         <div className="date1">
-                          <AppDatePicker label="발생일/시간(UTC)" />
+                          <AppDatePicker label="발생일/시간(UTC)" required />
                         </div>
                       </div>
                     </div>
@@ -68,12 +77,12 @@ function PRiskForm2() {
                     <div className="form-cell wid50">
                       <div className="form-group wid100">
                         {/*발생단계 */}
-                        <AppSelect label="발생단계" required />
+                        <AppSelect label="Event Class" required />
                       </div>
                     </div>
                     <div className="form-cell wid50">
                       <div className="form-group wid100">
-                        <AppSelect label="Event Type" />
+                        <AppSelect label="Event Type" required />
                       </div>
                     </div>
                   </div>
@@ -81,7 +90,7 @@ function PRiskForm2() {
                     <div className="form-cell wid50">
                       <div className="form-group wid100">
                         {/*발생공항 */}
-                        <AppSearchInput label="발생공항" disabled />
+                        <AppAutoComplete label="발생공항" required disabled />
                       </div>
                     </div>
                     <div className="form-cell wid50">
@@ -128,13 +137,13 @@ function PRiskForm2() {
             </div>
           </dd>
         </dl>
-        <dl className="tg-item">
-          <dt>
+        <dl className={secondExpaned ? 'tg-item active' : 'tg-item'}>
+          <dt onClick={() => setSecondExpaned(!secondExpaned)}>
             <button type="button" className="btn-tg">
-              비행정보
+              비행정보<span className={secondExpaned ? 'active' : ''}></span>
             </button>
           </dt>
-          <dd className="tg-conts">
+          <dd className="tg-conts" style={{ display: secondExpaned ? '' : 'none' }}>
             <div className="edit-area">
               <div className="detail-form">
                 <div className="detail-list">
@@ -181,7 +190,7 @@ function PRiskForm2() {
                       </div>
                     </div>
                     <div className="form-cell wid50">
-                      <div className="group-box-wrap wid50">
+                      <div className="group-box-wrap wid100">
                         <span className="txt">
                           SPI 여부<span className="required">*</span>
                         </span>
@@ -213,132 +222,6 @@ function PRiskForm2() {
         </dl>
       </div>
 
-      {/* toggle 선택되면  열어지면 active붙임
-      <div className="info-wrap toggle">
-        <dl className="tg-item active">
-          
-          <dt>
-            <button type="button" className="btn-tg">
-              발생정보
-            </button>
-          </dt>
-          <dd className="tg-conts">
-            <div className="edit-area">
-              <div className="detail-form">
-                <ul className="detail-list">
-                  <li className="list">
-                    <div className="list-row wid50">
-                      <label className="f-label">
-                        발생일/시간(UTC) <span className="required">*</span>
-                      </label>
-                      <div className="cont">
-                        <div className="form-table">
-                          <div className="form-cell wid50">
-                            <div className="form-group wid100">
-                              <AppSelect
-                                style={{ width: '100%' }}
-                                status="error"
-                                options={[
-                                  {
-                                    value: 'jack',
-                                    label: 'Jack',
-                                  },
-                                  {
-                                    value: 'lucy',
-                                    label: 'Lucy',
-                                  },
-                                  {
-                                    value: 'Yiminghe',
-                                    label: 'yiminghe',
-                                  },
-                                  {
-                                    value: 'disabled',
-                                    label: 'Disabled',
-                                    disabled: true,
-                                  },
-                                ]}
-                              />
-                              <span className="errorText">data picker error message</span>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="list-row">
-                      <div className="form-cell wid50">
-                        <div className="form-table">
-                          <div className="form-cell">
-                            <div className="form-group form-glow">
-                              <div className="df">
-                                <div className="date1">
-                                  <AppDatePicker status="" id="date1" className="label-picker" placeholder="" />
-                                  <label className="f-label" htmlFor="date1">
-                                    발생일/시간(UTC) <span className="required">*</span>
-                                  </label>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </li>
-                  <li className="list">
-                    <div className="list-row wid100">
-                      <label className="f-label">
-                        발생일/시간(UTC) <span className="required">*</span>
-                      </label>
-                      <div className="cont">
-                        <div className="form-table">
-                          <div className="form-cell wid50">
-                            <div className="form-group wid100">
-                              <AppSelect
-                                style={{ width: '100%' }}
-                                status="error"
-                                options={[
-                                  {
-                                    value: 'jack',
-                                    label: 'Jack',
-                                  },
-                                  {
-                                    value: 'lucy',
-                                    label: 'Lucy',
-                                  },
-                                  {
-                                    value: 'Yiminghe',
-                                    label: 'yiminghe',
-                                  },
-                                  {
-                                    value: 'disabled',
-                                    label: 'Disabled',
-                                    disabled: true,
-                                  },
-                                ]}
-                              />
-                              <span className="errorText">data picker error message</span>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </dd>
-        </dl>
-        <dl className="tg-item">
-          <dt>
-            <button type="button" className="btn-tg">
-              비행정보
-            </button>
-          </dt>
-          <dd className="tg-conts">
-            <div className="edit-area">dfdfdfdf</div>
-          </dd>
-        </dl>
-      </div>*/}
-
       {/* 하단버튼영역 */}
       <div className="">하단버튼영역</div>
       {/* //하단버튼영역 */}
@@ -346,4 +229,4 @@ function PRiskForm2() {
   );
 }
 
-export default PRiskForm2;
+export default PRiskEdit;

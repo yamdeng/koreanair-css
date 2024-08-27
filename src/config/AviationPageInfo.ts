@@ -1,6 +1,6 @@
 import PAviationPortal1 from '@/components/publish/aviation/PAviationPortal1';
 import PRiskList from '@/components/publish/aviation/PRiskList';
-import PRiskForm2 from '@/components/publish/aviation/PRiskForm2';
+import PRiskEdit from '@/components/publish/aviation/PRiskEdit';
 import SPIInfo1 from '@/components/publish/aviation/SPIInfo1';
 import SPIInfo2 from '@/components/publish/aviation/SPIInfo2';
 import SPIBoardList from '@/components/publish/aviation/SPIBoardList';
@@ -106,9 +106,9 @@ AviationPageInfo.list = [
     success: true,
   },
   {
-    title: '[03.안전위험관리] 안전조사 > 조사보고서 뷰',
-    Component: PRiskForm2,
-    path: 'PRiskForm2',
+    title: '[03.안전위험관리] 안전조사 > 조사보고서 신규(등록)',
+    Component: PRiskEdit,
+    path: 'PRiskEdit',
     description: '',
     success: false,
   },

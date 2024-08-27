@@ -310,7 +310,7 @@ input, select{font-family:'KoreanAirSans'}
   }
 
   .group-box-wrap{position: relative; display: inline-block; /*padding:0 1.0rem;*/height:4.0rem;/*border: 0.1rem solid var(--color-neutral-40);border-radius: 0.5rem*/}
-  .group-box-wrap .txt {position:absolute;left:1.0rem;top: -1.2rem;background:var(--color-neutral-10);padding: 0 0.5rem;font-size:1.3rem; display: flex;}
+  .group-box-wrap .txt {position:absolute;left:1.0rem;top: -1.0rem;background:var(--color-neutral-10);padding: 0 0.5rem;font-size:1.3rem; display: flex;}
   .tooltip {background: url(../images/tooltip.svg) left center no-repeat; background-size: 2.4rem; display: block; font-size: 0; width: 2.4rem; position: relative; cursor: pointer;}
   .tooltip .tooltiptext {
     visibility: hidden; 
@@ -511,6 +511,9 @@ input, select{font-family:'KoreanAirSans'}
 .form-tag:not([value=""]) + .f-label,
 .form-tag.invalid + .f-label{left:1.0rem;top:-0.8rem;font-size:1.3rem;transition: all 0.2s ease}
 .form-tag:disabled + .f-label{left:1.0rem;top:-0.8rem;font-size:1.3rem;color:var(--color-neutral-60);background-color:var(--color-neutral-20)}
+.label-select.disabled + .f-label{eft:1rem;top:-0.8rem;font-size: 1.3rem;color:var(--color-neutral-60);background-color: var(--color-neutral-20)}
+
+
 // .form-tag:not([value=""]) + .f-label{color:var(--color-neutral-80)}
 .form-tag:disabled{background:var(--color-neutral-20)}
 // .form-tag:not([value=""]){border:0.1rem solid var(--color-neutral-40)}
