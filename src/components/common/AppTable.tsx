@@ -232,12 +232,16 @@ function AppTable(props) {
         </div>
         <div className="btns-area">
           {customButtons.map((info) => {
-            const { title, onClick } = info;
+            const { title, iconClass, onClick } = info;
             return (
               <button
                 key={title}
                 name="button"
-                className="btn_text btn_confirm text_color_neutral-10"
+                className={
+                  iconClass
+                    ? `btn_text btn_confirm text_color_neutral-10 ${iconClass}`
+                    : 'btn_text btn_confirm text_color_neutral-10'
+                }
                 onClick={onClick}
               >
                 {title}
