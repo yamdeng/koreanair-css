@@ -4,6 +4,8 @@ import AppTable from '@/components/common/AppTable';
 import { getAllData } from '@/data/grid/example-data-new';
 import { testColumnInfos } from '@/data/grid/table-column';
 import AppDatePicker from '@/components/common/AppDatePicker';
+import AppTextInput from '@/components/common/AppTextInput';
+import AppSelect from '@/components/common/AppSelect';
 
 function MyAuditList() {
   const [inputValue, setInputValue] = useState('');
@@ -26,75 +28,49 @@ function MyAuditList() {
         </ol>
       </div>
       {/*경로 */}
-      {/*탭 */}
-      <div className="menu-tab-nav">
-        <div className="swiper-container">
-          <div className="menu-tab">
-            <a href="javascript:void(0);" className="active" data-label="안전보안일반12">
-              안전보안일반12 (29)
-              <button type="button" className="tabs-tab-remove">
-                <span className="delete">X</span>
-              </button>
-            </a>
-            <a href="javascript:void(0);" data-label="항공보안(OYA)">
-              항공보안(OYA)
-              <button type="button" className="tabs-tab-remove">
-                <span className="delete">X</span>
-              </button>
-            </a>
-            <a href="javascript:void(0);" data-label="운항품질(OQA)">
-              운항품질(OQA)
-              <button type="button" className="tabs-tab-remove">
-                <span className="delete">X</span>
-              </button>
-            </a>
-            <a href="javascript:void(0);" data-label="정비품질보증(M&E)">
-              정비품질보증(M&E)
-              <button type="button" className="tabs-tab-remove">
-                <span className="delete">X</span>
-              </button>
-            </a>
-            <a href="javascript:void(0);" data-label="종합통제(OC)">
-              종합통제(OC)
-              <button type="button" className="tabs-tab-remove">
-                <span className="delete">X</span>
-              </button>
-            </a>
-            <a href="javascript:void(0);" data-label="객실품질심사(UFQA)">
-              객실품질심사(UFQA)
-              <button type="button" className="tabs-tab-remove">
-                <span className="delete">X</span>
-              </button>
-            </a>
-            <a href="javascript:void(0);" data-label="여객안전보안보건(CTPN)">
-              여객안전보안보건(CTPN)
-              <button type="button" className="tabs-tab-remove">
-                <span className="delete">X</span>
-              </button>
-            </a>
-            <a href="javascript:void(0);" data-label="운송서비스(FT)">
-              운송서비스(FT)
-              <button type="button" className="tabs-tab-remove">
-                <span className="delete">X</span>
-              </button>
-            </a>
+      {/*검색영역 */}
+      <div className="boxForm">
+        {/*area-detail명 옆에 active  */}
+        <div id="" className="area-detail active">
+          <div className="form-table">
+            <div className="form-cell wid50">
+              <div className="form-group wid100">
+                <AppSelect label={'Audited Div'} />
+              </div>
+            </div>
+            <div className="form-cell wid50">
+              <div className="form-group form-glow wid30">
+                <div className="df">
+                  <div className="date1">
+                    <AppDatePicker label={'Event Data'} />
+                  </div>
+                  <span className="unt">~</span>
+                  <div className="date2">
+                    <AppDatePicker label={'Event Data'} />
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-
-          <div className="menu-tab-nav-operations">
-            <button type="button" name="button" className="menu-tab-nav-more">
-              <span className="hide">더보기</span>
+          <div className="form-table">
+            <div className="form-cell wid50">
+              <div className="form-group wid100">
+                <AppSelect label={'Event Class'} />
+              </div>
+            </div>
+          </div>
+          <div className="btn-area">
+            <button type="button" name="button" className="btn-sm btn_text btn-darkblue-line">
+              조회
+            </button>
+            <button type="button" name="button" className="btn-sm btn_text btn-darkblue-line">
+              Guide
             </button>
           </div>
         </div>
-      </div>
-
-      {/*검색영역 */}
-      <div className="btn-area">
-        <button type="button" name="button" className="btn-sm btn_text btn-darkblue-line">
-          Checklist Upload
-        </button>
-        <button type="button" name="button" className="btn-sm btn_text btn-darkblue-line">
-          Add Checklist
+        {/*__control명 옆에 active  */}
+        <button type="button" name="button" className="arrow button _control active">
+          <span className="hide">접기</span>
         </button>
       </div>
       {/* //검색영역 */}

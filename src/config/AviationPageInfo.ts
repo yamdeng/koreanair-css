@@ -211,7 +211,7 @@ AviationPageInfo.list = [
     Component: SMSdataDetail,
     path: 'SMSdataDetail',
     description: '',
-    success: false,
+    success: true,
   },
   {
     title: '[04.안전보증] SMS성숙도점검 > 대시보드',
