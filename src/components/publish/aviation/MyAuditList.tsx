@@ -11,6 +11,28 @@ function MyAuditList() {
   const [inputValue, setInputValue] = useState('');
   const rowData = getAllData();
   const columns = testColumnInfos;
+  const customButtons = [
+    {
+      title: '일괄업로드',
+      onClick: () => {
+        alert('일괄업로드');
+      },
+    },
+    {
+      title: '+ Add Plan',
+      onClick: () => {
+        alert('+ Add Plan');
+      },
+    },
+    {
+      title: 'Fields',
+      onClick: () => {
+        alert('Fields');
+      },
+      iconClass: '',
+    },
+  ];
+
   return (
     <>
       {/*경로 */}
@@ -28,34 +50,71 @@ function MyAuditList() {
         </ol>
       </div>
       {/*경로 */}
+
+      {/*사용자기준 조회범위영역 */}
+      <div></div>
+      {/*//사용자기준 조회범위영역 */}
+
       {/*검색영역 */}
       <div className="boxForm">
         {/*area-detail명 옆에 active  */}
         <div id="" className="area-detail active">
           <div className="form-table">
-            <div className="form-cell wid50">
+            <div className="form-cell wid30">
               <div className="form-group wid100">
                 <AppSelect label={'Audited Div'} />
               </div>
             </div>
-            <div className="form-cell wid50">
+            <div className="form-cell wid30">
               <div className="form-group form-glow wid30">
                 <div className="df">
                   <div className="date1">
-                    <AppDatePicker label={'Event Data'} />
+                    <AppDatePicker label={'Audit Date'} />
                   </div>
                   <span className="unt">~</span>
                   <div className="date2">
-                    <AppDatePicker label={'Event Data'} />
+                    <AppDatePicker label={'Audit Data'} />
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div className="form-table">
             <div className="form-cell wid50">
               <div className="form-group wid100">
-                <AppSelect label={'Event Class'} />
+                <AppTextInput label="Title or CAR Title or AuditorNm" />
+              </div>
+            </div>
+          </div>
+          <div className="form-table">
+            <div className="form-cell wid30">
+              <div className="form-group wid100">
+                <AppSelect label={'Status'} />
+              </div>
+            </div>
+            <div className="form-cell wid30">
+              <div className="form-group form-glow wid30">
+                <div className="df">
+                  <div className="date1">
+                    <AppDatePicker label={'Due Date'} />
+                  </div>
+                  <span className="unt">~</span>
+                  <div className="date2">
+                    <AppDatePicker label={'Due Data'} />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="form-cell wid50">
+              <div className="group-box-wrap wid100">
+                <div className="radio-wrap border-no">
+                  <label>
+                    <input type="checkbox" checked />
+                    <span>Audiror 펼치기</span>
+                  </label>
+                  <label>
+                    <input type="checkbox" />
+                    <span>CAR 펼치기</span>
+                  </label>
+                </div>
               </div>
             </div>
           </div>
@@ -75,7 +134,11 @@ function MyAuditList() {
       </div>
       {/* //검색영역 */}
 
-      <div className="checklist-contents"></div>
+      {/*그리드영역 */}
+      <div className="">
+        <AppTable rowData={rowData} columns={columns} customButtons={customButtons} />
+      </div>
+      {/*//그리드영역 */}
     </>
   );
 }

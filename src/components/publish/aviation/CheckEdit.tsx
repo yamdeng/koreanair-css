@@ -133,7 +133,7 @@ function CheckEdit() {
           <div className="form-table line">
             <div className="form-cell wid30">
               <div className="form-group wid100">
-                <AppTextArea label="Contents" errorMessage="" />
+                <AppTextArea label="Contents" style={{ width: '100%', height: 500 }} errorMessage="" />
               </div>
             </div>
           </div>
@@ -223,6 +223,7 @@ function CheckEdit() {
 1-1 지점장은 공항업무(운송/운항관리/정비/안전보안) 수행에 필요한 인원 및 업무 분장을 지정, 파악 관리한다.
 (GM - Guidance Material)
 지점 조직도, Safety Coordinator, 위임/대행 체계"
+                  style={{ width: '100%', height: 1000 }}
                 />
               </div>
             </div>

@@ -65,7 +65,9 @@ body * {
 .wid50{width:50%}
 .wid70{width:70%}
 .wid80{width:80%}
-.wid100{width:100%}
+
+
+.Heig100{height:200px}
 .mr5{margin-right:0.5rem !important}
 
 button, input, textarea, select, label{font-family:'KoreanAirSans';font-weight:400}
@@ -271,6 +273,7 @@ input, select{font-family:'KoreanAirSans'}
   .btn-share {padding:0.8rem 3.2rem 0.8rem 2.2rem ;border-radius:99.9rem;background-color: var(--color-darkblue-100);}
   .btn-share img {display: inline-block; vertical-align: bottom;}
   .btn-share span {display: inline-block; color: var(--color-neutral-10); vertical-align: top;}
+  .btn-share{}
   .btn-type01 {}
   text-align:right
 }
