@@ -27,22 +27,22 @@ function POccupationMu2P1list() {
             <a href="javascript:void(0);">안전경영</a>
           </li>
           <li className="breadcrumb-item">
-            <a href="javascript:void(0);">산업안전보건관리비</a>
+            <a href="javascript:void(0);">교육현황 조회</a>
           </li>
         </ol>
       </div>
       {/*경로 */}
       <div className="conts-title">
-        <h2>산업안전보건관리비</h2>
+        <h2>교육현황 조회</h2>
       </div>
       {/*탭 */}
       <div className="menu-tab-nav">
         <div className="menu-tab">
-          <a href="javascript:void(0);" className="active" data-label="현황">
-            현황
+          <a href="javascript:void(0);" className="active" data-label="개인별">
+            개인별
           </a>
-          <a href="javascript:void(0);" data-label="목록">
-            목록
+          <a href="javascript:void(0);" data-label="교육유형별">
+            교육유형별
           </a>
         </div>
       </div>

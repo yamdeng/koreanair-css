@@ -27,65 +27,71 @@ function POccupationMu2P1list1() {
             <a href="javascript:void(0);">안전경영</a>
           </li>
           <li className="breadcrumb-item">
-            <a href="javascript:void(0);">산업안전보건관리비</a>
+            <a href="javascript:void(0);">교육현황 조회</a>
           </li>
         </ol>
       </div>
       {/*경로 */}
       <div className="conts-title">
-        <h2>산업안전보건관리비</h2>
+        <h2>교육현황 조회</h2>
       </div>
       {/*탭 */}
       <div className="menu-tab-nav">
         <div className="menu-tab">
-          <a href="javascript:void(0);" className="active" data-label="현황">
-            현황
+          <a href="javascript:void(0);" data-label="개인별">
+            개인별
           </a>
-          <a href="javascript:void(0);" data-label="목록">
-            목록
+          <a href="javascript:void(0);" className="active" data-label="교육유형별">
+            교육유형별
           </a>
         </div>
       </div>
       {/*//탭 */}
-      {/*검색영역 */}
-      <div className="boxForm">
-        {/*area-detail명 옆에 active  */}
-        <div className="area-detail active">
-          <div className="form-table">
-            <div className="form-cell wid50">
-              <div className="form-group wid100">
-                <AppDatePicker label={'년도'} />
+      <div className="division">
+        <div className="check">
+          {/*검색영역 */}
+          <div className="boxForm">
+            {/*area-detail명 옆에 active  */}
+            <div className="area-detail active">
+              <div className="form-table">
+                <div className="form-cell wid50">
+                  <div className="form-group wid100">
+                    <AppDatePicker label={'년도'} />
+                  </div>
+                </div>
+                <div className="form-cell wid50">
+                  <div className="form-group wid100">
+                    <AppSelect label="Department" />
+                  </div>
+                </div>
+                <div className="form-cell wid50">
+                  <div className="form-group wid100">
+                    <AppTextInput label="Cost Center" />
+                  </div>
+                </div>
+                <div className="form-cell wid50">
+                  <div className="form-group wid100">
+                    <AppTextInput label="Account Name" />
+                  </div>
+                </div>
+                <div className="btn-area">
+                  <button type="button" name="button" className="btn-sm btn_text btn-darkblue-line">
+                    조회
+                  </button>
+                </div>
               </div>
-            </div>
-            <div className="form-cell wid50">
-              <div className="form-group wid100">
-                <AppSelect label="Department" />
-              </div>
-            </div>
-            <div className="form-cell wid50">
-              <div className="form-group wid100">
-                <AppTextInput label="Cost Center" />
-              </div>
-            </div>
-            <div className="form-cell wid50">
-              <div className="form-group wid100">
-                <AppTextInput label="Account Name" />
-              </div>
-            </div>
-            <div className="btn-area">
-              <button type="button" name="button" className="btn-sm btn_text btn-darkblue-line">
-                조회
-              </button>
             </div>
           </div>
+          {/* //검색영역 */}
+
+          {/*그리드영역 */}
+          <div>
+            <AppTable rowData={rowData} columns={columns} />
+          </div>
+          {/*//그리드영역 */}
         </div>
+        <div className="list">리스트영역</div>
       </div>
-      {/* //검색영역 */}
-      {/*그리드영역 */}
-      <div>
-        <AppTable rowData={rowData} columns={columns} />
-      </div>
-      {/*//그리드영역 */}
     </>
   );
 }

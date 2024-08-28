@@ -234,13 +234,11 @@ function UserEditModal(props) {
                     </div>
                   </div>
                 </div>
-                <hr className="line dp-n"></hr>
+                <hr className="line"></hr>
               </div>
               {/* //상세영역 */}
               {/*그리드영역 */}
-              <div>
-                <AppTable rowData={rowData} columns={columns} />
-              </div>
+              <div className="pt-20">그리드영역</div>
               {/*//그리드영역 */}
             </div>
           </div>

@@ -259,7 +259,7 @@ ModalPageInfo.list = [
     Component: MU1P4Modal,
     path: 'MU1P4Modal',
     description: '',
-    success: false,
+    success: true,
   },
   {
     title: '산업안전 > 안전경영 > 법규등록대장 팝업창',

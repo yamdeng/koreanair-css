@@ -76,6 +76,8 @@ function POccupationMu1P3list() {
             blockNode
             treeData={treeData}
           />
+          {/*조직도 .active시 리스트표출*/}
+          <div className="list active">리스트</div>
         </div>
       </div>
       <div className="right-box">

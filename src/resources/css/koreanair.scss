@@ -468,3 +468,14 @@
       }
 
     }
+.division {width: 100%; display: inline-flex;}
+.division .check {width: 50%;}
+.division .list {width: 50%;}
+
+
+.left-box {display: inline-block; width: 60.0rem; vertical-align: top; padding-right: 3.0rem;}
+.left-box .tree-box {display: inline-block; height: 100vh; width: 100%; overflow: auto; background: var(--color-lightblue-10); border-radius: 0.8rem; padding: 2.0rem 01.0rem; }
+.left-box .tree-box .list {display: none;}
+
+
+.right-box {display: inline-block; height: 100vh; width: calc(100% - 60.0rem); vertical-align: top;}

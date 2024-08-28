@@ -249,6 +249,8 @@
 .column-box .column-btn .down {display: block; background: url(../images/down-btn.svg)center center no-repeat; background-size: 1.2rem; width: 2rem; height: 1.0rem; font-size: 0; border: 0.1rem solid var(--color-neutral-40); padding: 0.8rem 1rem; border-radius: 0.2rem;}
 .column-box .column-btn .down:active { background: url(../images/down-btn-lb.svg)center center no-repeat; background-size: 1.2rem; width: 2rem; height: 1.0rem; font-size: 0;}
 
+
+
 .pop_btns {
   > button {
     margin: 0 0.5rem;
@@ -411,7 +413,7 @@
   position: absolute;
   background: #fff;
   box-sizing: border-box;
-  -webkit-overflow-scrolling: touch;
+  /*-webkit-overflow-scrolling: touch;*/
   border-radius: 0.6rem;
   outline: none;
   top: 50%;
