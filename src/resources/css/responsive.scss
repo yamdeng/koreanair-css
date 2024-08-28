@@ -140,6 +140,12 @@
   .ck-edit-box .ck-edit .mg-top {margin: 1.2rem 0;}
   .ck-edit-box .ck-edit .btn-area-type01 > button {width: 50%; margin:0;}
   .ck-edit-box .ck-edit .btn-area-type01 > button + button {width: calc(50% - 0.5rem);}
+
+  .searchbox {display: block;}
+  .searchbox .left-box {width: 100%; padding-right:0; margin-bottom: 2.0rem;}
+  .searchbox .right-box {width: 100%;}
+  .left-box .tree-box .tree-list .list.active {display: none;}
+
 }
 
 
@@ -261,6 +267,10 @@
   .ck-edit-box .ck-edit .mg-top {margin: 1.2rem 0;}
   .ck-edit-box .ck-edit .btn-area-type01 > button {width: 50%; margin:0;}
   .ck-edit-box .ck-edit .btn-area-type01 > button + button {width: calc(50% - 0.5rem);}
+
+  .searchbox {display: block;}
+  .left-box .tree-box .tree-list .list.active {display: none;}
+  .searchlist {display: block;}
 }
 
 

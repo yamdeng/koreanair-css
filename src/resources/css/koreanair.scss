@@ -472,10 +472,23 @@
 .division .check {width: 50%;}
 .division .list {width: 50%;}
 
+.searchbox {display: flex; width: 100%;}
+.left-box {display: inline-table; vertical-align: top; padding-right: 3.0rem;}
+.left-box .tree-box {display: inline-block; height: 100%; width: 100%; /*overflow: auto;*/ background: var(--color-lightblue-10); border-radius: 0.8rem; padding: 2.0rem;}
+.left-box .tree-box .tree {min-width: 25.0rem; height: 100%; max-height: 57.0rem; overflow-y: scroll;}
+.left-box .tree-box .tree-list {display: flex;}
+.left-box .tree-box .tree-list .list {display: none;}
+.left-box .tree-box .tree-list .list.active {display: block; height: 100%; width: 100%; vertical-align: top; min-width: 30.0rem; margin-left: 2.0rem;
+  .list-table {border: 0 solid var(--color-neutral-40); box-sizing: border-box; width: 100%;}
+  .list-table thead tr, .list-table tbody tr, .list-table tfoot tr {display: table; width: 100%;}
+  .list-table th, .list-table td {padding: 1.0rem 2.0rem;border-bottom: 0.1rem solid var(--color-neutral-40); text-align:center;}
+  .list-table th {border-top: 0.1rem solid var(--color-darkblue-100); color: var(--color-darkblue-100); background-color: var(--color-neutral-20); font-weight: 500;}
+  .list-table td {color: var(--color-neutral-70); background-color: var(--color-neutral-10);}
+  .list-table tbody {display: block; max-height: 46.2rem; overflow-y: scroll;}
+  .list-table tfoot td {color: var(--color-darkblue-100); background-color: var(--color-neutral-20); font-weight: 500;}
+}
+.right-box {display: inline-block; width: 100%; height: 100%; vertical-align: top;}
 
-.left-box {display: inline-block; width: 60.0rem; vertical-align: top; padding-right: 3.0rem;}
-.left-box .tree-box {display: inline-block; height: 100vh; width: 100%; overflow: auto; background: var(--color-lightblue-10); border-radius: 0.8rem; padding: 2.0rem 01.0rem; }
-.left-box .tree-box .list {display: none;}
-
-
-.right-box {display: inline-block; height: 100vh; width: calc(100% - 60.0rem); vertical-align: top;}
+.searchlist {display: flex; width: 100%; height: calc(100dvh - 371px); background-color: chartreuse;}
+.searchlist .list {display: inline-block; vertical-align: top; width: 100%; }
+.searchlist .list-dtail {display: inline-block; vertical-align: top; width: 100%; }

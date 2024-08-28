@@ -10,6 +10,7 @@ import AppDatePicker from '@/components/common/AppDatePicker';
 import AppRangeDatePicker from '@/components/common/AppRangeDatePicker';
 import AppTimePicker from '@/components/common/AppTimePicker';
 import AppAutoComplete from '@/components/common/AppAutoComplete';
+import { table } from 'console';
 
 /* treeData 가공 */
 const x = 5;
@@ -67,75 +68,195 @@ function POccupationMu1P3list() {
       <div className="conts-title">
         <h2>산업안전보건 조직도</h2>
       </div>
-      <div className="left-box">
-        <div className="tree-box">
-          <Tree
-            className="draggable-tree bg"
-            defaultExpandedKeys={expandedKeys}
-            draggable
-            blockNode
-            treeData={treeData}
-          />
-          {/*조직도 .active시 리스트표출*/}
-          <div className="list active">리스트</div>
+      <div className="searchbox">
+        <div className="left-box">
+          <div className="tree-box">
+            <div className="form-group wid100 mb-20">
+              <AppAutoComplete label={'검색'} />
+            </div>
+            <div className="tree-list">
+              <div className="tree">
+                <Tree
+                  className="draggable-tree bg"
+                  defaultExpandedKeys={expandedKeys}
+                  draggable
+                  blockNode
+                  treeData={treeData}
+                />
+              </div>
+              {/*조직도 .active시 리스트표출*/}
+              <div className="list active">
+                <table className="list-table">
+                  <thead>
+                    <tr>
+                      <th>안전보건인력</th>
+                      <th>인원</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>안전보건관리 책임자</td>
+                      <td>17명</td>
+                    </tr>
+                    <tr>
+                      <td>안전보건총괄 책임자</td>
+                      <td>49명</td>
+                    </tr>
+                    <tr>
+                      <td>안전/보건 관리자</td>
+                      <td>29명</td>
+                    </tr>
+                    <tr>
+                      <td>안전담당</td>
+                      <td>552명</td>
+                    </tr>
+                    <tr>
+                      <td>관리감독자</td>
+                      <td>20명</td>
+                    </tr>
+                    <tr>
+                      <td>관리감독자</td>
+                      <td>20명</td>
+                    </tr>
+                    <tr>
+                      <td>관리감독자</td>
+                      <td>20명</td>
+                    </tr>
+                    <tr>
+                      <td>관리감독자</td>
+                      <td>20명</td>
+                    </tr>
+                    <tr>
+                      <td>관리감독자</td>
+                      <td>20명</td>
+                    </tr>
+                    <tr>
+                      <td>관리감독자</td>
+                      <td>20명</td>
+                    </tr>
+                    <tr>
+                      <td>관리감독자</td>
+                      <td>20명</td>
+                    </tr>
+                    <tr>
+                      <td>관리감독자</td>
+                      <td>20명</td>
+                    </tr>
+                    <tr>
+                      <td>관리감독자</td>
+                      <td>20명</td>
+                    </tr>
+                    <tr>
+                      <td>관리감독자</td>
+                      <td>20명</td>
+                    </tr>
+                  </tbody>
+                  <tfoot>
+                    <tr>
+                      <td>총원</td>
+                      <td>684명</td>
+                    </tr>
+                  </tfoot>
+                </table>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-      <div className="right-box">
-        {/*검색영역 */}
+        <div className="right-box">
+          {/*검색영역 */}
 
-        <div className="boxForm">
-          <div className="form-table">
-            <div className="form-cell wid50">
-              <div className="form-group wid100">
-                <AppAutoComplete label={'본부'} />
+          <div className="boxForm">
+            <div className="form-table">
+              <div className="form-cell wid-300">
+                <div className="form-group wid100">
+                  <AppAutoComplete label={'사용자 정보검색'} />
+                </div>
+              </div>
+              {/*<div className="form-cell wid50">
+                <div className="form-group wid100">
+                  <AppAutoComplete label={'부서'} />
+                </div>
+              </div>
+              <div className="form-cell wid50">
+                <div className="form-group wid100">
+                  <AppAutoComplete label={'팀'} />
+                </div>
+              </div>
+              <div className="form-cell wid50">
+                <div className="form-group wid100">
+                  <AppAutoComplete label={'그룹'} />
+                </div>
               </div>
             </div>
-            <div className="form-cell wid50">
-              <div className="form-group wid100">
-                <AppAutoComplete label={'부서'} />
+            <div className="form-table">
+              <div className="form-cell wid50">
+                <div className="form-group wid100">
+                  <AppAutoComplete label={'반'} />
+                </div>
               </div>
-            </div>
-            <div className="form-cell wid50">
-              <div className="form-group wid100">
-                <AppAutoComplete label={'팀'} />
+              <div className="form-cell wid50">
+                <div className="form-group wid100">
+                  <AppAutoComplete label={'직책'} />
+                </div>
               </div>
-            </div>
-            <div className="form-cell wid50">
-              <div className="form-group wid100">
-                <AppAutoComplete label={'그룹'} />
+              <div className="form-cell wid50">
+                <div className="form-group wid100">
+                  <AppTextInput label={'성명'} />
+                </div>
+              </div>*/}
+              <div className="btn-area">
+                <button type="button" name="button" className="btn-sm btn_text btn-darkblue-line">
+                  조회
+                </button>
               </div>
             </div>
           </div>
-          <div className="form-table">
-            <div className="form-cell wid50">
-              <div className="form-group wid100">
-                <AppAutoComplete label={'반'} />
-              </div>
-            </div>
-            <div className="form-cell wid50">
-              <div className="form-group wid100">
-                <AppAutoComplete label={'직책'} />
-              </div>
-            </div>
-            <div className="form-cell wid50">
-              <div className="form-group wid100">
-                <AppTextInput label={'성명'} />
-              </div>
-            </div>
-          </div>
-          <div className="btn-area mb-10">
-            <button type="button" name="button" className="btn-sm btn_text btn-darkblue-line">
-              조회
-            </button>
-          </div>
-        </div>
-        {/* //검색영역 */}
+          {/* //검색영역 */}
 
-        {/*그리드영역 상단상위표출체크시 번호-아이콘으로 표시 아이콘명:pin.svg */}
-        <div>
-          <AppTable rowData={rowData} columns={columns} />
+          {/*그리드영역 */}
+          <div className="searchlist">
+            <div className="list">
+              <h3>임직원 리스트</h3>
+              <div>
+                <table>
+                  <thead>
+                    <tr>
+                      <th>번호</th>
+                      <th>본부</th>
+                      <th>부서</th>
+                      <th>팀</th>
+                      <th>그룹</th>
+                      <th>반</th>
+                      <th>직책</th>
+                      <th>사번</th>
+                      <th>성명</th>
+                      <th>발령일자</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>번호</td>
+                      <td>번호</td>
+                      <td>번호</td>
+                      <td>번호</td>
+                      <td>번호</td>
+                      <td>번호</td>
+                      <td>번호</td>
+                      <td>번호</td>
+                      <td>번호</td>
+                      <td>번호</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div className="list-dtail">
+              <h3>검색결과상세정보영역</h3>
+              <div>테이블</div>
+            </div>
+          </div>
+          {/*//그리드영역 */}
         </div>
-        {/*//그리드영역 */}
       </div>
     </>
   );
