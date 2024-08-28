@@ -29,7 +29,7 @@ function MyAuditList() {
       onClick: () => {
         alert('Fields');
       },
-      iconClass: '',
+      iconClass: 'icon-fields',
     },
   ];
 
@@ -54,13 +54,49 @@ function MyAuditList() {
       {/*사용자기준 조회범위영역 */}
       <div className="user-wrap">
         <div className="user-box">
-          <div className="form-table">
-            <div className="form-cell wid50">
-              <div className="form-group wid100">
-                <div className="df wid50">
-                  <AppSelect label={'2024'} />
-                  <span>Div. Audit</span>
+          <div className="user-box-top">
+            <div className="form-table user-head">
+              <div className="form-cell wid100">
+                <div className="form-group wid100">
+                  <div className="df wid30">
+                    <AppSelect label={'2024'} />
+                  </div>
+                  <div className="h4">Div. Audit</div>
                 </div>
+              </div>
+            </div>
+            <div className="user-box-bottom">
+              <div className="ant-col ant-col-11">
+                <dl>
+                  <dt>Total</dt>
+                  <dd>126</dd>
+                </dl>
+              </div>
+              <div className="ant-col">
+                <dl className="sub-count">
+                  <dt>Finding</dt>
+                  <dd>126</dd>
+                </dl>
+              </div>
+            </div>
+          </div>
+          <div className="user-box-top">
+            <div className="form-table">
+              <div className="form-cell wid100">
+                <div className="form-group wid100">
+                  <div className="df wid30">
+                    <AppSelect label={'2024'} />
+                  </div>
+                  <div className="h4">Div. Audit</div>
+                </div>
+              </div>
+            </div>
+            <div className="user-box-bottom">
+              <div className="ant-col ant-col-11">
+                <dl>
+                  <dt>Total</dt>
+                  <dd>126</dd>
+                </dl>
               </div>
             </div>
           </div>

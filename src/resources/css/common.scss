@@ -218,6 +218,7 @@ input, select{font-family:'KoreanAirSans'}
   .btn-lightblue{border:solid 0.1rem var(--color-lightblue-40);background-color:var(--color-lightblue-40);color:var(--color-darkblue-100)}
   .btn-sm{padding:0.6rem 4.8rem;border-radius:99.9rem;align-items:center}
   .btn_close{padding:0.6rem 2.8rem;border-radius:99.9rem;background: var(--color-neutral-30)}
+  .btn_confirm.icon-fields{width:2.5rem;height:2.5rem;background-image:url(../images/delete-text.svg)no-repeat}
   position:relative;/*right:0;top:0;float:right;*/text-align:right;
   @include mobile {
     width:100%;
@@ -666,6 +667,9 @@ input, select{font-family:'KoreanAirSans'}
 .ant-upload-wrapper .ant-upload-list .ant-upload-list-item .ant-upload-list-item-actions .ant-btn-icon .anticon >svg path{display:none}
 /*공통컴포넌트 업로드 disable일 경우에 버튼 자체가 않보이게끔*/
 .ant-upload.ant-upload-select.ant-upload-disabled { display: none;}
+
+/*공통컴포넌트 그리드 row컬러*/
+.ag-theme-quartz .ag-root-wrapper .ag-row-odd{background-color:var(--color-neutral-20) !important}
 
 
 .left-box {display: inline-block; width: 32.0rem; vertical-align: top; padding-right: 3.0rem;}
