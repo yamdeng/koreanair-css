@@ -37,14 +37,7 @@ function ColumnUserSaveModal(props) {
               </colgroup>
               <thead>
                 <tr>
-                  <th>
-                    <div className="chk-wrap center">
-                      <label className="text-no">
-                        <input type="checkbox" />
-                        <span className="text-no"></span>
-                      </label>
-                    </div>
-                  </th>
+                  <th></th>
                   <th>Display Text</th>
                   <th>Width</th>
                 </tr>
@@ -66,7 +59,227 @@ function ColumnUserSaveModal(props) {
                   </td>
                   <td>
                     <div className="form-group wid100">
-                      <AppTextInput placeholder="150" />
+                      <div className="column-box">
+                        <AppTextInput placeholder="150" />
+                        <span className="column-btn">
+                          <a href="javascript:void(0);">
+                            <span className="up">up</span>
+                          </a>
+                          <a href="javascript:void(0);">
+                            <span className="down">down</span>
+                          </a>
+                        </span>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <div className="chk-wrap center">
+                      <label className="text-no">
+                        <input type="checkbox" />
+                        <span className="text-no"></span>
+                      </label>
+                    </div>
+                  </td>
+                  <td>
+                    <div className="form-group wid100">
+                      <AppTextInput placeholder="Dept" />
+                    </div>
+                  </td>
+                  <td>
+                    <div className="form-group wid100">
+                      <div className="column-box">
+                        <AppTextInput placeholder="150" />
+                        <span className="column-btn">
+                          <a href="javascript:void(0);">
+                            <span className="up">up</span>
+                          </a>
+                          <a href="javascript:void(0);">
+                            <span className="down">down</span>
+                          </a>
+                        </span>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <div className="chk-wrap center">
+                      <label className="text-no">
+                        <input type="checkbox" />
+                        <span className="text-no"></span>
+                      </label>
+                    </div>
+                  </td>
+                  <td>
+                    <div className="form-group wid100">
+                      <AppTextInput placeholder="Dept" />
+                    </div>
+                  </td>
+                  <td>
+                    <div className="form-group wid100">
+                      <div className="column-box">
+                        <AppTextInput placeholder="150" />
+                        <span className="column-btn">
+                          <a href="javascript:void(0);">
+                            <span className="up">up</span>
+                          </a>
+                          <a href="javascript:void(0);">
+                            <span className="down">down</span>
+                          </a>
+                        </span>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <div className="chk-wrap center">
+                      <label className="text-no">
+                        <input type="checkbox" />
+                        <span className="text-no"></span>
+                      </label>
+                    </div>
+                  </td>
+                  <td>
+                    <div className="form-group wid100">
+                      <AppTextInput placeholder="Dept" />
+                    </div>
+                  </td>
+                  <td>
+                    <div className="form-group wid100">
+                      <div className="column-box">
+                        <AppTextInput placeholder="150" />
+                        <span className="column-btn">
+                          <a href="javascript:void(0);">
+                            <span className="up">up</span>
+                          </a>
+                          <a href="javascript:void(0);">
+                            <span className="down">down</span>
+                          </a>
+                        </span>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <div className="chk-wrap center">
+                      <label className="text-no">
+                        <input type="checkbox" />
+                        <span className="text-no"></span>
+                      </label>
+                    </div>
+                  </td>
+                  <td>
+                    <div className="form-group wid100">
+                      <AppTextInput placeholder="Dept" />
+                    </div>
+                  </td>
+                  <td>
+                    <div className="form-group wid100">
+                      <div className="column-box">
+                        <AppTextInput placeholder="150" />
+                        <span className="column-btn">
+                          <a href="javascript:void(0);">
+                            <span className="up">up</span>
+                          </a>
+                          <a href="javascript:void(0);">
+                            <span className="down">down</span>
+                          </a>
+                        </span>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <div className="chk-wrap center">
+                      <label className="text-no">
+                        <input type="checkbox" />
+                        <span className="text-no"></span>
+                      </label>
+                    </div>
+                  </td>
+                  <td>
+                    <div className="form-group wid100">
+                      <AppTextInput placeholder="Dept" />
+                    </div>
+                  </td>
+                  <td>
+                    <div className="form-group wid100">
+                      <div className="column-box">
+                        <AppTextInput placeholder="150" />
+                        <span className="column-btn">
+                          <a href="javascript:void(0);">
+                            <span className="up">up</span>
+                          </a>
+                          <a href="javascript:void(0);">
+                            <span className="down">down</span>
+                          </a>
+                        </span>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <div className="chk-wrap center">
+                      <label className="text-no">
+                        <input type="checkbox" />
+                        <span className="text-no"></span>
+                      </label>
+                    </div>
+                  </td>
+                  <td>
+                    <div className="form-group wid100">
+                      <AppTextInput placeholder="Dept" />
+                    </div>
+                  </td>
+                  <td>
+                    <div className="form-group wid100">
+                      <div className="column-box">
+                        <AppTextInput placeholder="150" />
+                        <span className="column-btn">
+                          <a href="javascript:void(0);">
+                            <span className="up">up</span>
+                          </a>
+                          <a href="javascript:void(0);">
+                            <span className="down">down</span>
+                          </a>
+                        </span>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <div className="chk-wrap center">
+                      <label className="text-no">
+                        <input type="checkbox" />
+                        <span className="text-no"></span>
+                      </label>
+                    </div>
+                  </td>
+                  <td>
+                    <div className="form-group wid100">
+                      <AppTextInput placeholder="Dept" />
+                    </div>
+                  </td>
+                  <td>
+                    <div className="form-group wid100">
+                      <div className="column-box">
+                        <AppTextInput placeholder="150" />
+                        <span className="column-btn">
+                          <a href="javascript:void(0);">
+                            <span className="up">up</span>
+                          </a>
+                          <a href="javascript:void(0);">
+                            <span className="down">down</span>
+                          </a>
+                        </span>
+                      </div>
                     </div>
                   </td>
                 </tr>

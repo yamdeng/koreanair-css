@@ -238,10 +238,16 @@
     padding: 0 2.0rem 7.0rem 2.0rem;
   }
 }
-.tablebox {border-top:0.1rem solid var(--color-darkblue-100); border-bottom: 0.1rem solid var(--color-neutral-40 );}
+.tablebox {height: 30.0rem; overflow-y: scroll;}
 .columntable {width: 100%; box-sizing: border-box;}
-.columntable thead th {background-color: var(--color-neutral-20); font-weight: 500; color: var(--color-darkblue-100); text-align: center; font-size: 1.4rem; padding: 1.0rem 0;}
-.columntable tbody td {text-align: center; font-size: 1.4rem;}
+.columntable thead th {border-top:0.1rem solid var(--color-darkblue-100); background-color: var(--color-neutral-20); font-weight: 500; color: var(--color-darkblue-100); text-align: center; font-size: 1.4rem; padding: 1.0rem 0;}
+.columntable tbody td {text-align: center; font-size: 1.4rem; border-bottom: 0.1rem solid var(--color-neutral-40);}
+.column-box {display: flex; justify-content: space-between; align-items:center;}
+.column-box .column-btn {display: inline-flex; flex-direction: column; align-items: center; margin-left: 0.5rem;}
+.column-box .column-btn .up {display: block; background: url(../images/up-btn.svg)center center no-repeat; background-size: 1.2rem; width: 2rem; font-size: 0; border: 0.1rem solid var(--color-neutral-40); padding: 0.8rem 1rem; margin-bottom: 0.4rem; border-radius: 0.2rem;}
+.column-box .column-btn .up:active {background: url(../images/up-btn-lb.svg)center center no-repeat; background-size: 1.2rem; width: 2rem; height: 1.0rem; font-size: 0;}
+.column-box .column-btn .down {display: block; background: url(../images/down-btn.svg)center center no-repeat; background-size: 1.2rem; width: 2rem; height: 1.0rem; font-size: 0; border: 0.1rem solid var(--color-neutral-40); padding: 0.8rem 1rem; border-radius: 0.2rem;}
+.column-box .column-btn .down:active { background: url(../images/down-btn-lb.svg)center center no-repeat; background-size: 1.2rem; width: 2rem; height: 1.0rem; font-size: 0;}
 
 .pop_btns {
   > button {
