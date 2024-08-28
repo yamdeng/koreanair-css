@@ -52,7 +52,21 @@ function MyAuditList() {
       {/*경로 */}
 
       {/*사용자기준 조회범위영역 */}
-      <div></div>
+      <div className="user-wrap">
+        <div className="user-box">
+          <div className="form-table">
+            <div className="form-cell wid50">
+              <div className="form-group wid100">
+                <div className="df wid50">
+                  <AppSelect label={'2024'} />
+                  <span>Div. Audit</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="user-box"></div>
+      </div>
       {/*//사용자기준 조회범위영역 */}
 
       {/*검색영역 */}

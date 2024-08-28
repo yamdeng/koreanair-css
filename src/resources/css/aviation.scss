@@ -171,15 +171,15 @@
 .detailForm-detail.list-group .list > dl > dt .tg-btn{font-family:"KoreanAirSans";font-size:1.8rem;font-weight:500;color:var(--color-darkblue-100)}
 .bx-toggle .tg-btn span.active{transform:rotate(180deg)}
 .bx-toggle span.active .tg-conts{display:block}
-.bx-toggle .tg-btn span{display:inline-block;float:right;background:url(/src/resources/images/arrow-down.svg) center right no-repeat;background-size:2.8rem;width:2.8rem;height:2.8rem;vertical-align:middle}
+.bx-toggle .tg-btn span{/*display:inline-block;*/float:right;background:url(/src/resources/images/arrow-down.svg) center right no-repeat;background-size:2.8rem;width:2.8rem;height:2.8rem;vertical-align:middle}
 .bx-toggle .tg-btn{position:relative;font-family:"KoreanAirSans";font-size:1.6rem;color:var(--color-darkblue-100);text-align:left;width:100%}
 
 .detailForm-detail.list-group .list .edit-area{padding:2.0rem;margin-top:0.8rem;border-top:dotted 0.1rem var(--color-darkblue-60);color:var(--color-neutral-70);line-height:2rem;font-size:1.6rem}
 .detailForm-detail-2deps.list-group .list .edit-area{padding:2.0rem;margin-top:0.8rem;border-top:solid 0.1rem var(--color-neutral-30);color:var(--color-neutral-70);line-height:2rem;font-size:1.6rem}
 .detailForm-detail-2deps.list-group .list > dl > dt .tg-btn {font-family: "KoreanAirSans";font-size:1.8rem;font-weight:500;color:var(--color-darkblue-100)}
-.detailForm-detail-2deps.list-group .list.bx-toggle .tg-btn span{display:inline-block;float:right;background: url(/src/resources/images/arrow-down.svg) center right no-repeat;background-size:2.8rem;width:2.8rem;height:2.8rem;vertical-align:middle}
+.detailForm-detail-2deps.list-group .list.bx-toggle .tg-btn span{/*display:inline-block;*/float:right;background: url(/src/resources/images/arrow-down.svg) center right no-repeat;background-size:2.8rem;width:2.8rem;height:2.8rem;vertical-align:middle}
 
-.detailForm-detail-3deps.list-group .list.bx-toggle .tg-btn span{display:inline-block;float:right;background: url(/src/resources/images/arrow-down.svg) center right no-repeat;background-size:2.8rem;width:2.8rem;height:2.8rem;vertical-align:middle}
+.detailForm-detail-3deps.list-group .list.bx-toggle .tg-btn span{/*display:inline-block;*/float:right;background: url(/src/resources/images/arrow-down.svg) center right no-repeat;background-size:2.8rem;width:2.8rem;height:2.8rem;vertical-align:middle}
 .detailForm-detail-3deps.list-group .list .edit-area{padding:2.0rem;margin-top:0;border-top:0;color:var(--color-neutral-70);line-height:2rem;font-size:1.6rem}
 .detailForm-detail-3deps.list-group .list > dl > dt .tg-btn{font-family:"KoreanAirSans";font-size: 1.8rem;font-weight:500;color:var(--color-darkblue-100)}
 
@@ -232,6 +232,9 @@
 .editarea-box.view{padding:1.5rem 1.2rem 1.2rem}
 .editarea-box.error{border:solid 0.1rem var(--color-negative)}
 
+.user-wrap{position:relative;display:flex;width:100%;margin-bottom:1.5rem;gap:0 0.8rem}
+.user-wrap .user-box{border:solid 0.1rem var(--color-neutral-01);border-radius:0.8rem;width:50%;padding:1.0rem}
+
 /*AUDIT-체크리스트 상단 탭*/
 .menu-tab-nav .swiper-container{position:relative;display:flex;overflow:hidden;width:100%}
 .menu-tab-nav .swiper-container > .menu-tab-nav-operations{position:absolute;top:2.0rem;right:0;display:flex;justify-content:flex-start;z-index:1;background-color:var(--color-neutral-10)}
@@ -262,7 +265,7 @@
 .info-field{position:relative;width:100%;padding-bottom:1.5rem}
 .info-field .inp-btns{display:block;width:calc(100% + 0.4rem);margin-left:-0.4rem}
 .info-field .inp-btns:after{content:'';clear:both;display:block}
-.info-field .inp-btn{display:inline-block;position:relative;float:left;width:33.3%;height:4rem;padding-left:0.4rem;box-sizing:border-box}
+.info-field .inp-btn{/*display:inline-block;*/position:relative;float:left;width:33.3%;height:4rem;padding-left:0.4rem;box-sizing:border-box}
 .info-field .inp-btn input{position:absolute;top:0;left:0;width:0.5rem;height:0.5rem;opacity:0}
 .info-field .inp-btn label{display:inline-block;width:100%;height:100%;border-radius:0.6rem;font-size:1.5rem;line-height:4rem;font-family:'KoreanAirSans';border:0.1rem solid var(--color-neutral-40);background:var(--color-neutral-10);color:var(--color-neutral-80);text-align:center;box-sizing:border-box}
 .info-field .inp-btn input[type="radio"]:checked + label{background-color:var(--color-btn-blue1);border-color:var(--color-btn-blue2);color:var(--color-btn-blue2);font-weight:600}
@@ -296,3 +299,7 @@
 .ant-tag{display:inline-block;box-sizing:border-box;line-height:1.5715;list-style:none;height:auto;margin:0 0.3rem 0 0;padding:0 0.7rem;font-size:1.2rem;white-space:nowrap;background:var(--color-neutral-01);border:0.1rem solid var(--color-neutral-40);border-radius:0.8rem;opacity: 1;transition: all .3s}
 .text-desc-type1 .MemberClass .InfoBox{display:inline-flex;justify-content:center;align-items:center;width:3.6rem;height:3.6rem;border-radius:50%;overflow:hidden;margin-right:0.8rem;background:url(/src/resources/images/no_img_pro.jpg) 50% 50% / 100% no-repeat rgb(204, 204, 204)}
 .text-desc-type1 .MemberClass .Info .Dept{font-size:1.2rem;color:var(--color-neutral-70)}
+
+
+
+.DashBoard-box > .ag-theme-quartz .ag-root-wrapper .ag-row-odd{background-color: var(--color-btn-blue1) !important}
