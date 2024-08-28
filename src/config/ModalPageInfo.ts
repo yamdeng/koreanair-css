@@ -39,6 +39,7 @@ import PChapterSaveModal from '@/components/publish/modal/PChapterSaveModal';
 import PChapterDeleteModal from '@/components/publish/modal/PChapterDeleteModal';
 import PChecklistSaveModal from '@/components/publish/modal/PChecklistSaveModal';
 import PChecklistDeleteModal from '@/components/publish/modal/PChecklistDeleteModal';
+import PSMSReportModal from '@/components/publish/modal/PSMSReportModal';
 
 const ModalPageInfo: any = {};
 
@@ -180,6 +181,13 @@ ModalPageInfo.list = [
     title: '[항공안전 > ADUIT] Chapter 삭제 팝업창',
     Component: PChapterDeleteModal,
     path: 'PChapterDeleteModal',
+    description: '',
+    success: true,
+  },
+  {
+    title: '[항공안전> 04.안전보증] SMS종합분석현황 > 대시보드 > 보고서현황 팝업창',
+    Component: PSMSReportModal,
+    path: 'PSMSReportModal',
     description: '',
     success: true,
   },
