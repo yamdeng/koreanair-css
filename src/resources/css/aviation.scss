@@ -58,10 +58,10 @@
 .Status-chart .Status-col .Chart-box canvas{width:100%}*/
 
 .StatusWrap{display:flex;justify-content:flex-start;flex-wrap:wrap;box-sizing:border-box;width:100%}
-.StatusWrap .Status-chart{display:flex;justify-content:flex-start;flex-wrap:wrap;box-sizing:border-box;overflow:hidden;width:100%;border:solid 1px red}
+.StatusWrap .Status-chart{display:flex;justify-content:flex-start;flex-wrap:wrap;box-sizing:border-box;width:100%;padding:1rem}
 .StatusWrap .Status-chart + .Status-chart{margin-top:5.5rem}
-.StatusWrap .Status-chart .Status-row{position:relative;display:flex;flex-wrap:wrap;justify-content:flex-start;width:50%}
-.StatusWrap .Status-chart .Status-row .Status-col{position:relative;}
+.StatusWrap .Status-chart .Status-row{position:relative;display:flex;flex-wrap:wrap;justify-content:flex-start;width:50%;padding:1rem;overflow:hidden}
+.StatusWrap .Status-chart .Status-row .Status-col{position:relative;width:100%;height:100%;}
 .StatusWrap .Status-chart .Status-row .Status-col .h4{color:var(--color-darkblue-100);font-weight:500;font-size:1.8rem;line-height:2.5;letter-spacing:-0.1rem}
 .StatusWrap .Status-chart .Status-row .Status-col .h4 span{color:var(--color-negative)}
 .StatusWrap .Status-chart .Status-row .Status-col .Chart-box{width:100%;height:100%;border-radius:0.8rem;padding:1rem;border:solid 0.2rem var(--color-neutral-01);background-color:var(--color-neutral-10);box-shadow:0 0.2rem 0.4rem 0 rgba(0, 0, 0, .05)}
@@ -139,7 +139,8 @@
 
 /*인풋박스 안 툴팁*/
 .contents .form-table .form-cell .form-group{position:relative}
-.contents .form-table .form-cell .form-group  .tooltip{float: inline-end; background: url(../images/tooltip.svg) left center no-repeat; background-size: 2.4rem; display: block; font-size: 0; width: 2.4rem;height: 2.4rem;cursor: pointer;}
+.contents .form-table .form-cell .form-group  .tooltip{float: inline-end; background: url(../images/tooltip.svg) left center no-repeat; background-size: 2.4rem; display: block; font-size: 0; width: 2.4rem;height: 2.4rem;cursor: pointer; position: relative;
+}
 .contents .form-table .form-cell .form-group  .tooltip .tooltiptext{visibility:hidden;position: absolute; z-index:1;width:25.0rem;font-size:1.2rem;background-color: var(--color-neutral-80);  color: var(--color-neutral-10);text-align: left; border-radius:0.8rem;padding: 1.5rem 2.0rem}
 .contents .form-table .form-cell .form-group .tooltip .tooltiptext li::marker{content:''; color: var(--color-neutral-10);font-size: 1rem}
 .contents .form-table .form-cell .form-group .tooltip .tooltiptext ul li{font-size: 1.2rem; color: var(--color-neutral-10);  display: list-item; padding-left: 0.6rem;}
@@ -148,7 +149,8 @@
 .contents .form-table .form-cell .form-group .tooltip .tooltip-right{top:-0.6rem;left:155%}
 .contents .form-table .form-cell .form-group .tooltip .tooltip-right::after{top:1.6rem;right:100%;margin-top:-0.5rem;border-color: transparent var(--color-neutral-80) transparent transparent}
 
-.contents .form-table .form-cell .group-box-wrap  .tooltip{float: inline-end; background: url(../images/tooltip.svg) left center no-repeat; background-size: 2.4rem; display: block; font-size: 0; width: 2.4rem;height: 2.4rem;cursor: pointer;}
+.contents .form-table .form-cell .group-box-wrap  .tooltip{float: inline-end; background: url(../images/tooltip.svg) left center no-repeat; background-size: 2.4rem; display: block; font-size: 0; width: 2.4rem;height: 2.4rem;cursor: pointer; position: relative;
+}
 .contents .form-table .form-cell .group-box-wrap  .tooltip .tooltiptext{visibility:hidden;position: absolute; z-index:1;width:25.0rem;font-size:1.2rem;background-color: var(--color-neutral-80);  color: var(--color-neutral-10);text-align: left; border-radius:0.8rem;padding: 1.5rem 2.0rem}
 .contents .form-table .form-cell .group-box-wrap .tooltip .tooltiptext li::marker{content:''; color: var(--color-neutral-10);font-size: 1rem}
 .contents .form-table .form-cell .group-box-wrap .tooltip .tooltiptext ul li{font-size: 1.2rem; color: var(--color-neutral-10);  display: list-item; padding-left: 0.6rem;}
