@@ -428,11 +428,12 @@ input, select{font-family:'KoreanAirSans'}
 .menu-tab a.active{background-color:var(--color-darkblue-100);color:var(--color-neutral-10)}
 
 /*경로*/
-.Breadcrumb {display: flex; width: 100%; margin-bottom: 1.0rem; background: url(../images/home.svg) left center no-repeat; background-size: 2.2rem; padding-left: 2.6rem;}
+.Breadcrumb {display: flex; width: 100%; margin-bottom: 1.0rem;  padding-left: 2.6rem; justify-content: right;}
 .Breadcrumb .breadcrumb-item {font-size: 1.2rem; display: inline-block;}
 .Breadcrumb .breadcrumb-item a {color: var(--color-darkblue-100); text-decoration: none;}
 .Breadcrumb .breadcrumb-item a:hover {color: var(--color-mblue-100); text-decoration: underline;}
 .Breadcrumb li+li:before {padding: 0.5rem; content: "/";}
+.Breadcrumb .breadcrumb-item:first-child {background: url(../images/home.svg) left center no-repeat; background-size: 2.2rem; padding-left: 2.3rem;}
 
 .editbox {
   position: relative; 
