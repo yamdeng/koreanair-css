@@ -6,7 +6,7 @@ import { testColumnInfos } from '@/data/grid/table-column';
 import AppDatePicker from '@/components/common/AppDatePicker';
 import AppSelect from '@/components/common/AppSelect';
 
-function SMSDashBoardList() {
+function SMSDashBoardList2() {
   const [inputValue, setInputValue] = useState('');
   const rowData = getAllData();
   const columns = testColumnInfos;
@@ -28,7 +28,7 @@ function SMSDashBoardList() {
             <a href="javascript:void(0);">대시보드</a>
           </li>
           <li className="breadcrumb-item">
-            <a href="javascript:void(0);">HZR 전사 TOP RISK 분석 현황</a>
+            <a href="javascript:void(0);">TOP EVENT 현황</a>
           </li>
         </ol>
       </div>
@@ -39,10 +39,10 @@ function SMSDashBoardList() {
       {/*탭 */}
       <div className="menu-tab-nav">
         <div className="menu-tab">
-          <a href="javascript:void(0);" className="active" data-label="HZR 전사 TOP RISK 분석 현황">
+          <a href="javascript:void(0);" className="" data-label="HZR 전사 TOP RISK 분석 현황">
             HZR 전사 TOP RISK 분석 현황
           </a>
-          <a href="javascript:void(0);" className="" data-label="TOP EVENT 현황">
+          <a href="javascript:void(0);" className="active" data-label="TOP EVENT 현황">
             TOP EVENT 현황
           </a>
         </div>
@@ -55,11 +55,6 @@ function SMSDashBoardList() {
               <div className="date1">
                 <AppSelect label={'부문'} />
               </div>
-            </div>
-          </div>
-          <div className="form-cell wid20">
-            <div className="form-group wid100">
-              <AppSelect label={'보고서구분'} />
             </div>
           </div>
           <div className="form-cell wid50">
@@ -89,7 +84,7 @@ function SMSDashBoardList() {
         <div className="DashBoard-chart">
           <div className="DashBoard-row">
             <div className="DashBoard-col">
-              <p className="h4">1. Risk 값 합계</p>
+              <p className="h4">1. 안전 데이터 비율</p>
               <div className="DashBoard-box">
                 <AppTable rowData={rowData} columns={columns} />
               </div>
@@ -97,13 +92,21 @@ function SMSDashBoardList() {
           </div>
           <div className="DashBoard-row">
             <div className="DashBoard-col">
-              <p className="h4">2. 부문 단일 Risk값</p>
+              <p className="h4">2. Event 발생 건 별 Risk 값 합계</p>
               <div className="DashBoard-box"></div>
             </div>
           </div>
           <div className="DashBoard-row">
             <div className="DashBoard-col">
-              <p className="h4">3. Risk 값 평균</p>
+              <p className="h4">3. TOP Risk AREAS</p>
+              <div className="DashBoard-box">
+                <AppTable rowData={rowData} columns={columns} />
+              </div>
+            </div>
+          </div>
+          <div className="DashBoard-row">
+            <div className="DashBoard-col">
+              <p className="h4">4. 부문Event별 Risk 값</p>
               <div className="DashBoard-box">
                 <AppTable rowData={rowData} columns={columns} />
               </div>
@@ -116,4 +119,4 @@ function SMSDashBoardList() {
   );
 }
 
-export default SMSDashBoardList;
+export default SMSDashBoardList2;

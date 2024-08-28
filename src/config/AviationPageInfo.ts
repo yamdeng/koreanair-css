@@ -41,6 +41,7 @@ import AdminMailList from '@/components/publish/aviation/AdminMailList';
 import AdminMailEdit from '@/components/publish/aviation/AdminMailEdit';
 import AdminMailDetail from '@/components/publish/aviation/AdminMailDetail';
 import SMSDashBoardList from '@/components/publish/aviation/SMSDashBoardList';
+import SMSDashBoardList2 from '@/components/publish/aviation/SMSDashBoardList2';
 
 import { fa } from '@faker-js/faker';
 
@@ -177,6 +178,13 @@ AviationPageInfo.list = [
     title: '[04.안전보증] SMS종합분석현황 > 대시보드',
     Component: SMSDashBoardList,
     path: 'SMSDashBoardList',
+    description: '',
+    success: true,
+  },
+  {
+    title: '[04.안전보증] SMS종합분석현황 > 대시보드2',
+    Component: SMSDashBoardList2,
+    path: 'SMSDashBoardList2',
     description: '',
     success: true,
   },
