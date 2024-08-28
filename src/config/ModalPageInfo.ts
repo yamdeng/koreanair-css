@@ -140,7 +140,7 @@ ModalPageInfo.list = [
     Component: PColumnUserSaveModal,
     path: 'PColumnUserSaveModal',
     description: '',
-    success: false,
+    success: true,
   },
   {
     title: '[항공안전 > ADUIT] Checklist 추가 팝업창',
