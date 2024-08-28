@@ -70,10 +70,10 @@ function SMSdataDetail() {
               <div className="box-view-list">
                 <ul className="view-list">
                   <li className="accumlate-list">
-                    <label className="t-label">
-                      제목 <span className="required">*</span>
-                    </label>
-                    <span className="text-desc-type1">[KOR] 2024년 제1차 안전운항 관리자 회의.pdf</span>
+                    <label className="t-label">내용</label>
+                    <span className="text-desc-type1">
+                      자료실을 이용하기 전 아래 지침서를 다운로드 받아서 읽어 보시고 이용 바랍니다
+                    </span>
                   </li>
                 </ul>
               </div>
@@ -96,6 +96,12 @@ function SMSdataDetail() {
                           <span>첨부파일.zip</span>
                         </a>
                       </div>
+                      <div className="desc-file">
+                        <a href="javascript:void(0);">
+                          <span className="download"></span>
+                          <span>첨부파일.zip</span>
+                        </a>
+                      </div>
                     </span>
                   </li>
                 </ul>
@@ -109,12 +115,6 @@ function SMSdataDetail() {
 
       {/* 하단버튼영역 */}
       <div className="contents-btns">
-        <button type="button" name="button" className="btn_text text_color_neutral-10 btn_confirm">
-          수정
-        </button>
-        <button disabled className="btn_text btn-disabled btn-type01">
-          삭제
-        </button>
         <button className="btn_text btn_list btn-type01">목록</button>
       </div>
       {/*//하단버튼영역*/}
