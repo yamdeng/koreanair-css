@@ -62,8 +62,8 @@ function SMSDashBoardList() {
               <AppSelect label={'보고서구분'} />
             </div>
           </div>
-          <div className="form-cell wid50">
-            <div className="form-group wid50">
+          <div className="form-cell wid30">
+            <div className="form-group wid100">
               <div className="df">
                 <div className="date1">
                   <AppDatePicker label={'게시기간'} />
@@ -76,6 +76,9 @@ function SMSDashBoardList() {
             </div>
           </div>
           <div className="btn-area">
+            <button type="button" name="button" className="btn-sm btn_text btn-darkblue-line">
+              초기화
+            </button>
             <button type="button" name="button" className="btn-sm btn_text btn-darkblue-line">
               조회
             </button>

@@ -6,7 +6,7 @@ import { testColumnInfos } from '@/data/grid/table-column';
 import AppDatePicker from '@/components/common/AppDatePicker';
 import AppSelect from '@/components/common/AppSelect';
 
-function SMSDashBoardList2() {
+function SMSmaturitylevelDashBoard() {
   const [inputValue, setInputValue] = useState('');
   const rowData = getAllData();
   const columns = testColumnInfos;
@@ -22,13 +22,10 @@ function SMSDashBoardList2() {
             <a href="javascript:void(0);">안전보증</a>
           </li>
           <li className="breadcrumb-item">
-            <a href="javascript:void(0);">SMS종합분석현황</a>
+            <a href="javascript:void(0);">SMS성숙도점검</a>
           </li>
           <li className="breadcrumb-item">
             <a href="javascript:void(0);">대시보드</a>
-          </li>
-          <li className="breadcrumb-item">
-            <a href="javascript:void(0);">TOP EVENT 현황</a>
           </li>
         </ol>
       </div>
@@ -36,36 +33,15 @@ function SMSDashBoardList2() {
       <div className="conts-title">
         <h2>대시보드</h2>
       </div>
-      {/*탭 */}
-      <div className="menu-tab-nav">
-        <div className="menu-tab">
-          <a href="javascript:void(0);" className="" data-label="HZR 전사 TOP RISK 분석 현황">
-            HZR 전사 TOP RISK 분석 현황
-          </a>
-          <a href="javascript:void(0);" className="active" data-label="TOP EVENT 현황">
-            TOP EVENT 현황
-          </a>
-        </div>
-      </div>
+
       {/*검색영역 */}
       <div className="boxForm">
         <div className="form-table">
           <div className="form-cell wid20">
-            <div className="form-group wid100">
-              <div className="date1">
-                <AppSelect label={'부문'} />
-              </div>
-            </div>
-          </div>
-          <div className="form-cell wid50">
-            <div className="form-group wid100">
-              <div className="df">
+            <div className="form-group wid20">
+              <div className="row1">
                 <div className="date1">
-                  <AppDatePicker label={'게시기간'} />
-                </div>
-                <span className="unt">~</span>
-                <div className="date2">
-                  <AppDatePicker label={'게시기간'} />
+                  <AppDatePicker label={'연도'} />
                 </div>
               </div>
             </div>
@@ -83,35 +59,46 @@ function SMSDashBoardList2() {
       {/* //검색영역 */}
 
       {/*대시보드*/}
+      <div className="DashBoardHeader">
+        <div className="h4">전사 SMS 이행성숙도 등급</div>
+        <span className="TotalScore">3.53</span>
+      </div>
       <div className="DashBoardWrap">
         <div className="DashBoard-chart">
           <div className="DashBoard-row">
             <div className="DashBoard-col">
-              <p className="h4">1. 안전 데이터 비율</p>
               <div className="DashBoard-box">
-                <AppTable rowData={rowData} columns={columns} />
+                <canvas>대시보드</canvas>
               </div>
             </div>
           </div>
           <div className="DashBoard-row">
             <div className="DashBoard-col">
-              <p className="h4">2. Event 발생 건 별 Risk 값 합계</p>
-              <div className="DashBoard-box"></div>
-            </div>
-          </div>
-          <div className="DashBoard-row">
-            <div className="DashBoard-col">
-              <p className="h4">3. TOP Risk AREAS</p>
               <div className="DashBoard-box">
-                <AppTable rowData={rowData} columns={columns} />
+                <canvas>dfdfdf</canvas>
               </div>
             </div>
           </div>
           <div className="DashBoard-row">
             <div className="DashBoard-col">
-              <p className="h4">4. 부문Event별 Risk 값</p>
               <div className="DashBoard-box">
-                <AppTable rowData={rowData} columns={columns} />
+                <canvas>대시보드</canvas>
+              </div>
+            </div>
+          </div>
+          <div className="DashBoard-row">
+            <div className="DashBoard-col">
+              <div className="DashBoard-box">
+                <canvas>대시보드</canvas>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="DashBoard-chart">
+          <div className="DashBoard-1row">
+            <div className="DashBoard-col">
+              <div className="DashBoard-box">
+                <canvas>그래프</canvas>
               </div>
             </div>
           </div>
@@ -122,4 +109,4 @@ function SMSDashBoardList2() {
   );
 }
 
-export default SMSDashBoardList2;
+export default SMSmaturitylevelDashBoard;

@@ -42,6 +42,10 @@ import AdminMailEdit from '@/components/publish/aviation/AdminMailEdit';
 import AdminMailDetail from '@/components/publish/aviation/AdminMailDetail';
 import SMSDashBoardList from '@/components/publish/aviation/SMSDashBoardList';
 import SMSDashBoardList2 from '@/components/publish/aviation/SMSDashBoardList2';
+import SMSmaturitylevelDashBoard from '@/components/publish/aviation/SMSmaturitylevelDashBoard';
+import SMSintellectualList from '@/components/publish/aviation/SMSintellectualList';
+import SMSdataList from '@/components/publish/aviation/SMSdataList';
+import SMSdataDetail from '@/components/publish/aviation/SMSdataDetail';
 
 import { fa } from '@faker-js/faker';
 
@@ -185,6 +189,34 @@ AviationPageInfo.list = [
     title: '[04.안전보증] SMS종합분석현황 > 대시보드2',
     Component: SMSDashBoardList2,
     path: 'SMSDashBoardList2',
+    description: '',
+    success: true,
+  },
+  {
+    title: '[04.안전보증] SMS성숙도점검 > 지적사항 리스트',
+    Component: SMSintellectualList,
+    path: 'SMSintellectualList',
+    description: '',
+    success: true,
+  },
+  {
+    title: '[04.안전보증] SMS성숙도점검 > 자료실 리스트',
+    Component: SMSdataList,
+    path: 'SMSdataList',
+    description: '',
+    success: true,
+  },
+  {
+    title: '[04.안전보증] SMS성숙도점검 > 자료실 상세',
+    Component: SMSdataDetail,
+    path: 'SMSdataDetail',
+    description: '',
+    success: false,
+  },
+  {
+    title: '[04.안전보증] SMS성숙도점검 > 대시보드',
+    Component: SMSmaturitylevelDashBoard,
+    path: 'SMSmaturitylevelDashBoard',
     description: '',
     success: true,
   },
