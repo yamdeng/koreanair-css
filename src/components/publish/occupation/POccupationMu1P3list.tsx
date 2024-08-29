@@ -146,10 +146,6 @@ function POccupationMu1P3list() {
                       <td>관리감독자</td>
                       <td>20명</td>
                     </tr>
-                    <tr>
-                      <td>관리감독자</td>
-                      <td>20명</td>
-                    </tr>
                   </tbody>
                   <tfoot>
                     <tr>
@@ -172,38 +168,6 @@ function POccupationMu1P3list() {
                   <AppAutoComplete label={'사용자 정보검색'} />
                 </div>
               </div>
-              {/*<div className="form-cell wid50">
-                <div className="form-group wid100">
-                  <AppAutoComplete label={'부서'} />
-                </div>
-              </div>
-              <div className="form-cell wid50">
-                <div className="form-group wid100">
-                  <AppAutoComplete label={'팀'} />
-                </div>
-              </div>
-              <div className="form-cell wid50">
-                <div className="form-group wid100">
-                  <AppAutoComplete label={'그룹'} />
-                </div>
-              </div>
-            </div>
-            <div className="form-table">
-              <div className="form-cell wid50">
-                <div className="form-group wid100">
-                  <AppAutoComplete label={'반'} />
-                </div>
-              </div>
-              <div className="form-cell wid50">
-                <div className="form-group wid100">
-                  <AppAutoComplete label={'직책'} />
-                </div>
-              </div>
-              <div className="form-cell wid50">
-                <div className="form-group wid100">
-                  <AppTextInput label={'성명'} />
-                </div>
-              </div>*/}
               <div className="btn-area">
                 <button type="button" name="button" className="btn-sm btn_text btn-darkblue-line">
                   조회
@@ -219,117 +183,21 @@ function POccupationMu1P3list() {
               <h3>임직원 리스트</h3>
               <div>
                 <table className="list-table">
-                  <colgroup>
-                    <col style={{ width: '10%' }} />
-                    <col style={{ width: '10%' }} />
-                    <col style={{ width: '10%' }} />
-                    <col style={{ width: '10%' }} />
-                    <col style={{ width: '10%' }} />
-                    <col style={{ width: '10%' }} />
-                    <col style={{ width: '10%' }} />
-                    <col style={{ width: '10%' }} />
-                    <col style={{ width: '10%' }} />
-                    <col style={{ width: '10%' }} />
-                  </colgroup>
                   <thead>
                     <tr>
-                      <th scope="col">번호</th>
-                      <th scope="col">본부</th>
-                      <th scope="col">부서</th>
-                      <th scope="col">팀</th>
-                      <th scope="col">그룹</th>
-                      <th scope="col">반</th>
-                      <th scope="col">직책</th>
-                      <th scope="col">사번</th>
-                      <th scope="col">성명</th>
-                      <th scope="col">발령일자</th>
+                      <th>번호</th>
+                      <th>본부</th>
+                      <th>부서</th>
+                      <th>팀</th>
+                      <th>그룹</th>
+                      <th>반</th>
+                      <th>직책</th>
+                      <th>사번</th>
+                      <th>성명</th>
+                      <th>발령일자</th>
                     </tr>
                   </thead>
                   <tbody>
-                    <tr>
-                      <td>번호</td>
-                      <td>번호</td>
-                      <td>번호</td>
-                      <td>번호</td>
-                      <td>번호</td>
-                      <td>번호</td>
-                      <td>번호</td>
-                      <td>번호</td>
-                      <td>번호</td>
-                      <td>번호</td>
-                    </tr>
-                    <tr>
-                      <td>번호</td>
-                      <td>번호</td>
-                      <td>번호</td>
-                      <td>번호</td>
-                      <td>번호</td>
-                      <td>번호</td>
-                      <td>번호</td>
-                      <td>번호</td>
-                      <td>번호</td>
-                      <td>번호</td>
-                    </tr>
-                    <tr>
-                      <td>번호</td>
-                      <td>번호</td>
-                      <td>번호</td>
-                      <td>번호</td>
-                      <td>번호</td>
-                      <td>번호</td>
-                      <td>번호</td>
-                      <td>번호</td>
-                      <td>번호</td>
-                      <td>번호</td>
-                    </tr>
-                    <tr>
-                      <td>번호</td>
-                      <td>번호</td>
-                      <td>번호</td>
-                      <td>번호</td>
-                      <td>번호</td>
-                      <td>번호</td>
-                      <td>번호</td>
-                      <td>번호</td>
-                      <td>번호</td>
-                      <td>번호</td>
-                    </tr>
-                    <tr>
-                      <td>번호</td>
-                      <td>번호</td>
-                      <td>번호</td>
-                      <td>번호</td>
-                      <td>번호</td>
-                      <td>번호</td>
-                      <td>번호</td>
-                      <td>번호</td>
-                      <td>번호</td>
-                      <td>번호</td>
-                    </tr>
-                    <tr>
-                      <td>번호</td>
-                      <td>번호</td>
-                      <td>번호</td>
-                      <td>번호</td>
-                      <td>번호</td>
-                      <td>번호</td>
-                      <td>번호</td>
-                      <td>번호</td>
-                      <td>번호</td>
-                      <td>번호</td>
-                    </tr>
-                    <tr>
-                      <td>번호</td>
-                      <td>번호</td>
-                      <td>번호</td>
-                      <td>번호</td>
-                      <td>번호</td>
-                      <td>번호</td>
-                      <td>번호</td>
-                      <td>번호</td>
-                      <td>번호</td>
-                      <td>번호</td>
-                    </tr>
                     <tr>
                       <td>번호</td>
                       <td>번호</td>
@@ -396,7 +264,145 @@ function POccupationMu1P3list() {
             </div>
             <div className="list-dtail">
               <h3>검색결과상세정보영역</h3>
-              <div className="list-table">테이블</div>
+              <div className="list-table">
+                {/*상세*/}
+                <div className="editbox">
+                  <div className="form-table line">
+                    <div className="form-cell pd-style01 wid100">
+                      <div className="form-group wid100">
+                        <div className="box-view-list">
+                          <ul className="view-list">
+                            <li className="accumlate-list">
+                              <label className="t-label">본부</label>
+                              <span className="text-desc-type1">본부내용</span>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="form-cell pd-style01 wid100">
+                      <div className="form-group wid100">
+                        <div className="box-view-list">
+                          <ul className="view-list">
+                            <li className="accumlate-list">
+                              <label className="t-label">부서</label>
+                              <span className="text-desc-type1">부서내용</span>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="form-cell pd-style01 wid100">
+                      <div className="form-group wid100">
+                        <div className="box-view-list">
+                          <ul className="view-list">
+                            <li className="accumlate-list">
+                              <label className="t-label">팀</label>
+                              <span className="text-desc-type1">팀내용</span>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="form-cell pd-style01 wid100">
+                      <div className="form-group wid100">
+                        <div className="box-view-list">
+                          <ul className="view-list">
+                            <li className="accumlate-list">
+                              <label className="t-label">그룹</label>
+                              <span className="text-desc-type1">그룹내용</span>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="form-cell pd-style01 wid100">
+                      <div className="form-group wid100">
+                        <div className="box-view-list">
+                          <ul className="view-list">
+                            <li className="accumlate-list">
+                              <label className="t-label">반</label>
+                              <span className="text-desc-type1">반내용</span>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="form-cell pd-style01 wid100">
+                      <div className="form-group wid100">
+                        <div className="box-view-list">
+                          <ul className="view-list">
+                            <li className="accumlate-list">
+                              <label className="t-label">직책</label>
+                              <span className="text-desc-type1">직책내용</span>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <hr className="line dp-n"></hr>
+                  <div className="form-table line">
+                    <div className="form-cell pd-style01 wid100">
+                      <div className="form-group wid100">
+                        <div className="box-view-list">
+                          <ul className="view-list">
+                            <li className="accumlate-list">
+                              <label className="t-label">사번</label>
+                              <span className="text-desc-type1">사번내용</span>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="form-cell pd-style01 wid100">
+                      <div className="form-group wid100">
+                        <div className="box-view-list">
+                          <ul className="view-list">
+                            <li className="accumlate-list">
+                              <label className="t-label">성명</label>
+                              <span className="text-desc-type1">성명내용</span>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="form-cell pd-style01 wid100">
+                      <div className="form-group wid100">
+                        <div className="box-view-list">
+                          <ul className="view-list">
+                            <li className="accumlate-list">
+                              <label className="t-label">발령일자</label>
+                              <span className="text-desc-type1">발령일자내용</span>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <hr className="line dp-n"></hr>
+                </div>
+                <table className="list-table">
+                  <thead>
+                    <tr>
+                      <th className="border-no"></th>
+                      <th>일자</th>
+                      <th>임명/임면</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th rowSpan={2}>변동내역</th>
+                      <td>2024.08.29</td>
+                      <td>임명</td>
+                    </tr>
+                    <tr>
+                      <td>2024.08.29</td>
+                      <td>임면</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
             </div>
           </div>
           {/*//그리드영역 */}
