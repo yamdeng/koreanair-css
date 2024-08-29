@@ -297,14 +297,14 @@ OccupationPageInfo.list = [
     Component: POccupationMu2P1list,
     path: 'POccupationMu2P1list',
     description: '',
-    success: false,
+    success: true,
   },
   {
     title: '안전교육 > 교육현황조회-교육유형별-리스트',
     Component: POccupationMu2P1list1,
     path: 'POccupationMu2P1list1',
     description: '',
-    success: false,
+    success: true,
   },
   {
     title: '안전교육 > 근로자 정기교육-리스트',
@@ -430,7 +430,7 @@ OccupationPageInfo.list = [
     Component: POccupationMu3P2edit,
     path: 'POccupationMu3P2edit',
     description: '',
-    success: false,
+    success: true,
   },
   {
     title: '안전관리 > 작업환경측정-리스트',
@@ -465,7 +465,7 @@ OccupationPageInfo.list = [
     Component: POccupationMu3P4edit,
     path: 'POccupationMu3P4edit',
     description: '',
-    success: false,
+    success: true,
   },
   {
     title: '안전관리 > 협력업체-리스트',
@@ -752,7 +752,7 @@ OccupationPageInfo.list = [
     Component: POccupationMu6P5list,
     path: 'POccupationMu6P5list',
     description: '',
-    success: false,
+    success: true,
   },
 ];
 export default OccupationPageInfo;

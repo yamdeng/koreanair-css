@@ -56,29 +56,39 @@ function POccupationMu2P1list1() {
               <div className="form-table">
                 <div className="form-cell wid50">
                   <div className="form-group wid100">
-                    <AppDatePicker label={'년도'} />
+                    <AppSelect label="교육유형" />
                   </div>
                 </div>
                 <div className="form-cell wid50">
                   <div className="form-group wid100">
-                    <AppSelect label="Department" />
+                    <AppSelect label="교육형태" />
+                  </div>
+                </div>
+              </div>
+              <div className="form-table">
+                <div className="form-cell wid50">
+                  <div className="form-group wid100">
+                    <AppTextInput label="과정명" />
                   </div>
                 </div>
                 <div className="form-cell wid50">
-                  <div className="form-group wid100">
-                    <AppTextInput label="Cost Center" />
+                  <div className="form-group form-glow">
+                    <div className="df">
+                      <div className="date1">
+                        <AppDatePicker label="교육이수기간" />
+                      </div>
+                      <span className="unt">~</span>
+                      <div className="date2">
+                        <AppDatePicker label="교육이수기간" />
+                      </div>
+                    </div>
                   </div>
                 </div>
-                <div className="form-cell wid50">
-                  <div className="form-group wid100">
-                    <AppTextInput label="Account Name" />
-                  </div>
-                </div>
-                <div className="btn-area">
-                  <button type="button" name="button" className="btn-sm btn_text btn-darkblue-line">
-                    조회
-                  </button>
-                </div>
+              </div>
+              <div className="btn-area mb-10">
+                <button type="button" name="button" className="btn-sm btn_text btn-darkblue-line">
+                  조회
+                </button>
               </div>
             </div>
           </div>
@@ -90,7 +100,10 @@ function POccupationMu2P1list1() {
           </div>
           {/*//그리드영역 */}
         </div>
-        <div className="list">리스트영역</div>
+        <div className="list">
+          <h3>교육유형별 교육이수 현황</h3>
+          <AppTable rowData={rowData} columns={columns} />
+        </div>
       </div>
     </>
   );

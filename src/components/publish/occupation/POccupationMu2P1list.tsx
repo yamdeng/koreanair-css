@@ -47,45 +47,49 @@ function POccupationMu2P1list() {
         </div>
       </div>
       {/*//탭 */}
-      {/*검색영역 */}
-      <div className="boxForm">
-        {/*area-detail명 옆에 active  */}
-        <div className="area-detail active">
-          <div className="form-table">
-            <div className="form-cell wid50">
-              <div className="form-group wid100">
-                <AppDatePicker label={'년도'} />
+      <div className="division">
+        <div className="check">
+          {/*검색영역 */}
+          <div className="boxForm">
+            {/*area-detail명 옆에 active  */}
+            <div className="area-detail active">
+              <div className="form-table">
+                <div className="form-cell wid50">
+                  <div className="form-group wid100">
+                    <AppSelect label="부문" />
+                  </div>
+                </div>
+                <div className="form-cell wid50">
+                  <div className="form-group wid100">
+                    <AppAutoComplete label={'부서'} />
+                  </div>
+                </div>
+                <div className="form-cell wid50">
+                  <div className="form-group wid100">
+                    <AppAutoComplete label={'이름'} />
+                  </div>
+                </div>
+                <div className="btn-area">
+                  <button type="button" name="button" className="btn-sm btn_text btn-darkblue-line">
+                    조회
+                  </button>
+                </div>
               </div>
-            </div>
-            <div className="form-cell wid50">
-              <div className="form-group wid100">
-                <AppSelect label="Department" />
-              </div>
-            </div>
-            <div className="form-cell wid50">
-              <div className="form-group wid100">
-                <AppTextInput label="Cost Center" />
-              </div>
-            </div>
-            <div className="form-cell wid50">
-              <div className="form-group wid100">
-                <AppTextInput label="Account Name" />
-              </div>
-            </div>
-            <div className="btn-area">
-              <button type="button" name="button" className="btn-sm btn_text btn-darkblue-line">
-                조회
-              </button>
             </div>
           </div>
+          {/* //검색영역 */}
+          {/*그리드영역 */}
+          <div>
+            <AppTable rowData={rowData} columns={columns} />
+          </div>
+          {/*//그리드영역 */}
+        </div>
+
+        <div className="list">
+          <h3>개인별 교육이수 현황</h3>
+          <AppTable rowData={rowData} columns={columns} />
         </div>
       </div>
-      {/* //검색영역 */}
-      {/*그리드영역 */}
-      <div>
-        <AppTable rowData={rowData} columns={columns} />
-      </div>
-      {/*//그리드영역 */}
     </>
   );
 }

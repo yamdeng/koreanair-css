@@ -9,15 +9,146 @@ import AppTreeSelect from '@/components/common/AppTreeSelect';
 import AppSearchInput from '@/components/common/AppSearchInput';
 import { DatePicker } from 'antd';
 import { useState } from 'react';
-import { Upload } from 'antd';
+import { Image, Upload } from 'antd';
 import AppTable from '@/components/common/AppTable';
 import { getAllData } from '@/data/grid/example-data-new';
 import { testColumnInfos } from '@/data/grid/table-column';
+import { PlusOutlined } from '@ant-design/icons';
+const { Dragger } = Upload;
+
+const getBase64 = (file) =>
+  new Promise((resolve, reject) => {
+    const reader = new FileReader();
+    reader.readAsDataURL(file);
+    reader.onload = () => resolve(reader.result);
+    reader.onerror = (error) => reject(error);
+  });
+
+const props: any = {
+  name: 'file',
+  multiple: true,
+  defaultFileList: [
+    {
+      uid: '1',
+      name: 'xxx.png',
+      // status: 'uploading',
+      url: 'http://www.baidu.com/xxx.png',
+      percent: 33,
+    },
+    {
+      uid: '2',
+      name: 'yyy.png',
+      status: 'done',
+      url: 'http://www.baidu.com/yyy.png',
+    },
+    {
+      uid: '3',
+      name: 'zzz.png',
+      status: 'error',
+      response: 'Server Error 500',
+      // custom error message to show
+      url: 'http://www.baidu.com/zzz.png',
+    },
+  ],
+  action: 'https://660d2bd96ddfa2943b33731c.mockapi.io/api/upload',
+
+  onChange(info) {
+    const { status } = info.file;
+    if (status !== 'uploading') {
+      console.log(info.file, info.fileList);
+    }
+    if (status === 'done') {
+      alert(`${info.file.name} file uploaded successfully.`);
+    } else if (status === 'error') {
+      alert(`${info.file.name} file upload failed.`);
+    }
+  },
+
+  onRemove(file) {
+    return false;
+  },
+
+  onPreview(file) {
+    return false;
+  },
+
+  onDrop(e) {
+    console.log('Dropped files', e.dataTransfer.files);
+  },
+};
 
 function POccupationMu3P2edit() {
   const [inputValue, setInputValue] = useState('');
   const rowData = getAllData();
   const columns = testColumnInfos;
+  const [previewOpen, setPreviewOpen] = useState(false);
+  const [previewImage, setPreviewImage] = useState('');
+  const [fileList, setFileList] = useState<any>([
+    {
+      uid: '-1',
+      name: 'image.png',
+      status: 'done',
+      url: 'https://zos.alipayobjects.com/rmsportal/jkjgkEfvpUPVyRjUImniVslZfWPnJuuZ.png',
+    },
+    {
+      uid: '-2',
+      name: 'image.png',
+      status: 'done',
+      url: 'https://zos.alipayobjects.com/rmsportal/jkjgkEfvpUPVyRjUImniVslZfWPnJuuZ.png',
+    },
+    {
+      uid: '-3',
+      name: 'image.png',
+      status: 'done',
+      url: 'https://zos.alipayobjects.com/rmsportal/jkjgkEfvpUPVyRjUImniVslZfWPnJuuZ.png',
+    },
+    {
+      uid: '-4',
+      name: 'image.png',
+      status: 'done',
+      url: 'https://zos.alipayobjects.com/rmsportal/jkjgkEfvpUPVyRjUImniVslZfWPnJuuZ.png',
+    },
+    {
+      uid: '-xxx',
+      percent: 50,
+      name: 'image.png',
+      status: 'uploading',
+      url: 'https://zos.alipayobjects.com/rmsportal/jkjgkEfvpUPVyRjUImniVslZfWPnJuuZ.png',
+    },
+    {
+      uid: '-5',
+      name: 'image.png',
+      status: 'error',
+    },
+  ]);
+
+  const handlePreview = async (file) => {
+    if (!file.url && !file.preview) {
+      file.preview = await getBase64(file.originFileObj);
+    }
+    setPreviewImage(file.url || file.preview);
+    setPreviewOpen(true);
+  };
+  const handleChange = ({ fileList: newFileList }) => setFileList(newFileList);
+  const uploadButton = (
+    <button
+      style={{
+        border: 0,
+        background: 'none',
+      }}
+      type="button"
+    >
+      <PlusOutlined />
+      <div
+        style={{
+          marginTop: 8,
+        }}
+      >
+        Upload
+      </div>
+    </button>
+  );
+
   return (
     <>
       {/*경로 */}
@@ -160,25 +291,78 @@ function POccupationMu3P2edit() {
         <hr className="line dp-n"></hr>
         <div className="form-table">
           <div className="form-cell wid50">
-            <div className="form-group wid100">
-              <AppTextInput label="훈련명" required />
+            <div className="form-group wid-300">
+              <AppSelect label="안전검사" required />
+            </div>
+            <div className="ck-edit-box">
+              <div className="ck-list">그리드 영역</div>
+              <div className="ck-edit">
+                <div className="boxForm">
+                  <div className="form-table">
+                    <div className="form-cell wid100">
+                      <div className="form-group wid100">
+                        <AppDatePicker label={'안전 검사일자'} />
+                      </div>
+                    </div>
+                  </div>
+                  <div className="form-table">
+                    <div className="form-cell wid50">
+                      <div className="form-group wid100">
+                        <AppTextInput label="검사 합격번호" />
+                      </div>
+                    </div>
+                  </div>
+                  <div className="form-table">
+                    <div className="form-cell wid100">
+                      <div className="form-group wid100">
+                        <AppDatePicker label={'차기 안전 검사일자'} />
+                      </div>
+                    </div>
+                  </div>
+                  <div className="btn-area-type01 mg-top">
+                    <button type="button" name="button" className="btn_text btn_confirm">
+                      추가
+                    </button>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
         <hr className="line"></hr>
+        {/* 파일첨부영역 : button */}
         <div className="form-table">
           <div className="form-cell wid50">
             <div className="form-group wid100">
-              <AppEditor placeholder="입력해주세요." />
+              <div className="filebox error">
+                <Upload
+                  action="https://660d2bd96ddfa2943b33731c.mockapi.io/api/upload"
+                  listType="picture-card"
+                  fileList={fileList}
+                  onPreview={handlePreview}
+                  onChange={handleChange}
+                >
+                  {fileList.length >= 8 ? null : uploadButton}
+                </Upload>
+                <label htmlFor="file" className="file-label">
+                  사진첨부{/*<span className="required">*</span>*/}
+                </label>
+              </div>
+              <span className="errorText">fileerror</span>
             </div>
-          </div>
-        </div>
-        <hr className="line"></hr>
-        <div className="form-table">
-          <div className="form-cell wid50">
-            <div className="form-group wid100">
-              <AppEditor placeholder="입력해주세요." />
-            </div>
+            {previewImage && (
+              <Image
+                wrapperStyle={{
+                  display: 'none',
+                }}
+                preview={{
+                  visible: previewOpen,
+                  onVisibleChange: (visible) => setPreviewOpen(visible),
+                  afterOpenChange: (visible) => !visible && setPreviewImage(''),
+                }}
+                src={previewImage}
+              />
+            )}
           </div>
         </div>
         <hr className="line"></hr>

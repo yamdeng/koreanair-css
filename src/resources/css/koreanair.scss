@@ -433,7 +433,7 @@
     .ck-edit-box {
       width: 100%; 
       padding: 1.0rem 0 0;
-      height: 100%;
+      /*height: 100%;*/
       .ck-list {
         display: inline-block;
         width: 50%;
@@ -469,8 +469,15 @@
 
     }
 .division {width: 100%; display: inline-flex;}
-.division .check {width: 50%;}
-.division .list {width: 50%;}
+.division .check {width: 100%;}
+.division .list {
+  width: 100%;
+  margin-left: 3.0rem; 
+  padding: 3.0rem;
+  border: 0.1rem solid var(--color-neutral-40); 
+  border-radius: 0.8rem;
+  h3 {font-size: 1.8rem; font-weight: 500; color: var(--color-darkblue-100); padding-bottom: 2.0rem;}
+}
 
 .searchbox {display: flex; width: 100%;}
 .left-box {display: inline-table; vertical-align: top; padding-right: 3.0rem;}
@@ -527,3 +534,5 @@
   .list-table tbody th {border-right: 0.1rem solid var(--color-neutral-40);}
   .pd-style01 {padding: 1.6rem 0.5rem;}
 }
+.radio-btn {padding: 0.4rem 1.0rem; background-color: var(--color-lightblue-100); color: var(--color-neutral-10); border-radius: 0.4rem; vertical-align: top; margin: 0.3rem 2.0rem 0 1.0rem; font-size: 1.2rem;}
+.agree {border: 0.1rem solid var(--color-neutral-40); border-radius: 0.8rem; background-color: var(--color-neutral-20); padding: 2.0rem; line-height: 180%; font-size: 1.4rem;}

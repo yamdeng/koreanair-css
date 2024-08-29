@@ -91,6 +91,7 @@ input[type=checkbox],input[type=radio]{padding:0;vertical-align:middle;margin-to
 /* 기본형 */
 .radio-wrap{position:relative;line-height:0;border:0.1rem solid var(--color-neutral-40);border-radius:0.5rem;padding:0.4rem 1rem 0.3rem}
 .radio-wrap.border-no{border:0}
+.radio-wrap.pd-style {padding: 0.5rem 0 0 0 !important;}
 .radio-wrap .input-box{position:relative}
 .radio-wrap > label{display:inline-block;padding:0rem 0.9rem 0.2rem 2.5rem;line-height:150%;margin:0.4rem 0 0.4rem 0.2rem}
 .radio-wrap > label > input + span {display:block;color:var(--color-neutral-60);font-size:1.4rem}
@@ -455,7 +456,7 @@ input, select{font-family:'KoreanAirSans'}
 .editbox .form-table .form-cell:last-child{padding-right:0}
 .editbox.tog{margin-bottom:0rem; padding-top:0rem}
 .editbox.NoLine{border-top:0}
-
+.editbox .form-table .wid-300{width:30.0rem}
 
 /*검색영역*/
 .info-wrap .edit-area > .boxForm{padding:0}
