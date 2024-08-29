@@ -81,7 +81,7 @@ function MyAuditList() {
             </div>
           </div>
           <div className="user-box-top">
-            <div className="form-table">
+            <div className="form-table user-head">
               <div className="form-cell wid100">
                 <div className="form-group wid100">
                   <div className="df wid30">
@@ -98,10 +98,16 @@ function MyAuditList() {
                   <dd>126</dd>
                 </dl>
               </div>
+              <div className="ant-col">
+                <dl className="sub-count">
+                  <dt>Finding</dt>
+                  <dd>126</dd>
+                </dl>
+              </div>
             </div>
           </div>
         </div>
-        <div className="user-box"></div>
+        <div className="user-box">dd</div>
       </div>
       {/*//사용자기준 조회범위영역 */}
 
