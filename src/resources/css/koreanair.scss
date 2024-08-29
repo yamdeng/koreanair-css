@@ -489,6 +489,32 @@
 }
 .right-box {display: inline-block; width: 100%; height: 100%; vertical-align: top;}
 
-.searchlist {display: flex; width: 100%; height: calc(100dvh - 371px); background-color: chartreuse;}
-.searchlist .list {display: inline-block; vertical-align: top; width: 100%; }
-.searchlist .list-dtail {display: inline-block; vertical-align: top; width: 100%; }
+.searchlist {display: block; width: 100%;}
+.searchlist .list {
+  display: block; 
+  width: 100%; 
+  h3 {font-size: 1.8rem; font-weight: 500; color: var(--color-darkblue-100); padding-bottom: 1.0rem;}
+  .list-table {border: 0 solid var(--color-neutral-40); box-sizing: border-box; width: 100%;}
+  .list-table thead tr, .list-table tbody tr, .list-table tfoot tr {display: flex; width: 100%;}
+  .list-table th, .list-table td {padding: 1.0rem 0;border-bottom: 0.1rem solid var(--color-neutral-40); text-align:center;}
+  /*.list-table th:nth-child(1), .list-table td:nth-child(1){width: 6%;}
+  .list-table th:nth-child(2), .list-table td:nth-child(2){width: 10%;}
+  .list-table th:nth-child(3), .list-table td:nth-child(3){width: 10%;}
+  .list-table th:nth-child(4), .list-table td:nth-child(4){width: 10%;}
+  .list-table th:nth-child(5), .list-table td:nth-child(5){width: 10%;}
+  .list-table th:nth-child(6), .list-table td:nth-child(6){width: 10%;}
+  .list-table th:nth-child(7), .list-table td:nth-child(7){width: 10%;}
+  .list-table th:nth-child(8), .list-table td:nth-child(8){width: 10%;}
+  .list-table th:nth-child(9), .list-table td:nth-child(9){width: 10%;}
+  .list-table th:nth-child(10), .list-table td:nth-child(10){width: 14%;}*/
+  .list-table th {border-top: 0.1rem solid var(--color-darkblue-100); color: var(--color-darkblue-100); background-color: var(--color-neutral-20); font-weight: 500;}
+  .list-table td {color: var(--color-neutral-70); background-color: var(--color-neutral-10);}
+  .list-table tbody {display: block; max-height: 20rem; overflow-y: scroll;}
+  .list-table tfoot td {color: var(--color-darkblue-100); background-color: var(--color-neutral-20); font-weight: 500;}
+}
+.searchlist .list-dtail {
+  display: block; 
+  width: 100%; 
+  h3 {font-size: 1.8rem; font-weight: 500; color: var(--color-darkblue-100); padding: 1.5rem 0 1.0rem 0;}
+
+}

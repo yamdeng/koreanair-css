@@ -218,22 +218,166 @@ function POccupationMu1P3list() {
             <div className="list">
               <h3>임직원 리스트</h3>
               <div>
-                <table>
+                <table className="list-table">
+                  <colgroup>
+                    <col style={{ width: '10%' }} />
+                    <col style={{ width: '10%' }} />
+                    <col style={{ width: '10%' }} />
+                    <col style={{ width: '10%' }} />
+                    <col style={{ width: '10%' }} />
+                    <col style={{ width: '10%' }} />
+                    <col style={{ width: '10%' }} />
+                    <col style={{ width: '10%' }} />
+                    <col style={{ width: '10%' }} />
+                    <col style={{ width: '10%' }} />
+                  </colgroup>
                   <thead>
                     <tr>
-                      <th>번호</th>
-                      <th>본부</th>
-                      <th>부서</th>
-                      <th>팀</th>
-                      <th>그룹</th>
-                      <th>반</th>
-                      <th>직책</th>
-                      <th>사번</th>
-                      <th>성명</th>
-                      <th>발령일자</th>
+                      <th scope="col">번호</th>
+                      <th scope="col">본부</th>
+                      <th scope="col">부서</th>
+                      <th scope="col">팀</th>
+                      <th scope="col">그룹</th>
+                      <th scope="col">반</th>
+                      <th scope="col">직책</th>
+                      <th scope="col">사번</th>
+                      <th scope="col">성명</th>
+                      <th scope="col">발령일자</th>
                     </tr>
                   </thead>
                   <tbody>
+                    <tr>
+                      <td>번호</td>
+                      <td>번호</td>
+                      <td>번호</td>
+                      <td>번호</td>
+                      <td>번호</td>
+                      <td>번호</td>
+                      <td>번호</td>
+                      <td>번호</td>
+                      <td>번호</td>
+                      <td>번호</td>
+                    </tr>
+                    <tr>
+                      <td>번호</td>
+                      <td>번호</td>
+                      <td>번호</td>
+                      <td>번호</td>
+                      <td>번호</td>
+                      <td>번호</td>
+                      <td>번호</td>
+                      <td>번호</td>
+                      <td>번호</td>
+                      <td>번호</td>
+                    </tr>
+                    <tr>
+                      <td>번호</td>
+                      <td>번호</td>
+                      <td>번호</td>
+                      <td>번호</td>
+                      <td>번호</td>
+                      <td>번호</td>
+                      <td>번호</td>
+                      <td>번호</td>
+                      <td>번호</td>
+                      <td>번호</td>
+                    </tr>
+                    <tr>
+                      <td>번호</td>
+                      <td>번호</td>
+                      <td>번호</td>
+                      <td>번호</td>
+                      <td>번호</td>
+                      <td>번호</td>
+                      <td>번호</td>
+                      <td>번호</td>
+                      <td>번호</td>
+                      <td>번호</td>
+                    </tr>
+                    <tr>
+                      <td>번호</td>
+                      <td>번호</td>
+                      <td>번호</td>
+                      <td>번호</td>
+                      <td>번호</td>
+                      <td>번호</td>
+                      <td>번호</td>
+                      <td>번호</td>
+                      <td>번호</td>
+                      <td>번호</td>
+                    </tr>
+                    <tr>
+                      <td>번호</td>
+                      <td>번호</td>
+                      <td>번호</td>
+                      <td>번호</td>
+                      <td>번호</td>
+                      <td>번호</td>
+                      <td>번호</td>
+                      <td>번호</td>
+                      <td>번호</td>
+                      <td>번호</td>
+                    </tr>
+                    <tr>
+                      <td>번호</td>
+                      <td>번호</td>
+                      <td>번호</td>
+                      <td>번호</td>
+                      <td>번호</td>
+                      <td>번호</td>
+                      <td>번호</td>
+                      <td>번호</td>
+                      <td>번호</td>
+                      <td>번호</td>
+                    </tr>
+                    <tr>
+                      <td>번호</td>
+                      <td>번호</td>
+                      <td>번호</td>
+                      <td>번호</td>
+                      <td>번호</td>
+                      <td>번호</td>
+                      <td>번호</td>
+                      <td>번호</td>
+                      <td>번호</td>
+                      <td>번호</td>
+                    </tr>
+                    <tr>
+                      <td>번호</td>
+                      <td>번호</td>
+                      <td>번호</td>
+                      <td>번호</td>
+                      <td>번호</td>
+                      <td>번호</td>
+                      <td>번호</td>
+                      <td>번호</td>
+                      <td>번호</td>
+                      <td>번호</td>
+                    </tr>
+                    <tr>
+                      <td>번호</td>
+                      <td>번호</td>
+                      <td>번호</td>
+                      <td>번호</td>
+                      <td>번호</td>
+                      <td>번호</td>
+                      <td>번호</td>
+                      <td>번호</td>
+                      <td>번호</td>
+                      <td>번호</td>
+                    </tr>
+                    <tr>
+                      <td>번호</td>
+                      <td>번호</td>
+                      <td>번호</td>
+                      <td>번호</td>
+                      <td>번호</td>
+                      <td>번호</td>
+                      <td>번호</td>
+                      <td>번호</td>
+                      <td>번호</td>
+                      <td>번호</td>
+                    </tr>
                     <tr>
                       <td>번호</td>
                       <td>번호</td>
@@ -252,7 +396,7 @@ function POccupationMu1P3list() {
             </div>
             <div className="list-dtail">
               <h3>검색결과상세정보영역</h3>
-              <div>테이블</div>
+              <div className="list-table">테이블</div>
             </div>
           </div>
           {/*//그리드영역 */}
