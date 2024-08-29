@@ -240,7 +240,7 @@ function SafetyDetail() {
                 {/* 보고서내용보기 상세*/}
                 {/* 비행정보*/}
                 <div className="editbox report">
-                  <div className="header-tit">[비행정보]</div>
+                  <div className="header-tit">비행정보</div>
                   <div className="form-table line">
                     <div className="form-cell wid100">
                       <div className="form-group wid100">
@@ -413,7 +413,7 @@ function SafetyDetail() {
 
                 {/* 이벤트*/}
                 <div className="editbox report">
-                  <div className="header-tit">[이벤트]</div>
+                  <div className="header-tit">이벤트</div>
                   <div className="form-table line">
                     <div className="form-cell wid100">
                       <div className="form-group wid100">

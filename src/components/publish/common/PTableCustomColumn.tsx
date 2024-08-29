@@ -4,7 +4,7 @@ import { testColumnInfos } from '@/data/grid/table-column';
 
 function CustomColumnComponent1() {
   return (
-    <div className="Safety-table-cell">
+    <div className="Safety-table-cell tl">
       <a href="javascript:void(0);">링크되는 텍스트 형식</a>
     </div>
   );
