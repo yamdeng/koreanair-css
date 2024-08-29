@@ -232,18 +232,10 @@
 .editarea-box.view{padding:1.5rem 1.2rem 1.2rem}
 .editarea-box.error{border:solid 0.1rem var(--color-negative)}
 
-.user-wrap{position:relative;display:inline-table;width:100%;margin-bottom:1.5rem;gap:0 0.8rem}
+.user-wrap{position:relative;display:flex;width:100%;margin-bottom:1.5rem;gap:0 0.8rem}
 
-.user-wrap .user-box{position:relative;display:inline-table;/*flex-grow: 1;padding:1.0rem;
-  gap: 0 0.8rem;*/width:50%;}
-.user-wrap .user-box .user-box-top{position:relative;display: inline-table;width:49%;padding:1.0rem;border:solid 0.1rem var(--color-neutral-01);border-radius:0.8rem;
-  /*height: 158px;
-  border: 1px solid #a8c9c9;
-  border-radius: 10px;
-  overflow: hidden;
-  background: #fff;
-  margin: 0 3px;
-  flex: 1 auto;*/}
+.user-wrap .user-box{position:relative;display:flex;flex-wrap:wrap;counter-reset:myCounter;align-items: stretch;width:50%}
+.user-wrap .user-box .user-box-top{position:relative;flex:1;width:49%;padding:1.2rem;border:solid 0.1rem var(--color-neutral-01);border-radius:0.8rem;box-shadow:0.5rem 0.5rem 0.8rem rgba(0, 0, 0, .1)}
   .user-wrap .user-box .user-box-top:nth-child(2){margin-left:0.8rem}
   .user-wrap .user-box .user-box-top .form-table.user-head{width:100%;margin: 0 auto;padding: 30px 20px 20px 0;
     border-bottom: 1px solid #eeeeee;}
@@ -328,7 +320,7 @@
 
 /*보고서접수상세*/
 .editbox.report{position:relative;border-top:0;display:inline-block;width:100%}
-.editbox.report .header-tit{font-size:1.8rem;color:var(--color-mblue-100);font-weight:600}
+.editbox.report .header-tit{font-size:2rem;color:var(--color-mblue-100);font-weight:600;line-height:1.2}
 .ant-row{display:flex;flex-flow:row wrap}
 .ant-col{position:relative;max-width:100%;min-height:0.1rem}
 .ant-col-11 {

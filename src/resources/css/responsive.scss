@@ -146,6 +146,7 @@
   .searchbox .right-box {width: 100%;}
   .left-box .tree-box .tree-list .list.active {display: none;}
 
+  .user-wrap{display:block;width:100%}
   .user-wrap .user-box{display:block;width:100%}
   .user-wrap .user-box .user-box-top{display:flex;align-items:flex-end;justify-content: flex-start;flex-wrap: wrap;width:100%}
   .user-wrap .user-box .user-box-top:nth-child(2){margin:1rem 0 0.8rem}
@@ -276,6 +277,7 @@
   .left-box .tree-box .tree-list .list.active {display: none;}
   .searchlist {display: block;}
 
+  .user-wrap{display:block;width:100%}
   .user-wrap .user-box{display:block;width:100%}
   .user-wrap .user-box .user-box-top{display:flex;align-items:flex-end;justify-content: flex-start;flex-wrap: wrap;width:100%}
   .user-wrap .user-box .user-box-top:nth-child(2){margin:1rem 0 0.8rem}
