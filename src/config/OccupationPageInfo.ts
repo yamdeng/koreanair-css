@@ -605,14 +605,14 @@ OccupationPageInfo.list = [
     Component: POccupationMu4P5list,
     path: 'POccupationMu4P5list',
     description: '',
-    success: false,
+    success: true,
   },
   {
     title: '안전점검 > 통합개선 관리-등록',
     Component: POccupationMu4P5edit,
-    path: 'POccupationMu4P5list',
+    path: 'POccupationMu4P5edit',
     description: '',
-    success: false,
+    success: true,
   },
   {
     title: '위험성평가 > 위험성 평가 조회-리스트',

@@ -11,6 +11,7 @@ import Modal from 'react-modal';
 import AppTreeSelect from '@/components/common/AppTreeSelect';
 import AppTextInput from '@/components/common/AppTextInput';
 import AppTable from '@/components/common/AppTable';
+import { Upload } from 'antd';
 
 const options2 = [];
 for (let i = 10; i < 36; i++) {
@@ -115,52 +116,87 @@ function UserEditModal(props) {
       }}
     >
       <div className="popup-container">
-        <h3 className="pop_title">공사장소 관리</h3>
-        <div className="pop_full_cont_box">
-          <div className="pop_flex_group">
-            <div className="pop_cont_form">
-              {/*검색영역 */}
-              <div className="boxForm">
-                {/*area-detail명 옆에 active  */}
-                <div id="" className="area-detail active">
-                  <div className="form-table">
-                    <div className="form-cell wid50">
-                      <div className="form-group wid100">
-                        <AppAutoComplete label={'공사장소'} />
-                      </div>
-                    </div>
-                    <div className="form-cell wid50">
-                      <div className="form-group wid100">
-                        <AppSelect label={'사용여부'} />
-                      </div>
-                    </div>
-                    <div className="btn-area mb-10">
-                      <button type="button" name="button" className="btn-sm btn_text btn-darkblue-line">
-                        검색
-                      </button>
-                    </div>
-                  </div>
+        <h3 className="pop_title">작업 종료</h3>
+        <div className="pop_cont">
+          <div className="editbox">
+            <div className="form-table">
+              <div className="form-cell wid50">
+                <div className="form-group wid100">
+                  <span className="toggle_switch-tit">종료연장</span>
+                  <label className="toggle_switch">
+                    <input type="checkbox" />
+                    <span className="slider"></span>
+                  </label>
                 </div>
               </div>
-              {/* //검색영역 */}
-              {/*그리드영역 */}
-              <div>
-                <AppTable rowData={rowData} columns={columns} customButtons={customButtons} />
-              </div>
-              {/*//그리드영역 */}
             </div>
+            <hr className="line"></hr>
+            <div className="form-table">
+              <div className="form-cell wid50">
+                <div className="form-group wid-300">
+                  <AppDatePicker label="종료 연장일자" required disabled />
+                </div>
+              </div>
+            </div>
+            <hr className="line"></hr>
+            <div className="form-table">
+              <div className="form-cell wid50">
+                <div className="form-group wid100">
+                  <AppTextInput label="연장 사유" required disabled />
+                  <span className="txt-guide mt-10">※ 종료 연장을 신청한 경우 담당자 승인 절차가 진행됩니다.</span>
+                </div>
+              </div>
+            </div>
+            <hr className="line"></hr>
+            <div className="form-table">
+              <div className="form-cell wid50">
+                <div className="form-group wid-300">
+                  <AppDatePicker label="실제 종료일자" required />
+                </div>
+              </div>
+            </div>
+            <hr className="line"></hr>
+            <div className="form-table">
+              <div className="form-cell wid50">
+                <div className="form-group wid100">
+                  <AppTextInput label="특이사항" />
+                </div>
+              </div>
+            </div>
+            <hr className="line"></hr>
+            {/* 파일첨부영역 : button */}
+            <div className="form-table">
+              <div className="form-cell wid50">
+                <div className="form-group wid100">
+                  <div className="filebox ">
+                    <Upload {...props}>
+                      <div className="btn-area">
+                        <button type="button" name="button" className="btn-big btn_text btn-darkblue-line mg-n">
+                          + Upload
+                        </button>
+                      </div>
+                    </Upload>
+                    <label htmlFor="file" className="file-label">
+                      파일 첨부 {/*<span className="required">*</span>*/}
+                    </label>
+                  </div>
+                  {/*<span className="errorText">fileerror</span>*/}
+                </div>
+              </div>
+            </div>
+            <hr className="line"></hr>
           </div>
         </div>
-
-        <div className="pop_btns">
-          <button className="btn_text text_color_neutral-10 btn_confirm" onClick={closeModal}>
-            저장
-          </button>
-        </div>
-        <span className="pop_close" onClick={closeModal}>
-          X
-        </span>
       </div>
+
+      <div className="pop_btns">
+        <button className="btn_text text_color_neutral-10 btn_confirm" onClick={closeModal}>
+          저장
+        </button>
+      </div>
+      <span className="pop_close" onClick={closeModal}>
+        X
+      </span>
     </Modal>
   );
 }
