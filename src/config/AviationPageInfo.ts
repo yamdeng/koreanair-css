@@ -47,6 +47,7 @@ import SMSintellectualList from '@/components/publish/aviation/SMSintellectualLi
 import SMSdataList from '@/components/publish/aviation/SMSdataList';
 import SMSdataDetail from '@/components/publish/aviation/SMSdataDetail';
 import AdminSafetyNoticeList from '@/components/publish/aviation/AdminSafetyNoticeList';
+import AdminSafetyNoticeEdit from '@/components/publish/aviation/AdminSafetyNoticeEdit';
 
 import { fa } from '@faker-js/faker';
 
@@ -376,7 +377,7 @@ AviationPageInfo.list = [
     success: true,
   },
   {
-    title: '[07.관리자] 메일양식관리 > 둥록',
+    title: '[07.관리자] 메일양식관리 > 등록',
     Component: AdminMailEdit,
     path: 'AdminMailEdit',
     description: '',
@@ -393,6 +394,13 @@ AviationPageInfo.list = [
     title: '[07.관리자] 게시판관리 > Safety게시판 리스트',
     Component: AdminSafetyNoticeList,
     path: 'AdminSafetyNoticeList',
+    description: '',
+    success: true,
+  },
+  {
+    title: '[07.관리자] 게시판관리 > Safety게시판 등록',
+    Component: AdminSafetyNoticeEdit,
+    path: 'AdminSafetyNoticeEdit',
     description: '',
     success: false,
   },
