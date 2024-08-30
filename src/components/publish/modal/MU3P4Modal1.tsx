@@ -116,34 +116,43 @@ function UserEditModal(props) {
     >
       <div className="popup-container">
         <h3 className="pop_title">특별교육</h3>
-        <div className="pop_full_cont_box">
-          <div className="pop_flex_group">
-            <div className="pop_cont_form">
-              {/*검색영역 */}
-              <div className="boxForm">
-                {/*area-detail명 옆에 active  */}
-                <div id="" className="area-detail active">
-                  <div className="form-table">
-                    <div className="form-cell wid50">
-                      <div className="form-group wid100">
-                        <AppAutoComplete label={'공사장소'} />
-                      </div>
-                    </div>
-                    <div className="form-cell wid50">
-                      <div className="form-group wid100">
-                        <AppSelect label={'사용여부'} />
-                      </div>
-                    </div>
-                    <div className="btn-area mb-10">
-                      <button type="button" name="button" className="btn-sm btn_text btn-darkblue-line">
-                        검색
-                      </button>
-                    </div>
+        <span className="txt-guide">산업안전보건법 시행규칙 제26조 및 별표5</span>
+        <div className="pop_cont">
+          <div className="editbox">
+            <div className="form-table">
+              <div className="form-cell wid50">
+                <div className="group-box-wrap wid100">
+                  <div className="radio-wrap">
+                    <label className="type01">
+                      <input type="checkbox" />
+                      <span className="type01">
+                        아세틸렌 용접장치 또는 가스집합 용접장치를 사용하는 금속의 용접·용단 또는 가열작업(발생기·도관
+                        등에 의하여 구성되는 용접장치만 해당한다)
+                      </span>
+                      <ul className="ck-guide">
+                        <li>용접 흄, 분진 및 유해광선 등의 유해성에 관한 사항</li>
+                        <li>
+                          가스용접기, 압력조정기, 호스 및 취관두(불꽃이 나오는 용접기의 앞부분) 등의 기기점검에 관한
+                          사항
+                        </li>
+                        <li>작업방법·순서 및 응급처치에 관한 사항</li>
+                        <li>안전기 및 보호구 취급에 관한 사항</li>
+                        <li>화재예방 및 초기대응에 관한사항</li>
+                        <li>그 밖에 안전·보건관리에 필요한 사항</li>
+                      </ul>
+                    </label>
                   </div>
+                  {/*<span className="errorText">error</span>*/}
                 </div>
               </div>
-              {/* //검색영역 */}
             </div>
+            <hr className="line"></hr>
+            <div className="form-table">
+              <div className="form-cell wid50">
+                <div className="form-group wid100">ddd</div>
+              </div>
+            </div>
+            <hr className="line"></hr>
           </div>
         </div>
 

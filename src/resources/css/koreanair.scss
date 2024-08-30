@@ -536,3 +536,8 @@
 }
 .radio-btn {padding: 0.4rem 1.0rem; background-color: var(--color-lightblue-100); color: var(--color-neutral-10); border-radius: 0.4rem; vertical-align: top; margin: 0.3rem 2.0rem 0 1.0rem; font-size: 1.2rem;}
 .agree {border: 0.1rem solid var(--color-neutral-40); border-radius: 0.8rem; background-color: var(--color-neutral-20); padding: 2.0rem; line-height: 180%; font-size: 1.4rem;}
+
+.txt-guide {display: inline-block; width: 100%; font-size: 1.2rem;}
+.ck-guide { background-color: var(--color-neutral-20); border-radius: 0.8rem; padding: 1.0rem 1.5rem; margin-top: 1.0rem;}
+.ck-guide li {font-size: 1.2rem; color: var(--color-neutral-70); padding-left: 1.0rem;}
+.ck-guide li::marker {content: "-"; color: var(--color-neutral-130); font-size: 1rem;}
