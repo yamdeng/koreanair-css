@@ -48,6 +48,7 @@ import SMSdataList from '@/components/publish/aviation/SMSdataList';
 import SMSdataDetail from '@/components/publish/aviation/SMSdataDetail';
 import AdminSafetyNoticeList from '@/components/publish/aviation/AdminSafetyNoticeList';
 import AdminSafetyNoticeEdit from '@/components/publish/aviation/AdminSafetyNoticeEdit';
+import AdminSafetyNoticeDetail from '@/components/publish/aviation/AdminSafetyNoticeDetail';
 
 import { fa } from '@faker-js/faker';
 
@@ -402,7 +403,14 @@ AviationPageInfo.list = [
     Component: AdminSafetyNoticeEdit,
     path: 'AdminSafetyNoticeEdit',
     description: '',
-    success: false,
+    success: true,
+  },
+  {
+    title: '[07.관리자] 게시판관리 > Safety게시판 상세',
+    Component: AdminSafetyNoticeDetail,
+    path: 'AdminSafetyNoticeDetail',
+    description: '',
+    success: true,
   },
 ];
 
