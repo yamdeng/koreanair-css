@@ -40,6 +40,10 @@ import PChapterDeleteModal from '@/components/publish/modal/PChapterDeleteModal'
 import PChecklistSaveModal from '@/components/publish/modal/PChecklistSaveModal';
 import PChecklistDeleteModal from '@/components/publish/modal/PChecklistDeleteModal';
 import PSMSReportModal from '@/components/publish/modal/PSMSReportModal';
+import MU5P1Modal from '@/components/publish/modal/MU5P1Modal';
+import MU5P2Modal from '@/components/publish/modal/MU5P2Modal';
+import MU5P3Modal from '@/components/publish/modal/MU5P3Modal';
+import MU5P4Modal from '@/components/publish/modal/MU5P4Modal';
 
 const ModalPageInfo: any = {};
 
@@ -337,6 +341,34 @@ ModalPageInfo.list = [
     path: 'MU4P1Modal',
     description: '',
     success: true,
+  },
+  {
+    title: '산업안전 > 위험성평가 > 평가시기안내 팝업창',
+    Component: MU5P1Modal,
+    path: 'MU5P1Modal',
+    description: '',
+    success: false,
+  },
+  {
+    title: '산업안전 > 위험성평가 > 가능성안내 팝업창',
+    Component: MU5P2Modal,
+    path: 'MU5P2Modal',
+    description: '',
+    success: false,
+  },
+  {
+    title: '산업안전 > 위험성평가 > 중대성안내 팝업창',
+    Component: MU5P3Modal,
+    path: 'MU5P3Modal',
+    description: '',
+    success: false,
+  },
+  {
+    title: '산업안전 > 위험성평가 > 위험도안내 팝업창',
+    Component: MU5P4Modal,
+    path: 'MU5P4Modal',
+    description: '',
+    success: false,
   },
 ];
 

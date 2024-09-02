@@ -600,11 +600,17 @@
 .check-table tr {border-bottom: 0.1rem solid var(--color-neutral-40);}
 
 .tg-tit {position: relative; font-size: 1.8rem; font-weight: 700; color: var(--color-darkblue-100);}
-.tooltip{position:relative;display:block;float:inline-end;background: url(../images/tooltip.svg) left center no-repeat; background-size: 2.4rem;font-size:0;width: 2.4rem;height: 2.4rem;cursor:pointer}
-.tooltip .tooltiptext{visibility:hidden;position:absolute;z-index:1;width:50.0rem;font-size:1.2rem;background-color: var(--color-neutral-80);color: var(--color-neutral-10);text-align:left;border-radius:0.8rem;padding:1.5rem 2.0rem}
+
+.tooltip.tabbox {margin: 0.4rem 1.0rem 1.5rem; padding: 2.2rem 0;}
+.tooltip{position:relative;display:block;float:inline-start;background: url(../images/tooltip.svg) left center no-repeat; background-size: 3.0rem;font-size:0;width: 3.0rem;height: 3.0rem;cursor:pointer}
+.tooltip .tooltiptext h3 {font-size: 1.3rem; color: var(--color-neutral-10); font-weight: 700;}
+.tooltip .tooltiptext{visibility:hidden;position:absolute;z-index:1;width:30.0rem;font-size:1.2rem;background-color: var(--color-neutral-80);color: var(--color-neutral-10);text-align:left;border-radius:0.8rem;padding:1.5rem 2.0rem}
 .tooltip .tooltiptext li::marker{content:'-';color: var(--color-neutral-10);font-size:1rem}
 .tooltip .tooltiptext ul li{font-size: 1.2rem; color: var(--color-neutral-10);  display: list-item; padding-left: 0.6rem;}
 .tooltip:hover .tooltiptext{visibility:visible}
 .tooltip .tooltiptext::after{content:'';position:absolute;border-style:solid;border-width:0.5rem}
 .tooltip .tooltip-right{top:-0.6rem;left:155%}
-.tooltip .tooltip-right::after{top:1.6rem;right:100%;margin-top:-0.5rem;border-color: transparent var(--color-neutral-80) transparent transparent}
+.tooltip .tooltip-right::after{top:2.6rem;right:100%;margin-top:-0.5rem;border-color: transparent var(--color-neutral-80) transparent transparent}
+
+.tooltip .tooltip-bottom {width: 12.0rem; top: 150%; left: 50%; margin-left: -6.0rem}
+.tooltip .tooltip-bottom::after {bottom: 100%; left: 50%; margin-left: -0.5rem; border-color: transparent transparent var(--color-neutral-80) transparent;}

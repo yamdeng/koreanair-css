@@ -90,6 +90,24 @@ function POccupationMu5P2edit() {
       <div className="conts-title">
         <h2>작업환경측정</h2>
       </div>
+      {/*탭 */}
+      <div className="menu-tab-nav">
+        <div className="menu-tab">
+          <a href="javascript:void(0);" className="active" data-label="사전준비">
+            사전준비
+          </a>
+          <a href="javascript:void(0);" data-label="유해 위험요인 파악">
+            유해 위험요인 파악
+          </a>
+          <a href="javascript:void(0);" data-label="위험성 결정">
+            위험성 결정
+          </a>
+          <a href="javascript:void(0);" data-label="첨부문서">
+            첨부문서
+          </a>
+        </div>
+      </div>
+      {/*//탭 */}
       {/* 입력영역 */}
       <div className="editbox">
         <div className="form-table line">

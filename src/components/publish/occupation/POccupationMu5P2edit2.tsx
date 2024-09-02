@@ -70,6 +70,15 @@ function POccupationMu5P2edit2() {
   const [inputValue, setInputValue] = useState('');
   const rowData = getAllData();
   const columns = testColumnInfos;
+  const customButtons = [
+    {
+      title: '추가',
+      onClick: () => {
+        alert('추가');
+      },
+    },
+  ];
+
   return (
     <>
       {/*경로 */}
@@ -82,143 +91,165 @@ function POccupationMu5P2edit2() {
             <a href="javascript:void(0);">안전관리</a>
           </li>
           <li className="breadcrumb-item">
-            <a href="javascript:void(0);">위험기계기구</a>
+            <a href="javascript:void(0);">위험성평가 등록</a>
           </li>
         </ol>
       </div>
       {/*경로 */}
       <div className="conts-title">
-        <h2>작업환경측정</h2>
+        <h2>위험성평가 등록</h2>
+        <div className="tooltip ">
+          <span className="tooltiptext tooltip-right">
+            <h3>작성요령 예시</h3>
+            <ul>
+              <li>공정명(크리닝)</li>
+              <li>세부 작업명(분부세척, part 침전, 건조)</li>
+              <li>위험분류(드롭다운 선택)</li>
+              <li>위험발생 상황(어떤 위험요인에 의해 어떤 재해발생이 우려됨)</li>
+              <li>현재의 안전보건조치(공학적, 관리적, 개인적 대책)</li>
+              <li>위험성 결정(사고발생 가능성 및 예상 피해정도)</li>
+            </ul>
+          </span>
+        </div>
       </div>
+      {/*탭 */}
+      <div className="menu-tab-nav">
+        <div className="menu-tab">
+          <a href="javascript:void(0);" data-label="사전준비">
+            사전준비
+          </a>
+          <a href="javascript:void(0);" data-label="유해 위험요인 파악">
+            유해 위험요인 파악
+          </a>
+          <a href="javascript:void(0);" className="active" data-label="위험성 결정">
+            위험성 결정
+          </a>
+          <a href="javascript:void(0);" data-label="첨부문서">
+            첨부문서
+          </a>
+        </div>
+      </div>
+      {/*//탭 */}
       {/* 입력영역 */}
-      <div className="editbox">
-        <div className="form-table line">
-          <div className="form-cell wid50">
-            <div className="form-group wid100">
-              <AppTextInput label="작성일자" required disabled />
-            </div>
-          </div>
-          <div className="form-cell wid50">
-            <div className="form-group wid100">
-              <AppTextInput label="작성자" required disabled />
-            </div>
-          </div>
-          <div className="form-cell wid50">
-            <div className="form-group wid100">
-              <AppSelect label={'측정년도'} required />
-            </div>
-          </div>
-        </div>
-        <hr className="line dp-n"></hr>
-        <div className="form-table line">
-          <div className="form-cell wid50">
-            <div className="form-group wid100">
-              <AppSelect label={'반기'} required />
-            </div>
-          </div>
-          <div className="form-cell wid50">
-            <div className="form-group wid100">
-              <AppSelect label="구분" required />
-            </div>
-          </div>
-          <div className="form-cell wid50">
-            <div className="form-group wid100">
-              <AppSelect label="권역" required />
-            </div>
-          </div>
-        </div>
-        <hr className="line dp-n"></hr>
-        <div className="form-table line">
-          <div className="form-cell wid50">
-            <div className="form-group form-glow">
-              <div className="df">
-                <div className="date1">
-                  <AppDatePicker label="측정기간" required />
-                </div>
-                <span className="unt">~</span>
-                <div className="date2">
-                  <AppDatePicker label="측정기간" required />
+      <div className="info-wrap toggle">
+        <dl className="tg-item active">
+          {/* toggle 선택되면  열어지면 active붙임*/}
+          <dt>
+            <button type="button" className="btn-tg">
+              유해, 위험 요인 파악
+              <span className="active"></span>
+            </button>
+          </dt>
+          <dd className="tg-conts">
+            <div className="edit-area">
+              <div className="detail-form">
+                <div className="detail-list">
+                  <div className="form-table">
+                    <div className="form-cell wid50">
+                      <div className="form-group wid100">
+                        <AppSelect label="공정명" />
+                      </div>
+                    </div>
+                    <div className="form-cell wid50">
+                      <div className="form-group wid100">
+                        <AppTextInput label="세부 작업명" />
+                      </div>
+                    </div>
+                    <div className="form-cell wid50">
+                      <div className="form-group wid100">
+                        <AppSelect label="위험분류" />
+                      </div>
+                    </div>
+                    <div className="form-cell wid50">
+                      <div className="form-group wid100">
+                        <AppSelect label="위험요인" disabled />
+                      </div>
+                    </div>
+                  </div>
+                  <div className="form-table">
+                    <div className="form-cell wid50">
+                      <div className="form-group wid100">
+                        <textarea
+                          id="testArea1"
+                          className="form-tag custom_textarea"
+                          style={{ width: '100%' }}
+                          name="testArea1"
+                          value={inputValue}
+                          onChange={(event) => {
+                            setInputValue(event.target.value);
+                          }}
+                        />
+                        <label className="f-label" htmlFor="testArea1">
+                          위험발생 상황 및 결과
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="form-table">
+                    <div className="form-cell wid50">
+                      <div className="form-group wid100">
+                        <textarea
+                          id="testArea1"
+                          className="form-tag custom_textarea"
+                          style={{ width: '100%' }}
+                          name="testArea1"
+                          value={inputValue}
+                          onChange={(event) => {
+                            setInputValue(event.target.value);
+                          }}
+                        />
+                        <label className="f-label" htmlFor="testArea1">
+                          현재의 안전보건 조치
+                        </label>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div className="form-cell wid50">
-            <div className="form-group wid100">
-              <AppTextInput label="측정기관" required />
-            </div>
-          </div>
-        </div>
-        <hr className="line dp-n"></hr>
-        <div className="form-table">
-          <div className="form-cell wid50">
-            <div className="form-group wid100">
-              <textarea
-                id="testArea1"
-                className="form-tag custom_textarea"
-                style={{ width: '100%' }}
-                name="testArea1"
-                value={inputValue}
-                onChange={(event) => {
-                  setInputValue(event.target.value);
-                }}
-              />
-              <label className="f-label" htmlFor="testArea1">
-                측정결과 <span className="required">*</span>
-              </label>
-            </div>
-          </div>
-        </div>
-        <hr className="line"></hr>
-        <div className="form-table">
-          <div className="form-cell wid50">
-            <div className="form-group wid100">
-              <textarea
-                id="testArea1"
-                className="form-tag custom_textarea"
-                style={{ width: '100%' }}
-                name="testArea1"
-                value={inputValue}
-                onChange={(event) => {
-                  setInputValue(event.target.value);
-                }}
-              />
-              <label className="f-label" htmlFor="testArea1">
-                의견
-              </label>
-            </div>
-          </div>
-        </div>
-        <hr className="line"></hr>
-        {/* 파일첨부영역 : button */}
-        <div className="form-table">
-          <div className="form-cell wid50">
-            <div className="form-group wid100">
-              <Upload {...props}>
-                <div className="btn-area">
-                  <button type="button" name="button" className="btn-big btn_text btn-darkblue-line">
-                    결과보고서 업로드
-                  </button>
+          </dd>
+          <dt>
+            <button type="button" className="btn-tg">
+              위험성 결정
+              <span className="active"></span>
+            </button>
+          </dt>
+          <dd className="tg-conts">
+            <div className="edit-area">
+              <div className="detail-form">
+                <div className="detail-list">
+                  <div className="form-table">
+                    <div className="form-cell wid50">
+                      <div className="form-group wid100">
+                        <AppTextInput inputType="text" placeholder="" label="가능성" toolTipMessage="가능성안내" />
+                      </div>
+                    </div>
+                    <div className="form-cell wid50">
+                      <div className="form-group wid100">
+                        <AppSelect label="중대성" />
+                      </div>
+                    </div>
+                    <div className="form-cell wid50">
+                      <div className="form-group wid100">
+                        <AppSelect label="위험도" disabled />
+                      </div>
+                    </div>
+                    <div className="form-cell wid50">
+                      <div className="form-group wid100">
+                        <AppSelect label="위험성 결정" />
+                      </div>
+                    </div>
+                    <div className="form-cell wid50">
+                      <div className="form-group wid100">
+                        <AppSelect label="감소대책 수립" />
+                      </div>
+                    </div>
+                  </div>
                 </div>
-              </Upload>
+              </div>
             </div>
-          </div>
-        </div>
-        <hr className="line"></hr>
-        {/* 파일첨부영역 : button */}
-        <div className="form-table">
-          <div className="form-cell wid50">
-            <div className="form-group wid100">
-              <Upload {...props}>
-                <div className="btn-area">
-                  <button type="button" name="button" className="btn-big btn_text btn-darkblue-line">
-                    화학물질 사용량조사 업로드
-                  </button>
-                </div>
-              </Upload>
-            </div>
-          </div>
-        </div>
-        <hr className="line"></hr>
+          </dd>
+        </dl>
       </div>
       {/*//입력영역*/}
 
@@ -227,11 +258,13 @@ function POccupationMu5P2edit2() {
         <button type="button" name="button" className="btn_text text_color_neutral-10 btn_confirm">
           저장
         </button>
-        <button type="button" name="button" className="btn_text btn-del">
-          취소
-        </button>
       </div>
       {/*//하단버튼영역*/}
+      {/*그리드영역 */}
+      <div>
+        <AppTable rowData={rowData} columns={columns} customButtons={customButtons} />
+      </div>
+      {/*//그리드영역 */}
     </>
   );
 }
