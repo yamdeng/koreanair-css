@@ -142,11 +142,8 @@ function PRiskEdit() {
                     <div className="form-cell wid50">
                       <div className="group-box-wrap wid50">
                         <span className="txt">참고문서번호</span>
-                        <div className="radio-wrap">
-                          <label>
-                            <input type="radio" checked />
-                            <span>YES</span>
-                          </label>
+                        <div className="round-wrap error">
+                          <span className="icon_report"></span>{' '}
                         </div>
                       </div>
                     </div>
@@ -178,7 +175,11 @@ function PRiskEdit() {
                   <div className="form-table">
                     <div className="form-cell wid50">
                       <div className="form-group wid100">
-                        <AppSelect label={'event'} />
+                        <div className="ant-input-group-wrapper">
+                          <span className="ant-input-group-addon">HL</span>
+                          {/*등록기호 */}
+                          <AppTextInput label="등록기호" />
+                        </div>
                       </div>
                     </div>
                     <div className="form-cell wid50">
