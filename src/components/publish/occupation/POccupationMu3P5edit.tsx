@@ -82,22 +82,17 @@ function POccupationMu3P5edit() {
             <a href="javascript:void(0);">안전관리</a>
           </li>
           <li className="breadcrumb-item">
-            <a href="javascript:void(0);">외주작업허가</a>
+            <a href="javascript:void(0);">협력업체</a>
           </li>
         </ol>
       </div>
       {/*경로 */}
       <div className="conts-title">
-        <h2>외주작업허가</h2>
+        <h2>협력업체등록</h2>
       </div>
       {/* 입력영역 */}
       <div className="editbox">
         <div className="form-table line">
-          <div className="form-cell wid50">
-            <div className="form-group wid100">
-              <AppTextInput label="작성일자" required disabled />
-            </div>
-          </div>
           <div className="form-cell wid50">
             <div className="form-group wid100">
               <AppTextInput label="작성자" required disabled />
@@ -105,120 +100,154 @@ function POccupationMu3P5edit() {
           </div>
           <div className="form-cell wid50">
             <div className="form-group wid100">
-              <AppSelect label={'측정년도'} required />
+              <AppTextInput label="작성일자" required disabled />
+            </div>
+          </div>
+          <div className="form-cell wid50">
+            <div className="form-group wid100">
+              <AppTextInput label="업체명" required />
+            </div>
+          </div>
+          <div className="form-cell wid50">
+            <div className="form-group wid100">
+              <AppTextInput label="사업자번호" required />
+            </div>
+          </div>
+          <div className="form-cell wid50">
+            <div className="form-group wid100">
+              <AppTextInput label="대표자" />
+            </div>
+          </div>
+          <div className="form-cell wid50">
+            <div className="form-group wid100">
+              <AppSelect label="업태" />
+            </div>
+          </div>
+          <div className="form-cell wid50">
+            <div className="form-group wid100">
+              <AppSelect label="업종" />
             </div>
           </div>
         </div>
         <hr className="line dp-n"></hr>
         <div className="form-table line">
           <div className="form-cell wid50">
-            <div className="form-group wid100">
-              <AppSelect label={'반기'} required />
-            </div>
-          </div>
-          <div className="form-cell wid50">
-            <div className="form-group wid100">
-              <AppSelect label="구분" required />
-            </div>
-          </div>
-          <div className="form-cell wid50">
-            <div className="form-group wid100">
-              <AppSelect label="권역" required />
-            </div>
-          </div>
-        </div>
-        <hr className="line dp-n"></hr>
-        <div className="form-table line">
-          <div className="form-cell wid50">
-            <div className="form-group form-glow">
-              <div className="df">
-                <div className="date1">
-                  <AppDatePicker label="측정기간" required />
-                </div>
-                <span className="unt">~</span>
-                <div className="date2">
-                  <AppDatePicker label="측정기간" required />
+            <div className="ck-edit-box pd-t0">
+              <div className="ck-list">
+                <span className="stit-btn">
+                  <h3>사업장</h3>
+                  <button>추가</button>
+                </span>
+                그리드영역
+              </div>
+              <div className="ck-edit">
+                <div className="boxForm">
+                  <h3 className="table-tit mt-10">사업장 상세정보</h3>
+                  <div className="form-table">
+                    <div className="form-cell wid100">
+                      <div className="form-group wid100">
+                        <AppTextInput label="사업장 분류" required />
+                      </div>
+                    </div>
+                  </div>
+                  <div className="form-table">
+                    <div className="form-cell wid50">
+                      <div className="form-group wid100">
+                        <AppSelect label="사용부문" required />
+                      </div>
+                    </div>
+                    <div className="form-cell wid50">
+                      <div className="form-group wid100">
+                        <AppAutoComplete label="관리부서" required />
+                      </div>
+                    </div>
+                  </div>
+                  <div className="form-table">
+                    <div className="form-cell wid100">
+                      <div className="form-group wid100">
+                        <AppAutoComplete label="관리자1" required />
+                      </div>
+                    </div>
+                    <div className="form-cell wid100">
+                      <div className="form-group wid100">
+                        <AppTextInput label="연락처1" />
+                      </div>
+                    </div>
+                  </div>
+                  <div className="form-table">
+                    <div className="form-cell wid100">
+                      <div className="form-group wid100">
+                        <AppTextInput label="이메일1" />
+                      </div>
+                    </div>
+                    <div className="form-cell wid100">
+                      <div className="form-group wid100">
+                        <AppTextInput label="담당업무1" />
+                      </div>
+                    </div>
+                  </div>
+                  <div className="form-table">
+                    <div className="form-cell wid100">
+                      <div className="form-group wid100">
+                        <AppAutoComplete label="관리자2" />
+                      </div>
+                    </div>
+                    <div className="form-cell wid100">
+                      <div className="form-group wid100">
+                        <AppTextInput label="연락처2" />
+                      </div>
+                    </div>
+                  </div>
+                  <div className="form-table">
+                    <div className="form-cell wid100">
+                      <div className="form-group wid100">
+                        <AppTextInput label="이메일2" />
+                      </div>
+                    </div>
+                    <div className="form-cell wid100">
+                      <div className="form-group wid100">
+                        <AppTextInput label="담당업무2" />
+                      </div>
+                    </div>
+                  </div>
+                  <div className="form-table">
+                    <div className="form-cell wid100">
+                      <div className="form-group wid100">
+                        <AppTextInput label="안전관리" required />
+                      </div>
+                    </div>
+                  </div>
+                  <div className="form-table">
+                    <div className="form-cell wid100">
+                      <div className="form-group wid100">
+                        <AppTextInput label="보건관리" required />
+                      </div>
+                    </div>
+                  </div>
+                  <div className="form-table">
+                    <div className="form-cell wid100">
+                      <div className="form-group wid100">
+                        <AppTextInput label="주요업무" required />
+                      </div>
+                    </div>
+                  </div>
+                  <div className="form-table">
+                    <div className="form-cell wid100">
+                      <div className="form-group wid100">
+                        <span className="stit-btn">
+                          <h3>2차 협력업체</h3>
+                          <button>추가</button>
+                        </span>
+                        그리드영역
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-          <div className="form-cell wid50">
-            <div className="form-group wid100">
-              <AppTextInput label="측정기관" required />
-            </div>
-          </div>
         </div>
         <hr className="line dp-n"></hr>
-        <div className="form-table">
-          <div className="form-cell wid50">
-            <div className="form-group wid100">
-              <textarea
-                id="testArea1"
-                className="form-tag custom_textarea"
-                style={{ width: '100%' }}
-                name="testArea1"
-                value={inputValue}
-                onChange={(event) => {
-                  setInputValue(event.target.value);
-                }}
-              />
-              <label className="f-label" htmlFor="testArea1">
-                측정결과 <span className="required">*</span>
-              </label>
-            </div>
-          </div>
-        </div>
-        <hr className="line"></hr>
-        <div className="form-table">
-          <div className="form-cell wid50">
-            <div className="form-group wid100">
-              <textarea
-                id="testArea1"
-                className="form-tag custom_textarea"
-                style={{ width: '100%' }}
-                name="testArea1"
-                value={inputValue}
-                onChange={(event) => {
-                  setInputValue(event.target.value);
-                }}
-              />
-              <label className="f-label" htmlFor="testArea1">
-                의견
-              </label>
-            </div>
-          </div>
-        </div>
-        <hr className="line"></hr>
-        {/* 파일첨부영역 : button */}
-        <div className="form-table">
-          <div className="form-cell wid50">
-            <div className="form-group wid100">
-              <Upload {...props}>
-                <div className="btn-area">
-                  <button type="button" name="button" className="btn-big btn_text btn-darkblue-line">
-                    결과보고서 업로드
-                  </button>
-                </div>
-              </Upload>
-            </div>
-          </div>
-        </div>
-        <hr className="line"></hr>
-        {/* 파일첨부영역 : button */}
-        <div className="form-table">
-          <div className="form-cell wid50">
-            <div className="form-group wid100">
-              <Upload {...props}>
-                <div className="btn-area">
-                  <button type="button" name="button" className="btn-big btn_text btn-darkblue-line">
-                    화학물질 사용량조사 업로드
-                  </button>
-                </div>
-              </Upload>
-            </div>
-          </div>
-        </div>
-        <hr className="line"></hr>
       </div>
       {/*//입력영역*/}
 

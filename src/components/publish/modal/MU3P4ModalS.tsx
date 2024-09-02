@@ -208,10 +208,7 @@ function UserEditModal(props) {
             <div className="form-table">
               <div className="form-cell wid50">
                 <div className="form-group wid100">
-                  <button type="button" className="accordion-btn-tit">
-                    체크 리스트
-                    <span className="active"></span>
-                  </button>
+                  <h3 className="table-tit">체크 리스트</h3>
                   <div className="checklistbox">
                     <table className="check-list">
                       <tbody>
@@ -246,7 +243,7 @@ function UserEditModal(props) {
                           </td>
                         </tr>
                         <tr>
-                          <td>소화기 비치</td>
+                          <td>작업장 주변 인화성,가연성 물질 제거 여부</td>
                           <td>
                             <div className="chk-wrap center">
                               <label className="text-no">
@@ -257,11 +254,30 @@ function UserEditModal(props) {
                           </td>
                         </tr>
                         <tr>
-                          <th>화재위험작업</th>
+                          <td>화재 감시자 배치자 성명</td>
+                          <td>
+                            <div className="form-group wid100">
+                              <AppTextInput label="" />
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>공정위험, 피난방법 및 안전교육 실시</td>
+                          <td>
+                            <div className="chk-wrap center">
+                              <label className="text-no">
+                                <input type="checkbox" />
+                                <span className="text-no"></span>
+                              </label>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th>가스 용접·용단 작업</th>
                           <th>작성</th>
                         </tr>
                         <tr>
-                          <td>소화기 비치</td>
+                          <td>특별교육 이수 여부 확인</td>
                           <td>
                             <div className="chk-wrap center">
                               <label className="text-no">

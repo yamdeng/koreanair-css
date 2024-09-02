@@ -445,6 +445,7 @@
       font-weight: normal;
       padding: 1.0rem 0 0;
     }
+    .pd-t0 {padding-top: 0 !important;}
     .ck-edit-box {
       width: 100%; 
       padding: 1.0rem 0 0;
@@ -575,8 +576,14 @@
 
 .checklistbox {display: block; height: 19rem; overflow-y: auto;}
 .check-list {width: 100%; border-top: 0.1rem solid var(--color-darkblue-100); }
-.check-list th, .check-list td {padding: 1.0rem; font-size: 1.4rem; text-align: center;}
+.check-list th, .check-list td {padding: 1.0rem; font-size: 1.4rem; text-align: center; line-height: 3.8rem;}
+.check-list th:nth-child(1), .check-list td:nth-child(1){width: 80%;}
+.check-list th:nth-child(2), .check-list td:nth-child(2){width: 20%;}
 .check-list th {background-color: var(--color-neutral-20);}
 .check-list tr {border-bottom: 0.1rem solid var(--color-neutral-40);}
 .check-list td:first-child {text-align: left;}
 .check-list tr:hover {background-color: var(--color-lightblue-10);}
+
+.stit-btn {display: block; position: relative; width: 100%; overflow: hidden; height: 3.0rem; line-height: 3.0rem; margin-bottom: 1.0rem;}
+.stit-btn h3 {display: inline-block; font-size: 1.8rem; font-weight: 500; color: var(--color-darkblue-100);}
+.stit-btn button {position: absolute; right: 0; background-color: var(--color-darkblue-100); padding: 0.5rem 1.5rem; border-radius: 3.0rem; color: var(--color-neutral-10);}

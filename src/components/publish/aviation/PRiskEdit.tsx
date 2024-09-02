@@ -174,9 +174,9 @@ function PRiskEdit() {
                   </div>
                   <div className="form-table">
                     <div className="form-cell wid50">
-                      <div className="form-group wid100">
-                        <div className="ant-input-group-wrapper">
-                          <span className="ant-input-group-addon">HL</span>
+                      <div className="form-group va-t wid100">
+                        <span className="ant-input-group-addon1">HL</span>
+                        <div className="ant-input-group-addon1-input">
                           {/*등록기호 */}
                           <AppTextInput label="등록기호" />
                         </div>

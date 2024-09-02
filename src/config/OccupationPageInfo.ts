@@ -479,7 +479,7 @@ OccupationPageInfo.list = [
     Component: POccupationMu3P5edit,
     path: 'POccupationMu3P5edit',
     description: '',
-    success: false,
+    success: true,
   },
   {
     title: '안전관리 > 적격수급업체평가-평가-리스트',
