@@ -164,19 +164,28 @@ function PRiskEdit() {
               <div className="detail-form">
                 <div className="detail-list">
                   <div className="form-table">
-                    <div className="form-cell">
+                    <div className="form-cell wid50">
                       <div className="form-group">
                         <div className="date2">
                           <AppDatePicker label="출발일자(UTC)" />
                         </div>
                       </div>
                     </div>
+                    <div className="form-cell wid50">
+                      <div className="form-group va-t ant-input wid100">
+                        <span className="ant-input-group-addon1">KE</span>
+                        <div className="ant-input-group-addon1-input wid50">
+                          {/*비행편명 */}
+                          <AppTextInput label="비행편명" />
+                        </div>
+                      </div>
+                    </div>
                   </div>
                   <div className="form-table">
                     <div className="form-cell wid50">
-                      <div className="form-group va-t wid100">
+                      <div className="form-group va-t ant-input wid100">
                         <span className="ant-input-group-addon1">HL</span>
-                        <div className="ant-input-group-addon1-input">
+                        <div className="ant-input-group-addon1-input wid50">
                           {/*등록기호 */}
                           <AppTextInput label="등록기호" />
                         </div>

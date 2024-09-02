@@ -112,6 +112,9 @@
   .detail-form .detail-list .form-table {display: flex; align-items: flex-end; justify-content: flex-start; flex-wrap: wrap; width: 100%;}
   .detail-form .detail-list .form-table .form-cell {width: 33.3%;}
 
+  .ant-input-group-addon1{position: absolute;left: 0; width: 5.0rem; top:-2.0rem; line-height: 3.8rem; padding-left: 1.0rem; border: 0.1rem solid var(--color-neutral-40);border-radius:0.6rem}
+  .ant-input-group-addon1-input {position: absolute; left: 4.5rem; top:-2.0rem}
+
    /*위험레벨조회 팝업*/
   .RiskLevel-box{display:block}
   .RiskLevel-box .RiskLevel-list{position:relative;width:100%}
@@ -237,7 +240,9 @@
 
   .Status-area .Status-chart{display:block;height: auto !important}
   .Status-area .Status-chart .Status-col{width:100%}
-
+  .ant-input-group-addon1{position: absolute;left: 0; width: 5.0rem; top:-0.5rem; line-height: 3.8rem; padding-left: 1.0rem; border: 0.1rem solid var(--color-neutral-40);border-radius:0.6rem}
+  .ant-input-group-addon1-input {position: absolute; left: 4.5rem; top:-0.5rem}
+  .detail-form .detail-list .form-table .form-cell .form-group.ant-input{padding: 1.5rem 0.5rem;}
 
 
    /*위험레벨조회 팝업*/
