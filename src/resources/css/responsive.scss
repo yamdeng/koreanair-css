@@ -18,7 +18,8 @@
   .boxForm .form-table .wid-300 {max-width: 100%;}
   .detail-form .form-table .wid-300 {width: 100%;}
   .editbox .form-table .wid-300{width: 100%;}
-
+  .detail-form .form-table .form-cell{width: 100%;}
+  .radio-wrap{width: 100%;}
   .btn-area {width: 100%;}
   .checklist-contents{display:flex;justify-content:flex-start;flex-wrap:wrap;width:100%}
   .checklist-contents .checklist-row.list{display:flex;justify-content:flex-start;flex-wrap:wrap;width:50%;padding-right:0;margin:0}
@@ -76,6 +77,7 @@
   .editbox .form-table .wid-300{width: 100%;}
   .detail-form .detail-list .form-table .form-cell .form-group{width: 100%;}
   .detail-form .detail-list .form-table .form-cell .group-box-wrap{width: 100%;}
+
 
   .editbox .form-table {display: flex; align-items: flex-end; justify-content: flex-start; flex-wrap: wrap; width: 100%;}
   .editbox .form-table .form-cell {display: flex; align-items: flex-end; justify-content: flex-start; flex-wrap: wrap; width: 33.3%; padding:1.5rem 1.0rem 1.5rem 0}
@@ -157,6 +159,7 @@
   .user-wrap .user-box .user-box-top{display:flex;align-items:flex-end;justify-content: flex-start;flex-wrap: wrap;width:100%}
   .user-wrap .user-box .user-box-top:nth-child(2){margin:1rem 0 0.8rem}
 
+  .detail-form .detail-list .form-table .form-cell .btn-area.inbtn{display:block;width:100%}
 }
 
 
@@ -186,6 +189,10 @@
   .detail-form .form-table .wid-300 {width: 100%;}
   .detail-form .detail-list .form-table .form-cell .form-group{width:100%}
   .detail-form .detail-list .form-table .form-cell .group-box-wrap{width: 100%;}
+  .detail-form .detail-list .form-table .form-cell .btn-area.inbtn{display:block;width:100%}
+  .detail-form .detail-list .form-table .form-cell .btn-area.inbtn > .btn-x-sm{padding:0.6rem 2.8rem;}
+
+
   .SelectedList{width:100%}
   .SelectedList > ul li{margin-bottom:1rem}
   .SelectedList > ul li:last-child{margin-bottom:0}
@@ -194,6 +201,7 @@
   .btn-area {display:block;width:100%}
   .btn-area .btn-sm{width:100%}
   .btn-area > button + button{width:50%;margin-left:0;margin-top:1rem}
+  .btn-area.inbtn > button + button{width:50%;margin-left:0;margin-top:0rem}
   .btn-area > button{margin:0}
 
   .contents-btns {display: block; width: 100%;}
