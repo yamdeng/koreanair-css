@@ -199,16 +199,16 @@ function POccupationMu1P3list() {
                   </thead>
                   <tbody>
                     <tr>
-                      <td>번호</td>
-                      <td>번호</td>
-                      <td>번호</td>
-                      <td>번호</td>
-                      <td>번호</td>
-                      <td>번호</td>
-                      <td>번호</td>
-                      <td>번호</td>
-                      <td>번호</td>
-                      <td>번호</td>
+                      <td>100</td>
+                      <td>안전보건관리 책임자</td>
+                      <td>안전보건관리 책임자</td>
+                      <td>안전보건관리 책임자</td>
+                      <td>안전보건관리 책임자</td>
+                      <td>안전보건관리 책임자</td>
+                      <td>안전보건관리 책임자</td>
+                      <td>12345678</td>
+                      <td>홍길동</td>
+                      <td>2024-12-31</td>
                     </tr>
                     <tr>
                       <td>번호</td>

@@ -501,7 +501,7 @@
 .left-box .tree-box .tree {min-width: 25.0rem; max-height: 58rem; overflow-y: scroll;}
 .left-box .tree-box .tree-list {display: flex;}
 .left-box .tree-box .tree-list .list {display: none;}
-.left-box .tree-box .tree-list .list.active {display: block; height: 100%; width: 100%; vertical-align: top; min-width: 30.0rem; margin-left: 2.0rem;
+.left-box .tree-box .tree-list .list.active {display: block; height: 100%; width: 100%; vertical-align: top; min-width: 26.0rem; margin-left: 2.0rem;
   .list-table {width: 100%;}
   .list-table thead tr, .list-table tbody tr, .list-table tfoot tr {display: table; width: 100%;}
   .list-table th, .list-table td {padding: 1.0rem 0;border-bottom: 0.1rem solid var(--color-neutral-40); text-align:center;}
@@ -522,18 +522,18 @@
   .list-table {width: 100%;}
   .list-table thead tr, .list-table tbody tr {display: table; width: 100%;}
   .list-table th, .list-table td {padding: 1.0rem 0;border-bottom: 0.1rem solid var(--color-neutral-40); text-align:center;}
-  .list-table th:nth-child(1), .list-table td:nth-child(1){width: 6%;}
-  .list-table th:nth-child(2), .list-table td:nth-child(2){width: 10%;}
-  .list-table th:nth-child(3), .list-table td:nth-child(3){width: 10%;}
-  .list-table th:nth-child(4), .list-table td:nth-child(4){width: 10%;}
-  .list-table th:nth-child(5), .list-table td:nth-child(5){width: 10%;}
-  .list-table th:nth-child(6), .list-table td:nth-child(6){width: 10%;}
-  .list-table th:nth-child(7), .list-table td:nth-child(7){width: 10%;}
-  .list-table th:nth-child(8), .list-table td:nth-child(8){width: 10%;}
-  .list-table th:nth-child(9), .list-table td:nth-child(9){width: 10%;}
-  .list-table th:nth-child(10), .list-table td:nth-child(10){width: 14%;}
+  .list-table th:nth-child(1), .list-table td:nth-child(1){width: 4%;}
+  .list-table th:nth-child(2), .list-table td:nth-child(2){width: 12%;}
+  .list-table th:nth-child(3), .list-table td:nth-child(3){width: 12%;}
+  .list-table th:nth-child(4), .list-table td:nth-child(4){width: 12%;}
+  .list-table th:nth-child(5), .list-table td:nth-child(5){width: 12%;}
+  .list-table th:nth-child(6), .list-table td:nth-child(6){width: 12%;}
+  .list-table th:nth-child(7), .list-table td:nth-child(7){width: 12%;}
+  .list-table th:nth-child(8), .list-table td:nth-child(8){width: 8%;}
+  .list-table th:nth-child(9), .list-table td:nth-child(9){width: 7%;}
+  .list-table th:nth-child(10), .list-table td:nth-child(10){width: 9%;}
   .list-table th {border-top: 0.1rem solid var(--color-darkblue-100); color: var(--color-darkblue-100); background-color: var(--color-neutral-20); font-weight: 500;}
-  .list-table td {color: var(--color-neutral-70);}
+  .list-table td {color: var(--color-neutral-70); font-size: 1.2rem;}
   .list-table tbody {display: block; height: 16rem; overflow-y: scroll;}
   .list-table tbody tr:hover, .list-table tbody tr:active {width:100%;background-color: var(--color-lightblue-10); cursor: pointer;}
 }
@@ -575,7 +575,7 @@
 .accordion-btn-tit .active .accordion-btn-tit:after{-webkit-transform:translateY(-50%) rotate(-135deg);transform:translateY(-50%) rotate(-135deg)}
 
 .checklistbox {display: block; height: 19rem; overflow-y: auto;}
-.check-list {width: 100%; border-top: 0.1rem solid var(--color-darkblue-100); }
+.check-list {width: 100%; border-top: 0.1rem solid var(--color-darkblue-100);}
 .check-list th, .check-list td {padding: 1.0rem; font-size: 1.4rem; text-align: center; line-height: 3.8rem;}
 .check-list th:nth-child(1), .check-list td:nth-child(1){width: 80%;}
 .check-list th:nth-child(2), .check-list td:nth-child(2){width: 20%;}
@@ -587,3 +587,24 @@
 .stit-btn {display: block; position: relative; width: 100%; overflow: hidden; height: 3.0rem; line-height: 3.0rem; margin-bottom: 1.0rem;}
 .stit-btn h3 {display: inline-block; font-size: 1.8rem; font-weight: 500; color: var(--color-darkblue-100);}
 .stit-btn button {position: absolute; right: 0; background-color: var(--color-darkblue-100); padding: 0.5rem 1.5rem; border-radius: 3.0rem; color: var(--color-neutral-10);}
+
+.check-table {clear: both; width: 100%; box-sizing: border-box;}
+.check-table th, .check-table td {padding: 1.0rem; font-size: 1.4rem; text-align: center; line-height: 150%; border: 0.1rem solid var(--color-neutral-40);}
+.check-table th:nth-child(1), .check-table td:nth-child(1){width: 15%;}
+.check-table th:nth-child(2), .check-table td:nth-child(2){width: 15%;}
+.check-table th:nth-child(3), .check-table td:nth-child(3){width: 30%;}
+.check-table th:nth-child(4), .check-table td:nth-child(4){width: 5%;}
+.check-table th:nth-child(5), .check-table td:nth-child(5){width: 5%;}
+.check-table th:nth-child(6), .check-table td:nth-child(6){width: 30%;}
+.check-table th {background-color: var(--color-neutral-20); border-top: 0.1rem solid var(--color-darkblue-100); }
+.check-table tr {border-bottom: 0.1rem solid var(--color-neutral-40);}
+
+.tg-tit {position: relative; font-size: 1.8rem; font-weight: 700; color: var(--color-darkblue-100);}
+.tooltip{position:relative;display:block;float:inline-end;background: url(../images/tooltip.svg) left center no-repeat; background-size: 2.4rem;font-size:0;width: 2.4rem;height: 2.4rem;cursor:pointer}
+.tooltip .tooltiptext{visibility:hidden;position:absolute;z-index:1;width:50.0rem;font-size:1.2rem;background-color: var(--color-neutral-80);color: var(--color-neutral-10);text-align:left;border-radius:0.8rem;padding:1.5rem 2.0rem}
+.tooltip .tooltiptext li::marker{content:'-';color: var(--color-neutral-10);font-size:1rem}
+.tooltip .tooltiptext ul li{font-size: 1.2rem; color: var(--color-neutral-10);  display: list-item; padding-left: 0.6rem;}
+.tooltip:hover .tooltiptext{visibility:visible}
+.tooltip .tooltiptext::after{content:'';position:absolute;border-style:solid;border-width:0.5rem}
+.tooltip .tooltip-right{top:-0.6rem;left:155%}
+.tooltip .tooltip-right::after{top:1.6rem;right:100%;margin-top:-0.5rem;border-color: transparent var(--color-neutral-80) transparent transparent}
