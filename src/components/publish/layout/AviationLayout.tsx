@@ -11,7 +11,7 @@ import useAppStore from '@/store/useAppStore';
 
 export default function AviationLayout() {
   const { isAviationPortal } = useStore(useAppStore, (state) => state) as any;
-  const [displayLeftMenu, setDisplayLeftMenu] = useState(false);
+  const [displayLeftMenu, setDisplayLeftMenu] = useState(true);
   const toggleLeftMenu = () => {
     setDisplayLeftMenu(!displayLeftMenu);
   };
