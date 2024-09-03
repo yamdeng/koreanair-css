@@ -74,6 +74,7 @@ body * {
 
 .mr5{margin-right:0.5rem !important}
 .mt10{margin-top:1rem !important}
+.mb5{margin-bottom:0.5rem !important}
 
 button, input, textarea, select, label{font-family:'KoreanAirSans';font-weight:400}
 .df{display:flex;/*width:100%*/}
@@ -147,6 +148,10 @@ input[type=checkbox],input[type=radio]{padding:0;vertical-align:middle;margin-to
 .chk-wrap.center {vertical-align: middle;}
 .chk-wrap > label.text-no {padding:0rem 0.9rem 0.2rem;margin:0;}
 .chk-wrap > label > input + span.text-no {height: 1.8rem;}
+
+.radio-wrap.center {vertical-align: middle;border:0;padding:0}
+.radio-wrap > label.text-no {padding:0rem 0.9rem 0.2rem;margin:0;overflow: hidden;}
+.radio-wrap > label > input + span.text-no {height:1.8rem;}
 
 
 /*input*/

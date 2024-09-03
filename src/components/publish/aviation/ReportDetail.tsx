@@ -819,36 +819,62 @@ function SafetyDetail() {
                                         <div className="form-cell wid100">
                                           <div className="form-group wid100">
                                             <div className="info-list">
-                                              <div className="">
-                                                추정원인<span className="required">*</span>
+                                              <div className="btns-area mb5">
+                                                <button
+                                                  name="button"
+                                                  className="btn_text btn_confirm text_color_neutral-10"
+                                                >
+                                                  대표보고서 지정
+                                                </button>
+                                                <button
+                                                  name="button"
+                                                  className="btn_text btn_confirm text_color_neutral-10"
+                                                >
+                                                  보고서 추가
+                                                </button>
                                               </div>
                                               <table className="info-board">
                                                 <colgroup>
-                                                  <col width="35%" />
-                                                  <col width="40%" />
-                                                  <col width="15%" />
+                                                  <col width="5%" />
+                                                  <col width="8%" />
+                                                  <col width="10%" />
+                                                  <col width="34%" />
+                                                  <col width="10%" />
+                                                  <col width="10%" />
+                                                  <col width="10%" />
                                                   <col width="10%" />
                                                 </colgroup>
                                                 <thead>
                                                   <tr>
-                                                    <th>Hazard</th>
-                                                    <th>Potential Consequence</th>
-                                                    <th>1st Risk Level</th>
+                                                    <th>선택</th>
+                                                    <th>대표보고서</th>
+                                                    <th>Doc No.</th>
+                                                    <th>Subject</th>
+                                                    <th>Fleet</th>
+                                                    <th>Reg No.</th>
+                                                    <th>FLT No.</th>
                                                     <th>Action</th>
                                                   </tr>
                                                 </thead>
                                                 <tbody>
                                                   <tr>
-                                                    <td className="left">Lightning strike</td>
-                                                    <td className="left">Aircraft system failure (Powerplant)</td>
-                                                    <td className="">
-                                                      <div className="Safety-table-cell">
-                                                        <a href="javascript:void(0);">
-                                                          <span className="Safety-tag Select">Select</span>
-                                                        </a>
+                                                    <td className="vm">
+                                                      <div className="radio-wrap center">
+                                                        <label className="text-no">
+                                                          <input type="radio" />
+                                                          <span className="text-no"></span>
+                                                        </label>
                                                       </div>
                                                     </td>
-                                                    <td className="">
+                                                    <td className="">Y</td>
+                                                    <td className="left">
+                                                      <a href="javascript:void(0);">ASR-100308</a>
+                                                    </td>
+                                                    <td className="left">1운항 중 발생한 사항에 대..</td>
+                                                    <td className="">777</td>
+                                                    <td className="">7205</td>
+                                                    <td className="">KE0024</td>
+                                                    <td className="tc">
                                                       <a href="javascript:void(0);">
                                                         <span className="delete">X</span>
                                                       </a>
