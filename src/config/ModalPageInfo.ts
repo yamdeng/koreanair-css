@@ -347,7 +347,7 @@ ModalPageInfo.list = [
     Component: MU5P1Modal,
     path: 'MU5P1Modal',
     description: '',
-    success: false,
+    success: true,
   },
   {
     title: '산업안전 > 위험성평가 > 가능성안내 팝업창',
