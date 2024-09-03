@@ -70,6 +70,16 @@ function POccupationMu5P2edit1() {
   const [inputValue, setInputValue] = useState('');
   const rowData = getAllData();
   const columns = testColumnInfos;
+
+  const customButtons = [
+    {
+      title: '추가',
+      onClick: () => {
+        alert('추가');
+      },
+    },
+  ];
+
   return (
     <>
       {/*경로 */}
@@ -109,134 +119,168 @@ function POccupationMu5P2edit1() {
       </div>
       {/*//탭 */}
       {/* 입력영역 */}
-      <div className="editbox">
-        <div className="form-table line">
-          <div className="form-cell wid50">
-            <div className="form-group wid100">
-              <AppTextInput label="작성일자" required disabled />
-            </div>
-          </div>
-          <div className="form-cell wid50">
-            <div className="form-group wid100">
-              <AppTextInput label="작성자" required disabled />
-            </div>
-          </div>
-          <div className="form-cell wid50">
-            <div className="form-group wid100">
-              <AppSelect label={'측정년도'} required />
-            </div>
-          </div>
-        </div>
-        <hr className="line dp-n"></hr>
-        <div className="form-table line">
-          <div className="form-cell wid50">
-            <div className="form-group wid100">
-              <AppSelect label={'반기'} required />
-            </div>
-          </div>
-          <div className="form-cell wid50">
-            <div className="form-group wid100">
-              <AppSelect label="구분" required />
-            </div>
-          </div>
-          <div className="form-cell wid50">
-            <div className="form-group wid100">
-              <AppSelect label="권역" required />
-            </div>
-          </div>
-        </div>
-        <hr className="line dp-n"></hr>
-        <div className="form-table line">
-          <div className="form-cell wid50">
-            <div className="form-group form-glow">
-              <div className="df">
-                <div className="date1">
-                  <AppDatePicker label="측정기간" required />
-                </div>
-                <span className="unt">~</span>
-                <div className="date2">
-                  <AppDatePicker label="측정기간" required />
+      <div className="info-wrap toggle">
+        <dl className="tg-item active">
+          {/* toggle 선택되면  열어지면 active붙임*/}
+          <dt>
+            <button type="button" className="btn-tg">
+              청취조사<span className="active"></span>
+            </button>
+          </dt>
+          <dd className="tg-conts">
+            <div className="edit-area">
+              <div className="detail-form">
+                <div className="detail-list">
+                  <div className="form-table">
+                    <div className="form-cell wid50">
+                      <div className="ck-edit-box">
+                        <div className="ck-list">그리드 영역</div>
+                        <div className="ck-edit">
+                          <div className="boxForm">
+                            <div className="form-table">
+                              <div className="form-cell wid100">
+                                <div className="form-group wid100">
+                                  <AppTextInput label="근로자" />
+                                </div>
+                              </div>
+                            </div>
+                            <div className="form-table">
+                              <div className="form-cell wid50">
+                                <div className="form-group wid100">
+                                  <AppTextInput label="대상공정(작업)" />
+                                </div>
+                              </div>
+                            </div>
+                            <div className="form-table">
+                              <div className="form-cell wid100">
+                                <div className="form-group wid100">
+                                  <textarea
+                                    id="testArea1"
+                                    className="form-tag custom_textarea"
+                                    style={{ width: '100%' }}
+                                    name="testArea1"
+                                    value={inputValue}
+                                    onChange={(event) => {
+                                      setInputValue(event.target.value);
+                                    }}
+                                  />
+                                  <label className="f-label" htmlFor="testArea1">
+                                    유해,위험요인에 대한 의견
+                                  </label>
+                                </div>
+                              </div>
+                            </div>
+                            <div className="btn-area-type01 mg-top">
+                              <button type="button" name="button" className="btn_text btn_confirm">
+                                저장
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div className="form-cell wid50">
-            <div className="form-group wid100">
-              <AppTextInput label="측정기관" required />
-            </div>
-          </div>
-        </div>
-        <hr className="line dp-n"></hr>
-        <div className="form-table">
-          <div className="form-cell wid50">
-            <div className="form-group wid100">
-              <textarea
-                id="testArea1"
-                className="form-tag custom_textarea"
-                style={{ width: '100%' }}
-                name="testArea1"
-                value={inputValue}
-                onChange={(event) => {
-                  setInputValue(event.target.value);
-                }}
-              />
-              <label className="f-label" htmlFor="testArea1">
-                측정결과 <span className="required">*</span>
-              </label>
-            </div>
-          </div>
-        </div>
-        <hr className="line"></hr>
-        <div className="form-table">
-          <div className="form-cell wid50">
-            <div className="form-group wid100">
-              <textarea
-                id="testArea1"
-                className="form-tag custom_textarea"
-                style={{ width: '100%' }}
-                name="testArea1"
-                value={inputValue}
-                onChange={(event) => {
-                  setInputValue(event.target.value);
-                }}
-              />
-              <label className="f-label" htmlFor="testArea1">
-                의견
-              </label>
-            </div>
-          </div>
-        </div>
-        <hr className="line"></hr>
-        {/* 파일첨부영역 : button */}
-        <div className="form-table">
-          <div className="form-cell wid50">
-            <div className="form-group wid100">
-              <Upload {...props}>
-                <div className="btn-area">
-                  <button type="button" name="button" className="btn-big btn_text btn-darkblue-line">
-                    결과보고서 업로드
-                  </button>
+          </dd>
+          <dt>
+            <button type="button" className="btn-tg">
+              현장순회<span className="active"></span>
+            </button>
+          </dt>
+          <dd className="tg-conts">
+            <div className="edit-area">
+              <div className="detail-form">
+                <div className="detail-list">
+                  <div className="form-table">
+                    <div className="form-cell wid50">
+                      <div className="ck-edit-box">
+                        <div className="ck-list ck-list-grid">
+                          <AppTable rowData={rowData} columns={columns} customButtons={customButtons} />
+                        </div>
+                        <div className="ck-edit">
+                          <div className="boxForm">
+                            <div className="form-table">
+                              <div className="form-cell wid100">
+                                <div className="form-group wid100">
+                                  <AppDatePicker label={'순회일자'} />
+                                </div>
+                              </div>
+                            </div>
+                            <div className="form-table">
+                              <div className="form-cell wid50">
+                                <div className="form-group wid100">
+                                  <AppTextInput label="대상공정(작업)" />
+                                </div>
+                              </div>
+                            </div>
+                            <div className="form-table">
+                              <div className="form-cell wid100">
+                                <div className="form-group wid100">
+                                  <textarea
+                                    id="testArea1"
+                                    className="form-tag custom_textarea"
+                                    style={{ width: '100%' }}
+                                    name="testArea1"
+                                    value={inputValue}
+                                    onChange={(event) => {
+                                      setInputValue(event.target.value);
+                                    }}
+                                  />
+                                  <label className="f-label" htmlFor="testArea1">
+                                    유해,위험요인에 대한 의견
+                                  </label>
+                                </div>
+                              </div>
+                            </div>
+                            <div className="btn-area-type01 mg-top">
+                              <button type="button" name="button" className="btn_text btn_confirm">
+                                저장
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-              </Upload>
+              </div>
             </div>
-          </div>
-        </div>
-        <hr className="line"></hr>
-        {/* 파일첨부영역 : button */}
-        <div className="form-table">
-          <div className="form-cell wid50">
-            <div className="form-group wid100">
-              <Upload {...props}>
-                <div className="btn-area">
-                  <button type="button" name="button" className="btn-big btn_text btn-darkblue-line">
-                    화학물질 사용량조사 업로드
-                  </button>
+          </dd>
+          <dt>
+            <button type="button" className="btn-tg">
+              안전보건 정보<span className="active"></span>
+            </button>
+          </dt>
+          <dd className="tg-conts">
+            <div className="edit-area">
+              <div className="detail-form">
+                <div className="detail-list">
+                  <div className="form-table">
+                    <div className="form-cell wid50">
+                      <div className="form-group wid100">
+                        <textarea
+                          id="testArea1"
+                          className="form-tag custom_textarea"
+                          style={{ width: '100%' }}
+                          name="testArea1"
+                          value={inputValue}
+                          onChange={(event) => {
+                            setInputValue(event.target.value);
+                          }}
+                        />
+                        <label className="f-label" htmlFor="testArea1">
+                          내용
+                        </label>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-              </Upload>
+              </div>
             </div>
-          </div>
-        </div>
-        <hr className="line"></hr>
+          </dd>
+        </dl>
       </div>
       {/*//입력영역*/}
 

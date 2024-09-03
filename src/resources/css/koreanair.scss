@@ -450,13 +450,13 @@
       width: 100%; 
       padding: 1.0rem 0 0;
       /*height: 100%;*/
+      display: flex;
       .ck-list {
         display: inline-block;
         width: 50%;
         vertical-align: top;
-        height: max-content;
-        height: 100%;
       }
+      .ck-list-grid {max-height: 35.9rem; overflow-y: auto;}
       .ck-edit {
         display: inline-block;
         width: calc(50% - 2.0rem);
@@ -557,6 +557,7 @@
 .txt-guide-list {margin-bottom: 1.0rem;}
 .txt-guide-list li {font-size: 1.4rem; line-height: 150%; padding-left: 0.5rem;} 
 .txt-guide-list li::marker {content: "-"; color: var(--color-neutral-130); font-size: 1rem;}
+
 .guide-list { background-color: var(--color-neutral-20); border-radius: 0.8rem; padding: 1.0rem 1.5rem; margin-top: 1.0rem;}
 .guide-list .tit {display: block; padding-bottom: 0.5rem; color: var(--color-darkblue-100);}
 .guide-list li {font-size: 1.3rem; color: var(--color-neutral-70); padding-left: 1.0rem; line-height: 180%;}
@@ -645,3 +646,7 @@
 
 .tooltip .tooltip-bottom {width: 12.0rem; top: 150%; left: 50%; margin-left: -6.0rem}
 .tooltip .tooltip-bottom::after {bottom: 100%; left: 50%; margin-left: -0.5rem; border-color: transparent transparent var(--color-neutral-80) transparent;}
+
+.list-input-box {display: block; width: 100%;}
+.list-input-box li {width: 100%; display: inline-flex; line-height: 150%; margin: 0.2rem 0; align-items:center;}
+.list-input-box li .list-tit {display: inline-block; width: 100%;}
