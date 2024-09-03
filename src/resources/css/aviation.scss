@@ -26,14 +26,14 @@
 
 .c-step-list{counter-reset:stepCounter}
 .c-step-list.default{display:flex;font-size:1.2rem;text-align:center;margin-left:-1.5rem}
-.flag-tag{display:flex;justify-content:flex-end;margin-top:0.5rem;gap:0 0.5rem}
-.flag-tag1{display:flex;justify-content:flex-end;gap:0 0.5rem}
+.flag-tag{display:flex;justify-content:flex-end;margin:0.5rem 0.5rem 0 0;gap:0 0.5rem}
+.flag-tag1{gap:0 0.5rem}
 .flag-tag .icon-flag{border-radius:99.9rem;padding:0.3rem 0.6rem}
-.flag-tag1 .icon-flag1{border-radius:99.9rem;padding:0 2.0rem}
-
-.flag-tag .icon-flag.txt{font-family:"KoreanAirSans";font-weight:400;font-size:1.1rem;color:var(--color-neutral-90)}
-.flag-tag .icon-flag.btn-blue{background-color:var(--color-lightblue-100);color:var(--color-neutral-10)}
-.flag-tag .icon-flag.btn-wh{width:3.5rem;background-color:var(--color-neutral-10);color:var(--color-neutral-90)}
+.flag-tag1 .icon-flag1{border-radius:99.9rem;padding:0.3rem 2.0rem}
+.flag-tag1 .icon-flag1 + .icon-flag1{margin-left:0.5rem}
+.flag-tag .icon-flag.txt{font-family:"KoreanAirSans";font-weight:400;font-size:1.2rem;color:var(--color-neutral-90)}
+.flag-tag .icon-flag.btn-blue{background-color:var(--color-neutral-10);color:var(--color-darkblue-100);border:solid 0.1rem var(--color-darkblue-100)}
+.flag-tag .icon-flag.btn-wh{padding:0.2rem 1rem;line-height:2.0;background-color:var(--color-neutral-10);color:var(--color-neutral-90)}
 .flag-tag1 .icon-flag1.btn-lightblue{background-color:var(--color-lightblue-40);font-size:1.4rem;line-height:2.8}
 .flag-tag1 .icon-flag1:last-child{margin-right:2rem}
 .flag-tag1 .icon-flag1.active{text-decoration:underline;font-weight:600}

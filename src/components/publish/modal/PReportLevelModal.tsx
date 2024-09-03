@@ -293,58 +293,11 @@ function ReportLevelModal(props) {
               </div>
               {/*//검색영역*/}
               <div className="Level-area">
-                <div className="LevelLeft">
-                  <p className="h5-tit">발생 가능성</p>
-                  <table className="RiskLevelTable left">
-                    <caption></caption>
-                    <colgroup></colgroup>
-                    <thead>
-                      <tr>
-                        <th>구분</th>
-                        <th>발생가능성</th>
-                        <th>정성적평가</th>
-                        <th>정량적평가</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <th>5</th>
-                        <td className="">매우높음</td>
-                        <td className="tl">일상적으로 발생할 것으로 예상됨</td>
-                        <td className="tl">5일 단위(1년 중 65건 이상)</td>
-                      </tr>
-                      <tr>
-                        <th>4</th>
-                        <td className="">높음</td>
-                        <td className="tl">일상적으로 발생할 것으로 예상됨</td>
-                        <td className="tl">5일~월 단위(1년 중 65건 이상)</td>
-                      </tr>
-                      <tr>
-                        <th>3</th>
-                        <td className="">보통</td>
-                        <td className="tl">일상적으로 발생할 것으로 예상됨</td>
-                        <td className="tl">월~년 단위(1년 중 65건 이상)</td>
-                      </tr>
-                      <tr>
-                        <th>2</th>
-                        <td className="">낮음</td>
-                        <td className="tl">일상적으로 발생할 것으로 예상됨</td>
-                        <td className="tl">년~10년 단위(1년 중 65건 이상)</td>
-                      </tr>
-                      <tr>
-                        <th>1</th>
-                        <td className="">매우 낮음</td>
-                        <td className="tl">일상적으로 발생할 것으로 예상됨</td>
-                        <td className="tl">10년 이상에 헤당하는 단위</td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-                <div className="LevelRight">
+                <div className="LevelTop">
                   <div className="flex-box">
                     <div className="h5-tit">Risk</div>
                     <span className="total">
-                      총 : <span className="text_color-Warning">861</span>건
+                      <span className="text_color-Warning">861</span>건
                     </span>
                   </div>
 
@@ -478,6 +431,55 @@ function ReportLevelModal(props) {
                   </table>
                 </div>
               </div>
+
+              <div className="LevelInfo">
+                <p className="h5-tit">발생 가능성</p>
+                <table className="RiskLevelTable left">
+                  <caption></caption>
+                  <colgroup></colgroup>
+                  <thead>
+                    <tr>
+                      <th>구분</th>
+                      <th>발생가능성</th>
+                      <th>정성적평가</th>
+                      <th>정량적평가</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th>5</th>
+                      <td className="">매우높음</td>
+                      <td className="tl">일상적으로 발생할 것으로 예상됨</td>
+                      <td className="tl">5일 단위(1년 중 65건 이상)</td>
+                    </tr>
+                    <tr>
+                      <th>4</th>
+                      <td className="">높음</td>
+                      <td className="tl">일상적으로 발생할 것으로 예상됨</td>
+                      <td className="tl">5일~월 단위(1년 중 65건 이상)</td>
+                    </tr>
+                    <tr>
+                      <th>3</th>
+                      <td className="">보통</td>
+                      <td className="tl">일상적으로 발생할 것으로 예상됨</td>
+                      <td className="tl">월~년 단위(1년 중 65건 이상)</td>
+                    </tr>
+                    <tr>
+                      <th>2</th>
+                      <td className="">낮음</td>
+                      <td className="tl">일상적으로 발생할 것으로 예상됨</td>
+                      <td className="tl">년~10년 단위(1년 중 65건 이상)</td>
+                    </tr>
+                    <tr>
+                      <th>1</th>
+                      <td className="">매우 낮음</td>
+                      <td className="tl">일상적으로 발생할 것으로 예상됨</td>
+                      <td className="tl">10년 이상에 헤당하는 단위</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
               <div className="Level-area-bottom">
                 <p className="h5-tit">심각도</p>
                 <table className="RiskLevelTable severity">

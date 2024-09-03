@@ -633,13 +633,14 @@
 
 }
 
-.h4-tit{margin-bottom:1.5rem;font-size:1.7rem;font-weight:600;line-height:1.7;color:var(--color-darkblue-100);background-color:var(--color-lightblue-10);border-radius:99.9rem;text-align:center}
-.h5-tit{margin:1.5rem 0;font-size:1.6rem;font-weight:600;color:var(--color-darkblue-100)}
+.h4-tit{position:relative;margin-bottom:1.5rem;font-size:1.8rem;font-weight:600;line-height:1.8;text-indent:0;padding-left:1.5rem;color:var(--color-darkblue-100);text-align:left}
+.h4-tit::before{content:'·';display:block;position:absolute;top:0;left:0.2rem}
+.h5-tit{position:relative;margin:1.5rem 0;font-size:1.7rem;font-weight:600;line-height:1.7;color:var(--color-darkblue-100)}
 .RiskLevel-box .RiskLevel-list .list-box-a{width:50%}
-.RiskLevel-box .RiskLevel-list .box-list{height:100vh;overflow-y:auto}
+.RiskLevel-box .RiskLevel-list .box-list{position:relative;border:solid 0.1rem var(--color-neutral-40);border-radius:0.8rem;padding:1.5rem;height:65.0rem;overflow-y:auto}
 .RiskLevel-box .RiskLevel-list .box-list .list{position:relative;height:100%;margin:3rem 0}
 .RiskLevel-box .RiskLevel-list .box-list .list:first-child{margin-top:0}
-.RiskLevel-box .RiskLevel-list .box-list .list li{height:3rem;line-height:2;text-overflow:ellipsis;white-space:nowrap;}
+.RiskLevel-box .RiskLevel-list .box-list .list li{line-height:3;text-overflow:ellipsis;white-space:nowrap;border-bottom:solid 0.1rem var(--color-neutral-30)}
 .RiskLevel-box .RiskLevel-list .box-list .list li.active{font-weight:700;background-color:var(--color-lightblue-10);color:var(--color-darkblue-100)}
 .RiskLevel-box .RiskLevel-list .box-list .list li:hover{background-color:var(--color-lightblue-10)}
 .RiskLevel-box .RiskLevel-list .list-box-b{width:50%;height:100%;margin-left:1.5rem}
@@ -647,25 +648,25 @@
 .boxlist-wrap{box-sizing:border-box}
 .RiskLevel-box .RiskLevel-area{width:65%;height:auto}
 .RiskLevel-box .RiskLevel-area{width:65%;height:auto}
-.RiskLevel-box .RiskLevel-area .search-area .form-table .form-area{display: flex;}
+.RiskLevel-box .RiskLevel-area .search-area .form-table .form-area{display:flex;align-items:center;}
 .RiskLevel-box .RiskLevel-area .search-area{background-color:var(--color-neutral-20);padding:1rem 1.5rem 1.5rem 1.5rem}
 .RiskLevel-box .RiskLevel-area .search-area .form-table{display:flex}
 .RiskLevel-box .RiskLevel-area .search-area .form-table.mt10{margin-top:1rem}
 .RiskLevel-box .RiskLevel-area .search-area .chk-wrap .txt{font-weight:400}
-.RiskLevel-box .RiskLevel-area .Level-area{display:flex;width:100%;gap:0 1.0rem}
+.RiskLevel-box .RiskLevel-area .Level-area{display:flex;width:100%}
 
-.RiskLevel-box .RiskLevel-area .Level-area .LevelLeft{float:left;width:40%}
-.RiskLevel-box .RiskLevel-area .Level-area .LevelRight{float:right;width:60%}
-.RiskLevel-box .RiskLevel-area .Level-area .LevelRight .flex-box{display:flex;justify-content:space-between;width:100%}
-.RiskLevel-box .RiskLevel-area .Level-area .LevelRight .flex-box .total{margin:1.6rem 0 1.0rem 0;font-size:1.6rem}
+.RiskLevel-box .RiskLevel-area .Level-area .LevelTop{width:100%}
+.RiskLevel-box .RiskLevel-area .Level-area .LevelInfo{width:100%}
+.RiskLevel-box .RiskLevel-area .Level-area .LevelTop .flex-box{display:flex;justify-content:space-between;width:100%}
+.RiskLevel-box .RiskLevel-area .Level-area .LevelTop .flex-box .total{margin:1.6rem 0 1.0rem 0;font-size:1.6rem}
 .RiskLevel-box .RiskLevel-area .Level-area-bottom{display:block;width:100%;margin-top:0.5rem}
 
 .tableTop{border-top:0.1rem solid var(--color-darkblue-100)}
 .RiskLevelTable{width:100%;border-collapse:collapse}
 .RiskLevelTable.left th{height:4.0rem}
 .RiskLevelTable.left td{padding:1.0rem;text-align:center;vertical-align:middle;border:solid 0.1rem var(--color-neutral-40)}
-.RiskLevelTable th{width:2.0rem;height:2.0rem;line-height:1.6rem;vertical-align:middle;background-color:var(--color-neutral-20);color:var(--color-neutral-80);font-size:1.4rem;border:solid 0.1rem var(--color-neutral-40)}
-.RiskLevelTable td{width:100px;height:50px;font-size:1.4rem;text-align:center;color:var(--color-neutral-90);border:solid 0.1rem var(--color-neutral-20)}
+.RiskLevelTable th{width:2.0rem;height:4.0rem;vertical-align:middle;background-color:var(--color-neutral-20);color:var(--color-neutral-80);font-size:1.5rem;border:solid 0.1rem var(--color-neutral-40)}
+.RiskLevelTable td{width:100px;height:50px;font-size:1.5rem;text-align:center;color:var(--color-neutral-90);border:solid 0.1rem var(--color-neutral-20)}
 .RiskLevelTable.left td a{font-size:1.4rem}
 .RiskLevelTable.left td a, a:visited{color:var(--color-mblue-100)}
 .RiskLevelTable.left td a:hover, a:focus{color:var(--color-darkblue-100)}
@@ -677,11 +678,11 @@
 .RiskLevelTable td.level4{background-color:var(--color-Leve4)}
 
 .RiskLevelTable.Risk td{font-weight:600;vertical-align:middle}
-.RiskLevelTable.Risk td span{display:block;font-size:1.4rem}
+.RiskLevelTable.Risk td span{display:block;font-size:1.5rem}
 .RiskLevelTable.Risk td:hover{border:dotted 0.3rem var(--color-lightblue-10)!important;cursor:pointer}
 .RiskLevelTable.Risk td.selected{border:dotted 0.3rem var(--color-lightblue-10)!important;color:var(--color-neutral-10)}
 .RiskLevelTable.severity th{height:4.0rem}
-.RiskLevelTable.severity td{text-align:left;line-height:1.4;color:var(--color-neutral-80);border:solid 0.1rem var(--color-neutral-40)}
+.RiskLevelTable.severity td{padding:1rem;text-align:left;line-height:1.4;color:var(--color-neutral-80);border:solid 0.1rem var(--color-neutral-40)}
 
 .btn-class{position:relative;line-height:2rem;border-width:0.1rem;border-style:solid;border-radius:99.9rem;font-size:1.2rem;text-align:center;background-color:var(--color-neutral-10)}
 .btn-class.choice{color:var(--color-mblue-100);border-color:var(--color-mblue-100)}
