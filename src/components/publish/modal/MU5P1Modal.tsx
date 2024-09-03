@@ -181,15 +181,6 @@ function UserEditModal(props) {
             </li>
           </ul>
         </div>
-
-        <div className="pop_btns">
-          <button className="btn_text text_color_neutral-10 btn_confirm" onClick={closeModal}>
-            저장
-          </button>
-          <button className="btn_text text_color_neutral-90 btn_close" onClick={closeModal}>
-            취소
-          </button>
-        </div>
         <span className="pop_close" onClick={closeModal}>
           X
         </span>
