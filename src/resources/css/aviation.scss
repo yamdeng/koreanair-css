@@ -152,6 +152,7 @@
 .detailForm-detail-2deps::after{content:'';display:block;position:absolute;left:0rem;top:0.1rem;bottom:0.1rem;width:0.5rem;border-radius:0.8rem 0 0 0.8rem}
 .detailForm-detail-2deps.rbox:after{background-color:var(--color-darkblue-20)}
 .detailForm-detail-3deps{border:0;overflow:hidden}
+.detailForm-detail-4deps{border:0;overflow:hidden}
 
 
 
@@ -196,6 +197,10 @@
 .detailForm-detail-3deps.list-group .list.bx-toggle .tg-btn span{/*display:inline-block;*/float:right;background: url(/src/resources/images/arrow-down.svg) center right no-repeat;background-size:2.8rem;width:2.8rem;height:2.8rem;vertical-align:middle}
 .detailForm-detail-3deps.list-group .list .edit-area{padding:2.0rem;margin-top:0;border-top:0;color:var(--color-neutral-70);line-height:2rem;font-size:1.6rem}
 .detailForm-detail-3deps.list-group .list > dl > dt .tg-btn{font-family:"KoreanAirSans";font-size: 1.8rem;font-weight:500;color:var(--color-darkblue-100)}
+
+.detailForm-detail-4deps.list-group .list.bx-toggle .tg-btn span{/*display:inline-block;*/float:right;background: url(/src/resources/images/arrow-down.svg) center right no-repeat;background-size:2.8rem;width:2.8rem;height:2.8rem;vertical-align:middle}
+.detailForm-detail-4deps.list-group .list .edit-area{padding:2.0rem;margin-top:0;border-top:0;color:var(--color-neutral-70);line-height:2rem;font-size:1.6rem}
+.detailForm-detail-4deps.list-group .list > dl > dt .tg-btn{font-family:"KoreanAirSans";font-size: 1.8rem;font-weight:500;color:var(--color-darkblue-100)}
 
 .CheckList-Title{display:flex;width:100%;align-items:center;vertical-align:middle}
 
@@ -360,13 +365,12 @@
 .ant-col-md-2{display:block;flex:0 0 8.33333333%;max-width:9.33333333%}
 .ant-col-xs-24 {flex:0 0 100% !important}
 
-.text-desc-type1 .MemberClass{display:flex;justify-content:start;width:100%;padding-top:1rem}
+.text-desc-type1 .MemberClass{display:flex;justify-content:start;width:100%;padding-top:1rem;gap:0 1.5rem}
 .text-desc-type1 .MemberClass ul{width:100%;align-self:flex-start}
 .text-desc-type1 .MemberClass > ul li{position:relative;display:flex;-webkit-box-pack:start;justify-content:start;-webkit-box-align:center;align-items:center}
 .ant-tag{display:inline-block;box-sizing:border-box;line-height:3;list-style:none;height:auto;margin:0 0.3rem 0 0;padding:0 0.7rem;font-size:1.2rem;white-space:nowrap;background:var(--color-neutral-01);border:0.1rem solid var(--color-neutral-40);border-radius:0.8rem;opacity: 1;transition: all .3s}
 .text-desc-type1 .MemberClass .InfoBox{display:inline-flex;justify-content:center;align-items:center;width:3.6rem;height:3.6rem;border-radius:50%;overflow:hidden;margin-right:0.8rem;background:url(/src/resources/images/no_img_pro.jpg) 50% 50% / 100% no-repeat rgb(204, 204, 204)}
 .text-desc-type1 .MemberClass .Info .Dept{font-size:1.2rem;color:var(--color-neutral-70)}
-
 
 
 .DashBoard-box > .ag-theme-quartz .ag-root-wrapper .ag-row-odd{background-color:var(--color-neutral-20) !important}

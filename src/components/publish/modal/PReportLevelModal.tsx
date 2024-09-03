@@ -306,12 +306,12 @@ function ReportLevelModal(props) {
                       <colgroup></colgroup>
                       <thead>
                         <tr>
-                          <th rowSpan="2">
+                          <th rowSpan={2}>
                             발생
                             <br />
                             가능성
                           </th>
-                          <th colSpan="5">심각도</th>
+                          <th colSpan={5}>심각도</th>
                         </tr>
                         <tr>
                           <th>LevelA</th>
@@ -327,9 +327,9 @@ function ReportLevelModal(props) {
                           {/*class에 selected를 붙이면 선택되어짐 */}
                           <td className="level1 selected">
                             5A
+                            {/*<span className="thumb_flag best">추천</span>*/}
                             <div className="flag-tag">
                               <span className="icon-flag txt btn-wh">233</span>
-                              <span className="icon-flag txt btn-blue">1차추천</span>
                             </div>
                           </td>
                           <td className="level1">
@@ -364,7 +364,7 @@ function ReportLevelModal(props) {
                               <span className="icon-flag txt btn-blue">1차추천</span>
                             </div>
                           </td>
-                          <td className="level2">4C</td>
+                          <td className="level2">4C{/*<span className="thumb_flag best">추천</span>*/}</td>
                           <td className="level3">4D</td>
                           <td className="level4">4E</td>
                         </tr>

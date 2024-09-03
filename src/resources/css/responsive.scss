@@ -208,11 +208,12 @@
   .SelectedList > ul li:last-child{margin-bottom:0}
   .boxForm .form-table .form-cell .form-group{width:100%}
 
-  .btn-area {display:block;width:100%}
+  .btn-area {display:block;width:100%;}
   .btn-area .btn-sm{width:100%}
   .btn-area > button + button{width:50%;margin-left:0;margin-top:1rem}
   .btn-area.inbtn > button + button{width:50%;margin-left:0;margin-top:0rem}
   .btn-area > button{margin:0}
+
 
   .contents-btns {display: block; width: 100%;}
   .contents-btns > button {width: 100%; margin: 1.0rem 0;}
@@ -230,7 +231,7 @@
   .notice-board tr {/*display: flex; flex-wrap: wrap; */border-bottom: 0.1rem solid var(--color-neutral-30);}
   .notice-board tr:nth-child(2) {border-top: 0.1rem solid var(--color-darkblue-100);}
   .notice-board td {display: inline-block; border-bottom: 0; padding: 0.5rem 1.0rem; text-align: left;}
-  .notice-board td .delete{position:absolute;top:-0.8rem;background: url(/src/resources/images/delete-text.svg) center center no-repeat;font-size: 0;width: 2rem;height: 2rem}
+  .notice-board td .delete{position:absolute;top:-0.8rem;right:-28rem;background: url(/src/resources/images/delete-text.svg) center center no-repeat;font-size: 0;width: 2rem;height: 2rem}
 
   .notice-board tr.fix-bg .fix {background-size: 2.0rem;}
   .notice-board td.bot-left{/*display: inline-block;*/}
