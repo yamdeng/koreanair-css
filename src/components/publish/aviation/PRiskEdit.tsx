@@ -433,13 +433,15 @@ function PRiskEdit() {
                       </div>
                     </div>
                     <div className="form-cell wid50">
-                      <div className="btn-area inbtn wid100">
-                        <button type="button" name="button" className="btn-x-sm btn_text btn-darkblue-line">
-                          + ADD
-                        </button>
-                        <button type="button" name="button" className="btn-x-sm btn_text btn-darkblue-line">
-                          위험레벨조회
-                        </button>
+                      <div className="form-group wid100">
+                        <div className="btn-area inbtn wid100">
+                          <button type="button" name="button" className="btn-x-sm btn_text btn-darkblue-line">
+                            + ADD
+                          </button>
+                          <button type="button" name="button" className="btn-x-sm btn_text btn-darkblue-line">
+                            위험레벨조회
+                          </button>
+                        </div>
                       </div>
                     </div>
                   </div>

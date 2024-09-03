@@ -216,7 +216,7 @@ input, select{font-family:'KoreanAirSans'}
   .btn_confirm{padding:0.6rem 2.8rem;border-radius:99.9rem;background: var(--color-darkblue-100)}
   .btn-lightblue{border:solid 0.1rem var(--color-lightblue-40);background-color:var(--color-lightblue-40);color:var(--color-darkblue-100)}
   .btn-sm{padding:0.6rem 4.8rem;border-radius:99.9rem;align-items:center}
-  .c{padding:0.6rem 2.8rem;border-radius:99.9rem;align-items:center}
+  .btn-x-sm{padding:0.6rem 2.8rem;border-radius:99.9rem;align-items:center}
   .btn-big{display:block;width:100%;text-align:center;height:3.5rem;border-radius:0.8rem;align-items:center;box-sizing:border-box}
   text-align:right;padding-top:1.2rem;
 }
@@ -560,6 +560,7 @@ input, select{font-family:'KoreanAirSans'}
 .info-wrap.toggle .tg-item.active >  dt{border-bottom:0}
 
 .info-wrap .edit-area .detailForm > .editbox.report + .editbox.report{margin-top:4rem}
+.edit-area .form-table .form-cell{position:relative;flex-grow: 1;padding: 1.5rem 0.5rem;border-bottom: 0.1rem solid var(--color-neutral-40)}
 
 /*pagination*/
 .pagination{margin:3.0rem 0 0 0;text-align:center}

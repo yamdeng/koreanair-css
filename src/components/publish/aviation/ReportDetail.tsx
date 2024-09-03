@@ -672,7 +672,7 @@ function SafetyDetail() {
                                             </div>
                                           </div>
                                         </div>
-                                        <hr className="line dp-n"></hr>
+
                                         <div className="form-table line">
                                           <div className="form-cell wid50">
                                             <div className="form-group wid100">
@@ -690,7 +690,7 @@ function SafetyDetail() {
                                             </div>
                                           </div>
                                         </div>
-                                        <hr className="line dp-n"></hr>
+
                                         <div className="form-table line">
                                           <div className="form-cell wid50">
                                             <div className="form-group wid100">
@@ -709,30 +709,18 @@ function SafetyDetail() {
                                             </div>
                                           </div>
                                         </div>
-                                        <hr className="line dp-n"></hr>
+
                                         <div className="form-table">
-                                          <div className="form-cell wid20">
-                                            <div className="form-group wid100">
-                                              <div className="row1">
-                                                <div className="date1">
-                                                  <AppDatePicker label="Due Date" required />
-                                                </div>
+                                          <div className="form-cell wid50">
+                                            <div className="group-box-wrap wid50">
+                                              <span className="txt">Report Links</span>
+                                              <div className="round-wrap error">
+                                                <span className="icon_report"></span>{' '}
                                               </div>
                                             </div>
                                           </div>
-                                          <div className="form-cell wid50">
-                                            <div className="btn-area">
-                                              <button
-                                                type="button"
-                                                name="button"
-                                                className="btn-sm btn_text btn-darkblue-line"
-                                              >
-                                                Report Links
-                                              </button>
-                                            </div>
-                                          </div>
                                         </div>
-                                        <hr className="line"></hr>
+
                                         <div className="form-table line">
                                           <div className="form-cell wid50">
                                             <div className="form-group wid100">
@@ -751,7 +739,30 @@ function SafetyDetail() {
                                             </div>
                                           </div>
                                         </div>
-                                        <hr className="line"></hr>
+
+                                        <div className="form-table">
+                                          <div className="form-cell wid50">
+                                            <div className="form-group wid20">
+                                              <div className="row1">
+                                                <div className="date1">
+                                                  <AppDatePicker label="Due Date" required />
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                          {/*<div className="form-cell wid50">
+                                            <div className="btn-area">
+                                              <button
+                                                type="button"
+                                                name="button"
+                                                className="btn-sm btn_text btn-darkblue-line"
+                                              >
+                                                Report Links
+                                              </button>
+                                            </div>
+                                          </div>*/}
+                                        </div>
+
                                         <div className="form-table">
                                           <div className="form-cell wid50">
                                             <div className="form-group wid50">
@@ -792,13 +803,6 @@ function SafetyDetail() {
                                             </div>
                                           </div>
                                         </div>
-                                        <hr className="line dp-n"></hr>
-                                        <div className="form-table SelList">
-                                          <div className="form-cell wid50">
-                                            <div className="form-group wid100">dd</div>
-                                          </div>
-                                        </div>
-                                        <hr className="line"></hr>
                                       </div>
                                       {/*보고서접수-ASR*/}
                                       <div className="btn-area">
@@ -809,6 +813,52 @@ function SafetyDetail() {
                                         >
                                           LSC Group 설정
                                         </button>
+                                      </div>
+                                      <hr className="line"></hr>
+                                      <div className="form-table line">
+                                        <div className="form-cell wid100">
+                                          <div className="form-group wid100">
+                                            <div className="info-list">
+                                              <div className="">
+                                                추정원인<span className="required">*</span>
+                                              </div>
+                                              <table className="info-board">
+                                                <colgroup>
+                                                  <col width="35%" />
+                                                  <col width="40%" />
+                                                  <col width="15%" />
+                                                  <col width="10%" />
+                                                </colgroup>
+                                                <thead>
+                                                  <tr>
+                                                    <th>Hazard</th>
+                                                    <th>Potential Consequence</th>
+                                                    <th>1st Risk Level</th>
+                                                    <th>Action</th>
+                                                  </tr>
+                                                </thead>
+                                                <tbody>
+                                                  <tr>
+                                                    <td className="left">Lightning strike</td>
+                                                    <td className="left">Aircraft system failure (Powerplant)</td>
+                                                    <td className="">
+                                                      <div className="Safety-table-cell">
+                                                        <a href="javascript:void(0);">
+                                                          <span className="Safety-tag Select">Select</span>
+                                                        </a>
+                                                      </div>
+                                                    </td>
+                                                    <td className="">
+                                                      <a href="javascript:void(0);">
+                                                        <span className="delete">X</span>
+                                                      </a>
+                                                    </td>
+                                                  </tr>
+                                                </tbody>
+                                              </table>
+                                            </div>
+                                          </div>
+                                        </div>
                                       </div>
                                     </div>
                                   </dd>
