@@ -119,8 +119,8 @@ function UserEditModal(props) {
         <h3 className="pop_title">가능성 안내</h3>
 
         <div className="pop_cont">
-          <div className="guide-table">
-            <table>
+          <div className="guide-table-box">
+            <table className="guide-table">
               <colgroup>
                 <col width="10%" />
                 <col width="10%" />
@@ -140,12 +140,10 @@ function UserEditModal(props) {
                   <td>매우 높음</td>
                   <td>5</td>
                   <td>
-                    피해가 발생할 가능성이 매우 높음
+                    <span className="tit">피해가 발생할 가능성이 매우 높음</span>
                     <br />
-                    <span>
-                      해당 안전대책이 되어 있지 않고, 표시ㆍ표지가 있어도 불비(不備)가 많으며, 안전수칙ㆍ작업표준 등도
-                      없음
-                    </span>
+                    해당 안전대책이 되어 있지 않고, 표시ㆍ표지가 있어도 불비(不備)가 많으며, 안전수칙ㆍ작업표준 등도
+                    없음
                   </td>
                 </tr>
                 <tr>
@@ -153,9 +151,10 @@ function UserEditModal(props) {
                   <td>높음</td>
                   <td>4</td>
                   <td>
-                    피해가 발생할 가능성이 높음
-                    <br /> 가드ㆍ방호덮개, 기타 안전장치가 없거나 상당한 불비(不備)가 있고, 비상정지장치, 표시ㆍ표지는
-                    웬만큼 설치되어 있으며, 안전수칙ㆍ작업표준 등은 있지만 지키기 어렵고 많은 주의를 해야 함
+                    <span className="tit"> 피해가 발생할 가능성이 높음</span>
+                    <br /> 가드ㆍ방호덮개, 기타 <span className="red">안전장치가 없거나</span> 상당한 불비(不備)가 있고,
+                    비상정지장치, 표시ㆍ표지는 웬만큼 설치되어 있으며, 안전수칙ㆍ작업표준 등은 있지만 지키기 어렵고 많은
+                    주의를 해야 함
                     <br />
                   </td>
                 </tr>
@@ -164,10 +163,11 @@ function UserEditModal(props) {
                   <td>보통</td>
                   <td>3</td>
                   <td>
-                    부주의하면 피해가 발생할 가능성이 있음
+                    <span className="tit">부주의하면 피해가 발생할 가능성이 있음</span>
                     <br />
                     가드ㆍ방호덮개 등 안전장치는 설치되어 있지만, 가드가 낮거나 간격이 벌어져 있는 등 불비(不備)가 있고,
-                    위험영역 접근, 위험원과의 접촉이 있을 수 있으며, 안전수칙 등은 있지만 일부 준수하기 어려움
+                    <span className="red">위험영역 접근, 위험원과의 접촉</span>이 있을 수 있으며, 안전수칙 등은 있지만{' '}
+                    <span className="red">일부 준수하기 어려움</span>
                   </td>
                 </tr>
                 <tr>
@@ -175,7 +175,7 @@ function UserEditModal(props) {
                   <td>낮음</td>
                   <td>2</td>
                   <td>
-                    피해가 발생할 가능성이 낮음 <br />
+                    <span className="tit"> 피해가 발생할 가능성이 낮음</span> <br />
                     가드ㆍ방호덮개 등으로 보호되어 있고, 안전장치가 설치되어 있으며, 위험영역에의 출입이 관란한
                     상태이고, 안전수칙ㆍ작업표준(서) 등이 정비되어 있고 준수하기 쉬우나, 피해의 가능성이 남아 있음
                   </td>
@@ -184,20 +184,13 @@ function UserEditModal(props) {
                   <td>최하</td>
                   <td>매우 낮음</td>
                   <td>1</td>
-                  <td>피해가 발생할 가능성이 없음(전반적으로 안전조치가 잘 되어 있음)</td>
+                  <td>
+                    <span className="tit">피해가 발생할 가능성이 없음</span>(전반적으로 안전조치가 잘 되어 있음)
+                  </td>
                 </tr>
               </tbody>
             </table>
           </div>
-        </div>
-
-        <div className="pop_btns">
-          <button className="btn_text text_color_neutral-10 btn_confirm" onClick={closeModal}>
-            저장
-          </button>
-          <button className="btn_text text_color_neutral-90 btn_close" onClick={closeModal}>
-            취소
-          </button>
         </div>
         <span className="pop_close" onClick={closeModal}>
           X

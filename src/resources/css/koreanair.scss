@@ -564,10 +564,25 @@
 .guide-list li ol {padding: 0.5rem 0;}
 .guide-list li ol li {font-size: 1.2rem;}
 
-.guide-table table {width: 100%; border: 0.1rem solid var(--color-neutral-40);}
-.guide-table table thead th, tbody td {text-align: center; padding: 1.0rem 0; border-bottom: 0.1rem solid var(--color-neutral-40); vertical-align: middle;}
-.guide-table table thead th {background-color: var(--color-neutral-20);}
-.guide-table table tbody td.txt-left {text-align: left;}
+.guide-table-box {height: 100%;}
+.guide-table-box .guide-table {width: 100%; border: 0.1rem solid var(--color-neutral-40);}
+.guide-table-box .guide-table thead th, tbody td {text-align: center; padding: 1.0rem; border: 0.1rem solid var(--color-neutral-40); vertical-align: middle;}
+.guide-table-box .guide-table thead th {background-color: var(--color-neutral-20);}
+.guide-table-box .guide-table tbody td:nth-child(4){text-align: left;}
+.guide-table-box .guide-table tbody td span.tit {font-size: 1.5rem; font-weight: 700;}
+.guide-table-box .guide-table tbody td span.red {color: var(--color-Warning);}
+
+/*
+.guidetable-box .guidetable-type01 {width: 100%;}
+.guidetable-box .guidetable-type01 thead th, tbody th, tbody td {text-align: center; padding: 1.0rem; vertical-align: middle; border: 0.1rem solid var(--color-neutral-10);}
+.guidetable-box .guidetable-type01 thead th, tbody th {background-color: var(--color-neutral-20);}
+
+.guidetable-box .guidetable-type01 .veryhigh {background-color: var(--color-Level);}
+.guidetable-box .guidetable-type01 .high {background-color: var(--color-Leve2);}
+.guidetable-box .guidetable-type01 .borderlinehigh {background-color: var(--color-Leve6);}
+.guidetable-box .guidetable-type01 .middle {background-color: var(--color-Leve3);}
+.guidetable-box .guidetable-type01 .low {background-color: var(--color-Leve5);}
+.guidetable-box .guidetable-type01 .verylow {background-color: var(--color-Leve4);}*/
 
 .ck-guide { background-color: var(--color-neutral-20); border-radius: 0.8rem; padding: 1.0rem 1.5rem; margin-top: 1.0rem;}
 .ck-guide li {font-size: 1.3rem; color: var(--color-neutral-70); padding-left: 1.0rem; line-height: 180%;}
@@ -613,6 +628,7 @@
 .check-table th:nth-child(6), .check-table td:nth-child(6){width: 30%;}
 .check-table th {background-color: var(--color-neutral-20); border-top: 0.1rem solid var(--color-darkblue-100); }
 .check-table tr {border-bottom: 0.1rem solid var(--color-neutral-40);}
+
 
 .tg-tit {position: relative; font-size: 1.8rem; font-weight: 700; color: var(--color-darkblue-100);}
 
