@@ -156,6 +156,9 @@ input[type=checkbox],input[type=radio]{padding:0;vertical-align:middle;margin-to
 .radio-wrap > label > input + span.text-no {height:1.8rem;}
 
 
+.tag-info-wrap{position:relative;display:inline-flex;justify-content:flex-end}
+.tag-info-wrap .tooltip{float:inline-end;top:0.2rem;background: url(/src/resources/images/tooltip.svg) left center no-repeat;background-size: 2.4rem;font-size: 0;width: 2.4rem;height: 2rem;cursor: pointer;}
+
 /*input*/
 input[type=file], input[type=search], input[type=text]{padding:0.4rem 0 0.4rem 0.4rem}
 [role=button],a,area,button,input:not([type=range]),label,select,summary,textarea {touch-action: manipulation}
