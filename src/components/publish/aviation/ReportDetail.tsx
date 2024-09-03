@@ -267,7 +267,6 @@ function SafetyDetail() {
                       </div>
                     </div>
                   </div>
-                  <hr className="line dp-n"></hr>
                   <div className="form-table line">
                     <div className="form-cell wid100">
                       <div className="form-group wid100">
@@ -294,7 +293,6 @@ function SafetyDetail() {
                       </div>
                     </div>
                   </div>
-                  <hr className="line dp-n"></hr>
                   <div className="form-table line">
                     <div className="form-cell wid100">
                       <div className="form-group wid100">
@@ -355,7 +353,6 @@ function SafetyDetail() {
                       </div>
                     </div>
                   </div>
-                  <hr className="line dp-n"></hr>
                   <div className="form-table line">
                     <div className="form-cell wid100">
                       <div className="form-group wid100">
@@ -382,7 +379,6 @@ function SafetyDetail() {
                       </div>
                     </div>
                   </div>
-                  <hr className="line dp-n"></hr>
                   <div className="form-table line">
                     <div className="form-cell wid100">
                       <div className="form-group wid100">
@@ -400,6 +396,14 @@ function SafetyDetail() {
                                       <div className="Dept">상무대우수석사무장 / (주)대한항공</div>
                                     </div>
                                   </div>
+                                  <div className="flex-e">
+                                    <span className="ant-tag">PF</span>
+                                    <span className="InfoBox"></span>
+                                    <div className="Info">
+                                      <div className="Name">홍길동 (170****)</div>
+                                      <div className="Dept">상무대우수석사무장 / (주)대한항공</div>
+                                    </div>
+                                  </div>
                                 </div>
                               </span>
                             </li>
@@ -408,7 +412,6 @@ function SafetyDetail() {
                       </div>
                     </div>
                   </div>
-                  <hr className="line dp-n"></hr>
                 </div>
 
                 {/* 이벤트*/}
@@ -452,7 +455,6 @@ function SafetyDetail() {
                       </div>
                     </div>
                   </div>
-                  <hr className="line dp-n"></hr>
                   <div className="form-table line">
                     <div className="form-cell wid100">
                       <div className="form-group wid100">
@@ -479,7 +481,6 @@ function SafetyDetail() {
                       </div>
                     </div>
                   </div>
-                  <hr className="line dp-n"></hr>
                   <div className="form-table line">
                     <div className="form-cell wid100">
                       <div className="form-group wid100">
@@ -540,7 +541,7 @@ function SafetyDetail() {
                       </div>
                     </div>
                   </div>
-                  <hr className="line dp-n"></hr>
+
                   <div className="form-table line">
                     <div className="form-cell wid100">
                       <div className="form-group wid100">
@@ -567,7 +568,7 @@ function SafetyDetail() {
                       </div>
                     </div>
                   </div>
-                  <hr className="line dp-n"></hr>
+
                   <div className="form-table line">
                     <div className="form-cell wid100">
                       <div className="form-group wid100">
@@ -586,6 +587,14 @@ function SafetyDetail() {
                                         <div className="Dept">3급 / 정책지원팀</div>
                                       </div>
                                     </li>
+                                    <li>
+                                      <span className="ant-tag">PF</span>
+                                      <span className="InfoBox">홍길동</span>
+                                      <div className="Info">
+                                        <div className="Name">김민준 (170****)</div>
+                                        <div className="Dept">3급 / 정책지원팀</div>
+                                      </div>
+                                    </li>
                                   </ul>
                                 </div>
                               </span>
@@ -595,7 +604,6 @@ function SafetyDetail() {
                       </div>
                     </div>
                   </div>
-                  <hr className="line dp-n"></hr>
                 </div>
                 {/* //보고서내용보기 상세*/}
               </div>
@@ -819,7 +827,7 @@ function SafetyDetail() {
                                         <div className="form-cell wid100">
                                           <div className="form-group wid100">
                                             <div className="info-list">
-                                              <div className="btns-area mb5">
+                                              <div className="btn-area mb5">
                                                 <button
                                                   name="button"
                                                   className="btn_text btn_confirm text_color_neutral-10"
@@ -854,7 +862,6 @@ function SafetyDetail() {
                                                   <th>FLT No.</th>
                                                   <th>Action</th>
                                                 </tr>
-
                                                 <tr>
                                                   <td className="fix vm">
                                                     <div className="radio-wrap center">
@@ -872,7 +879,7 @@ function SafetyDetail() {
                                                   <td className="">777</td>
                                                   <td className="">7205</td>
                                                   <td className="">KE0024</td>
-                                                  <td className="tc">
+                                                  <td>
                                                     <a href="javascript:void(0);">
                                                       <span className="delete">X</span>
                                                     </a>

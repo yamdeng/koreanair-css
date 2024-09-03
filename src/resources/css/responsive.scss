@@ -6,7 +6,17 @@
   .checklist-contents .checklist-row.list {display: flex; align-items: flex-end; justify-content: flex-start; flex-wrap: wrap; width: 33%; padding-right: 0;}
 
    /*위험레벨조회 팝업*/
-  .risk-level-search-content {width: 90%;}
+  .risk-level-search-content {width:90%}
+
+  .RiskLevel-box{display:block}
+  .RiskLevel-box .RiskLevel-list{width:100%;padding:0 1.5rem}
+  .RiskLevel-box .RiskLevel-area{width:100%;margin-top:3rem}
+
+  .left-box {width: 35%;}
+  .right-box {width: 65%;}
+
+  .left-box1{width: 60%;}
+  .right-box1{width: 40%}
 }
 
 
@@ -41,7 +51,7 @@
   .contents-btns > button.btn-type01:nth-child(odd) {margin-right:0.2rem;}
   /*위험레벨조회 팝업*/
   .RiskLevel-box{display:block}
-  .RiskLevel-box .RiskLevel-list{width:100%}
+  .RiskLevel-box .RiskLevel-list{width:100%;padding:0 1.5rem}
   .RiskLevel-box .RiskLevel-area{width:100%;margin-top:3rem}
 
   .left-box {width: 35%;}
@@ -119,7 +129,7 @@
 
    /*위험레벨조회 팝업*/
   .RiskLevel-box{display:block}
-  .RiskLevel-box .RiskLevel-list{position:relative;width:100%}
+  .RiskLevel-box .RiskLevel-list{width:100%;padding:0 1.5rem}
   .RiskLevel-box .RiskLevel-area{width:100%}
 
   .left-box {width: 35%;}
@@ -220,6 +230,8 @@
   .notice-board tr {/*display: flex; flex-wrap: wrap; */border-bottom: 0.1rem solid var(--color-neutral-30);}
   .notice-board tr:nth-child(2) {border-top: 0.1rem solid var(--color-darkblue-100);}
   .notice-board td {display: inline-block; border-bottom: 0; padding: 0.5rem 1.0rem; text-align: left;}
+  .notice-board td .delete{position:absolute;top:-0.8rem;background: url(/src/resources/images/delete-text.svg) center center no-repeat;font-size: 0;width: 2rem;height: 2rem}
+
   .notice-board tr.fix-bg .fix {background-size: 2.0rem;}
   .notice-board td.bot-left{/*display: inline-block;*/}
   .notice-board td:nth-child(1) {position: relative; display: table-cell; width: 3.0rem; padding: 0; text-align: center;}
@@ -264,7 +276,7 @@
 
    /*위험레벨조회 팝업*/
   .RiskLevel-box{display:block}
-  .RiskLevel-box .RiskLevel-list{width:100%}
+  .RiskLevel-box .RiskLevel-list{width:100%;padding:0 1.5rem}
   .RiskLevel-box .RiskLevel-top-box .boxlist-wrap{margin-bottom:2rem}
   .RiskLevel-box .RiskLevel-list .df{width:100%}
   .RiskLevel-box .RiskLevel-area{width:100%}
@@ -342,7 +354,10 @@
 
    /*위험레벨조회 팝업*/
   .RiskLevel-box{display:block}
-  .RiskLevel-box .RiskLevel-list{width:100%}
+  .RiskLevel-box .RiskLevel-list{width:100%;padding:0 1.5rem}
+  .RiskLevel-box .RiskLevel-top-box .RiskLevel-Left{width:40%}
+  .RiskLevel-box .RiskLevel-top-box .RiskLevel-Right{width:40%}
+  .RiskLevel-box .RiskLevel-top-box .h4-tit{font-size:1.6rem;line-height:1.4;margin-bottom:1.0rem}
 
   .menu-tab a{display:inline-flex;font-size:1.3rem;line-height:1.3;min-height:4rem}
 

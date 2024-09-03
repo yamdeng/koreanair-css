@@ -561,7 +561,7 @@ input, select{font-family:'KoreanAirSans'}
 .toggle .btn-tg:after{content:'';display:inline-block;position:absolute;top:50%;right:0;/*width:0.7rem;height:0.7rem;transform: translateY(-50%) rotate(45deg);*/margin:0 0 0 1.3rem;-webkit-transform: translateY(-50%) rotate(45deg);-webkit-transform-origin: center;transform-origin:center}
 .toggle .active .btn-tg:after{-webkit-transform:translateY(-50%) rotate(-135deg);transform:translateY(-50%) rotate(-135deg)}
 .toggle .active .tg-conts{display:block}
-.toggle .active .tg-conts > .edit-area .detailForm{padding:2.5rem 3.5rem 2.5rem}
+.toggle .active .tg-conts > .edit-area .detailForm{padding:2.5rem 1.5rem 2.5rem}
 .info-wrap.toggle .tg-item.active >  dt{border-bottom:0}
 
 .info-wrap .edit-area .detailForm > .editbox.report + .editbox.report{margin-top:4rem}

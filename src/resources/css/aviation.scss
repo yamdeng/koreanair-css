@@ -26,17 +26,20 @@
 
 .c-step-list{counter-reset:stepCounter}
 .c-step-list.default{display:flex;font-size:1.2rem;text-align:center;margin-left:-1.5rem}
-.flag-tag{display:flex;justify-content:flex-end;margin:0.5rem 0.5rem 0 0;gap:0 0.5rem}
+.flag-tag{display:flex;justify-content:center;margin:0.3rem 0.5rem 0 0;gap:0 0.5rem}
 .flag-tag1{gap:0 0.5rem}
 .flag-tag .icon-flag{border-radius:99.9rem;padding:0.3rem 0.6rem}
 .flag-tag1 .icon-flag1{border-radius:99.9rem;padding:0.3rem 2.0rem}
 .flag-tag1 .icon-flag1 + .icon-flag1{margin-left:0.5rem}
-.flag-tag .icon-flag.txt{font-family:"KoreanAirSans";font-weight:400;font-size:1.2rem;color:var(--color-neutral-90)}
-.flag-tag .icon-flag.btn-blue{background-color:var(--color-neutral-10);color:var(--color-darkblue-100);border:solid 0.1rem var(--color-darkblue-100)}
-.flag-tag .icon-flag.btn-wh{padding:0.2rem 1rem;line-height:2.0;background-color:var(--color-neutral-10);color:var(--color-neutral-90)}
+.flag-tag .icon-flag.txt{font-family:"KoreanAirSans";font-weight:400;font-size:1.2rem;line-height:1.2rem;color:var(--color-neutral-90)}
+.flag-tag .icon-flag.btn-blue{background-color:var(--color-neutral-10);color:var(--color-darkblue-100);border:solid 0.1rem var(--color-darkblue-100);box-shadow: 0.2rem 0.5rem 0.5rem rgba(0, 0, 0, 0.1);}
+.flag-tag .icon-flag.btn-wh{padding:0.2rem 1rem;line-height:1.2;background-color:var(--color-neutral-10);color:var(--color-neutral-90);box-shadow: 0.2rem 0.5rem 0.5rem rgba(0, 0, 0, 0.1);}
 .flag-tag1 .icon-flag1.btn-lightblue{background-color:var(--color-lightblue-40);font-size:1.4rem;line-height:2.8}
 .flag-tag1 .icon-flag1:last-child{margin-right:2rem}
 .flag-tag1 .icon-flag1.active{text-decoration:underline;font-weight:600}
+
+.notice-board td{position:relative}
+.notice-board td .delete{position:absolute;top:1rem;background:url(/src/resources/images/delete-text.svg) center center no-repeat;font-size: 0;width: 2rem;height: 2rem}
 
 
 /*메인*/
@@ -116,7 +119,7 @@
 .c-step-list>li{counter-increment:stepCounter}
 .c-step-list.default .active .info-title{color:var(--color-mblue-100)}
 .c-step-list.default>li .info-title{color:var(--color-neutral-90)}
-.c-step-list.default .active .info-title:before{background-color:var(--color-neutral-10);border-width: 2px;border-color:var(--color-mblue-100);color:var(--color-mblue-100);font-weight:700}
+.c-step-list.default .active .info-title:before{background-color:var(--color-neutral-10);border-width:0.2rem;border-color:var(--color-mblue-100);color:var(--color-mblue-100);font-weight:700}
 .c-step-list.default .info-title:before{display:flex;content:counter(stepCounter);position:relative;z-index:1;justify-content:center;align-items:center;width:3.2rem;height:3.2rem;border-radius:50%;background-color:var(--color-neutral-10);border: 1px solid #666;margin:0 auto 0.8rem}
 .c-step-list.default>li:after{content:'';position:absolute;top:1.6rem;left:0;width:100%;height:0.1rem;background-color:#ddd}
 .c-step-list.default>li:last-of-type:after{left:auto;right:50%}
@@ -342,7 +345,8 @@
 
 /*보고서접수상세*/
 .editbox.report{position:relative;border-top:0;display:inline-block;width:100%}
-.editbox.report .header-tit{display:inline;font-size:2rem;color:var(--color-mblue-100);border-bottom:solid 0.2rem var(--color-mblue-100);font-weight:600;line-height:1.8}
+.editbox.report .header-tit{font-size:2rem;color:var(--color-mblue-100);font-weight:600;line-height:1.8;width:100%;padding-left:1.3rem}
+.editbox.report .header-tit:before{content:'·';display:block;position:absolute;top:0;left:0.2rem}
 .ant-row{display:flex;flex-flow:row wrap}
 .ant-col{position:relative;max-width:100%;min-height:0.1rem}
 .ant-col-11 {
@@ -359,7 +363,7 @@
 .text-desc-type1 .MemberClass{display:flex;justify-content:start;width:100%;padding-top:1rem}
 .text-desc-type1 .MemberClass ul{width:100%;align-self:flex-start}
 .text-desc-type1 .MemberClass > ul li{position:relative;display:flex;-webkit-box-pack:start;justify-content:start;-webkit-box-align:center;align-items:center}
-.ant-tag{display:inline-block;box-sizing:border-box;line-height:1.5715;list-style:none;height:auto;margin:0 0.3rem 0 0;padding:0 0.7rem;font-size:1.2rem;white-space:nowrap;background:var(--color-neutral-01);border:0.1rem solid var(--color-neutral-40);border-radius:0.8rem;opacity: 1;transition: all .3s}
+.ant-tag{display:inline-block;box-sizing:border-box;line-height:3;list-style:none;height:auto;margin:0 0.3rem 0 0;padding:0 0.7rem;font-size:1.2rem;white-space:nowrap;background:var(--color-neutral-01);border:0.1rem solid var(--color-neutral-40);border-radius:0.8rem;opacity: 1;transition: all .3s}
 .text-desc-type1 .MemberClass .InfoBox{display:inline-flex;justify-content:center;align-items:center;width:3.6rem;height:3.6rem;border-radius:50%;overflow:hidden;margin-right:0.8rem;background:url(/src/resources/images/no_img_pro.jpg) 50% 50% / 100% no-repeat rgb(204, 204, 204)}
 .text-desc-type1 .MemberClass .Info .Dept{font-size:1.2rem;color:var(--color-neutral-70)}
 
