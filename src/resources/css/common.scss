@@ -74,7 +74,8 @@ body * {
 
 
 .mr5{margin-right:0.5rem !important}
-.mt10{margin-top:1rem !important}
+.mt10{margin-top:1.0rem !important}
+.mt15{margin-top:1.5rem !important}
 .mb5{margin-bottom:0.5rem !important}
 
 button, input, textarea, select, label{font-family:'KoreanAirSans';font-weight:400}
@@ -407,7 +408,7 @@ input, select{font-family:'KoreanAirSans'}
 
 /*탭*/
 .menu-tab-nav{display:flex;position:relative;width:100%}
-.menu-tab{display:flex;flex-wrap:nowrap;border:0.1rem solid var(--color-neutral-40);border-radius:0.8rem;overflow:auto hidden;scroll-behavior:smooth;gap:1.2rem 0;margin:0.4rem 0 1.5rem}
+.menu-tab{display:flex;flex-wrap:nowrap;border:0.1rem solid var(--color-neutral-40);border-radius:0.8rem;overflow:auto hidden;scroll-behavior:smooth;gap:1.2rem 0;margin:0rem 0 1.5rem}
 .menu-tab:after{content:'';display:block;clear:both}
 .menu-tab a:nth-child(n){border-right:0.1rem solid var(--color-neutral-40)}
 .menu-tab a:last-child{border-right:0}
@@ -564,6 +565,8 @@ input, select{font-family:'KoreanAirSans'}
 .toggle .active .tg-conts{display:block}
 .toggle .active .tg-conts > .edit-area .detailForm{padding:2.5rem 1.5rem 2.5rem}
 .info-wrap.toggle .tg-item.active >  dt{border-bottom:0}
+
+
 
 .info-wrap .edit-area .detailForm > .editbox.report + .editbox.report{margin-top:4rem}
 .edit-area .form-table .form-cell{position:relative;flex-grow: 1;padding: 1.5rem 0.5rem;border-bottom: 0.1rem solid var(--color-neutral-40)}

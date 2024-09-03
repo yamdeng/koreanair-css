@@ -652,7 +652,7 @@ function SafetyDetail() {
                           <div className="edit-area">
                             {/*보고서접수 상세*/}
                             <div className="detailForm-detail-3deps list-group">
-                              <div className="list bx-toggle">
+                              <div className="list bx-toggle" style={{ border: 'solid 1px blue' }}>
                                 <dl className="tg-item rbox01 ">
                                   <dt onClick={() => setFourExpaned(!fourExpaned)}>
                                     <button type="button" className="tg-btn">
@@ -821,7 +821,7 @@ function SafetyDetail() {
                                         </button>
                                       </div>
                                       <hr className="line"></hr>
-                                      <div className="form-table line">
+                                      <div className="form-table ">
                                         <div className="form-cell wid100">
                                           <div className="form-group wid100">
                                             <div className="info-list">
@@ -911,404 +911,224 @@ function SafetyDetail() {
                                           </div>
                                         </div>
                                       </div>
+                                      {/*보고서 상세*/}
+                                      <div className="detailForm-detail-4deps info-wrap list-group">
+                                        <div className="list bx-toggle" style={{ border: 'solid 0px RED' }}>
+                                          <dl className="tg-item rbox01 ">
+                                            <dt>
+                                              <button type="button" className="tg-btn">
+                                                - Doc No. ASR-100308
+                                                <span className=""></span>
+                                              </button>
+                                            </dt>
+                                            <dd className="tg-conts">
+                                              <div className="edit-area">
+                                                <div className="detailForm" style={{ display: 'none' }}>
+                                                  {/* 보고서내용보기 상세*/}
+                                                  {/* 비행정보*/}
+                                                  <div className="editbox report">
+                                                    <div className="header-tit">비행정보</div>
+                                                    <div className="form-table line">
+                                                      <div className="form-cell wid100">
+                                                        <div className="form-group wid100">
+                                                          <div className="box-view-list">
+                                                            <ul className="view-list">
+                                                              <li className="accumlate-list">
+                                                                <label className="t-label">출발일자</label>
+                                                                <span className="text-desc-type1">
+                                                                  {' '}
+                                                                  2024-08-02 / UTC
+                                                                </span>
+                                                              </li>
+                                                            </ul>
+                                                          </div>
+                                                        </div>
+                                                      </div>
+                                                      <div className="form-cell wid100">
+                                                        <div className="form-group wid100">
+                                                          <div className="box-view-list">
+                                                            <ul className="view-list">
+                                                              <li className="accumlate-list">
+                                                                <label className="t-label">비행편명</label>
+                                                                <span className="text-desc-type1">KE0787</span>
+                                                              </li>
+                                                            </ul>
+                                                          </div>
+                                                        </div>
+                                                      </div>
+                                                    </div>
+                                                    <div className="form-table line">
+                                                      <div className="form-cell wid100">
+                                                        <div className="form-group wid100">
+                                                          <div className="box-view-list">
+                                                            <ul className="view-list">
+                                                              <li className="accumlate-list">
+                                                                <label className="t-label">등록 부호</label>
+                                                                <span className="text-desc-type1">HL7783</span>
+                                                              </li>
+                                                            </ul>
+                                                          </div>
+                                                        </div>
+                                                      </div>
+                                                      <div className="form-cell wid100">
+                                                        <div className="form-group wid100">
+                                                          <div className="box-view-list">
+                                                            <ul className="view-list">
+                                                              <li className="accumlate-list">
+                                                                <label className="t-label">항공기 형식</label>
+                                                                <span className="text-desc-type1">77W</span>
+                                                              </li>
+                                                            </ul>
+                                                          </div>
+                                                        </div>
+                                                      </div>
+                                                    </div>
+                                                    <div className="form-table line">
+                                                      <div className="form-cell wid100">
+                                                        <div className="form-group wid100">
+                                                          <div className="box-view-list">
+                                                            <ul className="view-list">
+                                                              <li className="accumlate-list">
+                                                                <label className="t-label">출발/도착 공항</label>
+                                                                <span className="text-desc-type1">ICN / FUK</span>
+                                                              </li>
+                                                            </ul>
+                                                          </div>
+                                                        </div>
+                                                      </div>
+                                                      <div className="form-cell wid100">
+                                                        <div className="form-group wid100">
+                                                          <div className="box-view-list">
+                                                            <ul className="view-list">
+                                                              <li className="accumlate-list">
+                                                                <label className="t-label">Divert</label>
+                                                                <span className="text-desc-type1">
+                                                                  INC
+                                                                  <div className="ant-row">
+                                                                    <div role="label" className="ant-col ant-col-md-2">
+                                                                      STD
+                                                                    </div>
+                                                                    <div role="data" className="ant-col ant-col-md-2">
+                                                                      09:45
+                                                                    </div>
+                                                                    <div role="label" className="ant-col ant-col-md-2">
+                                                                      STA
+                                                                    </div>
+                                                                    <div role="data" className="ant-col ant-col-md-2">
+                                                                      19:50
+                                                                    </div>
+                                                                    <div role="label" className="ant-col ant-col-md-2">
+                                                                      ATD
+                                                                    </div>
+                                                                    <div role="data" className="ant-col ant-col-md-2">
+                                                                      09:45
+                                                                    </div>
+                                                                    <div role="label" className="ant-col ant-col-md-2">
+                                                                      ATA
+                                                                    </div>
+                                                                    <div role="data" className="ant-col ant-col-md-2">
+                                                                      19:50
+                                                                    </div>
+                                                                    <div role="label" className="ant-col ant-col-md-2">
+                                                                      Delay
+                                                                    </div>
+                                                                    <div role="data" className="ant-col ant-col-md-2">
+                                                                      0
+                                                                    </div>
+                                                                  </div>
+                                                                </span>
+                                                              </li>
+                                                            </ul>
+                                                          </div>
+                                                        </div>
+                                                      </div>
+                                                    </div>
+                                                    <div className="form-table line">
+                                                      <div className="form-cell wid100">
+                                                        <div className="form-group wid100">
+                                                          <div className="box-view-list">
+                                                            <ul className="view-list">
+                                                              <li className="accumlate-list">
+                                                                <label className="t-label">Supply (F/C/Y)</label>
+                                                                <span className="text-desc-type1">0/24/254</span>
+                                                              </li>
+                                                            </ul>
+                                                          </div>
+                                                        </div>
+                                                      </div>
+                                                      <div className="form-cell wid100">
+                                                        <div className="form-group wid100">
+                                                          <div className="box-view-list">
+                                                            <ul className="view-list">
+                                                              <li className="accumlate-list">
+                                                                <label className="t-label">CHECK_IN (F/C/Y)</label>
+                                                                <span className="text-desc-type1">0/2/0</span>
+                                                              </li>
+                                                            </ul>
+                                                          </div>
+                                                        </div>
+                                                      </div>
+                                                    </div>
+                                                    <div className="form-table line">
+                                                      <div className="form-cell wid100">
+                                                        <div className="form-group wid100">
+                                                          <div className="box-view-list">
+                                                            <ul className="view-list">
+                                                              <li className="accumlate-list">
+                                                                <label className="t-label">Flight Crew</label>
+                                                                <span className="text-desc-type1">
+                                                                  <div className="MemberClass">
+                                                                    <div className="flex-e">
+                                                                      <span className="ant-tag">PF</span>
+                                                                      <span className="InfoBox"></span>
+                                                                      <div className="Info">
+                                                                        <div className="Name">홍길동 (170****)</div>
+                                                                        <div className="Dept">
+                                                                          상무대우수석사무장 / (주)대한항공
+                                                                        </div>
+                                                                      </div>
+                                                                    </div>
+                                                                    <div className="flex-e">
+                                                                      <span className="ant-tag">PF</span>
+                                                                      <span className="InfoBox"></span>
+                                                                      <div className="Info">
+                                                                        <div className="Name">홍길동 (170****)</div>
+                                                                        <div className="Dept">
+                                                                          상무대우수석사무장 / (주)대한항공
+                                                                        </div>
+                                                                      </div>
+                                                                    </div>
+                                                                  </div>
+                                                                </span>
+                                                              </li>
+                                                            </ul>
+                                                          </div>
+                                                        </div>
+                                                      </div>
+                                                    </div>
+                                                  </div>
+                                                  {/* //보고서내용보기 상세*/}
+                                                </div>
+                                                {/* 버튼*/}
+                                                <div className="contents-btns">
+                                                  <button
+                                                    type="button"
+                                                    name="button"
+                                                    className="btn_text text_color_neutral-10 btn_confirm"
+                                                  >
+                                                    수정
+                                                  </button>
+                                                </div>
+                                                {/* //버튼*/}
+                                              </div>
+                                            </dd>
+                                          </dl>
+                                        </div>
+                                      </div>
+                                      {/* //보고서 상세*/}
                                     </div>
                                   </dd>
                                 </dl>
-                              </div>
-
-                              {/*보고서 상세*/}
-                              <div className="detailForm-detail-4deps list-group">
-                                <div className="list bx-toggle">
-                                  <dl className="tg-item rbox01 ">
-                                    <dt>
-                                      <button type="button" className="tg-btn">
-                                        - Doc No. ASR-100308
-                                        <span className=""></span>
-                                      </button>
-                                    </dt>
-                                    <dd className="tg-conts">
-                                      <div className="edit-area">
-                                        <div className="detailForm">
-                                          {/* 보고서내용보기 상세*/}
-                                          {/* 비행정보*/}
-                                          <div className="editbox report">
-                                            <div className="header-tit">비행정보</div>
-                                            <div className="form-table line">
-                                              <div className="form-cell wid100">
-                                                <div className="form-group wid100">
-                                                  <div className="box-view-list">
-                                                    <ul className="view-list">
-                                                      <li className="accumlate-list">
-                                                        <label className="t-label">출발일자</label>
-                                                        <span className="text-desc-type1"> 2024-08-02 / UTC</span>
-                                                      </li>
-                                                    </ul>
-                                                  </div>
-                                                </div>
-                                              </div>
-                                              <div className="form-cell wid100">
-                                                <div className="form-group wid100">
-                                                  <div className="box-view-list">
-                                                    <ul className="view-list">
-                                                      <li className="accumlate-list">
-                                                        <label className="t-label">비행편명</label>
-                                                        <span className="text-desc-type1">KE0787</span>
-                                                      </li>
-                                                    </ul>
-                                                  </div>
-                                                </div>
-                                              </div>
-                                            </div>
-                                            <div className="form-table line">
-                                              <div className="form-cell wid100">
-                                                <div className="form-group wid100">
-                                                  <div className="box-view-list">
-                                                    <ul className="view-list">
-                                                      <li className="accumlate-list">
-                                                        <label className="t-label">등록 부호</label>
-                                                        <span className="text-desc-type1">HL7783</span>
-                                                      </li>
-                                                    </ul>
-                                                  </div>
-                                                </div>
-                                              </div>
-                                              <div className="form-cell wid100">
-                                                <div className="form-group wid100">
-                                                  <div className="box-view-list">
-                                                    <ul className="view-list">
-                                                      <li className="accumlate-list">
-                                                        <label className="t-label">항공기 형식</label>
-                                                        <span className="text-desc-type1">77W</span>
-                                                      </li>
-                                                    </ul>
-                                                  </div>
-                                                </div>
-                                              </div>
-                                            </div>
-                                            <div className="form-table line">
-                                              <div className="form-cell wid100">
-                                                <div className="form-group wid100">
-                                                  <div className="box-view-list">
-                                                    <ul className="view-list">
-                                                      <li className="accumlate-list">
-                                                        <label className="t-label">출발/도착 공항</label>
-                                                        <span className="text-desc-type1">ICN / FUK</span>
-                                                      </li>
-                                                    </ul>
-                                                  </div>
-                                                </div>
-                                              </div>
-                                              <div className="form-cell wid100">
-                                                <div className="form-group wid100">
-                                                  <div className="box-view-list">
-                                                    <ul className="view-list">
-                                                      <li className="accumlate-list">
-                                                        <label className="t-label">Divert</label>
-                                                        <span className="text-desc-type1">
-                                                          INC
-                                                          <div className="ant-row">
-                                                            <div role="label" className="ant-col ant-col-md-2">
-                                                              STD
-                                                            </div>
-                                                            <div role="data" className="ant-col ant-col-md-2">
-                                                              09:45
-                                                            </div>
-                                                            <div role="label" className="ant-col ant-col-md-2">
-                                                              STA
-                                                            </div>
-                                                            <div role="data" className="ant-col ant-col-md-2">
-                                                              19:50
-                                                            </div>
-                                                            <div role="label" className="ant-col ant-col-md-2">
-                                                              ATD
-                                                            </div>
-                                                            <div role="data" className="ant-col ant-col-md-2">
-                                                              09:45
-                                                            </div>
-                                                            <div role="label" className="ant-col ant-col-md-2">
-                                                              ATA
-                                                            </div>
-                                                            <div role="data" className="ant-col ant-col-md-2">
-                                                              19:50
-                                                            </div>
-                                                            <div role="label" className="ant-col ant-col-md-2">
-                                                              Delay
-                                                            </div>
-                                                            <div role="data" className="ant-col ant-col-md-2">
-                                                              0
-                                                            </div>
-                                                          </div>
-                                                        </span>
-                                                      </li>
-                                                    </ul>
-                                                  </div>
-                                                </div>
-                                              </div>
-                                            </div>
-                                            <div className="form-table line">
-                                              <div className="form-cell wid100">
-                                                <div className="form-group wid100">
-                                                  <div className="box-view-list">
-                                                    <ul className="view-list">
-                                                      <li className="accumlate-list">
-                                                        <label className="t-label">Supply (F/C/Y)</label>
-                                                        <span className="text-desc-type1">0/24/254</span>
-                                                      </li>
-                                                    </ul>
-                                                  </div>
-                                                </div>
-                                              </div>
-                                              <div className="form-cell wid100">
-                                                <div className="form-group wid100">
-                                                  <div className="box-view-list">
-                                                    <ul className="view-list">
-                                                      <li className="accumlate-list">
-                                                        <label className="t-label">CHECK_IN (F/C/Y)</label>
-                                                        <span className="text-desc-type1">0/2/0</span>
-                                                      </li>
-                                                    </ul>
-                                                  </div>
-                                                </div>
-                                              </div>
-                                            </div>
-                                            <div className="form-table line">
-                                              <div className="form-cell wid100">
-                                                <div className="form-group wid100">
-                                                  <div className="box-view-list">
-                                                    <ul className="view-list">
-                                                      <li className="accumlate-list">
-                                                        <label className="t-label">Flight Crew</label>
-                                                        <span className="text-desc-type1">
-                                                          <div className="MemberClass">
-                                                            <div className="flex-e">
-                                                              <span className="ant-tag">PF</span>
-                                                              <span className="InfoBox"></span>
-                                                              <div className="Info">
-                                                                <div className="Name">홍길동 (170****)</div>
-                                                                <div className="Dept">
-                                                                  상무대우수석사무장 / (주)대한항공
-                                                                </div>
-                                                              </div>
-                                                            </div>
-                                                            <div className="flex-e">
-                                                              <span className="ant-tag">PF</span>
-                                                              <span className="InfoBox"></span>
-                                                              <div className="Info">
-                                                                <div className="Name">홍길동 (170****)</div>
-                                                                <div className="Dept">
-                                                                  상무대우수석사무장 / (주)대한항공
-                                                                </div>
-                                                              </div>
-                                                            </div>
-                                                          </div>
-                                                        </span>
-                                                      </li>
-                                                    </ul>
-                                                  </div>
-                                                </div>
-                                              </div>
-                                            </div>
-                                          </div>
-
-                                          {/* 이벤트*/}
-                                          <div className="editbox report">
-                                            <div className="header-tit">이벤트</div>
-                                            <div className="form-table line">
-                                              <div className="form-cell wid100">
-                                                <div className="form-group wid100">
-                                                  <div className="box-view-list">
-                                                    <ul className="view-list">
-                                                      <li className="accumlate-list">
-                                                        <label className="t-label">이벤트 카테고리</label>
-                                                        <span className="text-desc-type1">점검</span>
-                                                      </li>
-                                                    </ul>
-                                                  </div>
-                                                </div>
-                                              </div>
-                                              <div className="form-cell wid100">
-                                                <div className="form-group wid100">
-                                                  <div className="box-view-list">
-                                                    <ul className="view-list">
-                                                      <li className="accumlate-list">
-                                                        <label className="t-label">발생 공항</label>
-                                                        <span className="text-desc-type1">조금</span>
-                                                      </li>
-                                                    </ul>
-                                                  </div>
-                                                </div>
-                                              </div>
-                                              <div className="form-cell wid100">
-                                                <div className="form-group wid100">
-                                                  <div className="box-view-list">
-                                                    <ul className="view-list">
-                                                      <li className="accumlate-list">
-                                                        <label className="t-label">검사 유형</label>
-                                                        <span className="text-desc-type1">안전</span>
-                                                      </li>
-                                                    </ul>
-                                                  </div>
-                                                </div>
-                                              </div>
-                                            </div>
-                                            <div className="form-table line">
-                                              <div className="form-cell wid100">
-                                                <div className="form-group wid100">
-                                                  <div className="box-view-list">
-                                                    <ul className="view-list">
-                                                      <li className="accumlate-list">
-                                                        <label className="t-label">권한의 기반</label>
-                                                        <span className="text-desc-type1">외국의</span>
-                                                      </li>
-                                                    </ul>
-                                                  </div>
-                                                </div>
-                                              </div>
-                                              <div className="form-cell wid100">
-                                                <div className="form-group wid100">
-                                                  <div className="box-view-list">
-                                                    <ul className="view-list">
-                                                      <li className="accumlate-list">
-                                                        <label className="t-label">발견</label>
-                                                        <span className="text-desc-type1">77W</span>
-                                                      </li>
-                                                    </ul>
-                                                  </div>
-                                                </div>
-                                              </div>
-                                            </div>
-                                            <div className="form-table line">
-                                              <div className="form-cell wid100">
-                                                <div className="form-group wid100">
-                                                  <div className="box-view-list">
-                                                    <ul className="view-list">
-                                                      <li className="accumlate-list">
-                                                        <label className="t-label">출발/도착 공항</label>
-                                                        <span className="text-desc-type1">ICN / FUK</span>
-                                                      </li>
-                                                    </ul>
-                                                  </div>
-                                                </div>
-                                              </div>
-                                              <div className="form-cell wid100">
-                                                <div className="form-group wid100">
-                                                  <div className="box-view-list">
-                                                    <ul className="view-list">
-                                                      <li className="accumlate-list">
-                                                        <label className="t-label">Divert</label>
-                                                        <span className="text-desc-type1">
-                                                          INC
-                                                          <div className="ant-row">
-                                                            <div role="label" className="ant-col ant-col-md-2">
-                                                              STD
-                                                            </div>
-                                                            <div role="data" className="ant-col ant-col-md-2">
-                                                              09:45
-                                                            </div>
-                                                            <div role="label" className="ant-col ant-col-md-2">
-                                                              STA
-                                                            </div>
-                                                            <div role="data" className="ant-col ant-col-md-2">
-                                                              19:50
-                                                            </div>
-                                                            <div role="label" className="ant-col ant-col-md-2">
-                                                              ATD
-                                                            </div>
-                                                            <div role="data" className="ant-col ant-col-md-2">
-                                                              09:45
-                                                            </div>
-                                                            <div role="label" className="ant-col ant-col-md-2">
-                                                              ATA
-                                                            </div>
-                                                            <div role="data" className="ant-col ant-col-md-2">
-                                                              19:50
-                                                            </div>
-                                                            <div role="label" className="ant-col ant-col-md-2">
-                                                              Delay
-                                                            </div>
-                                                            <div role="data" className="ant-col ant-col-md-2">
-                                                              0
-                                                            </div>
-                                                          </div>
-                                                        </span>
-                                                      </li>
-                                                    </ul>
-                                                  </div>
-                                                </div>
-                                              </div>
-                                            </div>
-
-                                            <div className="form-table line">
-                                              <div className="form-cell wid100">
-                                                <div className="form-group wid100">
-                                                  <div className="box-view-list">
-                                                    <ul className="view-list">
-                                                      <li className="accumlate-list">
-                                                        <label className="t-label">Supply (F/C/Y)</label>
-                                                        <span className="text-desc-type1">0/24/254</span>
-                                                      </li>
-                                                    </ul>
-                                                  </div>
-                                                </div>
-                                              </div>
-                                              <div className="form-cell wid100">
-                                                <div className="form-group wid100">
-                                                  <div className="box-view-list">
-                                                    <ul className="view-list">
-                                                      <li className="accumlate-list">
-                                                        <label className="t-label">CHECK_IN (F/C/Y)</label>
-                                                        <span className="text-desc-type1">0/2/0</span>
-                                                      </li>
-                                                    </ul>
-                                                  </div>
-                                                </div>
-                                              </div>
-                                            </div>
-
-                                            <div className="form-table line">
-                                              <div className="form-cell wid100">
-                                                <div className="form-group wid100">
-                                                  <div className="box-view-list">
-                                                    <ul className="view-list">
-                                                      <li className="accumlate-list">
-                                                        <label className="t-label">Flight Crew</label>
-                                                        <span className="text-desc-type1">
-                                                          <div className="MemberClass">
-                                                            <div className="flex-e">
-                                                              <span className="ant-tag">PF</span>
-                                                              <span className="InfoBox"></span>
-                                                              <div className="Info">
-                                                                <div className="Name">홍길동 (170****)</div>
-                                                                <div className="Dept">
-                                                                  상무대우수석사무장 / (주)대한항공
-                                                                </div>
-                                                              </div>
-                                                            </div>
-                                                            <div className="flex-e">
-                                                              <span className="ant-tag">PF</span>
-                                                              <span className="InfoBox"></span>
-                                                              <div className="Info">
-                                                                <div className="Name">홍길동 (170****)</div>
-                                                                <div className="Dept">
-                                                                  상무대우수석사무장 / (주)대한항공
-                                                                </div>
-                                                              </div>
-                                                            </div>
-                                                          </div>
-                                                        </span>
-                                                      </li>
-                                                    </ul>
-                                                  </div>
-                                                </div>
-                                              </div>
-                                            </div>
-                                          </div>
-                                          {/* //보고서내용보기 상세*/}
-                                        </div>
-                                      </div>
-                                    </dd>
-                                  </dl>
-                                </div>
                               </div>
                             </div>
                             {/*//보고서접수 상세*/}

@@ -160,8 +160,9 @@ function PRiskEdit() {
                         <AppTextInput label="기상조건" />
                       </div>
                     </div>
+
                     <div className="form-cell wid50">
-                      <div className="group-box-wrap wid100">
+                      <div className="group-box-wrap1 wid100">
                         <span className="txt">
                           SPI 여부<span className="required">*</span>
                         </span>
@@ -174,6 +175,21 @@ function PRiskEdit() {
                             <input type="radio" />
                             <span>NO</span>
                           </label>
+                        </div>
+
+                        <div className="form-group wid100 mt15">
+                          {/* 파일첨부영역 : drag */}
+                          <div className="filebox error">
+                            <Dragger {...props}>
+                              <p className="ant-upload-text ">
+                                + 이 곳을 클릭하거나 마우스로 업로드할 파일을 끌어서 놓으세요.
+                              </p>
+                            </Dragger>
+                            <label htmlFor="file" className="file-label">
+                              첨부파일 <span className="required">*</span>
+                            </label>
+                          </div>
+                          <span className="errorText">fileerror</span>
                         </div>
                       </div>
                     </div>

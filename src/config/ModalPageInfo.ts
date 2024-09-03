@@ -44,6 +44,7 @@ import MU5P1Modal from '@/components/publish/modal/MU5P1Modal';
 import MU5P2Modal from '@/components/publish/modal/MU5P2Modal';
 import MU5P3Modal from '@/components/publish/modal/MU5P3Modal';
 import MU5P4Modal from '@/components/publish/modal/MU5P4Modal';
+import PReportDocumentModal from '@/components/publish/modal/PReportDocumentModal';
 
 const ModalPageInfo: any = {};
 
@@ -187,6 +188,13 @@ ModalPageInfo.list = [
     path: 'PChapterDeleteModal',
     description: '',
     success: true,
+  },
+  {
+    title: '[항공안전> 03.안전위험관리] 안전조사 > 조사보고서 > 참고문서번호 팝업창',
+    Component: PReportDocumentModal,
+    path: 'PReportDocumentModal',
+    description: '',
+    success: false,
   },
   {
     title: '[항공안전> 04.안전보증] SMS종합분석현황 > 대시보드 > 보고서현황 팝업창',

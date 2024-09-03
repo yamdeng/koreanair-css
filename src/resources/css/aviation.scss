@@ -16,6 +16,7 @@
 .tl{text-align:left !important}
 .tr{text-align:right !important}
 .ml3{margin-left:0.3rem !important}
+
 .h3{position:relative;font-size:2.2rem;font-weight:700;height:4.0rem;letter-spacing:-0.01rem}
 .h3:after{content:'';display:block}
 .flex-e{display:flex;justify-content:flex-end !important}
@@ -183,6 +184,7 @@
 .detailForm-detail-2deps.list-group .list > dl > dd{margin:0 -2.0rem -1.0rem -1.0rem}
 .detailForm-detail-3deps.list-group .list > dl > dt{padding:0.8rem 3rem 0rem 1.2rem}
 .detailForm-detail-3deps.list-group .list > dl > dd{margin:0 -0rem -1.0rem -1.0rem}
+.detailForm-detail-4deps.list-group .list > dl > dt{padding:0.8rem 3rem 0rem 1.2rem}
 .detailForm-detail.list-group .list > dl > dt .tg-btn{font-family:"KoreanAirSans";font-size:1.8rem;font-weight:500;color:var(--color-darkblue-100)}
 .bx-toggle .tg-btn span.active{transform:rotate(180deg)}
 .bx-toggle span.active .tg-conts{display:block}
@@ -201,6 +203,7 @@
 .detailForm-detail-4deps.list-group .list.bx-toggle .tg-btn span{/*display:inline-block;*/float:right;background: url(/src/resources/images/arrow-down.svg) center right no-repeat;background-size:2.8rem;width:2.8rem;height:2.8rem;vertical-align:middle}
 .detailForm-detail-4deps.list-group .list .edit-area{padding:2.0rem;margin-top:0;border-top:0;color:var(--color-neutral-70);line-height:2rem;font-size:1.6rem}
 .detailForm-detail-4deps.list-group .list > dl > dt .tg-btn{font-family:"KoreanAirSans";font-size: 1.8rem;font-weight:500;color:var(--color-darkblue-100)}
+.detailForm-detail-3deps > .detailForm-detail-4deps .list > dl > dt{padding:1rem 0rem 1rem;border-bottom:0.1rem solid #ccc}
 
 .CheckList-Title{display:flex;width:100%;align-items:center;vertical-align:middle}
 
@@ -297,8 +300,8 @@
         text-align: right;}
 
 /*AUDIT-체크리스트 상단 탭*/
-.menu-tab-nav .swiper-container{position:relative;display:flex;overflow:hidden;width:100%}
-.menu-tab-nav .swiper-container > .menu-tab-nav-operations{position:absolute;top:2.0rem;right:0;display:flex;justify-content:flex-start;z-index:1;background-color:var(--color-neutral-10)}
+.menu-tab-nav .swiper-container{position:relative;display:flex;overflow:hidden;width:100%;margin-top:0.4rem}
+.menu-tab-nav .swiper-container > .menu-tab-nav-operations{position:absolute;/*top:2.0rem;*/right:0;display:flex;justify-content:flex-start;z-index:1;background-color:var(--color-neutral-10)}
 .menu-tab-nav .swiper-container > .menu-tab-nav-operations .menu-tab-nav-more{width:3.2rem;height:4.6rem;padding:0 3rem;border:solid 0.1rem var(--color-neutral-40);font-size:0;background:url(../images/icon-option.svg)center center no-repeat;align-items:center}
 .menu-tab-nav .swiper-container > .menu-tab-nav-operations .menu-tab-btn-next{width:3.2rem;height:4.6rem;padding:0 3rem;border-left:0;border-right:solid 0.1rem var(--color-neutral-40);border-top:solid 0.1rem var(--color-neutral-40);border-bottom:solid 0.1rem var(--color-neutral-40);background: url(../images/plus-btn.svg) center center no-repeat;align-items:center}
 .menu-tab-nav .swiper-container > .menu-tab-nav-operations button.menu-tab-btn-next:first-child{border-left:solid 0.1rem var(--color-neutral-40)}
