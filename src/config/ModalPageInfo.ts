@@ -354,21 +354,21 @@ ModalPageInfo.list = [
     Component: MU5P2Modal,
     path: 'MU5P2Modal',
     description: '',
-    success: false,
+    success: true,
   },
   {
     title: '산업안전 > 위험성평가 > 중대성안내 팝업창',
     Component: MU5P3Modal,
     path: 'MU5P3Modal',
     description: '',
-    success: false,
+    success: true,
   },
   {
     title: '산업안전 > 위험성평가 > 위험도안내 팝업창',
     Component: MU5P4Modal,
     path: 'MU5P4Modal',
     description: '',
-    success: false,
+    success: true,
   },
 ];
 
