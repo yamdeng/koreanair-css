@@ -833,7 +833,7 @@ function SafetyDetail() {
                                                   보고서 추가
                                                 </button>
                                               </div>
-                                              <table className="info-board">
+                                              <table className="notice-board">
                                                 <colgroup>
                                                   <col width="5%" />
                                                   <col width="8%" />
@@ -844,43 +844,40 @@ function SafetyDetail() {
                                                   <col width="10%" />
                                                   <col width="10%" />
                                                 </colgroup>
-                                                <thead>
-                                                  <tr>
-                                                    <th>선택</th>
-                                                    <th>대표보고서</th>
-                                                    <th>Doc No.</th>
-                                                    <th>Subject</th>
-                                                    <th>Fleet</th>
-                                                    <th>Reg No.</th>
-                                                    <th>FLT No.</th>
-                                                    <th>Action</th>
-                                                  </tr>
-                                                </thead>
-                                                <tbody>
-                                                  <tr>
-                                                    <td className="vm">
-                                                      <div className="radio-wrap center">
-                                                        <label className="text-no">
-                                                          <input type="radio" />
-                                                          <span className="text-no"></span>
-                                                        </label>
-                                                      </div>
-                                                    </td>
-                                                    <td className="">Y</td>
-                                                    <td className="left">
-                                                      <a href="javascript:void(0);">ASR-100308</a>
-                                                    </td>
-                                                    <td className="left">1운항 중 발생한 사항에 대..</td>
-                                                    <td className="">777</td>
-                                                    <td className="">7205</td>
-                                                    <td className="">KE0024</td>
-                                                    <td className="tc">
-                                                      <a href="javascript:void(0);">
-                                                        <span className="delete">X</span>
-                                                      </a>
-                                                    </td>
-                                                  </tr>
-                                                </tbody>
+                                                <tr className="fix-bg">
+                                                  <th>선택</th>
+                                                  <th>대표보고서</th>
+                                                  <th>Doc No.</th>
+                                                  <th className="left">Subject</th>
+                                                  <th>Fleet</th>
+                                                  <th>Reg No.</th>
+                                                  <th>FLT No.</th>
+                                                  <th>Action</th>
+                                                </tr>
+
+                                                <tr>
+                                                  <td className="fix vm">
+                                                    <div className="radio-wrap center">
+                                                      <label className="text-no">
+                                                        <input type="radio" />
+                                                        <span className="text-no"></span>
+                                                      </label>
+                                                    </div>
+                                                  </td>
+                                                  <td className="bot-left">Y</td>
+                                                  <td className="left">
+                                                    <a href="javascript:void(0);">ASR-100308</a>
+                                                  </td>
+                                                  <td className="left">1운항 중 발생한 사항에 대..</td>
+                                                  <td className="">777</td>
+                                                  <td className="">7205</td>
+                                                  <td className="">KE0024</td>
+                                                  <td className="tc">
+                                                    <a href="javascript:void(0);">
+                                                      <span className="delete">X</span>
+                                                    </a>
+                                                  </td>
+                                                </tr>
                                               </table>
                                             </div>
                                           </div>

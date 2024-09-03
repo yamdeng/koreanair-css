@@ -221,6 +221,7 @@
   .notice-board tr:nth-child(2) {border-top: 0.1rem solid var(--color-darkblue-100);}
   .notice-board td {display: inline-block; border-bottom: 0;}
   .notice-board tr.fix-bg .fix {background-size: 2.0rem;}
+  .notice-board td.bot-left{display: inline-block;}
   .notice-board td:nth-child(1) {width: 5.0rem; position: relative; top: 1.8rem; padding:0;}
   .notice-board td:nth-child(2) {width: calc(100% - 5.0rem); padding: 1.0rem 0 0 0;}
   .notice-board td:nth-child(3) {font-size: 1.4rem; padding: 0 1.0rem 1.0rem 5.0rem;}
