@@ -565,8 +565,9 @@
 .guide-list li ol li {font-size: 1.2rem;}
 
 .guide-table table {width: 100%; border: 0.1rem solid var(--color-neutral-40);}
-.guide-table table thead th, tbody td {text-align: center; padding: 1.0rem 0; border-bottom: 0.1rem solid var(--color-neutral-40);}
+.guide-table table thead th, tbody td {text-align: center; padding: 1.0rem 0; border-bottom: 0.1rem solid var(--color-neutral-40); vertical-align: middle;}
 .guide-table table thead th {background-color: var(--color-neutral-20);}
+.guide-table table tbody td.txt-left {text-align: left;}
 
 .ck-guide { background-color: var(--color-neutral-20); border-radius: 0.8rem; padding: 1.0rem 1.5rem; margin-top: 1.0rem;}
 .ck-guide li {font-size: 1.3rem; color: var(--color-neutral-70); padding-left: 1.0rem; line-height: 180%;}
