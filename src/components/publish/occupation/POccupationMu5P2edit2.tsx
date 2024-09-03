@@ -138,6 +138,11 @@ function POccupationMu5P2edit2() {
             <button type="button" className="btn-tg">
               유해, 위험 요인 파악
               <span className="active"></span>
+              <div className="tag-info-wrap">
+                <div className="tooltip">
+                  <span className="hide">툴팁아이콘</span>
+                </div>
+              </div>
             </button>
           </dt>
           <dd className="tg-conts">
