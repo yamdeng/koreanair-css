@@ -2,7 +2,7 @@
 
 @media screen and (min-width: 1280px) and (max-width: 1600px){
   .header .GNB  {display: none;}
-  .checklist-contents {display: flex; align-items: flex-end; justify-content: flex-start; flex-wrap: wrap; width: 100%;}
+  .checklist-contents {display: flex; /*align-items: flex-end;*/ justify-content: flex-start;flex-flow:row wrap; width: 100%;}
   .checklist-contents .checklist-row.list {display: flex; align-items: flex-end; justify-content: flex-start; flex-wrap: wrap; width: 33%; padding-right: 0;}
 
    /*위험레벨조회 팝업*/
@@ -222,7 +222,7 @@
   .contents-btns > button.btn-type01:nth-child(odd) {margin-right:0.2rem;}
 
 
-  .checklist-contents{display:flex;justify-content:flex-start;flex-wrap:wrap;width:100%}
+  .checklist-contents{display:flex;justify-content:flex-start;flex-flow:row wrap;width:100%}
   .checklist-contents .checklist-row.list{display:flex;align-items:flex-end;justify-content:flex-start;flex-wrap:wrap;width:100%;padding-right:0;margin:0}
 
 
