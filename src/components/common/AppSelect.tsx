@@ -115,7 +115,6 @@ function AppSelect(props) {
         notFoundContent={null}
         optionFilterProp={labelKey}
       ></Select>
-
       <label className="f-label" htmlFor={id} style={{ display: label ? '' : 'none' }}>
         {label} {required ? <span className="required">*</span> : null}
       </label>

@@ -71,6 +71,7 @@ function AppTextInput(props) {
         placeholder={placeholder}
         disabled={disabled}
       />
+
       <label className="f-label" htmlFor={id} style={{ display: label ? '' : 'none' }}>
         {label} {required ? <span className="required">*</span> : null}
         {toolTipMessage ? (

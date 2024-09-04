@@ -312,7 +312,7 @@ function POccupationMu3P1detail() {
       {/* 하단버튼영역 */}
       <div className="contents-btns">
         <button type="button" name="button" className="btn_text text_color_neutral-10 btn_confirm">
-          저장
+          수정
         </button>
         <button type="button" name="button" className="btn_text btn-del">
           취소

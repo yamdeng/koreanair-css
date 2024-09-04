@@ -419,7 +419,7 @@ OccupationPageInfo.list = [
     Component: POccupationMu3P1detail,
     path: 'POccupationMu3P1detail',
     description: '',
-    success: false,
+    success: true,
   },
   {
     title: '안전관리 > 위험기계기구-현황',
@@ -510,7 +510,7 @@ OccupationPageInfo.list = [
     Component: POccupationMu3P6edit,
     path: 'POccupationMu3P6edit',
     description: '',
-    success: false,
+    success: true,
   },
   {
     title: '안전관리 > 적격수급업체평가-업체관리-리스트',
@@ -606,9 +606,9 @@ OccupationPageInfo.list = [
   {
     title: '안전점검 > 합동 안전 보건 점검-등록',
     Component: POccupationMu4P3edit,
-    path: 'POccupationMu4P3list',
+    path: 'POccupationMu4P3edit',
     description: '',
-    success: false,
+    success: true,
   },
   {
     title: '안전점검 > 반기/비정기 점검-리스트',
@@ -620,9 +620,9 @@ OccupationPageInfo.list = [
   {
     title: '안전점검 > 반기/비정기 점검-등록',
     Component: POccupationMu4P4edit,
-    path: 'POccupationMu4P4list',
+    path: 'POccupationMu4P4edit',
     description: '',
-    success: false,
+    success: true,
   },
   {
     title: '안전점검 > 통합개선 관리-리스트',
@@ -671,7 +671,7 @@ OccupationPageInfo.list = [
     Component: POccupationMu5P2edit3,
     path: 'POccupationMu5P2edit3',
     description: '',
-    success: false,
+    success: true,
   },
   {
     title: '위험성평가 > 감소대책 수립 및 실시-리스트',
@@ -685,7 +685,7 @@ OccupationPageInfo.list = [
     Component: POccupationMu5P3edit,
     path: 'POccupationMu5P3edit',
     description: '',
-    success: false,
+    success: true,
   },
   {
     title: '위험성평가 > 협력사 위험성 평가-리스트',

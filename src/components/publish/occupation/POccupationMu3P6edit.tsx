@@ -224,12 +224,14 @@ function POccupationMu3P6edit() {
             </div>
           </dd>
           <dt>
-            <div className="tooltip">
-              <span className="tooltiptext tooltip-right">ㄹㅇㄴㄹㅇㄴㄹㅇㄴ</span>
-            </div>
             <button type="button" className="btn-tg">
               평가 입력
               <span className="active"></span>
+              <div className="tag-info-wrap">
+                <div className="tooltip">
+                  <span className="hide">툴팁아이콘</span>
+                </div>
+              </div>
             </button>
           </dt>
           <dd className="tg-conts">
@@ -286,6 +288,11 @@ function POccupationMu3P6edit() {
             <button type="button" className="btn-tg">
               평가 결과
               <span className="active"></span>
+              <div className="tag-info-wrap">
+                <div className="tooltip">
+                  <span className="hide">툴팁아이콘</span>
+                </div>
+              </div>
             </button>
           </dt>
           <dd className="tg-conts">
