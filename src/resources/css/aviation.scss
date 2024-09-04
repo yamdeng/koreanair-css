@@ -246,11 +246,11 @@
   .btn_confirm{padding:0.6rem 2.8rem;border-radius:99.9rem;background: var(--color-darkblue-100)}
   .btn-lightblue{border:solid 0.1rem var(--color-lightblue-40);background-color:var(--color-lightblue-40);color:var(--color-darkblue-100)}
   .btn-sm{padding:0rem 2.8rem;border-radius:99.9rem;align-items:center}
-  padding-top:1.2rem;display:flex
+  padding-top:1.2rem;display:flex;text-align:left
 }
 .btn-area.Audit .btn-area-box{flex:1}
 .btn-area.Audit .btn-area-box > .form-table{display:flex;width:100%}
-.btn-area.Audit .btn-area-box > .form-table .form-cell{position:relative;width:20%}
+.btn-area.Audit .btn-area-box > .form-table .form-cell{position:relative;width:10%}
 
 .checklist-contents{display:flex;justify-content:flex-start;flex-wrap:wrap;width:100%;box-sizing:border-box;margin-top:1.0rem}
 .checklist-contents::after{content:'';display:block;clear:both}
@@ -334,7 +334,7 @@
 .menu-tab-nav .swiper-container > .menu-tab-nav-operations .menu-tab-btn-next{width:3.2rem;height:4.6rem;padding:0 3rem;border-left:0;border-right:solid 0.1rem var(--color-neutral-40);border-top:solid 0.1rem var(--color-neutral-40);border-bottom:solid 0.1rem var(--color-neutral-40);background: url(../images/plus-btn.svg) center center no-repeat;align-items:center}
 .menu-tab-nav .swiper-container > .menu-tab-nav-operations button.menu-tab-btn-next:first-child{border-left:solid 0.1rem var(--color-neutral-40)}
 .menu-tab-nav .swiper-container .menu-tab a button:first-child{padding-left:1.5rem}
-.menu-tab-nav .swiper-container .menu-tab a button + button{margin-left:1.8rem}
+.menu-tab-nav .swiper-container .menu-tab a button + button{padding-left:1.0rem}
 
 /*공통테이블*/
 .Safety-table-cell{text-align:center;align-items:center}

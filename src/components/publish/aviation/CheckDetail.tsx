@@ -125,7 +125,7 @@ function CheckDetail() {
               </div>
             </div>
           </div>
-          <hr className="line dp-n"></hr>
+
           <div className="form-table">
             <div className="form-cell wid30">
               <div className="form-group wid100">
@@ -164,6 +164,7 @@ function CheckDetail() {
               </div>
             </div>
           </div>
+          <hr className="line dp-n"></hr>
         </div>
         {/*//상세페이지*/}
       </div>
