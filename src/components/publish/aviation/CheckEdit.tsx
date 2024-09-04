@@ -28,7 +28,7 @@ function CheckEdit() {
         </ol>
       </div>
       {/*경로 */}
-      <div className="editbox">
+      <div className="editbox Audit">
         <div className="form-table line">
           <div className="form-cell wid50">
             <div className="form-group wid100 Position-w">
@@ -40,7 +40,7 @@ function CheckEdit() {
               <div className="number-r ">
                 <div className="title">Revision</div>
                 <div className="form-group wid100">
-                  <AppSelect label={'14'} placeholder="14" />
+                  <AppSelect label={''} placeholder="" disabled />
                 </div>
               </div>
             </div>
@@ -51,7 +51,7 @@ function CheckEdit() {
       {/*탭 */}
       <div className="menu-tab-nav">
         <div className="swiper-container">
-          <div className="menu-tab">
+          <div className="menu-tab Audit">
             <a href="javascript:void(0);" className="active" data-label="안전보안일반12">
               안전보안일반12 (29)
               <button type="button" name="button" className="tabs-tab-remove">
@@ -63,12 +63,18 @@ function CheckEdit() {
             </a>
             <a href="javascript:void(0);" data-label="항공보안(OYA)">
               항공보안(OYA)
+              <button type="button" name="button" className="tabs-tab-remove">
+                <span className="btn-list-blue"></span>
+              </button>
               <button type="button" className="tabs-tab-remove">
                 <span className="delete">X</span>
               </button>
             </a>
             <a href="javascript:void(0);" data-label="운항품질(OQA)">
               운항품질(OQA)
+              <button type="button" name="button" className="tabs-tab-remove">
+                <span className="btn-list-blue"></span>
+              </button>
               <button type="button" className="tabs-tab-remove">
                 <span className="delete">X</span>
               </button>
@@ -118,15 +124,8 @@ function CheckEdit() {
       </div>
 
       <div className="checklist-contents edit">
-        {/*추가버튼*/}
-        <div className="btn-area">
-          <button type="button" name="button" className="btn-sm btn_text btn-darkblue-line">
-            + Add Question
-          </button>
-        </div>
-        {/*//추가버튼*/}
         {/* 입력영역 */}
-        <div className="editbox edit-detile">
+        <div className="editbox edit-detile Audit">
           <button type="button" className="tabs-tab-remove">
             <span className="delete">X</span>
           </button>
@@ -137,7 +136,7 @@ function CheckEdit() {
               </div>
             </div>
           </div>
-          <hr className="line dp-n"></hr>
+
           <div className="form-table line">
             <div className="form-cell wid30">
               <div className="form-group wid100">
@@ -145,13 +144,11 @@ function CheckEdit() {
               </div>
             </div>
           </div>
-          <hr className="line dp-n"></hr>
           <div className="form-table">
             <div className="form-cell wid30">
               <div className="form-group wid100">
                 <div className="group-box-wrap wid100">
-                  <span className="txt">Priority</span>
-                  <div className="editarea-box error">
+                  <div className="editarea-box Audit">
                     <div className="form-group wid50">
                       <AppSelect label={'N/A'} />
                     </div>
@@ -159,15 +156,13 @@ function CheckEdit() {
                       <span className="Option-tag OptionLevel normal">N/A</span>
                     </div>
                   </div>
-                  <span className="errorText">errorText</span>
                 </div>
               </div>
             </div>
             <div className="form-cell wid50">
               <div className="form-group wid100">
                 <div className="group-box-wrap wid100">
-                  <span className="txt">Probability</span>
-                  <div className="editarea-box error">
+                  <div className="editarea-box Audit">
                     <div className="form-group wid50">
                       <AppSelect label={'Extremdly improbable'} />
                     </div>
@@ -175,7 +170,6 @@ function CheckEdit() {
                       <span className="Option-tag OptionLevel normal">Extremdly improbable</span>
                     </div>
                   </div>
-                  <span className="errorText">ddd</span>
                 </div>
               </div>
             </div>
@@ -183,7 +177,7 @@ function CheckEdit() {
               <div className="form-group wid100">
                 <div className="group-box-wrap wid100">
                   <span className="txt">Severity</span>
-                  <div className="editarea-box">
+                  <div className="editarea-box Audit">
                     <div className="form-group wid50">
                       <AppSelect label={'Occasional'} />
                     </div>
@@ -197,19 +191,11 @@ function CheckEdit() {
               </div>
             </div>
           </div>
-          <hr className="line"></hr>
         </div>
         {/*//입력영역*/}
-        {/*추가버튼*/}
-        <div className="btn-area">
-          <button type="button" name="button" className="btn-sm btn_text btn-darkblue-line">
-            + Add Question
-          </button>
-        </div>
-        {/*//추가버튼*/}
 
         {/* 입력영역 */}
-        <div className="editbox edit-detile">
+        <div className="editbox edit-detile Audit">
           <button type="button" className="tabs-tab-remove">
             <span className="delete">X</span>
           </button>
@@ -228,7 +214,7 @@ function CheckEdit() {
               </div>
             </div>
           </div>
-          <hr className="line dp-n"></hr>
+
           <div className="form-table line">
             <div className="form-cell wid30">
               <div className="form-group wid100">
@@ -236,13 +222,13 @@ function CheckEdit() {
               </div>
             </div>
           </div>
-          <hr className="line dp-n"></hr>
+
           <div className="form-table">
             <div className="form-cell wid30">
               <div className="form-group wid100">
                 <div className="group-box-wrap wid100">
                   <span className="txt">Priority</span>
-                  <div className="editarea-box ">
+                  <div className="editarea-box Audit">
                     <div className="form-group wid50">
                       <AppSelect label={'High'} />
                     </div>
@@ -257,7 +243,7 @@ function CheckEdit() {
               <div className="form-group wid100">
                 <div className="group-box-wrap wid100">
                   <span className="txt">Probability</span>
-                  <div className="editarea-box ">
+                  <div className="editarea-box Audit">
                     <div className="form-group wid50">
                       <AppSelect label={'Extremdly improbable'} />
                     </div>
@@ -272,7 +258,7 @@ function CheckEdit() {
               <div className="form-group wid100">
                 <div className="group-box-wrap wid100">
                   <span className="txt">Severity</span>
-                  <div className="editarea-box">
+                  <div className="editarea-box Audit">
                     <div className="form-group wid50">
                       <AppSelect label={'Occasional'} />
                     </div>
@@ -288,7 +274,7 @@ function CheckEdit() {
           <hr className="line"></hr>
         </div>
 
-        <div className="editbox edit-detile">
+        <div className="editbox edit-detile Audit">
           <button type="button" className="tabs-tab-remove">
             <span className="delete">X</span>
           </button>
@@ -320,7 +306,7 @@ function CheckEdit() {
               <div className="form-group wid100">
                 <div className="group-box-wrap wid100">
                   <span className="txt">Priority</span>
-                  <div className="editarea-box ">
+                  <div className="editarea-box Audit">
                     <div className="form-group wid50">
                       <AppSelect label={'High'} />
                     </div>
@@ -335,7 +321,7 @@ function CheckEdit() {
               <div className="form-group wid100">
                 <div className="group-box-wrap wid100">
                   <span className="txt">Probability</span>
-                  <div className="editarea-box ">
+                  <div className="editarea-box Audit">
                     <div className="form-group wid50">
                       <AppSelect label={'Extremdly improbable'} />
                     </div>
@@ -350,7 +336,7 @@ function CheckEdit() {
               <div className="form-group wid100">
                 <div className="group-box-wrap wid100">
                   <span className="txt">Severity</span>
-                  <div className="editarea-box">
+                  <div className="editarea-box Audit">
                     <div className="form-group wid50">
                       <AppSelect label={'Occasional'} />
                     </div>
@@ -367,7 +353,7 @@ function CheckEdit() {
         </div>
         {/*//입력영역*/}
         {/*추가버튼*/}
-        <div className="btn-area">
+        <div className="btn-area ">
           <button type="button" name="button" className="btn-sm btn_text btn-darkblue-line">
             + Add Question
           </button>

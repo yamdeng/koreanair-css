@@ -16,6 +16,7 @@
 .tl{text-align:left !important}
 .tr{text-align:right !important}
 .ml3{margin-left:0.3rem !important}
+.h40{height:4.0rem}
 
 .h3{position:relative;font-size:2.2rem;font-weight:700;height:4.0rem;letter-spacing:-0.01rem}
 .h3:after{content:'';display:block}
@@ -208,10 +209,10 @@
 
 .CheckList-Title{display:flex;width:100%;align-items:center;vertical-align:middle}
 
-.tabs-tab-remove{position:relative;margin-left:1.1rem}
+.tabs-tab-remove{position:relative;/*padding-left:1.1rem*/}
 .tabs-tab-remove .delete{position:absolute;top:-0.8rem;background: url(/src/resources/images/delete-text.svg) center center no-repeat;font-size:0;width:2rem;height:2rem}
 .tabs-tab-remove .btn-list{position:absolute;top:-0.8rem;width:2.3rem;height:2rem;font-size:0;background:url(../images/icon-register-wh.svg)center center no-repeat;align-items:center}
-    
+.tabs-tab-remove .btn-list-blue{position:absolute;top:-0.8rem;width:2.3rem;height:2rem;font-size:0;background:url(../images/icon-register.svg)center center no-repeat;align-items:center}
 .editbox .form-table + .form-table.SelList{margin-top:-3.0rem}
 .editbox .form-table .form-cell .Position-end{position: absolute;right:0;width:15.0rem}
 
@@ -237,7 +238,6 @@
 .SelectedList > ul li .column-box .column-btn{flex-direction: row;}
 
 /*AUDIT 체크리스트*/
-
 .btn-area.Audit{
   > button{margin:0 0.5rem}
   button + button{margin-left:0.5rem}
@@ -249,13 +249,8 @@
   padding-top:1.2rem;display:flex
 }
 .btn-area.Audit .btn-area-box{flex:1}
-.btn-area.Audit .btn-area-box > .form-table {
-  display: flex;
-  width: 100%;
-}
-.btn-area.Audit .btn-area-box > .form-table .form-cell {
-  position:relative;width:20%
-}
+.btn-area.Audit .btn-area-box > .form-table{display:flex;width:100%}
+.btn-area.Audit .btn-area-box > .form-table .form-cell{position:relative;width:20%}
 
 .checklist-contents{display:flex;justify-content:flex-start;flex-wrap:wrap;width:100%;box-sizing:border-box;margin-top:1.0rem}
 .checklist-contents::after{content:'';display:block;clear:both}
@@ -267,7 +262,10 @@
 .checklist-contents .checklist-row .checklist-col{position:relative;width:100%;;height:100%;border-radius:0.8rem;padding:1.2rem 1rem;border:solid 0.2rem var(--color-neutral-01);background-color:var(--color-neutral-10);box-shadow:0 0.2rem 0.4rem 0 rgba(0, 0, 0, .05)}
 /*.checklist-contents .checklist-row .checklist-col:hover{border-color:var(--color-darkblue-100)}*/
 
-
+.box-view-list.Audit .view-list .text-desc-type1{white-space:pre-wrap;font-size:1.5rem}
+.editarea-box.Audit{padding:0;border:0}
+.checklist-contents.edit > .editbox.edit-detile.Audit{display:block;padding:0 3rem 1.5rem 1.5rem;margin-bottom:2.0rem}
+.editbox.Audit .form-table .form-cell{padding:2rem 0 0 0}
 
 .checklist-contents .checklist-row.list ul{position:relative;display:flex;flex-direction:column;padding:1.0rem}
 .checklist-contents .checklist-row.list li.list-space{position:relative;display:inline-flex;align-items:center;gap:0.8rem;font-size:1.5rem}
@@ -287,7 +285,9 @@
 .editarea-box{position:relative;display:flex;line-height:0;border:0.1rem solid var(--color-neutral-40);border-radius:0.5rem;padding:3rem 1.2rem 1.2rem}
 .editarea-box.view{padding:1.5rem 1.2rem 1.2rem}
 .editarea-box.error{border:solid 0.1rem var(--color-negative)}
-
+.contents .editbox.Audit > .form-table .form-cell .form-group .tit-head{font-size:1.8rem;font-weight:700;line-height:180%}
+.contents .editbox.Audit{border-top:0}
+.contents .editbox.Audit hr.line{background:none}
 .user-wrap{position:relative;display:flex;justify-content: space-between;align-items: center;width:100%;margin-bottom:1.5rem;gap:0 0.8rem}
 
 .user-wrap .user-box{position:relative;display:flex;flex-wrap:wrap;counter-reset:myCounter;align-items: stretch;width:50%}
@@ -327,11 +327,14 @@
         text-align: right;}
 
 /*AUDIT-체크리스트 상단 탭*/
+.menu-tab.Audit a{padding:0 2rem}
 .menu-tab-nav .swiper-container{position:relative;display:flex;overflow:hidden;width:100%;margin-top:0.4rem}
 .menu-tab-nav .swiper-container > .menu-tab-nav-operations{position:absolute;/*top:2.0rem;*/right:0;display:flex;justify-content:flex-start;z-index:1;background-color:var(--color-neutral-10)}
 .menu-tab-nav .swiper-container > .menu-tab-nav-operations .menu-tab-nav-more{width:3.2rem;height:4.6rem;padding:0 3rem;border:solid 0.1rem var(--color-neutral-40);font-size:0;background:url(../images/icon-option.svg)center center no-repeat;align-items:center}
 .menu-tab-nav .swiper-container > .menu-tab-nav-operations .menu-tab-btn-next{width:3.2rem;height:4.6rem;padding:0 3rem;border-left:0;border-right:solid 0.1rem var(--color-neutral-40);border-top:solid 0.1rem var(--color-neutral-40);border-bottom:solid 0.1rem var(--color-neutral-40);background: url(../images/plus-btn.svg) center center no-repeat;align-items:center}
 .menu-tab-nav .swiper-container > .menu-tab-nav-operations button.menu-tab-btn-next:first-child{border-left:solid 0.1rem var(--color-neutral-40)}
+.menu-tab-nav .swiper-container .menu-tab a button:first-child{padding-left:1.5rem}
+.menu-tab-nav .swiper-container .menu-tab a button + button{margin-left:1.8rem}
 
 /*공통테이블*/
 .Safety-table-cell{text-align:center;align-items:center}
@@ -384,11 +387,7 @@
 .editbox.report .header-tit:before{content:'·';display:block;position:absolute;top:0;left:0.2rem}
 .ant-row{display:flex;flex-flow:row wrap}
 .ant-col{position:relative;max-width:100%;min-height:0.1rem}
-.ant-col-11 {
-  display: block;
-  flex: 0 0 45.83333333%;
-  max-width: 45.83333333%;
-}
+.ant-col-11{display:block;flex: 0 0 45.83333333%;max-width: 45.83333333%}
 
 .text-desc-type1 .ant-col[role="label"]{display:inline-flex;font-weight:500;color:var(--color-neutral-90);font-size:1.3rem}
 .text-desc-type1 .ant-col[role="data"]{color:var(--color-mblue-100);margin-right:0.3rem}

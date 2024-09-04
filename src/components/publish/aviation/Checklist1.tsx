@@ -30,7 +30,7 @@ function Checklist1() {
       {/*탭 */}
       <div className="menu-tab-nav">
         <div className="swiper-container">
-          <div className="menu-tab">
+          <div className="menu-tab Audit">
             <a href="javascript:void(0);" className="active" data-label="안전보안일반12">
               안전보안일반12 (29)
               <button type="button" className="tabs-tab-remove">

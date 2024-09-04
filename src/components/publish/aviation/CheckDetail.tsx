@@ -28,11 +28,11 @@ function CheckDetail() {
         </ol>
       </div>
       {/*경로 */}
-      <div className="editbox">
+      <div className="editbox Audit">
         <div className="form-table line">
           <div className="form-cell wid50">
-            <div className="form-group wid100 Position-w">
-              <AppTextInput label="해외공항 안전평가 점검표 (ko)12" />
+            <div className="form-group wid100 Position-w h40">
+              <span className="tit-head">해외공항 안전평가 점검표 (ko)12</span>
             </div>
           </div>
           <div className="form-cell  Position-w">
@@ -40,7 +40,7 @@ function CheckDetail() {
               <div className="number-r ">
                 <div className="title">Revision</div>
                 <div className="form-group wid100">
-                  <AppSelect label={'14'} placeholder="14" />
+                  <AppSelect label={'14'} placeholder="" />
                 </div>
               </div>
             </div>
@@ -51,7 +51,7 @@ function CheckDetail() {
       {/*탭 */}
       <div className="menu-tab-nav">
         <div className="swiper-container">
-          <div className="menu-tab">
+          <div className="menu-tab Audit">
             <a href="javascript:void(0);" className="active" data-label="안전보안일반12">
               안전보안일반12 (29)
             </a>
@@ -90,21 +90,18 @@ function CheckDetail() {
         </div>
       </div>
 
-      <div className="checklist-contents edit">
+      <div className="checklist-contents edit Audit">
         {/* 상세페이지 */}
         <div className="editbox">
           <div className="form-table line">
             <div className="form-cell wid100">
               <div className="form-group wid100">
-                <div className="box-view-list">
+                <div className="box-view-list Audit">
                   <ul className="view-list">
                     <li className="accumlate-list">
-                      <label className="t-label">Contents</label>
                       <span className="text-desc-type1">
                         1-1 지점장은 공항업무(운송/운항관리/정비/안전보안) 수행에 필요한 인원 및 업무 분장을 지정, 파악
-                        관리한다. <br />
-                        (GM - Guidance Material) <br />
-                        지점 조직도, Safety Coordinator, 위임/대행 체계 <br />
+                        관리한다. (GM - Guidance Material) 지점 조직도, Safety Coordinator, 위임/대행 체계
                         인원현황(해분야 적정 경력 인력 보임 여부) <br />
                         업무분장(업무의 범위, 책임, 권한 포함)
                       </span>
@@ -114,14 +111,13 @@ function CheckDetail() {
               </div>
             </div>
           </div>
-          <hr className="line dp-n"></hr>
+
           <div className="form-table line">
             <div className="form-cell wid100">
               <div className="form-group wid100">
-                <div className="box-view-list">
+                <div className="box-view-list Audit">
                   <ul className="view-list">
                     <li className="accumlate-list">
-                      <label className="t-label">Reference manua</label>
                       <span className="text-desc-type1"> SMS Manual 3.2.1,Safety Coordinator 운영지침</span>
                     </li>
                   </ul>
