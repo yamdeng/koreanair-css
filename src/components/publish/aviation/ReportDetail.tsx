@@ -604,6 +604,96 @@ function SafetyDetail() {
                     </div>
                   </div>
                 </div>
+
+                {/* 관련자 세부 정보*/}
+                <div className="editbox report">
+                  <div className="header-tit">Person Involved Detail</div>
+                  <div className="form-table line">
+                    <div className="form-cell wid100">
+                      <div className="form-group wid100">
+                        <div className="box-view-list">
+                          <ul className="view-list">
+                            <li className="accumlate-list">
+                              <label className="t-label">탑승객</label>
+                              <span className="text-desc-type1">
+                                <div className="info-box mt5">
+                                  {/*<p className="h4">탑승객</p>*/}
+                                  <table className="notice-board">
+                                    <colgroup>
+                                      <col width="*" />
+                                      <col width="10%" />
+                                      <col width="10%" />
+                                      <col width="15%" />
+                                      <col width="15%" />
+                                      <col width="20%" />
+                                    </colgroup>
+                                    <tr>
+                                      <th>관련자</th>
+                                      <th>이름</th>
+                                      <th>성별</th>
+                                      <th>나이</th>
+                                      <th>국적</th>
+                                      <th>좌석번호</th>
+                                    </tr>
+                                    <tr>
+                                      <td className="">가해자</td>
+                                      <td className="">홍길동</td>
+                                      <td className="">남성</td>
+                                      <td className="">10</td>
+                                      <td className="">한국</td>
+                                      <td className="">872</td>
+                                    </tr>
+                                  </table>
+                                </div>
+                              </span>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="form-table">
+                    <div className="form-cell wid100">
+                      <div className="form-group wid100">
+                        <div className="box-view-list">
+                          <ul className="view-list">
+                            <li className="accumlate-list">
+                              <label className="t-label">승무원</label>
+                              <span className="text-desc-type1">
+                                <div className="info-box mt5">
+                                  {/*<p className="h4">승무원</p>*/}
+                                  <table className="notice-board">
+                                    <colgroup>
+                                      <col width="*" />
+                                      <col width="20%" />
+                                      <col width="10%" />
+                                      <col width="30%" />
+                                      <col width="10%" />
+                                    </colgroup>
+                                    <tr>
+                                      <th>구분</th>
+                                      <th>사번</th>
+                                      <th>이름</th>
+                                      <th>부서</th>
+                                      <th>직위</th>
+                                    </tr>
+                                    <tr>
+                                      <td className="">가해자</td>
+                                      <td className="">900****</td>
+                                      <td className="">홍홍홍</td>
+                                      <td className="left">정석비행장운영팀 / 운항훈련원</td>
+                                      <td className="">SVC매니저</td>
+                                    </tr>
+                                  </table>
+                                </div>
+                              </span>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
                 {/* //보고서내용보기 상세*/}
               </div>
               {/* 버튼*/}
