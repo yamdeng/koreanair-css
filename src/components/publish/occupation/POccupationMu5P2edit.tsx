@@ -169,11 +169,22 @@ function POccupationMu5P2edit() {
                         <AppTextInput label="평가년도" />
                       </div>
                     </div>
+
+                    <div className="form-cell wid50">
+                      <div className="group-box-wrap wid50">
+                        <span className="txt">참고문서번호</span>
+                        <div className="round-wrap error">
+                          <span className="icon_report"></span>
+                        </div>
+                      </div>
+                    </div>
+
                     <div className="form-cell wid50">
                       <div className="form-group wid100">
                         <AppSelect label="평가시기" required />
                       </div>
                     </div>
+
                     <div className="form-cell wid50">
                       <div className="form-group wid100">
                         <AppAutoComplete label="재해발생보고서" />
