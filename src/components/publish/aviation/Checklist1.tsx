@@ -3,6 +3,7 @@ import { DatePicker, TimePicker, Select as AntSelect } from 'antd';
 import AppTable from '@/components/common/AppTable';
 import { getAllData } from '@/data/grid/example-data-new';
 import { testColumnInfos } from '@/data/grid/table-column';
+import AppSelect from '@/components/common/AppSelect';
 import AppDatePicker from '@/components/common/AppDatePicker';
 
 function Checklist1() {
@@ -89,7 +90,16 @@ function Checklist1() {
       </div>
 
       {/*검색영역 */}
-      <div className="btn-area">
+      <div className="btn-area Audit">
+        <div className="btn-area-box">
+          <div className="form-table">
+            <div className="form-cell ">
+              <div className="form-group wid100">
+                <AppSelect label={'Lang Type'} />
+              </div>
+            </div>
+          </div>
+        </div>
         <button type="button" name="button" className="btn-sm btn_text btn-darkblue-line">
           Checklist Upload
         </button>

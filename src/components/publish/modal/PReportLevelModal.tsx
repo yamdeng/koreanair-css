@@ -300,7 +300,7 @@ function ReportLevelModal(props) {
                       <span className="text_color-Warning">861</span>건
                     </span>
                   </div>
-                  <div className="tableTop">
+                  <div className="">
                     <table className="RiskLevelTable Risk">
                       <caption></caption>
                       <colgroup></colgroup>
@@ -415,7 +415,7 @@ function ReportLevelModal(props) {
                 </div>
               </div>
 
-              <div className="LevelInfo">
+              <div className="LevelInfo mt10">
                 <p className="h5-tit">발생 가능성</p>
                 <div className="tableTop">
                   <table className="RiskLevelTable left">
