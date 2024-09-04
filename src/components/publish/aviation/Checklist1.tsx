@@ -122,7 +122,8 @@ function Checklist1() {
                   </div>
                   <div className="ant-space-item">
                     <a href="javascript:void(0);">
-                      안전보안일반12 <i>(29)</i>
+                      안전보안일반12안전보안일반12안전보안일반12안전보안일반12안전보안일반12안전보안일반12안전보안일반12안전보안일반12{' '}
+                      <i>(29)</i>
                     </a>
                   </div>
                 </div>
