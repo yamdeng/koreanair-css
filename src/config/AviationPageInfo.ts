@@ -49,6 +49,7 @@ import SMSdataDetail from '@/components/publish/aviation/SMSdataDetail';
 import AdminSafetyNoticeList from '@/components/publish/aviation/AdminSafetyNoticeList';
 import AdminSafetyNoticeEdit from '@/components/publish/aviation/AdminSafetyNoticeEdit';
 import AdminSafetyNoticeDetail from '@/components/publish/aviation/AdminSafetyNoticeDetail';
+import ReportEdit from '@/components/publish/aviation/ReportEdit';
 
 import { fa } from '@faker-js/faker';
 
@@ -136,6 +137,13 @@ AviationPageInfo.list = [
     title: '[03.안전위험관리] 보고서분석 > 상세',
     Component: ReportDetail,
     path: 'ReportDetail',
+    description: '',
+    success: false,
+  },
+  {
+    title: '[03.안전위험관리] 보고서분석 > 등록',
+    Component: ReportEdit,
+    path: 'ReportEdit',
     description: '',
     success: false,
   },
