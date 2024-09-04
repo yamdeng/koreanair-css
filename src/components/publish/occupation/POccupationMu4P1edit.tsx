@@ -138,19 +138,29 @@ function POccupationMu4P1edit() {
           </div>
         </div>
         <hr className="line"></hr>
+        <div className="form-table line">
+          <div className="form-cell wid50">
+            <div className="ck-edit-box pd-t0">
+              <div className="ck-list">
+                <span className="stit-btn">
+                  <h3>점검대상</h3>
+                </span>
+                <AppTable rowData={rowData} columns={columns} customButtons={customButtons} />
+              </div>
+              <div className="ck-right-list">
+                <div className="ck-list">
+                  <span className="stit-btn">
+                    <h3>점검항목</h3>
+                  </span>
+                  <AppTable rowData={rowData} columns={columns} customButtons={customButtons} />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr className="line dp-n"></hr>
       </div>
       {/*//입력영역*/}
-
-      {/*그리드영역 */}
-      <div className="pt-20">
-        <h3 className="table-tit">점검 현황</h3>
-        <AppTable rowData={rowData} columns={columns} customButtons={customButtons} />
-      </div>
-      <div className="pt-20">
-        <h3 className="table-tit">부적합 사항</h3>
-        <AppTable rowData={rowData} columns={columns} customButtons={customButtons} />
-      </div>
-      {/*//그리드영역 */}
 
       {/* 하단버튼영역 */}
       <div className="contents-btns">

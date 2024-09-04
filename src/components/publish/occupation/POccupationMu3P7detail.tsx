@@ -1,26 +1,20 @@
 import AppAutoComplete from '@/components/common/AppAutoComplete';
-import AppDatePicker from '@/components/common/AppDatePicker';
-import AppEditor from '@/components/common/AppEditor';
 import AppSelect from '@/components/common/AppSelect';
-import AppTextArea from '@/components/common/AppTextArea';
 import AppTextInput from '@/components/common/AppTextInput';
-import AppTimePicker from '@/components/common/AppTimePicker';
-import AppTreeSelect from '@/components/common/AppTreeSelect';
-import AppSearchInput from '@/components/common/AppSearchInput';
-import { DatePicker } from 'antd';
-import { useState } from 'react';
-import { Upload } from 'antd';
-import AppTable from '@/components/common/AppTable';
 import { getAllData } from '@/data/grid/example-data-new';
 import { testColumnInfos } from '@/data/grid/table-column';
-import shareImage from '@/resources/images/share.svg';
-import { Viewer } from '@toast-ui/react-editor';
-import ReactUtil from '@/utils/ReactUtil';
+import { PlusOutlined } from '@ant-design/icons';
+import { Image, Upload } from 'antd';
+import { useState } from 'react';
+const { Dragger } = Upload;
 
-const editorValue =
-  '<table class=""><thead><tr><th><p><br></p></th><th><p><br></p></th><th><p><br></p></th><th><p><br></p></th></tr></thead><tbody><tr><td><p>asd</p></td><td><p>asd</p></td><td><p>asd</p></td><td><p>asd</p></td></tr></tbody></table><p><br></p><p><a href="http://www.naver.com">네이버</a></p><p><br></p><p><br></p><ol><li><p>1111</p></li><li><p>222</p></li><li><p>333</p></li></ol><p><br></p><p><br></p>';
-
-const textAreaValue = 'aaaa\nbbbb\n';
+const getBase64 = (file) =>
+  new Promise((resolve, reject) => {
+    const reader = new FileReader();
+    reader.readAsDataURL(file);
+    reader.onload = () => resolve(reader.result);
+    reader.onerror = (error) => reject(error);
+  });
 
 const props: any = {
   name: 'file',
@@ -74,11 +68,78 @@ const props: any = {
     console.log('Dropped files', e.dataTransfer.files);
   },
 };
-
-function POccupationMu3P1detail() {
+function POccupationMu3P7detail() {
   const [inputValue, setInputValue] = useState('');
   const rowData = getAllData();
   const columns = testColumnInfos;
+  const [previewOpen, setPreviewOpen] = useState(false);
+  const [previewImage, setPreviewImage] = useState('');
+  const [fileList, setFileList] = useState<any>([
+    {
+      uid: '-1',
+      name: 'image.png',
+      status: 'done',
+      url: 'https://zos.alipayobjects.com/rmsportal/jkjgkEfvpUPVyRjUImniVslZfWPnJuuZ.png',
+    },
+    {
+      uid: '-2',
+      name: 'image.png',
+      status: 'done',
+      url: 'https://zos.alipayobjects.com/rmsportal/jkjgkEfvpUPVyRjUImniVslZfWPnJuuZ.png',
+    },
+    {
+      uid: '-3',
+      name: 'image.png',
+      status: 'done',
+      url: 'https://zos.alipayobjects.com/rmsportal/jkjgkEfvpUPVyRjUImniVslZfWPnJuuZ.png',
+    },
+    {
+      uid: '-4',
+      name: 'image.png',
+      status: 'done',
+      url: 'https://zos.alipayobjects.com/rmsportal/jkjgkEfvpUPVyRjUImniVslZfWPnJuuZ.png',
+    },
+    {
+      uid: '-xxx',
+      percent: 50,
+      name: 'image.png',
+      status: 'uploading',
+      url: 'https://zos.alipayobjects.com/rmsportal/jkjgkEfvpUPVyRjUImniVslZfWPnJuuZ.png',
+    },
+    {
+      uid: '-5',
+      name: 'image.png',
+      status: 'error',
+    },
+  ]);
+
+  const handlePreview = async (file) => {
+    if (!file.url && !file.preview) {
+      file.preview = await getBase64(file.originFileObj);
+    }
+    setPreviewImage(file.url || file.preview);
+    setPreviewOpen(true);
+  };
+  const handleChange = ({ fileList: newFileList }) => setFileList(newFileList);
+  const uploadButton = (
+    <button
+      style={{
+        border: 0,
+        background: 'none',
+      }}
+      type="button"
+    >
+      <PlusOutlined />
+      <div
+        style={{
+          marginTop: 8,
+        }}
+      >
+        Upload
+      </div>
+    </button>
+  );
+
   return (
     <>
       {/*경로 */}
@@ -91,13 +152,13 @@ function POccupationMu3P1detail() {
             <a href="javascript:void(0);">안전관리</a>
           </li>
           <li className="breadcrumb-item">
-            <a href="javascript:void(0);">위험기계기구</a>
+            <a href="javascript:void(0);">밀폐공간 등록</a>
           </li>
         </ol>
       </div>
       {/*경로 */}
       <div className="conts-title">
-        <h2>중대재해대응훈련</h2>
+        <h2>밀폐공간 등록</h2>
       </div>
       {/* 입력영역 */}
       <div className="editbox">
@@ -138,9 +199,6 @@ function POccupationMu3P1detail() {
               </div>
             </div>
           </div>
-        </div>
-        <hr className="line dp-n"></hr>
-        <div className="form-table line">
           <div className="form-cell wid100">
             <div className="form-group wid100">
               <div className="box-view-list">
@@ -153,13 +211,16 @@ function POccupationMu3P1detail() {
               </div>
             </div>
           </div>
+        </div>
+        <hr className="line dp-n"></hr>
+        <div className="form-table line">
           <div className="form-cell wid100">
             <div className="form-group wid100">
               <div className="box-view-list">
                 <ul className="view-list">
                   <li className="accumlate-list">
-                    <label className="t-label">재난유형</label>
-                    <span className="text-desc-type1">재난유형</span>
+                    <label className="t-label">권역</label>
+                    <span className="text-desc-type1">권역</span>
                   </li>
                 </ul>
               </div>
@@ -170,8 +231,32 @@ function POccupationMu3P1detail() {
               <div className="box-view-list">
                 <ul className="view-list">
                   <li className="accumlate-list">
-                    <label className="t-label">기타유형</label>
-                    <span className="text-desc-type1">기타유형</span>
+                    <label className="t-label">사업장</label>
+                    <span className="text-desc-type1">사업장</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div className="form-cell wid100">
+            <div className="form-group wid100">
+              <div className="box-view-list">
+                <ul className="view-list">
+                  <li className="accumlate-list">
+                    <label className="t-label">위치분류1</label>
+                    <span className="text-desc-type1">위치분류1</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div className="form-cell wid100">
+            <div className="form-group wid100">
+              <div className="box-view-list">
+                <ul className="view-list">
+                  <li className="accumlate-list">
+                    <label className="t-label">위치분류2</label>
+                    <span className="text-desc-type1">위치분류2</span>
                   </li>
                 </ul>
               </div>
@@ -185,8 +270,8 @@ function POccupationMu3P1detail() {
               <div className="box-view-list">
                 <ul className="view-list">
                   <li className="accumlate-list">
-                    <label className="t-label">훈련실시일</label>
-                    <span className="text-desc-type1">2024-00-00</span>
+                    <label className="t-label">취급화학물질</label>
+                    <span className="text-desc-type1">취급화학물질</span>
                   </li>
                 </ul>
               </div>
@@ -197,8 +282,39 @@ function POccupationMu3P1detail() {
               <div className="box-view-list">
                 <ul className="view-list">
                   <li className="accumlate-list">
-                    <label className="t-label">훈련장소</label>
-                    <span className="text-desc-type1">훈련장소</span>
+                    <label className="t-label">유해인자</label>
+                    <span className="text-desc-type1">유해인자</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr className="line dp-n"></hr>
+        <div className="form-table line">
+          <div className="form-cell wid100">
+            <div className="form-group wid100">
+              <div className="box-view-list">
+                <ul className="view-list">
+                  <li className="accumlate-list">
+                    <label className="t-label">기준에 관한 규칙</label>
+                    <span className="text-desc-type1">기준에 관한 규칙</span>
+                  </li>
+                </ul>
+              </div>
+              <span className="sm-txt">※ 산업안전보건기준에 관한 규칙 [별표 18] 밀폐공간(제618조제1호 관련)</span>
+            </div>
+          </div>
+        </div>
+        <hr className="line dp-n"></hr>
+        <div className="form-table line">
+          <div className="form-cell wid100">
+            <div className="form-group wid100">
+              <div className="box-view-list">
+                <ul className="view-list">
+                  <li className="accumlate-list">
+                    <label className="t-label">작업업체</label>
+                    <span className="text-desc-type1">작업업체</span>
                   </li>
                 </ul>
               </div>
@@ -209,8 +325,8 @@ function POccupationMu3P1detail() {
               <div className="box-view-list">
                 <ul className="view-list">
                   <li className="accumlate-list">
-                    <label className="t-label">참석자</label>
-                    <span className="text-desc-type1">참석자</span>
+                    <label className="t-label">출입주기</label>
+                    <span className="text-desc-type1">출입주기</span>
                   </li>
                 </ul>
               </div>
@@ -224,25 +340,8 @@ function POccupationMu3P1detail() {
               <div className="box-view-list">
                 <ul className="view-list">
                   <li className="accumlate-list">
-                    <label className="t-label">훈련명</label>
-                    <span className="text-desc-type1">훈련명</span>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-        <hr className="line"></hr>
-        <div className="form-table">
-          <div className="form-cell wid100">
-            <div className="form-group wid100">
-              <div className="box-view-list">
-                <ul className="view-list">
-                  <li className="accumlate-list">
-                    <label className="t-label">내용(editor)</label>
-                    <span className="text-desc-type1">
-                      <Viewer initialValue={editorValue} />
-                    </span>
+                    <label className="t-label">출입 시 작업내용</label>
+                    <span className="text-desc-type1">작업내용</span>
                   </li>
                 </ul>
               </div>
@@ -257,10 +356,10 @@ function POccupationMu3P1detail() {
               <div className="box-view-list">
                 <ul className="view-list">
                   <li className="accumlate-list">
-                    <label className="t-label">첨부파일</label>
+                    <label className="t-label">참고사진1</label>
                     <span className="text-desc-type1">
                       <div className="filebox view">
-                        <Upload {...props}>
+                        <Upload {...props} listType="picture-card" fileList={fileList}>
                           <div className="btn-area" style={{ display: 'none' }}>
                             <button type="button" name="button" className="btn-big btn_text btn-darkblue-line mg-n">
                               + Upload
@@ -276,27 +375,23 @@ function POccupationMu3P1detail() {
           </div>
         </div>
         <hr className="line"></hr>
-        <div className="form-table line">
+        {/* 파일첨부영역 : button */}
+        <div className="form-table">
           <div className="form-cell wid100">
             <div className="form-group wid100">
               <div className="box-view-list">
                 <ul className="view-list">
                   <li className="accumlate-list">
-                    <label className="t-label">링크 첨부</label>
+                    <label className="t-label">참고사진2</label>
                     <span className="text-desc-type1">
-                      <div className="file-link pd-l0">
-                        <div className="link-box">
-                          <a href="javascript:void(0);">첨부Link첨부Link첨부Link</a>
-                        </div>
-                        <div className="link-box">
-                          <a href="javascript:void(0);">첨부Link</a>
-                        </div>
-                        <div className="link-box">
-                          <a href="javascript:void(0);">첨부Link</a>
-                        </div>
-                        <div className="link-box">
-                          <a href="javascript:void(0);">첨부Link</a>
-                        </div>
+                      <div className="filebox view">
+                        <Upload {...props} listType="picture-card" fileList={fileList}>
+                          <div className="btn-area" style={{ display: 'none' }}>
+                            <button type="button" name="button" className="btn-big btn_text btn-darkblue-line mg-n">
+                              + Upload
+                            </button>
+                          </div>
+                        </Upload>
                       </div>
                     </span>
                   </li>
@@ -305,6 +400,7 @@ function POccupationMu3P1detail() {
             </div>
           </div>
         </div>
+
         <hr className="line"></hr>
       </div>
       {/*//입력영역*/}
@@ -312,7 +408,7 @@ function POccupationMu3P1detail() {
       {/* 하단버튼영역 */}
       <div className="contents-btns">
         <button type="button" name="button" className="btn_text text_color_neutral-10 btn_confirm">
-          저장
+          수정
         </button>
         <button type="button" name="button" className="btn_text btn-del">
           취소
@@ -323,4 +419,4 @@ function POccupationMu3P1detail() {
   );
 }
 
-export default POccupationMu3P1detail;
+export default POccupationMu3P7detail;
