@@ -235,6 +235,7 @@ function SafetyDetail() {
             </button>
           </dt>
           <dd className="tg-conts" style={{ display: firstExpaned ? '' : 'none' }}>
+            {/* 상세내용*/}
             <div className="edit-area">
               <div className="detailForm">
                 {/* 보고서내용보기 상세*/}
@@ -652,7 +653,7 @@ function SafetyDetail() {
                           <div className="edit-area">
                             {/*보고서접수 상세*/}
                             <div className="detailForm-detail-3deps list-group">
-                              <div className="list bx-toggle" style={{ border: 'solid 1px blue' }}>
+                              <div className="list bx-toggle">
                                 <dl className="tg-item rbox01 ">
                                   <dt onClick={() => setFourExpaned(!fourExpaned)}>
                                     <button type="button" className="tg-btn">
@@ -912,19 +913,20 @@ function SafetyDetail() {
                                         </div>
                                       </div>
                                       {/*보고서 상세*/}
-                                      <div className="detailForm-detail-4deps info-wrap list-group">
-                                        <div className="list bx-toggle" style={{ border: 'solid 0px RED' }}>
-                                          <dl className="tg-item rbox01 ">
+                                      <div className="detailForm-detail-4deps info-wrap list-group mt10">
+                                        <div className="list bx-toggle">
+                                          <dl className="tg-item rbox01">
                                             <dt>
                                               <button type="button" className="tg-btn">
                                                 - Doc No. ASR-100308
-                                                <span className=""></span>
+                                                <span className="active"></span>
+                                                {/* 상세 페이지 펼처졌을 시 active*/}
                                               </button>
                                             </dt>
                                             <dd className="tg-conts">
+                                              {/* 상세*/}
                                               <div className="edit-area">
-                                                <div className="detailForm" style={{ display: 'none' }}>
-                                                  {/* 보고서내용보기 상세*/}
+                                                <div className="detailForm">
                                                   {/* 비행정보*/}
                                                   <div className="editbox report">
                                                     <div className="header-tit">비행정보</div>
@@ -1108,18 +1110,32 @@ function SafetyDetail() {
                                                     </div>
                                                   </div>
                                                   {/* //보고서내용보기 상세*/}
+                                                  {/* 버튼*/}
+                                                  <div className="contents-btns">
+                                                    <button
+                                                      type="button"
+                                                      name="button"
+                                                      className="btn_text text_color_neutral-10 btn_confirm"
+                                                    >
+                                                      수정
+                                                    </button>
+                                                  </div>
+                                                  {/* //버튼*/}
                                                 </div>
-                                                {/* 버튼*/}
-                                                <div className="contents-btns">
-                                                  <button
-                                                    type="button"
-                                                    name="button"
-                                                    className="btn_text text_color_neutral-10 btn_confirm"
-                                                  >
-                                                    수정
-                                                  </button>
-                                                </div>
-                                                {/* //버튼*/}
+                                              </div>
+                                              {/* //상세*/}
+                                            </dd>
+                                          </dl>
+                                          <dl className="tg-item rbox01 ">
+                                            <dt>
+                                              <button type="button" className="tg-btn">
+                                                - Doc No. ASR-100308
+                                                <span className=""></span>
+                                              </button>
+                                            </dt>
+                                            <dd className="tg-conts">
+                                              <div className="edit-area">
+                                                <div className="detailForm">상세내용</div>
                                               </div>
                                             </dd>
                                           </dl>
