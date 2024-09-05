@@ -113,9 +113,20 @@ function ReportEdit() {
           <dt onClick={() => setFirstExpaned(!firstExpaned)}>
             <button type="button" className="btn-tg">
               비행정보<span className={firstExpaned ? 'active' : ''}></span>
-              <div className="tag-info-wrap">
-                <div className="tooltip">
-                  <span className="hide">툴팁아이콘</span>
+              <div className="tag-info-wrap-end">
+                <div className="tip">
+                  <div>
+                    <a href="javascript:void(0);" className="txt">
+                      보고서 작성 가이드
+                    </a>
+                  </div>
+                </div>
+                <div className="tip">
+                  <div>
+                    <a href="javascript:void(0);" className="txt">
+                      의무보고의 범위
+                    </a>
+                  </div>
                 </div>
               </div>
             </button>

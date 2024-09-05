@@ -155,10 +155,15 @@ input[type=checkbox],input[type=radio]{padding:0;vertical-align:middle;margin-to
 .radio-wrap > label.text-no {padding:0rem 0.9rem 0.2rem;margin:0;overflow: hidden;}
 .radio-wrap > label > input + span.text-no {height:1.8rem;}
 
-
+/*아코디언 텍스트 바로 옆 툴팁*/
 .tag-info-wrap{position:relative;display:inline-flex;justify-content:flex-end}
-.tag-info-wrap .tooltip{float:inline-end;top:0.8rem;background: url(/src/resources/images/tooltip.svg) left center no-repeat;background-size: 3.0rem;font-size: 0;width: 3.0rem;height: 3.0rem;cursor: pointer;}
+.tag-info-wrap .tooltip{float:inline-end;top:0.8rem;background: url(/src/resources/images/tooltip.svg) left center no-repeat;background-size: 3.0rem;font-size: 0;width: 3.0rem;height: 3.0rem;cursor:pointer}
 
+/*아코디언 텍스트 맨 끝에 위치*/
+.tag-info-wrap-end{position:absolute;right:5rem;display:inline-flex;justify-content:flex-end}
+.tag-info-wrap-end .tip{background:url(/src/resources/images/tooltip.svg) left center no-repeat;background-size:3.0rem;font-size:0;height:3.0rem;line-height:3.0rem;cursor:pointer}
+.tag-info-wrap-end .tip a.txt{display: inline-block;font-size:1.5rem;margin-left:3.0rem}
+.tag-info-wrap-end .tip + .tip{margin-left:0.5rem}
 /*input*/
 input[type=file], input[type=search], input[type=text]{padding:0.4rem 0 0.4rem 0.4rem}
 [role=button],a,area,button,input:not([type=range]),label,select,summary,textarea {touch-action: manipulation}
@@ -558,7 +563,7 @@ input, select{font-family:'KoreanAirSans'}
 
 /*toggle*/
 .info-wrap{border-top:0rem solid var(--color-darkblue-100);background-color:var(--color-neutral-10)}
-.info-wrap > dl > dt{padding:1.0rem 0rem 1.0rem;border-bottom:0.1rem solid #ccc}
+.info-wrap > dl > dt{position:relative;padding:1.0rem 0rem 1.0rem;border-bottom:0.1rem solid #ccc}
 .info-wrap > dl > dt .btn-tg{font-family:"KoreanAirSans";font-weight:600;font-size:2.0rem;color:var(--color-darkblue-100)}
 .info-wrap > dl > dd{/*margin:0 -2.0rem 1.0rem*/}
 .info-wrap .edit-area{border-top:0.1rem solid var(--color-darkblue-100);/*border-bottom:0.1rem solid var(--color-neutral-30);background-color:var(--color-neutral-20);*/color:var(--color-neutral-80);line-height:2.0rem;font-size:1.6rem}
