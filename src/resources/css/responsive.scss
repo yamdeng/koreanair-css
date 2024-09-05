@@ -73,6 +73,10 @@
   .c-step-list.default>li:nth-child(9){min-width:14.5rem}
 
   .Notification-wrap{width:100%}
+
+  .calendar-box {display: block;}
+  .calendar-box .calendar-wrap {width: 100%;}
+  .calendar-box .calendar-list {width: 100%;}
 }
 
 
@@ -181,7 +185,9 @@
 
   .Notification-wrap{width:100%}
 
-
+  .calendar-box {display: block;}
+  .calendar-box .calendar-wrap {width: 100%;}
+  .calendar-box .calendar-list {width: 100%;}
 }
 
 
@@ -347,7 +353,37 @@
   .center-btn {width: 100%; padding:2.0rem; transform: rotate(90deg);}
 
   .Notification-wrap{width:100%}
+<<<<<<< HEAD
   .UserChicebox.Fax .form-group{padding:1.0rem 0.5rem}
+=======
+
+
+  .calendar-box {display: block;}
+  .calendar-box .calendar-wrap {width: 100%;}
+  .calendar-box .calendar-list {width: 100%;}
+  .calendar-box .calendar-wrap .calendar-table tbody td .cld_date .schedule li {margin: 0 !important; }
+  .calendar-box .calendar-wrap .calendar-table tbody td .cld_date .schedule li a.ing, 
+  .calendar-box .calendar-wrap .calendar-table tbody td .cld_date .schedule li a.ing span {
+    font-size: 0; 
+    width: 2.4rem; 
+    height: 2.4rem; 
+    background-color: var(--color-positive);
+  }
+  .calendar-box .calendar-wrap .calendar-table tbody td .cld_date .schedule li a.expected, 
+  .calendar-box .calendar-wrap .calendar-table tbody td .cld_date .schedule li a.expected span {
+    font-size: 0; 
+    width: 2.4rem; 
+    height: 2.4rem; 
+    background-color: var(--color-darkblue-100);
+  }
+  .calendar-box .calendar-wrap .calendar-table tbody td .cld_date .schedule li a.wait, 
+  .calendar-box .calendar-wrap .calendar-table tbody td .cld_date .schedule li a.wait span {
+    font-size: 0; 
+    width: 2.4rem; 
+    height: 2.4rem; 
+    background-color: var(--color-Warning);
+  }
+>>>>>>> a0d6b26ad62655022fa6e990e9e410213df4ed46
 }
 
 
