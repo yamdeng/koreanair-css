@@ -171,6 +171,12 @@
   .user-wrap .user-box .user-box-top:nth-child(2){margin:1rem 0 0.8rem}
 
   .detail-form .detail-list .form-table .form-cell .btn-area.inbtn{display:block;width:100%}
+
+  .division {display: block;}
+  .division .check {display: block; width: 100%;}
+  .division .list {display: block;width: 100%;}
+  .center-btn {width: 100%; padding:2.0rem; transform: rotate(90deg);}
+  
 }
 
 
@@ -326,6 +332,11 @@
 
   .list-input-box li {display: block; padding: 0.5rem 0;}
   .list-input-box li .list-tit {padding-bottom: 0.5rem;}
+
+  .division {display: block;}
+  .division .check {display: block; width: 100%;}
+  .division .list {display: block;width: 100%;}
+  .center-btn {width: 100%; padding:2.0rem; transform: rotate(90deg);}
 }
 
 

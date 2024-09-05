@@ -591,7 +591,7 @@
 .checklist .search .search-list .list li { background-color: #fff; height: 4.0rem; display: flex; justify-content: left; align-items: center; margin: 0 0 1.0rem 0; padding: 0 1.0rem; border-radius: 0.8rem; }
 .checklist .search .search-list .list li .ck-list {width: 29.0rem; line-height: 4.0rem; overflow: hidden; text-overflow:ellipsis; white-space: nowrap; font-size: 1.4rem;}
 .checkbutton {height: auto; display: flex; align-items: center; justify-content:center; padding: 0 0.5rem;}
-.checkbutton button {background: url(../images/pagination-last.svg) center center no-repeat; width: 4.0rem; height: 4.0rem;}
+.checkbutton button {background: url(../images/pagination-last.svg) center center no-repeat; width: 4.0rem; height: 4.0rem; font-size: 0;}
 .selectlist {width: 35.0rem; height: auto; border: 0rem solid var(--color-neutral-40);}
 .selectlist .title {width: 100%; border-top: 0.1rem solid var(--color-darkblue-100); border-bottom: 0.1rem solid var(--color-neutral-40); margin-bottom: 1.0rem;}
 .selectlist .title p {position: relative; display:flex; justify-content: center; align-items: center; height: 4.0rem; text-align: center;}

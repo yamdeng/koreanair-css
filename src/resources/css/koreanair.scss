@@ -495,6 +495,9 @@
       .before-after-table tr { border-bottom: 0.1rem solid var(--color-neutral-40); }
 
     }
+.center-btn {height: auto; display: flex; align-items: center; justify-content:center; padding: 0 2.0rem;}
+.center-btn button {background: url(../images/pagination-last.svg) center center no-repeat; background-size: 3.0rem; width: 5.0rem; height: 5.0rem; font-size: 0; border: 0.1rem solid var(--color-darkblue-100); border-radius: 0.8rem;}
+
 .division {width: 100%; display: inline-flex;}
 .division .check {width: 100%;}
 .division .list {

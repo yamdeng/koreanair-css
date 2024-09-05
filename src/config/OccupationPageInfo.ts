@@ -461,7 +461,7 @@ OccupationPageInfo.list = [
     Component: POccupationMu3P4list,
     path: 'POccupationMu3P4list',
     description: '',
-    success: false,
+    success: true,
   },
   {
     title: '안전관리 > 외주작업허가-조회-리스트',

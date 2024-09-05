@@ -18,15 +18,9 @@ function POccupationMu3P6list1() {
 
   const customButtons = [
     {
-      title: '행추가',
+      title: '등록',
       onClick: () => {
-        alert('행추가');
-      },
-    },
-    {
-      title: '전체삭제',
-      onClick: () => {
-        alert('전체삭제');
+        alert('등록');
       },
     },
   ];
@@ -43,62 +37,94 @@ function POccupationMu3P6list1() {
             <a href="javascript:void(0);">안전관리</a>
           </li>
           <li className="breadcrumb-item">
-            <a href="javascript:void(0);">협력업체</a>
+            <a href="javascript:void(0);">적격수급업체 관리</a>
           </li>
         </ol>
       </div>
       {/*경로 */}
       <div className="conts-title">
-        <h2>협력업체</h2>
+        <h2>적격수급업체 관리</h2>
       </div>
-      {/*검색영역 */}
-      <div className="boxForm">
-        {/*area-detail명 옆에 active  */}
-        <div id="" className="area-detail active">
-          <div className="form-table">
-            <div className="form-cell wid50">
-              <div className="form-group wid100">
-                <AppTextInput label={'업체명'} />
+      <div className="division">
+        <div className="check">
+          {/*검색영역 */}
+          <div className="boxForm">
+            {/*area-detail명 옆에 active  */}
+            <div className="area-detail active">
+              <div className="form-table">
+                <div className="form-cell wid50">
+                  <div className="form-group wid100">
+                    <AppSelect label="부문" disabled />
+                  </div>
+                </div>
+                <div className="form-cell wid50">
+                  <div className="form-group wid100">
+                    <AppTextInput label="업체명" />
+                  </div>
+                </div>
+              </div>
+              <div className="form-table">
+                <div className="form-cell wid50">
+                  <div className="form-group form-glow">
+                    <div className="df">
+                      <div className="date1">
+                        <AppDatePicker label="계약기간" />
+                      </div>
+                      <span className="unt">~</span>
+                      <div className="date2">
+                        <AppDatePicker label="계약기간" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="form-cell wid50">
+                  <div className="form-group wid100">
+                    <AppSelect label="최종 평가 분류" />
+                  </div>
+                </div>
+              </div>
+              <div className="btn-area mb-10">
+                <button type="button" name="button" className="btn-sm btn_text btn-darkblue-line">
+                  검색
+                </button>
               </div>
             </div>
-            <div className="form-cell wid50">
-              <div className="form-group wid100 mr5">
-                <AppSelect label={'사업장 분류'} />
+          </div>
+          {/* //검색영역 */}
+          {/*그리드영역 */}
+          <div>
+            <AppTable rowData={rowData} columns={columns} customButtons={customButtons} />
+          </div>
+          {/*//그리드영역 */}
+        </div>
+        <div className="center-btn">
+          <button>버튼</button>
+        </div>
+        <div className="list ml-0">
+          <h3>평가대상 선정</h3>
+          {/*검색영역 */}
+          <div className="boxForm">
+            {/*area-detail명 옆에 active  */}
+            <div className="area-detail active">
+              <div className="form-table">
+                <div className="form-cell wid50">
+                  <div className="form-group wid100">
+                    <AppDatePicker label="평가년도" />
+                  </div>
+                </div>
+                <div className="btn-area mb-10">
+                  <button type="button" name="button" className="btn-sm btn_text btn-darkblue-line">
+                    검색
+                  </button>
+                </div>
               </div>
             </div>
-            <div className="form-cell wid50">
-              <div className="form-group wid100">
-                <AppSelect label={'사용부문'} />
-              </div>
-            </div>
-            <div className="form-cell wid50">
-              <div className="form-group wid100">
-                <AppAutoComplete label={'관리부서'} />
-              </div>
-            </div>
-            <div className="btn-area">
-              <button type="button" name="button" className="btn-sm btn_text btn-darkblue-line">
-                검색
-              </button>
-            </div>
+          </div>
+          <div>
+            <AppTable rowData={rowData} columns={columns} />
           </div>
         </div>
       </div>
-      {/* //검색영역 */}
-
-      {/*그리드영역 */}
-      <div className="">
-        <AppTable rowData={rowData} columns={columns} customButtons={customButtons} />
-      </div>
-      {/*//그리드영역 */}
-
-      {/* 하단버튼영역 */}
-      <div className="contents-btns">
-        <button type="button" name="button" className="btn_text text_color_neutral-10 btn_confirm">
-          등록
-        </button>
-      </div>
-      {/*//하단버튼영역*/}
     </>
   );
 }
