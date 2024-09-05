@@ -196,6 +196,7 @@ function POccupationMu4P2edit() {
                     <div className="form-cell wid50">
                       <div className="form-group wid100">
                         <span className="stit-btn">
+                          {/*입력폼팝업명: MU4P2Modal*/}
                           <h3>점검항목</h3>
                           <button>점검표 출력</button>
                         </span>

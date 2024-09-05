@@ -594,7 +594,7 @@ OccupationPageInfo.list = [
     Component: POccupationMu4P2edit,
     path: 'POccupationMu4P2edit',
     description: '',
-    success: false,
+    success: true,
   },
   {
     title: '안전점검 > 합동 안전 보건 점검-리스트',

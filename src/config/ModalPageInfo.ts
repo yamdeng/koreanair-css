@@ -45,6 +45,7 @@ import MU5P2Modal from '@/components/publish/modal/MU5P2Modal';
 import MU5P3Modal from '@/components/publish/modal/MU5P3Modal';
 import MU5P4Modal from '@/components/publish/modal/MU5P4Modal';
 import PReportDocumentModal from '@/components/publish/modal/PReportDocumentModal';
+import MU4P2Modal from '@/components/publish/modal/MU4P2Modal';
 
 const ModalPageInfo: any = {};
 
@@ -375,6 +376,13 @@ ModalPageInfo.list = [
     title: '산업안전 > 위험성평가 > 위험도안내 팝업창',
     Component: MU5P4Modal,
     path: 'MU5P4Modal',
+    description: '',
+    success: true,
+  },
+  {
+    title: '산업점검 > 작업장순회점검 > 점검항목-부적합사항입력 팝업창',
+    Component: MU4P2Modal,
+    path: 'MU4P2Modal',
     description: '',
     success: true,
   },
