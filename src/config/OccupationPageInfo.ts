@@ -461,7 +461,7 @@ OccupationPageInfo.list = [
     Component: POccupationMu3P4list,
     path: 'POccupationMu3P4list',
     description: '',
-    success: true,
+    success: false,
   },
   {
     title: '안전관리 > 외주작업허가-조회-리스트',
@@ -517,7 +517,7 @@ OccupationPageInfo.list = [
     Component: POccupationMu3P6list1,
     path: 'POccupationMu3P6list1',
     description: '',
-    success: false,
+    success: true,
   },
   {
     title: '안전관리 > 적격수급업체평가-업체관리-등록',
