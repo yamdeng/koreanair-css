@@ -15,6 +15,16 @@ function POccupationMu3P4list() {
   const [inputValue, setInputValue] = useState('');
   const rowData = getAllData();
   const columns = testColumnInfos;
+
+  const customButtons = [
+    {
+      title: '공사장소 관리',
+      onClick: () => {
+        alert('공사장소 관리');
+      },
+    },
+  ];
+
   return (
     <>
       {/*경로 */}
@@ -47,44 +57,326 @@ function POccupationMu3P4list() {
         </div>
       </div>
       {/*//탭 */}
-      {/*검색영역 */}
-      <div className="boxForm">
-        {/*area-detail명 옆에 active  */}
-        <div id="" className="area-detail active">
-          <div className="form-table">
-            <div className="form-cell wid50">
-              <div className="form-group wid100">
-                <AppDatePicker label={'측정년도'} />
-              </div>
-            </div>
-            <div className="form-cell wid50">
-              <div className="form-group wid100 mr5">
-                <AppAutoComplete label={'반기'} />
-              </div>
-            </div>
-            <div className="form-cell wid50">
-              <div className="form-group wid100">
-                <AppSelect label={'구분'} />
-              </div>
-            </div>
-            <div className="form-cell wid50">
-              <div className="form-group wid100">
-                <AppSelect label={'권역'} />
-              </div>
-            </div>
-            <div className="btn-area">
-              <button type="button" name="button" className="btn-sm btn_text btn-darkblue-line">
-                검색
-              </button>
-            </div>
+      {/* 달력 */}
+      <h3 className="table-tit">외주작업 실시현황</h3>
+      <div className="calendar-box">
+        <div className="calendar-wrap">
+          <div className="calendar-tit">
+            <button className="prevday">버튼</button>
+            <h2 className="datetitle">2024년 9월</h2>
+            <button className="nextday">버튼</button>
           </div>
+          <table className="calendar-table">
+            <colgroup>
+              <col width={'15%'} />
+              <col width={'14%'} />
+              <col width={'14%'} />
+              <col width={'14%'} />
+              <col width={'14%'} />
+              <col width={'14%'} />
+              <col width={'15%'} />
+            </colgroup>
+            <thead>
+              <tr>
+                <th>일</th>
+                <th>월</th>
+                <th>화</th>
+                <th>수</th>
+                <th>목</th>
+                <th>금</th>
+                <th>토</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <div className="cld_date">
+                    <div className="cld_day s_day">1</div>
+                    <ul className="schedule">
+                      <li>
+                        <a className="ing" href="javascript:void(0);">
+                          작업중<span>(1)</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a className="expected" href="javascript:void(0);">
+                          작업예정<span>(2)</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a className="wait" href="javascript:void(0);">
+                          작업종료대기<span>(1)</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </td>
+                <td>
+                  <div className="cld_date">
+                    <div className="cld_day">2</div>
+                  </div>
+                </td>
+                <td>
+                  <div className="cld_date">
+                    <div className="cld_day">3</div>
+                  </div>
+                </td>
+                <td>
+                  <div className="cld_date">
+                    <div className="cld_day">4</div>
+                  </div>
+                </td>
+                <td>
+                  <div className="cld_date">
+                    <div className="cld_day">5</div>
+                  </div>
+                </td>
+                <td>
+                  <div className="cld_date">
+                    <div className="cld_day">6</div>
+                  </div>
+                </td>
+                <td>
+                  <div className="cld_date">
+                    <div className="cld_day">7</div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div className="cld_date">
+                    <div className="cld_day s_day">8</div>
+                  </div>
+                </td>
+                <td>
+                  <div className="cld_date">
+                    <div className="cld_day">9</div>
+                  </div>
+                </td>
+                <td>
+                  <div className="cld_date">
+                    <div className="cld_day">10</div>
+                  </div>
+                </td>
+                <td>
+                  <div className="cld_date">
+                    <div className="cld_day">11</div>
+                  </div>
+                </td>
+                <td>
+                  <div className="cld_date">
+                    <div className="cld_day">12</div>
+                  </div>
+                </td>
+                <td>
+                  <div className="cld_date">
+                    <div className="cld_day">13</div>
+                  </div>
+                </td>
+                <td>
+                  <div className="cld_date">
+                    <div className="cld_day">14</div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div className="cld_date">
+                    <div className="cld_day s_day">15</div>
+                  </div>
+                </td>
+                <td>
+                  <div className="cld_date">
+                    <div className="cld_day">16</div>
+                  </div>
+                </td>
+                <td>
+                  <div className="cld_date">
+                    <div className="cld_day">17</div>
+                  </div>
+                </td>
+                <td>
+                  <div className="cld_date">
+                    <div className="cld_day">18</div>
+                  </div>
+                </td>
+                <td>
+                  <div className="cld_date">
+                    <div className="cld_day">19</div>
+                  </div>
+                </td>
+                <td>
+                  <div className="cld_date">
+                    <div className="cld_day">20</div>
+                  </div>
+                </td>
+                <td>
+                  <div className="cld_date">
+                    <div className="cld_day">21</div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div className="cld_date">
+                    <div className="cld_day s_day">22</div>
+                  </div>
+                </td>
+                <td>
+                  <div className="cld_date">
+                    <div className="cld_day">23</div>
+                  </div>
+                </td>
+                <td>
+                  <div className="cld_date">
+                    <div className="cld_day">24</div>
+                  </div>
+                </td>
+                <td>
+                  <div className="cld_date">
+                    <div className="cld_day">25</div>
+                  </div>
+                </td>
+                <td>
+                  <div className="cld_date">
+                    <div className="cld_day">26</div>
+                  </div>
+                </td>
+                <td>
+                  <div className="cld_date">
+                    <div className="cld_day">27</div>
+                  </div>
+                </td>
+                <td>
+                  <div className="cld_date">
+                    <div className="cld_day">28</div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div className="cld_date">
+                    <div className="cld_day s_day">29</div>
+                  </div>
+                </td>
+                <td>
+                  <div className="cld_date">
+                    <div className="cld_day">30</div>
+                  </div>
+                </td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div className="calendar-list">
+          <h3 className="table-tit">2024년 9월 5일</h3>
+          <table className="list-table">
+            <thead>
+              <tr>
+                <th>작업상태</th>
+                <th>공사명</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>작업 중</td>
+                <td>도로포장</td>
+              </tr>
+              <tr>
+                <td>작업종료대기</td>
+                <td>외벽공사</td>
+              </tr>
+              <tr>
+                <td>작업종료대기</td>
+                <td>외벽공사</td>
+              </tr>
+              <tr>
+                <td>작업종료대기</td>
+                <td>외벽공사</td>
+              </tr>
+              <tr>
+                <td>작업종료대기</td>
+                <td>외벽공사</td>
+              </tr>
+              <tr>
+                <td>작업종료대기</td>
+                <td>외벽공사</td>
+              </tr>
+              <tr>
+                <td>작업종료대기</td>
+                <td>외벽공사</td>
+              </tr>
+              <tr>
+                <td>작업종료대기</td>
+                <td>외벽공사</td>
+              </tr>
+              <tr>
+                <td>작업종료대기</td>
+                <td>외벽공사</td>
+              </tr>
+              <tr>
+                <td>작업종료대기</td>
+                <td>외벽공사</td>
+              </tr>
+              <tr>
+                <td>작업종료대기</td>
+                <td>외벽공사</td>
+              </tr>
+              <tr>
+                <td>작업종료대기</td>
+                <td>외벽공사</td>
+              </tr>
+              <tr>
+                <td>작업종료대기</td>
+                <td>외벽공사</td>
+              </tr>
+              <tr>
+                <td>작업종료대기</td>
+                <td>외벽공사</td>
+              </tr>
+              <tr>
+                <td>작업종료대기</td>
+                <td>외벽공사</td>
+              </tr>
+              <tr>
+                <td>작업종료대기</td>
+                <td>외벽공사</td>
+              </tr>
+              <tr>
+                <td>작업종료대기</td>
+                <td>외벽공사</td>
+              </tr>
+              <tr>
+                <td>작업종료대기</td>
+                <td>외벽공사</td>
+              </tr>
+              <tr>
+                <td>작업종료대기</td>
+                <td>외벽공사</td>
+              </tr>
+              <tr>
+                <td>작업종료대기</td>
+                <td>외벽공사</td>
+              </tr>
+              <tr>
+                <td>작업종료대기</td>
+                <td>외벽공사</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
       </div>
-      {/* //검색영역 */}
+      {/* //달력 */}
 
       {/*그리드영역 */}
+      <h3 className="table-tit">외주작업 신청 현황</h3>
       <div className="">
-        <AppTable rowData={rowData} columns={columns} />
+        <AppTable rowData={rowData} columns={columns} customButtons={customButtons} />
       </div>
       {/*//그리드영역 */}
 

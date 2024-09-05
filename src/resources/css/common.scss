@@ -27,7 +27,7 @@
   --color-positive: #28794E;
   --color-positive-bg:#F0FFF4;
   --color-Warning:#C84300;
-  --color-Warning-BG:#FEF4E6;
+  --color-Warning-bg:#FEF4E6;
   --color-negative:#DA291C;
   --color-negative-bg:#FFF5F5;
   --color-ag-header-row:#f8f9fc;
@@ -678,7 +678,7 @@ input, select{font-family:'KoreanAirSans'}
 .ant-upload.ant-upload-select.ant-upload-disabled { display: none;}
 
 /*공통컴포넌트 그리드 row컬러*/
-.ag-theme-quartz .ag-root-wrapper .ag-row-odd{background-color:var(--color-neutral-20) !important}
+.ag-theme-quartz .ag-root-wrapper .ag-row-odd{background-color:var(--color-neutral-20)}
 
 
 .left-box {display: inline-block; width: 32.0rem; vertical-align: top; padding-right: 3.0rem;}
