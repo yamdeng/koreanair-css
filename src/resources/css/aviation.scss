@@ -35,8 +35,14 @@
 .form-group .type4{position:relative;width:40%;margin-left:0.5rem}
 .form-group .type5{position:relative;width:20%}
 
-
-
+/*공고*/
+.Notification-wrap{position:relative;background-color:var(--color-btn-blue1);border:solid 0.1rem var(--color-btn-blue2);border-radius:0.8rem;padding-bottom:1.5rem;}
+.Notification-wrap .info-text01{position:relative;padding-left:1.5rem;text-indent:2.5rem}
+.Notification-wrap .info-text01::before{content:'*';position:absolute;display:block;top:0.2rem;left:0}
+.Notification-wrap .notice{display:block;padding:2.5rem 2.9rem 2.5rem 2.9rem;font-size:1.8rem;font-weight:600;color:var(--color-btn-blue2)}
+.Notification-wrap ul{display:inline-block;font-size:1.4rem;padding:0 2.9rem 1.0rem 2.0rem}
+.Notification-wrap ul > li{padding-left:3rem;text-indent:-2.5rem}
+.Notification-wrap ul > li span.point{padding-right:0.5rem}
 
 .c-step-list{counter-reset:stepCounter}
 .c-step-list.default{display:flex;font-size:1.2rem;text-align:center;margin-left:-1.5rem}

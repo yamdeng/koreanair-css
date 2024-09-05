@@ -50,8 +50,10 @@ import AdminSafetyNoticeList from '@/components/publish/aviation/AdminSafetyNoti
 import AdminSafetyNoticeEdit from '@/components/publish/aviation/AdminSafetyNoticeEdit';
 import AdminSafetyNoticeDetail from '@/components/publish/aviation/AdminSafetyNoticeDetail';
 import ReportEdit from '@/components/publish/aviation/ReportEdit';
+import CSRReportEdit from '@/components/publish/aviation/CSRReportEdit';
 
 import { fa } from '@faker-js/faker';
+import { fail } from 'assert';
 
 const AviationPageInfo: any = {};
 
@@ -146,6 +148,13 @@ AviationPageInfo.list = [
     path: 'ReportEdit',
     description: '',
     success: true,
+  },
+  {
+    title: '[03.안전위험관리] 보고서분석 > 등록(CSR)',
+    Component: CSRReportEdit,
+    path: 'CSRReportEdit',
+    description: '',
+    success: false,
   },
   {
     title: '[04.안전보증] SPI/SPT > 운영 현황> 운항 정보',
