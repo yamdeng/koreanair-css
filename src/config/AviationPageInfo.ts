@@ -141,7 +141,7 @@ AviationPageInfo.list = [
     success: false,
   },
   {
-    title: '[03.안전위험관리] 보고서분석 > 등록',
+    title: '[03.안전위험관리] 보고서분석 > 등록(ASR)',
     Component: ReportEdit,
     path: 'ReportEdit',
     description: '',
