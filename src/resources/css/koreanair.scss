@@ -449,12 +449,14 @@
       padding: 1.0rem 0 0;
       /*height: 100%;*/
       display: flex;
+      flex-direction: row;
+      align-items: flex-start;
       .ck-list {
         display: inline-block;
         width: 100%;
         vertical-align: top;
       }
-      .ck-list-grid {max-height: 35.9rem; overflow-y: auto;}
+      .ck-list-grid {height: 100%; overflow-y: auto;}
       .ck-right-list {
         display: inline-block;
         width: calc(100% - 2.0rem);
@@ -495,6 +497,13 @@
       .before-after-table tr { border-bottom: 0.1rem solid var(--color-neutral-40); }
 
     }
+.btn-area-listpg {
+      text-align:center;
+        > button{margin:0 0.5rem}
+        button + button{margin-left:0.5rem}
+        .btn_text{font-family:'KoreanAirSans';font-weight:700;font-size:1.6rem}
+        .btn_confirm{padding:0.6rem 2.8rem;border-radius:99.9rem;background: var(--color-darkblue-100); color: var(--color-neutral-10);}
+        .btn_close{padding:0.6rem 2.8rem;border-radius:99.9rem;background: var(--color-neutral-30); color: var(--color-neutral-70);}}
 .center-btn {height: auto; display: flex; align-items: center; justify-content:center; padding: 0 2.0rem;}
 .center-btn button {background: url(../images/pagination-last.svg) center center no-repeat; background-size: 3.0rem; width: 5.0rem; height: 5.0rem; font-size: 0; border: 0.1rem solid var(--color-darkblue-100); border-radius: 0.8rem;}
 
@@ -680,12 +689,15 @@
 .checkitems-table tfoot td {color: var(--color-darkblue-100); background-color: var(--color-neutral-30); font-weight: 500;}
 .checkitems-table tbody tr:hover, .lcheckitems-table tbody tr:active {width:100%;background-color: var(--color-lightblue-10); cursor: pointer;}
 
-/*.before-after-box {display: inline-flex; width: 100%; height: 100%; padding-bottom: 1.0rem;}
-.before-after-box .before {width: 100%; border: 0.1rem solid var(--color-neutral-40);}
-.before-after-box .before h3 {font-size: 1.6rem; font-weight: 500; text-align: center; padding: 1.0rem 0; border-bottom: 0.1rem solid var(--color-neutral-40); background-color: var(--color-neutral-20);}
-.before-after-box .before-box {padding: 1.0rem;}
-.before-after-box .after {width: 100%; border: 0.1rem solid var(--color-neutral-40);}
-.before-after-box .after h3 {font-size: 1.6rem; font-weight: 500; text-align: center; padding: 1.0rem 0; border-bottom: 0.1rem solid var(--color-neutral-40); background-color: var(--color-neutral-20);}
-*/
+.check-list-table {clear: both; width: 100%; box-sizing: border-box;}
+.check-list-table thead tr, .check-list-table tbody tr, .check-list-table tfoot tr {display: table; width: 100%;}
+.check-list-table th, .check-list-table td {padding: 1.0rem; font-size: 1.4rem; text-align: center; line-height: 150%; vertical-align:middle;}
+.check-list-table th:nth-child(1), .check-list-table td:nth-child(1){width: 30%;}
+.check-list-table th:nth-child(2), .check-list-table td:nth-child(2){width: 50%;}
+.check-list-table th:nth-child(3), .check-list-table td:nth-child(3){width: 20%;}
+.check-list-table th {background-color: var(--color-neutral-20); border-top: 0.1rem solid var(--color-darkblue-100); }
+.check-list-table tr {border-bottom: 0.1rem solid var(--color-neutral-40);}
+.check-list-table tbody {display: block; height: 100%; overflow-y: auto;}
+
 
 .icon {display: flex; position: absolute; top: 0.8rem; right: 3.0rem; font-size: 0; background: url(../images/tooltip.svg) center center no-repeat; background-size: 2.6rem; width: 2.6rem; height: 2.6rem; cursor: pointer;}

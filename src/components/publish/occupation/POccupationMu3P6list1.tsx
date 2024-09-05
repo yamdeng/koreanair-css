@@ -123,6 +123,11 @@ function POccupationMu3P6list1() {
           <div>
             <AppTable rowData={rowData} columns={columns} />
           </div>
+          <div className="btn-area-listpg mg-top">
+            <button type="button" name="button" className="btn_text btn_confirm">
+              저장
+            </button>
+          </div>
         </div>
       </div>
     </>
