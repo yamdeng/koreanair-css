@@ -4,6 +4,7 @@ import AppSelect from '@/components/common/AppSelect';
 import AppTextInput from '@/components/common/AppTextInput';
 import AppAutoComplete from '@/components/common/AppAutoComplete';
 import AppTimePicker from '@/components/common/AppTimePicker';
+import AppTextArea from '@/components/common/AppTextArea';
 import { useState } from 'react';
 import { Editor } from '@toast-ui/react-editor';
 const { Dragger } = Upload;
@@ -107,6 +108,7 @@ function ReportEdit() {
       {/* //검색영역 */}
       <div className="info-wrap toggle">
         <dl className="{firstExpaned ? 'tg-item active' : 'tg-item'}">
+          {/* 비행정보 */}
           {/* toggle 선택되면  열어지면 active붙임*/}
           <dt onClick={() => setFirstExpaned(!firstExpaned)}>
             <button type="button" className="btn-tg">
@@ -325,6 +327,7 @@ function ReportEdit() {
             </div>
           </dd>
         </dl>
+        {/* 이벤트 */}
         <dl className={secondExpaned ? 'tg-item active' : 'tg-item'}>
           <dt onClick={() => setSecondExpaned(!secondExpaned)}>
             <button type="button" className="btn-tg">
@@ -337,7 +340,7 @@ function ReportEdit() {
                 <div className="detail-list">
                   <div className="form-table">
                     <div className="form-cell wid50 ">
-                      <div className="form-group wid100">
+                      <div className="form-group wid50">
                         {/*발생위치 */}
                         <AppTextInput
                           inputType="text"
@@ -365,11 +368,61 @@ function ReportEdit() {
                     <div className="form-cell wid50">
                       <div className="form-group wid100">
                         <div className="df">
-                          <div className="date1">
-                            <AppDatePicker label="출발일자(UTC)" required />
+                          <div className="type3">
+                            <AppDatePicker label="발생시간" showTime />
                           </div>
-                          <div className="date2">
-                            <AppSelect label={'표준시'} disabled />
+                          <div className="type4">
+                            <AppSelect label={'UTC'} disabled />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="form-table">
+                    <div className="form-cell wid50">
+                      <div className="form-group wid50">
+                        {/*비행단계 */}
+                        <AppSelect label="비행단계" required />
+                      </div>
+                    </div>
+                  </div>
+                  <div className="form-table">
+                    <div className="form-cell wid50">
+                      <div className="form-group wid100">
+                        <div className="UserChicebox error">
+                          <div className="form-group wid100">
+                            <div className="df">
+                              <div className="type1">
+                                <AppTextInput inputType={'number'} label="" />
+                                <label htmlFor="file" className="file-label">
+                                  Altitude <span className="required"></span>
+                                </label>
+                              </div>
+                              <div className="type2">
+                                {/*Altitude 선택 */}
+                                <AppSelect label="" />
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="form-cell wid50">
+                      <div className="form-group wid100">
+                        <div className="UserChicebox error">
+                          <div className="form-group wid100">
+                            <div className="df">
+                              <div className="type1">
+                                <AppTextInput inputType={'number'} label="" />
+                                <label htmlFor="file" className="file-label">
+                                  Speed <span className="required"></span>
+                                </label>
+                              </div>
+                              <div className="type2">
+                                {/*Speed 선택 */}
+                                <AppSelect label="" />
+                              </div>
+                            </div>
                           </div>
                         </div>
                       </div>
@@ -378,61 +431,15 @@ function ReportEdit() {
                   <div className="form-table">
                     <div className="form-cell wid50">
                       <div className="form-group wid100">
-                        {/*출발공항 */}
-                        <AppAutoComplete label="출발공항" />
-                      </div>
-                    </div>
-                    <div className="form-cell wid50">
-                      <div className="form-group wid100">
-                        {/*출발공항 */}
-                        <AppAutoComplete label="출발공항" />
-                      </div>
-                    </div>
-                    <div className="form-cell wid50">
-                      <div className="form-group wid100">
-                        {/*회항공항 */}
-                        <AppAutoComplete label="회항공항" />
+                        <AppTextInput label="제목" required />
                       </div>
                     </div>
                   </div>
-                  <div className="form-table">
-                    <div className="form-cell wid50">
-                      <div className="form-group wid100">
-                        <AppTextInput label="좌석수(F/C/Y)" />
-                      </div>
-                    </div>
-                    <div className="form-cell wid50">
-                      <div className="form-group wid100">
-                        <AppTextInput label="탑승자(F/C/Y)" />
-                      </div>
-                    </div>
-                    <div className="form-cell wid50">
-                      <div className="form-group wid100">
-                        {/*승무원 */}
-                        <AppAutoComplete label="승무원" />
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </dd>
-        </dl>
-        <dl className={thirdExpaned ? 'tg-item active' : 'tg-item'}>
-          <dt onClick={() => setThirdExpaned(!thirdExpaned)}>
-            <button type="button" className="btn-tg">
-              조사보고서<span className={thirdExpaned ? 'active' : ''}></span>
-            </button>
-          </dt>
-          <dd className="tg-conts" style={{ display: thirdExpaned ? '' : 'none' }}>
-            <div className="edit-area">
-              <div className="detail-form">
-                <div className="detail-list">
                   <div className="form-table">
                     <div className="form-cell wid50">
                       <div className="group-box-wrap1 wid100 ">
                         <span className="txt">
-                          개요 <span className="required">*</span>
+                          내용 <span className="required">*</span>
                         </span>
                         <div className="round-wrap">
                           {/*개요 */}
@@ -484,11 +491,75 @@ function ReportEdit() {
                       </div>
                     </div>
                   </div>
+                </div>
+              </div>
+            </div>
+          </dd>
+        </dl>
+        {/* 날씨 */}
+        <dl className={thirdExpaned ? 'tg-item active' : 'tg-item'}>
+          <dt onClick={() => setThirdExpaned(!thirdExpaned)}>
+            <button type="button" className="btn-tg">
+              날씨<span className={thirdExpaned ? 'active' : ''}></span>
+            </button>
+          </dt>
+          <dd className="tg-conts" style={{ display: thirdExpaned ? '' : 'none' }}>
+            <div className="edit-area">
+              <div className="detail-form">
+                <div className="detail-list">
                   <div className="form-table">
                     <div className="form-cell wid50">
                       <div className="form-group wid50">
-                        {/*Investigator */}
-                        <AppAutoComplete label="Investigator" required />
+                        {/*Met */}
+                        <AppSelect label="Met" />
+                      </div>
+                    </div>
+                  </div>
+                  <div className="form-table">
+                    <div className="form-cell wid50">
+                      <div className="form-group wid100">
+                        <div className="UserChicebox error">
+                          <div className="form-group wid100">
+                            <div className="flex-between">
+                              <div className="flex-start">
+                                <div className="type5">
+                                  <AppTextInput inputType={'number'} label={'바람'} />
+                                </div>
+                                <span className="unt">/</span>
+                                <div className="type5">
+                                  <AppTextInput inputType={'number'} label={'바람'} />
+                                </div>
+                              </div>
+                              <div className="df type5">
+                                <AppTextInput inputType={'number'} label={'격발'} />
+                                <span className="info-tit">케츠</span>
+                              </div>
+                            </div>
+                            <label htmlFor="file" className="file-label">
+                              실제 날씨 <span className="required"></span>
+                            </label>
+                          </div>
+                          <div className="form-group wid100 mt10">
+                            <AppTextInput label="시계" />
+                          </div>
+                          <div className="form-group wid100 mt10">
+                            <div className="flex-between">
+                              <div className="type5">
+                                <AppSelect label="구름" />
+                              </div>
+                              <div className="df type5">
+                                <AppTextInput inputType={'number'} label={'온도'} />
+                                <span className="info-tit">℃</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="form-cell wid50">
+                      <div className="form-group wid100">
+                        {/*multiple selection 처리 */}
+                        <AppSelect label="심각한 날씨(다중 섹션)" />
                       </div>
                     </div>
                   </div>
@@ -497,10 +568,11 @@ function ReportEdit() {
             </div>
           </dd>
         </dl>
+        {/* 조류충돌 */}
         <dl className={fourExpaned ? 'tg-item active' : 'tg-item'}>
           <dt onClick={() => setFourExpaned(!fourExpaned)}>
             <button type="button" className="btn-tg">
-              1st Risk Assessment
+              조류충돌
               <span className={fourExpaned ? 'active' : ''}></span>
             </button>
           </dt>
@@ -509,223 +581,161 @@ function ReportEdit() {
               <div className="detail-form">
                 <div className="detail-list">
                   <div className="form-table">
-                    <div className="form-cell wid50">
+                    <div className="form-cell wid50 ">
                       <div className="form-group wid100">
-                        {/*Hazard */}
-                        <AppSelect label="Hazard" required />
+                        {/*새의 종류
+                         */}
+                        <AppTextInput
+                          inputType="text"
+                          placeholder=""
+                          label="새의 종류"
+                          toolTipMessage="자유형식으로 입력가능
+                          예)Waypoint, 이륙 후3시간 경과 시점 등"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div className="form-table">
+                    <div className="form-cell wid50">
+                      <div className="group-box-wrap wid100">
+                        <span className="txt">Size of Bird</span>
+                        <div className="radio-wrap error">
+                          <label>
+                            <input type="radio" checked />
+                            <span>작은</span>
+                          </label>
+                          <label>
+                            <input type="radio" />
+                            <span>중간</span>
+                          </label>
+                          <label>
+                            <input type="radio" />
+                            <span>크기가 큰</span>
+                          </label>
+                        </div>
                       </div>
                     </div>
                     <div className="form-cell wid50">
                       <div className="group-box-wrap wid100">
-                        <span className="txt">
-                          원인구분<span className="required">*</span>
-                        </span>
+                        <span className="txt">Number Seen</span>
                         <div className="radio-wrap error">
                           <label>
                             <input type="radio" checked />
-                            <span>추정원인</span>
+                            <span>1</span>
                           </label>
                           <label>
                             <input type="radio" />
-                            <span>부수요인</span>
+                            <span>2-10</span>
+                          </label>
+                          <label>
+                            <input type="radio" />
+                            <span>11-100</span>
+                          </label>
+                          <label>
+                            <input type="radio" />
+                            <span>More</span>
                           </label>
                         </div>
                       </div>
                     </div>
-                    {/*<div className="form-cell wid50">
-                      <div className="btn-area inbtn wid100">
-                        <button type="button" name="button" className="btn-x-sm btn_text btn-darkblue-line">
-                          + ADD
-                        </button>
-                        <button type="button" name="button" className="btn-x-sm btn_text btn-darkblue-line">
-                          위험레벨조회
-                        </button>
-                      </div>
-                    </div>*/}
                   </div>
                   <div className="form-table">
                     <div className="form-cell wid50">
-                      <div className="form-group wid100">
-                        {/*Potential Consequence*/}
-                        <AppSelect label="Potential Consequence" required />
-                      </div>
-                    </div>
-                    <div className="form-cell wid50">
-                      <div className="form-group wid100">
-                        <div className="btn-area inbtn wid100">
-                          <button type="button" name="button" className="btn-x-sm btn_text btn-darkblue-line">
-                            + ADD
-                          </button>
-                          <button type="button" name="button" className="btn-x-sm btn_text btn-darkblue-line">
-                            위험레벨조회
-                          </button>
+                      <div className="group-box-wrap wid100">
+                        <span className="txt">Number Struck</span>
+                        <div className="radio-wrap error">
+                          <label>
+                            <input type="radio" checked />
+                            <span>1</span>
+                          </label>
+                          <label>
+                            <input type="radio" />
+                            <span>2-10</span>
+                          </label>
+                          <label>
+                            <input type="radio" />
+                            <span>11-100</span>
+                          </label>
+                          <label>
+                            <input type="radio" />
+                            <span>More</span>
+                          </label>
                         </div>
                       </div>
                     </div>
-                  </div>
-                  <div className="form-table">
                     <div className="form-cell wid50">
-                      <div className="form-group wid100">
-                        <div className="info-list">
-                          <h3>
-                            추정원인<span className="required">*</span>
-                          </h3>
-                          <table className="info-board">
-                            <colgroup>
-                              <col width="35%" />
-                              <col width="40%" />
-                              <col width="15%" />
-                              <col width="10%" />
-                            </colgroup>
-                            <thead>
-                              <tr>
-                                <th>Hazard</th>
-                                <th>Potential Consequence</th>
-                                <th>1st Risk Level</th>
-                                <th>Action</th>
-                              </tr>
-                            </thead>
-                            <tbody>
-                              <tr>
-                                <td className="left">Lightning strike</td>
-                                <td className="left">Aircraft system failure (Powerplant)</td>
-                                <td className="">
-                                  <div className="Safety-table-cell">
-                                    <a href="javascript:void(0);">
-                                      <span className="Safety-tag Select">Select</span>
-                                    </a>
-                                  </div>
-                                </td>
-                                <td className="">
-                                  <a href="javascript:void(0);">
-                                    <span className="delete">X</span>
-                                  </a>
-                                </td>
-                              </tr>
-                            </tbody>
-                          </table>
-                        </div>
-                        <div className="info-list">
-                          <h3>
-                            부수요인<span className="required">*</span>
-                          </h3>
-                          <table className="info-board">
-                            <colgroup>
-                              <col width="35%" />
-                              <col width="40%" />
-                              <col width="15%" />
-                              <col width="10%" />
-                            </colgroup>
-                            <thead>
-                              <tr>
-                                <th>Hazard</th>
-                                <th>Potential Consequence</th>
-                                <th>1st Risk Level</th>
-                                <th>Action</th>
-                              </tr>
-                            </thead>
-                            <tbody>
-                              <tr>
-                                <td className="left">Hail</td>
-                                <td className="left">Old Equipment</td>
-                                <td className="">
-                                  <div className="Safety-table-cell">
-                                    <a href="javascript:void(0);">
-                                      <span className="Safety-tag riskLevel level1">5B</span>
-                                    </a>
-                                  </div>
-                                </td>
-                                <td className="">
-                                  <a href="javascript:void(0);">
-                                    <span className="delete">X</span>
-                                  </a>
-                                </td>
-                              </tr>
-                            </tbody>
-                          </table>
+                      <div className="group-box-wrap wid100">
+                        <span className="txt">Time</span>
+                        <div className="radio-wrap error">
+                          <label>
+                            <input type="radio" checked />
+                            <span>새벽</span>
+                          </label>
+                          <label>
+                            <input type="radio" />
+                            <span>낮</span>
+                          </label>
+                          <label>
+                            <input type="radio" />
+                            <span>황혼</span>
+                          </label>
+                          <label>
+                            <input type="radio" />
+                            <span>밤</span>
+                          </label>
                         </div>
                       </div>
                     </div>
                   </div>
-                </div>
-              </div>
-            </div>
-          </dd>
-        </dl>
-        <dl className={fiveExpaned ? 'tg-item active' : 'tg-item'}>
-          <dt onClick={() => setFiveExpaned(!fiveExpaned)}>
-            <button type="button" className="btn-tg">
-              결재정보
-              <span className={fiveExpaned ? 'active' : ''}></span>
-            </button>
-          </dt>
-          <dd className="tg-conts" style={{ display: fiveExpaned ? '' : 'none' }}>
-            <div className="edit-area">
-              <div className="detail-form">
-                <div className="detail-list">
                   <div className="form-table">
                     <div className="form-cell wid50">
-                      <div className="form-group wid50">
-                        <div className="UserChicebox error">
-                          <div className="form-group wid100">
-                            <AppSelect label={'결재 그룹을 선택해 주세요 '} />
-                            <label htmlFor="file" className="file-label">
-                              결제정보 <span className="required"></span>
-                            </label>
-                          </div>
-                          <div className="form-group wid100 mt10">
-                            <AppAutoComplete label="d" />
-                            <div className="SelectedList memberClass mt10">
-                              <ul>
-                                <li>
-                                  <span className="InfoBox"></span>
-                                  <div className="Info">
-                                    <div className="Name">홍길동 (170****)</div>
-                                    <div className="Dept">상무대우수석사무장 / (주)대한항공</div>
-                                  </div>
-                                  <div className="column-box">
-                                    <span className="column-btn">
-                                      <a href="javascript:void(0);">
-                                        <span className="up">up</span>
-                                      </a>
-                                      <a href="javascript:void(0);">
-                                        <span className="down">down</span>
-                                      </a>
-                                    </span>
-                                  </div>
-                                  <a href="javascript:void(0);">
-                                    <span className="delete">X</span>
-                                  </a>
-                                </li>
-                                <li>
-                                  <span className="InfoBox"></span>
-                                  <div className="Info">
-                                    <div className="Name">홍길동 (170****)</div>
-                                    <div className="Dept">상무대우수석사무장 / (주)대한항공</div>
-                                  </div>
-                                  <div className="column-box">
-                                    <span className="column-btn">
-                                      <a href="javascript:void(0);">
-                                        <span className="up">up</span>
-                                      </a>
-                                      <a href="javascript:void(0);">
-                                        <span className="down">down</span>
-                                      </a>
-                                    </span>
-                                  </div>
-                                  <a href="javascript:void(0);">
-                                    <span className="delete">X</span>
-                                  </a>
-                                </li>
-                              </ul>
-                            </div>
-                          </div>
+                      <div className="group-box-wrap wid100">
+                        <span className="txt">Landing Light</span>
+                        <div className="radio-wrap error">
+                          <label>
+                            <input type="radio" checked />
+                            <span>On</span>
+                          </label>
+                          <label>
+                            <input type="radio" />
+                            <span>Off</span>
+                          </label>
                         </div>
                       </div>
-                      <div className="btn-area">
-                        <button type="button" name="button" className="btn-sm btn_text btn-darkblue-line">
-                          결제그룹설정
-                        </button>
+                    </div>
+                    <div className="form-cell wid50">
+                      <div className="group-box-wrap wid100">
+                        <span className="txt">Pilot Warned of Birds</span>
+                        <div className="radio-wrap error">
+                          <label>
+                            <input type="radio" checked />
+                            <span>Yes</span>
+                          </label>
+                          <label>
+                            <input type="radio" />
+                            <span>No</span>
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="form-table">
+                    <div className="form-cell wid50 ">
+                      <div className="form-group wid100">
+                        {/*Impact Point*/}
+                        <AppTextInput inputType="text" placeholder="" label="Impact Point" />
+                      </div>
+                    </div>
+                  </div>
+                  <div className="form-table">
+                    <div className="form-cell wid50 ">
+                      <div className="form-group wid100">
+                        <AppTextArea
+                          label="Describe: Damage, Injuries and other information"
+                          style={{ width: '100%', height: 100 }}
+                          errorMessage=""
+                          placeholder=""
+                        />
                       </div>
                     </div>
                   </div>
@@ -746,9 +756,6 @@ function ReportEdit() {
         </button>
         <button type="button" name="button" className="btn_text text_color_neutral-10 btn_conblue">
           제출
-        </button>
-        <button type="button" name="button" className="btn_text btn_list">
-          목록
         </button>
       </div>
       {/* //하단버튼영역 */}
