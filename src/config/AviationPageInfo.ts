@@ -145,7 +145,7 @@ AviationPageInfo.list = [
     Component: ReportEdit,
     path: 'ReportEdit',
     description: '',
-    success: false,
+    success: true,
   },
   {
     title: '[04.안전보증] SPI/SPT > 운영 현황> 운항 정보',
