@@ -458,19 +458,139 @@ function ReportEdit() {
             <div className="edit-area">
               <div className="detail-form">
                 <div className="detail-list">
+                  {/*Fax */}
                   <div className="form-table">
                     <div className="form-cell wid50">
                       <div className="form-group wid100">
-                        <div className="UserChicebox Fax error">
-                          <div className="form-group wid50">
-                            <AppSelect label={'팩스'} />
-                            <label htmlFor="file" className="file-label">
-                              팩스 <span className="required"></span>
-                            </label>
+                        <div className="UserChicebox Fax ">
+                          <label htmlFor="file" className="file-label">
+                            Fax <span className="required"></span>
+                          </label>
+                          <div className="form-table">
+                            <div className="form-cell wid50">
+                              <div className="form-group wid100">
+                                <AppSelect label={'관련자'} />
+                              </div>
+                            </div>
+                            <div className="form-cell wid50">
+                              <div className="form-group wid100">
+                                <AppTextInput label="이름" />
+                              </div>
+                            </div>
+                            <div className="form-cell wid50">
+                              <div className="form-group wid100">
+                                <AppSelect label={'팩스'} />
+                              </div>
+                            </div>
+                            <div className="form-cell wid50">
+                              <div className="form-group wid100">
+                                <AppTextInput inputType={'number'} label="나이" />
+                              </div>
+                            </div>
+                            <div className="form-cell wid50">
+                              <div className="form-group wid100">
+                                <AppTextInput label="국적" />
+                              </div>
+                            </div>
+                            <div className="form-cell wid50">
+                              <div className="form-group wid100">
+                                <AppTextInput label="좌석번호" />
+                              </div>
+                            </div>
+                            <div className="form-cell wid10">
+                              <div className="form-group wid100">
+                                <button type="button" className="tabs-tab-remove">
+                                  <span className="delete">X</span>
+                                </button>
+                              </div>
+                            </div>
                           </div>
-                          <div className="form-group wid50">
-                            <AppSelect label={'팩스'} />
+                          <div className="form-table">
+                            <div className="form-cell wid50">
+                              <div className="form-group wid100">
+                                <AppSelect label={'관련자'} />
+                              </div>
+                            </div>
+                            <div className="form-cell wid50">
+                              <div className="form-group wid100">
+                                <AppTextInput label="이름" />
+                              </div>
+                            </div>
+                            <div className="form-cell wid50">
+                              <div className="form-group wid100">
+                                <AppSelect label={'팩스'} />
+                              </div>
+                            </div>
+                            <div className="form-cell wid50">
+                              <div className="form-group wid100">
+                                <AppTextInput inputType={'number'} label="나이" />
+                              </div>
+                            </div>
+                            <div className="form-cell wid50">
+                              <div className="form-group wid100">
+                                <AppTextInput label="국적" />
+                              </div>
+                            </div>
+                            <div className="form-cell wid50">
+                              <div className="form-group wid100">
+                                <AppTextInput label="좌석번호" />
+                              </div>
+                            </div>
+                            <div className="form-cell wid10">
+                              <div className="form-group wid100">
+                                <button type="button" className="tabs-tab-remove">
+                                  <span className="delete">X</span>
+                                </button>
+                              </div>
+                            </div>
                           </div>
+                          {/*추가버튼*/}
+                          <div className="btn-area">
+                            <button type="button" name="button" className="btn-sm btn_text btn-darkblue-line">
+                              + Add
+                            </button>
+                          </div>
+                          {/*//추가버튼*/}
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  {/*CREW */}
+                  <div className="form-table">
+                    <div className="form-cell wid50">
+                      <div className="form-group wid100">
+                        <div className="UserChicebox Fax ">
+                          <label htmlFor="file" className="file-label">
+                            CREW <span className="required"></span>
+                          </label>
+                          <div className="form-table">
+                            <div className="form-cell wid30">
+                              <div className="form-group wid100">
+                                <AppSelect label={'관련자'} />
+                              </div>
+                            </div>
+                            <div className="form-cell wid80">
+                              <div className="form-group wid100">
+                                {/* */}
+                                <AppAutoComplete label="" required />
+                              </div>
+                            </div>
+                            <div className="form-cell wid10">
+                              <div className="form-group wid100">
+                                <button type="button" className="tabs-tab-remove">
+                                  <span className="delete">X</span>
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+
+                          {/*추가버튼*/}
+                          <div className="btn-area">
+                            <button type="button" name="button" className="btn-sm btn_text btn-darkblue-line">
+                              + Add
+                            </button>
+                          </div>
+                          {/*//추가버튼*/}
                         </div>
                       </div>
                     </div>

@@ -17,6 +17,7 @@
 .tr{text-align:right !important}
 .ml3{margin-left:0.3rem !important}
 .mt5{margin-top:0.5rem !important}
+.mt20{margin-top:2.0rem !important}
 .h40{height:4.0rem}
 
 .h3{position:relative;font-size:2.2rem;font-weight:700;height:4.0rem;letter-spacing:-0.01rem}
@@ -61,6 +62,12 @@
 .notice-board td{position:relative}
 .notice-board td .delete{position:absolute;top:1rem;background:url(/src/resources/images/delete-text.svg) center center no-repeat;font-size: 0;width: 2rem;height: 2rem}
 
+.UserChicebox.Fax{position:relative;border:0.1rem solid var(--color-neutral-40);border-radius:1.0rem;padding:1.0rem 1.0rem 1.0rem}
+.UserChicebox.Fax.error{border:0.1rem solid var(--color-negative);border-radius:1.0rem;padding:2.0rem 1.0rem 1.0rem}
+.UserChicebox.Fax .file-label{display:inline-block;position:absolute;left:1rem;top:-0.9rem;background: var(--color-neutral-10);padding: 0 0.4rem;line-height: 1.4em;font-size: 1.4rem !important;transition: all 0.2s ease}
+.UserChicebox.Fax .btn-area{width:100%;text-align:center}
+.UserChicebox.Fax > .form-table{margin-bottom:1.0rem}
+.UserChicebox.Fax > .form-table:nth-child(odd){margin-bottom:1.0rem}
 
 
 /*메인*/
