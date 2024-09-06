@@ -90,7 +90,7 @@ function ReportEdit() {
         <h2 className="reportview">
           보고서분석
           <span>
-            <a href="javascript:void(0);">ASR-100308</a>
+            <a href="javascript:void(0);">CSR-100308</a>
           </span>
         </h2>
       </div>
@@ -499,8 +499,8 @@ function ReportEdit() {
                             </div>
                             <div className="form-cell wid10">
                               <div className="form-group wid100">
-                                <button type="button" className="tabs-tab-remove">
-                                  <span className="delete">X</span>
+                                <button type="button" className="tabs-tab-remove Mob">
+                                  <span className="btn-del delete">Delete</span>
                                 </button>
                               </div>
                             </div>
@@ -538,8 +538,8 @@ function ReportEdit() {
                             </div>
                             <div className="form-cell wid10">
                               <div className="form-group wid100">
-                                <button type="button" className="tabs-tab-remove">
-                                  <span className="delete">X</span>
+                                <button type="button" className="tabs-tab-remove Mob">
+                                  <span className="btn-del delete">Delete</span>
                                 </button>
                               </div>
                             </div>
@@ -569,7 +569,7 @@ function ReportEdit() {
                                 <AppSelect label={'관련자'} />
                               </div>
                             </div>
-                            <div className="form-cell wid80">
+                            <div className="form-cell wid90">
                               <div className="form-group wid100">
                                 {/* */}
                                 <AppAutoComplete label="" required />
@@ -577,8 +577,8 @@ function ReportEdit() {
                             </div>
                             <div className="form-cell wid10">
                               <div className="form-group wid100">
-                                <button type="button" className="tabs-tab-remove">
-                                  <span className="delete">X</span>
+                                <button type="button" className="tabs-tab-remove Mob">
+                                  <span className="btn-del delete">Delete</span>
                                 </button>
                               </div>
                             </div>
