@@ -53,82 +53,191 @@ function POccupationMu3P2list() {
       </div>
       <div className="table-box">
         <div className="left-table">
-          <table>
-            <col width="25%" />
-            <col width="25%" />
-            <col width="25%" />
-            <col width="25%" />
-            <tr>
-              <th>프레스</th>
-              <th>전단기</th>
-              <th>절곡기</th>
-              <th>크레인</th>
-            </tr>
-            <tr>
-              <td>20</td>
-              <td>5</td>
-              <td>10</td>
-              <td>8</td>
-            </tr>
-            <tr>
-              <th>리프트</th>
-              <th>압력용기</th>
-              <th>롤러기</th>
-              <th>사출성형기</th>
-            </tr>
-            <tr>
-              <td>20</td>
-              <td>5</td>
-              <td>10</td>
-              <td>8</td>
-            </tr>
-            <tr>
-              <th>기계톱</th>
-              <th>연삭기/연마기</th>
-              <th>산업용로봇</th>
-              <th>혼합기</th>
-            </tr>
-            <tr>
-              <td>20</td>
-              <td>5</td>
-              <td>10</td>
-              <td>8</td>
-            </tr>
-            <tr>
-              <th>식품가공용기계</th>
-              <th>컨베이어</th>
-              <th>공작기계</th>
-              <th>인쇄기</th>
-            </tr>
-            <tr>
-              <td>20</td>
-              <td>5</td>
-              <td>10</td>
-              <td>8</td>
-            </tr>
-            <tr>
-              <th>곤돌라</th>
-              <th>파쇄기/분쇄기</th>
-              <th>고소작업대</th>
-              <th>국소배기장치</th>
-            </tr>
-            <tr>
-              <td>20</td>
-              <td>5</td>
-              <td>10</td>
-              <td>8</td>
-            </tr>
-            <tr>
-              <th>원심기</th>
-              <th>기타</th>
-            </tr>
-            <tr>
-              <td>20</td>
-              <td>5</td>
-            </tr>
-          </table>
+          <div className="group">
+            <ul className="group-box">
+              <li>프레스</li>
+              <li>20</li>
+            </ul>
+          </div>
+          <div className="group">
+            <ul className="group-box">
+              <li>전단기</li>
+              <li>20</li>
+            </ul>
+          </div>
+          <div className="group">
+            <ul className="group-box">
+              <li>절곡기</li>
+              <li>20</li>
+            </ul>
+          </div>
+          <div className="group">
+            <ul className="group-box">
+              <li>크레인</li>
+              <li>20</li>
+            </ul>
+          </div>
+          <div className="group">
+            <ul className="group-box">
+              <li>리프트</li>
+              <li>20</li>
+            </ul>
+          </div>
+          <div className="group">
+            <ul className="group-box">
+              <li>압력용기</li>
+              <li>20</li>
+            </ul>
+          </div>
+          <div className="group">
+            <ul className="group-box">
+              <li>롤러기</li>
+              <li>20</li>
+            </ul>
+          </div>
+          <div className="group">
+            <ul className="group-box">
+              <li>사출성형기</li>
+              <li>20</li>
+            </ul>
+          </div>
+          <div className="group">
+            <ul className="group-box">
+              <li>기계톱</li>
+              <li>20</li>
+            </ul>
+          </div>
+          <div className="group">
+            <ul className="group-box">
+              <li>연삭기/연마기</li>
+              <li>20</li>
+            </ul>
+          </div>
+          <div className="group">
+            <ul className="group-box">
+              <li>산업용로봇</li>
+              <li>20</li>
+            </ul>
+          </div>
+          <div className="group">
+            <ul className="group-box">
+              <li>혼합기</li>
+              <li>20</li>
+            </ul>
+          </div>
+          <div className="group">
+            <ul className="group-box">
+              <li>식품가공용기계</li>
+              <li>20</li>
+            </ul>
+          </div>
+          <div className="group">
+            <ul className="group-box">
+              <li>컨베이어</li>
+              <li>20</li>
+            </ul>
+          </div>
+          <div className="group">
+            <ul className="group-box">
+              <li>공작기계</li>
+              <li>20</li>
+            </ul>
+          </div>
+          <div className="group">
+            <ul className="group-box">
+              <li>인쇄기</li>
+              <li>20</li>
+            </ul>
+          </div>
+          <div className="group">
+            <ul className="group-box">
+              <li>곤돌라</li>
+              <li>20</li>
+            </ul>
+          </div>
+          <div className="group">
+            <ul className="group-box">
+              <li>파쇄기/분쇄기</li>
+              <li>20</li>
+            </ul>
+          </div>
+          <div className="group">
+            <ul className="group-box">
+              <li>고소작업대</li>
+              <li>20</li>
+            </ul>
+          </div>
+          <div className="group">
+            <ul className="group-box">
+              <li>국소배기장치</li>
+              <li>20</li>
+            </ul>
+          </div>
+          <div className="group">
+            <ul className="group-box">
+              <li>원심기</li>
+              <li>20</li>
+            </ul>
+          </div>
+          <div className="group">
+            <ul className="group-box">
+              <li>기타</li>
+              <li>0</li>
+            </ul>
+          </div>
         </div>
-        <div className="right-table">오른쪽영역</div>
+        <div className="right-table">
+          <div className="group-box">
+            <h3 className="table-tit">프레스 기본정보</h3>
+            <table>
+              <tbody>
+                <tr>
+                  <th>안전인증</th>
+                  <td>대상</td>
+                </tr>
+                <tr>
+                  <th>안전검사</th>
+                  <td>대상</td>
+                </tr>
+                <tr>
+                  <th>방호장치</th>
+                  <td>광전자식, 양수조작식, 가드식, 손쳐내기식, 수인식</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div className="group-box">
+            <h3 className="table-tit">부문별 프레스 보유 현황</h3>
+            <table>
+              <tbody>
+                <tr>
+                  <th>정비본부</th>
+                  <td>5</td>
+                </tr>
+                <tr>
+                  <th>항공우주사업본부</th>
+                  <td>5</td>
+                </tr>
+                <tr>
+                  <th>여객본부</th>
+                  <td>3</td>
+                </tr>
+                <tr>
+                  <th>화물본부</th>
+                  <td>2</td>
+                </tr>
+                <tr>
+                  <th>객실본부</th>
+                  <td>1</td>
+                </tr>
+                <tr>
+                  <th>기타</th>
+                  <td>4</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
       </div>
       {/* //테이블영역 */}
     </>

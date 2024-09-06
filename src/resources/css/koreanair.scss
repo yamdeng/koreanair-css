@@ -394,14 +394,32 @@
       .wd-300 {width: 100%; max-width: 30.0rem;}
     }
     .table-box {
-      display: block;
+      display: inline-flex;
+      /*justify-content: flex-end; 
+      flex-direction: row;*/
       width: 100%;
-      
-    .left-table {width: auto; vertical-align: top;}
-    .left-table table {display: block; width: 100%;}
-    .left-table th, td {padding: 1.0rem 2.4rem; text-align: center;}
-    .right-table {display: inline-block; width: auto; vertical-align: top; background-color: brown;}
-    }
+      height: calc(100% - 22.2rem);
+      text-align: left;
+    .left-table { width: 100%; overflow-y: auto; vertical-align: top;}
+    
+  
+    .left-table .group {width: 100%;}
+    .left-table .group .group-box {border: 0.1rem solid var(--color-neutral-40); box-sizing: border-box; margin: 0.2rem;}
+    .left-table .group .group-box li {text-align: center; width: 100%; min-width: 20.0rem; padding: 1.0rem;}
+    .left-table .group .group-box li:first-child {background-color: var(--color-neutral-20);}
+    /*.left-table .group .group-box li:last-child{ border-top: 0.1rem solid var(--color-neutral-40);}*/
+    .left-table .group .group-box:hover li {background-color: var(--color-lightblue-10);}
+ 
+
+    .right-table {display: inline-block; width: 100%; vertical-align: top; height: 100%; overflow-y: auto;}
+    .right-table .group-box {border: 0.1rem solid var(--color-neutral-40); border-radius: 0.8rem; padding: 2.0rem; }
+    .right-table .group-box:first-child {margin-bottom: 2.0rem;}
+    .right-table .group-box table {border-top: 0.1rem solid var(--color-darkblue-100); width: 100%;}
+    .right-table .group-box table th {background-color: var(--color-neutral-20);}
+    .right-table .group-box table th, .right-table .group-box table td {font-size: 1.4rem; padding: 0.5rem 1.0rem; border-bottom: 0.1rem solid var(--color-neutral-40); width: 100%;}
+    .right-table .group-box table th:nth-child(1) , .right-table .group-box table td:nth-child(1) {width: 30%;}
+    .right-table .group-box table th:nth-child(2), .right-table .group-box table td:nth-child(2) {width: 70%;}
+  }
 
 
     .table-tit {
@@ -709,9 +727,17 @@
 .calendar-box .calendar-wrap .calendar-tit .datetitle span {font-size: 2.4rem; color: var(--color-darkblue-100); font-weight: 700; line-height: 150%; padding: 0 3.0rem;}
 .calendar-box .calendar-wrap .calendar-tit .nextday {background: url(../images/arrow-right.svg)center center no-repeat; border: 0.1rem solid var(--color-neutral-40); border-radius: 0.4rem; background-size: 2.4rem; width: 3.0rem; height: 3.0rem; font-size: 0;}
 .calendar-box .calendar-wrap .calendar-table {width: 100%; height: calc(100% - 5.1rem);}
-.calendar-box .calendar-wrap .calendar-table thead th, .calendar-box .calendar-wrap .calendar-table tbody td {line-height: 130%; text-align: center; border-bottom: 0.1rem solid var(--color-neutral-40); padding: 1.0rem; font-size: 1.6rem;}
+.calendar-box .calendar-wrap .calendar-table thead th, .calendar-box .calendar-wrap .calendar-table tbody td {line-height: 100%; text-align: center; border-bottom: 0.1rem solid var(--color-neutral-40); padding: 1.0rem; font-size: 1.6rem;}
+.calendar-box .calendar-wrap .calendar-table thead th:nth-child(1), .calendar-box .calendar-wrap .calendar-table tbody td:nth-child(1) {width: 15%;}
+.calendar-box .calendar-wrap .calendar-table thead th:nth-child(2), .calendar-box .calendar-wrap .calendar-table tbody td:nth-child(2) {width: 14%;}
+.calendar-box .calendar-wrap .calendar-table thead th:nth-child(3), .calendar-box .calendar-wrap .calendar-table tbody td:nth-child(3) {width: 14%;}
+.calendar-box .calendar-wrap .calendar-table thead th:nth-child(4), .calendar-box .calendar-wrap .calendar-table tbody td:nth-child(4) {width: 14%;}
+.calendar-box .calendar-wrap .calendar-table thead th:nth-child(5), .calendar-box .calendar-wrap .calendar-table tbody td:nth-child(5) {width: 14%;}
+.calendar-box .calendar-wrap .calendar-table thead th:nth-child(6), .calendar-box .calendar-wrap .calendar-table tbody td:nth-child(6) {width: 14%;}
+.calendar-box .calendar-wrap .calendar-table thead th:nth-child(7), .calendar-box .calendar-wrap .calendar-table tbody td:nth-child(7) {width: 15%;}
+
 .calendar-box .calendar-wrap .calendar-table thead th {background-color: var(--color-neutral-10); border-top: 0.1rem solid var(--color-darkblue-100);}
-.calendar-box .calendar-wrap .calendar-table tbody td {height: 10.0rem; min-height: 10.0rem; text-align: left;}
+.calendar-box .calendar-wrap .calendar-table tbody td {height: 10rem; min-height: 10rem; text-align: left;}
 .calendar-box .calendar-wrap .calendar-table tbody td .cld_date {position: relative; left: 0; top: 0;}
 .calendar-box .calendar-wrap .calendar-table tbody td .cld_date .cld_day {font-weight: 700;}
 .calendar-box .calendar-wrap .calendar-table tbody td .cld_date .cld_day.active {background-color: var(--color-darkblue-100); color: var(--color-neutral-10); width: 2.5rem; height: 2.5rem; border-radius: 99.9rem; display: flex; justify-content: center; align-items: center;}
@@ -720,7 +746,7 @@
 .calendar-box .calendar-wrap .calendar-table tbody td .cld_date .schedule li {margin: 0.5rem 0;}
 .calendar-box .calendar-wrap .calendar-table tbody td .cld_date .schedule li a {font-size: 1.2rem;}
 .calendar-box .calendar-wrap .calendar-table tbody td .cld_date .schedule li:hover {text-decoration: underline;}
-.calendar-box .calendar-wrap .calendar-table tbody td .cld_date .schedule li a.ing {padding: 0.3rem 0.5rem; background-color: var(--color-positive-bg); color: var(--color-positive); border-radius: 0.8rem; width: 100%; display: flex;}
+.calendar-box .calendar-wrap .calendar-table tbody td .cld_date .schedule li a.ing {padding: 0.2rem 0.5rem; background-color: var(--color-positive-bg); color: var(--color-positive); border-radius: 0.8rem; width: 100%; display: flex;}
 .calendar-box .calendar-wrap .calendar-table tbody td .cld_date .schedule li a.ing span {font-size: 1.2rem; font-weight: 700; color: var(--color-positive);}
 .calendar-box .calendar-wrap .calendar-table tbody td .cld_date .schedule li a.expected {padding: 0.3rem 0.5rem; background-color: var(--color-lightblue-20); color: var(--color-darkblue-100); border-radius: 0.8rem; width: 100%; display: flex}
 .calendar-box .calendar-wrap .calendar-table tbody td .cld_date .schedule li a.expected span {font-size: 1.2rem; font-weight: 700; color: var(--color-darkblue-100);}

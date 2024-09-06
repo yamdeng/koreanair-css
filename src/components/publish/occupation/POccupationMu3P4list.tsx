@@ -71,15 +71,6 @@ function POccupationMu3P4list() {
             <button className="nextday">버튼</button>
           </div>
           <table className="calendar-table">
-            <colgroup>
-              <col width={'15%'} />
-              <col width={'14%'} />
-              <col width={'14%'} />
-              <col width={'14%'} />
-              <col width={'14%'} />
-              <col width={'14%'} />
-              <col width={'15%'} />
-            </colgroup>
             <thead>
               <tr>
                 <th>일</th>
@@ -117,6 +108,11 @@ function POccupationMu3P4list() {
                           작업종료대기<span>(1)</span>
                         </a>
                       </li>
+                      <li>
+                        <a className="complete" href="javascript:void(0);">
+                          작업완료<span>(1)</span>
+                        </a>
+                      </li>
                     </ul>
                   </div>
                 </td>
@@ -139,7 +135,29 @@ function POccupationMu3P4list() {
                 </td>
                 <td>
                   <div className="cld_date">
-                    <div className="cld_day">5</div>
+                    <div className="cld_day active">2</div>
+                    <ul className="schedule">
+                      <li>
+                        <a className="ing" href="javascript:void(0);">
+                          작업중<span>(1)</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a className="expected" href="javascript:void(0);">
+                          작업예정<span>(2)</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a className="wait" href="javascript:void(0);">
+                          작업종료대기<span>(1)</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a className="complete" href="javascript:void(0);">
+                          작업완료<span>(1)</span>
+                        </a>
+                      </li>
+                    </ul>
                   </div>
                 </td>
                 <td>
@@ -193,11 +211,26 @@ function POccupationMu3P4list() {
                 </td>
                 <td>
                   <div className="cld_date">
-                    <div className="cld_day">14</div>
+                    <div className="cld_day active">2</div>
                     <ul className="schedule">
+                      <li>
+                        <a className="ing" href="javascript:void(0);">
+                          작업중<span>(1)</span>
+                        </a>
+                      </li>
                       <li>
                         <a className="expected" href="javascript:void(0);">
                           작업예정<span>(2)</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a className="wait" href="javascript:void(0);">
+                          작업종료대기<span>(1)</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a className="complete" href="javascript:void(0);">
+                          작업완료<span>(1)</span>
                         </a>
                       </li>
                     </ul>
@@ -207,7 +240,29 @@ function POccupationMu3P4list() {
               <tr>
                 <td>
                   <div className="cld_date">
-                    <div className="cld_day s_day">15</div>
+                    <div className="cld_day active">2</div>
+                    <ul className="schedule">
+                      <li>
+                        <a className="ing" href="javascript:void(0);">
+                          작업중<span>(1)</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a className="expected" href="javascript:void(0);">
+                          작업예정<span>(2)</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a className="wait" href="javascript:void(0);">
+                          작업종료대기<span>(1)</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a className="complete" href="javascript:void(0);">
+                          작업완료<span>(1)</span>
+                        </a>
+                      </li>
+                    </ul>
                   </div>
                 </td>
                 <td>
@@ -244,7 +299,29 @@ function POccupationMu3P4list() {
               <tr>
                 <td>
                   <div className="cld_date">
-                    <div className="cld_day s_day">22</div>
+                    <div className="cld_day active">2</div>
+                    <ul className="schedule">
+                      <li>
+                        <a className="ing" href="javascript:void(0);">
+                          작업중<span>(1)</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a className="expected" href="javascript:void(0);">
+                          작업예정<span>(2)</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a className="wait" href="javascript:void(0);">
+                          작업종료대기<span>(1)</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a className="complete" href="javascript:void(0);">
+                          작업완료<span>(1)</span>
+                        </a>
+                      </li>
+                    </ul>
                   </div>
                 </td>
                 <td>
@@ -274,7 +351,29 @@ function POccupationMu3P4list() {
                 </td>
                 <td>
                   <div className="cld_date">
-                    <div className="cld_day">28</div>
+                    <div className="cld_day active">2</div>
+                    <ul className="schedule">
+                      <li>
+                        <a className="ing" href="javascript:void(0);">
+                          작업중<span>(1)</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a className="expected" href="javascript:void(0);">
+                          작업예정<span>(2)</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a className="wait" href="javascript:void(0);">
+                          작업종료대기<span>(1)</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a className="complete" href="javascript:void(0);">
+                          작업완료<span>(1)</span>
+                        </a>
+                      </li>
+                    </ul>
                   </div>
                 </td>
               </tr>

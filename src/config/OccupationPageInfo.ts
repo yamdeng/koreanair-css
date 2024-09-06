@@ -52,6 +52,7 @@ import POccupationMu3P3edit from '@/components/publish/occupation/POccupationMu3
 import POccupationMu3P4list from '@/components/publish/occupation/POccupationMu3P4list';
 import POccupationMu3P4list1 from '@/components/publish/occupation/POccupationMu3P4list1';
 import POccupationMu3P4edit from '@/components/publish/occupation/POccupationMu3P4edit';
+import POccupationMu3P4detail from '@/components/publish/occupation/POccupationMu3P4detail';
 import POccupationMu3P5list from '@/components/publish/occupation/POccupationMu3P5list';
 import POccupationMu3P5edit from '@/components/publish/occupation/POccupationMu3P5edit';
 import POccupationMu3P5detail from '@/components/publish/occupation/POccupationMu3P5detail';
@@ -476,6 +477,13 @@ OccupationPageInfo.list = [
     path: 'POccupationMu3P4edit',
     description: '',
     success: true,
+  },
+  {
+    title: '안전관리 > 외주작업허가-상세',
+    Component: POccupationMu3P4detail,
+    path: 'POccupationMu3P4detail',
+    description: '',
+    success: false,
   },
   {
     title: '안전관리 > 협력업체-리스트',
