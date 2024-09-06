@@ -702,36 +702,47 @@
 
 .icon {display: flex; position: absolute; top: 0.8rem; right: 3.0rem; font-size: 0; background: url(../images/tooltip.svg) center center no-repeat; background-size: 2.6rem; width: 2.6rem; height: 2.6rem; cursor: pointer;}
 
-.calendar-box {display: inline-flex; justify-content: flex-end; flex-direction: row; width: 100%; height: 100%; padding: 0 0 2.0rem 0;}
+.calendar-box {display: inline-flex; justify-content: flex-end; flex-direction: row; width: 100%; /*height: 100%;*/ padding: 0 0 2.0rem 0;}
 .calendar-box .calendar-wrap { display: block; width: 80%; height: 100%;}
 .calendar-box .calendar-wrap .calendar-tit {display: inline-flex; width: 100%; justify-content: center; align-items: center; padding-bottom: 1.5rem;}
-.calendar-box .calendar-wrap .calendar-tit .prevday {background: url(../images/arrow-left.svg)center center no-repeat; background-size: 2.4rem; width: 3.0rem; height: 2.4rem; font-size: 0; vertical-align: middle;}
-.calendar-box .calendar-wrap .calendar-tit .datetitle {font-size: 2.4rem; color: var(--color-darkblue-100); font-weight: 700; line-height: 150%; padding: 0 3.0rem;}
+.calendar-box .calendar-wrap .calendar-tit .prevday {background: url(../images/arrow-left.svg)center center no-repeat; border: 0.1rem solid var(--color-neutral-40); border-radius: 0.4rem; background-size: 2.4rem; width: 3.0rem; height: 2.4rem; font-size: 0; vertical-align: middle;}
+.calendar-box .calendar-wrap .calendar-tit .datetitle span {font-size: 2.4rem; color: var(--color-darkblue-100); font-weight: 700; line-height: 150%; padding: 0 3.0rem;}
 .calendar-box .calendar-wrap .calendar-tit .nextday {background: url(../images/arrow-right.svg)center center no-repeat; background-size: 2.4rem; width: 3.0rem; height: 2.4rem; font-size: 0;}
 .calendar-box .calendar-wrap .calendar-table {width: 100%; height: calc(100% - 5.1rem);}
-.calendar-box .calendar-wrap .calendar-table thead th, .calendar-box .calendar-wrap .calendar-table tbody td {text-align: center; border-bottom: 0.1rem solid var(--color-neutral-40); padding: 1.0rem; font-size: 1.6rem;}
-.calendar-box .calendar-wrap .calendar-table thead th {background-color: var(--color-neutral-20); border-top: 0.1rem solid var(--color-darkblue-100);}
+.calendar-box .calendar-wrap .calendar-table thead th, .calendar-box .calendar-wrap .calendar-table tbody td {line-height: 130%; text-align: center; border-bottom: 0.1rem solid var(--color-neutral-40); padding: 1.0rem; font-size: 1.6rem;}
+.calendar-box .calendar-wrap .calendar-table thead th {background-color: var(--color-neutral-10); border-top: 0.1rem solid var(--color-darkblue-100);}
 .calendar-box .calendar-wrap .calendar-table tbody td {height: 10.0rem; min-height: 10.0rem; text-align: left;}
 .calendar-box .calendar-wrap .calendar-table tbody td .cld_date {position: relative; left: 0; top: 0;}
 .calendar-box .calendar-wrap .calendar-table tbody td .cld_date .cld_day {font-weight: 700;}
+.calendar-box .calendar-wrap .calendar-table tbody td .cld_date .cld_day.active {background-color: var(--color-darkblue-100); color: var(--color-neutral-10); width: 2.5rem; height: 2.5rem; border-radius: 99.9rem; display: flex; justify-content: center; align-items: center;}
+
 .calendar-box .calendar-wrap .calendar-table tbody td .cld_date .cld_day.s_day {color: #E35B4F;}
-.calendar-box .calendar-wrap .calendar-table tbody td .cld_date .schedule li {margin: 1.0rem 0;}
+.calendar-box .calendar-wrap .calendar-table tbody td .cld_date .schedule li {margin: 0.5rem 0;}
 .calendar-box .calendar-wrap .calendar-table tbody td .cld_date .schedule li a {font-size: 1.2rem;}
 .calendar-box .calendar-wrap .calendar-table tbody td .cld_date .schedule li:hover {text-decoration: underline;}
-.calendar-box .calendar-wrap .calendar-table tbody td .cld_date .schedule li a.ing {padding: 0.5rem; background-color: var(--color-positive-bg); color: var(--color-positive); border-radius: 0.8rem;}
+.calendar-box .calendar-wrap .calendar-table tbody td .cld_date .schedule li a.ing {padding: 0.3rem 0.5rem; background-color: var(--color-positive-bg); color: var(--color-positive); border-radius: 0.8rem; width: 100%; display: flex;}
 .calendar-box .calendar-wrap .calendar-table tbody td .cld_date .schedule li a.ing span {font-size: 1.2rem; font-weight: 700; color: var(--color-positive);}
-.calendar-box .calendar-wrap .calendar-table tbody td .cld_date .schedule li a.expected {padding: 0.5rem; background-color: var(--color-lightblue-20); color: var(--color-darkblue-100); border-radius: 0.8rem;}
+.calendar-box .calendar-wrap .calendar-table tbody td .cld_date .schedule li a.expected {padding: 0.3rem 0.5rem; background-color: var(--color-lightblue-20); color: var(--color-darkblue-100); border-radius: 0.8rem; width: 100%; display: flex}
 .calendar-box .calendar-wrap .calendar-table tbody td .cld_date .schedule li a.expected span {font-size: 1.2rem; font-weight: 700; color: var(--color-darkblue-100);}
-.calendar-box .calendar-wrap .calendar-table tbody td .cld_date .schedule li a.wait {padding: 0.5rem; background-color: var(--color-Warning-bg); color: var(--color-Warning); border-radius: 0.8rem;}
+.calendar-box .calendar-wrap .calendar-table tbody td .cld_date .schedule li a.wait {padding: 0.3rem 0.5rem; background-color: var(--color-Warning-bg); color: var(--color-Warning); border-radius: 0.8rem; width: 100%; display: flex}
 .calendar-box .calendar-wrap .calendar-table tbody td .cld_date .schedule li a.wait span {font-size: 1.2rem; font-weight: 700; color: var(--color-Warning);}
+.calendar-box .calendar-wrap .calendar-table tbody td .cld_date .schedule li a.complete {padding: 0.3rem 0.5rem; background-color: var(--color-neutral-30); color: var(--color-neutral-70); border-radius: 0.8rem; width: 100%; display: flex}
+.calendar-box .calendar-wrap .calendar-table tbody td .cld_date .schedule li a.complete span {font-size: 1.2rem; font-weight: 700; color: var(--color-neutral-70);}
 
 .calendar-box .calendar-wrap .calendar-table tbody td:hover, .calendar-box .calendar-wrap .calendar-table tbody td:active {background-color: var(--color-lightblue-10); cursor: pointer;}
-.calendar-box .calendar-list {display: inline-block; width: 20%; height: 100%; padding-left: 2.0rem;}
-.calendar-box .calendar-list .table-tit {color: var(--color-darkblue-100); font-size: 1.8rem; font-weight: normal; padding: 1.5rem 0;}
+.calendar-box .calendar-list {display: inline-block; width: 20%; height: 100%; padding: 2.0rem; border: 0.1rem solid var(--color-neutral-40); border-radius: 0.8rem; margin-left: 2.0rem;}
+.calendar-box .calendar-list .table-tit {color: var(--color-darkblue-100); font-size: 1.8rem; font-weight: normal; padding: 0;}
+.calendar-box .calendar-list .schedule-guide li {display: inline-flex; justify-content: center; align-items: center; font-size: 1.2rem; padding: 0 0.5rem;}
+.calendar-box .calendar-list .schedule-guide li:first-child {padding-left: 0;}
+.calendar-box .calendar-list .schedule-guide li .expected {width: 0.8rem; height: 0.8rem; border-radius: 99.9rem; background-color: var(--color-darkblue-100); font-size: 0; margin-right: 0.3rem;}
+.calendar-box .calendar-list .schedule-guide li .ing {width: 0.8rem; height: 0.8rem; border-radius: 99.9rem; background-color: var(--color-positive); font-size: 0; margin-right: 0.3rem;}
+.calendar-box .calendar-list .schedule-guide li .complete {width: 0.8rem; height: 0.8rem; border-radius: 99.9rem; background-color: var(--color-neutral-70); font-size: 0; margin-right: 0.3rem;}
+.calendar-box .calendar-list .schedule-guide li .wait {width: 0.8rem; height: 0.8rem; border-radius: 99.9rem; background-color: var(--color-Warning); font-size: 0; margin-right: 0.3rem;}
+
 .calendar-box .calendar-list .list-table {width: 100%; height: calc(100% - 5.1rem);}
 .calendar-box .calendar-list .list-table thead tr, .calendar-box .calendar-list .list-table tbody tr, .calendar-box .calendar-list .list-table tfoot tr {display: table; width: 100%;}
 .calendar-box .calendar-list .list-table th:nth-child(1), .calendar-box .calendar-list .list-table td:nth-child(1){width: 50%;}
 .calendar-box .calendar-list .list-table th:nth-child(2), .calendar-box .calendar-list .list-table td:nth-child(2){width: 50%;}
 .calendar-box .calendar-list .list-table thead th, .calendar-box .calendar-list .list-table tbody td {text-align: center; border-bottom: 0.1rem solid var(--color-neutral-40); padding: 1.0rem; font-size: 1.4rem;}
-.calendar-box .calendar-list .list-table thead th {background-color: var(--color-neutral-20); border-top: 0.1rem solid var(--color-darkblue-100);}
+.calendar-box .calendar-list .list-table thead th {background-color: var(--color-neutral-10); border-top: 0.1rem solid var(--color-darkblue-100);}
 .calendar-box .calendar-list .list-table tbody {display: block; height: 100%; overflow-y: auto;}

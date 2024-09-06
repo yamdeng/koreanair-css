@@ -63,7 +63,11 @@ function POccupationMu3P4list() {
         <div className="calendar-wrap">
           <div className="calendar-tit">
             <button className="prevday">버튼</button>
-            <h2 className="datetitle">2024년 9월</h2>
+
+            <h2 className="datetitle">
+              <span>2024년 9월</span>
+            </h2>
+
             <button className="nextday">버튼</button>
           </div>
           <table className="calendar-table">
@@ -92,6 +96,11 @@ function POccupationMu3P4list() {
                 <td>
                   <div className="cld_date">
                     <div className="cld_day s_day">1</div>
+                  </div>
+                </td>
+                <td>
+                  <div className="cld_date">
+                    <div className="cld_day active">2</div>
                     <ul className="schedule">
                       <li>
                         <a className="ing" href="javascript:void(0);">
@@ -113,17 +122,19 @@ function POccupationMu3P4list() {
                 </td>
                 <td>
                   <div className="cld_date">
-                    <div className="cld_day">2</div>
-                  </div>
-                </td>
-                <td>
-                  <div className="cld_date">
                     <div className="cld_day">3</div>
                   </div>
                 </td>
                 <td>
                   <div className="cld_date">
                     <div className="cld_day">4</div>
+                    <ul className="schedule">
+                      <li>
+                        <a className="complete" href="javascript:void(0);">
+                          작업완료<span>(1)</span>
+                        </a>
+                      </li>
+                    </ul>
                   </div>
                 </td>
                 <td>
@@ -166,6 +177,13 @@ function POccupationMu3P4list() {
                 <td>
                   <div className="cld_date">
                     <div className="cld_day">12</div>
+                    <ul className="schedule">
+                      <li>
+                        <a className="ing" href="javascript:void(0);">
+                          작업중<span>(1)</span>
+                        </a>
+                      </li>
+                    </ul>
                   </div>
                 </td>
                 <td>
@@ -176,6 +194,13 @@ function POccupationMu3P4list() {
                 <td>
                   <div className="cld_date">
                     <div className="cld_day">14</div>
+                    <ul className="schedule">
+                      <li>
+                        <a className="expected" href="javascript:void(0);">
+                          작업예정<span>(2)</span>
+                        </a>
+                      </li>
+                    </ul>
                   </div>
                 </td>
               </tr>
@@ -275,93 +300,31 @@ function POccupationMu3P4list() {
         </div>
         <div className="calendar-list">
           <h3 className="table-tit">2024년 9월 5일</h3>
+          <ul className="schedule-guide">
+            <li>
+              <span className="expected">컬러</span>작업예정
+            </li>
+            <li>
+              <span className="ing">컬러</span>작업중
+            </li>
+            <li>
+              <span className="complete">컬러</span>작업완료
+            </li>
+            <li>
+              <span className="wait">컬러</span>작업완료대기
+            </li>
+          </ul>
           <table className="list-table">
-            <thead>
+            {/*<thead>
               <tr>
                 <th>작업상태</th>
                 <th>공사명</th>
               </tr>
-            </thead>
+            </thead>*/}
             <tbody>
               <tr>
                 <td>작업 중</td>
                 <td>도로포장</td>
-              </tr>
-              <tr>
-                <td>작업종료대기</td>
-                <td>외벽공사</td>
-              </tr>
-              <tr>
-                <td>작업종료대기</td>
-                <td>외벽공사</td>
-              </tr>
-              <tr>
-                <td>작업종료대기</td>
-                <td>외벽공사</td>
-              </tr>
-              <tr>
-                <td>작업종료대기</td>
-                <td>외벽공사</td>
-              </tr>
-              <tr>
-                <td>작업종료대기</td>
-                <td>외벽공사</td>
-              </tr>
-              <tr>
-                <td>작업종료대기</td>
-                <td>외벽공사</td>
-              </tr>
-              <tr>
-                <td>작업종료대기</td>
-                <td>외벽공사</td>
-              </tr>
-              <tr>
-                <td>작업종료대기</td>
-                <td>외벽공사</td>
-              </tr>
-              <tr>
-                <td>작업종료대기</td>
-                <td>외벽공사</td>
-              </tr>
-              <tr>
-                <td>작업종료대기</td>
-                <td>외벽공사</td>
-              </tr>
-              <tr>
-                <td>작업종료대기</td>
-                <td>외벽공사</td>
-              </tr>
-              <tr>
-                <td>작업종료대기</td>
-                <td>외벽공사</td>
-              </tr>
-              <tr>
-                <td>작업종료대기</td>
-                <td>외벽공사</td>
-              </tr>
-              <tr>
-                <td>작업종료대기</td>
-                <td>외벽공사</td>
-              </tr>
-              <tr>
-                <td>작업종료대기</td>
-                <td>외벽공사</td>
-              </tr>
-              <tr>
-                <td>작업종료대기</td>
-                <td>외벽공사</td>
-              </tr>
-              <tr>
-                <td>작업종료대기</td>
-                <td>외벽공사</td>
-              </tr>
-              <tr>
-                <td>작업종료대기</td>
-                <td>외벽공사</td>
-              </tr>
-              <tr>
-                <td>작업종료대기</td>
-                <td>외벽공사</td>
               </tr>
               <tr>
                 <td>작업종료대기</td>

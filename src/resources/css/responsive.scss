@@ -365,29 +365,30 @@
 
   .calendar-box {display: block;}
   .calendar-box .calendar-wrap {width: 100%;}
-  .calendar-box .calendar-list {width: 100%;}
-  .calendar-box .calendar-wrap .calendar-table tbody td .cld_date .schedule li {margin: 0 !important; }
+  .calendar-box .calendar-wrap .calendar-tit .datetitle span {font-size: 1.8rem;}
+  .calendar-box .calendar-list {width: 100%; padding: 1.5rem; margin-left: 0; margin-top: 1.0rem;}
+  .calendar-box .calendar-wrap .calendar-table thead th, .calendar-box .calendar-wrap .calendar-table tbody td {font-size: 1.4rem;}
+  .calendar-box .calendar-wrap .calendar-table tbody td {height: 5.0rem; min-height: 65.0rem;}
+  .calendar-box .calendar-wrap .calendar-table tbody td .cld_date .schedule li {margin: 0 0.2rem !important; display: inline-flex; }
   .calendar-box .calendar-wrap .calendar-table tbody td .cld_date .schedule li a.ing, 
-  .calendar-box .calendar-wrap .calendar-table tbody td .cld_date .schedule li a.ing span {
-    font-size: 0; 
-    width: 2.4rem; 
-    height: 2.4rem; 
-    background-color: var(--color-positive);
-  }
   .calendar-box .calendar-wrap .calendar-table tbody td .cld_date .schedule li a.expected, 
-  .calendar-box .calendar-wrap .calendar-table tbody td .cld_date .schedule li a.expected span {
-    font-size: 0; 
-    width: 2.4rem; 
-    height: 2.4rem; 
-    background-color: var(--color-darkblue-100);
-  }
   .calendar-box .calendar-wrap .calendar-table tbody td .cld_date .schedule li a.wait, 
-  .calendar-box .calendar-wrap .calendar-table tbody td .cld_date .schedule li a.wait span {
+  .calendar-box .calendar-wrap .calendar-table tbody td .cld_date .schedule li a.complete {
     font-size: 0; 
-    width: 2.4rem; 
-    height: 2.4rem; 
-    background-color: var(--color-Warning);
+    width: 0.6rem; 
+    height: 0.6rem; 
+    padding: 0;
+    border-radius: 99.9rem;
   }
+  .calendar-box .calendar-wrap .calendar-table tbody td .cld_date .schedule li a.ing {background-color: var(--color-positive);}
+  .calendar-box .calendar-wrap .calendar-table tbody td .cld_date .schedule li a.expected {background-color: var(--color-darkblue-100);}
+  .calendar-box .calendar-wrap .calendar-table tbody td .cld_date .schedule li a.wait {background-color: var(--color-Warning);}
+  .calendar-box .calendar-wrap .calendar-table tbody td .cld_date .schedule li a.complete {background-color: var(--color-neutral-70);}
+
+  .calendar-box .calendar-wrap .calendar-table tbody td .cld_date .schedule li a.ing span,
+  .calendar-box .calendar-wrap .calendar-table tbody td .cld_date .schedule li a.expected span,
+  .calendar-box .calendar-wrap .calendar-table tbody td .cld_date .schedule li a.wait span,
+  .calendar-box .calendar-wrap .calendar-table tbody td .cld_date .schedule li a.complete span {display: none;}
 
     /*보고서분석:관련자 세부정보 삭제버튼*/
     .detail-form .detail-list .form-table .form-cell .form-group .tabs-tab-remove.Mob{width: 100%;border-radius:0.8rem;padding:0.6rem 4.8rem;border:solid 0.1rem var(--color-neutral-70);height:3.5rem}
