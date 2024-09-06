@@ -61,7 +61,7 @@ const props: any = {
     console.log('Dropped files', e.dataTransfer.files);
   },
 };
-function CSRReportEdit() {
+function MSRReportEdit() {
   const [inputValue, setInputValue] = useState('');
   const [firstExpaned, setFirstExpaned] = useState(true);
   const [secondExpaned, setSecondExpaned] = useState(true);
@@ -700,4 +700,4 @@ function CSRReportEdit() {
   );
 }
 
-export default CSRReportEdit;
+export default MSRReportEdit;
