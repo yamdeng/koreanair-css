@@ -35,11 +35,15 @@
 .form-group .type2{position:relative;width:80%;margin-left:0.5rem}
 .form-group .type3{position:relative;width:60%}
 .form-group .type4{position:relative;width:40%;margin-left:0.5rem}
+.form-group .type4.Add{border:solid 0.2rem var(--color-darkblue-100);border-radius:0.6rem}
+.form-group .type4.Add .btn_add{padding:0.6rem 1.8rem}
+.form-group .type4.Add .btn_text{width:100%;text-align:center;color:var(--color-darkblue-100);font-weight:600}
 .form-group .type5{position:relative;width:20%}
+.form-group .type6{position:relative;width:50%;margin-left:0.5rem}
 
 /*공고*/
 .Notification-wrap{position:relative;background-color:var(--color-btn-blue1);border:solid 0.1rem var(--color-btn-blue2);border-radius:0.8rem;padding-bottom:1.5rem;}
-.Notification-wrap .info-text01{position:relative;padding-left:1.5rem;text-indent:2.5rem}
+.Notification-wrap .info-text01{position:relative;padding-left:1.5rem;margin:0 2.5rem}
 .Notification-wrap .info-text01::before{content:'*';position:absolute;display:block;top:0.2rem;left:0}
 .Notification-wrap .notice{display:block;padding:2.5rem 2.9rem 2.5rem 2.9rem;font-size:1.8rem;font-weight:600;color:var(--color-btn-blue2)}
 .Notification-wrap ul{display:inline-block;font-size:1.4rem;padding:0 2.9rem 1.0rem 2.0rem}
@@ -205,6 +209,17 @@
 .contents .form-table .form-cell .group-box-wrap .tooltip .tooltip-right{top:-0.6rem;left:155%}
 .contents .form-table .form-cell .group-box-wrap .tooltip .tooltip-right::after{top:1.6rem;right:100%;margin-top:-0.5rem;border-color: transparent var(--color-neutral-80) transparent transparent}
 
+
+
+.tooltip .tooltiptext1{visibility:hidden;position:absolute;z-index:1;width:27rem;font-size:1.2rem;background-color: var(--color-neutral-80);color: var(--color-neutral-10);text-align:left;border-radius:0.8rem;padding:1.5rem 2.0rem}
+.tooltip .tooltiptext1 li::marker{content:'-';color: var(--color-neutral-10);font-size:1rem}
+.tooltip .tooltiptext1 ul li{font-size: 1.2rem; color: var(--color-neutral-10);  display: list-item; padding-left: 0.6rem;}
+.tooltip:hover .tooltiptext1{visibility:visible}
+.tooltip .tooltiptext1::after{content:'';position:absolute;border-style:solid;border-width:0.5rem}
+
+
+
+
 .detailForm-detail.list-group + .detailForm-detail.list-group{margin-top:0.8rem}
 .detailForm-detail.list-group .list > dl > dt{padding:0.8rem 0 0.8rem 0.8rem}
 .detailForm-detail.list-group .list > dl > dd{margin:0 -2.0rem -1.0rem -1.0rem}
@@ -260,10 +275,12 @@
 .SelectedList > ul li > .column-box .column-btn .down:active{background: url(../images/down-btn-lb.svg)center center no-repeat;background-size:1.2rem;width:2rem;height:0rem;font-size:0}
 .SelectedList > ul li .Info .Dept{font-size:1.2rem;color:var(--color-neutral-70)}
 .SelectedList .class.leader{color:var(--color-mblue-100);border-color:var(--color-mblue-100)}
-.SelectedList .class{position:absolute;top:50%;right:2.5rem;transform:translateY(-50%);width:70px;height:26px;line-height:2.4rem;border-width:0.1rem;border-style:solid;border-radius:99.9rem;font-size:1.2rem;text-align:center;background-color: rgb(255, 255, 255);}
-.SelectedList > ul .delete{position:absolute;right: 0;top:1rem;background:url(/src/resources/images/delete-text.svg) center center no-repeat;font-size: 0;width: 2rem;height: 2rem;}
+.SelectedList .class{position:absolute;top:50%;right:2.5rem;transform:translateY(-50%);width:70px;height:26px;line-height:2.4rem;border-width:0.1rem;border-style:solid;border-radius:99.9rem;font-size:1.2rem;text-align:center;background-color:rgb(255, 255, 255)}
+.SelectedList > ul .delete{position:absolute;right: 0;top:1rem;background:url(/src/resources/images/delete-text.svg) center center no-repeat;font-size:0;width:2rem;height:2rem}
 .SelectedList > ul li .column-box{display: flex;}
-.SelectedList > ul li .column-box .column-btn{flex-direction: row;}
+.SelectedList > ul li .column-box .column-btn{flex-direction:row}
+
+.SelectedList.Location > ul .delete{position:absolute;right:0;top:0rem;background:url(/src/resources/images/delete-text.svg) center center no-repeat;font-size:0;width:2rem;height:2rem}
 
 /*AUDIT 체크리스트*/
 .btn-area.Audit{
@@ -280,16 +297,15 @@
 .btn-area.Audit .btn-area-box > .form-table{display:flex;width:100%}
 .btn-area.Audit .btn-area-box > .form-table .form-cell{position:relative;width:10%}
 
-.checklist-contents{display:flex;justify-content:flex-start;flex-flow:row wrap;width:100%;box-sizing:border-box;padding: 0 0 2.0rem;}
+.checklist-contents{display:flex;justify-content:flex-start;flex-flow:row wrap;width:100%;box-sizing:border-box;padding:0 0 2.0rem}
 .checklist-contents::after{content:'';display:block;clear:both}
 .checklist-contents .checklist-row.list h4 label{position:relative;display:inline-block;width:100%;padding-bottom:1.3rem;border-bottom:0.1rem solid rgb(188, 188, 205)}
 .checklist-contents .checklist-row.list h4 label button.btn-list{position:absolute;left:1rem;top:0.5rem;width:2.3rem;height:2rem;font-size:0;background:url(../images/icon-register.svg)center center no-repeat;align-items:center}
 .checklist-contents .checklist-row.list h4 a{display:inline-block;padding-left:4.0rem}
 .checklist-contents .checklist-row.list h4 a span{font-size:1.6rem;font-weight:700;line-height:2.5rem}
-.checklist-contents .checklist-row{display:flex;/*align-items:flex-end;*/justify-content:flex-start;flex-wrap:wrap;width:25%;box-sizing:border-box;overflow:hidden;margin:1.0rem 0 1.0rem}
 
-.checklist-contents .checklist-row .checklist-col{position:relative;width:100%;;height:100%;border-radius:0.8rem;padding:1.2rem 1rem;border:solid 0.1rem var(--color-neutral-01);background-color:var(--color-neutral-10);/*box-shadow:0 0.2rem 0.4rem 0 rgba(0, 0, 0, .05)*/}
-/*.checklist-contents .checklist-row .checklist-col:hover{border-color:var(--color-darkblue-100)}*/
+.checklist-contents .checklist-row{display:flex;justify-content:flex-start;flex-wrap:wrap;width:25%;box-sizing:border-box;overflow:hidden;margin:1.0rem 0 0rem}
+.checklist-contents .checklist-row .checklist-col{position:relative;width:100%;;height:100%;border-radius:0.8rem;padding:1.2rem 1rem;margin-right:1rem;border:solid 0.1rem var(--color-neutral-01);background-color:var(--color-neutral-10)}
 
 .box-view-list.Audit .view-list .text-desc-type1{white-space:pre-wrap;font-size:1.5rem}
 .editarea-box.Audit{padding:0;border:0}
@@ -304,7 +320,7 @@
 .checklist-contents .checklist-row.list li.list-space .ant-space button.btn-list.editChapter{width:2.3rem;height:2rem;font-size:0;background:url(../images/icon-register.svg)center center no-repeat;align-items:center}
 
 .checklist-contents .checklist-row.list li.list-space .ant-space button.editChapter{visibility:hidden;opacity:0;margin-right:1rem}
-.checklist-contents .checklist-row.list li.list-space .ant-space button.editChapter:hover{width:2.3rem;height:2rem;font-size:0;background:url(../images/icon-register.svg)center center no-repeat;align-items:center}
+.checklist-contents .checklist-row.list li.list-space .ant-space:hover button.btn-list.editChapter{opacity:100;visibility:visible}
 
 
 

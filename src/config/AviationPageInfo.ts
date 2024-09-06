@@ -52,6 +52,7 @@ import AdminSafetyNoticeDetail from '@/components/publish/aviation/AdminSafetyNo
 import ReportEdit from '@/components/publish/aviation/ReportEdit';
 import CSRReportEdit from '@/components/publish/aviation/CSRReportEdit';
 import MSRReportEdit from '@/components/publish/aviation/MSRReportEdit';
+import GSRReportEdit from '@/components/publish/aviation/GSRReportEdit';
 
 import { fa } from '@faker-js/faker';
 import { fail } from 'assert';
@@ -161,6 +162,13 @@ AviationPageInfo.list = [
     title: '[03.안전위험관리] 보고서분석 > 등록(MSR)',
     Component: MSRReportEdit,
     path: 'MSRReportEdit',
+    description: '',
+    success: true,
+  },
+  {
+    title: '[03.안전위험관리] 보고서분석 > 등록(GSR)',
+    Component: GSRReportEdit,
+    path: 'GSRReportEdit',
     description: '',
     success: false,
   },

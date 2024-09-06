@@ -97,7 +97,7 @@ input[type=checkbox],input[type=radio]{padding:0;vertical-align:middle;margin-to
 [class^="chk-wrap"] > label > input {position:absolute;top:0;left:0;width:0;height:0;opacity:0}
 
 /* 기본형 */
-.radio-wrap{position:relative;line-height:0;border:0.1rem solid var(--color-neutral-40);border-radius:0.5rem;padding:0.4rem 1rem 0.3rem}
+.radio-wrap{position:relative;line-height:0;border:0.1rem solid var(--color-neutral-40);border-radius:0.5rem;padding:0.6rem 1rem 0.3rem}
 .radio-wrap.border-no{border:0}
 .radio-wrap.pd-style {padding: 0.5rem 0 0 0 !important;}
 .radio-wrap .input-box{position:relative}

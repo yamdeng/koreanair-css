@@ -61,7 +61,7 @@ const props: any = {
     console.log('Dropped files', e.dataTransfer.files);
   },
 };
-function MSRReportEdit() {
+function GSRReportEdit() {
   const [inputValue, setInputValue] = useState('');
   const [firstExpaned, setFirstExpaned] = useState(true);
   const [secondExpaned, setSecondExpaned] = useState(true);
@@ -90,7 +90,7 @@ function MSRReportEdit() {
         <h2 className="reportview">
           보고서분석
           <span>
-            <a href="javascript:void(0);">MSR-100308</a>
+            <a href="javascript:void(0);">GSR-100308</a>
           </span>
         </h2>
       </div>
@@ -113,22 +113,6 @@ function MSRReportEdit() {
           <dt onClick={() => setFirstExpaned(!firstExpaned)}>
             <button type="button" className="btn-tg">
               비행정보<span className={firstExpaned ? 'active' : ''}></span>
-              <div className="tag-info-wrap-end">
-                <div className="tip">
-                  <div>
-                    <a href="javascript:void(0);" className="txt">
-                      작성 예시
-                    </a>
-                  </div>
-                </div>
-                <div className="tip">
-                  <div>
-                    <a href="javascript:void(0);" className="txt">
-                      의무보고의범위
-                    </a>
-                  </div>
-                </div>
-              </div>
             </button>
           </dt>
           <dd className="tg-conts" style={{ display: firstExpaned ? '' : 'none' }}>
@@ -153,7 +137,7 @@ function MSRReportEdit() {
                         <span className="ant-input-group-addon1">KE</span>
                         <div className="ant-input-group-addon1-input wid50 df">
                           {/*비행편명 */}
-                          <AppTextInput label="비행편명" required />
+                          <AppTextInput label="비행편명" />
                           <div className="btn-area">
                             <button type="button" name="button" className="btn-sm btn_text btn-darkblue-line">
                               Search
@@ -168,15 +152,15 @@ function MSRReportEdit() {
                       <div className="form-group va-t ant-input wid100">
                         <span className="ant-input-group-addon1">HL</span>
                         <div className="ant-input-group-addon1-input wid50">
-                          {/*등록번호 */}
-                          <AppTextInput label="등록번호" required />
+                          {/*등록부호 */}
+                          <AppTextInput label="등록부호" required />
                         </div>
                       </div>
                     </div>
                     <div className="form-cell wid50">
                       <div className="form-group wid100">
-                        {/*항공기유형 */}
-                        <AppSelect label="항공기유형" required />
+                        {/*항공기형식 */}
+                        <AppSelect label="항공기형식" />
                       </div>
                     </div>
                   </div>
@@ -259,12 +243,12 @@ function MSRReportEdit() {
                   <div className="form-table">
                     <div className="form-cell wid50">
                       <div className="form-group wid100">
-                        <AppTextInput label="공급(F/C/Y)" />
+                        <AppTextInput label="좌석수 (F/C/Y)" />
                       </div>
                     </div>
                     <div className="form-cell wid50">
                       <div className="form-group wid100">
-                        <AppTextInput label="체크인(금/토/일)" />
+                        <AppTextInput label="탑승자 (F/C/Y)" />
                       </div>
                     </div>
                   </div>
@@ -286,28 +270,6 @@ function MSRReportEdit() {
                                     <div className="Dept">상무대우수석사무장 / (주)대한항공</div>
                                   </div>
                                   {/*<span className="class leader">Leader</span>*/}
-                                  <a href="javascript:void(0);">
-                                    <span className="delete">X</span>
-                                  </a>
-                                </li>
-                                <li>
-                                  <span className="InfoBox"></span>
-                                  <div className="Info">
-                                    <div className="Name">홍길동 (170****)</div>
-                                    <div className="Dept">상무대우수석사무장 / (주)대한항공</div>
-                                  </div>
-                                  {/*<span className="class ">Leader</span>*/}
-                                  <a href="javascript:void(0);">
-                                    <span className="delete">X</span>
-                                  </a>
-                                </li>
-                                <li>
-                                  <span className="InfoBox"></span>
-                                  <div className="Info">
-                                    <div className="Name">홍길동 (170****)</div>
-                                    <div className="Dept">상무대우수석사무장 / (주)대한항공</div>
-                                  </div>
-                                  {/*<span className="class ">Leader</span>*/}
                                   <a href="javascript:void(0);">
                                     <span className="delete">X</span>
                                   </a>
@@ -347,13 +309,43 @@ function MSRReportEdit() {
               <div className="detail-form">
                 <div className="detail-list">
                   <div className="form-table">
-                    <div className="form-cell wid50 ">
-                      <div className="form-group wid50">이벤트 카테고리</div>
-                    </div>
                     <div className="form-cell wid50">
                       <div className="form-group wid100">
-                        {/*발생공항 */}
-                        <AppAutoComplete label="발생공항" />
+                        <div className="group-box-wrap wid100">
+                          <span className="txt">
+                            발견/신고 <span className="required">*</span>
+                            <div className="tooltip">
+                              <span className="tooltiptext1 tooltip-right">
+                                <ul>
+                                  <li>발견 : 이벤트 발생 시점 미정 항목에 대한 보고</li>
+                                  <li>신고 : 이벤트 발생 시점 보고</li>
+                                </ul>
+                              </span>
+                            </div>
+                          </span>
+                          <div className="radio-wrap error">
+                            <label>
+                              <input type="radio" checked />
+                              <span>발견</span>
+                            </label>
+                            <label>
+                              <input type="radio" />
+                              <span>신고</span>
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="form-cell wid50 ">
+                      <div className="form-group wid50">
+                        {/*발생위치 */}
+                        <AppTextInput
+                          inputType="text"
+                          placeholder=""
+                          label="발생위치"
+                          toolTipMessage="자유형식으로 입력가능
+                          예)Waypoint, 이륙 후3시간 경과 시점 등"
+                        />
                       </div>
                     </div>
                   </div>
@@ -460,78 +452,12 @@ function MSRReportEdit() {
                   <div className="form-table">
                     <div className="form-cell wid50">
                       <div className="form-group wid100">
-                        <AppTextInput label="점검관" />
+                        <AppTextInput label="검사관" />
                       </div>
                     </div>
                     <div className="form-cell wid50">
                       <div className="form-group wid100">
-                        <AppSelect label="점검기관" required />
-                      </div>
-                    </div>
-                  </div>
-                  <div className="form-table">
-                    <div className="form-cell wid50">
-                      <div className="form-group wid50">
-                        <div className="UserChicebox Flight ">
-                          <div className="form-group wid100">
-                            <div className="df">
-                              <div className="type6">
-                                <AppSelect label="점검기관" />
-                              </div>
-                              <div className="type6">
-                                <AppSelect label="점검기관" />
-                              </div>
-                              <div className="type4 Add">
-                                <button type="button" name="button" className="btn_add btn_text">
-                                  + Add
-                                </button>
-                              </div>
-                            </div>
-                            <label htmlFor="file" className="file-label">
-                              은닉물 발견 장소 (있었던 경우)
-                            </label>
-                            <div className="SelectedList Location mt10">
-                              <ul>
-                                <li>
-                                  Coat Room / Economy Class
-                                  <a href="javascript:void(0);">
-                                    <span className="delete">X</span>
-                                  </a>
-                                </li>
-                                <li>
-                                  Coat Room / Economy Class
-                                  <a href="javascript:void(0);">
-                                    <span className="delete">X</span>
-                                  </a>
-                                </li>
-                                <li>
-                                  Coat Room / Economy Class
-                                  <a href="javascript:void(0);">
-                                    <span className="delete">X</span>
-                                  </a>
-                                </li>
-                                <li>
-                                  Coat Room / Economy Class
-                                  <a href="javascript:void(0);">
-                                    <span className="delete">X</span>
-                                  </a>
-                                </li>
-                                <li>
-                                  Coat Room / Economy Class
-                                  <a href="javascript:void(0);">
-                                    <span className="delete">X</span>
-                                  </a>
-                                </li>
-                                <li>
-                                  Coat Room / Economy Class
-                                  <a href="javascript:void(0);">
-                                    <span className="delete">X</span>
-                                  </a>
-                                </li>
-                              </ul>
-                            </div>
-                          </div>
-                        </div>
+                        <AppSelect label="검사부" required />
                       </div>
                     </div>
                   </div>
@@ -540,24 +466,24 @@ function MSRReportEdit() {
             </div>
           </dd>
         </dl>
-        {/* Person Involved Detail */}
+        {/* 관련자 세부 정보 */}
         <dl className={thirdExpaned ? 'tg-item active' : 'tg-item'}>
           <dt onClick={() => setThirdExpaned(!thirdExpaned)}>
             <button type="button" className="btn-tg">
-              Person Involved Detail<span className={thirdExpaned ? 'active' : ''}></span>
+              관련자 세부 정보<span className={thirdExpaned ? 'active' : ''}></span>
             </button>
           </dt>
           <dd className="tg-conts" style={{ display: thirdExpaned ? '' : 'none' }}>
             <div className="edit-area">
               <div className="detail-form">
                 <div className="detail-list">
-                  {/*PAX */}
+                  {/*Fax */}
                   <div className="form-table">
                     <div className="form-cell wid50">
                       <div className="form-group wid100">
                         <div className="UserChicebox Fax ">
                           <label htmlFor="file" className="file-label">
-                            PAX <span className="required"></span>
+                            Fax <span className="required"></span>
                           </label>
                           <div className="form-table">
                             <div className="form-cell wid50">
@@ -709,7 +635,7 @@ function MSRReportEdit() {
                     <div className="form-cell wid50 ">
                       <div className="form-group wid100">
                         {/*제목*/}
-                        <AppTextInput inputType="text" placeholder="" label="제목" required />
+                        <AppTextInput inputType="text" placeholder="" label="제목" />
                       </div>
                     </div>
                   </div>
@@ -793,4 +719,4 @@ function MSRReportEdit() {
   );
 }
 
-export default MSRReportEdit;
+export default GSRReportEdit;
