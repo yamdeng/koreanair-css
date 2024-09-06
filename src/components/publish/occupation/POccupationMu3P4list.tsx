@@ -302,16 +302,16 @@ function POccupationMu3P4list() {
           <h3 className="table-tit">2024년 9월 5일</h3>
           <ul className="schedule-guide">
             <li>
-              <span className="expected">컬러</span>작업예정
+              <span className="expected"></span>작업예정
             </li>
             <li>
-              <span className="ing">컬러</span>작업중
+              <span className="ing"></span>작업중
             </li>
             <li>
-              <span className="complete">컬러</span>작업완료
+              <span className="complete"></span>작업완료
             </li>
             <li>
-              <span className="wait">컬러</span>작업완료대기
+              <span className="wait"></span>작업완료대기
             </li>
           </ul>
           <table className="list-table">
@@ -322,6 +322,70 @@ function POccupationMu3P4list() {
               </tr>
             </thead>*/}
             <tbody>
+              <tr>
+                <td>작업 중</td>
+                <td>도로포장</td>
+              </tr>
+              <tr>
+                <td>작업종료대기</td>
+                <td>외벽공사</td>
+              </tr>
+              <tr>
+                <td>작업 중</td>
+                <td>도로포장</td>
+              </tr>
+              <tr>
+                <td>작업종료대기</td>
+                <td>외벽공사</td>
+              </tr>
+              <tr>
+                <td>작업 중</td>
+                <td>도로포장</td>
+              </tr>
+              <tr>
+                <td>작업종료대기</td>
+                <td>외벽공사</td>
+              </tr>
+              <tr>
+                <td>작업 중</td>
+                <td>도로포장</td>
+              </tr>
+              <tr>
+                <td>작업종료대기</td>
+                <td>외벽공사</td>
+              </tr>
+              <tr>
+                <td>작업 중</td>
+                <td>도로포장</td>
+              </tr>
+              <tr>
+                <td>작업종료대기</td>
+                <td>외벽공사</td>
+              </tr>
+              <tr>
+                <td>작업 중</td>
+                <td>도로포장</td>
+              </tr>
+              <tr>
+                <td>작업종료대기</td>
+                <td>외벽공사</td>
+              </tr>
+              <tr>
+                <td>작업 중</td>
+                <td>도로포장</td>
+              </tr>
+              <tr>
+                <td>작업종료대기</td>
+                <td>외벽공사</td>
+              </tr>
+              <tr>
+                <td>작업 중</td>
+                <td>도로포장</td>
+              </tr>
+              <tr>
+                <td>작업종료대기</td>
+                <td>외벽공사</td>
+              </tr>
               <tr>
                 <td>작업 중</td>
                 <td>도로포장</td>
