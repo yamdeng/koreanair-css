@@ -336,280 +336,90 @@ function GSRReportEdit() {
                         </div>
                       </div>
                     </div>
-                    <div className="form-cell wid50 ">
-                      <div className="form-group wid50">
-                        {/*발생위치 */}
-                        <AppTextInput
-                          inputType="text"
-                          placeholder=""
-                          label="발생위치"
-                          toolTipMessage="자유형식으로 입력가능
-                          예)Waypoint, 이륙 후3시간 경과 시점 등"
-                        />
+                    <div className="form-cell wid50">
+                      <div className="form-group wid100">
+                        {/*발견유형 */}
+                        <AppSelect label={'발견유형'} required disabled />
                       </div>
                     </div>
                   </div>
-                  <div className="form-table">
-                    <div className="form-cell wid50">
-                      <div className="form-group wid100">
-                        <div className="Notification-wrap wid50">
-                          <p className="notice">Notification</p>
-                          <ul>
-                            <li>
-                              <span className="point">①</span>Safety : Asked about Safety Equipments/Regulations mostly.
-                            </li>
-                            <li>
-                              <span className="point">②</span>Security : Asked about Security Equipments/Regulations
-                              mostly.
-                            </li>
-                            <li>
-                              <span className="point">③</span>Alcohol/Drug : About the alcohol/drug test
-                            </li>
-                            <li>
-                              <span className="point">④</span>Others : Excluding the above items.
-                            </li>
-                          </ul>
-                          <p className="info-text01">
-                            Do not write a simple boarding of a supervisor without questions/checks for cabin crew
-                          </p>
-                          <p className="info-text01">
-                            Inspection officer boarding is not required for other sectors (operation, maintenance, etc.)
-                            other than room inspection purposes
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="form-table">
-                    <div className="form-cell wid50">
-                      <div className="group-box-wrap wid100">
-                        <span className="txt">
-                          Inspection Type <span className="required">*</span>
-                        </span>
-                        <div className="radio-wrap error">
-                          <label>
-                            <input type="radio" checked />
-                            <span>Safety</span>
-                          </label>
-                          <label>
-                            <input type="radio" />
-                            <span>Security</span>
-                          </label>
-                          <label>
-                            <input type="radio" />
-                            <span>Alcohol/Drugs</span>
-                          </label>
-                          <label>
-                            <input type="radio" />
-                            <span>Others</span>
-                          </label>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="form-cell wid50">
-                      <div className="group-box-wrap wid100">
-                        <span className="txt">
-                          Base of Authority <span className="required">*</span>
-                        </span>
-                        <div className="radio-wrap error">
-                          <label>
-                            <input type="radio" checked />
-                            <span>Domestic</span>
-                          </label>
-                          <label>
-                            <input type="radio" />
-                            <span>Foreign</span>
-                          </label>
-                          <label>
-                            <input type="radio" />
-                            <span>KE</span>
-                          </label>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="form-cell wid50">
-                      <div className="group-box-wrap wid100">
-                        <span className="txt">
-                          Finding <span className="required">*</span>
-                        </span>
-                        <div className="radio-wrap error">
-                          <label>
-                            <input type="radio" checked />
-                            <span>Yes</span>
-                          </label>
-                          <label>
-                            <input type="radio" />
-                            <span>No</span>
-                          </label>
-                          <label>
-                            <input type="radio" />
-                            <span>잘모르겠어요</span>
-                          </label>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="form-table">
-                    <div className="form-cell wid50">
-                      <div className="form-group wid100">
-                        <AppTextInput label="검사관" />
-                      </div>
-                    </div>
-                    <div className="form-cell wid50">
-                      <div className="form-group wid100">
-                        <AppSelect label="검사부" required />
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </dd>
-        </dl>
-        {/* 관련자 세부 정보 */}
-        <dl className={thirdExpaned ? 'tg-item active' : 'tg-item'}>
-          <dt onClick={() => setThirdExpaned(!thirdExpaned)}>
-            <button type="button" className="btn-tg">
-              관련자 세부 정보<span className={thirdExpaned ? 'active' : ''}></span>
-            </button>
-          </dt>
-          <dd className="tg-conts" style={{ display: thirdExpaned ? '' : 'none' }}>
-            <div className="edit-area">
-              <div className="detail-form">
-                <div className="detail-list">
-                  {/*Fax */}
-                  <div className="form-table">
-                    <div className="form-cell wid50">
-                      <div className="form-group wid100">
-                        <div className="UserChicebox Fax ">
-                          <label htmlFor="file" className="file-label">
-                            Fax <span className="required"></span>
-                          </label>
-                          <div className="form-table">
-                            <div className="form-cell wid50">
-                              <div className="form-group wid100">
-                                <AppSelect label={'관련자'} />
-                              </div>
-                            </div>
-                            <div className="form-cell wid50">
-                              <div className="form-group wid100">
-                                <AppTextInput label="이름" />
-                              </div>
-                            </div>
-                            <div className="form-cell wid50">
-                              <div className="form-group wid100">
-                                <AppSelect label={'팩스'} />
-                              </div>
-                            </div>
-                            <div className="form-cell wid50">
-                              <div className="form-group wid100">
-                                <AppTextInput inputType={'number'} label="나이" />
-                              </div>
-                            </div>
-                            <div className="form-cell wid50">
-                              <div className="form-group wid100">
-                                <AppTextInput label="국적" />
-                              </div>
-                            </div>
-                            <div className="form-cell wid50">
-                              <div className="form-group wid100">
-                                <AppTextInput label="좌석번호" />
-                              </div>
-                            </div>
-                            <div className="form-cell wid10">
-                              <div className="form-group wid100">
-                                <button type="button" className="tabs-tab-remove Mob">
-                                  <span className="btn-del delete">Delete</span>
-                                </button>
-                              </div>
-                            </div>
-                          </div>
-                          <div className="form-table">
-                            <div className="form-cell wid50">
-                              <div className="form-group wid100">
-                                <AppSelect label={'관련자'} />
-                              </div>
-                            </div>
-                            <div className="form-cell wid50">
-                              <div className="form-group wid100">
-                                <AppTextInput label="이름" />
-                              </div>
-                            </div>
-                            <div className="form-cell wid50">
-                              <div className="form-group wid100">
-                                <AppSelect label={'팩스'} />
-                              </div>
-                            </div>
-                            <div className="form-cell wid50">
-                              <div className="form-group wid100">
-                                <AppTextInput inputType={'number'} label="나이" />
-                              </div>
-                            </div>
-                            <div className="form-cell wid50">
-                              <div className="form-group wid100">
-                                <AppTextInput label="국적" />
-                              </div>
-                            </div>
-                            <div className="form-cell wid50">
-                              <div className="form-group wid100">
-                                <AppTextInput label="좌석번호" />
-                              </div>
-                            </div>
-                            <div className="form-cell wid10">
-                              <div className="form-group wid100">
-                                <button type="button" className="tabs-tab-remove Mob">
-                                  <span className="btn-del delete">Delete</span>
-                                </button>
-                              </div>
-                            </div>
-                          </div>
-                          {/*추가버튼*/}
-                          <div className="btn-area">
-                            <button type="button" name="button" className="btn-sm btn_text btn-darkblue-line">
-                              + Add
-                            </button>
-                          </div>
-                          {/*//추가버튼*/}
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  {/*CREW */}
-                  <div className="form-table">
-                    <div className="form-cell wid50">
-                      <div className="form-group wid100">
-                        <div className="UserChicebox Fax ">
-                          <label htmlFor="file" className="file-label">
-                            CREW <span className="required"></span>
-                          </label>
-                          <div className="form-table">
-                            <div className="form-cell wid30">
-                              <div className="form-group wid100">
-                                <AppSelect label={'관련자'} />
-                              </div>
-                            </div>
-                            <div className="form-cell wid100">
-                              <div className="form-group wid100">
-                                {/* */}
-                                <AppAutoComplete label="" required />
-                              </div>
-                            </div>
-                            <div className="form-cell wid10">
-                              <div className="form-group wid100">
-                                <button type="button" className="tabs-tab-remove Mob">
-                                  <span className="btn-del delete">Delete</span>
-                                </button>
-                              </div>
-                            </div>
-                          </div>
 
-                          {/*추가버튼*/}
-                          <div className="btn-area">
-                            <button type="button" name="button" className="btn-sm btn_text btn-darkblue-line">
-                              + Add
-                            </button>
+                  <div className="form-table">
+                    <div className="form-cell wid50">
+                      <div className="form-group wid100">
+                        {/*발생공항 */}
+                        <AppAutoComplete label="발생공항" />
+                      </div>
+                    </div>
+                    <div className="form-cell wid50">
+                      <div className="form-group wid100">
+                        <div className="df">
+                          <div className="type3">
+                            <AppDatePicker label="발생시간" showTime />
                           </div>
-                          {/*//추가버튼*/}
+                          <div className="type4">
+                            <AppSelect label={'UTC'} disabled />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="form-table">
+                    <div className="form-cell wid50">
+                      <div className="form-group wid100">
+                        <AppSelect label="발생위치" required />
+                      </div>
+                    </div>
+                    <div className="form-cell wid50">
+                      <div className="form-group wid100">
+                        <AppSelect label="운영단계" />
+                      </div>
+                    </div>
+                  </div>
+                  <div className="form-table">
+                    <div className="form-cell wid50">
+                      <div className="form-group wid100">
+                        <AppSelect label="램프조작" required />
+                      </div>
+                    </div>
+                    <div className="form-cell wid50">
+                      <div className="form-group wid100">
+                        <AppSelect label="항공기 손상 원인" required />
+                      </div>
+                    </div>
+                  </div>
+                  <div className="form-table">
+                    <div className="form-cell wid50">
+                      <div className="form-group wid100">
+                        <AppSelect label="램프상태" required />
+                      </div>
+                    </div>
+                    <div className="form-cell wid50">
+                      <div className="form-group wid100">
+                        {/*multiple Select기능*/}
+                        <AppSelect label="날씨" required />
+                      </div>
+                    </div>
+                  </div>
+                  <div className="form-table">
+                    <div className="form-cell wid50">
+                      <div className="form-group wid100">
+                        <div className="UserChicebox bg">
+                          <div className="form-group wid100">
+                            <div className="df">
+                              <div className="type1">
+                                <AppSelect label="항공기 손상 지역" required />
+                              </div>
+                              <div className="type2">
+                                <AppTextArea
+                                  label="내용"
+                                  errorMessage=""
+                                  placeholder=""
+                                  style={{ width: '100%', height: 100 }}
+                                />
+                              </div>
+                            </div>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -619,6 +429,7 @@ function GSRReportEdit() {
             </div>
           </dd>
         </dl>
+
         {/* 이벤트내용 */}
         <dl className={fourExpaned ? 'tg-item active' : 'tg-item'}>
           <dt onClick={() => setFourExpaned(!fourExpaned)}>
