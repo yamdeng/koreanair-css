@@ -569,7 +569,7 @@ function ReportEdit() {
                                 <AppSelect label={'관련자'} />
                               </div>
                             </div>
-                            <div className="form-cell wid90">
+                            <div className="form-cell wid100">
                               <div className="form-group wid100">
                                 {/* */}
                                 <AppAutoComplete label="" required />
@@ -600,11 +600,11 @@ function ReportEdit() {
             </div>
           </dd>
         </dl>
-        {/* 조류충돌 */}
+        {/* 이벤트내용 */}
         <dl className={fourExpaned ? 'tg-item active' : 'tg-item'}>
           <dt onClick={() => setFourExpaned(!fourExpaned)}>
             <button type="button" className="btn-tg">
-              조류충돌
+              이벤트 내용
               <span className={fourExpaned ? 'active' : ''}></span>
             </button>
           </dt>
@@ -615,159 +615,64 @@ function ReportEdit() {
                   <div className="form-table">
                     <div className="form-cell wid50 ">
                       <div className="form-group wid100">
-                        {/*새의 종류
-                         */}
-                        <AppTextInput
-                          inputType="text"
-                          placeholder=""
-                          label="새의 종류"
-                          toolTipMessage="자유형식으로 입력가능
-                          예)Waypoint, 이륙 후3시간 경과 시점 등"
-                        />
+                        {/*제목*/}
+                        <AppTextInput inputType="text" placeholder="" label="제목" />
                       </div>
                     </div>
                   </div>
                   <div className="form-table">
                     <div className="form-cell wid50">
-                      <div className="group-box-wrap wid100">
-                        <span className="txt">Size of Bird</span>
-                        <div className="radio-wrap error">
-                          <label>
-                            <input type="radio" checked />
-                            <span>작은</span>
-                          </label>
-                          <label>
-                            <input type="radio" />
-                            <span>중간</span>
-                          </label>
-                          <label>
-                            <input type="radio" />
-                            <span>크기가 큰</span>
-                          </label>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="form-cell wid50">
-                      <div className="group-box-wrap wid100">
-                        <span className="txt">Number Seen</span>
-                        <div className="radio-wrap error">
-                          <label>
-                            <input type="radio" checked />
-                            <span>1</span>
-                          </label>
-                          <label>
-                            <input type="radio" />
-                            <span>2-10</span>
-                          </label>
-                          <label>
-                            <input type="radio" />
-                            <span>11-100</span>
-                          </label>
-                          <label>
-                            <input type="radio" />
-                            <span>More</span>
-                          </label>
+                      <div className="group-box-wrap1 wid100 ">
+                        <span className="txt">
+                          내용 <span className="required">*</span>
+                        </span>
+                        <div className="round-wrap">
+                          {/*개요 */}
+                          <Editor
+                            hideModeSwitch={true}
+                            initialEditType="wysiwyg"
+                            previewStyle="vertical"
+                            // initialValue={initValue}
+                            height={'500px'}
+                            // onChange={() => {}}
+                            usageStatistics={false}
+                            customHTMLSanitizer={(html) => {
+                              return html;
+                            }}
+                            viewer={true}
+                            autofocus={false}
+                            customHTMLRenderer={{
+                              htmlBlock: {
+                                table(node) {
+                                  return [
+                                    { type: 'openTag', tagName: 'table', outerNewLine: true, attributes: node.attrs },
+                                    { type: 'html', content: node.childrenHTML },
+                                    { type: 'closeTag', tagName: 'table', outerNewLine: true },
+                                  ];
+                                },
+                              },
+                            }}
+                          />
                         </div>
                       </div>
                     </div>
                   </div>
-                  <div className="form-table">
+                  {/* 파일첨부영역 : drag */}
+                  <div className="form-table ">
                     <div className="form-cell wid50">
-                      <div className="group-box-wrap wid100">
-                        <span className="txt">Number Struck</span>
-                        <div className="radio-wrap error">
-                          <label>
-                            <input type="radio" checked />
-                            <span>1</span>
-                          </label>
-                          <label>
-                            <input type="radio" />
-                            <span>2-10</span>
-                          </label>
-                          <label>
-                            <input type="radio" />
-                            <span>11-100</span>
-                          </label>
-                          <label>
-                            <input type="radio" />
-                            <span>More</span>
-                          </label>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="form-cell wid50">
-                      <div className="group-box-wrap wid100">
-                        <span className="txt">Time</span>
-                        <div className="radio-wrap error">
-                          <label>
-                            <input type="radio" checked />
-                            <span>새벽</span>
-                          </label>
-                          <label>
-                            <input type="radio" />
-                            <span>낮</span>
-                          </label>
-                          <label>
-                            <input type="radio" />
-                            <span>황혼</span>
-                          </label>
-                          <label>
-                            <input type="radio" />
-                            <span>밤</span>
-                          </label>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="form-table">
-                    <div className="form-cell wid50">
-                      <div className="group-box-wrap wid100">
-                        <span className="txt">Landing Light</span>
-                        <div className="radio-wrap error">
-                          <label>
-                            <input type="radio" checked />
-                            <span>On</span>
-                          </label>
-                          <label>
-                            <input type="radio" />
-                            <span>Off</span>
-                          </label>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="form-cell wid50">
-                      <div className="group-box-wrap wid100">
-                        <span className="txt">Pilot Warned of Birds</span>
-                        <div className="radio-wrap error">
-                          <label>
-                            <input type="radio" checked />
-                            <span>Yes</span>
-                          </label>
-                          <label>
-                            <input type="radio" />
-                            <span>No</span>
-                          </label>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="form-table">
-                    <div className="form-cell wid50 ">
                       <div className="form-group wid100">
-                        {/*Impact Point*/}
-                        <AppTextInput inputType="text" placeholder="" label="Impact Point" />
-                      </div>
-                    </div>
-                  </div>
-                  <div className="form-table">
-                    <div className="form-cell wid50 ">
-                      <div className="form-group wid100">
-                        <AppTextArea
-                          label="Describe: Damage, Injuries and other information"
-                          style={{ width: '100%', height: 100 }}
-                          errorMessage=""
-                          placeholder=""
-                        />
+                        {/* 파일첨부영역 : drag */}
+                        <div className="filebox error">
+                          <Dragger {...props}>
+                            <p className="ant-upload-text ">
+                              + 이 곳을 클릭하거나 마우스로 업로드할 파일을 끌어서 놓으세요.
+                            </p>
+                          </Dragger>
+                          <label htmlFor="file" className="file-label">
+                            첨부파일 <span className="required">*</span>
+                          </label>
+                        </div>
+                        <span className="errorText">fileerror</span>
                       </div>
                     </div>
                   </div>
