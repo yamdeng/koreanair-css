@@ -3,10 +3,14 @@ import {
   DATE_PICKER_TYPE_MONTH,
   DATE_PICKER_TYPE_QUARTER,
   DATE_PICKER_TYPE_YEAR,
+  ERROR_TYPE_CORE,
 } from '@/config/CommonConstant';
 import dayjs from 'dayjs';
 import _ from 'lodash';
 import { nanoid } from 'nanoid';
+import Logger from './Logger';
+import useUIStore from '@/stores/useUIStore';
+import { AxiosError } from 'axios';
 
 const convertEnterStringToBrTag = function (value) {
   return value.replace(/\\r\\n|\r\n|\n|\\n/g, '<br/>');
@@ -61,7 +65,7 @@ const getByLocalStorage = (key) => {
       return null;
     }
   } catch (e) {
-    // TODO : 에러로그
+    Logger.error(`localStorage getByLocalStorage error : ${key}`);
   }
   return null;
 };
@@ -263,6 +267,138 @@ const convertNumberFormat = (numberValue) => {
   return result;
 };
 
+// 오늘날짜 가져오기 (EX: 2024-08-28)
+const getToDate = () => {
+  const now = new Date();
+  const formattedDate = now.toISOString().split('T')[0];
+  return formattedDate;
+};
+
+// 전역 promise 에러 handle
+const handleGlobalUnhandledRejection = function (event) {
+  const reason = event.reason;
+  if (reason) {
+    const errorType = reason.errorType || '';
+    if (reason instanceof AxiosError || errorType === 'api') {
+      const apiConfig = reason.config || {};
+      if (reason.response && reason.response.status === 401) {
+        return;
+      }
+
+      const appErrorObject = {
+        errorType: 'api',
+        message: reason.message,
+        url: apiConfig.url || '',
+        method: apiConfig.method || '',
+        stack: reason.stack ? reason.stack : '',
+      };
+      Logger.error('appErrorObject : ' + JSON.stringify(appErrorObject));
+    } else {
+      const appErrorObject = {
+        errorType: 'otherpromis',
+        message: reason.message || reason.toString(),
+        stack: reason.stack ? reason.stack : '',
+      };
+      Logger.error('appErrorObject : ' + JSON.stringify(appErrorObject));
+    }
+  }
+};
+
+// 전역 오류 에러 handle
+const handleGlobalError = function (message, sourceUrl, lineNumber, column, errorObject) {
+  if (sourceUrl && sourceUrl.includes('.vite')) {
+    // Vite와 관련된 에러는 무시
+    return true;
+  }
+  const { lastErrorMessage, lastSourceUrl } = useUIStore.getState();
+  if (message && sourceUrl) {
+    if (lastErrorMessage === message && sourceUrl === lastSourceUrl) {
+      return true;
+    }
+    useUIStore.getState().changeErrorInfo(message, sourceUrl);
+  }
+  errorObject = errorObject || {};
+  if (errorObject && typeof errorObject === 'string') {
+    errorObject = {
+      message: errorObject,
+    };
+  }
+  if (!errorObject.message) {
+    errorObject.message = message || 'no_message';
+  }
+
+  // full error message
+  let displayErrorMessage = '';
+  displayErrorMessage = displayErrorMessage + 'url : ' + sourceUrl + '\n';
+  displayErrorMessage = displayErrorMessage + 'lineNumber : ' + lineNumber + '\n';
+  displayErrorMessage = displayErrorMessage + 'column : ' + column + '\n';
+  displayErrorMessage = displayErrorMessage + 'message : ' + errorObject.message + '\n';
+
+  // message, stack, errorType
+  const appErrorObject: any = { errorType: errorObject.errorType || ERROR_TYPE_CORE, message: displayErrorMessage };
+  if (errorObject.stack) {
+    appErrorObject.statck = errorObject.stack;
+  }
+  Logger.error('appErrorObject : ' + JSON.stringify(appErrorObject));
+  return false;
+};
+
+// report 페이지 handle 공통 함수
+const openReportPage = (fileName, reportArg) => {
+  window.open(
+    `${import.meta.env.VITE_API_URL}/ubihtml?reportFile=${fileName}&reportArg=${encodeURIComponent(reportArg)}`,
+    '_blank',
+    'status=no,titlebar=no,menubar=no'
+  );
+};
+
+// yup error 기준으로 오류가 난 list index 추출, 첫번째 에러 정보 반환(row의 어떤 컬럼이 오류가 났는지)
+const getYupListErrorInfo = (yupErrors, firstErrorPath, listKey = 'list') => {
+  const validResult: any = {
+    firstListErrorPath: '',
+    firstErrorIndex: -1,
+    isListFirstError: false,
+    listErrorIndexList: [],
+  };
+  const listErrorIndexList = yupErrors
+    .filter((error) => error.path.startsWith(listKey))
+    .map((error) => {
+      // const match = error.path.match(/list\[(\d+)\]/);
+      const regex = listKey ? new RegExp(`${listKey}\\[(\\d+)\\]`) : new RegExp(`\\[(\\d+)\\]`);
+      const match = error.path.match(regex);
+      return match ? parseInt(match[1], 10) : null;
+    })
+    .filter((index) => index !== null);
+
+  // 첫 번째 에러와 해당 경로 추출
+  if (listErrorIndexList.length > 0) {
+    const applyListErrorIndexList = _.uniq(listErrorIndexList);
+    const firstErrorIndex = applyListErrorIndexList[0];
+    const firstError = yupErrors.find((error) => error.path.indexOf(`${listKey}[${firstErrorIndex}]`) !== -1);
+    validResult.listErrorIndexList = applyListErrorIndexList;
+    validResult.firstListErrorPath = firstError.path;
+    validResult.firstErrorIndex = firstErrorIndex;
+    // 첫번째 에러가 list 에러면은 flag 반영
+    if (firstErrorPath === validResult.firstListErrorPath) {
+      validResult.isListFirstError = true;
+    }
+  }
+  return validResult;
+};
+
+const getNowMonthString = () => {
+  return dayjs().format('YYYY-MM');
+};
+
+// date value를 custom한 format으로 변환
+const convertDate = (value, valueFormat, displayFormat) => {
+  let displayDate = '';
+  if (value) {
+    displayDate = dayjs(value, valueFormat).format(displayFormat);
+  }
+  return displayDate;
+};
+
 export default {
   convertEnterStringToBrTag,
   replaceHighlightMarkup,
@@ -283,4 +419,11 @@ export default {
   getNowByServerTime,
   convertNumberFormat,
   convertTreeData,
+  getToDate,
+  handleGlobalError,
+  handleGlobalUnhandledRejection,
+  openReportPage,
+  getYupListErrorInfo,
+  getNowMonthString,
+  convertDate,
 };
