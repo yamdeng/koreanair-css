@@ -53,7 +53,9 @@ import ReportEdit from '@/components/publish/aviation/ReportEdit';
 import CSRReportEdit from '@/components/publish/aviation/CSRReportEdit';
 import MSRReportEdit from '@/components/publish/aviation/MSRReportEdit';
 import GSRReportEdit from '@/components/publish/aviation/GSRReportEdit';
-
+import WorkShopList from '@/components/publish/aviation/WorkShopList';
+import ExcellenceList from '@/components/publish/aviation/ExcellenceList';
+import ExcellenceDetail from '@/components/publish/aviation/ExcellenceDetail';
 import { fa } from '@faker-js/faker';
 import { fail } from 'assert';
 
@@ -173,6 +175,34 @@ AviationPageInfo.list = [
     success: true,
   },
   {
+    title: '[03.안전위험관리] 위험도대장(RiskRegister)',
+    Component: GSRReportEdit,
+    path: 'GSRReportEdit',
+    description: '',
+    success: false,
+  },
+  {
+    title: '[03.안전위험관리] 지상안전조사 > 리스트',
+    Component: GSRReportEdit,
+    path: 'GSRReportEdit',
+    description: '',
+    success: false,
+  },
+  {
+    title: '[03.안전위험관리] 지상안전조사 > 상세',
+    Component: GSRReportEdit,
+    path: 'GSRReportEdit',
+    description: '',
+    success: false,
+  },
+  {
+    title: '[03.안전위험관리] 지상안전조사 > 대시보드 리스트',
+    Component: GSRReportEdit,
+    path: 'GSRReportEdit',
+    description: '',
+    success: false,
+  },
+  {
     title: '[04.안전보증] SPI/SPT > 운영 현황> 운항 정보',
     Component: SPIInfo1,
     path: 'SPIInfo1',
@@ -229,6 +259,20 @@ AviationPageInfo.list = [
     success: true,
   },
   {
+    title: '[04.안전보증] EPS현황 > 운영현항, Risk분석, 진행현황 , HZR 참여실적',
+    Component: SMSDashBoardList,
+    path: 'SMSDashBoardList',
+    description: '',
+    success: false,
+  },
+  {
+    title: '[04.안전보증] 변화관리 > 리스트',
+    Component: SMSDashBoardList2,
+    path: 'SMSDashBoardList2',
+    description: '',
+    success: false,
+  },
+  {
     title: '[04.안전보증] SMS성숙도점검 > 지적사항 리스트',
     Component: SMSintellectualList,
     path: 'SMSintellectualList',
@@ -257,26 +301,48 @@ AviationPageInfo.list = [
     success: true,
   },
   {
-    title: '[ADMIN] 게시판 관리 > 안전목표 List',
-    Component: AdminSafetyList,
-    path: 'AdminSafetyList',
+    title: '[05.안전증진] Safety Program > WorkShop 리스트',
+    Component: WorkShopList,
+    path: 'WorkShopList',
+    description: '',
+    success: false,
+  },
+  {
+    title: '[05.안전증진] Safety Program > SPIP',
+    Component: WorkShopList,
+    path: 'WorkShopList',
+    description: '',
+    success: false,
+  },
+  {
+    title: '[05.안전증진] Safety Program > SafetyDay 리스트',
+    Component: WorkShopList,
+    path: 'WorkShopList',
+    description: '',
+    success: false,
+  },
+  {
+    title: '[05.안전증진] Safety Program > Newsletter 리스트',
+    Component: WorkShopList,
+    path: 'WorkShopList',
+    description: '',
+    success: false,
+  },
+  {
+    title: '[05.안전증진] Safety Program > Excellence 리스트',
+    Component: ExcellenceList,
+    path: 'ExcellenceList',
     description: '',
     success: true,
   },
   {
-    title: '[ADMIN] 게시판 관리 > SPI게시판 List',
-    Component: AdminBoardList,
-    path: 'AdminBoardList',
+    title: '[05.안전증진] Safety Program > Excellence 상세',
+    Component: ExcellenceDetail,
+    path: 'ExcellenceDetail',
     description: '',
     success: true,
   },
-  {
-    title: '[ADMIN] 게시판 관리 > SPI게시판 등록',
-    Component: AdminBoardEdit,
-    path: 'AdminBoardEdit',
-    description: '',
-    success: true,
-  },
+
   {
     title: '[06.AUDIT] MyAuditList',
     Component: MyAuditList,
@@ -302,6 +368,27 @@ AviationPageInfo.list = [
     title: '[06.AUDIT] CheckDetail',
     Component: CheckDetail,
     path: 'CheckDetail',
+    description: '',
+    success: true,
+  },
+  {
+    title: '[07.관리자] 게시판 관리 > 안전목표 List',
+    Component: AdminSafetyList,
+    path: 'AdminSafetyList',
+    description: '',
+    success: true,
+  },
+  {
+    title: '[07.관리자] 게시판 관리 > SPI게시판 List',
+    Component: AdminBoardList,
+    path: 'AdminBoardList',
+    description: '',
+    success: true,
+  },
+  {
+    title: '[07.관리자] 게시판 관리 > SPI게시판 등록',
+    Component: AdminBoardEdit,
+    path: 'AdminBoardEdit',
     description: '',
     success: true,
   },
