@@ -13,10 +13,30 @@ function PAviationPortal1() {
   }, []);
   return (
     <>
-      <div className="left-box1">
-        <div className="">dfdfd</div>
+      <div className="main-top-wrrap">
+        <div className="RiskBox" style={{ border: 'solid 1px blue' }}>
+          <div className="row-top">
+            <h3 className="tit">Top 10 Risk Areas</h3>
+          </div>
+          <div className="rowListbox">
+            <div className="swiper RiskList">
+              <div className="swiper-wrapper">
+                <div className="swiper-slide"></div>
+              </div>
+              <div className="swiper-pagination"></div>
+            </div>
+          </div>
+        </div>
+        <div className="ReprtBox">
+          <div className="ReprtBox"></div>
+        </div>
+
+        <div className="TOdo-box">
+          <div className="">dfdfd</div>
+        </div>
+        <div className="Photo-box">dfdf</div>
+        <div className="Notice-box">dfdf</div>
       </div>
-      <div className="right-setIsAviationPortalbox1">dfdf</div>
       {/*<div className="main_slide">
         <div className="title-area">
           <div className="h2-tit">Top10 RISK AREAS</div>

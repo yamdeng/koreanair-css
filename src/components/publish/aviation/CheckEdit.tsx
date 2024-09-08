@@ -29,7 +29,7 @@ function CheckEdit() {
       </div>
       {/*경로 */}
       <div className="editbox Audit">
-        <div className="form-table line">
+        <div className="form-table ">
           <div className="form-cell wid50">
             <div className="form-group wid100 Position-w">
               <AppTextInput label="해외공항 안전평가 점검표 (ko)12" />

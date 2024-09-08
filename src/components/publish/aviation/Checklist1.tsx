@@ -90,24 +90,38 @@ function Checklist1() {
       </div>
 
       {/*검색영역 */}
-      <div className="btn-area Audit">
-        <div className="btn-area-box">
-          <div className="form-table">
-            <div className="form-cell ">
-              <div className="form-group wid100">
+      <div className="form-table Audit">
+        <div className="form-cell wid100">
+          <div className="form-group wid100">
+            <div className="btn-area Audit">
+              <div className="type5">
                 <AppSelect label={'Lang Type'} />
+              </div>
+              <div className="btn-area-box">
+                {' '}
+                <button type="button" name="button" className="btn-sm btn_text btn-darkblue-line">
+                  Checklist Upload
+                </button>
+                <button type="button" name="button" className="btn-sm btn_text btn-darkblue-line">
+                  Add Checklist
+                </button>
               </div>
             </div>
           </div>
         </div>
-        <button type="button" name="button" className="btn-sm btn_text btn-darkblue-line">
-          Checklist Upload
-        </button>
-        <button type="button" name="button" className="btn-sm btn_text btn-darkblue-line">
-          Add Checklist
-        </button>
       </div>
-      {/* //검색영역 */}
+      {/* <div className="btn-area Audit">
+        <div className="btn-area-box">
+          {' '}
+          <button type="button" name="button" className="btn-sm btn_text btn-darkblue-line">
+            Checklist Upload
+          </button>
+          <button type="button" name="button" className="btn-sm btn_text btn-darkblue-line">
+            Add Checklist
+          </button>
+        </div>
+      </div>
+      //검색영역 */}
 
       <div className="checklist-contents">
         <div className="checklist-row list">

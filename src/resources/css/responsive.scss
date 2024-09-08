@@ -15,8 +15,12 @@
   .left-box {width: 35%;}
   .right-box {width: 65%;}
 
-  .left-box1{width: 60%;}
-  .right-box1{width: 40%}
+
+  /*메인*/
+  .main-top-wrrap .RiskBox{width: 60%;}
+  .main-top-wrrap .ReprtBox{width: 40%}
+
+
 
   .Notification-wrap{width:100%}
 }
@@ -40,6 +44,8 @@
   .editbox .form-table .form-cell {display: flex; align-items: flex-end; justify-content: flex-start; flex-wrap: wrap; width: 33.3%}
   .editbox .form-table .form-cell:nth-child(3) {padding-right: 0;}
   .editbox .line .form-cell {border-bottom: 0.1rem solid var(--color-neutral-40);}
+  .editbox.Audit .line .form-cell {border-bottom: 0rem solid var(--color-neutral-40);}
+ 
   .dp-n {display: none;}
 
 
@@ -59,8 +65,8 @@
   .left-box {width: 35%;}
   .right-box {width: 65%;}
 
-  .left-box1{width: 60%;}
-  .right-box1{width: 40%}
+  .main-top-wrrap .RiskBox{width: 60%;}
+  .main-top-wrrap .ReprtBox{width: 40%}
 
   .c-step-list.default>li:nth-child(1){min-width:16.5rem}
   .c-step-list.default>li:nth-child(2){min-width:15.0rem}
@@ -107,6 +113,7 @@
   .editbox .form-table .form-cell {display: flex; align-items: flex-end; justify-content: flex-start; flex-wrap: wrap; width: 33.3%; padding:1.5rem 1.0rem 1.5rem 0}
   .editbox .form-table .form-cell:nth-child(3) {padding-right: 0;}
   .editbox .line .form-cell {border-bottom: 0.1rem solid var(--color-neutral-40);}
+  .editbox.Audit .line .form-cell {border-bottom: 0rem solid var(--color-neutral-40);}
   .dp-n {display: none;}
   .editbox .form-table + .form-table.SelList{margin-top:-2.0rem}
 
@@ -122,6 +129,8 @@
   .btn-area > button + button {width: 50%;}
   .btn-area > button {margin: 0;}
   
+
+  .btn-area.Audit .btn-area-box{display:inline-flex;justify-content:end;flex:none;width:70%}
   .checklist-contents{display:flex;justify-content:flex-start;flex-wrap:wrap;width:100%}
   .checklist-contents .checklist-row.list{display:flex;justify-content:flex-start;flex-wrap:wrap;width:50%;padding-right:0;margin:0}
 
@@ -149,8 +158,8 @@
   .left-box {width: 35%;}
   .right-box {width: 65%;}
 
-  .left-box1{width: 60%;}
-  .right-box1{width: 40%}
+  .main-top-wrrap .RiskBox{width: 60%;}
+  .main-top-wrrap .ReprtBox{width: 40%}
 
   .c-step-list.default>li:nth-child(1){min-width:10.5rem}
   .c-step-list.default>li:nth-child(2){min-width:15.0rem}
@@ -242,6 +251,7 @@
   .detail-form .detail-list .form-table .form-cell .group-box-wrap{width: 100%;}
   .detail-form .detail-list .form-table .form-cell .btn-area.inbtn{display:block;width:100%}
   .detail-form .detail-list .form-table .form-cell .btn-area.inbtn > .btn-x-sm{padding:0.6rem 2.8rem;}
+  .editbox.Audit .line .form-cell {border-bottom: 0rem solid var(--color-neutral-40);}
 
 
   .SelectedList{width:100%}
@@ -255,16 +265,14 @@
   .btn-area.inbtn > button + button{width:50%;margin-left:0;margin-top:0rem}
   .btn-area > button{margin:0}
 
-
-
-
-
   .contents-btns {display: block; width: 100%;}
   .contents-btns > button {width: 100%; margin: 1.0rem 0;}
   .contents-btns > button.btn-type01 {width: calc(50% - 0.2rem); margin: 1.0rem 0;}
   .contents-btns > button.btn-type01:nth-child(odd) {margin-right:0.2rem;}
 
-
+  .btn-area.Audit{display:block;width:100%}
+  .btn-area.Audit > .type5{width:40%}
+  .btn-area.Audit .btn-area-box{display:inline-flex;width:100%;margin-top:1rem;height:4.0rem}
   .checklist-contents{display:flex;justify-content:flex-start;flex-flow:row wrap;width:100%}
   .checklist-contents .checklist-row.list{display:flex;align-items:flex-end;justify-content:flex-start;flex-wrap:wrap;width:100%;padding-right:0;margin:0}
 
@@ -302,8 +310,10 @@
   .editbox .line .form-cell {border-bottom: 0.1rem solid var(--color-neutral-40);}
   .dp-n {display: none;}
 
+  .editbox.Audit .form-table .form-cell{padding:1rem 0 0rem 0;}
+
   .editbox .form-table .form-cell .form-group.Position-w{width:65%}
-  .editbox .form-table .form-cell .Position-end{position:absolute;right:0;top:-5.5rem;width:15.0rem}
+  .editbox .form-table .form-cell .Position-end{position:absolute;right:0;top:-4rem;width:15.0rem}
 
 
   .detail-form .detail-list .form-table {display: flex; align-items: flex-end; justify-content: flex-start; flex-wrap: wrap; width: 100%;}
@@ -347,9 +357,10 @@
   .left-box .tree-box {height: 100%; max-height: 30.0rem; padding-right: 3.0rem;}
   .right-box {width: 100%;}
 
-  .left-box1{display: block; width: 100%; padding-right: 0;}
+  .main-top-wrrap .RiskBox{display: block; width: 100%; padding-right: 0;}
+  .main-top-wrrap .ReprtBox{width:100%}
 
-  .right-box1{width: 100%;}
+
 
 
   .ant-col-md-2{display:block;flex:0 0 8.33333333%;max-width:11.33333333%}
