@@ -447,8 +447,8 @@ function GSRReportEdit() {
                                         <table className="notice-board Air">
                                           <colgroup>
                                             <col width="5%" />
-                                            <col width="70%" />
-                                            <col width="25%" />
+                                            <col width="80%" />
+                                            <col width="15%" />
                                           </colgroup>
                                           <tr>
                                             <th></th>
@@ -462,7 +462,7 @@ function GSRReportEdit() {
                                               </a>
                                             </td>
                                             <td className="left">Flaps</td>
-                                            <td className="right">
+                                            <td className="btns">
                                               <a href="javascript:void(0);" className="btn-modify">
                                                 수정{' '}
                                               </a>
@@ -579,7 +579,7 @@ function GSRReportEdit() {
                                             <td className="left">sdsdfsfd</td>
                                             <td className="left">sdsdfsfd</td>
                                             <td className="left">sdsdfsfd</td>
-                                            <td className="right">
+                                            <td className="btns">
                                               <a href="javascript:void(0);" className="btn-modify">
                                                 수정{' '}
                                               </a>

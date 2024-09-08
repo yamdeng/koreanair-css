@@ -73,6 +73,11 @@
 .notice-board td.deps-conts{width:100%;background-color:var(--color-neutral-20);padding-left:6rem;padding-right:6rem}
 .notice-board td.plus{position:relative}
 .notice-board td.plus > .btn-plus{position:absolute;left:0;top:0;background: url(/src/resources/images/plus-btn.svg) center center no-repeat;width: 4rem;height: 4rem;background-size: 2.4rem;font-size:0;margin-left:0}
+
+.notice-board td.btns a:first-child{margin-right:0.5rem}
+.btn-modify{border:0.1rem solid var(--color-btn-blue2);color:var(--color-btn-blue2);border-radius:0.8rem;font-size:1.4rem;padding:0rem 0.5rem}
+.btn-delete{border:0.1rem solid var(--color-btn-blue2);color:var(--color-btn-blue2);border-radius:0.8rem;font-size:1.4rem;padding:0rem 0.5rem}
+
 .UserChicebox.Fax{position:relative;border:0.1rem solid var(--color-neutral-40);border-radius:1.0rem;padding:1.0rem 1.0rem 1.0rem}
 .UserChicebox.Fax.error{border:0.1rem solid var(--color-negative);border-radius:1.0rem;padding:2.0rem 1.0rem 1.0rem}
 .UserChicebox.Fax .file-label{display:inline-block;position:absolute;left:1rem;top:-0.9rem;background: var(--color-neutral-10);padding: 0 0.4rem;line-height: 1.4em;font-size: 1.4rem !important;transition: all 0.2s ease}
@@ -83,20 +88,7 @@
 .UserChicebox.bg{position:relative;background-color:var(--color-btn-blue1);border:0.1rem solid var(--color-btn-blue2);border-radius:1.0rem;padding:1.0rem 1.0rem 1.0rem}
 
 
-.row {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  margin-right: -5px;
-  margin-left: -5px;
-}
-.col-auto {
-  -ms-flex: 0 0 auto;
-  flex: 0 0 auto;
-  width: auto;
-  max-width: 100%;
-}
+
 /*메인 .main-top-wrrap{position:relative;display:flex;width:100%}*/
 .contents.Aviation{background-color:var(--color-aviation-mainBg)}
 
@@ -128,8 +120,7 @@
 
 /*지표정보*/
 .Status-area{display:flex;display:inline-table;width:100%}
-.Status-chart{display:
-  ex;gap:0 2.0rem;width:100%}
+.Status-chart{display:flex;gap:0 2.0rem;width:100%}
 .Status-chart + .Status-chart{margin-top:2.5rem}
 .Status-chart .Status-col{position:relative;width:50%}
 .Status-chart .Status-col .h4{color:var(--color-darkblue-100);font-weight:500;font-size:1.8rem;line-height:2.5;letter-spacing:-0.1rem}
