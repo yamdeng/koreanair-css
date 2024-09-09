@@ -130,10 +130,10 @@ function CheckEdit() {
             <span className="btnClear">X</span>
           </button>
           <div className="form-table line">
-            <div className="form-cell wid30">
+            <div className="form-cell">
               <div className="form-group wid100">
                 <div className="df">
-                  <div className="type2 mt10">
+                  <div className="type7 mt10">
                     <AppTextArea label="Contents" style={{ width: '100%', height: 145 }} errorMessage="" />
                     <div className="form-table">
                       <div className="form-cell wid100">
@@ -143,7 +143,7 @@ function CheckEdit() {
                       </div>
                     </div>
                   </div>
-                  <div className="type4">
+                  <div className="type8">
                     <div className="form-table">
                       <div className="form-cell wid100">
                         <div className="form-group wid100">
