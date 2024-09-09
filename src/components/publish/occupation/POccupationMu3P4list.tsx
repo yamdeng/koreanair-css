@@ -65,7 +65,7 @@ function POccupationMu3P4list() {
             <button className="prevday">버튼</button>
 
             <h2 className="datetitle">
-              <span>2024년 9월</span>
+              <span className="month">2024년 9월</span>
             </h2>
 
             <button className="nextday">버튼</button>
@@ -414,27 +414,27 @@ function POccupationMu3P4list() {
             </li>
           </ul>
           <table className="list-table">
-            {/*<thead>
+            <thead>
               <tr>
                 <th>작업상태</th>
                 <th>공사명</th>
               </tr>
-            </thead>*/}
+            </thead>
             <tbody>
               <tr>
-                <td>작업 중</td>
+                <td className="ing">작업 중</td>
                 <td>도로포장</td>
               </tr>
               <tr>
-                <td>작업종료대기</td>
+                <td className="expected">작업예정</td>
                 <td>외벽공사</td>
               </tr>
               <tr>
-                <td>작업 중</td>
+                <td className="wait">작업완료대기</td>
                 <td>도로포장</td>
               </tr>
               <tr>
-                <td>작업종료대기</td>
+                <td className="complete">작업완료</td>
                 <td>외벽공사</td>
               </tr>
               <tr>
