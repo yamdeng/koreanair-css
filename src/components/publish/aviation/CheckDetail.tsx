@@ -96,148 +96,87 @@ function CheckDetail() {
           <div className="form-table line">
             <div className="form-cell wid100">
               <div className="form-group wid100">
-                <div className="box-view-list Audit">
-                  <ul className="view-list">
-                    <li className="accumlate-list">
-                      <span className="text-desc-type1">
-                        1-1 지점장은 공항업무(운송/운항관리/정비/안전보안) 수행에 필요한 인원 및 업무 분장을 지정, 파악
-                        관리한다. (GM - Guidance Material) 지점 조직도, Safety Coordinator, 위임/대행 체계
-                        인원현황(해분야 적정 경력 인력 보임 여부) <br />
-                        업무분장(업무의 범위, 책임, 권한 포함)
-                      </span>
-                    </li>
-                  </ul>
+                <div className="df">
+                  <div className="type9 mt10">
+                    <div className="text-desc-type1">
+                      1-1 지점장은 공항업무(운송/운항관리/정비/안전보안) 수행에 필요한 인원 및 업무 분장을 지정, 파악
+                      관리한다. (GM - Guidance Material) 지점 조직도, Safety Coordinator, 위임/대행 체계 인원현황(해분야
+                      적정 경력 인력 보임 여부) <br />
+                      업무분장(업무의 범위, 책임, 권한 포함) 1-1 지점장은 공항업무(운송/운항관리/정비/안전보안) 수행에
+                      필요한 인원 및 업무 분장을 지정, 파악 관리한다. (GM - Guidance Material) 지점 조직도, Safety
+                      Coordinator, 위임/대행 체계 인원현황(해분야 적정 경력 인력 보임 여부) <br />
+                      업무분장(업무의 범위, 책임, 권한 포함)
+                    </div>
+                    <div className="form-table">
+                      <div className="form-cell wid100">
+                        <div className="form-group wid100">
+                          <span className="text-desc-type1">SMS Manual 3.2.1,Safety Coordinator 운영지침</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="type10">
+                    <div className="form-table">
+                      <div className="form-cell">
+                        <div className="form-group wid100">
+                          <div className="group-box-wrap wid100">
+                            <span className="txt">Priority</span>
+                            <div className="editarea-box view">
+                              <div className="label-box bwid50">
+                                <span className="Option-tag OptionLevel red">High</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="form-table">
+                      <div className="form-cell wid50">
+                        <div className="form-group wid100">
+                          <div className="group-box-wrap wid100">
+                            <span className="txt">Probability</span>
+                            <div className="editarea-box view">
+                              <div className="label-box wid50">
+                                <span className="Option-tag OptionLevel green">Extremdly improbable</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="form-table">
+                      {' '}
+                      <div className="form-cell wid50">
+                        <div className="form-group wid100">
+                          <div className="group-box-wrap wid100">
+                            <span className="txt">Severity</span>
+                            <div className="editarea-box view">
+                              <div className="label-box wid50">
+                                <span className="Option-tag OptionLevel green">Negigible</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  {/*<div className="box-view-list Audit">
+                    <ul className="view-list">
+                      <li className="accumlate-list">
+                        <span className="text-desc-type1">
+                          1-1 지점장은 공항업무(운송/운항관리/정비/안전보안) 수행에 필요한 인원 및 업무 분장을 지정,
+                          파악 관리한다. (GM - Guidance Material) 지점 조직도, Safety Coordinator, 위임/대행 체계
+                          인원현황(해분야 적정 경력 인력 보임 여부) <br />
+                          업무분장(업무의 범위, 책임, 권한 포함)
+                        </span>
+                      </li>
+                    </ul>
+                  </div>*/}
                 </div>
               </div>
             </div>
           </div>
 
-          <div className="form-table line">
-            <div className="form-cell wid100">
-              <div className="form-group wid100">
-                <div className="box-view-list Audit">
-                  <ul className="view-list">
-                    <li className="accumlate-list">
-                      <span className="text-desc-type1"> SMS Manual 3.2.1,Safety Coordinator 운영지침</span>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div className="form-table">
-            <div className="form-cell wid30">
-              <div className="form-group wid100">
-                <div className="group-box-wrap wid100">
-                  <span className="txt">Priority</span>
-                  <div className="editarea-box view">
-                    <div className="label-box bwid50">
-                      <span className="Option-tag OptionLevel red">High</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="form-cell wid50">
-              <div className="form-group wid100">
-                <div className="group-box-wrap wid100">
-                  <span className="txt">Probability</span>
-                  <div className="editarea-box view">
-                    <div className="label-box wid50">
-                      <span className="Option-tag OptionLevel green">Extremdly improbable</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="form-cell wid50">
-              <div className="form-group wid100">
-                <div className="group-box-wrap wid100">
-                  <span className="txt">Severity</span>
-                  <div className="editarea-box view">
-                    <div className="label-box wid50">
-                      <span className="Option-tag OptionLevel green">Negigible</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <hr className="line dp-n"></hr>
-        </div>
-        <div className="editbox">
-          <div className="form-table line">
-            <div className="form-cell wid100">
-              <div className="form-group wid100">
-                <div className="box-view-list Audit">
-                  <ul className="view-list">
-                    <li className="accumlate-list">
-                      <span className="text-desc-type1">
-                        1-1 지점장은 공항업무(운송/운항관리/정비/안전보안) 수행에 필요한 인원 및 업무 분장을 지정, 파악
-                        관리한다. (GM - Guidance Material) 지점 조직도, Safety Coordinator, 위임/대행 체계
-                        인원현황(해분야 적정 경력 인력 보임 여부) <br />
-                        업무분장(업무의 범위, 책임, 권한 포함)
-                      </span>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div className="form-table line">
-            <div className="form-cell wid100">
-              <div className="form-group wid100">
-                <div className="box-view-list Audit">
-                  <ul className="view-list">
-                    <li className="accumlate-list">
-                      <span className="text-desc-type1"> SMS Manual 3.2.1,Safety Coordinator 운영지침</span>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div className="form-table">
-            <div className="form-cell wid30">
-              <div className="form-group wid100">
-                <div className="group-box-wrap wid100">
-                  <span className="txt">Priority</span>
-                  <div className="editarea-box view">
-                    <div className="label-box bwid50">
-                      <span className="Option-tag OptionLevel red">High</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="form-cell wid50">
-              <div className="form-group wid100">
-                <div className="group-box-wrap wid100">
-                  <span className="txt">Probability</span>
-                  <div className="editarea-box view">
-                    <div className="label-box wid50">
-                      <span className="Option-tag OptionLevel green">Extremdly improbable</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="form-cell wid50">
-              <div className="form-group wid100">
-                <div className="group-box-wrap wid100">
-                  <span className="txt">Severity</span>
-                  <div className="editarea-box view">
-                    <div className="label-box wid50">
-                      <span className="Option-tag OptionLevel green">Negigible</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
           <hr className="line dp-n"></hr>
         </div>
         {/*//상세페이지*/}

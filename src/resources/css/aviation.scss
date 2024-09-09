@@ -43,6 +43,8 @@
 .form-group .type6{position:relative;width:50%;margin-left:0.5rem}
 .form-group .type7{position:relative;width:75%}
 .form-group .type8{position:relative;width:30%;margin-left:0.8rem}
+.form-group .type9{position:relative;width:80%}
+.form-group .type10{position:relative;width:20%;margin-top:0;margin-left:0.8rem}
 .form-group .df .type6.Wd{width:100%}
 .form-group .df + .df{margin-top:1rem} 
 
@@ -336,8 +338,10 @@
 .checklist-contents .checklist-row{display:flex;justify-content:flex-start;flex-wrap:wrap;width:25%;box-sizing:border-box;overflow:hidden;margin:1.0rem 0 0rem}
 .checklist-contents .checklist-row .checklist-col{position:relative;width:100%;;height:100%;border-radius:0.8rem;padding:1.2rem 1rem;margin-right:1rem;border:solid 0rem var(--color-neutral-01);background-color:var(--color-neutral-10)}
 
-.box-view-list.Audit .view-list .text-desc-type1{white-space:pre-wrap;font-size:1.5rem}
+.editbox .form-table .form-cell .type9  .text-desc-type1{position:relative;display:block;width:100%;/* padding-right: 0.8rem; */font-weight:400;color:var(--color-neutral-90);text-align: left;overflow:hidden;word-break:break-all;text-overflow:ellipsis;white-space:pre-wrap;font-size:1.5rem}
 .editarea-box.Audit{padding:0;border:0}
+.editbox .type10 .form-table .form-cell{padding:1rem 1rem 1rem 0}
+.editbox .type10 .form-table .form-cell .editarea-box.view{padding:1.1rem 1rem 0.7rem 1rem}
 .checklist-contents.edit > .editbox.edit-detile.Audit{display:block;padding:0 3rem 1.5rem 1.5rem;margin-bottom:2.0rem}
 .editbox.Audit .form-table .form-cell{padding:1rem 0 0 0}
 
