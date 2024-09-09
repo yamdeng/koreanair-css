@@ -174,7 +174,12 @@ function POccupationMu5P3edit() {
       </div>
       {/*경로 */}
       <div className="conts-title">
-        <h2>감소대책 수립 및 실시 </h2>
+        <h2>
+          감소대책 수립 및 실시
+          <span className="print">
+            <a href="javascript:void(0);"></a>
+          </span>
+        </h2>
       </div>
       {/* 입력영역 */}
       <div className="editbox">

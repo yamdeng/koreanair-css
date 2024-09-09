@@ -336,6 +336,7 @@ input, select{font-family:'KoreanAirSans'}
 .conts-title h2{display:flex;float:left;font-family:"KoreanAirSans";font-size:2.8rem;color:var(--color-neutral-80);font-weight:700;letter-spacing:-0.1rem}
 .conts-title h2 span a{position:relative;font-size:2.5rem;color:var(--color-mblue-100);padding-left:1.0rem}
 .conts-title h2 span a:after{content:'';position:absolute;box-sizing:content-box;right:-3.5rem;width:3.0rem;height:3.0rem;background:url(../images/icon-documents.svg)no-repeat center center;cursor:pointer}
+.conts-title h2 span.print a:after{content:'';position:absolute;box-sizing:content-box;right:-3.5rem;width:3.0rem;height:3.0rem;background:url(../images/print.svg)no-repeat center center;cursor:pointer; background-size:3.0rem}
 .conts-title h2.reportview span a{position:relative;font-size:2.5rem;color:var(--color-mblue-100);padding-left:1.0rem}
 .conts-title h2.reportview span a:after{display:none}
 .conts-title h2.reportview ul.section-button{position:relative;display:flex}
