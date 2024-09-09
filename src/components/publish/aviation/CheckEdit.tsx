@@ -53,7 +53,7 @@ function CheckEdit() {
         <div className="swiper-container">
           <div className="menu-tab Audit">
             <a href="javascript:void(0);" className="active" data-label="안전보안일반12">
-              안전보안일반12 (29)
+              안전보안일반12 <em>(29)</em>
               <button type="button" name="button" className="tabs-tab-remove">
                 <span className="btn-list"></span>
               </button>
@@ -62,7 +62,7 @@ function CheckEdit() {
               </button>
             </a>
             <a href="javascript:void(0);" data-label="항공보안(OYA)">
-              항공보안(OYA)
+              종합통제<em>(29)</em>
               <button type="button" name="button" className="tabs-tab-remove">
                 <span className="btn-list-blue"></span>
               </button>
@@ -127,66 +127,75 @@ function CheckEdit() {
         {/* 입력영역 */}
         <div className="editbox edit-detile Audit">
           <button type="button" className="tabs-tab-remove">
-            <span className="delete">X</span>
+            <span className="btnClear">X</span>
           </button>
           <div className="form-table line">
             <div className="form-cell wid30">
               <div className="form-group wid100">
-                <AppTextArea label="Contents" style={{ width: '100%', height: 100 }} errorMessage="" />
-              </div>
-            </div>
-          </div>
+                <div className="df">
+                  <div className="type2 mt10">
+                    <AppTextArea label="Contents" style={{ width: '100%', height: 145 }} errorMessage="" />
+                    <div className="form-table">
+                      <div className="form-cell wid100">
+                        <div className="form-group wid100">
+                          <AppTextInput inputType="text" label={'Reference manual'} />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="type4">
+                    <div className="form-table">
+                      <div className="form-cell wid100">
+                        <div className="form-group wid100">
+                          <div className="group-box-wrap wid100">
+                            <div className="editarea-box Audit">
+                              <div className="form-group wid50">
+                                <AppSelect label={'N/A'} />
+                              </div>
+                              <div className="label-box bwid50">
+                                <span className="Option-tag OptionLevel normal">N/A</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="form-table">
+                      <div className="form-cell wid50">
+                        <div className="form-group wid100">
+                          <div className="group-box-wrap wid100">
+                            <div className="editarea-box Audit">
+                              <div className="form-group wid50">
+                                <AppSelect label={'Extremdly improbable'} />
+                              </div>
+                              <div className="label-box wid50">
+                                <span className="Option-tag OptionLevel normal">Extremdly improbable</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="form-table">
+                      <div className="form-cell wid50">
+                        <div className="form-group wid100">
+                          <div className="group-box-wrap wid100">
+                            <span className="txt">Severity</span>
+                            <div className="editarea-box Audit">
+                              <div className="form-group wid50">
+                                <AppSelect label={'Occasional'} />
+                              </div>
 
-          <div className="form-table line">
-            <div className="form-cell wid30">
-              <div className="form-group wid100">
-                <AppTextInput inputType="text" label={'Reference manual'} />
-              </div>
-            </div>
-          </div>
-          <div className="form-table">
-            <div className="form-cell wid30">
-              <div className="form-group wid100">
-                <div className="group-box-wrap wid100">
-                  <div className="editarea-box Audit">
-                    <div className="form-group wid50">
-                      <AppSelect label={'N/A'} />
-                    </div>
-                    <div className="label-box bwid50">
-                      <span className="Option-tag OptionLevel normal">N/A</span>
+                              <div className="label-box wid50">
+                                <span className="Option-tag OptionLevel normal">Negigible</span>
+                              </div>
+                            </div>
+                            <span className="errorText"></span>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </div>
-                </div>
-              </div>
-            </div>
-            <div className="form-cell wid50">
-              <div className="form-group wid100">
-                <div className="group-box-wrap wid100">
-                  <div className="editarea-box Audit">
-                    <div className="form-group wid50">
-                      <AppSelect label={'Extremdly improbable'} />
-                    </div>
-                    <div className="label-box wid50">
-                      <span className="Option-tag OptionLevel normal">Extremdly improbable</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="form-cell wid50">
-              <div className="form-group wid100">
-                <div className="group-box-wrap wid100">
-                  <span className="txt">Severity</span>
-                  <div className="editarea-box Audit">
-                    <div className="form-group wid50">
-                      <AppSelect label={'Occasional'} />
-                    </div>
-
-                    <div className="label-box wid50">
-                      <span className="Option-tag OptionLevel normal">Negigible</span>
-                    </div>
-                  </div>
-                  <span className="errorText"></span>
                 </div>
               </div>
             </div>
@@ -197,7 +206,7 @@ function CheckEdit() {
         {/* 입력영역 */}
         <div className="editbox edit-detile Audit">
           <button type="button" className="tabs-tab-remove">
-            <span className="delete">X</span>
+            <span className="btnClear">X</span>
           </button>
           <div className="form-table line">
             <div className="form-cell wid30">
@@ -276,7 +285,7 @@ function CheckEdit() {
 
         <div className="editbox edit-detile Audit">
           <button type="button" className="tabs-tab-remove">
-            <span className="delete">X</span>
+            <span className="btnClear">X</span>
           </button>
           <div className="form-table line">
             <div className="form-cell wid30">

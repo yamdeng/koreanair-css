@@ -578,7 +578,7 @@ function PRiskEdit() {
                           </div>
                           <div className="form-group wid100 mt10">
                             <AppAutoComplete label="d" />
-                            <div className="SelectedList memberClass mt10">
+                            <div className="SelectedList Payment mt10">
                               <ul>
                                 <li>
                                   <span className="InfoBox"></span>

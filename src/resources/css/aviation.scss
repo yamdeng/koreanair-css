@@ -33,9 +33,9 @@
 
 .form-group .type0{position:relative;width:10%}
 .form-group .type1{position:relative;width:20%}
-.form-group .type2{position:relative;width:80%;margin-left:0.5rem}
+.form-group .type2{position:relative;width:80%;margin-left:0.8rem}
 .form-group .type3{position:relative;width:60%}
-.form-group .type4{position:relative;width:40%;margin-left:0.5rem}
+.form-group .type4{position:relative;width:40%;margin-left:0.8rem}
 .form-group .type4.Add{border:solid 0.2rem var(--color-darkblue-100);border-radius:0.6rem}
 .form-group .type4.Add .btn_add{padding:0.6rem 1.8rem}
 .form-group .type4.Add .btn_text{width:100%;text-align:center;color:var(--color-darkblue-100);font-weight:600}
@@ -61,8 +61,8 @@
 .flag-tag1 .icon-flag1{border-radius:99.9rem;padding:0.3rem 2.0rem}
 .flag-tag1 .icon-flag1 + .icon-flag1{margin-left:0.5rem}
 .flag-tag .icon-flag.txt{font-family:"KoreanAirSans";font-weight:400;font-size:1.2rem;line-height:1.2rem;color:var(--color-neutral-90)}
-.flag-tag .icon-flag.btn-blue{background-color:var(--color-neutral-10);color:var(--color-darkblue-100);border:solid 0.1rem var(--color-darkblue-100);box-shadow: 0.2rem 0.5rem 0.5rem rgba(0, 0, 0, 0.1);}
-.flag-tag .icon-flag.btn-wh{padding:0.2rem 1rem;line-height:1.2;background-color:var(--color-neutral-10);color:var(--color-neutral-90);box-shadow: 0.2rem 0.5rem 0.5rem rgba(0, 0, 0, 0.1);}
+.flag-tag .icon-flag.btn-blue{background-color:var(--color-neutral-10);color:var(--color-darkblue-100);border:solid 0.1rem var(--color-darkblue-100);box-shadow:0.2rem 0.5rem 0.5rem rgba(0, 0, 0, 0.1)}
+.flag-tag .icon-flag.btn-wh{padding:0.2rem 1rem;line-height:1.2;background-color:var(--color-neutral-10);color:var(--color-neutral-90);box-shadow:0.2rem 0.5rem 0.5rem rgba(0, 0, 0, 0.1)}
 .flag-tag1 .icon-flag1.btn-lightblue{background-color:var(--color-lightblue-40);font-size:1.4rem;line-height:2.8}
 .flag-tag1 .icon-flag1:last-child{margin-right:2rem}
 .flag-tag1 .icon-flag1.active{text-decoration:underline;font-weight:600}
@@ -277,10 +277,11 @@
 
 .tabs-tab-remove{position:relative;/*padding-left:1.1rem*/}
 .tabs-tab-remove .delete{position:absolute;top:-0.8rem;background:url(/src/resources/images/delete-text.svg) center center no-repeat;font-size:0;width:2rem;height:2rem}
+.tabs-tab-remove .btnClear{position:absolute;top:-0.9rem;right:-1rem;width: 2.5rem;height: 2.5rem;font-size:0;background:url(/src/resources/images/delete-text.svg) center center no-repeat;background-size:cover;outline:none;cursor:pointer}
 .tabs-tab-remove .btn-list{position:absolute;top:-0.8rem;width:2.2rem;height:2rem;font-size:0;background:url(../images/icon-register-wh.svg)center center no-repeat;align-items:center}
 .tabs-tab-remove .btn-list-blue{position:absolute;top:-0.8rem;width:2.3rem;height:2rem;font-size:0;background:url(../images/icon-register.svg)center center no-repeat;align-items:center}
 .editbox .form-table + .form-table.SelList{margin-top:-3.0rem}
-.editbox .form-table .form-cell .Position-end{position: absolute;right:0;width:15.0rem}
+.editbox .form-table .form-cell .Position-end{position:absolute;right:0;width:15.0rem}
 
 .number-r{position:relative;display:flex}
 .number-r .title{display:inline-block;line-height:4rem;padding-right:1rem;font-size:1.6rem;font-weight:700}
@@ -291,7 +292,7 @@
 .SelectedList > ul li:hover{background-color:var(--color-btn-blue1)}
 .SelectedList > ul li:last-child{margin-bottom:0}
 .SelectedList > ul li .InfoBox{display:inline-flex;justify-content:center;align-items:center;width:3.6rem;height:3.6rem;border-radius:50%;overflow:hidden;margin-right:0.8rem;background:url(/src/resources/images/no_img_pro.jpg) 50% 50% / 100% no-repeat rgb(204, 204, 204)}
-.SelectedList > ul li .Info{width:83%}
+.SelectedList.Payment > ul li .Info{width:83%}
 .SelectedList > ul li .num{width:10%;text-align:center}
 .SelectedList > ul li > .column-box .column-btn .up{padding:0.2rem 1rem;margin-bottom:0;height:2.6rem;border-right:solid 0rem}
 .SelectedList > ul li > .column-box .column-btn .u:active {background: url(../images/up-btn-lb.svg)center center no-repeat;background-size:1.2rem;width:2rem;height:1.0rem;font-size:0;padding:0.2rem 1rem}
@@ -336,7 +337,9 @@
 .box-view-list.Audit .view-list .text-desc-type1{white-space:pre-wrap;font-size:1.5rem}
 .editarea-box.Audit{padding:0;border:0}
 .checklist-contents.edit > .editbox.edit-detile.Audit{display:block;padding:0 3rem 1.5rem 1.5rem;margin-bottom:2.0rem}
-.editbox.Audit .form-table .form-cell{padding:2rem 0 0 0}
+.editbox.Audit .form-table .form-cell{padding:1rem 0 0 0}
+
+.checklist-contents.edit > .editbox + .editbox{margin-top:2rem}
 
 .checklist-contents .checklist-row.list ul{position:relative;display:flex;flex-direction:column;padding:1.0rem}
 .checklist-contents .checklist-row.list li.list-space{position:relative;display:inline-flex;align-items:center;gap:0.8rem;font-size:1.5rem}
@@ -399,6 +402,8 @@
 
 /*AUDIT-체크리스트 상단 탭*/
 .menu-tab.Audit a{/*padding:0 2rem*/}
+.menu-tab.Audit a.active em{color:var(--color-neutral-10);font-size:1.2rem}
+.menu-tab.Audit a em{color:var(--color-neutral-80);font-size:1.2rem}
 .menu-tab-nav .swiper-container{position:relative;display:flex;overflow:hidden;width:100%;margin-top:0.4rem}
 .menu-tab-nav .swiper-container > .menu-tab-nav-operations{position:absolute;/*top:2.0rem;*/right:0;display:flex;justify-content:flex-start;z-index:1;background-color:var(--color-neutral-10)}
 .menu-tab-nav .swiper-container > .menu-tab-nav-operations .menu-tab-nav-more{width:3.2rem;height:4.6rem;padding:0 3rem;border:solid 0.1rem var(--color-neutral-40);font-size:0;background:url(../images/icon-option.svg)center center no-repeat;align-items:center}
@@ -419,7 +424,7 @@
 .Safety-tag.riskLevel{font-weight:600;text-align:center;color:var(--color-neutral-10) !important}
 .Safety-tag.Select{font-weight:600;text-align:center;background-color:var(--color-darkblue-100);color:var(--color-neutral-10) !important}
 
-.Option-tag{display:inline-block;box-sizing:border-box;color:var(-color-neutral-10);font-size:1.4rem;font-family:'KoreanAirSans';border-radius:99.9rem;line-height:3.7rem;margin:0 0 0 0.8rem;padding:0.1rem 1.5rem;white-space:nowrap}
+.Option-tag{display:inline-block;box-sizing:border-box;color:var(-color-neutral-10);font-size:1.4rem;font-family:'KoreanAirSans';border-radius:99.9rem;line-height:3.4rem;margin:0 0 0 0.8rem;padding:0.1rem 1.5rem;white-space:nowrap}
 .Option-tag.OptionLevel.normal{background-color:var(--color-neutral-10);color:var(--color-neutral-70);border:solid 0.1rem var( --color-neutral-70)}
 .Option-tag.OptionLevel.green{background-color:var(--color-green)}
 .Option-tag.OptionLevel.orange{background-color:var(--color-orange)}

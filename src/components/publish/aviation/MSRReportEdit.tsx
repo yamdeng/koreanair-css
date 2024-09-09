@@ -95,7 +95,7 @@ function MSRReportEdit() {
         </h2>
       </div>
 
-      {/*검색영역 */}
+      {/*검색영역 
       <div className="boxForm">
         <div className="form-table">
           <div className="form-cell wid100">
@@ -105,14 +105,21 @@ function MSRReportEdit() {
           </div>
         </div>
       </div>
-      {/* //검색영역 */}
+      //검색영역 */}
       <div className="info-wrap toggle">
         <dl className="{firstExpaned ? 'tg-item active' : 'tg-item'}">
           {/* 비행정보 */}
           {/* toggle 선택되면  열어지면 active붙임*/}
           <dt onClick={() => setFirstExpaned(!firstExpaned)}>
             <button type="button" className="btn-tg">
-              비행정보<span className={firstExpaned ? 'active' : ''}></span>
+              비행정보
+              <div className="chk-wrap TopCheck">
+                <label>
+                  <input type="checkbox" checked />
+                  <span>Heavy Maintenance</span>
+                </label>
+              </div>
+              <span className={firstExpaned ? 'active' : ''}></span>
               <div className="tag-info-wrap-end">
                 <div className="tip">
                   <div>

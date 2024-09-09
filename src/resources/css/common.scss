@@ -138,14 +138,18 @@ input[type=checkbox],input[type=radio]{padding:0;vertical-align:middle;margin-to
 
 .chk-wrap {display:inline-block;line-height:0}
 .chk-wrap > label {display:inline-block;padding:0rem 0.9rem 0.2rem 2.5rem;line-height:2.2rem;margin:1.2rem 0 0 0.2rem}
-.chk-wrap > label > input + span {display:block;color:var(--color-neutral-90);font-size:1.4rem}
-.chk-wrap > label > input:checked + span{color:var(--color-neutral-80);font-size:1.4rem}
+.chk-wrap > label > input + span {display:block;color:var(--color-neutral-90);font-size:1.4rem;width:auto;background:none}
+.chk-wrap > label > input:checked + span{color:var(--color-neutral-80);font-size:1.4rem;width:auto;background:none}
 .chk-wrap > label > input + span:before, .chk-wrap > label > input + span:after{content:'';position:absolute;top:50%}
 .chk-wrap > label > input + span:before{left:0;width:1.6rem;height:1.6rem;background:transparent;border:0.1rem solid var(--color-neutral-60);border-radius:50%;-webkit-transform:translateY(-50%);transform:translateY(-50%)}
 .chk-wrap > label > input[type="checkbox"] + span:after{left:0.7rem;margin-top:-0.3rem;width:0.8rem;height:0.5rem;border:solid var(--color-neutral-60); border-width:0 0 0.1rem 0.1rem; -webkit-transform:rotate(-45deg) translateY(-50%); transform:rotate(-45deg) translateY(-50%)}
 .chk-wrap > label > input[type="radio"] + span:after{left:0.3rem;width:1.0rem;height:1.0rem;border:0.1rem solid var(--color-neutral-60); border-radius:50%; -webkit-transform:translateY(-50%); transform:translateY(-50%)}
 .chk-wrap > label > input:checked + span:before {border-color:var(--color-darkblue-100);background:var(--color-darkblue-100)}
 .chk-wrap > label > input:checked + span:after{border-color:var(--color-neutral-10)}
+
+
+.chk-wrap.TopCheck > label{display:inline-block;padding:0rem 0.9rem 0.2rem 2.5rem;line-height:2.2rem;margin-left:1rem}
+.chk-wrap.TopCheck > label > input:checked + span{color:var(--color-neutral-80);font-size:1.4rem;width:auto;height:2rem;background:none}
 
 .chk-wrap.center {vertical-align: middle;}
 .chk-wrap > label.text-no {padding:0rem 0.9rem 0.2rem;margin:0;}
