@@ -113,13 +113,16 @@ function MSRReportEdit() {
           <dt onClick={() => setFirstExpaned(!firstExpaned)}>
             <button type="button" className="btn-tg">
               비행정보
+              {/* 체크박스 선택*/}
               <div className="chk-wrap TopCheck">
                 <label>
                   <input type="checkbox" checked />
                   <span>Heavy Maintenance</span>
                 </label>
               </div>
+              {/* //체크박스 선택*/}
               <span className={firstExpaned ? 'active' : ''}></span>
+              {/* info*/}
               <div className="tag-info-wrap-end">
                 <div className="tip">
                   <div>
@@ -136,6 +139,7 @@ function MSRReportEdit() {
                   </div>
                 </div>
               </div>
+              {/* //info*/}
             </button>
           </dt>
           <dd className="tg-conts" style={{ display: firstExpaned ? '' : 'none' }}>
