@@ -68,14 +68,28 @@ function MyAuditList() {
             <div className="user-box-bottom">
               <div className="ant-col ant-col-11">
                 <dl>
-                  <dt>Total</dt>
-                  <dd>126</dd>
+                  <dt className="tot">Total</dt>
+                  <dd className="tot-result text-color-blue">126</dd>
                 </dl>
               </div>
               <div className="ant-col">
                 <dl className="sub-count">
                   <dt>Finding</dt>
-                  <dd>126</dd>
+                  <dd>
+                    <span className="text-color-blue">40/50</span>(80%)
+                  </dd>
+                </dl>
+                <dl className="sub-count">
+                  <dt>Observation</dt>
+                  <dd>
+                    <span className="text-color-blue">18/20</span>(80%)
+                  </dd>
+                </dl>
+                <dl className="sub-count">
+                  <dt>Overdue</dt>
+                  <dd>
+                    <span className="text-color-red">18/20</span>
+                  </dd>
                 </dl>
               </div>
             </div>
@@ -94,20 +108,70 @@ function MyAuditList() {
             <div className="user-box-bottom">
               <div className="ant-col ant-col-11">
                 <dl>
-                  <dt>Total</dt>
-                  <dd>126</dd>
+                  <dt className="tot">Total</dt>
+                  <dd className="tot-result text-color-blue">19</dd>
                 </dl>
               </div>
               <div className="ant-col">
                 <dl className="sub-count">
                   <dt>Finding</dt>
-                  <dd>126</dd>
+                  <dd>
+                    <span className="text-color-blue">40/50</span>(75%)
+                  </dd>
+                </dl>
+                <dl className="sub-count">
+                  <dt>Observation</dt>
+                  <dd>
+                    <span className="text-color-blue">1/20</span>(33%)
+                  </dd>
+                </dl>
+                <dl className="sub-count">
+                  <dt>Overdue</dt>
+                  <dd>
+                    <span className="text-color-red">2</span>
+                  </dd>
                 </dl>
               </div>
             </div>
           </div>
         </div>
-        <div className="user-box">dd</div>
+        <div className="user-box">
+          <div className="user-box-top">
+            <div className="form-table user-head">
+              <div className="form-cell wid100">
+                <div className="form-group wid100">
+                  <div className="h4 tit">My Processing All</div>
+                </div>
+              </div>
+            </div>
+            <div className="user-box-bottom">
+              <div className="wid100">
+                <ul className="pro-list">
+                  <dl>
+                    <dt className="tot">Total</dt>
+                    <dd className="tot-result text-color-yellow">10</dd>
+                  </dl>
+                  <dl>
+                    <dt className="tot">Plan</dt>
+                    <dd className="tot-result text-color-blue">0</dd>
+                  </dl>
+                  <dl>
+                    <dt className="tot">Conduct</dt>
+                    <dd className="tot-result text-color-blue">2</dd>
+                  </dl>
+                  <dl>
+                    <dt className="tot">CAR</dt>
+                    <dd className="tot-result text-color-blue">8</dd>
+                  </dl>
+                  <dl>
+                    <dt className="tot">Overdue</dt>
+                    <dd className="tot-result text-color-red">2</dd>
+                  </dl>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
       {/*//사용자기준 조회범위영역 */}
 

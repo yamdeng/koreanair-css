@@ -267,13 +267,13 @@ function ReportEdit() {
                     <div className="form-cell wid50">
                       <div className="form-group wid50">
                         <div className="UserChicebox Flight error">
-                          <div className="form-group wid100">
+                          {/* <div className="form-group wid100">
                             <AppSelect label={'비행승무원'} />
                             <label htmlFor="file" className="file-label">
                               비행승무원 <span className="required"></span>
                             </label>
-                          </div>
-                          <div className="form-group wid100">
+                          </div> */}
+                          {/* <div className="form-group wid100">
                             <AppAutoComplete label="d" />
                             <div className="SelectedList memberClass mt10">
                               <ul>
@@ -298,8 +298,8 @@ function ReportEdit() {
                                 </li>
                               </ul>
                             </div>
-                          </div>
-                          {/*2개만 존재하는 경우
+                          </div> */}
+                          {/* 2개만 존재하는 경우 */}
                           <div className="form-group wid100">
                             <AppAutoComplete label="d" />
                             <label htmlFor="file" className="file-label">
@@ -328,7 +328,7 @@ function ReportEdit() {
                                 </li>
                               </ul>
                             </div>
-                          </div>*/}
+                          </div>
                         </div>
                       </div>
                     </div>
