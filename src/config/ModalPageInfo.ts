@@ -46,6 +46,7 @@ import MU5P3Modal from '@/components/publish/modal/MU5P3Modal';
 import MU5P4Modal from '@/components/publish/modal/MU5P4Modal';
 import PReportDocumentModal from '@/components/publish/modal/PReportDocumentModal';
 import MU4P2Modal from '@/components/publish/modal/MU4P2Modal';
+import PayGroupModal from '@/components/publish/modal/PayGroupModal';
 
 const ModalPageInfo: any = {};
 
@@ -174,6 +175,13 @@ ModalPageInfo.list = [
     title: '[항공안전> 03.안전위험관리] 안전조사 > 조사보고서 > 참고문서번호 팝업창',
     Component: PReportDocumentModal,
     path: 'PReportDocumentModal',
+    description: '',
+    success: true,
+  },
+  {
+    title: '[항공안전> 03.안전위험관리] 안전조사 > 조사보고서 > 결제그룹정보설정 팝업창',
+    Component: PayGroupModal,
+    path: 'PayGroupModal',
     description: '',
     success: false,
   },
