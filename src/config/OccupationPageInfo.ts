@@ -462,7 +462,7 @@ OccupationPageInfo.list = [
     Component: POccupationMu3P4list,
     path: 'POccupationMu3P4list',
     description: '',
-    success: false,
+    success: true,
   },
   {
     title: '안전관리 > 외주작업허가-조회-리스트',
@@ -658,21 +658,21 @@ OccupationPageInfo.list = [
     Component: POccupationMu5P2edit,
     path: 'POccupationMu5P2edit',
     description: '',
-    success: false,
+    success: true,
   },
   {
     title: '위험성평가 > 위험성 평가-등록-유해 위험요인 파악',
     Component: POccupationMu5P2edit1,
     path: 'POccupationMu5P2edit1',
     description: '',
-    success: false,
+    success: true,
   },
   {
     title: '위험성평가 > 위험성 평가-등록-위험성 결정',
     Component: POccupationMu5P2edit2,
     path: 'POccupationMu5P2edit2',
     description: '',
-    success: false,
+    success: true,
   },
   {
     title: '위험성평가 > 위험성 평가-등록-첨부문서',

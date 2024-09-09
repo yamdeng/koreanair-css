@@ -98,19 +98,6 @@ function POccupationMu5P2edit2() {
       {/*경로 */}
       <div className="conts-title">
         <h2>위험성평가 등록</h2>
-        <div className="tooltip ">
-          <span className="tooltiptext tooltip-right">
-            <h3>작성요령 예시</h3>
-            <ul>
-              <li>공정명(크리닝)</li>
-              <li>세부 작업명(분부세척, part 침전, 건조)</li>
-              <li>위험분류(드롭다운 선택)</li>
-              <li>위험발생 상황(어떤 위험요인에 의해 어떤 재해발생이 우려됨)</li>
-              <li>현재의 안전보건조치(공학적, 관리적, 개인적 대책)</li>
-              <li>위험성 결정(사고발생 가능성 및 예상 피해정도)</li>
-            </ul>
-          </span>
-        </div>
       </div>
       {/*탭 */}
       <div className="menu-tab-nav">
@@ -140,7 +127,17 @@ function POccupationMu5P2edit2() {
               <span className="active"></span>
               <div className="tag-info-wrap">
                 <div className="tooltip">
-                  <span className="hide">툴팁아이콘</span>
+                  <div className="tooltiptext tooltip-right">
+                    <h3>작성요령 예시</h3>
+                    <ul>
+                      <li>공정명(크리닝)</li>
+                      <li>세부 작업명(분부세척, part 침전, 건조)</li>
+                      <li>위험분류(드롭다운 선택)</li>
+                      <li>위험발생 상황(어떤 위험요인에 의해 어떤 재해발생이 우려됨)</li>
+                      <li>현재의 안전보건조치(공학적, 관리적, 개인적 대책)</li>
+                      <li>위험성 결정(사고발생 가능성 및 예상 피해정도)</li>
+                    </ul>
+                  </div>
                 </div>
               </div>
             </button>
@@ -217,6 +214,30 @@ function POccupationMu5P2edit2() {
             <button type="button" className="btn-tg">
               위험성 결정
               <span className="active"></span>
+              {/*가능성, 중대성, 위험도 - 팝업 */}
+              <div className="tag-info-wrap-end">
+                <div className="tip">
+                  <div>
+                    <a href="javascript:void(0);" className="txt">
+                      가능성
+                    </a>
+                  </div>
+                </div>
+                <div className="tip">
+                  <div>
+                    <a href="javascript:void(0);" className="txt">
+                      중대성
+                    </a>
+                  </div>
+                </div>
+                <div className="tip">
+                  <div>
+                    <a href="javascript:void(0);" className="txt">
+                      위험도
+                    </a>
+                  </div>
+                </div>
+              </div>
             </button>
           </dt>
           <dd className="tg-conts">
@@ -226,7 +247,7 @@ function POccupationMu5P2edit2() {
                   <div className="form-table">
                     <div className="form-cell wid50">
                       <div className="form-group wid100">
-                        <AppTextInput inputType="text" placeholder="" label="가능성" toolTipMessage="가능성안내" />
+                        <AppTextInput inputType="text" placeholder="" label="가능성" />
                       </div>
                     </div>
                     <div className="form-cell wid50">

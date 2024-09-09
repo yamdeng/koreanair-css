@@ -159,6 +159,23 @@ input[type=checkbox],input[type=radio]{padding:0;vertical-align:middle;margin-to
 .tag-info-wrap{position:relative;display:inline-flex;justify-content:flex-end}
 .tag-info-wrap .tooltip{float:inline-end;top:0.8rem;background: url(/src/resources/images/tooltip.svg) left center no-repeat;background-size: 3.0rem;font-size: 0;width: 3.0rem;height: 3.0rem;cursor:pointer}
 
+.tag-info-wrap .tooltip.tabbox {margin: 0.4rem 1.0rem 1.5rem; padding: 2.2rem 0;}
+.tag-info-wrap .tooltip{position:relative;display:block;float:inline-start;background: url(../images/tooltip.svg) left center no-repeat; background-size: 3.0rem;font-size:0;width: 3.0rem;height: 3.0rem;cursor:pointer}
+.tag-info-wrap .tooltip .tooltiptext h3 {font-size: 1.3rem; color: var(--color-neutral-10); font-weight: 700;}
+.tag-info-wrap .tooltip .tooltiptext{visibility:hidden;position:absolute;z-index:1;width:30.0rem;font-size:1.2rem;background-color: var(--color-neutral-80);color: var(--color-neutral-10);text-align:left;border-radius:0.8rem;padding:1.5rem 2.0rem}
+.tag-info-wrap .tooltip .tooltiptext li::marker{content:'-';color: var(--color-neutral-10);font-size:1rem}
+.tag-info-wrap .tooltip .tooltiptext ul li{font-size: 1.2rem; color: var(--color-neutral-10);  display: list-item; padding-left: 0.6rem;}
+.tag-info-wrap .tooltip:hover .tooltiptext{visibility:visible}
+.tag-info-wrap .tooltip .tooltiptext::after{content:'';position:absolute;border-style:solid;border-width:0.5rem}
+.tag-info-wrap .tooltip .tooltip-right{top:-0.6rem;left:155%}
+.tag-info-wrap .tooltip .tooltip-right::after{top:2.6rem;right:100%;margin-top:-1.0rem;border-color: transparent var(--color-neutral-80) transparent transparent}
+
+.tag-info-wrap .tooltip .tooltip-bottom {width: 12.0rem; top: 150%; left: 50%; margin-left: -6.0rem}
+.tag-info-wrap .tooltip .tooltip-bottom::after {bottom: 100%; left: 50%; margin-left: -0.5rem; border-color: transparent transparent var(--color-neutral-80) transparent;}
+
+
+
+
 /*아코디언 텍스트 맨 끝에 위치*/
 .tag-info-wrap-end{position:absolute;right:5rem;display:inline-flex;justify-content:flex-end}
 .tag-info-wrap-end .tip{background:url(/src/resources/images/tooltip.svg) left center no-repeat;background-size:3.0rem;font-size:0;height:3.0rem;line-height:3.0rem;cursor:pointer}

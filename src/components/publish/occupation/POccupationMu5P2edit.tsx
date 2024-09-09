@@ -120,6 +120,16 @@ function POccupationMu5P2edit() {
           <dt>
             <button type="button" className="btn-tg">
               기본 사항<span className="active"></span>
+              {/*평가시기 - 팝업 */}
+              <div className="tag-info-wrap-end">
+                <div className="tip">
+                  <div>
+                    <a href="javascript:void(0);" className="txt">
+                      평가시기
+                    </a>
+                  </div>
+                </div>
+              </div>
             </button>
           </dt>
           <dd className="tg-conts">
