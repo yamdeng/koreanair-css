@@ -6,9 +6,12 @@ import { Editor } from '@toast-ui/react-editor';
 import { DatePicker, TreeSelect } from 'antd';
 import { useState } from 'react';
 import Modal from 'react-modal';
+import AppRangeDatePicker from '@/components/common/AppRangeDatePicker';
 import AppTable from '@/components/common/AppTable';
 
 function ReportDocumentModal(props) {
+  const [firstDateRangeValue, setFirstDateRangeValue] = useState(['', '']);
+  const [firstTimeValue, setFirstTimeValue] = useState('22:25:50');
   const [inputValue, setInputValue] = useState('');
   const [selectedOption, setSelectedOption] = useState();
   const { isOpen, closeModal } = props;
@@ -38,86 +41,46 @@ function ReportDocumentModal(props) {
               <div className="boxForm">
                 <div id="" className="area-detail active">
                   <div className="form-table">
-                    <div className="form-cell wid50">
-                      <span className="form-group wid100 mr5">
-                        <input
-                          type="text"
-                          className="form-tag"
-                          name="title"
-                          value={inputValue}
-                          onChange={(event) => {
-                            setInputValue(event.target.value);
-                          }}
-                        />
-                        <label className="f-label">
-                          Sbject <span className="required">*</span>
-                        </label>
+                    <div className="form-cell wid30">
+                      <span className="form-group wid100">
+                        <AppSelect label={'Data'} />
                       </span>
                     </div>
                     <div className="form-cell wid50">
                       <span className="form-group wid100">
-                        <AppSelect
-                          style={{ width: '100%' }}
-                          options={[
-                            {
-                              value: 'jack',
-                              label: 'Jack',
-                            },
-                            {
-                              value: 'lucy',
-                              label: 'Lucy',
-                            },
-                            {
-                              value: 'Yiminghe',
-                              label: 'yiminghe',
-                            },
-                            {
-                              value: 'disabled',
-                              label: 'Disabled',
-                              disabled: true,
-                            },
-                          ]}
+                        <AppRangeDatePicker
+                          label={'range-date'}
+                          onChange={(value) => setFirstDateRangeValue(value)}
+                          value={firstDateRangeValue}
+                          showNow={false}
                         />
                       </span>
                     </div>
                   </div>
 
                   <div className="form-table">
-                    <div className="form-cell ">
-                      <span className="form-group wid100">
-                        <span className="form-group wid100">
-                          <AppSelect
-                            style={{ width: '100%' }}
-                            options={[
-                              {
-                                value: 'jack',
-                                label: 'Jack',
-                              },
-                              {
-                                value: 'lucy',
-                                label: 'Lucy',
-                              },
-                              {
-                                value: 'Yiminghe',
-                                label: 'yiminghe',
-                              },
-                              {
-                                value: 'disabled',
-                                label: 'Disabled',
-                                disabled: true,
-                              },
-                            ]}
-                          />
-                        </span>
-                      </span>
+                    <div className="form-cell wid50">
+                      <div className="form-group wid100">
+                        {/*멀티셀렉 */}
+                        <AppSelect label={''} />
+                      </div>
                     </div>
                     <div className="form-cell wid50">
-                      <div className="form-group form-glow">
-                        <div className="df"></div>
+                      <div className="form-group wid100">
+                        <AppTextInput label="제목" />
                       </div>
                     </div>
                   </div>
+                  <div className="btn-area">
+                    <button type="button" name="button" className="btn-sm btn_text btn-darkblue-line">
+                      조회
+                    </button>
+                    <button type="button" name="button" className="btn-sm btn_text btn-darkblue-line">
+                      초기화
+                    </button>
+                  </div>
                 </div>
+
                 {/*__control명 옆에 active  */}
                 <button type="button" name="button" className="arrow button _control active">
                   <span className="hide">접기</span>
