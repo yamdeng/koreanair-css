@@ -395,25 +395,26 @@
     }
     .table-box {
       display: inline-flex;
-      /*justify-content: flex-end; 
-      flex-direction: row;*/
-      width: 100%;
+      justify-content: flex-end; 
+      flex-direction: row;
       height: calc(100% - 22.2rem);
+      width: 100%;
       text-align: left;
-    .left-table { width: 100%; overflow-y: auto; vertical-align: top;}
+    .left-table {width: 100%; height: 100%; overflow-y: auto; margin-right: 1.0rem; vertical-align: top;}
     
   
-    .left-table .group {width: 100%;}
+    .left-table .group {display:inline-block;}
     .left-table .group .group-box {border: 0.1rem solid var(--color-neutral-40); box-sizing: border-box; margin: 0.2rem;}
-    .left-table .group .group-box li {text-align: center; width: 100%; min-width: 20.0rem; padding: 1.0rem;}
+    .left-table .group .group-box li {text-align: center; width: 100%; min-width: 11.0rem; padding: 1.0rem; display: inline-block;}
     .left-table .group .group-box li:first-child {background-color: var(--color-neutral-20);}
     /*.left-table .group .group-box li:last-child{ border-top: 0.1rem solid var(--color-neutral-40);}*/
-    .left-table .group .group-box:hover li {background-color: var(--color-lightblue-10);}
+    .left-table .group .group-box:hover li:first-child, .left-table .group .group-box:active li:first-child {background-color: var(--color-lightblue-20);}
+    .left-table .group .group-box:hover li, .left-table .group .group-box:active li {background-color: var(--color-lightblue-10);}
  
 
-    .right-table {display: inline-block; width: 100%; vertical-align: top; height: 100%; overflow-y: auto;}
-    .right-table .group-box {border: 0.1rem solid var(--color-neutral-40); border-radius: 0.8rem; padding: 2.0rem; }
-    .right-table .group-box:first-child {margin-bottom: 2.0rem;}
+    .right-table {display: inline-block; width: 100%; vertical-align: top; height: 100%; overflow-y: auto; max-width: 65.0rem;}
+    .right-table .group-box {border: 0.1rem solid var(--color-neutral-40); border-radius: 0.8rem; padding: 1.5rem 2.0rem; }
+    .right-table .group-box:first-child {margin-bottom: 1.0rem;}
     .right-table .group-box table {border-top: 0.1rem solid var(--color-darkblue-100); width: 100%;}
     .right-table .group-box table th {background-color: var(--color-neutral-20);}
     .right-table .group-box table th, .right-table .group-box table td {font-size: 1.4rem; padding: 0.5rem 1.0rem; border-bottom: 0.1rem solid var(--color-neutral-40); width: 100%;}
@@ -770,3 +771,38 @@
 .table-wrap {display: flex; width: 100%; padding-bottom: 2.0rem;}
 .table-wrap .left-table {display: inline-block; width: 100%; vertical-align: top; padding-right: 3.0rem;}
 .table-wrap .right-table {display: inline-block; width: 100%; height: 100%; vertical-align: top;}
+
+
+.floatingmenu {position: fixed; right: 2.4rem; bottom: 2.4rem; width: 15.0rem; height: 15.0rem; background-color: #E35B4F; text-align: center; border-radius: 99.9rem;}
+.main-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2.4rem;
+  width: 100%;
+  height: calc(100% - 8.8rem);
+  justify-content: flex-start;
+  align-items: flex-start;
+ div {width: calc(33.3% - 2.4rem); height: 100px; background-color: var(--color-neutral-20); border: 0.1rem solid var(--color-neutral-40); border-radius: 0.8rem; text-align: center;}
+ .size {height: 200px; width: 33.4%;}
+ .size1 {width: 66.7%;}
+  .main-top-group {
+   display: inline-flex;
+    background-color: #E35B4F;
+    width: 100%;
+    .main-top-left-group {
+      width: 100%;
+      background-color: burlywood;
+    }
+    .main-top-right-group {
+      width: 100%;
+      background-color: yellow;
+    }
+  }
+  .main-footer-group {
+    display: inline-flex;
+    background-color: aquamarine;
+    width: 100%;
+    .main-footer-left-group { border: 0.1rem solid var(--color-neutral-40); border-radius: 0.8rem; background-color: var(--color-neutral-10);}
+    .main-footer-right-group {border: 0.1rem solid var(--color-neutral-40); border-radius: 0.8rem; background-color: var(--color-neutral-10);}
+  }
+}

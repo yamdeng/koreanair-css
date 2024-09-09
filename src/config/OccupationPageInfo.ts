@@ -427,7 +427,7 @@ OccupationPageInfo.list = [
     Component: POccupationMu3P2list,
     path: 'POccupationMu3P2list',
     description: '',
-    success: false,
+    success: true,
   },
   {
     title: '안전관리 > 위험기계기구-조회',

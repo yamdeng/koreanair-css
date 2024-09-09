@@ -184,22 +184,50 @@ function POccupationMu3P4detail() {
                   <div className="form-table">
                     <div className="form-cell wid50">
                       <div className="form-group wid100">
-                        <AppTextInput label="부문" disabled />
+                        <div className="box-view-list">
+                          <ul className="view-list">
+                            <li className="accumlate-list">
+                              <label className="t-label">부문</label>
+                              <span className="text-desc-type1">부문</span>
+                            </li>
+                          </ul>
+                        </div>
                       </div>
                     </div>
                     <div className="form-cell wid50">
                       <div className="form-group wid100">
-                        <AppTextInput label="부서" disabled />
+                        <div className="box-view-list">
+                          <ul className="view-list">
+                            <li className="accumlate-list">
+                              <label className="t-label">부서</label>
+                              <span className="text-desc-type1">부서</span>
+                            </li>
+                          </ul>
+                        </div>
                       </div>
                     </div>
                     <div className="form-cell wid50">
                       <div className="form-group wid100">
-                        <AppTextInput label="이름" disabled />
+                        <div className="box-view-list">
+                          <ul className="view-list">
+                            <li className="accumlate-list">
+                              <label className="t-label">이름</label>
+                              <span className="text-desc-type1">홍길동</span>
+                            </li>
+                          </ul>
+                        </div>
                       </div>
                     </div>
                     <div className="form-cell wid50">
                       <div className="form-group wid100">
-                        <AppTextInput label="연락처" disabled />
+                        <div className="box-view-list">
+                          <ul className="view-list">
+                            <li className="accumlate-list">
+                              <label className="t-label">연락처</label>
+                              <span className="text-desc-type1">000-0000-0000</span>
+                            </li>
+                          </ul>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -220,22 +248,50 @@ function POccupationMu3P4detail() {
                   <div className="form-table">
                     <div className="form-cell wid50">
                       <div className="form-group wid100">
-                        <AppTextInput label="부문" disabled />
+                        <div className="box-view-list">
+                          <ul className="view-list">
+                            <li className="accumlate-list">
+                              <label className="t-label">부문</label>
+                              <span className="text-desc-type1">부문</span>
+                            </li>
+                          </ul>
+                        </div>
                       </div>
                     </div>
                     <div className="form-cell wid50">
                       <div className="form-group wid100">
-                        <AppTextInput label="부서" disabled />
+                        <div className="box-view-list">
+                          <ul className="view-list">
+                            <li className="accumlate-list">
+                              <label className="t-label">부서</label>
+                              <span className="text-desc-type1">부서</span>
+                            </li>
+                          </ul>
+                        </div>
                       </div>
                     </div>
                     <div className="form-cell wid50">
                       <div className="form-group wid100">
-                        <AppTextInput label="이름" disabled />
+                        <div className="box-view-list">
+                          <ul className="view-list">
+                            <li className="accumlate-list">
+                              <label className="t-label">이름</label>
+                              <span className="text-desc-type1">홍길동</span>
+                            </li>
+                          </ul>
+                        </div>
                       </div>
                     </div>
                     <div className="form-cell wid50">
                       <div className="form-group wid100">
-                        <AppTextInput label="연락처" disabled />
+                        <div className="box-view-list">
+                          <ul className="view-list">
+                            <li className="accumlate-list">
+                              <label className="t-label">연락처</label>
+                              <span className="text-desc-type1">000-0000-0000</span>
+                            </li>
+                          </ul>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -256,7 +312,14 @@ function POccupationMu3P4detail() {
                   <div className="form-table">
                     <div className="form-cell wid50">
                       <div className="form-group wid100">
-                        <AppTextInput label="공사명" disabled />
+                        <div className="box-view-list">
+                          <ul className="view-list">
+                            <li className="accumlate-list">
+                              <label className="t-label">공사명</label>
+                              <span className="text-desc-type1">공사명</span>
+                            </li>
+                          </ul>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -266,7 +329,7 @@ function POccupationMu3P4detail() {
                         <span className="txt">불안전 행동</span>
                         <div className="radio-wrap">
                           <label>
-                            <input type="checkbox" />
+                            <input type="checkbox" checked />
                             <span>건축</span>
                           </label>
                           <label>
@@ -294,7 +357,7 @@ function POccupationMu3P4detail() {
                         <span className="txt">특별교육 대상</span>
                         <div className="radio-wrap">
                           <label>
-                            <input type="radio" />
+                            <input type="radio" checked />
                             <span>건축</span>
                           </label>
                           <button className="radio-btn">교육내용</button>
@@ -310,56 +373,126 @@ function POccupationMu3P4detail() {
                   <div className="form-table">
                     <div className="form-cell wid50">
                       <div className="form-group wid100">
-                        <AppTextInput label="시공사" required />
+                        <div className="box-view-list">
+                          <ul className="view-list">
+                            <li className="accumlate-list">
+                              <label className="t-label">시공사</label>
+                              <span className="text-desc-type1">시공사</span>
+                            </li>
+                          </ul>
+                        </div>
                       </div>
                     </div>
                     <div className="form-cell wid50">
                       <div className="form-group wid100">
-                        <AppTextInput label="담당자" required />
+                        <div className="box-view-list">
+                          <ul className="view-list">
+                            <li className="accumlate-list">
+                              <label className="t-label">담당자</label>
+                              <span className="text-desc-type1">담당자</span>
+                            </li>
+                          </ul>
+                        </div>
                       </div>
                     </div>
                     <div className="form-cell wid50">
                       <div className="form-group wid100">
-                        <AppTextInput label="연락처" required />
+                        <div className="box-view-list">
+                          <ul className="view-list">
+                            <li className="accumlate-list">
+                              <label className="t-label">연락처</label>
+                              <span className="text-desc-type1">000-0000-0000</span>
+                            </li>
+                          </ul>
+                        </div>
                       </div>
                     </div>
                   </div>
                   <div className="form-table">
                     <div className="form-cell wid50">
                       <div className="form-group wid100">
-                        <AppTextInput label="공사장소" required />
+                        <div className="box-view-list">
+                          <ul className="view-list">
+                            <li className="accumlate-list">
+                              <label className="t-label">공사장소</label>
+                              <span className="text-desc-type1">공사장소</span>
+                            </li>
+                          </ul>
+                        </div>
                       </div>
                     </div>
                     <div className="form-cell wid50">
                       <div className="form-group wid100">
-                        <AppTextInput label="공사위치" />
+                        <div className="box-view-list">
+                          <ul className="view-list">
+                            <li className="accumlate-list">
+                              <label className="t-label">공사위치</label>
+                              <span className="text-desc-type1">공사위치</span>
+                            </li>
+                          </ul>
+                        </div>
                       </div>
                     </div>
                     <div className="form-cell wid50">
                       <div className="form-group wid100">
-                        <AppTextInput label="공사인원" required />
+                        <div className="box-view-list">
+                          <ul className="view-list">
+                            <li className="accumlate-list">
+                              <label className="t-label">공사인원</label>
+                              <span className="text-desc-type1">공사인원</span>
+                            </li>
+                          </ul>
+                        </div>
                       </div>
                     </div>
                   </div>
                   <div className="form-table">
                     <div className="form-cell wid50">
                       <div className="form-group wid100">
-                        <AppDatePicker label="공사 시작일시" required />
+                        <div className="box-view-list">
+                          <ul className="view-list">
+                            <li className="accumlate-list">
+                              <label className="t-label">공사시작일시</label>
+                              <span className="text-desc-type1">2024-00-00</span>
+                            </li>
+                          </ul>
+                        </div>
                       </div>
                     </div>
                     <div className="form-cell wid50">
                       <div className="form-group wid100">
-                        <AppTimePicker label="공사 시작시간" required />
+                        <div className="box-view-list">
+                          <ul className="view-list">
+                            <li className="accumlate-list">
+                              <label className="t-label">공사 시작시간</label>
+                              <span className="text-desc-type1">00:00</span>
+                            </li>
+                          </ul>
+                        </div>
                       </div>
                     </div>
                     <div className="form-cell wid50">
                       <div className="form-group wid100">
-                        <AppDatePicker label="공사 종료일시" required />
+                        <div className="box-view-list">
+                          <ul className="view-list">
+                            <li className="accumlate-list">
+                              <label className="t-label">공사 종료일시</label>
+                              <span className="text-desc-type1">2024-00-00</span>
+                            </li>
+                          </ul>
+                        </div>
                       </div>
                     </div>
                     <div className="form-cell wid50">
                       <div className="form-group wid100">
-                        <AppTimePicker label="공사 종료시간" required />
+                        <div className="box-view-list">
+                          <ul className="view-list">
+                            <li className="accumlate-list">
+                              <label className="t-label">공사 종료시간</label>
+                              <span className="text-desc-type1">00:00</span>
+                            </li>
+                          </ul>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -424,7 +557,7 @@ function POccupationMu3P4detail() {
                         </ul>
                         <div className="radio-wrap border-no pd-style">
                           <label>
-                            <input type="checkbox" />
+                            <input type="checkbox" checked />
                             <span>위 사항에 대해 충분히 이해하고 입력한 정보로 작업허가를 신청합니다.</span>
                           </label>
                         </div>
@@ -447,7 +580,14 @@ function POccupationMu3P4detail() {
                   <div className="form-table">
                     <div className="form-cell wid50">
                       <div className="form-group wid-300">
-                        <AppDatePicker label="실제 시작일" placeholder="2024-09-01" disabled />
+                        <div className="box-view-list">
+                          <ul className="view-list">
+                            <li className="accumlate-list">
+                              <label className="t-label">실제시작일</label>
+                              <span className="text-desc-type1">2024-00-00</span>
+                            </li>
+                          </ul>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -516,7 +656,14 @@ function POccupationMu3P4detail() {
                   <div className="form-table">
                     <div className="form-cell wid50">
                       <div className="form-group wid100">
-                        <AppTextInput label="비고" disabled />
+                        <div className="box-view-list">
+                          <ul className="view-list">
+                            <li className="accumlate-list">
+                              <label className="t-label">비고</label>
+                              <span className="text-desc-type1">비고</span>
+                            </li>
+                          </ul>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -524,35 +671,29 @@ function POccupationMu3P4detail() {
                   <div className="form-table">
                     <div className="form-cell wid50">
                       <div className="form-group wid100">
-                        <div className="filebox error">
-                          <Upload
-                            action="https://660d2bd96ddfa2943b33731c.mockapi.io/api/upload"
-                            listType="picture-card"
-                            fileList={fileList}
-                            onPreview={handlePreview}
-                            onChange={handleChange}
-                          >
-                            {fileList.length >= 8 ? null : uploadButton}
-                          </Upload>
-                          <label htmlFor="file" className="file-label">
-                            사진첨부{/*<span className="required">*</span>*/}
-                          </label>
+                        <div className="box-view-list">
+                          <ul className="view-list">
+                            <li className="accumlate-list">
+                              <label className="t-label">사진첨부</label>
+                              <span className="text-desc-type1">
+                                <div className="filebox view">
+                                  <Upload {...props} listType="picture-card" fileList={fileList}>
+                                    <div className="btn-area" style={{ display: 'none' }}>
+                                      <button
+                                        type="button"
+                                        name="button"
+                                        className="btn-big btn_text btn-darkblue-line mg-n"
+                                      >
+                                        + Upload
+                                      </button>
+                                    </div>
+                                  </Upload>
+                                </div>
+                              </span>
+                            </li>
+                          </ul>
                         </div>
-                        <span className="errorText">fileerror</span>
                       </div>
-                      {previewImage && (
-                        <Image
-                          wrapperStyle={{
-                            display: 'none',
-                          }}
-                          preview={{
-                            visible: previewOpen,
-                            onVisibleChange: (visible) => setPreviewOpen(visible),
-                            afterOpenChange: (visible) => !visible && setPreviewImage(''),
-                          }}
-                          src={previewImage}
-                        />
-                      )}
                     </div>
                   </div>
                 </div>
@@ -571,14 +712,28 @@ function POccupationMu3P4detail() {
                   <div className="form-table">
                     <div className="form-cell wid50">
                       <div className="form-group wid-300">
-                        <AppDatePicker label="실제 종료일" disabled />
+                        <div className="box-view-list">
+                          <ul className="view-list">
+                            <li className="accumlate-list">
+                              <label className="t-label">실제 종료일</label>
+                              <span className="text-desc-type1">2024-00-00</span>
+                            </li>
+                          </ul>
+                        </div>
                       </div>
                     </div>
                   </div>
                   <div className="form-table">
                     <div className="form-cell wid50">
                       <div className="form-group wid100">
-                        <AppTextInput label="특이사항" disabled />
+                        <div className="box-view-list">
+                          <ul className="view-list">
+                            <li className="accumlate-list">
+                              <label className="t-label">특이사항</label>
+                              <span className="text-desc-type1">특이사항</span>
+                            </li>
+                          </ul>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -606,19 +761,14 @@ function POccupationMu3P4detail() {
                   <div className="form-table">
                     <div className="form-cell wid50">
                       <div className="form-group wid100">
-                        <textarea
-                          id="testArea1"
-                          className="form-tag custom_textarea"
-                          style={{ width: '100%' }}
-                          name="testArea1"
-                          value={inputValue}
-                          onChange={(event) => {
-                            setInputValue(event.target.value);
-                          }}
-                        />
-                        <label className="f-label" htmlFor="testArea1">
-                          의견
-                        </label>
+                        <div className="box-view-list">
+                          <ul className="view-list">
+                            <li className="accumlate-list">
+                              <label className="t-label">의견</label>
+                              <span className="text-desc-type1">의견...</span>
+                            </li>
+                          </ul>
+                        </div>
                       </div>
                     </div>
                   </div>
