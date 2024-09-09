@@ -292,17 +292,20 @@
 .SelectedList > ul li:last-child{margin-bottom:0}
 .SelectedList > ul li .InfoBox{display:inline-flex;justify-content:center;align-items:center;width:3.6rem;height:3.6rem;border-radius:50%;overflow:hidden;margin-right:0.8rem;background:url(/src/resources/images/no_img_pro.jpg) 50% 50% / 100% no-repeat rgb(204, 204, 204)}
 .SelectedList > ul li .Info{width:83%}
+.SelectedList > ul li .num{width:10%;text-align:center}
 .SelectedList > ul li > .column-box .column-btn .up{padding:0.2rem 1rem;margin-bottom:0;height:2.6rem;border-right:solid 0rem}
 .SelectedList > ul li > .column-box .column-btn .u:active {background: url(../images/up-btn-lb.svg)center center no-repeat;background-size:1.2rem;width:2rem;height:1.0rem;font-size:0;padding:0.2rem 1rem}
 .SelectedList > ul li > .column-box .column-btn .down{padding:1.2rem 1rem;height:0rem}
 .SelectedList > ul li > .column-box .column-btn .down:active{background: url(../images/down-btn-lb.svg)center center no-repeat;background-size:1.2rem;width:2rem;height:0rem;font-size:0}
-.SelectedList > ul li .Info .Dept{font-size:1.2rem;color:var(--color-neutral-70)}
+.SelectedList > ul li .Info .Dept{font-size:1.2rem;color:var(--color-neutral-70);padding-top:0.3rem}
 .SelectedList .class.leader{color:var(--color-mblue-100);border-color:var(--color-mblue-100)}
 .SelectedList .class{position:absolute;top:50%;right:2.5rem;transform:translateY(-50%);width:70px;height:26px;line-height:2.4rem;border-width:0.1rem;border-style:solid;border-radius:99.9rem;font-size:1.2rem;text-align:center;background-color:rgb(255, 255, 255)}
 .SelectedList > ul .delete{position:absolute;right: 0;top:1rem;background:url(/src/resources/images/delete-text.svg) center center no-repeat;font-size:0;width:2rem;height:2rem}
-.SelectedList > ul li .column-box{display: flex;}
+.SelectedList > ul li .column-box{display:flex}
 .SelectedList > ul li .column-box .column-btn{flex-direction:row}
 
+.SelectedList.memberClass > ul .delete{position:absolute;right: 0;top:0.1rem;background:url(/src/resources/images/delete-text.svg) center center no-repeat;font-size:0;width:2rem;height:2rem}
+.SelectedList.memberClass > ul li .Info{width:70%}
 .SelectedList.Location > ul .delete{position:absolute;right:0;top:0rem;background:url(/src/resources/images/delete-text.svg) center center no-repeat;font-size:0;width:2rem;height:2rem}
 
 /*AUDIT 체크리스트*/

@@ -265,7 +265,7 @@
   .btn-area {display:block;width:100%;}
   .btn-area .btn-sm{width:100%}
   .btn-area > button + button{width:50%;margin-left:0;margin-top:1rem}
-  .btn-area.inbtn > button + button{width:50%;margin-left:0;margin-top:0rem}
+  .btn-area.inbtn > button + button{/*width:50%;*/margin-left:0;margin-top:0rem}
   .btn-area > button{margin:0}
 
   .contents-btns {display: block; width: 100%;}

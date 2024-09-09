@@ -183,7 +183,7 @@ ModalPageInfo.list = [
     Component: PayGroupModal,
     path: 'PayGroupModal',
     description: '',
-    success: false,
+    success: true,
   },
   {
     title: '[항공안전> 04.안전보증] SMS종합분석현황 > 대시보드 > 보고서현황 팝업창',
