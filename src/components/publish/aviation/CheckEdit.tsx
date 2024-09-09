@@ -204,163 +204,85 @@ function CheckEdit() {
         {/*//입력영역*/}
 
         {/* 입력영역 */}
+        {/* 입력영역 */}
         <div className="editbox edit-detile Audit">
           <button type="button" className="tabs-tab-remove">
             <span className="btnClear">X</span>
           </button>
           <div className="form-table line">
-            <div className="form-cell wid30">
+            <div className="form-cell">
               <div className="form-group wid100">
-                <AppTextArea
-                  label="Contents"
-                  errorMessage=""
-                  placeholder="                       
-1-1 지점장은 공항업무(운송/운항관리/정비/안전보안) 수행에 필요한 인원 및 업무 분장을 지정, 파악 관리한다.
-(GM - Guidance Material)
-지점 조직도, Safety Coordinator, 위임/대행 체계"
-                  style={{ width: '100%', height: 150 }}
-                />
-              </div>
-            </div>
-          </div>
+                <div className="df">
+                  <div className="type7 mt10">
+                    <AppTextArea label="Contents" style={{ width: '100%', height: 145 }} errorMessage="" />
+                    <div className="form-table">
+                      <div className="form-cell wid100">
+                        <div className="form-group wid100">
+                          <AppTextInput inputType="text" label={'Reference manual'} />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="type8">
+                    <div className="form-table">
+                      <div className="form-cell wid100">
+                        <div className="form-group wid100">
+                          <div className="group-box-wrap wid100">
+                            <div className="editarea-box Audit">
+                              <div className="form-group wid50">
+                                <AppSelect label={'N/A'} />
+                              </div>
+                              <div className="label-box bwid50">
+                                <span className="Option-tag OptionLevel orange">N/A</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="form-table">
+                      <div className="form-cell wid50">
+                        <div className="form-group wid100">
+                          <div className="group-box-wrap wid100">
+                            <div className="editarea-box Audit">
+                              <div className="form-group wid50">
+                                <AppSelect label={'Extremdly improbable'} />
+                              </div>
+                              <div className="label-box wid50">
+                                <span className="Option-tag OptionLevel yellow">Extremdly improbable</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="form-table">
+                      <div className="form-cell wid50">
+                        <div className="form-group wid100">
+                          <div className="group-box-wrap wid100">
+                            <span className="txt">Severity</span>
+                            <div className="editarea-box Audit">
+                              <div className="form-group wid50">
+                                <AppSelect label={'Occasional'} />
+                              </div>
 
-          <div className="form-table line">
-            <div className="form-cell wid30">
-              <div className="form-group wid100">
-                <AppTextInput inputType="text" label={'SMS Manual 3.2.1,Safety Coordinator 운영지침'} />
-              </div>
-            </div>
-          </div>
-
-          <div className="form-table">
-            <div className="form-cell wid30">
-              <div className="form-group wid100">
-                <div className="group-box-wrap wid100">
-                  <span className="txt">Priority</span>
-                  <div className="editarea-box Audit">
-                    <div className="form-group wid50">
-                      <AppSelect label={'High'} />
-                    </div>
-                    <div className="label-box bwid50">
-                      <span className="Option-tag OptionLevel red">High</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="form-cell wid50">
-              <div className="form-group wid100">
-                <div className="group-box-wrap wid100">
-                  <span className="txt">Probability</span>
-                  <div className="editarea-box Audit">
-                    <div className="form-group wid50">
-                      <AppSelect label={'Extremdly improbable'} />
-                    </div>
-                    <div className="label-box wid50">
-                      <span className="Option-tag OptionLevel green">Extremdly improbable</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="form-cell wid50">
-              <div className="form-group wid100">
-                <div className="group-box-wrap wid100">
-                  <span className="txt">Severity</span>
-                  <div className="editarea-box Audit">
-                    <div className="form-group wid50">
-                      <AppSelect label={'Occasional'} />
-                    </div>
-
-                    <div className="label-box wid50">
-                      <span className="Option-tag OptionLevel orange">Negigible</span>
+                              <div className="label-box wid50">
+                                <span className="Option-tag OptionLevel normal">Negigible</span>
+                              </div>
+                            </div>
+                            <span className="errorText"></span>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <hr className="line"></hr>
-        </div>
-
-        <div className="editbox edit-detile Audit">
-          <button type="button" className="tabs-tab-remove">
-            <span className="btnClear">X</span>
-          </button>
-          <div className="form-table line">
-            <div className="form-cell wid30">
-              <div className="form-group wid100">
-                <AppTextArea
-                  label="Contents"
-                  errorMessage=""
-                  placeholder="                       
-1-1 지점장은 공항업무(운송/운항관리/정비/안전보안) 수행에 필요한 인원 및 업무 분장을 지정, 파악 관리한다.
-(GM - Guidance Material)
-지점 조직도, Safety Coordinator, 위임/대행 체계"
-                />
-              </div>
-            </div>
-          </div>
-          <hr className="line dp-n"></hr>
-          <div className="form-table line">
-            <div className="form-cell wid30">
-              <div className="form-group wid100">
-                <AppTextInput inputType="text" label={'SMS Manual 3.2.1,Safety Coordinator 운영지침'} />
-              </div>
-            </div>
-          </div>
-          <hr className="line dp-n"></hr>
-          <div className="form-table">
-            <div className="form-cell wid30">
-              <div className="form-group wid100">
-                <div className="group-box-wrap wid100">
-                  <span className="txt">Priority</span>
-                  <div className="editarea-box Audit">
-                    <div className="form-group wid50">
-                      <AppSelect label={'High'} />
-                    </div>
-                    <div className="label-box bwid50">
-                      <span className="Option-tag OptionLevel orange">High</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="form-cell wid50">
-              <div className="form-group wid100">
-                <div className="group-box-wrap wid100">
-                  <span className="txt">Probability</span>
-                  <div className="editarea-box Audit">
-                    <div className="form-group wid50">
-                      <AppSelect label={'Extremdly improbable'} />
-                    </div>
-                    <div className="label-box wid50">
-                      <span className="Option-tag OptionLevel yellow">Extremdly improbable</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="form-cell wid50">
-              <div className="form-group wid100">
-                <div className="group-box-wrap wid100">
-                  <span className="txt">Severity</span>
-                  <div className="editarea-box Audit">
-                    <div className="form-group wid50">
-                      <AppSelect label={'Occasional'} />
-                    </div>
-
-                    <div className="label-box wid50">
-                      <span className="Option-tag OptionLevel orange">Negigible</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <hr className="line"></hr>
         </div>
         {/*//입력영역*/}
+
         {/*추가버튼*/}
         <div className="btn-area ">
           <button type="button" name="button" className="btn-sm btn_text btn-darkblue-line">
