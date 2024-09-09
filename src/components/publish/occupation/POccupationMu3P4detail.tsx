@@ -365,7 +365,34 @@ function POccupationMu3P4detail() {
                   </div>
                   <div className="form-table">
                     <div className="form-cell wid50">
-                      <div className="form-group wid100">그리드영역</div>
+                      <div className="form-group wid100">
+                        <h3 className="table-tit">
+                          공사구분 <span className="required">*</span>
+                        </h3>
+                        <table className="check-table">
+                          <thead>
+                            <tr>
+                              <th>작업</th>
+                              <th>반입장비</th>
+                              <th>파일첨부</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>
+                                <div className="radio-wrap">
+                                  <label className="type01">
+                                    <input type="checkbox" />
+                                    <span className="type01">공통(일반)</span>
+                                  </label>
+                                </div>
+                              </td>
+                              <td>ㅇㄹㅇㄹ</td>
+                              <td>버튼</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
                     </div>
                   </div>
                 </div>
