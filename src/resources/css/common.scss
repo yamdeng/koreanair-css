@@ -63,8 +63,8 @@ body * {
 .table-tit .required {color:var(--color-negative); vertical-align: text-top;}
 .wid10{width:10%}
 .wid20{width:20%}
-.wid30{width:30%}
-.wid50{width:50%}
+.wid30{width:30% !important}
+.wid50{width:50% }
 .wid70{width:70%}
 .wid80{width:80%}
 .wid100{width:100%}
@@ -72,7 +72,8 @@ body * {
 .pr10{padding-right:1rem !important}
 .ptb10{padding:1rem 0 1rem 0 !important}
 
-.ml-0 {margin-left: 0 !important;}
+.ml-0{margin-left: 0 !important;}
+.ml5{margin-left:0.5rem !important}
 .mr5{margin-right:0.5rem !important}
 .mt10{margin-top:1.0rem !important}
 .mt15{margin-top:1.5rem !important}

@@ -72,11 +72,12 @@
 .flag-tag1 .icon-flag1.active{text-decoration:underline;font-weight:600}
 
 .edit-area .form-table .form-cell.Add{border-bottom:0}
-.notice-board td{position:relative}
-.notice-board td .delete{position:absolute;top:1rem;background:url(/src/resources/images/delete-text.svg) center center no-repeat;font-size: 0;width: 2rem;height: 2rem}
-.notice-board td.deps-conts{width:100%;background-color:var(--color-neutral-20);padding-left:6rem;padding-right:6rem}
+.notice-board td{position:relative;padding:1.0rem 0.3rem}
+.notice-board td .delete{position:absolute;top:1rem;background:url(/src/resources/images/delete-text.svg) center center no-repeat;font-size:0;width:2rem;height:2rem}
+.notice-board td.deps-conts{width:100%;background-color:var(--color-neutral-20);padding:1rem 2rem}
 .notice-board td.plus{position:relative}
 .notice-board td.plus > .btn-plus{position:absolute;left:0;top:0;background: url(/src/resources/images/plus-btn.svg) center center no-repeat;width: 4rem;height: 4rem;background-size: 2.4rem;font-size:0;margin-left:0}
+.notice-board td.plus > .btn-minus{position:absolute;left:0;top:20%;background: url(/src/resources/images/btn-minus.svg) center center no-repeat;width: 4rem;height: 4rem;background-size: 2.4rem;font-size:0;margin-left:0}
 
 .notice-board td.btns a:first-child{margin-right:0.5rem}
 .btn-modify{border:0.1rem solid var(--color-btn-blue2);color:var(--color-btn-blue2);border-radius:0.8rem;font-size:1.4rem;padding:0rem 0.5rem}

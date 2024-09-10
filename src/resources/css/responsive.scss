@@ -306,6 +306,7 @@
   .detail-form .detail-list .form-table .form-cell .btn-area.inbtn{display:block;width:100%}
   .detail-form .detail-list .form-table .form-cell .btn-area.inbtn > .btn-x-sm{padding:0.6rem 2.8rem;}
   .editbox.Audit .line .form-cell {border-bottom: 0rem solid var(--color-neutral-40);}
+  .detail-form .detail-list .form-table .form-cell .form-group .UserChicebox.Flight{width:100%}
 
 
   .SelectedList{width:100%}
@@ -338,7 +339,7 @@
   .notice-board tr:nth-child(2) {border-top: 0.1rem solid var(--color-darkblue-100);}
   .notice-board td {display: inline-block; border-bottom: 0; padding: 0.5rem 1.0rem; text-align: left;}
   .notice-board td .delete{position:absolute;top:-0.8rem;right:-28rem;background: url(/src/resources/images/delete-text.svg) center center no-repeat;font-size: 0;width: 2rem;height: 2rem}
-
+  .notice-board td.Sel{width:100%}
   .notice-board tr.fix-bg .fix {background-size: 2.0rem;}
   .notice-board td.bot-left{/*display: inline-block;*/}
   .notice-board td:nth-child(1) {position: relative; display: table-cell; width: 3.0rem; padding: 0; text-align: center;}
@@ -346,8 +347,9 @@
 
   .notice-board.Air td.plus{width:5%}
   .notice-board.Air td.left{width:75%}
+  .notice-board.Air td.left .form-table{width:100% !important}
   .notice-board.Air td.right{width:20%;text-align:right;padding-right:0.8rem}
-  .notice-board.Air td:nth-child(1){text-align:left;padding:0 0.6rem}
+  .notice-board.Air td:nth-child(1){text-align:left;padding:1rem 2rem}
   /*.notice-board td:nth-child(1) {width: 5.0rem; height: 100%; position: relative; top: 1.8rem; padding:0;}
   .notice-board td:nth-child(2) {width: 50%; padding: 1.0rem 0 0 0;}
   .notice-board td:nth-child(3) {font-size: 1.4rem; padding: 0 1.0rem 1.0rem 5.0rem;}

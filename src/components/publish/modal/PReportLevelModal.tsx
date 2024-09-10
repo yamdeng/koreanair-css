@@ -25,35 +25,37 @@ function ReportLevelModal(props) {
                 <div className="RiskLevel-Left">
                   <div className="h4-tit">Potential Consequence</div>
                   <div className="boxlist-wrap">
-                    <div className="form-cell">
-                      <div className="form-group wid100">
-                        <AppSelect
-                          id="select1"
-                          style={{ width: '100%' }}
-                          className="label-select"
-                          options={[
-                            {
-                              value: 'jack',
-                              label: 'Jack',
-                            },
-                            {
-                              value: 'lucy',
-                              label: 'Lucy',
-                            },
-                            {
-                              value: 'Yiminghe',
-                              label: 'yiminghe',
-                            },
-                            {
-                              value: 'disabled',
-                              label: 'Disabled',
-                              disabled: true,
-                            },
-                          ]}
-                        />
-                        <label className="f-label" htmlFor="select1">
-                          선택
-                        </label>
+                    <div className="form-table">
+                      <div className="form-cell">
+                        <div className="form-group wid100">
+                          <AppSelect
+                            id="select1"
+                            style={{ width: '100%' }}
+                            className="label-select"
+                            options={[
+                              {
+                                value: 'jack',
+                                label: 'Jack',
+                              },
+                              {
+                                value: 'lucy',
+                                label: 'Lucy',
+                              },
+                              {
+                                value: 'Yiminghe',
+                                label: 'yiminghe',
+                              },
+                              {
+                                value: 'disabled',
+                                label: 'Disabled',
+                                disabled: true,
+                              },
+                            ]}
+                          />
+                          <label className="f-label" htmlFor="select1">
+                            선택
+                          </label>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -62,35 +64,37 @@ function ReportLevelModal(props) {
                 <div className="RiskLevel-Right">
                   <div className="h4-tit">Hazard Taxonomy</div>
                   <div className="boxlist-wrap">
-                    <div className="form-cell">
-                      <div className="form-group wid100">
-                        <AppSelect
-                          id="select1"
-                          style={{ width: '100%' }}
-                          className="label-select"
-                          options={[
-                            {
-                              value: 'jack',
-                              label: 'Jack',
-                            },
-                            {
-                              value: 'lucy',
-                              label: 'Lucy',
-                            },
-                            {
-                              value: 'Yiminghe',
-                              label: 'yiminghe',
-                            },
-                            {
-                              value: 'disabled',
-                              label: 'Disabled',
-                              disabled: true,
-                            },
-                          ]}
-                        />
-                        <label className="f-label" htmlFor="select1">
-                          선택
-                        </label>
+                    <div className="form-table">
+                      <div className="form-cell">
+                        <div className="form-group wid100">
+                          <AppSelect
+                            id="select1"
+                            style={{ width: '100%' }}
+                            className="label-select"
+                            options={[
+                              {
+                                value: 'jack',
+                                label: 'Jack',
+                              },
+                              {
+                                value: 'lucy',
+                                label: 'Lucy',
+                              },
+                              {
+                                value: 'Yiminghe',
+                                label: 'yiminghe',
+                              },
+                              {
+                                value: 'disabled',
+                                label: 'Disabled',
+                                disabled: true,
+                              },
+                            ]}
+                          />
+                          <label className="f-label" htmlFor="select1">
+                            선택
+                          </label>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -327,7 +331,7 @@ function ReportLevelModal(props) {
                           {/*class에 selected를 붙이면 선택되어짐 */}
                           <td className="level1 selected">
                             5A
-                            {/*<span className="thumb_flag best">추천</span>*/}
+                            <span className="thumb_flag best"></span>
                             <div className="flag-tag">
                               <span className="icon-flag txt btn-wh">233</span>
                             </div>

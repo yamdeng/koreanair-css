@@ -119,7 +119,7 @@ function GSRReportEdit() {
             <div className="edit-area">
               <div className="detail-form">
                 <div className="detail-list">
-                  <div className="form-table">
+                  <div className="form-table ar">
                     <div className="form-cell wid50">
                       <div className="form-group wid100">
                         <div className="df">
@@ -132,13 +132,13 @@ function GSRReportEdit() {
                         </div>
                       </div>
                     </div>
-                    <div className="form-cell wid50">
+                    <div className="form-cell wid100">
                       <div className="form-group va-t ant-input wid100">
                         <span className="ant-input-group-addon1">KE</span>
-                        <div className="ant-input-group-addon1-input wid50 df">
+                        <div className="ant-input-group-addon1-input wid100 df">
                           {/*비행편명 */}
                           <AppTextInput label="비행편명" />
-                          <div className="btn-area">
+                          <div className="btn-area ml5">
                             <button type="button" name="button" className="btn-sm btn_text btn-darkblue-line">
                               Search
                             </button>
@@ -148,10 +148,10 @@ function GSRReportEdit() {
                     </div>
                   </div>
                   <div className="form-table">
-                    <div className="form-cell wid50">
+                    <div className="form-cell wid100">
                       <div className="form-group va-t ant-input wid100">
                         <span className="ant-input-group-addon1">HL</span>
-                        <div className="ant-input-group-addon1-input wid50">
+                        <div className="ant-input-group-addon1-input wid100">
                           {/*등록부호 */}
                           <AppTextInput label="등록부호" required />
                         </div>
@@ -476,6 +476,36 @@ function GSRReportEdit() {
                                               내용내용
                                             </td>
                                           </tr>
+                                          <tr>
+                                            <td className="plus">
+                                              <a href="javascript:void(0);" className="btn-minus">
+                                                {/* className="btn-minus"*/}-
+                                              </a>
+                                            </td>
+                                            <td className="left">
+                                              {' '}
+                                              <div className="form-table wid50">
+                                                <AppSelect label={''} />
+                                              </div>
+                                            </td>
+                                            <td className="btns">
+                                              <a href="javascript:void(0);" className="btn-modify">
+                                                저장{' '}
+                                              </a>
+                                              <a href="javascript:void(0);" className="btn-delete">
+                                                취소{' '}
+                                              </a>
+                                            </td>
+                                          </tr>
+                                          <tr>
+                                            <td colSpan={3} className="left deps-conts">
+                                              <AppTextArea
+                                                label=""
+                                                style={{ width: '100%', height: 145 }}
+                                                errorMessage=""
+                                              />
+                                            </td>
+                                          </tr>
                                         </table>
                                       </div>
                                     </span>
@@ -574,23 +604,62 @@ function GSRReportEdit() {
                                                 {/* className="btn-minus"*/}+
                                               </a>
                                             </td>
-                                            <td className="left">Lavatory service equipment</td>
-                                            <td className="left">등록sdsdfsfd</td>
-                                            <td className="left">sdsdfsfd</td>
-                                            <td className="left">sdsdfsfd</td>
-                                            <td className="left">sdsdfsfd</td>
+                                            <td className="left Sel">Lavatory service equipment</td>
+                                            <td className="left Sel">등록sdsdfsfd</td>
+                                            <td className="left Sel">sdsdfsfd</td>
+                                            <td className="left Sel">sdsdfsfd</td>
+                                            <td className="left Sel">sdsdfsfd</td>
                                             <td className="btns">
                                               <a href="javascript:void(0);" className="btn-modify">
-                                                수정{' '}
+                                                수정
                                               </a>
                                               <a href="javascript:void(0);" className="btn-delete">
-                                                삭제{' '}
+                                                삭제
                                               </a>
                                             </td>
                                           </tr>
                                           <tr>
                                             <td colSpan={7} className="left deps-conts">
                                               내용내용
+                                            </td>
+                                          </tr>
+                                          <tr>
+                                            <td className="plus">
+                                              <a href="javascript:void(0);" className="btn-minus">
+                                                {/* className="btn-minus"*/}-
+                                              </a>
+                                            </td>
+                                            <td className="Sel">
+                                              <AppSelect label={''} />
+                                            </td>
+                                            <td className="Sel">
+                                              <AppTextInput inputType="text" label={''} />
+                                            </td>
+                                            <td className="Sel">
+                                              <AppTextInput inputType="text" label={''} />
+                                            </td>
+                                            <td className="Sel">
+                                              <AppSelect label={''} />
+                                            </td>
+                                            <td className="Sel">
+                                              <AppSelect label={''} />
+                                            </td>
+                                            <td className="btns">
+                                              <a href="javascript:void(0);" className="btn-modify">
+                                                저장{' '}
+                                              </a>
+                                              <a href="javascript:void(0);" className="btn-delete">
+                                                취소{' '}
+                                              </a>
+                                            </td>
+                                          </tr>
+                                          <tr>
+                                            <td colSpan={7} className="left deps-conts">
+                                              <AppTextArea
+                                                label=""
+                                                style={{ width: '100%', height: 145 }}
+                                                errorMessage=""
+                                              />
                                             </td>
                                           </tr>
                                         </table>
