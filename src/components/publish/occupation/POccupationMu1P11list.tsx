@@ -83,7 +83,7 @@ function POccupationMu1P11list() {
       {/* //검색영역 */}
       {/*그리드영역 */}
 
-      <div className="table-wrap">
+      <div className="table-wrap h380">
         <div className="left-table">
           <AppTable rowData={rowData} columns={columns} />
         </div>
