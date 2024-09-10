@@ -13,6 +13,18 @@ function PAviationPortal1() {
   }, []);
   return (
     <>
+      <div className="floatingmenu">글쓰기</div>
+      <div className="av-main-wrap">
+        <div className="grid-item">
+          <div className="grid-group">Top 10 Risk Areas</div>
+          <div className="grid-group">보고서 처리 현황</div>
+        </div>
+
+        <div className="grid-item">TO DO LIST</div>
+        <div className="grid-item">우수보고서</div>
+        <div className="grid-item">공지사항</div>
+      </div>
+      {/*}
       <div className="main-top-wrrap">
         <div className="RiskBox" style={{ border: 'solid 1px blue' }}>
           <div className="row-top">

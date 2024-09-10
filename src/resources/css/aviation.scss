@@ -599,3 +599,18 @@
 
 
 .DashBoard-box > .ag-theme-quartz .ag-root-wrapper .ag-row-odd{background-color:var(--color-neutral-20) !important}
+
+
+
+/*메인 레이아웃*/
+.av-main-wrap {
+  display: grid;
+  grid-gap: 2.4rem;
+  grid-template-columns: 1fr 1fr 1fr;
+  height: calc(100vh - 13.6rem);
+
+  .grid-item {border: 0.1rem solid var(--color-neutral-40); border-radius: 0.8rem; padding: 3.0rem; background-color: var(--color-neutral-10);}
+  .grid-item:nth-of-type(1) {grid-column-start: 1; grid-column-end: span 3; grid-gap: 2.4rem; border: 0; background: none; display: flex; padding: 0;}
+  .grid-item .grid-group:nth-of-type(1) {width: 60%; background-color: #02C27F;}
+  .grid-item .grid-group:nth-of-type(2) {width: 40%; background-color: #2c8dd9;}
+}
