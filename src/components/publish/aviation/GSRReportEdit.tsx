@@ -138,7 +138,7 @@ function GSRReportEdit() {
                         <div className="ant-input-group-addon1-input wid100 df">
                           {/*비행편명 */}
                           <AppTextInput label="비행편명" />
-                          <div className="btn-area ml5">
+                          <div className="btn-area">
                             <button type="button" name="button" className="btn-sm btn_text btn-darkblue-line">
                               Search
                             </button>

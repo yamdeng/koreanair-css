@@ -375,10 +375,11 @@ input, select{font-family:'KoreanAirSans'}
 
   .form-table .form-cell {
     .btn-area {padding: 0;}
+    .btn-area button:first-child{margin-left:0.5rem공}
   }
 
   .group-box-wrap{position: relative; display: inline-block;height:4.0rem}
-  .group-box-wrap .txt {position:absolute;left:1.0rem;top: -1.0rem;background:var(--color-neutral-10);padding: 0 0.5rem;font-size:1.3rem;display:flex}
+  .group-box-wrap .txt {position:absolute;left:1.0rem;top: -1.0rem;background:var(--color-neutral-10);height:1.2rem;padding: 0 0.5rem;font-size:1.3rem;display:flex}
   .group-box-wrap1{position:relative;display:inline-block}
   .group-box-wrap1 .txt{position:absolute;left:1rem;top:-1rem;display:flex;background: var(--color-neutral-10);padding: 0 0.5rem;font-size: 1.3rem;z-index: 1}
   
