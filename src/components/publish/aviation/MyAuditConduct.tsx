@@ -29,14 +29,10 @@ function MyAuditConduct() {
       </div>
       {/*//경로 */}
 
-      <div className="MyAudit-contents">
+      <div className="MyAudit-container">
         <div className="MyAudit-header">
           <div className="editbox Audit">
-            <div className="form-table ">
-              <div className="form-cell wid50">
-                <div className="form-group wid100 Position-w">Audit No. 24-LSA-0407</div>
-              </div>
-            </div>
+            <div className="form-group wid100 Position-w">Audit No. 24-LSA-0407</div>
           </div>
           {/*탭 */}
           <div className="menu-tab-nav">
@@ -61,6 +57,39 @@ function MyAuditConduct() {
             </div>
           </div>
           {/*//탭 */}
+        </div>
+        <div className="MyAudit-contents">
+          ㅇㄹㅇㄹㅇㄹㅇㄹㅇ ㅇㅇㄹㅇㄹㅇㄹㅇㄹ ㅇㄹㅇㄹㅇㄹㅇㄹㅇ ㅇㅇㄹㅇㄹㅇㄹㅇㄹ<br></br>
+          <br></br>
+          ㅇㄹㅇㄹㅇㄹㅇㄹㅇ ㅇㅇㄹㅇㄹㅇㄹㅇㄹ ㅇㄹㅇㄹㅇㄹㅇㄹㅇ ㅇㅇㄹㅇㄹㅇㄹㅇㄹ<br></br>
+          <br></br>
+          ㅇㄹㅇㄹㅇㄹㅇㄹㅇ ㅇㅇㄹㅇㄹㅇㄹㅇㄹ ㅇㄹㅇㄹㅇㄹㅇㄹㅇ ㅇㅇㄹㅇㄹㅇㄹㅇㄹ<br></br>
+          <br></br>
+          ㅇㄹㅇㄹㅇㄹㅇㄹㅇ ㅇㅇㄹㅇㄹㅇㄹㅇㄹ ㅇㄹㅇㄹㅇㄹㅇㄹㅇ ㅇㅇㄹㅇㄹㅇㄹㅇㄹ<br></br>
+          <br></br>
+          ㅇㄹㅇㄹㅇㄹㅇㄹㅇ ㅇㅇㄹㅇㄹㅇㄹㅇㄹ ㅇㄹㅇㄹㅇㄹㅇㄹㅇ ㅇㅇㄹㅇㄹㅇㄹㅇㄹ<br></br>
+          <br></br>
+          ㅇㄹㅇㄹㅇㄹㅇㄹㅇ ㅇㅇㄹㅇㄹㅇㄹㅇㄹ ㅇㄹㅇㄹㅇㄹㅇㄹㅇ ㅇㅇㄹㅇㄹㅇㄹㅇㄹ<br></br>
+          <br></br>
+          ㅇㄹㅇㄹㅇㄹㅇㄹㅇ ㅇㅇㄹㅇㄹㅇㄹㅇㄹ ㅇㄹㅇㄹㅇㄹㅇㄹㅇ ㅇㅇㄹㅇㄹㅇㄹㅇㄹ<br></br>
+          <br></br>
+          ㅇㄹㅇㄹㅇㄹㅇㄹㅇ ㅇㅇㄹㅇㄹㅇㄹㅇㄹ ㅇㄹㅇㄹㅇㄹㅇㄹㅇ ㅇㅇㄹㅇㄹㅇㄹㅇㄹ<br></br>
+          <br></br>
+          ㅇㄹㅇㄹㅇㄹㅇㄹㅇ ㅇㅇㄹㅇㄹㅇㄹㅇㄹ ㅇㄹㅇㄹㅇㄹㅇㄹㅇ ㅇㅇㄹㅇㄹㅇㄹㅇㄹ<br></br>
+          <br></br>
+          ㅇㄹㅇㄹㅇㄹㅇㄹㅇ ㅇㅇㄹㅇㄹㅇㄹㅇㄹ ㅇㄹㅇㄹㅇㄹㅇㄹㅇ ㅇㅇㄹㅇㄹㅇㄹㅇㄹ<br></br>
+          <br></br>
+          ㅇㄹㅇㄹㅇㄹㅇㄹㅇ ㅇㅇㄹㅇㄹㅇㄹㅇㄹ ㅇㄹㅇㄹㅇㄹㅇㄹㅇ ㅇㅇㄹㅇㄹㅇㄹㅇㄹ<br></br>
+          <br></br>
+          ㅇㄹㅇㄹㅇㄹㅇㄹㅇ ㅇㅇㄹㅇㄹㅇㄹㅇㄹ ㅇㄹㅇㄹㅇㄹㅇㄹㅇ ㅇㅇㄹㅇㄹㅇㄹㅇㄹ<br></br>
+          <br></br>
+          ㅇㄹㅇㄹㅇㄹㅇㄹㅇ ㅇㅇㄹㅇㄹㅇㄹㅇㄹ ㅇㄹㅇㄹㅇㄹㅇㄹㅇ ㅇㅇㄹㅇㄹㅇㄹㅇㄹ<br></br>
+          <br></br>
+          ㅇㄹㅇㄹㅇㄹㅇㄹㅇ ㅇㅇㄹㅇㄹㅇㄹㅇㄹ ㅇㄹㅇㄹㅇㄹㅇㄹㅇ ㅇㅇㄹㅇㄹㅇㄹㅇㄹ<br></br>
+          <br></br>ㅇㄹㅇㄹㅇㄹㅇㄹㅇ ㅇㅇㄹㅇㄹㅇㄹㅇㄹ ㅇㄹㅇㄹㅇㄹㅇㄹㅇ ㅇㅇㄹㅇㄹㅇㄹㅇㄹ<br></br>
+          <br></br>
+          ㅇㄹㅇㄹㅇㄹㅇㄹㅇ ㅇㅇㄹㅇㄹㅇㄹㅇㄹ ㅇㄹㅇㄹㅇㄹㅇㄹㅇ ㅇㅇㄹㅇㄹㅇㄹㅇㄹ<br></br>
+          <br></br>
         </div>
       </div>
 

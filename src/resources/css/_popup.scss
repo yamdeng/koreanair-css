@@ -695,6 +695,29 @@
     text-align: center;
     font-weight:600;
 }
+
+.flag-tag{display:flex;justify-content:center;margin:0.3rem 0.5rem 0 0;gap:0 0.5rem}
+.flag-tag * {
+  display: inline-block;
+  padding-left: 22px;
+  font-size: 13px;
+  color: #555;
+  letter-spacing: -.4px;
+  line-height: 20px;
+  background: url(/src/resources/images/ico-information-i.svg) 0 2px no-repeat;
+}
+.flag-tag1{gap:0 0.5rem}
+.flag-tag .icon-flag{border-radius:99.9rem;padding:0.3rem 0.6rem}
+.flag-tag1 .icon-flag1{border-radius:99.9rem;padding:0.3rem 2.0rem}
+.flag-tag1 .icon-flag1 + .icon-flag1{margin-left:0.5rem}
+.flag-tag .icon-flag.txt{font-family:"KoreanAirSans";font-weight:400;font-size:1.2rem;line-height:1.2rem;color:var(--color-neutral-90)}
+.flag-tag .icon-flag.btn-blue{background-color:#c0eaff;color:var(--color-darkblue-100);border:solid 0.1rem var(--color-darkblue-100);box-shadow:0.2rem 0.5rem 0.5rem rgba(0, 0, 0, 0.1)}
+.flag-tag .icon-flag.btn-wh{background-color:none;padding:0.2rem 1rem;line-height:1.2;color:var(--color-neutral-90);box-shadow:0.2rem 0.5rem 0.5rem rgba(0, 0, 0, 0.1)}
+.flag-tag1 .icon-flag1.btn-lightblue{background-color:var(--color-lightblue-40);font-size:1.4rem;line-height:2.8}
+.flag-tag1 .icon-flag1:last-child{margin-right:2rem}
+.flag-tag1 .icon-flag1.active{text-decoration:underline;font-weight:600}
+
+
 .RiskLevelTable.Risk td span{display:block;font-size:1.5rem}
 .RiskLevelTable.Risk td:hover{border:dotted 0.2rem var(--color-lightblue-10)!important;cursor:pointer}
 .RiskLevelTable.Risk td.selected{border:dotted 0.2rem var(--color-neutral-10)!important;color:var(--color-neutral-10)}

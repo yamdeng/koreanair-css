@@ -148,7 +148,7 @@ function ReportEdit() {
                         <span className="ant-input-group-addon1">KE</span>
                         <div className="ant-input-group-addon1-input wid50 df">
                           {/*비행편명 */}
-                          <AppTextInput label="비행편명" required />
+                          <AppTextInput label="비행편명" required value="aaasd" />
                           <div className="btn-area">
                             <button type="button" name="button" className="btn-sm btn_text btn-darkblue-line">
                               Search

@@ -53,7 +53,7 @@ function MyAuditList() {
 
       {/*사용자기준 조회범위영역 */}
       <div className="user-wrap">
-        <div className="user-box">
+        <div className="user-box wid60">
           <div className="user-box-top">
             <div className="form-table user-head">
               <div className="form-cell wid100">
@@ -135,7 +135,7 @@ function MyAuditList() {
             </div>
           </div>
         </div>
-        <div className="user-box">
+        <div className="user-box wid40">
           <div className="user-box-top">
             <div className="form-table user-head">
               <div className="form-cell wid100">

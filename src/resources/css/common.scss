@@ -64,7 +64,9 @@ body * {
 .wid10{width:10%}
 .wid20{width:20%}
 .wid30{width:30%}
-.wid50{width:50% }
+.wid40{width:40%}
+.wid50{width:50%}
+.wid60{width:60%}
 .wid70{width:70%}
 .wid80{width:80%}
 .wid100{width:100%}
@@ -272,7 +274,7 @@ input, select{font-family:'KoreanAirSans'}
   .btn-lightblue{border:solid 0.1rem var(--color-lightblue-40);background-color:var(--color-lightblue-40);color:var(--color-darkblue-100)}
   .btn-sm{padding:0.6rem 4.8rem;border-radius:99.9rem;align-items:center}
   .btn_close{padding:0.6rem 2.8rem;border-radius:99.9rem;background: var(--color-neutral-30)}
-  .btn_confirm.icon-fields{background-image:url(../images/delete-text.svg);background-repeat:no-repeat;}
+  .btn_confirm.icon-fields{background-image:url(../images/delete-text.svg);background-repeat:no-repeat;background-position:10% 60%}
   position:relative;/*right:0;top:0;float:right;*/text-align:right;
   @include mobile {
     width:100%;
@@ -516,7 +518,7 @@ input, select{font-family:'KoreanAirSans'}
 .form-tag{position:relative;height:4rem;border:0.1rem solid var(--color-neutral-40);border-radius:0.5rem;padding:0 1.0rem;width:100%;box-sizing:border-box;color:var(--color-neutral-80);background:var(--color-neutral-10);outline:none!important;text-indent:1.0rem}
 // .form-tag:not([value=""]){border:0.1rem solid var(--color-neutral-40)}
 .form-tag:focus{border:0.1rem solid var(--color-mblue-100) !important;color:var(--color-mblue-100) !important}
-.form-group .btnClear {
+.form-group .btnclear {
   position: absolute;
   top: 0.7rem;
   right: 1.0rem;
