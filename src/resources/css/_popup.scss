@@ -683,7 +683,7 @@
 .RiskLevelTable.Risk td .thumb_flag{position:absolute;top:0.8rem;left:1rem}
 .thumb_flag.best {background:url(/src/resources/images/icon-star.svg) center center no-repeat;font-size:0;width:2.4rem;height:2.4rem;
     /*color: #f05a5e;line-height:40px;border-color: #f05a5e;box-shadow:0.8rem 0.5rem 0.8rem rgba(0, 0, 0, 0.1)*/}
- /*.thumb_flag {
+.thumb_flag {
     display: inline-block;
     width: 40px;
     height: 40px;
@@ -694,7 +694,7 @@
     border-style: solid;
     text-align: center;
     font-weight:600;
-}*/
+}
 .RiskLevelTable.Risk td span{display:block;font-size:1.5rem}
 .RiskLevelTable.Risk td:hover{border:dotted 0.2rem var(--color-lightblue-10)!important;cursor:pointer}
 .RiskLevelTable.Risk td.selected{border:dotted 0.2rem var(--color-neutral-10)!important;color:var(--color-neutral-10)}

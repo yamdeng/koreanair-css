@@ -412,7 +412,12 @@
 .menu-tab-nav .swiper-container .menu-tab a button:first-child{padding-left:1.5rem}
 .menu-tab-nav .swiper-container .menu-tab a button + button{padding-left:2.0rem}
 
-.ux-tab{display:flex;flex-wrap:nowrap;border:0.1rem solid var(--color-neutral-40);border-radius:0.8rem;overflow:auto hidden;scroll-behavior:smooth;gap:1.2rem 0;margin:0rem 0 1.5rem}
+.MyAudit-header{position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;display: flex;justify-content: space-between;background: cyan;}
+
+.ux-tab{display:flex;flex-wrap:nowrap;border-radius:0.8rem;overflow:auto hidden;scroll-behavior:smooth;gap:1.2rem 0;margin:0rem 0 1.5rem}
 .ux-tab:after{content:'';display:block;clear:both}
 .ux-tab.-scroll .ux-tab__wrap, .ux-tab.-scroll .ux-order-list-tab__wrap {
   position: relative;
@@ -470,6 +475,30 @@
   right: -2.2rem;
   top: 50%;
   transform: translateY(-50%);
+}
+.icon {
+  display: flex;
+  position: absolute;
+  top: -1rem;
+  right: -0rem;
+  font-size: 0;
+  background: url(/src/resources/images/tooltip.svg) center center no-repeat;
+  background-size: 2.6rem;
+  width: 2.6rem;
+  height: 2.6rem;
+  cursor: pointer;
+}
+.icon.-arrow-right.-gray {
+  background-image: url(/src/resources/images/icon--arrow-right-gray.svg);
+}
+.icon.-msize16 {
+  display: inline-block;
+  vertical-align: middle;
+}
+.icon.-size24 {
+  width: 24px;
+  height: 24px;
+  background-size: 100%;
 }
 .ux-order-list-tab__button{position: relative;
   display: flex;
