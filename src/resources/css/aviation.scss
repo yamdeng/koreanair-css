@@ -42,9 +42,9 @@
 .form-group .type5{position:relative;width:20%}
 .form-group .type6{position:relative;width:50%;margin-left:0.5rem}
 .form-group .type7{position:relative;width:75%}
-.form-group .type8{position:relative;width:30%;margin-left:0.8rem}
+.form-group .type8{position:relative;width:30%;margin-left:3rem}
 .form-group .type9{position:relative;width:80%}
-.form-group .type10{position:relative;width:20%;margin-top:0;margin-left:0.8rem}
+.form-group .type10{position:relative;width:20%;margin-top:0;margin-left:3rem}
 .form-group .df .type6.Wd{width:100%}
 .form-group .df + .df{margin-top:1rem} 
 
@@ -65,7 +65,7 @@
 .flag-tag1 .icon-flag1{border-radius:99.9rem;padding:0.3rem 2.0rem}
 .flag-tag1 .icon-flag1 + .icon-flag1{margin-left:0.5rem}
 .flag-tag .icon-flag.txt{font-family:"KoreanAirSans";font-weight:400;font-size:1.2rem;line-height:1.2rem;color:var(--color-neutral-90)}
-.flag-tag .icon-flag.btn-blue{background-color:var(--color-neutral-10);color:var(--color-darkblue-100);border:solid 0.1rem var(--color-darkblue-100);box-shadow:0.2rem 0.5rem 0.5rem rgba(0, 0, 0, 0.1)}
+.flag-tag .icon-flag.btn-blue{background-color:#c0eaff;color:var(--color-darkblue-100);border:solid 0.1rem var(--color-darkblue-100);box-shadow:0.2rem 0.5rem 0.5rem rgba(0, 0, 0, 0.1)}
 .flag-tag .icon-flag.btn-wh{padding:0.2rem 1rem;line-height:1.2;background-color:var(--color-neutral-10);color:var(--color-neutral-90);box-shadow:0.2rem 0.5rem 0.5rem rgba(0, 0, 0, 0.1)}
 .flag-tag1 .icon-flag1.btn-lightblue{background-color:var(--color-lightblue-40);font-size:1.4rem;line-height:2.8}
 .flag-tag1 .icon-flag1:last-child{margin-right:2rem}
@@ -287,6 +287,7 @@
 .tabs-tab-remove .btn-list-blue{position:absolute;top:-0.8rem;width:2.3rem;height:2rem;font-size:0;background:url(../images/icon-register.svg)center center no-repeat;align-items:center}
 .editbox .form-table + .form-table.SelList{margin-top:-3.0rem}
 .editbox .form-table .form-cell .Position-end{position:absolute;right:0;width:15.0rem}
+.checklist-contents.Audit > .editbox .form-table .form-cell{padding:1rem 0rem 1rem 0}
 
 .number-r{position:relative;display:flex}
 .number-r .title{display:inline-block;line-height:4rem;padding-right:1rem;font-size:1.6rem;font-weight:700}
@@ -410,6 +411,95 @@
 .menu-tab-nav .swiper-container > .menu-tab-nav-operations button.menu-tab-btn-next:first-child{border-left:solid 0.1rem var(--color-neutral-40)}
 .menu-tab-nav .swiper-container .menu-tab a button:first-child{padding-left:1.5rem}
 .menu-tab-nav .swiper-container .menu-tab a button + button{padding-left:2.0rem}
+
+.ux-tab{display:flex;flex-wrap:nowrap;border:0.1rem solid var(--color-neutral-40);border-radius:0.8rem;overflow:auto hidden;scroll-behavior:smooth;gap:1.2rem 0;margin:0rem 0 1.5rem}
+.ux-tab:after{content:'';display:block;clear:both}
+.ux-tab.-scroll .ux-tab__wrap, .ux-tab.-scroll .ux-order-list-tab__wrap {
+  position: relative;
+}
+
+.ux-order-list-tab .ux-tab__list {
+  display: flex;
+  align-items: stretch;
+  margin: 0px;
+  overflow: inherit;
+  width: 100%;
+}
+.ux-tab__list {
+  position: relative;
+  padding: 0px;
+  margin-bottom: 2.4rem;
+  white-space: nowrap;
+  font-size: 0px;
+  overflow: auto hidden;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+}
+  .ux-tab__list::before {
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    display: block;
+    width: 100%;
+    height: 0.2rem;
+    content: "";
+    background-color: rgb(217, 217, 217);
+}
+.ux-order-list-tab__item {
+  height: 100%;
+  padding-right: 2.8rem;
+  position: relative;
+}
+.ux-order-list-tab__item::after {
+  content: "";
+  border-bottom: 2px solid rgb(217, 217, 217);
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  z-index: 0;
+}
+.ux-tab__item.-active .ux-order-list-tab__button {
+  position: relative;
+  border-bottom-color: rgb(5, 23, 102);
+  color: rgb(5, 23, 102);
+  font-weight: 700;
+}
+.ux-order-list-tab__button .icon-end {
+  position: absolute;
+  right: -2.2rem;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.ux-order-list-tab__button{position: relative;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  width: max-content;
+  max-width: 20rem;
+  height: 100%;
+  padding: 0.8rem 3.2rem 0.8rem 1.6rem;
+  font-size: 1.6rem;
+  color: rgb(94, 94, 94);
+  font-weight: normal;
+  border-width: 0px 0px 2px;
+  border-style: none none solid;
+  border-top-color: initial;
+  border-right-color: initial;
+  border-left-color: initial;
+  border-image: initial;
+  z-index: 1;
+  border-bottom-color: rgb(217, 217, 217);
+  border-radius: 0.2rem;
+  box-sizing: border-box;
+  cursor: pointer;
+  appearance: none;
+  background-color: transparent;
+  overflow-wrap: break-word;
+  white-space: normal;
+  line-height: 1.5;
+  font-family: inherit;}
 
 /*공통테이블*/
 .Safety-table-cell{text-align:center;align-items:center}

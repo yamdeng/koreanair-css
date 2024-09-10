@@ -369,8 +369,13 @@ function ReportLevelModal(props) {
                             </div>
                           </td>
                           <td className="level2">4C{/*<span className="thumb_flag best">추천</span>*/}</td>
-                          <td className="level3">4D</td>
-                          <td className="level4">4E</td>
+                          <td className="level3">
+                            4D
+                            <span className="thumb_flag best"></span>
+                          </td>
+                          <td className="level4">
+                            4E<span className="thumb_flag best"></span>
+                          </td>
                         </tr>
                         <tr>
                           <th>3</th>

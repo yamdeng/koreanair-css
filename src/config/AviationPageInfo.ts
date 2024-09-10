@@ -56,6 +56,8 @@ import GSRReportEdit from '@/components/publish/aviation/GSRReportEdit';
 import WorkShopList from '@/components/publish/aviation/WorkShopList';
 import ExcellenceList from '@/components/publish/aviation/ExcellenceList';
 import ExcellenceDetail from '@/components/publish/aviation/ExcellenceDetail';
+import MyAuditConduct from '@/components/publish/aviation/MyAuditConduct';
+
 import { fa } from '@faker-js/faker';
 import { fail } from 'assert';
 
@@ -344,13 +346,6 @@ AviationPageInfo.list = [
   },
 
   {
-    title: '[06.AUDIT] MyAuditList',
-    Component: MyAuditList,
-    path: 'MyAuditList',
-    description: '',
-    success: false,
-  },
-  {
     title: '[06.AUDIT] CheckList',
     Component: Checklist1,
     path: 'Checklist1',
@@ -370,6 +365,20 @@ AviationPageInfo.list = [
     path: 'CheckDetail',
     description: '',
     success: true,
+  },
+  {
+    title: '[06.AUDIT] MyAuditList',
+    Component: MyAuditList,
+    path: 'MyAuditList',
+    description: '',
+    success: true,
+  },
+  {
+    title: '[06.AUDIT] MyAuditConduct',
+    Component: MyAuditConduct,
+    path: 'MyAuditConduct',
+    description: '',
+    success: false,
   },
   {
     title: '[07.관리자] 게시판 관리 > 안전목표 List',
