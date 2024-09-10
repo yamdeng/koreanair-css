@@ -178,7 +178,7 @@ function MyAuditList() {
       {/*검색영역 */}
       <div className="boxForm">
         {/*area-detail명 옆에 active  */}
-        <div id="" className="area-detail active">
+        <div id="" className="area-detail myaudit active">
           <div className="form-table">
             <div className="form-cell wid30">
               <div className="form-group wid100">
@@ -224,7 +224,7 @@ function MyAuditList() {
               </div>
             </div>
             <div className="form-cell wid50">
-              <div className="group-box-wrap wid100">
+              <div className="group-box-wrap flex-between wid100">
                 <div className="radio-wrap border-no">
                   <label>
                     <input type="checkbox" checked />
@@ -235,16 +235,16 @@ function MyAuditList() {
                     <span>CAR 펼치기</span>
                   </label>
                 </div>
+                <div className="btn-area">
+                  <button type="button" name="button" className="btn-sm btn_text btn-darkblue-line">
+                    조회
+                  </button>
+                  <button type="button" name="button" className="btn-sm btn_text btn-darkblue-line">
+                    Guide
+                  </button>
+                </div>
               </div>
             </div>
-          </div>
-          <div className="btn-area">
-            <button type="button" name="button" className="btn-sm btn_text btn-darkblue-line">
-              조회
-            </button>
-            <button type="button" name="button" className="btn-sm btn_text btn-darkblue-line">
-              Guide
-            </button>
           </div>
         </div>
         {/*__control명 옆에 active  */}

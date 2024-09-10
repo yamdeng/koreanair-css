@@ -346,6 +346,7 @@
 .editbox .type10 .form-table .form-cell .editarea-box.view{padding:1.1rem 1rem 0.7rem 1rem}
 .checklist-contents.edit > .editbox.edit-detile.Audit{display:block;padding:0 3rem 1.5rem 1.5rem;margin-bottom:2.0rem}
 .editbox.Audit .form-table .form-cell{padding:1rem 0 0 0}
+.area-detail.myaudit > .form-table .form-cell .group-box-wrap .btn-area{padding-top:0}
 
 .checklist-contents.edit > .editbox + .editbox{margin-top:2rem}
 
@@ -386,8 +387,8 @@
 .user-wrap .user-box .user-box-top .user-box-bottom dl dt.tot{font-size:1.6rem;font-weight:600;line-height:3rem}
 .user-wrap .user-box .user-box-top .user-box-bottom dl dd.tot-result{font-size:2rem;font-weight:600;line-height:3rem;text-align:center}
 .user-wrap .user-box .user-box-top .user-box-bottom dl.sub-count{display:table;float:left;width:100%;padding:0 1.5rem 0 1.5rem;border-right:0}
-.user-wrap .user-box .user-box-top .user-box-bottom dl.sub-count dt{display:table-cell;font-weight:600;font-size:1.4rem;color:var(--color-neutral-90);width:40%;text-align:left;line-height:1.2;vertical-align:middle}
-.user-wrap .user-box .user-box-top .user-box-bottom dl.sub-count dd{font-weight:600;font-size:1.4rem;color:var(--color-neutral-90);text-align:right}
+.user-wrap .user-box .user-box-top .user-box-bottom dl.sub-count dt{display:table-cell;font-weight:600;font-size:1.2rem;color:var(--color-neutral-90);width:40%;text-align:left;line-height:1.2;vertical-align:middle}
+.user-wrap .user-box .user-box-top .user-box-bottom dl.sub-count dd{font-weight:600;font-size:1.2rem;color:var(--color-neutral-90);text-align:right}
 .text-color-blue{color:var(--color-mblue-100)}
 .text-color-red{color:var(--color-negative)}
 .text-color-yellow{color:var(--color-Leve6)}

@@ -717,8 +717,25 @@
 .flag-tag1 .icon-flag1:last-child{margin-right:2rem}
 .flag-tag1 .icon-flag1.active{text-decoration:underline;font-weight:600}
 
+.IcoTags {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.IcoTags .ico-tag {
+  position: relative;
+  border-bottom-left-radius: 7px;
+  padding: 0 10px;
+  background-color: #ffbc00;
+  font-size: 12px;
+  color: #fff;
+  font-weight: 700;
+  line-height: 30px;
+  width: 42px;
+}
 
-.RiskLevelTable.Risk td span{display:block;font-size:1.5rem}
+
+.RiskLevelTable.Risk td span{/*display:block;*/font-size:1.5rem}
 .RiskLevelTable.Risk td:hover{border:dotted 0.2rem var(--color-lightblue-10)!important;cursor:pointer}
 .RiskLevelTable.Risk td.selected{border:dotted 0.2rem var(--color-neutral-10)!important;color:var(--color-neutral-10)}
 .RiskLevelTable.severity th{height:4.0rem}

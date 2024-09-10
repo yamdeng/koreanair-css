@@ -340,6 +340,9 @@ function ReportLevelModal(props) {
                                 </a>
                               </span>
                             </div>
+                            <div className="IcoTags">
+                              <span className="ico-tag">추천</span>
+                            </div>
                           </td>
                           <td className="level1">
                             5B
