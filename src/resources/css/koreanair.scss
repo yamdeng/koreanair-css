@@ -783,9 +783,22 @@
   justify-content: flex-start;
   align-items: flex-start;
  div {width: calc(33.3% - 2.4rem); height: 100px; background-color: var(--color-neutral-20); border: 0.1rem solid var(--color-neutral-40); border-radius: 0.8rem; text-align: center;}
- .size {height: 200px; width: 33.4%;}
+  
+ .group-box {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2.4rem;
+  .main-group1 {}
+  .main-group2 {}
+  .main-group3 {}
+  .main-group4 {}
+}
+ 
+
+
+ .size {height: 500px; width: 33.4%;}
  .size1 {width: 66.7%;}
-  .main-top-group {
+/*  .main-top-group {
    display: inline-flex;
     background-color: #E35B4F;
     width: 100%;
@@ -804,5 +817,5 @@
     width: 100%;
     .main-footer-left-group { border: 0.1rem solid var(--color-neutral-40); border-radius: 0.8rem; background-color: var(--color-neutral-10);}
     .main-footer-right-group {border: 0.1rem solid var(--color-neutral-40); border-radius: 0.8rem; background-color: var(--color-neutral-10);}
-  }
+  }*/  
 }

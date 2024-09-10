@@ -15,14 +15,15 @@ function POccupationPortal1() {
           <div className="main-footer-left-group">fdsafds</div>
           <div className="main-footer-right-group">그래ㅠㅡ</div>
         </div>*/}
-        <div>내 태스크</div>
-        <div>사진</div>
+        <div className="group-box">
+          <div className="">내 태스크</div>
+          <div className="">사진</div>
+          <div className="">공지사항</div>
+          <div className="">KSMS 사이렌</div>
+        </div>
         <div className="size">작업허가현황</div>
-        <div>공지사항</div>
-        <div className="size1">KSMS 사이렌</div>
-
-        <div>Hazard Report 현황</div>
-        <div className="size1">재해율</div>
+        <div className="">Hazard Report 현황</div>
+        <div className="">재해율</div>
       </div>
     </>
   );
