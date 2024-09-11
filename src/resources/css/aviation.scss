@@ -390,6 +390,13 @@
 .user-wrap .user-box .user-box-top .user-box-bottom .pro-list dt{display:block;font-size:1.6rem;font-weight:600;letter-spacing:-0.1rem;color:var(--color-neutral-90)}
 .user-wrap .user-box .user-box-top .user-box-bottom .pro-list dd{font-size:1.4rem;font-weight:600;line-height:3rem}
 
+/*Risk Matrix*/
+.boxForm .form-table.RiskMatrix .info-txt{position:relative;font-size:1.5rem;padding-left:1.5rem}
+.boxForm .form-table.RiskMatrix .info-txt::before{content:'*';display:block;position:absolute;top:0.2rem}
+.boxForm .form-table.RiskMatrix .btn-area{padding-top:0}
+
+.RiskLevel-Wrap{display:flex;width:100%;gap:0 2rem}
+.RiskLevel-Wrap .RiskLevel-Left{}
 
 /*AUDIT-체크리스트 상단 탭*/
 .menu-tab.Audit a{/*padding:0 2rem*/}

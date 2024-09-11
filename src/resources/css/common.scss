@@ -515,6 +515,7 @@ input, select{font-family:'KoreanAirSans'}
 .boxForm .form-table{display:flex;width:100%}
 .boxForm .form-table + .form-table{/*padding-top:1.5rem*/}
 .boxForm .form-table:last-child{padding-bottom:1.5rem}
+.boxForm .form-table.RiskMatrix:last-child{padding-bottom:0}
 .boxForm .form-table .form-cell{position:relative;flex-grow:1;padding:0 0.5rem;padding-top:1.2rem}
 .boxForm .form-table .wid-300{max-width:30.0rem}
 .boxForm.tog{margin-bottom:0rem;padding-top:0rem}
