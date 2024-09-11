@@ -684,32 +684,6 @@
 .RiskLevelTable td.level4{background-color:var(--color-Leve4)}
 
 .RiskLevelTable.Risk td{position:relative;font-weight:600;vertical-align:text-top}
-.RiskLevelTable.Risk td .thumb_flag{position:absolute;top:0.8rem;left:1rem}
-.thumb_flag.best {background:url(/src/resources/images/icon-star.svg) center center no-repeat;font-size:0;width:2.4rem;height:2.4rem;
-    /*color: #f05a5e;line-height:40px;border-color: #f05a5e;box-shadow:0.8rem 0.5rem 0.8rem rgba(0, 0, 0, 0.1)*/}
-.thumb_flag {
-    display: inline-block;
-    width: 40px;
-    height: 40px;
-    font-size: 13px;
-    background: #fff;
-    border-radius:99.9rem;
-    border-width: 2px;
-    border-style: solid;
-    text-align: center;
-    font-weight:600;
-}
-
-/*.flag-tag{display:flex;justify-content:center;margin:0.3rem 0.5rem 0 0;gap:0 0.5rem}
-.flag-tag * {
-  display: inline-block;
-  padding-left: 22px;
-  font-size: 13px;
-  color: #555;
-  letter-spacing: -.4px;
-  line-height: 20px;
-  background: url(/src/resources/images/ico-information-i.svg) 0 2px no-repeat;
-}*/
 .flag-tag1{gap:0 0.5rem}
 .flag-tag .icon-flag{border-radius:99.9rem;padding:0.3rem 0.6rem}
 .flag-tag1 .icon-flag1{border-radius:99.9rem;padding:0.3rem 2.0rem}
@@ -721,36 +695,18 @@
 .flag-tag1 .icon-flag1:last-child{margin-right:2rem}
 .flag-tag1 .icon-flag1.active{text-decoration:underline;font-weight:600}
 .flag-tag{position:relative;width:100%}
-.flag-tag.tooltip {
-  
-  display:flex;
-  float: inline-end;
+.flag-tag.tooltip{cursor:pointer
+  //display:flex;
+  //float: inline-end;
   //background: url(/src/resources/images/ico-information-i.svg) left center no-repeat;
-  background-size: 2.4rem;
-  font-size: 0;
-  width: 2.4rem;
-  height: 2.4rem;
-  cursor: pointer;
+  //background-size: 2.4rem;
+  //font-size: 0;
+  //width: 2.4rem;
+  //height: 2.4rem;
 }
-
-.flag-tag .tooltip .tooltip-right {
-  top: -0.6rem;
-  left: 155%;
-}
-
-.flag-tag .tooltip .tooltiptext1 {
-  //visibility: hidden;
-  // position: absolute;
-  z-index: 999;
-  width: 27rem;
-  font-size: 1.2rem;
-  background-color: var(--color-neutral-80);
-  color:none;
-  text-align: left;
-  border-radius: 0.8rem;
-  padding: 1.5rem 2rem;
-}
-
+.flag-tag.tooltip .tooltip-right{top:-0.6rem;left:60%}
+.flag-tag.tooltip .tooltiptext1{visibility:hidden;position:absolute;z-index:999;width:23rem;font-size:1.2rem;background-color:var(--color-neutral-80);color:transparent;text-align:left;border-radius:0.8rem;padding:1.5rem 2rem}
+.flag-tag.tooltip .tooltiptext1::after{content:'';position: absolute;border-style: solid;border-width:0.5rem}
 .IcoTags{position:absolute;top:0.1rem;right:0}
 .IcoTags .ico-tag{position:relative;border-bottom-left-radius:0.7rem;
   padding:0.3rem 1rem;

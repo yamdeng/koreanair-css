@@ -331,10 +331,10 @@ function ReportLevelModal(props) {
                           {/* 선택되면 selected 붙임 */}
                           <td className="level1 selected">
                             5A
-                            {/*<span className="thumb_flag "></span>*/}
+                            {/* 툴팁 */}
                             <div className="flag-tag tooltip">
                               <span className="icon-flag txt">233</span>
-                              <div className="">
+                              <div>
                                 <span className="tooltiptext1 tooltip-right">
                                   <ul>
                                     <li>툴팁내용 해당기간동안 평가된 횟수</li>
@@ -342,43 +342,59 @@ function ReportLevelModal(props) {
                                 </span>
                               </div>
                             </div>
-                            {/* <div className="flag-tag">
-                              <span className="txt">
-                                233
-                                <div className="tooltip">
-                                  <span className="tooltiptext1 tooltip-right">
-                                    <ul>
-                                      <li>툴팁내용 해당기간동안 평가된 횟수</li>
-                                    </ul>
-                                  </span>
-                                </div>
-                              </span>
-                            </div> */}
                             <div className="IcoTags">
                               <span className="ico-tag">추천</span>
                             </div>
                           </td>
                           <td className="level1">
                             5B
-                            <div className="flag-tag">
+                            <div className="flag-tag tooltip">
                               <span className="icon-flag txt">23</span>
+                              <div>
+                                <span className="tooltiptext1 tooltip-right">
+                                  <ul>
+                                    <li>툴팁내용 해당기간동안 평가된 횟수</li>
+                                  </ul>
+                                </span>
+                              </div>
                             </div>
                           </td>
                           <td className="level1">
                             5C
-                            <div className="flag-tag">
+                            <div className="flag-tag tooltip">
                               <span className="icon-flag txt">99</span>
+                              <div>
+                                <span className="tooltiptext1 tooltip-right">
+                                  <ul>
+                                    <li>툴팁내용 해당기간동안 평가된 횟수</li>
+                                  </ul>
+                                </span>
+                              </div>
                               {/*<span className="icon-flag txt btn-blue">1차추천</span> */}
                             </div>
                           </td>
                           <td className="level2">
                             5D
-                            <div className="flag-tag">
-                              <span className="icon-flag txt">23</span>
-                              {/* <span className="icon-flag txt btn-blue">2차추천</span> */}
+                            <div className="flag-tag tooltip">
+                              <span className="icon-flag txt">233</span>
+                              <div>
+                                <span className="tooltiptext1 tooltip-right">
+                                  <ul>
+                                    <li>툴팁내용 해당기간동안 평가된 횟수</li>
+                                  </ul>
+                                </span>
+                              </div>
+                            </div>
+                            <div className="IcoTags">
+                              <span className="ico-tag">추천</span>
                             </div>
                           </td>
-                          <td className="level3">5E</td>
+                          <td className="level3">
+                            5E
+                            <div className="IcoTags">
+                              <span className="ico-tag">추천</span>
+                            </div>
+                          </td>
                         </tr>
                         <tr>
                           <th>4</th>
@@ -391,7 +407,12 @@ function ReportLevelModal(props) {
                           </td>
                           <td className="level2">4C</td>
                           <td className="level3">4D</td>
-                          <td className="level4">4E</td>
+                          <td className="level4">
+                            4E
+                            <div className="IcoTags">
+                              <span className="ico-tag">추천</span>
+                            </div>
+                          </td>
                         </tr>
                         <tr>
                           <th>3</th>
