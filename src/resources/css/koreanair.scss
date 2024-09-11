@@ -786,7 +786,7 @@
 
 }
 
-.work-table {clear: both; width: 100%; box-sizing: border-box;}
+.work-table {clear: both; width: 100%; max-width: 76.7rem; overflow-x: scroll; box-sizing: border-box;}
 .work-table th, .work-table td {padding: 1.0rem; font-size: 1.4rem; text-align: center; line-height: 150%; border-left: 0.1rem solid var(--color-neutral-40); vertical-align:middle;}
 .work-table th, .work-table td:first-child {border-left: 0;}
 .work-table th:nth-child(1), .work-table td:nth-child(1){width: 30%;}
@@ -799,4 +799,4 @@
 .work-table tbody {display: block; height: 40.0rem; overflow-y: auto;}
 
 .border-b-no {border-bottom: 0 !important;}
-.ag-theme-quartz .h300 {height: 30.0rem !important}
+.ag-theme-quartz.h300 {height: 30.0rem !important}

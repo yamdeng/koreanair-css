@@ -380,7 +380,7 @@ function POccupationMu3P4edit() {
                           <tbody>
                             <tr>
                               <td>
-                                <div className="radio-wrap type02">
+                                <div className="radio-wrap-type02">
                                   <label className="type02">
                                     <input type="checkbox" />
                                     <span className="type02">공통(일반)</span>
@@ -417,7 +417,7 @@ function POccupationMu3P4edit() {
                             </tr>
                             <tr>
                               <td>
-                                <div className="radio-wrap type02">
+                                <div className="radio-wrap-type02">
                                   <label className="type02">
                                     <input type="checkbox" />
                                     <span className="type02">화재위험작업</span>
@@ -425,7 +425,7 @@ function POccupationMu3P4edit() {
                                 </div>
                               </td>
                               <td>
-                                <div className="radio-wrap type02">
+                                <div className="radio-wrap-type02">
                                   <label className="type02">
                                     <input type="checkbox" />
                                     <span className="type02">가스 용접·용단</span>
@@ -469,7 +469,7 @@ function POccupationMu3P4edit() {
                             </tr>
                             <tr>
                               <td>
-                                <div className="radio-wrap type02">
+                                <div className="radio-wrap-type02">
                                   <label className="type02">
                                     <input type="checkbox" />
                                     <span className="type02">화재위험작업</span>
@@ -477,7 +477,7 @@ function POccupationMu3P4edit() {
                                 </div>
                               </td>
                               <td>
-                                <div className="radio-wrap type02">
+                                <div className="radio-wrap-type02">
                                   <label className="type02">
                                     <input type="checkbox" />
                                     <span className="type02">가스 용접·용단</span>
@@ -521,7 +521,7 @@ function POccupationMu3P4edit() {
                             </tr>
                             <tr>
                               <td>
-                                <div className="radio-wrap type02">
+                                <div className="radio-wrap-type02">
                                   <label className="type02">
                                     <input type="checkbox" />
                                     <span className="type02">전기작업</span>
@@ -558,7 +558,7 @@ function POccupationMu3P4edit() {
                             </tr>
                             <tr>
                               <td>
-                                <div className="radio-wrap type02">
+                                <div className="radio-wrap-type02">
                                   <label className="type02">
                                     <input type="checkbox" />
                                     <span className="type02">고소작업</span>
@@ -566,7 +566,7 @@ function POccupationMu3P4edit() {
                                 </div>
                               </td>
                               <td>
-                                <div className="radio-wrap type02">
+                                <div className="radio-wrap-type02">
                                   <label className="type02">
                                     <input type="checkbox" />
                                     <span className="type02">이동식 사다리</span>
@@ -614,7 +614,7 @@ function POccupationMu3P4edit() {
                             </tr>
                             <tr>
                               <td>
-                                <div className="radio-wrap type02">
+                                <div className="radio-wrap-type02">
                                   <label className="type02">
                                     <input type="checkbox" />
                                     <span className="type02">줄걸이작업</span>
@@ -622,7 +622,7 @@ function POccupationMu3P4edit() {
                                 </div>
                               </td>
                               <td>
-                                <div className="radio-wrap type02">
+                                <div className="radio-wrap-type02">
                                   <label className="type02">
                                     <input type="checkbox" />
                                     <span className="type02">기중기(건설기계) </span>
@@ -662,7 +662,7 @@ function POccupationMu3P4edit() {
                             </tr>
                             <tr>
                               <td>
-                                <div className="radio-wrap type02">
+                                <div className="radio-wrap-type02">
                                   <label className="type02">
                                     <input type="checkbox" />
                                     <span className="type02">건설기계 사용작업</span>
@@ -670,7 +670,7 @@ function POccupationMu3P4edit() {
                                 </div>
                               </td>
                               <td>
-                                <div className="radio-wrap type02">
+                                <div className="radio-wrap-type02">
                                   <label className="type02">
                                     <input type="checkbox" />
                                     <span className="type02">굴착기</span>
@@ -724,7 +724,7 @@ function POccupationMu3P4edit() {
                             </tr>
                             <tr>
                               <td>
-                                <div className="radio-wrap type02">
+                                <div className="radio-wrap-type02">
                                   <label className="type02">
                                     <input type="checkbox" />
                                     <span className="type02">밀폐공간</span>
@@ -878,7 +878,22 @@ function POccupationMu3P4edit() {
                     <div className="form-cell wid50">
                       <div className="form-group wid100">
                         <h3 className="table-tit">체크리스트</h3>
-                        그리드영역
+                        <table>
+                          <thead>
+                            <tr>
+                              <th>작업</th>
+                              <th>반입장비</th>
+                              <th>체크리스트</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>공통(일반)</td>
+                              <td></td>
+                              <td>작성 완료</td>
+                            </tr>
+                          </tbody>
+                        </table>
                       </div>
                     </div>
                   </div>
@@ -955,7 +970,26 @@ function POccupationMu3P4edit() {
                     <div className="form-cell wid50">
                       <div className="form-group wid100">
                         <h3 className="table-tit">공사연장 이력</h3>
-                        그리드영역
+                        <table>
+                          <thead>
+                            <tr>
+                              <th>연장 전 종료 일자</th>
+                              <th>연장 요청 일자</th>
+                              <th>연장 요청 사유</th>
+                              <th>연장 승인 일자</th>
+                              <th>승인부서 의견</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>2024.07.16</td>
+                              <td>2024.07.18</td>
+                              <td>폭우로 인한 공사 연장</td>
+                              <td>2024.07.18</td>
+                              <td>내용</td>
+                            </tr>
+                          </tbody>
+                        </table>
                       </div>
                     </div>
                   </div>
