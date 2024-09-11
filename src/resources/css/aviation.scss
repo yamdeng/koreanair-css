@@ -59,17 +59,7 @@
 
 .c-step-list{counter-reset:stepCounter}
 .c-step-list.default{display:flex;font-size:1.2rem;text-align:center;margin-left:-1.5rem}
-.flag-tag{display:flex;justify-content:center;margin:0.3rem 0.5rem 0 0;gap:0 0.5rem}
-.flag-tag1{gap:0 0.5rem}
-.flag-tag .icon-flag{border-radius:99.9rem;padding:0.3rem 0.6rem}
-.flag-tag1 .icon-flag1{border-radius:99.9rem;padding:0.3rem 2.0rem}
-.flag-tag1 .icon-flag1 + .icon-flag1{margin-left:0.5rem}
-.flag-tag .icon-flag.txt{font-family:"KoreanAirSans";font-weight:400;font-size:1.2rem;line-height:1.2rem;color:var(--color-neutral-90)}
-.flag-tag .icon-flag.btn-blue{background-color:#c0eaff;color:var(--color-darkblue-100);border:solid 0.1rem var(--color-darkblue-100);box-shadow:0.2rem 0.5rem 0.5rem rgba(0, 0, 0, 0.1)}
-.flag-tag .icon-flag.btn-wh{padding:0.2rem 1rem;line-height:1.2;background-color:var(--color-neutral-10);color:var(--color-neutral-90);box-shadow:0.2rem 0.5rem 0.5rem rgba(0, 0, 0, 0.1)}
-.flag-tag1 .icon-flag1.btn-lightblue{background-color:var(--color-lightblue-40);font-size:1.4rem;line-height:2.8}
-.flag-tag1 .icon-flag1:last-child{margin-right:2rem}
-.flag-tag1 .icon-flag1.active{text-decoration:underline;font-weight:600}
+
 
 .edit-area .form-table .form-cell.Add{border-bottom:0}
 .notice-board td{position:relative;padding:1.0rem 0.3rem}
@@ -335,7 +325,7 @@
 .checklist-contents .checklist-row.list h4 label{position:relative;display:inline-block;width:100%;padding-bottom:1.3rem;border-bottom:0.1rem solid rgb(188, 188, 205)}
 .checklist-contents .checklist-row.list h4 label button.btn-list{position:absolute;left:1rem;top:0.5rem;width:2.3rem;height:2rem;font-size:0;background:url(../images/icon-register.svg)center center no-repeat;align-items:center}
 .checklist-contents .checklist-row.list h4 a{display:inline-block;padding-left:4.0rem}
-.checklist-contents .checklist-row.list h4 a span{font-size:1.6rem;font-weight:700;line-height:2.5rem}
+.checklist-contents .checklist-row.list h4 a span{font-size:1.5rem;font-weight:700;line-height:2.5rem}
 
 .checklist-contents .checklist-row{display:flex;justify-content:flex-start;flex-wrap:wrap;width:25%;box-sizing:border-box;overflow:hidden;margin:1.0rem 0 0rem}
 .checklist-contents .checklist-row .checklist-col{position:relative;width:100%;;height:100%;border-radius:0.8rem;padding:1.2rem 1rem;margin-right:1rem;border:solid 0rem var(--color-neutral-01);background-color:var(--color-neutral-10)}

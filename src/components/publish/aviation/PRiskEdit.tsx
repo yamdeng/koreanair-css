@@ -112,11 +112,11 @@ function PRiskEdit() {
           <dt onClick={() => setFirstExpaned(!firstExpaned)}>
             <button type="button" className="btn-tg">
               발생정보<span className={firstExpaned ? 'active' : ''}></span>
-              <div className="tag-info-wrap">
+              {/* <div className="tag-info-wrap">
                 <div className="tooltip">
                   <span className="hide">툴팁아이콘</span>
                 </div>
-              </div>
+              </div> */}
             </button>
           </dt>
           <dd className="tg-conts" style={{ display: firstExpaned ? '' : 'none' }}>

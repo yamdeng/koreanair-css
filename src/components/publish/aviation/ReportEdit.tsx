@@ -148,7 +148,8 @@ function ReportEdit() {
                         <span className="ant-input-group-addon1">KE</span>
                         <div className="ant-input-group-addon1-input wid50 df">
                           {/*비행편명 */}
-                          <AppTextInput label="비행편명" required value="aaasd" />
+                          {/* <AppTextInput label="비행편명" required value="aaasd" /> */}
+                          <AppSearchInput label="비행편명" required value="aaasd" />
                           <div className="btn-area">
                             <button type="button" name="button" className="btn-sm btn_text btn-darkblue-line">
                               Search
@@ -406,7 +407,7 @@ function ReportEdit() {
                               <div className="type1">
                                 <AppTextInput inputType={'number'} label="" />
                                 <label htmlFor="file" className="file-label">
-                                  Altitude <span className="required"></span>
+                                  Altitude <span className="required">*</span>
                                 </label>
                               </div>
                               <div className="type2">
@@ -426,7 +427,7 @@ function ReportEdit() {
                               <div className="type1">
                                 <AppTextInput inputType={'number'} label="" />
                                 <label htmlFor="file" className="file-label">
-                                  Speed <span className="required"></span>
+                                  Speed <span className="required">*</span>
                                 </label>
                               </div>
                               <div className="type2">
