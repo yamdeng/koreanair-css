@@ -670,8 +670,8 @@ input, select{font-family:'KoreanAirSans'}
 :where(.css-dev-only-do-not-override-98ntnt)[class^="ant-select"] [class^="ant-select"], :where(.css-dev-only-do-not-override-98ntnt)[class*=" ant-select"] [class^="ant-select"]{color:var(--color-mblue-100)}
 .label-select.focused + .f-label,
 .label-select.ant-select-focused + .f-label,
-.label-picker.ant-picker-focused + .f-label,.label-picker.selected + .f-label{left:1rem;top:-1rem;font-size:1.3rem;color:var(--color-mblue-100);background-color:var(--color-neutral-10)}
-.label-select.selected + .f-label{left:1rem;top:-1rem;font-size:1.3rem;}
+.label-picker.ant-picker-focused + .f-label {left:1rem;top:-1rem;font-size:1.3rem;color:var(--color-mblue-100);background-color:var(--color-neutral-10)}
+.label-picker.selected + .f-label, .label-select.selected + .f-label{left:1rem;top:-1rem;font-size:1.3rem;}
 
 .ant-picker{height:4rem}
 .ant-picker{padding:4px 20px 4px !important;width: 100%;}
