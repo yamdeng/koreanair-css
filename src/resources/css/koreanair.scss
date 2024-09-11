@@ -786,4 +786,13 @@
 
 }
 
+.work-table {clear: both; width: 100%; box-sizing: border-box;}
+.work-table th, .work-table td {padding: 1.0rem; font-size: 1.4rem; text-align: center; line-height: 150%; border: 0.1rem solid var(--color-neutral-40); vertical-align:middle;}
+.work-table th:nth-child(1), .work-table td:nth-child(1){width: 30%;}
+.work-table th:nth-child(2), .work-table td:nth-child(2){width: 40%;}
+.work-table th:nth-child(3), .work-table td:nth-child(3){width: 30%;}
+.work-table th {background-color: var(--color-neutral-20); border-top: 0.1rem solid var(--color-darkblue-100); }
+.work-table tr {border-bottom: 0.1rem solid var(--color-neutral-40);}
+
+
 .ag-theme-quartz .h300 {height: 30.0rem !important}
