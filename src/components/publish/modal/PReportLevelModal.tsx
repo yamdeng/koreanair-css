@@ -328,22 +328,23 @@ function ReportLevelModal(props) {
                       <tbody>
                         <tr>
                           <th>5</th>
-                          <td className="level1">
+                          {/* 선택되면 selected 붙임 */}
+                          <td className="level1 selected">
                             5A
                             {/*<span className="thumb_flag "></span>*/}
                             <div className="flag-tag">
                               <span className="icon-flag txt">
                                 233
-                                <div className="tooltip">
+                                {/* <div className="tooltip">
                                   <span className="tooltiptext1 tooltip-right">
                                     <ul>
                                       <li>툴팁내용 해당기간동안 평가된 횟수</li>
                                     </ul>
                                   </span>
-                                </div>
+                                </div> */}
                               </span>
                             </div>
-                            <div className="flag-tag">
+                            {/* <div className="flag-tag">
                               <span className="txt">
                                 233
                                 <div className="tooltip">
@@ -354,7 +355,7 @@ function ReportLevelModal(props) {
                                   </span>
                                 </div>
                               </span>
-                            </div>
+                            </div> */}
                             <div className="IcoTags">
                               <span className="ico-tag">추천</span>
                             </div>
@@ -362,21 +363,21 @@ function ReportLevelModal(props) {
                           <td className="level1">
                             5B
                             <div className="flag-tag">
-                              <span className="icon-flag txt btn-wh">23</span>
+                              <span className="icon-flag txt">23</span>
                             </div>
                           </td>
                           <td className="level1">
                             5C
                             <div className="flag-tag">
-                              <span className="icon-flag txt btn-wh">99</span>
+                              <span className="icon-flag txt">99</span>
                               {/*<span className="icon-flag txt btn-blue">1차추천</span> */}
                             </div>
                           </td>
                           <td className="level2">
                             5D
                             <div className="flag-tag">
-                              <span className="icon-flag txt btn-wh">23</span>
-                              <span className="icon-flag txt btn-blue">2차추천</span>
+                              <span className="icon-flag txt">23</span>
+                              {/* <span className="icon-flag txt btn-blue">2차추천</span> */}
                             </div>
                           </td>
                           <td className="level3">5E</td>
@@ -387,20 +388,12 @@ function ReportLevelModal(props) {
                           <td className="level1">
                             4B
                             <div className="flag-tag">
-                              <span className="icon-flag txt btn-wh">233</span>
-                              <span className="icon-flag txt btn-blue">1차추천</span>
+                              <span className="icon-flag txt">233</span>
                             </div>
                           </td>
-                          <td className="level2">
-                            4C<span className="thumb_flag best">추천</span>
-                          </td>
-                          <td className="level3">
-                            4D
-                            <span className="thumb_flag best"></span>
-                          </td>
-                          <td className="level4">
-                            4E<span className="thumb_flag best"></span>
-                          </td>
+                          <td className="level2">4C</td>
+                          <td className="level3">4D</td>
+                          <td className="level4">4E</td>
                         </tr>
                         <tr>
                           <th>3</th>
@@ -411,8 +404,7 @@ function ReportLevelModal(props) {
                           <td className="level4">
                             3E{' '}
                             <div className="flag-tag">
-                              <span className="icon-flag txt btn-wh">233</span>
-                              <span className="icon-flag txt btn-blue">1차추천</span>
+                              <span className="icon-flag txt">233</span>
                             </div>
                           </td>
                         </tr>
@@ -424,8 +416,7 @@ function ReportLevelModal(props) {
                           <td className="level4">
                             2D{' '}
                             <div className="flag-tag">
-                              <span className="icon-flag txt btn-wh">233</span>
-                              <span className="icon-flag txt btn-blue">1차추천</span>
+                              <span className="icon-flag txt">233</span>
                             </div>
                           </td>
                           <td className="level4">2E</td>
@@ -439,7 +430,7 @@ function ReportLevelModal(props) {
                           <td className="level4">
                             1E
                             <div className="flag-tag">
-                              <span className="icon-flag txt btn-wh">233</span>
+                              <span className="icon-flag txt">233</span>
                             </div>
                           </td>
                         </tr>
@@ -573,7 +564,7 @@ function ReportLevelModal(props) {
             닫기
           </button>
           <button className="btn_text text_color_neutral-10 btn_confirm" onClick={closeModal}>
-            저장
+            선택
           </button>
         </div>
         <span className="pop_close" onClick={closeModal}>
