@@ -369,398 +369,401 @@ function POccupationMu3P4edit() {
                         <h3 className="table-tit">
                           공사구분 <span className="required">*</span>
                         </h3>
-                        <table className="work-table">
-                          <thead>
-                            <tr>
-                              <th>작업</th>
-                              <th>반입장비</th>
-                              <th>파일첨부</th>
-                            </tr>
-                          </thead>
-                          <tbody>
-                            <tr>
-                              <td>
-                                <div className="radio-wrap-type02">
-                                  <label className="type02">
-                                    <input type="checkbox" />
-                                    <span className="type02">공통(일반)</span>
-                                  </label>
-                                </div>
-                              </td>
-                              <td></td>
-                              <td>
-                                {/* 파일첨부영역 : button */}
-                                <div className="form-table">
-                                  <div className="form-cell wid50 border-b-no">
-                                    <div className="form-group wid100">
-                                      <div className="filebox ">
-                                        <Upload {...props}>
-                                          <div className="btn-area">
-                                            <button
-                                              type="button"
-                                              name="button"
-                                              className="btn-big btn_text btn-darkblue-line mg-n"
-                                            >
-                                              + Upload
-                                            </button>
-                                          </div>
-                                        </Upload>
-                                        <label htmlFor="file" className="file-label">
-                                          첨부파일 <span className="required">*</span>
-                                        </label>
+                        <div className="work-group">
+                          <table className="work-table">
+                            <thead>
+                              <tr>
+                                <th>작업</th>
+                                <th>반입장비</th>
+                                <th>파일첨부</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>
+                                  <div className="radio-wrap-type02">
+                                    <label className="type02">
+                                      <input type="checkbox" />
+                                      <span className="type02">공통(일반)</span>
+                                    </label>
+                                  </div>
+                                </td>
+                                <td></td>
+                                <td>
+                                  {/* 파일첨부영역 : button */}
+                                  <div className="form-table">
+                                    <div className="form-cell wid50 border-b-no">
+                                      <div className="form-group wid100">
+                                        <div className="filebox ">
+                                          <Upload {...props}>
+                                            <div className="btn-area">
+                                              <button
+                                                type="button"
+                                                name="button"
+                                                className="btn-big btn_text btn-darkblue-line mg-n"
+                                              >
+                                                + Upload
+                                              </button>
+                                            </div>
+                                          </Upload>
+                                          <label htmlFor="file" className="file-label">
+                                            첨부파일 <span className="required">*</span>
+                                          </label>
+                                        </div>
                                       </div>
-                                      {/*<span className="errorText">fileerror</span>*/}
                                     </div>
                                   </div>
-                                </div>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <div className="radio-wrap-type02">
-                                  <label className="type02">
-                                    <input type="checkbox" />
-                                    <span className="type02">화재위험작업</span>
-                                  </label>
-                                </div>
-                              </td>
-                              <td>
-                                <div className="radio-wrap-type02">
-                                  <label className="type02">
-                                    <input type="checkbox" />
-                                    <span className="type02">가스 용접·용단</span>
-                                  </label>
-                                  <label className="type02">
-                                    <input type="checkbox" />
-                                    <span className="type02">전기 용접</span>
-                                  </label>
-                                  <label className="type02">
-                                    <input type="checkbox" />
-                                    <span className="type02">연삭기</span>
-                                  </label>
-                                </div>
-                              </td>
-                              <td>
-                                {/* 파일첨부영역 : button */}
-                                <div className="form-table">
-                                  <div className="form-cell wid50 border-b-no">
-                                    <div className="form-group wid100">
-                                      <div className="filebox ">
-                                        <Upload {...props}>
-                                          <div className="btn-area">
-                                            <button
-                                              type="button"
-                                              name="button"
-                                              className="btn-big btn_text btn-darkblue-line mg-n"
-                                            >
-                                              + Upload
-                                            </button>
-                                          </div>
-                                        </Upload>
-                                        <label htmlFor="file" className="file-label">
-                                          첨부파일 <span className="required">*</span>
-                                        </label>
-                                      </div>
-                                      {/*<span className="errorText">fileerror</span>*/}
-                                    </div>
-                                  </div>
-                                </div>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <div className="radio-wrap-type02">
-                                  <label className="type02">
-                                    <input type="checkbox" />
-                                    <span className="type02">화재위험작업</span>
-                                  </label>
-                                </div>
-                              </td>
-                              <td>
-                                <div className="radio-wrap-type02">
-                                  <label className="type02">
-                                    <input type="checkbox" />
-                                    <span className="type02">가스 용접·용단</span>
-                                  </label>
-                                  <label className="type02">
-                                    <input type="checkbox" />
-                                    <span className="type02">전기 용접</span>
-                                  </label>
-                                  <label className="type02">
-                                    <input type="checkbox" />
-                                    <span className="type02">연삭기</span>
-                                  </label>
-                                </div>
-                              </td>
-                              <td>
-                                {/* 파일첨부영역 : button */}
-                                <div className="form-table">
-                                  <div className="form-cell wid50 border-b-no">
-                                    <div className="form-group wid100">
-                                      <div className="filebox ">
-                                        <Upload {...props}>
-                                          <div className="btn-area">
-                                            <button
-                                              type="button"
-                                              name="button"
-                                              className="btn-big btn_text btn-darkblue-line mg-n"
-                                            >
-                                              + Upload
-                                            </button>
-                                          </div>
-                                        </Upload>
-                                        <label htmlFor="file" className="file-label">
-                                          첨부파일 <span className="required">*</span>
-                                        </label>
-                                      </div>
-                                      {/*<span className="errorText">fileerror</span>*/}
-                                    </div>
-                                  </div>
-                                </div>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <div className="radio-wrap-type02">
-                                  <label className="type02">
-                                    <input type="checkbox" />
-                                    <span className="type02">전기작업</span>
-                                  </label>
-                                </div>
-                              </td>
-                              <td></td>
-                              <td>
-                                {/* 파일첨부영역 : button */}
-                                <div className="form-table">
-                                  <div className="form-cell wid50 border-b-no">
-                                    <div className="form-group wid100">
-                                      <div className="filebox ">
-                                        <Upload {...props}>
-                                          <div className="btn-area">
-                                            <button
-                                              type="button"
-                                              name="button"
-                                              className="btn-big btn_text btn-darkblue-line mg-n"
-                                            >
-                                              + Upload
-                                            </button>
-                                          </div>
-                                        </Upload>
-                                        <label htmlFor="file" className="file-label">
-                                          첨부파일 <span className="required">*</span>
-                                        </label>
-                                      </div>
-                                      {/*<span className="errorText">fileerror</span>*/}
-                                    </div>
-                                  </div>
-                                </div>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <div className="radio-wrap-type02">
-                                  <label className="type02">
-                                    <input type="checkbox" />
-                                    <span className="type02">고소작업</span>
-                                  </label>
-                                </div>
-                              </td>
-                              <td>
-                                <div className="radio-wrap-type02">
-                                  <label className="type02">
-                                    <input type="checkbox" />
-                                    <span className="type02">이동식 사다리</span>
-                                  </label>
-                                  <label className="type02">
-                                    <input type="checkbox" />
-                                    <span className="type02">달비계</span>
-                                  </label>
-                                  <label className="type02">
-                                    <input type="checkbox" />
-                                    <span className="type02">시저형 고소작업대(렌탈)</span>
-                                  </label>
-                                  <label className="type02">
-                                    <input type="checkbox" />
-                                    <span className="type02">차량탑재형 고소작업대(스카이차)</span>
-                                  </label>
-                                </div>
-                              </td>
-                              <td>
-                                {/* 파일첨부영역 : button */}
-                                <div className="form-table">
-                                  <div className="form-cell wid50 border-b-no">
-                                    <div className="form-group wid100">
-                                      <div className="filebox ">
-                                        <Upload {...props}>
-                                          <div className="btn-area">
-                                            <button
-                                              type="button"
-                                              name="button"
-                                              className="btn-big btn_text btn-darkblue-line mg-n"
-                                            >
-                                              + Upload
-                                            </button>
-                                          </div>
-                                        </Upload>
-                                        <label htmlFor="file" className="file-label">
-                                          첨부파일 <span className="required">*</span>
-                                        </label>
-                                      </div>
-                                      {/*<span className="errorText">fileerror</span>*/}
-                                    </div>
-                                  </div>
-                                </div>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <div className="radio-wrap-type02">
-                                  <label className="type02">
-                                    <input type="checkbox" />
-                                    <span className="type02">줄걸이작업</span>
-                                  </label>
-                                </div>
-                              </td>
-                              <td>
-                                <div className="radio-wrap-type02">
-                                  <label className="type02">
-                                    <input type="checkbox" />
-                                    <span className="type02">기중기(건설기계) </span>
-                                  </label>
-                                  <label className="type02">
-                                    <input type="checkbox" />
-                                    <span className="type02">차량탑재형 이동식 크레인(카고크레인) </span>
-                                  </label>
-                                </div>
-                              </td>
-                              <td>
-                                {/* 파일첨부영역 : button */}
-                                <div className="form-table">
-                                  <div className="form-cell wid50 border-b-no">
-                                    <div className="form-group wid100">
-                                      <div className="filebox ">
-                                        <Upload {...props}>
-                                          <div className="btn-area">
-                                            <button
-                                              type="button"
-                                              name="button"
-                                              className="btn-big btn_text btn-darkblue-line mg-n"
-                                            >
-                                              + Upload
-                                            </button>
-                                          </div>
-                                        </Upload>
-                                        <label htmlFor="file" className="file-label">
-                                          첨부파일 <span className="required">*</span>
-                                        </label>
-                                      </div>
-                                      {/*<span className="errorText">fileerror</span>*/}
-                                    </div>
-                                  </div>
-                                </div>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <div className="radio-wrap-type02">
-                                  <label className="type02">
-                                    <input type="checkbox" />
-                                    <span className="type02">건설기계 사용작업</span>
-                                  </label>
-                                </div>
-                              </td>
-                              <td>
-                                <div className="radio-wrap-type02">
-                                  <label className="type02">
-                                    <input type="checkbox" />
-                                    <span className="type02">굴착기</span>
-                                  </label>
+                                </td>
+                              </tr>
 
-                                  <label className="type02">
-                                    <input type="checkbox" />
-                                    <span className="type02">지게차</span>
-                                  </label>
+                              <tr>
+                                <td>
+                                  <div className="radio-wrap-type02">
+                                    <label className="type02">
+                                      <input type="checkbox" />
+                                      <span className="type02">화재위험작업</span>
+                                    </label>
+                                  </div>
+                                </td>
+                                <td>
+                                  <div className="radio-wrap-type02">
+                                    <label className="type02">
+                                      <input type="checkbox" />
+                                      <span className="type02">가스 용접·용단</span>
+                                    </label>
+                                    <label className="type02">
+                                      <input type="checkbox" />
+                                      <span className="type02">전기·용접</span>
+                                    </label>
+                                    <label className="type02">
+                                      <input type="checkbox" />
+                                      <span className="type02">연삭기</span>
+                                    </label>
+                                  </div>
+                                </td>
+                                <td>
+                                  {/* 파일첨부영역 : button */}
+                                  <div className="form-table">
+                                    <div className="form-cell wid50 border-b-no">
+                                      <div className="form-group wid100">
+                                        <div className="filebox ">
+                                          <Upload {...props}>
+                                            <div className="btn-area">
+                                              <button
+                                                type="button"
+                                                name="button"
+                                                className="btn-big btn_text btn-darkblue-line mg-n"
+                                              >
+                                                + Upload
+                                              </button>
+                                            </div>
+                                          </Upload>
+                                          <label htmlFor="file" className="file-label">
+                                            첨부파일 <span className="required">*</span>
+                                          </label>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </td>
+                              </tr>
 
-                                  <label className="type02">
-                                    <input type="checkbox" />
-                                    <span className="type02">덤프트럭</span>
-                                  </label>
-                                  <label className="type02">
-                                    <input type="checkbox" />
-                                    <span className="type02">콘크리트믹서트럭</span>
-                                  </label>
-                                  <label className="type02">
-                                    <input type="checkbox" />
-                                    <span className="type02">이 외</span>
-                                  </label>
-                                </div>
-                              </td>
-                              <td>
-                                {/* 파일첨부영역 : button */}
-                                <div className="form-table">
-                                  <div className="form-cell wid50 border-b-no">
-                                    <div className="form-group wid100">
-                                      <div className="filebox ">
-                                        <Upload {...props}>
-                                          <div className="btn-area">
-                                            <button
-                                              type="button"
-                                              name="button"
-                                              className="btn-big btn_text btn-darkblue-line mg-n"
-                                            >
-                                              + Upload
-                                            </button>
-                                          </div>
-                                        </Upload>
-                                        <label htmlFor="file" className="file-label">
-                                          첨부파일 <span className="required">*</span>
-                                        </label>
+                              <tr>
+                                <td>
+                                  <div className="radio-wrap-type02">
+                                    <label className="type02">
+                                      <input type="checkbox" />
+                                      <span className="type02">전기작업</span>
+                                    </label>
+                                  </div>
+                                </td>
+                                <td>
+                                  <div className="radio-wrap-type02">
+                                    <label className="type02">
+                                      <input type="checkbox" />
+                                      <span className="type02">이동식 사다리</span>
+                                    </label>
+                                    <label className="type02">
+                                      <input type="checkbox" />
+                                      <span className="type02">달비계</span>
+                                    </label>
+                                    <label className="type02">
+                                      <input type="checkbox" />
+                                      <span className="type02">시저형 고소작업대(렌탈)</span>
+                                    </label>
+                                    <label className="type02">
+                                      <input type="checkbox" />
+                                      <span className="type02">차량탑재형 고소작업대(스카이차)</span>
+                                    </label>
+                                  </div>
+                                </td>
+                                <td>
+                                  {/* 파일첨부영역 : button */}
+                                  <div className="form-table">
+                                    <div className="form-cell wid50 border-b-no">
+                                      <div className="form-group wid100">
+                                        <div className="filebox ">
+                                          <Upload {...props}>
+                                            <div className="btn-area">
+                                              <button
+                                                type="button"
+                                                name="button"
+                                                className="btn-big btn_text btn-darkblue-line mg-n"
+                                              >
+                                                + Upload
+                                              </button>
+                                            </div>
+                                          </Upload>
+                                          <label htmlFor="file" className="file-label">
+                                            첨부파일 <span className="required">*</span>
+                                          </label>
+                                        </div>
                                       </div>
-                                      {/*<span className="errorText">fileerror</span>*/}
                                     </div>
                                   </div>
-                                </div>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <div className="radio-wrap-type02">
-                                  <label className="type02">
-                                    <input type="checkbox" />
-                                    <span className="type02">밀폐공간</span>
-                                  </label>
-                                </div>
-                              </td>
-                              <td></td>
-                              <td>
-                                {/* 파일첨부영역 : button */}
-                                <div className="form-table">
-                                  <div className="form-cell wid50 border-b-no">
-                                    <div className="form-group wid100">
-                                      <div className="filebox ">
-                                        <Upload {...props}>
-                                          <div className="btn-area">
-                                            <button
-                                              type="button"
-                                              name="button"
-                                              className="btn-big btn_text btn-darkblue-line mg-n"
-                                            >
-                                              + Upload
-                                            </button>
-                                          </div>
-                                        </Upload>
-                                        <label htmlFor="file" className="file-label">
-                                          첨부파일 <span className="required">*</span>
-                                        </label>
+                                </td>
+                              </tr>
+
+                              <tr>
+                                <td>
+                                  <div className="radio-wrap-type02">
+                                    <label className="type02">
+                                      <input type="checkbox" />
+                                      <span className="type02">고소작업</span>
+                                    </label>
+                                  </div>
+                                </td>
+                                <td></td>
+                                <td>
+                                  {/* 파일첨부영역 : button */}
+                                  <div className="form-table">
+                                    <div className="form-cell wid50 border-b-no">
+                                      <div className="form-group wid100">
+                                        <div className="filebox ">
+                                          <Upload {...props}>
+                                            <div className="btn-area">
+                                              <button
+                                                type="button"
+                                                name="button"
+                                                className="btn-big btn_text btn-darkblue-line mg-n"
+                                              >
+                                                + Upload
+                                              </button>
+                                            </div>
+                                          </Upload>
+                                          <label htmlFor="file" className="file-label">
+                                            첨부파일 <span className="required">*</span>
+                                          </label>
+                                        </div>
                                       </div>
-                                      {/*<span className="errorText">fileerror</span>*/}
                                     </div>
                                   </div>
-                                </div>
-                              </td>
-                            </tr>
-                          </tbody>
-                        </table>
+                                </td>
+                              </tr>
+
+                              <tr>
+                                <td>
+                                  <div className="radio-wrap-type02">
+                                    <label className="type02">
+                                      <input type="checkbox" />
+                                      <span className="type02">전기작업</span>
+                                    </label>
+                                  </div>
+                                </td>
+                                <td>
+                                  <div className="radio-wrap-type02">
+                                    <label className="type02">
+                                      <input type="checkbox" />
+                                      <span className="type02">이동식 사다리</span>
+                                    </label>
+                                    <label className="type02">
+                                      <input type="checkbox" />
+                                      <span className="type02">달비계</span>
+                                    </label>
+                                    <label className="type02">
+                                      <input type="checkbox" />
+                                      <span className="type02">시저형 고소작업대(렌탈)</span>
+                                    </label>
+                                    <label className="type02">
+                                      <input type="checkbox" />
+                                      <span className="type02">차량탑재형 고소작업대(스카이차)</span>
+                                    </label>
+                                  </div>
+                                </td>
+                                <td>
+                                  {/* 파일첨부영역 : button */}
+                                  <div className="form-table">
+                                    <div className="form-cell wid50 border-b-no">
+                                      <div className="form-group wid100">
+                                        <div className="filebox ">
+                                          <Upload {...props}>
+                                            <div className="btn-area">
+                                              <button
+                                                type="button"
+                                                name="button"
+                                                className="btn-big btn_text btn-darkblue-line mg-n"
+                                              >
+                                                + Upload
+                                              </button>
+                                            </div>
+                                          </Upload>
+                                          <label htmlFor="file" className="file-label">
+                                            첨부파일 <span className="required">*</span>
+                                          </label>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </td>
+                              </tr>
+
+                              <tr>
+                                <td>
+                                  <div className="radio-wrap-type02">
+                                    <label className="type02">
+                                      <input type="checkbox" />
+                                      <span className="type02">줄걸이작업</span>
+                                    </label>
+                                  </div>
+                                </td>
+                                <td>
+                                  <div className="radio-wrap-type02">
+                                    <label className="type02">
+                                      <input type="checkbox" />
+                                      <span className="type02">기중기(건설기계)</span>
+                                    </label>
+                                    <label className="type02">
+                                      <input type="checkbox" />
+                                      <span className="type02">차량탑재형 이동식 크레인(카고크레인)</span>
+                                    </label>
+                                  </div>
+                                </td>
+                                <td>
+                                  {/* 파일첨부영역 : button */}
+                                  <div className="form-table">
+                                    <div className="form-cell wid50 border-b-no">
+                                      <div className="form-group wid100">
+                                        <div className="filebox ">
+                                          <Upload {...props}>
+                                            <div className="btn-area">
+                                              <button
+                                                type="button"
+                                                name="button"
+                                                className="btn-big btn_text btn-darkblue-line mg-n"
+                                              >
+                                                + Upload
+                                              </button>
+                                            </div>
+                                          </Upload>
+                                          <label htmlFor="file" className="file-label">
+                                            첨부파일 <span className="required">*</span>
+                                          </label>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </td>
+                              </tr>
+
+                              <tr>
+                                <td>
+                                  <div className="radio-wrap-type02">
+                                    <label className="type02">
+                                      <input type="checkbox" />
+                                      <span className="type02">건설기계 사용작업</span>
+                                    </label>
+                                  </div>
+                                </td>
+                                <td>
+                                  <div className="radio-wrap-type02">
+                                    <label className="type02">
+                                      <input type="checkbox" />
+                                      <span className="type02">굴착기</span>
+                                    </label>
+                                    <label className="type02">
+                                      <input type="checkbox" />
+                                      <span className="type02">지게차</span>
+                                    </label>
+                                    <label className="type02">
+                                      <input type="checkbox" />
+                                      <span className="type02">덤프트럭</span>
+                                    </label>
+                                    <label className="type02">
+                                      <input type="checkbox" />
+                                      <span className="type02">콘크리트믹서트럭</span>
+                                    </label>
+                                    <label className="type02">
+                                      <input type="checkbox" />
+                                      <span className="type02">이 외</span>
+                                    </label>
+                                  </div>
+                                </td>
+                                <td>
+                                  {/* 파일첨부영역 : button */}
+                                  <div className="form-table">
+                                    <div className="form-cell wid50 border-b-no">
+                                      <div className="form-group wid100">
+                                        <div className="filebox ">
+                                          <Upload {...props}>
+                                            <div className="btn-area">
+                                              <button
+                                                type="button"
+                                                name="button"
+                                                className="btn-big btn_text btn-darkblue-line mg-n"
+                                              >
+                                                + Upload
+                                              </button>
+                                            </div>
+                                          </Upload>
+                                          <label htmlFor="file" className="file-label">
+                                            첨부파일 <span className="required">*</span>
+                                          </label>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </td>
+                              </tr>
+
+                              <tr>
+                                <td>
+                                  <div className="radio-wrap-type02">
+                                    <label className="type02">
+                                      <input type="checkbox" />
+                                      <span className="type02">밀폐공간</span>
+                                    </label>
+                                  </div>
+                                </td>
+                                <td></td>
+                                <td>
+                                  {/* 파일첨부영역 : button */}
+                                  <div className="form-table">
+                                    <div className="form-cell wid50 border-b-no">
+                                      <div className="form-group wid100">
+                                        <div className="filebox ">
+                                          <Upload {...props}>
+                                            <div className="btn-area">
+                                              <button
+                                                type="button"
+                                                name="button"
+                                                className="btn-big btn_text btn-darkblue-line mg-n"
+                                              >
+                                                + Upload
+                                              </button>
+                                            </div>
+                                          </Upload>
+                                          <label htmlFor="file" className="file-label">
+                                            첨부파일 <span className="required">*</span>
+                                          </label>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -878,22 +881,39 @@ function POccupationMu3P4edit() {
                     <div className="form-cell wid50">
                       <div className="form-group wid100">
                         <h3 className="table-tit">체크리스트</h3>
-                        <table>
-                          <thead>
-                            <tr>
-                              <th>작업</th>
-                              <th>반입장비</th>
-                              <th>체크리스트</th>
-                            </tr>
-                          </thead>
-                          <tbody>
-                            <tr>
-                              <td>공통(일반)</td>
-                              <td></td>
-                              <td>작성 완료</td>
-                            </tr>
-                          </tbody>
-                        </table>
+                        <div className="ck-list-tabel">
+                          <table>
+                            <thead>
+                              <tr>
+                                <th>작업</th>
+                                <th>반입장비</th>
+                                <th>체크리스트</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>공통(일반)</td>
+                                <td></td>
+                                <td>작성 완료</td>
+                              </tr>
+                              <tr>
+                                <td>화기작업</td>
+                                <td>가스 용접·용단, 연삭기</td>
+                                <td>작성 완료</td>
+                              </tr>
+                              <tr>
+                                <td>공통(일반)</td>
+                                <td></td>
+                                <td>작성 완료</td>
+                              </tr>
+                              <tr>
+                                <td>공통(일반)</td>
+                                <td></td>
+                                <td>작성 완료</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -970,26 +990,42 @@ function POccupationMu3P4edit() {
                     <div className="form-cell wid50">
                       <div className="form-group wid100">
                         <h3 className="table-tit">공사연장 이력</h3>
-                        <table>
-                          <thead>
-                            <tr>
-                              <th>연장 전 종료 일자</th>
-                              <th>연장 요청 일자</th>
-                              <th>연장 요청 사유</th>
-                              <th>연장 승인 일자</th>
-                              <th>승인부서 의견</th>
-                            </tr>
-                          </thead>
-                          <tbody>
-                            <tr>
-                              <td>2024.07.16</td>
-                              <td>2024.07.18</td>
-                              <td>폭우로 인한 공사 연장</td>
-                              <td>2024.07.18</td>
-                              <td>내용</td>
-                            </tr>
-                          </tbody>
-                        </table>
+                        <div className="ck-list-tabel">
+                          <table>
+                            <thead>
+                              <tr className="type01">
+                                <th>연장 전 종료 일자</th>
+                                <th>연장 요청 일자</th>
+                                <th>연장 요청 사유</th>
+                                <th>연장 승인 일자</th>
+                                <th>승인부서 의견</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr className="type01">
+                                <td>2024.07.16</td>
+                                <td>2024.07.18</td>
+                                <td>폭우로 인한 공사 연장</td>
+                                <td>2024.07.18</td>
+                                <td></td>
+                              </tr>
+                              <tr className="type01">
+                                <td>2024.07.16</td>
+                                <td>2024.07.18</td>
+                                <td>폭우로 인한 공사 연장</td>
+                                <td>2024.07.18</td>
+                                <td></td>
+                              </tr>
+                              <tr className="type01">
+                                <td>2024.07.16</td>
+                                <td>2024.07.18</td>
+                                <td>폭우로 인한 공사 연장</td>
+                                <td>2024.07.18</td>
+                                <td></td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
                       </div>
                     </div>
                   </div>

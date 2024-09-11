@@ -483,7 +483,7 @@ OccupationPageInfo.list = [
     Component: POccupationMu3P4detail,
     path: 'POccupationMu3P4detail',
     description: '',
-    success: false,
+    success: true,
   },
   {
     title: '안전관리 > 협력업체-리스트',
