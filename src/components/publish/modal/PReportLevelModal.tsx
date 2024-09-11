@@ -332,17 +332,15 @@ function ReportLevelModal(props) {
                           <td className="level1 selected">
                             5A
                             {/*<span className="thumb_flag "></span>*/}
-                            <div className="flag-tag">
-                              <span className="icon-flag txt">
-                                233
-                                {/* <div className="tooltip">
-                                  <span className="tooltiptext1 tooltip-right">
-                                    <ul>
-                                      <li>툴팁내용 해당기간동안 평가된 횟수</li>
-                                    </ul>
-                                  </span>
-                                </div> */}
-                              </span>
+                            <div className="flag-tag tooltip">
+                              <span className="icon-flag txt">233</span>
+                              <div className="">
+                                <span className="tooltiptext1 tooltip-right">
+                                  <ul>
+                                    <li>툴팁내용 해당기간동안 평가된 횟수</li>
+                                  </ul>
+                                </span>
+                              </div>
                             </div>
                             {/* <div className="flag-tag">
                               <span className="txt">

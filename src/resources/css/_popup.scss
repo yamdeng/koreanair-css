@@ -609,6 +609,10 @@
 .selectlist .departmentlist .delete{background: url(../images/delete-text.svg)center center no-repeat; font-size: 0; width: 2.0rem; height: 2.0rem;position: absolute; right: 0;}
 
 /*위험레벨 조회*/
+.red{color:var(#DA291C)}
+.orange{color:var(#FF8902)}
+.yellow{color:var(#FFDD33)}
+.green{color:var(#02C27F)}
 .RiskLevel-box{display:flex;width:100%;height:100%;overflow:auto;gap:0 2.0rem}
 .RiskLevel-box .RiskLevel-list{width:35%;/*padding:2.0rem;overflow:hidden;height:100%;border-radius:0.8rem;*//*border:0.1rem solid var(--color-neutral-40);background-color: var(--color-neutral-20)*/}
 .RiskLevel-box .RiskLevel-top-box{display:block;width:100%;margin-bottom:1.0rem}
@@ -716,12 +720,12 @@
 .flag-tag1 .icon-flag1.btn-lightblue{background-color:var(--color-lightblue-40);font-size:1.4rem;line-height:2.8}
 .flag-tag1 .icon-flag1:last-child{margin-right:2rem}
 .flag-tag1 .icon-flag1.active{text-decoration:underline;font-weight:600}
-
-.icon-flag.txt .tooltip {
-  position: relative;
+.flag-tag{position:relative;width:100%}
+.flag-tag.tooltip {
+  
   display:flex;
   float: inline-end;
-  background: url(/src/resources/images/ico-information-i.svg) left center no-repeat;
+  //background: url(/src/resources/images/ico-information-i.svg) left center no-repeat;
   background-size: 2.4rem;
   font-size: 0;
   width: 2.4rem;
@@ -729,19 +733,19 @@
   cursor: pointer;
 }
 
-.icon-flag.txt .tooltip .tooltip-right {
+.flag-tag .tooltip .tooltip-right {
   top: -0.6rem;
   left: 155%;
 }
 
-.icon-flag.txt .tooltip .tooltiptext1 {
-  visibility: hidden;
-  position: absolute;
-  z-index: 1;
+.flag-tag .tooltip .tooltiptext1 {
+  //visibility: hidden;
+  // position: absolute;
+  z-index: 999;
   width: 27rem;
   font-size: 1.2rem;
   background-color: var(--color-neutral-80);
-  color: var(--color-neutral-10);
+  color:none;
   text-align: left;
   border-radius: 0.8rem;
   padding: 1.5rem 2rem;
