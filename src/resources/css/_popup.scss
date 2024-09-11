@@ -660,7 +660,7 @@
 .RiskLevel-box .RiskLevel-area .search-area .form-table{display:flex}
 .RiskLevel-box .RiskLevel-area .search-area .form-table.mt10{margin-top:1rem}
 .RiskLevel-box .RiskLevel-area .search-area .chk-wrap .txt{font-weight:400}
-.RiskLevel-box .RiskLevel-area .Level-area{display:flex;width:100%;padding:1.5rem;border:solid 0.1rem var( --color-neutral-01);background:url(/src/resources/images/bg_thead.png) center center;background-repeat:repeat}
+.RiskLevel-box .RiskLevel-area .Level-area{display:flex;width:100%;padding:1.5rem;border:solid 0rem var( --color-neutral-01);background:url(/src/resources/images/bg_thead.png) center center;background-repeat:repeat}
 
 
 .RiskLevel-box .RiskLevel-area .Level-area .LevelTop{width:100%}
@@ -669,7 +669,7 @@
 .RiskLevel-box .RiskLevel-area .Level-area .LevelTop .flex-box .total{margin:0.5rem 0 0.5rem 0;font-size:1.6rem}
 .RiskLevel-area .Level-area-bottom{display:block;width:100%;margin:1.0rem 0 5rem 0}
 
-.RiskLevelTable{width:100%;border-collapse:collapse;box-shadow:0.2rem 0.5rem 0.8rem rgba(0, 0, 0, 0.1)}
+.RiskLevelTable{width:100%;border-collapse:collapse;/*box-shadow:0.2rem 0.5rem 0.8rem rgba(0, 0, 0, 0.1)*/}
 .RiskLevelTable.left th{height:4.0rem}
 .RiskLevelTable.left td{padding:1.0rem;text-align:center;vertical-align:middle;border:solid 0.1rem var(--color-neutral-40)}
 .RiskLevelTable th{width:2.0rem;height:4.0rem;vertical-align:middle;background-color:var(--color-neutral-20);color:var(--color-neutral-80);font-size:1.5rem;border:solid 0.1rem var(--color-neutral-40)}
@@ -688,7 +688,7 @@
 .flag-tag .icon-flag{border-radius:99.9rem;padding:0.3rem 0.6rem}
 .flag-tag1 .icon-flag1{border-radius:99.9rem;padding:0.3rem 2.0rem}
 .flag-tag1 .icon-flag1 + .icon-flag1{margin-left:0.5rem}
-.flag-tag .icon-flag.txt{font-family:"KoreanAirSans";font-weight:400;font-size:1.2rem;line-height:1.2rem;color:var(--color-neutral-90);text-decoration:underline}
+.flag-tag .icon-flag.txt{font-family:"KoreanAirSans";font-weight:400;font-size:1.3rem;line-height:1.2rem;color:var(--color-neutral-90);text-decoration:underline}
 .flag-tag .icon-flag.btn-blue{background-color:#c0eaff;color:var(--color-darkblue-100);border:solid 0.1rem var(--color-darkblue-100);box-shadow:0.2rem 0.5rem 0.5rem rgba(0, 0, 0, 0.1)}
 .flag-tag .icon-flag.btn-wh{padding:0.2rem 1rem;line-height:1.2;color:var(--color-neutral-90)}
 .flag-tag1 .icon-flag1.btn-lightblue{background-color:var(--color-lightblue-40);font-size:1.4rem;line-height:2.8}
@@ -704,8 +704,8 @@
   //width: 2.4rem;
   //height: 2.4rem;
 }
-.flag-tag.tooltip .tooltip-right{top:-0.6rem;left:60%}
-.flag-tag.tooltip .tooltiptext1{visibility:hidden;position:absolute;z-index:999;width:23rem;font-size:1.2rem;background-color:var(--color-neutral-80);color:transparent;text-align:left;border-radius:0.8rem;padding:1.5rem 2rem}
+.flag-tag.tooltip .tooltip-right{top:1.8rem;left:0}
+.flag-tag.tooltip .tooltiptext1{visibility:hidden;position:absolute;z-index:999;width:18rem;font-size:1.2rem;background-color:var(--color-neutral-80);color:transparent;text-align:left;border-radius:0.8rem;padding:1rem 2rem}
 .flag-tag.tooltip .tooltiptext1::after{content:'';position: absolute;border-style: solid;border-width:0.5rem}
 .IcoTags{position:absolute;top:0.1rem;right:0}
 .IcoTags .ico-tag{position:relative;border-bottom-left-radius:0.7rem;
@@ -718,8 +718,8 @@
 
 
 .RiskLevelTable.Risk td span{/*display:block;font-size:1.5rem*/}
-.RiskLevelTable.Risk td:hover{border:dotted 0.3rem var(--color-lightblue-10)!important;cursor:pointer}
-.RiskLevelTable.Risk td.selected{border:dotted 0.3rem var(--color-neutral-90)!important;color:var(--color-neutral-10)}
+.RiskLevelTable.Risk td:hover{border:dotted 0.2rem var(--color-lightblue-10)!important;cursor:pointer}
+.RiskLevelTable.Risk td.selected{border:dotted 0.2rem var(--color-neutral-90)!important;color:var(--color-neutral-10)}
 .RiskLevelTable.severity th{height:4.0rem}
 .RiskLevelTable.severity td{padding:1rem;text-align:left;line-height:1.4;color:var(--color-neutral-80);border:solid 0.1rem var(--color-neutral-40)}
 .Level-area-bottom > .RiskLevelTable:last-child{display:inline-table;margin-bottom:3rem}
