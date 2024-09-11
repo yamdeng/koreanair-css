@@ -14,6 +14,7 @@ function PAviationPortal1() {
   return (
     <>
       <div className="floatingmenu">글쓰기</div>
+
       <div className="av-main-wrap">
         <div className="grid-item">
           <div className="grid-group">Top 10 Risk Areas</div>

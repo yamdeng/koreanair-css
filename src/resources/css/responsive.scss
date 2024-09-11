@@ -39,6 +39,11 @@
   .user-wrap .user-box .user-box-top .form-table.user-head .form-cell .form-group .h4{width:100%;text-align:right}
   .user-wrap .user-box .user-box-top .form-table.user-head .h4.tit{font-weight:600;font-size:1.8rem;text-align:left !important;line-height:2.3;padding-left:0.5rem}
   .user-wrap .user-box .user-box-top .user-box-bottom{width:100%}
+
+  .av-main-wrap {grid-template-columns: 1fr 1fr;}
+  .av-main-wrap .grid-item:nth-of-type(1) {display: inline-table; grid-column-end: span 2;}
+  .av-main-wrap .grid-item:nth-of-type(1) .grid-group {display: block; width: 100%;}
+  .av-main-wrap .grid-item:nth-of-type(4) {grid-column-start: 1; grid-column-end: span 2;}
 }
 
 
@@ -130,6 +135,11 @@
   .user-wrap .user-box .user-box-top .form-table.user-head .form-cell .form-group .h4{width:100%;text-align:right}
   .user-wrap .user-box .user-box-top .form-table.user-head .h4.tit{font-weight:600;font-size:1.8rem;text-align:left !important;line-height:2.3;padding-left:0.5rem}
   .user-wrap .user-box .user-box-top .user-box-bottom{width:100%}
+
+  .av-main-wrap {grid-template-columns: 1fr 1fr;}
+  .av-main-wrap .grid-item:nth-of-type(1) {display: inline-table; grid-column-end: span 2;}
+  .av-main-wrap .grid-item:nth-of-type(1) .grid-group {display: block; width: 100%;}
+  .av-main-wrap .grid-item:nth-of-type(4) {grid-column-start: 1; grid-column-end: span 2;}
 
 }
 
@@ -284,6 +294,12 @@
   .user-wrap .user-box .user-box-top .form-table.user-head .form-cell .form-group .h4{width:100%;text-align:right}
   .user-wrap .user-box .user-box-top .form-table.user-head .h4.tit{font-weight:600;font-size:1.8rem;text-align:left !important;line-height:2.3;padding-left:0.5rem}
   .user-wrap .user-box .user-box-top .user-box-bottom{width:100%}
+
+  
+  .av-main-wrap {grid-template-columns: 1fr;}
+  .av-main-wrap .grid-item:nth-of-type(1) {display: inline-table; grid-column-end: span 1;}
+  .av-main-wrap .grid-item:nth-of-type(1) .grid-group {display: block; width: 100%;}
+  .av-main-wrap .grid-item:nth-of-type(4) {grid-column-start: 1; grid-column-end: span 1;}
 }
 
 
@@ -522,6 +538,12 @@
   .ft-size {font-size: 1.4rem !important;}
 
   .btn-area .btn_text{font-size:1.4rem}
+
+  
+  .av-main-wrap {grid-template-columns: 1fr;}
+  .av-main-wrap .grid-item:nth-of-type(1) {display: inline-table; grid-column-end: span 1;}
+  .av-main-wrap .grid-item:nth-of-type(1) .grid-group {display: block; width: 100%;}
+  .av-main-wrap .grid-item:nth-of-type(4) {grid-column-start: 1; grid-column-end: span 1;}
 }
 
 
