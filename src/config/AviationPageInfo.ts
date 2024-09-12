@@ -143,7 +143,7 @@ AviationPageInfo.list = [
     success: true,
   },
   {
-    title: '[03.안전위험관리] 보고서분석 > 상세',
+    title: '[03.안전위험관리] 보고서분석 > 상세(FOQA까지 포함)',
     Component: ReportDetail,
     path: 'ReportDetail',
     description: '',

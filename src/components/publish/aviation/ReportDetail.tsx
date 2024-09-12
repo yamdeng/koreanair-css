@@ -235,7 +235,7 @@ function SafetyDetail() {
             </button>
           </dt>
           <dd className="tg-conts" style={{ display: firstExpaned ? '' : 'none' }}>
-            {/* 상세내용*/}
+            {/* 보고서상세내용*/}
             <div className="edit-area">
               <div className="detailForm">
                 {/* 보고서내용보기 상세*/}
@@ -696,6 +696,96 @@ function SafetyDetail() {
                 </div>
                 {/* //보고서내용보기 상세*/}
               </div>
+              {/* FOQA*/}
+              <div className="detailForm">
+                <div className="editbox report">
+                  <div className="header-tit">FOQA-X Status</div>
+                  <div className="form-table">
+                    <div className="form-cell wid50">
+                      <div className="form-group wid100">
+                        <div className="work-group1">
+                          <table className="work-table1">
+                            <thead>
+                              <tr>
+                                <th>APPROVED BY</th>
+                                <th>DECISION</th>
+                                <th>ADDITIONAL COMMENTS</th>
+                                <th>INPUT DATE</th>
+                                <th>Action</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>SELOYOYI</td>
+                                <td>
+                                  <div className="form-group wid100">
+                                    <AppSelect label={'INDIVIDUAL'} />
+                                  </div>
+                                </td>
+                                <td>
+                                  <AppTextArea
+                                    label=""
+                                    style={{ width: '100%', height: 50 }}
+                                    errorMessage=""
+                                    placeholder=""
+                                  />
+                                </td>
+                                <td className="">
+                                  <span>2024-08-01 10:42:02</span>
+                                </td>
+                                <td>Save버튼 </td>
+                              </tr>
+                              <tr>
+                                <td>EOY</td>
+                                <td>
+                                  <div className="form-group wid100">
+                                    <AppSelect label={'INDIVIDUAL'} disabled />
+                                  </div>
+                                </td>
+                                <td>
+                                  {' '}
+                                  <AppTextArea
+                                    label=""
+                                    style={{ width: '100%', height: 50 }}
+                                    errorMessage=""
+                                    placeholder="Agree with EOY"
+                                    disabled
+                                  />
+                                </td>
+                                <td>
+                                  <span>2024-08-01 10:42:02</span>
+                                </td>
+                                <td></td>
+                              </tr>
+                              <tr>
+                                <td>EOO</td>
+                                <td>
+                                  <div className="form-group wid100">
+                                    <AppSelect label={'INDIVIDUAL'} disabled />
+                                  </div>
+                                </td>
+                                <td>
+                                  {' '}
+                                  <AppTextArea
+                                    label=""
+                                    style={{ width: '100%', height: 50 }}
+                                    errorMessage=""
+                                    placeholder=""
+                                    disabled
+                                  />
+                                </td>
+                                <td></td>
+                                <td></td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              {/* //FOQA*/}
               {/* 버튼*/}
               <div className="contents-btns">
                 <button type="button" name="button" className="btn_text text_color_neutral-10 btn_conblue">

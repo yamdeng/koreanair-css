@@ -27,6 +27,7 @@
 .flex-e{display:flex;justify-content:flex-end !important}
 .-mb-8n-3{margin:2.4rem 2.4rem 0 !important}
 .vm{vertical-align:middle !important}
+.vt{vertical-align:top !important}
 .flex-end{display:flex;justify-content:flex-end}
 .flex-start{display:flex;justify-content:flex-start}
 .flex-between{display:flex;justify-content:space-between}
@@ -193,6 +194,24 @@
 [class*=c-step-list-type][class*=-list-type-5] .info-title.active{color:var(--color-mblue-100)}
 [class*=c-step-list-type][class*=-list-type-5]>li .after-arrow{position:absolute;top:calc(50% - 0.8rem);right:-0.9rem;height:1.6rem;width:1.6rem;transform:rotate(315deg);background:var(--color-neutral-10);z-index:10}
 [class*=c-step-list-type][class*=-list-type-5]>li .after-arrow:after{content:'';display:inline-block;position:absolute;width:1.6rem;height:1.6rem;left:0;top:0;border-left-color:var(--color-neutral-40);border-bottom:0.1rem solid var(--color-neutral-40);border-right:0.1rem solid var(--color-neutral-40);border-top-color:var(--color-neutral-40)}
+
+/*스크롤되는 테이블*/
+.work-group1 {width: 100%; overflow-x: auto;}
+.work-group1 .work-table1 {width: 100%; min-width:90.0rem;}
+.work-group1 .work-table1 {clear: both; width: 100%; box-sizing: border-box;}
+.work-group1 .work-table1 th, .work-table1 td {padding: 1.0rem; font-size:1.4rem;text-align:center;/*line-height:100%;*/ border-left: 0.1rem solid var(--color-neutral-40); vertical-align:middle;}
+.work-group1 .work-table1 th, .work-table1 td:first-child {border-left: 0;}
+.work-group1 .work-table1 th:nth-child(1), .work-table1 td:nth-child(1){width:15%;}
+.work-group1 .work-table1 th:nth-child(2), .work-table1 td:nth-child(2){width:20%;}
+.work-group1 .work-table1 th:nth-child(3), .work-table1 td:nth-child(3){width:40%;}
+.work-group1 .work-table1 th:nth-child(4), .work-table1 td:nth-child(4){width:15%;}
+.work-group1 .work-table1 th:nth-child(5), .work-table1 td:nth-child(5){width:10%;}
+.work-group1 .work-table1 td:nth-child(1), .work-table1 td:nth-child(2) {text-align: left; vertical-align: top;}
+.work-group1 .work-table1 th {background-color: var(--color-neutral-20); border-top: 0.1rem solid var(--color-darkblue-100); }
+.work-group1 .work-table1 tr {border-bottom: 0.1rem solid var(--color-neutral-40);}
+.work-group1 .work-table1 thead tr, .work-table1 tbody tr, .work-table1 tfoot tr {display: table; width: 100%;}
+.work-group1 .work-table1 tbody{display:block;height:23.0rem;overflow-y:auto}
+
 
 
 
