@@ -402,7 +402,10 @@
 .boxForm .form-table.RiskMatrix .btn-area{padding-top:0}
 
 .RiskLevel-Wrap{display:flex;width:100%;gap:0 2rem}
-.RiskLevel-Wrap .RiskLevel-Left{}
+.RiskLevel-Wrap .RiskLevel-Left{width: 35%;}
+.RiskLevel-Wrap .RiskLevel-Right{width: 60%;
+  height: auto;
+  margin: 0 auto;}
 
 /*AUDIT-체크리스트 상단 탭*/
 .menu-tab.Audit a{/*padding:0 2rem*/}
@@ -416,12 +419,12 @@
 .menu-tab-nav .swiper-container .menu-tab a button:first-child{padding-left:1.5rem}
 .menu-tab-nav .swiper-container .menu-tab a button + button{padding-left:2.0rem}
 
-.MyAudit-contents{margin-top: 1.2rem;
-  line-height: 1.4;
-  padding-bottom: 3rem;
-  overflow-y: auto;
-  max-height: 77rem;}
-.MyAudit-header{background: cyan;}
+// .MyAudit-contents{margin-top: 1.2rem;
+//   line-height: 1.4;
+//   padding-bottom: 3rem;
+//   overflow-y: auto;
+//   max-height: 77rem;}
+// .MyAudit-header{background: cyan;}
 
 .ux-tab{display:flex;flex-wrap:nowrap;border-radius:0.8rem;overflow:auto hidden;scroll-behavior:smooth;gap:1.2rem 0;margin:0rem 0 1.5rem}
 .ux-tab:after{content:'';display:block;clear:both}

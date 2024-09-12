@@ -48,7 +48,10 @@ function AdminRiskMATRIX() {
 
       {/*그리드영역 */}
       <div className="RiskLevel-Wrap">
-        <div className="RiskLevel-Left"></div>
+        <div className="RiskLevel-Left">
+          <div className="h4-tit">발생가능성</div>
+          <div className="ck-list-tabel"></div>
+        </div>
         <div className="RiskLevel-Right"></div>
       </div>
       {/*//그리드영역 */}
