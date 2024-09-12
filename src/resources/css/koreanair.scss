@@ -780,7 +780,7 @@
   grid-template-columns: 1fr 1fr 1fr;
   height: calc(100vh - 13.6rem);
 
-  .grid-item {border: 0.1rem solid var(--color-neutral-40); border-radius: 0.8rem; padding: 3.0rem;}
+  .grid-item {border: 0.1rem solid var(--color-neutral-40); border-radius: 0.8rem; padding: 3.0rem; background-color: var(--color-neutral-10);}
   .grid-item:nth-of-type(3) {grid-row: span 2;}
   .grid-item:nth-of-type(7) {grid-column-start: 2; grid-column-end: span 2;}
   .grid-item h3 {font-size: 1.8rem; font-weight: 500; color: var(--color-darkblue-100); padding-bottom: 2.0rem;}
