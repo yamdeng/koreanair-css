@@ -50,9 +50,257 @@ function AdminRiskMATRIX() {
       <div className="RiskLevel-Wrap">
         <div className="RiskLevel-Left">
           <div className="h4-tit">발생가능성</div>
-          <div className="ck-list-tabel"></div>
+          <div className="tableTop">
+            <table className="RiskLevelTable left">
+              <caption></caption>
+              <colgroup></colgroup>
+              <thead>
+                <tr>
+                  <th>구분</th>
+                  <th>발생가능성</th>
+                  <th>정성적평가</th>
+                  <th>정량적평가</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th>5</th>
+                  <td className="">매우높음</td>
+                  <td className="tl">일상적으로 발생할 것으로 예상됨</td>
+                  <td>
+                    5일 단위
+                    <br />
+                    (1년 중 65건 이상)
+                  </td>
+                </tr>
+                <tr>
+                  <th>4</th>
+                  <td className="">높음</td>
+                  <td className="tl">일상적으로 발생할 것으로 예상됨</td>
+                  <td>
+                    5일~월 단위
+                    <br />
+                    (1년 중 65건 이상)
+                  </td>
+                </tr>
+                <tr>
+                  <th>3</th>
+                  <td className="">보통</td>
+                  <td className="tl">일상적으로 발생할 것으로 예상됨</td>
+                  <td>
+                    월~년 단위
+                    <br />
+                    (1년 중 65건 이상)
+                  </td>
+                </tr>
+                <tr>
+                  <th>2</th>
+                  <td className="">낮음</td>
+                  <td className="tl">일상적으로 발생할 것으로 예상됨</td>
+                  <td>
+                    년~10년 단위
+                    <br />
+                    (1년 중 65건 이상)
+                  </td>
+                </tr>
+                <tr>
+                  <th>1</th>
+                  <td className="">매우 낮음</td>
+                  <td className="tl">일상적으로 발생할 것으로 예상됨</td>
+                  <td>10년 이상에 헤당하는 단위</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
         </div>
-        <div className="RiskLevel-Right"></div>
+        <div className="RiskLevel-Right">
+          <div className="h4-tit">RISK</div>
+          <div className="">
+            <table className="RiskLevelTable Risk">
+              <caption></caption>
+              <colgroup></colgroup>
+              <thead>
+                <tr>
+                  <th rowSpan={2}>
+                    발생
+                    <br />
+                    가능성
+                  </th>
+                  <th colSpan={5}>심각도</th>
+                </tr>
+                <tr>
+                  <th>LevelA</th>
+                  <th>LevelB</th>
+                  <th>LevelC</th>
+                  <th>LevelD</th>
+                  <th>LevelE</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th>5</th>
+                  <td className="level1">
+                    5A{' '}
+                    <div className="flag-tag ">
+                      <span className="icon-flag txt">(25)</span>
+                    </div>
+                  </td>
+                  <td className="level1">
+                    5B
+                    <div className="flag-tag ">
+                      <span className="icon-flag txt">(23)</span>
+                    </div>
+                  </td>
+                  <td className="level1">
+                    5C
+                    <div className="flag-tag ">
+                      <span className="icon-flag txt">(23)</span>
+                    </div>
+                  </td>
+                  <td className="level2">
+                    5D
+                    <div className="flag-tag ">
+                      <span className="icon-flag txt">(23)</span>
+                    </div>
+                  </td>
+                  <td className="level3">
+                    5E
+                    <div className="flag-tag ">
+                      <span className="icon-flag txt">(23)</span>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <th>4</th>
+                  <td className="level1">4A</td>
+                  <td className="level1">
+                    4B
+                    <div className="flag-tag ">
+                      <span className="icon-flag txt">(23)</span>
+                    </div>
+                  </td>
+                  <td className="level2">
+                    4C{' '}
+                    <div className="flag-tag ">
+                      <span className="icon-flag txt">(23)</span>
+                    </div>
+                  </td>
+                  <td className="level3">
+                    4D{' '}
+                    <div className="flag-tag ">
+                      <span className="icon-flag txt">(23)</span>
+                    </div>
+                  </td>
+                  <td className="level4">
+                    4E
+                    <div className="flag-tag">
+                      <span className="icon-flag txt">(23)</span>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <th>3</th>
+                  <td className="level1">
+                    3A{' '}
+                    <div className="flag-tag">
+                      <span className="icon-flag txt">(23)</span>
+                    </div>
+                  </td>
+                  <td className="level2">
+                    3B{' '}
+                    <div className="flag-tag">
+                      <span className="icon-flag txt">(23)</span>
+                    </div>
+                  </td>
+                  <td className="level3">
+                    3C{' '}
+                    <div className="flag-tag">
+                      <span className="icon-flag txt">(23)</span>
+                    </div>
+                  </td>
+                  <td className="level3">
+                    3D{' '}
+                    <div className="flag-tag">
+                      <span className="icon-flag txt">(23)</span>
+                    </div>
+                  </td>
+                  <td className="level4">
+                    3E
+                    <div className="flag-tag">
+                      <span className="icon-flag txt">(23)</span>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <th>2</th>
+                  <td className="level2">
+                    2A{' '}
+                    <div className="flag-tag">
+                      <span className="icon-flag txt">(23)</span>
+                    </div>
+                  </td>
+                  <td className="level3">
+                    2B{' '}
+                    <div className="flag-tag">
+                      <span className="icon-flag txt">(23)</span>
+                    </div>
+                  </td>
+                  <td className="level3">
+                    2C{' '}
+                    <div className="flag-tag">
+                      <span className="icon-flag txt">(23)</span>
+                    </div>
+                  </td>
+                  <td className="level4">
+                    2D
+                    <div className="flag-tag">
+                      <span className="icon-flag txt">(23)</span>
+                    </div>
+                  </td>
+                  <td className="level4">
+                    2E{' '}
+                    <div className="flag-tag">
+                      <span className="icon-flag txt">(23)</span>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <th>1</th>
+                  <td className="level2">
+                    1A{' '}
+                    <div className="flag-tag">
+                      <span className="icon-flag txt">(23)</span>
+                    </div>
+                  </td>
+                  <td className="level3">
+                    1B{' '}
+                    <div className="flag-tag">
+                      <span className="icon-flag txt">(23)</span>
+                    </div>
+                  </td>
+                  <td className="level4">
+                    1C{' '}
+                    <div className="flag-tag">
+                      <span className="icon-flag txt">(23)</span>
+                    </div>
+                  </td>
+                  <td className="level4">
+                    1D{' '}
+                    <div className="flag-tag">
+                      <span className="icon-flag txt">(23)</span>
+                    </div>
+                  </td>
+                  <td className="level4">
+                    1E
+                    <div className="flag-tag">
+                      <span className="icon-flag txt">(23)</span>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
       </div>
       {/*//그리드영역 */}
       <div>
