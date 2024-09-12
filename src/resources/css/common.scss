@@ -661,7 +661,7 @@ input, select{font-family:'KoreanAirSans'}
 /*라이브러리*/
 .ag-header-row{height:5.0rem !important}
 .ag-header.ag-header-allow-overflow .ag-header-row{background-color:var(--color-ag-header-row) !important}
-.ag-ltr .ag-cell{height:45px !important}
+//.ag-ltr .ag-cell{height:auto !important}
 .ag-header-cell-text{color:var(--color-darkblue-100) !important;}
 .ag-header-cell-label{display:inline;text-align:center;flex: 1 auto;align-self:auto}
 .ag-theme-quartz{border-top:solid 1px var(--color-darkblue-100)}

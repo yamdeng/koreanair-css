@@ -11,7 +11,7 @@ import GridLinkComponent from './GridLinkComponent';
 const basicDefaultColDef = {
   sortable: true,
   filter: false,
-  wrapText: true,
+  wrapText: false,
   autoHeight: true,
   minWidth: 100,
 };

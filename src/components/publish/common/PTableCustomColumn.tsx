@@ -20,7 +20,19 @@ function CustomColumnComponent2() {
 function CustomColumnComponent3() {
   return (
     <div className="Safety-table-cell">
-      <span className="">일반 텍스트</span>
+      <div className="list-box">
+        <ul>
+          <li>
+            <a href="javascript:void(0);">24-LSA-0401-BE03 / 신상훈</a>
+          </li>
+          <li>
+            <a href="javascript:void(0);">24-LSA-0401-BE01 / -</a>
+          </li>
+          <li>
+            <a href="javascript:void(0);">24-LSA-0401-BE02 / 안용성</a>
+          </li>
+        </ul>
+      </div>
     </div>
   );
 }
@@ -68,6 +80,9 @@ function PTableCustomColumn() {
 
   columns[1].cellRenderer = CustomColumnComponent1;
   columns[2].cellRenderer = CustomColumnComponent2;
+  columns[2].width = 300;
+  columns[2].wrapText = true;
+  columns[2].autoHeight = true;
   columns[3].cellRenderer = CustomColumnComponent3;
   columns[4].cellRenderer = CustomColumnComponent4;
   columns[5].cellRenderer = CustomColumnComponent5;
