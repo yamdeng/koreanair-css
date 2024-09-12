@@ -84,7 +84,7 @@ function AppTextInput(props) {
         ) : null}
       </label>
       {disabled || inputType === 'number' || hiddenClearButton || !value ? null : (
-        <button className="btnClear" onClick={() => onChange('')}></button>
+        <button className="btnclear" onClick={() => onChange('')}></button>
       )}
       <CommonInputError errorMessage={errorMessage} label={label} />
     </>
