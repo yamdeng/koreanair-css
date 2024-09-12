@@ -449,39 +449,32 @@ function ReportEdit() {
                   </div>
                   <div className="form-table">
                     <div className="form-cell wid50">
-                      <div className="group-box-wrap1 wid100 ">
-                        <span className="txt">
-                          내용 <span className="required">*</span>
-                        </span>
-                        <div className="round-wrap">
-                          {/*개요 */}
-                          <Editor
-                            hideModeSwitch={true}
-                            initialEditType="wysiwyg"
-                            previewStyle="vertical"
-                            // initialValue={initValue}
-                            height={'500px'}
-                            // onChange={() => {}}
-                            usageStatistics={false}
-                            customHTMLSanitizer={(html) => {
-                              return html;
-                            }}
-                            viewer={true}
-                            autofocus={false}
-                            customHTMLRenderer={{
-                              htmlBlock: {
-                                table(node) {
-                                  return [
-                                    { type: 'openTag', tagName: 'table', outerNewLine: true, attributes: node.attrs },
-                                    { type: 'html', content: node.childrenHTML },
-                                    { type: 'closeTag', tagName: 'table', outerNewLine: true },
-                                  ];
-                                },
-                              },
-                            }}
-                          />
-                        </div>
-                      </div>
+                      {/*개요 */}
+                      <Editor
+                        hideModeSwitch={true}
+                        initialEditType="wysiwyg"
+                        previewStyle="vertical"
+                        // initialValue={initValue}
+                        height={'500px'}
+                        // onChange={() => {}}
+                        usageStatistics={false}
+                        customHTMLSanitizer={(html) => {
+                          return html;
+                        }}
+                        viewer={true}
+                        autofocus={false}
+                        customHTMLRenderer={{
+                          htmlBlock: {
+                            table(node) {
+                              return [
+                                { type: 'openTag', tagName: 'table', outerNewLine: true, attributes: node.attrs },
+                                { type: 'html', content: node.childrenHTML },
+                                { type: 'closeTag', tagName: 'table', outerNewLine: true },
+                              ];
+                            },
+                          },
+                        }}
+                      />
                     </div>
                   </div>
                   {/* 파일첨부영역 : drag */}
@@ -533,35 +526,52 @@ function ReportEdit() {
                         <div className="UserChicebox error">
                           <div className="form-group wid100">
                             <div className="flex-between">
-                              <div className="flex-start">
-                                <div className="type5">
-                                  <AppTextInput inputType={'number'} label={'바람'} />
-                                </div>
-                                <span className="unt">/</span>
-                                <div className="type5">
-                                  <AppTextInput inputType={'number'} label={'바람'} />
+                              <div className="form-group wid100">
+                                <div className="flex-start">
+                                  <div className="">
+                                    <AppTextInput inputType={'number'} label={''} />
+                                  </div>
+                                  <span className="unt">/</span>
+                                  <div className="">
+                                    <AppTextInput inputType={'number'} label={''} />
+                                  </div>
                                 </div>
                               </div>
-                              <div className="df type5">
-                                <AppTextInput inputType={'number'} label={'격발'} />
-                                <span className="info-tit">케츠</span>
+                              <div className="form-group wid100 ml5">
+                                <div className="df">
+                                  <AppTextInput inputType={'number'} label={'격발'} />
+                                  <span className="info-tit">케츠</span>
+                                </div>
                               </div>
                             </div>
                             <label htmlFor="file" className="file-label">
-                              실제 날씨 <span className="required"></span>
+                              실제날씨 <span className="required"></span>
                             </label>
                           </div>
+
                           <div className="form-group wid100 mt10">
                             <AppTextInput label="시계" />
                           </div>
                           <div className="form-group wid100 mt10">
                             <div className="flex-between">
-                              <div className="type5">
+                              <div className="form-group wid50">
                                 <AppSelect label="구름" />
                               </div>
-                              <div className="df type5">
-                                <AppTextInput inputType={'number'} label={'온도'} />
-                                <span className="info-tit">℃</span>
+                              <div className="form-group wid100 ml5">
+                                <div className="df">
+                                  <AppTextInput inputType={'number'} label={'온도'} />
+                                  <span className="info-tit">℃</span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div className="form-group wid100 mt10">
+                            <div className="flex-between">
+                              <div className="form-group wid50">
+                                <AppTextInput inputType={'number'} label={'고도계'} />
+                              </div>
+                              <div className="form-group wid100 ml5">
+                                <AppSelect label="" />
                               </div>
                             </div>
                           </div>
