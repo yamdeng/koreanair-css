@@ -1262,7 +1262,7 @@ function SafetyDetail() {
                                 <dl className="tg-item rbox01 ">
                                   <dt>
                                     <button type="button" className="tg-btn">
-                                      - 위험평가<span className=""></span>
+                                      위험평가<span className=""></span>
                                     </button>
                                   </dt>
                                   <dd className="tg-conts">

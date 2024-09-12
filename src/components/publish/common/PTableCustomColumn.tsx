@@ -12,8 +12,26 @@ function CustomColumnComponent1() {
 
 function CustomColumnComponent2() {
   return (
-    <div className="Safety-table-cell">
-      <span>일반 텍스트</span>
+    <div className="Audit-table-cell">
+      <div className="list-box">
+        <ul>
+          <li>
+            <a href="javascript:void(0);" className="text-orange">
+              제출(F/Y)
+            </a>
+          </li>
+          <li>
+            <a href="javascript:void(0);" className="text-orange">
+              제출(F/Y)
+            </a>
+          </li>
+          <li>
+            <a href="javascript:void(0);" className="text-orange">
+              제출(F/Y)
+            </a>
+          </li>
+        </ul>
+      </div>
     </div>
   );
 }
@@ -44,15 +62,17 @@ function CustomColumnComponent4() {
       <div className="list-box">
         <ul>
           <li>
-            <a href="javascript:void(0);" className="text-blue">
-              24-LSA-0401-BE03 / 신상훈
+            <a href="javascript:void(0);" className="">
+              2024-06-25
             </a>
           </li>
           <li>
-            <a href="javascript:void(0);">24-LSA-0401-BE01 / -</a>
+            <a href="javascript:void(0);">-</a>
           </li>
           <li>
-            <a href="javascript:void(0);">24-LSA-0401-BE02 / 안용성</a>
+            <a href="javascript:void(0);" className="text-red">
+              2024-06-26 (D+6)
+            </a>
           </li>
         </ul>
       </div>

@@ -3,7 +3,7 @@ import { useState } from 'react';
 function PRightCommentLayer() {
   const [isOpen, setIsOpen] = useState(false);
   const handleClick = () => {
-    setIsOpen(true);
+    setIsOpen(!isOpen);
   };
   let applyClassName = 'RightLayer-Wrap';
   if (isOpen) {

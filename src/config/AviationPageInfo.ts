@@ -556,6 +556,13 @@ AviationPageInfo.list = [
     description: '',
     success: true,
   },
+  {
+    title: '[09.AMO] AMO페이지는 레이어팝업처리',
+    Component: AdminRiskMATRIXDetail,
+    path: 'AdminRiskMATRIXDetail',
+    description: '',
+    success: false,
+  },
 ];
 
 export default AviationPageInfo;
