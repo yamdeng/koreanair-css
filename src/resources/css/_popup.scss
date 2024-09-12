@@ -676,14 +676,14 @@
 .RiskLevelTable td{width:100px;font-size:1.7rem;text-align:center;color:var(--color-neutral-90);border:solid 0.1rem var(--color-neutral-20)}
 .RiskLevelTable.left td a{font-size:1.4rem}
 .RiskLevelTable.left td a, a:visited{color:var(--color-mblue-100)}
-.RiskLevelTable.left td a:hover, a:focus{color:var(--color-darkblue-100)}
+//.RiskLevelTable.left td a:hover, a:focus{color:var(--color-darkblue-100)}
 
 .RiskLevelTable td.level1{background-color:var(--color-Level)}
 .RiskLevelTable td.level2{background-color:var(--color-Leve2)}
 .RiskLevelTable td.level3{background-color:var(--color-Leve3)}
 .RiskLevelTable td.level4{background-color:var(--color-Leve4)}
 
-.RiskLevelTable.Risk td{position:relative;font-weight:600;vertical-align:text-top}
+.RiskLevelTable.Risk td{position:relative;font-weight:600;vertical-align:text-top;height:6rem}
 .flag-tag1{gap:0 0.5rem}
 .flag-tag .icon-flag{border-radius:99.9rem;padding:0.3rem 0.6rem}
 .flag-tag1 .icon-flag1{border-radius:99.9rem;padding:0.3rem 2.0rem}
@@ -718,7 +718,7 @@
 
 
 .RiskLevelTable.Risk td span{/*display:block;font-size:1.5rem*/}
-.RiskLevelTable.Risk td:hover{border:solid 0.4rem var(--color-lightblue-10)!important;cursor:pointer}
+//.RiskLevelTable.Risk td:hover{border:solid 0.4rem var(--color-lightblue-10)!important;cursor:pointer}
 .RiskLevelTable.Risk td.selected{border:solid 0.3rem #ffbc00 !important;color:var(--color-neutral-10)}
 .RiskLevelTable.severity th{height:4.0rem}
 .RiskLevelTable.severity td{padding:1rem;text-align:left;line-height:1.4;color:var(--color-neutral-80);border:solid 0.1rem var(--color-neutral-40)}

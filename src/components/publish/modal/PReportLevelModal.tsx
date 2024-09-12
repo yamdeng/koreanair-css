@@ -349,7 +349,7 @@ function ReportLevelModal(props) {
                           <td className="level1">
                             5B
                             <div className="flag-tag tooltip">
-                              <span className="icon-flag txt">23</span>
+                              {/* <span className="icon-flag txt">23</span> */}
                               <div>
                                 <span className="tooltiptext1 tooltip-right">
                                   <ul>
@@ -362,7 +362,7 @@ function ReportLevelModal(props) {
                           <td className="level1">
                             5C
                             <div className="flag-tag tooltip">
-                              <span className="icon-flag txt">99</span>
+                              {/* <span className="icon-flag txt">99</span> */}
                               <div>
                                 <span className="tooltiptext1 tooltip-right">
                                   <ul>
@@ -375,7 +375,7 @@ function ReportLevelModal(props) {
                           <td className="level2">
                             5D
                             <div className="flag-tag tooltip">
-                              <span className="icon-flag txt">233</span>
+                              {/* <span className="icon-flag txt">233</span> */}
                               <div>
                                 <span className="tooltiptext1 tooltip-right">
                                   <ul>
@@ -469,7 +469,7 @@ function ReportLevelModal(props) {
                           <td className="level4">
                             1E
                             <div className="flag-tag tooltip">
-                              <span className="icon-flag txt">233</span>
+                              {/* <span className="icon-flag txt">233</span> */}
                               <div>
                                 <span className="tooltiptext1 tooltip-right">
                                   <ul>
