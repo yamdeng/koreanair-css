@@ -1,4 +1,16 @@
+import { useEffect } from 'react';
+import { useStore } from 'zustand';
+import useAppStore from '@/store/useAppStore';
+
 function POccupationPortal1() {
+  const { setIsAviationPortal } = useStore(useAppStore, (state) => state) as any;
+
+  useEffect(() => {
+    setIsAviationPortal(true);
+    return () => {
+      setIsAviationPortal(false);
+    };
+  }, []);
   return (
     <>
       <div className="floatingmenu">글쓰기</div>

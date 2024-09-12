@@ -350,10 +350,13 @@
 .checklist-contents .checklist-row.list li.list-space .ant-space button.editChapter{visibility:hidden;opacity:0;margin-right:1rem}
 .checklist-contents .checklist-row.list li.list-space .ant-space:hover button.btn-list.editChapter{opacity:100;visibility:visible}
 
-.Safety-table-cell .list-box{position:relative;display:block}
-.Safety-table-cell .list-box ul{position:relative;display:flex;flex-direction:column}
-.Safety-table-cell .list-box li{line-height:1.5;font-size:1.2rem;}
-.Safety-table-cell .list-box li a{line-height:1.5;font-size:1.2rem;}
+/*Audit 그리드*/
+.Audit-table-cell .list-box{position:relative;text-align:left}
+.Audit-table-cell .list-box ul{position:relative;display:flex;flex-direction:column}
+.Audit-table-cell .list-box li{line-height:1.5;font-size:1.4rem}
+.Audit-table-cell .list-box li a{line-height:1.5;font-size:1.4rem}
+.Audit-table-cell .list-box li .text-blue{color:var(--color-btn-blue2)}
+.Audit-table-cell .list-box li .text-red{color:var(--color-red)}
 
 .checklist-contents.edit > .btn-area{margin:0 auto;margin-bottom:1.2rem}
 .checklist-contents.edit > .editbox.edit-detile{position:relative;width:100%;background-color:var( --color-neutral-20);padding:0 3rem 0 1.5rem}

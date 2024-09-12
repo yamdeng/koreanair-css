@@ -64,7 +64,7 @@ function AdminRiskMATRIX() {
           </div>
         </div>
         <div className="tableTop">
-          <table className="RiskLevelTable left">
+          {/* <table className="RiskLevelTable left">
             <caption></caption>
             <colgroup>
               <col width="10%" />
@@ -202,7 +202,7 @@ function AdminRiskMATRIX() {
                 </td>
               </tr>
             </tbody>
-          </table>
+          </table> */}
         </div>
       </div>
       {/* <AppTable rowData={rowData} columns={columns} customButtons={customButtons} />*/}
