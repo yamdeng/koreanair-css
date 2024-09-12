@@ -609,10 +609,10 @@
 .selectlist .departmentlist .delete{background: url(../images/delete-text.svg)center center no-repeat; font-size: 0; width: 2.0rem; height: 2.0rem;position: absolute; right: 0;}
 
 /*위험레벨 조회*/
-.red{color:var(#DA291C)}
-.orange{color:var(#FF8902)}
-.yellow{color:var(#FFDD33)}
-.green{color:var(#02C27F)}
+.red{background-color:#DA291C}
+.orange{background-color:#FF8902}
+.yellow{background-color:#FFDD33}
+.green{background-color:#02C27F}
 .RiskLevel-box{display:flex;width:100%;height:100%;overflow:auto;gap:0 2.0rem}
 .RiskLevel-box .RiskLevel-list{width:35%;/*padding:2.0rem;overflow:hidden;height:100%;border-radius:0.8rem;*//*border:0.1rem solid var(--color-neutral-40);background-color: var(--color-neutral-20)*/}
 .RiskLevel-box .RiskLevel-top-box{display:block;width:100%;margin-bottom:1.0rem}
@@ -639,7 +639,7 @@
 }
 
 
-.h4-tit{position:relative;margin-bottom:1.5rem;font-size:1.8rem;font-weight:600;line-height:1.8;text-indent:0;padding-left:1.5rem;color:var(--color-darkblue-100);text-align:left}
+.h4-tit{position:relative;margin-bottom:1.0rem;font-size:1.8rem;font-weight:600;line-height:1.8;text-indent:0;padding-left:1.5rem;color:var(--color-darkblue-100);text-align:left}
 .h4-tit::before{content:'·';display:block;position:absolute;top:0;left:0.2rem}
 .h5-tit{position:relative;margin:0.5rem 0;font-size:1.7rem;font-weight:600;color:var(--color-darkblue-100)}
 .RiskLevel-box .RiskLevel-list .list-box-a{width:50%}

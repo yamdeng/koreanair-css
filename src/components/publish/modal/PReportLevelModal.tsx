@@ -329,7 +329,7 @@ function ReportLevelModal(props) {
                         <tr>
                           <th>5</th>
                           {/* 선택되면 selected 붙임 */}
-                          <td className="level1 selected">
+                          <td className="red selected">
                             5A
                             {/* 툴팁 */}
                             <div className="flag-tag tooltip">

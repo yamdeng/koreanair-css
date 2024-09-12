@@ -53,6 +53,10 @@
   .grid-item:nth-of-type(5) {order: 5;}
   .grid-item:nth-of-type(6) {order: 6;}*/
   .grid-item:nth-of-type(7) {grid-column-end: span 1 !important;}
+
+
+  .RiskLevel-Wrap .RiskLevel-Left{width:50%}
+  .RiskLevel-Wrap .RiskLevel-Right{width:50%}
 }
 
 
@@ -152,6 +156,10 @@
 
   .main-wrap {grid-template-columns: 1fr 1fr; height: auto;}
   .grid-item:nth-of-type(7) {grid-column-end: span 1 !important;}
+
+  .RiskLevel-Wrap{display:inline-block}
+  .RiskLevel-Wrap .RiskLevel-Left{width:100%}
+  .RiskLevel-Wrap .RiskLevel-Right{display:block;width:100%}
 }
 
 
@@ -314,6 +322,14 @@
 
   .main-wrap {display: block; height: auto;}
   .main-wrap .grid-item {margin: 2.4rem 0;}
+
+  .RiskLevel-Wrap{width:100%;}
+  .RiskLevel-Wrap .RiskLevel-Left{width:100%;}
+  .RiskLevel-Wrap .RiskLevel-Right{display:block; width:100%;}
+
+  .RiskLevel-Wrap{display:inline-block}
+  .RiskLevel-Wrap .RiskLevel-Left{width:100%}
+  .RiskLevel-Wrap .RiskLevel-Right{display:block;width:100%;margin-top:1.5rem}
 }
 
 
@@ -561,6 +577,10 @@
 
   .main-wrap {display: block; height: auto;}
   .main-wrap .grid-item {margin: 2.4rem 0;}
+
+  .RiskLevel-Wrap{display:inline-block}
+  .RiskLevel-Wrap .RiskLevel-Left{width:100%}
+  .RiskLevel-Wrap .RiskLevel-Right{display:block;width:100%;margin-top:1.5rem}
 }
 
 

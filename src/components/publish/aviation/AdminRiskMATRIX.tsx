@@ -302,161 +302,69 @@ function AdminRiskMATRIX() {
           </div>
         </div>
       </div>
-      {/*//그리드영역 */}
-      <div>
-        <div className="table-header">
-          <div className="btns-area">
-            <button name="button" className="btn_text btn_confirm text_color_neutral-10">
-              보고서 추가
-            </button>
-            <button name="button" className="btn_text btn_confirm text_color_neutral-10">
-              보고서 해제
-            </button>
-          </div>
-        </div>
+      <div className="RiskLevel-bottom">
+        <p className="h4-tit">심각도</p>
         <div className="tableTop">
-          {/* <table className="RiskLevelTable left">
+          <table className="RiskLevelTable severity">
             <caption></caption>
-            <colgroup>
-              <col width="10%" />
-              <col width="25%" />
-              <col width="10%" />
-              <col width="20%" />
-              <col width="15%" />
-              <col width="10%" />
-              <col width="5%" />
-              <col width="5%" />
-            </colgroup>
+            <colgroup></colgroup>
             <thead>
               <tr>
-                <th>Doc No.</th>
-                <th>Subject</th>
-                <th>Event Type</th>
-                <th>Hazard</th>
-                <th>Potential Consequence</th>
-                <th>진행상태</th>
-                <th>1차 위험평가</th>
-                <th>2차 위험평가</th>
+                <th>순번</th>
+                <th>심각도구분</th>
+                <th>매우심각</th>
+                <th>위험</th>
+                <th>중요</th>
+                <th>경이</th>
+                <th>매우경미</th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <td rowSpan="2">
-                  <a href="javascript:void(0);">ASR-100301</a>
-                </td>
-                <td rowSpan="2" className="tl">
-                  Hydraulic System Fail로 인한 Heavy Delay
-                </td>
-                <td rowSpan="2" className="tl">
-                  Delay
-                </td>
-                <td className="tl">Aircraft Change</td>
-                <td className="tl">Hail</td>
-                <td className="">접수</td>
-                <td className=""></td>
-                <td className=""></td>
+                <th>4</th>
+                <td className="">인적상해</td>
+                <td className="">영구장애 또는 사망</td>
+                <td className="">1년이상의 요양</td>
+                <td className="">3개월이상~1년미만의 요양</td>
+                <td className="">2주초과~3개월미만의 요양</td>
+                <td className="">2주이하의 요양</td>
               </tr>
               <tr>
-                <td className="tl">Boarding Refusal</td>
-                <td className="tl">Lightning strike</td>
-                <td className="">1차위험평가</td>
+                <th>3</th>
+                <td className="">안전운항</td>
+                <td className="">사고/중사고</td>
+                <td className="">안전문제 발생으로 다수의 비정상절차 수행 또는 조작불능상태 등 긴급한 비상사태 초래</td>
                 <td className="">
-                  <div className="Safety-table-cell">
-                    <span className="Safety-tag riskLevel level2">3B</span>
-                  </div>
+                  안전문제 발생으로 다수의 비정상절차 수행 또는 표준절차를 수앻하지 못했거나 복합적 조작실수등 위급..
                 </td>
                 <td className="">
-                  <div className="Safety-table-cell">
-                    <span className="Safety-tag riskLevel level4">1C</span>
-                  </div>
+                  안전문제가 발생하였으나 표준절차 또는 일반적 추가조치 수행으로 안전문제가 해결된 경우 또는 단순..
                 </td>
+                <td className="">추가조치필요</td>
               </tr>
               <tr>
-                <td rowSpan="3">
-                  <a href="javascript:void(0);">MSR-100302</a>
-                </td>
-                <td rowSpan="3" className="tl">
-                  Hydraulic System Fail로 인한 Ramp Return
-                </td>
-                <td rowSpan="3" className="tl">
-                  aircraft Defect
-                </td>
-                <td className="tl">Bomb threat</td>
-                <td className="tl">Sandstorm</td>
-                <td className="">경감조치</td>
-                <td className="">
-                  <div className="Safety-table-cell">
-                    <span className="Safety-tag riskLevel level3">3C</span>
-                  </div>
-                </td>
-                <td className=""></td>
+                <th>2</th>
+                <td className="">감항성</td>
+                <td className="">Fall safe기능이 없는 장치의 결함으로 사고/준사고 발생</td>
+                <td className="">Fall safe기능이 없는 장치의 결함으로 긴급착륙(회항포함)</td>
+                <td className="">Fall safe기능이 있는 장치의 결함이지만 긴급착륙(회항포함)</td>
+                <td className="">결함으로 인한 결항 또는 10시간 이상 장기지연 발생</td>
+                <td className="">정비이월 후 운항가능</td>
               </tr>
               <tr>
-                <td className="tl">Cabin Crew Illness</td>
-                <td className="tl">Heavy rain</td>
-                <td className="">2차위험평가</td>
-                <td className="">
-                  <div className="Safety-table-cell">
-                    <span className="Safety-tag riskLevel level1">5B</span>
-                  </div>
-                </td>
-                <td className="">
-                  <div className="Safety-table-cell">
-                    <span className="Safety-tag riskLevel level4">1D</span>
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td className="tl">Cabin Crew Incapacitation due to injury</td>
-                <td className="tl">Thunderstorm</td>
-                <td className="">경감조치</td>
-                <td className="">
-                  <div className="Safety-table-cell">
-                    <span className="Safety-tag riskLevel level2">2A</span>
-                  </div>
-                </td>
-                <td className=""></td>
-              </tr>
-              <tr>
-                <td rowSpan="2">
-                  <a href="javascript:void(0);">CSR-100303</a>
-                </td>
-                <td rowSpan="2" className="tl">
-                  자발적 하기 승객 발생
-                </td>
-                <td rowSpan="2" className="tl">
-                  Deplane (Voluntary)
-                </td>
-                <td className="tl">COVID-19 Cluster Infection</td>
-                <td className="tl">Typhoon/Cyclone</td>
-                <td className="">경감조치</td>
-                <td className="">
-                  <div className="Safety-table-cell">
-                    <span className="Safety-tag riskLevel level1">3A</span>
-                  </div>
-                </td>
-                <td className=""></td>
-              </tr>
-              <tr>
-                <td className="tl">Crew/Pax Injury</td>
-                <td className="tl">Snow/Slush encounter</td>
-                <td className="">종결</td>
-                <td className="">
-                  <div className="Safety-table-cell">
-                    <span className="Safety-tag riskLevel level3">5E</span>
-                  </div>
-                </td>
-                <td className="">
-                  <div className="Safety-table-cell">
-                    <span className="Safety-tag riskLevel level4">1E</span>
-                  </div>
-                </td>
+                <th>1</th>
+                <td className="">비용발생</td>
+                <td className="">$500만 이상</td>
+                <td className="">$100만 이상~$500 미만</td>
+                <td className="">$10만 이상~$100 미만</td>
+                <td className="">$1만 이상~$10 미만</td>
+                <td className="">$1만 미만</td>
               </tr>
             </tbody>
-          </table> */}
+          </table>
         </div>
       </div>
-      {/* <AppTable rowData={rowData} columns={columns} customButtons={customButtons} />*/}
+      {/*//그리드영역 */}
     </>
   );
 }
