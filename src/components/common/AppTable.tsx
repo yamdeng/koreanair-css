@@ -9,9 +9,10 @@ import GridActionButtonComponent from './GridActionButtonComponent';
 import GridLinkComponent from './GridLinkComponent';
 
 const basicDefaultColDef = {
-  sortable: false,
+  sortable: true,
   filter: false,
-  flex: 1,
+  wrapText: true,
+  autoHeight: true,
   minWidth: 100,
 };
 
@@ -73,6 +74,7 @@ const LoadingComponent = (props) => {
 function AppTable(props) {
   const gridRef = useRef<any>(null);
   const {
+    className,
     rowData,
     columns,
     customButtons = [],
@@ -101,6 +103,7 @@ function AppTable(props) {
     hiddenTableHeader = false,
     readOnlyEdit = true,
     defaultColDef = basicDefaultColDef,
+    ...rest
   } = props;
 
   // store
@@ -190,26 +193,6 @@ function AppTable(props) {
     setDynamicApplyColumnList(newDynamicApplyColumnList);
   };
 
-  const searchEnableRowSpanColumnInfo = columns.find((info) => info.enableRowSpan);
-  const enableRowSpanColumnName = searchEnableRowSpanColumnInfo ? searchEnableRowSpanColumnInfo.field : '';
-
-  const onPaginationChanged = useCallback(
-    (params) => {
-      // pageSize가 변경되었을 경우
-      if (params.newPageSize) {
-        const newPageSize = params.api.paginationGetPageSize();
-        if (newPageSize) {
-          if (enableRowSpanColumnName) {
-            params.api.setRowData(
-              CommonUtil.applyGroupingRowSpanByPageSize(rowData, enableRowSpanColumnName, newPageSize)
-            );
-          }
-        }
-      }
-    },
-    [rowData, enableRowSpanColumnName]
-  );
-
   useEffect(() => {
     if (gridRef && gridRef.current && gridRef.current.api) {
       if (displayTableLoading) {
@@ -228,20 +211,16 @@ function AppTable(props) {
     <>
       <div className="table-header" style={{ display: hiddenTableHeader ? 'none' : '' }}>
         <div className="count">
-          {CommonUtil.formatString(gridTotalCountTemplate, store ? totalCount : rowData.length)}
+          Total {CommonUtil.formatString(gridTotalCountTemplate, store ? totalCount : rowData.length)}
         </div>
         <div className="btns-area">
           {customButtons.map((info) => {
-            const { title, iconClass, onClick } = info;
+            const { title, onClick } = info;
             return (
               <button
                 key={title}
                 name="button"
-                className={
-                  iconClass
-                    ? `btn_text btn_confirm text_color_neutral-10 ${iconClass}`
-                    : 'btn_text btn_confirm text_color_neutral-10'
-                }
+                className="btn_text btn_confirm text_color_neutral-10"
                 onClick={onClick}
               >
                 {title}
@@ -278,9 +257,9 @@ function AppTable(props) {
           </span>
         </div>
       </div>
-      <div className="ag-theme-quartz" style={{ height: tableHeight }}>
+      <div className={className ? `ag-theme-quartz ${className}` : 'ag-theme-quartz'} style={{ height: tableHeight }}>
         <AgGridReact
-          {...props}
+          {...rest}
           ref={gridRef}
           domLayout={applyAutoHeight ? 'autoHeight' : 'normal'}
           rowData={rowData}
@@ -297,7 +276,6 @@ function AppTable(props) {
           paginationPageSizeSelector={pageSizeList}
           pagination={enablePagination}
           suppressRowTransform={searchRowSpanIndex !== -1 ? true : false}
-          onPaginationChanged={onPaginationChanged}
           defaultColDef={defaultColDef}
           tooltipShowDelay={100}
           tooltipHideDelay={1000}
@@ -313,8 +291,6 @@ function AppTable(props) {
             if (getGridRef) {
               getGridRef(params);
             }
-            // params.api.sizeColumnsToFit();
-            params.api.autoSizeAllColumns();
           }}
         />
       </div>
