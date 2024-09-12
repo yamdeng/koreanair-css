@@ -31,11 +31,32 @@ function MyAuditConduct() {
 
       <div className="MyAudit-container">
         <div className="MyAudit-header">
-          <div className="editbox Audit">
+          <div className="number">
+            Audit No. <span>24-LSA-0407</span>
+          </div>
+          <div className="MyAudit-tab">
+            <ul>
+              <li>
+                <a className="active" href="javascript:void(0);">
+                  Plan
+                </a>
+              </li>
+              <li>
+                <a href="javascript:void(0);">Conduct</a>
+              </li>
+              <li>
+                <a href="javascript:void(0);">CAR</a>
+              </li>
+              <li>
+                <a href="javascript:void(0);">Close</a>
+              </li>
+            </ul>
+          </div>
+          {/* <div className="editbox Audit">
             <div className="form-group wid100 Position-w">Audit No. 24-LSA-0407</div>
           </div>
           {/*탭 */}
-          <div className="menu-tab-nav">
+          {/* <div className="menu-tab-nav">
             <div className="ux-tab -scroll ux-order-list-tab">
               <div className="ux-order-list-tab__wrap">
                 <ul className="ux-tab__list">
@@ -55,41 +76,57 @@ function MyAuditConduct() {
                 </ul>
               </div>
             </div>
-          </div>
+          </div>*/}
           {/*//탭 */}
         </div>
         <div className="MyAudit-contents">
-          ㅇㄹㅇㄹㅇㄹㅇㄹㅇ ㅇㅇㄹㅇㄹㅇㄹㅇㄹ ㅇㄹㅇㄹㅇㄹㅇㄹㅇ ㅇㅇㄹㅇㄹㅇㄹㅇㄹ<br></br>
-          <br></br>
-          ㅇㄹㅇㄹㅇㄹㅇㄹㅇ ㅇㅇㄹㅇㄹㅇㄹㅇㄹ ㅇㄹㅇㄹㅇㄹㅇㄹㅇ ㅇㅇㄹㅇㄹㅇㄹㅇㄹ<br></br>
-          <br></br>
-          ㅇㄹㅇㄹㅇㄹㅇㄹㅇ ㅇㅇㄹㅇㄹㅇㄹㅇㄹ ㅇㄹㅇㄹㅇㄹㅇㄹㅇ ㅇㅇㄹㅇㄹㅇㄹㅇㄹ<br></br>
-          <br></br>
-          ㅇㄹㅇㄹㅇㄹㅇㄹㅇ ㅇㅇㄹㅇㄹㅇㄹㅇㄹ ㅇㄹㅇㄹㅇㄹㅇㄹㅇ ㅇㅇㄹㅇㄹㅇㄹㅇㄹ<br></br>
-          <br></br>
-          ㅇㄹㅇㄹㅇㄹㅇㄹㅇ ㅇㅇㄹㅇㄹㅇㄹㅇㄹ ㅇㄹㅇㄹㅇㄹㅇㄹㅇ ㅇㅇㄹㅇㄹㅇㄹㅇㄹ<br></br>
-          <br></br>
-          ㅇㄹㅇㄹㅇㄹㅇㄹㅇ ㅇㅇㄹㅇㄹㅇㄹㅇㄹ ㅇㄹㅇㄹㅇㄹㅇㄹㅇ ㅇㅇㄹㅇㄹㅇㄹㅇㄹ<br></br>
-          <br></br>
-          ㅇㄹㅇㄹㅇㄹㅇㄹㅇ ㅇㅇㄹㅇㄹㅇㄹㅇㄹ ㅇㄹㅇㄹㅇㄹㅇㄹㅇ ㅇㅇㄹㅇㄹㅇㄹㅇㄹ<br></br>
-          <br></br>
-          ㅇㄹㅇㄹㅇㄹㅇㄹㅇ ㅇㅇㄹㅇㄹㅇㄹㅇㄹ ㅇㄹㅇㄹㅇㄹㅇㄹㅇ ㅇㅇㄹㅇㄹㅇㄹㅇㄹ<br></br>
-          <br></br>
-          ㅇㄹㅇㄹㅇㄹㅇㄹㅇ ㅇㅇㄹㅇㄹㅇㄹㅇㄹ ㅇㄹㅇㄹㅇㄹㅇㄹㅇ ㅇㅇㄹㅇㄹㅇㄹㅇㄹ<br></br>
-          <br></br>
-          ㅇㄹㅇㄹㅇㄹㅇㄹㅇ ㅇㅇㄹㅇㄹㅇㄹㅇㄹ ㅇㄹㅇㄹㅇㄹㅇㄹㅇ ㅇㅇㄹㅇㄹㅇㄹㅇㄹ<br></br>
-          <br></br>
-          ㅇㄹㅇㄹㅇㄹㅇㄹㅇ ㅇㅇㄹㅇㄹㅇㄹㅇㄹ ㅇㄹㅇㄹㅇㄹㅇㄹㅇ ㅇㅇㄹㅇㄹㅇㄹㅇㄹ<br></br>
-          <br></br>
-          ㅇㄹㅇㄹㅇㄹㅇㄹㅇ ㅇㅇㄹㅇㄹㅇㄹㅇㄹ ㅇㄹㅇㄹㅇㄹㅇㄹㅇ ㅇㅇㄹㅇㄹㅇㄹㅇㄹ<br></br>
-          <br></br>
-          ㅇㄹㅇㄹㅇㄹㅇㄹㅇ ㅇㅇㄹㅇㄹㅇㄹㅇㄹ ㅇㄹㅇㄹㅇㄹㅇㄹㅇ ㅇㅇㄹㅇㄹㅇㄹㅇㄹ<br></br>
-          <br></br>
-          ㅇㄹㅇㄹㅇㄹㅇㄹㅇ ㅇㅇㄹㅇㄹㅇㄹㅇㄹ ㅇㄹㅇㄹㅇㄹㅇㄹㅇ ㅇㅇㄹㅇㄹㅇㄹㅇㄹ<br></br>
-          <br></br>ㅇㄹㅇㄹㅇㄹㅇㄹㅇ ㅇㅇㄹㅇㄹㅇㄹㅇㄹ ㅇㄹㅇㄹㅇㄹㅇㄹㅇ ㅇㅇㄹㅇㄹㅇㄹㅇㄹ<br></br>
-          <br></br>
-          ㅇㄹㅇㄹㅇㄹㅇㄹㅇ ㅇㅇㄹㅇㄹㅇㄹㅇㄹ ㅇㄹㅇㄹㅇㄹㅇㄹㅇ ㅇㅇㄹㅇㄹㅇㄹㅇㄹ<br></br>
-          <br></br>
+          <div className="audit-left-box">
+            <h2>Plan</h2>
+            <div className="editbox">
+              <div className="form-table">
+                <div className="form-cell wid50">
+                  <div className="group-box-wrap wid100">
+                    <span className="txt">Remote/On-site</span>
+                    <div className="radio-wrap">
+                      <label>
+                        <input type="radio" />
+                        <span>Remote</span>
+                      </label>
+                      <label>
+                        <input type="radio" />
+                        <span>On-site</span>
+                      </label>
+                    </div>
+                    {/*<span className="errorText">error</span>*/}
+                  </div>
+                </div>
+              </div>
+              <hr className="line"></hr>
+            </div>
+          </div>
+          <div className="audit-right-box">
+            <h2>Auditee</h2>
+            <div className="editbox">
+              <div className="form-table line">
+                <div className="form-cell wid50">
+                  <div className="form-group wid100">
+                    <AppTextInput label="부문" required disabled />
+                  </div>
+                </div>
+                <div className="form-cell wid50">
+                  <div className="form-group wid100">
+                    <AppTextInput label="부서" required disabled />
+                  </div>
+                </div>
+                <div className="form-cell wid50">
+                  <div className="form-group wid100">
+                    <AppTextInput label="작성자" required disabled />
+                  </div>
+                </div>
+              </div>
+              <hr className="line dp-n"></hr>
+            </div>
+          </div>
         </div>
       </div>
 

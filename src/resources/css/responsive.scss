@@ -57,6 +57,11 @@
 
   .RiskLevel-Wrap .RiskLevel-Left{width:50%}
   .RiskLevel-Wrap .RiskLevel-Right{width:50%}
+
+  .work-group .work-table .work-ck-list table th:nth-child(1), .work-ck-list table td:nth-child(1){width: 15%;}
+  .work-group .work-table .work-ck-list table th:nth-child(2), .work-ck-list table td:nth-child(2){width: 40%; text-wrap: wrap;}
+  .work-group .work-table .work-ck-list table th:nth-child(3), .work-ck-list table td:nth-child(3){width: 45%;}
+  .file-guide {display: block; font-size: 1.2rem; color: var(--color-neutral-70); padding: 1.0rem; margin-bottom: 1.0rem; text-wrap: wrap;}
 }
 
 
@@ -160,6 +165,11 @@
   .RiskLevel-Wrap{display:inline-block}
   .RiskLevel-Wrap .RiskLevel-Left{width:100%}
   .RiskLevel-Wrap .RiskLevel-Right{display:block;width:100%}
+
+  .work-group .work-table .work-ck-list table th:nth-child(1), .work-ck-list table td:nth-child(1){width: 15%;}
+  .work-group .work-table .work-ck-list table th:nth-child(2), .work-ck-list table td:nth-child(2){width: 35%; text-wrap: wrap;}
+  .work-group .work-table .work-ck-list table th:nth-child(3), .work-ck-list table td:nth-child(3){width: 50%;}
+  .file-guide {display: block; font-size: 1.2rem; color: var(--color-neutral-70); padding: 1.0rem; margin-bottom: 1.0rem; text-wrap: wrap;}
 }
 
 
@@ -330,6 +340,11 @@
   .RiskLevel-Wrap{display:inline-block}
   .RiskLevel-Wrap .RiskLevel-Left{width:100%}
   .RiskLevel-Wrap .RiskLevel-Right{display:block;width:100%;margin-top:1.5rem}
+
+  .work-group .work-table .work-ck-list table th:nth-child(1), .work-ck-list table td:nth-child(1){width: 15%;}
+  .work-group .work-table .work-ck-list table th:nth-child(2), .work-ck-list table td:nth-child(2){width: 35%; text-wrap: wrap;}
+  .work-group .work-table .work-ck-list table th:nth-child(3), .work-ck-list table td:nth-child(3){width: 50%;}
+  .file-guide {display: block; font-size: 1.2rem; color: var(--color-neutral-70); padding: 1.0rem; margin-bottom: 1.0rem; text-wrap: wrap;}
 }
 
 
@@ -581,6 +596,11 @@
   .RiskLevel-Wrap{display:inline-block}
   .RiskLevel-Wrap .RiskLevel-Left{width:100%}
   .RiskLevel-Wrap .RiskLevel-Right{display:block;width:100%;margin-top:1.5rem}
+
+  .work-group .work-table .work-ck-list table th:nth-child(1), .work-ck-list table td:nth-child(1){width: 15%;}
+  .work-group .work-table .work-ck-list table th:nth-child(2), .work-ck-list table td:nth-child(2){width: 35%; text-wrap: wrap;}
+  .work-group .work-table .work-ck-list table th:nth-child(3), .work-ck-list table td:nth-child(3){width: 50%;}
+  .file-guide {display: block; font-size: 1.2rem; color: var(--color-neutral-70); padding: 1.0rem; margin-bottom: 1.0rem; text-wrap: wrap;}
 }
 
 

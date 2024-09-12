@@ -830,18 +830,32 @@
 
 .work-group {width: 100%; overflow-x: auto;}
 .work-group .work-table {width: 100%; min-width: 60.0rem;}
-.work-group .work-table {clear: both; width: 100%; box-sizing: border-box;}
-.work-group .work-table th, .work-table td {padding: 1.0rem; font-size: 1.4rem; text-align: center; line-height: 150%; border-left: 0.1rem solid var(--color-neutral-40); vertical-align:middle;}
-.work-group .work-table th, .work-table td:first-child {border-left: 0;}
-.work-group .work-table th:nth-child(1), .work-table td:nth-child(1){width: 30%;}
-.work-group .work-table th:nth-child(2), .work-table td:nth-child(2){width: 40%;}
-.work-group .work-table th:nth-child(3), .work-table td:nth-child(3){width: 30%;}
-.work-group .work-table td:nth-child(1), .work-table td:nth-child(2) {text-align: left; vertical-align: top;}
-.work-group .work-table th {background-color: var(--color-neutral-20); border-top: 0.1rem solid var(--color-darkblue-100); }
-.work-group .work-table tr {border-bottom: 0.1rem solid var(--color-neutral-40);}
-.work-group .work-table thead tr, .work-table tbody tr, .work-table tfoot tr {display: table; width: 100%;}
-.work-group .work-table tbody {display: block; height: 40.0rem; overflow-y: auto;}
-
+.work-group .work-table {clear: both; width: 100%; box-sizing: border-box; }
+.work-group .work-table th, .work-table td {padding: 1.0rem 1.0rem 0.4rem; font-size: 1.4rem; text-align: center; line-height: 150%; border: 0.1rem solid var(--color-neutral-40); vertical-align:middle; text-wrap: nowrap;}
+.work-group .work-table th:nth-child(1), .work-table td:nth-child(1){width: 10%;}
+.work-group .work-table th:nth-child(2), .work-table td:nth-child(2){width: 15%;}
+.work-group .work-table th:nth-child(3), .work-table td:nth-child(3){width: 15%;}
+.work-group .work-table th:nth-child(2), .work-table td:nth-child(4){width: 15%;}
+.work-group .work-table th:nth-child(3), .work-table td:nth-child(5){width: 15%;}
+.work-group .work-table th:nth-child(2), .work-table td:nth-child(6){width: 15%;}
+.work-group .work-table th:nth-child(3), .work-table td:nth-child(7){width: 15%;}
+.work-table td {padding: 0;}
+.work-group .work-table th {background-color: var(--color-neutral-20); border-top: 0.1rem solid var(--color-darkblue-100); border-bottom: 0.1rem solid var(--color-darkblue-30);}
+.work-group .work-table thead tr, .work-table tbody tr, .work-table tfoot tr {width: 100%;}
+/*.work-group .work-table tbody {display: block; height: 40.0rem; overflow-y: auto;}*/
+.work-group .work-table .work-ck-list {display: none;}
+.work-group .work-table .work-ck-list.active {display: block;}
+.work-group .work-table .work-ck-list table {width: 100%;}
+.work-group .work-table .work-ck-list table tr {border-bottom: 0.1rem solid var(--color-neutral-40);}
+.work-group .work-table .work-ck-list table tr:last-child {border-bottom: 0;}
+.work-group .work-table .work-ck-list table th {text-align: center !important; background-color: var(--color-neutral-20); border-right: 0.1rem solid var(--color-neutral-40);}
+.work-group .work-table .work-ck-list table th, .work-group .work-table .work-ck-list table td {border: 0; border-right: 0.1rem solid var(--color-neutral-40); text-align: left; padding: 1.0rem;}
+.work-group .work-table .work-ck-list table td {padding: 1.0rem 1.0rem 0.4rem;}
+.work-group .work-table .work-ck-list table td:last-child {border-right: 0;}
+.work-group .work-table .work-ck-list table th:nth-child(1), .work-ck-list table td:nth-child(1){width: 12%;}
+.work-group .work-table .work-ck-list table th:nth-child(2), .work-ck-list table td:nth-child(2){width: 42%;}
+.work-group .work-table .work-ck-list table th:nth-child(3), .work-ck-list table td:nth-child(3){width: 46%;}
+.file-guide {display: block; font-size: 1.2rem; color: var(--color-neutral-70); margin-bottom: 1.0rem;}
 .border-b-no {border-bottom: 0 !important;}
 .ag-theme-quartz.h300 {height: 30.0rem !important}
 
@@ -862,3 +876,55 @@
 .ck-list-tabel table tr.type01 th:nth-child(3), .ck-list-tabel table tr.type01 td:nth-child(3){width: 20%;}
 .ck-list-tabel table tr.type01 th:nth-child(4), .ck-list-tabel table tr.type01 td:nth-child(4){width: 20%;}
 .ck-list-tabel table tr.type01 th:nth-child(5), .ck-list-tabel table tr.type01 td:nth-child(5){width: 20%;}
+
+
+
+
+/*항공안전-myaudit*/
+ /*.MyAudit-contents{
+ margin-top: 1.2rem;
+  line-height: 1.4;
+  padding-bottom: 3rem;
+  overflow-y: auto;
+  max-height: 77rem;
+  }
+.MyAudit-header{background: cyan;}
+}*/
+
+
+.MyAudit-container {
+
+  .MyAudit-header {
+    display: flex;
+    border: 0.1rem solid var(--color-neutral-40);
+    background-color: var(--color-neutral-10); 
+    width: 100%;
+    padding: 1.5rem 2.0rem;
+    border-radius: 0.8rem;
+    .number {font-size: 1.8rem; font-weight: 700; display: inline-block; padding: 0 5.0rem 0 0; text-wrap: nowrap;}
+    .number span {font-weight: 500;}
+    .MyAudit-tab {display: inline-block; width: 100%; height: 100%;} 
+    .MyAudit-tab li {display: inline-flex; width: 25%; text-align: center; background: url(../images/arrow-right.svg)center right no-repeat;}
+    .MyAudit-tab li:last-child {background: none;}
+    .MyAudit-tab li a {width: calc(100% - 3.0rem); font-size: 1.8rem; font-weight: 700; text-wrap: nowrap; padding: 1.5rem 3.0rem;}
+    .MyAudit-tab li a.active {border-bottom: 0rem solid var(--color-darkblue-100);}
+  }
+  .MyAudit-contents{
+    width: 100%;
+    display: inline-flex;
+    justify-content: flex-start; 
+    flex-direction: row;
+    height: calc(100vh - 34.0rem);
+    overflow-y: auto; 
+    .audit-left-box {
+      width: 100%;
+      margin-right: 3.0rem;
+    h2 {font-size: 1.8rem; color: var(--color-darkblue-100); padding: 2.0rem 0 1.5rem 0;}
+    }
+    .audit-right-box {
+      width: 100%;
+      h2 {font-size: 1.8rem; color: var(--color-darkblue-100); padding: 2.0rem 0 1.5rem 0;}
+    
+    }
+  }
+}
