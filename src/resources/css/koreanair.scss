@@ -892,24 +892,27 @@
 }*/
 
 
-.MyAudit-container {
+.myaudit-container {
 
-  .MyAudit-header {
+  .myaudit-header {
     display: flex;
     border: 0.1rem solid var(--color-neutral-40);
     background-color: var(--color-neutral-10); 
-    width: 100%;
-    padding: 1.5rem 2.0rem;
+    width: 100%;    
     border-radius: 0.8rem;
-    .number {font-size: 1.8rem; font-weight: 700; display: inline-block; padding: 0 5.0rem 0 0; text-wrap: nowrap;}
-    .number span {font-weight: 500;}
-    .MyAudit-tab {display: inline-block; width: 100%; height: 100%;} 
-    .MyAudit-tab li {display: inline-flex; width: 25%; text-align: center; background: url(../images/arrow-right.svg)center right no-repeat;}
-    .MyAudit-tab li:last-child {background: none;}
-    .MyAudit-tab li a {width: calc(100% - 3.0rem); font-size: 1.8rem; font-weight: 700; text-wrap: nowrap; padding: 1.5rem 3.0rem;}
-    .MyAudit-tab li a.active {border-bottom: 0rem solid var(--color-darkblue-100);}
+    justify-content: center;
+    align-items: center;
+    
+    .ad-number {font-size: 1.8rem; font-weight: 700; display: inline-block; padding: 1.0rem 2.0rem; text-wrap: nowrap;}
+    .ad-number span {font-weight: 500;}
+    .myaudit-tab {width: 100%; display: flex; padding: 1.0rem 2.0rem;} 
+    .myaudit-tab ul {width: 100%; display: flex;}
+    .myaudit-tab li {display: inline-block; width: 25%; text-align: center; background: url(../images/arrow-right.svg)center right no-repeat;}
+    .myaudit-tab li:last-child {background: none;}
+    .myaudit-tab li a {width: calc(100% - 3.0rem); font-size: 1.8rem; font-weight: 700; text-wrap: nowrap; padding: 0.9rem 0;}
+    .myaudit-tab li a.active {border-bottom: 0.2rem solid var(--color-darkblue-100);}
   }
-  .MyAudit-contents{
+  .myaudit-contents{
     width: 100%;
     display: inline-flex;
     justify-content: flex-start; 

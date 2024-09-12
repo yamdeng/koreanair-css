@@ -345,6 +345,10 @@
   .work-group .work-table .work-ck-list table th:nth-child(2), .work-ck-list table td:nth-child(2){width: 35%; text-wrap: wrap;}
   .work-group .work-table .work-ck-list table th:nth-child(3), .work-ck-list table td:nth-child(3){width: 50%;}
   .file-guide {display: block; font-size: 1.2rem; color: var(--color-neutral-70); padding: 1.0rem; margin-bottom: 1.0rem; text-wrap: wrap;}
+
+  .myaudit-contents {display: block !important; height: 100% !important;}
+  .audit-left-box {width: 100%; margin-right:0 !important;}
+  .audit-right-box {width: 100%; padding-top: 1.5rem;}
 }
 
 
@@ -601,6 +605,11 @@
   .work-group .work-table .work-ck-list table th:nth-child(2), .work-ck-list table td:nth-child(2){width: 35%; text-wrap: wrap;}
   .work-group .work-table .work-ck-list table th:nth-child(3), .work-ck-list table td:nth-child(3){width: 50%;}
   .file-guide {display: block; font-size: 1.2rem; color: var(--color-neutral-70); padding: 1.0rem; margin-bottom: 1.0rem; text-wrap: wrap;}
+
+  .myaudit-contents {display: block !important; height: 100% !important;}
+  .audit-left-box {width: 100%; margin-right:0 !important;}
+  .audit-right-box {width: 100%; padding-top: 1.5rem;}
+  .myaudit-tab li {width: 50%;}
 }
 
 

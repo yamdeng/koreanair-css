@@ -29,12 +29,12 @@ function MyAuditConduct() {
       </div>
       {/*//경로 */}
 
-      <div className="MyAudit-container">
-        <div className="MyAudit-header">
-          <div className="number">
+      <div className="myaudit-container">
+        <div className="myaudit-header">
+          <div className="ad-number">
             Audit No. <span>24-LSA-0407</span>
           </div>
-          <div className="MyAudit-tab">
+          <div className="myaudit-tab">
             <ul>
               <li>
                 <a className="active" href="javascript:void(0);">
@@ -79,7 +79,7 @@ function MyAuditConduct() {
           </div>*/}
           {/*//탭 */}
         </div>
-        <div className="MyAudit-contents">
+        <div className="myaudit-contents">
           <div className="audit-left-box">
             <h2>Plan</h2>
             <div className="editbox">
