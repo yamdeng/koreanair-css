@@ -888,20 +888,8 @@
   overflow-y: auto;
   max-height: 77rem;
   }
-.MyAudit-header{background: cyan;}
-}*/
+.MyAudit-header{background: cyan;} 
 
-
-.myaudit-container {
-
-  .myaudit-header {
-    display: flex;
-    border: 0.1rem solid var(--color-neutral-40);
-    background-color: var(--color-neutral-10); 
-    width: 100%;    
-    border-radius: 0.8rem;
-    justify-content: center;
-    align-items: center;
     
     .ad-number {font-size: 1.8rem; font-weight: 700; display: inline-block; padding: 1.0rem 2.0rem; text-wrap: nowrap;}
     .ad-number span {font-weight: 500;}
