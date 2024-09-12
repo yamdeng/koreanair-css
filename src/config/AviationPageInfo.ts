@@ -58,6 +58,7 @@ import ExcellenceList from '@/components/publish/aviation/ExcellenceList';
 import ExcellenceDetail from '@/components/publish/aviation/ExcellenceDetail';
 import MyAuditConduct from '@/components/publish/aviation/MyAuditConduct';
 import AdminRiskMATRIX from '@/components/publish/aviation/AdminRiskMATRIX';
+import AdminRiskMATRIXDetail from '@/components/publish/aviation/AdminRiskMATRIXDetail';
 import { fa } from '@faker-js/faker';
 import { fail } from 'assert';
 
@@ -546,14 +547,14 @@ AviationPageInfo.list = [
     Component: AdminRiskMATRIX,
     path: 'AdminRiskMATRIX',
     description: '',
-    success: false,
+    success: true,
   },
   {
     title: '[07.관리자] 게시판관리 > RISK MATRIX 관리 수정',
-    Component: AdminSafetyNoticeDetail,
-    path: 'AdminSafetyNoticeDetail',
+    Component: AdminRiskMATRIXDetail,
+    path: 'AdminRiskMATRIXDetail',
     description: '',
-    success: false,
+    success: true,
   },
 ];
 
