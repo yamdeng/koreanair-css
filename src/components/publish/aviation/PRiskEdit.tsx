@@ -334,37 +334,32 @@ function PRiskEdit() {
                   <div className="form-table">
                     <div className="form-cell wid50">
                       <div className="group-box-wrap1 wid100 ">
-                        <span className="txt">
-                          개요 <span className="required">*</span>
-                        </span>
-                        <div className="round-wrap">
-                          {/*개요 */}
-                          <Editor
-                            hideModeSwitch={true}
-                            initialEditType="wysiwyg"
-                            previewStyle="vertical"
-                            // initialValue={initValue}
-                            height={'500px'}
-                            // onChange={() => {}}
-                            usageStatistics={false}
-                            customHTMLSanitizer={(html) => {
-                              return html;
-                            }}
-                            viewer={true}
-                            autofocus={false}
-                            customHTMLRenderer={{
-                              htmlBlock: {
-                                table(node) {
-                                  return [
-                                    { type: 'openTag', tagName: 'table', outerNewLine: true, attributes: node.attrs },
-                                    { type: 'html', content: node.childrenHTML },
-                                    { type: 'closeTag', tagName: 'table', outerNewLine: true },
-                                  ];
-                                },
+                        {/*개요 */}
+                        <Editor
+                          hideModeSwitch={true}
+                          initialEditType="wysiwyg"
+                          previewStyle="vertical"
+                          // initialValue={initValue}
+                          height={'500px'}
+                          // onChange={() => {}}
+                          usageStatistics={false}
+                          customHTMLSanitizer={(html) => {
+                            return html;
+                          }}
+                          viewer={true}
+                          autofocus={false}
+                          customHTMLRenderer={{
+                            htmlBlock: {
+                              table(node) {
+                                return [
+                                  { type: 'openTag', tagName: 'table', outerNewLine: true, attributes: node.attrs },
+                                  { type: 'html', content: node.childrenHTML },
+                                  { type: 'closeTag', tagName: 'table', outerNewLine: true },
+                                ];
                               },
-                            }}
-                          />
-                        </div>
+                            },
+                          }}
+                        />
                       </div>
                     </div>
                   </div>

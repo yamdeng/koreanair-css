@@ -59,6 +59,7 @@ import ExcellenceDetail from '@/components/publish/aviation/ExcellenceDetail';
 import MyAuditConduct from '@/components/publish/aviation/MyAuditConduct';
 import AdminRiskMATRIX from '@/components/publish/aviation/AdminRiskMATRIX';
 import AdminRiskMATRIXDetail from '@/components/publish/aviation/AdminRiskMATRIXDetail';
+import PRiskDetail from '@/components/publish/aviation/PRiskDetail';
 import { fa } from '@faker-js/faker';
 import { fail } from 'assert';
 
@@ -134,6 +135,13 @@ AviationPageInfo.list = [
     path: 'PRiskEdit',
     description: '',
     success: true,
+  },
+  {
+    title: '[03.안전위험관리] 안전조사 > 조사보고서 상세',
+    Component: PRiskDetail,
+    path: 'PRiskDetail',
+    description: '',
+    success: false,
   },
   {
     title: '[03.안전위험관리] 보고서분석 > 리스트',
