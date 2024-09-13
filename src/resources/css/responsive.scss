@@ -609,7 +609,8 @@
   .myaudit-contents {display: block !important; height: 100% !important;}
   .audit-left-box {width: 100%; margin-right:0 !important;}
   .audit-right-box {width: 100%; padding-top: 1.5rem;}
-  .myaudit-tab li {width: 50%;}
+  .myaudit-header .myaudit-tab li {width: 2.6rem; height: 2.6rem; background-color: var(--color-darkblue-100); border-radius: 99.9rem;}
+  .myaudit-header .myaudit-tab li a {font-size: 0 !important;}
 }
 
 

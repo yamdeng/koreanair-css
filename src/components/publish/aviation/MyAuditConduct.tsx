@@ -6,6 +6,7 @@ import { getAllData } from '@/data/grid/example-data-new';
 import { testColumnInfos } from '@/data/grid/table-column';
 import AppTextInput from '@/components/common/AppTextInput';
 import AppTextArea from '@/components/common/AppTextArea';
+import AppDatePicker from '@/components/common/AppDatePicker';
 
 function MyAuditConduct() {
   const [inputValue, setInputValue] = useState('');
@@ -86,7 +87,9 @@ function MyAuditConduct() {
               <div className="form-table">
                 <div className="form-cell wid50">
                   <div className="group-box-wrap wid100">
-                    <span className="txt">Remote/On-site</span>
+                    <span className="txt">
+                      Remote/On-site<span className="required">*</span>
+                    </span>
                     <div className="radio-wrap">
                       <label>
                         <input type="radio" />
@@ -98,6 +101,67 @@ function MyAuditConduct() {
                       </label>
                     </div>
                     {/*<span className="errorText">error</span>*/}
+                  </div>
+                </div>
+                <div className="form-cell wid-300">
+                  <div className="number-r ">
+                    <div className="title">Airline</div>
+                    <div className="form-group wid100">
+                      <AppSelect label={'Korean Air / Airline'} placeholder="" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <hr className="line"></hr>
+              <div className="form-table">
+                <div className="form-cell wid50">
+                  <div className="form-group wid100">
+                    <AppTextInput label="Audit Title" required />
+                  </div>
+                </div>
+              </div>
+              <hr className="line"></hr>
+              <div className="form-table">
+                <div className="form-cell wid50">
+                  <div className="form-group wid100">
+                    <AppSelect label="Division" required />
+                  </div>
+                </div>
+              </div>
+              <hr className="line"></hr>
+              <div className="form-table">
+                <div className="form-cell wid50">
+                  <div className="form-group wid100">
+                    <AppSelect label="Audit Type" required />
+                  </div>
+                </div>
+              </div>
+              <hr className="line"></hr>
+              <div className="form-table">
+                <div className="form-cell wid50">
+                  <div className="form-group wid100">
+                    <AppTextInput label="Checklist" required />
+                  </div>
+                </div>
+              </div>
+              <hr className="line"></hr>
+              <div className="form-table">
+                <div className="form-cell wid50">
+                  <div className="form-group wid100">
+                    <AppDatePicker label="Date" showTime />
+                  </div>
+                </div>
+                <div className="form-cell wid50">
+                  <div className="form-group wid100">
+                    <AppSelect label={'KST'} disabled />
+                  </div>
+                </div>
+              </div>
+              <hr className="line"></hr>
+              <div className="form-table">
+                <div className="form-cell wid50">
+                  <div className="form-group wid100">
+                    <AppTextInput label="Checklist" required />
                   </div>
                 </div>
               </div>
