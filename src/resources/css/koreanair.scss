@@ -773,7 +773,7 @@
 .table-wrap .right-table {display: inline-block; width: 100%;  vertical-align: top;}
 
 /* 산업안전 메인 */
-.floatingmenu {position: fixed; right: 2.4rem; bottom: 2.4rem; width: 10.0rem; height: 10.0rem; background-color: var(--color-darkblue-100); color: var(--color-neutral-10); text-align: center; border-radius: 99.9rem; display: flex; justify-content: center; align-items: center;}
+.floatingmenu {z-index: 10; position: fixed; right: 2.4rem; bottom: 2.4rem; width: 10.0rem; height: 10.0rem; background-color: var(--color-darkblue-100); color: var(--color-neutral-10); text-align: center; border-radius: 99.9rem; display: flex; justify-content: center; align-items: center;}
 .main-wrap {
   display: grid;
   grid-gap: 2.4rem;
@@ -789,7 +789,13 @@
   .grid-item h3 .main-tab li:first-child {padding-left: 0;}
   .grid-item h3 .main-tab li a {font-size: 1.6rem; color: var(--color-darkblue-40);}
   .grid-item h3 .main-tab li a.active {font-size: 1.8rem; color: var(--color-darkblue-100);}
-  
+
+  .grid-item .main-photo img {width: 100%; height: auto; object-fit: cover;}
+  .grid-item h3.img-tit {text-align: center; width: 100%; display: block;}
+  .grid-item .main-photo-btn {width: 100%; text-align: center;}
+  .grid-item .main-photo-btn li {display: inline-block; font-size: 0; margin: 0 0.2rem; cursor: pointer; background-color: var(--color-darkblue-40); border-radius: 99.9rem; width: 1.0rem; height: 1.0rem;}
+  .grid-item .main-photo-btn li.active {background-color: var(--color-darkblue-100); width: 2.0rem;}
+
   .grid-item .main-table-box {width: 100%; height: 100%;}
   .grid-item .main-table-box .main-table {width: 100%;}
   .grid-item .main-table-box .main-table th {text-align: left; width: 100%;}
@@ -893,23 +899,25 @@
 
 
 .myaudit-container {
-
+  .ad-number {font-size: 1.8rem; font-weight: 700; display: inline-block; padding-bottom: 1.0rem; text-wrap: nowrap;}
+  .ad-number span {font-weight: 500;}
   .myaudit-header {
     display: flex;
-    border: 0.1rem solid var(--color-neutral-40);
+    /*border: 0.1rem solid var(--color-neutral-40);*/
     background-color: var(--color-neutral-10); 
     width: 100%;    
     border-radius: 0.8rem;
     justify-content: center;
     align-items: center;
+    margin-bottom: 2.0rem;
     
-    .ad-number {font-size: 1.8rem; font-weight: 700; display: inline-block; padding: 1.0rem 2.0rem; text-wrap: nowrap;}
-    .ad-number span {font-weight: 500;}
-    .myaudit-tab {width: 100%; display: flex; padding: 1.0rem 2.0rem;} 
-    .myaudit-tab ul {width: 100%; display: flex;}
-    .myaudit-tab li {display: inline-block; width: 25%; text-align: center; background: url(../images/arrow-right.svg)center right no-repeat;}
-    .myaudit-tab li:last-child {background: none;}
-    .myaudit-tab li a {width: calc(100% - 3.0rem); font-size: 1.8rem; font-weight: 700; text-wrap: nowrap; padding: 0.9rem 0;}
+    
+    .myaudit-tab {width: 100%;} 
+    .myaudit-tab ul {width: 100%;}
+    .myaudit-tab li {display: inline; width: 100%; text-align: center; background: url(../images/arrow-right.svg)center right no-repeat; background-size: 2.0rem; padding-right: 2.5rem;}
+    .myaudit-tab li:last-child {background: none; padding-right: 0;}
+    .myaudit-tab li a {font-size: 1.8rem; font-weight: 700; text-wrap: nowrap; padding: 0.9rem 1.0rem;}
+    .myaudit-tab li a .myaudit-tab-icon {display: inline-block; font-size: 0; margin-right: 0.5rem; background: url(../images/arrow-down.svg) center center no-repeat; background-size: 2.0rem; vertical-align: middle; border: 0.1rem solid var(--color-neutral-40); border-radius: 99.9rem; background-position: 50% 50%; width: 2.0rem; height: 2.0rem;}
     .myaudit-tab li a.active {border-bottom: 0.2rem solid var(--color-darkblue-100);}
   }
   .myaudit-contents{
@@ -917,16 +925,16 @@
     display: inline-flex;
     justify-content: flex-start; 
     flex-direction: row;
-    height: calc(100vh - 34.0rem);
+    height: calc(100vh - 32.5rem);
     overflow-y: auto; 
     .audit-left-box {
       width: 100%;
       margin-right: 3.0rem;
-    h2 {font-size: 1.8rem; color: var(--color-darkblue-100); padding: 2.0rem 0 1.5rem 0;}
+    h2 {font-size: 1.8rem; color: var(--color-darkblue-100); padding: 0 0 1.5rem 0;}
     }
     .audit-right-box {
       width: 100%;
-      h2 {font-size: 1.8rem; color: var(--color-darkblue-100); padding: 2.0rem 0 1.5rem 0;}
+      h2 {font-size: 1.8rem; color: var(--color-darkblue-100); padding: 0 0 1.5rem 0;}
     
     }
   }

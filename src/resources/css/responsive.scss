@@ -609,8 +609,14 @@
   .myaudit-contents {display: block !important; height: 100% !important;}
   .audit-left-box {width: 100%; margin-right:0 !important;}
   .audit-right-box {width: 100%; padding-top: 1.5rem;}
-  .myaudit-header .myaudit-tab li {width: 2.6rem; height: 2.6rem; background-color: var(--color-darkblue-100); border-radius: 99.9rem;}
-  .myaudit-header .myaudit-tab li a {font-size: 0 !important;}
+  .myaudit-header .myaudit-tab li {background-size: 1.2rem !important; vertical-align: middle; background-position: 50% 50%; padding-right: 1.0rem !important;}
+  .myaudit-header .myaudit-tab li a {font-size: 1.4rem !important; padding: 0.9rem 0.5rem !important;}
+  .myaudit-tab li:last-child {padding-right: 0 !important;}
+  .myaudit-header .myaudit-tab li a .myaudit-tab-icon {margin-right: 0.5rem; background-size: 1.4rem !important; width: 1.4rem !important; height: 1.4rem !important;}
+
+  /*.header {height: 8.0rem;}
+  .header .logo .menu img {width: 3.4rem; height: 3.4rem;}
+  .header .util .util-list li img {width: 3.4rem;}*/
 }
 
 

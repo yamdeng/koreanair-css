@@ -1,6 +1,7 @@
 import { useEffect } from 'react';
 import { useStore } from 'zustand';
 import useAppStore from '@/store/useAppStore';
+import mainphoto from '@/resources/images/img.jpg';
 
 function POccupationPortal1() {
   const { setIsAviationPortal } = useStore(useAppStore, (state) => state) as any;
@@ -53,7 +54,17 @@ function POccupationPortal1() {
           </div>
         </div>
         <div className="grid-item">
-          <h3>2024년 1분기 산업안전보건 모범직원</h3>
+          <div className="main-photo">
+            <img src={mainphoto} className="" alt="photo" />
+          </div>
+          <h3 className="img-tit">2024년 1분기 산업안전보건 모범직원</h3>
+
+          <ul className="main-photo-btn">
+            <li className="active">1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+          </ul>
         </div>
         <div className="grid-item">
           <h3>작업허가현황</h3>
