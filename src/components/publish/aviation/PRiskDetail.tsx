@@ -68,6 +68,7 @@ function PRiskDetail() {
   const [fourExpaned, setFourExpaned] = useState(true);
   const [fiveExpaned, setFiveExpaned] = useState(true);
   const [sixExpaned, setSixExpaned] = useState(true);
+  const [sevenExpaned, setSevenExpaned] = useState(true);
 
   return (
     <>
@@ -639,6 +640,59 @@ function PRiskDetail() {
                                 <td className="">운항본부1팀</td>
                                 <td className="">2024-07-15</td>
                                 <td className="">2024-07-16</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </dd>
+        </dl>
+        <dl className={sevenExpaned ? 'tg-item active' : 'tg-item'}>
+          <dt onClick={() => setSevenExpaned(!sevenExpaned)}>
+            <button type="button" className="btn-tg">
+              Safety Action
+              <span className={sevenExpaned ? 'active' : ''}></span>
+            </button>
+          </dt>
+          <dd className="tg-conts" style={{ display: sevenExpaned ? '' : 'none' }}>
+            <div className="edit-area">
+              <div className="detail-form">
+                <div className="detail-list">
+                  <div className="form-table">
+                    <div className="form-cell wid50">
+                      <div className="form-group wid100">
+                        <div className="info-list">
+                          {/* <h3>
+                            추정원인<span className="required">*</span>
+                          </h3> */}
+                          <table className="info-board">
+                            <colgroup>
+                              <col width="15%" />
+                              <col width="60%" />
+                              <col width="15%" />
+                              <col width="10%" />
+                            </colgroup>
+                            <thead>
+                              <tr>
+                                <th>번호</th>
+                                <th>조치결과</th>
+                                <th>부서</th>
+                                <th>조치일자</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>
+                                  <a href="javascript:void(0);">240715A-1-R1</a>
+                                </td>
+                                <td className="left">운항 중 발생한 사항 중 발생한 사항에 대..</td>
+                                <td className="">운항본부1팀</td>
+                                <td className="">2024-07-15</td>
                               </tr>
                             </tbody>
                           </table>
