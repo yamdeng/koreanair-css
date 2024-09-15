@@ -141,7 +141,7 @@ AviationPageInfo.list = [
     Component: PRiskDetail,
     path: 'PRiskDetail',
     description: '',
-    success: false,
+    success: true,
   },
   {
     title: '[03.안전위험관리] 보고서분석 > 리스트',

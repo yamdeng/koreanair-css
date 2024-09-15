@@ -49,6 +49,8 @@ import MU4P2Modal from '@/components/publish/modal/MU4P2Modal';
 import PayGroupModal from '@/components/publish/modal/PayGroupModal';
 import SafetyAdvModal from '@/components/publish/modal/SafetyAdvModal';
 import SafetyActionModal from '@/components/publish/modal/SafetyActionModal';
+import SafetyActionEditModal from '@/components/publish/modal/SafetyActionEditModal';
+import SafetyAdvEditModal from '@/components/publish/modal/SafetyAdvEditModal';
 
 const ModalPageInfo: any = {};
 
@@ -188,16 +190,30 @@ ModalPageInfo.list = [
     success: true,
   },
   {
-    title: '[항공안전> 03.안전위험관리] 안전조사 > 조사보고서 > 안전권고 팝업창',
+    title: '[항공안전> 03.안전위험관리] 안전조사 > 조사보고서 > 안전권고 상세 팝업창',
     Component: SafetyAdvModal,
     path: 'SafetyAdvModal',
     description: '',
     success: true,
   },
   {
-    title: '[항공안전> 03.안전위험관리] 안전조사 > 조사보고서 > Safety Action 관리 팝업창',
+    title: '[항공안전> 03.안전위험관리] 안전조사 > 조사보고서 > 안전권고 등록 팝업창',
+    Component: SafetyAdvEditModal,
+    path: 'SafetyAdvEditModal',
+    description: '',
+    success: true,
+  },
+  {
+    title: '[항공안전> 03.안전위험관리] 안전조사 > 조사보고서 > Safety Action 관리 상세 팝업창',
     Component: SafetyActionModal,
     path: 'SafetyActionModal',
+    description: '',
+    success: true,
+  },
+  {
+    title: '[항공안전> 03.안전위험관리] 안전조사 > 조사보고서 > Safety Action 관리 등록 팝업창',
+    Component: SafetyActionEditModal,
+    path: 'SafetyActionEditModal',
     description: '',
     success: true,
   },
