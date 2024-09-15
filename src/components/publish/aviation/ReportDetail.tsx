@@ -67,6 +67,10 @@ function SafetyDetail() {
   const [thirdExpaned, setThirdExpaned] = useState(true);
   const [fourExpaned, setFourExpaned] = useState(true);
   const [fiveExpaned, setFiveExpaned] = useState(true);
+  const [sixExpaned, setSixExpaned] = useState(true);
+  const [sevenExpaned, setSevenExpaned] = useState(true);
+  const [eightExpaned, setEightExpaned] = useState(true);
+  const [nineExpaned, setNineExpaned] = useState(true);
 
   return (
     <>
@@ -1350,13 +1354,28 @@ function SafetyDetail() {
                             <div className="detailForm-detail-3deps list-group">
                               <div className="list bx-toggle">
                                 <dl className="tg-item rbox01 ">
-                                  <dt>
+                                  <dt onClick={() => setSixExpaned(!sixExpaned)}>
                                     <button type="button" className="tg-btn">
-                                      위험평가<span className=""></span>
+                                      위험평가<span className={sixExpaned ? 'active' : ''}></span>
                                     </button>
                                   </dt>
-                                  <dd className="tg-conts">
-                                    <div className="edit-area">ddd</div>
+                                  <dd className="tg-conts" style={{ display: sixExpaned ? '' : 'none' }}>
+                                    <div className="edit-area">
+                                      <div className="editbox">
+                                        <div className="form-table line">
+                                          <div className="form-cell wid50">
+                                            <div className="form-group wid100">
+                                              <AppSelect label={'Hazard'} required />
+                                            </div>
+                                          </div>
+                                          <div className="form-cell wid50">
+                                            <div className="form-group wid100">
+                                              <AppSelect label={'Potential Consequence'} required />
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
                                   </dd>
                                 </dl>
                               </div>
@@ -1365,13 +1384,244 @@ function SafetyDetail() {
                             <div className="detailForm-detail-3deps list-group">
                               <div className="list bx-toggle">
                                 <dl className="tg-item rbox01 ">
-                                  <dt>
+                                  <dt onClick={() => setSevenExpaned(!sevenExpaned)}>
                                     <button type="button" className="tg-btn">
-                                      - SRC리뷰<span className=""></span>
+                                      SRC리뷰<span className=""></span>
                                     </button>
                                   </dt>
-                                  <dd className="tg-conts" style={{ display: 'none' }}>
-                                    <div className="edit-area"></div>
+                                  <dd className="tg-conts" style={{ display: sevenExpaned ? '' : 'none' }}>
+                                    <div className="edit-area">
+                                      {/* FOQA*/}
+                                      <div className="detailForm">
+                                        <div className="editbox report">
+                                          <div className="header-tit">FOQA-X Status</div>
+                                          <div className="form-table">
+                                            <div className="form-cell wid50">
+                                              <div className="form-group wid100">
+                                                <div className="work-group1">
+                                                  <table className="work-table1">
+                                                    <thead>
+                                                      <tr>
+                                                        <th>APPROVED BY</th>
+                                                        <th>DECISION</th>
+                                                        <th>ADDITIONAL COMMENTS</th>
+                                                        <th>INPUT DATE</th>
+                                                      </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                      <tr>
+                                                        <td>SELOYOYI</td>
+                                                        <td>INDIVIDUAL</td>
+                                                        <td className="tl">……….!!!!!!!!</td>
+                                                        <td className="">2024-08-01 10:42:02</td>
+                                                      </tr>
+                                                      <tr>
+                                                        <td>SELOYOYI</td>
+                                                        <td>INDIVIDUAL</td>
+                                                        <td className="tl">……….!!!!!!!!</td>
+                                                        <td className="">2024-08-01 10:42:02</td>
+                                                      </tr>
+                                                      <tr>
+                                                        <td>SELOYOYI</td>
+                                                        <td>INDIVIDUAL</td>
+                                                        <td className="tl">……….!!!!!!!!</td>
+                                                        <td className="">2024-08-01 10:42:02</td>
+                                                      </tr>
+                                                    </tbody>
+                                                  </table>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      {/* //FOQA*/}
+                                      {/* 버튼*/}
+                                      <div className="contents-btns">
+                                        <button
+                                          type="button"
+                                          name="button"
+                                          className="btn_text text_color_neutral-10 btn_conblue"
+                                        >
+                                          재작성요청
+                                        </button>
+                                        <button
+                                          type="button"
+                                          name="button"
+                                          className="btn_text text_color_neutral-10 btn_confirm"
+                                        >
+                                          Notify
+                                        </button>
+                                        <button
+                                          type="button"
+                                          name="button"
+                                          className="btn_text text_color_neutral-10 btn_confirm"
+                                        >
+                                          Void
+                                        </button>
+                                        <button
+                                          type="button"
+                                          name="button"
+                                          className="btn_text text_color_neutral-10 btn_confirm"
+                                        >
+                                          수정
+                                        </button>
+                                        <button type="button" name="button" className="btn_text btn-del">
+                                          인쇄
+                                        </button>
+                                        <button type="button" name="button" className="btn_text btn_list">
+                                          목록
+                                        </button>
+                                      </div>
+                                      {/* //버튼*/}
+                                    </div>
+                                  </dd>
+                                </dl>
+                              </div>
+                            </div>
+                          </div>
+                        </dd>
+                      </dl>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="detailForm-detail-box  list-group">
+                  <div className="detailForm-detail-2deps rbox list-group">
+                    <div className="list bx-toggle">
+                      <dl className="tg-item rbox01 ">
+                        <dt onClick={() => setEightExpaned(!eightExpaned)}>
+                          <button type="button" className="tg-btn">
+                            2-3 경감조치<span className={eightExpaned ? 'active' : ''}></span>
+                          </button>
+                        </dt>
+                        <dd className="tg-conts" style={{ display: eightExpaned ? '' : 'none' }}>
+                          <div className="edit-area">
+                            {/*경감지정 상세*/}
+                            <div className="detailForm-detail-3deps list-group">
+                              <div className="list bx-toggle">
+                                <dl className="tg-item rbox01 ">
+                                  <dt onClick={() => setNineExpaned(!nineExpaned)}>
+                                    <button type="button" className="tg-btn">
+                                      경감지정<span className={sixExpaned ? 'active' : ''}></span>
+                                    </button>
+                                  </dt>
+                                  <dd className="tg-conts" style={{ display: nineExpaned ? '' : 'none' }}>
+                                    <div className="edit-area">
+                                      <div className="editbox">
+                                        <div className="form-table line">
+                                          <div className="form-cell wid50">
+                                            <div className="form-group wid100">
+                                              <AppSelect label={'Hazard'} required />
+                                            </div>
+                                          </div>
+                                          <div className="form-cell wid50">
+                                            <div className="form-group wid100">
+                                              <AppSelect label={'Potential Consequence'} required />
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </dd>
+                                </dl>
+                              </div>
+                            </div>
+                            {/*경감계획 상세*/}
+                            <div className="detailForm-detail-3deps list-group">
+                              <div className="list bx-toggle">
+                                <dl className="tg-item rbox01 ">
+                                  <dt onClick={() => setSevenExpaned(!sevenExpaned)}>
+                                    <button type="button" className="tg-btn">
+                                      경감계획<span className=""></span>
+                                    </button>
+                                  </dt>
+                                  <dd className="tg-conts" style={{ display: sevenExpaned ? '' : 'none' }}>
+                                    <div className="edit-area">
+                                      {/* FOQA*/}
+                                      <div className="detailForm">
+                                        <div className="editbox report">
+                                          <div className="header-tit">FOQA-X Status</div>
+                                          <div className="form-table">
+                                            <div className="form-cell wid50">
+                                              <div className="form-group wid100">
+                                                <div className="work-group1">
+                                                  <table className="work-table1">
+                                                    <thead>
+                                                      <tr>
+                                                        <th>APPROVED BY</th>
+                                                        <th>DECISION</th>
+                                                        <th>ADDITIONAL COMMENTS</th>
+                                                        <th>INPUT DATE</th>
+                                                      </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                      <tr>
+                                                        <td>SELOYOYI</td>
+                                                        <td>INDIVIDUAL</td>
+                                                        <td className="tl">……….!!!!!!!!</td>
+                                                        <td className="">2024-08-01 10:42:02</td>
+                                                      </tr>
+                                                      <tr>
+                                                        <td>SELOYOYI</td>
+                                                        <td>INDIVIDUAL</td>
+                                                        <td className="tl">……….!!!!!!!!</td>
+                                                        <td className="">2024-08-01 10:42:02</td>
+                                                      </tr>
+                                                      <tr>
+                                                        <td>SELOYOYI</td>
+                                                        <td>INDIVIDUAL</td>
+                                                        <td className="tl">……….!!!!!!!!</td>
+                                                        <td className="">2024-08-01 10:42:02</td>
+                                                      </tr>
+                                                    </tbody>
+                                                  </table>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      {/* //FOQA*/}
+                                      {/* 버튼*/}
+                                      <div className="contents-btns">
+                                        <button
+                                          type="button"
+                                          name="button"
+                                          className="btn_text text_color_neutral-10 btn_conblue"
+                                        >
+                                          재작성요청
+                                        </button>
+                                        <button
+                                          type="button"
+                                          name="button"
+                                          className="btn_text text_color_neutral-10 btn_confirm"
+                                        >
+                                          Notify
+                                        </button>
+                                        <button
+                                          type="button"
+                                          name="button"
+                                          className="btn_text text_color_neutral-10 btn_confirm"
+                                        >
+                                          Void
+                                        </button>
+                                        <button
+                                          type="button"
+                                          name="button"
+                                          className="btn_text text_color_neutral-10 btn_confirm"
+                                        >
+                                          수정
+                                        </button>
+                                        <button type="button" name="button" className="btn_text btn-del">
+                                          인쇄
+                                        </button>
+                                        <button type="button" name="button" className="btn_text btn_list">
+                                          목록
+                                        </button>
+                                      </div>
+                                      {/* //버튼*/}
+                                    </div>
                                   </dd>
                                 </dl>
                               </div>
