@@ -476,10 +476,26 @@ function MyAuditConduct() {
                 </div>
               </div>
               <hr className="line"></hr>
+              <h3 className="av-table-tit mt-10">Fleet</h3>
               <div className="form-table">
                 <div className="form-cell wid50">
                   <div className="form-group wid100">
-                    <AppTextInput label="Division" />
+                    <AppTextInput label="HL" />
+                  </div>
+                </div>
+                <div className="form-cell wid50">
+                  <div className="form-group wid100">
+                    <AppTextInput label="7621" />
+                  </div>
+                </div>
+                <div className="form-cell wid50">
+                  <div className="form-group wid100">
+                    <AppTextInput label="B747-8" />
+                  </div>
+                </div>
+                <div className="form-cell wid50">
+                  <div className="form-group wid100">
+                    <AppTextInput label="74HI" />
                   </div>
                 </div>
               </div>
