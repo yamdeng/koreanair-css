@@ -37,7 +37,7 @@ function SPIReportList() {
         {/*area-detail명 옆에 active  */}
         <div id="" className="area-detail active">
           <div className="form-table">
-            <div className="form-cell wid30">
+            <div className="form-cell wid20">
               <div className="form-group wid100">
                 <AppSelect label={'게시판구분'} required />
               </div>
@@ -55,7 +55,7 @@ function SPIReportList() {
                 </div>
               </div>
             </div>
-            <div className="form-cell wid30">
+            <div className="form-cell wid20">
               <div className="form-group wid100">
                 <AppSelect label={'보고서구분'} required />
               </div>
@@ -70,14 +70,16 @@ function SPIReportList() {
                 <AppSelect label={'N/A여부'} required />
               </div>
             </div>
-          </div>
-          <div className="btn-area">
-            <button type="button" name="button" className="btn-sm btn_text btn-darkblue-line">
-              조회
-            </button>
-            <button type="button" name="button" className="btn-sm btn_text btn-darkblue-line">
-              초기화
-            </button>
+            <div className="form-cell wid50">
+              <div className="btn-area">
+                <button type="button" name="button" className="btn-sm btn_text btn-darkblue-line">
+                  조회
+                </button>
+                <button type="button" name="button" className="btn-sm btn_text btn-darkblue-line">
+                  초기화
+                </button>
+              </div>
+            </div>
           </div>
         </div>
         {/*__control명 옆에 active  */}
