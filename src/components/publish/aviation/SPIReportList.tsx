@@ -82,10 +82,6 @@ function SPIReportList() {
             </div>
           </div>
         </div>
-        {/*__control명 옆에 active  */}
-        <button type="button" name="button" className="arrow button _control active">
-          <span className="hide">접기</span>
-        </button>
       </div>
       {/* //검색영역 */}
 
