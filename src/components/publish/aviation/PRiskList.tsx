@@ -74,15 +74,25 @@ function PRiskList() {
                 <AppSelect label={'발생단계'} />
               </div>
             </div>
+            <div className="form-cell wid50">
+              <div className="btn-area">
+                <button type="button" name="button" className="btn-sm btn_text btn-darkblue-line">
+                  조회
+                </button>
+                <button type="button" name="button" className="btn-sm btn_text btn-darkblue-line">
+                  초기화
+                </button>
+              </div>
+            </div>
           </div>
-          <div className="btn-area">
+          {/* <div className="btn-area">
             <button type="button" name="button" className="btn-sm btn_text btn-darkblue-line">
               조회
             </button>
             <button type="button" name="button" className="btn-sm btn_text btn-darkblue-line">
               초기화
             </button>
-          </div>
+          </div> */}
         </div>
         {/*__control명 옆에 active  */}
         <button type="button" name="button" className="arrow button _control active">
