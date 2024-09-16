@@ -60,6 +60,8 @@ import MyAuditConduct from '@/components/publish/aviation/MyAuditConduct';
 import AdminRiskMATRIX from '@/components/publish/aviation/AdminRiskMATRIX';
 import AdminRiskMATRIXDetail from '@/components/publish/aviation/AdminRiskMATRIXDetail';
 import PRiskDetail from '@/components/publish/aviation/PRiskDetail';
+import PRiskdashboard from '@/components/publish/aviation/PRiskdashboard';
+import ChangeList from '@/components/publish/aviation/ChangeList';
 import { fa } from '@faker-js/faker';
 import { fail } from 'assert';
 
@@ -144,6 +146,13 @@ AviationPageInfo.list = [
     success: true,
   },
   {
+    title: '[03.안전위험관리] 지상안전조사 > 대시보드',
+    Component: PRiskdashboard,
+    path: 'PRiskdashboard',
+    description: '',
+    success: false,
+  },
+  {
     title: '[03.안전위험관리] 보고서분석 > 리스트',
     Component: ReportList,
     path: 'ReportList',
@@ -192,27 +201,7 @@ AviationPageInfo.list = [
     description: '',
     success: false,
   },
-  {
-    title: '[03.안전위험관리] 지상안전조사 > 리스트',
-    Component: GSRReportEdit,
-    path: 'GSRReportEdit',
-    description: '',
-    success: false,
-  },
-  {
-    title: '[03.안전위험관리] 지상안전조사 > 상세',
-    Component: GSRReportEdit,
-    path: 'GSRReportEdit',
-    description: '',
-    success: false,
-  },
-  {
-    title: '[03.안전위험관리] 지상안전조사 > 대시보드 리스트',
-    Component: GSRReportEdit,
-    path: 'GSRReportEdit',
-    description: '',
-    success: false,
-  },
+
   {
     title: '[04.안전보증] SPI/SPT > 운영 현황> 운항 정보',
     Component: SPIInfo1,
@@ -278,8 +267,8 @@ AviationPageInfo.list = [
   },
   {
     title: '[04.안전보증] 변화관리 > 리스트',
-    Component: SMSDashBoardList2,
-    path: 'SMSDashBoardList2',
+    Component: ChangeList,
+    path: 'ChangeList',
     description: '',
     success: false,
   },
