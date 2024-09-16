@@ -179,7 +179,7 @@ function PBasicTable2() {
                 <label className="f-label" htmlFor="firstInput3">
                   사용자
                 </label>
-                <button className="sch-btnClear"></button>
+                <button className="sch-btnclear"></button>
                 <button type="button" className="icon-sch"></button>
               </div>
             </div>
@@ -199,7 +199,7 @@ function PBasicTable2() {
                 <label className="f-label" htmlFor="firstInput3">
                   부서
                 </label>
-                <button className="sch-btnClear"></button>
+                <button className="sch-btnclear"></button>
                 <button type="button" className="icon-sch"></button>
               </div>
             </div>

@@ -137,7 +137,7 @@ function ReportEdit() {
                 <div className="detail-list">
                   <div className="form-table">
                     <div className="form-cell wid50">
-                      <div className="form-group">
+                      <div className="form-group wid100">
                         <div className="date2">
                           <AppDatePicker label="출발일자(UTC)" required />
                         </div>
@@ -150,12 +150,14 @@ function ReportEdit() {
                           {/*비행편명 */}
                           {/* <AppTextInput label="비행편명" required value="aaasd" /> */}
                           <AppSearchInput label="비행편명" required value="aaasd" />
-                          <div className="btn-area">
-                            <button type="button" name="button" className="btn-sm btn_text btn-darkblue-line">
-                              Search
-                            </button>
-                          </div>
                         </div>
+                      </div>
+                    </div>
+                    <div className="form-cell wid20">
+                      <div className="btn-area">
+                        <button type="button" name="button" className="btn-sm btn_text btn-darkblue-line">
+                          Search
+                        </button>
                       </div>
                     </div>
                   </div>

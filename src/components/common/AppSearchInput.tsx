@@ -75,7 +75,7 @@ function AppSearchInput(props) {
         {label} {required ? <span className="required">*</span> : null}
       </label>
       {value ? (
-        <button className="sch-btnClear" onClick={() => (clearHandler ? clearHandler() : onChange(''))}></button>
+        <button className="sch-btnclear" onClick={() => (clearHandler ? clearHandler() : onChange(''))}></button>
       ) : null}
       <button type="button" className="icon-sch" onClick={search}></button>
       <CommonInputError errorMessage={errorMessage} label={label} />

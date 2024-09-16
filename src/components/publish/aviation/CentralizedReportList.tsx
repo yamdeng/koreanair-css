@@ -30,7 +30,7 @@ function CentralizedReportList() {
         <h2>Centralized Report</h2>
       </div>
       {/*검색영역 */}
-      <div className="boxForm">
+      <div className="boxForm det">
         {/*area-detail명 옆에 active  */}
         <div id="" className="area-detail active">
           <div className="form-table">

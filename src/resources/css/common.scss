@@ -582,7 +582,7 @@ input, select{font-family:'KoreanAirSans'}
 // .form-tag:not([value=""]){border:0.1rem solid var(--color-neutral-40)}
 .form-tag:focus+.f-label{color:var(--color-mblue-100) !important}
 .form-tag-select:disabled + .f-label, .form-tag-select:focus + .f-label, .form-tag-select.active + .f-label, .form-tag-select.isValue + .f-label, .form-tag-select.invalid + .f-label{left:1.0rem;top:-2.0rem;font-size:1.3rem;transition: all 0.3s ease}
-.form-group .sch-btnClear{position:absolute;top: 0.7rem;right:4.0rem;width:2.5rem;height:2.5rem;background:url(../images/delete-text.svg) center center no-repeat;background-size: cover;border: none;outline: none;cursor: pointer}
+.form-group .sch-btnclear{position:absolute;top: 0.7rem;right:4.0rem;width:2.5rem;height:2.5rem;background:url(../images/delete-text.svg) center center no-repeat;background-size: cover;border: none;outline: none;cursor: pointer}
 
 .form-group .df.row1{justify-content:center}
 .form-group .df.row1 > .btn-area{padding-top:0}
