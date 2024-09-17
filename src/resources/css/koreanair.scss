@@ -780,10 +780,10 @@
   grid-template-columns: 1fr 1fr 1fr;
   height: calc(100vh - 13.6rem);
 
-  .grid-item {border: 0.1rem solid var(--color-neutral-40); border-radius: 0.8rem; padding: 3.0rem; background-color: var(--color-neutral-10);}
+  .grid-item {border: 0.1rem solid var(--color-neutral-40); border-radius: 0.8rem; padding: 2.0rem 3.0rem; background-color: var(--color-neutral-10);}
   .grid-item:nth-of-type(3) {grid-row: span 2;}
   .grid-item:nth-of-type(7) {grid-column-start: 2; grid-column-end: span 2;}
-  .grid-item h3 {font-size: 1.8rem; font-weight: 500; color: var(--color-darkblue-100); padding-bottom: 2.0rem;}
+  .grid-item h3 {font-size: 1.8rem; font-weight: 500; color: var(--color-darkblue-100); padding-bottom: 1.5rem;}
   .grid-item h3 span.siren {display: inline-block; font-size: 0; background: url(../images/siren.svg)center center no-repeat; background-size: 2.6rem; vertical-align: top; width: 2.6rem;}
   .grid-item h3 .main-tab li {display: inline-block; padding: 0 1.0rem;}
   .grid-item h3 .main-tab li:first-child {padding-left: 0;}
@@ -796,7 +796,7 @@
   .grid-item .main-photo-btn li {display: inline-block; font-size: 0; margin: 0 0.2rem; cursor: pointer; background-color: var(--color-darkblue-40); border-radius: 99.9rem; width: 1.0rem; height: 1.0rem;}
   .grid-item .main-photo-btn li.active {background-color: var(--color-darkblue-100); width: 2.0rem;}
 
-  .grid-item .main-table-box {width: 100%; height: 100%;}
+  .grid-item .main-table-box {width: 100%; /*height: 100%;*/}
   .grid-item .main-table-box .main-table {width: 100%;}
   .grid-item .main-table-box .main-table th {text-align: left; width: 100%;}
   .grid-item .main-table-box .main-table th a {font-size: 1.6rem; font-weight: 500; color: var(--color-neutral-80);}
@@ -831,6 +831,48 @@
   .grid-item .Status li span.expected {color: var(--color-darkblue-100); background-color: var(--color-lightblue-20);}
   .grid-item .Status li span.part {color: var(--color-darkblue-100); background-color: var(--color-lightblue-10);}
 
+  .grid-item .main-graph {display: inline-grid; grid-template-columns: 1fr 1fr; gap: 1.0rem 2.0rem; width: 100%;}
+  .grid-item .main-graph .main-graph-group {width: 100%;}
+  .grid-item .main-graph .main-graph-group .main-graph-tit {position: relative;}
+  .grid-item .main-graph .main-graph-group .main-graph-tit li {display: inline;}
+  .grid-item .main-graph .main-graph-group .main-graph-tit .graph-low-bg {position: absolute; right: 0; width: 4.0rem; text-align: center; padding: 0.1rem 0.3rem; background-color: var(--color-Warning-bg); border-radius: 0.4rem;}
+  .grid-item .main-graph .main-graph-group .main-graph-tit .graph-low-bg .txt-low {color: var(--color-Warning); font-size: 1.2rem;}
+  .grid-item .main-graph .main-graph-group .main-graph-tit .graph-high-bg {position: absolute; right: 0; width: 4.0rem; text-align: center; padding: 0.1rem 0.3rem; background-color: var(--color-Warning-bg); border-radius: 0.4rem;}
+  .grid-item .main-graph .main-graph-group .main-graph-tit .graph-high-bg .txt-high {color: var(--color-Warning); font-size: 1.2rem;}
+  .grid-item .main-graph .main-graph-group .main-graph-tit .graph-optimum-bg {position: absolute; right: 0; width: 4.0rem; text-align: center; padding: 0.1rem 0.3rem; background-color: var(--color-Warning-bg); border-radius: 0.4rem;}
+  .grid-item .main-graph .main-graph-group .main-graph-tit .graph-optimum-bg .txt-optimum {color: var(--color-positive); font-size: 1.2rem;}
+
+  /* meter 크기 설정 */
+  meter {
+    width: 100%;
+    height: 1.0rem;
+  }
+
+  /* meter 테두리, 모서리 둥글기, 배경색 설정 */
+  meter::-webkit-meter-bar {
+    max-width: 100%;
+    height: 1.0rem;
+    border-radius: 99.9rem;
+    border: 0;
+    background-color: var(--color-neutral-30);
+  }
+  /* meter 최적값에서 많이 부족한 색상 설정 */
+  meter::-webkit-meter-even-less-good-value {
+    background-color: #ff7777;
+    border-radius: 99.9rem;
+  }
+
+  /* meter 최적값에 근접한 색상 설정 */
+  meter::-webkit-meter-suboptimum-value {
+    background-color: #ffd800;
+    border-radius: 99.9rem;
+  }
+
+  /* meter 최적값 색상 설정 */
+  meter::-webkit-meter-optimum-value {
+    background-color: #24c130;
+    border-radius: 99.9rem;
+  }
 }
 /* 산업안전 메인 end */
 
@@ -902,14 +944,21 @@
   .ad-number {font-size: 1.8rem; font-weight: 700; display: inline-block; padding-bottom: 1.0rem; text-wrap: nowrap;}
   .ad-number span {font-weight: 500;}
   .myaudit-header {
-    display: flex;
-    /*border: 0.1rem solid var(--color-neutral-40);*/
+    /*display: flex;
+    border: 0.1rem solid var(--color-neutral-40);
+    justify-content: center;
+    align-items: center;
+    */
     background-color: var(--color-neutral-10); 
     width: 100%;    
     border-radius: 0.8rem;
-    justify-content: center;
-    align-items: center;
+    
     margin-bottom: 2.0rem;
+    position: sticky;
+    top: -30px;
+    z-index: 10;
+    background-color: var(--color-neutral-10);
+    padding: 2.0rem 0;
     
     
     .myaudit-tab {width: 100%;} 
@@ -923,10 +972,10 @@
   .myaudit-contents{
     width: 100%;
     display: inline-flex;
-    justify-content: flex-start; 
+    /*justify-content: flex-start; 
     flex-direction: row;
     height: calc(100vh - 32.5rem);
-    overflow-y: auto; 
+    overflow-y: auto; */
     .audit-left-box {
       width: 100%;
       margin-right: 3.0rem;

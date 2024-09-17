@@ -194,6 +194,70 @@ function POccupationPortal1() {
               </li>
             </ul>
           </h3>
+          <div className="main-graph">
+            <div className="main-graph-group">
+              <ul className="main-graph-tit">
+                <li>전체</li>
+                <li className="graph-low-bg">
+                  <span className="txt-low">10%</span>
+                </li>
+              </ul>
+              <meter className="main-graph-meter" min={0} max={100} low={30} high={79} optimum={100} value={10}></meter>
+            </div>
+            <div className="main-graph-group">
+              <ul className="main-graph-tit">
+                <li>정비</li>
+                <li className="graph-high-bg">
+                  <span className="txt-high">30%</span>
+                </li>
+              </ul>
+              <meter className="main-graph-meter" min={0} max={100} low={30} high={79} optimum={100} value={30}></meter>
+            </div>
+            <div className="main-graph-group">
+              <ul className="main-graph-tit">
+                <li>항공우주</li>
+                <li className="graph-optimum-bg">
+                  <span className="txt-optimum">88%</span>
+                </li>
+              </ul>
+              <meter className="main-graph-meter" min={0} max={100} low={30} high={79} optimum={100} value={88}></meter>
+            </div>
+            <div className="main-graph-group">
+              <ul className="main-graph-tit">
+                <li>여객</li>
+                <li className="graph-optimum-bg">
+                  <span className="txt-optimum">100%</span>
+                </li>
+              </ul>
+              <meter
+                className="main-graph-meter"
+                min={0}
+                max={100}
+                low={30}
+                high={79}
+                optimum={100}
+                value={100}
+              ></meter>
+            </div>
+            <div className="main-graph-group">
+              <ul className="main-graph-tit">
+                <li>화물</li>
+                <li className="graph-optimum-bg">
+                  <span className="txt-optimum">70%</span>
+                </li>
+              </ul>
+              <meter className="main-graph-meter" min={0} max={100} low={30} high={79} optimum={100} value={70}></meter>
+            </div>
+            <div className="main-graph-group">
+              <ul className="main-graph-tit">
+                <li>객실</li>
+                <li className="graph-low-bg">
+                  <span className="txt-low">5%</span>
+                </li>
+              </ul>
+              <meter className="main-graph-meter" min={0} max={100} low={30} high={79} optimum={100} value={5}></meter>
+            </div>
+          </div>
         </div>
         <div className="grid-item">
           <h3>

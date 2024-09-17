@@ -86,10 +86,10 @@ function MyAuditConduct() {
       {/*//경로 */}
 
       <div className="myaudit-container">
-        <div className="ad-number">
-          Audit No. <span>24-LSA-0407</span>
-        </div>
         <div className="myaudit-header">
+          <div className="ad-number">
+            Audit No. <span>24-LSA-0407</span>
+          </div>
           <div className="myaudit-tab">
             <ul>
               <li>
