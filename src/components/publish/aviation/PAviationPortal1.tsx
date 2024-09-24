@@ -188,7 +188,19 @@ function PAviationPortal1() {
             <div className="head-top">
               <h3>보고서 처리 현황</h3>
 
-              <div className="form-cell flex-end wid70"></div>
+              <div className="wid70">dfdf</div>
+            </div>
+            <div className="main-conts-graph">
+              <div className="graph-box">ASR</div>
+              <div className="graph-box">MSR</div>
+              <div className="graph-box">GSR</div>
+              <div className="graph-box">DSR</div>
+            </div>
+            <div className="main-conts-graph">
+              <div className="graph-box">ASR</div>
+              <div className="graph-box">MSR</div>
+              <div className="graph-box">GSR</div>
+              <div className="graph-box">DSR</div>
             </div>
           </div>
         </div>

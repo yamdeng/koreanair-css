@@ -62,6 +62,7 @@ import AdminRiskMATRIXDetail from '@/components/publish/aviation/AdminRiskMATRIX
 import PRiskDetail from '@/components/publish/aviation/PRiskDetail';
 import PRiskdashboard from '@/components/publish/aviation/PRiskdashboard';
 import ChangeList from '@/components/publish/aviation/ChangeList';
+import AdminTopEvent from '@/components/publish/aviation/AdminTopEvent';
 import { fa } from '@faker-js/faker';
 import { fail } from 'assert';
 
@@ -552,6 +553,13 @@ AviationPageInfo.list = [
     path: 'AdminRiskMATRIXDetail',
     description: '',
     success: true,
+  },
+  {
+    title: '[07.관리자] Top 10 Event 관리',
+    Component: AdminTopEvent,
+    path: 'AdminTopEvent',
+    description: '',
+    success: false,
   },
   {
     title: '[09.AMO] AMO페이지는 레이어팝업처리',
