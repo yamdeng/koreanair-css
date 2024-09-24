@@ -223,10 +223,20 @@ function PRiskEdit() {
                         <div className="tag-list">
                           <ul>
                             <li>
-                              <button type="botton">ASR-104407</button>
+                              <button type="botton">
+                                ASR-104407{' '}
+                                <a href="javascript:void(0);">
+                                  <span className="delete">X</span>
+                                </a>
+                              </button>
                             </li>
                             <li>
-                              <button type="botton">ASR-104407</button>
+                              <button type="botton">
+                                ASR-104407{' '}
+                                <a href="javascript:void(0);">
+                                  <span className="delete">X</span>
+                                </a>
+                              </button>
                             </li>
                           </ul>
                         </div>

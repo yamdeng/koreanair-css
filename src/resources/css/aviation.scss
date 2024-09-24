@@ -88,6 +88,7 @@
 
 /*메인 .main-top-wrrap{position:relative;display:flex;width:100%}*/
 .contents.Aviation{background-color:var(--color-aviation-mainBg)}
+.contents.Occupation{background-color:var(--color-aviation-mainBg)}
 
 .main-top-wrrap .RiskBox{display:inline-block;width:60%;vertical-align:top;padding-right:3.0rem;}
 .main-top-wrrap .RiskBox .row-top{display:flex;flex-wrap: wrap;}
@@ -105,17 +106,16 @@
 
 .round-wrap{position:relative;line-height: 0;border: 0.1rem solid var(--color-neutral-40);border-radius:0.5rem;padding:1.3rem 1rem 1.3rem}
 .round-wrap.error {border: solid 0.1rem var(--color-negative)}
-.round-wrap .icon_report{display:block;width:3rem;height:3rem;margin:0 auto;/*padding:2.5rem 1rem 1rem;*/background:url(/src/resources/images/icon-documents.svg) no-repeat center center;border:0;cursor:pointer}
+.round-wrap .icon_report{display:block;width:3rem;height:3rem;/*padding:2.5rem 1rem 1rem;*/background:url(/src/resources/images/icon-documents.svg) no-repeat center center;border:0;cursor:pointer}
 .round-wrap.num{padding:1rem 1rem 0.5rem}
 .info-list{display:block;width:100%}
 .info-list h3{font-size:1.8rem;font-weight:500;color:var(--color-darkblue-100);padding-bottom:1rem}
 .info-list + .info-list{margin-top:2rem}
 .tag-list{position:relative;display:flex;overflow: auto hidden;padding-top:1rem;width:100%}
-.tag-list ul{box-sizing: content-box;
-  transform: translateZ(0);}
-.tag-list ul li{display:inline-block;margin-right:1.0rem;align-items:center;}
+.tag-list ul{box-sizing: content-box;transform: translateZ(0);}
+.tag-list ul li{position:relative;display:inline-block;margin-right:1.0rem;align-items:center;}
 .tag-list ul li button{font-size:1.2rem;line-height:1.8rem;color:var(--color-neutral-90);background-color:var(--color-neutral-20);border-radius:99.9rem;padding:0 1.8rem}
-.tag-list ul li button:after{content:'';display:inline-block;width:0.8rem;height:0.8rem;background: url(/src/resources/images/close.svg) no-repeat center center;margin-left:0.5rem}
+.tag-list > ul li .delete{position:absolute;right: 0;background: url(/src/resources/images/delete-text.svg) center center no-repeat;font-size: 0;width: 2rem;height: 2rem}
 
 
 /*우측레이어*/
