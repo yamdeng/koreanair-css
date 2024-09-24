@@ -769,3 +769,10 @@ input, select{font-family:'KoreanAirSans'}
 .ant-input-group-addon1{position: absolute;left: 0; width: 5.0rem; top: 0; line-height: 3.8rem; padding-left: 1.0rem; border: 0.1rem solid var(--color-neutral-40);border-radius:0.6rem}
 .ant-input-group-addon1-input{position:absolute;left:4.5rem;top:0;width:calc(100% - 50px)}
 
+
+/* 하이라이트 공통 */
+.highlight {
+  font-weight: 700;
+  color: #000;
+  background-color: #f3ff64;
+}

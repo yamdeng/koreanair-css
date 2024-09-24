@@ -146,3 +146,11 @@
     .tree_box.bg {background-color: var(--color-neutral-10); border: 0.1rem solid var(--color-neutral-30); border-radius: 0.8rem; padding: 1.0rem; overflow: auto;}
     .tree_box .ant-tree {max-height: 100%;}
     .ant-tree .ant-tree-treenode-draggable .ant-tree-draggable-icon {width: 0;}
+
+/* 트르 검색시 현재 검색된 정보를 구분하기 위한 */
+.ant-tree-title {
+  .current-find {
+    font-style: italic;
+    font-weight: bold;
+  }
+}
