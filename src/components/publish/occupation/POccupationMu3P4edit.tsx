@@ -469,6 +469,16 @@ function POccupationMu3P4edit() {
                             <tbody>
                               <tr>
                                 <td colSpan={7}>
+                                  {/* 밀폐공간작업선택 - active */}
+                                  <div className="work-ck-list active">
+                                    <table>
+                                      <tr>
+                                        <th>밀폐공간작업</th>
+                                        <td>해당사항없음</td>
+                                        <td></td>
+                                      </tr>
+                                    </table>
+                                  </div>
                                   {/* 전기작업선택 - active */}
                                   <div className="work-ck-list active">
                                     <table>
@@ -836,6 +846,9 @@ function POccupationMu3P4edit() {
                               </tr>
                             </tbody>
                           </table>
+                          <span className="link-txt">
+                            <a href="javascript:void(0);">※ 첨부 파일 안내문 (Link)</a>
+                          </span>
                         </div>
                       </div>
                     </div>

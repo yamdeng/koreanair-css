@@ -46,6 +46,7 @@ import MU5P3Modal from '@/components/publish/modal/MU5P3Modal';
 import MU5P4Modal from '@/components/publish/modal/MU5P4Modal';
 import PReportDocumentModal from '@/components/publish/modal/PReportDocumentModal';
 import MU4P2Modal from '@/components/publish/modal/MU4P2Modal';
+import MU4P3Modal from '@/components/publish/modal/MU4P3Modal';
 import PayGroupModal from '@/components/publish/modal/PayGroupModal';
 import SafetyAdvModal from '@/components/publish/modal/SafetyAdvModal';
 import SafetyActionModal from '@/components/publish/modal/SafetyActionModal';
@@ -422,9 +423,16 @@ ModalPageInfo.list = [
     success: true,
   },
   {
-    title: '산업점검 > 작업장순회점검 > 점검항목-부적합사항입력 팝업창',
+    title: '산업안전 > 작업장순회점검 > 점검항목-부적합사항입력 팝업창',
     Component: MU4P2Modal,
     path: 'MU4P2Modal',
+    description: '',
+    success: true,
+  },
+  {
+    title: '산업안전 > 안전관리 > 외주작업허가-참고자료 팝업창',
+    Component: MU4P3Modal,
+    path: 'MU4P3Modal',
     description: '',
     success: true,
   },

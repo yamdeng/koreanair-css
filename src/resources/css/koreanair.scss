@@ -892,7 +892,8 @@
 .work-group .work-table thead tr, .work-table tbody tr, .work-table tfoot tr {width: 100%;}
 /*.work-group .work-table tbody {display: block; height: 40.0rem; overflow-y: auto;}*/
 .work-group .work-table .work-ck-list {display: none;}
-.work-group .work-table .work-ck-list.active {display: block;}
+.work-group .work-table .work-ck-list.active {display: block; border-top: 0.1rem solid var(--color-neutral-40);}
+.work-group .work-table .work-ck-list.active:first-child {border-top: 0;}
 .work-group .work-table .work-ck-list table {width: 100%;}
 .work-group .work-table .work-ck-list table tr {border-bottom: 0.1rem solid var(--color-neutral-40);}
 .work-group .work-table .work-ck-list table tr:last-child {border-bottom: 0;}
@@ -992,3 +993,7 @@
 
 .number-r{position:relative;display:flex; width: 100%;}
 .number-r .title{display:inline-block;line-height:4rem;padding-right:1rem;font-size:1.6rem;font-weight:700}
+
+.link-txt {display: block; text-align: right; width: 100%; padding: 1.0rem 0 0 0;}
+.link-txt a {color: var(--color-darkblue-100);}
+.link-txt a:hover {text-decoration: underline;}
