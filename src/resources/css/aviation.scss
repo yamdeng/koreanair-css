@@ -654,7 +654,7 @@
 
   .grid-item {border-radius: 0.8rem; padding:2.0rem; background-color:rgba(255,255,255,0.4);border: 0rem solid var(--color-neutral-40);}
   .grid-item.photo{position: relative; padding:0}
-  .grid-item .main-photo img {width: 100%; height: auto; object-fit: cover;background-size: cover;border-radius: 0.8rem;}
+  .grid-item .main-photo img {width:100%;height:33.8rem;object-fit:cover;background-size: cover;border-radius: 0.8rem;}
   .grid-item h3.img-tit {position: absolute;top:40%; text-align: center; width: 100%; display: block;background-color:rgba(0, 0, 0, 0.6);z-index:99}
   .grid-item .main-photo-btn {position: absolute;top:45%; width: 100%; text-align: center;z-index:99}
   .grid-item .main-photo-btn li {display: inline-block; font-size: 0; margin: 0 0.2rem; cursor: pointer; background-color: var(--color-darkblue-40); border-radius: 99.9rem; width: 1.0rem; height: 1.0rem;}
@@ -710,12 +710,12 @@
 
   .grid-item .main-table-box {width: 100%; /*height: 100%;*/}
   .grid-item .main-table-box .main-table{width:100%}
-  .grid-item .main-table-box .main-table tr{border-top:solid 0.1rem #ddd;height:5.0rem;vertical-align: middle;padding:1rem 0}
-  .grid-item .main-table-box .main-table th {text-align: left; width: 100%;padding:1.35rem;}
+  .grid-item .main-table-box .main-table tr{border-top:solid 0.1rem #ddd;vertical-align: middle;padding:1rem 0}
+  .grid-item .main-table-box .main-table th {text-align: left; width: 100%;padding:1.0rem;}
   .grid-item .main-table-box .main-table th a {font-size:1.4rem;font-weight:500;color:var(--color-neutral-80);-webkit-line-clamp:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
   .grid-item .main-table-box .main-table th a:hover{text-decoration: underline; color: var(--color-darkblue-100);}
 
-  .grid-item .main-table-box .main-table td span.date {text-align:left;font-size: 1.4rem; font-weight: 500;}
+  .grid-item .main-table-box .main-table td span.date {text-align:left;font-size: 1.4rem; font-weight: 500;padding: 0;}
   .grid-item .main-table-box .main-table td span.wait{padding-left:1rem}
   .grid-item .main-table-box .main-table td {text-align: right; width: 100%; font-size: 1.4rem; font-weight: 500;white-space: nowrap;}
   .grid-item .main-table-box .main-table td.name {font-size: 1.6rem;}
@@ -726,7 +726,7 @@
   .grid-item .main-table-box .main-table-todo tr{border-top:solid 0.1rem #ddd;vertical-align: middle;padding:1rem 0}
   .grid-item .main-table-box .main-table-todo th a {font-size:1.4rem;font-weight:500;color:var(--color-neutral-80);-webkit-line-clamp:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
   .grid-item .main-table-box .main-table-todo th a:hover{text-decoration:underline;color: var(--color-darkblue-100);}
-  .grid-item .main-table-box .main-table-todo td {text-align:left;font-size:1.4rem;font-weight: 500;white-space:nowrap;padding:1.35rem;}
+  .grid-item .main-table-box .main-table-todo td {text-align:left;font-size:1.4rem;font-weight: 500;white-space:nowrap;padding:1.0rem;}
   .grid-item .main-table-box .main-table-todo td a {font-size:1.4rem;font-weight:500;color:var(--color-neutral-80);-webkit-line-clamp:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
   .grid-item .main-table-box .main-table-todo td a:hover{text-decoration: underline; color: var(--color-darkblue-100);}
 }
