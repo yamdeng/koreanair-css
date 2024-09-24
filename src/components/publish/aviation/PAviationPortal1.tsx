@@ -209,7 +209,7 @@ function PAviationPortal1() {
         <div className="grid-item">
           <h3>TO DO LIST</h3>
           <div className="main-table-box">
-            <table className="main-table">
+            <table className="main-table-todo">
               <thead>
                 <tr>
                   <th>Doc No.</th>
@@ -219,13 +219,48 @@ function PAviationPortal1() {
               </thead>
               <tbody>
                 <tr>
-                  <td>CSR-104005</td>
-                  <td>비행 시간 초과운영</td>
+                  <td>
+                    <a href="javascript:void(0);">CSR-104005</a>
+                  </td>
+                  <td>
+                    <a href="javascript:void(0);">비행 시간 초과운영</a>
+                  </td>
+                  <td className="date">2024-07-18</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="javascript:void(0);">CSR-104005</a>
+                  </td>
+                  <td>
+                    <a href="javascript:void(0);">비행 시간 초과운영</a>
+                  </td>
                   <td>2024-07-18</td>
                 </tr>
                 <tr>
-                  <td>CSR-104005</td>
-                  <td>비행 시간 초과운영</td>
+                  <td>
+                    <a href="javascript:void(0);">CSR-104005</a>
+                  </td>
+                  <td>
+                    <a href="javascript:void(0);">비행 시간 초과운영</a>
+                  </td>
+                  <td>2024-07-18</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="javascript:void(0);">CSR-104005</a>
+                  </td>
+                  <td>
+                    <a href="javascript:void(0);">비행 시간 초과운영</a>
+                  </td>
+                  <td>2024-07-18</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="javascript:void(0);">CSR-104005</a>
+                  </td>
+                  <td>
+                    <a href="javascript:void(0);">비행 시간 초과운영</a>
+                  </td>
                   <td>2024-07-18</td>
                 </tr>
               </tbody>
@@ -275,7 +310,7 @@ function PAviationPortal1() {
               </tr>
               <tr>
                 <th>
-                  <a href="javascript:void(0);">[최근이슈] KE189/JUN22 여압장치 이상으로 인한..</a>
+                  <a href="javascript:void(0);">[최근이슈] KE189/JUN22 여압장치..</a>
                 </th>
                 <td>
                   <span className="date">2024-00-00</span>
@@ -284,7 +319,7 @@ function PAviationPortal1() {
               </tr>
               <tr>
                 <th>
-                  <a href="javascript:void(0);">[안전지시] 2024 하절기 대비 안전관리 활동 강화</a>
+                  <a href="javascript:void(0);">[안전지시] 2024 하절기 대비 안전관리..</a>
                 </th>
                 <td>
                   <span className="date">2024-00-00</span>
@@ -293,7 +328,7 @@ function PAviationPortal1() {
               </tr>
               <tr>
                 <th>
-                  <a href="javascript:void(0);">[공지] 2024년 상반기 SMS Excellence 시상식 개최</a>
+                  <a href="javascript:void(0);">[공지] 2024년 상반기 SMS Excellence..</a>
                 </th>
                 <td>
                   <span className="wait">2024-00-00</span>
