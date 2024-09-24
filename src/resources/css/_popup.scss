@@ -608,6 +608,13 @@
 .selectlist .departmentlist .list li {width: 28.0rem; height: 3.0rem; margin: 0.3rem 0; text-overflow:ellipsis; white-space: nowrap; overflow: hidden;}
 .selectlist .departmentlist .delete{background: url(../images/delete-text.svg)center center no-repeat; font-size: 0; width: 2.0rem; height: 2.0rem;position: absolute; right: 0;}
 
+.modal-group-box {display: inline-flex; width: 100%; column-gap: 2.0rem;}
+.modal-group-box .left-group {width: 100%; display: inline-block;}
+.modal-group-box .right-group {width: 100%; display: inline-block;}
+.modal-group-box .right-group .group-box {}
+
+
+
 /*위험레벨 조회*/
 .red{background-color:#DA291C}
 .orange{background-color:#FF8902}

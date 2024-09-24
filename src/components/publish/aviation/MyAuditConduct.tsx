@@ -164,7 +164,7 @@ function MyAuditConduct() {
                     {/*<span className="errorText">error</span>*/}
                   </div>
                 </div>
-                <div className="form-cell wid-300">
+                <div className="form-cell wid50">
                   <div className="number-r ">
                     <div className="title">Airline</div>
                     <div className="form-group wid100">
@@ -336,8 +336,18 @@ function MyAuditConduct() {
           <div className="audit-right-box">
             <h2>Auditee</h2>
             <div className="editbox">
-              <h3 className="av-table-tit mt-10">Airport</h3>
               <div className="form-table line">
+                <div className="form-cell wid50">
+                  <div className="group-box-wrap wid100">
+                    <div className="radio-wrap border-no">
+                      <label>
+                        <input type="radio" />
+                        <span>Airport</span>
+                      </label>
+                    </div>
+                    {/*<span className="errorText">error</span>*/}
+                  </div>
+                </div>
                 <div className="form-cell wid50">
                   <div className="form-group wid100">
                     <AppAutoComplete label="Airport" required />
@@ -351,8 +361,18 @@ function MyAuditConduct() {
               </div>
 
               <hr className="line"></hr>
-              <h3 className="av-table-tit mt-10">KE</h3>
               <div className="form-table">
+                <div className="form-cell wid50">
+                  <div className="group-box-wrap wid100">
+                    <div className="radio-wrap border-no">
+                      <label>
+                        <input type="radio" />
+                        <span>KE</span>
+                      </label>
+                    </div>
+                    {/*<span className="errorText">error</span>*/}
+                  </div>
+                </div>
                 <div className="form-cell wid50">
                   <div className="form-group wid100">
                     <AppTextInput label="Division" />
@@ -360,8 +380,19 @@ function MyAuditConduct() {
                 </div>
               </div>
               <hr className="line"></hr>
-              <h3 className="av-table-tit mt-10">External Service Provider</h3>
               <div className="form-table">
+                <div className="form-cell wid50">
+                  <div className="group-box-wrap wid100">
+                    <div className="radio-wrap border-no">
+                      <label>
+                        <input type="radio" />
+                        <span>External Service Provider</span>
+                      </label>
+                    </div>
+                    {/*<span className="errorText">error</span>*/}
+                  </div>
+                </div>
+
                 <div className="form-cell wid50">
                   <div className="form-group wid100">
                     <AppTextInput label="Company Name" required />
