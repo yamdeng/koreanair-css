@@ -217,8 +217,18 @@ function PRiskEdit() {
                     <div className="form-cell wid50">
                       <div className="group-box-wrap1 wid50">
                         <span className="txt">참고문서번호</span>
-                        <div className="round-wrap error">
+                        <div className="round-wrap num error">
                           <span className="icon_report"></span>{' '}
+                        </div>
+                        <div className="tag-list">
+                          <ul>
+                            <li>
+                              <button type="botton">ASR-104407</button>
+                            </li>
+                            <li>
+                              <button type="botton">ASR-104407</button>
+                            </li>
+                          </ul>
                         </div>
                       </div>
                     </div>
