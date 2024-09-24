@@ -597,6 +597,11 @@ function PRiskDetail() {
           <dt onClick={() => setSixExpaned(!sixExpaned)}>
             <button type="button" className="btn-tg">
               안전권고
+              <div className="tag-info-wrap-end">
+                <button type="button" name="button" className="btn_text btn_confirm">
+                  + ADD ROW
+                </button>
+              </div>
               <span className={sixExpaned ? 'active' : ''}></span>
             </button>
           </dt>
@@ -656,6 +661,11 @@ function PRiskDetail() {
           <dt onClick={() => setSevenExpaned(!sevenExpaned)}>
             <button type="button" className="btn-tg">
               Safety Action
+              <div className="tag-info-wrap-end">
+                <button type="button" name="button" className="btn_text btn_confirm">
+                  + ADD ROW
+                </button>
+              </div>
               <span className={sevenExpaned ? 'active' : ''}></span>
             </button>
           </dt>

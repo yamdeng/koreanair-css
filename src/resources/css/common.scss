@@ -215,6 +215,9 @@ input[type=checkbox],input[type=radio]{padding:0;vertical-align:middle;margin-to
 .tag-info-wrap-end .tip{background:url(/src/resources/images/tooltip.svg) left center no-repeat;background-size:3.0rem;font-size:0;height:3.0rem;line-height:3.0rem;cursor:pointer}
 .tag-info-wrap-end .tip a.txt{display: inline-block;font-size:1.5rem;margin-left:3.0rem}
 .tag-info-wrap-end .tip + .tip{margin-left:0.5rem}
+.tag-info-wrap-end button.btn_text{font-family:'KoreanAirSans';font-weight:700;font-size:1.3rem;color:var(--color-neutral-10)}
+.tag-info-wrap-end button.btn_confirm{padding:0.6rem 1.8rem;border-radius:99.9rem;background: var(--color-darkblue-100)}
+
 /*input*/
 input[type=file], input[type=search], input[type=text]{padding:0.4rem 0 0.4rem 0.4rem}
 [role=button],a,area,button,input:not([type=range]),label,select,summary,textarea {touch-action: manipulation}
