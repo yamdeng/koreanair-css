@@ -151,7 +151,7 @@ function ChecklistModal(props) {
       isOpen={isOpen}
       ariaHideApp={false}
       overlayClassName={'alert-modal-overlay'}
-      className={'list-common-modal-content'}
+      className={'alert-modal-content'}
       onRequestClose={() => {
         closeModal();
       }}
@@ -159,20 +159,90 @@ function ChecklistModal(props) {
       <div className="popup-container">
         <h3 className="pop_title">첨부파일 안내문</h3>
         <span className="txt-guide">※ 모든 증빙자료는 신청일을 기준으로 유효한 상태여야함</span>
-        <div>
-          <table>
-            <tr>
-              <td>이미지</td>
-              <td>
-                <ul>
-                  <li>- 자동차등록증</li>
-                  <li>- 안전검사합격증명서</li>
-                  <li>- 기능기운전기능사 또는 교육기관 교육 이수</li>
-                  <li>- 화물운전 종사 자격증</li>
-                </ul>
-              </td>
-            </tr>
-          </table>
+        <div className="pop_cont">
+          <div className="editbox">
+            <table className="pop-img-table">
+              <tr>
+                <td>
+                  <ul>
+                    <li>이미지</li>
+                    <li>차량탑재형 고소작업대 (스카이)</li>
+                  </ul>
+                </td>
+                <td>
+                  <ul>
+                    <li>- 자동차등록증</li>
+                    <li>- 안전검사합격증명서</li>
+                    <li>- 기능기운전기능사 또는 교육기관 교육 이수</li>
+                    <li>- 화물운전 종사 자격증</li>
+                  </ul>
+                </td>
+              </tr>
+
+              <tr>
+                <td>
+                  <ul>
+                    <li>이미지</li>
+                    <li>시저형 고소작업대 (렌탈)</li>
+                  </ul>
+                </td>
+                <td>
+                  <ul>
+                    <li> - 안전인증서</li>
+                  </ul>
+                </td>
+              </tr>
+
+              <tr>
+                <td>
+                  <ul>
+                    <li>이미지</li>
+                    <li>이동식 크레인 (카고크레인)</li>
+                  </ul>
+                </td>
+                <td>
+                  <ul>
+                    <li>- 자동차등록증</li>
+                    <li>- 안전검사합격증명서</li>
+                    <li>- 기능기운전기능사 또는 교육기관 교육 이수</li>
+                    <li>- 화물운전 종사 자격증</li>
+                  </ul>
+                </td>
+              </tr>
+
+              <tr>
+                <td>
+                  <ul>
+                    <li>이미지</li>
+                    <li>기중기 (크레인)</li>
+                  </ul>
+                </td>
+                <td rowSpan={3}>
+                  <ul>
+                    <li>- 건설기계등록증</li>
+                    <li>- 건설기계조종사 면허증</li>
+                    <li>- 건설기계조종사 안전교육 이수증</li>
+                  </ul>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <ul>
+                    <li>이미지</li>
+                    <li>굴착기 (굴삭기, 포크레인, 백호우)</li>
+                  </ul>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <ul>
+                    <li>이미지</li>
+                    <li>지게차</li>
+                  </ul>
+                </td>
+              </tr>
+            </table>
+          </div>
         </div>
 
         <div className="pop_btns">

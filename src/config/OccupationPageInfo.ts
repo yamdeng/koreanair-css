@@ -24,6 +24,7 @@ import POccupationMu1P10edit from '@/components/publish/occupation/POccupationMu
 import POccupationMu1P10detail from '@/components/publish/occupation/POccupationMu1P10detail';
 import POccupationMu1P11list from '@/components/publish/occupation/POccupationMu1P11list';
 import POccupationMu1P11list1 from '@/components/publish/occupation/POccupationMu1P11list1';
+import POccupationMu1P11list2 from '@/components/publish/occupation/POccupationMu1P11list2';
 import POccupationMu1P11edit from '@/components/publish/occupation/POccupationMu1P11edit';
 import POccupationMu1P11detail from '@/components/publish/occupation/POccupationMu1P11detail';
 import POccupationMu2P1list from '@/components/publish/occupation/POccupationMu2P1list';
@@ -279,6 +280,13 @@ OccupationPageInfo.list = [
     title: '안전경영 > 산업안전보건관리비-목록-리스트',
     Component: POccupationMu1P11list1,
     path: 'POccupationMu1P11list1',
+    description: '',
+    success: true,
+  },
+  {
+    title: '안전경영 > 산업안전보건관리비-실적-리스트',
+    Component: POccupationMu1P11list2,
+    path: 'POccupationMu1P11list2',
     description: '',
     success: true,
   },

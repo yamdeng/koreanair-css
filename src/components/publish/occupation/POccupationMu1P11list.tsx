@@ -41,8 +41,11 @@ function POccupationMu1P11list() {
           <a href="javascript:void(0);" className="active" data-label="현황">
             현황
           </a>
-          <a href="javascript:void(0);" data-label="목록">
-            목록
+          <a href="javascript:void(0);" data-label="계획">
+            계획
+          </a>
+          <a href="javascript:void(0);" data-label="실적">
+            실적
           </a>
         </div>
       </div>
@@ -83,15 +86,14 @@ function POccupationMu1P11list() {
       {/* //검색영역 */}
       {/*그리드영역 */}
 
-      <div className="table-wrap h400">
+      <div className="table-wrap">
         <div className="left-table">
-          <AppTable rowData={rowData} columns={columns} className="h300" />
+          <AppTable rowData={rowData} columns={columns} />
         </div>
         <div className="right-table">
-          <AppTable rowData={rowData} columns={columns} className="h300" />
+          <AppTable rowData={rowData} columns={columns} />
         </div>
       </div>
-      <AppTable rowData={rowData} columns={columns} />
 
       {/*//그리드영역 */}
     </>

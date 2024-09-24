@@ -813,6 +813,7 @@
   .grid-item .Status li.complete-bar {border-left: 1.0rem solid var(--color-neutral-70);}
   .grid-item .Status li.expected-bar {border-left: 1.0rem solid var(--color-darkblue-100);}
   .grid-item .Status li p {width: 100%; font-size: 1.6rem;}
+  .grid-item .Status li span {width: 10.0rem;}
   .grid-item .Status li span.ing, 
   .grid-item .Status li span.wait,  
   .grid-item .Status li span.complete, 

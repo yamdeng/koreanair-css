@@ -11,7 +11,7 @@ import AppRangeDatePicker from '@/components/common/AppRangeDatePicker';
 import AppTimePicker from '@/components/common/AppTimePicker';
 import AppAutoComplete from '@/components/common/AppAutoComplete';
 
-function POccupationMu1P11list1() {
+function POccupationMu1P11list2() {
   const [inputValue, setInputValue] = useState('');
   const rowData = getAllData();
   const columns = testColumnInfos;
@@ -41,10 +41,10 @@ function POccupationMu1P11list1() {
           <a href="javascript:void(0);" data-label="현황">
             현황
           </a>
-          <a href="javascript:void(0);" className="active" data-label="계획">
+          <a href="javascript:void(0);" data-label="계획">
             계획
           </a>
-          <a href="javascript:void(0);" data-label="실적">
+          <a href="javascript:void(0);" className="active" data-label="실적">
             실적
           </a>
         </div>
@@ -96,19 +96,13 @@ function POccupationMu1P11list1() {
       </div>
       {/* //검색영역 */}
       {/*그리드영역 */}
-      <div>
+      <div className="mb-20">
         <AppTable rowData={rowData} columns={columns} />
       </div>
+      <AppTable rowData={rowData} columns={columns} />
       {/*//그리드영역 */}
-      {/* 하단버튼영역 */}
-      <div className="contents-btns">
-        <button type="button" name="button" className="btn_text text_color_neutral-10 btn_confirm">
-          등록
-        </button>
-      </div>
-      {/*//하단버튼영역*/}
     </>
   );
 }
 
-export default POccupationMu1P11list1;
+export default POccupationMu1P11list2;
