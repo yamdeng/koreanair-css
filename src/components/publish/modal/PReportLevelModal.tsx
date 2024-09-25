@@ -19,9 +19,44 @@ function ReportLevelModal(props) {
       <div className="popup-container">
         <h3 className="pop_title">위험레벨 조회</h3>
         <div className="pop_full_cont_box">
+          <div className="RiskLevel-searchbox">
+            {/*검색영역*/}
+            <div className="search-area">
+              <div className="form-table">
+                <div className="form-area">
+                  <div className="flag-tag1">
+                    <span className="icon-flag1 txt btn-lightblue">기간선택</span>
+                    <span className="icon-flag1 txt btn-lightblue">전체</span>
+                    <span className="icon-flag1 txt btn-lightblue">최근3년</span>
+                    <span className="icon-flag1 txt btn-lightblue">1년</span>
+                    <span className="icon-flag1 txt btn-lightblue active">6개월</span>
+                    {/* 선택되는 부분은 class명에 active 표시*/}
+                  </div>
+                  <div className="form-cell">
+                    <div className="form-group">
+                      <div className="df">
+                        <div className="date1">
+                          <AppDatePicker label={'날짜선택'} />
+                        </div>
+                        <span className="unt">~</span>
+                        <div className="date2">
+                          <AppDatePicker label={'날짜선택'} />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="pop_btns_">
+                  <button className="btn_text text_color_neutral-10 btn_confirm">조회</button>
+                  <button className="btn_text text_color_neutral-10 btn_confirm">초기화</button>
+                </div>
+              </div>
+            </div>
+            {/*//검색영역*/}
+          </div>
           <div className="RiskLevel-box">
             <div className="RiskLevel-list">
-              <div className="RiskLevel-top-box">
+              {/* <div className="RiskLevel-top-box">
                 <div className="RiskLevel-Left">
                   <div className="h4-tit">Potential Consequence</div>
                   <div className="boxlist-wrap">
@@ -99,11 +134,11 @@ function ReportLevelModal(props) {
                     </div>
                   </div>
                 </div>
-                {/*버튼 */}
+
                 <div className="pop_btns_">
                   <button className="btn_text text_color_neutral-10 btn_confirm">초기화</button>
                 </div>
-              </div>
+              </div> */}
 
               <div className="df">
                 <div className="list-box-a">
@@ -225,12 +260,41 @@ function ReportLevelModal(props) {
                     </ul>
                   </div>
                 </div>
+                <div className="list-box-c">
+                  <div className="box-list">
+                    <ul className="list">
+                      <li>
+                        <a href="javascript:void(0);">Hail(300)</a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0);" className="active">
+                          Lightning strike(200)
+                        </a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0);">Sandstorm(145)</a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0);">Heavy rain(67)</a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0);">Thunderstorm(20)</a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0);">Typhoon/Cyclone(13)</a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0);">Snow/Slush encounter(9)</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
               </div>
             </div>
             <div className="RiskLevel-area">
-              <div className="h4-tit">Risk Level</div>
+              {/* <div className="h4-tit">Risk Level</div> */}
               {/*검색영역*/}
-              <div className="search-area">
+              {/*<div className="search-area">
                 <div className="form-table">
                   <div className="form-cell wid50">
                     <div className="chk-wrap">
@@ -274,7 +338,7 @@ function ReportLevelModal(props) {
                       <span className="icon-flag1 txt btn-lightblue">최근3년</span>
                       <span className="icon-flag1 txt btn-lightblue">1년</span>
                       <span className="icon-flag1 txt btn-lightblue active">6개월</span>
-                      {/* 선택되는 부분은 class명에 active 표시*/}
+
                     </div>
                     <div className="form-cell">
                       <div className="form-group">
@@ -294,7 +358,7 @@ function ReportLevelModal(props) {
                     <button className="btn_text text_color_neutral-10 btn_confirm">조회</button>
                   </div>
                 </div>
-              </div>
+              </div>*/}
               {/*//검색영역*/}
               <div className="Level-area">
                 <div className="LevelTop">
