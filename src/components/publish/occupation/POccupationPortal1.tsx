@@ -53,7 +53,7 @@ function POccupationPortal1() {
             </table>
           </div>
         </div>
-        <div className="grid-item">
+        <div className="grid-item pd-photo">
           <div className="main-photo">
             <img src={mainphoto} className="" alt="photo" />
           </div>
@@ -122,21 +122,21 @@ function POccupationPortal1() {
           <div className="main-table-box">
             <table className="main-table">
               <tr>
-                <th>
+                <th className="pd">
                   <a href="javascript:void(0);">KSMS(대한항공 안전관리 시스템)</a>
                   <span className="date">2024-00-00</span>
                 </th>
                 <td className="name">관리자</td>
               </tr>
               <tr>
-                <th>
+                <th className="pd">
                   <a href="javascript:void(0);">지상의 조정실 대한항공 종합통제센터</a>
                   <span className="date">2024-00-00</span>
                 </th>
                 <td className="name">관리자</td>
               </tr>
               <tr>
-                <th>
+                <th className="pd">
                   <a href="javascript:void(0);">대한항공, 세계 최고 수준 안전도 비결은?</a>
                   <span className="date">2024-00-00</span>
                 </th>
@@ -242,8 +242,8 @@ function POccupationPortal1() {
             <div className="main-graph-group">
               <ul className="main-graph-tit">
                 <li>화물</li>
-                <li className="graph-optimum-bg">
-                  <span className="txt-optimum">70%</span>
+                <li className="graph-high-bg">
+                  <span className="txt-high">70%</span>
                 </li>
               </ul>
               <meter className="main-graph-meter" min={0} max={100} low={30} high={79} optimum={100} value={70}></meter>
