@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useRef } from 'react';
 import { DatePicker, TimePicker, Select as AntSelect } from 'antd';
 import AppTable from '@/components/common/AppTable';
 import { getAllData } from '@/data/grid/example-data-new';
@@ -7,9 +7,48 @@ import AppSelect from '@/components/common/AppSelect';
 import AppDatePicker from '@/components/common/AppDatePicker';
 
 function Checklist1() {
-  const [inputValue, setInputValue] = useState('');
-  const rowData = getAllData();
-  const columns = testColumnInfos;
+  const containerRef = useRef(null);
+  const boxRefs = useRef([]); // 각 box에 대한 참조
+  const [hiddenBoxes, setHiddenBoxes] = useState([]);
+
+  const checkList = [
+    { title: '안전보안일반12 (29)' },
+    { title: '항공보안(OYA)' },
+    { title: '운항품질(OQA)' },
+    { title: '1정비품질보증(M&E)' },
+    { title: '2정비품질보증(M&E)' },
+    { title: '3정비품질보증(M&E)' },
+    { title: '4정비품질보증(M&E)' },
+    { title: '5정비품질보증(M&E)' },
+    { title: '6정비품질보증(M&E)' },
+    { title: '7정비품질보증(M&E)' },
+  ];
+
+  const clickMore = () => {
+    if (!containerRef.current) return;
+
+    const container = containerRef.current;
+    const scrollLeft = container.scrollLeft;
+    const containerWidth = container.clientWidth;
+
+    const hiddenBoxes = checkList.filter((box, index) => {
+      const boxElement = boxRefs.current[index];
+      if (!boxElement) return false;
+
+      // 박스의 시작(left) 위치와 끝(right) 위치 계산
+      const boxStart = boxElement.offsetLeft;
+      const boxEnd = boxStart + boxElement.offsetWidth;
+
+      // 보이지 않는 박스 필터링
+      return boxEnd <= scrollLeft || boxStart >= scrollLeft + containerWidth - 200;
+    });
+
+    const element = document.getElementById(`checklist-${hiddenBoxes[hiddenBoxes.length - 1].title}`);
+    element.scrollIntoView({ behavior: 'smooth', block: 'end', inline: 'nearest' });
+
+    setHiddenBoxes(hiddenBoxes);
+  };
+
   return (
     <>
       {/*경로 */}
@@ -30,44 +69,26 @@ function Checklist1() {
       {/*탭 */}
       <div className="menu-tab-nav">
         <div className="swiper-container">
-          <div className="menu-tab Audit">
-            <a href="javascript:void(0);" className="active" data-label="안전보안일반12">
-              안전보안일반12 (29)
-              {/* <button type="button" className="tabs-tab-remove">
-                <span className="delete">X</span>
-              </button> */}
-            </a>
-            <a href="javascript:void(0);" data-label="항공보안(OYA)">
-              항공보안(OYA)
-              {/* <button type="button" className="tabs-tab-remove">
-                <span className="delete">X</span>
-              </button> */}
-            </a>
-            <a href="javascript:void(0);" data-label="운항품질(OQA)">
-              운항품질(OQA)
-              {/* <button type="button" className="tabs-tab-remove">
-                <span className="delete">X</span>
-              </button> */}
-            </a>
-            <a href="javascript:void(0);" data-label="정비품질보증(M&E)">
-              정비품질보증(M&E)
-            </a>
-            <a href="javascript:void(0);" data-label="종합통제(OC)">
-              종합통제(OC)
-            </a>
-            <a href="javascript:void(0);" data-label="객실품질심사(UFQA)">
-              객실품질심사(UFQA)
-            </a>
-            <a href="javascript:void(0);" data-label="여객안전보안보건(CTPN)">
-              여객안전보안보건(CTPN)
-            </a>
-            <a href="javascript:void(0);" data-label="운송서비스(FT)">
-              운송서비스(FT)
-            </a>
+          <div className="menu-tab Audit" ref={containerRef}>
+            {checkList.map((info, index) => {
+              const { title } = info;
+              return (
+                <a
+                  id={`checklist-${title}`}
+                  key={title}
+                  href="javascript:void(0);"
+                  className="active"
+                  data-label="안전보안일반12"
+                  ref={(el) => (boxRefs.current[index] = el)}
+                >
+                  {title}
+                </a>
+              );
+            })}
           </div>
 
           <div className="menu-tab-nav-operations">
-            <button type="button" name="button" className="menu-tab-nav-more">
+            <button type="button" name="button" className="menu-tab-nav-more" onClick={clickMore}>
               <span className="hide">더보기</span>
             </button>
           </div>
