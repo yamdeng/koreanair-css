@@ -107,7 +107,7 @@ function AppTable(props) {
   } = props;
 
   // store
-  const { currentPage, prevPage, nextPage, totalCount, displayPageIndexList = [], changePageSize } = store || {};
+  const { currentPage, prevPage, nextPage, totalCount, displayPageIndexList = [1, 2, 3], changePageSize } = store || {};
 
   // 컬럼 동적 셋팅 모달 open
   const [isColumnSettingModalOpen, setIsColumnSettingModalOpen] = useState(false);
