@@ -8,6 +8,7 @@ import iconSettingImage from '@/resources/images/icon_setting.svg';
 import closeImage from '@/resources/images/close.svg';
 import { useStore } from 'zustand';
 import useAppStore from '@/store/useAppStore';
+import AppSearchInput from '@/components/common/AppSearchInput';
 
 export default function OccupationLayout() {
   const { isAviationPortal } = useStore(useAppStore, (state) => state) as any;
@@ -89,6 +90,11 @@ export default function OccupationLayout() {
               </a>
             </li>
           </ul>
+        </div>
+        <div className="main-search active">
+          <div className="form-group wid100">
+            <AppSearchInput label="검색" />
+          </div>
         </div>
       </header>
       {/* LNB hide 처리 */}

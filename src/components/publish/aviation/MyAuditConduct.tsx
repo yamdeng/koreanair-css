@@ -94,7 +94,7 @@ function MyAuditConduct() {
             <ul>
               <li>
                 <a className="active" href="javascript:void(0);">
-                  <span className="myaudit-tab-icon">아이콘</span> Plan
+                  <span className="myaudit-tab-icon active">아이콘</span> Plan
                 </a>
               </li>
               <li>
