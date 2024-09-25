@@ -360,7 +360,7 @@ function MyAuditConduct() {
                 </div>
               </div>
 
-              <hr className="line"></hr>
+              <hr className="line dp-n"></hr>
               <div className="form-table">
                 <div className="form-cell wid50">
                   <div className="group-box-wrap wid100">

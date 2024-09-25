@@ -359,7 +359,7 @@
   .file-guide {display: block; font-size: 1.2rem; color: var(--color-neutral-70); padding: 1.0rem; margin-bottom: 1.0rem; text-wrap: wrap;}
 
   .myaudit-contents {display: block !important; /*height: 100% !important;*/}
-  .audit-left-box {width: 100%; margin-right:0 !important;}
+  .audit-left-box {width: 100%; margin-right:0 !important; padding-right: 0 !important; border: none !important;}
   .audit-right-box {width: 100%; padding-top: 1.5rem;}
 
   /*항공안전 메인*/
@@ -630,7 +630,7 @@
   .file-guide {display: block; font-size: 1.2rem; color: var(--color-neutral-70); padding: 1.0rem; margin-bottom: 1.0rem; text-wrap: wrap;}
 
   .myaudit-contents {display: block !important; /*height: calc(100vh - 48.1rem) !important; height: 100% !important;*/}
-  .audit-left-box {width: 100%; margin-right:0 !important;}
+  .audit-left-box {width: 100%; margin-right:0 !important; padding-right: 0 !important; border: none !important;}
   .audit-right-box {width: 100%; padding-top: 1.5rem;}
   .myaudit-header .myaudit-tab li {background-size: 1.2rem !important; vertical-align: middle; background-position: 50% 50%; padding-right: 1.0rem !important;}
   .myaudit-header .myaudit-tab li a {font-size: 1.4rem !important; padding: 0.9rem 0.5rem !important;}
