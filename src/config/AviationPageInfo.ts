@@ -65,6 +65,7 @@ import ChangeList from '@/components/publish/aviation/ChangeList';
 import AdminTopEvent from '@/components/publish/aviation/AdminTopEvent';
 import AdminEducatDetail from '@/components/publish/aviation/AdminEducatDetail';
 import SPIEquipList from '@/components/publish/aviation/SPIEquipList';
+import MyReportList from '@/components/publish/aviation/MyReportList';
 import { fa } from '@faker-js/faker';
 import { fail } from 'assert';
 
@@ -84,6 +85,13 @@ AviationPageInfo.list = [
     path: 'CentralizedReportList',
     description: '',
     success: true,
+  },
+  {
+    title: '[01.안전보고서] My Report 리스트',
+    Component: MyReportList,
+    path: 'MyReportList',
+    description: '',
+    success: false,
   },
   {
     title: '[02.안정정책] 안전정책 > 매뉴얼',

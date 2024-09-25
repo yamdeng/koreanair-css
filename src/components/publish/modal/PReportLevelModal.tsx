@@ -142,6 +142,50 @@ function ReportLevelModal(props) {
 
               <div className="df">
                 <div className="list-box-a">
+                  <div className="chk-wrap">
+                    <label>
+                      <input type="checkbox" checked />
+                      <span>
+                        Event Type :{' '}
+                        <span className="txt">
+                          <em>866</em>건
+                        </span>
+                      </span>
+                    </label>
+                  </div>
+                  <div className="form-table">
+                    <div className="form-cell">
+                      <div className="form-group wid100">
+                        <AppSelect
+                          id="select1"
+                          style={{ width: '100%' }}
+                          className="label-select"
+                          options={[
+                            {
+                              value: 'jack',
+                              label: 'Jack',
+                            },
+                            {
+                              value: 'lucy',
+                              label: 'Lucy',
+                            },
+                            {
+                              value: 'Yiminghe',
+                              label: 'yiminghe',
+                            },
+                            {
+                              value: 'disabled',
+                              label: 'Disabled',
+                              disabled: true,
+                            },
+                          ]}
+                        />
+                        <label className="f-label" htmlFor="select1">
+                          선택
+                        </label>
+                      </div>
+                    </div>
+                  </div>
                   <div className="box-list">
                     <ul className="list">
                       <li className="active">
@@ -232,6 +276,50 @@ function ReportLevelModal(props) {
                   </div>
                 </div>
                 <div className="list-box-b">
+                  <div className="chk-wrap">
+                    <label>
+                      <input type="checkbox" checked />
+                      <span>
+                        Hazard Taxonomy :{' '}
+                        <span className="txt">
+                          <em>866</em>건
+                        </span>
+                      </span>
+                    </label>
+                  </div>
+                  <div className="form-table">
+                    <div className="form-cell">
+                      <div className="form-group wid100">
+                        <AppSelect
+                          id="select1"
+                          style={{ width: '100%' }}
+                          className="label-select"
+                          options={[
+                            {
+                              value: 'jack',
+                              label: 'Jack',
+                            },
+                            {
+                              value: 'lucy',
+                              label: 'Lucy',
+                            },
+                            {
+                              value: 'Yiminghe',
+                              label: 'yiminghe',
+                            },
+                            {
+                              value: 'disabled',
+                              label: 'Disabled',
+                              disabled: true,
+                            },
+                          ]}
+                        />
+                        <label className="f-label" htmlFor="select1">
+                          선택
+                        </label>
+                      </div>
+                    </div>
+                  </div>
                   <div className="box-list">
                     <ul className="list">
                       <li>
@@ -261,6 +349,50 @@ function ReportLevelModal(props) {
                   </div>
                 </div>
                 <div className="list-box-c">
+                  <div className="chk-wrap">
+                    <label>
+                      <input type="checkbox" checked />
+                      <span>
+                        Potential Consequence :{' '}
+                        <span className="txt">
+                          <em>866</em>건
+                        </span>
+                      </span>
+                    </label>
+                  </div>
+                  <div className="form-table">
+                    <div className="form-cell">
+                      <div className="form-group wid100">
+                        <AppSelect
+                          id="select1"
+                          style={{ width: '100%' }}
+                          className="label-select"
+                          options={[
+                            {
+                              value: 'jack',
+                              label: 'Jack',
+                            },
+                            {
+                              value: 'lucy',
+                              label: 'Lucy',
+                            },
+                            {
+                              value: 'Yiminghe',
+                              label: 'yiminghe',
+                            },
+                            {
+                              value: 'disabled',
+                              label: 'Disabled',
+                              disabled: true,
+                            },
+                          ]}
+                        />
+                        <label className="f-label" htmlFor="select1">
+                          선택
+                        </label>
+                      </div>
+                    </div>
+                  </div>
                   <div className="box-list">
                     <ul className="list">
                       <li>
@@ -364,9 +496,9 @@ function ReportLevelModal(props) {
                 <div className="LevelTop">
                   <div className="flex-box">
                     <div className="h5-tit">Risk</div>
-                    <span className="total">
+                    {/* <span className="total">
                       <span className="text_color-Warning">861</span>건
-                    </span>
+                    </span> */}
                   </div>
                   <div className="">
                     <table className="RiskLevelTable Risk">
