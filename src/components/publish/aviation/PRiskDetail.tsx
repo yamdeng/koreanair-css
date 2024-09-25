@@ -435,6 +435,30 @@ function PRiskDetail() {
                       <div className="form-group wid100">
                         <div className="box-view-list">
                           <ul className="view-list">
+                            <li>
+                              {/* 파일첨부영역 : drag */}
+                              <div className="filebox ">
+                                <Dragger {...props}>
+                                  <p className="ant-upload-text ">
+                                    + 이 곳을 클릭하거나 마우스로 업로드할 파일을 끌어서 놓으세요.
+                                  </p>
+                                </Dragger>
+                                {/* <label htmlFor="file" className="file-label">
+                                  Attachment <span className="required"></span>
+                                </label> */}
+                              </div>
+                              {/* <span className="errorText">fileerror</span> */}
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="form-table line">
+                    <div className="form-cell wid100">
+                      <div className="form-group wid100">
+                        <div className="box-view-list">
+                          <ul className="view-list">
                             <li className="accumlate-list">
                               <label className="t-label">Investigator</label>
                               <span className="text-desc-type1">관리자홍길동</span>
