@@ -135,10 +135,18 @@ function PTableCustomColumn() {
   columns[9].cellRenderer = CustomColumnComponent9;
   columns[10].cellRenderer = CustomColumnComponent10;
 
+  const customButtons = [
+    { title: '타이틀1' },
+    { title: '타이틀2' },
+    { title: '타이틀2' },
+    { title: '타이틀2' },
+    { title: '타이틀2' },
+  ];
+
   return (
     <>
       <div>
-        <AppTable rowData={rowData} columns={columns} />
+        <AppTable rowData={rowData} columns={columns} customButtons={customButtons} />
       </div>
     </>
   );

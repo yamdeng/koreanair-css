@@ -211,7 +211,7 @@ function AppTable(props) {
     <>
       <div className="table-header" style={{ display: hiddenTableHeader ? 'none' : '' }}>
         <div className="count">
-          Total {CommonUtil.formatString(gridTotalCountTemplate, store ? totalCount : rowData.length)}
+          Total <strong>{CommonUtil.formatString(gridTotalCountTemplate, store ? totalCount : rowData.length)}</strong>
         </div>
         <div className="btns-area">
           {customButtons.map((info) => {
@@ -245,7 +245,7 @@ function AppTable(props) {
           </button>
           <span>
             <AppSelect
-              style={{ width: 150, display: hiddenPagination || enablePagination || !store ? 'none' : '' }}
+              style={{ height: 30, width: 80, display: hiddenPagination || enablePagination }}
               onChange={(size) => {
                 changePageSize(size);
               }}

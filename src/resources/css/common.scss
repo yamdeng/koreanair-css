@@ -385,7 +385,7 @@ input, select{font-family:'KoreanAirSans'}
 
 
 
-.table-header{display:flex;position:relative;justify-content:end;align-items:center;-webkit-box-align:center;width:100%;line-height:3.5rem;padding-bottom:1.2rem}
+.table-header{display:flex;position:relative;justify-content:end;align-items:center;-webkit-box-align:center;width:100%;line-height:3.5rem;padding-bottom:1rem}
 .table-header .count{font-size:1.5rem;margin-right:auto}
 .table-header >.btn-area{position:absolute;top:0;right:1.0rem;display:flex}/*display: flex;추가*/
 .controlArea{/*flex:1;text-align:right*/float:right}
@@ -641,7 +641,7 @@ input, select{font-family:'KoreanAirSans'}
 .edit-area .form-table .form-cell{position:relative;flex-grow: 1;padding: 1.5rem 0.5rem;border-bottom: 0.1rem solid var(--color-neutral-40)}
 
 /*pagination*/
-.pagination{margin:3.0rem 0 0 0;text-align:center}
+.pagination{margin:2.0rem 0 0 0;text-align:center}
 .pagination .first{position:relative}
 .pagination .first:before{content:'';position:absolute;box-sizing:content-box;top:0%;left:0%;width:3.2rem;height:3.2rem;background:url(../images/pagination-first.svg)no-repeat center center;}
 .pagination .prev{position:relative}
