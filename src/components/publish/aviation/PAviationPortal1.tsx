@@ -15,7 +15,11 @@ function PAviationPortal1() {
   }, []);
   return (
     <>
-      <div className="floatingmenu">글쓰기</div>
+      <div className="floatingmenu">
+        <a href="javascript:void(0);" className="ico-write">
+          <span className="hide">글쓰기</span>
+        </a>
+      </div>
 
       <div className="av-main-wrap">
         {/* Top 10 RISK AREAS*/}

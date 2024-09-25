@@ -105,6 +105,10 @@ input[type=checkbox],input[type=radio]{padding:0;vertical-align:middle;margin-to
 [class^="chk-wrap"] > label {position:relative;overflow:hidden;cursor:pointer}
 [class^="chk-wrap"] > label > input {position:absolute;top:0;left:0;width:0;height:0;opacity:0}
 
+/*메인하단 floating*/
+.floatingmenu{z-index:10;position:fixed;right:2.4rem;bottom:2.4rem;width:6.7rem;height:6.6rem;background-color:var(--color-btn-blue3);color:var(--color-neutral-10);text-align:center;border-radius:99.9rem; display: flex; justify-content: center; align-items: center;box-shadow:0.2rem 0.5rem 0.5rem rgba(0, 0, 0, 0.3)}
+.floatingmenu a.ico-write{width:3.0rem;height:3.0rem;background:url(../images/ico-register.svg)no-repeat center center}
+
 /* 기본형 */
 .radio-wrap{position:relative;line-height:0;border:0.1rem solid var(--color-neutral-40);border-radius:0.5rem;padding:0.6rem 1rem 0.3rem}
 .radio-wrap.border-no{border:0}
