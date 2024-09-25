@@ -219,6 +219,20 @@ function PRiskDetail() {
                               <label className="t-label">SPI 여부</label>
                               <span className="text-desc-type1">YES</span>
                             </li>
+                            <li className="detail">
+                              {/* 파일첨부영역 : drag */}
+                              <div className="filebox ">
+                                <Dragger {...props}>
+                                  <p className="ant-upload-text ">
+                                    + 이 곳을 클릭하거나 마우스로 업로드할 파일을 끌어서 놓으세요.
+                                  </p>
+                                </Dragger>
+                                {/* <label htmlFor="file" className="file-label">
+                                  Attachment <span className="required"></span>
+                                </label> */}
+                              </div>
+                              {/* <span className="errorText">fileerror</span> */}
+                            </li>
                           </ul>
                         </div>
                       </div>
