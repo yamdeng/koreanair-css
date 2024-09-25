@@ -70,6 +70,7 @@ const props: any = {
 function POccupationMu1P11edit() {
   const rowData = getAllData();
   const columns = testColumnInfos;
+  const [inputValue, setInputValue] = useState('');
   return (
     <>
       {/*경로 */}
@@ -88,92 +89,94 @@ function POccupationMu1P11edit() {
       </div>
       {/*경로 */}
       <div className="conts-title">
-        <h2>산업안전보건관리비</h2>
+        <h2>산업안전보건관리비 실적</h2>
       </div>
       {/* 입력영역 */}
-      <div className="info-wrap toggle">
-        <dl className="tg-item active">
-          {/* toggle 선택되면  열어지면 active붙임*/}
-          <dt>
-            <button type="button" className="btn-tg">
-              계획<span className="hide"></span>
-            </button>
-          </dt>
-          <dd className="tg-conts">
-            <div className="edit-area">
-              <div className="detail-form">
-                <div className="detail-list">
-                  <div className="form-table">
-                    <div className="form-cell wid50">
-                      <div className="form-group wid100">
-                        <AppDatePicker label="년도" />
-                      </div>
-                    </div>
-                    <div className="form-cell wid50">
-                      <div className="form-group wid100">
-                        <AppSelect label="Department" />
-                      </div>
-                    </div>
-                    <div className="form-cell wid50">
-                      <div className="form-group wid100">
-                        <AppSelect label="Cost Center" />
-                      </div>
-                    </div>
-                    <div className="form-cell wid50">
-                      <div className="form-group wid100">
-                        <AppSelect label="Item" />
-                      </div>
-                    </div>
-                  </div>
-                  <div className="form-table">
-                    <div className="form-cell wid50">
-                      <div className="form-group wid100">
-                        <AppSelect label="Account Name" />
-                      </div>
-                    </div>
-                    <div className="form-cell wid50">
-                      <div className="form-group wid100">
-                        <AppTextInput label="Account" />
-                      </div>
-                    </div>
-                    <div className="form-cell wid50">
-                      <div className="form-group wid100">
-                        <AppSelect label="Payterm" />
-                      </div>
-                    </div>
-                    <div className="form-cell wid50">
-                      <div className="form-group wid100">
-                        <AppTextInput label="Amount" />
-                      </div>
-                    </div>
-                  </div>
-                  <div className="form-table">
-                    <div className="form-cell wid50">
-                      <div className="form-group wid100">
-                        <AppTextInput label="Total Amount" />
-                      </div>
-                    </div>
-                    <div className="form-cell wid50">
-                      <div className="form-group wid100">
-                        <AppTextInput label="Description" />
-                      </div>
-                    </div>
-                    <div className="form-cell wid50">
-                      <div className="form-group wid100">
-                        <AppTextInput label="등록자" />
-                      </div>
-                    </div>
-                    <div className="form-cell wid50">
-                      <div className="form-group wid100">
-                        <AppDatePicker label="등록일자" />
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+      <div className="editbox">
+        <div className="form-table line">
+          <div className="form-cell wid50">
+            <div className="form-group wid100">
+              <AppDatePicker label="년도" />
             </div>
-          </dd>
-        </dl>
+          </div>
+          <div className="form-cell wid50">
+            <div className="form-group wid100">
+              <AppSelect label="구분" />
+            </div>
+          </div>
+          <div className="form-cell wid50">
+            <div className="form-group wid100">
+              <AppSelect label="본부" />
+            </div>
+          </div>
+          <div className="form-cell wid50">
+            <div className="form-group wid100">
+              <AppSelect label="부서" />
+            </div>
+          </div>
+        </div>
+        <hr className="line dp-n"></hr>
+        <div className="form-table line">
+          <div className="form-cell wid50">
+            <div className="form-group wid100">
+              <AppTextInput label="계정명" />
+            </div>
+          </div>
+          <div className="form-cell wid50">
+            <div className="form-group wid100">
+              <AppTextInput label="계정" />
+            </div>
+          </div>
+          <div className="form-cell wid50">
+            <div className="form-group wid100">
+              <AppDatePicker label="일자" />
+            </div>
+          </div>
+          <div className="form-cell wid50">
+            <div className="form-group wid100">
+              <AppTextInput label="전표번호" />
+            </div>
+          </div>
+        </div>
+        <hr className="line dp-n"></hr>
+        <div className="form-table line">
+          <div className="form-cell wid50">
+            <div className="form-group wid100">
+              <AppTextInput label="비용" />
+            </div>
+          </div>
+          <div className="form-cell wid50">
+            <div className="form-group wid100">
+              <AppTextInput label="거래처" />
+            </div>
+          </div>
+          <div className="form-cell wid50">
+            <div className="form-group wid100">
+              <AppDatePicker label="처리일자" />
+            </div>
+          </div>
+        </div>
+        <hr className="line dp-n"></hr>
+        <div className="form-table">
+          <div className="form-cell wid50">
+            <div className="form-group wid100">
+              <textarea
+                id="testArea1"
+                className="form-tag custom_textarea"
+                style={{ width: '100%' }}
+                name="testArea1"
+                value={inputValue}
+                onChange={(event) => {
+                  setInputValue(event.target.value);
+                }}
+              />
+              <label className="f-label" htmlFor="testArea1">
+                내용
+              </label>
+            </div>
+          </div>
+        </div>
+        <hr className="line"></hr>
       </div>
       {/*//입력영역*/}
 

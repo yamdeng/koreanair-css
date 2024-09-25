@@ -289,7 +289,7 @@ OccupationPageInfo.list = [
     Component: POccupationMu1P11edit1,
     path: 'POccupationMu1P11edit1',
     description: '',
-    success: false,
+    success: true,
   },
   {
     title: '안전경영 > 산업안전보건관리비-실적-리스트',
@@ -303,14 +303,14 @@ OccupationPageInfo.list = [
     Component: POccupationMu1P11edit,
     path: 'POccupationMu1P11edit',
     description: '',
-    success: false,
+    success: true,
   },
   {
     title: '안전경영 > 산업안전보건관리비-실적-상세',
     Component: POccupationMu1P11detail,
     path: 'POccupationMu1P11detail',
     description: '',
-    success: false,
+    success: true,
   },
   {
     title: '안전교육 > 교육현황조회-개인별-리스트',
