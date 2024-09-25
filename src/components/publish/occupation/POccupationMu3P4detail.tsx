@@ -506,444 +506,478 @@ function POccupationMu3P4detail() {
                           <table className="work-table">
                             <thead>
                               <tr>
-                                <th>작업</th>
-                                <th>반입장비</th>
-                                <th>파일첨부</th>
-                              </tr>
-                            </thead>
-                            <tbody>
-                              <tr>
-                                <td>
+                                <th>
                                   <div className="radio-wrap-type02">
                                     <label className="type02">
-                                      <input type="checkbox" />
+                                      <input type="checkbox" checked />
                                       <span className="type02">공통(일반)</span>
                                     </label>
                                   </div>
-                                </td>
-                                <td></td>
-                                <td>
-                                  {/* 파일첨부영역 : button */}
-                                  <div className="form-table">
-                                    <div className="form-cell wid50 border-b-no">
-                                      <div className="form-group wid100">
-                                        <div className="box-view-list">
-                                          <ul className="view-list">
-                                            <li className="accumlate-list">
-                                              <label className="t-label">첨부파일</label>
-                                              <span className="text-desc-type1">
-                                                <div className="filebox view">
-                                                  <Upload {...props}>
-                                                    <div className="btn-area" style={{ display: 'none' }}>
-                                                      <button
-                                                        type="button"
-                                                        name="button"
-                                                        className="btn-big btn_text btn-darkblue-line mg-n"
-                                                      >
-                                                        + Upload
-                                                      </button>
-                                                    </div>
-                                                  </Upload>
-                                                </div>
-                                              </span>
-                                            </li>
-                                          </ul>
-                                        </div>
-                                      </div>
-                                    </div>
+                                </th>
+                                <th>
+                                  <div className="radio-wrap-type02">
+                                    <label className="type02">
+                                      <input type="checkbox" />
+                                      <span className="type02">밀폐공간작업</span>
+                                    </label>
                                   </div>
-                                </td>
-                              </tr>
-
-                              <tr>
-                                <td>
+                                </th>
+                                <th>
+                                  <div className="radio-wrap-type02">
+                                    <label className="type02">
+                                      <input type="checkbox" />
+                                      <span className="type02">전기작업</span>
+                                    </label>
+                                  </div>
+                                </th>
+                                <th>
                                   <div className="radio-wrap-type02">
                                     <label className="type02">
                                       <input type="checkbox" />
                                       <span className="type02">화재위험작업</span>
                                     </label>
                                   </div>
-                                </td>
-                                <td>
-                                  <div className="radio-wrap-type02">
-                                    <label className="type02">
-                                      <input type="checkbox" />
-                                      <span className="type02">가스 용접·용단</span>
-                                    </label>
-                                    <label className="type02">
-                                      <input type="checkbox" />
-                                      <span className="type02">전기·용접</span>
-                                    </label>
-                                    <label className="type02">
-                                      <input type="checkbox" />
-                                      <span className="type02">연삭기</span>
-                                    </label>
-                                  </div>
-                                </td>
-                                <td>
-                                  {/* 파일첨부영역 : button */}
-                                  <div className="form-table">
-                                    <div className="form-cell wid50 border-b-no">
-                                      <div className="form-group wid100">
-                                        <div className="box-view-list">
-                                          <ul className="view-list">
-                                            <li className="accumlate-list">
-                                              <label className="t-label">첨부파일</label>
-                                              <span className="text-desc-type1">
-                                                <div className="filebox view">
-                                                  <Upload {...props}>
-                                                    <div className="btn-area" style={{ display: 'none' }}>
-                                                      <button
-                                                        type="button"
-                                                        name="button"
-                                                        className="btn-big btn_text btn-darkblue-line mg-n"
-                                                      >
-                                                        + Upload
-                                                      </button>
-                                                    </div>
-                                                  </Upload>
-                                                </div>
-                                              </span>
-                                            </li>
-                                          </ul>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </td>
-                              </tr>
-
-                              <tr>
-                                <td>
-                                  <div className="radio-wrap-type02">
-                                    <label className="type02">
-                                      <input type="checkbox" />
-                                      <span className="type02">전기작업</span>
-                                    </label>
-                                  </div>
-                                </td>
-                                <td>
-                                  <div className="radio-wrap-type02">
-                                    <label className="type02">
-                                      <input type="checkbox" />
-                                      <span className="type02">이동식 사다리</span>
-                                    </label>
-                                    <label className="type02">
-                                      <input type="checkbox" />
-                                      <span className="type02">달비계</span>
-                                    </label>
-                                    <label className="type02">
-                                      <input type="checkbox" />
-                                      <span className="type02">시저형 고소작업대(렌탈)</span>
-                                    </label>
-                                    <label className="type02">
-                                      <input type="checkbox" />
-                                      <span className="type02">차량탑재형 고소작업대(스카이차)</span>
-                                    </label>
-                                  </div>
-                                </td>
-                                <td>
-                                  {/* 파일첨부영역 : button */}
-                                  <div className="form-table">
-                                    <div className="form-cell wid50 border-b-no">
-                                      <div className="form-group wid100">
-                                        <div className="box-view-list">
-                                          <ul className="view-list">
-                                            <li className="accumlate-list">
-                                              <label className="t-label">첨부파일</label>
-                                              <span className="text-desc-type1">
-                                                <div className="filebox view">
-                                                  <Upload {...props}>
-                                                    <div className="btn-area" style={{ display: 'none' }}>
-                                                      <button
-                                                        type="button"
-                                                        name="button"
-                                                        className="btn-big btn_text btn-darkblue-line mg-n"
-                                                      >
-                                                        + Upload
-                                                      </button>
-                                                    </div>
-                                                  </Upload>
-                                                </div>
-                                              </span>
-                                            </li>
-                                          </ul>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </td>
-                              </tr>
-
-                              <tr>
-                                <td>
+                                </th>
+                                <th>
                                   <div className="radio-wrap-type02">
                                     <label className="type02">
                                       <input type="checkbox" />
                                       <span className="type02">고소작업</span>
                                     </label>
                                   </div>
-                                </td>
-                                <td></td>
-                                <td>
-                                  {/* 파일첨부영역 : button */}
-                                  <div className="form-table">
-                                    <div className="form-cell wid50 border-b-no">
-                                      <div className="form-group wid100">
-                                        <div className="box-view-list">
-                                          <ul className="view-list">
-                                            <li className="accumlate-list">
-                                              <label className="t-label">첨부파일</label>
-                                              <span className="text-desc-type1">
-                                                <div className="filebox view">
-                                                  <Upload {...props}>
-                                                    <div className="btn-area" style={{ display: 'none' }}>
-                                                      <button
-                                                        type="button"
-                                                        name="button"
-                                                        className="btn-big btn_text btn-darkblue-line mg-n"
-                                                      >
-                                                        + Upload
-                                                      </button>
-                                                    </div>
-                                                  </Upload>
-                                                </div>
-                                              </span>
-                                            </li>
-                                          </ul>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </td>
-                              </tr>
-
-                              <tr>
-                                <td>
-                                  <div className="radio-wrap-type02">
-                                    <label className="type02">
-                                      <input type="checkbox" />
-                                      <span className="type02">전기작업</span>
-                                    </label>
-                                  </div>
-                                </td>
-                                <td>
-                                  <div className="radio-wrap-type02">
-                                    <label className="type02">
-                                      <input type="checkbox" />
-                                      <span className="type02">이동식 사다리</span>
-                                    </label>
-                                    <label className="type02">
-                                      <input type="checkbox" />
-                                      <span className="type02">달비계</span>
-                                    </label>
-                                    <label className="type02">
-                                      <input type="checkbox" />
-                                      <span className="type02">시저형 고소작업대(렌탈)</span>
-                                    </label>
-                                    <label className="type02">
-                                      <input type="checkbox" />
-                                      <span className="type02">차량탑재형 고소작업대(스카이차)</span>
-                                    </label>
-                                  </div>
-                                </td>
-                                <td>
-                                  {/* 파일첨부영역 : button */}
-                                  <div className="form-table">
-                                    <div className="form-cell wid50 border-b-no">
-                                      <div className="form-group wid100">
-                                        <div className="box-view-list">
-                                          <ul className="view-list">
-                                            <li className="accumlate-list">
-                                              <label className="t-label">첨부파일</label>
-                                              <span className="text-desc-type1">
-                                                <div className="filebox view">
-                                                  <Upload {...props}>
-                                                    <div className="btn-area" style={{ display: 'none' }}>
-                                                      <button
-                                                        type="button"
-                                                        name="button"
-                                                        className="btn-big btn_text btn-darkblue-line mg-n"
-                                                      >
-                                                        + Upload
-                                                      </button>
-                                                    </div>
-                                                  </Upload>
-                                                </div>
-                                              </span>
-                                            </li>
-                                          </ul>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </td>
-                              </tr>
-
-                              <tr>
-                                <td>
+                                </th>
+                                <th>
                                   <div className="radio-wrap-type02">
                                     <label className="type02">
                                       <input type="checkbox" />
                                       <span className="type02">줄걸이작업</span>
                                     </label>
                                   </div>
-                                </td>
-                                <td>
-                                  <div className="radio-wrap-type02">
-                                    <label className="type02">
-                                      <input type="checkbox" />
-                                      <span className="type02">기중기(건설기계)</span>
-                                    </label>
-                                    <label className="type02">
-                                      <input type="checkbox" />
-                                      <span className="type02">차량탑재형 이동식 크레인(카고크레인)</span>
-                                    </label>
-                                  </div>
-                                </td>
-                                <td>
-                                  {/* 파일첨부영역 : button */}
-                                  <div className="form-table">
-                                    <div className="form-cell wid50 border-b-no">
-                                      <div className="form-group wid100">
-                                        <div className="box-view-list">
-                                          <ul className="view-list">
-                                            <li className="accumlate-list">
-                                              <label className="t-label">첨부파일</label>
-                                              <span className="text-desc-type1">
-                                                <div className="filebox view">
-                                                  <Upload {...props}>
-                                                    <div className="btn-area" style={{ display: 'none' }}>
-                                                      <button
-                                                        type="button"
-                                                        name="button"
-                                                        className="btn-big btn_text btn-darkblue-line mg-n"
-                                                      >
-                                                        + Upload
-                                                      </button>
-                                                    </div>
-                                                  </Upload>
-                                                </div>
-                                              </span>
-                                            </li>
-                                          </ul>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </td>
-                              </tr>
-
-                              <tr>
-                                <td>
+                                </th>
+                                <th>
                                   <div className="radio-wrap-type02">
                                     <label className="type02">
                                       <input type="checkbox" />
                                       <span className="type02">건설기계 사용작업</span>
                                     </label>
                                   </div>
-                                </td>
-                                <td>
-                                  <div className="radio-wrap-type02">
-                                    <label className="type02">
-                                      <input type="checkbox" />
-                                      <span className="type02">굴착기</span>
-                                    </label>
-                                    <label className="type02">
-                                      <input type="checkbox" />
-                                      <span className="type02">지게차</span>
-                                    </label>
-                                    <label className="type02">
-                                      <input type="checkbox" />
-                                      <span className="type02">덤프트럭</span>
-                                    </label>
-                                    <label className="type02">
-                                      <input type="checkbox" />
-                                      <span className="type02">콘크리트믹서트럭</span>
-                                    </label>
-                                    <label className="type02">
-                                      <input type="checkbox" />
-                                      <span className="type02">이 외</span>
-                                    </label>
-                                  </div>
-                                </td>
-                                <td>
-                                  {/* 파일첨부영역 : button */}
-                                  <div className="form-table">
-                                    <div className="form-cell wid50 border-b-no">
-                                      <div className="form-group wid100">
-                                        <div className="box-view-list">
-                                          <ul className="view-list">
-                                            <li className="accumlate-list">
-                                              <label className="t-label">첨부파일</label>
-                                              <span className="text-desc-type1">
-                                                <div className="filebox view">
-                                                  <Upload {...props}>
-                                                    <div className="btn-area" style={{ display: 'none' }}>
-                                                      <button
-                                                        type="button"
-                                                        name="button"
-                                                        className="btn-big btn_text btn-darkblue-line mg-n"
-                                                      >
-                                                        + Upload
-                                                      </button>
-                                                    </div>
-                                                  </Upload>
-                                                </div>
-                                              </span>
-                                            </li>
-                                          </ul>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </td>
+                                </th>
                               </tr>
-
+                            </thead>
+                            <tbody>
                               <tr>
-                                <td>
-                                  <div className="radio-wrap-type02">
-                                    <label className="type02">
-                                      <input type="checkbox" />
-                                      <span className="type02">밀폐공간</span>
-                                    </label>
+                                <td colSpan={7}>
+                                  {/* 밀폐공간작업선택 - active */}
+                                  <div className="work-ck-list active">
+                                    <table>
+                                      <tr>
+                                        <th>밀폐공간작업</th>
+                                        <td>해당사항없음</td>
+                                        <td></td>
+                                      </tr>
+                                    </table>
                                   </div>
-                                </td>
-                                <td></td>
-                                <td>
-                                  {/* 파일첨부영역 : button */}
-                                  <div className="form-table">
-                                    <div className="form-cell wid50 border-b-no">
-                                      <div className="form-group wid100">
-                                        <div className="box-view-list">
-                                          <ul className="view-list">
-                                            <li className="accumlate-list">
-                                              <label className="t-label">첨부파일</label>
-                                              <span className="text-desc-type1">
-                                                <div className="filebox view">
-                                                  <Upload {...props}>
-                                                    <div className="btn-area" style={{ display: 'none' }}>
-                                                      <button
-                                                        type="button"
-                                                        name="button"
-                                                        className="btn-big btn_text btn-darkblue-line mg-n"
-                                                      >
-                                                        + Upload
-                                                      </button>
-                                                    </div>
-                                                  </Upload>
-                                                </div>
+                                  {/* 전기작업선택 - active */}
+                                  <div className="work-ck-list active">
+                                    <table>
+                                      <tr>
+                                        <th>전기작업</th>
+                                        <td>
+                                          <div className="radio-wrap-type02">
+                                            <label className="type02">
+                                              <input type="checkbox" />
+                                              <span className="type02">
+                                                고압 전기작업 (1,500~7,000V 직류전압 또는 1,000~7,000V 교류전압)
                                               </span>
-                                            </li>
-                                          </ul>
-                                        </div>
-                                      </div>
-                                    </div>
+                                            </label>
+                                          </div>
+                                        </td>
+                                        <td></td>
+                                      </tr>
+                                    </table>
+                                  </div>
+
+                                  {/* 화재위험작업선택 */}
+                                  <div className="work-ck-list">
+                                    <table>
+                                      <tr>
+                                        <th rowSpan={3}>화재위험작업</th>
+                                        <td>
+                                          <div className="radio-wrap-type02">
+                                            <label className="type02">
+                                              <input type="checkbox" />
+                                              <span className="type02">가스 용접·용단작업</span>
+                                            </label>
+                                          </div>
+                                        </td>
+                                        <td></td>
+                                      </tr>
+                                      <tr>
+                                        <td>
+                                          <div className="radio-wrap-type02">
+                                            <label className="type02">
+                                              <input type="checkbox" />
+                                              <span className="type02">전기 용접작업</span>
+                                            </label>
+                                          </div>
+                                        </td>
+                                        <td></td>
+                                      </tr>
+                                      <tr>
+                                        <td>
+                                          <div className="radio-wrap-type02">
+                                            <label className="type02">
+                                              <input type="checkbox" />
+                                              <span className="type02">연삭기 사용작업</span>
+                                            </label>
+                                          </div>
+                                        </td>
+                                        <td></td>
+                                      </tr>
+                                    </table>
+                                  </div>
+
+                                  {/* 고소 작업선택 */}
+                                  <div className="work-ck-list active">
+                                    <table>
+                                      <tr>
+                                        <th rowSpan={4}>고소 작업</th>
+                                        <td>
+                                          <div className="radio-wrap-type02">
+                                            <label className="type02">
+                                              <input type="checkbox" />
+                                              <span className="type02">이동식 사다리</span>
+                                            </label>
+                                          </div>
+                                        </td>
+                                        <td></td>
+                                      </tr>
+                                      <tr>
+                                        <td>
+                                          <div className="radio-wrap-type02">
+                                            <label className="type02">
+                                              <input type="checkbox" />
+                                              <span className="type02">달비계</span>
+                                            </label>
+                                          </div>
+                                        </td>
+                                        <td></td>
+                                      </tr>
+                                      <tr>
+                                        <td>
+                                          <div className="radio-wrap-type02">
+                                            <label className="type02">
+                                              <input type="checkbox" />
+                                              <span className="type02">시저형 고소작업대(렌탈)</span>
+                                            </label>
+                                          </div>
+                                        </td>
+                                        <td>
+                                          {/* 파일첨부영역 : button */}
+                                          <div className="form-table">
+                                            <div className="form-cell wid50 border-b-no">
+                                              <div className="form-group wid100">
+                                                <div className="box-view-list">
+                                                  <ul className="view-list">
+                                                    <li className="accumlate-list">
+                                                      <label className="t-label">첨부파일</label>
+                                                      <span className="text-desc-type1">
+                                                        <div className="filebox view">
+                                                          <Upload {...props}>
+                                                            <div className="btn-area" style={{ display: 'none' }}>
+                                                              <button
+                                                                type="button"
+                                                                name="button"
+                                                                className="btn-big btn_text btn-darkblue-line mg-n"
+                                                              >
+                                                                + Upload
+                                                              </button>
+                                                            </div>
+                                                          </Upload>
+                                                        </div>
+                                                      </span>
+                                                    </li>
+                                                  </ul>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td>
+                                          <div className="radio-wrap-type02">
+                                            <label className="type02">
+                                              <input type="checkbox" />
+                                              <span className="type02">차량탑재형 고소작업대(스카이차)</span>
+                                            </label>
+                                          </div>
+                                        </td>
+                                        <td>
+                                          {/* 파일첨부영역 : button */}
+                                          <div className="form-table">
+                                            <div className="form-cell wid50 border-b-no">
+                                              <div className="form-group wid100">
+                                                <div className="box-view-list">
+                                                  <ul className="view-list">
+                                                    <li className="accumlate-list">
+                                                      <label className="t-label">첨부파일</label>
+                                                      <span className="text-desc-type1">
+                                                        <div className="filebox view">
+                                                          <Upload {...props}>
+                                                            <div className="btn-area" style={{ display: 'none' }}>
+                                                              <button
+                                                                type="button"
+                                                                name="button"
+                                                                className="btn-big btn_text btn-darkblue-line mg-n"
+                                                              >
+                                                                + Upload
+                                                              </button>
+                                                            </div>
+                                                          </Upload>
+                                                        </div>
+                                                      </span>
+                                                    </li>
+                                                  </ul>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </td>
+                                      </tr>
+                                    </table>
+                                  </div>
+
+                                  {/* 줄걸이 작업선택 */}
+                                  <div className="work-ck-list active">
+                                    <table>
+                                      <tr>
+                                        <th rowSpan={2}>줄걸이 작업</th>
+                                        <td>
+                                          <div className="radio-wrap-type02">
+                                            <label className="type02">
+                                              <input type="checkbox" />
+                                              <span className="type02">기중기(건설기계)</span>
+                                            </label>
+                                          </div>
+                                        </td>
+                                        <td>
+                                          {/* 파일첨부영역 : button */}
+                                          <div className="form-table">
+                                            <div className="form-cell wid50 border-b-no">
+                                              <div className="form-group wid100">
+                                                <div className="box-view-list">
+                                                  <ul className="view-list">
+                                                    <li className="accumlate-list">
+                                                      <label className="t-label">첨부파일</label>
+                                                      <span className="text-desc-type1">
+                                                        <div className="filebox view">
+                                                          <Upload {...props}>
+                                                            <div className="btn-area" style={{ display: 'none' }}>
+                                                              <button
+                                                                type="button"
+                                                                name="button"
+                                                                className="btn-big btn_text btn-darkblue-line mg-n"
+                                                              >
+                                                                + Upload
+                                                              </button>
+                                                            </div>
+                                                          </Upload>
+                                                        </div>
+                                                      </span>
+                                                    </li>
+                                                  </ul>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td>
+                                          <div className="radio-wrap-type02">
+                                            <label className="type02">
+                                              <input type="checkbox" />
+                                              <span className="type02">차량탑재형 이동식크레인(카고크레인)</span>
+                                            </label>
+                                          </div>
+                                        </td>
+                                        <td>
+                                          {/* 파일첨부영역 : button */}
+                                          <div className="form-table">
+                                            <div className="form-cell wid50 border-b-no">
+                                              <div className="form-group wid100">
+                                                <div className="box-view-list">
+                                                  <ul className="view-list">
+                                                    <li className="accumlate-list">
+                                                      <label className="t-label">첨부파일</label>
+                                                      <span className="text-desc-type1">
+                                                        <div className="filebox view">
+                                                          <Upload {...props}>
+                                                            <div className="btn-area" style={{ display: 'none' }}>
+                                                              <button
+                                                                type="button"
+                                                                name="button"
+                                                                className="btn-big btn_text btn-darkblue-line mg-n"
+                                                              >
+                                                                + Upload
+                                                              </button>
+                                                            </div>
+                                                          </Upload>
+                                                        </div>
+                                                      </span>
+                                                    </li>
+                                                  </ul>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </td>
+                                      </tr>
+                                    </table>
+                                  </div>
+
+                                  {/* 줄걸이 작업선택 */}
+                                  <div className="work-ck-list active">
+                                    <table>
+                                      <tr>
+                                        <th rowSpan={3}>건설기계 사용 작업</th>
+                                        <td>
+                                          <div className="radio-wrap-type02">
+                                            <label className="type02">
+                                              <input type="checkbox" />
+                                              <span className="type02">굴착기</span>
+                                            </label>
+                                          </div>
+                                        </td>
+                                        <td>
+                                          {/* 파일첨부영역 : button */}
+                                          <div className="form-table">
+                                            <div className="form-cell wid50 border-b-no">
+                                              <div className="form-group wid100">
+                                                <div className="box-view-list">
+                                                  <ul className="view-list">
+                                                    <li className="accumlate-list">
+                                                      <label className="t-label">첨부파일</label>
+                                                      <span className="text-desc-type1">
+                                                        <div className="filebox view">
+                                                          <Upload {...props}>
+                                                            <div className="btn-area" style={{ display: 'none' }}>
+                                                              <button
+                                                                type="button"
+                                                                name="button"
+                                                                className="btn-big btn_text btn-darkblue-line mg-n"
+                                                              >
+                                                                + Upload
+                                                              </button>
+                                                            </div>
+                                                          </Upload>
+                                                        </div>
+                                                      </span>
+                                                    </li>
+                                                  </ul>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td>
+                                          <div className="radio-wrap-type02">
+                                            <label className="type02">
+                                              <input type="checkbox" />
+                                              <span className="type02">지게차</span>
+                                            </label>
+                                          </div>
+                                        </td>
+                                        <td>
+                                          {/* 파일첨부영역 : button */}
+                                          <div className="form-table">
+                                            <div className="form-cell wid50 border-b-no">
+                                              <div className="form-group wid100">
+                                                <div className="box-view-list">
+                                                  <ul className="view-list">
+                                                    <li className="accumlate-list">
+                                                      <label className="t-label">첨부파일</label>
+                                                      <span className="text-desc-type1">
+                                                        <div className="filebox view">
+                                                          <Upload {...props}>
+                                                            <div className="btn-area" style={{ display: 'none' }}>
+                                                              <button
+                                                                type="button"
+                                                                name="button"
+                                                                className="btn-big btn_text btn-darkblue-line mg-n"
+                                                              >
+                                                                + Upload
+                                                              </button>
+                                                            </div>
+                                                          </Upload>
+                                                        </div>
+                                                      </span>
+                                                    </li>
+                                                  </ul>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td>
+                                          <div className="radio-wrap-type02">
+                                            <label className="type02">
+                                              <input type="checkbox" />
+                                              <span className="type02">수기 입력 : </span>
+                                            </label>
+                                          </div>
+                                          <div className="form-cell wid100 border-b-no">
+                                            <div className="form-group wid100">
+                                              <AppTextInput />
+                                            </div>
+                                          </div>
+                                        </td>
+                                        <td>
+                                          {/* 파일첨부영역 : button */}
+                                          <div className="form-table">
+                                            <div className="form-cell wid50 border-b-no">
+                                              <div className="form-group wid100">
+                                                <div className="box-view-list">
+                                                  <ul className="view-list">
+                                                    <li className="accumlate-list">
+                                                      <label className="t-label">첨부파일</label>
+                                                      <span className="text-desc-type1">
+                                                        <div className="filebox view">
+                                                          <Upload {...props}>
+                                                            <div className="btn-area" style={{ display: 'none' }}>
+                                                              <button
+                                                                type="button"
+                                                                name="button"
+                                                                className="btn-big btn_text btn-darkblue-line mg-n"
+                                                              >
+                                                                + Upload
+                                                              </button>
+                                                            </div>
+                                                          </Upload>
+                                                        </div>
+                                                      </span>
+                                                    </li>
+                                                  </ul>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </td>
+                                      </tr>
+                                    </table>
                                   </div>
                                 </td>
                               </tr>
                             </tbody>
                           </table>
+                          <span className="link-txt">
+                            <a href="javascript:void(0);">※ 첨부 파일 안내문 (Link)</a>
+                          </span>
                         </div>
                       </div>
                     </div>

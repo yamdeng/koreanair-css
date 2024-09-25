@@ -26,6 +26,7 @@ import POccupationMu1P11list from '@/components/publish/occupation/POccupationMu
 import POccupationMu1P11list1 from '@/components/publish/occupation/POccupationMu1P11list1';
 import POccupationMu1P11list2 from '@/components/publish/occupation/POccupationMu1P11list2';
 import POccupationMu1P11edit from '@/components/publish/occupation/POccupationMu1P11edit';
+import POccupationMu1P11edit1 from '@/components/publish/occupation/POccupationMu1P11edit1';
 import POccupationMu1P11detail from '@/components/publish/occupation/POccupationMu1P11detail';
 import POccupationMu2P1list from '@/components/publish/occupation/POccupationMu2P1list';
 import POccupationMu2P1list1 from '@/components/publish/occupation/POccupationMu2P1list1';
@@ -277,11 +278,18 @@ OccupationPageInfo.list = [
     success: true,
   },
   {
-    title: '안전경영 > 산업안전보건관리비-목록-리스트',
+    title: '안전경영 > 산업안전보건관리비-계획-리스트',
     Component: POccupationMu1P11list1,
     path: 'POccupationMu1P11list1',
     description: '',
     success: true,
+  },
+  {
+    title: '안전경영 > 산업안전보건관리비-계획-등록',
+    Component: POccupationMu1P11edit1,
+    path: 'POccupationMu1P11edit1',
+    description: '',
+    success: false,
   },
   {
     title: '안전경영 > 산업안전보건관리비-실적-리스트',
@@ -291,18 +299,18 @@ OccupationPageInfo.list = [
     success: true,
   },
   {
-    title: '안전경영 > 산업안전보건관리비-등록',
+    title: '안전경영 > 산업안전보건관리비-실적-등록',
     Component: POccupationMu1P11edit,
     path: 'POccupationMu1P11edit',
     description: '',
-    success: true,
+    success: false,
   },
   {
-    title: '안전경영 > 산업안전보건관리비-상세',
+    title: '안전경영 > 산업안전보건관리비-실적-상세',
     Component: POccupationMu1P11detail,
     path: 'POccupationMu1P11detail',
     description: '',
-    success: true,
+    success: false,
   },
   {
     title: '안전교육 > 교육현황조회-개인별-리스트',
