@@ -6,7 +6,9 @@ import AppTable from '@/components/common/AppTable';
 import AppTextInput from '@/components/common/AppTextInput';
 import { getAllData } from '@/data/grid/example-data-new';
 import { testColumnInfos } from '@/data/grid/table-column';
+import { useState } from 'react';
 import { Upload } from 'antd';
+import AppAutoComplete from '@/components/common/AppAutoComplete';
 const { Dragger } = Upload;
 const props: any = {
   name: 'file',
@@ -64,6 +66,7 @@ const props: any = {
 function AdminEducatDetail() {
   const rowData = getAllData();
   const columns = testColumnInfos;
+  const [firstExpaned, setFirstExpaned] = useState(true);
   return (
     <>
       {/*경로 */}
@@ -188,6 +191,18 @@ function AdminEducatDetail() {
               </div>
             </div>
           </div>
+          <div className="form-cell wid50">
+            <div className="form-group wid100">
+              <div className="box-view-list">
+                <ul className="view-list">
+                  <li className="accumlate-list">
+                    <label className="t-label">사용여부</label>
+                    <span className="text-desc-type1">사용</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
         </div>
         <hr className="line"></hr>
       </div>
@@ -195,11 +210,166 @@ function AdminEducatDetail() {
 
       {/* 하단버튼영역 */}
       <div className="contents-btns">
+        <button className="btn_text text_color_neutral-10 btn_confirm btn-type01">수정</button>
+        <button className="btn_text btn-del btn-type01">삭제</button>
         <button type="button" name="button" className="btn_text btn_list">
           목록
         </button>
       </div>
       {/*//하단버튼영역*/}
+
+      {/* 이력정보 toggle*/}
+      <div className="info-wrap toggle">
+        <dl className={firstExpaned ? 'tg-item active' : 'tg-item'}>
+          <dt onClick={() => setFirstExpaned(!firstExpaned)}>
+            <button type="button" className="btn-tg">
+              {/* toggle 열어지면 active붙임*/}
+              이력정보<span className={firstExpaned ? 'active' : ''}></span>
+            </button>
+          </dt>
+          <dd className="tg-conts" style={{ display: firstExpaned ? '' : 'none' }}>
+            <div className="edit-area edu">
+              <div className="detailForm">
+                {/*검색영역 */}
+                <div className="boxForm">
+                  <div className="form-table">
+                    <div className="form-cell wid30">
+                      <div className="form-group wid100">
+                        <AppSelect label={'이력구분'} />
+                      </div>
+                    </div>
+                    <div className="form-cell wid50">
+                      <div className="form-group wid100">
+                        <AppAutoComplete label={'부서'} />
+                      </div>
+                    </div>
+                    <div className="form-cell wid50">
+                      <div className="form-group wid100">
+                        <AppAutoComplete label={'이름'} />
+                      </div>
+                    </div>
+
+                    <div className="btn-area df">
+                      <button type="button" name="button" className="btn-sm btn_text btn-darkblue-line">
+                        조회
+                      </button>
+                      <button type="button" name="button" className="btn-sm btn_text btn-darkblue-line">
+                        내보내기
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                {/* //검색영역 */}
+                <div className="history-info">
+                  <div className="left-box">
+                    <div className="listtable">
+                      <table className="list-table">
+                        <thead>
+                          <tr>
+                            <th>이력구분</th>
+                            <th>부서</th>
+                            <th>사번</th>
+                            <th>이름</th>
+                            <th>일시</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>
+                              <a href="javascript:void(0);">열람이력</a>
+                            </td>
+                            <td>안전조사팀</td>
+                            <td>1234566</td>
+                            <td>홍길동</td>
+                            <td>2024-07-20 12:34</td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <a href="javascript:void(0);">다운로드이력</a>
+                            </td>
+                            <td>서비스분석팀</td>
+                            <td>1234566</td>
+                            <td>홍길동</td>
+                            <td>2024-07-20 12:34</td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <a href="javascript:void(0);">다운로드이력</a>
+                            </td>
+                            <td>CCM운영팀</td>
+                            <td>1234566</td>
+                            <td>홍길동</td>
+                            <td>2024-07-20 12:34</td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <a href="javascript:void(0);">다운로드이력</a>
+                            </td>
+                            <td>CCM운영팀</td>
+                            <td>1234566</td>
+                            <td>홍길동</td>
+                            <td>2024-07-20 12:34</td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <a href="javascript:void(0);">다운로드이력</a>
+                            </td>
+                            <td>CCM운영팀</td>
+                            <td>1234566</td>
+                            <td>홍길동</td>
+                            <td>2024-07-20 12:34</td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <a href="javascript:void(0);">다운로드이력</a>
+                            </td>
+                            <td>CCM운영팀</td>
+                            <td>1234566</td>
+                            <td>홍길동</td>
+                            <td>2024-07-20 12:34</td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <a href="javascript:void(0);">다운로드이력</a>
+                            </td>
+                            <td>CCM운영팀</td>
+                            <td>1234566</td>
+                            <td>홍길동</td>
+                            <td>2024-07-20 12:34</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                  <div className="right-box">
+                    <div className="list-view">
+                      <table className="list-table">
+                        <thead>
+                          <tr>
+                            <th>업로드 첨부파일</th>
+                            <th>업로드 링크</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>
+                              <a href="javascript:void(0);">업로드첨부파일111.zip</a>
+                            </td>
+                            <td>
+                              <a href="javascript:void(0);">www.naver.com/url/.do</a>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </dd>
+        </dl>
+      </div>
+      {/* //이력정보 toggle*/}
     </>
   );
 }

@@ -567,7 +567,7 @@ AviationPageInfo.list = [
     Component: AdminEducatDetail,
     path: 'AdminEducatDetail',
     description: '',
-    success: false,
+    success: true,
   },
   {
     title: '[09.AMO] AMO페이지는 레이어팝업처리',
