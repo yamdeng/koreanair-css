@@ -771,8 +771,7 @@ input, select{font-family:'KoreanAirSans'}
 
 
 /* 하이라이트 공통 */
-.highlight {
-  font-weight: 700;
-  color: #000;
-  background-color: #f3ff64;
-}
+.highlight{font-weight:700;color:#222;background-color:#f3ff64}
+
+/* 그리드 상단 select 공통 */
+.table-header .btns-area .ant-select-selector{width:8.0rem;text-align:left}

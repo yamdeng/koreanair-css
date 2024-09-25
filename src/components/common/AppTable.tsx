@@ -245,7 +245,7 @@ function AppTable(props) {
           </button>
           <span>
             <AppSelect
-              style={{ height: 30, width: 80, display: hiddenPagination || enablePagination }}
+              style={{ display: hiddenPagination || enablePagination }}
               onChange={(size) => {
                 changePageSize(size);
               }}
