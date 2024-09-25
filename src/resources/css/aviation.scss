@@ -331,7 +331,7 @@
 
 .equipbox{display:flex;width:100%}
 .equipbox .left-box{display:inline-table;vertical-align:top;padding-right:3rem;width:50%;}
-.equipbox .right-box{display:inline-block;width:50%}
+.equipbox .right-box{display:inline-block;width:50%;margin-top:2rem}
 .list-view{
   display:block; 
   width:100%;
@@ -355,6 +355,7 @@
   display:block; 
   width:100%;
   h3{font-size:1.8rem;font-weight:500;color:var(--color-darkblue-100);padding-bottom:1.0rem;padding-top:2rem}
+  .form-group .type7{width:100%}
 }
 .CheckList-Title{display:flex;width:100%;align-items:center;vertical-align:middle}
 

@@ -141,12 +141,12 @@ function SPIEquipList() {
               </div>
             </div>
             <div className="list-dtail">
-              <h3>비고</h3>
-              <div className="form-table line">
+              <h3></h3>
+              <div className="form-table">
                 <div className="form-cell">
                   <div className="form-group wid100">
-                    <div className=" mt10">
-                      <AppTextArea label="Contents" style={{ width: '100%', height: 145 }} errorMessage="" />
+                    <div className="type7">
+                      <AppTextArea label="비고" style={{ width: '100%', height: 200 }} errorMessage="" />
                     </div>
                   </div>
                 </div>
