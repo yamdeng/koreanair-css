@@ -64,6 +64,7 @@ import PRiskdashboard from '@/components/publish/aviation/PRiskdashboard';
 import ChangeList from '@/components/publish/aviation/ChangeList';
 import AdminTopEvent from '@/components/publish/aviation/AdminTopEvent';
 import AdminEducatDetail from '@/components/publish/aviation/AdminEducatDetail';
+import SPIEquipList from '@/components/publish/aviation/SPIEquipList';
 import { fa } from '@faker-js/faker';
 import { fail } from 'assert';
 
@@ -203,7 +204,13 @@ AviationPageInfo.list = [
     description: '',
     success: false,
   },
-
+  {
+    title: '[04.안전보증] 장비관리 > 장비점검 현황',
+    Component: SPIEquipList,
+    path: 'SPIEquipList',
+    description: '',
+    success: false,
+  },
   {
     title: '[04.안전보증] SPI/SPT > 운영 현황> 운항 정보',
     Component: SPIInfo1,
