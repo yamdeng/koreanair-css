@@ -56,7 +56,12 @@ import GSRReportEdit from '@/components/publish/aviation/GSRReportEdit';
 import WorkShopList from '@/components/publish/aviation/WorkShopList';
 import ExcellenceList from '@/components/publish/aviation/ExcellenceList';
 import ExcellenceDetail from '@/components/publish/aviation/ExcellenceDetail';
+import MyAuditPlan from '@/components/publish/aviation/MyAuditPlan';
+import MyAuditPlanDetail from '@/components/publish/aviation/MyAuditPlanDetail';
 import MyAuditConduct from '@/components/publish/aviation/MyAuditConduct';
+import MyAuditConductDetail from '@/components/publish/aviation/MyAuditConductDetail';
+import MyAuditCAR from '@/components/publish/aviation/MyAuditCAR';
+import MyAuditClose from '@/components/publish/aviation/MyAuditClose';
 import AdminRiskMATRIX from '@/components/publish/aviation/AdminRiskMATRIX';
 import AdminRiskMATRIXDetail from '@/components/publish/aviation/AdminRiskMATRIXDetail';
 import PRiskDetail from '@/components/publish/aviation/PRiskDetail';
@@ -389,9 +394,44 @@ AviationPageInfo.list = [
     success: true,
   },
   {
+    title: '[06.AUDIT] MyAuditPlan',
+    Component: MyAuditPlan,
+    path: 'MyAuditPlan',
+    description: '',
+    success: false,
+  },
+  {
+    title: '[06.AUDIT] MyAuditPlanDetail',
+    Component: MyAuditPlanDetail,
+    path: 'MyAuditPlanDetail',
+    description: '',
+    success: false,
+  },
+  {
     title: '[06.AUDIT] MyAuditConduct',
     Component: MyAuditConduct,
     path: 'MyAuditConduct',
+    description: '',
+    success: false,
+  },
+  {
+    title: '[06.AUDIT] MyAuditConductDetail',
+    Component: MyAuditConductDetail,
+    path: 'MyAuditConductDetail',
+    description: '',
+    success: false,
+  },
+  {
+    title: '[06.AUDIT] MyAuditCAR',
+    Component: MyAuditCAR,
+    path: 'MyAuditCAR',
+    description: '',
+    success: false,
+  },
+  {
+    title: '[06.AUDIT] MyAuditClose',
+    Component: MyAuditClose,
+    path: 'MyAuditClose',
     description: '',
     success: false,
   },
