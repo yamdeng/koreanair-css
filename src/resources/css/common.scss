@@ -301,10 +301,10 @@ input, select{font-family:'KoreanAirSans'}
 /*그리드 위버튼*/
 .btns-area{
   > button{margin:0 0.5rem}
-  button + button{margin-left:0.5rem}
-  .btn_text{font-family:'KoreanAirSans';font-weight:700;font-size:1.6rem}
+  button + button{margin-left:0.2rem}
+  .btn_text{font-family:'KoreanAirSans';font-size:1.4rem}
   .btn-darkblue-line{border:solid 0.2rem var(--color-darkblue-100);color:var(--color-darkblue-100)}
-  .btn_confirm{padding:0.6rem 2.8rem;border-radius:99.9rem;background: var(--color-darkblue-100)}
+  .btn_confirm{padding:0.6rem 1.6rem;border-radius:99.9rem;background: var(--color-darkblue-100)}
   .btn-lightblue{border:solid 0.1rem var(--color-lightblue-40);background-color:var(--color-lightblue-40);color:var(--color-darkblue-100)}
   .btn-sm{padding:0.6rem 4.8rem;border-radius:99.9rem;align-items:center}
   .btn_close{padding:0.6rem 2.8rem;border-radius:99.9rem;background: var(--color-neutral-30)}
@@ -324,6 +324,7 @@ input, select{font-family:'KoreanAirSans'}
     }
   }
 }
+.btns-area.gridbtn{min-width:92.0rem;overflow-x:auto;}
 .btns-box{
   > button{margin:0 0.5rem}
   button + button{margin-left:0.5rem}
@@ -390,7 +391,7 @@ input, select{font-family:'KoreanAirSans'}
 
 
 .table-header{display:flex;position:relative;justify-content:end;align-items:center;-webkit-box-align:center;width:100%;line-height:3.5rem;padding-bottom:1rem}
-.table-header .count{font-size:1.5rem;margin-right:auto}
+.table-header .count{font-size:1.5rem;margin-right:auto;padding-left:1.0rem}
 .table-header >.btn-area{position:absolute;top:0;right:1.0rem;display:flex}/*display: flex;추가*/
 .controlArea{/*flex:1;text-align:right*/float:right}
 .controlArea .btn{height:3.5rem;padding:0 2.0rem;font-size:1.6rem;font-weight:700;border:none;color:var(--color-neutral-10);border-radius:99.9rem;opacity:1;transition:opacity 0.1s ease}

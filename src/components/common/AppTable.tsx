@@ -210,10 +210,22 @@ function AppTable(props) {
   return (
     <>
       <div className="table-header" style={{ display: hiddenTableHeader ? 'none' : '' }}>
+        <span>
+          <AppSelect
+            style={{ display: hiddenPagination || enablePagination }}
+            onChange={(size) => {
+              changePageSize(size);
+            }}
+            value={store ? store.pageSize : pageSize}
+            options={pageSizeList.map((size) => {
+              return { value: size, label: size };
+            })}
+          />
+        </span>
         <div className="count">
           Total <strong>{CommonUtil.formatString(gridTotalCountTemplate, store ? totalCount : rowData.length)}</strong>
         </div>
-        <div className="btns-area">
+        <div className="btns-area gridbtn">
           {customButtons.map((info) => {
             const { title, onClick } = info;
             return (
@@ -243,18 +255,6 @@ function AppTable(props) {
           >
             동적 필드 적용
           </button>
-          <span>
-            <AppSelect
-              style={{ display: hiddenPagination || enablePagination }}
-              onChange={(size) => {
-                changePageSize(size);
-              }}
-              value={store ? store.pageSize : pageSize}
-              options={pageSizeList.map((size) => {
-                return { value: size, label: size };
-              })}
-            />
-          </span>
         </div>
       </div>
       <div className={className ? `ag-theme-quartz ${className}` : 'ag-theme-quartz'} style={{ height: tableHeight }}>

@@ -71,6 +71,7 @@ import AdminTopEvent from '@/components/publish/aviation/AdminTopEvent';
 import AdminEducatDetail from '@/components/publish/aviation/AdminEducatDetail';
 import SPIEquipList from '@/components/publish/aviation/SPIEquipList';
 import MyReportList from '@/components/publish/aviation/MyReportList';
+import AdminkeywordList from '@/components/publish/aviation/AdminkeywordList';
 import { fa } from '@faker-js/faker';
 import { fail } from 'assert';
 
@@ -623,6 +624,13 @@ AviationPageInfo.list = [
     path: 'AdminEducatDetail',
     description: '',
     success: true,
+  },
+  {
+    title: '[07.관리자] 보고서키워드 관리',
+    Component: AdminkeywordList,
+    path: 'AdminkeywordList',
+    description: '',
+    success: false,
   },
   {
     title: '[09.AMO] AMO페이지는 레이어팝업처리',
