@@ -36,24 +36,28 @@ function AdminTopEvent() {
       </div>
       {/*경로 */}
       <div className="conts-title">
-        <h2>Top 10 Event 관리</h2>
+        <h2>Top 10 RISK 관리</h2>
       </div>
       {/*탭 */}
-      {/* <div className="menu-tab-nav">
-        <div className="menu-tab">
-          <a href="javascript:void(0);" className="" data-label="HZR 전사 TOP RISK 분석 현황">
-            HZR 전사 TOP RISK 분석 현황
-          </a>
-          <a href="javascript:void(0);" className="active" data-label="TOP EVENT 현황">
-            TOP EVENT 현황
-          </a>
-        </div>
-      </div> */}
+
       {/*검색영역 */}
       <div className="boxForm">
         <div className="form-table">
+          <div className="form-cell Risk">
+            {' '}
+            <div className="flag-tag1">
+              <span className="icon-flag1 txt btn-lightblue">기간선택</span>
+              <span className="icon-flag1 txt btn-lightblue">전체</span>
+              <span className="icon-flag1 txt btn-lightblue">1년</span>
+              <span className="icon-flag1 txt btn-lightblue active">3개월</span>
+              {/* 선택되는 부분은 class명에 active 표시*/}
+            </div>
+          </div>
           <div className="form-cell wid50">
-            <div className="form-group wid0">
+            <div className="form-group wid30">
+              <AppSelect label={'구분'} />
+            </div>
+            <div className="form-group wid50 ml5">
               <div className="df">
                 <div className="date1">
                   <AppDatePicker label={'작성일'} />
@@ -65,6 +69,19 @@ function AdminTopEvent() {
               </div>
             </div>
           </div>
+          {/* <div className="form-cell wid50">
+            <div className="form-group wid0">
+              <div className="df">
+                <div className="date1">
+                  <AppDatePicker label={'작성일'} />
+                </div>
+                <span className="unt">~</span>
+                <div className="date2">
+                  <AppDatePicker label={'작성일'} />
+                </div>
+              </div>
+            </div>
+          </div> */}
           <div className="btn-area">
             <button type="button" name="button" className="btn-sm btn_text btn-darkblue-line">
               재계산
@@ -77,11 +94,208 @@ function AdminTopEvent() {
       </div>
       {/* //검색영역 */}
 
-      {/*그리드영역 */}
-      <div className="">
-        <AppTable rowData={rowData} columns={columns} customButtons={customButtons} />
+      {/*컨텐츠영역 */}
+      <div className="checkbox-wrap">
+        <div className="btns-area">
+          <button type="button" name="button" className="btn_text btn_confirm text_color_neutral-10">
+            저장
+          </button>
+        </div>
+        <div className="checkbox-area">
+          <div className="checklist">
+            <div className="h3">Top Event List by Risk Level Score</div>
+            <div className="listbox">
+              <div className="search-list">
+                <ul className="list">
+                  <li>
+                    <div className="form-cell">
+                      <div className="chk-wrap">
+                        <label>
+                          <input type="checkbox" checked />
+                          <span className="ck-list">Crew schedule</span>
+                        </label>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div className="form-cell">
+                      <div className="chk-wrap">
+                        <label>
+                          <input type="checkbox" />
+                          <span className="ck-list">Flap placard speed over</span>
+                        </label>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div className="form-cell">
+                      <div className="chk-wrap">
+                        <label>
+                          <input type="checkbox" />
+                          <span className="ck-list">Securify irregularity(General)Uh-schedule engine removal</span>
+                        </label>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div className="form-cell">
+                      <div className="chk-wrap">
+                        <label>
+                          <input type="checkbox" />
+                          <span className="ck-list">Securify irregularity(General)Uh-schedule engine removal</span>
+                        </label>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div className="form-cell">
+                      <div className="chk-wrap">
+                        <label>
+                          <input type="checkbox" />
+                          <span className="ck-list">Securify irregularity(General)Uh-schedule engine removal</span>
+                        </label>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div className="form-cell">
+                      <div className="chk-wrap">
+                        <label>
+                          <input type="checkbox" />
+                          <span className="ck-list">Securify irregularity(General)Uh-schedule engine removal</span>
+                        </label>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div className="form-cell">
+                      <div className="chk-wrap">
+                        <label>
+                          <input type="checkbox" />
+                          <span className="ck-list">Securify irregularity(General)Uh-schedule engine removal</span>
+                        </label>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div className="form-cell">
+                <div className="chk-wrap">
+                  <label>
+                    <input type="checkbox" checked />
+                    <span className="ck-list">사용</span>
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="checklist">
+            <div className="h3">Top Event List by Risk Level Score(이상값제거)</div>
+            <div className="listbox">
+              <div className="search-list">
+                <ul className="list">
+                  <li>
+                    <div className="form-cell">
+                      <div className="chk-wrap">
+                        <label>
+                          <input type="checkbox" checked />
+                          <span className="ck-list">Crew schedule</span>
+                        </label>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div className="form-cell">
+                      <div className="chk-wrap">
+                        <label>
+                          <input type="checkbox" />
+                          <span className="ck-list">Flap placard speed over</span>
+                        </label>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div className="form-cell">
+                      <div className="chk-wrap">
+                        <label>
+                          <input type="checkbox" />
+                          <span className="ck-list">Securify irregularity(General)Uh-schedule engine removal</span>
+                        </label>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div className="form-cell">
+                      <div className="chk-wrap">
+                        <label>
+                          <input type="checkbox" />
+                          <span className="ck-list">Flap placard speed over</span>
+                        </label>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div className="form-cell">
+                      <div className="chk-wrap">
+                        <label>
+                          <input type="checkbox" />
+                          <span className="ck-list">Flap placard speed over</span>
+                        </label>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div className="form-cell">
+                      <div className="chk-wrap">
+                        <label>
+                          <input type="checkbox" />
+                          <span className="ck-list">Flap placard speed over</span>
+                        </label>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div className="form-cell">
+                      <div className="chk-wrap">
+                        <label>
+                          <input type="checkbox" />
+                          <span className="ck-list">Flap placard speed over</span>
+                        </label>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div className="form-cell">
+                <div className="chk-wrap">
+                  <label>
+                    <input type="checkbox" checked />
+                    <span className="ck-list">사용</span>
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="info-text">
+          * 주) Top Event List 중 사용을 원하는 항목에 check해 주십시오. Check된 항목이 항공안전 Home의 Top 10 Event로
+          표출됩니다.
+        </div>
+        <div className="checkbox-area mt20">
+          <div className="checklist wid100">
+            <div className="h3">이상값 검출 Event List</div>
+            <div className="listbox">
+              <div className="search-list">
+                <ul className="list">
+                  <div>그리드자리</div>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="info-text">* 주) 분석포함을 선택하면 원래 평가값을 적용하여 재 계산 됩니다.</div>
       </div>
-      {/*//그리드영역 */}
+      {/*//컨텐츠영역 */}
     </>
   );
 }

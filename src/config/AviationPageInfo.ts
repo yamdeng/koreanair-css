@@ -615,7 +615,7 @@ AviationPageInfo.list = [
     Component: AdminTopEvent,
     path: 'AdminTopEvent',
     description: '',
-    success: false,
+    success: true,
   },
   {
     title: '[07.관리자] 교육관리 상세',
