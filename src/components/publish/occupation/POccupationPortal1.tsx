@@ -14,7 +14,11 @@ function POccupationPortal1() {
   }, []);
   return (
     <>
-      <div className="floatingmenu">글쓰기</div>
+      <div className="floatingmenu">
+        <a href="javascript:void(0);" className="ico-write">
+          <span className="hide">글쓰기</span>
+        </a>
+      </div>
       <div className="main-wrap">
         <div className="grid-item">
           <h3>내 태스크</h3>

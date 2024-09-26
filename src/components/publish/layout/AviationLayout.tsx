@@ -180,12 +180,6 @@ export default function AviationLayout() {
             <li>
               <a href="javascript:void(0);">AUDIT</a>
             </li>
-            <li>
-              <a href="javascript:void(0);">AUDIT</a>
-            </li>
-            <li>
-              <a href="javascript:void(0);">AUDIT</a>
-            </li>
           </ul>
         </div>
       </div>
