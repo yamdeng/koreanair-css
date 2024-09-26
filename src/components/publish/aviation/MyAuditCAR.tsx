@@ -146,7 +146,6 @@ function MyAuditCAR() {
           <h3 className="audit-tit">CAR</h3>
           {/*그리드영역 */}
           <div className="mt-10">
-            <h3 className="s-tit">CAR List</h3>
             <AppTable rowData={rowData} columns={columns} customButtons={customButtons} hiddenPagination />
           </div>
           {/*//그리드영역 */}
