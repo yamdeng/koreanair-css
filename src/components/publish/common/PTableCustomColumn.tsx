@@ -45,12 +45,12 @@ function CustomColumnComponent3() {
               24-LSA-0401-BE03 / 신상훈
             </a>
           </li>
-          <li>
+          {/* <li>
             <a href="javascript:void(0);">24-LSA-0401-BE01 / -</a>
           </li>
           <li>
             <a href="javascript:void(0);">24-LSA-0401-BE02 / 안용성</a>
-          </li>
+          </li> */}
         </ul>
       </div>
     </div>
@@ -66,14 +66,14 @@ function CustomColumnComponent4() {
               2024-06-25
             </a>
           </li>
-          <li>
+          {/* <li>
             <a href="javascript:void(0);">-</a>
           </li>
           <li>
             <a href="javascript:void(0);" className="text-red">
               2024-06-26 (D+6)
             </a>
-          </li>
+          </li> */}
         </ul>
       </div>
     </div>

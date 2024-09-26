@@ -72,7 +72,8 @@ import AdminEducatDetail from '@/components/publish/aviation/AdminEducatDetail';
 import SPIEquipList from '@/components/publish/aviation/SPIEquipList';
 import MyReportList from '@/components/publish/aviation/MyReportList';
 import AdminkeywordList from '@/components/publish/aviation/AdminkeywordList';
-import { fa } from '@faker-js/faker';
+import AdminkeywordEventList from '@/components/publish/aviation/AdminkeywordEventList';
+import { fa, fakerLV } from '@faker-js/faker';
 import { fail } from 'assert';
 
 const AviationPageInfo: any = {};
@@ -626,11 +627,25 @@ AviationPageInfo.list = [
     success: true,
   },
   {
-    title: '[07.관리자] 보고서키워드 관리',
+    title: '[07.관리자] 보고서기한관리',
     Component: AdminkeywordList,
     path: 'AdminkeywordList',
     description: '',
     success: false,
+  },
+  {
+    title: '[07.관리자] 보고서키워드 관리 > 키워드',
+    Component: AdminkeywordList,
+    path: 'AdminkeywordList',
+    description: '',
+    success: true,
+  },
+  {
+    title: '[07.관리자] 보고서키워드 관리 > 이벤트',
+    Component: AdminkeywordEventList,
+    path: 'AdminkeywordEventList',
+    description: '',
+    success: true,
   },
   {
     title: '[09.AMO] AMO페이지는 레이어팝업처리',

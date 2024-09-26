@@ -52,6 +52,7 @@ import SafetyAdvModal from '@/components/publish/modal/SafetyAdvModal';
 import SafetyActionModal from '@/components/publish/modal/SafetyActionModal';
 import SafetyActionEditModal from '@/components/publish/modal/SafetyActionEditModal';
 import SafetyAdvEditModal from '@/components/publish/modal/SafetyAdvEditModal';
+import MainNoticeModal from '@/components/publish/modal/MainNoticeModal';
 
 const ModalPageInfo: any = {};
 
@@ -154,7 +155,13 @@ ModalPageInfo.list = [
     description: '',
     success: true,
   },
-
+  {
+    title: '[항공안전>메인] 공지사항',
+    Component: MainNoticeModal,
+    path: 'MainNoticeModal',
+    description: '',
+    success: false,
+  },
   {
     title: '[항공안전>03.안전위험관리] 보고서분석 > 반려사유 팝업창',
     Component: PReportListModal,
