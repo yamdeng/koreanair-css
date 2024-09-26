@@ -372,6 +372,7 @@
   .equipbox{display:block}
   .equipbox .left-box{width:100%;padding-right:0}
   .equipbox .right-box{display:block;width:100%;margin-top:1rem}
+
 }
 
 
@@ -653,6 +654,9 @@
   .equipbox{display:block}
   .equipbox .left-box{width:100%;padding-right:0}
   .equipbox .right-box{display:block;width:100%;margin-top:1rem}
+
+
+  .btns-area.gridbtn > button {border-radius: 99.9rem !important; position:absolute; right: 0; top: 0;}
 }
 
 
@@ -712,5 +716,7 @@
 
   /*항공안전 메인*/
   .av-main-wrap .grid-item .grid-group:nth-of-type(1) .head-top .form-cell > .radio-wrap{width:40%}
+
+
 
 }
