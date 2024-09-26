@@ -113,7 +113,6 @@ function MyAuditConduct() {
           </div>
         </div>
         <div className="myaudit-contents">
-          <div className="audit-box"></div>
           <h3 className="audit-tit">Conduct</h3>
           <div className="editbox ">
             <div className="form-table">
