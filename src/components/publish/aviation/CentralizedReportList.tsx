@@ -48,7 +48,7 @@ function CentralizedReportList() {
               </div>
             </div>
             <div className="form-cell wid50">
-              <div className="form-group va-t ant-input wid100">
+              <div className="form-group va-t ant-input wid100 h4">
                 <span className="ant-input-group-addon1">KE</span>
                 <div className="ant-input-group-addon1-input wid50">
                   {/*편명 */}
@@ -57,7 +57,7 @@ function CentralizedReportList() {
               </div>
             </div>
             <div className="form-cell wid50">
-              <div className="form-group va-t ant-input wid100">
+              <div className="form-group va-t ant-input wid100 h4">
                 <span className="ant-input-group-addon1">HL</span>
                 <div className="ant-input-group-addon1-input wid50">
                   {/*등록부호 */}
