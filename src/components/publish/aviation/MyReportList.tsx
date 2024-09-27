@@ -10,6 +10,14 @@ import AppAutoComplete from '@/components/common/AppAutoComplete';
 function MyReportList() {
   const rowData = getAllData();
   const columns = testColumnInfos;
+  const customButtons = [
+    {
+      title: '신규',
+      onClick: () => {
+        alert('신규');
+      },
+    },
+  ];
 
   return (
     <>
@@ -38,7 +46,7 @@ function MyReportList() {
           <div className="form-table">
             <div className="form-cell wid50">
               <div className="form-group wid100">
-                <AppTextInput label={'select'} />
+                <AppSelect label={'보고서종류'} />
               </div>
             </div>
             <div className="form-cell wid50">
@@ -54,21 +62,16 @@ function MyReportList() {
                 </div>
               </div>
             </div>
+            <div className="form-cell wid50">
+              <div className="form-group wid100">
+                <AppSelect label={'상태'} />
+              </div>
+            </div>
           </div>
           <div className="form-table">
             <div className="form-cell wid50">
               <div className="form-group wid100">
-                <AppSelect label={'Event Class'} />
-              </div>
-            </div>
-            <div className="form-cell wid50">
-              <div className="form-group wid100">
-                <AppAutoComplete label={'발생공항'} />
-              </div>
-            </div>
-            <div className="form-cell wid50">
-              <div className="form-group wid100">
-                <AppSelect label={'발생단계'} />
+                <AppTextInput label={'제목'} />
               </div>
             </div>
             <div className="form-cell wid50">
@@ -143,7 +146,7 @@ function MyReportList() {
 
       {/*그리드영역 */}
       <div className="">
-        <AppTable rowData={rowData} columns={columns} useColumnDynamicSetting />
+        <AppTable rowData={rowData} columns={columns} customButtons={customButtons} />
       </div>
       {/*//그리드영역 */}
     </>

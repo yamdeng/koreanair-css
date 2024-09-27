@@ -174,6 +174,12 @@ function TestModal(props) {
             이전
           </button>
           <button className="btn_text text_color_neutral-10 btn_confirm" onClick={closeModal}>
+            이전
+          </button>
+          <button className="btn_text text_color_neutral-10 btn_confirm" onClick={closeModal}>
+            다음
+          </button>
+          <button className="btn_text text_color_neutral-90 btn_close" onClick={closeModal}>
             다음
           </button>
           <button className="btn_text text_color_neutral-90 btn_close" onClick={closeModal}>

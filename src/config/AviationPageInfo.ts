@@ -172,6 +172,20 @@ AviationPageInfo.list = [
     success: false,
   },
   {
+    title: '[03.안전위험관리] 결제관리 > 결제관리 리스트',
+    Component: ReportList,
+    path: 'ReportList',
+    description: '',
+    success: false,
+  },
+  {
+    title: '[03.안전위험관리] 결제관리 > 결제관리 상세',
+    Component: ReportList,
+    path: 'ReportList',
+    description: '',
+    success: false,
+  },
+  {
     title: '[03.안전위험관리] 보고서분석 > 리스트',
     Component: ReportList,
     path: 'ReportList',
