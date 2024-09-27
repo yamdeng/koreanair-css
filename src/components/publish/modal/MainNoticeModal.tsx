@@ -176,6 +176,9 @@ function TestModal(props) {
           <button className="btn_text text_color_neutral-10 btn_confirm" onClick={closeModal}>
             다음
           </button>
+          <button className="btn_text text_color_neutral-90 btn_close" onClick={closeModal}>
+            닫기
+          </button>
         </div>
         <span className="pop_close" onClick={closeModal}>
           X

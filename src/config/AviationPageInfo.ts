@@ -227,6 +227,20 @@ AviationPageInfo.list = [
     success: true,
   },
   {
+    title: '[04.안전보증] 변화관리 > 변화관리 List',
+    Component: SPIEquipList,
+    path: 'SPIEquipList',
+    description: '',
+    success: false,
+  },
+  {
+    title: '[04.안전보증] 변화관리 > 변화관리 Edit',
+    Component: SPIEquipList,
+    path: 'SPIEquipList',
+    description: '',
+    success: false,
+  },
+  {
     title: '[04.안전보증] SPI/SPT > 운영 현황> 운항 정보',
     Component: SPIInfo1,
     path: 'SPIInfo1',
