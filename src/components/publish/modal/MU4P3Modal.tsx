@@ -157,7 +157,7 @@ function ChecklistModal(props) {
       isOpen={isOpen}
       ariaHideApp={false}
       overlayClassName={'alert-modal-overlay'}
-      className={'alert-modal-content'}
+      className={'list-common-modal-content'}
       onRequestClose={() => {
         closeModal();
       }}
@@ -165,7 +165,7 @@ function ChecklistModal(props) {
       <div className="popup-container">
         <h3 className="pop_title">첨부파일 안내문</h3>
         <span className="txt-guide">※ 모든 증빙자료는 신청일을 기준으로 유효한 상태여야함</span>
-        <div className="pop_cont">
+        <div className="pop_cont pb_0">
           <div className="editbox">
             <table className="pop-img-table">
               <tr>
@@ -263,7 +263,7 @@ function ChecklistModal(props) {
           </div>
         </div>
 
-        <div className="pop_btns">
+        <div className="pop_btns mt-20">
           <button className="btn_text text_color_neutral-10 btn_confirm" onClick={closeModal}>
             확인
           </button>
