@@ -67,6 +67,9 @@ function MyAuditCAR() {
   const [inputValue, setInputValue] = useState('');
   const rowData = getAllData();
   const columns = testColumnInfos;
+  const [Finding, setFinding] = useState(true);
+  const [Observation, setObservation] = useState(true);
+
   const customButtons = [
     {
       title: 'ApprReq',
@@ -145,10 +148,44 @@ function MyAuditCAR() {
         <div className="myaudit-contents">
           <h3 className="audit-tit">CAR</h3>
           {/*그리드영역 */}
-          <div className="mt-10">
+          <div className="mt-10 mb-20">
             <AppTable rowData={rowData} columns={columns} customButtons={customButtons} hiddenPagination />
           </div>
           {/*//그리드영역 */}
+          <div className="info-wrap toggle">
+            <dl className="{firstExpaned ? 'tg-item active' : 'tg-item'}">
+              {/* 비행정보 */}
+              {/* toggle 선택되면  열어지면 active붙임*/}
+              <dt onClick={() => setFinding(!Finding)}>
+                <button type="button" className="btn-tg">
+                  Finding<span className={Finding ? 'active' : ''}></span>
+                </button>
+              </dt>
+              <dd className="tg-conts" style={{ display: Finding ? '' : 'none' }}>
+                {/* 입력영역 */}
+                <div className="editbox edit-audit-bg">fdsafdsafdsafds</div>
+                {/*//입력영역*/}
+              </dd>
+            </dl>
+
+            <dl className="{firstExpaned ? 'tg-item active' : 'tg-item'}">
+              {/* 비행정보 */}
+              {/* toggle 선택되면  열어지면 active붙임*/}
+              <dt onClick={() => setObservation(!Observation)}>
+                <button type="button" className="btn-tg">
+                  Observation<span className={Observation ? 'active' : ''}></span>
+                </button>
+              </dt>
+              <dd className="tg-conts" style={{ display: Observation ? '' : 'none' }}></dd>
+            </dl>
+            {/*추가버튼*/}
+            <div className="btn-area mt-15 mb-10 ta-c">
+              <button type="button" name="button" className="btn-sm btn_text btn-darkblue-line">
+                + Add Questionnaire
+              </button>
+            </div>
+            {/*//추가버튼*/}
+          </div>
           {/* 하단버튼영역 */}
           <div className="contents-btns">
             <button className="btn_text text_color_neutral-10 btn_confirm ">인쇄</button>

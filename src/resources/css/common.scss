@@ -87,6 +87,24 @@ body * {
 .mt15{margin-top:1.5rem !important}
 .mb5{margin-bottom:0.5rem !important}
 
+.pd-t0 {padding-top: 0 !important;}
+.pd-l0 {padding-left: 0 !important;}
+.mgn-0 {margin: 0 !important;}
+.mb-0 {margin-bottom: 0 !important;}
+.mb-10 {margin-bottom: 1.0rem;}
+.mb-15 {margin-bottom: 1.5rem;}
+.mb-20 {margin-bottom: 2.0rem;}
+.mt-10 {margin-top: 1.0rem;}
+.mt-15 {margin-top: 1.5rem;}
+.mt-20 {margin-top: 2.0rem;}
+.mt-30 {margin-top: 3.0rem;}
+.ml-10 {margin-left: 1.0rem;}
+.pb_0 {padding-bottom: 0 !important;}
+.pb_10 {padding-bottom: 1.0rem;}
+.pt-20 {padding-top: 2.0rem;}
+.sm-txt {display: block; padding: 0.5rem 0 0; font-size: 1.2rem;}
+.ta-c {text-align: center !important;}
+
 button, input, textarea, select, label{font-family:'KoreanAirSans';font-weight:400}
 .df{display:flex;/*width:100%*/}
 .unt{line-height:3.5rem;align-items:center;padding:0 0.2rem}
@@ -756,22 +774,7 @@ input, select{font-family:'KoreanAirSans'}
 .left-box {display: inline-block; width: 32.0rem; vertical-align: top; padding-right: 3.0rem;}
 .left-box .tree-box {height: 100vh; width: 100%; overflow: auto; background: var(--color-lightblue-10); border-radius: 0.8rem; padding: 2.0rem 01.0rem;}
 .right-box {display: inline-block; height: 100vh; width: calc(100% - 32.0rem); vertical-align: top;}
-.pd-t0 {padding-top: 0 !important;}
-.pd-l0 {padding-left: 0 !important;}
-.mgn-0 {margin: 0 !important;}
-.mb-0 {margin-bottom: 0 !important;}
-.mb-10 {margin-bottom: 1.0rem;}
-.mb-15 {margin-bottom: 1.5rem;}
-.mb-20 {margin-bottom: 2.0rem;}
-.mt-10 {margin-top: 1.0rem;}
-.mt-15 {margin-top: 1.5rem;}
-.mt-20 {margin-top: 2.0rem;}
-.mt-30 {margin-top: 3.0rem;}
-.ml-10 {margin-left: 1.0rem;}
-.pb_0 {padding-bottom: 0 !important;}
-.pb_10 {padding-bottom: 1.0rem;}
-.pt-20 {padding-top: 2.0rem;}
-.sm-txt {display: block; padding: 0.5rem 0 0; font-size: 1.2rem;}
+
 
 /*버튼*/
 .btn-togo{border:solid 0.1rem var(--color-darkblue-100);border-radius:0.31rem;font-size:1.4rem;color:var(--color-darkblue-100)}
