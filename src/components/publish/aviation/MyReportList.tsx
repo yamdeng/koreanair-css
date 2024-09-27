@@ -101,47 +101,68 @@ function MyReportList() {
       </div>
       {/* //검색영역 */}
 
-      {/* 리포트 프로세스 */}
-      <div className="c-step-wrap">
-        <ol className="c-step-list-type-5">
-          {/* 선택된 class명에 active */}
-          <li className="active">
-            <a href="javascript:void(0);" data-label="작성">
-              <p className="info-title active">
-                {/* 선택된 class명에 active */}
-                <span className="hide">1단계</span>
-                작성
-              </p>
-            </a>
-            <span className="after-arrow"></span>
-          </li>
-          <li className="">
-            <a href="javascript:void(0);" data-label="결제">
-              <p className="info-title ">
-                <span className="hide">2단계</span>
-                결제
-              </p>
-            </a>
-            <span className="after-arrow"></span>
-          </li>
-          <li>
-            <a href="javascript:void(0);" data-label="안전권고">
-              <p className="info-title">
-                <span className="hide">3단계</span>
-                안전권고
-              </p>
-            </a>
-            <span className="after-arrow"></span>
-          </li>
-          <li>
-            <a href="javascript:void(0);" data-label="종결">
-              <p className="info-title">
-                <span className="hide">4단계</span>
-                종결
-              </p>
-            </a>
-          </li>
-        </ol>
+      {/* 마이리포트 프로세스 */}
+      <div className="process-box">
+        <div className="c-step-wrap">
+          <ol className="c-step-list-type-5">
+            <li>
+              <a href="javascript:void(0);" data-label="작성">
+                <p className="info-title active">
+                  <span className="hide">1단계</span>
+                  작성중(<strong>1</strong>)건
+                </p>
+              </a>
+              <span className="after-arrow"></span>
+            </li>
+            <li className="">
+              <a href="javascript:void(0);" data-label="결제">
+                <p className="info-title active">
+                  <span className="hide">2단계</span>
+                  제출완료(<strong>0</strong>)건
+                </p>
+              </a>
+              <span className="after-arrow"></span>
+            </li>
+            <li>
+              <a href="javascript:void(0);" data-label="안전권고">
+                <p className="info-title active">
+                  <span className="hide">3단계</span>
+                  접수중(<strong>0</strong>)건
+                </p>
+              </a>
+              <span className="after-arrow"></span>
+            </li>
+            <li>
+              <a href="javascript:void(0);" data-label="안전권고">
+                <p className="info-title active">
+                  <span className="hide">4단계</span>
+                  처리중(<strong>0</strong>)건
+                </p>
+              </a>
+              <span className="after-arrow"></span>
+            </li>
+            <li>
+              <a href="javascript:void(0);" data-label="종결">
+                <p className="info-title active">
+                  <span className="hide">5단계</span>
+                  종결(<strong>0</strong>)건
+                </p>
+              </a>
+            </li>
+          </ol>
+        </div>
+        <div className="c-step-wrap">
+          <ol className="c-step-list-type-0">
+            <li>
+              <a href="javascript:void(0);" data-label="이관">
+                <p className="info-title active">
+                  <span className=""></span>
+                  이관(<strong>0</strong>)건
+                </p>
+              </a>
+            </li>
+          </ol>
+        </div>
       </div>
 
       {/*그리드영역 */}

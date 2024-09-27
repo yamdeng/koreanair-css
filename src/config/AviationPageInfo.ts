@@ -99,7 +99,7 @@ AviationPageInfo.list = [
     Component: MyReportList,
     path: 'MyReportList',
     description: '',
-    success: false,
+    success: true,
   },
   {
     title: '[02.안정정책] 안전정책 > 매뉴얼',
