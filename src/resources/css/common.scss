@@ -106,6 +106,7 @@ body * {
 .sm-txt {display: block; padding: 0.5rem 0 0; font-size: 1.2rem;}
 .ta-c {text-align: center !important;}
 .ta-r {text-align: right !important;}
+.b-t-0 {border-top: 0 !important;}
 
 button, input, textarea, select, label{font-family:'KoreanAirSans';font-weight:400}
 .df{display:flex;/*width:100%*/}
@@ -572,7 +573,7 @@ input, select{font-family:'KoreanAirSans'}
 .form-group .date1, .form-group .date2{position:relative; width: 100%;}
 .form-group .date1, .form-group .date3{position:relative; width: 100%;}
 .form-group .f-label{display:block;position:absolute;left:1.0rem;top:0.9rem;background:var(--color-neutral-10);border-radius:99.9rem;padding:0 0.8rem;line-height:1.3em;font-size:1.4rem;transition: all .2s ease}
-.form-tag{position:relative;height:4rem;border:0.1rem solid var(--color-neutral-40);border-radius:0.5rem;padding:0 1.0rem;width:100%;box-sizing:border-box;color:var(--color-neutral-80);background:var(--color-neutral-10);outline:none!important;text-indent:1.0rem}
+.form-tag{position:relative;height:4rem;border:0.1rem solid var(--color-neutral-40);border-radius:0.5rem;padding:0 1.0rem;width:100%;box-sizing:border-box;color:var(--color-neutral-80);background:var(--color-neutral-10);outline:none!important;}
 // .form-tag:not([value=""]){border:0.1rem solid var(--color-neutral-40)}
 .form-tag:focus{border:0.1rem solid var(--color-mblue-100) !important;color:var(--color-mblue-100) !important}
 .form-group .btnclear {
