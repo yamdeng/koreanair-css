@@ -114,7 +114,7 @@ function TestModal(props) {
     >
       <div className="popup-container">
         <h3 className="pop_title">e-GYRO 2024 (유사 호출부호로인한 교신 오류)</h3>
-        <div className="pop_cont">
+        <div className="pop_cont notice">
           <div className="editbox">
             <div className="form-table">
               <div className="form-cell wid50">

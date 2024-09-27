@@ -120,8 +120,16 @@
 
 
 /*우측레이어*/
-.RightLayer-Wrap{border:solid 1px red}
-
+.RightLayer-Wrap{
+  width:100%;transition:transform .3s cubic-bezier(.23,1,.32,1);
+  .drawer-overlay{position:fixed;top:0;left:0;width:100%;height:100%;background-color:rgba(0, 0, 0, .45);opacity:1;transition:none;animation: antdDrawerFadeIn .3s cubic-bezier(.23,1,.32,1);pointer-events:auto}
+  .right-drawer-content-wrapper{position:absolute;top:0;right:0;width:40.0rem;height:100%;box-shadow:-6px 0 16px -8px rgba(0, 0, 0, .08), -9px 0 28px 0 rgba(0, 0, 0, .05), -12px 0 48px 16px rgba(0, 0, 0, .03)}
+  .right-drawer-content{position:relative;width:100%;height:100%;z-index:1;overflow:auto;background-color:#f9f9f9;background-clip:padding-box;border:0}
+  .right-drawer-box{display:flex;flex-flow:column nowrap;width:100%;height:100%}
+  .right-drawer-header{position:relative;display:flex;align-items:center;justify-content:space-between;padding:1.6rem 2.4rem;color: rgba(0, 0, 0, .85);background:var( --color-neutral-10);border-bottom:0.1rem solid #f0f0f0;/*border-radius: 2px 2px 0 0;*/}
+  .right-drawer-header .right-drawer-title{flex:1 1;font-size:1.8rem;color:var(--color-darkblue-100);font-weight:normal;padding-bottom:1rem}
+  .right-drawer-body{flex-grow:1;padding:2.4rem;overflow:auto;font-size:1.4rem;line-height:1.5715;word-wrap:break-word}
+}
 /*지표정보*/
 .Status-area{display:flex;display:inline-table;width:100%}
 .Status-chart{display:flex;gap:0 2.0rem;width:100%}
