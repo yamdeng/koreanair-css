@@ -146,7 +146,7 @@ ModalPageInfo.list = [
     Component: PRightCommentLayer,
     path: 'PRightCommentLayer',
     description: '',
-    success: false,
+    success: true,
   },
   {
     title: '컬럼 저장 목록 모달',
