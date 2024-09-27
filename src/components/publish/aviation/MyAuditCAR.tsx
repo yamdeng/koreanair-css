@@ -226,7 +226,26 @@ function MyAuditCAR() {
                                   <div className="form-table">
                                     <div className="form-cell wid50">
                                       <div className="form-group wid100">
-                                        <AppAutoComplete label={'부서'} />
+                                        <AppSelect label={'Audited By'} required />
+                                      </div>
+                                    </div>
+                                    <div className="form-cell wid50">
+                                      <div className="form-group wid100">
+                                        <AppSelect label={'Flight Phase'} required />
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div className="form-table">
+                                    <div className="form-cell wid50">
+                                      <div className="form-group wid100">
+                                        <AppTextInput label="Finding Title" required />
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div className="form-table">
+                                    <div className="form-cell wid50">
+                                      <div className="form-group wid100">
+                                        <button>Select</button>
                                       </div>
                                     </div>
                                   </div>
