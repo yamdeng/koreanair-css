@@ -646,7 +646,7 @@ AviationPageInfo.list = [
     Component: AdminReportDateList,
     path: 'AdminReportDateList',
     description: '',
-    success: false,
+    success: true,
   },
   {
     title: '[07.관리자] 보고서키워드 관리 > 키워드',
