@@ -1,8 +1,63 @@
 import { Tree } from 'antd';
 import { useState } from 'react';
 import Modal from 'react-modal';
+import { Editor } from '@toast-ui/react-editor';
 import AppSelect from '@/components/common/AppSelect';
 
+const { Dragger } = Upload;
+import { Upload } from 'antd';
+const props: any = {
+  name: 'file',
+  multiple: true,
+  defaultFileList: [
+    {
+      uid: '1',
+      name: 'xxx.png',
+      // status: 'uploading',
+      url: 'http://www.baidu.com/xxx.png',
+      percent: 33,
+    },
+    {
+      uid: '2',
+      name: 'yyy.png',
+      status: 'done',
+      url: 'http://www.baidu.com/yyy.png',
+    },
+    {
+      uid: '3',
+      name: 'zzz.png',
+      status: 'error',
+      response: 'Server Error 500',
+      // custom error message to show
+      url: 'http://www.baidu.com/zzz.png',
+    },
+  ],
+  action: 'https://660d2bd96ddfa2943b33731c.mockapi.io/api/upload',
+
+  onChange(info) {
+    const { status } = info.file;
+    if (status !== 'uploading') {
+      console.log(info.file, info.fileList);
+    }
+    if (status === 'done') {
+      alert(`${info.file.name} file uploaded successfully.`);
+    } else if (status === 'error') {
+      alert(`${info.file.name} file upload failed.`);
+    }
+  },
+
+  onRemove(file) {
+    return false;
+  },
+
+  onPreview(file) {
+    return false;
+  },
+
+  onDrop(e) {
+    console.log('Dropped files', e.dataTransfer.files);
+  },
+};
 function TestModal(props) {
   const { isOpen, closeModal } = props;
   const [inputValue, setInputValue] = useState('');
@@ -59,10 +114,67 @@ function TestModal(props) {
     >
       <div className="popup-container">
         <h3 className="pop_title">e-GYRO 2024 (유사 호출부호로인한 교신 오류)</h3>
-        <div className="user-checkbox"></div>
+        <div className="pop_cont">
+          <div className="editbox">
+            <div className="form-table">
+              <div className="form-cell wid50">
+                <div className="group-box-wrap1 wid100 ">
+                  {/*개요 */}
+                  <Editor
+                    hideModeSwitch={true}
+                    initialEditType="wysiwyg"
+                    previewStyle="vertical"
+                    // initialValue={initValue}
+                    height={'300px'}
+                    // onChange={() => {}}
+                    usageStatistics={false}
+                    customHTMLSanitizer={(html) => {
+                      return html;
+                    }}
+                    viewer={true}
+                    autofocus={false}
+                    customHTMLRenderer={{
+                      htmlBlock: {
+                        table(node) {
+                          return [
+                            { type: 'openTag', tagName: 'table', outerNewLine: true, attributes: node.attrs },
+                            { type: 'html', content: node.childrenHTML },
+                            { type: 'closeTag', tagName: 'table', outerNewLine: true },
+                          ];
+                        },
+                      },
+                    }}
+                  />
+                </div>
+              </div>
+            </div>
+            <div className="form-table">
+              <div className="form-cell wid50">
+                <div className="form-group wid100">
+                  {/* 파일첨부영역 : drag */}
+                  <div className="filebox error">
+                    <Dragger {...props}>
+                      <p className="ant-upload-text ">+ 이 곳을 클릭하거나 마우스로 업로드할 파일을 끌어서 놓으세요.</p>
+                    </Dragger>
+                    <label htmlFor="file" className="file-label">
+                      첨부파일 <span className="required">*</span>
+                    </label>
+                  </div>
+                  <span className="errorText">fileerror</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
         <div className="pop_btns">
+          <button className="btn_text text_color_neutral-90 btn_close" onClick={closeModal}>
+            오늘 하루 팝업 안보기
+          </button>
+          <button className="btn_text text_color_neutral-90 btn_close" onClick={closeModal}>
+            이전
+          </button>
           <button className="btn_text text_color_neutral-10 btn_confirm" onClick={closeModal}>
-            적용
+            다음
           </button>
         </div>
         <span className="pop_close" onClick={closeModal}>
