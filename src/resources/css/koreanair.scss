@@ -1010,6 +1010,13 @@
       }
     }
     .edit-audit-bg {position:relative;width:100%;background-color:var( --color-neutral-20);padding: 2.0rem  1.5rem; border-top: 0;}
+    .audit-car-tit {font-size: 1.8rem; font-weight: 700; line-height: 150%;}
+    .audit-car-tit span {display: inline-block; font-size: 1.6rem; font-weight: 500;}
+    .audit-car-tit span::before {content: "l"; padding: 0 1.0rem;}
+    .audit-carconts li {margin: 1.0rem 0;}
+    .audit-carconts li:nth-of-type(1) {font-size: 1.6rem; font-weight: 700; margin-top: 2.0rem;}
+    .audit-carconts li:nth-of-type(2) {font-size: 1.4rem; font-weight: 500;}
+    .audit-carconts li:nth-of-type(3) {font-size: 1.4rem; font-weight: 500; margin-top: 2.0rem;}
   }
 }
 
@@ -1020,6 +1027,7 @@
   padding-bottom: 1.0rem;
 }
 .audit-tit {font-size:1.8rem;font-weight:700;padding-bottom: 1.0rem;}
+
 
 .number-r{position:relative;display:flex; width: 100%;}
 .number-r .title{display:inline-block;line-height:4rem;padding-right:1rem;font-size:1.6rem;font-weight:700}

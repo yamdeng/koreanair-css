@@ -7,6 +7,12 @@ import AppSelect from '@/components/common/AppSelect';
 import AppTextArea from '@/components/common/AppTextArea';
 import { Image, Upload } from 'antd';
 import { PlusOutlined } from '@ant-design/icons';
+import Image001 from '@/resources/images/img001.png';
+import Image002 from '@/resources/images/img002.png';
+import Image003 from '@/resources/images/img003.png';
+import Image004 from '@/resources/images/img004.png';
+import Image005 from '@/resources/images/img005.png';
+import Image006 from '@/resources/images/img006.png';
 
 const options = [
   { value: 'chocolate', label: 'Chocolate Chocolate Chocolate ChocolateChocolateChocolateChocolate' },
@@ -165,7 +171,9 @@ function ChecklistModal(props) {
               <tr>
                 <td>
                   <ul>
-                    <li>이미지</li>
+                    <li>
+                      <img src={Image001} className="pop-img-size" alt="차량탑재형 고소작업대 (스카이)" />
+                    </li>
                     <li>차량탑재형 고소작업대 (스카이)</li>
                   </ul>
                 </td>
@@ -182,7 +190,9 @@ function ChecklistModal(props) {
               <tr>
                 <td>
                   <ul>
-                    <li>이미지</li>
+                    <li>
+                      <img src={Image002} className="pop-img-size" alt="시저형 고소작업대 (렌탈)" />
+                    </li>
                     <li>시저형 고소작업대 (렌탈)</li>
                   </ul>
                 </td>
@@ -196,8 +206,10 @@ function ChecklistModal(props) {
               <tr>
                 <td>
                   <ul>
-                    <li>이미지</li>
-                    <li>이동식 크레인 (카고크레인)</li>
+                    <li>
+                      <img src={Image003} className="pop-img-size" alt="이동식 크레인 (카고크레인)" />
+                    </li>
+                    <li className="img-tit">이동식 크레인 (카고크레인)</li>
                   </ul>
                 </td>
                 <td>
@@ -213,7 +225,9 @@ function ChecklistModal(props) {
               <tr>
                 <td>
                   <ul>
-                    <li>이미지</li>
+                    <li>
+                      <img src={Image004} className="pop-img-size" alt="기중기 (크레인)" />
+                    </li>
                     <li>기중기 (크레인)</li>
                   </ul>
                 </td>
@@ -228,7 +242,9 @@ function ChecklistModal(props) {
               <tr>
                 <td>
                   <ul>
-                    <li>이미지</li>
+                    <li>
+                      <img src={Image005} className="pop-img-size" alt="굴착기 (굴삭기, 포크레인, 백호우)" />
+                    </li>
                     <li>굴착기 (굴삭기, 포크레인, 백호우)</li>
                   </ul>
                 </td>
@@ -236,7 +252,9 @@ function ChecklistModal(props) {
               <tr>
                 <td>
                   <ul>
-                    <li>이미지</li>
+                    <li>
+                      <img src={Image006} className="pop-img-size" alt="지게차" />
+                    </li>
                     <li>지게차</li>
                   </ul>
                 </td>
