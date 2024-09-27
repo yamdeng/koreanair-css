@@ -249,8 +249,8 @@
   line-height:1.4;
   padding-bottom: 3.0rem;
   overflow-y:hidden;
-  max-height: 70.0rem;
-
+  max-height: 50rem;
+  height: 50.0rem;
   @include mobile {
     padding: 0 2.0rem 7.0rem 2.0rem;
   }

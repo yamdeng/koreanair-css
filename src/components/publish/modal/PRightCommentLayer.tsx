@@ -30,7 +30,11 @@ function PRightCommentLayer() {
                 <span className="pop_close">X</span>
               </div>
               <div className="right-drawer-body">
-                <AppTextArea label="" style={{ width: '100%', height: 82 }} errorMessage="" placeholder="" />
+                <div className="form-cell ">
+                  <div className="form-group wid100">
+                    <AppTextArea label="" style={{ width: '100%', height: 82 }} errorMessage="" placeholder="" />
+                  </div>
+                </div>
               </div>
             </div>
           </div>
