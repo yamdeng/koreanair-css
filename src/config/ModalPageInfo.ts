@@ -160,7 +160,7 @@ ModalPageInfo.list = [
     Component: MainNoticeModal,
     path: 'MainNoticeModal',
     description: '',
-    success: false,
+    success: true,
   },
   {
     title: '[항공안전>03.안전위험관리] 보고서분석 > 반려사유 팝업창',
