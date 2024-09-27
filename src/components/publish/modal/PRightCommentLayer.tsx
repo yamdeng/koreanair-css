@@ -30,10 +30,49 @@ function PRightCommentLayer() {
                 <span className="pop_close">X</span>
               </div>
               <div className="right-drawer-body">
-                <div className="form-cell ">
-                  <div className="form-group wid100">
-                    <AppTextArea label="" style={{ width: '100%', height: 82 }} errorMessage="" placeholder="" />
+                <div className="top-area">
+                  <div className="form-cell">
+                    <div className="form-group wid100">
+                      <AppTextArea label="" style={{ width: '100%', height: 82 }} errorMessage="" placeholder="" />
+                    </div>
                   </div>
+                  <div className="btns-area">
+                    <button name="button" className="btn_text btn_confirm text_color_neutral-10">
+                      전송
+                    </button>
+                  </div>
+                </div>
+
+                <div className="conts-area">
+                  <ul>
+                    <li>
+                      <div className="txt-top">
+                        <span className="name">관리자</span>
+                        <button type="button" name="button" className="btn-list editChapter">
+                          <span className="hide">등록</span>
+                        </button>
+                        <button type="button" className="">
+                          <span className="btnclear">X</span>
+                        </button>
+                      </div>
+                      <div className="txt-cons">
+                        <span>
+                          글영역글영역글영역글영역글영역글영역글영역글영역글영역글영역글영역글영역글영역글영역글영역글영역글영역글영역글영역글영역글영역글영역글영역글영역글영역글영역글영역
+                          글영역글영역글영역글영역글영역
+                        </span>
+                        {/* <span>
+                          <div className="wid100">
+                            <AppTextArea
+                              label=""
+                              style={{ width: '100%', height: 82 }}
+                              errorMessage=""
+                              placeholder=""
+                            />
+                          </div>
+                        </span> */}
+                      </div>
+                    </li>
+                  </ul>
                 </div>
               </div>
             </div>
