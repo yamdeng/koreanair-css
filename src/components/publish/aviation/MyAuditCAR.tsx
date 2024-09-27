@@ -163,7 +163,44 @@ function MyAuditCAR() {
               </dt>
               <dd className="tg-conts" style={{ display: Finding ? '' : 'none' }}>
                 {/* 입력영역 */}
-                <div className="editbox edit-audit-bg">fdsafdsafdsafds</div>
+                <div className="editbox edit-audit-bg">
+                  <h3 className="s-tit">
+                    해외공항 원격 안전평가 점검표 (ko)10 <span>CAR No. 24-LSA-0407-BE01</span>
+                  </h3>
+                  <ul>
+                    <li>안전보안일반2</li>
+                    <li>
+                      7-1 공항 지점은 자체보안계획과 현지 관련규정에 부합하는 지점 표준 업무 절차를 수립하여 항상
+                      최신판으로 유지하여야 한다. 상기 평가항목 내용에 대해 입증할 수 있는 자료(관련 교육 또는 회람 실시
+                      내용, 소속 전 직원의 Read & Sign 결과지 등) 및 사진을 첨부하여 주시기 바랍니다.
+                    </li>
+                    <li>ASP 5.2.7 1</li>
+                    <li>
+                      {' '}
+                      <div className="group-box-wrap wid100">
+                        <div className="radio-wrap border-no ta-r">
+                          <label>
+                            <input type="radio" checked />
+                            <span>Finding</span>
+                          </label>
+                          <label>
+                            <input type="radio" />
+                            <span>Observation</span>
+                          </label>
+                          <label>
+                            <input type="radio" />
+                            <span>N/A</span>
+                          </label>
+                          <label>
+                            <input type="radio" />
+                            <span>Yes</span>
+                          </label>
+                        </div>
+                        {/*<span className="errorText">error</span>*/}
+                      </div>
+                    </li>
+                  </ul>
+                </div>
                 {/*//입력영역*/}
               </dd>
             </dl>
