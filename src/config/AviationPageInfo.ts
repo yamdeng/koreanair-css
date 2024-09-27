@@ -73,6 +73,7 @@ import SPIEquipList from '@/components/publish/aviation/SPIEquipList';
 import MyReportList from '@/components/publish/aviation/MyReportList';
 import AdminkeywordList from '@/components/publish/aviation/AdminkeywordList';
 import AdminkeywordEventList from '@/components/publish/aviation/AdminkeywordEventList';
+import AdminReportDateList from '@/components/publish/aviation/AdminReportDateList';
 import { fa, fakerLV } from '@faker-js/faker';
 import { fail } from 'assert';
 
@@ -642,8 +643,8 @@ AviationPageInfo.list = [
   },
   {
     title: '[07.관리자] 보고서기한관리',
-    Component: AdminkeywordList,
-    path: 'AdminkeywordList',
+    Component: AdminReportDateList,
+    path: 'AdminReportDateList',
     description: '',
     success: false,
   },

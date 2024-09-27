@@ -349,6 +349,21 @@
   .list-table tbody{display:block;height:40rem;overflow-y:scroll}
   .list-table tbody tr:hover, .list-table tbody tr:active{width:100%;background-color: var(--color-lightblue-10); cursor: pointer;}
 }
+.listtable.report{
+  display:block; 
+  width:100%; 
+  .list-table{width:100%}
+  .list-table thead tr, .list-table tbody tr{display:table;width:100%}
+  .list-table th{padding:1rem 0;border-bottom:0.1rem solid var(--color-neutral-40);text-align:center}
+  .list-table td {padding:0.5rem 0;border-bottom:0.1rem solid var(--color-neutral-40);text-align:center}
+  .list-table th:nth-child(1), .list-table td:nth-child(1){width:10%}
+  .list-table th:nth-child(2), .list-table td:nth-child(2){width:50%}
+  .list-table th:nth-child(3), .list-table td:nth-child(3){width:40%;padding-right:1rem}
+  .list-table th{border-top: 0.1rem solid var(--color-darkblue-100);color:var(--color-darkblue-100);background-color: var(--color-neutral-20); font-weight: 500;}
+  .list-table td{color: var(--color-neutral-70);}
+  .list-table tbody{display:block; height: 16rem; overflow-y: scroll;}
+  .list-table tbody tr:hover, .list-table tbody tr:active {width:100%;background-color: var(--color-lightblue-10); cursor: pointer;}
+}
 .equipbox{display:flex;width:100%}
 .equipbox .left-box{display:inline-table;vertical-align:top;padding-right:3rem;width:50%;}
 .equipbox .right-box{display:inline-block;width:50%;margin-top:2rem}

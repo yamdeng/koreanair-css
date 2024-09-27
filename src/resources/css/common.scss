@@ -86,6 +86,7 @@ body * {
 .mt10{margin-top:1.0rem !important}
 .mt15{margin-top:1.5rem !important}
 .mb5{margin-bottom:0.5rem !important}
+.mb10{margin-bottom:1rem !important}
 
 .pd-t0 {padding-top: 0 !important;}
 .pd-l0 {padding-left: 0 !important;}
@@ -241,7 +242,7 @@ input[type=checkbox],input[type=radio]{padding:0;vertical-align:middle;margin-to
 .tag-info-wrap-end button.btn_confirm{padding:0.6rem 1.8rem;border-radius:99.9rem;background: var(--color-darkblue-100)}
 
 /*input*/
-input[type=file], input[type=search], input[type=text]{padding:0.4rem 0 0.4rem 0.4rem}
+input[type=file], input[type=search], input[type=text]{padding:0.4rem 0.4rem 0.4rem 0.4rem}
 [role=button],a,area,button,input:not([type=range]),label,select,summary,textarea {touch-action: manipulation}
 input[type=number],input[type=password],input[type=text],textarea{-webkit-appearance:none}
 input,button{vertical-align:middle}

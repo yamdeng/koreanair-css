@@ -254,6 +254,13 @@ ModalPageInfo.list = [
     success: true,
   },
   {
+    title: '[항공안전> 04.안전보증] 변화관리 > 변화관리추가 팝업창',
+    Component: PSPILoadModal,
+    path: 'PSPILoadModal',
+    description: '',
+    success: false,
+  },
+  {
     title: '[항공안전 > 06.AUDIT] Checklist 추가 팝업창',
     Component: PChecklistModal,
     path: 'PChecklistModal',
