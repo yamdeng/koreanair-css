@@ -174,7 +174,7 @@ function ChecklistModal(props) {
                     <li>
                       <img src={Image001} className="pop-img-size" alt="차량탑재형 고소작업대 (스카이)" />
                     </li>
-                    <li>차량탑재형 고소작업대 (스카이)</li>
+                    <li className="img-tit">차량탑재형 고소작업대 (스카이)</li>
                   </ul>
                 </td>
                 <td>
@@ -193,7 +193,7 @@ function ChecklistModal(props) {
                     <li>
                       <img src={Image002} className="pop-img-size" alt="시저형 고소작업대 (렌탈)" />
                     </li>
-                    <li>시저형 고소작업대 (렌탈)</li>
+                    <li className="img-tit">시저형 고소작업대 (렌탈)</li>
                   </ul>
                 </td>
                 <td>
@@ -228,7 +228,7 @@ function ChecklistModal(props) {
                     <li>
                       <img src={Image004} className="pop-img-size" alt="기중기 (크레인)" />
                     </li>
-                    <li>기중기 (크레인)</li>
+                    <li className="img-tit">기중기 (크레인)</li>
                   </ul>
                 </td>
                 <td rowSpan={3}>
@@ -245,7 +245,7 @@ function ChecklistModal(props) {
                     <li>
                       <img src={Image005} className="pop-img-size" alt="굴착기 (굴삭기, 포크레인, 백호우)" />
                     </li>
-                    <li>굴착기 (굴삭기, 포크레인, 백호우)</li>
+                    <li className="img-tit">굴착기 (굴삭기, 포크레인, 백호우)</li>
                   </ul>
                 </td>
               </tr>
@@ -255,7 +255,7 @@ function ChecklistModal(props) {
                     <li>
                       <img src={Image006} className="pop-img-size" alt="지게차" />
                     </li>
-                    <li>지게차</li>
+                    <li className="img-tit">지게차</li>
                   </ul>
                 </td>
               </tr>
