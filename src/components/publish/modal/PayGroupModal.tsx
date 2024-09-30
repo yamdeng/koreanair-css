@@ -158,7 +158,7 @@ function PayGroupModal(props) {
         <span className="pop_close">X</span>
 
         {/*레이어팝업 */}
-        <div className="modal-overlay"></div>
+        {/* <div className="modal-overlay"></div>
         <div className="modal">
           <div className="pop_lg_cont_box">
             <h3 className="pop_title">결제그룹정보 설정</h3>
@@ -261,7 +261,7 @@ function PayGroupModal(props) {
               닫기
             </button>
           </div>
-        </div>
+        </div> */}
         {/*//레이어팝업 */}
 
         {/*레이어팝업 */}

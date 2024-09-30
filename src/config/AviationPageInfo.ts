@@ -75,6 +75,8 @@ import AdminkeywordList from '@/components/publish/aviation/AdminkeywordList';
 import AdminkeywordEventList from '@/components/publish/aviation/AdminkeywordEventList';
 import AdminReportDateList from '@/components/publish/aviation/AdminReportDateList';
 import PayList from '@/components/publish/aviation/PayList';
+import ReportASRDetail from '@/components/publish/aviation/ReportASRDetail';
+import PayDetail from '@/components/publish/aviation/PayDetail';
 import { fa, fakerLV } from '@faker-js/faker';
 import { fail } from 'assert';
 
@@ -181,8 +183,8 @@ AviationPageInfo.list = [
   },
   {
     title: '[03.안전위험관리] 결제관리 > 결제관리 상세',
-    Component: ReportList,
-    path: 'ReportList',
+    Component: PayDetail,
+    path: 'PayDetail',
     description: '',
     success: false,
   },
@@ -199,6 +201,13 @@ AviationPageInfo.list = [
     path: 'ReportDetail',
     description: '',
     success: true,
+  },
+  {
+    title: '[03.안전위험관리] 보고서분석 > 상세(ASR)',
+    Component: ReportASRDetail,
+    path: 'ReportASRDetail',
+    description: '',
+    success: false,
   },
   {
     title: '[03.안전위험관리] 보고서분석 > 등록(ASR)',

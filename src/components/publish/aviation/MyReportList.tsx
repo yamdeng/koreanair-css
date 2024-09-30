@@ -102,7 +102,7 @@ function MyReportList() {
       {/* //검색영역 */}
 
       {/* 마이리포트 프로세스 */}
-      <div className="process-box">
+      <div className="">
         <div className="c-step-wrap">
           <ol className="c-step-list-type-5">
             <li>
@@ -151,7 +151,7 @@ function MyReportList() {
             </li>
           </ol>
         </div>
-        <div className="c-step-wrap">
+        {/* <div className="c-step-wrap">
           <ol className="c-step-list-type-0">
             <li>
               <a href="javascript:void(0);" data-label="이관">
@@ -162,7 +162,7 @@ function MyReportList() {
               </a>
             </li>
           </ol>
-        </div>
+        </div> */}
       </div>
 
       {/*그리드영역 */}
