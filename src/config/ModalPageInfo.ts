@@ -163,6 +163,13 @@ ModalPageInfo.list = [
     success: true,
   },
   {
+    title: '[항공안전>AMO] 안전정책,Hazard 현황,Event 현황,공지사항',
+    Component: MainNoticeModal,
+    path: 'MainNoticeModal',
+    description: '',
+    success: false,
+  },
+  {
     title: '[항공안전>03.안전위험관리] 보고서분석 > 반려사유 팝업창',
     Component: PReportListModal,
     path: 'PReportListModal',
@@ -301,6 +308,13 @@ ModalPageInfo.list = [
     path: 'PChapterDeleteModal',
     description: '',
     success: true,
+  },
+  {
+    title: '[항공안전 > 06.AUDIT] 수행담당지정 팝업창',
+    Component: PChapterDeleteModal,
+    path: 'PChapterDeleteModal',
+    description: '',
+    success: false,
   },
   {
     title: '[항공안전> 07.관리자] 게시판 관리 > 안전목표 > 안전목표 신규 팝업창',

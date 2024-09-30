@@ -77,6 +77,7 @@ import AdminReportDateList from '@/components/publish/aviation/AdminReportDateLi
 import PayList from '@/components/publish/aviation/PayList';
 import ReportASRDetail from '@/components/publish/aviation/ReportASRDetail';
 import PayDetail from '@/components/publish/aviation/PayDetail';
+import SkySafetyList from '@/components/publish/aviation/SkySafetyList';
 import { fa, fakerLV } from '@faker-js/faker';
 import { fail } from 'assert';
 
@@ -301,20 +302,7 @@ AviationPageInfo.list = [
     description: '',
     success: true,
   },
-  {
-    title: '[04.안전보증] SMS종합분석현황 > 대시보드',
-    Component: SMSDashBoardList,
-    path: 'SMSDashBoardList',
-    description: '',
-    success: true,
-  },
-  {
-    title: '[04.안전보증] SMS종합분석현황 > 대시보드2',
-    Component: SMSDashBoardList2,
-    path: 'SMSDashBoardList2',
-    description: '',
-    success: true,
-  },
+
   {
     title: '[04.안전보증] EPS현황 > 운영현항, Risk분석, 진행현황 , HZR 참여실적',
     Component: SMSDashBoardList,
@@ -373,21 +361,77 @@ AviationPageInfo.list = [
     success: true,
   },
   {
-    title: '[04.안전보증] 장비관리 > 장비점검 현황',
+    title: '[04.안전보증] 장비관리 > 대시보드',
     Component: SPIEquipList,
     path: 'SPIEquipList',
     description: '',
     success: false,
   },
   {
-    title: '[05.안전증진] Safety Program > WorkShop 리스트',
+    title: '[04.안전보증] SMS종합분석현황 > 대시보드',
+    Component: SMSDashBoardList,
+    path: 'SMSDashBoardList',
+    description: '',
+    success: true,
+  },
+  {
+    title: '[04.안전보증] SMS종합분석현황 > 대시보드2',
+    Component: SMSDashBoardList2,
+    path: 'SMSDashBoardList2',
+    description: '',
+    success: true,
+  },
+  {
+    title: '[04.안전보증] ESP 현황',
+    Component: SMSDashBoardList2,
+    path: 'SMSDashBoardList2',
+    description: '',
+    success: false,
+  },
+  {
+    title: '[05.안전증진] 안전 Communication > Newsletter',
     Component: WorkShopList,
     path: 'WorkShopList',
     description: '',
     success: false,
   },
   {
-    title: '[05.안전증진] Safety Program > SPIP',
+    title: '[05.안전증진] 안전 Communication > SkySafety21',
+    Component: SkySafetyList,
+    path: 'SkySafetyList',
+    description: '',
+    success: false,
+  },
+  {
+    title: '[05.안전증진] 안전 Communication > 안전공지',
+    Component: WorkShopList,
+    path: 'WorkShopList',
+    description: '',
+    success: false,
+  },
+  {
+    title: '[05.안전증진] SMS 교육 > 자료실',
+    Component: WorkShopList,
+    path: 'WorkShopList',
+    description: '',
+    success: false,
+  },
+  {
+    title: '[05.안전증진] SMS 교육 > 강사현황',
+    Component: WorkShopList,
+    path: 'WorkShopList',
+    description: '',
+    success: false,
+  },
+  {
+    title: '[05.안전증진] 안전문화설문',
+    Component: WorkShopList,
+    path: 'WorkShopList',
+    description: '',
+    success: false,
+  },
+  {
+    title: '[05.안전증진] Safety Program > WorkShop 리스트',
     Component: WorkShopList,
     path: 'WorkShopList',
     description: '',
@@ -400,6 +444,14 @@ AviationPageInfo.list = [
     description: '',
     success: false,
   },
+  {
+    title: '[05.안전증진] Safety Program > SPIP',
+    Component: WorkShopList,
+    path: 'WorkShopList',
+    description: '',
+    success: false,
+  },
+
   {
     title: '[05.안전증진] Safety Program > Newsletter 리스트',
     Component: WorkShopList,
@@ -493,12 +545,62 @@ AviationPageInfo.list = [
     success: false,
   },
   {
+    title: '[06.AUDIT] 품질심사원프로필',
+    Component: MyAuditClose,
+    path: 'MyAuditClose',
+    description: '',
+    success: false,
+  },
+  {
+    title: '[06.AUDIT] 예외 Audit 관리',
+    Component: MyAuditClose,
+    path: 'MyAuditClose',
+    description: '',
+    success: false,
+  },
+  {
+    title: '[06.AUDIT] 개선조치 CAR 조회',
+    Component: MyAuditClose,
+    path: 'MyAuditClose',
+    description: '',
+    success: false,
+  },
+  {
+    title: '[06.AUDIT] 품질심사 현황',
+    Component: MyAuditClose,
+    path: 'MyAuditClose',
+    description: '',
+    success: false,
+  },
+  {
+    title: '[07.관리자] 지상관리 > 입력항목관리',
+    Component: AdminBoardList,
+    path: 'AdminBoardList',
+    description: '',
+    success: false,
+  },
+  {
+    title: '[07.관리자] 지상관리 > 대시보드관리',
+    Component: AdminBoardList,
+    path: 'AdminBoardList',
+    description: '',
+    success: false,
+  },
+  {
+    title: '[07.관리자] 강사이력관리',
+    Component: AdminBoardList,
+    path: 'AdminBoardList',
+    description: '',
+    success: false,
+  },
+  {
     title: '[07.관리자] 게시판 관리 > 안전목표 List',
     Component: AdminSafetyList,
     path: 'AdminSafetyList',
     description: '',
     success: true,
   },
+
   {
     title: '[07.관리자] 게시판 관리 > SPI게시판 List',
     Component: AdminBoardList,
@@ -703,7 +805,7 @@ AviationPageInfo.list = [
     success: true,
   },
   {
-    title: '[09.AMO] AMO페이지는 레이어팝업처리',
+    title: '[09.AMO] AMO페이지는 레이어팝업처리 -->모달페이지에 있음',
     Component: AdminRiskMATRIXDetail,
     path: 'AdminRiskMATRIXDetail',
     description: '',

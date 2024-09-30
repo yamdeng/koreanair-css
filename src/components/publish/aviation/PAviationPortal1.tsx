@@ -3,6 +3,8 @@ import { useStore } from 'zustand';
 import useAppStore from '@/store/useAppStore';
 import AppSelect from '@/components/common/AppSelect';
 import mainphoto from '@/resources/images/av-img.jpg';
+import chartasr from '@/resources/images/ASR-box.svg';
+import chartmsr from '@/resources/images/MSR-box.svg';
 
 function PAviationPortal1() {
   const { setIsAviationPortal } = useStore(useAppStore, (state) => state) as any;
@@ -195,8 +197,12 @@ function PAviationPortal1() {
               <div className="wid70">dfdf</div>
             </div>
             <div className="main-conts-graph">
-              <div className="graph-box">ASR</div>
-              <div className="graph-box">MSR</div>
+              <div className="graph-box">
+                <img src={chartasr} className="" alt="ASR" />
+              </div>
+              <div className="graph-box">
+                <img src={chartmsr} className="" alt="MSR" />
+              </div>
               <div className="graph-box">GSR</div>
               <div className="graph-box">DSR</div>
             </div>
