@@ -74,6 +74,7 @@ import MyReportList from '@/components/publish/aviation/MyReportList';
 import AdminkeywordList from '@/components/publish/aviation/AdminkeywordList';
 import AdminkeywordEventList from '@/components/publish/aviation/AdminkeywordEventList';
 import AdminReportDateList from '@/components/publish/aviation/AdminReportDateList';
+import PayList from '@/components/publish/aviation/PayList';
 import { fa, fakerLV } from '@faker-js/faker';
 import { fail } from 'assert';
 
@@ -173,10 +174,10 @@ AviationPageInfo.list = [
   },
   {
     title: '[03.안전위험관리] 결제관리 > 결제관리 리스트',
-    Component: ReportList,
-    path: 'ReportList',
+    Component: PayList,
+    path: 'PayList',
     description: '',
-    success: false,
+    success: true,
   },
   {
     title: '[03.안전위험관리] 결제관리 > 결제관리 상세',
