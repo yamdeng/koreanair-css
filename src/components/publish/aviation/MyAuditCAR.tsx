@@ -245,7 +245,109 @@ function MyAuditCAR() {
                                   <div className="form-table">
                                     <div className="form-cell wid50">
                                       <div className="form-group wid100">
-                                        <button>Select</button>
+                                        <div className="btn-tit">
+                                          <h3>
+                                            Risk Level <span className="required">*</span>
+                                          </h3>
+                                        </div>
+                                        <button className="btn-select">Select</button>
+                                      </div>
+                                    </div>
+                                    <div className="form-cell wid50">
+                                      <div className="form-group wid100">
+                                        <div className="btn-tit">
+                                          <h3>
+                                            Finding Category <span className="required">*</span>
+                                          </h3>
+                                        </div>
+                                        <button className="btn-select">Select</button>
+                                      </div>
+                                    </div>
+                                    <div className="form-cell wid50">
+                                      <div className="form-group wid100">
+                                        <div className="btn-tit">
+                                          <h3>Hazard LVL3</h3>
+                                        </div>
+                                        <button className="btn-select">Select</button>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div className="form-table">
+                                    <div className="form-cell wid50">
+                                      <div className="group-box-wrap wid100">
+                                        <span className="txt">Risk Register</span>
+                                        <div className="radio-wrap">
+                                          <label>
+                                            <input type="radio" />
+                                            <span>Yes</span>
+                                          </label>
+                                          <label>
+                                            <input type="radio" />
+                                            <span>No</span>
+                                          </label>
+                                        </div>
+                                        {/*<span className="errorText">error</span>*/}
+                                      </div>
+                                    </div>
+                                    <div className="form-cell wid50">
+                                      <div className="form-group wid100">
+                                        <AppTextInput label="Potential Consequence" />
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div className="form-table">
+                                    <div className="form-cell wid50">
+                                      <div className="form-group wid100">
+                                        <div className="btn-tit">
+                                          <h3>
+                                            Assign to <span className="required">*</span>
+                                          </h3>
+                                        </div>
+                                        <button className="btn-select">Select</button>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <h3 className="table-tit mt-10">
+                                    Root Cause <span className="required">*</span>
+                                  </h3>
+                                  <div className="form-table">
+                                    <div className="form-cell wid50">
+                                      <div className="form-group wid100">
+                                        <AppTextInput label="Step 1" />
+                                      </div>
+                                    </div>
+                                    <div className="form-cell wid50">
+                                      <div className="form-group wid100">
+                                        <AppTextInput label="Step 2" />
+                                      </div>
+                                    </div>
+                                    <div className="form-cell wid50">
+                                      <div className="form-group wid100">
+                                        <AppTextInput label="Step 3" />
+                                      </div>
+                                    </div>
+                                    <div className="form-cell wid50">
+                                      <div className="form-group wid100">
+                                        <AppTextInput label="Step 4" />
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div className="form-table">
+                                    <div className="form-cell wid50">
+                                      <div className="form-group wid100 mr5">
+                                        <textarea
+                                          id="testArea1"
+                                          className="form-tag"
+                                          style={{ width: '100%' }}
+                                          name="testArea1"
+                                          value={inputValue}
+                                          onChange={(event) => {
+                                            setInputValue(event.target.value);
+                                          }}
+                                        />
+                                        <label className="f-label" htmlFor="testArea1">
+                                          Description <span className="required">*</span>
+                                        </label>
                                       </div>
                                     </div>
                                   </div>
