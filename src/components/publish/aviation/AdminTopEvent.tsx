@@ -39,9 +39,20 @@ function AdminTopEvent() {
         <h2>Top 10 RISK 관리</h2>
       </div>
       {/*탭 */}
+      {/*탭 */}
+      <div className="menu-tab-nav">
+        <div className="menu-tab">
+          <a href="javascript:void(0);" className="active" data-label="이벤트">
+            이벤트
+          </a>
+          <a href="javascript:void(0);" className="" data-label="Hazard">
+            Hazard
+          </a>
+        </div>
+      </div>
 
       {/*검색영역 */}
-      <div className="boxForm">
+      <div className="boxForm top10">
         <div className="form-table">
           <div className="form-cell Risk">
             {' '}
@@ -54,10 +65,7 @@ function AdminTopEvent() {
             </div>
           </div>
           <div className="form-cell wid50">
-            <div className="form-group wid30">
-              <AppSelect label={'구분'} />
-            </div>
-            <div className="form-group wid50 ml5">
+            <div className="form-group wid100">
               <div className="df">
                 <div className="date1">
                   <AppDatePicker label={'작성일'} />
@@ -69,26 +77,15 @@ function AdminTopEvent() {
               </div>
             </div>
           </div>
-          {/* <div className="form-cell wid50">
-            <div className="form-group wid0">
-              <div className="df">
-                <div className="date1">
-                  <AppDatePicker label={'작성일'} />
-                </div>
-                <span className="unt">~</span>
-                <div className="date2">
-                  <AppDatePicker label={'작성일'} />
-                </div>
-              </div>
+          <div className="form-cell wid50">
+            <div className="btn-area">
+              <button type="button" name="button" className="btn-sm btn_text btn-darkblue-line">
+                재계산
+              </button>
+              <button type="button" name="button" className="btn-sm btn_text btn-darkblue-line">
+                조회
+              </button>
             </div>
-          </div> */}
-          <div className="btn-area">
-            <button type="button" name="button" className="btn-sm btn_text btn-darkblue-line">
-              재계산
-            </button>
-            <button type="button" name="button" className="btn-sm btn_text btn-darkblue-line">
-              조회
-            </button>
           </div>
         </div>
       </div>

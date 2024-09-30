@@ -73,6 +73,7 @@ function ReportASRDetail() {
   const [nineExpaned, setNineExpaned] = useState(true);
   const [tenExpaned, setTenExpaned] = useState(true);
   const [elevenExpaned, setElevenExpaned] = useState(true);
+  const [twelveExpaned, setTwelveExpaned] = useState(true);
 
   return (
     <>
@@ -850,144 +851,206 @@ function ReportASRDetail() {
                                     <div className="edit-area">
                                       {/*보고서접수-ASR*/}
                                       <div className="editbox">
-                                        <div className="form-table line">
-                                          <div className="form-cell wid50">
-                                            <div className="form-group wid100">
-                                              <AppSelect label={'이벤트타입'} />
-                                            </div>
-                                          </div>
-                                          <div className="form-cell wid100">
-                                            <div className="chk-wrap">
-                                              <label>
-                                                <input type="checkbox" />
-                                                <span>SPI 지표포함</span>
-                                              </label>
-                                            </div>
-                                          </div>
-                                        </div>
-
-                                        <div className="form-table line">
-                                          <div className="form-cell wid50">
-                                            <div className="form-group wid100">
-                                              <AppSelect label={'ATA Chapter'} />
-                                            </div>
-                                          </div>
-                                          <div className="form-cell wid50">
-                                            <div className="form-group wid100">
-                                              <AppSelect label={'규제기관 보고'} />
-                                            </div>
-                                          </div>
-                                          <div className="form-cell wid50">
-                                            <div className="form-group wid100">
-                                              <AppSelect label={'보고항목 구분'} />
-                                            </div>
-                                          </div>
-                                        </div>
-
-                                        <div className="form-table line">
-                                          <div className="form-cell wid50">
-                                            <div className="form-group wid100">
-                                              <AppTextArea
-                                                label={'Event Summary'}
-                                                style={{ width: '100%', height: 100 }}
-                                              />
-                                            </div>
-                                          </div>
-                                          <div className="form-cell wid50">
-                                            <div className="form-group wid100">
-                                              <AppTextArea
-                                                label={'Event Follow up'}
-                                                style={{ width: '100%', height: 100 }}
-                                              />
-                                            </div>
-                                          </div>
-                                        </div>
-
-                                        <div className="form-table">
-                                          <div className="form-cell wid50">
-                                            <div className="group-box-wrap wid50">
-                                              <span className="txt">Report Links</span>
-                                              <div className="round-wrap error">
-                                                <span className="icon_report"></span>{' '}
-                                              </div>
-                                            </div>
-                                          </div>
-                                        </div>
-
-                                        <div className="form-table line">
-                                          <div className="form-cell wid50">
-                                            <div className="form-group wid100">
-                                              {/* 파일첨부영역 : drag */}
-                                              <div className="filebox error">
-                                                <Dragger {...props}>
-                                                  <p className="ant-upload-text ">
-                                                    + 이 곳을 클릭하거나 마우스로 업로드할 파일을 끌어서 놓으세요.
-                                                  </p>
-                                                </Dragger>
-                                                <label htmlFor="file" className="file-label">
-                                                  Attachment <span className="required"></span>
-                                                </label>
-                                              </div>
-                                              <span className="errorText">fileerror</span>
-                                            </div>
-                                          </div>
-                                        </div>
-
-                                        <div className="form-table">
-                                          <div className="form-cell wid50">
-                                            <div className="form-group wid20">
-                                              <div className="row1">
-                                                <div className="date1">
-                                                  <AppDatePicker label="Due Date" required />
-                                                </div>
-                                              </div>
-                                            </div>
-                                          </div>
-                                          {/*<div className="form-cell wid50">
-                                            <div className="btn-area">
-                                              <button
-                                                type="button"
-                                                name="button"
-                                                className="btn-sm btn_text btn-darkblue-line"
-                                              >
-                                                Report Links
-                                              </button>
-                                            </div>
-                                          </div>*/}
-                                        </div>
-
-                                        <div className="form-table">
-                                          <div className="form-cell wid50">
-                                            <div className="form-group wid50">
-                                              <div className="UserChicebox error">
+                                        <div className="detailForm">
+                                          {/* 보고서접수 상세*/}
+                                          <div className="editbox report">
+                                            <div className="form-table line">
+                                              <div className="form-cell wid100">
                                                 <div className="form-group wid100">
-                                                  <AppSelect label={'LSC Member'} />
-                                                  <label htmlFor="file" className="file-label">
-                                                    LSC Member <span className="required"></span>
-                                                  </label>
-                                                </div>
-                                                <div className="form-group wid100 mt10">
-                                                  <AppAutoComplete label="d" />
-                                                  <div className="SelectedList memberClass mt10">
-                                                    <ul>
-                                                      <li>
-                                                        <span className="InfoBox"></span>
-                                                        <div className="Info">
-                                                          <div className="Name">홍길동 (170****)</div>
-                                                          <div className="Dept">상무대우수석사무장 / (주)대한항공</div>
-                                                        </div>
-                                                        <span className="class leader">Leader</span>
-                                                        <a href="javascript:void(0);">
-                                                          <span className="delete">X</span>
-                                                        </a>
+                                                  <div className="box-view-list">
+                                                    <ul className="view-list">
+                                                      <li className="accumlate-list">
+                                                        <label className="t-label">이벤트 타입</label>
+                                                        <span className="text-desc-type1"> Tail skid</span>
                                                       </li>
-                                                      <li>
-                                                        <span className="InfoBox"></span>
-                                                        <div className="Info">
-                                                          <div className="Name">홍길동 (170****)</div>
-                                                          <div className="Dept">상무대우수석사무장 / (주)대한항공</div>
+                                                    </ul>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                              <div className="form-cell wid100">
+                                                <div className="form-group wid100">
+                                                  <div className="box-view-list">
+                                                    <ul className="view-list">
+                                                      <li className="accumlate-list">
+                                                        <label className="t-label">SPI 지표 포함</label>
+                                                        <span className="text-desc-type1"> Y</span>
+                                                      </li>
+                                                    </ul>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                            </div>
+
+                                            <div className="form-table line">
+                                              <div className="form-cell wid100">
+                                                <div className="form-group wid100">
+                                                  <div className="box-view-list">
+                                                    <ul className="view-list">
+                                                      <li className="accumlate-list">
+                                                        <label className="t-label">ATA Chapter</label>
+                                                        <span className="text-desc-type1"> Tail skid</span>
+                                                      </li>
+                                                    </ul>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                              <div className="form-cell wid100">
+                                                <div className="form-group wid100">
+                                                  <div className="box-view-list">
+                                                    <ul className="view-list">
+                                                      <li className="accumlate-list">
+                                                        <label className="t-label">규제기관 보고</label>
+                                                        <span className="text-desc-type1"> DF</span>
+                                                      </li>
+                                                    </ul>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                            </div>
+
+                                            <div className="form-table line">
+                                              <div className="form-cell wid100">
+                                                <div className="form-group wid100">
+                                                  <div className="box-view-list">
+                                                    <ul className="view-list">
+                                                      <li className="accumlate-list">
+                                                        <label className="t-label">보고항목 구분</label>
+                                                        <span className="text-desc-type1">내용</span>
+                                                      </li>
+                                                    </ul>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                            </div>
+
+                                            <div className="form-table line">
+                                              <div className="form-cell wid100">
+                                                <div className="form-group wid100">
+                                                  <div className="box-view-list">
+                                                    <ul className="view-list">
+                                                      <li className="accumlate-list">
+                                                        <label className="t-label">Event Summary</label>
+                                                        <span className="text-desc-type1">Event Summary 내용</span>
+                                                      </li>
+                                                    </ul>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                              <div className="form-cell wid100">
+                                                <div className="form-group wid100">
+                                                  <div className="box-view-list">
+                                                    <ul className="view-list">
+                                                      <li className="accumlate-list">
+                                                        <label className="t-label">Event Follow up</label>
+                                                        <span className="text-desc-type1">Event Follow up 내용</span>
+                                                      </li>
+                                                    </ul>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                            </div>
+
+                                            <div className="form-table line">
+                                              <div className="form-cell wid100">
+                                                <div className="form-group wid100">
+                                                  <div className="box-view-list">
+                                                    <ul className="view-list">
+                                                      <li className="accumlate-list">
+                                                        <label className="t-label">Report Links</label>
+                                                        <span className="text-desc-type1">
+                                                          {' '}
+                                                          {/*문서번호 리스트 */}
+                                                          <div className="tag-list">
+                                                            <ul>
+                                                              <li>
+                                                                <button type="botton">
+                                                                  ASR-104407{' '}
+                                                                  <a href="javascript:void(0);">
+                                                                    <span className="delete">X</span>
+                                                                  </a>
+                                                                </button>
+                                                              </li>
+                                                              <li>
+                                                                <button type="botton">
+                                                                  ASR-104407{' '}
+                                                                  <a href="javascript:void(0);">
+                                                                    <span className="delete">X</span>
+                                                                  </a>
+                                                                </button>
+                                                              </li>
+                                                            </ul>
+                                                          </div>
+                                                        </span>
+                                                      </li>
+                                                    </ul>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                            </div>
+
+                                            <div className="form-table line">
+                                              <div className="form-cell wid100">
+                                                <div className="form-group wid100">
+                                                  <div className="box-view-list">
+                                                    <ul className="view-list">
+                                                      <li className="accumlate-list">
+                                                        <label className="t-label">Event Summary</label>
+                                                        <span className="text-desc-type1">Event Summary 내용</span>
+                                                      </li>
+                                                    </ul>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                              <div className="form-cell wid100">
+                                                <div className="form-group wid100">
+                                                  <div className="box-view-list">
+                                                    <ul className="view-list">
+                                                      <li className="accumlate-list">
+                                                        <label className="t-label">SPI 여부</label>
+                                                        <span className="text-desc-type1">YES</span>
+                                                      </li>
+                                                      <li className="detail">
+                                                        {/* 파일첨부영역 : drag */}
+                                                        <div className="filebox ">
+                                                          <Dragger {...props}>
+                                                            <p className="ant-upload-text ">
+                                                              + 이 곳을 클릭하거나 마우스로 업로드할 파일을 끌어서
+                                                              놓으세요.
+                                                            </p>
+                                                          </Dragger>
+                                                          {/* <label htmlFor="file" className="file-label">
+                                  Attachment <span className="required"></span>
+                                </label> */}
                                                         </div>
-                                                        <span className="class ">Leader</span>
+                                                        {/* <span className="errorText">fileerror</span> */}
+                                                      </li>
+                                                    </ul>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                            </div>
+                                            <div className="form-table line">
+                                              <div className="form-cell wid100">
+                                                <div className="form-group wid100">
+                                                  <div className="box-view-list">
+                                                    <ul className="view-list">
+                                                      <li className="accumlate-list">
+                                                        <label className="t-label">발생 위치</label>
+                                                        <span className="text-desc-type1">이륙 후 3시간 경과 시점</span>
+                                                      </li>
+                                                    </ul>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                            </div>
+                                            <div className="form-table line">
+                                              <div className="form-cell wid100">
+                                                <div className="form-group wid100">
+                                                  <div className="box-view-list">
+                                                    <ul className="view-list">
+                                                      <li className="accumlate-list">
+                                                        <label className="t-label">참고문서번호</label>
+                                                        <span className="text-desc-type1">CSR-100070</span>
                                                       </li>
                                                     </ul>
                                                   </div>
@@ -995,8 +1058,10 @@ function ReportASRDetail() {
                                               </div>
                                             </div>
                                           </div>
+                                          {/* //보고서접수 상세*/}
                                         </div>
                                       </div>
+
                                       {/*보고서접수-ASR*/}
                                       <div className="btn-area">
                                         <button
@@ -1645,6 +1710,153 @@ function ReportASRDetail() {
                           </button>
                         </dt>
                         <dd className="tg-conts" style={{ display: tenExpaned ? '' : 'none' }}>
+                          <div className="edit-area">
+                            {/*경감지정 상세*/}
+                            <div className="detailForm-detail-3deps list-group">
+                              <div className="list bx-toggle">
+                                <dl className="tg-item rbox01 ">
+                                  <dt onClick={() => setElevenExpaned(!elevenExpaned)}>
+                                    <button type="button" className="tg-btn">
+                                      경감지정<span className={sixExpaned ? 'active' : ''}></span>
+                                    </button>
+                                  </dt>
+                                  <dd className="tg-conts" style={{ display: elevenExpaned ? '' : 'none' }}>
+                                    <div className="edit-area">
+                                      <div className="editbox">
+                                        <div className="form-table line">
+                                          <div className="form-cell wid50">
+                                            <div className="form-group wid100">
+                                              <AppSelect label={'Hazard'} required />
+                                            </div>
+                                          </div>
+                                          <div className="form-cell wid50">
+                                            <div className="form-group wid100">
+                                              <AppSelect label={'Potential Consequence'} required />
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </dd>
+                                </dl>
+                              </div>
+                            </div>
+                            {/*경감계획 상세*/}
+                            <div className="detailForm-detail-3deps list-group">
+                              <div className="list bx-toggle">
+                                <dl className="tg-item rbox01 ">
+                                  <dt onClick={() => setSevenExpaned(!sevenExpaned)}>
+                                    <button type="button" className="tg-btn">
+                                      경감계획<span className=""></span>
+                                    </button>
+                                  </dt>
+                                  <dd className="tg-conts" style={{ display: sevenExpaned ? '' : 'none' }}>
+                                    <div className="edit-area">
+                                      {/* FOQA*/}
+                                      <div className="detailForm">
+                                        <div className="editbox report">
+                                          <div className="header-tit">FOQA-X Status</div>
+                                          <div className="form-table">
+                                            <div className="form-cell wid50">
+                                              <div className="form-group wid100">
+                                                <div className="work-group1">
+                                                  <table className="work-table1">
+                                                    <thead>
+                                                      <tr>
+                                                        <th>APPROVED BY</th>
+                                                        <th>DECISION</th>
+                                                        <th>ADDITIONAL COMMENTS</th>
+                                                        <th>INPUT DATE</th>
+                                                      </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                      <tr>
+                                                        <td>SELOYOYI</td>
+                                                        <td>INDIVIDUAL</td>
+                                                        <td className="tl">……….!!!!!!!!</td>
+                                                        <td className="">2024-08-01 10:42:02</td>
+                                                      </tr>
+                                                      <tr>
+                                                        <td>SELOYOYI</td>
+                                                        <td>INDIVIDUAL</td>
+                                                        <td className="tl">……….!!!!!!!!</td>
+                                                        <td className="">2024-08-01 10:42:02</td>
+                                                      </tr>
+                                                      <tr>
+                                                        <td>SELOYOYI</td>
+                                                        <td>INDIVIDUAL</td>
+                                                        <td className="tl">……….!!!!!!!!</td>
+                                                        <td className="">2024-08-01 10:42:02</td>
+                                                      </tr>
+                                                    </tbody>
+                                                  </table>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      {/* //FOQA*/}
+                                      {/* 버튼*/}
+                                      <div className="contents-btns">
+                                        <button
+                                          type="button"
+                                          name="button"
+                                          className="btn_text text_color_neutral-10 btn_conblue"
+                                        >
+                                          재작성요청
+                                        </button>
+                                        <button
+                                          type="button"
+                                          name="button"
+                                          className="btn_text text_color_neutral-10 btn_confirm"
+                                        >
+                                          Notify
+                                        </button>
+                                        <button
+                                          type="button"
+                                          name="button"
+                                          className="btn_text text_color_neutral-10 btn_confirm"
+                                        >
+                                          Void
+                                        </button>
+                                        <button
+                                          type="button"
+                                          name="button"
+                                          className="btn_text text_color_neutral-10 btn_confirm"
+                                        >
+                                          수정
+                                        </button>
+                                        <button type="button" name="button" className="btn_text btn-del">
+                                          인쇄
+                                        </button>
+                                        <button type="button" name="button" className="btn_text btn_list">
+                                          목록
+                                        </button>
+                                      </div>
+                                      {/* //버튼*/}
+                                    </div>
+                                  </dd>
+                                </dl>
+                              </div>
+                            </div>
+                          </div>
+                        </dd>
+                      </dl>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="detailForm-detail-box  list-group">
+                  <div className="detailForm-detail-2deps rbox list-group">
+                    <div className="list bx-toggle">
+                      <dl className="tg-item rbox01 ">
+                        <dt onClick={() => setTwelveExpaned(!twelveExpaned)}>
+                          <button type="button" className="tg-btn">
+                            종료<span className={twelveExpaned ? 'active' : ''}></span>
+                          </button>
+                        </dt>
+                        <dd className="tg-conts" style={{ display: twelveExpaned ? '' : 'none' }}>
                           <div className="edit-area">
                             {/*경감지정 상세*/}
                             <div className="detailForm-detail-3deps list-group">
