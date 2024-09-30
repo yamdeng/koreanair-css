@@ -958,7 +958,6 @@ function ReportASRDetail() {
                                                       <li className="accumlate-list">
                                                         <label className="t-label">Report Links</label>
                                                         <span className="text-desc-type1">
-                                                          {' '}
                                                           {/*문서번호 리스트 */}
                                                           <div className="tag-list">
                                                             <ul>
@@ -994,20 +993,8 @@ function ReportASRDetail() {
                                                   <div className="box-view-list">
                                                     <ul className="view-list">
                                                       <li className="accumlate-list">
-                                                        <label className="t-label">Event Summary</label>
-                                                        <span className="text-desc-type1">Event Summary 내용</span>
-                                                      </li>
-                                                    </ul>
-                                                  </div>
-                                                </div>
-                                              </div>
-                                              <div className="form-cell wid100">
-                                                <div className="form-group wid100">
-                                                  <div className="box-view-list">
-                                                    <ul className="view-list">
-                                                      <li className="accumlate-list">
-                                                        <label className="t-label">SPI 여부</label>
-                                                        <span className="text-desc-type1">YES</span>
+                                                        <label className="t-label">Attachment</label>
+                                                        <span className="text-desc-type1"></span>
                                                       </li>
                                                       <li className="detail">
                                                         {/* 파일첨부영역 : drag */}
@@ -1035,8 +1022,10 @@ function ReportASRDetail() {
                                                   <div className="box-view-list">
                                                     <ul className="view-list">
                                                       <li className="accumlate-list">
-                                                        <label className="t-label">발생 위치</label>
-                                                        <span className="text-desc-type1">이륙 후 3시간 경과 시점</span>
+                                                        <label className="t-label">
+                                                          Due Date <span className="required">*</span>
+                                                        </label>
+                                                        <span className="text-desc-type1">2024-07-15</span>
                                                       </li>
                                                     </ul>
                                                   </div>

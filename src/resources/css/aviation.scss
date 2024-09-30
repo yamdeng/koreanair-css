@@ -262,6 +262,7 @@
 
 /*인풋박스 안 툴팁*/
 .contents .form-table .form-cell .form-group{position:relative}
+.contents .form-table .form-cell .form-group label.t-label{display:block;color:var(--color-neutral-70);line-height:2.3;font-weight:400;font-size:1.5rem;white-space: nowrap;}
 .contents .form-table .form-cell .form-group .tooltip{position:relative;display:block;float:inline-end;background: url(../images/tooltip.svg) left center no-repeat;background-size: 2.4rem;font-size:0;width:2.4rem;height:2.0rem;cursor:pointer}
 .contents .form-table .form-cell .form-group .tooltip .tooltiptext{visibility:hidden;position: absolute; z-index:1;width:25.0rem;font-size:1.2rem;background-color:var(--color-neutral-80);color: var(--color-neutral-10);text-align:left;border-radius:0.8rem;padding:1.5rem 2.0rem}
 .contents .form-table .form-cell .form-group .tooltip .tooltiptext li::marker{content:''; color: var(--color-neutral-10);font-size:1rem}
@@ -421,7 +422,7 @@
 .CheckList-Title{display:flex;width:100%;align-items:center;vertical-align:middle}
 
 .tabs-tab-remove{position:relative;/*padding-left:1.1rem*/}
-.tabs-tab-remove .delete{position:absolute;top:-0.8rem;background:url(/src/resources/images/delete-text.svg) center center no-repeat;font-size:0;width:2rem;height:2rem}
+.tabs-tab-remove .delete{position:absolute;top:-0.8rem;left:1rem;background:url(/src/resources/images/delete-text.svg) center center no-repeat;font-size:0;width:2rem;height:2rem}
 .tabs-tab-remove .btnClear{position:absolute;top:-0.9rem;right:-1rem;width: 2.5rem;height: 2.5rem;font-size:0;background:url(/src/resources/images/delete-text.svg) center center no-repeat;background-size:cover;outline:none;cursor:pointer}
 .tabs-tab-remove .btn-list{position:absolute;top:-0.8rem;width:2.2rem;height:2rem;font-size:0;background:url(../images/icon-register-wh.svg)center center no-repeat;align-items:center}
 .tabs-tab-remove .btn-list-blue{position:absolute;top:-0.8rem;width:2.3rem;height:2rem;font-size:0;background:url(../images/icon-register.svg)center center no-repeat;align-items:center}

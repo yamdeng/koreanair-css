@@ -564,7 +564,7 @@ function CSRReportEdit() {
                             CREW <span className="required"></span>
                           </label>
                           <div className="form-table">
-                            <div className="form-cell wid30">
+                            <div className="form-cell wid50">
                               <div className="form-group wid100">
                                 <AppSelect label={'관련자'} />
                               </div>
@@ -573,6 +573,12 @@ function CSRReportEdit() {
                               <div className="form-group wid100">
                                 {/* */}
                                 <AppAutoComplete label="" required />
+                              </div>
+                            </div>
+                            <div className="form-cell wid30">
+                              <div className="form-group wid100">
+                                {/* */}
+                                <label className="t-label">홍길동</label>
                               </div>
                             </div>
                             <div className="form-cell wid10">
