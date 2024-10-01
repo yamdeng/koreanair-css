@@ -107,7 +107,7 @@
 
 .round-wrap{position:relative;line-height: 0;border: 0.1rem solid var(--color-neutral-40);border-radius:0.5rem;padding:1.3rem 1rem 1.3rem}
 .round-wrap.error {border: solid 0.1rem var(--color-negative)}
-.round-wrap .icon_report{display:block;width:3rem;height:3rem;/*padding:2.5rem 1rem 1rem;*/background:url(/src/resources/images/icon-documents.svg) no-repeat center center;border:0;cursor:pointer}
+.round-wrap .icon_report{display:block;width:3rem;height:3rem;background:url(/src/resources/images/icon-documents.svg) no-repeat center center;border:0;cursor:pointer}
 .round-wrap.num{padding:1rem 1rem 0.5rem}
 .info-list{display:block;width:100%}
 .info-list h3{font-size:1.8rem;font-weight:500;color:var(--color-darkblue-100);padding-bottom:1rem}
@@ -247,8 +247,6 @@
 .work-group1 .work-table1 tbody{display:block;height:23.0rem;overflow-y:auto}
 
 
-
-
 .detailForm{padding:1.5rem 0.5rem}
 .detailForm-detail-box{position:relative;overflow:hidden;padding:0.8rem 0rem;width:100%;border:0}
 .detailForm-detail{position:relative;overflow:hidden;padding:1.0rem;width:100%;border:0.1rem solid var(--color-neutral-30);border-radius:0.8rem}
@@ -281,15 +279,11 @@
 .contents .form-table .form-cell .group-box-wrap .tooltip .tooltip-right{top:-0.6rem;left:155%}
 .contents .form-table .form-cell .group-box-wrap .tooltip .tooltip-right::after{top:1.6rem;right:100%;margin-top:-0.5rem;border-color: transparent var(--color-neutral-80) transparent transparent}
 
-
-
 .tooltip .tooltiptext1{visibility:hidden;position:absolute;z-index:1;width:27rem;font-size:1.2rem;background-color: var(--color-neutral-80);color: var(--color-neutral-10);text-align:left;border-radius:0.8rem;padding:1.5rem 2.0rem}
 .tooltip .tooltiptext1 li::marker{content:'-';color: var(--color-neutral-10);font-size:1rem}
 .tooltip .tooltiptext1 ul li{font-size: 1.2rem; color: var(--color-neutral-10);  display: list-item; padding-left: 0.6rem}
 .tooltip:hover .tooltiptext1{visibility:visible}
 .tooltip .tooltiptext1::after{content:'';position:absolute;border-style:solid;border-width:0.5rem}
-
-
 
 
 .detailForm-detail.list-group + .detailForm-detail.list-group{margin-top:0.8rem}
@@ -420,6 +414,11 @@
   .form-group .type7{width:100%}
 }
 .CheckList-Title{display:flex;width:100%;align-items:center;vertical-align:middle}
+
+.chart-wrap{display:flex;width:100%;justify-content: flex-start;flex-flow: row wrap;box-sizing: border-box;background-color:var(--color-neutral-20);border-radius:0.8rem;padding:2rem 3rem;margin:2rem 0;align-items: center;}
+.chart-wrap .chart-box{position: relative;box-sizing:border-box;width:10%;height: 15rem;}
+.chart-wrap .chart-box + .chart-box{margin-left:3.5rem}
+.chart-wrap .chart-box img{height: 15rem;object-fit: cover;background-size: cover;border-radius: 0.8rem;}
 
 .ebook-wrap{position:relative;width:100%;}
 .ebook-wrap .box-list{display: flex;
@@ -609,118 +608,6 @@
 .menu-tab-nav .swiper-container .menu-tab a button:first-child{padding-left:1.5rem}
 .menu-tab-nav .swiper-container .menu-tab a button + button{padding-left:2.0rem}
 
-// .ux-tab{display:flex;flex-wrap:nowrap;border-radius:0.8rem;overflow:auto hidden;scroll-behavior:smooth;gap:1.2rem 0;margin:0rem 0 1.5rem}
-// .ux-tab:after{content:'';display:block;clear:both}
-// .ux-tab.-scroll .ux-tab__wrap, .ux-tab.-scroll .ux-order-list-tab__wrap {
-//   position: relative;
-// }
-
-// .ux-order-list-tab .ux-tab__list {
-//   display: flex;
-//   align-items: stretch;
-//   margin: 0px;
-//   overflow: inherit;
-//   width: 100%;
-// }
-// .ux-tab__list {
-//   position: relative;
-//   padding: 0px;
-//   margin-bottom: 2.4rem;
-//   white-space: nowrap;
-//   font-size: 0px;
-//   overflow: auto hidden;
-//   scroll-behavior: smooth;
-//   scrollbar-width: none;
-// }
-//   .ux-tab__list::before {
-//     position: absolute;
-//     left: 0px;
-//     bottom: 0px;
-//     display: block;
-//     width: 100%;
-//     height: 0.2rem;
-//     content: "";
-//     background-color: rgb(217, 217, 217);
-// }
-// .ux-order-list-tab__item {
-//   height: 100%;
-//   padding-right: 2.8rem;
-//   position: relative;
-// }
-// .ux-order-list-tab__item::after {
-//   content: "";
-//   border-bottom: 2px solid rgb(217, 217, 217);
-//   position: absolute;
-//   left: 0px;
-//   right: 0px;
-//   bottom: 0px;
-//   z-index: 0;
-// }
-// .ux-tab__item.-active .ux-order-list-tab__button {
-//   position: relative;
-//   border-bottom-color: rgb(5, 23, 102);
-//   color: rgb(5, 23, 102);
-//   font-weight: 700;
-// }
-// .ux-order-list-tab__button .icon-end {
-//   position: absolute;
-//   right: -2.2rem;
-//   top: 50%;
-//   transform: translateY(-50%);
-// }
-// .icon {
-//   display: flex;
-//   position: absolute;
-//   top: -1rem;
-//   right: -0rem;
-//   font-size: 0;
-//   background: url(/src/resources/images/tooltip.svg) center center no-repeat;
-//   background-size: 2.6rem;
-//   width: 2.6rem;
-//   height: 2.6rem;
-//   cursor: pointer;
-// }
-// .icon.-arrow-right.-gray {
-//   background-image: url(/src/resources/images/icon--arrow-right-gray.svg);
-// }
-// .icon.-msize16 {
-//   display: inline-block;
-//   vertical-align: middle;
-// }
-// .icon.-size24 {
-//   width: 24px;
-//   height: 24px;
-//   background-size: 100%;
-// }
-// .ux-order-list-tab__button{position: relative;
-//   display: flex;
-//   justify-content: flex-start;
-//   align-items: flex-end;
-//   flex-wrap: wrap;
-//   width: max-content;
-//   max-width: 20rem;
-//   height: 100%;
-//   padding: 0.8rem 3.2rem 0.8rem 1.6rem;
-//   font-size: 1.6rem;
-//   color: rgb(94, 94, 94);
-//   font-weight: normal;
-//   border-width: 0px 0px 2px;
-//   border-style: none none solid;
-//   border-top-color: initial;
-//   border-right-color: initial;
-//   border-left-color: initial;
-//   border-image: initial;
-//   z-index: 1;
-//   border-bottom-color: rgb(217, 217, 217);
-//   border-radius: 0.2rem;
-//   box-sizing: border-box;
-//   cursor: pointer;
-//   appearance: none;
-//   background-color: transparent;
-//   overflow-wrap: break-word;
-//   white-space: normal;
-//   line-height: 1.5;
-//   font-family: inherit;}
 
 /*공통테이블*/
 .Safety-table-cell{text-align:center;align-items:center}
@@ -841,8 +728,8 @@
 
   .grid-item .grid-group:nth-of-type(2){width:40%;padding:2rem 0rem 2.5rem 3rem}
   .grid-item .grid-group:nth-of-type(2) .main-conts-graph{display:flex;width:100%;justify-content:flex-start;flex-flow:row wrap;box-sizing:border-box;padding:0 0 2rem}
-  .grid-item .grid-group:nth-of-type(2) .main-conts-graph .graph-box{position:relative;box-sizing:border-box;width:22%;height:15.0rem;/*background-color:var(--color-green)*/}
-  .grid-item .grid-group:nth-of-type(2) .main-conts-graph .graph-box img{width:100%;height:15.0rem;object-fit:cover;background-size: cover;border-radius: 0.8rem;}
+  .grid-item .grid-group:nth-of-type(2) .main-conts-graph .graph-box{position:relative;box-sizing:border-box;/*width:22%;*/height:15.0rem;/*background-color:var(--color-green)*/}
+  .grid-item .grid-group:nth-of-type(2) .main-conts-graph .graph-box img{/*width:100%;*/height:15.0rem;object-fit:cover;background-size: cover;border-radius: 0.8rem;}
   .grid-item .grid-group:nth-of-type(2) .main-conts-graph .graph-box + .graph-box{margin-left:1.7rem;}
   .grid-item .grid-group:nth-of-type(2) .main-conts-graph:last-child{padding-bottom:0}
 

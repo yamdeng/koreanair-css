@@ -279,24 +279,24 @@
     font-size: 1.6rem;
   }
   .btn_close {
-    padding: 0.8rem 4.8rem;
+    padding: 0.8rem 3.8rem;
     /*border: 0.2rem solid var(--color-darkblue-100);*/
     border-radius: 99.9rem;
     background: var(--color-neutral-30); 
   }
   .btn_delete {
-    padding: 0.8rem 4.8rem;
+    padding: 0.8rem 3.8rem;
     /*border: 0.2rem solid var(--color-darkblue-100);*/
     border-radius: 99.9rem;
     background: var(--color-neutral-30); 
   }
   .btn_confirm {
-    padding: 0.8rem 2.8rem;
+    padding: 0.8rem 3.8rem;
     border-radius: 99.9rem; 
     background: var(--color-darkblue-100);
   }
   .btn-disabled {
-    padding: 0.8rem 4.8rem;
+    padding: 0.8rem 3.8rem;
     border-radius: 99.9rem;
     background: var(--color-neutral-30); 
     color: var(--color-neutral-50);
@@ -592,6 +592,26 @@
 .mb20 {margin-bottom: 2.0rem;}
 .mt30 {margin-top: 3.0rem;}
 .pd-10 {padding: 1.0rem;}
+
+/*수행 담당 지정*/
+.manager-checkbox{display:flex;width:100%;min-width:76.7rem; height: 100%; overflow: auto;}
+.checklist.manager{display: flex; width:50.0rem; height: auto; border: 0.1rem solid var(--color-neutral-40); border-radius: 0.8rem; background-color: var(--color-neutral-20);}
+.checklist.manager .search_box {width: 48.0rem; max-height: 100dvh;}
+.checklist.manager .search_box .tit{}
+.checklist.manager .search_box .search .search-list {width: 100%;}
+.checklist.manager .search_box .search .search-list .list {position: relative; width: 100%;align-self: flex-start;height: 30.0rem; overflow: auto;}
+.checklist.manager .search_box .search .search-list .list li{position: relative;
+  display: flex;height:8rem;
+  -webkit-box-pack: start;
+  justify-content: start;
+  -webkit-box-align: center;
+  align-items: center;
+  margin-bottom: 1rem;}
+.checklist.manager .search_box .search .search-list .list li .InfoBox {display: inline-flex;justify-content: center;align-items: center;width: 3.6rem;height: 3.6rem;border-radius: 50%;overflow: hidden;margin-right: 0.8rem;background: url(/src/resources/images/no_img_pro.jpg) 50% 50% / 100% no-repeat rgb(204, 204, 204);
+}
+.checklist.manager .search_box .search .search-list .list li .form-cell > .chk-wrap > label{display:inline-flex}
+
+
 .user-checkbox {display: flex; margin: 3.0rem 0; width: 100%; min-width: 76.7rem; height: 100%; overflow: auto;}
 .checklist {display: flex; width: 70.0rem; height: auto; border: 0.1rem solid var(--color-neutral-40); border-radius: 0.8rem; background-color: var(--color-neutral-20);}
 .checklist .listbox {width: 30.0rem; height: 100%; padding: 2.0rem;}

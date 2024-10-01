@@ -53,6 +53,7 @@ import SafetyActionModal from '@/components/publish/modal/SafetyActionModal';
 import SafetyActionEditModal from '@/components/publish/modal/SafetyActionEditModal';
 import SafetyAdvEditModal from '@/components/publish/modal/SafetyAdvEditModal';
 import MainNoticeModal from '@/components/publish/modal/MainNoticeModal';
+import ChangeAddModal from '@/components/publish/modal/ChangeAddModal';
 
 const ModalPageInfo: any = {};
 
@@ -262,8 +263,8 @@ ModalPageInfo.list = [
   },
   {
     title: '[항공안전> 04.안전보증] 변화관리 > 변화관리추가 팝업창',
-    Component: PSPILoadModal,
-    path: 'PSPILoadModal',
+    Component: ChangeAddModal,
+    path: 'ChangeAddModal',
     description: '',
     success: false,
   },

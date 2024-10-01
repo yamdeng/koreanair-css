@@ -78,6 +78,7 @@ import PayList from '@/components/publish/aviation/PayList';
 import ReportASRDetail from '@/components/publish/aviation/ReportASRDetail';
 import PayDetail from '@/components/publish/aviation/PayDetail';
 import SkySafetyList from '@/components/publish/aviation/SkySafetyList';
+import ChangeEdit from '@/components/publish/aviation/ChangeEdit';
 import { fa, fakerLV } from '@faker-js/faker';
 import { fail } from 'assert';
 
@@ -340,17 +341,17 @@ AviationPageInfo.list = [
   },
   {
     title: '[04.안전보증] 변화관리 > 변화관리 List',
-    Component: SPIEquipList,
-    path: 'SPIEquipList',
+    Component: ChangeList,
+    path: 'ChangeList',
     description: '',
-    success: false,
+    success: true,
   },
   {
     title: '[04.안전보증] 변화관리 > 변화관리 등록',
-    Component: SPIEquipList,
-    path: 'SPIEquipList',
+    Component: ChangeEdit,
+    path: 'ChangeEdit',
     description: '',
-    success: false,
+    success: true,
   },
 
   {

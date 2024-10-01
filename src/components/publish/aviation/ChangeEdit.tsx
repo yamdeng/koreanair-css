@@ -9,15 +9,15 @@ import AppSelect from '@/components/common/AppSelect';
 import chartasr from '@/resources/images/ASR-box.svg';
 import chartmsr from '@/resources/images/MSR-box.svg';
 
-function ChangeList() {
+function ChangeEdit() {
   const [inputValue, setInputValue] = useState('');
   const rowData = getAllData();
   const columns = testColumnInfos;
   const customButtons = [
     {
-      title: '내보내기',
+      title: '추가',
       onClick: () => {
-        alert('내보내기');
+        alert('추가');
       },
     },
   ];
@@ -36,13 +36,13 @@ function ChangeList() {
             <a href="javascript:void(0);">변화관리</a>
           </li>
           <li className="breadcrumb-item">
-            <a href="javascript:void(0);">변화관리 리스트</a>
+            <a href="javascript:void(0);">변화관리 등록</a>
           </li>
         </ol>
       </div>
       {/*경로 */}
       <div className="conts-title">
-        <h2>변화관리</h2>
+        <h2>변화관리 등록</h2>
       </div>
 
       {/*검색영역 */}
@@ -62,19 +62,6 @@ function ChangeList() {
               <AppTextInput label="변하관리주제명" />
             </div>
           </div>
-          <div className="form-cell wid30">
-            <div className="form-group wid100">
-              <AppSelect label={'진행여부'} required />
-            </div>
-          </div>
-          <div className="form-cell wid30">
-            <div className="form-group wid100">
-              <AppSelect label={'부문'} required />
-            </div>
-          </div>
-        </div>
-        <div className="form-table">
-          {' '}
           <div className="form-cell wid50">
             <div className="form-group wid100">
               <div className="df">
@@ -86,6 +73,11 @@ function ChangeList() {
                   <AppDatePicker label={'게시기간'} />
                 </div>
               </div>
+            </div>
+          </div>
+          <div className="form-cell wid30">
+            <div className="form-group wid100">
+              <AppSelect label={'부문'} required />
             </div>
           </div>
           <div className="form-cell wid50">
@@ -107,41 +99,8 @@ function ChangeList() {
         <AppTable rowData={rowData} columns={columns} customButtons={customButtons} />
       </div>
       {/*//그리드영역 */}
-
-      {/*진행률 */}
-      <div className="chart-wrap">
-        <div className="chart-box">
-          <img src={chartasr} className="" alt="ASR" />
-        </div>
-        <div className="chart-box">
-          <img src={chartasr} className="" alt="ASR" />
-        </div>
-        <div className="chart-box">
-          <img src={chartasr} className="" alt="ASR" />
-        </div>
-        <div className="chart-box">
-          <img src={chartasr} className="" alt="ASR" />
-        </div>
-        <div className="chart-box">
-          <img src={chartasr} className="" alt="ASR" />
-        </div>
-        <div className="chart-box">
-          <img src={chartasr} className="" alt="ASR" />
-        </div>
-        <div className="chart-box">
-          <img src={chartasr} className="" alt="ASR" />
-        </div>
-        <div className="chart-box">
-          <img src={chartasr} className="" alt="ASR" />
-        </div>
-      </div>
-      {/*그리드영역 */}
-      <div className="">
-        <AppTable rowData={rowData} columns={columns} />
-      </div>
-      {/*//그리드영역 */}
     </>
   );
 }
 
-export default ChangeList;
+export default ChangeEdit;
