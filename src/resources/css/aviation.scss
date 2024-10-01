@@ -437,17 +437,35 @@
 .chart-wrap .chart-box + .chart-box{margin-left:3.5rem}
 .chart-wrap .chart-box img{height: 15rem;object-fit: cover;background-size: cover;border-radius: 0.8rem;}
 
-.ebook-wrap{position:relative;width:100%;}
-.ebook-wrap .box-list{display: flex;
-  flex-wrap: wrap;
-  margin: 0 0 -20px -20px;}
-  .ebook-wrap .box-list li {
+.ebook-wrap{position:relative;width:100%}
+.ebook-wrap .box-list{display:flex;flex-wrap:wrap;margin: 0 0 -20px -20px;}
+.ebook-wrap .box-list li {position: relative;overflow: hidden;
     width: 23.7%;
     margin: 0 0 20px 20px;
     border: 1px solid #ddd;
     border-radius: 14px;
     padding: 32px;
 }
+// .ebook-wrap .box-list li :after{position: absolute;
+//   bottom: 20px;
+//   left: 0;
+//   width: 100%;
+//   height: 140px;
+//   background-color: #fff;
+//   display: block;
+//   opacity: 0;
+//   content: '';
+//   transition: .4s all ease, .1s opacity ease;}
+.ebook-wrap .box-list li .ebook-preview{width: 100%;
+    height: 420px;
+    margin-top: 20px;
+    background-color: #fff;}
+.ebook-wrap .box-list li .ebook-preview img{width: 100%;
+      height: 33.8rem;
+      // object-fit: cover;
+      background-size: cover;
+      border-radius: 0.8rem;}
+
 .tabs-tab-remove{position:relative;/*padding-left:1.1rem*/}
 .tabs-tab-remove .delete{position:absolute;top:-0.8rem;left:1rem;background:url(/src/resources/images/delete-text.svg) center center no-repeat;font-size:0;width:2rem;height:2rem}
 .tabs-tab-remove .btnClear{position:absolute;top:-0.9rem;right:-1rem;width: 2.5rem;height: 2.5rem;font-size:0;background:url(/src/resources/images/delete-text.svg) center center no-repeat;background-size:cover;outline:none;cursor:pointer}

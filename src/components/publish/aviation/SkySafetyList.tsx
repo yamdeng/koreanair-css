@@ -5,6 +5,7 @@ import { getAllData } from '@/data/grid/example-data-new';
 import { testColumnInfos } from '@/data/grid/table-column';
 import AppDatePicker from '@/components/common/AppDatePicker';
 import AppSelect from '@/components/common/AppSelect';
+import SafetyImage from '@/resources/images/img-SafetyPolicy.jpg';
 
 function SkySafetyList() {
   const [inputValue, setInputValue] = useState('');
@@ -34,17 +35,23 @@ function SkySafetyList() {
         <h2>SkySafety21</h2>
       </div>
 
-      {/*지표정보*/}
+      {/*ebook정보*/}
       <div className="ebook-wrap">
         <ul className="box-list">
-          <li></li>
+          <li>
+            <div className="ebook-preview">
+              <p className="thumb">
+                <img src={SafetyImage} className="img-thumbnail" alt="Safety Policy" />
+              </p>
+              <div>vol.134</div>
+            </div>
+          </li>
           <li></li>
           <li></li>
           <li></li>
         </ul>
       </div>
-
-      {/*//지표정보 */}
+      {/*//ebook정보 */}
     </>
   );
 }
