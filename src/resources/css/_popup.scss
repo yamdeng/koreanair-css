@@ -594,22 +594,48 @@
 .pd-10 {padding: 1.0rem;}
 
 /*수행 담당 지정*/
-.manager-checkbox{display:flex;width:100%;min-width:76.7rem; height: 100%; overflow: auto;}
-.checklist.manager{display: flex; width:50.0rem; height: auto; border: 0.1rem solid var(--color-neutral-40); border-radius: 0.8rem; background-color: var(--color-neutral-20);}
-.checklist.manager .search_box {width: 48.0rem; max-height: 100dvh;}
-.checklist.manager .search_box .tit{}
-.checklist.manager .search_box .search .search-list {width: 100%;}
-.checklist.manager .search_box .search .search-list .list {position: relative; width: 100%;align-self: flex-start;height: 30.0rem; overflow: auto;}
-.checklist.manager .search_box .search .search-list .list li{position: relative;
-  display: flex;height:8rem;
-  -webkit-box-pack: start;
-  justify-content: start;
-  -webkit-box-align: center;
-  align-items: center;
-  margin-bottom: 1rem;}
-.checklist.manager .search_box .search .search-list .list li .InfoBox {display: inline-flex;justify-content: center;align-items: center;width: 3.6rem;height: 3.6rem;border-radius: 50%;overflow: hidden;margin-right: 0.8rem;background: url(/src/resources/images/no_img_pro.jpg) 50% 50% / 100% no-repeat rgb(204, 204, 204);
+.manager-checkbox{display:flex;width:100%;/*min-width:76.7rem; height: 100%;*/ overflow: auto;}
+
+.search_box1 {width: 45.5rem; height: 100%}
+.search_box1 .tit{ width:100%;font-size:1.5rem;height:3rem}
+.search_box1 .tit span{float:right}
+.search_box1 .tit span.color-red{color:var(--color-negative);font-size:1.4rem}
+
+.checklist.manager{
+  display: flex; width:44.5rem; height: auto; border: 0.1rem solid var(--color-neutral-40); border-radius: 0.8rem; background-color: var(--color-neutral-20);
+  .search_box1 .search{padding:2rem 2rem 0 2rem}
+  .search_box1 .search .search-list{width:100%}
+  .search_box1 .search .search-list .list{position:relative;width:100%;align-self: flex-start;height:45.0rem; overflow: auto;}
+  .search_box1 .search .search-list .list li{position:relative;display:flex;height:8rem;-webkit-box-pack: start;justify-content: start;-webkit-box-align: center;align-items: center;margin-bottom: 1rem;}
+  .search_box1 .search .search-list .list li .InfoBox{display:inline-flex;justify-content: center;align-items: center;width: 3.6rem;height: 3.6rem;border-radius: 50%;overflow: hidden;margin-right: 0.8rem;background: url(/src/resources/images/no_img_pro.jpg) 50% 50% / 100% no-repeat rgb(204, 204, 204);}
+  .search_box1 .search .search-list .list li .form-cell > .chk-wrap > label{display:inline-flex}
 }
-.checklist.manager .search_box .search .search-list .list li .form-cell > .chk-wrap > label{display:inline-flex}
+.checklist.manager1{
+  display: flex; width:44.5rem; height:15.0rem; border: 0.1rem solid var(--color-neutral-40); border-radius: 0.8rem; background-color: var(--color-neutral-20);
+  .search_box1 .search{padding:2rem 2rem 0 2rem}
+  .search_box1 .search .search-list {width: 100%;}
+  .search_box1 .search .search-list .list {position: relative; width: 100%;align-self: flex-start;height:20.0rem; overflow: auto;}
+  .search_box1 .search .search-list .list li{position: relative; display: flex;height:8rem;-webkit-box-pack: start;justify-content: start;-webkit-box-align: center;align-items: center;margin-bottom: 1rem;}
+  .search_box1 .search .search-list .list li .InfoBox{display:inline-flex;justify-content: center;align-items: center;width: 3.6rem;height: 3.6rem;border-radius: 50%;overflow: hidden;margin-right: 0.8rem;background: url(/src/resources/images/no_img_pro.jpg) 50% 50% / 100% no-repeat rgb(204, 204, 204);}
+  .search_box1 .search .search-list .list li .form-cell > .chk-wrap > label{display:inline-flex}
+}
+
+.checklist.manager2{
+  position: relative;margin-top:2rem;width:44.5rem; height:auto; border: 0.1rem solid var(--color-neutral-40); border-radius: 0.8rem; background-color: var(--color-neutral-20);
+  .search_box1 .search{padding:2rem 2rem 0 2rem}
+  .search_box1 .search .search-list {width: 100%;}
+  .search_box1 .search .search-list .list {position: relative; width: 100%;align-self: flex-start;height:30.0rem; overflow: auto;}
+  .search_box1 .search .search-list .list li{position: relative; display: flex;height:8rem;-webkit-box-pack: start;justify-content: start;-webkit-box-align: center;align-items: center;margin-bottom: 1rem;}
+  .search_box1 .search .search-list .list li .InfoBox{display:inline-flex;justify-content: center;align-items: center;width: 3.6rem;height: 3.6rem;border-radius: 50%;overflow: hidden;margin-right: 0.8rem;background: url(/src/resources/images/no_img_pro.jpg) 50% 50% / 100% no-repeat rgb(204, 204, 204);}
+  .search_box1 .search .search-list .list li .form-cell > .chk-wrap > label{display:inline-flex}
+}
+
+.comment-box{position:relative;display:block;width:100%;margin-top:1.5rem;padding-right:1.5rem}
+.checkbutton-box{height:50%; align-items: center; justify-content:center; padding: 0 0.5rem;}
+.checkbutton-box + .checkbutton-box{display:block;}
+.checkbutton-box button {background: url(../images/pagination-last.svg) center center no-repeat; width: 4.0rem; height: 4.0rem; font-size: 0;}
+.checkbutton-box button:nth-child(2){background: url(../images/pagination-last.svg) center center no-repeat;transform: rotate(-180deg);}
+.checkbutton-box button + button{display: block;}
 
 
 .user-checkbox {display: flex; margin: 3.0rem 0; width: 100%; min-width: 76.7rem; height: 100%; overflow: auto;}

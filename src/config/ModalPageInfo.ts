@@ -266,7 +266,7 @@ ModalPageInfo.list = [
     Component: ChangeAddModal,
     path: 'ChangeAddModal',
     description: '',
-    success: false,
+    success: true,
   },
   {
     title: '[항공안전 > 06.AUDIT] Checklist 추가 팝업창',

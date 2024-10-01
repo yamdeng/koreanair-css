@@ -6,6 +6,7 @@ import AppDatePicker from '@/components/common/AppDatePicker';
 import AppSelect from '@/components/common/AppSelect';
 import AppAutoComplete from '@/components/common/AppAutoComplete';
 import AppTextInput from '@/components/common/AppTextInput';
+import AppTextArea from '@/components/common/AppTextArea';
 
 const { Dragger } = Upload;
 import { Upload } from 'antd';
@@ -271,7 +272,7 @@ function TestModal(props) {
         {/*레이어팝업 */}
         <div className="modal-overlay"></div>
         <div className="modal">
-          <div className="pop_lg_cont_box">
+          <div className="pop_cont">
             <h3 className="pop_title">수행 담당 지정</h3>
             <div className="pop_flex_group">
               <div className="editbox">
@@ -285,10 +286,11 @@ function TestModal(props) {
 
                 <div className="manager-checkbox">
                   <div className="checklist manager">
-                    <div className="search_box">
+                    <div className="search_box1">
                       <div className="search">
                         <div className="tit">
                           팀구성원<em>(28)</em>
+                          <span>가나다순</span>
                         </div>
                         <div className="search-list">
                           <ul className="list">
@@ -310,8 +312,68 @@ function TestModal(props) {
                               <div className="form-cell">
                                 <div className="chk-wrap">
                                   <label>
-                                    <input type="checkbox" />
-                                    <span className="ck-list">최윤정(YJCHOI) / - / 대한항공 KBSYS</span>
+                                    <input type="checkbox" checked />
+                                    <span className="InfoBox"></span>
+                                    <div className="Info">
+                                      <div className="Name">홍길동 (170****)</div>
+                                      <div className="Dept">상무대우수석사무장 / (주)대한항공</div>
+                                    </div>
+                                  </label>
+                                </div>
+                              </div>
+                            </li>
+                            <li>
+                              <div className="form-cell">
+                                <div className="chk-wrap">
+                                  <label>
+                                    <input type="checkbox" checked />
+                                    <span className="InfoBox"></span>
+                                    <div className="Info">
+                                      <div className="Name">홍길동 (170****)</div>
+                                      <div className="Dept">상무대우수석사무장 / (주)대한항공</div>
+                                    </div>
+                                  </label>
+                                </div>
+                              </div>
+                            </li>
+                            <li>
+                              <div className="form-cell">
+                                <div className="chk-wrap">
+                                  <label>
+                                    <input type="checkbox" checked />
+                                    <span className="InfoBox"></span>
+                                    <div className="Info">
+                                      <div className="Name">홍길동 (170****)</div>
+                                      <div className="Dept">상무대우수석사무장 / (주)대한항공</div>
+                                    </div>
+                                  </label>
+                                </div>
+                              </div>
+                            </li>
+                            <li>
+                              <div className="form-cell">
+                                <div className="chk-wrap">
+                                  <label>
+                                    <input type="checkbox" checked />
+                                    <span className="InfoBox"></span>
+                                    <div className="Info">
+                                      <div className="Name">홍길동 (170****)</div>
+                                      <div className="Dept">상무대우수석사무장 / (주)대한항공</div>
+                                    </div>
+                                  </label>
+                                </div>
+                              </div>
+                            </li>
+                            <li>
+                              <div className="form-cell">
+                                <div className="chk-wrap">
+                                  <label>
+                                    <input type="checkbox" checked />
+                                    <span className="InfoBox"></span>
+                                    <div className="Info">
+                                      <div className="Name">홍길동 (170****)</div>
+                                      <div className="Dept">상무대우수석사무장 / (주)대한항공</div>
+                                    </div>
                                   </label>
                                 </div>
                               </div>
@@ -321,87 +383,110 @@ function TestModal(props) {
                       </div>
                     </div>
                   </div>
-                  <div className="checkbutton">
-                    <button></button>
+                  {/*화살표버튼영역 */}
+                  <div>
+                    <div className="checkbutton-box">
+                      <button></button>
+                      <button></button>
+                    </div>
+                    <div className="checkbutton-box">
+                      <button></button>
+                      <button></button>
+                    </div>
                   </div>
-                  <div className="selectlist">
-                    <div className="title">
-                      <p>
-                        선택목록
-                        <a className="icon" href="javascript:void(0);">
-                          <span></span>
-                        </a>
-                      </p>
+                  {/*//화살표버튼영역 */}
+                  <div>
+                    <div className="checklist manager1">
+                      <div className="search_box1">
+                        <div className="search">
+                          <div className="tit">
+                            리더<em>(1)</em>
+                          </div>
+                          <div className="search-list">
+                            <ul className="list">
+                              <li>
+                                <div className="form-cell">
+                                  <div className="chk-wrap">
+                                    <label>
+                                      <input type="checkbox" checked />
+                                      <span className="InfoBox"></span>
+                                      <div className="Info">
+                                        <div className="Name">홍길동 (170****)</div>
+                                        <div className="Dept">상무대우수석사무장 / (주)대한항공</div>
+                                      </div>
+                                    </label>
+                                  </div>
+                                </div>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
                     </div>
-                    <div className="uesrlist">
-                      <p className="stitle">사용자 목록</p>
-                      <ul className="list">
-                        <li>
-                          지유진(YJJI) / - / 대한항공 KBSYS
-                          <a href="javascript:void(0);">
-                            <span className="delete">X</span>
-                          </a>
-                        </li>
-                        <li>
-                          최윤정(YJCHOI) / - / 대한항공 KBSYS
-                          <a href="javascript:void(0);">
-                            <span className="delete">X</span>
-                          </a>
-                        </li>
-                        <li>
-                          김영기(YKKIM) / 전산1급 / 대한항공 KBSYS
-                          <a href="javascript:void(0);">
-                            <span className="delete">X</span>
-                          </a>
-                        </li>
-                        <li>
-                          김영기(YKKIM) / 전산1급 / 대한항공 KBSYS
-                          <a href="javascript:void(0);">
-                            <span className="delete">X</span>
-                          </a>
-                        </li>
-                        <li>
-                          김영기(YKKIM) / 전산1급 / 대한항공 KBSYS
-                          <a href="javascript:void(0);">
-                            <span className="delete">X</span>
-                          </a>
-                        </li>
-                      </ul>
+
+                    <div className="checklist manager2">
+                      <div className="search_box1">
+                        <div className="search">
+                          <div className="tit">
+                            팀원<em>(3)</em>
+                            <span className="color-red">최대3명</span>
+                          </div>
+                          <div className="search-list">
+                            <ul className="list">
+                              <li>
+                                <div className="form-cell">
+                                  <div className="chk-wrap">
+                                    <label>
+                                      <input type="checkbox" checked />
+                                      <span className="InfoBox"></span>
+                                      <div className="Info">
+                                        <div className="Name">홍길동 (170****)</div>
+                                        <div className="Dept">상무대우수석사무장 / (주)대한항공</div>
+                                      </div>
+                                    </label>
+                                  </div>
+                                </div>
+                              </li>
+                              <li>
+                                <div className="form-cell">
+                                  <div className="chk-wrap">
+                                    <label>
+                                      <input type="checkbox" checked />
+                                      <span className="InfoBox"></span>
+                                      <div className="Info">
+                                        <div className="Name">홍길동 (170****)</div>
+                                        <div className="Dept">상무대우수석사무장 / (주)대한항공</div>
+                                      </div>
+                                    </label>
+                                  </div>
+                                </div>
+                              </li>
+                              <li>
+                                <div className="form-cell">
+                                  <div className="chk-wrap">
+                                    <label>
+                                      <input type="checkbox" checked />
+                                      <span className="InfoBox"></span>
+                                      <div className="Info">
+                                        <div className="Name">홍길동 (170****)</div>
+                                        <div className="Dept">상무대우수석사무장 / (주)대한항공</div>
+                                      </div>
+                                    </label>
+                                  </div>
+                                </div>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
                     </div>
-                    <div className="departmentlist">
-                      <div className="stitle">부서 목록</div>
-                      <ul className="list">
-                        <li>
-                          김영기(YKKIM) / 전산1급 / 대한항공 KBSYS
-                          <a href="javascript:void(0);">
-                            <span className="delete">X</span>
-                          </a>
-                        </li>
-                        <li>
-                          김영기(YKKIM) / 전산1급 / 대한항공 KBSYS
-                          <a href="javascript:void(0);">
-                            <span className="delete">X</span>
-                          </a>
-                        </li>
-                        <li>
-                          김영기(YKKIM) / 전산1급 / 대한항공 KBSYS
-                          <a href="javascript:void(0);">
-                            <span className="delete">X</span>
-                          </a>
-                        </li>
-                        <li>
-                          김영기(YKKIM) / 전산1급 / 대한항공 KBSYS
-                          <a href="javascript:void(0);">
-                            <span className="delete">X</span>
-                          </a>
-                        </li>
-                        <li>
-                          김영기(YKKIM) / 전산1급 / 대한항공 KBSYS
-                          <a href="javascript:void(0);">
-                            <span className="delete">X</span>
-                          </a>
-                        </li>
-                      </ul>
+                  </div>
+                </div>
+
+                <div className="comment-box">
+                  <div className="form-cell">
+                    <div className="form-group wid100">
+                      <AppTextArea label="comment" style={{ width: '100%', height: 100 }} errorMessage="" />
                     </div>
                   </div>
                 </div>
@@ -409,11 +494,11 @@ function TestModal(props) {
             </div>
           </div>
           <div className="pop_btns">
+            <button disabled className="btn_text text_color_neutral-90 btn_close">
+              취소
+            </button>
             <button className="btn_text text_color_neutral-10 btn_confirm" onClick={closeModal}>
               저장
-            </button>
-            <button disabled className="btn_text text_color_neutral-90 btn_close">
-              닫기
             </button>
           </div>
           <span className="pop_close" onClick={closeModal}>

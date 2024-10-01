@@ -79,6 +79,9 @@ import ReportASRDetail from '@/components/publish/aviation/ReportASRDetail';
 import PayDetail from '@/components/publish/aviation/PayDetail';
 import SkySafetyList from '@/components/publish/aviation/SkySafetyList';
 import ChangeEdit from '@/components/publish/aviation/ChangeEdit';
+import AdminInstructorList from '@/components/publish/aviation/AdminInstructorList';
+import AdminInstructorEdit from '@/components/publish/aviation/AdminInstructorEdit';
+import AdminInstructorDetail from '@/components/publish/aviation/AdminInstructorDetail';
 import { fa, fakerLV } from '@faker-js/faker';
 import { fail } from 'assert';
 
@@ -588,11 +591,25 @@ AviationPageInfo.list = [
     success: false,
   },
   {
-    title: '[07.관리자] 강사이력관리',
-    Component: AdminBoardList,
-    path: 'AdminBoardList',
+    title: '[07.관리자] 강사이력관리 리스트',
+    Component: AdminInstructorList,
+    path: 'AdminInstructorList',
     description: '',
-    success: false,
+    success: true,
+  },
+  {
+    title: '[07.관리자] 강사이력관리 등록',
+    Component: AdminInstructorEdit,
+    path: 'AdminInstructorEdit',
+    description: '',
+    success: true,
+  },
+  {
+    title: '[07.관리자] 강사이력관리 상세',
+    Component: AdminInstructorDetail,
+    path: 'AdminInstructorDetail',
+    description: '',
+    success: true,
   },
   {
     title: '[07.관리자] 게시판 관리 > 안전목표 List',
