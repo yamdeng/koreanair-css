@@ -82,6 +82,7 @@ import ChangeEdit from '@/components/publish/aviation/ChangeEdit';
 import AdminInstructorList from '@/components/publish/aviation/AdminInstructorList';
 import AdminInstructorEdit from '@/components/publish/aviation/AdminInstructorEdit';
 import AdminInstructorDetail from '@/components/publish/aviation/AdminInstructorDetail';
+import ReportList1 from '@/components/publish/aviation/ReportList1';
 import { fa, fakerLV } from '@faker-js/faker';
 import { fail } from 'assert';
 
@@ -113,6 +114,13 @@ AviationPageInfo.list = [
     title: '[01.안전보고서] My Report 리스트',
     Component: MyReportList,
     path: 'MyReportList',
+    description: '',
+    success: true,
+  },
+  {
+    title: '[01.안전보고서] Report 리스트 -> (모달화면 명은 -> 컬럼 저장 모달)',
+    Component: ReportList1,
+    path: 'ReportList1',
     description: '',
     success: true,
   },
