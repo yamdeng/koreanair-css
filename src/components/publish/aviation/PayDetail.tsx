@@ -5,6 +5,7 @@ import AppTable from '@/components/common/AppTable';
 import AppTextInput from '@/components/common/AppTextInput';
 import { getAllData } from '@/data/grid/example-data-new';
 import { testColumnInfos } from '@/data/grid/table-column';
+import AppTextArea from '@/components/common/AppTextArea';
 import AppAutoComplete from '@/components/common/AppAutoComplete';
 
 function PayDetail() {
@@ -98,7 +99,7 @@ function PayDetail() {
         <hr className="line dp-n"></hr>
         <div className="form-table">
           <div className="form-cell wid100">
-            <div className="form-group">
+            <div className="form-group wid100">
               <div className="box-view-list">
                 <ul className="view-list">
                   <li className="accumlate-list">
@@ -106,7 +107,9 @@ function PayDetail() {
                       결재 요청 요약 정보 조회
                       <span className="required"></span>
                     </label>
-                    <span className="text-desc-type1">정보 조회 영역</span>
+                    <span className="text-desc-type1">
+                      <div className="opinion">조회영역</div>
+                    </span>
                   </li>
                 </ul>
               </div>
@@ -114,6 +117,25 @@ function PayDetail() {
           </div>
         </div>
         <hr className="line"></hr>
+        <div className="form-table">
+          <div className="form-cell wid100">
+            <div className="form-group wid100">
+              <div className="box-view-list">
+                <ul className="view-list">
+                  <li className="accumlate-list">
+                    <label className="t-label">
+                      결재 요청 메시지
+                      <span className="required"></span>
+                    </label>
+                    <span className="text-desc-type1">
+                      <div className="massage">메시지</div>
+                    </span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
         {/* 파일첨부영역 : drag */}
         <div className="form-table line">
           <div className="form-cell wid50">
@@ -123,7 +145,7 @@ function PayDetail() {
                   <li className="accumlate-list">
                     <label className="t-label">의견 </label>
                     <span className="text-desc-type1">
-                      <div className="opinion">의견을 입력해 주세요.</div>
+                      <AppTextArea label="" style={{ width: '100%', height: 150 }} errorMessage="" />
                     </span>
                   </li>
                 </ul>
@@ -131,7 +153,6 @@ function PayDetail() {
             </div>
           </div>
         </div>
-        <hr className="line"></hr>
       </div>
       {/* //상세 */}
       <div className="listtable">

@@ -5,10 +5,27 @@ import AppSelect from '@/components/common/AppSelect';
 import mainphoto from '@/resources/images/av-img.jpg';
 import chartasr from '@/resources/images/ASR-box.svg';
 import chartmsr from '@/resources/images/MSR-box.svg';
+import Slider from 'react-slick';
 
 function PAviationPortal1() {
   const { setIsAviationPortal } = useStore(useAppStore, (state) => state) as any;
+  const topRiskSettings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    vertical: true,
+    verticalSwiping: true,
+    slidesToShow: 2,
+    slidesToScroll: 2,
+  };
 
+  const bannerSettings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+  };
   useEffect(() => {
     setIsAviationPortal(true);
     return () => {
@@ -32,161 +49,218 @@ function PAviationPortal1() {
                 Top 10 RISK AREAS
                 <span className="txt-info">* 해당 기간 중 이벤트 발생 건 위험도 순위</span>
               </h3>
+            </div>
 
-              <div className="form-cell flex-end wid70">
-                <div className="radio-wrap ">
-                  <label>
-                    <input type="radio" checked />
-                    <span>고위험</span>
-                  </label>
-                  <label>
-                    <input type="radio" />
-                    <span>고빈도</span>
-                  </label>
-                </div>
-                <div className="form-group wid20">
-                  <AppSelect label={'3개월'} />
-                </div>
-              </div>
-            </div>
-            <div className="risk-conts-area">
-              <div className="risk-box">
-                <div className="IcoTags">
-                  <span className="ico-tag">1</span>
-                </div>
-                <div className="risk-conts">
-                  <div className="txt">
-                    Air turn back/
-                    <br />
-                    Diversion(Technicalreasons)
+            <Slider {...topRiskSettings} key={'topRiskElement'}>
+              <div className="risk-conts-area">
+                <div className="risk-box">
+                  <div className="IcoTags">
+                    <span className="ico-tag">1</span>
                   </div>
-                  <span className="sub-txt">
-                    Number of occurrence <strong>5</strong>
-                  </span>
-                </div>
-                <div className="risk-bottom">
-                  <ul className="sort-box">
-                    <li className="gray">0</li>
-                    <li className="orange">1</li>
-                    <li className="yellow">4</li>
-                    <li className="gray">0</li>
-                  </ul>
-                </div>
-              </div>
-              <div className="risk-box">
-                <div className="IcoTags">
-                  <span className="ico-tag">2</span>
-                </div>
-                <div className="risk-conts">
-                  <div className="txt">
-                    GPWS
-                    <br />
-                    (Don't sink)
+                  <div className="risk-conts">
+                    <div className="txt">
+                      Air turn back/
+                      <br />
+                      Diversion(Technicalreasons)
+                    </div>
+                    <span className="sub-txt">
+                      Number of occurrence <strong>5</strong>
+                    </span>
                   </div>
-                  <span className="sub-txt">
-                    Number of occurrence <strong>1</strong>
-                  </span>
-                </div>
-                <div className="risk-bottom">
-                  <ul className="sort-box">
-                    <li className="gray">0</li>
-                    <li className="gray">0</li>
-                    <li className="yellow">1</li>
-                    <li className="gray">0</li>
-                  </ul>
-                </div>
-              </div>
-              <div className="risk-box">
-                <div className="IcoTags">
-                  <span className="ico-tag">3</span>
-                </div>
-                <div className="risk-conts">
-                  <div className="txt">
-                    Aircraft damage
-                    <br />
+                  <div className="risk-bottom">
+                    <ul className="sort-box">
+                      <li className="gray">0</li>
+                      <li className="orange">1</li>
+                      <li className="yellow">4</li>
+                      <li className="gray">0</li>
+                    </ul>
                   </div>
-                  <span className="sub-txt">
-                    Number of occurrence <strong>3</strong>
-                  </span>
                 </div>
-                <div className="risk-bottom">
-                  <ul className="sort-box">
-                    <li className="gray">0</li>
-                    <li className="gray">0</li>
-                    <li className="yellow">3</li>
-                    <li className="gray">0</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div className="risk-conts-area">
-              <div className="risk-box">
-                <div className="IcoTags">
-                  <span className="ico-tag">4</span>
-                </div>
-                <div className="risk-conts">
-                  <div className="txt">
-                    Runway incursion
-                    <br />
+                <div className="risk-box">
+                  <div className="IcoTags">
+                    <span className="ico-tag">2</span>
                   </div>
-                  <span className="sub-txt">
-                    Number of occurrence <strong>1</strong>
-                  </span>
-                </div>
-                <div className="risk-bottom">
-                  <ul className="sort-box">
-                    <li className="gray">0</li>
-                    <li className="gray">0</li>
-                    <li className="yellow">1</li>
-                    <li className="gray">0</li>
-                  </ul>
-                </div>
-              </div>
-              <div className="risk-box">
-                <div className="IcoTags">
-                  <span className="ico-tag">5</span>
-                </div>
-                <div className="risk-conts">
-                  <div className="txt">
-                    Flight cancelled
-                    <br />
+                  <div className="risk-conts">
+                    <div className="txt">
+                      GPWS
+                      <br />
+                      (Don't sink)
+                    </div>
+                    <span className="sub-txt">
+                      Number of occurrence <strong>1</strong>
+                    </span>
                   </div>
-                  <span className="sub-txt">
-                    Number of occurrence <strong>1</strong>
-                  </span>
-                </div>
-                <div className="risk-bottom">
-                  <ul className="sort-box">
-                    <li className="gray">0</li>
-                    <li className="gray">0</li>
-                    <li className="yellow">1</li>
-                    <li className="gray">0</li>
-                  </ul>
-                </div>
-              </div>
-              <div className="risk-box">
-                <div className="IcoTags">
-                  <span className="ico-tag">6</span>
-                </div>
-                <div className="risk-conts">
-                  <div className="txt">
-                    GPWS warning/caution
-                    <br />
+                  <div className="risk-bottom">
+                    <ul className="sort-box">
+                      <li className="gray">0</li>
+                      <li className="gray">0</li>
+                      <li className="yellow">1</li>
+                      <li className="gray">0</li>
+                    </ul>
                   </div>
-                  <span className="sub-txt">
-                    Number of occurrence <strong>2</strong>
-                  </span>
                 </div>
-                <div className="risk-bottom">
-                  <ul className="sort-box">
-                    <li className="gray">0</li>
-                    <li className="gray">0</li>
-                    <li className="yellow">2</li>
-                    <li className="gray">0</li>
-                  </ul>
+                <div className="risk-box">
+                  <div className="IcoTags">
+                    <span className="ico-tag">3</span>
+                  </div>
+                  <div className="risk-conts">
+                    <div className="txt">
+                      Aircraft damage
+                      <br />
+                    </div>
+                    <span className="sub-txt">
+                      Number of occurrence <strong>3</strong>
+                    </span>
+                  </div>
+                  <div className="risk-bottom">
+                    <ul className="sort-box">
+                      <li className="gray">0</li>
+                      <li className="gray">0</li>
+                      <li className="yellow">3</li>
+                      <li className="gray">0</li>
+                    </ul>
+                  </div>
                 </div>
               </div>
-            </div>
+              <div className="risk-conts-area">
+                <div className="risk-box">
+                  <div className="IcoTags">
+                    <span className="ico-tag">1</span>
+                  </div>
+                  <div className="risk-conts">
+                    <div className="txt">
+                      Air turn back/
+                      <br />
+                      Diversion(Technicalreasons)
+                    </div>
+                    <span className="sub-txt">
+                      Number of occurrence <strong>5</strong>
+                    </span>
+                  </div>
+                  <div className="risk-bottom">
+                    <ul className="sort-box">
+                      <li className="gray">0</li>
+                      <li className="orange">1</li>
+                      <li className="yellow">4</li>
+                      <li className="gray">0</li>
+                    </ul>
+                  </div>
+                </div>
+                <div className="risk-box">
+                  <div className="IcoTags">
+                    <span className="ico-tag">2</span>
+                  </div>
+                  <div className="risk-conts">
+                    <div className="txt">
+                      GPWS
+                      <br />
+                      (Don't sink)
+                    </div>
+                    <span className="sub-txt">
+                      Number of occurrence <strong>1</strong>
+                    </span>
+                  </div>
+                  <div className="risk-bottom">
+                    <ul className="sort-box">
+                      <li className="gray">0</li>
+                      <li className="gray">0</li>
+                      <li className="yellow">1</li>
+                      <li className="gray">0</li>
+                    </ul>
+                  </div>
+                </div>
+                <div className="risk-box">
+                  <div className="IcoTags">
+                    <span className="ico-tag">3</span>
+                  </div>
+                  <div className="risk-conts">
+                    <div className="txt">
+                      Aircraft damage
+                      <br />
+                    </div>
+                    <span className="sub-txt">
+                      Number of occurrence <strong>3</strong>
+                    </span>
+                  </div>
+                  <div className="risk-bottom">
+                    <ul className="sort-box">
+                      <li className="gray">0</li>
+                      <li className="gray">0</li>
+                      <li className="yellow">3</li>
+                      <li className="gray">0</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div className="risk-conts-area">
+                <div className="risk-box">
+                  <div className="IcoTags">
+                    <span className="ico-tag">4</span>
+                  </div>
+                  <div className="risk-conts">
+                    <div className="txt">
+                      Runway incursion
+                      <br />
+                    </div>
+                    <span className="sub-txt">
+                      Number of occurrence <strong>1</strong>
+                    </span>
+                  </div>
+                  <div className="risk-bottom">
+                    <ul className="sort-box">
+                      <li className="gray">0</li>
+                      <li className="gray">0</li>
+                      <li className="yellow">1</li>
+                      <li className="gray">0</li>
+                    </ul>
+                  </div>
+                </div>
+                <div className="risk-box">
+                  <div className="IcoTags">
+                    <span className="ico-tag">5</span>
+                  </div>
+                  <div className="risk-conts">
+                    <div className="txt">
+                      Flight cancelled
+                      <br />
+                    </div>
+                    <span className="sub-txt">
+                      Number of occurrence <strong>1</strong>
+                    </span>
+                  </div>
+                  <div className="risk-bottom">
+                    <ul className="sort-box">
+                      <li className="gray">0</li>
+                      <li className="gray">0</li>
+                      <li className="yellow">1</li>
+                      <li className="gray">0</li>
+                    </ul>
+                  </div>
+                </div>
+                <div className="risk-box">
+                  <div className="IcoTags">
+                    <span className="ico-tag">6</span>
+                  </div>
+                  <div className="risk-conts">
+                    <div className="txt">
+                      GPWS warning/caution
+                      <br />
+                    </div>
+                    <span className="sub-txt">
+                      Number of occurrence <strong>2</strong>
+                    </span>
+                  </div>
+                  <div className="risk-bottom">
+                    <ul className="sort-box">
+                      <li className="gray">0</li>
+                      <li className="gray">0</li>
+                      <li className="yellow">2</li>
+                      <li className="gray">0</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </Slider>
           </div>
 
           {/* 보고서 처리 현황*/}
@@ -285,12 +359,16 @@ function PAviationPortal1() {
           </div>
           <h3 className="img-tit">2024년 1분기 SMS Excellence 우수보고서</h3>
 
-          <ul className="main-photo-btn">
-            <li className="active">1</li>
-            <li>2</li>
-            <li>3</li>
-            <li>4</li>
-          </ul>
+          <Slider {...bannerSettings} key={'topRiskElement'}>
+            <div className="main-photo">
+              <img src={mainphoto} className="" alt="photo" />
+              <h3 className="img-tit">2024년 1분기 SMS Excellence 우수보고서123</h3>
+            </div>
+            <div className="main-photo">
+              <img src={mainphoto} className="" alt="photo" />
+              <h3 className="img-tit">2024년 1분기 SMS Excellence 우수보고서555</h3>
+            </div>
+          </Slider>
         </div>
 
         {/* 공지사항/사고준사고 현황 */}
