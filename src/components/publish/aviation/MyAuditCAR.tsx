@@ -351,6 +351,11 @@ function MyAuditCAR() {
                                       </div>
                                     </div>
                                   </div>
+                                  <div className="btn-area">
+                                    <button type="button" name="button" className="btn-sm btn_text btn-darkblue-line">
+                                      Confirm
+                                    </button>
+                                  </div>
                                 </div>
                               </div>
                             </dd>
@@ -370,7 +375,101 @@ function MyAuditCAR() {
                               </button>
                             </dt>
                             <dd className="tg-conts" style={{ display: ActionTaken ? '' : 'none' }}>
-                              <div className="list bx-toggle">ㄹㅇㄴㅁㄹㅇㄴㅁㄹㅇㄴㅁㄹㅇㄴ</div>
+                              <div className="edit-toggle">
+                                <div>탭</div>
+                                <div className="editbox b-t-0">
+                                  <div className="form-table">
+                                    <div className="form-cell wid100">
+                                      <div className="form-group wid-300">
+                                        <AppTextInput label="Reporter" />
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div className="form-table">
+                                    <div className="form-cell wid100">
+                                      <div className="form-group wid100">
+                                        <textarea
+                                          id="testArea1"
+                                          className="form-tag"
+                                          style={{ width: '100%' }}
+                                          name="testArea1"
+                                          value={inputValue}
+                                          onChange={(event) => {
+                                            setInputValue(event.target.value);
+                                          }}
+                                        />
+                                        <label className="f-label" htmlFor="testArea1">
+                                          Plan & Result
+                                        </label>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  {/* 파일첨부영역 : drag */}
+                                  <div className="form-cell wid100  mt-15">
+                                    <div className="form-group wid100">
+                                      {/* 파일첨부영역 : drag */}
+                                      <div className="filebox error">
+                                        <Dragger {...props}>
+                                          <p className="ant-upload-text ">
+                                            + 이 곳을 클릭하거나 마우스로 업로드할 파일을 끌어서 놓으세요.
+                                          </p>
+                                        </Dragger>
+                                        <label htmlFor="file" className="file-label">
+                                          첨부파일 <span className="required">*</span>
+                                        </label>
+                                      </div>
+                                      <span className="errorText">fileerror</span>
+                                    </div>
+                                  </div>
+                                  <div className="form-table">
+                                    <div className="form-cell wid100">
+                                      <div className="form-group wid100">
+                                        <textarea
+                                          id="testArea1"
+                                          className="form-tag"
+                                          style={{ width: '100%' }}
+                                          name="testArea1"
+                                          value={inputValue}
+                                          onChange={(event) => {
+                                            setInputValue(event.target.value);
+                                          }}
+                                        />
+                                        <label className="f-label" htmlFor="testArea1">
+                                          Plan & Result
+                                        </label>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  {/* 파일첨부영역 : drag */}
+                                  <div className="form-cell wid100 mt-15">
+                                    <div className="form-group wid100">
+                                      {/* 파일첨부영역 : drag */}
+                                      <div className="filebox error">
+                                        <Dragger {...props}>
+                                          <p className="ant-upload-text ">
+                                            + 이 곳을 클릭하거나 마우스로 업로드할 파일을 끌어서 놓으세요.
+                                          </p>
+                                        </Dragger>
+                                        <label htmlFor="file" className="file-label">
+                                          첨부파일 <span className="required">*</span>
+                                        </label>
+                                      </div>
+                                      <span className="errorText">fileerror</span>
+                                    </div>
+                                  </div>
+                                  <div className="btn-area">
+                                    <button type="button" name="button" className="btn-sm btn_text btn-darkblue-line">
+                                      Accept
+                                    </button>
+                                    <button type="button" name="button" className="btn-sm btn_text btn-darkblue-line">
+                                      Reject
+                                    </button>
+                                    <button type="button" name="button" className="btn-sm btn_text btn-darkblue-line">
+                                      Edit
+                                    </button>
+                                  </div>
+                                </div>
+                              </div>
                             </dd>
                           </dl>
                         </div>
@@ -399,6 +498,65 @@ function MyAuditCAR() {
               </button>
             </div>
             {/*//추가버튼*/}
+            <div className="editbox edit-audit-bg mt-15">
+              <h3 className="audit-car-tit">Additional Audit Checklist</h3>
+              <ul className="audit-carconts">
+                <li>Additional Chapter</li>
+                <li>
+                  <div className="form-cell wid100">
+                    <div className="form-group wid100">
+                      <textarea
+                        id="testArea1"
+                        className="form-tag"
+                        style={{ width: '100%' }}
+                        name="testArea1"
+                        value={inputValue}
+                        onChange={(event) => {
+                          setInputValue(event.target.value);
+                        }}
+                      />
+                      <label className="f-label" htmlFor="testArea1">
+                        Content
+                      </label>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div className="form-cell wid100">
+                    <div className="form-group wid100">
+                      <AppTextInput label="Reference Manual" />
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div className="form-cell wid50">
+                    <div className="form-group wid100">
+                      <AppTextInput label="Step 3" />
+                    </div>
+                  </div>
+                  <div className="group-box-wrap wid50">
+                    <div className="radio-wrap border-no ta-r">
+                      <label>
+                        <input type="radio" checked />
+                        <span>Finding</span>
+                      </label>
+                      <label>
+                        <input type="radio" />
+                        <span>Observation</span>
+                      </label>
+                      <label>
+                        <input type="radio" />
+                        <span>N/A</span>
+                      </label>
+                      <label>
+                        <input type="radio" />
+                        <span>Yes</span>
+                      </label>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
           </div>
           {/* 하단버튼영역 */}
           <div className="contents-btns">

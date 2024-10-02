@@ -722,7 +722,7 @@
   display:grid;grid-gap: 2.4rem;grid-template-columns: 1fr 1fr 1fr;height: calc(100vh - 13.6rem);
 
   .grid-item {border-radius: 0.8rem; padding:2.0rem; background-color:rgba(255,255,255,0.4);border: 0rem solid var(--color-neutral-40);}
-  .grid-item.photo{position: relative; padding:0}
+  .grid-item.photo{position: relative; padding:0; max-width: 79.2rem;}
   .grid-item .main-photo img {width:100%;height:33.8rem;object-fit:cover;background-size: cover;border-radius: 0.8rem;}
   .grid-item h3.img-tit {position: absolute;top:40%; text-align: center; width: 100%; display: block;background-color:rgba(0, 0, 0, 0.6);z-index:99}
   .grid-item .main-photo-btn {position: absolute;top:45%; width: 100%; text-align: center;z-index:99}
