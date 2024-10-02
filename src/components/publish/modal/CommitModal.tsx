@@ -1,0 +1,392 @@
+import { Tree } from 'antd';
+import { useState } from 'react';
+import Modal from 'react-modal';
+import { Editor } from '@toast-ui/react-editor';
+import AppDatePicker from '@/components/common/AppDatePicker';
+import AppSelect from '@/components/common/AppSelect';
+import AppAutoComplete from '@/components/common/AppAutoComplete';
+import AppTextInput from '@/components/common/AppTextInput';
+import AppTextArea from '@/components/common/AppTextArea';
+
+const { Dragger } = Upload;
+import { Upload } from 'antd';
+const props: any = {
+  name: 'file',
+  multiple: true,
+  defaultFileList: [
+    {
+      uid: '1',
+      name: 'xxx.png',
+      // status: 'uploading',
+      url: 'http://www.baidu.com/xxx.png',
+      percent: 33,
+    },
+    {
+      uid: '2',
+      name: 'yyy.png',
+      status: 'done',
+      url: 'http://www.baidu.com/yyy.png',
+    },
+    {
+      uid: '3',
+      name: 'zzz.png',
+      status: 'error',
+      response: 'Server Error 500',
+      // custom error message to show
+      url: 'http://www.baidu.com/zzz.png',
+    },
+  ],
+  action: 'https://660d2bd96ddfa2943b33731c.mockapi.io/api/upload',
+
+  onChange(info) {
+    const { status } = info.file;
+    if (status !== 'uploading') {
+      console.log(info.file, info.fileList);
+    }
+    if (status === 'done') {
+      alert(`${info.file.name} file uploaded successfully.`);
+    } else if (status === 'error') {
+      alert(`${info.file.name} file upload failed.`);
+    }
+  },
+
+  onRemove(file) {
+    return false;
+  },
+
+  onPreview(file) {
+    return false;
+  },
+
+  onDrop(e) {
+    console.log('Dropped files', e.dataTransfer.files);
+  },
+};
+function TestModal(props) {
+  const { isOpen, closeModal } = props;
+  const [inputValue, setInputValue] = useState('');
+  const [expandedKeys] = useState(['0-0', '0-0-0', '0-0-0-0']);
+
+  /*
+
+    overlayClassName : alert-modal-overlay, middle-modal-overlay, full-modal-overlay
+     : 크기에 따라 클래스 정의
+
+    className : {커스텀}-modal-content
+     모달 마다 별도의 class를 정의해서 커스텀하게 관리
+
+  */
+  /* treeData 가공 */
+  const x = 3;
+  const y = 2;
+  const z = 1;
+  const treeData = [];
+
+  const generateData = (_level, _preKey = null, _tns = null) => {
+    const preKey = _preKey || '0';
+    const tns = _tns || treeData;
+
+    const children = [];
+    for (let i = 0; i < x; i++) {
+      const key = `${preKey}-${i}`;
+      tns.push({ title: key, key });
+      if (i < y) {
+        children.push(key);
+      }
+    }
+    if (_level < 0) {
+      return tns;
+    }
+    const level = _level - 1;
+    children.forEach((key, index) => {
+      tns[index].children = [];
+      return generateData(level, key, tns[index].children);
+    });
+  };
+  generateData(z);
+  /* treeData 가공 end*/
+  return (
+    <Modal
+      shouldCloseOnOverlayClick={false}
+      isOpen={isOpen}
+      ariaHideApp={false}
+      overlayClassName={'alert-modal-overlay'}
+      className={'subject1-committee-modal-content'}
+      onRequestClose={() => {
+        closeModal();
+      }}
+    >
+      <div className="popup-container">
+        <h3 className="pop_title">수행 담당 지정</h3>
+        <div className="pop_cont">
+          <div className="editbox">
+            <div className="form-table">
+              <div className="form-cell wid50">
+                <div className="form-group wid50">
+                  <AppSelect label={'기술관리팀'} />
+                </div>
+              </div>
+            </div>
+
+            <div className="manager-checkbox">
+              <div className="checklist manager">
+                <div className="search_box1">
+                  <div className="search">
+                    <div className="tit">
+                      팀구성원<em>(28)</em>
+                      <span>가나다순</span>
+                    </div>
+                    <div className="search-list">
+                      <ul className="list">
+                        <li>
+                          <div className="form-cell">
+                            <div className="chk-wrap">
+                              <label>
+                                <input type="checkbox" checked />
+                                <span className="InfoBox"></span>
+                                <div className="Info">
+                                  <div className="Name">홍길동 (170****)</div>
+                                  <div className="Dept">상무대우수석사무장 / (주)대한항공</div>
+                                </div>
+                              </label>
+                            </div>
+                          </div>
+                        </li>
+                        <li>
+                          <div className="form-cell">
+                            <div className="chk-wrap">
+                              <label>
+                                <input type="checkbox" checked />
+                                <span className="InfoBox"></span>
+                                <div className="Info">
+                                  <div className="Name">홍길동 (170****)</div>
+                                  <div className="Dept">상무대우수석사무장 / (주)대한항공</div>
+                                </div>
+                              </label>
+                            </div>
+                          </div>
+                        </li>
+                        <li>
+                          <div className="form-cell">
+                            <div className="chk-wrap">
+                              <label>
+                                <input type="checkbox" checked />
+                                <span className="InfoBox"></span>
+                                <div className="Info">
+                                  <div className="Name">홍길동 (170****)</div>
+                                  <div className="Dept">상무대우수석사무장 / (주)대한항공</div>
+                                </div>
+                              </label>
+                            </div>
+                          </div>
+                        </li>
+                        <li>
+                          <div className="form-cell">
+                            <div className="chk-wrap">
+                              <label>
+                                <input type="checkbox" checked />
+                                <span className="InfoBox"></span>
+                                <div className="Info">
+                                  <div className="Name">홍길동 (170****)</div>
+                                  <div className="Dept">상무대우수석사무장 / (주)대한항공</div>
+                                </div>
+                              </label>
+                            </div>
+                          </div>
+                        </li>
+                        <li>
+                          <div className="form-cell">
+                            <div className="chk-wrap">
+                              <label>
+                                <input type="checkbox" checked />
+                                <span className="InfoBox"></span>
+                                <div className="Info">
+                                  <div className="Name">홍길동 (170****)</div>
+                                  <div className="Dept">상무대우수석사무장 / (주)대한항공</div>
+                                </div>
+                              </label>
+                            </div>
+                          </div>
+                        </li>
+                        <li>
+                          <div className="form-cell">
+                            <div className="chk-wrap">
+                              <label>
+                                <input type="checkbox" checked />
+                                <span className="InfoBox"></span>
+                                <div className="Info">
+                                  <div className="Name">홍길동 (170****)</div>
+                                  <div className="Dept">상무대우수석사무장 / (주)대한항공</div>
+                                </div>
+                              </label>
+                            </div>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              {/*화살표버튼영역 */}
+              <div>
+                <div className="checkbutton-box">
+                  <button></button>
+                  <button></button>
+                </div>
+                <div className="checkbutton-box">
+                  <button></button>
+                  <button></button>
+                </div>
+              </div>
+              {/*//화살표버튼영역 */}
+              <div>
+                <div className="checklist manager1">
+                  <div className="search_box1">
+                    <div className="search">
+                      <div className="tit">
+                        리더<em>(1)</em>
+                      </div>
+                      <div className="search-list">
+                        <ul className="list">
+                          <li>
+                            <div className="form-cell">
+                              <div className="chk-wrap">
+                                <label>
+                                  <input type="checkbox" checked />
+                                  <span className="InfoBox"></span>
+                                  <div className="Info">
+                                    <div className="Name">홍길동 (170****)</div>
+                                    <div className="Dept">상무대우수석사무장 / (주)대한항공</div>
+                                  </div>
+                                </label>
+                              </div>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="checklist manager2">
+                  <div className="search_box1">
+                    <div className="search">
+                      <div className="tit">
+                        팀원<em>(3)</em>
+                        <span className="color-red">최대3명</span>
+                      </div>
+                      <div className="search-list">
+                        <ul className="list">
+                          <li>
+                            <div className="form-cell">
+                              <div className="chk-wrap">
+                                <label>
+                                  <input type="checkbox" checked />
+                                  <span className="InfoBox"></span>
+                                  <div className="Info">
+                                    <div className="Name">홍길동 (170****)</div>
+                                    <div className="Dept">상무대우수석사무장 / (주)대한항공</div>
+                                  </div>
+                                </label>
+                              </div>
+                            </div>
+                          </li>
+                          <li>
+                            <div className="form-cell">
+                              <div className="chk-wrap">
+                                <label>
+                                  <input type="checkbox" checked />
+                                  <span className="InfoBox"></span>
+                                  <div className="Info">
+                                    <div className="Name">홍길동 (170****)</div>
+                                    <div className="Dept">상무대우수석사무장 / (주)대한항공</div>
+                                  </div>
+                                </label>
+                              </div>
+                            </div>
+                          </li>
+                          <li>
+                            <div className="form-cell">
+                              <div className="chk-wrap">
+                                <label>
+                                  <input type="checkbox" checked />
+                                  <span className="InfoBox"></span>
+                                  <div className="Info">
+                                    <div className="Name">홍길동 (170****)</div>
+                                    <div className="Dept">상무대우수석사무장 / (주)대한항공</div>
+                                  </div>
+                                </label>
+                              </div>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="comment-box">
+              <div className="form-table line">
+                <div className="form-cell">
+                  <div className="form-group wid100">
+                    <AppTextArea label="comment" style={{ width: '100%', height: 100 }} errorMessage="" />
+                  </div>
+                </div>
+              </div>
+              <hr className="line"></hr>
+              <div className="form-table line">
+                <div className="form-cell">
+                  <div className="form-group wid100">
+                    <AppTextInput
+                      inputType="text"
+                      placeholder=""
+                      label="경감실행팀"
+                      toolTipMessage="경감실행팀이 다른 경우 입력해주세요.
+                      예) CAS"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="pop_btns">
+          <button className="btn_text text_color_neutral-90 btn_close" onClick={closeModal}>
+            닫기
+          </button>
+          <button className="btn_text text_color_neutral-10 btn_confirm" onClick={closeModal}>
+            저장
+          </button>
+        </div>
+        <span className="pop_close" onClick={closeModal}>
+          X
+        </span>
+      </div>
+    </Modal>
+  );
+}
+
+function CommitModal() {
+  const [isOpen, setIsOpen] = useState(false);
+  const closeModal = () => {
+    setIsOpen(false);
+  };
+
+  return (
+    <>
+      <div>
+        수행담당지정
+        <p>
+          <button className="button" onClick={() => setIsOpen(true)}>
+            수행담당지정 modal open
+          </button>
+        </p>
+        <TestModal isOpen={isOpen} closeModal={closeModal} />
+      </div>
+    </>
+  );
+}
+
+export default CommitModal;

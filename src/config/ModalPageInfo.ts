@@ -54,6 +54,7 @@ import SafetyActionEditModal from '@/components/publish/modal/SafetyActionEditMo
 import SafetyAdvEditModal from '@/components/publish/modal/SafetyAdvEditModal';
 import MainNoticeModal from '@/components/publish/modal/MainNoticeModal';
 import ChangeAddModal from '@/components/publish/modal/ChangeAddModal';
+import CommitModal from '@/components/publish/modal/CommitModal';
 
 const ModalPageInfo: any = {};
 
@@ -312,10 +313,10 @@ ModalPageInfo.list = [
   },
   {
     title: '[항공안전 > 06.AUDIT] 수행담당지정 팝업창',
-    Component: PChapterDeleteModal,
-    path: 'PChapterDeleteModal',
+    Component: CommitModal,
+    path: 'CommitModal',
     description: '',
-    success: false,
+    success: true,
   },
   {
     title: '[항공안전> 07.관리자] 게시판 관리 > 안전목표 > 안전목표 신규 팝업창',

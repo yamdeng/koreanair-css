@@ -73,8 +73,9 @@
 .notice-board td.plus > .btn-minus{position:absolute;left:0;top:20%;background: url(/src/resources/images/btn-minus.svg) center center no-repeat;width: 4rem;height: 4rem;background-size: 2.4rem;font-size:0;margin-left:0}
 
 .notice-board td.btns a:first-child{margin-right:0.5rem}
-.btn-modify{border:0.1rem solid var(--color-btn-blue2);color:var(--color-btn-blue2);border-radius:0.8rem;font-size:1.4rem;padding:0rem 0.5rem}
-.btn-delete{border:0.1rem solid var(--color-btn-blue2);color:var(--color-btn-blue2);border-radius:0.8rem;font-size:1.4rem;padding:0rem 0.5rem}
+.btn-modify{border:0.1rem solid var(--color-btn-blue2);color:var(--color-btn-blue2);border-radius:99.9rem;font-size:1.4rem;padding:0rem 0.5rem}
+.btn-modify + .btn-modify{margin-left:0.5rem}
+.btn-delete{border:0.1rem solid var(--color-btn-blue2);color:var(--color-btn-blue2);border-radius:99.9rem;font-size:1.4rem;padding:0rem 0.5rem}
 
 .UserChicebox.Fax{position:relative;border:0.1rem solid var(--color-neutral-40);border-radius:1.0rem;padding:1.0rem 1.0rem 1.0rem}
 .UserChicebox.Fax.error{border:0.1rem solid var(--color-negative);border-radius:1.0rem;padding:2.0rem 1.0rem 1.0rem}
@@ -308,6 +309,7 @@
 .detailForm-detail-3deps.list-group .list.bx-toggle .tg-btn span{/*display:inline-block;*/float:right;background: url(/src/resources/images/arrow-down.svg) center right no-repeat;background-size:2.8rem;width:2.8rem;height:2.8rem;vertical-align:middle}
 .detailForm-detail-3deps.list-group .list .edit-area{padding:2.0rem;margin-top:0;border-top:0;color:var(--color-neutral-70);line-height:2rem;font-size:1.6rem}
 .detailForm-detail-3deps.list-group .list > dl > dt .tg-btn{font-family:"KoreanAirSans";font-size: 1.8rem;font-weight:500;color:var(--color-darkblue-100)}
+.detailForm-detail-3deps.list-group .list .edit-area.report{padding:1.0rem 0rem;}
 
 .detailForm-detail-4deps.list-group .list.bx-toggle .tg-btn span{/*display:inline-block;*/float:right;background: url(/src/resources/images/arrow-down.svg) center right no-repeat;background-size:2.8rem;width:2.8rem;height:2.8rem;vertical-align:middle}
 .detailForm-detail-4deps.info-wrap .list .edit-area{border-top:0rem dotted var(--color-darkblue-100);padding:0 2rem 2rem;margin-top:0;color:var(--color-neutral-70);line-height:2rem;font-size:1.6rem}
@@ -683,7 +685,7 @@
 .info-board th:last-child{border-right:0}
 .info-board td.left{text-align:left;padding-left:0.8rem}
 .info-board td.right{text-align:right;padding-right:0.8rem}
-.info-board td{position:relative;text-align:center;padding:1.0rem 0;border-bottom:0.1rem solid var(--color-neutral-40);border-right: 0.1rem solid var(--color-neutral-40)}
+.info-board td{position:relative;text-align:center;padding:1.0rem;border-bottom:0.1rem solid var(--color-neutral-40);border-right: 0.1rem solid var(--color-neutral-40)}
 .info-board td:last-child{border-right:0}
 .info-board td a, a:visited {color:var(--color-mblue-100)}
 .info-board tr.cons-bottom{background-color:var(--color-neutral-20)}

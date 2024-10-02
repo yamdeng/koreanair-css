@@ -77,6 +77,7 @@ function ReportASRDetail() {
   const [thirteenExpaned, setThirteenExpaned] = useState(true);
   const [fourteenExpaned, setFourteenExpaned] = useState(true);
   const [fifteenExpaned, setFifteenExpaned] = useState(true);
+  const [sixteenExpaned, setSixteenExpaned] = useState(true);
 
   return (
     <>
@@ -1723,13 +1724,13 @@ function ReportASRDetail() {
                                         <div className="listtable">
                                           <table className="info-board">
                                             <colgroup>
-                                              <col width="30%" />
+                                              <col width="25%" />
+                                              <col width="20%" />
+                                              <col width="8%" />
+                                              <col width="8%" />
                                               <col width="20%" />
                                               <col width="10%" />
-                                              <col width="10%" />
-                                              <col width="20%" />
-                                              <col width="10%" />
-                                              <col width="10%" />
+                                              <col width="9%" />
                                             </colgroup>
                                             <thead>
                                               <tr>
@@ -1761,7 +1762,35 @@ function ReportASRDetail() {
                                                 </td>
                                                 <td className="tl">LSC김리더(LeaderKim)</td>
                                                 <td>평가중</td>
-                                                <td>Delete</td>
+                                                <td>
+                                                  <a href="javascript:void(0);">
+                                                    <span className="delete">X</span>
+                                                  </a>
+                                                </td>
+                                              </tr>
+                                              <tr>
+                                                <td className="tl">Lightning strike Environmental/Weather</td>
+                                                <td className="tl">Aircraft Change</td>
+                                                <td>
+                                                  <div className="Safety-table-cell">
+                                                    <span className="Safety-tag riskLevel level4">5D</span>
+                                                  </div>
+                                                </td>
+                                                <td className="fix vm">
+                                                  <div className="radio-wrap center">
+                                                    <label className="text-no">
+                                                      <input type="checkbox" />
+                                                      <span className="text-no"></span>
+                                                    </label>
+                                                  </div>
+                                                </td>
+                                                <td className="tl">LSC김리더(LeaderKim)</td>
+                                                <td>평가중</td>
+                                                <td>
+                                                  <a href="javascript:void(0);">
+                                                    <span className="delete">X</span>
+                                                  </a>
+                                                </td>
                                               </tr>
                                             </tbody>
                                           </table>
@@ -1783,38 +1812,105 @@ function ReportASRDetail() {
                                   </dt>
                                   <dd className="tg-conts" style={{ display: sevenExpaned ? '' : 'none' }}>
                                     <div className="edit-area">
+                                      <div className="listtable">
+                                        <table className="info-board">
+                                          <colgroup>
+                                            <col width="25%" />
+                                            <col width="20%" />
+                                            <col width="8%" />
+                                            <col width="8%" />
+                                            <col width="20%" />
+                                            <col width="10%" />
+                                            <col width="9%" />
+                                          </colgroup>
+                                          <thead>
+                                            <tr>
+                                              <th>Hazard</th>
+                                              <th>Potential Consequence</th>
+                                              <th>Risk Level 1</th>
+                                              <th>Mitigation</th>
+                                              <th>Register</th>
+                                              <th>Status</th>
+                                              <th>Action</th>
+                                            </tr>
+                                          </thead>
+                                          <tbody>
+                                            <tr>
+                                              <td className="tl">Lightning strike Environmental/Weather</td>
+                                              <td className="tl">Aircraft Change</td>
+                                              <td>
+                                                <div className="Safety-table-cell">
+                                                  <span className="Safety-tag riskLevel level4">5D</span>
+                                                </div>
+                                              </td>
+                                              <td className="fix vm">
+                                                <div className="radio-wrap center">
+                                                  <label className="text-no">
+                                                    <input type="checkbox" />
+                                                    <span className="text-no"></span>
+                                                  </label>
+                                                </div>
+                                              </td>
+                                              <td className="tl">LSC김리더(LeaderKim)</td>
+                                              <td>SRC대기</td>
+                                              <td>
+                                                <a href="javascript:void(0);" className="btn-modify">
+                                                  Approve
+                                                </a>
+                                                <a href="javascript:void(0);" className="btn-modify">
+                                                  Reject
+                                                </a>
+                                              </td>
+                                            </tr>
+                                            <tr>
+                                              <td className="tl">Lightning strike Environmental/Weather</td>
+                                              <td className="tl">Aircraft Change</td>
+                                              <td>
+                                                <div className="Safety-table-cell">
+                                                  <span className="Safety-tag riskLevel level4">5D</span>
+                                                </div>
+                                              </td>
+                                              <td className="fix vm">
+                                                <div className="radio-wrap center">
+                                                  <label className="text-no">
+                                                    <input type="checkbox" />
+                                                    <span className="text-no"></span>
+                                                  </label>
+                                                </div>
+                                              </td>
+                                              <td className="tl">LSC김리더(LeaderKim)</td>
+                                              <td>SRC대기</td>
+                                              <td>
+                                                <a href="javascript:void(0);" className="btn-modify">
+                                                  Approve
+                                                </a>
+                                                <a href="javascript:void(0);" className="btn-modify">
+                                                  Reject
+                                                </a>
+                                              </td>
+                                            </tr>
+                                          </tbody>
+                                        </table>
+                                      </div>
+                                      <div className="form-table line">
+                                        <div className="form-cell wid100">
+                                          <div className="form-group wid100">
+                                            <AppTextArea
+                                              label="회의록"
+                                              style={{ width: '100%', height: 145 }}
+                                              errorMessage=""
+                                            />
+                                          </div>
+                                        </div>
+                                      </div>
                                       {/* 버튼*/}
                                       <div className="contents-btns">
                                         <button
                                           type="button"
                                           name="button"
-                                          className="btn_text text_color_neutral-10 btn_conblue"
-                                        >
-                                          재작성요청
-                                        </button>
-                                        <button
-                                          type="button"
-                                          name="button"
                                           className="btn_text text_color_neutral-10 btn_confirm"
                                         >
-                                          Notify
-                                        </button>
-                                        <button
-                                          type="button"
-                                          name="button"
-                                          className="btn_text text_color_neutral-10 btn_confirm"
-                                        >
-                                          Void
-                                        </button>
-                                        <button
-                                          type="button"
-                                          name="button"
-                                          className="btn_text text_color_neutral-10 btn_confirm"
-                                        >
-                                          수정
-                                        </button>
-                                        <button type="button" name="button" className="btn_text btn-del">
-                                          인쇄
+                                          저장
                                         </button>
                                         <button type="button" name="button" className="btn_text btn_list">
                                           목록
@@ -1855,20 +1951,73 @@ function ReportASRDetail() {
                                   </dt>
                                   <dd className="tg-conts" style={{ display: nineExpaned ? '' : 'none' }}>
                                     <div className="edit-area">
-                                      <div className="editbox">
-                                        <div className="form-table line">
-                                          <div className="form-cell wid50">
-                                            <div className="form-group wid100">
-                                              <AppSelect label={'Hazard'} required />
-                                            </div>
-                                          </div>
-                                          <div className="form-cell wid50">
-                                            <div className="form-group wid100">
-                                              <AppSelect label={'Potential Consequence'} required />
-                                            </div>
-                                          </div>
-                                        </div>
+                                      <div className="listtable">
+                                        <table className="info-board">
+                                          <colgroup>
+                                            <col width="25%" />
+                                            <col width="20%" />
+                                            <col width="8%" />
+                                            <col width="8%" />
+                                            <col width="20%" />
+                                            <col width="10%" />
+                                            <col width="9%" />
+                                          </colgroup>
+                                          <thead>
+                                            <tr>
+                                              <th>Hazard</th>
+                                              <th>Potential Consequence</th>
+                                              <th>Risk Level 1</th>
+                                              <th>Team</th>
+                                              <th>Mitigation Result</th>
+                                              <th>Status</th>
+                                              <th>Action</th>
+                                            </tr>
+                                          </thead>
+                                          <tbody>
+                                            <tr>
+                                              <td className="tl">Lightning strike Environmental/Weather</td>
+                                              <td className="tl">Aircraft Change</td>
+                                              <td>
+                                                <div className="Safety-table-cell">
+                                                  <span className="Safety-tag riskLevel level4">5D</span>
+                                                </div>
+                                              </td>
+                                              <td className="fix vm"></td>
+                                              <td className="tl">LSC김리더(LeaderKim)</td>
+                                              <td>대기</td>
+                                              <td>
+                                                <a href="javascript:void(0);" className="btn-modify">
+                                                  Assign
+                                                </a>
+                                              </td>
+                                            </tr>
+                                            <tr>
+                                              <td className="tl">Lightning strike Environmental/Weather</td>
+                                              <td className="tl">Aircraft Change</td>
+                                              <td>
+                                                <div className="Safety-table-cell">
+                                                  <span className="Safety-tag riskLevel level4">5D</span>
+                                                </div>
+                                              </td>
+                                              <td className="fix vm"></td>
+                                              <td className="tl">LSC김리더(LeaderKim)</td>
+                                              <td>대기</td>
+                                              <td>
+                                                <a href="javascript:void(0);" className="btn-modify">
+                                                  Assign
+                                                </a>
+                                              </td>
+                                            </tr>
+                                          </tbody>
+                                        </table>
                                       </div>
+                                      {/* 버튼*/}
+                                      <div className="contents-btns">
+                                        <button type="button" name="button" className="btn_text btn_list">
+                                          목록
+                                        </button>
+                                      </div>
+                                      {/* //버튼*/}
                                     </div>
                                   </dd>
                                 </dl>
@@ -1885,39 +2034,262 @@ function ReportASRDetail() {
                                   </dt>
                                   <dd className="tg-conts" style={{ display: sevenExpaned ? '' : 'none' }}>
                                     <div className="edit-area">
+                                      <div className="listtable">
+                                        <table className="info-board">
+                                          <colgroup>
+                                            <col width="25%" />
+                                            <col width="20%" />
+                                            <col width="8%" />
+                                            <col width="8%" />
+                                            <col width="20%" />
+                                            <col width="10%" />
+                                            <col width="9%" />
+                                          </colgroup>
+                                          <thead>
+                                            <tr>
+                                              <th>Hazard</th>
+                                              <th>Potential Consequence</th>
+                                              <th>Risk Level 1</th>
+                                              <th>Team</th>
+                                              <th>Mitigation Result</th>
+                                              <th>Status</th>
+                                              <th>Action</th>
+                                            </tr>
+                                          </thead>
+                                          <tbody>
+                                            <tr>
+                                              <td className="tl">Lightning strike Environmental/Weather</td>
+                                              <td className="tl">Aircraft Change</td>
+                                              <td>
+                                                <div className="Safety-table-cell">
+                                                  <span className="Safety-tag riskLevel level4">5D</span>
+                                                </div>
+                                              </td>
+                                              <td className="fix vm">운항지원팀</td>
+                                              <td className="tl"></td>
+                                              <td>대기</td>
+                                              <td></td>
+                                            </tr>
+                                            <tr>
+                                              <td className="tl">Lightning strike Environmental/Weather</td>
+                                              <td className="tl">Aircraft Change</td>
+                                              <td>
+                                                <div className="Safety-table-cell">
+                                                  <span className="Safety-tag riskLevel level4">5D</span>
+                                                </div>
+                                              </td>
+                                              <td className="fix vm">정비안전보건팀</td>
+                                              <td className="tl"></td>
+                                              <td>대기</td>
+                                              <td></td>
+                                            </tr>
+                                          </tbody>
+                                        </table>
+                                      </div>
                                       {/* 버튼*/}
                                       <div className="contents-btns">
-                                        <button
-                                          type="button"
-                                          name="button"
-                                          className="btn_text text_color_neutral-10 btn_conblue"
-                                        >
-                                          재작성요청
+                                        <button type="button" name="button" className="btn_text btn_list">
+                                          목록
                                         </button>
-                                        <button
-                                          type="button"
-                                          name="button"
-                                          className="btn_text text_color_neutral-10 btn_confirm"
-                                        >
-                                          Notify
-                                        </button>
-                                        <button
-                                          type="button"
-                                          name="button"
-                                          className="btn_text text_color_neutral-10 btn_confirm"
-                                        >
-                                          Void
-                                        </button>
-                                        <button
-                                          type="button"
-                                          name="button"
-                                          className="btn_text text_color_neutral-10 btn_confirm"
-                                        >
-                                          수정
-                                        </button>
-                                        <button type="button" name="button" className="btn_text btn-del">
-                                          인쇄
-                                        </button>
+                                      </div>
+                                      {/* //버튼*/}
+                                    </div>
+                                  </dd>
+                                </dl>
+                              </div>
+                            </div>
+
+                            {/*경감실행 상세*/}
+                            <div className="detailForm-detail-3deps list-group">
+                              <div className="list bx-toggle">
+                                <dl className="tg-item rbox01 ">
+                                  <dt onClick={() => setFifteenExpaned(!fifteenExpaned)}>
+                                    <button type="button" className="tg-btn">
+                                      경감실행<span className=""></span>
+                                    </button>
+                                  </dt>
+                                  <dd className="tg-conts" style={{ display: fifteenExpaned ? '' : 'none' }}>
+                                    <div className="edit-area">
+                                      <div className="listtable">
+                                        <table className="info-board">
+                                          <colgroup>
+                                            <col width="25%" />
+                                            <col width="20%" />
+                                            <col width="8%" />
+                                            <col width="8%" />
+                                            <col width="20%" />
+                                            <col width="10%" />
+                                            <col width="9%" />
+                                          </colgroup>
+                                          <thead>
+                                            <tr>
+                                              <th>Hazard</th>
+                                              <th>Potential Consequence</th>
+                                              <th>Risk Level 1</th>
+                                              <th>Team</th>
+                                              <th>Mitigation Result</th>
+                                              <th>Status</th>
+                                              <th>Action</th>
+                                            </tr>
+                                          </thead>
+                                          <tbody>
+                                            <tr>
+                                              <td className="tl">Lightning strike Environmental/Weather</td>
+                                              <td className="tl">Aircraft Change</td>
+                                              <td>
+                                                <div className="Safety-table-cell">
+                                                  <span className="Safety-tag riskLevel level4">5D</span>
+                                                </div>
+                                              </td>
+                                              <td className="fix vm">운항지원팀</td>
+                                              <td className="tl"></td>
+                                              <td>대기</td>
+                                              <td></td>
+                                            </tr>
+                                            <tr>
+                                              <td colSpan={7} className="tl">
+                                                {/*상세조회 */}
+                                                <div className="edit-area report">
+                                                  <div className="detail-form">
+                                                    <div className="detail-list">
+                                                      <div className="form-table">
+                                                        <div className="form-cell wid50">
+                                                          <div className="form-group wid100">
+                                                            <div className="UserChicebox report">
+                                                              <span className="txt">발견/신고 </span>
+                                                              <div className="form-group wid100 mt10">
+                                                                <div className="SelectedList memberClass mt10">
+                                                                  <ul>
+                                                                    <li>
+                                                                      <span className="InfoBox"></span>
+                                                                      <div className="Info">
+                                                                        <div className="Name">홍길동 (170****)</div>
+                                                                        <div className="Dept">
+                                                                          상무대우수석사무장 / (주)대한항공
+                                                                        </div>
+                                                                      </div>
+                                                                    </li>
+                                                                    <li>
+                                                                      <span className="InfoBox"></span>
+                                                                      <div className="Info">
+                                                                        <div className="Name">홍길동 (170****)</div>
+                                                                        <div className="Dept">
+                                                                          상무대우수석사무장 / (주)대한항공
+                                                                        </div>
+                                                                      </div>
+                                                                    </li>
+                                                                  </ul>
+                                                                </div>
+                                                              </div>
+                                                            </div>
+                                                          </div>
+                                                        </div>
+                                                      </div>
+                                                      <div className="form-table">
+                                                        <div className="form-cell wid50">
+                                                          <div className="form-group wid50">
+                                                            <div className="date2">
+                                                              <AppDatePicker label="data" required />
+                                                            </div>
+                                                          </div>
+                                                        </div>
+                                                      </div>
+                                                      <div className="form-table">
+                                                        <div className="form-cell wid50 ">
+                                                          <div className="form-group wid100">
+                                                            <AppTextArea
+                                                              label="Plan"
+                                                              style={{ width: '100%', height: 100 }}
+                                                              errorMessage=""
+                                                              placeholder=""
+                                                            />
+                                                          </div>
+                                                        </div>
+                                                      </div>
+                                                      <div className="form-table">
+                                                        <div className="form-cell wid50">
+                                                          <div className="form-group wid50">
+                                                            <div className="date2">
+                                                              <AppDatePicker label="data" required />
+                                                            </div>
+                                                          </div>
+                                                        </div>
+                                                      </div>
+                                                      <div className="form-table">
+                                                        <div className="form-cell wid50 ">
+                                                          <div className="form-group wid100">
+                                                            <AppTextArea
+                                                              label="Result"
+                                                              style={{ width: '100%', height: 100 }}
+                                                              errorMessage=""
+                                                              placeholder=""
+                                                            />
+                                                          </div>
+                                                        </div>
+                                                      </div>
+                                                      <div className="form-table">
+                                                        <div className="form-cell wid50">
+                                                          <div className="form-group wid50">
+                                                            <div className="date2">
+                                                              <AppDatePicker label="data" required />
+                                                            </div>
+                                                          </div>
+                                                        </div>
+                                                      </div>
+                                                      {/* 파일첨부영역 : drag */}
+                                                      <div className="form-table ">
+                                                        <div className="form-cell wid50">
+                                                          <div className="form-group wid100">
+                                                            {/* 파일첨부영역 : drag */}
+                                                            <div className="filebox error">
+                                                              <Dragger {...props}>
+                                                                <p className="ant-upload-text ">
+                                                                  + 이 곳을 클릭하거나 마우스로 업로드할 파일을 끌어서
+                                                                  놓으세요.
+                                                                </p>
+                                                              </Dragger>
+                                                              <label htmlFor="file" className="file-label">
+                                                                첨부파일 <span className="required">*</span>
+                                                              </label>
+                                                            </div>
+                                                            <span className="errorText">fileerror</span>
+                                                          </div>
+                                                        </div>
+                                                      </div>
+                                                      {/* 버튼*/}
+                                                      <div className="contents-btns">
+                                                        <button
+                                                          type="button"
+                                                          name="button"
+                                                          className="btn_text btn_list"
+                                                        >
+                                                          목록
+                                                        </button>
+                                                      </div>
+                                                      {/* //버튼*/}
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                              </td>
+                                            </tr>
+                                            <tr>
+                                              <td className="tl">Lightning strike Environmental/Weather</td>
+                                              <td className="tl">Aircraft Change</td>
+                                              <td>
+                                                <div className="Safety-table-cell">
+                                                  <span className="Safety-tag riskLevel level4">5D</span>
+                                                </div>
+                                              </td>
+                                              <td className="fix vm">정비안전보건팀</td>
+                                              <td className="tl"></td>
+                                              <td>대기</td>
+                                              <td></td>
+                                            </tr>
+                                          </tbody>
+                                        </table>
+                                      </div>
+                                      {/* 버튼*/}
+                                      <div className="contents-btns">
                                         <button type="button" name="button" className="btn_text btn_list">
                                           목록
                                         </button>
@@ -1946,80 +2318,170 @@ function ReportASRDetail() {
                         </dt>
                         <dd className="tg-conts" style={{ display: tenExpaned ? '' : 'none' }}>
                           <div className="edit-area">
-                            {/*경감지정 상세*/}
+                            {/*위험평가 상세*/}
                             <div className="detailForm-detail-3deps list-group">
                               <div className="list bx-toggle">
                                 <dl className="tg-item rbox01 ">
                                   <dt onClick={() => setElevenExpaned(!elevenExpaned)}>
                                     <button type="button" className="tg-btn">
-                                      경감지정<span className={sixExpaned ? 'active' : ''}></span>
+                                      위험평가<span className={sixExpaned ? 'active' : ''}></span>
                                     </button>
                                   </dt>
                                   <dd className="tg-conts" style={{ display: elevenExpaned ? '' : 'none' }}>
                                     <div className="edit-area">
-                                      <div className="editbox">
-                                        <div className="form-table line">
-                                          <div className="form-cell wid50">
-                                            <div className="form-group wid100">
-                                              <AppSelect label={'Hazard'} required />
-                                            </div>
-                                          </div>
-                                          <div className="form-cell wid50">
-                                            <div className="form-group wid100">
-                                              <AppSelect label={'Potential Consequence'} required />
-                                            </div>
+                                      <div className="listtable">
+                                        <table className="info-board">
+                                          <colgroup>
+                                            <col width="25%" />
+                                            <col width="20%" />
+                                            <col width="8%" />
+                                            <col width="8%" />
+                                            <col width="20%" />
+                                            <col width="10%" />
+                                            <col width="9%" />
+                                          </colgroup>
+                                          <thead>
+                                            <tr>
+                                              <th>Hazard</th>
+                                              <th>Potential Consequence</th>
+                                              <th>Risk Level 1</th>
+                                              <th>Team</th>
+                                              <th>Mitigation Result</th>
+                                              <th>Status</th>
+                                              <th>Action</th>
+                                            </tr>
+                                          </thead>
+                                          <tbody>
+                                            <tr>
+                                              <td className="tl">Lightning strike Environmental/Weather</td>
+                                              <td className="tl">Aircraft Change</td>
+                                              <td>
+                                                <div className="Safety-table-cell">
+                                                  <span className="Safety-tag riskLevel level4">5D</span>
+                                                </div>
+                                              </td>
+                                              <td className="fix vm">운영지원팀</td>
+                                              <td className="tl">LSC김리더(LeaderKim)</td>
+                                              <td>대기</td>
+                                              <td></td>
+                                            </tr>
+                                            <tr>
+                                              <td className="tl">Lightning strike Environmental/Weather</td>
+                                              <td className="tl">Aircraft Change</td>
+                                              <td>
+                                                <div className="Safety-table-cell">
+                                                  <span className="Safety-tag riskLevel level4">5D</span>
+                                                </div>
+                                              </td>
+                                              <td className="fix vm"></td>
+                                              <td className="tl">LSC김리더(LeaderKim)</td>
+                                              <td>대기</td>
+                                              <td></td>
+                                            </tr>
+                                          </tbody>
+                                        </table>
+                                      </div>
+                                      <div className="form-table line">
+                                        <div className="form-cell wid100">
+                                          <div className="form-group wid100">
+                                            <AppTextArea
+                                              label="회의록"
+                                              style={{ width: '100%', height: 145 }}
+                                              errorMessage=""
+                                            />
                                           </div>
                                         </div>
                                       </div>
+                                      {/* 버튼*/}
+                                      <div className="contents-btns">
+                                        <button type="button" name="button" className="btn_text btn_list">
+                                          목록
+                                        </button>
+                                      </div>
+                                      {/* //버튼*/}
                                     </div>
                                   </dd>
                                 </dl>
                               </div>
                             </div>
-                            {/*경감계획 상세*/}
+                            {/*SRC리뷰 상세*/}
                             <div className="detailForm-detail-3deps list-group">
                               <div className="list bx-toggle">
                                 <dl className="tg-item rbox01 ">
                                   <dt onClick={() => setSevenExpaned(!sevenExpaned)}>
                                     <button type="button" className="tg-btn">
-                                      경감계획<span className=""></span>
+                                      SRC리뷰<span className=""></span>
                                     </button>
                                   </dt>
                                   <dd className="tg-conts" style={{ display: sevenExpaned ? '' : 'none' }}>
                                     <div className="edit-area">
+                                      <div className="listtable">
+                                        <table className="info-board">
+                                          <colgroup>
+                                            <col width="25%" />
+                                            <col width="20%" />
+                                            <col width="8%" />
+                                            <col width="8%" />
+                                            <col width="10%" />
+                                            <col width="10%" />
+                                            <col width="10%" />
+                                            <col width="9%" />
+                                          </colgroup>
+                                          <thead>
+                                            <tr>
+                                              <th>Hazard</th>
+                                              <th>Potential Consequence</th>
+                                              <th>Risk Level 1</th>
+                                              <th>Team</th>
+                                              <th>Mitigation Result</th>
+                                              <th>Risk Level 2</th>
+                                              <th>Status</th>
+                                              <th>Action</th>
+                                            </tr>
+                                          </thead>
+                                          <tbody>
+                                            <tr>
+                                              <td className="tl">Lightning strike Environmental/Weather</td>
+                                              <td className="tl">Aircraft Change</td>
+                                              <td>
+                                                <div className="Safety-table-cell">
+                                                  <span className="Safety-tag riskLevel level4">5D</span>
+                                                </div>
+                                              </td>
+                                              <td className="fix vm">기술지원팀</td>
+                                              <td className="tl">LSC김리더(LeaderKim)</td>
+                                              <td>
+                                                <div className="Safety-table-cell">
+                                                  <span className="Safety-tag riskLevel level4">5D</span>
+                                                </div>
+                                              </td>
+                                              <td>대기</td>
+                                              <td></td>
+                                            </tr>
+                                            <tr>
+                                              <td className="tl">Lightning strike Environmental/Weather</td>
+                                              <td className="tl">Aircraft Change</td>
+                                              <td>
+                                                <div className="Safety-table-cell">
+                                                  <span className="Safety-tag riskLevel level4">5D</span>
+                                                </div>
+                                              </td>
+                                              <td className="fix vm"></td>
+                                              <td className="tl">LSC김리더(LeaderKim)</td>
+                                              <td>
+                                                <div className="Safety-table-cell">
+                                                  <span className="Safety-tag riskLevel level4">5D</span>
+                                                </div>
+                                              </td>
+                                              <td>대기</td>
+                                              <td></td>
+                                            </tr>
+                                          </tbody>
+                                        </table>
+                                      </div>
+
                                       {/* 버튼*/}
                                       <div className="contents-btns">
-                                        <button
-                                          type="button"
-                                          name="button"
-                                          className="btn_text text_color_neutral-10 btn_conblue"
-                                        >
-                                          재작성요청
-                                        </button>
-                                        <button
-                                          type="button"
-                                          name="button"
-                                          className="btn_text text_color_neutral-10 btn_confirm"
-                                        >
-                                          Notify
-                                        </button>
-                                        <button
-                                          type="button"
-                                          name="button"
-                                          className="btn_text text_color_neutral-10 btn_confirm"
-                                        >
-                                          Void
-                                        </button>
-                                        <button
-                                          type="button"
-                                          name="button"
-                                          className="btn_text text_color_neutral-10 btn_confirm"
-                                        >
-                                          수정
-                                        </button>
-                                        <button type="button" name="button" className="btn_text btn-del">
-                                          인쇄
-                                        </button>
                                         <button type="button" name="button" className="btn_text btn_list">
                                           목록
                                         </button>
@@ -2048,13 +2510,13 @@ function ReportASRDetail() {
                         </dt>
                         <dd className="tg-conts" style={{ display: twelveExpaned ? '' : 'none' }}>
                           <div className="edit-area">
-                            {/*경감지정 상세*/}
+                            {/*종료처리 상세*/}
                             <div className="detailForm-detail-3deps list-group">
                               <div className="list bx-toggle">
                                 <dl className="tg-item rbox01 ">
                                   <dt onClick={() => setElevenExpaned(!elevenExpaned)}>
                                     <button type="button" className="tg-btn">
-                                      경감지정<span className={sixExpaned ? 'active' : ''}></span>
+                                      종료처리<span className={sixExpaned ? 'active' : ''}></span>
                                     </button>
                                   </dt>
                                   <dd className="tg-conts" style={{ display: elevenExpaned ? '' : 'none' }}>
@@ -2078,49 +2540,86 @@ function ReportASRDetail() {
                                 </dl>
                               </div>
                             </div>
-                            {/*경감계획 상세*/}
+                            {/*유효성평가처리 상세*/}
                             <div className="detailForm-detail-3deps list-group">
                               <div className="list bx-toggle">
                                 <dl className="tg-item rbox01 ">
                                   <dt onClick={() => setSevenExpaned(!sevenExpaned)}>
                                     <button type="button" className="tg-btn">
-                                      경감계획<span className=""></span>
+                                      유효성평가처리
+                                      <span className=""></span>
                                     </button>
                                   </dt>
                                   <dd className="tg-conts" style={{ display: sevenExpaned ? '' : 'none' }}>
                                     <div className="edit-area">
+                                      <div className="listtable">
+                                        <table className="info-board">
+                                          <colgroup>
+                                            <col width="45%" />
+                                            <col width="20%" />
+                                            <col width="10%" />
+                                            <col width="10%" />
+                                            <col width="15%" />
+                                          </colgroup>
+                                          <thead>
+                                            <tr>
+                                              <th>Hazard</th>
+                                              <th>Potential Consequence</th>
+                                              <th>Risk Level 1</th>
+                                              <th>Risk Level 2</th>
+                                              <th>이벤트발생건수조회</th>
+                                            </tr>
+                                          </thead>
+                                          <tbody>
+                                            <tr>
+                                              <td className="tl">Lightning strike Environmental/Weather</td>
+                                              <td className="tl">Aircraft Change</td>
+                                              <td>
+                                                <div className="Safety-table-cell">
+                                                  <span className="Safety-tag riskLevel level4">5D</span>
+                                                </div>
+                                              </td>
+                                              <td>
+                                                <div className="Safety-table-cell">
+                                                  <span className="Safety-tag riskLevel level4">5D</span>
+                                                </div>
+                                              </td>
+                                              <td>
+                                                {' '}
+                                                <a href="javascript:void(0);" className="btn-modify">
+                                                  Select
+                                                </a>
+                                              </td>
+                                            </tr>
+                                          </tbody>
+                                        </table>
+                                      </div>
+                                      <div className="form-table line">
+                                        <div className="form-cell wid100">
+                                          <div className="form-group wid100">
+                                            <AppTextArea
+                                              label="유효성평가회의록"
+                                              style={{ width: '100%', height: 145 }}
+                                              errorMessage=""
+                                            />
+                                          </div>
+                                        </div>
+                                      </div>
                                       {/* 버튼*/}
                                       <div className="contents-btns">
                                         <button
                                           type="button"
                                           name="button"
-                                          className="btn_text text_color_neutral-10 btn_conblue"
+                                          className="btn_text text_color_neutral-10 btn_confirm"
                                         >
-                                          재작성요청
+                                          저장
                                         </button>
                                         <button
                                           type="button"
                                           name="button"
                                           className="btn_text text_color_neutral-10 btn_confirm"
                                         >
-                                          Notify
-                                        </button>
-                                        <button
-                                          type="button"
-                                          name="button"
-                                          className="btn_text text_color_neutral-10 btn_confirm"
-                                        >
-                                          Void
-                                        </button>
-                                        <button
-                                          type="button"
-                                          name="button"
-                                          className="btn_text text_color_neutral-10 btn_confirm"
-                                        >
-                                          수정
-                                        </button>
-                                        <button type="button" name="button" className="btn_text btn-del">
-                                          인쇄
+                                          Submit
                                         </button>
                                         <button type="button" name="button" className="btn_text btn_list">
                                           목록

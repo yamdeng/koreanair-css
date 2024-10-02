@@ -309,6 +309,9 @@ input, select{font-family:'KoreanAirSans'}
 .UserChicebox.Flight .form-group:nth-child(1){margin-top:0}
 .UserChicebox.Flight .form-group + .form-group{margin-top:1.0rem}
 
+.UserChicebox.report{border:0.1rem solid var(--color-neutral-40);border-radius:1.0rem;padding:0.8rem 1.0rem 1.0rem}
+.UserChicebox.report .txt{position:absolute;left: 1rem;top: -1rem;background: var(--color-neutral-10);padding: 0 0.4rem;line-height: 1.4em;font-size: 1.4rem !important;transition: all 0.2s ease}
+
 /*컨텐츠상단버튼*/
 .btn-area{
   > button{margin:0 0.5rem}

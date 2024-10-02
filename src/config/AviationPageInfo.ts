@@ -486,7 +486,13 @@ AviationPageInfo.list = [
     description: '',
     success: true,
   },
-
+  {
+    title: '[05.안전증진]  유효성평가관리 -> 보고서분석 > 상세(ASR) 에 같이작업함',
+    Component: ReportASRDetail,
+    path: 'ReportASRDetail',
+    description: '',
+    success: true,
+  },
   {
     title: '[06.AUDIT] CheckList',
     Component: Checklist1,
