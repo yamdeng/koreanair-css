@@ -1700,13 +1700,6 @@ function ReportASRDetail() {
                                               </div>
                                             </div>
                                           </div>
-                                          {/* <div className="form-cell wid50">
-                                            <div className="tag-info-wrap-end1">
-                                              <div className="tip">
-                                                <a href="javascript:void(0);" className="txt"></a>
-                                              </div>
-                                            </div>
-                                          </div> */}
                                         </div>
                                         {/* 버튼*/}
                                         <div className="contents-btns">
@@ -1726,6 +1719,53 @@ function ReportASRDetail() {
                                           </button>
                                         </div>
                                         {/* //버튼*/}
+
+                                        <div className="listtable">
+                                          <table className="info-board">
+                                            <colgroup>
+                                              <col width="30%" />
+                                              <col width="20%" />
+                                              <col width="10%" />
+                                              <col width="10%" />
+                                              <col width="20%" />
+                                              <col width="10%" />
+                                              <col width="10%" />
+                                            </colgroup>
+                                            <thead>
+                                              <tr>
+                                                <th>Hazard</th>
+                                                <th>Potential Consequence</th>
+                                                <th>Risk Level 1</th>
+                                                <th>Mitigation</th>
+                                                <th>Register</th>
+                                                <th>Status</th>
+                                                <th>Action</th>
+                                              </tr>
+                                            </thead>
+                                            <tbody>
+                                              <tr>
+                                                <td className="tl">Lightning strike Environmental/Weather</td>
+                                                <td className="tl">Aircraft Change</td>
+                                                <td>
+                                                  <div className="Safety-table-cell">
+                                                    <span className="Safety-tag riskLevel level4">5D</span>
+                                                  </div>
+                                                </td>
+                                                <td className="fix vm">
+                                                  <div className="radio-wrap center">
+                                                    <label className="text-no">
+                                                      <input type="checkbox" />
+                                                      <span className="text-no"></span>
+                                                    </label>
+                                                  </div>
+                                                </td>
+                                                <td className="tl">LSC김리더(LeaderKim)</td>
+                                                <td>평가중</td>
+                                                <td>Delete</td>
+                                              </tr>
+                                            </tbody>
+                                          </table>
+                                        </div>
                                       </div>
                                     </div>
                                   </dd>

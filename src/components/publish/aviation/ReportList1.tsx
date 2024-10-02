@@ -48,6 +48,13 @@ function PRiskList() {
                 <AppSelect label={'상세구분'} />
               </div>
             </div>
+          </div>
+          <div className="form-table">
+            <div className="form-cell wid30">
+              <div className="form-group wid100">
+                <AppSelect label={'Submit Date'} />
+              </div>
+            </div>
             <div className="form-cell wid50">
               <div className="form-group form-glow wid100">
                 <div className="df">
@@ -61,9 +68,7 @@ function PRiskList() {
                 </div>
               </div>
             </div>
-          </div>
-          <div className="form-table">
-            <div className="form-cell wid50">
+            <div className="form-cell wid70">
               <div className="form-group wid100">
                 <AppTextInput label={'Fleet'} />
               </div>
@@ -73,11 +78,13 @@ function PRiskList() {
                 <AppTextInput label={'Reg No.'} />
               </div>
             </div>
-            <div className="form-cell wid50">
+            <div className="form-cell wid30">
               <div className="form-group wid100">
                 <AppSelect label={'부문'} />
               </div>
             </div>
+          </div>
+          <div className="form-table">
             <div className="form-cell wid50">
               <div className="btn-area">
                 <button type="button" name="button" className="btn-sm btn_text btn-darkblue-line">

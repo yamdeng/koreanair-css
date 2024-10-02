@@ -83,6 +83,7 @@ import AdminInstructorList from '@/components/publish/aviation/AdminInstructorLi
 import AdminInstructorEdit from '@/components/publish/aviation/AdminInstructorEdit';
 import AdminInstructorDetail from '@/components/publish/aviation/AdminInstructorDetail';
 import ReportList1 from '@/components/publish/aviation/ReportList1';
+import PotentialConDetail from '@/components/publish/aviation/PotentialConDetail';
 import { fa, fakerLV } from '@faker-js/faker';
 import { fail } from 'assert';
 
@@ -666,6 +667,13 @@ AviationPageInfo.list = [
     title: '[07.관리자] HAZARD관리 > PotentialConsequence > 등록',
     Component: PotentialConEdit,
     path: 'PotentialConEdit',
+    description: '',
+    success: true,
+  },
+  {
+    title: '[07.관리자] HAZARD관리 > PotentialConsequence > 상세',
+    Component: PotentialConDetail,
+    path: 'PotentialConDetail',
     description: '',
     success: true,
   },
