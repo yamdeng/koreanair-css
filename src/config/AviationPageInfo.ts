@@ -84,6 +84,8 @@ import AdminInstructorEdit from '@/components/publish/aviation/AdminInstructorEd
 import AdminInstructorDetail from '@/components/publish/aviation/AdminInstructorDetail';
 import ReportList1 from '@/components/publish/aviation/ReportList1';
 import PotentialConDetail from '@/components/publish/aviation/PotentialConDetail';
+import AlarmList from '@/components/publish/aviation/AlarmList';
+
 import { fa, fakerLV } from '@faker-js/faker';
 import { fail } from 'assert';
 
@@ -99,8 +101,8 @@ AviationPageInfo.list = [
   },
   {
     title: '[메인] 알림(공통)',
-    Component: PAviationPortal1,
-    path: 'PAviationPortal1',
+    Component: AlarmList,
+    path: 'AlarmList',
     description: '',
     success: false,
   },
