@@ -69,6 +69,20 @@ function AlarmList() {
             </dt>
             <dd>MSR-draft-115508의 보고서 저장 후 제출되지 않은 상태입니다. 보고서를 제출 해 주시기 바랍니다.</dd>
           </dl>
+          <dl>
+            <dt>
+              MSR-draft-115508 보고서 미제출 안내
+              <span className="commt">하루 전</span>
+            </dt>
+            <dd>MSR-draft-115508의 보고서 저장 후 제출되지 않은 상태입니다. 보고서를 제출 해 주시기 바랍니다.</dd>
+          </dl>
+          <dl>
+            <dt>
+              MSR-draft-115508 보고서 미제출 안내
+              <span className="commt">하루 전</span>
+            </dt>
+            <dd>MSR-draft-115508의 보고서 저장 후 제출되지 않은 상태입니다. 보고서를 제출 해 주시기 바랍니다.</dd>
+          </dl>
         </div>
       </div>
       {/*//리스트영역 */}

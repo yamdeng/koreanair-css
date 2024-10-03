@@ -104,7 +104,7 @@ AviationPageInfo.list = [
     Component: AlarmList,
     path: 'AlarmList',
     description: '',
-    success: false,
+    success: true,
   },
   {
     title: '[메인] 관리자(공통)',
