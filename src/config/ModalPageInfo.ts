@@ -55,7 +55,7 @@ import SafetyAdvEditModal from '@/components/publish/modal/SafetyAdvEditModal';
 import MainNoticeModal from '@/components/publish/modal/MainNoticeModal';
 import ChangeAddModal from '@/components/publish/modal/ChangeAddModal';
 import CommitModal from '@/components/publish/modal/CommitModal';
-
+import AMOModal from '@/components/publish/modal/AMOModal';
 const ModalPageInfo: any = {};
 
 ModalPageInfo.list = [
@@ -166,8 +166,8 @@ ModalPageInfo.list = [
   },
   {
     title: '[항공안전>AMO] 안전정책,Hazard 현황,Event 현황,공지사항',
-    Component: MainNoticeModal,
-    path: 'MainNoticeModal',
+    Component: AMOModal,
+    path: 'AMOModal',
     description: '',
     success: false,
   },

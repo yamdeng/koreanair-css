@@ -85,6 +85,16 @@ import AdminInstructorDetail from '@/components/publish/aviation/AdminInstructor
 import ReportList1 from '@/components/publish/aviation/ReportList1';
 import PotentialConDetail from '@/components/publish/aviation/PotentialConDetail';
 import AlarmList from '@/components/publish/aviation/AlarmList';
+import SMSTotalList from '@/components/publish/aviation/SMSTotalList';
+import effectiveList from '@/components/publish/aviation/effectiveList';
+import NewsletterList from '@/components/publish/aviation/NewsletterList';
+import NewsletterDetail from '@/components/publish/aviation/NewsletterDetail';
+import SMSinstructorList from '@/components/publish/aviation/SMSinstructorList';
+import SMSinstructorDetail from '@/components/publish/aviation/SMSinstructorDetail';
+import EducationList from '@/components/publish/aviation/EducationList';
+import EducationDetail from '@/components/publish/aviation/EducationDetail';
+import PRiskdashboard1 from '@/components/publish/aviation/PRiskdashboard1';
+import RiskRegisterList from '@/components/publish/aviation/RiskRegisterList';
 
 import { fa, fakerLV } from '@faker-js/faker';
 import { fail } from 'assert';
@@ -248,6 +258,13 @@ AviationPageInfo.list = [
     success: true,
   },
   {
+    title: '[03.안전위험관리] 대시보드',
+    Component: PRiskdashboard1,
+    path: 'PRiskdashboard1',
+    description: '',
+    success: false,
+  },
+  {
     title: '[03.안전위험관리] 안전조사 > 대시보드',
     Component: PRiskdashboard,
     path: 'PRiskdashboard',
@@ -255,11 +272,11 @@ AviationPageInfo.list = [
     success: false,
   },
   {
-    title: '[03.안전위험관리] 안전조사 > 위험도대장(RiskRegister)',
-    Component: GSRReportEdit,
-    path: 'GSRReportEdit',
+    title: '[03.안전위험관리] 위험도대장(RiskRegister)',
+    Component: RiskRegisterList,
+    path: 'RiskRegisterList',
     description: '',
-    success: false,
+    success: true,
   },
   {
     title: '[03.안전위험관리] 지상조사 > 조사보고서 리스트',
@@ -419,17 +436,24 @@ AviationPageInfo.list = [
   },
   {
     title: '[04.안전보증] SMS종합분석현황 > 종힙분석결과보고서',
-    Component: SMSDashBoardList2,
-    path: 'SMSDashBoardList2',
+    Component: SMSTotalList,
+    path: 'SMSTotalList',
     description: '',
-    success: false,
+    success: true,
   },
   {
     title: '[05.안전증진] 안전 Communication > Newsletter',
-    Component: WorkShopList,
-    path: 'WorkShopList',
+    Component: NewsletterList,
+    path: 'NewsletterList',
     description: '',
-    success: false,
+    success: true,
+  },
+  {
+    title: '[05.안전증진] 안전 Communication > Newsletter 상세',
+    Component: NewsletterDetail,
+    path: 'NewsletterDetail',
+    description: '',
+    success: true,
   },
   {
     title: '[05.안전증진] 안전 Communication > SkySafety21',
@@ -446,18 +470,32 @@ AviationPageInfo.list = [
     success: false,
   },
   {
-    title: '[05.안전증진] SMS 교육 > 자료실',
-    Component: WorkShopList,
-    path: 'WorkShopList',
+    title: '[05.안전증진] SMS 교육 > 교육현황 리스트',
+    Component: EducationList,
+    path: 'EducationList',
     description: '',
-    success: false,
+    success: true,
   },
   {
-    title: '[05.안전증진] SMS 교육 > 강사현황',
-    Component: WorkShopList,
-    path: 'WorkShopList',
+    title: '[05.안전증진] SMS 교육 > 교육현황 상세',
+    Component: EducationDetail,
+    path: 'EducationDetail',
     description: '',
-    success: false,
+    success: true,
+  },
+  {
+    title: '[05.안전증진] SMS 교육 > 강사이력현황',
+    Component: SMSinstructorList,
+    path: 'SMSinstructorList',
+    description: '',
+    success: true,
+  },
+  {
+    title: '[05.안전증진] SMS 교육 > 강사이력현황 상세',
+    Component: SMSinstructorDetail,
+    path: 'SMSinstructorDetail',
+    description: '',
+    success: true,
   },
   {
     title: '[05.안전증진] 안전문화설문',
@@ -511,8 +549,8 @@ AviationPageInfo.list = [
   },
   {
     title: '[05.안전증진]  유효성평가관리 -> 보고서분석 > 상세(ASR) 에 같이작업함',
-    Component: ReportASRDetail,
-    path: 'ReportASRDetail',
+    Component: effectiveList,
+    path: 'effectiveList',
     description: '',
     success: true,
   },

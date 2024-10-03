@@ -176,8 +176,21 @@ function SPIBoardDetail() {
               <div className="box-view-list">
                 <ul className="view-list">
                   <li className="accumlate-list">
-                    <label className="t-label">첨부파일</label>
-                    <span className="text-desc-type1">Safety Portal 개발 Plan.jpg</span>
+                    <label className="t-label">첨부파일 </label>
+                    <span className="text-desc-type1">
+                      <div className="desc-file">
+                        <a href="javascript:void(0);">
+                          <span className="download"></span>
+                          <span>첨부파일.zip</span>
+                        </a>
+                      </div>
+                      <div className="desc-file">
+                        <a href="javascript:void(0);">
+                          <span className="download"></span>
+                          <span>첨부파일.zip</span>
+                        </a>
+                      </div>
+                    </span>
                   </li>
                 </ul>
               </div>
