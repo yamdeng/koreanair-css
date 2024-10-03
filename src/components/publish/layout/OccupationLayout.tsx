@@ -91,7 +91,7 @@ export default function OccupationLayout() {
             </li>
           </ul>
         </div>
-        <div className="main-search active">
+        <div className="main-search">
           <div className="form-group wid100">
             <AppSearchInput label="검색" />
           </div>

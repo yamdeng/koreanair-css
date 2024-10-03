@@ -590,7 +590,7 @@ AviationPageInfo.list = [
     Component: MyAuditPlan,
     path: 'MyAuditPlan',
     description: '',
-    success: false,
+    success: true,
   },
   {
     title: '[06.AUDIT] MyAuditPlanDetail',
@@ -604,21 +604,21 @@ AviationPageInfo.list = [
     Component: MyAuditConduct,
     path: 'MyAuditConduct',
     description: '',
-    success: false,
+    success: true,
   },
   {
     title: '[06.AUDIT] MyAuditConductDetail',
     Component: MyAuditConductDetail,
     path: 'MyAuditConductDetail',
     description: '',
-    success: false,
+    success: true,
   },
   {
     title: '[06.AUDIT] MyAuditCAR',
     Component: MyAuditCAR,
     path: 'MyAuditCAR',
     description: '',
-    success: false,
+    success: true,
   },
   {
     title: '[06.AUDIT] MyAuditClose',

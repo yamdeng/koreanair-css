@@ -56,6 +56,8 @@ import MainNoticeModal from '@/components/publish/modal/MainNoticeModal';
 import ChangeAddModal from '@/components/publish/modal/ChangeAddModal';
 import CommitModal from '@/components/publish/modal/CommitModal';
 import AMOModal from '@/components/publish/modal/AMOModal';
+import findingcategoryModal from '@/components/publish/modal/findingcategoryModal';
+import rootcauseModal from '@/components/publish/modal/rootcauseModal';
 const ModalPageInfo: any = {};
 
 ModalPageInfo.list = [
@@ -315,6 +317,20 @@ ModalPageInfo.list = [
     title: '[항공안전 > 06.AUDIT] 수행담당지정 팝업창',
     Component: CommitModal,
     path: 'CommitModal',
+    description: '',
+    success: true,
+  },
+  {
+    title: '[항공안전 > 06.AUDIT] Finding Category 팝업창',
+    Component: findingcategoryModal,
+    path: 'findingcategoryModal',
+    description: '',
+    success: true,
+  },
+  {
+    title: '[항공안전 > 06.AUDIT] Root Cause 팝업창',
+    Component: rootcauseModal,
+    path: 'rootcauseModal',
     description: '',
     success: true,
   },

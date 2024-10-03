@@ -116,7 +116,9 @@ function MyAuditConductDetail() {
           </div>
         </div>
         <div className="myaudit-contents">
-          <h3 className="audit-tit">Conduct</h3>
+          <h3 className="audit-tit">
+            Conduct<span>관리자 (1234567), 2024-07-02 09:30</span>
+          </h3>
           <div className="editbox ">
             <div className="form-table">
               <div className="form-cell wid50">

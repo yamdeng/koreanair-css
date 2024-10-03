@@ -376,7 +376,12 @@ function MyAuditCAR() {
                             </dt>
                             <dd className="tg-conts" style={{ display: ActionTaken ? '' : 'none' }}>
                               <div className="edit-toggle">
-                                <div>탭</div>
+                                <div className="edit-tab">
+                                  <ul className="tab-list">
+                                    <li className="active">Assign to 1</li>
+                                    <li>Assign to 2</li>
+                                  </ul>
+                                </div>
                                 <div className="editbox b-t-0">
                                   <div className="form-table">
                                     <div className="form-cell wid100">
@@ -500,41 +505,88 @@ function MyAuditCAR() {
             {/*//추가버튼*/}
             <div className="editbox edit-audit-bg mt-15">
               <h3 className="audit-car-tit">Additional Audit Checklist</h3>
+              <div className="edit-toggle">
+                <div className="editbox b-t-0">
+                  <h4 className="s-tit mt-15">Additional Chapter</h4>
+                  <div className="form-table">
+                    <div className="form-cell wid100">
+                      <div className="form-group wid100">
+                        <textarea
+                          id="testArea1"
+                          className="form-tag"
+                          style={{ width: '100%' }}
+                          name="testArea1"
+                          value={inputValue}
+                          onChange={(event) => {
+                            setInputValue(event.target.value);
+                          }}
+                        />
+                        <label className="f-label" htmlFor="testArea1">
+                          Content
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="form-table">
+                    <div className="form-cell wid50">
+                      <div className="form-group wid100">
+                        <AppTextInput label="Reference Manual" />
+                      </div>
+                    </div>
+                  </div>
+                  <div className="form-table">
+                    <div className="form-cell wid50">
+                      <div className="form-group wid100">
+                        <AppTextInput label="Input Comment" />
+                      </div>
+                    </div>
+                    <div className="form-cell wid50">
+                      <div className="group-box-wrap wid100">
+                        <div className="radio-wrap border-no">
+                          <label>
+                            <input type="radio" />
+                            <span>Finding</span>
+                          </label>
+                          <label>
+                            <input type="radio" />
+                            <span>Observation</span>
+                          </label>
+                          <label>
+                            <input type="radio" />
+                            <span>N/A</span>
+                          </label>
+                          <label>
+                            <input type="radio" />
+                            <span>Yes</span>
+                          </label>
+                        </div>
+                        {/*<span className="errorText">error</span>*/}
+                      </div>
+                    </div>
+                  </div>
+                  <div className="btn-area">
+                    <button type="button" name="button" className="btn-sm btn_text btn-darkblue-line">
+                      Cancel
+                    </button>
+                    <button type="button" name="button" className="btn-sm btn_text btn-darkblue-line">
+                      Save
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="editbox edit-audit-bg mt-15">
+              <h3 className="audit-car-tit">
+                Additional Audit Checklist <span>CAR No. 24-LSA-0407-BE03</span>
+              </h3>
               <ul className="audit-carconts">
                 <li>Additional Chapter</li>
                 <li>
-                  <div className="form-cell wid100">
-                    <div className="form-group wid100">
-                      <textarea
-                        id="testArea1"
-                        className="form-tag"
-                        style={{ width: '100%' }}
-                        name="testArea1"
-                        value={inputValue}
-                        onChange={(event) => {
-                          setInputValue(event.target.value);
-                        }}
-                      />
-                      <label className="f-label" htmlFor="testArea1">
-                        Content
-                      </label>
-                    </div>
-                  </div>
+                  체크리스트에 존재하지 않는 잠재적인 위험을 감지했습니다. CAR 발행 후 개선조치 부탁드립니다. reference
+                  manual 입니다.
                 </li>
                 <li>
-                  <div className="form-cell wid100">
-                    <div className="form-group wid100">
-                      <AppTextInput label="Reference Manual" />
-                    </div>
-                  </div>
-                </li>
-                <li>
-                  <div className="form-cell wid50">
-                    <div className="form-group wid100">
-                      <AppTextInput label="Step 3" />
-                    </div>
-                  </div>
-                  <div className="group-box-wrap wid50">
+                  <div className="group-box-wrap wid100">
                     <div className="radio-wrap border-no ta-r">
                       <label>
                         <input type="radio" checked />
@@ -555,7 +607,31 @@ function MyAuditCAR() {
                     </div>
                   </div>
                 </li>
+                <li>
+                  <div className="form-cell wid100">
+                    <div className="form-group wid100">
+                      <textarea
+                        id="testArea1"
+                        className="form-tag"
+                        style={{ width: '100%' }}
+                        name="testArea1"
+                        value={inputValue}
+                        onChange={(event) => {
+                          setInputValue(event.target.value);
+                        }}
+                      />
+                    </div>
+                  </div>
+                </li>
               </ul>
+              <div className="btn-area">
+                <button type="button" name="button" className="btn-sm btn_text btn-darkblue-line">
+                  Delete
+                </button>
+                <button type="button" name="button" className="btn-sm btn_text btn-darkblue-line">
+                  Edit
+                </button>
+              </div>
             </div>
           </div>
           {/* 하단버튼영역 */}
