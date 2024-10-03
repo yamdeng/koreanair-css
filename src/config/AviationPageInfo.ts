@@ -95,6 +95,9 @@ import EducationList from '@/components/publish/aviation/EducationList';
 import EducationDetail from '@/components/publish/aviation/EducationDetail';
 import PRiskdashboard1 from '@/components/publish/aviation/PRiskdashboard1';
 import RiskRegisterList from '@/components/publish/aviation/RiskRegisterList';
+import AdminESPList from '@/components/publish/aviation/AdminESPList';
+import AdminTotreport from '@/components/publish/aviation/AdminTotreport';
+import AdminTotreportDetail from '@/components/publish/aviation/AdminTotreportDetail';
 
 import { fa, fakerLV } from '@faker-js/faker';
 import { fail } from 'assert';
@@ -686,6 +689,27 @@ AviationPageInfo.list = [
     path: 'AdminBoardList',
     description: '',
     success: false,
+  },
+  {
+    title: '[07.관리자] ESP 관리',
+    Component: AdminESPList,
+    path: 'AdminESPList',
+    description: '',
+    success: false,
+  },
+  {
+    title: '[07.관리자] SMS 종합분석 관리 > 종합분석보고서',
+    Component: AdminTotreport,
+    path: 'AdminTotreport',
+    description: '',
+    success: true,
+  },
+  {
+    title: '[07.관리자] SMS 종합분석 관리 > 종합분석보고서 상세',
+    Component: AdminTotreportDetail,
+    path: 'AdminTotreportDetail',
+    description: '',
+    success: true,
   },
   {
     title: '[07.관리자] 안전정책 > 리스트',
