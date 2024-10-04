@@ -31,7 +31,9 @@ function AlarmList() {
       <div className="conts-title">
         <h2>알림</h2>
         <span className="btn-right">
-          <a href="javascript:void(0);">...</a>
+          <button type="button" name="button" className="menu-more">
+            <span className="hide">더보기</span>
+          </button>
         </span>
       </div>
 
@@ -65,7 +67,8 @@ function AlarmList() {
           <dl>
             <dt>
               MSR-draft-115508 보고서 미제출 안내
-              <span className="commt">하루 전</span>
+              {/*non붙이면 -> 회색컬러 */}
+              <span className="commt non">하루 전</span>
             </dt>
             <dd>MSR-draft-115508의 보고서 저장 후 제출되지 않은 상태입니다. 보고서를 제출 해 주시기 바랍니다.</dd>
           </dl>

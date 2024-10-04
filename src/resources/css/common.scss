@@ -417,7 +417,7 @@ input, select{font-family:'KoreanAirSans'}
 .conts-title h2.reportview ul.section-button .info-box li:last-child{border-bottom:0}
 .conts-title h2.reportview ul.section-button .info-box li:hover{background-color:var(--color-lightblue-10)}
 .conts-title h3{float:left;font-family:"KoreanAirSans";font-size:2rem;color:var(--color-neutral-80);font-weight:500;letter-spacing:-0.1rem}
-.conts-title .btn-right{float:right}
+.conts-title .btn-right .menu-more{float:right;width:3.2rem;height:3.0rem;padding:0 1rem;font-size:0;background: url(/src/resources/images/icon-option.svg) center center no-repeat}
 
 
 .table-header{display:flex;position:relative;justify-content:end;align-items:center;-webkit-box-align:center;width:100%;line-height:3.5rem;padding-bottom:1rem}
@@ -812,5 +812,7 @@ input, select{font-family:'KoreanAirSans'}
 .alarmlist-wrap .alarmlist > dl{border-bottom:solid 0.1rem var(--color-neutral-40)}
 .alarmlist-wrap .alarmlist > dl > dt{display:flex;justify-content:space-between;padding-top:1.0rem;font-size:1.6rem;font-weight:500;line-height:2.3;color: var(--color-neutral-90)}
 .alarmlist-wrap .alarmlist > dl > dt .commt{position:relative}
-.alarmlist-wrap .alarmlist > dl > dt .commt:after{content:'';display:block;position:absolute;top:0.2rem;right:-0.8rem;width:0.5rem;height:0.5rem;background:#e6007e;border-radius:100%}
+.alarmlist-wrap .alarmlist > dl > dt .commt:after{content:'';display:block;position:absolute;top:0.2rem;right:-0.8rem;width:0.5rem;height:0.5rem;background:var(--color-mblue-100);border-radius:100%}
+.alarmlist-wrap .alarmlist > dl > dt .commt.non{position:relative}
+.alarmlist-wrap .alarmlist > dl > dt .commt.non:after{content:'';display:block;position:absolute;top:0.2rem;right:-0.8rem;width:0.5rem;height:0.5rem;background:var(--color-neutral-40);border-radius:100%}
 .alarmlist-wrap .alarmlist > dl > dd{width:100%;font-size:1.5rem;color: var(--color-neutral-70);font-weight:400;padding-bottom:1.5rem;word-wrap:break-word;-webkit-line-clamp:2;text-overflow: ellipsis}
