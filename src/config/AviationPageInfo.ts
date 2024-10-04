@@ -98,6 +98,8 @@ import RiskRegisterList from '@/components/publish/aviation/RiskRegisterList';
 import AdminESPList from '@/components/publish/aviation/AdminESPList';
 import AdminTotreport from '@/components/publish/aviation/AdminTotreport';
 import AdminTotreportDetail from '@/components/publish/aviation/AdminTotreportDetail';
+import EPSList1 from '@/components/publish/aviation/EPSList1';
+import RiskList1 from '@/components/publish/aviation/RiskList1';
 
 import { fa, fakerLV } from '@faker-js/faker';
 import { fail } from 'assert';
@@ -417,9 +419,30 @@ AviationPageInfo.list = [
     success: false,
   },
   {
-    title: '[04.안전보증] EPS현황 > 운영현항, Risk분석, 진행현황 , HZR 참여실적',
-    Component: SMSDashBoardList,
-    path: 'SMSDashBoardList',
+    title: '[04.안전보증] EPS현황 > 운영현항',
+    Component: EPSList1,
+    path: 'EPSList1',
+    description: '',
+    success: true,
+  },
+  {
+    title: '[04.안전보증] EPS현황 > Risk분석',
+    Component: RiskList1,
+    path: 'RiskList1',
+    description: '',
+    success: false,
+  },
+  {
+    title: '[04.안전보증] EPS현황 > 진행현황 ',
+    Component: RiskList1,
+    path: 'RiskList1',
+    description: '',
+    success: false,
+  },
+  {
+    title: '[04.안전보증] EPS현황 > HZR 참여실적',
+    Component: RiskList1,
+    path: 'RiskList1',
     description: '',
     success: false,
   },

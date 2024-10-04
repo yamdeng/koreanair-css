@@ -161,8 +161,8 @@
 .DashBoardWrap .DashBoard-chart .DashBoard-row .DashBoard-col{position:relative;width:100%;;height:100%;border-radius:0.8rem;padding:1.2rem 1rem;border:solid 0.2rem var(--color-neutral-01);background-color:var(--color-neutral-10);box-shadow:0 0.2rem 0.4rem 0 rgba(0, 0, 0, .05)}
 .DashBoardWrap .DashBoard-chart .DashBoard-row .DashBoard-col .h4{position:relative;display:inline-block;width:100%;color:var(--color-darkblue-100);font-weight:500;font-size:2.0rem;line-height:2.5;letter-spacing:-0.1rem}
 .DashBoardWrap .DashBoard-chart .DashBoard-row .DashBoard-col .h4 span{color:var(--color-negative)}
-.DashBoardWrap .DashBoard-chart .DashBoard-row .DashBoard-col .DashBoard-box{width:100%;padding:1rem;}
-.DashBoardWrap .DashBoard-chart .DashBoard-row .DashBoard-col:hover{border-color:var(--color-darkblue-100)}
+.DashBoardWrap .DashBoard-chart .DashBoard-row .DashBoard-col .DashBoard-box{width:100%;padding:1rem}
+// .DashBoardWrap .DashBoard-chart .DashBoard-row .DashBoard-col:hover{border-color:var(--color-darkblue-100)}
 .DashBoardWrap .DashBoard-chart .DashBoard-row .DashBoard-col .DashBoard-box canvas{width:100%}
 .DashBoardWrap .DashBoard-chart .DashBoard-1row{display:flex;justify-content:flex-start;flex-wrap:wrap;width:100%;box-sizing:border-box;overflow:hidden;padding:1rem}
 .DashBoardWrap .DashBoard-chart .DashBoard-1row .DashBoard-col{position:relative;width:100%;;height:100%;border-radius:0.8rem;padding:1.2rem 1rem;border:solid 0.2rem var(--color-neutral-01);background-color:var(--color-neutral-10);box-shadow:0 0.2rem 0.4rem 0 rgba(0, 0, 0, .05)}
@@ -316,6 +316,18 @@
 .detailForm-detail-4deps.info-wrap .list .edit-area{border-top:0rem dotted var(--color-darkblue-100);padding:0 2rem 2rem;margin-top:0;color:var(--color-neutral-70);line-height:2rem;font-size:1.6rem}
 .detailForm-detail-4deps.list-group .list > dl > dt .tg-btn{font-family:"KoreanAirSans";font-size: 1.8rem;font-weight:500;color:var(--color-darkblue-100)}
 .detailForm-detail-3deps > .detailForm-detail-4deps .list > dl > dt{padding:1rem 0rem 1rem;border-bottom:0.1rem solid #ccc}
+
+.contract-wrap{position:relative;display:flex; width:100%;gap:0 0.5rem;margin-bottom:1.5rem}
+.contract-wrap .contract-box{width:calc(100% + 0.4rem);box-sizing: border-box;padding-left: 0.4rem;background-color: var(--color-btn-blue1);border: 0.1rem solid var(--color-btn-blue2);border-radius:0.8rem;text-align: center;}
+.contract-wrap .contract-box .item-box{display:block;padding:2rem 3rem}
+.contract-wrap .contract-box .item-box dl{display:table;width:100%}
+.contract-wrap .contract-box .item-box dl dt{display: table-cell;font-size:1.5rem;width: 40%;line-height: 1.2;color:var(--color-mblue-100);vertical-align: middle;}
+.contract-wrap .contract-box .item-box dl dd{font-size:1.8rem;display:table-cell;text-align:right;vertical-align:middle;font-weight:700;color:var(--color-mblue-100)}
+
+
+
+
+
 
 /*이력정보*/
 .edit-area.edu{border-top: 0.1rem solid var(--color-darkblue-100);line-height:0;font-size:0}
