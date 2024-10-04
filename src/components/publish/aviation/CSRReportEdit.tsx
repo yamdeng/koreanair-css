@@ -61,6 +61,13 @@ const props: any = {
     console.log('Dropped files', e.dataTransfer.files);
   },
 };
+const options2 = [];
+for (let i = 10; i < 36; i++) {
+  options2.push({
+    label: i.toString(36) + i,
+    value: i.toString(36) + i,
+  });
+}
 function CSRReportEdit() {
   const [inputValue, setInputValue] = useState('');
   const [firstExpaned, setFirstExpaned] = useState(true);
@@ -320,8 +327,13 @@ function CSRReportEdit() {
               <div className="detail-form">
                 <div className="detail-list">
                   <div className="form-table">
-                    <div className="form-cell wid50 ">
-                      <div className="form-group wid50">이벤트 카테고리</div>
+                    <div className="form-cell wid50">
+                      <div className="group-box-wrap wid100">
+                        <span className="txt">이벤트 카테고리</span>
+                        <div className="round-wrap ">
+                          <span className="sub-txt">기타보고항목</span>
+                        </div>
+                      </div>
                     </div>
                     <div className="form-cell wid50">
                       <div className="form-group wid100">
@@ -333,31 +345,41 @@ function CSRReportEdit() {
                   <div className="form-table">
                     <div className="form-cell wid50">
                       <div className="form-group wid100">
-                        <div className="Notification-wrap wid50">
-                          <p className="notice">Notification</p>
+                        <div className="Notification-wrap wi1050">
+                          <p className="notice">알림</p>
                           <ul>
                             <li>
-                              <span className="point">①</span>Safety : Asked about Safety Equipments/Regulations mostly.
+                              <span className="point">①</span>안전보고항목
+                              <p className="info-text01">
+                                CSR보고 항목 중, 항공안전법 의거 의무 보고항목(항공기 사고, 준사고, 항공안전장애)및 기타
+                                안전관련보고사항
+                              </p>
+                              <p className="info-text01">
+                                객실 귀책 사유가 아닌, 기상요인, 장비/항공기 결항 문제데 의한 항공기 지연, 운항 IRRE
+                                발생 건
+                              </p>
                             </li>
                             <li>
-                              <span className="point">②</span>Security : Asked about Security Equipments/Regulations
-                              mostly.
-                            </li>
-                            <li>
-                              <span className="point">③</span>Alcohol/Drug : About the alcohol/drug test
-                            </li>
-                            <li>
-                              <span className="point">④</span>Others : Excluding the above items.
+                              <span className="point">②</span>보안보고항목
+                              <p className="info-text01">
+                                CSR보고 항목 중, 보안 관련 오 탑승/비인가자 집입 제지 및 기타 보안 관련 보고 사항
+                              </p>
+                              <p className="info-text01">바코드스캐너 이용PM 오류발견/정정 건 잣성 불요</p>
                             </li>
                           </ul>
-                          <p className="info-text01">
-                            Do not write a simple boarding of a supervisor without questions/checks for cabin crew
-                          </p>
-                          <p className="info-text01">
-                            Inspection officer boarding is not required for other sectors (operation, maintenance, etc.)
-                            other than room inspection purposes
-                          </p>
                         </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="form-table">
+                    <div className="form-cell wid50">
+                      <div className="form-group wid100">
+                        <AppSelect label="안전보고항목" required />
+                      </div>
+                    </div>
+                    <div className="form-cell wid50">
+                      <div className="form-group wid100">
+                        <AppSelect label="화제/연기/타는냄새" required />
                       </div>
                     </div>
                   </div>
@@ -365,24 +387,16 @@ function CSRReportEdit() {
                     <div className="form-cell wid50">
                       <div className="group-box-wrap wid100">
                         <span className="txt">
-                          Inspection Type <span className="required">*</span>
+                          Smoke Detector알람작용 <span className="required"></span>
                         </span>
                         <div className="radio-wrap error">
                           <label>
                             <input type="radio" checked />
-                            <span>Safety</span>
+                            <span>예</span>
                           </label>
                           <label>
                             <input type="radio" />
-                            <span>Security</span>
-                          </label>
-                          <label>
-                            <input type="radio" />
-                            <span>Alcohol/Drugs</span>
-                          </label>
-                          <label>
-                            <input type="radio" />
-                            <span>Others</span>
+                            <span>아니오</span>
                           </label>
                         </div>
                       </div>
@@ -390,20 +404,16 @@ function CSRReportEdit() {
                     <div className="form-cell wid50">
                       <div className="group-box-wrap wid100">
                         <span className="txt">
-                          Base of Authority <span className="required">*</span>
+                          Cabin Log작성 <span className="required"></span>
                         </span>
                         <div className="radio-wrap error">
                           <label>
                             <input type="radio" checked />
-                            <span>Domestic</span>
+                            <span>예</span>
                           </label>
                           <label>
                             <input type="radio" />
-                            <span>Foreign</span>
-                          </label>
-                          <label>
-                            <input type="radio" />
-                            <span>KE</span>
+                            <span>아니오</span>
                           </label>
                         </div>
                       </div>
@@ -411,20 +421,24 @@ function CSRReportEdit() {
                     <div className="form-cell wid50">
                       <div className="group-box-wrap wid100">
                         <span className="txt">
-                          Finding <span className="required">*</span>
+                          승객 탑승 클래스 <span className="required">*</span>
                         </span>
                         <div className="radio-wrap error">
                           <label>
                             <input type="radio" checked />
-                            <span>Yes</span>
+                            <span>FR</span>
                           </label>
                           <label>
                             <input type="radio" />
-                            <span>No</span>
+                            <span>PR</span>
                           </label>
                           <label>
                             <input type="radio" />
-                            <span>잘모르겠어요</span>
+                            <span>EY</span>
+                          </label>
+                          <label>
+                            <input type="radio" />
+                            <span>Unknown</span>
                           </label>
                         </div>
                       </div>
@@ -433,12 +447,24 @@ function CSRReportEdit() {
                   <div className="form-table">
                     <div className="form-cell wid50">
                       <div className="form-group wid100">
-                        <AppTextInput label="검사관" />
+                        <AppSelect label="불/연기/냄새" />
                       </div>
                     </div>
                     <div className="form-cell wid50">
                       <div className="form-group wid100">
-                        <AppSelect label="검사부" required />
+                        <AppSelect label="발생위치" required />
+                      </div>
+                    </div>
+                    <div className="form-cell wid50">
+                      <div className="form-group wid100">
+                        <AppSelect label="원인물" required />
+                      </div>
+                    </div>
+                  </div>
+                  <div className="form-table">
+                    <div className="form-cell wid50">
+                      <div className="form-group form-glow wid50">
+                        <AppSelect mode="multiple" options={options2} label="멀티select" />
                       </div>
                     </div>
                   </div>
