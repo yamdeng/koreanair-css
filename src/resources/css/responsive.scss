@@ -155,6 +155,8 @@
   .user-wrap .user-box .user-box-top .form-table.user-head .h4.tit{font-weight:600;font-size:1.8rem;text-align:left !important;line-height:2.3;padding-left:0.5rem}
   .user-wrap .user-box .user-box-top .user-box-bottom{width:100%}
 
+  .ebook-wrap{grid-template-columns: 1fr 1fr;height: auto;}
+
   .av-main-wrap {grid-template-columns: 1fr 1fr;}
   .av-main-wrap .grid-item:nth-of-type(1) {display: inline-table; grid-column-end: span 2;}
   .av-main-wrap .grid-item:nth-of-type(1) .grid-group {display: block; width: 100%;}
@@ -220,6 +222,7 @@
   .btn-area > button + button {width: 50%;}
   .btn-area > button {margin: 0;}
   
+  .ebook-wrap{display:block;height: auto;}
 
   .btn-area.Audit .btn-area-box{display:inline-flex;justify-content:end;flex:none;width:70%}
   .checklist-contents{display:flex;justify-content:flex-start;flex-wrap:wrap;width:100%}
@@ -406,7 +409,8 @@
   .detail-form .detail-list .form-table .form-cell .btn-area.inbtn > .btn-x-sm{padding:0.6rem 2.8rem;}
   .editbox.Audit .line .form-cell {border-bottom: 0rem solid var(--color-neutral-40);}
   .detail-form .detail-list .form-table .form-cell .form-group .UserChicebox.Flight{width:100%}
-
+  
+  .ebook-wrap{display:block;height: auto;}
 
   .SelectedList{width:100%}
   .SelectedList > ul li{margin-bottom:1rem}

@@ -5,7 +5,7 @@ import { getAllData } from '@/data/grid/example-data-new';
 import { testColumnInfos } from '@/data/grid/table-column';
 import AppDatePicker from '@/components/common/AppDatePicker';
 import AppSelect from '@/components/common/AppSelect';
-import SafetyImage from '@/resources/images/img-SafetyPolicy.jpg';
+import SafetyImage from '@/resources/images/photo-1.png';
 
 function SkySafetyList() {
   const [inputValue, setInputValue] = useState('');
@@ -37,19 +37,20 @@ function SkySafetyList() {
 
       {/*ebook정보*/}
       <div className="ebook-wrap">
-        <ul className="box-list">
-          <li>
-            <div className="ebook-preview">
-              <p className="thumb">
-                <img src={SafetyImage} className="img-thumbnail" alt="Safety Policy" />
-              </p>
-              <div>vol.134</div>
-            </div>
-          </li>
-          <li></li>
-          <li></li>
-          <li></li>
-        </ul>
+        <div className="grid-item">
+          <div className="main-photo">
+            <img src={SafetyImage} className="img-thumbnail" alt="Vol.134" />
+          </div>
+          <h3 className="img-tit">Vol.134</h3>
+        </div>
+        <div className="grid-item">
+          <div className="main-photo">
+            <img src={SafetyImage} className="img-thumbnail" alt="Vol.134" />
+          </div>
+          <h3 className="img-tit">Vol.134</h3>
+        </div>
+        <div className="grid-item"></div>
+        <div className="grid-item"></div>
       </div>
       {/*//ebook정보 */}
     </>
