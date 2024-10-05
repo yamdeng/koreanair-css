@@ -100,6 +100,7 @@ import AdminTotreport from '@/components/publish/aviation/AdminTotreport';
 import AdminTotreportDetail from '@/components/publish/aviation/AdminTotreportDetail';
 import EPSList1 from '@/components/publish/aviation/EPSList1';
 import RiskList1 from '@/components/publish/aviation/RiskList1';
+import AdminCordList from '@/components/publish/aviation/AdminCordList';
 
 import { fa, fakerLV } from '@faker-js/faker';
 import { fail } from 'assert';
@@ -486,7 +487,7 @@ AviationPageInfo.list = [
     Component: SkySafetyList,
     path: 'SkySafetyList',
     description: '',
-    success: false,
+    success: true,
   },
   {
     title: '[05.안전증진] 안전 Communication > 안전공지',
@@ -700,9 +701,9 @@ AviationPageInfo.list = [
     success: false,
   },
   {
-    title: '[07.관리자] 장비코드관리',
-    Component: AdminBoardList,
-    path: 'AdminBoardList',
+    title: '[07.관리자] 장비코드관리 리스트',
+    Component: AdminCordList,
+    path: 'AdminCordList',
     description: '',
     success: false,
   },
