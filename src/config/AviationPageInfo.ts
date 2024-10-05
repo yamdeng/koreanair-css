@@ -101,6 +101,7 @@ import AdminTotreportDetail from '@/components/publish/aviation/AdminTotreportDe
 import EPSList1 from '@/components/publish/aviation/EPSList1';
 import RiskList1 from '@/components/publish/aviation/RiskList1';
 import AdminCordList from '@/components/publish/aviation/AdminCordList';
+import AdminNoticeList from '@/components/publish/aviation/AdminNoticeList';
 
 import { fa, fakerLV } from '@faker-js/faker';
 import { fail } from 'assert';
@@ -848,11 +849,11 @@ AviationPageInfo.list = [
     success: true,
   },
   {
-    title: '[07.관리자] 공지사항',
-    Component: AdminEducatDetail,
-    path: 'AdminEducatDetail',
+    title: '[07.관리자] 공지사항 리스트',
+    Component: AdminNoticeList,
+    path: 'AdminNoticeList',
     description: '',
-    success: false,
+    success: true,
   },
   {
     title: '[07.관리자] 강사이력관리 리스트',

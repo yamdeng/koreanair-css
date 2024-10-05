@@ -267,8 +267,22 @@ function PAviationPortal1() {
           <div className="grid-group">
             <div className="head-top">
               <h3>보고서 처리 현황</h3>
+              <ul className="guide-info">
+                <li>
+                  <span className="color green"></span>90% 이상
+                </li>
+                <li>
+                  <span className="color yellow"></span>80%~90%
+                </li>
+                <li>
+                  <span className="color orange"></span>70%~60%
+                </li>
+                <li>
+                  <span className="color red"></span>60% 미만
+                </li>
+              </ul>
 
-              <div className="wid70">dfdf</div>
+              {/* <div className="wid70">dfdf</div> */}
             </div>
             <div className="main-conts-graph">
               <div className="graph-box">

@@ -55,7 +55,7 @@
 .Notification-wrap{position:relative;background-color:var(--color-btn-blue1);border:solid 0.1rem var(--color-btn-blue2);border-radius:0.8rem;padding-bottom:1.5rem;}
 .Notification-wrap .info-text01{position:relative;padding-left:1.5rem;margin:0 2.5rem}
 .Notification-wrap .info-text01::before{content:'*';position:absolute;display:block;top:0.2rem;left:0}
-.Notification-wrap .notice{display:block;padding:2.5rem 2.9rem 2.5rem 2.9rem;font-size:1.8rem;font-weight:600;color:var(--color-btn-blue2)}
+.Notification-wrap .notice{display:block;padding:1.5rem 2.9rem 1.5rem 2.9rem;font-size:1.8rem;font-weight:600;color:var(--color-btn-blue2)}
 .Notification-wrap ul{display:inline-block;font-size:1.4rem;padding:0 2.9rem 1.0rem 2.0rem}
 .Notification-wrap ul > li{padding-left:3rem;text-indent:-2.5rem}
 .Notification-wrap ul > li span.point{padding-right:0.5rem}
@@ -450,11 +450,11 @@
 .chart-wrap{display:flex;width:100%;justify-content: flex-start;flex-flow: row wrap;box-sizing: border-box;background-color:var(--color-neutral-20);border-radius:0.8rem;padding:2rem 3rem;margin:2rem 0;align-items: center;}
 .chart-wrap .chart-box{position: relative;box-sizing:border-box;width:10%;height: 15rem;}
 .chart-wrap .chart-box + .chart-box{margin-left:3.5rem}
-.chart-wrap .chart-box img{height: 15rem;object-fit: cover;background-size: cover;border-radius: 0.8rem;}
+.chart-wrap .chart-box img{height: 15rem;object-fit:cover;background-size:cover;border-radius: 0.8rem;}
 
 .ebook-wrap{position:relative;width:100%;display:grid;grid-gap: 2.4rem;width: 100%;grid-template-columns: 1fr 1fr 1fr 1fr;/* height: calc(100% - 43.6rem);*/}
 .ebook-wrap .grid-item {border: 0.1rem solid var(--color-neutral-40);border-radius: 0.8rem;background-color: var(--color-neutral-10)}
-.ebook-wrap .grid-item .main-photo img{width: 100%;height:18rem;object-fit: cover;/*background-size: cover;*/border-radius:0.8rem 0.8rem 0 0}
+.ebook-wrap .grid-item .main-photo img{width:100%;height:100%;object-fit:cover;/*background-size: cover;*/border-radius:0.8rem 0.8rem 0 0}
 .ebook-wrap .grid-item h3.img-tit {display:block;text-align:center;width:100%;padding:0.5rem 0 0.5rem 0;font-size: 1.6rem;font-weight: 500}
 
 
@@ -780,6 +780,17 @@
   .grid-item .grid-group:nth-of-type(2) .main-conts-graph .graph-box + .graph-box{margin-left:1.7rem;}
   .grid-item .grid-group:nth-of-type(2) .main-conts-graph:last-child{padding-bottom:0}
 
+  .grid-item .grid-group:nth-of-type(2) .head-top .guide-info{margin: 0.5rem 0;}
+  .grid-item .grid-group:nth-of-type(2) .head-top .guide-info li{display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    padding: 0 0.5rem;}
+  .grid-item .grid-group:nth-of-type(2) .head-top .guide-info li .color{width: 0.8rem;
+    height: 0.8rem;
+    border-radius: 99.9rem;
+    font-size: 0;
+    margin-right: 0.3rem;}
 
   .grid-item h3 {font-size:2rem; font-weight:700; color: var( --color-neutral-90); padding-bottom: 2.0rem;}
   .grid-item h3 span.siren {display: inline-block; font-size: 0; background: url(../images/siren.svg)center center no-repeat; background-size: 2.6rem; vertical-align: top; width: 2.6rem;}
