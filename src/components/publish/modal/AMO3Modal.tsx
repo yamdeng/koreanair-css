@@ -8,6 +8,8 @@ import { Editor } from '@toast-ui/react-editor';
 import { DatePicker, TreeSelect } from 'antd';
 import { useState } from 'react';
 import Modal from 'react-modal';
+import AppTable from '@/components/common/AppTable';
+import AppTextInput from '@/components/common/AppTextInput';
 import SafetyImage from '@/resources/images/img-SafetyPolicy.jpg';
 
 import AppTreeSelect from '@/components/common/AppTreeSelect';
@@ -82,7 +84,7 @@ const treeData = [
   },
 ];
 
-function AMOModal(props) {
+function AMO3Modal(props) {
   const [inputValue, setInputValue] = useState('');
   const [selectedOption, setSelectedOption] = useState();
   const { isOpen, closeModal } = props;
@@ -111,35 +113,53 @@ function AMOModal(props) {
           {/*탭 */}
           <div className="menu-tab-nav">
             <div className="menu-tab">
-              <a href="javascript:void(0);" className="active" data-label="HZR 전사 TOP RISK 분석 현황">
+              <a href="javascript:void(0);" className="" data-label="안정정책">
                 안정정책
               </a>
-              <a href="javascript:void(0);" className="" data-label="TOP EVENT 현황">
+              <a href="javascript:void(0);" className="" data-label="HZR TOP RISK분석현황">
                 HZR TOP RISK분석현황
               </a>
               <a href="javascript:void(0);" className="" data-label="TOP EVENT 현황">
                 TOP EVENT현황
               </a>
-              <a href="javascript:void(0);" className="" data-label="TOP EVENT 현황">
+              <a href="javascript:void(0);" className="active" data-label="게시판">
                 게시판
               </a>
             </div>
           </div>
           <div className="pop_flex_group">
             <div className="pop_cont_form">
-              {/*등록 */}
+              {/*검색 */}
               <div className="editbox">
-                <div className="form-table">
-                  <div className="form-cell wid50">
-                    <div className="form-group wid100">
-                      <div className="img">
-                        <img src={SafetyImage} className="img-thumbnail" alt="Safety Policy" />
+                <div className="boxForm">
+                  <div id="" className="area-detail active">
+                    <div className="form-table">
+                      <div className="form-cell wid30">
+                        <span className="form-group wid100">
+                          <AppTextInput label="제목" />
+                        </span>
+                      </div>
+                      <div className="form-cell wid50">
+                        <div className="btn-area">
+                          <button type="button" name="button" className="btn-sm btn_text btn-darkblue-line">
+                            조회
+                          </button>
+                          <button type="button" name="button" className="btn-sm btn_text btn-darkblue-line">
+                            초기화
+                          </button>
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
+
+                {/*그리드영역 */}
+                <div className="">
+                  <AppTable rowData={rowData} columns={columns} />
+                </div>
+                {/*//그리드영역 */}
               </div>
-              {/*//등록 */}
+              {/*//검색 */}
             </div>
           </div>
         </div>
@@ -163,7 +183,7 @@ function AMOModal(props) {
   );
 }
 
-function PAMOModal() {
+function PAMO3Modal() {
   const [isOpen, setIsOpen] = useState(false);
   const closeModal = () => {
     setIsOpen(false);
@@ -178,10 +198,10 @@ function PAMOModal() {
             AMO 모달 open
           </button>
         </p>
-        <AMOModal isOpen={isOpen} closeModal={closeModal} />
+        <AMO3Modal isOpen={isOpen} closeModal={closeModal} />
       </div>
     </>
   );
 }
 
-export default PAMOModal;
+export default PAMO3Modal;

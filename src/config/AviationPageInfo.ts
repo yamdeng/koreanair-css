@@ -102,6 +102,7 @@ import EPSList1 from '@/components/publish/aviation/EPSList1';
 import RiskList1 from '@/components/publish/aviation/RiskList1';
 import AdminCordList from '@/components/publish/aviation/AdminCordList';
 import AdminNoticeList from '@/components/publish/aviation/AdminNoticeList';
+import AdminPreferences from '@/components/publish/aviation/AdminPreferences';
 
 import { fa, fakerLV } from '@faker-js/faker';
 import { fail } from 'assert';
@@ -125,8 +126,8 @@ AviationPageInfo.list = [
   },
   {
     title: '[메인] 관리자(공통)',
-    Component: PAviationPortal1,
-    path: 'PAviationPortal1',
+    Component: AdminPreferences,
+    path: 'AdminPreferences',
     description: '',
     success: false,
   },

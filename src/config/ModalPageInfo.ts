@@ -56,6 +56,9 @@ import MainNoticeModal from '@/components/publish/modal/MainNoticeModal';
 import ChangeAddModal from '@/components/publish/modal/ChangeAddModal';
 import CommitModal from '@/components/publish/modal/CommitModal';
 import AMOModal from '@/components/publish/modal/AMOModal';
+import AMO1Modal from '@/components/publish/modal/AMO1Modal';
+import AMO2Modal from '@/components/publish/modal/AMO2Modal';
+import AMO3Modal from '@/components/publish/modal/AMO3Modal';
 import findingcategoryModal from '@/components/publish/modal/findingcategoryModal';
 import rootcauseModal from '@/components/publish/modal/rootcauseModal';
 const ModalPageInfo: any = {};
@@ -167,11 +170,32 @@ ModalPageInfo.list = [
     success: true,
   },
   {
-    title: '[항공안전>AMO] 안전정책,Hazard 현황,Event 현황,공지사항',
+    title: '[항공안전>AMO] 안전정책',
     Component: AMOModal,
     path: 'AMOModal',
     description: '',
-    success: false,
+    success: true,
+  },
+  {
+    title: '[항공안전>AMO] Hazard 현황',
+    Component: AMO1Modal,
+    path: 'AMO1Modal',
+    description: '',
+    success: true,
+  },
+  {
+    title: '[항공안전>AMO] Event 현황',
+    Component: AMO2Modal,
+    path: 'AMO2Modal',
+    description: '',
+    success: true,
+  },
+  {
+    title: '[항공안전>AMO] 게시판 리스트',
+    Component: AMO3Modal,
+    path: 'AMO3Modal',
+    description: '',
+    success: true,
   },
   {
     title: '[항공안전>03.안전위험관리] 보고서분석 > 반려사유 팝업창',
