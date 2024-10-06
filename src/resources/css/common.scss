@@ -805,7 +805,7 @@ input, select{font-family:'KoreanAirSans'}
 
 /*메인검색창*/
 .main-search {display: none;}
-.main-search.active {display:flex;position:fixed; top: 8.6rem; left: 0; width: 100%; padding: 1.5rem 5.0rem; background-color: var(--color-neutral-10); z-index: 10; border-bottom: 0.1rem solid var(--color-darkblue-100); justify-content:center; align-items: center; text-align: center;}
+.main-search.active {display:flex;position:fixed; top: 7.6rem; right: 5%; width: 30%; border-radius: 0.8rem; box-shadow: 0 0.6rem 3.0rem rgba(0, 0, 0, 0.2); padding: 1.5rem 5.0rem; background-color: var(--color-neutral-10); z-index: 10; border: 0rem solid var(--color-darkblue-100); justify-content:center; align-items: center; text-align: center;}
 
 
 /*알림*/
