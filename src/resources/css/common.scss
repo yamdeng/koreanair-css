@@ -816,3 +816,11 @@ input, select{font-family:'KoreanAirSans'}
 .alarmlist-wrap .alarmlist > dl > dt .commt.non{position:relative}
 .alarmlist-wrap .alarmlist > dl > dt .commt.non:after{content:'';display:block;position:absolute;top:0.2rem;right:-0.8rem;width:0.5rem;height:0.5rem;background:var(--color-neutral-40);border-radius:100%}
 .alarmlist-wrap .alarmlist > dl > dd{width:100%;font-size:1.5rem;color: var(--color-neutral-70);font-weight:400;padding-bottom:1.5rem;word-wrap:break-word;-webkit-line-clamp:2;text-overflow: ellipsis}
+
+/*탑 사용자설정*/
+.radio-wrap.main{border:0;margin:0 auto}
+.radio-wrap.main > label{margin: 0}
+.Info-list{position:absolute;top:48px;right:0;width:20.5rem;background:var(--color-neutral-10);border-radius: 0 0 14px 14px;box-shadow:0 5px 10px rgba(0, 0, 0, .1);z-index:200}
+.Info-list .Info-menu > li{display:flex;align-items:center;width:100%;border-bottom: 1px solid #eee;line-height:4.0rem}
+.Info-list .Info-menu a{display: block;font-size:1.4rem}
+.Info-list .Info-menu a .ico{width:24px;height:2.4rem;margin-right: 10px;}

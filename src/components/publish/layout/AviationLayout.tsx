@@ -71,13 +71,63 @@ export default function AviationLayout() {
                 </li>
                 <li>
                   <a href="javascript:void(0);">
-                    <img src={iconAlarmImage} />
+                    <img src={iconAlarmImage} alt="알림" />
                   </a>
                 </li>
                 <li>
                   <a href="javascript:void(0);">
-                    <img src={iconSettingImage} />
+                    <img src={iconSettingImage} alt="관리자" />
                   </a>
+                  {/*사용자설정 */}
+                  <div className="Info-list">
+                    <ul className="Info-menu">
+                      <li>
+                        <div className="radio-wrap main">
+                          <label>
+                            <input type="radio" checked />
+                            <span>국문</span>
+                          </label>
+                          <label>
+                            <input type="radio" />
+                            <span>영문</span>
+                          </label>
+                        </div>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0);">
+                          <i className="ico">
+                            <img alt="" src="" />
+                          </i>
+                          마이페이지
+                        </a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0);">
+                          <i className="ico">
+                            <img src={iconAlarmImage} alt="알림" />
+                          </i>
+                          환경설정
+                        </a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0);">
+                          <i className="ico">
+                            <img alt="" src="" />
+                          </i>
+                          알림
+                        </a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0);">
+                          <i className="ico">
+                            <img alt="" src="" />
+                          </i>
+                          로그아웃
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                  {/*//사용자설정 */}
                 </li>
               </ul>
             </li>
