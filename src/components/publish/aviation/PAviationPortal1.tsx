@@ -34,10 +34,75 @@ function PAviationPortal1() {
   }, []);
   return (
     <>
-      <div className="floatingmenu">
-        <a href="javascript:void(0);" className="ico-write">
-          <span className="hide">글쓰기</span>
+      {/*nav-is-visible - 펼침 */}
+      <div className="cd-stretchy-nav nav-is-visible">
+        <a href="javascript:void(0);" className="cd-nav-trigger">
+          <span aria-hidden="true"></span>
         </a>
+        <ul>
+          <li>
+            <a href="javascript:void(0);" className="active">
+              <span>Home</span>
+            </a>
+          </li>
+          <li>
+            <a href="javascript:void(0);">
+              <span>Portfolio</span>
+            </a>
+          </li>
+          <li>
+            <a href="javascript:void(0);">
+              <span>Services</span>
+            </a>
+          </li>
+          <li>
+            <a href="javascript:void(0);">
+              <span>Store</span>
+            </a>
+          </li>
+          <li>
+            <a href="javascript:void(0);">
+              <span>Contact</span>
+            </a>
+          </li>
+          <li>
+            <a href="javascript:void(0);">
+              <span>0606</span>
+            </a>
+          </li>
+          <li>
+            <a href="javascript:void(0);">
+              <span>0707</span>
+            </a>
+          </li>
+          <li>
+            <a href="javascript:void(0);">
+              <span>0808</span>
+            </a>
+          </li>
+          <li>
+            <a href="javascript:void(0);">
+              <span>0909</span>
+            </a>
+          </li>
+          <li>
+            <a href="javascript:void(0);">
+              <span>1010</span>
+            </a>
+          </li>
+          <li>
+            <a href="javascript:void(0);">
+              <span>1111</span>
+            </a>
+          </li>
+          <li>
+            <a href="javascript:void(0);">
+              <span>1212</span>
+            </a>
+          </li>
+        </ul>
+
+        <span aria-hidden="true" className="stretchy-nav-bg"></span>
       </div>
 
       <div className="av-main-wrap">
