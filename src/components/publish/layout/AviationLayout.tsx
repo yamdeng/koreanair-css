@@ -96,7 +96,7 @@ export default function AviationLayout() {
                       <li>
                         <a href="javascript:void(0);">
                           <i className="ico">
-                            <img alt="" src="" />
+                            <img src={iconAlarmImage} alt="알림" />
                           </i>
                           마이페이지
                         </a>
@@ -112,7 +112,7 @@ export default function AviationLayout() {
                       <li>
                         <a href="javascript:void(0);">
                           <i className="ico">
-                            <img alt="" src="" />
+                            <img src={iconAlarmImage} alt="알림" />
                           </i>
                           알림
                         </a>
@@ -120,7 +120,7 @@ export default function AviationLayout() {
                       <li>
                         <a href="javascript:void(0);">
                           <i className="ico">
-                            <img alt="" src="" />
+                            <img src={iconAlarmImage} alt="로그아웃" />
                           </i>
                           로그아웃
                         </a>
