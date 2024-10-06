@@ -14,10 +14,12 @@ function POccupationPortal1() {
   }, []);
   return (
     <>
-      <div className="floatingmenu">
-        <a href="javascript:void(0);" className="ico-write">
-          <span className="hide">글쓰기</span>
+      {/*nav-is-visible - 펼침 */}
+      <div className="cd-stretchy-nav">
+        <a href="javascript:void(0);" className="cd-nav-trigger">
+          <span aria-hidden="true"></span>
         </a>
+        <span aria-hidden="true" className="stretchy-nav-bg"></span>
       </div>
       <div className="main-wrap">
         <div className="grid-item">
