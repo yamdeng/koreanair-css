@@ -900,6 +900,17 @@ function ReportASRDetail() {
                                                 </div>
                                               </div>
                                             </div>
+                                            <div className="form-cell wid50">
+                                              <div className="btn-area">
+                                                <button
+                                                  type="button"
+                                                  name="button"
+                                                  className="btn-sm btn_text btn-darkblue-line"
+                                                >
+                                                  LSC Member 그룹 추가
+                                                </button>
+                                              </div>
+                                            </div>
                                           </div>
                                         </div>
                                       </div>
@@ -978,7 +989,7 @@ function ReportASRDetail() {
                                                   </td>
                                                   <td className="bot-left">Y</td>
                                                   <td className="">
-                                                    <a href="javascript:void(0);">ASR-100308</a>
+                                                    <a href="javascript:void(0);">ASR-100314</a>
                                                   </td>
                                                   <td className="left">1운항 중 발생한 사항에 대..</td>
                                                   <td className="">777</td>
@@ -1418,215 +1429,31 @@ function ReportASRDetail() {
                                               </div>
                                             </dd>
                                           </dl>
-                                          <dl className="tg-item rbox01">
-                                            <dt onClick={() => setFifteenExpaned(!fifteenExpaned)}>
-                                              <button type="button" className="tg-btn">
-                                                - Doc No. ASR-100309
-                                                <span className=""></span>
-                                              </button>
-                                            </dt>
-                                            <dd className="tg-conts" style={{ display: fifteenExpaned ? '' : 'none' }}>
-                                              <div className="edit-area">
-                                                <div className="detailForm">
-                                                  {/* 비행정보*/}
-                                                  <div className="editbox report">
-                                                    <div className="header-tit">비행정보</div>
-                                                    <div className="form-table line">
-                                                      <div className="form-cell wid100">
-                                                        <div className="form-group wid100">
-                                                          <div className="box-view-list">
-                                                            <ul className="view-list">
-                                                              <li className="accumlate-list">
-                                                                <label className="t-label">출발일자</label>
-                                                                <span className="text-desc-type1">
-                                                                  {' '}
-                                                                  2024-08-02 / UTC
-                                                                </span>
-                                                              </li>
-                                                            </ul>
-                                                          </div>
-                                                        </div>
-                                                      </div>
-                                                      <div className="form-cell wid100">
-                                                        <div className="form-group wid100">
-                                                          <div className="box-view-list">
-                                                            <ul className="view-list">
-                                                              <li className="accumlate-list">
-                                                                <label className="t-label">비행편명</label>
-                                                                <span className="text-desc-type1">KE0787</span>
-                                                              </li>
-                                                            </ul>
-                                                          </div>
-                                                        </div>
-                                                      </div>
-                                                    </div>
-                                                    <div className="form-table line">
-                                                      <div className="form-cell wid100">
-                                                        <div className="form-group wid100">
-                                                          <div className="box-view-list">
-                                                            <ul className="view-list">
-                                                              <li className="accumlate-list">
-                                                                <label className="t-label">등록 부호</label>
-                                                                <span className="text-desc-type1">HL7783</span>
-                                                              </li>
-                                                            </ul>
-                                                          </div>
-                                                        </div>
-                                                      </div>
-                                                      <div className="form-cell wid100">
-                                                        <div className="form-group wid100">
-                                                          <div className="box-view-list">
-                                                            <ul className="view-list">
-                                                              <li className="accumlate-list">
-                                                                <label className="t-label">항공기 형식</label>
-                                                                <span className="text-desc-type1">77W</span>
-                                                              </li>
-                                                            </ul>
-                                                          </div>
-                                                        </div>
-                                                      </div>
-                                                    </div>
-                                                    <div className="form-table line">
-                                                      <div className="form-cell wid100">
-                                                        <div className="form-group wid100">
-                                                          <div className="box-view-list">
-                                                            <ul className="view-list">
-                                                              <li className="accumlate-list">
-                                                                <label className="t-label">출발/도착 공항</label>
-                                                                <span className="text-desc-type1">ICN / FUK</span>
-                                                              </li>
-                                                            </ul>
-                                                          </div>
-                                                        </div>
-                                                      </div>
-                                                      <div className="form-cell wid100">
-                                                        <div className="form-group wid100">
-                                                          <div className="box-view-list">
-                                                            <ul className="view-list">
-                                                              <li className="accumlate-list">
-                                                                <label className="t-label">Divert</label>
-                                                                <span className="text-desc-type1">
-                                                                  INC
-                                                                  <div className="ant-row">
-                                                                    <div role="label" className="ant-col ant-col-md-2">
-                                                                      STD
-                                                                    </div>
-                                                                    <div role="data" className="ant-col ant-col-md-2">
-                                                                      09:45
-                                                                    </div>
-                                                                    <div role="label" className="ant-col ant-col-md-2">
-                                                                      STA
-                                                                    </div>
-                                                                    <div role="data" className="ant-col ant-col-md-2">
-                                                                      19:50
-                                                                    </div>
-                                                                    <div role="label" className="ant-col ant-col-md-2">
-                                                                      ATD
-                                                                    </div>
-                                                                    <div role="data" className="ant-col ant-col-md-2">
-                                                                      09:45
-                                                                    </div>
-                                                                    <div role="label" className="ant-col ant-col-md-2">
-                                                                      ATA
-                                                                    </div>
-                                                                    <div role="data" className="ant-col ant-col-md-2">
-                                                                      19:50
-                                                                    </div>
-                                                                    <div role="label" className="ant-col ant-col-md-2">
-                                                                      Delay
-                                                                    </div>
-                                                                    <div role="data" className="ant-col ant-col-md-2">
-                                                                      0
-                                                                    </div>
-                                                                  </div>
-                                                                </span>
-                                                              </li>
-                                                            </ul>
-                                                          </div>
-                                                        </div>
-                                                      </div>
-                                                    </div>
-                                                    <div className="form-table line">
-                                                      <div className="form-cell wid100">
-                                                        <div className="form-group wid100">
-                                                          <div className="box-view-list">
-                                                            <ul className="view-list">
-                                                              <li className="accumlate-list">
-                                                                <label className="t-label">Supply (F/C/Y)</label>
-                                                                <span className="text-desc-type1">0/24/254</span>
-                                                              </li>
-                                                            </ul>
-                                                          </div>
-                                                        </div>
-                                                      </div>
-                                                      <div className="form-cell wid100">
-                                                        <div className="form-group wid100">
-                                                          <div className="box-view-list">
-                                                            <ul className="view-list">
-                                                              <li className="accumlate-list">
-                                                                <label className="t-label">CHECK_IN (F/C/Y)</label>
-                                                                <span className="text-desc-type1">0/2/0</span>
-                                                              </li>
-                                                            </ul>
-                                                          </div>
-                                                        </div>
-                                                      </div>
-                                                    </div>
-                                                    <div className="form-table line">
-                                                      <div className="form-cell wid100">
-                                                        <div className="form-group wid100">
-                                                          <div className="box-view-list">
-                                                            <ul className="view-list">
-                                                              <li className="accumlate-list">
-                                                                <label className="t-label">Flight Crew</label>
-                                                                <span className="text-desc-type1">
-                                                                  <div className="MemberClass">
-                                                                    <div className="flex-e">
-                                                                      <span className="ant-tag">PF</span>
-                                                                      <span className="InfoBox"></span>
-                                                                      <div className="Info">
-                                                                        <div className="Name">홍길동 (170****)</div>
-                                                                        <div className="Dept">
-                                                                          상무대우수석사무장 / (주)대한항공
-                                                                        </div>
-                                                                      </div>
-                                                                    </div>
-                                                                    <div className="flex-e">
-                                                                      <span className="ant-tag">PF</span>
-                                                                      <span className="InfoBox"></span>
-                                                                      <div className="Info">
-                                                                        <div className="Name">홍길동 (170****)</div>
-                                                                        <div className="Dept">
-                                                                          상무대우수석사무장 / (주)대한항공
-                                                                        </div>
-                                                                      </div>
-                                                                    </div>
-                                                                  </div>
-                                                                </span>
-                                                              </li>
-                                                            </ul>
-                                                          </div>
-                                                        </div>
-                                                      </div>
-                                                    </div>
-                                                  </div>
-                                                  {/* //보고서내용보기 상세*/}
-                                                  {/* 버튼*/}
-                                                  <div className="contents-btns">
-                                                    <button
-                                                      type="button"
-                                                      name="button"
-                                                      className="btn_text text_color_neutral-10 btn_confirm"
-                                                    >
-                                                      수정
-                                                    </button>
-                                                  </div>
-                                                  {/* //버튼*/}
-                                                </div>
-                                              </div>
-                                            </dd>
-                                          </dl>
                                         </div>
+                                        {/* 하단버튼영역 */}
+                                        <div className="contents-btns">
+                                          <button type="button" name="button" className="btn_text btn-del">
+                                            인쇄
+                                          </button>
+                                          <button
+                                            type="button"
+                                            name="button"
+                                            className="btn_text text_color_neutral-10 btn_confirm"
+                                          >
+                                            저장
+                                          </button>
+                                          <button
+                                            type="button"
+                                            name="button"
+                                            className="btn_text text_color_neutral-10 btn_confirm"
+                                          >
+                                            Submit
+                                          </button>
+                                          <button type="button" name="button" className="btn_text btn_list">
+                                            목록
+                                          </button>
+                                        </div>
+                                        {/*//하단버튼영역*/}
                                       </div>
                                       {/* //보고서 상세*/}
                                     </div>
@@ -1693,6 +1520,7 @@ function ReportASRDetail() {
                                             </div>
                                           </div>
                                         </div>
+
                                         {/* 버튼*/}
                                         <div className="contents-btns">
                                           <button
@@ -1786,8 +1614,43 @@ function ReportASRDetail() {
                                             </tbody>
                                           </table>
                                         </div>
+                                        <div className="form-table line">
+                                          <div className="form-cell wid100">
+                                            <div className="form-group wid100">
+                                              <AppTextArea
+                                                label="회의록"
+                                                style={{ width: '100%', height: 145 }}
+                                                errorMessage=""
+                                              />
+                                            </div>
+                                          </div>
+                                        </div>
                                       </div>
                                     </div>
+                                    {/* 하단버튼영역 */}
+                                    <div className="contents-btns">
+                                      <button type="button" name="button" className="btn_text btn-del">
+                                        인쇄
+                                      </button>
+                                      <button
+                                        type="button"
+                                        name="button"
+                                        className="btn_text text_color_neutral-10 btn_confirm"
+                                      >
+                                        저장
+                                      </button>
+                                      <button
+                                        type="button"
+                                        name="button"
+                                        className="btn_text text_color_neutral-10 btn_confirm"
+                                      >
+                                        Submit
+                                      </button>
+                                      <button type="button" name="button" className="btn_text btn_list">
+                                        목록
+                                      </button>
+                                    </div>
+                                    {/*//하단버튼영역*/}
                                   </dd>
                                 </dl>
                               </div>
@@ -1894,8 +1757,11 @@ function ReportASRDetail() {
                                           </div>
                                         </div>
                                       </div>
-                                      {/* 버튼*/}
+                                      {/* 하단버튼영역 */}
                                       <div className="contents-btns">
+                                        <button type="button" name="button" className="btn_text btn-del">
+                                          인쇄
+                                        </button>
                                         <button
                                           type="button"
                                           name="button"
@@ -1903,11 +1769,18 @@ function ReportASRDetail() {
                                         >
                                           저장
                                         </button>
+                                        <button
+                                          type="button"
+                                          name="button"
+                                          className="btn_text text_color_neutral-10 btn_confirm"
+                                        >
+                                          Submit
+                                        </button>
                                         <button type="button" name="button" className="btn_text btn_list">
                                           목록
                                         </button>
                                       </div>
-                                      {/* //버튼*/}
+                                      {/*//하단버튼영역*/}
                                     </div>
                                   </dd>
                                 </dl>
@@ -1970,11 +1843,11 @@ function ReportASRDetail() {
                                               <td className="tl">Aircraft Change</td>
                                               <td>
                                                 <div className="Safety-table-cell">
-                                                  <span className="Safety-tag riskLevel level4">5D</span>
+                                                  <span className="Safety-tag riskLevel level1">3A</span>
                                                 </div>
                                               </td>
                                               <td className="fix vm"></td>
-                                              <td className="tl">LSC김리더(LeaderKim)</td>
+                                              <td className="tl"></td>
                                               <td>대기</td>
                                               <td>
                                                 <a href="javascript:void(0);" className="btn-modify">
@@ -1987,11 +1860,11 @@ function ReportASRDetail() {
                                               <td className="tl">Aircraft Change</td>
                                               <td>
                                                 <div className="Safety-table-cell">
-                                                  <span className="Safety-tag riskLevel level4">5D</span>
+                                                  <span className="Safety-tag riskLevel level3">2B</span>
                                                 </div>
                                               </td>
                                               <td className="fix vm"></td>
-                                              <td className="tl">LSC김리더(LeaderKim)</td>
+                                              <td className="tl"></td>
                                               <td>대기</td>
                                               <td>
                                                 <a href="javascript:void(0);" className="btn-modify">
@@ -2053,7 +1926,7 @@ function ReportASRDetail() {
                                               <td className="tl">Aircraft Change</td>
                                               <td>
                                                 <div className="Safety-table-cell">
-                                                  <span className="Safety-tag riskLevel level4">5D</span>
+                                                  <span className="Safety-tag riskLevel level1">3A</span>
                                                 </div>
                                               </td>
                                               <td className="fix vm">운항지원팀</td>
@@ -2066,7 +1939,7 @@ function ReportASRDetail() {
                                               <td className="tl">Aircraft Change</td>
                                               <td>
                                                 <div className="Safety-table-cell">
-                                                  <span className="Safety-tag riskLevel level4">5D</span>
+                                                  <span className="Safety-tag riskLevel level3">2B</span>
                                                 </div>
                                               </td>
                                               <td className="fix vm">정비안전보건팀</td>
@@ -2129,7 +2002,7 @@ function ReportASRDetail() {
                                               <td className="tl">Aircraft Change</td>
                                               <td>
                                                 <div className="Safety-table-cell">
-                                                  <span className="Safety-tag riskLevel level4">5D</span>
+                                                  <span className="Safety-tag riskLevel level1">3A</span>
                                                 </div>
                                               </td>
                                               <td className="fix vm">운항지원팀</td>
@@ -2147,7 +2020,7 @@ function ReportASRDetail() {
                                                         <div className="form-cell wid50">
                                                           <div className="form-group wid100">
                                                             <div className="UserChicebox report">
-                                                              <span className="txt">발견/신고 </span>
+                                                              <span className="txt">Duty Person </span>
                                                               <div className="form-group wid100 mt10">
                                                                 <div className="SelectedList memberClass mt10">
                                                                   <ul>
@@ -2179,8 +2052,8 @@ function ReportASRDetail() {
                                                       <div className="form-table">
                                                         <div className="form-cell wid50">
                                                           <div className="form-group wid50">
-                                                            <div className="date2">
-                                                              <AppDatePicker label="data" required />
+                                                            <div className="form-group wid100">
+                                                              <AppDatePicker label="Plan Due Date" required />
                                                             </div>
                                                           </div>
                                                         </div>
@@ -2200,8 +2073,8 @@ function ReportASRDetail() {
                                                       <div className="form-table">
                                                         <div className="form-cell wid50">
                                                           <div className="form-group wid50">
-                                                            <div className="date2">
-                                                              <AppDatePicker label="data" required />
+                                                            <div className="form-group wid100">
+                                                              <AppDatePicker label="Plan Input Date" required />
                                                             </div>
                                                           </div>
                                                         </div>
@@ -2222,7 +2095,7 @@ function ReportASRDetail() {
                                                         <div className="form-cell wid50">
                                                           <div className="form-group wid50">
                                                             <div className="date2">
-                                                              <AppDatePicker label="data" required />
+                                                              <AppDatePicker label="Result Input Data" required />
                                                             </div>
                                                           </div>
                                                         </div>
@@ -2247,8 +2120,29 @@ function ReportASRDetail() {
                                                           </div>
                                                         </div>
                                                       </div>
-                                                      {/* 버튼*/}
+                                                      {/* 하단버튼영역 */}
                                                       <div className="contents-btns">
+                                                        <button
+                                                          type="button"
+                                                          name="button"
+                                                          className="btn_text btn-del"
+                                                        >
+                                                          인쇄
+                                                        </button>
+                                                        <button
+                                                          type="button"
+                                                          name="button"
+                                                          className="btn_text text_color_neutral-10 btn_confirm"
+                                                        >
+                                                          저장
+                                                        </button>
+                                                        <button
+                                                          type="button"
+                                                          name="button"
+                                                          className="btn_text text_color_neutral-10 btn_confirm"
+                                                        >
+                                                          Submit
+                                                        </button>
                                                         <button
                                                           type="button"
                                                           name="button"
@@ -2257,7 +2151,7 @@ function ReportASRDetail() {
                                                           목록
                                                         </button>
                                                       </div>
-                                                      {/* //버튼*/}
+                                                      {/*//하단버튼영역*/}
                                                     </div>
                                                   </div>
                                                 </div>
@@ -2268,7 +2162,7 @@ function ReportASRDetail() {
                                               <td className="tl">Aircraft Change</td>
                                               <td>
                                                 <div className="Safety-table-cell">
-                                                  <span className="Safety-tag riskLevel level4">5D</span>
+                                                  <span className="Safety-tag riskLevel level3">2B</span>
                                                 </div>
                                               </td>
                                               <td className="fix vm">정비안전보건팀</td>
@@ -2279,13 +2173,30 @@ function ReportASRDetail() {
                                           </tbody>
                                         </table>
                                       </div>
-                                      {/* 버튼*/}
+                                      {/* 하단버튼영역 */}
                                       <div className="contents-btns">
+                                        <button type="button" name="button" className="btn_text btn-del">
+                                          인쇄
+                                        </button>
+                                        <button
+                                          type="button"
+                                          name="button"
+                                          className="btn_text text_color_neutral-10 btn_confirm"
+                                        >
+                                          저장
+                                        </button>
+                                        <button
+                                          type="button"
+                                          name="button"
+                                          className="btn_text text_color_neutral-10 btn_confirm"
+                                        >
+                                          Submit
+                                        </button>
                                         <button type="button" name="button" className="btn_text btn_list">
                                           목록
                                         </button>
                                       </div>
-                                      {/* //버튼*/}
+                                      {/*//하단버튼영역*/}
                                     </div>
                                   </dd>
                                 </dl>
@@ -2327,7 +2238,8 @@ function ReportASRDetail() {
                                             <col width="20%" />
                                             <col width="8%" />
                                             <col width="8%" />
-                                            <col width="20%" />
+                                            <col width="10%" />
+                                            <col width="10%" />
                                             <col width="10%" />
                                             <col width="9%" />
                                           </colgroup>
@@ -2338,6 +2250,7 @@ function ReportASRDetail() {
                                               <th>Risk Level 1</th>
                                               <th>Team</th>
                                               <th>Mitigation Result</th>
+                                              <th>Risk Level 2</th>
                                               <th>Status</th>
                                               <th>Action</th>
                                             </tr>
@@ -2348,11 +2261,16 @@ function ReportASRDetail() {
                                               <td className="tl">Aircraft Change</td>
                                               <td>
                                                 <div className="Safety-table-cell">
-                                                  <span className="Safety-tag riskLevel level4">5D</span>
+                                                  <span className="Safety-tag riskLevel level1">3A</span>
                                                 </div>
                                               </td>
-                                              <td className="fix vm">운영지원팀</td>
+                                              <td className="fix vm">기술지원팀</td>
                                               <td className="tl">LSC김리더(LeaderKim)</td>
+                                              <td>
+                                                <div className="Safety-table-cell">
+                                                  <span className="Safety-tag riskLevel level3">2B</span>
+                                                </div>
+                                              </td>
                                               <td>대기</td>
                                               <td></td>
                                             </tr>
@@ -2366,6 +2284,11 @@ function ReportASRDetail() {
                                               </td>
                                               <td className="fix vm"></td>
                                               <td className="tl">LSC김리더(LeaderKim)</td>
+                                              <td>
+                                                <div className="Safety-table-cell">
+                                                  <span className="Safety-tag riskLevel level4">5D</span>
+                                                </div>
+                                              </td>
                                               <td>대기</td>
                                               <td></td>
                                             </tr>
@@ -2436,14 +2359,14 @@ function ReportASRDetail() {
                                               <td className="tl">Aircraft Change</td>
                                               <td>
                                                 <div className="Safety-table-cell">
-                                                  <span className="Safety-tag riskLevel level4">5D</span>
+                                                  <span className="Safety-tag riskLevel level1">3A</span>
                                                 </div>
                                               </td>
                                               <td className="fix vm">기술지원팀</td>
                                               <td className="tl">LSC김리더(LeaderKim)</td>
                                               <td>
                                                 <div className="Safety-table-cell">
-                                                  <span className="Safety-tag riskLevel level4">5D</span>
+                                                  <span className="Safety-tag riskLevel level3">2B</span>
                                                 </div>
                                               </td>
                                               <td>대기</td>

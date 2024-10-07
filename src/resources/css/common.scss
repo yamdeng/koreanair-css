@@ -822,7 +822,7 @@ input, select{font-family:'KoreanAirSans'}
 /*탑 사용자설정*/
 .header .util .util-list .util-icon li > .Info-list .Info-menu > li .radio-wrap.main{border:0}
 .header .util .util-list .util-icon li > .Info-list .Info-menu > li .radio-wrap.main > label{margin:0;padding: 0rem 0.9rem 0.2rem 2.0rem}
-.header .util .util-list .util-icon li > .Info-list{position:absolute;top:48px;right:0;width:16.5rem;background:var(--color-neutral-10);border-radius: 0 0 14px 14px;box-shadow:0 5px 10px rgba(0, 0, 0, .1);z-index:200}
+.header .util .util-list .util-icon li > .Info-list{display:none;position:absolute;top:48px;right:0;width:16.5rem;background:var(--color-neutral-10);border-radius: 0 0 14px 14px;box-shadow:0 5px 10px rgba(0, 0, 0, .1);z-index:200}
 .header .util .util-list .util-icon li > .Info-list .Info-menu > li{display:flex;justify-content:left;align-items:center;padding:0 0.8rem;width:100%;border-bottom: 1px solid #eee;line-height:4.0rem;text-align:left;}
 .Info-list .Info-menu a{display:block;font-size:1.4rem}
 .Info-list .Info-menu a .ico{display: inline-flex;width:2.4rem;height:2.4rem;vertical-align:middle;margin-right:0.8rem}
