@@ -356,14 +356,26 @@ function PAviationPortal1() {
               <div className="graph-box">
                 <img src={chartmsr} className="" alt="MSR" />
               </div>
-              <div className="graph-box">GSR</div>
-              <div className="graph-box">DSR</div>
+              <div className="graph-box">
+                <img src={chartmsr} className="" alt="GSR" />
+              </div>
+              <div className="graph-box">
+                <img src={chartmsr} className="" alt="DSR" />
+              </div>
             </div>
             <div className="main-conts-graph">
-              <div className="graph-box">ASR</div>
-              <div className="graph-box">MSR</div>
-              <div className="graph-box">GSR</div>
-              <div className="graph-box">DSR</div>
+              <div className="graph-box">
+                <img src={chartasr} className="" alt="ASR" />
+              </div>
+              <div className="graph-box">
+                <img src={chartmsr} className="" alt="MSR" />
+              </div>
+              <div className="graph-box">
+                <img src={chartmsr} className="" alt="GSR" />
+              </div>
+              <div className="graph-box">
+                <img src={chartmsr} className="" alt="DSR" />
+              </div>
             </div>
           </div>
         </div>
