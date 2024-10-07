@@ -540,7 +540,7 @@
 .searchbox {display: flex; width: 100%;}
 .left-box {display: inline-table; vertical-align: top; padding-right: 3.0rem;}
 .left-box .tree-box {display: inline-block; max-height: 68rem; width: 100%; /*overflow: auto;*/ background: var(--color-neutral-20); border-radius: 0.8rem; padding: 2.0rem;}
-.left-box .tree-box .tree {min-width: 25.0rem; max-height: 58rem; overflow-y: scroll;}
+.left-box .tree-box .tree {min-width: 25.0rem; max-height: 58rem; overflow-y: auto;}
 .left-box .tree-box .tree-list {display: flex;}
 .left-box .tree-box .tree-list .list {display: none;}
 .left-box .tree-box .tree-list .list.active {display: block; height: 100%; width: 100%; vertical-align: top; min-width: 26.0rem; margin-left: 2.0rem;
@@ -1025,7 +1025,7 @@
     .edit-toggle {padding: 0 3.0rem 2.0rem 3.0rem; margin-top: 0.8rem;}
   }
 }
-
+.bg-gray {background-color: var(--color-neutral-20);}
 .s-tit {
   color: var(--color-neutral-80);
   font-size: 1.6rem;

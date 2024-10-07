@@ -14,7 +14,7 @@ import { table } from 'console';
 
 /* treeData 가공 */
 const x = 5;
-const y = 2;
+const y = 5;
 const z = 1;
 const treeData = [];
 
