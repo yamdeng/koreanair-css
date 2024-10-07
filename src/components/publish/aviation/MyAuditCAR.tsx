@@ -125,8 +125,8 @@ function MyAuditCAR() {
           <div className="myaudit-tab">
             <ul>
               <li>
-                <a className="active" href="javascript:void(0);">
-                  <span className="myaudit-tab-icon active">아이콘</span> Plan
+                <a href="javascript:void(0);">
+                  <span className="myaudit-tab-icon">아이콘</span> Plan
                 </a>
               </li>
               <li>
@@ -135,12 +135,12 @@ function MyAuditCAR() {
                 </a>
               </li>
               <li>
-                <a href="javascript:void(0);">
-                  <span className="myaudit-tab-icon">아이콘</span> CAR
+                <a className="active" href="javascript:void(0);">
+                  <span className="myaudit-tab-icon active">아이콘</span> CAR
                 </a>
               </li>
               <li>
-                <a href="javascript:void(0);">
+                <a className="disabled" href="javascript:void(0);">
                   <span className="myaudit-tab-icon">아이콘</span>Close
                 </a>
               </li>
@@ -158,30 +158,88 @@ function MyAuditCAR() {
             <dl className="{firstExpaned ? 'tg-item active' : 'tg-item'}">
               {/* 비행정보 */}
               {/* toggle 선택되면  열어지면 active붙임*/}
-              <dt onClick={() => setFinding(!Finding)}>
-                <button type="button" className="btn-tg">
-                  Finding<span className={Finding ? 'active' : ''}></span>
-                </button>
+              <dt>
+                <button className="btn-tg">Finding</button>
               </dt>
-              <dd className="tg-conts" style={{ display: Finding ? '' : 'none' }}>
-                {/* 입력영역 */}
-                <div className="editbox edit-audit-bg">
-                  <h3 className="audit-car-tit">
-                    해외공항 원격 안전평가 점검표 (ko)10 <span>CAR No. 24-LSA-0407-BE01</span>
-                  </h3>
-                  <ul className="audit-carconts">
-                    <li>안전보안일반2</li>
-                    <li>
-                      7-1 공항 지점은 자체보안계획과 현지 관련규정에 부합하는 지점 표준 업무 절차를 수립하여 항상
-                      최신판으로 유지하여야 한다. 상기 평가항목 내용에 대해 입증할 수 있는 자료(관련 교육 또는 회람 실시
-                      내용, 소속 전 직원의 Read & Sign 결과지 등) 및 사진을 첨부하여 주시기 바랍니다.
-                    </li>
-                    <li>ASP 5.2.7 1</li>
-                    <li>
+              <dd className="tg-conts">
+                {/* 상세페이지 */}
+                <div className="editbox">
+                  <div className="form-table line">
+                    <div className="form-cell wid100">
+                      <div className="form-group wid100">
+                        <div className="df">
+                          <div className="type9 mt10">
+                            <h3 className="audit-car-tit">
+                              해외공항 원격 안전평가 점검표 (ko)10 <span>CAR No. 24-LSA-0407-BE01</span>
+                            </h3>
+                            <div className="text-desc-type1">
+                              7-1 공항 지점은 자체보안계획과 현지 관련규정에 부합하는 지점 표준 업무 절차를 수립하여
+                              항상 최신판으로 유지하여야 한다. 상기 평가항목 내용에 대해 입증할 수 있는 자료(관련 교육
+                              또는 회람 실시 내용, 소속 전 직원의 Read & Sign 결과지 등) 및 사진을 첨부하여 주시기
+                              바랍니다.
+                            </div>
+                            <div className="form-table">
+                              <div className="form-cell wid100">
+                                <div className="form-group wid100">
+                                  <span className="text-desc-type1">ASP 5.2.7 1</span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div className="type10">
+                            <div className="form-table">
+                              <div className="form-cell">
+                                <div className="form-group wid100">
+                                  <div className="group-box-wrap wid100">
+                                    <span className="txt">Priority</span>
+                                    <div className="editarea-box view">
+                                      <div className="label-box bwid50">
+                                        <span className="Option-tag OptionLevel red">High</span>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div className="form-table">
+                              <div className="form-cell wid50">
+                                <div className="form-group wid100">
+                                  <div className="group-box-wrap wid100">
+                                    <span className="txt">Probability</span>
+                                    <div className="editarea-box view">
+                                      <div className="label-box wid50">
+                                        <span className="Option-tag OptionLevel green">Extremdly improbable</span>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div className="form-table">
+                              <div className="form-cell wid50">
+                                <div className="form-group wid100">
+                                  <div className="group-box-wrap wid100">
+                                    <span className="txt">Severity</span>
+                                    <div className="editarea-box view">
+                                      <div className="label-box wid50">
+                                        <span className="Option-tag OptionLevel green">Negigible</span>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="form-table ta-r">
+                    <div className="form-cell wid50">
                       <div className="group-box-wrap wid100">
-                        <div className="radio-wrap border-no ta-r">
+                        <div className="radio-wrap border-no">
                           <label>
-                            <input type="radio" checked />
+                            <input type="radio" />
                             <span>Finding</span>
                           </label>
                           <label>
@@ -197,11 +255,15 @@ function MyAuditCAR() {
                             <span>Yes</span>
                           </label>
                         </div>
+                        {/*<span className="errorText">error</span>*/}
                       </div>
-                    </li>
-                  </ul>
+                    </div>
+                  </div>
+                  <hr className="line"></hr>
                 </div>
-                <div className="edit-area">
+                {/*//상세페이지*/}
+
+                <div className="edit-area border-no">
                   <div className="detailForm">
                     <div className="detailForm-detail-box list-group">
                       <div className="detailForm-detail-2deps rbox list-group">
@@ -253,6 +315,8 @@ function MyAuditCAR() {
                                         <button className="btn-select">Select</button>
                                       </div>
                                     </div>
+                                  </div>
+                                  <div className="form-table">
                                     <div className="form-cell wid50">
                                       <div className="form-group wid100">
                                         <div className="btn-tit">
@@ -263,6 +327,8 @@ function MyAuditCAR() {
                                         <button className="btn-select">Select</button>
                                       </div>
                                     </div>
+                                  </div>
+                                  <div className="form-table">
                                     <div className="form-cell wid50">
                                       <div className="form-group wid100">
                                         <div className="btn-tit">
