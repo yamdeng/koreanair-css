@@ -134,9 +134,12 @@ function UserEditModal(props) {
                         <AppSelect label={'사용여부'} />
                       </div>
                     </div>
-                    <div className="btn-area mb-10">
+                    <div className="btn-area wid50 mb-10">
                       <button type="button" name="button" className="btn-sm btn_text btn-darkblue-line">
                         조회
+                      </button>
+                      <button type="button" name="button" className="btn-sm btn_text btn-darkblue-line">
+                        초기화
                       </button>
                     </div>
                   </div>
@@ -171,36 +174,11 @@ function UserEditModal(props) {
                             </div>
                           </div>
                           <div className="btn-area mb-10">
-                            <button type="button" name="button" className="btn-big btn_confirm text_color_neutral-10">
+                            <button type="button" name="button" className="btn_confirm text_color_neutral-10">
                               등록
                             </button>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="group-box mb-20">
-                    <div className="ck-edit-box">
-                      <div className="ck-edit">
-                        <div className="boxForm">
-                          <h3 className="table-tit mt-10">공사장소 수정</h3>
-                          <div className="form-table">
-                            <div className="form-cell wid50">
-                              <div className="form-group wid100">
-                                <AppTextInput label="공사장소명" />
-                              </div>
-                            </div>
-                          </div>
-                          <div className="form-table">
-                            <div className="form-cell wid50">
-                              <div className="form-group wid100">
-                                <AppSelect label="사용여부" />
-                              </div>
-                            </div>
-                          </div>
-                          <div className="btn-area mb-10">
-                            <button type="button" name="button" className="btn-big btn_confirm text_color_neutral-10">
-                              저장
+                            <button type="button" name="button" className="btn_close">
+                              취소
                             </button>
                           </div>
                         </div>

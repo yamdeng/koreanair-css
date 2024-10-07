@@ -48,7 +48,7 @@ function ChecklistModal(props) {
                 </div>
               </div>
               {/*그리드영역 */}
-              <div className="table-box">
+              <div>
                 <AppTable rowData={rowData} columns={columns} />
               </div>
               {/*//그리드영역 */}
