@@ -35,7 +35,7 @@ function PAviationPortal1() {
   return (
     <>
       {/*nav-is-visible - 펼침 */}
-      <div className="cd-stretchy-nav nav-is-visible">
+      <div className="cd-stretchy-nav">
         <a href="javascript:void(0);" className="cd-nav-trigger">
           <span aria-hidden="true"></span>
         </a>
@@ -450,16 +450,16 @@ function PAviationPortal1() {
             <img src={mainphoto} className="" alt="photo" />
           </div>
           */}
-          <h3 className="img-tit">2024년 1분기 SMS Excellence 우수보고서</h3>
+          <h3 className="ph-img-tit">2024년 1분기 SMS Excellence 우수보고서</h3>
 
           <Slider {...bannerSettings} key={'topRiskElement'}>
             <div className="main-photo">
               <img src={mainphoto} className="" alt="photo" />
-              <h3 className="img-tit">2024년 1분기 SMS Excellence 우수보고서123</h3>
+              <h3 className="ph-img-tit">2024년 1분기 SMS Excellence 우수보고서123</h3>
             </div>
             <div className="main-photo">
               <img src={mainphoto} className="" alt="photo" />
-              <h3 className="img-tit">2024년 1분기 SMS Excellence 우수보고서555</h3>
+              <h3 className="ph-img-tit">2024년 1분기 SMS Excellence 우수보고서555</h3>
             </div>
           </Slider>
         </div>

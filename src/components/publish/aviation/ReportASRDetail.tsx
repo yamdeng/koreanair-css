@@ -1568,7 +1568,7 @@ function ReportASRDetail() {
                                                 <td className="tl">Aircraft Change</td>
                                                 <td>
                                                   <div className="Safety-table-cell">
-                                                    <span className="Safety-tag riskLevel level4">5D</span>
+                                                    <span className="Safety-tag riskLevel level1">3A</span>
                                                   </div>
                                                 </td>
                                                 <td className="fix vm">
@@ -1588,11 +1588,11 @@ function ReportASRDetail() {
                                                 </td>
                                               </tr>
                                               <tr>
-                                                <td className="tl">Lightning strike Environmental/Weather</td>
-                                                <td className="tl">Aircraft Change</td>
+                                                <td className="tl">Sandstorm Environmental/Weather</td>
+                                                <td className="tl">Escape slide deployment</td>
                                                 <td>
                                                   <div className="Safety-table-cell">
-                                                    <span className="Safety-tag riskLevel level4">5D</span>
+                                                    <span className="Safety-tag riskLevel level3">2B</span>
                                                   </div>
                                                 </td>
                                                 <td className="fix vm">
@@ -1694,7 +1694,7 @@ function ReportASRDetail() {
                                               <td className="tl">Aircraft Change</td>
                                               <td>
                                                 <div className="Safety-table-cell">
-                                                  <span className="Safety-tag riskLevel level4">5D</span>
+                                                  <span className="Safety-tag riskLevel level1">3A</span>
                                                 </div>
                                               </td>
                                               <td className="fix vm">
@@ -1717,11 +1717,11 @@ function ReportASRDetail() {
                                               </td>
                                             </tr>
                                             <tr>
-                                              <td className="tl">Lightning strike Environmental/Weather</td>
-                                              <td className="tl">Aircraft Change</td>
+                                              <td className="tl">Sandstorm Environmental/Weather</td>
+                                              <td className="tl">Escape slide deployment</td>
                                               <td>
                                                 <div className="Safety-table-cell">
-                                                  <span className="Safety-tag riskLevel level4">5D</span>
+                                                  <span className="Safety-tag riskLevel level3">2B</span>
                                                 </div>
                                               </td>
                                               <td className="fix vm">
@@ -1856,8 +1856,8 @@ function ReportASRDetail() {
                                               </td>
                                             </tr>
                                             <tr>
-                                              <td className="tl">Lightning strike Environmental/Weather</td>
-                                              <td className="tl">Aircraft Change</td>
+                                              <td className="tl">Sandstorm Environmental/Weather</td>
+                                              <td className="tl">Escape slide deployment</td>
                                               <td>
                                                 <div className="Safety-table-cell">
                                                   <span className="Safety-tag riskLevel level3">2B</span>
@@ -1935,8 +1935,8 @@ function ReportASRDetail() {
                                               <td></td>
                                             </tr>
                                             <tr>
-                                              <td className="tl">Lightning strike Environmental/Weather</td>
-                                              <td className="tl">Aircraft Change</td>
+                                              <td className="tl">Sandstorm Environmental/Weather</td>
+                                              <td className="tl">Escape slide deployment</td>
                                               <td>
                                                 <div className="Safety-table-cell">
                                                   <span className="Safety-tag riskLevel level3">2B</span>
@@ -2158,8 +2158,8 @@ function ReportASRDetail() {
                                               </td>
                                             </tr>
                                             <tr>
-                                              <td className="tl">Lightning strike Environmental/Weather</td>
-                                              <td className="tl">Aircraft Change</td>
+                                              <td className="tl">Sandstorm Environmental/Weather</td>
+                                              <td className="tl">Escape slide deployment</td>
                                               <td>
                                                 <div className="Safety-table-cell">
                                                   <span className="Safety-tag riskLevel level3">2B</span>
@@ -2275,8 +2275,8 @@ function ReportASRDetail() {
                                               <td></td>
                                             </tr>
                                             <tr>
-                                              <td className="tl">Lightning strike Environmental/Weather</td>
-                                              <td className="tl">Aircraft Change</td>
+                                              <td className="tl">Sandstorm Environmental/Weather</td>
+                                              <td className="tl">Escape slide deployment</td>
                                               <td>
                                                 <div className="Safety-table-cell">
                                                   <span className="Safety-tag riskLevel level4">5D</span>
@@ -2373,8 +2373,8 @@ function ReportASRDetail() {
                                               <td></td>
                                             </tr>
                                             <tr>
-                                              <td className="tl">Lightning strike Environmental/Weather</td>
-                                              <td className="tl">Aircraft Change</td>
+                                              <td className="tl">Sandstorm Environmental/Weather</td>
+                                              <td className="tl">Escape slide deployment</td>
                                               <td>
                                                 <div className="Safety-table-cell">
                                                   <span className="Safety-tag riskLevel level4">5D</span>
