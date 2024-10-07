@@ -173,7 +173,7 @@ function UserEditModal(props) {
                               </div>
                             </div>
                           </div>
-                          <div className="btn-area mb-10">
+                          <div className="btn-area-type01 mb-10 mt-10">
                             <button type="button" name="button" className="btn_confirm text_color_neutral-10">
                               등록
                             </button>
