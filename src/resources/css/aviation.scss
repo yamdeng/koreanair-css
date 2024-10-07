@@ -63,7 +63,7 @@
 .c-step-list{counter-reset:stepCounter}
 .c-step-list.default{display:flex;font-size:1.2rem;text-align:center;margin-left:-1.5rem}
 
-
+.editbox.no{border-top:0}
 .edit-area .form-table .form-cell.Add{border-bottom:0}
 .notice-board td{position:relative;padding:1.0rem 0.3rem}
 .notice-board td .delete{position:absolute;top:1rem;background:url(/src/resources/images/delete-text.svg) center center no-repeat;font-size:0;width:2rem;height:2rem}

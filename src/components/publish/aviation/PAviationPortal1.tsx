@@ -1,4 +1,4 @@
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { useStore } from 'zustand';
 import useAppStore from '@/store/useAppStore';
 import AppSelect from '@/components/common/AppSelect';
@@ -9,6 +9,12 @@ import Slider from 'react-slick';
 
 function PAviationPortal1() {
   const { setIsAviationPortal } = useStore(useAppStore, (state) => state) as any;
+  const [rightIconVisible, setRightIconVisible] = useState(false);
+
+  const togglerightIconVisible = () => {
+    setRightIconVisible(!rightIconVisible);
+  };
+
   const topRiskSettings = {
     dots: true,
     infinite: true,
@@ -35,8 +41,8 @@ function PAviationPortal1() {
   return (
     <>
       {/*nav-is-visible - 펼침 */}
-      <div className="cd-stretchy-nav nav-is-visible">
-        <a href="javascript:void(0);" className="cd-nav-trigger">
+      <div className={rightIconVisible ? 'cd-stretchy-nav nav-is-visible' : 'cd-stretchy-nav'}>
+        <a href="javascript:void(0);" className="cd-nav-trigger" onClick={() => togglerightIconVisible()}>
           <span aria-hidden="true"></span>
         </a>
         <ul>
