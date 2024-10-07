@@ -163,7 +163,7 @@ function MyAuditCAR() {
               </dt>
               <dd className="tg-conts">
                 {/* 상세페이지 */}
-                <div className="editbox">
+                <div className="editbox bg-gray">
                   <div className="form-table line">
                     <div className="form-cell wid100">
                       <div className="form-group wid100">
