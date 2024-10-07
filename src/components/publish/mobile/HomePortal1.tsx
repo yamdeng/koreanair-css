@@ -1,4 +1,5 @@
 import ReactFullpage from '@fullpage/react-fullpage';
+import koreanairLogoImage from '@/resources/images/Koreanair-logo.svg';
 
 function HomePortal1() {
   const nextSlide = () => {
@@ -7,7 +8,30 @@ function HomePortal1() {
   };
   return (
     <>
-      <div style={{ position: 'fixed', top: 0, zIndex: 10 }}>상단메뉴 영역</div>
+      <div className="intro-top-menu">
+        <div className="top_container">
+          <div className="logo">
+            <a href="javascript:void(0);">
+              <img src={koreanairLogoImage} />
+            </a>
+          </div>
+          <div className="GNB">
+            <ul>
+              <li>
+                <a className="active" href="javascript:void(0);">
+                  항공안전
+                </a>
+              </li>
+              <li>
+                <a href="javascript:void(0);">산업안전</a>
+              </li>
+              <li>
+                <a href="javascript:void(0);">안전보고서</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
       <div style={{ position: 'fixed', bottom: 30, zIndex: 10, right: 10 }}>우측 아이콘 영역</div>
       <div style={{ position: 'fixed', bottom: 30, zIndex: 10, right: 10, display: '' }}>
         우측 아이콘 영역 클릭시 나오는 이미지 영역
@@ -29,8 +53,8 @@ function HomePortal1() {
           return (
             <ReactFullpage.Wrapper>
               <div className="section" style={{ color: 'white' }}>
-                <p>Section 1 (welcome to fullpage.js)</p>
-                <button onClick={() => fullpageApi.moveSectionDown()}>Click me to move down</button>
+                {/*<p>Section 1 (welcome to fullpage.js)</p>
+                <button onClick={() => fullpageApi.moveSectionDown()}>Click me to move down</button>*/}
                 <video
                   style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center' }}
                   src="/video/002.mp4"
@@ -38,6 +62,7 @@ function HomePortal1() {
                   playsInline
                   muted
                 ></video>
+                <div className="video-bg"></div>
               </div>
               <div className="section">
                 <p>Section 2</p>
