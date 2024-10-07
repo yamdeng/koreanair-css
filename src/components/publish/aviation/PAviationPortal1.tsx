@@ -48,7 +48,7 @@ function PAviationPortal1() {
         <ul>
           <li>
             <a href="javascript:void(0);" className="active">
-              <span>Home</span>
+              <span>HAZARD</span>
             </a>
           </li>
           <li>
@@ -103,7 +103,7 @@ function PAviationPortal1() {
           </li>
           <li>
             <a href="javascript:void(0);">
-              <span>HAZARD</span>
+              <span>ㅇㅇㅇㅇ</span>
             </a>
           </li>
         </ul>
