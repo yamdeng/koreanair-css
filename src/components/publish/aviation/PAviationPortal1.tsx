@@ -35,7 +35,7 @@ function PAviationPortal1() {
   return (
     <>
       {/*nav-is-visible - 펼침 */}
-      <div className="cd-stretchy-nav">
+      <div className="cd-stretchy-nav nav-is-visible">
         <a href="javascript:void(0);" className="cd-nav-trigger">
           <span aria-hidden="true"></span>
         </a>
@@ -111,7 +111,7 @@ function PAviationPortal1() {
           <div className="grid-group">
             <div className="head-top">
               <h3>
-                Top 10 RISK AREAS
+                Top 10 Events
                 <span className="txt-info">* 해당 기간 중 이벤트 발생 건 위험도 순위</span>
               </h3>
             </div>
@@ -382,7 +382,7 @@ function PAviationPortal1() {
 
         {/* TO DO LIST*/}
         <div className="grid-item">
-          <h3>TO DO LIST</h3>
+          <h3>To do list</h3>
           <div className="main-table-box">
             <table className="main-table-todo">
               <thead>

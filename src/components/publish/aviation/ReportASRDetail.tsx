@@ -79,6 +79,10 @@ function ReportASRDetail() {
   const [fifteenExpaned, setFifteenExpaned] = useState(true);
   const [sixteenExpaned, setSixteenExpaned] = useState(true);
 
+  const toggleTr = () => {
+    setSixteenExpaned(!sixteenExpaned);
+  };
+
   return (
     <>
       {/*경로 */}
@@ -1997,7 +2001,7 @@ function ReportASRDetail() {
                                             </tr>
                                           </thead>
                                           <tbody>
-                                            <tr>
+                                            <tr onClick={() => toggleTr()}>
                                               <td className="tl">Lightning strike Environmental/Weather</td>
                                               <td className="tl">Aircraft Change</td>
                                               <td>
@@ -2010,7 +2014,7 @@ function ReportASRDetail() {
                                               <td>대기</td>
                                               <td></td>
                                             </tr>
-                                            <tr>
+                                            <tr style={{ display: sixteenExpaned ? '' : 'none' }}>
                                               <td colSpan={7} className="tl">
                                                 {/*상세조회 */}
                                                 <div className="edit-area report">
