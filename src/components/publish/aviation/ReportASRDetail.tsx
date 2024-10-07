@@ -2235,12 +2235,12 @@ function ReportASRDetail() {
                                         <table className="info-board">
                                           <colgroup>
                                             <col width="25%" />
-                                            <col width="20%" />
+                                            <col width="18%" />
                                             <col width="8%" />
                                             <col width="8%" />
+                                            <col width="14%" />
                                             <col width="10%" />
-                                            <col width="10%" />
-                                            <col width="10%" />
+                                            <col width="8%" />
                                             <col width="9%" />
                                           </colgroup>
                                           <thead>
@@ -2333,12 +2333,12 @@ function ReportASRDetail() {
                                         <table className="info-board">
                                           <colgroup>
                                             <col width="25%" />
-                                            <col width="20%" />
+                                            <col width="18%" />
                                             <col width="8%" />
                                             <col width="8%" />
+                                            <col width="14%" />
                                             <col width="10%" />
-                                            <col width="10%" />
-                                            <col width="10%" />
+                                            <col width="8%" />
                                             <col width="9%" />
                                           </colgroup>
                                           <thead>
