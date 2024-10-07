@@ -125,7 +125,7 @@
   height: calc(100vh - 0rem);
   /*margin-top: 8.0rem;*/
   width: 100%;
-  max-width: 26.0rem;
+  max-width: 29rem;
   z-index: 9;
   overflow: hidden auto;
 }
@@ -233,7 +233,7 @@
   background:var(--color-neutral-30)
 }
 .LNB_list {
-  padding: 1.2rem;
+  padding: 1.2rem 2rem;
 }
 .LNB_list li {
   font-family: 'KoreanAirSans';
@@ -335,7 +335,7 @@
   z-index: 2;
   min-width: 0;
   margin-top: 8.8rem;
-  padding: 2.4rem 6.4rem;
+  padding: 2.4rem 3rem;
   line-height: 150%;
   background-color: var(--color-neutral-10);
 }

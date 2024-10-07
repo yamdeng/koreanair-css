@@ -850,15 +850,6 @@ function ReportASRDetail() {
 
                                         <div className="form-table">
                                           <div className="form-cell wid50">
-                                            <div className="form-group wid20">
-                                              <div className="row1">
-                                                <div className="date1">
-                                                  <AppDatePicker label="Due Date" required />
-                                                </div>
-                                              </div>
-                                            </div>
-                                          </div>
-                                          <div className="form-cell wid50">
                                             <div className="btn-area">
                                               <button
                                                 type="button"

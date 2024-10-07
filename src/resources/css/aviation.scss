@@ -723,12 +723,12 @@
 
   .grid-item:nth-of-type(1){grid-column-start:1;grid-column-end: span 3; grid-gap: 2.4rem; border: 0; background: none; display: flex; padding: 0;}
 
-  .grid-item .grid-group:nth-of-type(1) .slick-slider{position:relative;overflow:hidden;width:100%;border:0rem solid var(--color-neutral-40);padding:2rem 0rem 2rem 0rem}
-  .grid-item .grid-group:nth-of-type(1) .slick-slider .slick-list{width:60%;}
+  .grid-item .grid-group:nth-of-type(1) .slick-slider{position:relative;display:flex;overflow:hidden;width:100%;border:0rem solid var(--color-neutral-40);}
+  .grid-item .grid-group:nth-of-type(1) .slick-slider .slick-list{width:100%;}
   .grid-item .grid-group:nth-of-type(1) .slick-slider .slick-list .slick-track .slick-slide .risk-conts-area{display:flex;justify-content: flex-start;flex-flow: row wrap;box-sizing: border-box;width:100%;padding: 0 0 2rem}
   .grid-item .grid-group:nth-of-type(1) .slick-slider .slick-list .slick-track .slick-slide .risk-conts-area:last-child{padding-bottom:0}
-  .grid-item .grid-group:nth-of-type(1) .slick-slider .slick-list .slick-track .slick-slide .risk-conts-area .risk-box{position:relative;/*width:31%; display:flex;justify-content: flex-start;flex-wrap: wrap;*/box-sizing: border-box; border:solid 0.2rem var(--color-darkblue-100);background-color:var(--color-neutral-10);border-radius:0.8rem;box-shadow:0.2rem 0.5rem 0.5rem rgba(0, 0, 0, 0.1)}
-  // .grid-item .grid-group:nth-of-type(1) .slick-slider .slick-list .slick-track .slick-slide .risk-conts-area .risk-box + .risk-box{margin-left:1.8rem}
+  .grid-item .grid-group:nth-of-type(1) .slick-slider .slick-list .slick-track .slick-slide .risk-conts-area .risk-box{position:relative;display:inline-block;width:31%; margin-bottom:1.8rem; /*display:flex;justify-content: flex-start;flex-wrap: wrap;*/box-sizing: border-box; border:solid 0.2rem var(--color-darkblue-100);background-color:var(--color-neutral-10);border-radius:0.8rem;box-shadow:0.2rem 0.5rem 0.5rem rgba(0, 0, 0, 0.1)}
+  .grid-item .grid-group:nth-of-type(1) .slick-slider .slick-list .slick-track .slick-slide .risk-conts-area .risk-box + .risk-box{margin-left:1.8rem}
   .grid-item .grid-group:nth-of-type(1) .slick-slider .slick-list .slick-track .slick-slide .risk-conts-area .risk-box .IcoTags {position: absolute;top:0;left:-0.1rem;}
   .grid-item .grid-group:nth-of-type(1) .slick-slider .slick-list .slick-track .slick-slide .risk-conts-area .risk-box .IcoTags .ico-tag {
     position: relative;border-top-left-radius:0.8rem;border-bottom-left-radius:0;
@@ -739,6 +739,8 @@
     color: var(--color-neutral-10);
 
 }
+  .grid-item .grid-group:nth-of-type(1) .slick-slider .slick-arrow {width:0px;padding:0rem;font-size:0;}
+  .grid-item .grid-group:nth-of-type(1) .slick-slider .slick-dots {position:absolute;top:0rem;right:0rem;}
 
 
   
@@ -764,7 +766,7 @@
 
 // }
   .grid-item .grid-group:nth-of-type(1) .risk-conts-area .risk-box .risk-conts{width:100%;padding:2.5rem 2.5rem 2rem 2.5rem}
-  .grid-item .grid-group:nth-of-type(1) .risk-conts-area .risk-box .risk-conts .txt{text-align:left;font-size:1.8rem;font-weight: 700; color:var(--color-darkblue-100)}
+  .grid-item .grid-group:nth-of-type(1) .risk-conts-area .risk-box .risk-conts .txt{height:4.5rem;text-align:left;font-size:1.8rem;font-weight: 700; color:var(--color-darkblue-100);overflow:hidden;}
   .grid-item .grid-group:nth-of-type(1) .risk-conts-area .risk-box .risk-conts .sub-txt{font-size:1.6rem;color:#009FFF}
   .grid-item .grid-group:nth-of-type(1) .risk-conts-area .risk-box .risk-conts .sub-txt strong{font-size:1.8rem;color:#009FFF}
   .grid-item .grid-group:nth-of-type(1) .risk-conts-area .risk-box  .risk-bottom{display:flex;justify-content: flex-end;align-items: center;padding:0 2.5rem 1rem 0}
@@ -822,4 +824,8 @@
   .grid-item .main-table-box .main-table-todo td a:hover{text-decoration: underline; color: var(--color-darkblue-100);}
 }
 
-.av-table-tit{color:var(--color-darkblue-100);font-size:1.6rem;font-weight: normal;/*padding-bottom: 1.0rem;*/}
+  .av-table-tit{color:var(--color-darkblue-100);font-size:1.6rem;font-weight: normal;/*padding-bottom: 1.0rem;*/}
+
+  .grid-item.photo .slick-slider{position:relative;overflow:hidden;width:100%;border:0rem;}
+  .grid-item.photo .slick-slider .slick-list{width:100%;}
+  .grid-item.photo .slick-slider .slick-slide{display:inline-block;}

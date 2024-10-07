@@ -433,9 +433,11 @@ function PAviationPortal1() {
 
         {/* photo*/}
         <div className="grid-item photo">
+          {/*
           <div className="main-photo">
             <img src={mainphoto} className="" alt="photo" />
           </div>
+          */}
           <h3 className="img-tit">2024년 1분기 SMS Excellence 우수보고서</h3>
 
           <Slider {...bannerSettings} key={'topRiskElement'}>
