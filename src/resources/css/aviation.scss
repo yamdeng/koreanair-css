@@ -540,9 +540,10 @@
 
 /*Audit 그리드*/
 .Audit-table-cell .list-box{position:relative;text-align:left}
-.Audit-table-cell .list-box ul{position:relative;display:flex;flex-direction:column}
-.Audit-table-cell .list-box li{/*line-height:1.5;*/min-height:auto;font-size:1.4rem;overflow:hidden;text-overflow:ellipsis}
-.Audit-table-cell .list-box li a{/*line-height:1.5;*/min-height:auto;font-size:1.4rem}
+.Audit-table-cell .list-box ul{position:relative;display:flex;flex-direction:column;font-size:0;list-style:none;}
+.Audit-table-cell .list-box li{display:inline-block;vertical-align:top;min-height:auto;font-size:1.4rem;overflow:hidden;text-overflow:ellipsis}
+.Audit-table-cell .list-box li:nth-child(2n){line-height:1;min-height:auto;font-size:1.4rem;overflow:hidden;text-overflow:ellipsis}
+.Audit-table-cell .list-box li a{min-height:auto;font-size:1.4rem}
 .Audit-table-cell .list-box li .text-blue{color:var(--color-btn-blue2)}
 .Audit-table-cell .list-box li .text-red{color:var(--color-red)}
 .Audit-table-cell .list-box li .text-orange{color:var(--color-orange)}
@@ -573,7 +574,10 @@
 .user-wrap .user-box .user-box-top .user-box-bottom dl dd.tot-result{font-size:2rem;font-weight:600;line-height:3rem;text-align:center}
 .user-wrap .user-box .user-box-top .user-box-bottom dl.sub-count{display:table;float:left;width:100%;padding:0 1.5rem 0 1.5rem;border-right:0}
 .user-wrap .user-box .user-box-top .user-box-bottom dl.sub-count dt{display:table-cell;font-weight:600;font-size:1.2rem;color:var(--color-neutral-90);width:40%;text-align:left;line-height:1.2;vertical-align:middle}
-.user-wrap .user-box .user-box-top .user-box-bottom dl.sub-count dd{font-weight:600;font-size:1.2rem;color:var(--color-neutral-90);text-align:right}
+.user-wrap .user-box .user-box-top .user-box-bottom dl.sub-count dd{font-weight:600;font-size:1.2rem;letter-spacing:0.08rem;color:var(--color-neutral-90);text-align:right}
+.user-wrap .user-box .user-box-top .user-box-bottom dl.sub-count dd span.text-color-blue{cursor:pointer}
+.user-wrap .user-box .user-box-top .user-box-bottom dl.sub-count dd span.text-color-red{cursor:pointer}
+.user-wrap .user-box .user-box-top .user-box-bottom dl.sub-count dd span.text-color-yellow{cursor:pointer}
 .text-color-blue{color:var(--color-mblue-100)}
 .text-color-red{color:var(--color-negative)}
 .text-color-yellow{color:var(--color-Leve6)}

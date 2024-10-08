@@ -49,7 +49,7 @@ function HomePortal2() {
                 ></video>
               </div>
               <div className="section">
-                <div className="slider-container">
+                <div className="home-slider-container">
                   <Slider {...settings}>
                     <div style={{ border: '1px solid black', height: 300 }}>
                       <h3 style={{ border: '1px solid black', height: 300 }}>1</h3>
