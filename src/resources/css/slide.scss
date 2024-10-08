@@ -1,10 +1,10 @@
 /* 슬라이더 전체를 감싸는 컨테이너 */
 .slider-container {
     position: relative;
-    width: 80%; /* 원하는 너비 설정 */
+    width:100%; /* 원하는 너비 설정 */
     margin: 0 auto; /* 가운데 정렬 */
 }
-  
+
 /* slick-dots를 슬라이더 내부로 이동시키기 */
 .slider-container .slick-dots {
     position: absolute;
@@ -23,3 +23,17 @@
 .slider-container .slick-dots li.slick-active button:before {
     color: #ff6347; /* 선택된 dot 색상 */
 }
+
+/* 항공안전 Top 10 Events*/
+//.grid-item .grid-group:nth-of-type(1) .slick-slider .slick-arrow{width:0px;padding:0rem;font-size:0;}
+// .grid-item .grid-group:nth-of-type(1) .slick-slider .slick-dots{position:absolute;top:0rem;right:0.3rem}
+//.grid-item .grid-group:nth-of-type(1) .slick-slider .slick-dots li button{display:block;font-size:0;border-radius:99.9rem;margin:0.5rem 0;width:1rem;height:1rem;background-color:var(--color-darkblue-40);cursor:pointer}
+//.grid-item .grid-group:nth-of-type(1) .slick-slider .slick-dots li.slick-active button{background-color:var(--color-darkblue-100);width:1rem;height:2.5rem}
+.risk-slider-container{position:relative;width:100%}
+.risk-slider-container .slick-slider > .slick-dots{display:flex;position:absolute;width:3%;top:0rem;right:0;bottom:0;justify-content:center}
+.slick-dots li button{height:3.0rem}
+.risk-slider-container .slick-slider > .slick-dots li button:before{font-size:12px;height:1rem;border-radius:99.9rem;color:var(--color-darkblue-100); /* dot 색상 설정 */}
+.risk-slider-container > .slick-dots li.slick-active button:before{display:block;font-size:0;border-radius:99.9rem;margin:0.5rem 0;width:1rem;height:1rem;background-color:var(--color-darkblue-40);cursor:pointer/* color: #ff6347; 선택된 dot 색상 */}
+
+
+

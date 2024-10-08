@@ -141,7 +141,6 @@ function PAviationPortal1() {
                       </span>
                     </div>
                     <div className="risk-bottom">
-                      <div className="name"> OYM</div>
                       <ul className="sort-box">
                         <li className="gray">0</li>
                         <li className="orange">1</li>
@@ -467,17 +466,19 @@ function PAviationPortal1() {
           <div className="main-photo">
             <img src={mainphoto} className="" alt="photo" />
           </div>
-          */}
-          <h3 className="ph-img-tit">2024년 1분기 SMS Excellence 우수보고서</h3>
+          
+          <h3 className="ph-img-tit">2024년 1분기 SMS Excellence 우수보고서</h3>*/}
 
           <Slider {...bannerSettings} key={'topRiskElement'}>
             <div className="main-photo">
               <img src={mainphoto} className="" alt="photo" />
-              <h3 className="ph-img-tit">2024년 1분기 SMS Excellence 우수보고서123</h3>
+              <h3 className="ph-img-tit">
+                <span>2024년 1분기 SMS Excellence 우수보고서123</span>
+              </h3>
             </div>
             <div className="main-photo">
               <img src={mainphoto2} className="" alt="photo" />
-              <h3 className="ph-img-tit">2024년 1분기 SMS Excellence 우수보고서555</h3>
+              <h3 className="ph-img-tit">2024년 1분기 산업안전보건 모범직원</h3>
             </div>
           </Slider>
         </div>
