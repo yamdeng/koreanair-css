@@ -57,17 +57,17 @@ function HomePortal1() {
                 <button onClick={() => fullpageApi.moveSectionDown()}>Click me to move down</button>*/}
                 <video
                   style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center' }}
-                  src="/video/002.mp4"
+                  src="/video/001.mp4"
                   autoPlay
                   playsInline
                   muted
                 ></video>
                 <div className="video-bg"></div>
               </div>
-              <div className="section">
+              <div className="section main-visual01-bg">
                 <p>Section 2</p>
               </div>
-              <div className="section">
+              <div className="section main-visual02-bg">
                 <p>Section 3</p>
               </div>
             </ReactFullpage.Wrapper>
