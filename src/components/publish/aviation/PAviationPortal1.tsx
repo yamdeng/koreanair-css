@@ -140,6 +140,7 @@ function PAviationPortal1() {
                       </span>
                     </div>
                     <div className="risk-bottom">
+                      <div className="name"> OYM</div>
                       <ul className="sort-box">
                         <li className="gray">0</li>
                         <li className="orange">1</li>
@@ -163,6 +164,7 @@ function PAviationPortal1() {
                       </span>
                     </div>
                     <div className="risk-bottom">
+                      <div className="name"> OYM</div>
                       <ul className="sort-box">
                         <li className="gray">0</li>
                         <li className="gray">0</li>
@@ -185,6 +187,7 @@ function PAviationPortal1() {
                       </span>
                     </div>
                     <div className="risk-bottom">
+                      <div className="name"> OYM</div>
                       <ul className="sort-box">
                         <li className="gray">0</li>
                         <li className="gray">0</li>
@@ -210,6 +213,7 @@ function PAviationPortal1() {
                       </span>
                     </div>
                     <div className="risk-bottom">
+                      <div className="name"> OYM</div>
                       <ul className="sort-box">
                         <li className="gray">0</li>
                         <li className="orange">1</li>
@@ -233,6 +237,7 @@ function PAviationPortal1() {
                       </span>
                     </div>
                     <div className="risk-bottom">
+                      <div className="name"> OYM</div>
                       <ul className="sort-box">
                         <li className="gray">0</li>
                         <li className="gray">0</li>
@@ -255,6 +260,7 @@ function PAviationPortal1() {
                       </span>
                     </div>
                     <div className="risk-bottom">
+                      <div className="name"> OYM</div>
                       <ul className="sort-box">
                         <li className="gray">0</li>
                         <li className="gray">0</li>
@@ -279,6 +285,7 @@ function PAviationPortal1() {
                       </span>
                     </div>
                     <div className="risk-bottom">
+                      <div className="name"> OYM</div>
                       <ul className="sort-box">
                         <li className="gray">0</li>
                         <li className="gray">0</li>
@@ -301,6 +308,7 @@ function PAviationPortal1() {
                       </span>
                     </div>
                     <div className="risk-bottom">
+                      <div className="name"> OYM</div>
                       <ul className="sort-box">
                         <li className="gray">0</li>
                         <li className="gray">0</li>
@@ -323,6 +331,7 @@ function PAviationPortal1() {
                       </span>
                     </div>
                     <div className="risk-bottom">
+                      <div className="name"> OYM</div>
                       <ul className="sort-box">
                         <li className="gray">0</li>
                         <li className="gray">0</li>
