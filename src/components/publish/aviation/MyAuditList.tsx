@@ -58,10 +58,12 @@ function MyAuditList() {
             <div className="form-table user-head">
               <div className="form-cell wid100">
                 <div className="form-group wid100">
-                  <div className="df wid30">
+                  <div className="h4">Div. Audit</div>
+                </div>
+                <div className="form-group wid100">
+                  <div className="wid30">
                     <AppSelect label={'2024'} />
                   </div>
-                  <div className="h4">Div. Audit</div>
                 </div>
               </div>
             </div>

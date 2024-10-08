@@ -718,6 +718,8 @@
   display:grid;grid-gap: 2.4rem;grid-template-columns: 1fr 1fr 1fr;height: calc(100vh - 13.6rem);
 
   .grid-item{display:grid; border-radius:0.8rem;padding:2.0rem;background-color:rgba(255,255,255,0.4);border:0rem solid var(--color-neutral-40)}
+  .grid-item:nth-child(2){grid-template-rows:4.6rem 0}
+  .grid-item:nth-child(4){grid-template-rows:4.6rem 0}
   .grid-item.photo{position:relative;padding:0;}
   .grid-item .main-photo img {width:100%;height:33.8rem;object-fit:cover;background-size: cover;border-radius: 0.8rem;}
   .grid-item h3.ph-img-tit{display:block;position:absolute;top:60%;text-align:center;width:100%;color:var(--color-neutral-10);background-color:rgba(0, 0, 0, 0.6);z-index:99}
@@ -794,11 +796,7 @@
     align-items: center;
     font-size: 1.2rem;
     padding: 0 0.5rem;}
-  .grid-item .grid-group:nth-of-type(2) .head-top .guide-info li .color{width: 0.8rem;
-    height: 0.8rem;
-    border-radius: 99.9rem;
-    font-size: 0;
-    margin-right: 0.3rem;}
+  .grid-item .grid-group:nth-of-type(2) .head-top .guide-info li .color{width: 0.8rem;height: 0.8rem;border-radius: 99.9rem;font-size: 0;margin-right: 0.3rem;}
 
   .grid-item h3 {font-size:2rem; font-weight:700; color: var( --color-neutral-90); padding-bottom: 2.0rem;}
   .grid-item h3 span.siren {display: inline-block; font-size: 0; background: url(../images/siren.svg)center center no-repeat; background-size: 2.6rem; vertical-align: top; width: 2.6rem;}

@@ -497,7 +497,7 @@ function PAviationPortal1() {
                   <span className="wait">관리자</span>
                 </td>
               </tr>
-              <tr>
+              {/* <tr>
                 <th>
                   <a href="javascript:void(0);">[최근이슈] KE189/JUN22 여압장치..</a>
                 </th>
@@ -541,7 +541,7 @@ function PAviationPortal1() {
                   <span className="date">2024-00-00</span>
                   <span className="wait">관리자</span>
                 </td>
-              </tr>
+              </tr> */}
             </table>
           </div>
         </div>
