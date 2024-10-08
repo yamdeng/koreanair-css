@@ -810,7 +810,9 @@
 
   .grid-item .main-table-box {width: 100%; /*height: 100%;*/}
   .grid-item .main-table-box .main-table {width: 100%;}
-  .grid-item .main-table-box .main-table th {text-align: left; width: 100%;white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 20.0rem;}
+  .grid-item .main-table-box .main-table th {text-align: left; width: 100%;white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 20.0rem; padding: 0.4rem 0;}
+  .grid-item .main-table-box .main-table th.type01 {padding: 0.6rem 0;}
+  .grid-item .main-table-box .main-table th.type02 {padding: 0.7rem 0;}
   .grid-item .main-table-box .main-table th.pd { padding-top: 1.0rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 20.0rem;}
   .grid-item .main-table-box .main-table th a {font-size: 1.6rem; font-weight: 500; color: var(--color-neutral-80);}
   .grid-item .main-table-box .main-table th a:hover{text-decoration: underline; color: var(--color-darkblue-100);}

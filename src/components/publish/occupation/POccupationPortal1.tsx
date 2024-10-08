@@ -27,31 +27,31 @@ function POccupationPortal1() {
           <div className="main-table-box">
             <table className="main-table">
               <tr>
-                <th>
+                <th className="type01">
                   <a href="javascript:void(0);">인천공항 take off</a>
                 </th>
                 <td>2024-00-00</td>
               </tr>
               <tr>
-                <th>
+                <th className="type01">
                   <a href="javascript:void(0);">조류충돌 보고</a>
                 </th>
                 <td>2024-00-00</td>
               </tr>
               <tr>
-                <th>
+                <th className="type01">
                   <a href="javascript:void(0);">FOD 발생 승인요청</a>
                 </th>
                 <td>2024-00-00</td>
               </tr>
               <tr>
-                <th>
+                <th className="type01">
                   <a href="javascript:void(0);">활주로 침범 시도</a>
                 </th>
                 <td>2024-00-00</td>
               </tr>
               <tr>
-                <th>
+                <th className="type01">
                   <a href="javascript:void(0);">하드랜딩(Hard Landing)</a>
                 </th>
                 <td>2024-00-00</td>
@@ -158,7 +158,7 @@ function POccupationPortal1() {
           <div className="main-table-box">
             <table className="main-table">
               <tr>
-                <th>
+                <th className="type02">
                   <a href="javascript:void(0);">공구통에 걸려넘어짐</a>
                   <span className="date">2024-00-00</span>
                 </th>
@@ -167,7 +167,7 @@ function POccupationPortal1() {
                 </td>
               </tr>
               <tr>
-                <th>
+                <th className="type02">
                   <a href="javascript:void(0);">객실훈련원 수영장 천장 펜스공사</a>
                   <span className="date">2024-00-00</span>
                 </th>
@@ -176,7 +176,7 @@ function POccupationPortal1() {
                 </td>
               </tr>
               <tr>
-                <th>
+                <th className="type02">
                   <a href="javascript:void(0);">인천 정비고 천장 보수공사</a>
                   <span className="date">2024-00-00</span>
                 </th>
