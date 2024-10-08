@@ -3,6 +3,7 @@ import { useStore } from 'zustand';
 import useAppStore from '@/store/useAppStore';
 import AppSelect from '@/components/common/AppSelect';
 import mainphoto from '@/resources/images/av-img.jpg';
+import mainphoto2 from '@/resources/images/img.jpg';
 import chartasr from '@/resources/images/ASR-box.svg';
 import chartmsr from '@/resources/images/MSR-box.svg';
 import Slider from 'react-slick';
@@ -475,7 +476,7 @@ function PAviationPortal1() {
               <h3 className="ph-img-tit">2024년 1분기 SMS Excellence 우수보고서123</h3>
             </div>
             <div className="main-photo">
-              <img src={mainphoto} className="" alt="photo" />
+              <img src={mainphoto2} className="" alt="photo" />
               <h3 className="ph-img-tit">2024년 1분기 SMS Excellence 우수보고서555</h3>
             </div>
           </Slider>
