@@ -368,6 +368,7 @@ function PAviationPortal1() {
             </div>
             <div className="main-conts-graph">
               <div className="graph-box">
+                {/* <canvas id="reportCvs0" width="130" height="150"></canvas> */}
                 <img src={chartasr} className="" alt="ASR" />
               </div>
               <div className="graph-box">
@@ -402,6 +403,11 @@ function PAviationPortal1() {
           <h3>To do list</h3>
           <div className="main-table-box">
             <table className="main-table-todo">
+              <colgroup>
+                <col width="25%" />
+                <col width="50%" />
+                <col width="25%" />
+              </colgroup>
               <thead>
                 <tr>
                   <th>Doc No.</th>
@@ -415,7 +421,7 @@ function PAviationPortal1() {
                     <a href="javascript:void(0);">CSR-104005</a>
                   </td>
                   <td>
-                    <a href="javascript:void(0);">비행 시간 초과운영</a>
+                    <a href="javascript:void(0);">[경감실행] 비행 중 복통으로 인한 승무원 조치 요청 건.</a>
                   </td>
                   <td className="date">2024-07-18</td>
                 </tr>
