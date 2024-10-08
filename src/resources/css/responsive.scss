@@ -65,6 +65,19 @@
 
   /*통합홈*/
   .intro-top-menu .top_container {width: 100%; padding: 2.6rem 2.4rem;}
+  .videovisual .title {        
+    left: 760px;
+    width: 100%;
+    font-size: 66px;
+    text-align: left;
+  }
+  .videovisual .subtitle {
+    left: 760px;
+    width: 100%;
+    line-height: 36px;
+    font-size: 24px;
+    text-align: left;
+  }
 }
 
 
@@ -350,7 +363,7 @@
   .av-main-wrap {grid-template-columns: 1fr;}
   .av-main-wrap .grid-item:nth-of-type(1) {display: inline-table; grid-column-end: span 1;}
   .av-main-wrap .grid-item:nth-of-type(1) .grid-group {display: grid; width: 100%;}
-  .av-main-wrap .grid-item:nth-child(2) {grid-template-rows: 0;}
+  .av-main-wrap .grid-item:nth-child(2) {grid-template-rows: 3.6rem;}
   .av-main-wrap .grid-item:nth-of-type(4) {grid-column-start: 1; grid-column-end: span 1;}
 
   .main-wrap {display: block; height: auto;}
@@ -385,7 +398,14 @@
   .equipbox .right-box{display:block;width:100%;margin-top:1rem}
 
     /*통합홈*/
+    .intro-top-menu {height: 8.0rem;}
     .intro-top-menu .top_container {width: 100%; padding: 2.6rem 2.4rem;}
+    .intro-top-menu .logo a {height: 2.8rem;}
+    .intro-top-menu .logo a img {height: 2.8rem;}
+    .intro-top-menu .GNB {display: none;}
+    .intro-top-menu .M-GNB {display: flex; justify-content: right; align-items: center; position:relative; top: -0.6rem;}
+    .intro-top-menu .M-GNB a img {height: 4.0rem;}
+
 
 }
 
@@ -674,8 +694,14 @@
 
   .btns-area.gridbtn > button {border-radius: 99.9rem !important; position:absolute; right: 0; top: 0;}
 
-    /*통합홈*/
-    .intro-top-menu .top_container {width: 100%; padding: 2.6rem 2.4rem;}
+  /*통합홈*/
+  .intro-top-menu {height: 8.0rem;}
+  .intro-top-menu .top_container {width: 100%; padding: 2.6rem 2.4rem;}
+  .intro-top-menu .logo a {height: 2.8rem;}
+  .intro-top-menu .logo a img {height: 2.8rem;}
+  .intro-top-menu .GNB {display: none;}
+  .intro-top-menu .M-GNB {display: flex; justify-content: right; align-items: center; position:relative; top: -0.6rem;}
+  .intro-top-menu .M-GNB a img {height: 4.0rem;}
 }
 
 

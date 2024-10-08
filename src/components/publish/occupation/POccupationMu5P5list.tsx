@@ -54,16 +54,18 @@ function POccupationMu5P5list() {
         </div>
       </div>
       {/* //검색영역 */}
-      {/*그래프 영역 */}
-      <div className="graph">그래프 영역</div>
-      {/*//그래프 영역 */}
+      <div className="table-wrap">
+        {/*그래프 영역 */}
+        <div className="left-table graph">그래프 영역</div>
+        {/*//그래프 영역 */}
 
-      {/*그리드영역 */}
-      <div>
-        <h3 className="table-tit">위험성 평가 현황</h3>
-        <AppTable rowData={rowData} columns={columns} />
+        {/*그리드영역 */}
+        <div className="right-table">
+          <h3 className="table-tit">위험성 평가 현황</h3>
+          <AppTable rowData={rowData} columns={columns} />
+        </div>
+        {/*//그리드영역 */}
       </div>
-      {/*//그리드영역 */}
     </>
   );
 }

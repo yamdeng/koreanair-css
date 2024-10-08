@@ -954,21 +954,107 @@
   height: 8.8rem; 
   border-bottom: 1px solid rgba(255,255,255,0.4); 
   z-index: 10;
+  min-width: 37.5rem;
   .top_container {position: relative; top: 0; left: 50%; transform: translateX(-50%); width: 144.0rem; height: 100%; padding: 2.6rem 0;}
   .logo {float: left;}
   .logo a {display: flex; justify-content: left; width: 100%; height: 3.2rem;}
   .GNB {float: right;}
   .GNB ul {display: flex;}
-  .GNB ul li a {font-size: 2.2rem; font-weight: 500; padding: 0 2.5rem; color: rgba(255, 255, 255, 0.6);}
+  .GNB ul li {padding: 0 7rem;}
+  .GNB ul li:last-child {padding-right:0;}
+  .GNB ul li a {font-size: 2.2rem; font-weight: 500; color: rgba(255, 255, 255, 0.6); line-height: 3.2rem;}
   .GNB ul li a.active {color: rgba(255, 255, 255, 1.0);}
+  .M-GNB {display: none;}
 }
-.section {}
-.fp-section.fp-table, .fp-slide.fp-table {
-  display: table;
-  table-layout: fixed;
-  width: 100%;
+
+#visual01,#visual02,#visual03 {
+	display:none;
+	position:absolute;
+	width:100%;
+	height:100%;
+	overflow:hidden;
+  top: 0;
 }
-.video-bg {position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 5; background: linear-gradient(-180deg, rgba(0,0,0,0.5), rgba(0,0,0,0.3)), url(../images/bg_stripe.png)}
+
+#visual01 {
+	z-index:1;
+}
+#visual02 {
+	z-index:2;
+}
+#visual03 {
+	z-index:3;
+}
+
+#visual01.active,
+#visual02.active,
+#visual03.active {
+	display:block;
+}
+.videovisual video {
+	width:100%;
+	height:100%;
+	object-fit:cover;
+	object-position:center;
+}
+.videovisual .title {
+	position:absolute;
+	left:50%;
+	transform:translateX(-68.0rem);
+	font-family: 'KoreanAirSans';
+	font-size:6.0rem;
+	color:var(--color-neutral-10);
+	z-index:20;
+	text-shadow:0 0 2.0rem rgba(0,0,0,0.6);
+	opacity:0;
+}
+.videovisual .subtitle {
+	position:absolute;
+	left:50%;
+	transform:translateX(-68.0rem);
+	line-height:4.6rem;
+	font-family: 'KoreanAirSans';
+	font-size:3.0rem;
+	color:var(--color-neutral-10);
+	text-align:left;
+	z-index:20;
+	text-shadow:0 0 1.0rem rgba(0,0,0,0.6);
+	opacity:0;
+}
+
+#visual01 .title {
+	bottom:32.0rem;
+	opacity:0;
+	
+	/* animation */
+	animation-name:visual01_title;
+	animation-duration:2s;
+	animation-delay:1s;
+	animation-fill-mode: both;
+	animation-timing-function: cubic-bezier(0.35, 1.15, 1, 1);
+	animation-direction:alternate;
+}
+@keyframes visual01_title {
+	0% {bottom:32.0rem; opacity:0;}
+	100% {bottom:40.0rem; opacity:1;}
+}
+#visual01 .subtitle {
+	bottom:20.0rem;
+	opacity:0;
+	
+	/* animation */
+	animation-name:visual01_subtitle;
+	animation-duration:2s;
+	animation-delay:1.3s;
+	animation-fill-mode: both;
+	animation-timing-function: cubic-bezier(0.35, 1.15, 1, 1);
+	animation-direction:alternate;
+}
+@keyframes visual01_subtitle {
+	0% {bottom:20.0rem; opacity:0}
+	100% {bottom:28.0rem; opacity:1}
+}
+
 .main-visual01-bg {
   position: relative;
   background-size:cover;
@@ -982,4 +1068,22 @@
   background-position:center;
   background-image:url(../images/main-visual02.jpg);
   height: 100%;
+}
+.video-bg {
+  position: absolute; 
+  top: 0; 
+  left: 0; 
+  width: 100%; 
+  height: 100%; 
+  z-index: 0; 
+  background: linear-gradient(-180deg, rgba(0,0,0,0.05), rgba(0,0,0,0.3)), url(../images/bg_stripe.png);
+}
+.top_shadow {
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:40.0rem;
+	background: linear-gradient(rgba(0,0,0,0.6), transparent);
+	z-index:98;
 }
