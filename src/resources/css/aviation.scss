@@ -423,14 +423,18 @@
 .list-view{
   display:block; 
   width:100%;
+  .head-top{display:flex;width:100%;justify-content:space-between}
+  .head-top > .btns-area.r-btn{margin-top:-1rem}
   h3{font-size:1.8rem;font-weight:500;color:var(--color-darkblue-100);padding-bottom:1.0rem}
+  .gride{display: block;}
   .equip-table{width:100%}
   .equip-table thead tr, .equip-table tbody tr{display:table;width:100%}
-  .equip-table th, .equip-table td {padding:1.5rem 0;border-bottom:0.1rem solid var(--color-neutral-40);text-align:center}
+  .equip-table th{padding:1.5rem 0;border-bottom:0.1rem solid var(--color-neutral-40);text-align:center}
+  .equip-table td{padding:1.5rem 0.3rem;border-bottom:0.1rem solid var(--color-neutral-40);text-align:center}
   .equip-table th:nth-child(1), .equip-table td:nth-child(1){width:10%}
   .equip-table th:nth-child(2), .equip-table td:nth-child(2){width:15%}
-  .equip-table th:nth-child(3), .equip-table td:nth-child(3){width:12%}
-  .equip-table th:nth-child(4), .equip-table td:nth-child(4){width:12%}
+  .equip-table th:nth-child(3), .equip-table td:nth-child(3){width:15%}
+  .equip-table th:nth-child(4), .equip-table td:nth-child(4){width:15%}
   .equip-table th:nth-child(5), .equip-table td:nth-child(5){width:15%}
   .equip-table th:nth-child(6), .equip-table td:nth-child(6){width:15%}
   .equip-table th:nth-child(7), .equip-table td:nth-child(7){width:15%}

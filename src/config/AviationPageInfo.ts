@@ -103,6 +103,7 @@ import RiskList1 from '@/components/publish/aviation/RiskList1';
 import AdminCordList from '@/components/publish/aviation/AdminCordList';
 import AdminNoticeList from '@/components/publish/aviation/AdminNoticeList';
 import AdminPreferences from '@/components/publish/aviation/AdminPreferences';
+import AdminEquipList from '@/components/publish/aviation/AdminEquipList';
 
 import { fa, fakerLV } from '@faker-js/faker';
 import { fail } from 'assert';
@@ -711,10 +712,10 @@ AviationPageInfo.list = [
   },
   {
     title: '[07.관리자] 장비점검관리',
-    Component: AdminBoardList,
-    path: 'AdminBoardList',
+    Component: AdminEquipList,
+    path: 'AdminEquipList',
     description: '',
-    success: false,
+    success: true,
   },
   {
     title: '[07.관리자] ESP 관리',

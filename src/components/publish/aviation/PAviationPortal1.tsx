@@ -428,7 +428,7 @@ function PAviationPortal1() {
                   </td>
                   <td>2024-07-18</td>
                 </tr>
-                <tr>
+                {/* <tr>
                   <td>
                     <a href="javascript:void(0);">CSR-104005</a>
                   </td>
@@ -454,7 +454,7 @@ function PAviationPortal1() {
                     <a href="javascript:void(0);">비행 시간 초과운영</a>
                   </td>
                   <td>2024-07-18</td>
-                </tr>
+                </tr> */}
               </tbody>
             </table>
           </div>
