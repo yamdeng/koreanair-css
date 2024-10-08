@@ -478,7 +478,9 @@ function PAviationPortal1() {
             </div>
             <div className="main-photo">
               <img src={mainphoto2} className="" alt="photo" />
-              <h3 className="ph-img-tit">2024년 1분기 산업안전보건 모범직원</h3>
+              <h3 className="ph-img-tit">
+                <span>2024년 1분기 산업안전보건 모범직원</span>
+              </h3>
             </div>
           </Slider>
         </div>
