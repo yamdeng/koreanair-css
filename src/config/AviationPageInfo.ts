@@ -998,7 +998,7 @@ AviationPageInfo.list = [
     Component: AdminRiskMATRIXDetail,
     path: 'AdminRiskMATRIXDetail',
     description: '',
-    success: false,
+    success: true,
   },
 ];
 
