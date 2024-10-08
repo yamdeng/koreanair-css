@@ -104,6 +104,7 @@ import AdminCordList from '@/components/publish/aviation/AdminCordList';
 import AdminNoticeList from '@/components/publish/aviation/AdminNoticeList';
 import AdminPreferences from '@/components/publish/aviation/AdminPreferences';
 import AdminEquipList from '@/components/publish/aviation/AdminEquipList';
+import CentralizedReportDetail from '@/components/publish/aviation/CentralizedReportDetail';
 
 import { fa, fakerLV } from '@faker-js/faker';
 import { fail } from 'assert';
@@ -141,8 +142,8 @@ AviationPageInfo.list = [
   },
   {
     title: '[01.안전보고서] Centralized Report 상세',
-    Component: CentralizedReportList,
-    path: 'CentralizedReportList',
+    Component: CentralizedReportDetail,
+    path: 'CentralizedReportDetail',
     description: '',
     success: false,
   },

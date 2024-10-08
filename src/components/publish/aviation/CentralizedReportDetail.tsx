@@ -6,7 +6,7 @@ import AppTextInput from '@/components/common/AppTextInput';
 import { getAllData } from '@/data/grid/example-data-new';
 import { testColumnInfos } from '@/data/grid/table-column';
 
-function CentralizedReportList() {
+function CentralizedReportDetail() {
   const rowData = getAllData();
   const columns = testColumnInfos;
   return (
@@ -21,13 +21,13 @@ function CentralizedReportList() {
             <a href="javascript:void(0);">안전보고서</a>
           </li>
           <li className="breadcrumb-item">
-            <a href="javascript:void(0);">Centralized Report 상세</a>
+            <a href="javascript:void(0);">Centralized Report</a>
           </li>
         </ol>
       </div>
       {/*경로 */}
       <div className="conts-title">
-        <h2>Centralized Report 상세</h2>
+        <h2>Centralized Report</h2>
       </div>
       {/*검색영역 */}
       <div className="boxForm det">
@@ -212,13 +212,13 @@ function CentralizedReportList() {
                 <td className=""></td>
               </tr>
               <tr>
-                <td rowSpan={2}>
+                <td rowSpan="2">
                   <a href="javascript:void(0);">CSR-100303</a>
                 </td>
-                <td rowSpan={2} className="tl">
+                <td rowSpan="2" className="tl">
                   자발적 하기 승객 발생
                 </td>
-                <td rowSpan={2} className="tl">
+                <td rowSpan="2" className="tl">
                   Deplane (Voluntary)
                 </td>
                 <td className="tl">COVID-19 Cluster Infection</td>
@@ -255,4 +255,4 @@ function CentralizedReportList() {
   );
 }
 
-export default CentralizedReportList;
+export default CentralizedReportDetail;

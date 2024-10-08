@@ -863,9 +863,10 @@ function ReportASRDetail() {
                                           </div>
                                         </div>
 
+                                        {/* 이 부분수정 */}
                                         <div className="form-table">
-                                          <div className="form-cell wid50">
-                                            <div className="form-group wid50">
+                                          <div className="form-cell wid100">
+                                            <div className="form-group wid100">
                                               <div className="UserChicebox error">
                                                 <div className="form-group wid100">
                                                   <AppSelect label={'LSC Member'} />
@@ -901,20 +902,21 @@ function ReportASRDetail() {
                                                 </div>
                                               </div>
                                             </div>
-                                            <div className="form-cell wid50">
-                                              <div className="btn-area">
-                                                <button
-                                                  type="button"
-                                                  name="button"
-                                                  className="btn-sm btn_text btn-darkblue-line"
-                                                >
-                                                  LSC Member 그룹 추가
-                                                </button>
-                                              </div>
+                                          </div>
+                                          <div className="form-cell wid100">
+                                            <div className="btn-area">
+                                              <button
+                                                type="button"
+                                                name="button"
+                                                className="btn-sm btn_text btn-darkblue-line"
+                                              >
+                                                LSC Member 그룹 추가
+                                              </button>
                                             </div>
                                           </div>
                                         </div>
                                       </div>
+                                      {/* 이 부분수정 */}
 
                                       {/*보고서접수-ASR*/}
                                       <div className="form-table ">
