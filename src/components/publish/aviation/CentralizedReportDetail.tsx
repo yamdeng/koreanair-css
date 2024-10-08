@@ -5,10 +5,13 @@ import AppTable from '@/components/common/AppTable';
 import AppTextInput from '@/components/common/AppTextInput';
 import { getAllData } from '@/data/grid/example-data-new';
 import { testColumnInfos } from '@/data/grid/table-column';
+import { useState } from 'react';
 
 function CentralizedReportDetail() {
   const rowData = getAllData();
   const columns = testColumnInfos;
+  const [firstExpaned, setFirstExpaned] = useState(true);
+  const [secondExpaned, setSecondExpaned] = useState(true);
   return (
     <>
       {/*경로 */}
@@ -29,102 +32,105 @@ function CentralizedReportDetail() {
       <div className="conts-title">
         <h2>Centralized Report</h2>
       </div>
-      {/*검색영역 */}
-      <div className="boxForm det">
-        {/*area-detail명 옆에 active  */}
-        <div id="" className="area-detail active">
-          <div className="form-table">
-            <div className="form-cell wid50">
-              <div className="form-group form-glow">
-                <div className="df">
-                  <div className="date1">
-                    <AppDatePicker label={'출발일자'} />
-                  </div>
-                  <span className="unt">~</span>
-                  <div className="date2">
-                    <AppDatePicker label={'출발일자'} />
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="form-cell wid50">
-              <div className="form-group va-t ant-input wid100 h4">
-                <span className="ant-input-group-addon1">KE</span>
-                <div className="ant-input-group-addon1-input wid50">
-                  {/*편명 */}
-                  <AppTextInput label="편명" />
-                </div>
-              </div>
-            </div>
-            <div className="form-cell wid50">
-              <div className="form-group va-t ant-input wid100 h4">
-                <span className="ant-input-group-addon1">HL</span>
-                <div className="ant-input-group-addon1-input wid50">
-                  {/*등록부호 */}
-                  <AppTextInput label="등록부호" />
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="form-table">
-            <div className="form-cell wid100">
-              <div className="form-group wid100">
-                <AppTextInput label={'Subject'} />
-              </div>
-            </div>
-            <div className="form-cell wid100">
-              {' '}
-              <div className="btn-area">
-                <button type="button" name="button" className="btn-sm btn_text btn-darkblue-line">
-                  조회
-                </button>
-                <button type="button" name="button" className="btn-sm btn_text btn-darkblue-line">
-                  초기화
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-        {/*__control명 옆에 active  */}
-        <button type="button" name="button" className="arrow button _control active">
-          <span className="hide">접기</span>
-        </button>
-      </div>
-      {/* //검색영역 */}
-
-      {/*그리드영역 */}
-      <div className="">
-        <AppTable rowData={rowData} columns={columns} />
-      </div>
-      {/*//그리드영역 */}
-      <div>
-        <div className="table-header">
-          <div className="btns-area">
-            <button name="button" className="btn_text btn_confirm text_color_neutral-10">
-              보고서 추가
-            </button>
-            <button name="button" className="btn_text btn_confirm text_color_neutral-10">
-              보고서 해제
-            </button>
-          </div>
-        </div>
-        <div className="tableTop">
-          <table className="RiskLevelTable left">
-            <caption></caption>
+      <div className="editbox">
+        <div className="listtable">
+          <table className="info-board">
             <colgroup>
-              <col width="10%" />
-              <col width="25%" />
-              <col width="10%" />
-              <col width="20%" />
+              <col width="16%" />
               <col width="15%" />
-              <col width="10%" />
-              <col width="5%" />
-              <col width="5%" />
+              <col width="16%" />
+              <col width="15%" />
+              <col width="16%" />
+              <col width="15%" />
+            </colgroup>
+            <tbody>
+              <tr>
+                <th>Departure Date</th>
+                <td className="tl">2024-08-05 UTC</td>
+                <th>Flight No.</th>
+                <td className="tl">KE0787</td>
+                <th>Registration No.</th>
+                <td className="tl">HL7783</td>
+              </tr>
+              <tr>
+                <th>
+                  Subject <span className="required">*</span>
+                </th>
+                <td className="tl" colSpan={5}>
+                  20240802-KE0787-HL7751
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        {/*상세*/}
+        <div className="info-wrap toggle mt20">
+          <dl className={firstExpaned ? 'tg-item active' : 'tg-item'}>
+            <dt onClick={() => setFirstExpaned(!firstExpaned)}>
+              <button type="button" className="btn-tg">
+                {/* toggle 열어지면 active붙임*/}
+                ASR-100301 <span className={firstExpaned ? 'active' : ''}></span>
+              </button>
+            </dt>
+            <dd className="tg-conts" style={{ display: firstExpaned ? '' : 'none' }}>
+              {/* 상세*/}
+              <div className="edit-area">
+                <div className="detailForm">
+                  <div className="editbox report">
+                    <div className="form-table line">
+                      <div className="form-cell wid100">
+                        <div className="form-group wid100">
+                          <div className="box-view-list">
+                            <ul className="view-list">
+                              <li className="accumlate-list">
+                                <label className="t-label">Subject</label>
+                                <span className="text-desc-type1"> Hydraulic System Fail로 인한 Heavy Delay</span>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="form-table line">
+                      <div className="form-cell wid100">
+                        <div className="form-group wid100">
+                          <div className="box-view-list">
+                            <ul className="view-list">
+                              <li className="accumlate-list">
+                                <label className="t-label">Description</label>
+                                <span className="text-desc-type1">
+                                  HL7783 KE0787(HAN/ICN) 편 Inbound중 CRZ Altitude FL371(11300m)에서 F/O석 CRS Indicator
+                                  Light 가 Out되는 현상 발생.(지상 및 CLB시에는 정상 작동하였음) 문제점 확인을 위해
+                                  Light Test를 수행하자 Test는 정상이나 Test가 끝난 후에 다시 Light가 Out됨. PFD에서
+                                  Course의 움직임을 확인한 결과 정상 작동하므로 단순한 MCP의 Course Indicator의 Fault로
+                                  판단됨.
+                                </span>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </dd>
+          </dl>
+        </div>
+
+        <div className="listtable">
+          <table className="info-board">
+            <colgroup>
+              <col width="16%" />
+              <col width="22%" />
+              <col width="16%" />
+              <col width="15%" />
+              <col width="16%" />
+              <col width="15%" />
             </colgroup>
             <thead>
               <tr>
-                <th>Doc No.</th>
-                <th>Subject</th>
                 <th>Event Type</th>
                 <th>Hazard</th>
                 <th>Potential Consequence</th>
@@ -135,122 +141,105 @@ function CentralizedReportDetail() {
             </thead>
             <tbody>
               <tr>
-                <td rowSpan={2}>
-                  <a href="javascript:void(0);">ASR-100301</a>
-                </td>
-                <td rowSpan={2} className="tl">
-                  Hydraulic System Fail로 인한 Heavy Delay
-                </td>
-                <td rowSpan={2} className="tl">
-                  Delay
-                </td>
-                <td className="tl">Aircraft Change</td>
-                <td className="tl">Hail</td>
-                <td className="">접수</td>
-                <td className=""></td>
-                <td className=""></td>
-              </tr>
-              <tr>
-                <td className="tl">Boarding Refusal</td>
-                <td className="tl">Lightning strike</td>
-                <td className="">1차위험평가</td>
-                <td className="">
+                <td rowSpan={3}>aircraft Defect</td>
+                <td className="tl">Bomb threat</td>
+                <td className="tl">Sandstorm</td>
+                <td className="fix vm">접수</td>
+                <td>
+                  {/*위험도 컬러CSS level1: 레드, level2: 오렌지 , level3:노랑 , level4:그린*/}
                   <div className="Safety-table-cell">
                     <span className="Safety-tag riskLevel level2">3B</span>
                   </div>
                 </td>
-                <td className="">
+                <td></td>
+              </tr>
+              <tr>
+                <td className="tl">Cabin Crew Illness</td>
+                <td className="tl">Sandstorm</td>
+                <td className="fix vm">2차위험평가</td>
+                <td>
+                  {/*위험도 컬러CSS level1: 레드, level2: 오렌지 , level3:노랑 , level4:그린*/}
+                  <div className="Safety-table-cell">
+                    <span className="Safety-tag riskLevel level2">3B</span>
+                  </div>
+                </td>
+                <td>
                   <div className="Safety-table-cell">
                     <span className="Safety-tag riskLevel level4">1C</span>
                   </div>
                 </td>
               </tr>
               <tr>
-                <td rowSpan={3}>
-                  <a href="javascript:void(0);">MSR-100302</a>
-                </td>
-                <td rowSpan={3} className="tl">
-                  Hydraulic System Fail로 인한 Ramp Return
-                </td>
-                <td rowSpan={3} className="tl">
-                  aircraft Defect
-                </td>
-                <td className="tl">Bomb threat</td>
-                <td className="tl">Sandstorm</td>
-                <td className="">경감조치</td>
-                <td className="">
-                  <div className="Safety-table-cell">
-                    <span className="Safety-tag riskLevel level3">3C</span>
-                  </div>
-                </td>
-                <td className=""></td>
-              </tr>
-              <tr>
-                <td className="tl">Cabin Crew Illness</td>
-                <td className="tl">Heavy rain</td>
-                <td className="">2차위험평가</td>
-                <td className="">
-                  <div className="Safety-table-cell">
-                    <span className="Safety-tag riskLevel level1">5B</span>
-                  </div>
-                </td>
-                <td className="">
-                  <div className="Safety-table-cell">
-                    <span className="Safety-tag riskLevel level4">1D</span>
-                  </div>
-                </td>
-              </tr>
-              <tr>
                 <td className="tl">Cabin Crew Incapacitation due to injury</td>
                 <td className="tl">Thunderstorm</td>
-                <td className="">경감조치</td>
-                <td className="">
+                <td className="fix vm">경감조치</td>
+                <td>
+                  {/*위험도 컬러CSS level1: 레드, level2: 오렌지 , level3:노랑 , level4:그린*/}
                   <div className="Safety-table-cell">
-                    <span className="Safety-tag riskLevel level2">2A</span>
+                    <span className="Safety-tag riskLevel level3">5C</span>
                   </div>
                 </td>
-                <td className=""></td>
-              </tr>
-              <tr>
-                <td rowSpan="2">
-                  <a href="javascript:void(0);">CSR-100303</a>
-                </td>
-                <td rowSpan="2" className="tl">
-                  자발적 하기 승객 발생
-                </td>
-                <td rowSpan="2" className="tl">
-                  Deplane (Voluntary)
-                </td>
-                <td className="tl">COVID-19 Cluster Infection</td>
-                <td className="tl">Typhoon/Cyclone</td>
-                <td className="">경감조치</td>
-                <td className="">
-                  <div className="Safety-table-cell">
-                    <span className="Safety-tag riskLevel level1">3A</span>
-                  </div>
-                </td>
-                <td className=""></td>
-              </tr>
-              <tr>
-                <td className="tl">Crew/Pax Injury</td>
-                <td className="tl">Snow/Slush encounter</td>
-                <td className="">종결</td>
-                <td className="">
-                  <div className="Safety-table-cell">
-                    <span className="Safety-tag riskLevel level3">5E</span>
-                  </div>
-                </td>
-                <td className="">
-                  <div className="Safety-table-cell">
-                    <span className="Safety-tag riskLevel level4">1E</span>
-                  </div>
-                </td>
+                <td></td>
               </tr>
             </tbody>
           </table>
         </div>
+
+        {/*상세*/}
+        <div className="info-wrap toggle mt20">
+          <dl className={secondExpaned ? 'tg-item active' : 'tg-item'}>
+            <dt onClick={() => setSecondExpaned(!secondExpaned)}>
+              <button type="button" className="btn-tg">
+                {/* toggle 열어지면 active붙임*/}
+                MSR-100302 <span className={secondExpaned ? 'active' : ''}></span>
+              </button>
+            </dt>
+            <dd className="tg-conts" style={{ display: secondExpaned ? '' : 'none' }}>
+              {/* 상세*/}
+              <div className="edit-area">
+                <div className="detailForm">
+                  <div className="editbox report">
+                    <div className="form-table line">
+                      <div className="form-cell wid100">
+                        <div className="form-group wid100">
+                          <div className="box-view-list">
+                            <ul className="view-list">
+                              <li className="accumlate-list">
+                                <label className="t-label">Subject</label>
+                                <span className="text-desc-type1"> Hydraulic System Fail로 인한 Heavy Delay</span>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="form-table line">
+                      <div className="form-cell wid100">
+                        <div className="form-group wid100">
+                          <div className="box-view-list">
+                            <ul className="view-list">
+                              <li className="accumlate-list">
+                                <label className="t-label">Description</label>
+                                <span className="text-desc-type1">
+                                  HL7783 KE0787(HAN/ICN) 편 Inbound중 CRZ Altitude FL371(11300m)에서 F/O석 CRS Indicator
+                                  Light 가 Out되는 현상 발생.(지상 및 CLB시에는 정상 작동하였음) 문제점 확인을 위해
+                                  Light Test를 수행하자 Test는 정상이나 Test가 끝난 후에 다시 Light가 Out됨. PFD에서
+                                  Course의 움직임을 확인한 결과 정상 작동하므로 단순한 MCP의 Course Indicator의 Fault로
+                                  판단됨.
+                                </span>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </dd>
+          </dl>
+        </div>
       </div>
-      {/* <AppTable rowData={rowData} columns={columns} customButtons={customButtons} />*/}
     </>
   );
 }

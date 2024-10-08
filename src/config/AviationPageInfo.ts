@@ -105,6 +105,7 @@ import AdminNoticeList from '@/components/publish/aviation/AdminNoticeList';
 import AdminPreferences from '@/components/publish/aviation/AdminPreferences';
 import AdminEquipList from '@/components/publish/aviation/AdminEquipList';
 import CentralizedReportDetail from '@/components/publish/aviation/CentralizedReportDetail';
+import AdminBannerList from '@/components/publish/aviation/AdminBannerList';
 
 import { fa, fakerLV } from '@faker-js/faker';
 import { fail } from 'assert';
@@ -145,7 +146,7 @@ AviationPageInfo.list = [
     Component: CentralizedReportDetail,
     path: 'CentralizedReportDetail',
     description: '',
-    success: false,
+    success: true,
   },
   {
     title: '[01.안전보고서] My Report 리스트',
@@ -818,10 +819,10 @@ AviationPageInfo.list = [
   },
   {
     title: '[07.관리자] 배너관리',
-    Component: AdminReportDateList,
-    path: 'AdminReportDateList',
+    Component: AdminBannerList,
+    path: 'AdminBannerList',
     description: '',
-    success: false,
+    success: true,
   },
   {
     title: '[07.관리자] 메일양식관리 > 리스트',

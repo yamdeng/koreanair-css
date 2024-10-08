@@ -645,14 +645,22 @@
 
 
 /*공통테이블*/
+:root {
+--color-Level:#DA291C;
+--color-Leve2:#FF8902;
+--color-Leve3:#FFDD33;
+--color-Leve4:#02C27F;
+--color-Leve5: #cef761;
+--color-Leve6: #ffb533;}
+
 .Safety-table-cell{text-align:center;align-items:center}
 .Safety-table-cell a, a:visited{color:var(--color-mblue-100)}
 .Safety-table-celle a:hover, .Safety-table-cell a:focus{color:var(--color-darkblue-100)}
 .Safety-tag{display:inline-block;box-sizing:border-box;color:var(-color-neutral-10);font-size:1.4rem;font-family:'KoreanAirSans';border-radius:99.9rem;line-height:1.5715;margin:0 0.8rem 0 0;padding:0.1rem 1.5rem;white-space:nowrap}
-.Safety-tag.riskLevel.level4{background-color:var(--color-Leve4)}
-.Safety-tag.riskLevel.level3{background-color:var(--color-Leve3)}
-.Safety-tag.riskLevel.level2{background-color:var(--color-Leve2)}
-.Safety-tag.riskLevel.level1{background-color:var(--color-Level)}
+.Safety-tag.riskLevel.level4{background-color:var(--color-Leve4)}/*그린*/
+.Safety-tag.riskLevel.level3{background-color:var(--color-Leve3)}/*옐로우*/
+.Safety-tag.riskLevel.level2{background-color:var(--color-Leve2)}/*오렌지*/
+.Safety-tag.riskLevel.level1{background-color:var(--color-Level)}/*레드*/
 .Safety-tag.riskLevel{font-weight:600;text-align:center;color:var(--color-neutral-10) !important}
 .Safety-tag.Select{font-weight:600;text-align:center;background-color:var(--color-darkblue-100);color:var(--color-neutral-10) !important}
 
