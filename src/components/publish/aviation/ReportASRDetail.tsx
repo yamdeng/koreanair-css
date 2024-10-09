@@ -2118,10 +2118,10 @@ function ReportASRDetail() {
                                           <table className="info-board">
                                             <colgroup>
                                               <col width="25%" />
-                                              <col width="20%" />
+                                              <col width="18%" />
+                                              <col width="12%" />
                                               <col width="8%" />
-                                              <col width="8%" />
-                                              <col width="20%" />
+                                              <col width="18%" />
                                               <col width="10%" />
                                               <col width="9%" />
                                             </colgroup>
@@ -2156,8 +2156,8 @@ function ReportASRDetail() {
                                                 <td className="tl">LSC김리더(LeaderKim)</td>
                                                 <td>평가중</td>
                                                 <td>
-                                                  <a href="javascript:void(0);">
-                                                    <span className="delete">X</span>
+                                                  <a href="javascript:void(0);" className="btn-modify">
+                                                    delete
                                                   </a>
                                                 </td>
                                               </tr>
@@ -2180,8 +2180,8 @@ function ReportASRDetail() {
                                                 <td className="tl">LSC김리더(LeaderKim)</td>
                                                 <td>평가중</td>
                                                 <td>
-                                                  <a href="javascript:void(0);">
-                                                    <span className="delete">X</span>
+                                                  <a href="javascript:void(0);" className="btn-modify">
+                                                    delete
                                                   </a>
                                                 </td>
                                               </tr>
@@ -2201,8 +2201,249 @@ function ReportASRDetail() {
                                         </div>
                                       </div>
                                     </div>
+
+                                    <div className="edit-area">
+                                      <div className="editbox">
+                                        <div className="form-table line">
+                                          <div className="form-cell wid50">
+                                            <div className="form-group wid100">
+                                              <AppSelect label={'Hazard'} required />
+                                            </div>
+                                          </div>
+                                          <div className="form-cell wid50">
+                                            <div className="form-group wid50">
+                                              <AppSelect label={'Potential Consequence'} required />
+                                            </div>
+                                            <div className="form-group wid50">
+                                              <div className="tag-info-wrap-end1">
+                                                <div className="tip">
+                                                  <a href="javascript:void(0);" className="txt"></a>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+
+                                        {/* 버튼*/}
+                                        <div className="contents-btns">
+                                          <button
+                                            type="button"
+                                            name="button"
+                                            className="btn_text text_color_neutral-10 btn_confirm"
+                                          >
+                                            + Add
+                                          </button>
+                                          <button
+                                            type="button"
+                                            name="button"
+                                            className="btn_text text_color_neutral-10 btn_confirm"
+                                          >
+                                            위험레벨조회
+                                          </button>
+                                        </div>
+                                        {/* //버튼*/}
+
+                                        <div className="listtable">
+                                          <table className="info-board">
+                                            <colgroup>
+                                              <col width="25%" />
+                                              <col width="18%" />
+                                              <col width="12%" />
+                                              <col width="8%" />
+                                              <col width="18%" />
+                                              <col width="10%" />
+                                              <col width="9%" />
+                                            </colgroup>
+                                            <thead>
+                                              <tr>
+                                                <th>Hazard</th>
+                                                <th>Potential Consequence</th>
+                                                <th>Risk Level 1</th>
+                                                <th>Mitigation</th>
+                                                <th>Register</th>
+                                                <th>Status</th>
+                                                <th>Action</th>
+                                              </tr>
+                                            </thead>
+                                            <tbody>
+                                              <tr>
+                                                <td className="tl">Lightning strike Environmental/Weather</td>
+                                                <td className="tl">Aircraft Change</td>
+                                                <td>
+                                                  <div className="form-cell">
+                                                    <div className="form-group wid100">
+                                                      <AppSelect label={'select'} />
+                                                    </div>
+                                                  </div>
+                                                </td>
+                                                <td className="fix vm">
+                                                  <div className="radio-wrap center">
+                                                    <label className="text-no">
+                                                      <input type="checkbox" />
+                                                      <span className="text-no"></span>
+                                                    </label>
+                                                  </div>
+                                                </td>
+                                                <td className="tl">LSC김리더(LeaderKim)</td>
+                                                <td>평가중</td>
+                                                <td>
+                                                  <a href="javascript:void(0);" className="btn-modify">
+                                                    delete
+                                                  </a>
+                                                </td>
+                                              </tr>
+                                            </tbody>
+                                          </table>
+                                        </div>
+                                        <div className="form-table line">
+                                          <div className="form-cell wid100">
+                                            <div className="form-group wid100">
+                                              <AppTextArea
+                                                label="회의록"
+                                                style={{ width: '100%', height: 145 }}
+                                                errorMessage=""
+                                              />
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    {/*위험평가(HZD) */}
+                                    <div className="edit-area">
+                                      <div className="editbox">
+                                        <div className="form-table line">
+                                          <div className="form-cell wid50">
+                                            <div className="group-box-wrap wid100">
+                                              {/* <span className="txt"></span> */}
+                                              <div className="radio-wrap ">
+                                                <label>
+                                                  <input type="checkbox" checked />
+                                                  <span>
+                                                    항공HZD여부 <span className="required">*</span>
+                                                  </span>
+                                                </label>
+                                                <label>
+                                                  <input type="checkbox" />
+                                                  <span>
+                                                    산업HZD여부 <span className="required">*</span>
+                                                  </span>
+                                                </label>
+                                                <label>
+                                                  <input type="checkbox" />
+                                                  <span>보안HZD여부</span>
+                                                </label>
+                                              </div>
+                                            </div>
+                                          </div>
+                                          <div className="form-cell wid50">
+                                            <div className="form-group wid100">
+                                              <AppSelect label={'Hazard'} required />
+                                            </div>
+                                          </div>
+                                          <div className="form-cell wid50">
+                                            <div className="form-group wid50">
+                                              <AppSelect label={'Potential Consequence'} required />
+                                            </div>
+                                            <div className="form-group wid50">
+                                              <div className="tag-info-wrap-end1">
+                                                <div className="tip">
+                                                  <a href="javascript:void(0);" className="txt"></a>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+
+                                        {/* 버튼*/}
+                                        <div className="contents-btns">
+                                          <button
+                                            type="button"
+                                            name="button"
+                                            className="btn_text text_color_neutral-10 btn_confirm"
+                                          >
+                                            + Add
+                                          </button>
+                                          <button
+                                            type="button"
+                                            name="button"
+                                            className="btn_text text_color_neutral-10 btn_confirm"
+                                          >
+                                            위험레벨조회
+                                          </button>
+                                        </div>
+                                        {/* //버튼*/}
+
+                                        <div className="listtable">
+                                          <table className="info-board">
+                                            <colgroup>
+                                              <col width="25%" />
+                                              <col width="18%" />
+                                              <col width="12%" />
+                                              <col width="8%" />
+                                              <col width="18%" />
+                                              <col width="10%" />
+                                              <col width="9%" />
+                                            </colgroup>
+                                            <thead>
+                                              <tr>
+                                                <th>Hazard</th>
+                                                <th>Potential Consequence</th>
+                                                <th>Risk Level 1</th>
+                                                <th>Mitigation</th>
+                                                <th>Register</th>
+                                                <th>Status</th>
+                                                <th>Action</th>
+                                              </tr>
+                                            </thead>
+                                            <tbody>
+                                              <tr>
+                                                <td className="tl">Lightning strike Environmental/Weather</td>
+                                                <td className="tl">Aircraft Change</td>
+                                                <td>
+                                                  <div className="form-cell">
+                                                    <div className="form-group wid100">
+                                                      <AppSelect label={'select'} />
+                                                    </div>
+                                                  </div>
+                                                </td>
+                                                <td className="fix vm">
+                                                  <div className="radio-wrap center">
+                                                    <label className="text-no">
+                                                      <input type="checkbox" />
+                                                      <span className="text-no"></span>
+                                                    </label>
+                                                  </div>
+                                                </td>
+                                                <td className="tl">LSC김리더(LeaderKim)</td>
+                                                <td>평가중</td>
+                                                <td>
+                                                  <a href="javascript:void(0);" className="btn-modify">
+                                                    delete
+                                                  </a>
+                                                </td>
+                                              </tr>
+                                            </tbody>
+                                          </table>
+                                        </div>
+                                        <div className="form-table line">
+                                          <div className="form-cell wid100">
+                                            <div className="form-group wid100">
+                                              <AppTextArea
+                                                label="회의록"
+                                                style={{ width: '100%', height: 145 }}
+                                                errorMessage=""
+                                              />
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+
                                     {/* 하단버튼영역 */}
                                     <div className="contents-btns">
+                                      <button type="button" name="button" className="btn_text btn-del">
+                                        LSC종결
+                                      </button>
                                       <button type="button" name="button" className="btn_text btn-del">
                                         인쇄
                                       </button>
@@ -2244,10 +2485,10 @@ function ReportASRDetail() {
                                         <table className="info-board">
                                           <colgroup>
                                             <col width="25%" />
-                                            <col width="20%" />
+                                            <col width="18%" />
+                                            <col width="12%" />
                                             <col width="8%" />
-                                            <col width="8%" />
-                                            <col width="20%" />
+                                            <col width="18%" />
                                             <col width="10%" />
                                             <col width="9%" />
                                           </colgroup>
@@ -2393,10 +2634,10 @@ function ReportASRDetail() {
                                         <table className="info-board">
                                           <colgroup>
                                             <col width="25%" />
-                                            <col width="20%" />
+                                            <col width="18%" />
+                                            <col width="12%" />
                                             <col width="8%" />
-                                            <col width="8%" />
-                                            <col width="20%" />
+                                            <col width="18%" />
                                             <col width="10%" />
                                             <col width="9%" />
                                           </colgroup>
@@ -2476,10 +2717,10 @@ function ReportASRDetail() {
                                         <table className="info-board">
                                           <colgroup>
                                             <col width="25%" />
-                                            <col width="20%" />
+                                            <col width="18%" />
+                                            <col width="12%" />
                                             <col width="8%" />
-                                            <col width="8%" />
-                                            <col width="20%" />
+                                            <col width="18%" />
                                             <col width="10%" />
                                             <col width="9%" />
                                           </colgroup>
@@ -2552,10 +2793,10 @@ function ReportASRDetail() {
                                         <table className="info-board">
                                           <colgroup>
                                             <col width="25%" />
-                                            <col width="20%" />
+                                            <col width="18%" />
+                                            <col width="12%" />
                                             <col width="8%" />
-                                            <col width="8%" />
-                                            <col width="20%" />
+                                            <col width="18%" />
                                             <col width="10%" />
                                             <col width="9%" />
                                           </colgroup>

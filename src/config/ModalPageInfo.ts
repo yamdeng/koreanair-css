@@ -61,6 +61,8 @@ import AMO2Modal from '@/components/publish/modal/AMO2Modal';
 import AMO3Modal from '@/components/publish/modal/AMO3Modal';
 import findingcategoryModal from '@/components/publish/modal/findingcategoryModal';
 import rootcauseModal from '@/components/publish/modal/rootcauseModal';
+import PRiskModal from '@/components/publish/modal/PRiskModal';
+
 const ModalPageInfo: any = {};
 
 ModalPageInfo.list = [
@@ -205,6 +207,13 @@ ModalPageInfo.list = [
     success: true,
   },
   {
+    title: '[항공안전>03.안전위험관리] 보고서분석 > 위험평가 팝업창',
+    Component: PRiskModal,
+    path: 'PRiskModal',
+    description: '',
+    success: true,
+  },
+  {
     title: '[항공안전>03.안전위험관리] 보고서분석 > 위험레벨조회 팝업창',
     Component: PReportLevelModal,
     path: 'PReportLevelModal',
@@ -219,7 +228,7 @@ ModalPageInfo.list = [
     success: true,
   },
   {
-    title: '[항공안전> 03.안전위험관리] 안전조사 > 조사보고서 > 참고문서번호 팝업창',
+    title: '[항공안전> 03.안전위험관리] 안전조사 > 조사보고서 > 참고문서번호(리포트찾기) 팝업창',
     Component: PReportDocumentModal,
     path: 'PReportDocumentModal',
     description: '',
