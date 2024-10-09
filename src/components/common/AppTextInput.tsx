@@ -74,7 +74,6 @@ function AppTextInput(props) {
 
       <label className="f-label" htmlFor={id} style={{ display: label ? '' : 'none' }}>
         {label} {required ? <span className="required">*</span> : null}
-        <span></span>
         {toolTipMessage ? (
           <div className="tooltip">
             <span

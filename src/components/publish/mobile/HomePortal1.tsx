@@ -29,7 +29,98 @@ function HomePortal1() {
               <li>
                 <a href="javascript:void(0);">안전보고서</a>
                 {/* dropmenu */}
-                <div>fdafdsfds</div>
+                <div>
+                  <table className="portal-menu">
+                    <tr>
+                      <th>
+                        <a href="javascript:void(0);">운항</a>
+                      </th>
+                      <td>
+                        <a href="javascript:void(0);">ASR</a>
+                      </td>
+                      <td>
+                        <a href="javascript:void(0);">HZR</a>
+                      </td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <th>
+                        <a href="javascript:void(0);">객실</a>
+                      </th>
+                      <td>
+                        <a href="javascript:void(0);">CSR</a>
+                      </td>
+                      <td>
+                        <a href="javascript:void(0);">HZR</a>
+                      </td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <th>
+                        <a href="javascript:void(0);">정비</a>
+                      </th>
+                      <td>
+                        <a href="javascript:void(0);">MSR</a>
+                      </td>
+                      <td>
+                        <a href="javascript:void(0);">HZR</a>
+                      </td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <th>
+                        <a href="javascript:void(0);">통제</a>
+                      </th>
+                      <td>
+                        <a href="javascript:void(0);">GSR</a>
+                      </td>
+                      <td>
+                        <a href="javascript:void(0);">DSR</a>
+                      </td>
+                      <td>
+                        <a href="javascript:void(0);">HZR</a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th>
+                        <a href="javascript:void(0);">여객</a>
+                      </th>
+                      <td>
+                        <a href="javascript:void(0);">GSR</a>
+                      </td>
+                      <td>
+                        <a href="javascript:void(0);">HZR</a>
+                      </td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <th>
+                        <a href="javascript:void(0);">화물</a>
+                      </th>
+                      <td>
+                        <a href="javascript:void(0);">GSR</a>
+                      </td>
+                      <td>
+                        <a href="javascript:void(0);">HZR</a>
+                      </td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <th>
+                        <a href="javascript:void(0);">안전</a>
+                      </th>
+                      <td>
+                        <a href="javascript:void(0);">GSR</a>
+                      </td>
+                      <td>
+                        <a href="javascript:void(0);">HZR</a>
+                      </td>
+                      <td>
+                        <a href="javascript:void(0);">RSR</a>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
               </li>
             </ul>
           </div>
@@ -41,15 +132,23 @@ function HomePortal1() {
           </div>
         </div>
       </div>
-      <div style={{ position: 'fixed', bottom: 30, zIndex: 10, right: 10 }}>우측 아이콘 영역fdsfdsfds</div>
-      <div style={{ position: 'fixed', bottom: 30, zIndex: 10, right: 10, display: '' }}>
-        우측 아이콘 영역 클릭시 나오는 이미지 영역
-        {/* (display: '' -> display: 'none') */}
+      {/*
+      <div style={{ position: 'fixed', bottom: 30, zIndex: 10, right: 10 }}>우측 아이콘 영역</div>
+      <div style={{ position: 'fixed', bottom: 30, zIndex: 10, right: 10, display: '' }}>*/}
+      {/* 우측 아이콘 영역 클릭시 나오는 이미지 영역*/}
+      {/* (display: '' -> display: 'none') */}
+      {/*</div>*/}
+      <div className="bottom-arrow" onClick={nextSlide}>
+        <a href="javascript:void(0);">
+          <span></span>
+          <span></span>
+          <span></span>
+          Scroll
+        </a>
       </div>
-      <div style={{ position: 'fixed', bottom: 30, zIndex: 10, left: 100 }} onClick={nextSlide}>
-        bottom arrow(필요시에만)
+      <div className="fix-card">
+        <span className="txt">Safety Policy</span>
       </div>
-
       <ReactFullpage
         licenseKey={'YOUR_KEY_HERE'}
         navigation
@@ -102,7 +201,7 @@ function HomePortal1() {
                       <li style={{ display: 'none' }} id="videoList01">
                         <div className="title">대한항공 안전포털</div>
                       </li>
-                      <li className="active_page" id="videoList02">
+                      <li className="active" id="videoList02">
                         <a href="javascript:void(0);">
                           <div className="title">항공안전</div>
                         </a>
@@ -122,10 +221,6 @@ function HomePortal1() {
               </div>
               <div className="section main-visual02-bg">
                 <p>준비중</p>
-              </div>
-
-              <div className="fix-card">
-                <span className="txt">Safety Policy</span>
               </div>
             </ReactFullpage.Wrapper>
           );

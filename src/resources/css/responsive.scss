@@ -7,9 +7,7 @@
 
    /*위험레벨조회 팝업*/
   .risk-level-search-content {width:90%}
-  .RiskLevel-searchbox .boxForm .form-table .form-cell{width:100%;}
-
- 
+  .RiskLevel-searchbox .search-area .form-table .form-area{display:block;border:solid 1px red}
   .RiskLevel-box{display:block}
   .RiskLevel-box .RiskLevel-list{width:100%;padding:0 1.5rem}
   .RiskLevel-box .RiskLevel-list .box-list{height:30rem}
@@ -67,6 +65,7 @@
 
   /*통합홈*/
   .intro-top-menu .top_container {width: 100%; padding: 0 3.2rem;}
+  .intro-top-menu .top_container .dropmenu li:hover div {right: 3%;}
   .videovisual .title {        
     left: 76.0rem;
     width: 100%;
@@ -126,8 +125,6 @@
   .RiskLevel-box .RiskLevel-list{width:100%;padding:0 1.5rem}
   .RiskLevel-box .RiskLevel-list .box-list{height:30rem}
   .RiskLevel-box .RiskLevel-area{width:100%;margin-top:3rem}
-
-
 
   .left-box {width: 35%;}
   .right-box {width: 65%;}
@@ -214,6 +211,7 @@
 
     /*통합홈*/
     .intro-top-menu .top_container {width: 100%; padding: 0 3.2rem;}
+    .intro-top-menu .top_container .dropmenu li:hover div {right: 3%;}
     .videovisual .title {        
       left: 76.0rem;
       width: 100%;
@@ -435,7 +433,7 @@
     .intro-top-menu .top_menu {display: none;}
     .intro-top-menu .M-GNB {display: flex; justify-content: right; align-items: center; position:relative; top: -0.6rem;}
     .intro-top-menu .M-GNB a img {height: 4.0rem;}
-
+    .intro-top-menu .top_container .dropmenu li:hover div {right: 3%;}
     .videovisual .title {
       left:76.0rem;
       width:100%;
