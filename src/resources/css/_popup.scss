@@ -725,8 +725,8 @@
 
 .RiskLevel-searchbox{position:relative;width:100%}
 .RiskLevel-searchbox .search-area .form-table{display:flex;width:100%}
-.RiskLevel-searchbox .search-area .form-table .form-area{display:flex;align-items:center}
-.RiskLevel-searchbox .search-area .form-table .form-area .form-cell{position:relative;flex-grow:1}
+.RiskLevel-searchbox .search-area .form-table .form-area{display:flex;align-items:center;width:100%}
+.RiskLevel-searchbox .search-area .form-table .form-area .form-cell{display:flex;position:relative;flex-grow:1}
 .RiskLevel-searchbox .search-area{background-color:var(--color-neutral-20);padding:1rem 1.5rem 1.5rem 1.5rem}
 .RiskLevel-searchbox .search-area .form-table{display:flex}
 .RiskLevel-searchbox .search-area .form-table.mt10{margin-top:1rem}

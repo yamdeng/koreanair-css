@@ -21,34 +21,43 @@ function ReportLevelModal(props) {
         <div className="pop_full_cont_box">
           <div className="RiskLevel-searchbox">
             {/*검색영역*/}
-            <div className="search-area">
+            <div className="boxForm">
               <div className="form-table">
-                <div className="form-area">
-                  <div className="flag-tag1">
-                    <span className="icon-flag1 txt btn-lightblue">기간선택</span>
-                    <span className="icon-flag1 txt btn-lightblue">전체</span>
-                    <span className="icon-flag1 txt btn-lightblue">최근3년</span>
-                    <span className="icon-flag1 txt btn-lightblue">1년</span>
-                    <span className="icon-flag1 txt btn-lightblue active">6개월</span>
-                    {/* 선택되는 부분은 class명에 active 표시*/}
+                <div className="form-cell wid50">
+                  <div className="form-group ">
+                    <div className="flag-tag1 ">
+                      <span className="icon-flag1 txt btn-lightblue">기간선택</span>
+                      <span className="icon-flag1 txt btn-lightblue">전체</span>
+                      <span className="icon-flag1 txt btn-lightblue">최근3년</span>
+                      <span className="icon-flag1 txt btn-lightblue">1년</span>
+                      <span className="icon-flag1 txt btn-lightblue active">6개월</span>
+                      {/* 선택되는 부분은 class명에 active 표시*/}
+                    </div>
                   </div>
-                  <div className="form-cell">
-                    <div className="form-group">
-                      <div className="df">
-                        <div className="date1">
-                          <AppDatePicker label={'날짜선택'} />
-                        </div>
-                        <span className="unt">~</span>
-                        <div className="date2">
-                          <AppDatePicker label={'날짜선택'} />
-                        </div>
+                </div>
+                <div className="form-cell wid50">
+                  <div className="form-group">
+                    <div className="df">
+                      <div className="date1">
+                        <AppDatePicker label={'날짜선택'} />
+                      </div>
+                      <span className="unt">~</span>
+                      <div className="date2">
+                        <AppDatePicker label={'날짜선택'} />
                       </div>
                     </div>
                   </div>
                 </div>
-                <div className="pop_btns_">
-                  <button className="btn_text text_color_neutral-10 btn_confirm">조회</button>
-                  <button className="btn_text text_color_neutral-10 btn_confirm">초기화</button>
+
+                <div className="form-cell wid100">
+                  <div className="btn-area">
+                    <button type="button" name="button" className="btn-sm btn_text btn-darkblue-line">
+                      조회
+                    </button>
+                    <button type="button" name="button" className="btn-sm btn_text btn-darkblue-line">
+                      초기화
+                    </button>
+                  </div>
                 </div>
               </div>
             </div>

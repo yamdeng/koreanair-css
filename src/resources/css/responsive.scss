@@ -7,7 +7,9 @@
 
    /*위험레벨조회 팝업*/
   .risk-level-search-content {width:90%}
-  .RiskLevel-searchbox .search-area .form-table .form-area{display:block;border:solid 1px red}
+  .RiskLevel-searchbox .boxForm .form-table .form-cell{width:100%;}
+
+ 
   .RiskLevel-box{display:block}
   .RiskLevel-box .RiskLevel-list{width:100%;padding:0 1.5rem}
   .RiskLevel-box .RiskLevel-list .box-list{height:30rem}
@@ -124,6 +126,8 @@
   .RiskLevel-box .RiskLevel-list{width:100%;padding:0 1.5rem}
   .RiskLevel-box .RiskLevel-list .box-list{height:30rem}
   .RiskLevel-box .RiskLevel-area{width:100%;margin-top:3rem}
+
+
 
   .left-box {width: 35%;}
   .right-box {width: 65%;}
