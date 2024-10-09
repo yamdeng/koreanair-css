@@ -1,4 +1,5 @@
 import ReactFullpage from '@fullpage/react-fullpage';
+import Slider from 'react-slick';
 import koreanairLogoImage from '@/resources/images/Koreanair-logo.svg';
 import TopMenuImage from '@/resources/images/menu-fries-w.svg';
 
@@ -7,6 +8,15 @@ function HomePortal1() {
     const fullpageApi = window.fullpage_api;
     fullpageApi.moveSectionDown();
   };
+
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+  };
+
   return (
     <>
       <div className="intro-top-menu">
@@ -217,7 +227,19 @@ function HomePortal1() {
               </div>
 
               <div className="section main-visual01-bg">
-                <p>준비중</p>
+                <div className="home-slider-container">
+                  <Slider {...settings}>
+                    <div style={{ border: '1px solid black', height: 300 }}>
+                      <h3 style={{ border: '1px solid black', height: 300 }}>1</h3>
+                    </div>
+                    <div style={{ border: '1px solid black', height: 300 }}>
+                      <h3 style={{ border: '1px solid black', height: 300 }}>2</h3>
+                    </div>
+                    <div style={{ border: '1px solid black', height: 300 }}>
+                      <h3 style={{ border: '1px solid black', height: 300 }}>3</h3>
+                    </div>
+                  </Slider>
+                </div>
               </div>
               <div className="section main-visual02-bg">
                 <p>준비중</p>
