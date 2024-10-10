@@ -5,6 +5,8 @@ import TopMenuImage from '@/resources/images/menu-fries-w.svg';
 import SafetyPolicy from '@/resources/images/safetypolicy.jpg';
 import cont01 from '@/resources/images/cont01.png';
 import cont02 from '@/resources/images/cont02.png';
+import cont03 from '@/resources/images/cont03.png';
+import cont031 from '@/resources/images/cont03-1.png';
 
 function HomePortal1() {
   const nextSlide = () => {
@@ -288,7 +290,9 @@ function HomePortal1() {
                       <div className="graph-box pr-10">
                         <div className="graph-box-bg">
                           <div>타이틀</div>
-                          <div className="main-graph">그래트영역</div>
+                          <div className="main-graph">
+                            <img src={cont03} />
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -307,7 +311,9 @@ function HomePortal1() {
                       <div className="graph-box pl-10">
                         <div className="graph-box-bg">
                           <div className="">타이틀</div>
-                          <div className="main-graph">그래트영역</div>
+                          <div className="main-graph">
+                            <img src={cont031} />
+                          </div>
                         </div>
                       </div>
                     </div>
