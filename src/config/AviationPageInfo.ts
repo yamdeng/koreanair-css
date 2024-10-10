@@ -110,6 +110,7 @@ import PSaferiskdashboard from '@/components/publish/aviation/PSaferiskdashboard
 import SPIEquipdashbosrdList from '@/components/publish/aviation/SPIEquipdashbosrdList';
 import PSaferRiskList from '@/components/publish/aviation/PSaferRiskList';
 import PSaferRiskDetail from '@/components/publish/aviation/PSaferRiskDetail';
+import PRiskdashboard2 from '@/components/publish/aviation/PRiskdashboard2';
 
 import { fa, fakerLV } from '@faker-js/faker';
 import { fail } from 'assert';
@@ -331,10 +332,10 @@ AviationPageInfo.list = [
 
   {
     title: '[03.안전위험관리] 지상조사 > 대시보드',
-    Component: PRiskDetail,
-    path: 'PRiskDetail',
+    Component: PRiskdashboard2,
+    path: 'PRiskdashboard2',
     description: '',
-    success: false,
+    success: true,
   },
   {
     title: '[04.안전보증] SPI/SPT > 운영 현황> 운항 정보',
