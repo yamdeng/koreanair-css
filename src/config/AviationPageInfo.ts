@@ -1,4 +1,5 @@
 import PAviationPortal1 from '@/components/publish/aviation/PAviationPortal1';
+import CSRMain from '@/components/publish/aviation/CSRMain';
 import PRiskList from '@/components/publish/aviation/PRiskList';
 import PRiskEdit from '@/components/publish/aviation/PRiskEdit';
 import SPIInfo1 from '@/components/publish/aviation/SPIInfo1';
@@ -113,6 +114,7 @@ import PSaferRiskDetail from '@/components/publish/aviation/PSaferRiskDetail';
 import PRiskdashboard2 from '@/components/publish/aviation/PRiskdashboard2';
 import SafetyDayList from '@/components/publish/aviation/SafetyDayList';
 import CultureList from '@/components/publish/aviation/CultureList';
+import MyAuditProfile from '@/components/publish/aviation/MyAuditProfile';
 
 import { fa, fakerLV } from '@faker-js/faker';
 import { fail } from 'assert';
@@ -122,6 +124,27 @@ const AviationPageInfo: any = {};
 AviationPageInfo.list = [
   {
     title: '[메인] 항공안전 포탈',
+    Component: PAviationPortal1,
+    path: 'PAviationPortal1',
+    description: '',
+    success: false,
+  },
+  {
+    title: '[서브메인] Air Saferty Report 메인',
+    Component: PAviationPortal1,
+    path: 'PAviationPortal1',
+    description: '',
+    success: false,
+  },
+  {
+    title: '[서브메인] 객실안전보고서 메인',
+    Component: CSRMain,
+    path: 'CSRMain',
+    description: '',
+    success: false,
+  },
+  {
+    title: '[서브메인] 지상안전보고서 메인',
     Component: PAviationPortal1,
     path: 'PAviationPortal1',
     description: '',
@@ -645,8 +668,8 @@ AviationPageInfo.list = [
   },
   {
     title: '[06.AUDIT] 품질심사원프로필',
-    Component: MyAuditClose,
-    path: 'MyAuditClose',
+    Component: MyAuditProfile,
+    path: 'MyAuditProfile',
     description: '',
     success: false,
   },
