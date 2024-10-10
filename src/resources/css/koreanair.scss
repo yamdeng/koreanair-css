@@ -1014,9 +1014,8 @@
 	}
   .dropmenu li:hover div .portal-menu {width: 100%; display: inline-table;}
   .dropmenu li:hover div .portal-menu tr {border-bottom: 0.1rem solid var(--color-neutral-30); padding: 0.3rem 0;}
+  .dropmenu li:hover div .portal-menu th {padding-right: 0.6rem;}
   .dropmenu li:hover div .portal-menu th, .dropmenu li:hover div .portal-menu td {/*padding: 0.5rem; height: 3.0rem; line-height: 3.0rem;*/}
-  .dropmenu li:hover div .portal-menu th {}
-  .dropmenu li:hover div .portal-menu td {}
   .dropmenu li:hover div .portal-menu th a {background: var(--color-darkblue-80); border-radius: 99.9rem;  color: var(--color-neutral-10); line-height: 2.0rem; padding: 0.4rem 1.5rem; /*height: 3.0rem;  line-height: 1.0rem;*/ font-size: 1.4rem; font-weight: 700;}
   .dropmenu li:hover div .portal-menu td a {color: var(--color-neutral-80); /*height: 3.0rem; line-height: 1.0rem; padding: 0 1.0rem;*/ line-height: 2.0rem; padding: 1.0rem; font-size: 1.4rem; font-weight: 500;}
 
@@ -1510,15 +1509,19 @@
 }
 
 .fix-card {
-	display: block; 
+	display: flex; 
+  justify-content: center;
+  align-items: center;
 	position: fixed; 
 	right: 3.0rem; 
 	bottom: 2.0rem; 
 	background-color: var(--color-lightblue-100); 
 	padding: 1.0rem 2.0rem; 
-	border-radius: 99.9rem;
+	border-radius: 50%;
   z-index: 10;
   cursor: pointer; 
+  width: 8rem;
+  height: 8rem;
 }
 .fix-card .txt {
 	display: block; 

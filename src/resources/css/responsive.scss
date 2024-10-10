@@ -86,6 +86,8 @@
     font-size:2.4rem;
   } 
   .main-visual02 .page2_conts {width: 100%; padding: 0 2.4rem;}
+  .main-visual01.active .page1_conts .swiper {width: 100%; padding: 0 3.2rem;}
+
 }
 
 
@@ -235,6 +237,8 @@
     .main-visual02 .page2_conts {width: 100%; padding: 0 2.4rem;}
     .page2_title .title {font-size: 4.4rem;}
     #fp-nav {top: 15%;}
+    .main-visual01.active .page1_conts .swiper {width: 100%; padding: 0 3.2rem;}
+    
 }
 
 
@@ -464,6 +468,9 @@
     .main-visual02 .page2_conts {width: 100%; padding: 0 2.4rem;}
     .page2_title .title {font-size: 3.4rem;}
     #fp-nav {top: 15%;}
+
+    .page1_conts {display: none;}
+    .page2_conts {display: none;}
 }
 
 
@@ -790,6 +797,8 @@
   .main-visual02 .page2_title .subtitle .subtitle-box {display: block; width: 100%;}
   .page2_contents .contents-box {display: block; width: 100%;}
   #fp-nav {top: 15%;}
+  .page1_conts {display: none;}
+  .page2_conts {display: none;}
 }
 
 
