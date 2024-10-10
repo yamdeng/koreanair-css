@@ -965,6 +965,10 @@
   .GNB ul li a {font-size: 2.2rem; font-weight: 500; color: rgba(255, 255, 255, 0.6); line-height: 3.2rem;}
   .GNB ul li a.active {color: rgba(255, 255, 255, 1.0);}
   .M-GNB {display: none;}
+  .M-GNB.active {display: block;}
+}
+.top_menu_btn.hide {
+  display:none;
 }
 .top_menu {
   display:block;
@@ -1503,8 +1507,11 @@
   border-radius: 1.5rem;
   padding: 2.0rem;
 }
-.page2_contents .contents-box .graph-box .graph-box-bg .main-graph {
-  
+.page2_contents .contents-box .graph-box .graph-box-bg .main-graph img {
+  display: block;
+    width: 100%;
+    height: 28.0rem;
+    border-radius: 1.5rem
   
 }
 

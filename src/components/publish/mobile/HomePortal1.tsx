@@ -31,6 +31,11 @@ function HomePortal1() {
               <img src={koreanairLogoImage} />
             </a>
           </div>
+          <button className="top_menu_btn close">
+            <div className="line1"></div>
+            <div className="line2"></div>
+            <div className="line3"></div>
+          </button>
           <div className="top_menu dropmenu">
             <ul>
               <li>
@@ -140,11 +145,11 @@ function HomePortal1() {
             </ul>
           </div>
           {/*모바일메뉴-아이콘 */}
-          <div className="M-GNB">
+          {/*<div className="M-GNB ">
             <a href="javascript:void(0);">
               <img src={TopMenuImage} />
             </a>
-          </div>
+          </div>*/}
         </div>
       </div>
 
@@ -289,7 +294,7 @@ function HomePortal1() {
                       </div>
                       <div className="graph-box pr-10">
                         <div className="graph-box-bg">
-                          <div>타이틀</div>
+                          {/*<div>타이틀</div>*/}
                           <div className="main-graph">
                             <img src={cont03} />
                           </div>
@@ -310,7 +315,7 @@ function HomePortal1() {
                       </div>
                       <div className="graph-box pl-10">
                         <div className="graph-box-bg">
-                          <div className="">타이틀</div>
+                          {/*<div className="">타이틀</div>*/}
                           <div className="main-graph">
                             <img src={cont031} />
                           </div>
