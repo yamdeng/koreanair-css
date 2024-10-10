@@ -232,7 +232,7 @@ function HomePortal1() {
                 </div>
               </div>
 
-              <div className="section main-visual01 active">
+              <div className="section main-visual01">
                 <div className="page1_conts">
                   <div className="swiper">
                     <Slider {...settings}>
@@ -249,7 +249,7 @@ function HomePortal1() {
                   </div>
                 </div>
               </div>
-              <div className="section main-visual02 active">
+              <div className="section main-visual02">
                 <div className="page2_conts">
                   <div className="page2_title">
                     <div className="title">2024년 산업안전목표</div>
