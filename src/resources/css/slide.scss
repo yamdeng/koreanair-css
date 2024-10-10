@@ -40,4 +40,16 @@
 .risk-slider-container > .slick-dots li.slick-active button:before{display:block;font-size:0;border-radius:99.9rem;margin:0.5rem 0;width:1rem;height:1rem;background-color:var(--color-darkblue-40);cursor:pointer/* color: #ff6347; 선택된 dot 색상 */}
 
 
+/*통합홈메인*/
+.slick-slider
+
+.slick-prev, .slick-next, .slick-prev:before, .slick-next:before {color: transparent;}
+.slick-prev, .slick-prev:before {left: 0; background: url(../images/arrow-left.svg) center center no-repeat; width: 3.6rem; height: 3.6rem; background-size: 3.6rem; z-index: 10;}
+.slick-next, .slick-next:before {right: 0; background: url(../images/arrow-right.svg) center center no-repeat; width: 3.6rem; height: 3.6rem;  background-size: 3.6rem; z-index: 10;}
+.slick-dots {bottom: -2.5rem;}
+/*
+.slick-dots li button {opacity: .7; background-color: var(--color-neutral-10); width: 1.0rem; height: 1.0rem; border-radius: 99.9rem; content: "";}
+.slick-dots li button:before {opacity: 1; background-color: var(--color-darkblue-100); width: 3.0rem; height: 1.0rem; border-radius: 99.9rem; content: "";}
+.slick-dots li.slick-active button:before {color: var(--color-darkblue-100); opacity: 1; background: transparent;}*/
+
 
