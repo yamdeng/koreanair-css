@@ -22,6 +22,7 @@ function ReportDeleteModal(props) {
           <div className="editbox">
             <div className="form-table">
               <div className="form-cell wid50">
+                <div className="text">이 보고서를 삭제하시겠습니까? 삭된 보고서는 복구할수 없습니다.</div>
                 <div className="form-group wid100">
                   <AppTextInput label={'사유를 입력하세요'} />
                 </div>
@@ -31,8 +32,9 @@ function ReportDeleteModal(props) {
             <div className="form-table">
               <div className="form-cell wid50">
                 <div className="form-group wid100">
-                  <AppTextInput label="Checklist Title" />
-                  {/*<span className="errorText">auto complete error message</span>*/}
+                  <button className="btn-normal" onClick={closeModal}>
+                    작성자에게 VOID 사유 보내기
+                  </button>
                 </div>
               </div>
             </div>

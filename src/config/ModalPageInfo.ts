@@ -226,7 +226,7 @@ ModalPageInfo.list = [
     Component: PReportDeleteModal,
     path: 'PReportDeleteModal',
     description: '',
-    success: false,
+    success: true,
   },
   {
     title: '[항공안전>03.안전위험관리] 보고서분석 > 이메일보내기 팝업창',
