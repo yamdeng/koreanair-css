@@ -3,6 +3,8 @@ import Slider from 'react-slick';
 import koreanairLogoImage from '@/resources/images/Koreanair-logo.svg';
 import TopMenuImage from '@/resources/images/menu-fries-w.svg';
 import SafetyPolicy from '@/resources/images/safetypolicy.jpg';
+import cont01 from '@/resources/images/cont01.png';
+import cont02 from '@/resources/images/cont02.png';
 
 function HomePortal1() {
   const nextSlide = () => {
@@ -235,10 +237,10 @@ function HomePortal1() {
                   <div className="swiper">
                     <Slider {...settings}>
                       <div className="swiper-slide">
-                        <h3>안전장려금제도</h3>
+                        <img src={cont01} />
                       </div>
                       <div className="swiper-slide">
-                        <h3>2024년 항공안전목표</h3>
+                        <img src={cont02} />
                       </div>
                     </Slider>
                   </div>
