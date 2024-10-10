@@ -90,18 +90,12 @@ function RiskList1() {
       </div>
       {/*//조합 */}
 
-      {/*그리드영역 */}
-      <div className="">
-        <AppTable rowData={rowData} columns={columns} />
-      </div>
-      {/*//그리드영역 */}
-
       {/*대시보드*/}
       <div className="DashBoardWrap">
         <div className="DashBoard-chart">
-          <div className="DashBoard-row">
+          <div className="DashBoard-1row">
             <div className="DashBoard-col">
-              <p className="h4"></p>
+              <p className="h4">1.조업연관 EVENT발생 추이</p>
               <div className="DashBoard-box">
                 <AppTable rowData={rowData} columns={columns} />
               </div>
@@ -109,7 +103,15 @@ function RiskList1() {
           </div>
           <div className="DashBoard-row">
             <div className="DashBoard-col">
-              <p className="h4"></p>
+              {/* <p className="h4"></p> */}
+              <div className="DashBoard-box">
+                <AppTable rowData={rowData} columns={columns} />
+              </div>
+            </div>
+          </div>
+          <div className="DashBoard-row">
+            <div className="DashBoard-col">
+              {/* <p className="h4"></p> */}
               <div className="DashBoard-box">대시보드</div>
             </div>
           </div>

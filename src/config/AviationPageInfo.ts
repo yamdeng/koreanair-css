@@ -65,7 +65,7 @@ import MyAuditClose from '@/components/publish/aviation/MyAuditClose';
 import AdminRiskMATRIX from '@/components/publish/aviation/AdminRiskMATRIX';
 import AdminRiskMATRIXDetail from '@/components/publish/aviation/AdminRiskMATRIXDetail';
 import PRiskDetail from '@/components/publish/aviation/PRiskDetail';
-import PRiskdashboard from '@/components/publish/aviation/PRiskdashboard';
+// import PRiskdashboard from '@/components/publish/aviation/PRiskdashboard';
 import ChangeList from '@/components/publish/aviation/ChangeList';
 import AdminTopEvent from '@/components/publish/aviation/AdminTopEvent';
 import AdminEducatDetail from '@/components/publish/aviation/AdminEducatDetail';
@@ -111,6 +111,8 @@ import SPIEquipdashbosrdList from '@/components/publish/aviation/SPIEquipdashbos
 import PSaferRiskList from '@/components/publish/aviation/PSaferRiskList';
 import PSaferRiskDetail from '@/components/publish/aviation/PSaferRiskDetail';
 import PRiskdashboard2 from '@/components/publish/aviation/PRiskdashboard2';
+import SafetyDayList from '@/components/publish/aviation/SafetyDayList';
+import CultureList from '@/components/publish/aviation/CultureList';
 
 import { fa, fakerLV } from '@faker-js/faker';
 import { fail } from 'assert';
@@ -448,22 +450,9 @@ AviationPageInfo.list = [
     Component: RiskList1,
     path: 'RiskList1',
     description: '',
-    success: false,
+    success: true,
   },
-  {
-    title: '[04.안전보증] EPS현황 > 진행현황 ',
-    Component: RiskList1,
-    path: 'RiskList1',
-    description: '',
-    success: false,
-  },
-  {
-    title: '[04.안전보증] EPS현황 > HZR 참여실적',
-    Component: RiskList1,
-    path: 'RiskList1',
-    description: '',
-    success: false,
-  },
+
   {
     title: '[04.안전보증] SMS종합분석현황 > 대시보드 > HZR 전사 TOP RISK 분석 현황',
     Component: SMSDashBoardList,
@@ -506,13 +495,7 @@ AviationPageInfo.list = [
     description: '',
     success: true,
   },
-  {
-    title: '[05.안전증진] 안전 Communication > 안전공지',
-    Component: WorkShopList,
-    path: 'WorkShopList',
-    description: '',
-    success: false,
-  },
+
   {
     title: '[05.안전증진] SMS 교육 > 교육현황 리스트',
     Component: EducationList,
@@ -543,35 +526,27 @@ AviationPageInfo.list = [
   },
   {
     title: '[05.안전증진] 안전문화설문',
-    Component: WorkShopList,
-    path: 'WorkShopList',
+    Component: CultureList,
+    path: 'CultureList',
     description: '',
-    success: false,
+    success: true,
   },
   {
     title: '[05.안전증진] Safety Program > WorkShop 리스트',
     Component: WorkShopList,
     path: 'WorkShopList',
     description: '',
-    success: false,
+    success: true,
   },
   {
     title: '[05.안전증진] Safety Program > SafetyDay 리스트',
-    Component: WorkShopList,
-    path: 'WorkShopList',
+    Component: SafetyDayList,
+    path: 'SafetyDayList',
     description: '',
-    success: false,
+    success: true,
   },
   {
     title: '[05.안전증진] Safety Program > SPIP',
-    Component: WorkShopList,
-    path: 'WorkShopList',
-    description: '',
-    success: false,
-  },
-
-  {
-    title: '[05.안전증진] Safety Program > Newsletter 리스트',
     Component: WorkShopList,
     path: 'WorkShopList',
     description: '',

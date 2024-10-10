@@ -6,7 +6,7 @@ import AppTextInput from '@/components/common/AppTextInput';
 import { getAllData } from '@/data/grid/example-data-new';
 import { testColumnInfos } from '@/data/grid/table-column';
 
-function WorkShopList() {
+function SafetyDayList() {
   const rowData = getAllData();
   const columns = testColumnInfos;
   const customButtons = [
@@ -26,19 +26,19 @@ function WorkShopList() {
             <a href="javascript:void(0);">홈</a>
           </li>
           <li className="breadcrumb-item">
-            <a href="javascript:void(0);">안전증신</a>
+            <a href="javascript:void(0);">안전증진</a>
           </li>
           <li className="breadcrumb-item">
             <a href="javascript:void(0);">Safety Program</a>
           </li>
           <li className="breadcrumb-item">
-            <a href="javascript:void(0);">WorkShop</a>
+            <a href="javascript:void(0);">SafetyDay</a>
           </li>
         </ol>
       </div>
       {/*경로 */}
       <div className="conts-title">
-        <h2>WorkShop</h2>
+        <h2>SafetyDay</h2>
       </div>
       {/*검색영역 */}
       <div className="boxForm">
@@ -78,4 +78,4 @@ function WorkShopList() {
   );
 }
 
-export default WorkShopList;
+export default SafetyDayList;
