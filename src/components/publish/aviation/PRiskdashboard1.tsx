@@ -76,43 +76,74 @@ function PRiskdashboard1() {
                   <div className="form-table line">대시보드 영역</div>
                 </div>
 
-                {/* 관련자 세부 정보*/}
+                {/* Air Safety Report 상세*/}
                 <div className="editbox report">
                   <div className="header-tit">통합 대시보드</div>
+                  {/*검색영역 */}
+                  <div className="boxForm">
+                    <div className="form-table">
+                      <div className="form-cell wid50">
+                        <div className="form-group wid100">
+                          <AppSelect label={' Submit Date'} />
+                        </div>
+                      </div>
+                      <div className="form-cell wid50">
+                        <div className="form-group wid100">
+                          <AppSelect label={' year'} />
+                        </div>
+                      </div>
+                      <div className="form-cell wid50">
+                        <div className="form-group wid100">
+                          <div className="row1">
+                            <div className="date1">
+                              <AppDatePicker label="연도" required />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div className="form-cell wid20">
+                        <div className="form-group wid100">
+                          <div className="btn-area">
+                            <button type="button" name="button" className="btn-sm btn_text btn-darkblue-line">
+                              조회
+                            </button>
+                            {/* <button type="button" name="button" className="btn-sm btn_text btn-darkblue-line">
+                              초기화
+                            </button> */}
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  {/* //검색영역 */}
+
                   <div className="form-table line">
                     <div className="form-cell wid100">
                       <div className="form-group wid100">
                         <div className="box-view-list">
                           <ul className="view-list">
                             <li className="accumlate-list">
-                              <label className="t-label">탑승객</label>
+                              <label className="t-label">1. 이벤트 Top 10</label>
                               <span className="text-desc-type1">
-                                <div className="info-box mt5">
-                                  {/*<p className="h4">탑승객</p>*/}
-                                  <table className="notice-board">
+                                <div className="listtable mt5">
+                                  <table className="info-board">
                                     <colgroup>
-                                      <col width="*" />
                                       <col width="10%" />
-                                      <col width="10%" />
-                                      <col width="15%" />
-                                      <col width="15%" />
+                                      <col width="50%" />
+                                      <col width="20%" />
                                       <col width="20%" />
                                     </colgroup>
                                     <tr>
-                                      <th>관련자</th>
-                                      <th>이름</th>
-                                      <th>성별</th>
-                                      <th>나이</th>
-                                      <th>국적</th>
-                                      <th>좌석번호</th>
+                                      <th>순번</th>
+                                      <th>Event Type</th>
+                                      <th>%</th>
+                                      <th>Total</th>
                                     </tr>
                                     <tr>
-                                      <td className="">가해자</td>
-                                      <td className="">홍길동</td>
-                                      <td className="">남성</td>
+                                      <td className="">1</td>
+                                      <td className="tl">OverSpeed</td>
+                                      <td className="">12.5</td>
                                       <td className="">10</td>
-                                      <td className="">한국</td>
-                                      <td className="">872</td>
                                     </tr>
                                   </table>
                                 </div>
@@ -123,37 +154,34 @@ function PRiskdashboard1() {
                       </div>
                     </div>
                   </div>
-                  <div className="form-table">
+
+                  <div className="form-table line">
                     <div className="form-cell wid100">
                       <div className="form-group wid100">
                         <div className="box-view-list">
                           <ul className="view-list">
                             <li className="accumlate-list">
-                              <label className="t-label">승무원</label>
+                              <label className="t-label">2. 위해요인 Top 10</label>
                               <span className="text-desc-type1">
-                                <div className="info-box mt5">
-                                  {/*<p className="h4">승무원</p>*/}
-                                  <table className="notice-board">
+                                <div className="listtable mt5">
+                                  <table className="info-board">
                                     <colgroup>
-                                      <col width="*" />
+                                      <col width="10%" />
+                                      <col width="50%" />
                                       <col width="20%" />
-                                      <col width="10%" />
-                                      <col width="30%" />
-                                      <col width="10%" />
+                                      <col width="20%" />
                                     </colgroup>
                                     <tr>
-                                      <th>구분</th>
-                                      <th>사번</th>
-                                      <th>이름</th>
-                                      <th>부서</th>
-                                      <th>직위</th>
+                                      <th>순번</th>
+                                      <th>Hazard</th>
+                                      <th>%</th>
+                                      <th>Total</th>
                                     </tr>
                                     <tr>
-                                      <td className="">가해자</td>
-                                      <td className="">900****</td>
-                                      <td className="">홍홍홍</td>
-                                      <td className="left">정석비행장운영팀 / 운항훈련원</td>
-                                      <td className="">SVC매니저</td>
+                                      <td className="">1</td>
+                                      <td className="tl">Hail Environmental / Weather</td>
+                                      <td className="">12.5</td>
+                                      <td className="">17</td>
                                     </tr>
                                   </table>
                                 </div>
@@ -164,11 +192,32 @@ function PRiskdashboard1() {
                       </div>
                     </div>
                   </div>
+
+                  {/*대시보드*/}
+                  <div className="DashBoardWrap">
+                    <div className="DashBoard-chart">
+                      <div className="DashBoard-row">
+                        <div className="DashBoard-col">
+                          <p className="h4">Fleet월 발생 이벤트 수</p>
+                          <div className="DashBoard-box">
+                            <AppTable rowData={rowData} columns={columns} />
+                          </div>
+                        </div>
+                      </div>
+                      <div className="DashBoard-row">
+                        <div className="DashBoard-col">
+                          <p className="h4">공항 별 Top10</p>
+                          <div className="DashBoard-box"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  {/*//대시보드 */}
                 </div>
-                {/* //보고서내용보기 상세*/}
+                {/* //Air Safety Report 상세*/}
               </div>
               {/* 버튼*/}
-              <div className="contents-btns">
+              {/* <div className="contents-btns">
                 <button type="button" name="button" className="btn_text text_color_neutral-10 btn_conblue">
                   재작성요청
                 </button>
@@ -187,7 +236,7 @@ function PRiskdashboard1() {
                 <button type="button" name="button" className="btn_text btn_list">
                   목록
                 </button>
-              </div>
+              </div> */}
               {/* //버튼*/}
             </div>
           </dd>

@@ -51,6 +51,39 @@
 .form-group .df .type6.Wd{width:100%}
 .form-group .df + .df{margin-top:1rem} 
 
+/* meter 크기 설정 */
+// meter {
+//   width: 100%;
+//   height: 1.0rem;
+// }
+
+/* meter 테두리, 모서리 둥글기, 배경색 설정 */
+meter::-webkit-meter-bar {
+  max-width: 100%;
+  height: 1.0rem;
+  border-radius: 99.9rem;
+  border: 0;
+  background-color: var(--color-neutral-30);
+}
+/* meter 최적값에서 많이 부족한 색상 설정 */
+meter::-webkit-meter-even-less-good-value {
+  background-color: var(--color-negative);
+  border-radius: 99.9rem;
+}
+
+/* meter 최적값에 근접한 색상 설정 */
+meter::-webkit-meter-suboptimum-value {
+  background-color: #FF9C02;
+  border-radius: 99.9rem;
+}
+
+/* meter 최적값 색상 설정 */
+meter::-webkit-meter-optimum-value {
+  background-color: #2DCB9B ;
+  border-radius: 99.9rem;
+}
+
+
 /*공고*/
 .Notification-wrap{position:relative;background-color:var(--color-btn-blue1);border:solid 0.1rem var(--color-btn-blue2);border-radius:0.8rem;padding-bottom:1.5rem;}
 .Notification-wrap .info-text01{position:relative;padding-left:1.5rem;margin:0 2.5rem}
@@ -65,6 +98,8 @@
 
 .editbox.no{border-top:0}
 .edit-area .form-table .form-cell.Add{border-bottom:0}
+.edit-area .editbox.report .boxForm .form-table .form-cell{border-bottom:0}
+
 .notice-board td{position:relative;padding:1.0rem 0.3rem}
 .notice-board td .delete{position:absolute;top:1rem;background:url(/src/resources/images/delete-text.svg) center center no-repeat;font-size:0;width:2rem;height:2rem}
 .notice-board td.deps-conts{width:100%;background-color:var(--color-neutral-20);padding:1rem 2rem}
@@ -210,7 +245,7 @@
 
 [class*=c-step-list-type]{display:flex;justify-content:flex-start;border:0.1rem solid var(--color-neutral-40);background-color:var(--color-neutral-10);border-radius:0.8rem;overflow:hidden;counter-reset:stepCounter}
 [class*=c-step-list-type]>li{position:relative;flex:1}
-[class*=c-step-list-type]>li.active{border-top:solid 0.3rem var(--color-mblue-100)}
+[class*=c-step-list-type]>li.active{border-top:solid 0.3rem var(--color-mblue-100);background-color:var(--color-lightblue-10);}
 [class*=c-step-list-type]>li:before{position:absolute;left:32px;top:22px;counter-increment:stepCounter;content:counter(stepCounter);font-weight:400;color:var(--color-neutral-80);font-size:68px;line-height:1}
 [class*=c-step-list-type]>li~li{border-left:0.1rem solid var(--color-neutral-40)}
 

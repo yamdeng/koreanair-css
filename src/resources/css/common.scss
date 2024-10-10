@@ -39,10 +39,10 @@
   --color-Leve5: #cef761;
   --color-Leve6: #ffb533;
  }
- .red{background-color:#DA291C}
- .orange{background-color:#FF8902}
- .yellow{background-color:#FFDD33}
- .green{background-color:#02C27F}
+ .red{background-color:#DA291C !important}
+ .orange{background-color:#FF8902 !important}
+ .yellow{background-color:#FFDD33 !important}
+ .green{background-color:#02C27F !important}
 
  html {
   /* 62.5% of 16px browser font size is 10px */
@@ -76,7 +76,7 @@ body * {
 .wid80{width:80%}
 .wid100{width:100% !important}
 .h4{height:4.0rem}
-
+.pr5{padding-right:0.5rem !important}
 .pr10{padding-right:1rem !important}
 .ptb10{padding:1rem 0 1rem 0 !important}
 

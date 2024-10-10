@@ -106,6 +106,10 @@ import AdminPreferences from '@/components/publish/aviation/AdminPreferences';
 import AdminEquipList from '@/components/publish/aviation/AdminEquipList';
 import CentralizedReportDetail from '@/components/publish/aviation/CentralizedReportDetail';
 import AdminBannerList from '@/components/publish/aviation/AdminBannerList';
+import PSaferiskdashboard from '@/components/publish/aviation/PSaferiskdashboard';
+import SPIEquipdashbosrdList from '@/components/publish/aviation/SPIEquipdashbosrdList';
+import PSaferRiskList from '@/components/publish/aviation/PSaferRiskList';
+import PSaferRiskDetail from '@/components/publish/aviation/PSaferRiskDetail';
 
 import { fa, fakerLV } from '@faker-js/faker';
 import { fail } from 'assert';
@@ -273,14 +277,14 @@ AviationPageInfo.list = [
     Component: PRiskdashboard1,
     path: 'PRiskdashboard1',
     description: '',
-    success: false,
+    success: true,
   },
   {
     title: '[03.안전위험관리] 안전조사 > 대시보드',
-    Component: PRiskdashboard,
-    path: 'PRiskdashboard',
+    Component: PSaferiskdashboard,
+    path: 'PSaferiskdashboard',
     description: '',
-    success: false,
+    success: true,
   },
   {
     title: '[03.안전위험관리] 위험도대장(RiskRegister)',
@@ -298,10 +302,17 @@ AviationPageInfo.list = [
   },
   {
     title: '[03.안전위험관리] 지상조사 > 지상안전조사보고서',
-    Component: PRiskList,
-    path: 'PRiskList',
+    Component: PSaferRiskList,
+    path: 'PSaferRiskList',
     description: '',
-    success: false,
+    success: true,
+  },
+  {
+    title: '[03.안전위험관리] 지상조사 > 지상안전조사보고서 상세',
+    Component: PSaferRiskDetail,
+    path: 'PSaferRiskDetail',
+    description: '',
+    success: true,
   },
   {
     title: '[03.안전위험관리] 지상조사 > 조사보고서 신규(등록)',
@@ -419,10 +430,10 @@ AviationPageInfo.list = [
   },
   {
     title: '[04.안전보증] 장비관리 > 대시보드',
-    Component: SPIEquipList,
-    path: 'SPIEquipList',
+    Component: SPIEquipdashbosrdList,
+    path: 'SPIEquipdashbosrdList',
     description: '',
-    success: false,
+    success: true,
   },
   {
     title: '[04.안전보증] EPS현황 > 운영현항',
