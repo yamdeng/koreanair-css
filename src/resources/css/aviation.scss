@@ -990,7 +990,7 @@
   top: 25%;
   left: 25%;
 }
-.nav-is-visible .cd-nav-trigger span {background: none;}
+.nav-is-visible .cd-nav-trigger span {/*background: none;*/background-color: #02C27F;}
 .nav-is-visible .cd-nav-trigger span, .nav-is-visible .cd-nav-trigger span::after, .nav-is-visible .cd-nav-trigger span::before {
   /* this is the hamburger icon */
   position: absolute;
@@ -1025,20 +1025,20 @@
   -moz-transition: -moz-transform 0.2s;
   transition: transform 0.2s;
 }
-// .nav-is-visible .cd-nav-trigger span::before {
-//   -webkit-transform: translateY(-0.6rem);
-//   -moz-transform: translateY(-0.6rem);
-//   -ms-transform: translateY(-0.6rem);
-//   -o-transform: translateY(-0.6rem);
-//   transform: translateY(-0.6rem);
-// }
-// .nav-is-visible .cd-nav-trigger span::after {
-//   -webkit-transform: translateY(0.6rem);
-//   -moz-transform: translateY(0.6rem);
-//   -ms-transform: translateY(0.6rem);
-//   -o-transform: translateY(0.6rem);
-//   transform: translateY(0.6rem);
-// }
+.nav-is-visible .cd-nav-trigger span::before {
+  -webkit-transform: translateY(-0.6rem);
+  -moz-transform: translateY(-0.6rem);
+  -ms-transform: translateY(-0.6rem);
+  -o-transform: translateY(-0.6rem);
+  transform: translateY(-0.6rem);
+}
+.nav-is-visible .cd-nav-trigger span::after {
+  -webkit-transform: translateY(0.6rem);
+  -moz-transform: translateY(0.6rem);
+  -ms-transform: translateY(0.6rem);
+  -o-transform: translateY(0.6rem);
+  transform: translateY(0.6rem);
+}
 .no-touch .cd-nav-trigger:hover ~ .stretchy-nav-bg {
   box-shadow: 0 0.6rem 3.0rem rgba(0, 0, 0, 0.2);
 }
@@ -1067,19 +1067,19 @@
   visibility: hidden;
   -webkit-transition: visibility 0.3s;
   -moz-transition: visibility 0.3s;
-  transition: visibility 0.3s;text-align: right}
+  transition: visibility 0.3s;text-align: right
+}
 .cd-stretchy-nav ul a {
   position: relative;
   display: block;
   height: 5.0rem;
   line-height: 5.0rem;
-  padding: 0 calc(1em + 60px) 0 1em;
+  padding: 0 calc(1em + 55px) 0 1em;
   color: rgba(255, 255, 255, 0.7);
   font-size: 1.4rem;
   -webkit-transition: color 0.2s;
   -moz-transition: color 0.2s;
   transition: color 0.2s;
-  border:solid 1px blue;
 }
 .cd-stretchy-nav ul a::after {
   /* navigation item icons */
@@ -1087,25 +1087,26 @@
   position: absolute;
   height: 1.6rem;
   width: 1.6rem;
-  right: 2.2rem;
+  right: 2.0rem;
   top: 50%;
-  border:solid 1px red;
   -webkit-transform: translateY(-50%) scale(0);
   -moz-transform: translateY(-50%) scale(0);
   -ms-transform: translateY(-50%) scale(0);
   -o-transform: translateY(-50%) scale(0);
   transform: translateY(-50%) scale(0);
-  opacity: .6;
+  //opacity: .6;
+
   // background: url(../images/cd-sprite-1.svg) no-repeat 0 0;
 }
 .cd-stretchy-nav ul a::before {
   /* line visible next to the active navigation item */
   content: '';
   position: absolute;
-  width: 0.3rem;
+  width: 0.5rem;
   height: 1.6rem;
   top: 50%;
   right: 6.0rem;
+
   -webkit-transform: translateX(0.3rem) translateY(-50%) scaleY(0);
   -moz-transform: translateX(0.3rem) translateY(-50%) scaleY(0);
   -ms-transform: translateX(0.3rem) translateY(-50%) scaleY(0);
@@ -1117,27 +1118,42 @@
   /* change custom icon using image sprites
   background-position: -3.2rem 0; */
   width:1.8rem;
-  height:1.8rem;background:url(/src/resources/images/icon_hr.svg)center center no-repeat;background-size:1.8rem}
+  height:1.8rem;background:url(/src/resources/images/icon_asr.svg)center center no-repeat;background-size:1.8rem
+}
 .cd-stretchy-nav ul li:nth-of-type(2) a::after {
-  background-position: -6.4rem 0;
+  // background-position: -6.4rem 0;
+  width:1.8rem;
+  height:1.8rem;background:url(/src/resources/images/icon_csr.svg)center center no-repeat;background-size:1.8rem
 }
 .cd-stretchy-nav ul li:nth-of-type(3) a::after {
-  background-position: -4.8rem 0;
+  //background-position: -4.8rem 0;
+  width:1.8rem;
+  height:1.8rem;background:url(/src/resources/images/icon_msr.svg)center center no-repeat;background-size:1.8rem
 }
 .cd-stretchy-nav ul li:nth-of-type(4) a::after {
-  background-position: 0 0;
+  //background-position: 0 0;
+  width:1.8rem;
+  height:1.8rem;background:url(/src/resources/images/icon_gsr.svg)center center no-repeat;background-size:1.8rem
 }
 .cd-stretchy-nav ul li:nth-of-type(5) a::after {
-  background-position: -1.6rem 0;
+  //background-position: -1.6rem 0;
+  width:1.8rem;
+  height:1.8rem;background:url(/src/resources/images/icon_dsr.svg)center center no-repeat;background-size:1.8rem
 }
 .cd-stretchy-nav ul li:nth-of-type(6) a::after {
-  background-position: -3.2rem 0;
+  //background-position: -3.2rem 0;
+  width:1.8rem;
+  height:1.8rem;background:url(/src/resources/images/icon_rsr.svg)center center no-repeat;background-size:1.8rem
 }
 .cd-stretchy-nav ul li:nth-of-type(7) a::after {
-  background-position: -6.4rem 0;
+  //ackground-position: -6.4rem 0;
+  width:1.8rem;
+  height:1.8rem;background:url(/src/resources/images/icon_foqa.svg)center center no-repeat;background-size:1.8rem
 }
 .cd-stretchy-nav ul li:nth-of-type(8) a::after {
-  background-position: -4.8rem 0;
+  // background-position: -4.8rem 0;
+  width:1.8rem;
+  height:1.8rem;background:url(/src/resources/images/icon_hr.svg)center center no-repeat;background-size:1.8rem
 }
 .cd-stretchy-nav ul li:nth-of-type(9) a::after {
   background-position: 0 0;
@@ -1210,6 +1226,7 @@
   -moz-transition: -moz-transform 0.2s;
   transition: transform 0.2s;
 }
+// .cd-stretchy-nav.nav-is-visible ul li:first-of-type span{background-color: #742b2b;height:3rem;line-height:3rem;}
 .no-touch .cd-stretchy-nav.nav-is-visible ul a:hover {
   color: var(--color-lightblue-10);
 }

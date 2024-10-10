@@ -49,47 +49,47 @@ function PAviationPortal1() {
         <ul>
           <li>
             <a href="javascript:void(0);" className="active">
+              <span>Safety Repot</span>
+            </a>
+          </li>
+          <li>
+            <a href="javascript:void(0);">
+              <span>객실안전보고서</span>
+            </a>
+          </li>
+          <li>
+            <a href="javascript:void(0);">
+              <span>장비안전보고서</span>
+            </a>
+          </li>
+          <li>
+            <a href="javascript:void(0);">
+              <span>지상안전보고서</span>
+            </a>
+          </li>
+          <li>
+            <a href="javascript:void(0);">
+              <span>운항관리안전보고서</span>
+            </a>
+          </li>
+          <li>
+            <a href="javascript:void(0);">
+              <span>램프안전보고서</span>
+            </a>
+          </li>
+          <li>
+            <a href="javascript:void(0);">
+              <span>FOQA</span>
+            </a>
+          </li>
+          <li>
+            <a href="javascript:void(0);">
               <span>HAZARD</span>
             </a>
           </li>
-          <li>
+          {/* <li>
             <a href="javascript:void(0);">
-              <span>Portfolio</span>
-            </a>
-          </li>
-          <li>
-            <a href="javascript:void(0);">
-              <span>Services</span>
-            </a>
-          </li>
-          <li>
-            <a href="javascript:void(0);">
-              <span>Store</span>
-            </a>
-          </li>
-          <li>
-            <a href="javascript:void(0);">
-              <span>Contact</span>
-            </a>
-          </li>
-          <li>
-            <a href="javascript:void(0);">
-              <span>0606</span>
-            </a>
-          </li>
-          <li>
-            <a href="javascript:void(0);">
-              <span>0707</span>
-            </a>
-          </li>
-          <li>
-            <a href="javascript:void(0);">
-              <span>0808</span>
-            </a>
-          </li>
-          <li>
-            <a href="javascript:void(0);">
-              <span>0909</span>
+              <span>HAZARD</span>
             </a>
           </li>
           <li>
@@ -104,9 +104,9 @@ function PAviationPortal1() {
           </li>
           <li>
             <a href="javascript:void(0);">
-              <span>ㅇㅇㅇㅇ</span>
+              <span>DD</span>
             </a>
-          </li>
+          </li> */}
         </ul>
 
         <span aria-hidden="true" className="stretchy-nav-bg"></span>
@@ -164,7 +164,6 @@ function PAviationPortal1() {
                       </span>
                     </div>
                     <div className="risk-bottom">
-                      <div className="name"> OYM</div>
                       <ul className="sort-box">
                         <li className="gray">0</li>
                         <li className="gray">0</li>
@@ -187,7 +186,6 @@ function PAviationPortal1() {
                       </span>
                     </div>
                     <div className="risk-bottom">
-                      <div className="name"> OYM</div>
                       <ul className="sort-box">
                         <li className="gray">0</li>
                         <li className="gray">0</li>
@@ -213,7 +211,6 @@ function PAviationPortal1() {
                       </span>
                     </div>
                     <div className="risk-bottom">
-                      <div className="name"> OYM</div>
                       <ul className="sort-box">
                         <li className="gray">0</li>
                         <li className="orange">1</li>
@@ -237,7 +234,6 @@ function PAviationPortal1() {
                       </span>
                     </div>
                     <div className="risk-bottom">
-                      <div className="name"> OYM</div>
                       <ul className="sort-box">
                         <li className="gray">0</li>
                         <li className="gray">0</li>
@@ -260,7 +256,6 @@ function PAviationPortal1() {
                       </span>
                     </div>
                     <div className="risk-bottom">
-                      <div className="name"> OYM</div>
                       <ul className="sort-box">
                         <li className="gray">0</li>
                         <li className="gray">0</li>
@@ -285,7 +280,6 @@ function PAviationPortal1() {
                       </span>
                     </div>
                     <div className="risk-bottom">
-                      <div className="name"> OYM</div>
                       <ul className="sort-box">
                         <li className="gray">0</li>
                         <li className="gray">0</li>
@@ -308,7 +302,6 @@ function PAviationPortal1() {
                       </span>
                     </div>
                     <div className="risk-bottom">
-                      <div className="name"> OYM</div>
                       <ul className="sort-box">
                         <li className="gray">0</li>
                         <li className="gray">0</li>
@@ -331,7 +324,6 @@ function PAviationPortal1() {
                       </span>
                     </div>
                     <div className="risk-bottom">
-                      <div className="name"> OYM</div>
                       <ul className="sort-box">
                         <li className="gray">0</li>
                         <li className="gray">0</li>
