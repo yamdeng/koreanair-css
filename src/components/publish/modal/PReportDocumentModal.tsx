@@ -70,14 +70,16 @@ function ReportDocumentModal(props) {
                         <AppTextInput label="제목" />
                       </div>
                     </div>
-                  </div>
-                  <div className="btn-area">
-                    <button type="button" name="button" className="btn-sm btn_text btn-darkblue-line">
-                      조회
-                    </button>
-                    <button type="button" name="button" className="btn-sm btn_text btn-darkblue-line">
-                      초기화
-                    </button>
+                    <div className="form-cell wid50">
+                      <div className="btn-area">
+                        <button type="button" name="button" className="btn-sm btn_text btn-darkblue-line">
+                          조회
+                        </button>
+                        <button type="button" name="button" className="btn-sm btn_text btn-darkblue-line">
+                          초기화
+                        </button>
+                      </div>
+                    </div>
                   </div>
                 </div>
 

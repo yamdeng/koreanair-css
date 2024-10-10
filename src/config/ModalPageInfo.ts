@@ -62,6 +62,7 @@ import AMO3Modal from '@/components/publish/modal/AMO3Modal';
 import findingcategoryModal from '@/components/publish/modal/findingcategoryModal';
 import rootcauseModal from '@/components/publish/modal/rootcauseModal';
 import PRiskModal from '@/components/publish/modal/PRiskModal';
+import PReportDeleteModal from '@/components/publish/modal/PReportDeleteModal';
 
 const ModalPageInfo: any = {};
 
@@ -219,6 +220,13 @@ ModalPageInfo.list = [
     path: 'PReportLevelModal',
     description: '',
     success: true,
+  },
+  {
+    title: '[항공안전>03.안전위험관리] 보고서분석 > 보고서삭제 팝업창',
+    Component: PReportDeleteModal,
+    path: 'PReportDeleteModal',
+    description: '',
+    success: false,
   },
   {
     title: '[항공안전>03.안전위험관리] 보고서분석 > 이메일보내기 팝업창',
