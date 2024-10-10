@@ -2,6 +2,7 @@ import ReactFullpage from '@fullpage/react-fullpage';
 import Slider from 'react-slick';
 import koreanairLogoImage from '@/resources/images/Koreanair-logo.svg';
 import TopMenuImage from '@/resources/images/menu-fries-w.svg';
+import SafetyPolicy from '@/resources/images/safetypolicy.jpg';
 
 function HomePortal1() {
   const nextSlide = () => {
@@ -142,12 +143,15 @@ function HomePortal1() {
           </div>
         </div>
       </div>
-      {/*
-      <div style={{ position: 'fixed', bottom: 30, zIndex: 10, right: 10 }}>우측 아이콘 영역</div>
-      <div style={{ position: 'fixed', bottom: 30, zIndex: 10, right: 10, display: '' }}>*/}
-      {/* 우측 아이콘 영역 클릭시 나오는 이미지 영역*/}
-      {/* (display: '' -> display: 'none') */}
-      {/*</div>*/}
+
+      <div className="fix-card">
+        <span className="txt">안전정책</span>
+      </div>
+      <div className="fix-card-conts">
+        <img src={SafetyPolicy} />
+        {/* 우측 아이콘 영역 클릭시 나오는 이미지 영역*/}
+        {/* (display: '' -> display: 'none') */}
+      </div>
       <div className="bottom-arrow" onClick={nextSlide}>
         <a href="javascript:void(0);">
           <span></span>
@@ -156,9 +160,9 @@ function HomePortal1() {
           Scroll
         </a>
       </div>
-      <div className="fix-card">
-        <span className="txt">Safety Policy</span>
-      </div>
+      {/*<div className="fix-card">
+        <span className="txt">안전정책</span>
+      </div>*/}
       <ReactFullpage
         licenseKey={'YOUR_KEY_HERE'}
         navigation
@@ -208,7 +212,7 @@ function HomePortal1() {
 
                   <div className="video_paging">
                     <ul>
-                      <li style={{ display: 'none' }} id="videoList01">
+                      <li className="dp-n" id="videoList01">
                         <div className="title">대한항공 안전포털</div>
                       </li>
                       <li className="active" id="videoList02">
@@ -226,23 +230,90 @@ function HomePortal1() {
                 </div>
               </div>
 
-              <div className="section main-visual01-bg">
-                <div className="home-slider-container">
-                  <Slider {...settings}>
-                    <div style={{ border: '1px solid black', height: 300 }}>
-                      <h3 style={{ border: '1px solid black', height: 300 }}>1</h3>
-                    </div>
-                    <div style={{ border: '1px solid black', height: 300 }}>
-                      <h3 style={{ border: '1px solid black', height: 300 }}>2</h3>
-                    </div>
-                    <div style={{ border: '1px solid black', height: 300 }}>
-                      <h3 style={{ border: '1px solid black', height: 300 }}>3</h3>
-                    </div>
-                  </Slider>
+              <div className="section main-visual01 active">
+                <div className="page1_conts">
+                  <div className="swiper">
+                    <Slider {...settings}>
+                      <div className="swiper-slide">
+                        <h3>안전장려금제도</h3>
+                      </div>
+                      <div className="swiper-slide">
+                        <h3>2024년 항공안전목표</h3>
+                      </div>
+                    </Slider>
+                  </div>
+                  <div className="btn-more">
+                    <button>view more</button>
+                  </div>
                 </div>
               </div>
-              <div className="section main-visual02-bg">
-                <p>준비중</p>
+              <div className="section main-visual02 active">
+                <div className="page2_conts">
+                  <div className="page2_title">
+                    <div className="title">2024년 산업안전목표</div>
+                    <div className="subtitle">
+                      <div className="subtitle-bg">
+                        <div className="subtitle-box">
+                          <span>정성목표</span>
+                          <ul>
+                            <li>대한항공 임직원의 안전하고 쾌적한 근무 환경 조성</li>
+                            <li>위험성평가 중심의 유해위험요인 관리 및 자율안전예방체계 구축</li>
+                          </ul>
+                        </div>
+                        <div className="subtitle-box">
+                          <span>정량목표</span>
+                          <ul>
+                            <li>재해율 0.58, 강도율 0.13 달성</li>
+                            <li>중대재해 및 중상재해 ZERO 달성</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="page2_contents">
+                    <div className="contents-box">
+                      <div className="contents-tit">
+                        <ul>
+                          <li>
+                            24년 목표 재해율: <span>0.58</span>
+                          </li>
+                          <li>
+                            2024년 재해율(연간누적): <span>0.30</span>, 전사 산업재해 승인 건수: <span>55</span>
+                          </li>
+                          <li>* 근로복지공단 승인 완료 산업재해 대상 집계</li>
+                        </ul>
+                      </div>
+                      <div className="graph-box pr-10">
+                        <div className="graph-box-bg">
+                          <div>타이틀</div>
+                          <div className="main-graph">그래트영역</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="contents-box">
+                      <div className="contents-tit">
+                        <ul>
+                          <li>
+                            24년 목표 강도율: <span>0.13</span>
+                          </li>
+                          <li>
+                            강도율(월평균): <span>0.10</span>, 연간 근로손실일수: <span>1,639</span>
+                          </li>
+                          <li>* 근로복지공단 승인 최초 요양일(입원/통원/재가) 기준 집계</li>
+                        </ul>
+                      </div>
+                      <div className="graph-box pl-10">
+                        <div className="graph-box-bg">
+                          <div className="">타이틀</div>
+                          <div className="main-graph">그래트영역</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="btn-more">
+                    <button>view more</button>
+                  </div>
+                </div>
               </div>
             </ReactFullpage.Wrapper>
           );

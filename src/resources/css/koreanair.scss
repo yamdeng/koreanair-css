@@ -1253,6 +1253,7 @@
 	cursor:pointer;
 	transition:all 1s;
 }
+.video_paging li.dp-n {display: none;}
 .video_paging li.active {
 	border-bottom: 0.3rem solid var(--color-lightblue-100);
 }
@@ -1290,32 +1291,226 @@
 	z-index:98;
 }
 
-.main-visual01-bg {
+.main-visual01 {
   position: relative;
   background-size:cover;
   background-position:center;
   background-image:url(../images/main-visual01.jpg);
   height: 100%;
 }
-.main-visual02-bg {
+.main-visual01 .page1_conts {
+  width:100%;
+  max-width: 144.0rem;
+  height: 100%;
+  margin: 0 auto;
+}
+.page1_conts .swiper {
+	position:absolute;
+	top:0;
+	width: 144.0rem;
+	font-family: 'KoreanAirSans';
+	font-size:5.0rem;
+	color:var(--color-neutral-10);
+	opacity:0;
+	transition:all 1s;
+}
+.main-visual01.active .page1_conts .swiper {
+	top:14rem;
+
+  width: 144.0rem;
+	opacity:1;
+	font-weight: 700;
+}
+.page1_conts .swiper .swiper-slide {
+	text-align: center;
+	font-size: 2.4rem;
+	background: transparent;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 1.5rem;
+	opacity: 1;
+  background-color: var(--color-neutral-10);
+  width: 144.0rem;
+  height: 100%;
+  }
+
+.main-visual02 {
   position: relative;
   background-size:cover;
   background-position:center;
   background-image:url(../images/main-visual02.jpg);
   height: 100%;
 }
+.main-visual02 .page2_conts {
+  /*display: flex;*/
+  width:100%;
+  max-width: 144.0rem;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.page2_title {
+  display: flex;
+	position: relative;
+  margin: 0 auto;
+	width: 100%;
+	text-align: center;
+}
+.page2_title .title {
+	position:absolute;
+	top:0;
+	width:100%;
+	font-family: 'KoreanAirSans';
+	font-size:5.0rem;
+	color:var(--color-neutral-10);
+	opacity:0;
+	transition:all 1s;
+}
+.main-visual02.active .page2_title .title {
+	top:12rem;
+  left: 0;
+  width: 100%;
+	opacity:1;
+	font-weight: 700;
+  /*display: inline-flex;
+  justify-content: center;*/
+}
+.btn-more {
+  position: absolute;
+  bottom: 8.0rem;
+  left: 50%;
+  transform: translate(-50%, 0%);
+}
+.btn-more button {
+  background-color: rgba(255, 255, 255, .1);
+  padding: 0.6rem 2.5rem;
+  border: 0.2rem solid var(--color-neutral-10);
+  border-radius: 99.9rem;
+  color: var(--color-neutral-10);
+  font-size: 1.4rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.page2_title .subtitle {
+	position:absolute;
+	top:0;
+	width:100%;
+	font-family: 'KoreanAirSans';
+	font-size:1.6rem;
+	color:rgba(255,255,255,0.6);
+	opacity:0;
+	transition:all 1s;
+}
+.main-visual02.active .page2_title .subtitle {
+	top:22.0rem;
+	opacity:1;
+
+}
+.main-visual02 .page2_title .subtitle .subtitle-bg {
+  display: inline-flex;
+	width: 100%; 
+	margin: 0 auto; 
+	background-color: rgba(5, 23, 102, 1); 
+	padding: 2.5rem 1.5rem; 
+	border-radius: 1.5rem; 
+}
+.main-visual02 .page2_title .subtitle .subtitle-box {
+  display: inline-flex;
+	color: var(--color-neutral-10);
+	width: 50%;
+  text-align: left;
+}
+.main-visual02 .page2_title .subtitle .subtitle-box span {
+	display: inline-flex;
+  justify-content: center;
+  align-items: center;
+	background-color: var(--color-lightblue-100);
+	border-radius: 99.9rem;
+	padding: 0.6rem 2.0rem;
+	text-align: center;
+	font-size: 2.1rem;
+	color: var(--color-neutral-10);
+	font-weight: normal;
+}
+.main-visual02 .page2_title .subtitle .subtitle-box ul li {
+	line-height: 150%;
+	font-size: 1.8rem;
+	font-weight: normal;
+	background: url(../images/dot.png) left center no-repeat;
+	padding: 0 0 0 1.0rem;
+  color: var(--color-neutral-10);
+  margin: 0 1.0rem;
+}
+.main-visual02 .page2_contents {
+  width: 100%;
+	max-width: 144.0rem;
+	margin: 0 auto;
+	position:relative;
+	top: 0;
+  left: 0;
+	text-align: center;
+	opacity: 0;
+	transition: all 1s;
+}
+.main-visual02.active .page2_contents {
+  width: 100%;
+  left: 0;
+  top:34.0rem;
+	opacity:1;
+	text-align: center;
+}
+.page2_contents .contents-box {
+  display: inline-block;
+  color: var(--color-neutral-10);
+  width: 50%;
+  vertical-align: top;
+}
+.page2_contents .contents-box .contents-tit ul li,
+.page2_contents .contents-box .contents-tit ul li span {
+  color: var(--color-neutral-10);
+  padding: 0.5rem 0;
+}
+.page2_contents .contents-box .contents-tit ul li:nth-of-type(1),
+.page2_contents .contents-box .contents-tit ul li:nth-of-type(1) span {
+  font-size: 2.8rem;
+  font-weight: 700;
+}
+.page2_contents .contents-box .contents-tit ul li:nth-of-type(2),
+.page2_contents .contents-box .contents-tit ul li:nth-of-type(2) span {
+  font-size: 2.0rem;
+  font-weight: normal;
+}
+.page2_contents .contents-box .contents-tit ul li:nth-of-type(3),
+.page2_contents .contents-box .contents-tit ul li:nth-of-type(3) span {
+  font-size: 1.4rem;
+  font-weight: normal;
+}
+.page2_contents .contents-box .graph-box {
+  /*padding: 2.0rem 0;*/
+  margin-top: 1.0rem;
+}
+.page2_contents .contents-box .graph-box .graph-box-bg {
+  background: var(--color-neutral-10);
+  border-radius: 1.5rem;
+  padding: 2.0rem;
+}
+.page2_contents .contents-box .graph-box .graph-box-bg .main-graph {
+  
+  
+}
 
 .fix-card {
 	display: block; 
 	position: fixed; 
-	right: 5%; 
-	bottom: 15%; 
+	right: 3.0rem; 
+	bottom: 2.0rem; 
 	background-color: var(--color-lightblue-100); 
 	padding: 1.0rem 2.0rem; 
 	border-radius: 99.9rem;
-  z-index: 1;
+  z-index: 10;
+  cursor: pointer; 
 }
-
 .fix-card .txt {
 	display: block; 
 	padding-right: 0; 
@@ -1323,7 +1518,17 @@
   font-size: 1.4rem; 
 	color:var(--color-neutral-10); 
 	font-weight: bold; 
-	cursor: pointer; 
+}
+.fix-card-conts {display: none;}
+.fix-card-conts.active {
+  display: block;
+  position: fixed;
+  top: 14.0rem; 
+	right: 100px;
+	width: 600px !important;
+	height: 620px !important;
+  z-index: 10;
+  cursor: pointer;
 }
 
 /*.dropdownmenu {display: none;}
