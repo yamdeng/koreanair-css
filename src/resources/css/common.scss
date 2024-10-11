@@ -450,7 +450,8 @@ input, select{font-family:'KoreanAirSans'}
   }
 
   .group-box-wrap{position: relative; display: inline-block;height:4.0rem}
-  .group-box-wrap .txt {position:absolute;left:1.0rem;top: -1.0rem;background:var(--color-neutral-10);height:1.2rem;padding: 0 0.5rem;font-size:1.3rem;display:flex}
+  .group-box-wrap .txt {position:absolute;left:1.0rem;top: -1.0rem;background: linear-gradient(to top, rgba(255, 255, 255, 1) 58%, rgba(255, 255, 255, 0) 30%);line-height:130%;padding: 0 0.5rem;font-size:1.3rem;display:flex}
+  .group-box-wrap .txt01 {z-index: 1; position:absolute;left:1.0rem;top: -1.0rem;background: linear-gradient(to top, rgba(239, 245, 254, 1) 50%, rgba(255, 255, 255, 0) 30%);line-height:130%;padding: 0 0.5rem;font-size:1.3rem;display:flex}
   .group-box-wrap1{position:relative;display:inline-block}
   .group-box-wrap1 .txt{position:absolute;left:1rem;top:-1rem;display:flex;background: var(--color-neutral-10);padding: 0 0.5rem;font-size: 1.3rem;z-index: 1}
   
@@ -460,7 +461,8 @@ input, select{font-family:'KoreanAirSans'}
 }
 
 .group-box-wrap{position:relative}
-.group-box-wrap .txt{position:absolute;left:1.0rem;top:-1.0rem;background:var(--color-neutral-10);padding:0 0.5rem;font-size:1.3rem; z-index: 1;}
+.group-box-wrap .txt{position:absolute;left:1.0rem;top:-1.0rem;background: linear-gradient(to top, rgba(255, 255, 255, 1) 58%, rgba(255, 255, 255, 0) 30%);padding:0 0.5rem;font-size:1.3rem; z-index: 1;}
+.group-box-wrap .txt01{position:absolute;left:1.0rem;top:-1.0rem;background: linear-gradient(to top, rgba(245, 245, 245, 1) 58%, rgba(255, 255, 255, 0) 30%);padding:0 0.5rem;font-size:1.3rem; z-index: 1;}
 .group-box-wrap span.errorText {display: block;color: var(--color-negative); font-size: 1.3rem; padding: 0.2rem 0.5rem;}
 .group-box-wrap.line {border: 0.1rem solid var(--color-neutral-40); border-radius: 0.5rem;}
 
@@ -585,7 +587,7 @@ input, select{font-family:'KoreanAirSans'}
 
 .form-group .date1, .form-group .date2{position:relative; width: 100%;}
 .form-group .date1, .form-group .date3{position:relative; width: 100%;}
-.form-group .f-label{display:block;position:absolute;left:1.0rem;top:0.9rem; background: linear-gradient(to top, rgba(255, 255, 255, 1) 58%, rgba(255, 255, 255, 0) 30%); /*background:var(--color-neutral-10); border-radius:99.9rem;z-index: 1;*/padding:0 0.8rem;line-height:1.4em;font-size:1.4rem;transition: all .2s ease}
+.form-group .f-label{display:block;position:absolute;left:1.0rem;top:0.9rem; background: linear-gradient(to top, rgba(255, 255, 255, 1) 60%, rgba(255, 255, 255, 0) 30%); /*background:var(--color-neutral-10); border-radius:99.9rem;z-index: 1;*/padding:0 0.8rem;line-height:150%;font-size:1.3rem;transition: all .2s ease}
 /*.form-group .f-label span {display: block;position: absolute;width: 100%;height: 0.1rem; background-color: #fff; left: 0; top: 0.8rem; z-index: 2;}*/
 .form-tag{position:relative;height:4rem;border:0.1rem solid var(--color-neutral-40);border-radius:0.5rem;padding:0 1.0rem;width:100%;box-sizing:border-box;color:var(--color-neutral-80);background:var(--color-neutral-10);outline:none!important;}
 // .form-tag:not([value=""]){border:0.1rem solid var(--color-neutral-40)}
@@ -615,10 +617,11 @@ input, select{font-family:'KoreanAirSans'}
 .form-tag:focus + .f-label,
 .form-tag.active + .f-label,
 .form-tag:not([value=""]) + .f-label,
-.form-tag.invalid + .f-label{left:1.0rem;top:-0.8rem;font-size:1.3rem;transition: all 0.2s ease}
-.form-tag:disabled + .f-label{left:1.0rem;top:-0.8rem;font-size:1.3rem;color:var(--color-neutral-60);background: linear-gradient(to top, rgba(247, 247, 247, 1) 56%, rgba(255, 255, 255, 0) 30%);}
-.label-select.disabled + .f-label{left:1rem;top:-0.8rem;font-size: 1.3rem;color:var(--color-neutral-60);background: linear-gradient(to top, rgba(247, 247, 247, 1) 54%, rgba(255, 255, 255, 0) 30%);}
-.ant-select-disabled + .f-label {background: linear-gradient(to top, rgba(247, 247, 247, 1) 56%, rgba(255, 255, 255, 0) 30%);}
+.form-tag.invalid + .f-label{left:1.0rem;top:-0.8rem;font-size:1.3rem; line-height: 150%; transition: all 0.2s ease}
+.form-tag:disabled + .f-label{left:1.0rem;top:-0.8rem;font-size:1.3rem;color:var(--color-neutral-60);background: linear-gradient(to top, rgba(247, 247, 247, 1) 57%, rgba(255, 255, 255, 0) 30%);}
+.ant-picker-outlined.ant-picker-disabled {background-color: var(--color-neutral-20) !important;}
+.label-select.disabled + .f-label{left:1rem;top:-0.8rem;font-size: 1.3rem;color:var(--color-neutral-60);background: linear-gradient(to top, rgba(247, 247, 247, 1) 58%, rgba(255, 255, 255, 0) 30%);}
+.ant-select-disabled + .f-label, .ant-picker-disabled + .f-label {color:var(--color-neutral-60); background: linear-gradient(to top, rgba(247, 247, 247, 1) 57%, rgba(255, 255, 255, 0) 30%);}
 
 // .form-tag:not([value=""]) + .f-label{color:var(--color-neutral-80)}
 .form-tag:disabled{background:var(--color-neutral-20)}

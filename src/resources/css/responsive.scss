@@ -216,6 +216,72 @@
     /*통합홈*/
     .intro-top-menu .top_container {width: 100%; padding: 0 3.2rem;}
     .intro-top-menu .top_container .dropmenu li:hover div {right: 3%;}
+    .top_menu_btn {
+      display: block;
+      position: absolute;
+      top: 1.0rem;
+      right: 1.0rem;
+      width: 6.0rem;
+      height: 6.0rem;
+      border: 0;
+      border-radius: 2.0rem;
+      background-color: transparent;
+      z-index: 11;
+    }
+    .top_menu_btn .line1, .top_menu_btn .line2, .top_menu_btn .line3 {
+      position: absolute;
+      left: 1.5rem;
+      width: 3.0rem;
+      height: 0.3rem;
+      border-radius: 0.3rem;
+      background-color: var(--color-neutral-10);
+      transition: all 0.2s;
+    }
+    .top_menu_btn .line1 {
+      top: 18px;
+    }
+    .top_menu_btn .line2 {
+      top: 28px;
+    }
+    .top_menu_btn .line3 {
+    top: 38px;
+    }
+    .top_menu_btn.close .line1 {
+      top: 2.8rem;
+      transform: rotate(45deg);
+      background-color: var(--color-darkblue-100);
+    }
+    .top_menu_btn.close .line2 {
+      display: none;
+    }
+    .top_menu_btn.close .line3 {
+      top: 2.8rem;
+      transform: rotate(-45deg);
+      background-color: var(--color-darkblue-100);
+    }
+    .top_menu_btn.close .top_menu {display: block !important;}
+    .top_menu {
+      display: none;
+      position: fixed;
+      top: 1.0rem;
+      right: 1.0rem;
+      padding: 7.0rem 3.0rem 2.0rem 3.0rem;
+      border-radius: 2.0rem;
+      background-color: var(--color-neutral-10);
+    }
+    .top_menu li {
+      float: none;
+      width: 12.0rem;
+      height: 4.0rem;
+      margin-left: 0;
+      text-align: right;
+    }
+    .top_menu li a {
+      font-size: 1.6rem;
+      color: var(--color-neutral-70);
+      line-height: 4.0rem;
+      padding: 0;
+    }
     .videovisual .title {        
       left: 76.0rem;
       width: 100%;

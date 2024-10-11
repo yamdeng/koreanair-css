@@ -191,7 +191,7 @@ function MyAuditCAR() {
                               <div className="form-cell">
                                 <div className="form-group wid100">
                                   <div className="group-box-wrap wid100">
-                                    <span className="txt">Priority</span>
+                                    <span className="txt01">Priority</span>
                                     <div className="editarea-box view">
                                       <div className="label-box bwid50">
                                         <span className="Option-tag OptionLevel red">High</span>
@@ -205,7 +205,7 @@ function MyAuditCAR() {
                               <div className="form-cell wid50">
                                 <div className="form-group wid100">
                                   <div className="group-box-wrap wid100">
-                                    <span className="txt">Probability</span>
+                                    <span className="txt01">Probability</span>
                                     <div className="editarea-box view">
                                       <div className="label-box wid50">
                                         <span className="Option-tag OptionLevel green">Extremdly improbable</span>
@@ -219,7 +219,7 @@ function MyAuditCAR() {
                               <div className="form-cell wid50">
                                 <div className="form-group wid100">
                                   <div className="group-box-wrap wid100">
-                                    <span className="txt">Severity</span>
+                                    <span className="txt01">Severity</span>
                                     <div className="editarea-box view">
                                       <div className="label-box wid50">
                                         <span className="Option-tag OptionLevel green">Negigible</span>

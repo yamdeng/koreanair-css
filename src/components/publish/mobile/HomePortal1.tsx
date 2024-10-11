@@ -32,7 +32,7 @@ function HomePortal1() {
             </a>
           </div>
           {/*'close'-모바일메뉴활성화 */}
-          <button className="top_menu_btn">
+          <button className="top_menu_btn close">
             <div className="line1"></div>
             <div className="line2"></div>
             <div className="line3"></div>
@@ -145,19 +145,13 @@ function HomePortal1() {
               </li>
             </ul>
           </div>
-          {/*모바일메뉴-아이콘 */}
-          {/*<div className="M-GNB ">
-            <a href="javascript:void(0);">
-              <img src={TopMenuImage} />
-            </a>
-          </div>*/}
         </div>
       </div>
 
       <div className="fix-card">
         <span className="txt">안전정책</span>
       </div>
-      <div className="fix-card-conts active">
+      <div className="fix-card-conts">
         <img src={SafetyPolicy} />
         {/* 우측 아이콘 영역 클릭시 나오는 이미지 영역*/}
         {/* (이미지활성화 -'active') */}

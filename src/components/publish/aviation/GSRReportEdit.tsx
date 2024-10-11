@@ -682,7 +682,7 @@ function GSRReportEdit() {
                           <div className="form-group wid100">
                             <div className="df">
                               <div className="group-box-wrap wid100">
-                                <span className="txt">
+                                <span className="txt01">
                                   발견/신고 <span className="required">*</span>
                                 </span>
                                 <div className="radio-wrap ">
