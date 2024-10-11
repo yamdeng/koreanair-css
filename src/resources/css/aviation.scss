@@ -846,6 +846,7 @@ meter::-webkit-meter-optimum-value {
   .grid-item .grid-group:nth-of-type(2) .main-conts-graph{display:flex;width:100%;justify-content:flex-start;/*flex-flow:row wrap;*/overflow: hidden;box-sizing:border-box;/*padding:0 0 2rem*/}
   .grid-item .grid-group:nth-of-type(2) .main-conts-graph .graph-box{position:relative;box-sizing:border-box;width:25%;padding-right:0.5rem;/*height:15.0rem;padding: 0.5rem 1.0rem;*//*background-color:var(--color-green)*/}
   .grid-item .grid-group:nth-of-type(2) .main-conts-graph .graph-box img{width:100%;height:16.5rem;/*object-fit:cover;*/background-size: cover;border-radius: 0.8rem;}
+  .grid-item .grid-group:nth-of-type(2) .main-conts-graph .graph-box canvas{width:100%;height:16.5rem;/*object-fit:cover;*/background-size: cover;border-radius: 0.8rem;background-color: #02C27F;}
   /*.grid-item .grid-group:nth-of-type(2) .main-conts-graph .graph-box + .graph-box{margin-left:1.7rem;}*/
   .grid-item .grid-group:nth-of-type(2) .main-conts-graph:last-child{padding-bottom:0}
 

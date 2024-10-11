@@ -119,7 +119,7 @@ function PAviationPortal1() {
             <div className="head-top">
               <h3>
                 Top 10 Events
-                <span className="txt-info">* 해당 기간 중 이벤트 발생 건 위험도 순위</span>
+                {/* <span className="txt-info">* 해당 기간 중 이벤트 발생 건 위험도 순위</span> */}
               </h3>
             </div>
 
@@ -360,8 +360,8 @@ function PAviationPortal1() {
             </div>
             <div className="main-conts-graph">
               <div className="graph-box">
-                {/* <canvas id="reportCvs0" width="130" height="150"></canvas> */}
-                <img src={chartasr} className="" alt="ASR" />
+                <canvas id="reportCvs0" width="130" height="150"></canvas>
+                {/* <img src={chartasr} className="" alt="ASR" /> */}
               </div>
               <div className="graph-box">
                 <img src={chartmsr} className="" alt="MSR" />
