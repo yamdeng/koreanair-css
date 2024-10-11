@@ -615,7 +615,8 @@ input, select{font-family:'KoreanAirSans'}
 .form-tag:focus + .f-label,
 .form-tag.active + .f-label,
 .form-tag:not([value=""]) + .f-label,
-.form-tag.invalid + .f-label{left:1.0rem;top:-0.8rem;font-size:1.3rem;transition: all 0.2s ease;background: linear-gradient(to top, rgba(247, 247, 247, 1) 56%, rgba(255, 255, 255, 0) 30%);}
+.form-tag.invalid + .f-label{left:1.0rem;top:-0.8rem;font-size:1.3rem;transition: all 0.2s ease;}
+.label-select.disabled + .f-label, .ant-picker-disabled + .f-label, .ant-select-disabled + .f-label {background: linear-gradient(to top, rgba(247, 247, 247, 1) 56%, rgba(255, 255, 255, 0) 30%); color: var(--color-neutral-60);}
 .form-tag:disabled + .f-label{left:1.0rem;top:-0.8rem;font-size:1.3rem;color:var(--color-neutral-60);background: linear-gradient(to top, rgba(247, 247, 247, 1) 56%, rgba(255, 255, 255, 0) 30%);}
 .label-select.disabled + .f-label{left:1rem;top:-0.8rem;font-size: 1.3rem;color:var(--color-neutral-60);background: linear-gradient(to top, rgba(247, 247, 247, 1) 54%, rgba(255, 255, 255, 0) 30%);}
 .ant-select-disabled + .f-label {background: linear-gradient(to top, rgba(247, 247, 247, 1) 56%, rgba(255, 255, 255, 0) 30%);}
