@@ -11,7 +11,7 @@
     "build:dev": "tsc && vite --mode development build",
     "build:stg": "tsc && vite --mode staging build",
     "build:stg-file": "tsc && dotenv -e ./env/.env.staging vite build",
-    "build": "tsc && vite build",
+    "build": "vite build",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "build:rcprd": "env-cmd -e development vite build"
   },
