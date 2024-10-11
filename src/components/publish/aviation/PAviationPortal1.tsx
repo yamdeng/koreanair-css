@@ -128,7 +128,7 @@ function PAviationPortal1() {
                 <div className="risk-conts-area">
                   <div className="risk-box">
                     <div className="IcoTags">
-                      <span className="ico-tag">1</span>
+                      <span className="ico-tag">11</span>
                     </div>
                     <div className="risk-conts">
                       <div className="txt">
@@ -424,16 +424,7 @@ function PAviationPortal1() {
                   <td>
                     <a href="javascript:void(0);">비행 시간 초과운영</a>
                   </td>
-                  <td>2024-07-18</td>
-                </tr>
-                {/* <tr>
-                  <td>
-                    <a href="javascript:void(0);">CSR-104005</a>
-                  </td>
-                  <td>
-                    <a href="javascript:void(0);">비행 시간 초과운영</a>
-                  </td>
-                  <td>2024-07-18</td>
+                  <td className="date">2024-07-18</td>
                 </tr>
                 <tr>
                   <td>
@@ -442,7 +433,7 @@ function PAviationPortal1() {
                   <td>
                     <a href="javascript:void(0);">비행 시간 초과운영</a>
                   </td>
-                  <td>2024-07-18</td>
+                  <td className="date">2024-07-18</td>
                 </tr>
                 <tr>
                   <td>
@@ -451,8 +442,26 @@ function PAviationPortal1() {
                   <td>
                     <a href="javascript:void(0);">비행 시간 초과운영</a>
                   </td>
-                  <td>2024-07-18</td>
-                </tr> */}
+                  <td className="date">2024-07-18</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="javascript:void(0);">CSR-104005</a>
+                  </td>
+                  <td>
+                    <a href="javascript:void(0);">비행 시간 초과운영</a>
+                  </td>
+                  <td className="date">2024-07-18</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="javascript:void(0);">CSR-104005</a>
+                  </td>
+                  <td>
+                    <a href="javascript:void(0);">비행 시간 초과운영</a>
+                  </td>
+                  <td className="date">2024-07-18</td>
+                </tr>
               </tbody>
             </table>
           </div>
@@ -470,15 +479,15 @@ function PAviationPortal1() {
           <Slider {...bannerSettings} key={'topRiskElement'}>
             <div className="main-photo">
               <img src={mainphoto} className="" alt="photo" />
-              <h3 className="ph-img-tit">
-                <span>2024년 1분기 SMS Excellence 우수보고서123</span>
-              </h3>
+              <div className="ph-img-tit">
+                <h3>2024년 1분기 SMS Excellence 우수보고서123</h3>
+              </div>
             </div>
             <div className="main-photo">
               <img src={mainphoto2} className="" alt="photo" />
-              <h3 className="ph-img-tit">
-                <span>2024년 1분기 산업안전보건 모범직원</span>
-              </h3>
+              <div className="ph-img-tit">
+                <h3>2024년 1분기 산업안전보건 모범직원</h3>
+              </div>
             </div>
           </Slider>
         </div>
