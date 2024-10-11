@@ -723,7 +723,7 @@ input, select{font-family:'KoreanAirSans'}
 .css-16xfy0z-control {background-color: var(--color-neutral-20) !important;}
 
 
-.ant-picker{height:4rem}
+.ant-picker{height:4rem;box-shadow:none !important}
 .ant-picker{padding:4px 20px 4px !important;width: 100%;}
 .ant-picker.hidden{padding:0px !important;}
 .ant-select{min-height:4rem !important}
