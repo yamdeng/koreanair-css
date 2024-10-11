@@ -8,7 +8,7 @@ import chartasr from '@/resources/images/ASR-box.svg';
 import chartmsr from '@/resources/images/MSR-box.svg';
 import Slider from 'react-slick';
 
-function CSRMain() {
+function CabinSafety() {
   const { setIsAviationPortal } = useStore(useAppStore, (state) => state) as any;
   const [rightIconVisible, setRightIconVisible] = useState(false);
 
@@ -126,4 +126,4 @@ function CSRMain() {
   );
 }
 
-export default CSRMain;
+export default CabinSafety;

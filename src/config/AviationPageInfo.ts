@@ -1,5 +1,5 @@
 import PAviationPortal1 from '@/components/publish/aviation/PAviationPortal1';
-import CSRMain from '@/components/publish/aviation/CSRMain';
+import CabinSafety from '@/components/publish/aviation/CabinSafety';
 import PRiskList from '@/components/publish/aviation/PRiskList';
 import PRiskEdit from '@/components/publish/aviation/PRiskEdit';
 import SPIInfo1 from '@/components/publish/aviation/SPIInfo1';
@@ -130,7 +130,7 @@ AviationPageInfo.list = [
     success: false,
   },
   {
-    title: '[서브메인] Air Saferty Report 메인',
+    title: '[서브메인] 메인(안전보고서)',
     Component: PAviationPortal1,
     path: 'PAviationPortal1',
     description: '',
@@ -138,8 +138,8 @@ AviationPageInfo.list = [
   },
   {
     title: '[서브메인] 객실안전보고서 메인',
-    Component: CSRMain,
-    path: 'CSRMain',
+    Component: CabinSafety,
+    path: 'CabinSafety',
     description: '',
     success: false,
   },

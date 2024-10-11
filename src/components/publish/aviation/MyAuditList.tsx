@@ -57,11 +57,11 @@ function MyAuditList() {
           <div className="user-box-top">
             <div className="form-table user-head">
               <div className="form-cell wid100">
-                <div className="form-group wid100">
+                <div className="form-group wid70">
                   <div className="h4">Div. Audit</div>
                 </div>
-                <div className="form-group wid100">
-                  <div className="wid30">
+                <div className="form-group wid30">
+                  <div className="wid100">
                     <AppSelect label={'2024'} />
                   </div>
                 </div>
@@ -99,11 +99,13 @@ function MyAuditList() {
           <div className="user-box-top">
             <div className="form-table user-head">
               <div className="form-cell wid100">
-                <div className="form-group wid100">
-                  <div className="df wid30">
+                <div className="form-group wid70">
+                  <div className="h4">Div. Audit</div>
+                </div>
+                <div className="form-group wid30">
+                  <div className="wid100">
                     <AppSelect label={'2024'} />
                   </div>
-                  <div className="h4">Div. Audit</div>
                 </div>
               </div>
             </div>
@@ -141,8 +143,11 @@ function MyAuditList() {
           <div className="user-box-top">
             <div className="form-table user-head">
               <div className="form-cell wid100">
-                <div className="form-group wid100">
-                  <div className="h4 tit">My Processing All</div>
+                <div className="form-group wid70">
+                  <div className="h4">My Processing All</div>
+                </div>
+                <div className="form-group wid30">
+                  <div className="wid100">{/* <AppSelect label={'2024'} /> */}</div>
                 </div>
               </div>
             </div>
