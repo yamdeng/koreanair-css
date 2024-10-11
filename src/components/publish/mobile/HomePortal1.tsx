@@ -31,7 +31,8 @@ function HomePortal1() {
               <img src={koreanairLogoImage} />
             </a>
           </div>
-          <button className="top_menu_btn close">
+          {/*'close'-모바일메뉴활성화 */}
+          <button className="top_menu_btn">
             <div className="line1"></div>
             <div className="line2"></div>
             <div className="line3"></div>
@@ -159,7 +160,7 @@ function HomePortal1() {
       <div className="fix-card-conts">
         <img src={SafetyPolicy} />
         {/* 우측 아이콘 영역 클릭시 나오는 이미지 영역*/}
-        {/* (display: '' -> display: 'none') */}
+        {/* (이미지활성화 -'active') */}
       </div>
       <div className="bottom-arrow" onClick={nextSlide}>
         <a href="javascript:void(0);">
