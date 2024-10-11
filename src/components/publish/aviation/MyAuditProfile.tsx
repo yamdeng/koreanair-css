@@ -71,14 +71,15 @@ function MyAuditProfile() {
             <div className="">
               <h3>점검이력 목록</h3>
               <div className="pro-table">
-                <colgroup>
-                  <col width="30%" />
-                  <col width="15%" />
-                  <col width="15%" />
-                  <col width="15%" />
-                  <col width="15%" />
-                </colgroup>
                 <table>
+                  <colgroup>
+                    <col width="30%" />
+                    <col width="15%" />
+                    <col width="15%" />
+                    <col width="15%" />
+                    <col width="15%" />
+                  </colgroup>
+
                   <thead>
                     <tr>
                       <th>부분</th>
