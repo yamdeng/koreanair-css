@@ -616,8 +616,8 @@ input, select{font-family:'KoreanAirSans'}
 .form-tag.active + .f-label,
 .form-tag:not([value=""]) + .f-label,
 .form-tag.invalid + .f-label{left:1.0rem;top:-0.8rem;font-size:1.3rem;transition: all 0.2s ease}
-.form-tag:disabled + .f-label{left:1.0rem;top:-0.8rem;font-size:1.3rem;color:var(--color-neutral-60);background-color:var(--color-neutral-20)}
-.label-select.disabled + .f-label{left:1rem;top:-0.8rem;font-size: 1.3rem;color:var(--color-neutral-60);background-color: var(--color-neutral-20)}
+.form-tag:disabled + .f-label{left:1.0rem;top:-0.8rem;font-size:1.3rem;color:var(--color-neutral-60);background: linear-gradient(to top, rgba(247, 247, 247, 1) 54%, rgba(255, 255, 255, 0) 30%);}
+.label-select.disabled + .f-label{left:1rem;top:-0.8rem;font-size: 1.3rem;color:var(--color-neutral-60);background: linear-gradient(to top, rgba(247, 247, 247, 1) 54%, rgba(255, 255, 255, 0) 30%);}
 
 
 // .form-tag:not([value=""]) + .f-label{color:var(--color-neutral-80)}
@@ -715,11 +715,13 @@ input, select{font-family:'KoreanAirSans'}
 .ant-picker-outlined{border:0.1rem solid var(--color-neutral-40)}
 .ant-select-single .ant-select-selector{line-height:4rem}
 .ant-select-single{height:4rem !important}
-:where(.css-dev-only-do-not-override-98ntnt)[class^="ant-select"] [class^="ant-select"], :where(.css-dev-only-do-not-override-98ntnt)[class*=" ant-select"] [class^="ant-select"]{color:var(--color-mblue-100)}
+/*:where(.css-dev-only-do-not-override-98ntnt)[class^="ant-select"] [class^="ant-select"], :where(.css-dev-only-do-not-override-98ntnt)[class*=" ant-select"] [class^="ant-select"]{color:var(--color-mblue-100)}*/
 .label-select.focused + .f-label,
 .label-select.ant-select-focused + .f-label,
-.label-picker.ant-picker-focused + .f-label {left:1rem;top:-1rem;font-size:1.3rem;color:var(--color-mblue-100);background-color:var(--color-neutral-10)}
+.label-picker.ant-picker-focused + .f-label {left:1rem;top:-1rem;font-size:1.3rem;color:var(--color-mblue-100);background: linear-gradient(to top, rgba(255, 255, 255, 1) 54%, rgba(255, 255, 255, 0) 30%);}
 .label-picker.selected + .f-label, .label-select.selected + .f-label{left:1rem;top:-1rem;font-size:1.3rem;}
+.css-16xfy0z-control {background-color: var(--color-neutral-20) !important;}
+
 
 .ant-picker{height:4rem}
 .ant-picker{padding:4px 20px 4px !important;width: 100%;}
@@ -830,3 +832,5 @@ input, select{font-family:'KoreanAirSans'}
 .header .util .util-list .util-icon li > .Info-list .Info-menu > li{display:flex;justify-content:left;align-items:center;padding:0 0.8rem;width:100%;border-bottom: 1px solid #eee;line-height:4.0rem;text-align:left;}
 .Info-list .Info-menu a{display:block;font-size:1.4rem}
 .Info-list .Info-menu a .ico{display: inline-flex;width:2.4rem;height:2.4rem;vertical-align:middle;margin-right:0.8rem}
+
+.ant-select-focused.ant-select-outlined:not(.ant-select-disabled):not(.ant-select-customize-input):not(.ant-pagination-size-changer) .ant-select-selector {box-shadow: none;}

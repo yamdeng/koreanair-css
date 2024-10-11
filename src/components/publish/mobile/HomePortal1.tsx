@@ -157,7 +157,7 @@ function HomePortal1() {
       <div className="fix-card">
         <span className="txt">안전정책</span>
       </div>
-      <div className="fix-card-conts">
+      <div className="fix-card-conts active">
         <img src={SafetyPolicy} />
         {/* 우측 아이콘 영역 클릭시 나오는 이미지 영역*/}
         {/* (이미지활성화 -'active') */}
