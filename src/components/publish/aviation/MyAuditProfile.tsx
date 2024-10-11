@@ -70,15 +70,15 @@ function MyAuditProfile() {
           <div className="list-view">
             <div className="">
               <h3>점검이력 목록</h3>
-              <div>
-                <table className="pro-table">
-                  <colgroup>
-                    <col width="30%" />
-                    <col width="15%" />
-                    <col width="15%" />
-                    <col width="15%" />
-                    <col width="15%" />
-                  </colgroup>
+              <div className="pro-table">
+                <colgroup>
+                  <col width="30%" />
+                  <col width="15%" />
+                  <col width="15%" />
+                  <col width="15%" />
+                  <col width="15%" />
+                </colgroup>
+                <table>
                   <thead>
                     <tr>
                       <th>부분</th>
@@ -120,20 +120,6 @@ function MyAuditProfile() {
                       <td>대리</td>
                       <td>2024-12-31</td>
                     </tr>
-                    <tr>
-                      <td>장비부문(1)</td>
-                      <td>홍길동9</td>
-                      <td>0009</td>
-                      <td>부장</td>
-                      <td>2024-12-31</td>
-                    </tr>
-                    <tr>
-                      <td>장비부문(1)</td>
-                      <td>홍길동9</td>
-                      <td>0009</td>
-                      <td>부장</td>
-                      <td>2024-12-31</td>
-                    </tr>
                   </tbody>
                 </table>
               </div>
@@ -142,8 +128,10 @@ function MyAuditProfile() {
         </div>
 
         <div className="right-box">
-          {/* <h3>개인별 교육이수 현황</h3> */}
-          <div>ㅌㅌ</div>
+          <div className="use-wrap">
+            <div className="use-left">d</div>
+            <div className="use-right">d</div>
+          </div>
         </div>
       </div>
     </>

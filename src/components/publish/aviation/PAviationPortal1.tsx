@@ -49,42 +49,42 @@ function PAviationPortal1() {
         <ul>
           <li>
             <a href="javascript:void(0);" className="active">
-              <span>Safety Repot</span>
+              <span className="active-bg">Safety Repot</span>
             </a>
           </li>
           <li>
             <a href="javascript:void(0);">
-              <span>객실안전보고서</span>
+              <span className="active-bg">객실안전보고서</span>
             </a>
           </li>
           <li>
             <a href="javascript:void(0);">
-              <span>장비안전보고서</span>
+              <span className="active-bg">장비안전보고서</span>
             </a>
           </li>
           <li>
             <a href="javascript:void(0);">
-              <span>지상안전보고서</span>
+              <span className="active-bg">지상안전보고서</span>
             </a>
           </li>
           <li>
             <a href="javascript:void(0);">
-              <span>운항관리안전보고서</span>
+              <span className="active-bg">운항관리안전보고서</span>
             </a>
           </li>
           <li>
             <a href="javascript:void(0);">
-              <span>램프안전보고서</span>
+              <span className="active-bg">램프안전보고서</span>
             </a>
           </li>
           <li>
             <a href="javascript:void(0);">
-              <span>FOQA</span>
+              <span className="active-bg">FOQA</span>
             </a>
           </li>
           <li>
             <a href="javascript:void(0);">
-              <span>HAZARD</span>
+              <span className="active-bg">HAZARD</span>
             </a>
           </li>
           {/* <li>
