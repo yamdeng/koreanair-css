@@ -70,8 +70,8 @@ function MyAuditProfile() {
           <div className="list-view">
             <div className="">
               <h3>점검이력 목록</h3>
-              <div>
-                <table className="pro-table">
+              <div className="pro-table">
+                <table>
                   <colgroup>
                     <col width="30%" />
                     <col width="15%" />
