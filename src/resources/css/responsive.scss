@@ -853,6 +853,15 @@
     background-color: var(--color-neutral-10);
     transition: all 0.2s;
   }
+  .top_menu_btn .line1 {
+    top: 18px;
+  }
+  .top_menu_btn .line2 {
+    top: 28px;
+  }
+  .top_menu_btn .line3 {
+  top: 38px;
+  }
   .top_menu_btn.close .line1 {
     top: 2.8rem;
     transform: rotate(45deg);
@@ -866,9 +875,9 @@
     transform: rotate(-45deg);
     background-color: var(--color-darkblue-100);
   }
-
+  .top_menu_btn.close .top_menu {display: block;}
   .top_menu {
-    /*display: none;*/
+    display: none;
     position: fixed;
     top: 1.0rem;
     right: 1.0rem;
