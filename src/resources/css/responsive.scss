@@ -186,7 +186,7 @@
   .av-main-wrap {grid-template-columns: 1fr 1fr;}
   .av-main-wrap .grid-item:nth-of-type(1) {display: inline-table; grid-column-end: span 2;}
   .av-main-wrap .grid-item:nth-of-type(1) .grid-group {display: grid; width: 100%;}
-  .av-main-wrap .grid-item .grid-group:nth-of-type(1) .slick-slider .slick-list{display:grid;height:38.0rem}
+  .av-main-wrap .grid-item .grid-group:nth-of-type(1) .slick-slider .slick-list{display:grid;/*height:38.0rem*/}
   .av-main-wrap .grid-item:nth-child(2) {grid-template-rows: 4.6rem 0;}
   .av-main-wrap .grid-item:nth-of-type(4) {grid-column-start: 1; grid-column-end: span 2;}
 
@@ -399,7 +399,7 @@
   .av-main-wrap {grid-template-columns: 1fr;}
   .av-main-wrap .grid-item:nth-of-type(1) {display: inline-table; grid-column-end: span 1;}
   .av-main-wrap .grid-item:nth-of-type(1) .grid-group {display: grid; width: 100%;}
-  .av-main-wrap .grid-item .grid-group:nth-of-type(1) .slick-slider .slick-list{display:grid;height:38.0rem}
+  .av-main-wrap .grid-item .grid-group:nth-of-type(1) .slick-slider .slick-list{display:grid;/*height:38.0rem*/}
   .av-main-wrap .grid-item:nth-child(2) {grid-template-rows: 3.6rem;}
   .av-main-wrap .grid-item:nth-of-type(4) {grid-column-start: 1; grid-column-end: span 1;}
   .av-main-wrap .grid-item .grid-group:nth-of-type(1) .slick-slider .slick-list .slick-track .slick-slide .risk-conts-area .risk-box{display:block;width: 100%;}
@@ -786,7 +786,7 @@
   .av-main-wrap {grid-template-columns: 1fr;}
   .av-main-wrap .grid-item:nth-of-type(1) {display: inline-table; grid-column-end: span 1;}
   .av-main-wrap .grid-item:nth-of-type(1) .grid-group {display: grid; width: 100%;}
-  .av-main-wrap .grid-item .grid-group:nth-of-type(1) .slick-slider .slick-list{display:grid;height:38.0rem}
+  .av-main-wrap .grid-item .grid-group:nth-of-type(1) .slick-slider .slick-list{display:grid;/*height:38.0rem*/}
   .av-main-wrap .grid-item:nth-child(2) {grid-template-rows: 0;}
   .av-main-wrap .grid-item:nth-of-type(4) {grid-column-start: 1; grid-column-end: span 1;}
   .av-main-wrap .grid-item .grid-group:nth-of-type(1) .slick-slider .slick-list .slick-track .slick-slide .risk-conts-area .risk-box{display:block;width: 100%;}
