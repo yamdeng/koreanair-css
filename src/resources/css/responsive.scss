@@ -34,9 +34,9 @@
   .user-wrap{width:100%}
   .user-wrap .user-box:nth-child(1){width:60%}
   .user-wrap .user-box:nth-child(2){width:40%}
-  .user-wrap .user-box .user-box-top{display:flex;align-items:flex-end;justify-content: flex-start;flex-wrap:wrap;width:100%}
-  .user-wrap .user-box .user-box-top:nth-child(2){margin:1rem 0 0.8rem}
-  .user-wrap .user-box .user-box-top .form-table.user-head .form-cell .form-group .h4{width:100%;text-align:right}
+  .user-wrap .user-box .user-box-top{display:flex;/*align-items:flex-end;*/justify-content: flex-start;flex-wrap:wrap;width:100%}
+  // .user-wrap .user-box .user-box-top:nth-child(2){margin:1rem 0 0.8rem}
+  .user-wrap .user-box .user-box-top .form-table.user-head .form-cell .form-group .h4{width:100%;text-align:left}
   .user-wrap .user-box .user-box-top .form-table.user-head .h4.tit{font-weight:600;font-size:1.8rem;text-align:left !important;line-height:2.3;padding-left:0.5rem}
   .user-wrap .user-box .user-box-top .user-box-bottom{width:100%}
 
@@ -177,7 +177,7 @@
   .user-wrap .user-box{display:block;width:100%}
   .user-wrap .user-box .user-box-top{display:flex;align-items:flex-end;justify-content: flex-start;flex-wrap:wrap;width:100%}
   .user-wrap .user-box .user-box-top:nth-child(2){margin:1rem 0 0.8rem}
-  .user-wrap .user-box .user-box-top .form-table.user-head .form-cell .form-group .h4{width:100%;text-align:right}
+  .user-wrap .user-box .user-box-top .form-table.user-head .form-cell .form-group .h4{width:100%;text-align:left}
   .user-wrap .user-box .user-box-top .form-table.user-head .h4.tit{font-weight:600;font-size:1.8rem;text-align:left !important;line-height:2.3;padding-left:0.5rem}
   .user-wrap .user-box .user-box-top .user-box-bottom{width:100%}
 
@@ -391,7 +391,7 @@
   .user-wrap .user-box{display:block;width:100%}
   .user-wrap .user-box .user-box-top{display:flex;align-items:flex-end;justify-content: flex-start;flex-wrap:wrap;width:100%}
   .user-wrap .user-box .user-box-top:nth-child(2){margin:1rem 0 0.8rem}
-  .user-wrap .user-box .user-box-top .form-table.user-head .form-cell .form-group .h4{width:100%;text-align:right}
+  .user-wrap .user-box .user-box-top .form-table.user-head .form-cell .form-group .h4{width:100%;text-align:left}
   .user-wrap .user-box .user-box-top .form-table.user-head .h4.tit{font-weight:600;font-size:1.8rem;text-align:left !important;line-height:2.3;padding-left:0.5rem}
   .user-wrap .user-box .user-box-top .user-box-bottom{width:100%}
 
@@ -774,7 +774,7 @@
   .user-wrap .user-box{display:block;width:100%}
   .user-wrap .user-box .user-box-top{display:flex;align-items:flex-end;justify-content: flex-start;flex-wrap:wrap;width:100%}
   .user-wrap .user-box .user-box-top:nth-child(2){margin:1rem 0 0.8rem}
-  .user-wrap .user-box .user-box-top .form-table.user-head .form-cell .form-group .h4{width:100%;text-align:right}
+  .user-wrap .user-box .user-box-top .form-table.user-head .form-cell .form-group .h4{width:100%;text-align:left}
   .user-wrap .user-box .user-box-top .form-table.user-head .h4.tit{font-weight:600;font-size:1.8rem;text-align:left !important;line-height:2.3;padding-left:0.5rem}
   .user-wrap .user-box .user-box-top .user-box-bottom{width:100%}
 
