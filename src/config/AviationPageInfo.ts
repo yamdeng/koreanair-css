@@ -115,6 +115,7 @@ import PRiskdashboard2 from '@/components/publish/aviation/PRiskdashboard2';
 import SafetyDayList from '@/components/publish/aviation/SafetyDayList';
 import CultureList from '@/components/publish/aviation/CultureList';
 import MyAuditProfile from '@/components/publish/aviation/MyAuditProfile';
+import SPIPList from '@/components/publish/aviation/SPIPList';
 
 import { fa, fakerLV } from '@faker-js/faker';
 import { fail } from 'assert';
@@ -570,10 +571,10 @@ AviationPageInfo.list = [
   },
   {
     title: '[05.안전증진] Safety Program > SPIP',
-    Component: WorkShopList,
-    path: 'WorkShopList',
+    Component: SPIPList,
+    path: 'SPIPList',
     description: '',
-    success: false,
+    success: true,
   },
   {
     title: '[05.안전증진] Safety Program > Excellence 리스트',

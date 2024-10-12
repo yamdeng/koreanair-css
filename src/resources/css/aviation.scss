@@ -355,6 +355,13 @@ meter::-webkit-meter-optimum-value {
 .contract-wrap .contract-box .item-box dl dt{display: table-cell;font-size:1.5rem;width: 40%;line-height: 1.2;color:var(--color-mblue-100);vertical-align: middle;}
 .contract-wrap .contract-box .item-box dl dd{font-size:1.8rem;display:table-cell;text-align:right;vertical-align:middle;font-weight:700;color:var(--color-mblue-100)}
 
+/*SPIP*/
+.sp-wrap{width:100%}
+.sp-wrap .sp-box{display:block;width:100%}
+.sp-wrap .sp-box + .sp-box{margin-top:2rem}
+.sp-wrap .sp-box h3 a{font-size:1.8rem;font-weight:500;color: var(--color-darkblue-100);padding-bottom:1rem}
+.sp-wrap .sp-box .img{display:block;margin-top:1rem;width:100%;height:100%;overflow-y:hidden}
+
 
 /*이력정보*/
 .edit-area.edu{border-top: 0.1rem solid var(--color-darkblue-100);line-height:0;font-size:0}
