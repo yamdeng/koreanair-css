@@ -121,6 +121,7 @@ import Adminground2List from '@/components/publish/aviation/Adminground2List';
 import Adminground2Edit from '@/components/publish/aviation/Adminground2Edit';
 import AdminAnalyzeList from '@/components/publish/aviation/AdminAnalyzeList';
 import AAdminAnalyzeEdit from '@/components/publish/aviation/AAdminAnalyzeEdit';
+import AdminCordEdit from '@/components/publish/aviation/AdminCordEdit';
 
 import { fa, fakerLV } from '@faker-js/faker';
 import { fail } from 'assert';
@@ -740,7 +741,14 @@ AviationPageInfo.list = [
     Component: AdminCordList,
     path: 'AdminCordList',
     description: '',
-    success: false,
+    success: true,
+  },
+  {
+    title: '[07.관리자] 장비코드관리 신규',
+    Component: AdminCordEdit,
+    path: 'AdminCordEdit',
+    description: '',
+    success: true,
   },
   {
     title: '[07.관리자] 장비점검관리',

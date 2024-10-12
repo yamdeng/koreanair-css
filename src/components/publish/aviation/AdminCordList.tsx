@@ -42,35 +42,50 @@ function AdminCordList() {
         <div className="form-table">
           <div className="form-cell wid30">
             <div className="form-group wid100">
-              <AppTextInput label="제목" />
-            </div>
-          </div>
-          <div className="form-cell wid50">
-            <div className="form-group form-glow">
-              <div className="df">
-                <div className="date1">
-                  <AppDatePicker label={'작성일'} />
-                </div>
-                <span className="unt">~</span>
-                <div className="date2">
-                  <AppDatePicker label={'종료일'} />
-                </div>
-              </div>
+              <AppTextInput label="장비코드" />
             </div>
           </div>
           <div className="form-cell wid50">
             <div className="form-group wid100">
-              <AppSelect label={'게시판구분'} />
+              <AppTextInput label="장비명" />
             </div>
           </div>
-
-          <div className="btn-area df">
-            <button type="button" name="button" className="btn-sm btn_text btn-darkblue-line">
-              조회
-            </button>
-            <button type="button" name="button" className="btn-sm btn_text btn-darkblue-line">
-              초기화
-            </button>
+          <div className="form-cell wid50">
+            <div className="form-group wid100">
+              <AppTextInput label="모델명" />
+            </div>
+          </div>
+        </div>
+        <div className="form-table">
+          <div className="form-cell wid30">
+            <div className="form-group wid100">
+              <AppSelect label={'자사구분'} />
+            </div>
+          </div>
+          <div className="form-cell wid30">
+            <div className="form-group wid100">
+              <AppSelect label={'부서'} />
+            </div>
+          </div>
+          <div className="form-cell wid50">
+            <div className="form-group wid100">
+              <AppTextInput label="업체명" />
+            </div>
+          </div>
+          <div className="form-cell wid30">
+            <div className="form-group wid100">
+              <AppSelect label={'사용여부'} />
+            </div>
+          </div>
+          <div className="form-cell wid50">
+            <div className="btn-area">
+              <button type="button" name="button" className="btn-sm btn_text btn-darkblue-line">
+                조회
+              </button>
+              <button type="button" name="button" className="btn-sm btn_text btn-darkblue-line">
+                초기화
+              </button>
+            </div>
           </div>
         </div>
       </div>

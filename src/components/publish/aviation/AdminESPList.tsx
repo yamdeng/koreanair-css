@@ -37,30 +37,37 @@ function AdminESPList() {
       <div className="conts-title">
         <h2>ESP 관리</h2>
       </div>
+
+      {/*탭 */}
+      <div className="menu-tab-nav">
+        <div className="menu-tab">
+          <a href="javascript:void(0);" className="active" data-label="HZR 전사 TOP RISK 분석 현황">
+            운영 현황 관리
+          </a>
+          <a href="javascript:void(0);" className="" data-label="TOP EVENT 현황">
+            Risk 분석 관리
+          </a>
+          <a href="javascript:void(0);" className="" data-label="TOP EVENT 현황">
+            진행현황 관리
+          </a>
+          <a href="javascript:void(0);" className="" data-label="TOP EVENT 현황">
+            HZR 참여실적 관리
+          </a>
+        </div>
+      </div>
+
       {/*검색영역 */}
       <div className="boxForm">
         <div className="form-table">
           <div className="form-cell wid30">
             <div className="form-group wid100">
-              <AppSelect label={'게시판구분'} />
+              <AppSelect label={'계약부서'} />
             </div>
           </div>
-          <div className="form-cell wid50">
-            <div className="form-group form-glow">
-              <div className="df">
-                <div className="date1">
-                  <AppDatePicker label={'작성일'} />
-                </div>
-                <span className="unt">~</span>
-                <div className="date2">
-                  <AppDatePicker label={'종료일'} />
-                </div>
-              </div>
-            </div>
-          </div>
+
           <div className="form-cell wid50">
             <div className="form-group wid100">
-              <AppTextInput label="제목" />
+              <AppSelect label="조어분야" />
             </div>
           </div>
 
