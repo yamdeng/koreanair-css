@@ -79,7 +79,6 @@ function MyAuditProfile() {
                     <col width="15%" />
                     <col width="15%" />
                   </colgroup>
-
                   <thead>
                     <tr>
                       <th>부분</th>
@@ -116,6 +115,13 @@ function MyAuditProfile() {
                       <td>2024-12-31</td>
                     </tr>
                     <tr>
+                      <td>홍길동</td>
+                      <td>0001</td>
+                      <td>대리</td>
+                      <td>2024-12-31</td>
+                    </tr>
+                    <tr>
+                      <td>전사 품질(5)</td>
                       <td>홍길동</td>
                       <td>0001</td>
                       <td>대리</td>
