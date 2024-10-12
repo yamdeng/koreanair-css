@@ -86,12 +86,12 @@ function POccupationMu1P11list() {
       {/* //검색영역 */}
       {/*그리드영역 */}
 
-      <div className="table-wrap">
+      <div className="table-wrap grid-height-box-type02">
         <div className="left-table">
-          <AppTable rowData={rowData} columns={columns} />
+          <AppTable className="grid-height" rowData={rowData} columns={columns} />
         </div>
         <div className="right-table">
-          <AppTable rowData={rowData} columns={columns} />
+          <AppTable className="grid-height" rowData={rowData} columns={columns} />
         </div>
       </div>
 

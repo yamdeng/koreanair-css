@@ -71,8 +71,8 @@ function POccupationMu1P6list() {
       </div>
       {/* //검색영역 */}
       {/*그리드영역 */}
-      <div>
-        <AppTable rowData={rowData} columns={columns} />
+      <div className="grid-height-box">
+        <AppTable className="grid-height" rowData={rowData} columns={columns} />
       </div>
       {/*//그리드영역 */}
       {/* 하단버튼영역 */}

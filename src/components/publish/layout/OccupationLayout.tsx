@@ -126,7 +126,7 @@ export default function OccupationLayout() {
           <ul className="LNB_list">
             <li>
               {/* LNB 1depth메뉴아이콘 클래스명 down-icon/up-icon */}
-              <a className="down-icon active" href="javascript:void(0);">
+              <a className="up-icon active" href="javascript:void(0);">
                 안전보고서
               </a>
               <ul className="mu-2depth">
@@ -156,27 +156,27 @@ export default function OccupationLayout() {
               </ul>
             </li>
             <li>
-              <a className="up-icon" href="javascript:void(0);">
+              <a className="down-icon" href="javascript:void(0);">
                 안전정책
               </a>
             </li>
             <li>
-              <a className="up-icon" href="javascript:void(0);">
+              <a className="down-icon" href="javascript:void(0);">
                 안전위험관리
               </a>
             </li>
             <li>
-              <a className="up-icon" href="javascript:void(0);">
+              <a className="down-icon" href="javascript:void(0);">
                 안전보증
               </a>
             </li>
             <li>
-              <a className="up-icon" href="javascript:void(0);">
+              <a className="down-icon" href="javascript:void(0);">
                 안전증진
               </a>
             </li>
             <li>
-              <a className="up-icon" href="javascript:void(0);">
+              <a className="down-icon" href="javascript:void(0);">
                 AUDIT
               </a>
             </li>

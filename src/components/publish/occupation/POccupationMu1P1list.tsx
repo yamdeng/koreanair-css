@@ -90,8 +90,8 @@ function POccupationMu1P1list() {
       </div>
       {/* //검색영역 */}
       {/*그리드영역 상단상위표출체크시 번호-아이콘으로 표시 아이콘명:pin.svg */}
-      <div>
-        <AppTable rowData={rowData} columns={columns} customButtons={customButtons} />
+      <div className="grid-height-box">
+        <AppTable className="grid-height" rowData={rowData} columns={columns} customButtons={customButtons} />
       </div>
       {/*//그리드영역 */}
 

@@ -5,6 +5,9 @@
   box-sizing: border-box; 
   height: calc(100vh - 0rem);
   min-width: 32.0rem;
+  width: 100%;
+  position: fixed;
+  left: 0;
 }
 .header {
   display: block;
@@ -780,7 +783,7 @@
 
 
 
-.table-wrap {display: flex; width: 100%; padding-bottom: 2.0rem;}
+.table-wrap {display: flex; width: 100%; /*padding-bottom: 2.0rem;*/}
 .table-wrap .left-table {display: inline-block; width: 100%; vertical-align: top; padding-right: 3.0rem;}
 .table-wrap .right-table {display: inline-block; width: 100%;  vertical-align: top;}
 
@@ -1638,3 +1641,19 @@
 }
 
 #fp-nav ul li a span, .fp-slidesNav ul li a span {background-color: var(--color-neutral-10);}
+
+/*그리드높이값*/
+.grid-height-box {
+  height: calc(100vh - 40.5rem);
+  .grid-height {height: calc(100% - 11.0rem) !important;}
+}
+
+.grid-height-box-type01 {
+  height: calc(100vh - 46.5rem);
+  .grid-height {height: calc(100% - 11.0rem) !important;}
+}
+
+.grid-height-box-type02 {
+  height: calc(100vh - 38.5rem);
+  .grid-height {height: calc(100% - 11.0rem) !important;}
+}

@@ -92,8 +92,8 @@ function POccupationMu1P5list() {
       </div>
       {/* //검색영역 */}
       {/*그리드영역 */}
-      <div>
-        <AppTable rowData={rowData} columns={columns} customButtons={customButtons} />
+      <div className="grid-height-box">
+        <AppTable className="grid-height" rowData={rowData} columns={columns} customButtons={customButtons} />
       </div>
       {/*//그리드영역 */}
       {/* 하단버튼영역 */}
