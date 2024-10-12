@@ -10,6 +10,7 @@ import AppDatePicker from '@/components/common/AppDatePicker';
 import AppRangeDatePicker from '@/components/common/AppRangeDatePicker';
 import AppTimePicker from '@/components/common/AppTimePicker';
 import AppAutoComplete from '@/components/common/AppAutoComplete';
+import AppTextArea from '@/components/common/AppTextArea';
 
 function MyAuditProfile() {
   const [inputValue, setInputValue] = useState('');
@@ -62,14 +63,13 @@ function MyAuditProfile() {
 
       <div className="equipbox">
         <div className="left-box">
-          <div className="btn-area inbtn mb5">
-            <button name="button" className="btn_text btn_confirm text_color_neutral-10">
-              보고서 추가
-            </button>
-          </div>
           <div className="list-view">
             <div className="">
-              <h3>점검이력 목록</h3>
+              <div className="btn-area inbtn mb5">
+                <button name="button" className="btn_text btn_confirm text_color_neutral-10">
+                  + Add AUDITOR
+                </button>
+              </div>
               <div className="pro-table">
                 <table>
                   <colgroup>
@@ -136,8 +136,47 @@ function MyAuditProfile() {
 
         <div className="right-box">
           <div className="use-wrap">
-            <div className="use-left">d</div>
-            <div className="use-right">d</div>
+            <div className="use-left">
+              <div className="box">
+                <span>
+                  Click
+                  <br />
+                  Attach
+                </span>
+              </div>
+            </div>
+            <div className="use-right">
+              <div className="editbox equip">
+                <div className="form-table">
+                  <div className="form-cell wid30">
+                    <div className="form-group wid100">
+                      <AppSelect label={'Audit 부문 '} required />
+                    </div>
+                  </div>
+                  <div className="form-cell wid50">
+                    <div className="form-group wid100">
+                      <AppAutoComplete label={'Search Auditor Name'} />
+                    </div>
+                  </div>
+                </div>
+                <hr className="line"></hr>
+                <div className="form-table">
+                  <div className="form-cell wid50">
+                    <div className="form-group wid100">
+                      <AppAutoComplete label={'공항검색'} />
+                    </div>
+                  </div>
+                </div>
+                <hr className="line"></hr>
+                <div className="form-table">
+                  <div className="form-cell wid50">
+                    <div className="form-group wid100">
+                      <AppTextArea label="Auditor Info" style={{ width: '100%', height: 80 }} errorMessage="" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
