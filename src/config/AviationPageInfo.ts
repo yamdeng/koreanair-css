@@ -116,6 +116,9 @@ import SafetyDayList from '@/components/publish/aviation/SafetyDayList';
 import CultureList from '@/components/publish/aviation/CultureList';
 import MyAuditProfile from '@/components/publish/aviation/MyAuditProfile';
 import SPIPList from '@/components/publish/aviation/SPIPList';
+import Adminground1List from '@/components/publish/aviation/Adminground1List';
+import Adminground2List from '@/components/publish/aviation/Adminground2List';
+import Adminground2Edit from '@/components/publish/aviation/Adminground2Edit';
 
 import { fa, fakerLV } from '@faker-js/faker';
 import { fail } from 'assert';
@@ -697,17 +700,24 @@ AviationPageInfo.list = [
   },
   {
     title: '[07.관리자] 지상관리 > 입력항목관리',
-    Component: AdminBoardList,
-    path: 'AdminBoardList',
+    Component: Adminground1List,
+    path: 'Adminground1List',
     description: '',
-    success: false,
+    success: true,
   },
   {
     title: '[07.관리자] 지상관리 > 대시보드관리',
-    Component: AdminBoardList,
-    path: 'AdminBoardList',
+    Component: Adminground2List,
+    path: 'Adminground2List',
     description: '',
-    success: false,
+    success: true,
+  },
+  {
+    title: '[07.관리자] 지상관리 > 대시보드 신규',
+    Component: Adminground2Edit,
+    path: 'Adminground2Edit',
+    description: '',
+    success: true,
   },
   {
     title: '[07.관리자] 종합분석결과보고서',
