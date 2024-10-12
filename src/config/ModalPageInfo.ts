@@ -63,6 +63,7 @@ import findingcategoryModal from '@/components/publish/modal/findingcategoryModa
 import rootcauseModal from '@/components/publish/modal/rootcauseModal';
 import PRiskModal from '@/components/publish/modal/PRiskModal';
 import PReportDeleteModal from '@/components/publish/modal/PReportDeleteModal';
+import PAdminTotreportModal from '@/components/publish/modal/PAdminTotreportModal';
 
 const ModalPageInfo: any = {};
 
@@ -389,7 +390,13 @@ ModalPageInfo.list = [
     description: '',
     success: true,
   },
-
+  {
+    title: '[항공안전> 07.관리자] SMS 종합분석 관리 > 종합분석보고서 확인 팝업창',
+    Component: PAdminTotreportModal,
+    path: 'PAdminTotreportModal',
+    description: '',
+    success: true,
+  },
   {
     title: '산업안전 > 안전경영 > 첨부링크 팝업창',
     Component: MU1P5detail2Modal,

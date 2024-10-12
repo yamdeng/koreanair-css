@@ -119,6 +119,8 @@ import SPIPList from '@/components/publish/aviation/SPIPList';
 import Adminground1List from '@/components/publish/aviation/Adminground1List';
 import Adminground2List from '@/components/publish/aviation/Adminground2List';
 import Adminground2Edit from '@/components/publish/aviation/Adminground2Edit';
+import AdminAnalyzeList from '@/components/publish/aviation/AdminAnalyzeList';
+import AAdminAnalyzeEdit from '@/components/publish/aviation/AAdminAnalyzeEdit';
 
 import { fa, fakerLV } from '@faker-js/faker';
 import { fail } from 'assert';
@@ -721,10 +723,17 @@ AviationPageInfo.list = [
   },
   {
     title: '[07.관리자] 종합분석결과보고서',
-    Component: AdminBoardList,
-    path: 'AdminBoardList',
+    Component: AdminAnalyzeList,
+    path: 'AdminAnalyzeList',
     description: '',
-    success: false,
+    success: true,
+  },
+  {
+    title: '[07.관리자] 종합분석결과보고서 신규',
+    Component: AAdminAnalyzeEdit,
+    path: 'AAdminAnalyzeEdit',
+    description: '',
+    success: true,
   },
   {
     title: '[07.관리자] 장비코드관리 리스트',
