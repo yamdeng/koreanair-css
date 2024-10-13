@@ -864,7 +864,7 @@ meter::-webkit-meter-optimum-value {
   .grid-item h3 .main-tab li a {font-size: 1.6rem; color:var( --color-neutral-70);}
   .grid-item h3 .main-tab li a.active {font-size:2rem; color: var(--color-darkblue-100);}
 
-  .grid-item .main-table-box{width:100%;margin-top:-1rem}
+  .grid-item .main-table-box{width:100%;/*margin-top:-1rem*/}
   .grid-item .main-table-box .main-table{width:100%}
   .grid-item .main-table-box .main-table tr{border-top:solid 0.1rem #ddd;vertical-align: middle;padding:1rem 0}
   .grid-item .main-table-box .main-table th{text-align:left;width: 100%;padding:1.0rem;}
