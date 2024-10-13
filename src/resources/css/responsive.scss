@@ -463,21 +463,21 @@
 
   
   .av-main-wrap {grid-template-columns: 1fr;}
-  .av-main-wrap .grid-item:nth-of-type(1) {display: inline-table; grid-column-end: span 1;}
+  .av-main-wrap .grid-item:nth-of-type(1){display: inline-table; grid-column-end: span 1;}
   .av-main-wrap .grid-item:nth-of-type(1) .grid-group {display: grid; width: 100%;}
   .av-main-wrap .grid-item .grid-group:nth-of-type(1) .slick-slider .slick-list{display:grid;/*height:38.0rem*/}
-  .av-main-wrap .grid-item:nth-child(2) {grid-template-rows: 3.6rem;}
+  .av-main-wrap .grid-item:nth-child(2){grid-template-rows: 3.6rem;}
   .av-main-wrap .grid-item:nth-child(2) .main-table-box{margin-top:0}
-  .av-main-wrap .grid-item:nth-of-type(4) {grid-column-start: 1; grid-column-end: span 1;grid-template-rows:auto}
+  .av-main-wrap .grid-item:nth-of-type(4){grid-column-start: 1; grid-column-end: span 1;grid-template-rows:auto}
   .av-main-wrap .grid-item:nth-of-type(1) .grid-group:nth-of-type(1) .risk-slider-container .slick-slider > .slick-dots{right:1rem}
   .av-main-wrap .grid-item .grid-group:nth-of-type(1) .slick-slider .slick-list .slick-track .slick-slide .risk-conts-area .risk-box{display:block;width:95%}
   .av-main-wrap .grid-item .grid-group:nth-of-type(1) .slick-slider .slick-list .slick-track .slick-slide .risk-conts-area .risk-box + .risk-box{margin-left:0}
   .main-wrap {display: block; height: auto;}
   .main-wrap .grid-item {margin: 2.4rem 0;}
 
-  .RiskLevel-Wrap{width:100%;}
-  .RiskLevel-Wrap .RiskLevel-Left{width:100%;}
-  .RiskLevel-Wrap .RiskLevel-Right{display:block; width:100%;}
+  .RiskLevel-Wrap{width:100%}
+  .RiskLevel-Wrap .RiskLevel-Left{width:100%}
+  .RiskLevel-Wrap .RiskLevel-Right{display:block;width:100%}
 
   .RiskLevel-Wrap{display:inline-block}
   .RiskLevel-Wrap .RiskLevel-Left{width:100%}
