@@ -397,8 +397,8 @@ function PAviationPortal1() {
             <table className="main-table-todo">
               <colgroup>
                 <col width="25%" />
-                <col width="50%" />
-                <col width="25%" />
+                <col width="55%" />
+                <col width="20%" />
               </colgroup>
               <thead>
                 <tr>
@@ -506,64 +506,73 @@ function PAviationPortal1() {
               </li>
             </ul>
           </h3>
-          <div className="main-table-box">
+          {/*공지사항 */}
+          <div id="" className="main-table-box">
             <table className="main-table">
-              <tr>
-                <th>
-                  <a href="javascript:void(0);">[공지] 안전장려금 제33차 운영 현황 안내</a>
-                </th>
-                <td>
-                  <span className="date">2024-00-00</span>
-                  <span className="wait">관리자</span>
-                </td>
-              </tr>
-              <tr>
-                <th>
-                  <a href="javascript:void(0);">[최근이슈] KE189/JUN22 여압장치..</a>
-                </th>
-                <td>
-                  <span className="date">2024-00-00</span>
-                  <span className="wait">관리자</span>
-                </td>
-              </tr>
-              <tr>
-                <th>
-                  <a href="javascript:void(0);">[안전지시] 2024 하절기 대비 안전관리..</a>
-                </th>
-                <td>
-                  <span className="date">2024-00-00</span>
-                  <span className="wait">관리자</span>
-                </td>
-              </tr>
-              <tr>
-                <th>
-                  <a href="javascript:void(0);">[공지] 2024년 상반기 SMS Excellence..</a>
-                </th>
-                <td>
-                  <span className="wait">2024-00-00</span>
-                  <span className="wait">관리자</span>
-                </td>
-              </tr>
-              <tr>
-                <th>
-                  <a href="javascript:void(0);">[공지] 2024년 제3차 중앙안전위원회(SRB) 결과 ..</a>
-                </th>
-                <td>
-                  <span className="date">2024-00-00</span>
-                  <span className="wait">관리자</span>
-                </td>
-              </tr>
-              <tr>
-                <th>
-                  <a href="javascript:void(0);">[공지] 2024년 7월 안전보안월례회의 (MSSM) 결과....</a>
-                </th>
-                <td>
-                  <span className="date">2024-00-00</span>
-                  <span className="wait">관리자</span>
-                </td>
-              </tr>
+              <colgroup>
+                <col width="65%" />
+                <col width="35%" />
+              </colgroup>
+              <tbody>
+                <tr>
+                  <td>
+                    <a href="javascript:void(0);">[공지] 안전장려금 제33차 운영 현황 안내</a>
+                  </td>
+                  <td>
+                    <span className="date">2024-00-00</span>
+                    <span className="wait tc">관리자</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="javascript:void(0);">[최근이슈] KE189/JUN22 여압장치..</a>
+                  </td>
+                  <td>
+                    <span className="date">2024-00-00</span>
+                    <span className="wait tc">관리자</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="javascript:void(0);">[안전지시] 2024 하절기 대비 안전관리..</a>
+                  </td>
+                  <td>
+                    <span className="date">2024-00-00</span>
+                    <span className="wait tc">관리자</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="javascript:void(0);">[공지] 2024년 상반기 SMS Excellence..</a>
+                  </td>
+                  <td>
+                    <span className="wait">2024-00-00</span>
+                    <span className="wait tc">관리자</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="javascript:void(0);">[공지] 2024년 제3차 중앙안전위원회(SRB) 결과 ..</a>
+                  </td>
+                  <td>
+                    <span className="date">2024-00-00</span>
+                    <span className="wait tc">관리자</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="javascript:void(0);">[공지] 2024년 7월 안전보안월례회의 (MSSM) 결과....</a>
+                  </td>
+                  <td>
+                    <span className="date">2024-00-00</span>
+                    <span className="wait tc">관리자</span>
+                  </td>
+                </tr>
+              </tbody>
             </table>
           </div>
+          {/*사고준사고 */}
+          <div id="" className=""></div>
         </div>
       </div>
       {/*}
