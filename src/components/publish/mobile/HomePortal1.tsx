@@ -32,11 +32,12 @@ function HomePortal1() {
             </a>
           </div>
           {/*'close'-모바일메뉴활성화 */}
-          <button className="top_menu_btn close">
+          <button className="top_menu_btn">
             <div className="line1"></div>
             <div className="line2"></div>
             <div className="line3"></div>
           </button>
+          {/*'active' - 모바일메뉴활성화 */}
           <div className="top_menu dropmenu">
             <ul>
               <li>

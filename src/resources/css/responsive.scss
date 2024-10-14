@@ -285,6 +285,7 @@
     .top_menu li a:hover {
       color:var(--color-darkblue-100);
     }
+    .dropmenu li:hover div {display: none;}
     .videovisual .title {        
       left: 76.0rem;
       width: 100%;
@@ -585,6 +586,7 @@
     .top_menu li a:hover {
       color:var(--color-darkblue-100);
     }
+    .dropmenu li:hover div {display: none;}
     .videovisual .title {
       left:76.0rem;
       width:100%;
@@ -976,6 +978,7 @@
   .top_menu li a:hover {
     color:var(--color-darkblue-100);
   }
+  .dropmenu li:hover div {display: none;}
   /*
   .intro-top-menu .top_menu {display: none;}
   .intro-top-menu .M-GNB {display: flex; justify-content: right; align-items: center; position:relative; top: -0.6rem;}
