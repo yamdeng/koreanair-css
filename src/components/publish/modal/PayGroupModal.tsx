@@ -160,7 +160,7 @@ function PayGroupModal(props) {
         {/*레이어팝업 */}
         <div className="modal-overlay"></div>
         <div className="modal">
-          <div className="pop_lg_cont_box">
+          <div className="pop_lg_cont_box deps">
             <h3 className="pop_title">결제그룹정보 설정</h3>
             <div className="pop_flex_group">
               <div className="editbox">
@@ -173,7 +173,7 @@ function PayGroupModal(props) {
                       <button type="button" name="button" className="btn-x-sm btn_text btn-darkblue-line">
                         신규
                       </button>
-                      <button type="button" name="button" className="ml3 btn-x-sm btn_text btn-darkgray-line">
+                      <button type="button" name="button" className="btn-x-sm ml3 btn_text btn-darkgray-line">
                         삭제
                       </button>
                     </div>
