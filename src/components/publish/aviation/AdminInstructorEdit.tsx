@@ -128,7 +128,6 @@ function AdminInstructorEdit() {
         <hr className="line dp-n"></hr>
         <div className="form-table">
           <div className="form-cell wid50">
-            {' '}
             <div className="group-box-wrap line wid100">
               <span className="txt">첨부파일 Link{/*<span className="required">*</span>*/}</span>
 
