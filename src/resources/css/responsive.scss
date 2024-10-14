@@ -847,8 +847,8 @@
   .av-main-wrap .grid-item:nth-of-type(1){display:inline-table;grid-column-end: span 1;}
   .av-main-wrap .grid-item:nth-of-type(1) .grid-group{display:grid;width:100%}
   .av-main-wrap .grid-item .grid-group:nth-of-type(1) .slick-slider .slick-list{display:grid;/*height:38.0rem*/}
-  .av-main-wrap .grid-item:nth-child(2) {display:inline-table;grid-template-rows: 0}
-
+  .av-main-wrap .grid-item:nth-child(2){display:inline-table;grid-template-rows:0}
+  // .av-main-wrap .grid-item:nth-child(3){width:85%}
   .av-main-wrap .grid-item:nth-of-type(4){grid-column-start: 1; grid-column-end: span 1;grid-template-rows:auto}
   .av-main-wrap .grid-item .grid-group:nth-of-type(1) .slick-slider .slick-list .slick-track .slick-slide .risk-conts-area .risk-box{display:block;width:95%}
   .av-main-wrap .grid-item .grid-group:nth-of-type(1) .slick-slider .slick-list .slick-track .slick-slide .risk-conts-area .risk-box + .risk-box{margin-left:0}

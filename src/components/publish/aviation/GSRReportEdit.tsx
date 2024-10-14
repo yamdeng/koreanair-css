@@ -311,6 +311,17 @@ function GSRReportEdit() {
                   <div className="form-table">
                     <div className="form-cell wid50">
                       <div className="form-group wid100">
+                        <span className="toggle_switch-tit">Cargo 상세</span>
+                        <label className="toggle_switch">
+                          <input type="checkbox" />
+                          <span className="slider"></span>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="form-table">
+                    <div className="form-cell wid50">
+                      <div className="form-group wid100">
                         <div className="group-box-wrap wid100">
                           <span className="txt">
                             발견/신고 <span className="required">*</span>
