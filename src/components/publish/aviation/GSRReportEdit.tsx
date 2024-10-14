@@ -98,9 +98,14 @@ function GSRReportEdit() {
       {/*검색영역 */}
       <div className="boxForm">
         <div className="form-table">
-          <div className="form-cell wid100">
+          <div className="form-cell wid50">
             <div className="form-group wid100">
-              <AppTextInput label="subject" required />
+              <AppAutoComplete label={'이벤트분석'} />
+            </div>
+          </div>
+          <div className="form-cell wid50">
+            <div className="form-group wid30">
+              <AppDatePicker label="출발일자" />
             </div>
           </div>
         </div>
@@ -120,7 +125,7 @@ function GSRReportEdit() {
               <div className="detail-form">
                 <div className="detail-list">
                   <div className="form-table ar">
-                    <div className="form-cell wid50">
+                    <div className="form-cell wid100">
                       <div className="form-group wid100">
                         <div className="df">
                           <div className="type3">
@@ -132,26 +137,28 @@ function GSRReportEdit() {
                         </div>
                       </div>
                     </div>
-                    <div className="form-cell wid100">
-                      <div className="form-group va-t ant-input wid100">
+                    <div className="form-cell wid50">
+                      <div className="form-group va-t ant-input wid50">
                         <span className="ant-input-group-addon1">KE</span>
                         <div className="ant-input-group-addon1-input wid100 df">
                           {/*비행편명 */}
                           <AppTextInput label="비행편명" />
-                          <div className="btn-area">
-                            <button type="button" name="button" className="btn-sm btn_text btn-darkblue-line">
-                              Search
-                            </button>
-                          </div>
                         </div>
+                      </div>
+                    </div>
+                    <div className="form-cell wid50">
+                      <div className="btn-area">
+                        <button type="button" name="button" className="btn-sm btn_text btn-darkblue-line">
+                          Search
+                        </button>
                       </div>
                     </div>
                   </div>
                   <div className="form-table">
-                    <div className="form-cell wid100">
+                    <div className="form-cell wid50">
                       <div className="form-group va-t ant-input wid100">
                         <span className="ant-input-group-addon1">HL</span>
-                        <div className="ant-input-group-addon1-input wid100">
+                        <div className="ant-input-group-addon1-input wid50">
                           {/*등록부호 */}
                           <AppTextInput label="등록부호" required />
                         </div>
