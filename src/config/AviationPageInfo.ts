@@ -354,7 +354,7 @@ AviationPageInfo.list = [
     Component: PSaferRiskEdit,
     path: 'PSaferRiskEdit',
     description: '',
-    success: false,
+    success: true,
   },
   {
     title: '[03.안전위험관리] 지상조사 > 지상안전조사보고서 정보',

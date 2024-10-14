@@ -213,6 +213,10 @@ input[type=checkbox],input[type=radio]{padding:0;vertical-align:middle;margin-to
 .chk-wrap.TopCheck > label{display:inline-block;padding:0rem 0.9rem 0.2rem 2.5rem;line-height:2.2rem;margin-left:1rem}
 .chk-wrap.TopCheck > label > input:checked + span{color:var(--color-neutral-80);font-size:1.4rem;width:auto;height:2rem;background:none}
 
+.info-wrap.toggle > dl dt button > .chk-wrap.TopCheck > label{display:inline-block;padding:0rem 0.9rem 0.2rem 2.5rem;line-height:2.2rem;margin-left:1rem}
+.info-wrap.toggle > dl dt button > .chk-wrap.TopCheck > label span{color:var(--color-neutral-80);font-size:1.4rem;width:auto;height:2rem;background:none}
+.info-wrap.toggle > dl dt button > .chk-wrap.TopCheck > label > input:checked + span{color:var(--color-neutral-80);font-size:1.4rem;width:auto;height:2rem;background:none}
+
 .chk-wrap.center {vertical-align: middle;}
 .chk-wrap > label.text-no {padding:0rem 0.9rem 0.2rem;margin:0;}
 .chk-wrap > label > input + span.text-no {height: 1.8rem;}

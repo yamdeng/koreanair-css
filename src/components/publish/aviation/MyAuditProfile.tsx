@@ -11,6 +11,61 @@ import AppRangeDatePicker from '@/components/common/AppRangeDatePicker';
 import AppTimePicker from '@/components/common/AppTimePicker';
 import AppAutoComplete from '@/components/common/AppAutoComplete';
 import AppTextArea from '@/components/common/AppTextArea';
+import infophoto from '@/resources/images/no_img_pro.jpg';
+const { Dragger } = Upload;
+import { Upload } from 'antd';
+const props: any = {
+  name: 'file',
+  multiple: true,
+  defaultFileList: [
+    {
+      uid: '1',
+      name: 'xxx.png',
+      // status: 'uploading',
+      url: 'http://www.baidu.com/xxx.png',
+      percent: 33,
+    },
+    {
+      uid: '2',
+      name: 'yyy.png',
+      status: 'done',
+      url: 'http://www.baidu.com/yyy.png',
+    },
+    {
+      uid: '3',
+      name: 'zzz.png',
+      status: 'error',
+      response: 'Server Error 500',
+      // custom error message to show
+      url: 'http://www.baidu.com/zzz.png',
+    },
+  ],
+  action: 'https://660d2bd96ddfa2943b33731c.mockapi.io/api/upload',
+
+  onChange(info) {
+    const { status } = info.file;
+    if (status !== 'uploading') {
+      console.log(info.file, info.fileList);
+    }
+    if (status === 'done') {
+      alert(`${info.file.name} file uploaded successfully.`);
+    } else if (status === 'error') {
+      alert(`${info.file.name} file upload failed.`);
+    }
+  },
+
+  onRemove(file) {
+    return false;
+  },
+
+  onPreview(file) {
+    return false;
+  },
+
+  onDrop(e) {
+    console.log('Dropped files', e.dataTransfer.files);
+  },
+};
 
 function MyAuditProfile() {
   const [inputValue, setInputValue] = useState('');
@@ -137,13 +192,14 @@ function MyAuditProfile() {
         <div className="right-box">
           <div className="use-wrap">
             <div className="use-left">
-              <div className="box">
-                <span>
-                  Click
-                  <br />
-                  Attach
-                </span>
+              {/*사진 */}
+              <div className="imgBox-wrap">
+                <div className="imgBox">
+                  <img src={infophoto} className="" alt="인물사진" />
+                </div>
               </div>
+              {/*//사진 */}
+              <div className=""></div>
             </div>
             <div className="use-right">
               <div className="editbox equip">
@@ -163,7 +219,7 @@ function MyAuditProfile() {
                 <div className="form-table">
                   <div className="form-cell wid50">
                     <div className="form-group wid100">
-                      <AppAutoComplete label={'공항검색'} />
+                      <AppTextArea label="Auditor Info" style={{ width: '100%', height: 80 }} errorMessage="" />
                     </div>
                   </div>
                 </div>
@@ -171,8 +227,75 @@ function MyAuditProfile() {
                 <div className="form-table">
                   <div className="form-cell wid50">
                     <div className="form-group wid100">
-                      <AppTextArea label="Auditor Info" style={{ width: '100%', height: 80 }} errorMessage="" />
+                      <AppTextArea label="Summary" style={{ width: '100%', height: 80 }} errorMessage="" />
                     </div>
+                  </div>
+                </div>
+                <hr className="line"></hr>
+                <div className="form-table">
+                  <div className="form-cell wid50">
+                    <div className="form-group wid100">
+                      <AppTextArea label="Work Experience" style={{ width: '100%', height: 80 }} errorMessage="" />
+                    </div>
+                  </div>
+                </div>
+                <hr className="line"></hr>
+                {/* 파일첨부영역 : drag */}
+                <div className="form-table">
+                  <div className="form-cell wid50">
+                    <div className="form-group wid100">
+                      <AppTextInput label={'Training Records'} />
+                    </div>
+                    <div className="form-group wid100">
+                      {/* 파일첨부영역 : drag */}
+                      <div className="filebox error">
+                        <Dragger {...props}>
+                          <p className="ant-upload-text ">
+                            + 이 곳을 클릭하거나 마우스로 업로드할 파일을 끌어서 놓으세요.
+                          </p>
+                        </Dragger>
+                        <label htmlFor="file" className="file-label">
+                          첨부파일 <span className="required">*</span>
+                        </label>
+                      </div>
+                      <span className="errorText">fileerror</span>
+                    </div>
+                  </div>
+                </div>
+                <hr className="line"></hr>
+                {/* 파일첨부영역 : drag */}
+                <div className="form-table">
+                  <div className="form-cell wid50">
+                    <div className="form-group wid100">
+                      <AppTextInput label={'Recurrent Training'} />
+                    </div>
+                    <div className="form-group wid100">
+                      {/* 파일첨부영역 : drag */}
+                      <div className="filebox error">
+                        <Dragger {...props}>
+                          <p className="ant-upload-text ">
+                            + 이 곳을 클릭하거나 마우스로 업로드할 파일을 끌어서 놓으세요.
+                          </p>
+                        </Dragger>
+                        <label htmlFor="file" className="file-label">
+                          첨부파일 <span className="required">*</span>
+                        </label>
+                      </div>
+                      <span className="errorText">fileerror</span>
+                    </div>
+                  </div>
+                </div>
+                <hr className="line"></hr>
+                <div className="form-table">
+                  <div className="form-cell wid50">signature space</div>
+                  <div className="form-cell wid50">
+                    {/* 버튼*/}
+                    <div className="contents-btns">
+                      <button type="button" name="button" className="btn_text text_color_neutral-10 btn_confirm">
+                        저장
+                      </button>
+                    </div>
+                    {/* //버튼*/}
                   </div>
                 </div>
               </div>

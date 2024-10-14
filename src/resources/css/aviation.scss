@@ -455,6 +455,7 @@ meter::-webkit-meter-optimum-value {
 .equipbox{display:inline-flex;width:100%}
 .equipbox .left-box{display:inline-table;vertical-align:top;padding-right:3rem;width:100%;}
 .equipbox .right-box{display:inline-block;width:100%;margin-top:2rem}
+.equipbox .right-box .use-wrap .use-right > .editbox.equip .form-table .form-cell .form-group + .form-group{margin-top:1.5rem}
 .list-view{
   display:block; 
   width:100%;
@@ -697,8 +698,9 @@ meter::-webkit-meter-optimum-value {
   margin:0 2rem}
 .use-wrap{display:inline-flex;width:100%;height:100%}
 .use-wrap .use-left{width:30%;background-color:var( --color-darkblue-100);padding:2rem}
-.use-wrap .use-left .box{background-color:var(--color-neutral-10);border-radius:0.8rem;}
-.use-wrap .use-left .box span{color:var( --color-neutral-80);text-align:center;font-size:1.2rem}
+.use-wrap .use-left .imgBox-wrap{position:relative;padding:2rem}
+.use-wrap .use-left .imgBox-wrap .imgBox{width:10rem;height:10rem;background-color:var(--color-neutral-10);border-radius:50%;text-align:center;overflow:hidden;}
+.use-wrap .use-left .imgBox-wrap .imgBox img{width:100%;height:100%;object-fit:cover}
 .use-wrap .use-right{width:70%;background-color:var(--color-neutral-20)}
 
 

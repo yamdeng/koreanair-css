@@ -115,8 +115,9 @@ function MSRReportEdit() {
               비행정보
               {/* 체크박스 선택*/}
               <div className="chk-wrap TopCheck">
+                {/*TopCheck */}
                 <label>
-                  <input type="checkbox" checked />
+                  <input type="checkbox" />
                   <span>Heavy Maintenance</span>
                 </label>
               </div>
