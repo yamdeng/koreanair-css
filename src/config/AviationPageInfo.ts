@@ -122,6 +122,7 @@ import Adminground2Edit from '@/components/publish/aviation/Adminground2Edit';
 import AdminAnalyzeList from '@/components/publish/aviation/AdminAnalyzeList';
 import AAdminAnalyzeEdit from '@/components/publish/aviation/AAdminAnalyzeEdit';
 import AdminCordEdit from '@/components/publish/aviation/AdminCordEdit';
+import PSaferRiskinfoDetail from '@/components/publish/aviation/PSaferRiskinfoDetail';
 
 import { fa, fakerLV } from '@faker-js/faker';
 import { fail } from 'assert';
@@ -346,6 +347,13 @@ AviationPageInfo.list = [
     path: 'PSaferRiskDetail',
     description: '',
     success: true,
+  },
+  {
+    title: '[03.안전위험관리] 지상조사 > 지상안전조사보고서 정보',
+    Component: PSaferRiskinfoDetail,
+    path: 'PSaferRiskinfoDetail',
+    description: '',
+    success: false,
   },
   {
     title: '[03.안전위험관리] 지상조사 > 조사보고서 신규(등록)',

@@ -36,7 +36,7 @@ function ReportLevelModal(props) {
                   </div>
                 </div>
                 <div className="form-cell wid50">
-                  <div className="form-group">
+                  <div className="form-group wid100">
                     <div className="df">
                       <div className="date1">
                         <AppDatePicker label={'날짜선택'} />
@@ -46,6 +46,11 @@ function ReportLevelModal(props) {
                         <AppDatePicker label={'날짜선택'} />
                       </div>
                     </div>
+                  </div>
+                </div>
+                <div className="form-cell wid50">
+                  <div className="form-group wid100">
+                    <AppSelect label={'선택 '} />
                   </div>
                 </div>
 
@@ -433,74 +438,6 @@ function ReportLevelModal(props) {
               </div>
             </div>
             <div className="RiskLevel-area">
-              {/* <div className="h4-tit">Risk Level</div> */}
-              {/*검색영역*/}
-              {/*<div className="search-area">
-                <div className="form-table">
-                  <div className="form-cell wid50">
-                    <div className="chk-wrap">
-                      <label>
-                        <input type="checkbox" checked />
-                        <span>
-                          이벤트 타입 : <span className="txt">Bird Strike</span>
-                        </span>
-                      </label>
-                    </div>
-                  </div>
-                </div>
-                <div className="form-table">
-                  <div className="form-cell wid50">
-                    <div className="chk-wrap">
-                      <label>
-                        <input type="checkbox" />
-                        <span>
-                          Potential Consequence : <span className="txt">Aircraft Change</span>
-                        </span>
-                      </label>
-                    </div>
-                  </div>
-                  <div className="form-cell wid50">
-                    <div className="chk-wrap">
-                      <label>
-                        <input type="checkbox" />
-                        <span>
-                          Hazard Taxonomy : <span className="txt">Snow/Slush encounter</span>
-                        </span>
-                      </label>
-                    </div>
-                  </div>
-                </div>
-                <hr className="line"></hr>
-                <div className="flex-e form-table mt10">
-                  <div className="form-area">
-                    <div className="flag-tag1">
-                      <span className="icon-flag1 txt btn-lightblue">기간선택</span>
-                      <span className="icon-flag1 txt btn-lightblue">전체</span>
-                      <span className="icon-flag1 txt btn-lightblue">최근3년</span>
-                      <span className="icon-flag1 txt btn-lightblue">1년</span>
-                      <span className="icon-flag1 txt btn-lightblue active">6개월</span>
-
-                    </div>
-                    <div className="form-cell">
-                      <div className="form-group">
-                        <div className="df">
-                          <div className="date1">
-                            <AppDatePicker label={'날짜선택'} />
-                          </div>
-                          <span className="unt">~</span>
-                          <div className="date2">
-                            <AppDatePicker label={'날짜선택'} />
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="pop_btns_">
-                    <button className="btn_text text_color_neutral-10 btn_confirm">조회</button>
-                  </div>
-                </div>
-              </div>*/}
-              {/*//검색영역*/}
               <div className="Level-area">
                 <div className="LevelTop">
                   <div className="flex-box">

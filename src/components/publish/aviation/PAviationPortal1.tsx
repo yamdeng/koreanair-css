@@ -572,7 +572,6 @@ function PAviationPortal1() {
             </table>
           </div>
           {/*사고준사고 */}
-          <div id="" className=""></div>
         </div>
       </div>
       {/*}
