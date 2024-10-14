@@ -199,7 +199,16 @@ function MyAuditProfile() {
                 </div>
               </div>
               {/*//사진 */}
-              <div className=""></div>
+              <div className="mu-wrap">
+                <div className="h4">Division/ Team</div>
+                <div className="form-table">
+                  <div className="form-cell wid100">
+                    <div className="form-group wid100">
+                      <AppTextArea label="Auditor Info" style={{ width: '100%', height: 80 }} errorMessage="" />
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
             <div className="use-right">
               <div className="editbox equip">
@@ -241,8 +250,12 @@ function MyAuditProfile() {
                 </div>
                 <hr className="line"></hr>
                 {/* 파일첨부영역 : drag */}
-                <div className="form-table">
-                  <div className="form-cell wid50">
+                <div className="form-table scroll">
+                  {/* form-cell 영역이 한 그룹입니다. */}
+                  <div className="form-cell wid100">
+                    <div className="form-group wid100">
+                      <button>+</button>
+                    </div>
                     <div className="form-group wid100">
                       <AppTextInput label={'Training Records'} />
                     </div>
@@ -264,8 +277,8 @@ function MyAuditProfile() {
                 </div>
                 <hr className="line"></hr>
                 {/* 파일첨부영역 : drag */}
-                <div className="form-table">
-                  <div className="form-cell wid50">
+                <div className="form-table scroll">
+                  <div className="form-cell wid100">
                     <div className="form-group wid100">
                       <AppTextInput label={'Recurrent Training'} />
                     </div>

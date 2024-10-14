@@ -691,16 +691,18 @@ meter::-webkit-meter-optimum-value {
 
 /*Audit-품질심사원 프로필*/
 .editbox.equip .form-table{padding:0 2rem}
-.editbox.equip hr.line{border: none;
-  height: 0.1rem;
-  background: var(--color-neutral-40);
-  margin: 0;
-  margin:0 2rem}
+.editbox.equip .form-table.scroll{display:inline-block;max-height:30.0rem;overflow-y:scroll}
+.editbox.equip .form-table.scroll .form-cell+ .form-cell{padding:0rem 1rem 2rem 0}
+.editbox.equip hr.line{border:none;height: 0.1rem;background: var(--color-neutral-40);margin: 0;margin:0 2rem}
 .use-wrap{display:inline-flex;width:100%;height:100%}
 .use-wrap .use-left{width:30%;background-color:var( --color-darkblue-100);padding:2rem}
 .use-wrap .use-left .imgBox-wrap{position:relative;padding:2rem}
 .use-wrap .use-left .imgBox-wrap .imgBox{width:10rem;height:10rem;background-color:var(--color-neutral-10);border-radius:50%;text-align:center;overflow:hidden;}
 .use-wrap .use-left .imgBox-wrap .imgBox img{width:100%;height:100%;object-fit:cover}
+.use-wrap .use-left .mu-wrap{}
+.use-wrap .use-left .mu-wrap .h4{color:var(--color-neutral-40);font-size:1.6rem;font-weight:500;border-bottom:solid 0.1rem var(--color-neutral-40)}
+
+
 .use-wrap .use-right{width:70%;background-color:var(--color-neutral-20)}
 
 

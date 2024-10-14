@@ -33,16 +33,16 @@ function EPSList1() {
       {/*탭 */}
       <div className="menu-tab-nav">
         <div className="menu-tab">
-          <a href="javascript:void(0);" className="active" data-label="HZR 전사 TOP RISK 분석 현황">
+          <a href="javascript:void(0);" className="active" data-label="운영 현황">
             운영 현황
           </a>
-          <a href="javascript:void(0);" className="" data-label="TOP EVENT 현황">
+          <a href="javascript:void(0);" className="" data-label="Risk 분석">
             Risk 분석
           </a>
-          <a href="javascript:void(0);" className="" data-label="TOP EVENT 현황">
+          <a href="javascript:void(0);" className="" data-label="진행현황">
             진행현황
           </a>
-          <a href="javascript:void(0);" className="" data-label="TOP EVENT 현황">
+          <a href="javascript:void(0);" className="" data-label="HZR 참여실적">
             HZR 참여실적
           </a>
         </div>

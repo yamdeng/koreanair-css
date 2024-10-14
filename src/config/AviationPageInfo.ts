@@ -124,6 +124,8 @@ import AAdminAnalyzeEdit from '@/components/publish/aviation/AAdminAnalyzeEdit';
 import AdminCordEdit from '@/components/publish/aviation/AdminCordEdit';
 import PSaferRiskinfoDetail from '@/components/publish/aviation/PSaferRiskinfoDetail';
 import PSaferRiskEdit from '@/components/publish/aviation/PSaferRiskEdit';
+import RiskList2 from '@/components/publish/aviation/RiskList2';
+import RiskList3 from '@/components/publish/aviation/RiskList3';
 
 import { fa, fakerLV } from '@faker-js/faker';
 import { fail } from 'assert';
@@ -495,6 +497,20 @@ AviationPageInfo.list = [
     title: '[04.안전보증] EPS현황 > Risk분석',
     Component: RiskList1,
     path: 'RiskList1',
+    description: '',
+    success: true,
+  },
+  {
+    title: '[04.안전보증] EPS현황 > 진행현황',
+    Component: RiskList2,
+    path: 'RiskList2',
+    description: '',
+    success: true,
+  },
+  {
+    title: '[04.안전보증] EPS현황 > HZR 참여실적',
+    Component: RiskList3,
+    path: 'RiskList3',
     description: '',
     success: true,
   },

@@ -6,7 +6,7 @@ import { testColumnInfos } from '@/data/grid/table-column';
 import AppDatePicker from '@/components/common/AppDatePicker';
 import AppSelect from '@/components/common/AppSelect';
 
-function RiskList1() {
+function RiskList3() {
   const [inputValue, setInputValue] = useState('');
   const rowData = getAllData();
   const columns = testColumnInfos;
@@ -36,19 +36,19 @@ function RiskList1() {
           <a href="javascript:void(0);" className="" data-label="운영 현황">
             운영 현황
           </a>
-          <a href="javascript:void(0);" className="active" data-label="Risk 분석">
+          <a href="javascript:void(0);" className="" data-label="Risk 분석">
             Risk 분석
           </a>
           <a href="javascript:void(0);" className="" data-label="진행현황">
             진행현황
           </a>
-          <a href="javascript:void(0);" className="" data-label="HZR 참여실적">
+          <a href="javascript:void(0);" className="active" data-label="HZR 참여실적">
             HZR 참여실적
           </a>
         </div>
       </div>
       {/*검색영역 */}
-      {/* <div className="boxForm">
+      <div className="boxForm">
         <div className="form-table">
           <div className="form-cell wid20">
             <div className="form-group wid100">
@@ -66,7 +66,7 @@ function RiskList1() {
             </div>
           </div>
         </div>
-      </div> */}
+      </div>
       {/* //검색영역 */}
 
       {/*조합 */}
@@ -74,15 +74,15 @@ function RiskList1() {
         <div className="contract-box">
           <div className="item-box">
             <dl>
-              <dt>총 지상 EVENT 수</dt>
-              <dd>177</dd>
+              <dt>전사실적</dt>
+              <dd>1,453</dd>
             </dl>
           </div>
         </div>
         <div className="contract-box">
           <div className="item-box">
             <dl>
-              <dt>조업 연관 EVENT 수</dt>
+              <dt>협력업체실적</dt>
               <dd>130</dd>
             </dl>
           </div>
@@ -122,4 +122,4 @@ function RiskList1() {
   );
 }
 
-export default RiskList1;
+export default RiskList3;
