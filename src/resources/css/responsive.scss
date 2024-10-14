@@ -1034,6 +1034,9 @@
   .main-visual02 .page2_title .subtitle .subtitle-bg {display: block; width: 100%;}
   .main-visual02 .page2_title .subtitle .subtitle-bg .subtitle-box {display: block; width: 100%;}
   .page2_contents .contents-box {display: none;}
+
+  .popup-container {height: calc(100vh - 150px) !important}
+  .pop_cont {height: 100%; max-height: none;}
 }
 
 
