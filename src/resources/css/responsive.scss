@@ -282,6 +282,9 @@
       line-height: 4.0rem;
       padding: 0;
     }
+    .top_menu li a:hover {
+      color:var(--color-darkblue-100);
+    }
     .videovisual .title {        
       left: 76.0rem;
       width: 100%;
@@ -579,7 +582,9 @@
       line-height: 4.0rem;
       padding: 0;
     }
-
+    .top_menu li a:hover {
+      color:var(--color-darkblue-100);
+    }
     .videovisual .title {
       left:76.0rem;
       width:100%;
@@ -966,6 +971,9 @@
     color: var(--color-neutral-70);
     line-height: 4.0rem;
     padding: 0;
+  }
+  .top_menu li a:hover {
+    color:var(--color-darkblue-100);
   }
   /*
   .intro-top-menu .top_menu {display: none;}

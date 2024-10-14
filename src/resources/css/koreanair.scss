@@ -999,7 +999,7 @@
 	transition:all 0.5s;
 }
 .top_menu li a:hover {
-	color:var(--color-darkblue-100);
+	color:var(--color-neutral-10);
 }
 .dropmenu li a {
   display:block;
@@ -1081,6 +1081,9 @@
 	object-fit:cover;
 	object-position:center;
   animation: fadeIn 0.3s;
+}
+.videovisual.active video.v3 {
+  object-fit: none;
 }
 @keyframes fadeIn {
 	0% {

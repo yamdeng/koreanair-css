@@ -182,7 +182,7 @@ function HomePortal1() {
                 {/*<p>Section 1 (welcome to fullpage.js)</p>
                 <button onClick={() => fullpageApi.moveSectionDown()}>Click me to move down</button>*/}
                 <div className="body_container_video">
-                  <div id="visual01" className="videovisual active">
+                  <div id="visual01" className="videovisual ">
                     <div className="title">대한항공 안전 - KSMS</div>
                     <div className="subtitle">
                       항공 및 산업안전 데이터 수집⬝분석, 위험도 평가 및 안전성과 모니터링을 지원하는 통합안전관리
@@ -201,14 +201,14 @@ function HomePortal1() {
                     <video src="/video/002.mp4" autoPlay playsInline muted></video>
                     <div className="video-bg"></div>
                   </div>
-                  <div id="visual03" className="videovisual">
+                  <div id="visual03" className="videovisual active">
                     <div className="title">산업안전 목표</div>
                     <div className="subtitle">
                       1. 대한항공 임직원의 안전하고 쾌적한 근무환경 조성
                       <br />
                       2. 위험성평가 중심의 유해위험요인 관리 및 자율안전예방체계 구축
                     </div>
-                    <video src="/video/003.mp4" autoPlay playsInline muted></video>
+                    <video className="v3" src="/video/003.mp4" autoPlay playsInline muted></video>
                     <div className="video-bg"></div>
                   </div>
 
