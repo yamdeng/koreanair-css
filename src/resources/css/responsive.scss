@@ -375,7 +375,7 @@
   .ant-input-group-addon1-input {position: absolute; left: 4.5rem; top:-2.0rem}
 
    /*위험레벨조회 팝업*/
-  .RiskLevel-box{display:block}
+  .RiskLevel-box{display:block;height: calc(100vh - 51.9rem);}
   .RiskLevel-box .RiskLevel-list{width:100%;padding:0 1.5rem}
   .RiskLevel-box .RiskLevel-list .box-list{height:30rem}
   .RiskLevel-box .RiskLevel-area{width:100%}
