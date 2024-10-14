@@ -845,3 +845,9 @@
 .modal > .pop_flex_group{width:100%;padding:0 1.5rem 0 1.5rem}
 .ant-modal .ant-modal-title{font-family:"KoreanAirSans";color:var(--color-darkblue-100);font-size: 2.1rem;font-weight:normal;padding-bottom:1rem;padding-right:4rem}
 .ant-modal .ant-modal-close{position:absolute;right:1.2rem;top:2rem;font-size: 0;color: transparent;width:3rem;height: 3rem;background: url(/src/resources/images/close.svg) center center no-repeat;background-size:contain;cursor:pointer}
+
+.tooltip-txt {display: inline-block; position: relative; padding: 0 3.0rem;}
+.tooltip-txt .tooltip-box {position: absolute; top: 0.6rem; right: 0;}
+.tooltip-txt .tooltip-box .tooltiptext {width: 15.0rem !important;}
+.tooltip-txt .tooltip-box .tooltiptext li {line-height: 1.8rem; font-weight: 500;}
+.form-group.modal-input-txt input {height: 3.0rem !important;}

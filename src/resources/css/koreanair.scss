@@ -657,9 +657,9 @@
 .accordion-btn-tit:after{content:'';display:inline-block;position:absolute;top:50%;right:0;margin:0 0 0 1.3rem;-webkit-transform: translateY(-50%) rotate(45deg);-webkit-transform-origin: center;transform-origin:center}
 .accordion-btn-tit .active .accordion-btn-tit:after{-webkit-transform:translateY(-50%) rotate(-135deg);transform:translateY(-50%) rotate(-135deg)}
 
-.checklistbox {display: block; height: 19rem; overflow-y: auto;}
+.checklistbox {display: block; /*height: 19rem; overflow-y: auto;*/}
 .check-list {width: 100%; border-top: 0.1rem solid var(--color-darkblue-100);}
-.check-list th, .check-list td {padding: 1.0rem; font-size: 1.4rem; text-align: center; line-height: 3.8rem;}
+.check-list th, .check-list td {padding: 1.0rem; font-size: 1.4rem; text-align: center; line-height: 3.0rem;}
 .check-list th:nth-child(1), .check-list td:nth-child(1){width: 80%;}
 .check-list th:nth-child(2), .check-list td:nth-child(2){width: 20%;}
 .check-list th {background-color: var(--color-neutral-20);}
@@ -964,7 +964,7 @@
   height: 8.8rem; 
   border-bottom: 1px solid rgba(255,255,255,0.4); 
   z-index: 10;
-  min-width: 37.5rem;
+  /*min-width: 37.5rem;*/
   .top_container {position: relative; top: 0; left: 50%; transform: translateX(-50%); width: 144.0rem; height: 100%; /*padding: 2.6rem 0;*/}
   .logo {float: left;padding: 2.6rem 0;}
   .logo a {display: flex; justify-content: left; width: 100%; height: 3.2rem;}
@@ -1115,7 +1115,7 @@
 	transform:translateX(-68.0rem);
 	font-family: 'KoreanAirSans';
 	font-size:6.0rem;
-  letter-spacing:-0.1rem;
+  letter-spacing:-0.2rem;
 	color:var(--color-neutral-10);
 	z-index:20;
 	text-shadow:0 0 2.0rem rgba(0,0,0,0.6);
@@ -1428,9 +1428,8 @@
 	transition:all 1s;
 }
 .main-visual02.active .page2_title .subtitle {
-	top:22.0rem;
+	top:20.0rem;
 	opacity:1;
-
 }
 .main-visual02 .page2_title .subtitle .subtitle-bg {
   display: inline-flex;
@@ -1445,6 +1444,7 @@
 	color: var(--color-neutral-10);
 	width: 50%;
   text-align: left;
+  align-items: flex-start;
 }
 .main-visual02 .page2_title .subtitle .subtitle-box span {
 	display: inline-flex;
@@ -1457,12 +1457,13 @@
 	font-size: 2.1rem;
 	color: var(--color-neutral-10);
 	font-weight: normal;
+  height: 35px;
 }
 .main-visual02 .page2_title .subtitle .subtitle-box ul li {
 	line-height: 150%;
 	font-size: 1.8rem;
 	font-weight: normal;
-	background: url(../images/dot.png) left center no-repeat;
+	background: url(../images/dot.png) left 1.4rem no-repeat;
 	padding: 0 0 0 1.0rem;
   color: var(--color-neutral-10);
   margin: 0 1.0rem;
