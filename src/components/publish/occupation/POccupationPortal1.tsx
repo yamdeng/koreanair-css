@@ -2,6 +2,9 @@ import { useEffect } from 'react';
 import { useStore } from 'zustand';
 import useAppStore from '@/store/useAppStore';
 import mainphoto from '@/resources/images/img.jpg';
+import maingraph from '@/resources/images/graph.png';
+import maingraph1 from '@/resources/images/graph01.png';
+import maingraph2 from '@/resources/images/graph02.png';
 
 function POccupationPortal1() {
   const { setIsAviationPortal } = useStore(useAppStore, (state) => state) as any;
@@ -278,6 +281,122 @@ function POccupationPortal1() {
               </li>
             </ul>
           </h3>
+          <div className="main-graph-box">
+            <div className="graph-box">
+              <ul>
+                <li>
+                  <span className="low">경계</span>
+                </li>
+                <li>
+                  <img src={maingraph2} className="" alt="graph" />
+                  {/* 그래프영역 */}
+                </li>
+                <li className="tit">
+                  <div>
+                    <ul>
+                      <li className="percent">0.58</li>
+                      <li className="title">전체</li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div className="graph-box">
+              <ul>
+                <li>
+                  <span className="optimum">달성</span>
+                </li>
+                <li>
+                  <img src={maingraph} className="" alt="graph" />
+                  {/* 그래프영역 */}
+                </li>
+                <li className="tit">
+                  <div>
+                    <ul>
+                      <li className="percent">0.36</li>
+                      <li className="title">정비</li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div className="graph-box">
+              <ul>
+                <li>
+                  <span className="high">미달성</span>
+                </li>
+                <li>
+                  <img src={maingraph1} className="" alt="graph" />
+                  {/* 그래프영역 */}
+                </li>
+                <li className="tit">
+                  <div>
+                    <ul>
+                      <li className="percent">0.38</li>
+                      <li className="title">항공우주</li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div className="graph-box">
+              <ul>
+                <li>
+                  <span className="optimum">달성</span>
+                </li>
+                <li>
+                  <img src={maingraph} className="" alt="graph" />
+                  {/* 그래프영역 */}
+                </li>
+                <li className="tit">
+                  <div>
+                    <ul>
+                      <li className="percent">0.58</li>
+                      <li className="title">여객</li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div className="graph-box">
+              <ul>
+                <li>
+                  <span className="optimum">달성</span>
+                </li>
+                <li>
+                  <img src={maingraph} className="" alt="graph" />
+                  {/* 그래프영역 */}
+                </li>
+                <li className="tit">
+                  <div>
+                    <ul>
+                      <li className="percent">0.58</li>
+                      <li className="title">화물</li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div className="graph-box">
+              <ul>
+                <li>
+                  <span className="optimum">달성</span>
+                </li>
+                <li>
+                  <img src={maingraph} className="" alt="graph" />
+                  {/* 그래프영역 */}
+                </li>
+                <li className="tit">
+                  <div>
+                    <ul>
+                      <li className="percent">0.58</li>
+                      <li className="title">객실</li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
     </>

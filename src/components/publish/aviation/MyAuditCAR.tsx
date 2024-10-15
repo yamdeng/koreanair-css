@@ -373,7 +373,7 @@ function MyAuditCAR() {
                                       </div>
                                     </div>
                                   </div>
-                                  <h3 className="table-tit mt-10">
+                                  <h3 className="audit-title mt-10">
                                     Root Cause <span className="required">*</span>
                                   </h3>
                                   <div className="form-table">
