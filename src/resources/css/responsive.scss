@@ -169,6 +169,7 @@
   .editbox.edit-detile.Audit > .form-table .form-group .type8{display:block;width:100%;margin-left:0}
 
 
+
   .editbox .form-table .form-cell .df{display:block}
   .editbox .form-table .form-cell .type9{display:block;width:100%}
   .editbox .form-table .form-cell .type10{display:block;width:100%;margin-left:0}
@@ -214,7 +215,7 @@
   .equipbox .right-box{display:block;width:100%;margin-top:1rem}
   .equipbox .right-box .use-wrap .use-right .editbox.equip .form-table.scroll .btn-box{position:relative}
   .equipbox .right-box .use-wrap .use-right .editbox.equip .form-table.scroll .btn-box .btn-more{position:absolute;top:-3.5rem;left:100%;transform:translate(-100%, 0%);display:flex;justify-content:flex-end;z-index:1;width:2.2rem;height:2.0rem;padding:1.5rem;border:solid 0.1rem var(--color-neutral-40);background:url(../images/plus-btn.svg) center center no-repeat;align-items:center}
-
+  .use-wrap .use-left .mu-wrap .h4{font-size:1.4rem}
 
     /*통합홈*/
     .intro-top-menu .top_container {width: 100%; padding: 0 3.2rem;}
@@ -423,6 +424,7 @@
   .user-wrap .user-box{display:block;width:100%}
   .user-wrap .user-box .user-box-top{display:flex;align-items:flex-end;justify-content: flex-start;flex-wrap:wrap;width:100%}
   .user-wrap .user-box .user-box-top:nth-child(2){margin:1rem 0 0.8rem}
+  .use-wrap .use-left .mu-wrap .h4{font-size:1.4rem}
 
   .detail-form .detail-list .form-table .form-cell .btn-area.inbtn{display:block;width:100%}
 
@@ -517,7 +519,7 @@
   .use-wrap .use-left .bottom-box{position:relative;width:100%}
   .use-wrap .use-left .bottom-box .imgBox{position:relative;bottom:-39.5rem;width:70%;height:3em;margin:auto}
   .use-wrap .use-left .bottom-box .imgBox img{width:100%;height:100%;/*object-fit:cover*/}
-
+  .use-wrap .use-left .mu-wrap .h4{font-size:1.4rem}
 
     /*통합홈*/
     .intro-top-menu {height: 8.0rem;}
@@ -921,7 +923,6 @@
   .equipbox .left-box{width:100%;padding-right:0}
   .equipbox .right-box{display:block;width:100%;margin-top:1rem}
   .use-wrap .use-left .imgBox-wrap{padding:2rem 0}
-  .use-wrap .use-left .imgBox-wrap .imgBox{}
   .use-wrap .use-left .bottom-box{position:relative;width:100%}
   .use-wrap .use-left .bottom-box .imgBox{position:relative;bottom:-48.5rem;width:80%;height:3em;margin:auto}
   .use-wrap .use-left .bottom-box .imgBox img{width:100%;height:100%;/*object-fit:cover*/}

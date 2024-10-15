@@ -92,10 +92,17 @@ function MyAuditProfile() {
       <div className="conts-title">
         <h2>품질심사원 프로필</h2>
       </div>
-
-      <div className="user-wrap">
-        <div className="user-box ">ㅇㅇ</div>
+      <div className="audit-header">
+        <ul>
+          <li>
+            Auditor Coun : <span className="num">120</span>
+          </li>
+          <li>
+            Audit Experience AVG : <span className="num">10Y 5M</span>
+          </li>
+        </ul>
       </div>
+
       {/*검색영역 */}
       <div className="boxForm">
         <div className="form-table">

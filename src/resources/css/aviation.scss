@@ -634,6 +634,11 @@ meter::-webkit-meter-optimum-value {
 .text-color-red{color:var(--color-negative);cursor:pointer}
 .text-color-yellow{color:var(--color-Leve6);cursor:pointer}
 
+.audit-header{width:100%;font-size:1.8rem;text-wrap:nowrap;font-weight:500;padding:0 0 1rem}
+.audit-header ul{width:100%}
+.audit-header li:first-child{padding-left:0.8rem}
+.audit-header li{display:inline;padding:0 0 0 2rem}
+.audit-header li .num{font-size:1.7rem;text-wrap:nowrap;font-weight:500;color:var(--color-mblue-100)}
 .user-wrap .user-box .user-box-top .user-box-bottom .pro-list{position:relative;text-align:center}
 .user-wrap .user-box .user-box-top .user-box-bottom .pro-list dl{display:inline-block;width:20%;text-align:center;line-height:1}
 .user-wrap .user-box .user-box-top .user-box-bottom .pro-list dl:first-child{border-left:none}
@@ -707,7 +712,7 @@ meter::-webkit-meter-optimum-value {
 .use-wrap .use-left .imgBox-wrap .imgBox{width:10rem;height:10rem;background-color:var(--color-neutral-10);border-radius:50%;text-align:center;overflow:hidden;margin:auto}
 .use-wrap .use-left .imgBox-wrap .imgBox img{width:100%;height:100%;object-fit:cover}
 .use-wrap .use-left .mu-wrap + .mu-wrap{margin-top:1.5rem}
-.use-wrap .use-left .mu-wrap .h4{color:var(--color-neutral-40);font-size:1.6rem;height:2.5rem;font-weight:500;margin-bottom:0.5rem;border-bottom:solid 0.1rem var(--color-neutral-40)}
+.use-wrap .use-left .mu-wrap .h4{display:inline;color:var(--color-neutral-40);font-size:1.5rem;font-weight:600;/*border-bottom:solid 0.1rem var(--color-neutral-40)*/}
 .use-wrap .use-left .bottom-box{position:relative;width:100%}
 .use-wrap .use-left .bottom-box .imgBox{position:relative;bottom:-43.5rem;width:70%;height:3em;margin:auto}
 .use-wrap .use-left .bottom-box .imgBox img{width:100%;height:100%;/*object-fit:cover*/}
