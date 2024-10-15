@@ -17,17 +17,22 @@ function CustomColumnComponent2() {
         <ul>
           <li>
             <a href="javascript:void(0);" className="text-orange">
-              제출(F/Y)
+              제출(finding)
             </a>
           </li>
           <li>
             <a href="javascript:void(0);" className="text-orange">
-              제출(F/Y)
+              제출(finding)
             </a>
           </li>
           <li>
             <a href="javascript:void(0);" className="text-orange">
-              제출(F/Y)
+              제출(finding)
+            </a>
+          </li>
+          <li>
+            <a href="javascript:void(0);" className="text-orange">
+              제출(finding)
             </a>
           </li>
         </ul>
