@@ -255,6 +255,9 @@ function AppTable(props) {
           >
             동적 필드 적용
           </button>
+          <div className="textBox addfile">
+            <input type="file" />
+          </div>
         </div>
       </div>
       <div className={className ? `ag-theme-quartz ${className}` : 'ag-theme-quartz'} style={{ height: tableHeight }}>

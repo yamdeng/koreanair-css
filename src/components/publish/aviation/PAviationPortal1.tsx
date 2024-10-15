@@ -364,16 +364,37 @@ function PAviationPortal1() {
                 {/* <img src={chartasr} className="" alt="ASR" />*/}
               </div>
               <div className="graph-box">
-                <img src={chartmsr} className="" alt="MSR" />
+                <canvas id="reportCvs0" width="150" height="150"></canvas>
+                {/* <img src={chartmsr} className="" alt="MSR" /> */}
               </div>
               <div className="graph-box">
-                <img src={chartmsr} className="" alt="GSR" />
+                <canvas id="reportCvs0" width="150" height="150"></canvas>
+                {/* <img src={chartmsr} className="" alt="GSR" /> */}
               </div>
               <div className="graph-box">
-                <img src={chartmsr} className="" alt="DSR" />
+                <canvas id="reportCvs0" width="150" height="150"></canvas>
+                {/* <img src={chartmsr} className="" alt="DSR" /> */}
               </div>
             </div>
             <div className="main-conts-graph">
+              <div className="graph-box">
+                <canvas id="reportCvs0" width="150" height="150"></canvas>
+                {/* <img src={chartasr} className="" alt="ASR" />*/}
+              </div>
+              <div className="graph-box">
+                <canvas id="reportCvs0" width="150" height="150"></canvas>
+                {/* <img src={chartmsr} className="" alt="MSR" /> */}
+              </div>
+              <div className="graph-box">
+                <canvas id="reportCvs0" width="150" height="150"></canvas>
+                {/* <img src={chartmsr} className="" alt="GSR" /> */}
+              </div>
+              <div className="graph-box">
+                <canvas id="reportCvs0" width="150" height="150"></canvas>
+                {/* <img src={chartmsr} className="" alt="DSR" /> */}
+              </div>
+            </div>
+            {/* <div className="main-conts-graph">
               <div className="graph-box">
                 <img src={chartasr} className="" alt="ASR" />
               </div>
@@ -386,7 +407,7 @@ function PAviationPortal1() {
               <div className="graph-box">
                 <img src={chartmsr} className="" alt="DSR" />
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
 

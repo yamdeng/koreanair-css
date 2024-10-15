@@ -11,9 +11,15 @@ function AdminESPList() {
   const columns = testColumnInfos;
   const customButtons = [
     {
-      title: '글쓰기',
+      title: '양식다운로드',
       onClick: () => {
-        alert('글쓰기');
+        alert('양식다운로드');
+      },
+    },
+    {
+      title: '엑셀업로드',
+      onClick: () => {
+        alert('엑셀업로드');
       },
     },
   ];
@@ -85,7 +91,8 @@ function AdminESPList() {
 
       {/*그리드영역 */}
       <div className="">
-        <AppTable rowData={rowData} columns={columns} />
+        <div></div>
+        <AppTable rowData={rowData} columns={columns} customButtons={customButtons} />
       </div>
       {/*//그리드영역 */}
 
