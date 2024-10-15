@@ -12,6 +12,7 @@ import AppTimePicker from '@/components/common/AppTimePicker';
 import AppAutoComplete from '@/components/common/AppAutoComplete';
 import AppTextArea from '@/components/common/AppTextArea';
 import infophoto from '@/resources/images/no_img_pro.jpg';
+import logoKoreanair from '@/resources/images/logo-Koreanair.svg';
 const { Dragger } = Upload;
 import { Upload } from 'antd';
 const props: any = {
@@ -100,17 +101,28 @@ function MyAuditProfile() {
         <div className="form-table">
           <div className="form-cell wid50">
             <div className="form-group wid100">
-              <AppTextInput label="제목" />
+              <AppSelect label="Audited Div." />
             </div>
           </div>
-
-          <div className="btn-area df">
-            <button type="button" name="button" className="btn-sm btn_text btn-darkblue-line">
-              조회
-            </button>
-            <button type="button" name="button" className="btn-sm btn_text btn-darkblue-line">
-              초기화
-            </button>
+          <div className="form-cell wid50">
+            <div className="form-group wid100">
+              <AppTextInput label="Auditor Name | Auditor EmpNo" />
+            </div>
+          </div>
+          <div className="form-cell wid50">
+            <div className="chk-wrap">
+              <label>
+                <input type="checkbox" />
+                <span>비활성 포함 조회</span>
+              </label>
+            </div>
+          </div>
+          <div className="form-cell wid50">
+            <div className="btn-area">
+              <button type="button" name="button" className="btn-sm btn_text btn-darkblue-line">
+                조회
+              </button>
+            </div>
           </div>
         </div>
       </div>
@@ -199,14 +211,64 @@ function MyAuditProfile() {
                 </div>
               </div>
               {/*//사진 */}
+
+              {/*Division/ Team */}
               <div className="mu-wrap">
                 <div className="h4">Division/ Team</div>
                 <div className="form-table">
                   <div className="form-cell wid100">
                     <div className="form-group wid100">
-                      <AppTextArea label="Auditor Info" style={{ width: '100%', height: 80 }} errorMessage="" />
+                      <AppTextArea label="" style={{ width: '100%', height: 80 }} errorMessage="" />
                     </div>
                   </div>
+                </div>
+                <div className="form-table">
+                  <div className="form-cell wid100">
+                    <div className="form-group wid100">
+                      <AppDatePicker label="date1" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              {/*Number of Audit */}
+              <div className="mu-wrap">
+                <div className="h4">Number of Audit</div>
+                <div className="form-table">
+                  <div className="form-cell wid100">
+                    <div className="form-group wid100 h8">
+                      {/* <AppTextArea label="" style={{ width: '100%', height: 80 }} errorMessage="" /> */}
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/*AUDIT SCOPE */}
+              <div className="mu-wrap">
+                <div className="h4">Audit Scope</div>
+                <div className="form-table">
+                  <div className="form-cell wid100">
+                    <div className="form-group wid100">
+                      <AppTextArea label="" style={{ width: '100%', height: 80 }} errorMessage="" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/*CERTIFICATION*/}
+              <div className="mu-wrap">
+                <div className="h4">Certification</div>
+                <div className="form-table">
+                  <div className="form-cell wid100">
+                    <div className="form-group wid100">
+                      <AppTextArea label="" style={{ width: '100%', height: 80 }} errorMessage="" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div className="bottom-box">
+                <div className="imgBox">
+                  <img src={logoKoreanair} className="" alt="인물사진" />
                 </div>
               </div>
             </div>
@@ -253,11 +315,15 @@ function MyAuditProfile() {
                 <div className="form-table scroll">
                   {/* form-cell 영역이 한 그룹입니다. */}
                   <div className="form-cell wid100">
-                    <div className="form-group wid100">
-                      <button>+</button>
-                    </div>
-                    <div className="form-group wid100">
+                    <div className="form-group wid70">
                       <AppTextInput label={'Training Records'} />
+                    </div>
+                    <div className="form-group wid30">
+                      <div className="btn-box">
+                        <button type="button" name="button" className="btn-more">
+                          <span className="hide">더보기</span>
+                        </button>
+                      </div>
                     </div>
                     <div className="form-group wid100">
                       {/* 파일첨부영역 : drag */}
@@ -279,8 +345,15 @@ function MyAuditProfile() {
                 {/* 파일첨부영역 : drag */}
                 <div className="form-table scroll">
                   <div className="form-cell wid100">
-                    <div className="form-group wid100">
+                    <div className="form-group wid70">
                       <AppTextInput label={'Recurrent Training'} />
+                    </div>
+                    <div className="form-group wid30">
+                      <div className="btn-box">
+                        <button type="button" name="button" className="btn-more">
+                          <span className="hide">더보기</span>
+                        </button>
+                      </div>
                     </div>
                     <div className="form-group wid100">
                       {/* 파일첨부영역 : drag */}

@@ -212,6 +212,9 @@
   .equipbox{display:block}
   .equipbox .left-box{width:100%;padding-right:0}
   .equipbox .right-box{display:block;width:100%;margin-top:1rem}
+  .equipbox .right-box .use-wrap .use-right .editbox.equip .form-table.scroll .btn-box{position:relative}
+  .equipbox .right-box .use-wrap .use-right .editbox.equip .form-table.scroll .btn-box .btn-more{position:absolute;top:-3.5rem;left:100%;transform:translate(-100%, 0%);display:flex;justify-content:flex-end;z-index:1;width:2.2rem;height:2.0rem;padding:1.5rem;border:solid 0.1rem var(--color-neutral-40);background:url(../images/plus-btn.svg) center center no-repeat;align-items:center}
+
 
     /*통합홈*/
     .intro-top-menu .top_container {width: 100%; padding: 0 3.2rem;}
@@ -468,6 +471,7 @@
   .user-wrap .user-box .user-box-top .form-table.user-head .form-cell .form-group .h4{width:100%;text-align:left}
   .user-wrap .user-box .user-box-top .form-table.user-head .h4.tit{font-weight:600;font-size:1.8rem;text-align:left !important;line-height:2.3;padding-left:0.5rem}
   .user-wrap .user-box .user-box-top .user-box-bottom{width:100%}
+  .equipbox .right-box .use-wrap .use-right .editbox.equip .form-table.scroll .btn-box .btn-more{position:absolute;top:-3.5rem;left:100%;transform:translate(-100%, 0%);display:flex;justify-content:flex-end;z-index:1;width:2.2rem;height:2.0rem;padding:1.5rem;border:solid 0.1rem var(--color-neutral-40);background:url(../images/plus-btn.svg) center center no-repeat;align-items:center}
 
   
   .av-main-wrap {grid-template-columns: 1fr; height:auto; grid-template-rows: none;}
@@ -510,6 +514,10 @@
   .equipbox{display:block}
   .equipbox .left-box{width:100%;padding-right:0}
   .equipbox .right-box{display:block;width:100%;margin-top:1rem}
+  .use-wrap .use-left .bottom-box{position:relative;width:100%}
+  .use-wrap .use-left .bottom-box .imgBox{position:relative;bottom:-39.5rem;width:70%;height:3em;margin:auto}
+  .use-wrap .use-left .bottom-box .imgBox img{width:100%;height:100%;/*object-fit:cover*/}
+
 
     /*통합홈*/
     .intro-top-menu {height: 8.0rem;}
@@ -627,6 +635,8 @@
     .main-visual02 .page2_title .subtitle .subtitle-bg .subtitle-box {display: block; width: 100%;}
     .page2_contents .contents-box {display: none;}
 
+
+
 }
 
 
@@ -716,7 +726,6 @@
   .dp-n {display: none;}
 
   .editbox.Audit .form-table .form-cell{padding:1rem 0 0rem 0;}
-
   .editbox .form-table .form-cell .form-group.Position-w{width:65%}
   .editbox .form-table .form-cell .Position-end{position:absolute;right:0;top:-4rem;width:15.0rem}
 
@@ -911,6 +920,11 @@
   .equipbox{display:block}
   .equipbox .left-box{width:100%;padding-right:0}
   .equipbox .right-box{display:block;width:100%;margin-top:1rem}
+  .use-wrap .use-left .imgBox-wrap{padding:2rem 0}
+  .use-wrap .use-left .imgBox-wrap .imgBox{}
+  .use-wrap .use-left .bottom-box{position:relative;width:100%}
+  .use-wrap .use-left .bottom-box .imgBox{position:relative;bottom:-48.5rem;width:80%;height:3em;margin:auto}
+  .use-wrap .use-left .bottom-box .imgBox img{width:100%;height:100%;/*object-fit:cover*/}
 
 
   .btns-area.gridbtn > button {border-radius: 99.9rem !important; position:absolute; right: 0; top: 0;}

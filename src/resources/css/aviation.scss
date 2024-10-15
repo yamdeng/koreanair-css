@@ -21,6 +21,7 @@
 .mt20{margin-top:2.0rem !important}
 .h40{height:4.0rem}
 .wid90{width:90%}
+.h8{height:8.0rem}
 
 
 .h3{position:relative;font-size:2.2rem;font-weight:700;height:4.0rem;letter-spacing:-0.01rem}
@@ -691,20 +692,26 @@ meter::-webkit-meter-optimum-value {
 .menu-tab-nav .swiper-container .menu-tab a button + button{padding-left:2.0rem}
 
 /*Audit-품질심사원 프로필*/
+.use-wrap .use-right{width:70%;background-color:var(--color-neutral-20)}
+
+.equipbox .right-box .use-wrap .use-right .editbox.equip .form-table.scroll .btn-box{position:relative}
+.equipbox .right-box .use-wrap .use-right .editbox.equip .form-table.scroll .btn-box .btn-more{position:absolute;top:-2.2rem;left:100%;transform:translate(-100%, 0%);display:flex;justify-content:flex-end;z-index:1;width:2.2rem;height:2.0rem;padding:1.5rem;border:solid 0.1rem var(--color-neutral-40);background:url(../images/plus-btn.svg) center center no-repeat;align-items:center}
+
 .editbox.equip .form-table{padding:0 2rem}
 .editbox.equip .form-table.scroll{display:inline-block;max-height:30.0rem;overflow-y:scroll}
-.editbox.equip .form-table.scroll .form-cell+ .form-cell{padding:0rem 1rem 2rem 0}
+.editbox.equip .form-table.scroll .form-cell + .form-cell{padding:0rem 1rem 2rem 0}
 .editbox.equip hr.line{border:none;height: 0.1rem;background: var(--color-neutral-40);margin: 0;margin:0 2rem}
 .use-wrap{display:inline-flex;width:100%;height:100%}
-.use-wrap .use-left{width:30%;background-color:var( --color-darkblue-100);padding:2rem}
-.use-wrap .use-left .imgBox-wrap{position:relative;padding:2rem}
-.use-wrap .use-left .imgBox-wrap .imgBox{width:10rem;height:10rem;background-color:var(--color-neutral-10);border-radius:50%;text-align:center;overflow:hidden;}
+.use-wrap .use-left{position:relative;width:30%;background-color:var( --color-darkblue-100);padding:2rem}
+.use-wrap .use-left .imgBox-wrap{position:relative;padding:2rem 0}
+.use-wrap .use-left .imgBox-wrap .imgBox{width:10rem;height:10rem;background-color:var(--color-neutral-10);border-radius:50%;text-align:center;overflow:hidden;margin:auto}
 .use-wrap .use-left .imgBox-wrap .imgBox img{width:100%;height:100%;object-fit:cover}
-.use-wrap .use-left .mu-wrap{}
-.use-wrap .use-left .mu-wrap .h4{color:var(--color-neutral-40);font-size:1.6rem;font-weight:500;border-bottom:solid 0.1rem var(--color-neutral-40)}
+.use-wrap .use-left .mu-wrap + .mu-wrap{margin-top:1.5rem}
+.use-wrap .use-left .mu-wrap .h4{color:var(--color-neutral-40);font-size:1.6rem;height:2.5rem;font-weight:500;margin-bottom:0.5rem;border-bottom:solid 0.1rem var(--color-neutral-40)}
+.use-wrap .use-left .bottom-box{position:relative;width:100%}
+.use-wrap .use-left .bottom-box .imgBox{position:relative;bottom:-43.5rem;width:70%;height:3em;margin:auto}
+.use-wrap .use-left .bottom-box .imgBox img{width:100%;height:100%;/*object-fit:cover*/}
 
-
-.use-wrap .use-right{width:70%;background-color:var(--color-neutral-20)}
 
 
 /*공통테이블*/
