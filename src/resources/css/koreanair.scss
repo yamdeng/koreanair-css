@@ -819,8 +819,8 @@
   .grid-item h3 .main-tab li a.active {font-size: 1.8rem; color: var(--color-darkblue-100);}
   
   .grid-item.pd-photo {padding: 0; position: relative;}
-  .grid-item .main-photo {width: 100%; height: 100%; max-height: 25.0rem;}
-  .grid-item .main-photo img {width: 100%; height: 100%; object-fit: cover; border-radius:  0.8rem;}
+  .grid-item .main-photo {width: 100%; height: 100%; max-height: 24.0rem;}
+  .grid-item .main-photo img {width: 100%; height: calc(100% - -7px); object-fit: cover; border-radius:  0.8rem;}
   .grid-item h3.img-tit {position: absolute; bottom: 4.0rem; background-color: rgba(0, 0, 0, .4); text-align: center; width: 100%; display: block; padding: 1.0rem 0; color: var(--color-neutral-10); font-size: 1.8rem; font-weight: 500;}
   .grid-item .main-photo-btn {position: absolute; bottom: 0.5rem; width: 100%; text-align: center; padding: 0.6rem 0;}
   .grid-item .main-photo-btn li {display: inline-block; font-size: 0; margin: 0 0.2rem; cursor: pointer; background-color: var(--color-darkblue-40); border-radius: 99.9rem; width: 1.0rem; height: 1.0rem;}
@@ -841,7 +841,7 @@
 
   .grid-item .Status {position: relative;}
   .grid-item .Status li {display: inline-flex; justify-content: right; position: relative; width: 100%; border: 0.1rem solid var(--color-neutral-40); border-radius: 0.8rem; padding: 1.0rem; margin: 1.0rem 0; font-size: 1.6rem;}
-  .grid-item .Status li:first-child {margin: 0 0 1.0rem 0;}
+  /*.grid-item .Status li:first-child {margin: 0 0 1.0rem 0;}*/
   .grid-item .Status li:last-child {margin: 1.0rem 0 0 0;}
   .grid-item .Status li.ing-bar {border-left: 1.0rem solid var(--color-positive);}
   .grid-item .Status li.wait-bar {border-left: 1.0rem solid var(--color-Warning);}
