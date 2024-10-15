@@ -825,7 +825,7 @@ meter::-webkit-meter-optimum-value {
   .grid-item .grid-group:nth-of-type(1) .slick-slider .slick-list{width:100%}
   .grid-item .grid-group:nth-of-type(1) .slick-slider .slick-list .slick-track .slick-slide .risk-conts-area{display:flex;justify-content:flex-start;flex-flow:row wrap;box-sizing: border-box;width:100%;padding: 0 0 2rem}
   .grid-item .grid-group:nth-of-type(1) .slick-slider .slick-list .slick-track .slick-slide .risk-conts-area:last-child{padding-bottom:0}
-  .grid-item .grid-group:nth-of-type(1) .slick-slider .slick-list .slick-track .slick-slide .risk-conts-area .risk-box{position:relative;display:inline-block;width:31%; margin-bottom:1.8rem;box-sizing: border-box; border:solid 0.2rem var(--color-darkblue-100);background-color:var(--color-neutral-10);border-radius:0.8rem;box-shadow:0.2rem 0.5rem 0.5rem rgba(0, 0, 0, 0.1)}
+  .grid-item .grid-group:nth-of-type(1) .slick-slider .slick-list .slick-track .slick-slide .risk-conts-area .risk-box{position:relative;display:inline-block;width:31%;height:169px; margin-bottom:1.8rem;box-sizing: border-box; border:solid 0.2rem var(--color-darkblue-100);background-color:var(--color-neutral-10);border-radius:0.8rem;box-shadow:0.2rem 0.5rem 0.5rem rgba(0, 0, 0, 0.1)}
   .grid-item .grid-group:nth-of-type(1) .slick-slider .slick-list .slick-track .slick-slide .risk-conts-area .risk-box + .risk-box{margin-left:1.8rem}
   .grid-item .grid-group:nth-of-type(1) .slick-slider .slick-list .slick-track .slick-slide .risk-conts-area .risk-box .IcoTags {position:absolute;top:0;left:.3rem}
   .grid-item .grid-group:nth-of-type(1) .slick-slider .slick-list .slick-track .slick-slide .risk-conts-area .risk-box .IcoTags .ico-tag{position: relative;border-top-left-radius:0.1rem;border-bottom-left-radius:0;background: url(/src/resources/images/img-git.svg) center bottom no-repeat;box-shadow:none;letter-spacing:-0.2rem;font-size:1.1rem;padding:0.3rem 1rem 0.8rem 0.8rem;width:2.5rem;height:3.0rem;color:var(--color-neutral-10)}
@@ -866,7 +866,7 @@ meter::-webkit-meter-optimum-value {
   .grid-item .grid-group:nth-of-type(2) .main-conts-graph{display:flex;width:100%;justify-content:flex-start;/*flex-flow:row wrap;*/overflow: hidden;box-sizing:border-box;padding:0 0 2rem}
   .grid-item .grid-group:nth-of-type(2) .main-conts-graph .graph-box{position:relative;box-sizing:border-box;width:25%;padding-right:1rem;/*height:15.0rem;padding: 0.5rem 1.0rem;*//*background-color:var(--color-green)*/}
   .grid-item .grid-group:nth-of-type(2) .main-conts-graph .graph-box img{width:100%;height:16.5rem;/*object-fit:cover;*/background-size: cover;/*border-radius: 0.8rem;*/}
-  .grid-item .grid-group:nth-of-type(2) .main-conts-graph .graph-box canvas{width:100%;/*height:100%;object-fit:cover;background-size:cover;*/border-radius:99.9rem;border:solid 0.2rem var(--color-green)}
+  .grid-item .grid-group:nth-of-type(2) .main-conts-graph .graph-box canvas{width:100%;/*height:100%;object-fit:cover;background-size:cover;border-radius:99.9rem;border:solid 0.2rem var(--color-green)*/}
   /*.grid-item .grid-group:nth-of-type(2) .main-conts-graph .graph-box + .graph-box{margin-left:1.7rem;}*/
   .grid-item .grid-group:nth-of-type(2) .main-conts-graph:last-child{padding-bottom:0}
 

@@ -360,37 +360,37 @@ function PAviationPortal1() {
             </div>
             <div className="main-conts-graph">
               <div className="graph-box">
-                <canvas id="reportCvs0" width="150" height="150"></canvas>
+                <canvas id="reportCvs0" width="150" height=""></canvas>
                 {/* <img src={chartasr} className="" alt="ASR" />*/}
               </div>
               <div className="graph-box">
-                <canvas id="reportCvs0" width="150" height="150"></canvas>
+                <canvas id="reportCvs0" width="150" height=""></canvas>
                 {/* <img src={chartmsr} className="" alt="MSR" /> */}
               </div>
               <div className="graph-box">
-                <canvas id="reportCvs0" width="150" height="150"></canvas>
+                <canvas id="reportCvs0" width="150" height=""></canvas>
                 {/* <img src={chartmsr} className="" alt="GSR" /> */}
               </div>
               <div className="graph-box">
-                <canvas id="reportCvs0" width="150" height="150"></canvas>
+                <canvas id="reportCvs0" width="150" height=""></canvas>
                 {/* <img src={chartmsr} className="" alt="DSR" /> */}
               </div>
             </div>
             <div className="main-conts-graph">
               <div className="graph-box">
-                <canvas id="reportCvs0" width="150" height="150"></canvas>
+                <canvas id="reportCvs0" width="150" height=""></canvas>
                 {/* <img src={chartasr} className="" alt="ASR" />*/}
               </div>
               <div className="graph-box">
-                <canvas id="reportCvs0" width="150" height="150"></canvas>
+                <canvas id="reportCvs0" width="150" height=""></canvas>
                 {/* <img src={chartmsr} className="" alt="MSR" /> */}
               </div>
               <div className="graph-box">
-                <canvas id="reportCvs0" width="150" height="150"></canvas>
+                <canvas id="reportCvs0" width="150" height=""></canvas>
                 {/* <img src={chartmsr} className="" alt="GSR" /> */}
               </div>
               <div className="graph-box">
-                <canvas id="reportCvs0" width="150" height="150"></canvas>
+                <canvas id="reportCvs0" width="150" height=""></canvas>
                 {/* <img src={chartmsr} className="" alt="DSR" /> */}
               </div>
             </div>
