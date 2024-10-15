@@ -360,8 +360,8 @@ function PAviationPortal1() {
             </div>
             <div className="main-conts-graph">
               <div className="graph-box">
-                {/* <canvas id="reportCvs0" width="130" height="150"></canvas>*/}
-                <img src={chartasr} className="" alt="ASR" />
+                <canvas id="reportCvs0" width="150" height="150"></canvas>
+                {/* <img src={chartasr} className="" alt="ASR" />*/}
               </div>
               <div className="graph-box">
                 <img src={chartmsr} className="" alt="MSR" />
