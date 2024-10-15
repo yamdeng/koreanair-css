@@ -107,7 +107,7 @@ OccupationPageInfo.list = [
     Component: POccupationPortal1,
     path: 'POccupationPortal1',
     description: '',
-    success: false,
+    success: true,
   },
   {
     title: '안전경영 > 공지사항-리스트',
