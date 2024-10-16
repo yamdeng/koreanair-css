@@ -824,14 +824,149 @@ function ReportASRDetail() {
 
                                         <div className="form-table">
                                           <div className="form-cell wid50">
-                                            <div className="group-box-wrap wid50">
+                                            <div className="group-box-wrap wid100">
                                               <span className="txt">Report Links</span>
-                                              <div className="round-wrap error">
-                                                <span className="icon_report"></span>{' '}
+                                              <div className="round-wrap ">
+                                                <div className="df">
+                                                  <div className="icon_report"></div>
+                                                  {/*문서번호 리스트 */}
+                                                  <div className="tag-list">
+                                                    <ul>
+                                                      <li>
+                                                        <button type="botton">
+                                                          ASR-104407{' '}
+                                                          <a href="javascript:void(0);">
+                                                            <span className="delete">X</span>
+                                                          </a>
+                                                        </button>
+                                                      </li>
+                                                      <li>
+                                                        <button type="botton">
+                                                          ASR-104407{' '}
+                                                          <a href="javascript:void(0);">
+                                                            <span className="delete">X</span>
+                                                          </a>
+                                                        </button>
+                                                      </li>
+                                                      <li>
+                                                        <button type="botton">
+                                                          ASR-104407{' '}
+                                                          <a href="javascript:void(0);">
+                                                            <span className="delete">X</span>
+                                                          </a>
+                                                        </button>
+                                                      </li>
+                                                      <li>
+                                                        <button type="botton">
+                                                          ASR-104407{' '}
+                                                          <a href="javascript:void(0);">
+                                                            <span className="delete">X</span>
+                                                          </a>
+                                                        </button>
+                                                      </li>
+                                                      <li>
+                                                        <button type="botton">
+                                                          ASR-104407{' '}
+                                                          <a href="javascript:void(0);">
+                                                            <span className="delete">X</span>
+                                                          </a>
+                                                        </button>
+                                                      </li>
+                                                      <li>
+                                                        <button type="botton">
+                                                          ASR-104407{' '}
+                                                          <a href="javascript:void(0);">
+                                                            <span className="delete">X</span>
+                                                          </a>
+                                                        </button>
+                                                      </li>
+                                                      <li>
+                                                        <button type="botton">
+                                                          ASR-104407{' '}
+                                                          <a href="javascript:void(0);">
+                                                            <span className="delete">X</span>
+                                                          </a>
+                                                        </button>
+                                                      </li>
+                                                      <li>
+                                                        <button type="botton">
+                                                          ASR-104407{' '}
+                                                          <a href="javascript:void(0);">
+                                                            <span className="delete">X</span>
+                                                          </a>
+                                                        </button>
+                                                      </li>
+                                                      <li>
+                                                        <button type="botton">
+                                                          ASR-104407{' '}
+                                                          <a href="javascript:void(0);">
+                                                            <span className="delete">X</span>
+                                                          </a>
+                                                        </button>
+                                                      </li>
+                                                      <li>
+                                                        <button type="botton">
+                                                          ASR-104407{' '}
+                                                          <a href="javascript:void(0);">
+                                                            <span className="delete">X</span>
+                                                          </a>
+                                                        </button>
+                                                      </li>
+                                                      <li>
+                                                        <button type="botton">
+                                                          ASR-104407{' '}
+                                                          <a href="javascript:void(0);">
+                                                            <span className="delete">X</span>
+                                                          </a>
+                                                        </button>
+                                                      </li>
+                                                      <li>
+                                                        <button type="botton">
+                                                          ASR-104407{' '}
+                                                          <a href="javascript:void(0);">
+                                                            <span className="delete">X</span>
+                                                          </a>
+                                                        </button>
+                                                      </li>
+                                                      <li>
+                                                        <button type="botton">
+                                                          ASR-104407{' '}
+                                                          <a href="javascript:void(0);">
+                                                            <span className="delete">X</span>
+                                                          </a>
+                                                        </button>
+                                                      </li>
+                                                      <li>
+                                                        <button type="botton">
+                                                          ASR-104407{' '}
+                                                          <a href="javascript:void(0);">
+                                                            <span className="delete">X</span>
+                                                          </a>
+                                                        </button>
+                                                      </li>
+                                                      <li>
+                                                        <button type="botton">
+                                                          ASR-104407{' '}
+                                                          <a href="javascript:void(0);">
+                                                            <span className="delete">X</span>
+                                                          </a>
+                                                        </button>
+                                                      </li>
+                                                      <li>
+                                                        <button type="botton">
+                                                          ASR-104407{' '}
+                                                          <a href="javascript:void(0);">
+                                                            <span className="delete">X</span>
+                                                          </a>
+                                                        </button>
+                                                      </li>
+                                                    </ul>
+                                                  </div>
+                                                </div>
                                               </div>
                                             </div>
                                           </div>
-                                          <div className="form-cell wid50">
+                                          {/* <div className="form-cell wid50">
                                             <div className="btn-area">
                                               <button
                                                 type="button"
@@ -841,7 +976,7 @@ function ReportASRDetail() {
                                                 Report Links
                                               </button>
                                             </div>
-                                          </div>
+                                          </div> */}
                                         </div>
 
                                         <div className="form-table line">
