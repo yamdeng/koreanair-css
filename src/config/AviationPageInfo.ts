@@ -1,4 +1,5 @@
 import PAviationPortal1 from '@/components/publish/aviation/PAviationPortal1';
+import PAviationsub1 from '@/components/publish/aviation/PAviationsub1';
 import CabinSafety from '@/components/publish/aviation/CabinSafety';
 import PRiskList from '@/components/publish/aviation/PRiskList';
 import PRiskEdit from '@/components/publish/aviation/PRiskEdit';
@@ -143,8 +144,8 @@ AviationPageInfo.list = [
   },
   {
     title: '[서브메인] 메인(안전보고서)',
-    Component: PAviationPortal1,
-    path: 'PAviationPortal1',
+    Component: PAviationsub1,
+    path: 'PAviationsub1',
     description: '',
     success: false,
   },
@@ -802,7 +803,7 @@ AviationPageInfo.list = [
     Component: AdminESPList,
     path: 'AdminESPList',
     description: '',
-    success: false,
+    success: true,
   },
   {
     title: '[07.관리자] SMS 종합분석 관리 > 종합분석보고서',

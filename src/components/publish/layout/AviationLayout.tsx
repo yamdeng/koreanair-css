@@ -175,7 +175,7 @@ export default function AviationLayout() {
               </a>
               <ul className="mu-2depth">
                 <li className="active">
-                  <a href="javascript:void(0);">My Report</a>
+                  <a href="javascript:void(0);">보고서작성</a>
                   <ul className="mu-3depth">
                     <li className="active">
                       <a href="javascript:void(0);">3depth</a>
@@ -214,21 +214,14 @@ export default function AviationLayout() {
             <li>
               <a href="javascript:void(0);">AUDIT</a>
             </li>
-
             <li>
-              <a href="javascript:void(0);">AUDIT</a>
+              <a href="javascript:void(0);">관리자</a>
             </li>
             <li>
-              <a href="javascript:void(0);">AUDIT</a>
+              <a href="javascript:void(0);">오프라인</a>
             </li>
             <li>
-              <a href="javascript:void(0);">AUDIT</a>
-            </li>
-            <li>
-              <a href="javascript:void(0);">AUDIT</a>
-            </li>
-            <li>
-              <a href="javascript:void(0);">AUDIT</a>
+              <a href="javascript:void(0);">프론트가이드</a>
             </li>
           </ul>
         </div>
