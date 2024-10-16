@@ -63,7 +63,7 @@ function AdminESPList() {
       </div>
 
       {/* 탭 버튼 */}
-      <div className="eps-btns">
+      <div className="esp-btns">
         <button type="button" className="btn-sm btn_text active">
           연도별
         </button>
