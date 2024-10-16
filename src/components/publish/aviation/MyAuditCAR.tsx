@@ -370,7 +370,7 @@ function MyAuditCAR() {
                                           </h3>
                                         </div>
                                         <button className="btn-select">Select</button>
-                                        <div className="chk-wrap">
+                                        <div className="chk-wrap pd-center">
                                           <label>
                                             <input type="checkbox" />
                                             <span>External</span>
