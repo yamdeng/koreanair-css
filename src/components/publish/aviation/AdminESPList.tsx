@@ -63,33 +63,15 @@ function AdminESPList() {
       </div>
 
       {/* 탭 버튼 */}
-      <div className="process-btns">
+      <div className="eps-btns">
         <button type="button" className="btn-sm btn_text active">
           연도별
         </button>
-        <button type="button" className="btn-sm btn_text btn-lightblue">
+        <button type="button" className="btn-sm btn_text ">
           이벤트 연관 GSE
         </button>
       </div>
       {/* //  탭 버튼 */}
-
-      {/* <div className="sub-tab">
-        <ul>
-          <li>
-            <a href="javascript:void(0);" className="active">
-              연도별
-            </a>
-          </li>
-          <li>
-            <a href="javascript:void(0);">지역별</a>
-          </li>
-          <li>
-            <a className="" href="javascript:void(0);">
-              이벤트 연관 GSE
-            </a>
-          </li>
-        </ul>
-      </div> */}
 
       {/*검색영역 */}
       <div className="boxForm">
