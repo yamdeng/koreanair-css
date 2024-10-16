@@ -93,6 +93,7 @@ body::-webkit-scrollbar {
 .mb5{margin-bottom:0.5rem !important}
 .mb10{margin-bottom:1rem !important}
 
+.pd-0 {padding: 0 !important;}
 .pd-t0 {padding-top: 0 !important;}
 .pd-l0 {padding-left: 0 !important;}
 .pl-10 {padding-left: 1.0rem;}
@@ -565,7 +566,7 @@ input, select{font-family:'KoreanAirSans'}
 }
 .editbox .form-table{display:flex;width:100%}
 .editbox .form-table .form-cell{position:relative; flex-grow:1; padding:2.0rem 1.0rem 2.0rem 0;}
-.editbox .form-table .form-cell1{position:relative; flex-grow:1; padding:2.0rem 1.0rem 0rem 0;}
+.editbox .form-table .form-cell1{position:relative; flex-grow:1; padding:2.0rem 0 0 0;}
 .editbox .form-table .form-cell:last-child{padding-right:0}
 .editbox.tog{margin-bottom:0rem; padding-top:0rem}
 .editbox.NoLine{border-top:0}

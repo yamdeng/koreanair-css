@@ -673,7 +673,7 @@ function MyAuditCAR() {
             {/*//추가버튼*/}
             <div className="editbox edit-audit-bg mt-15">
               <h3 className="audit-car-tit">Additional Audit Checklist</h3>
-              <div className="edit-toggle">
+              <div className="edit-toggle pd-0">
                 <div className="editbox b-t-0">
                   <h4 className="s-tit mt-15">Additional Chapter</h4>
                   <div className="form-table">
