@@ -110,8 +110,8 @@
   .checklist-contents{display:flex;justify-content:flex-start;flex-wrap:wrap;width:100%}
   .checklist-contents .checklist-row.list{display:flex;justify-content:flex-start;flex-wrap:wrap;width:50%;padding-right:0;margin:0}
 
-  .editbox .form-table {display: flex; align-items: flex-end; justify-content: flex-start; flex-wrap: wrap; width: 100%;}
-  .editbox .form-table .form-cell {display: flex; align-items: flex-end; justify-content: flex-start; flex-wrap: wrap; width: 33.3%}
+  .editbox .form-table {display: flex; /*align-items: flex-end;*/ justify-content: flex-start; flex-wrap: wrap; width: 100%;}
+  .editbox .form-table .form-cell {display: flex; /*align-items: flex-end;*/ justify-content: flex-start; flex-wrap: wrap; width: 33.3%}
   .editbox .form-table .form-cell:nth-child(3) {padding-right: 0;}
   .editbox .line .form-cell {border-bottom: 0.1rem solid var(--color-neutral-40);}
   .editbox.Audit .line .form-cell {border-bottom: 0rem solid var(--color-neutral-40);}
@@ -352,8 +352,8 @@
   .detail-form .detail-list .form-table .form-cell .group-box-wrap{width: 100%;}
 
 
-  .editbox .form-table {display: flex; align-items: flex-end; justify-content: flex-start; flex-wrap: wrap; width: 100%;}
-  .editbox .form-table .form-cell {display: flex; align-items: flex-end; justify-content: flex-start; flex-wrap: wrap; width: 33.3%; padding:1.5rem 1.0rem 1.5rem 0}
+  .editbox .form-table {display: flex; /*align-items: flex-end;*/ justify-content: flex-start; flex-wrap: wrap; width: 100%;}
+  .editbox .form-table .form-cell {display: flex; /*align-items: flex-end;*/ justify-content: flex-start; flex-wrap: wrap; width: 33.3%; padding:1.5rem 1.0rem 1.5rem 0}
   .editbox .form-table .form-cell:nth-child(3) {padding-right: 0;}
   .editbox .line .form-cell {border-bottom: 0.1rem solid var(--color-neutral-40);}
   .editbox.Audit .line .form-cell {border-bottom: 0rem solid var(--color-neutral-40);}
