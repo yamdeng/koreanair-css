@@ -808,7 +808,7 @@ meter::-webkit-meter-optimum-value {
 .floatingmenu a.ico-write{width:3.0rem;height:3.0rem;background:url(../images/ico-register.svg)no-repeat center center}
 
 .av-main-wrap {
-  display:grid;gap: 2.4rem;grid-template-columns: 1fr 1fr 1fr;height:calc(100vh - 15.6rem);grid-template-rows: 55% 45%;
+  display:grid;gap: 2.4rem;grid-template-columns: 1fr 1fr 1fr;height:calc(100vh - 15.6rem);/*grid-template-rows: 55% 45%;*/
 
   .grid-item{position: relative;display:grid;border-radius:0.8rem;padding:2.0rem;background-color:rgba(255,255,255,0.4);border:0.1rem solid var(--color-neutral-40)}
   .grid-item:nth-child(2){grid-template-rows:4.6rem 0}
