@@ -147,7 +147,31 @@ function MyAuditClose() {
           {/*//그리드영역 */}
           <div>
             <h3 className="audit-tit mb-10">공유 대상</h3>
-            fdsafdsa
+            <div className="editbox ">
+              <div className="form-table">
+                <div className="form-cell wid50">
+                  <div className="form-group wid100">
+                    <div className="btn-tit">
+                      <h3>공유 대상</h3>
+                    </div>
+                    <button className="btn-select">Team Select</button>
+                  </div>
+                </div>
+                <div className="form-cell wid50">
+                  <div className="form-group wid100">
+                    <AppAutoComplete label="d" />
+                  </div>
+                </div>
+                <div className="btn-area">
+                  <button type="button" name="button" className="btn-sm btn_text btn-darkblue-line">
+                    공유하기
+                  </button>
+                  <button type="button" name="button" className="btn-sm btn_text btn-darkblue-line">
+                    공유현황
+                  </button>
+                </div>
+              </div>
+            </div>
           </div>
           {/* 하단버튼영역 */}
           <div className="contents-btns">
