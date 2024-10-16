@@ -164,10 +164,10 @@ function MyAuditCAR() {
               <dd className="tg-conts">
                 {/* 상세페이지 */}
                 <div className="editbox bg-gray">
-                  <div className="form-table line">
+                  <div className="form-table b-border-no">
                     <div className="form-cell wid100">
                       <div className="form-group wid100">
-                        <div className="df">
+                        <div className="df pd-lr10">
                           <div className="type9 mt10">
                             <h3 className="audit-car-tit">
                               해외공항 원격 안전평가 점검표 (ko)10 <span>CAR No. 24-LSA-0407-BE01</span>
@@ -178,7 +178,7 @@ function MyAuditCAR() {
                               또는 회람 실시 내용, 소속 전 직원의 Read & Sign 결과지 등) 및 사진을 첨부하여 주시기
                               바랍니다.
                             </div>
-                            <div className="form-table">
+                            <div className="form-table b-border-no">
                               <div className="form-cell wid100">
                                 <div className="form-group wid100">
                                   <span className="text-desc-type1">ASP 5.2.7 1</span>
@@ -186,8 +186,8 @@ function MyAuditCAR() {
                               </div>
                             </div>
                           </div>
-                          <div className="type10">
-                            <div className="form-table">
+                          <div className="type11">
+                            <div className="form-table b-border-no">
                               <div className="form-cell">
                                 <div className="form-group wid100">
                                   <div className="group-box-wrap wid100">
@@ -201,7 +201,7 @@ function MyAuditCAR() {
                                 </div>
                               </div>
                             </div>
-                            <div className="form-table">
+                            <div className="form-table b-border-no">
                               <div className="form-cell wid50">
                                 <div className="form-group wid100">
                                   <div className="group-box-wrap wid100">
@@ -215,7 +215,7 @@ function MyAuditCAR() {
                                 </div>
                               </div>
                             </div>
-                            <div className="form-table">
+                            <div className="form-table b-border-no">
                               <div className="form-cell wid50">
                                 <div className="form-group wid100">
                                   <div className="group-box-wrap wid100">
@@ -234,7 +234,7 @@ function MyAuditCAR() {
                       </div>
                     </div>
                   </div>
-                  <div className="form-table ta-r">
+                  <div className="form-table b-border-no ta-r">
                     <div className="form-cell wid50">
                       <div className="group-box-wrap wid100">
                         <div className="radio-wrap border-no">
@@ -264,7 +264,7 @@ function MyAuditCAR() {
                 {/*//상세페이지*/}
 
                 <div className="edit-area border-no">
-                  <div className="detailForm">
+                  <div className="detailForm pd-no">
                     <div className="detailForm-detail-box list-group">
                       <div className="detailForm-detail-2deps rbox list-group">
                         <div className="list bx-toggle">
@@ -677,7 +677,7 @@ function MyAuditCAR() {
                 <div className="editbox b-t-0">
                   <h4 className="s-tit mt-15">Additional Chapter</h4>
                   <div className="form-table">
-                    <div className="form-cell wid100">
+                    <div className="form-cell1 wid100">
                       <div className="form-group wid100">
                         <textarea
                           id="testArea1"
@@ -696,19 +696,19 @@ function MyAuditCAR() {
                     </div>
                   </div>
                   <div className="form-table">
-                    <div className="form-cell wid50">
+                    <div className="form-cell1 wid50">
                       <div className="form-group wid100">
                         <AppTextInput label="Reference Manual" />
                       </div>
                     </div>
                   </div>
                   <div className="form-table">
-                    <div className="form-cell wid50">
+                    <div className="form-cell1 wid50">
                       <div className="form-group wid100">
                         <AppTextInput label="Input Comment" />
                       </div>
                     </div>
-                    <div className="form-cell wid50">
+                    <div className="form-cell1 wid50">
                       <div className="group-box-wrap wid100">
                         <div className="radio-wrap border-no">
                           <label>
@@ -732,7 +732,7 @@ function MyAuditCAR() {
                       </div>
                     </div>
                   </div>
-                  <div className="btn-area">
+                  <div className="btn-area mt-10">
                     <button type="button" name="button" className="btn-sm btn_text btn-darkblue-line">
                       Cancel
                     </button>

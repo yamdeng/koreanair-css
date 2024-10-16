@@ -28,6 +28,7 @@
 
   .editbox .form-table .form-cell .type9{width:70%}
   .editbox .form-table .form-cell .type10{width:40%;margin-left:0.8rem}
+  .editbox .form-table .form-cell .type11{width:40%;margin-left:0.8rem}
 
   .area-detail.myaudit > .form-table .form-cell .group-box-wrap{display:inline}
 
@@ -177,6 +178,7 @@
   .editbox .form-table .form-cell .df{display:block}
   .editbox .form-table .form-cell .type9{display:block;width:100%}
   .editbox .form-table .form-cell .type10{display:block;width:100%;margin-left:0}
+  .editbox .form-table .form-cell .type11{display:block;width:100%;margin-left:0}
 
   .user-wrap{display:block;width:100%}
   .user-wrap .user-box{display:block;width:100%}
@@ -355,6 +357,7 @@
   .editbox .form-table {display: flex; /*align-items: flex-end;*/ justify-content: flex-start; flex-wrap: wrap; width: 100%;}
   .editbox .form-table .form-cell {display: flex; /*align-items: flex-end;*/ justify-content: flex-start; flex-wrap: wrap; width: 33.3%; padding:1.5rem 1.0rem 1.5rem 0}
   .editbox .form-table .form-cell:nth-child(3) {padding-right: 0;}
+  .editbox .form-table .form-cell1 {width: 100%;}
   .editbox .line .form-cell {border-bottom: 0.1rem solid var(--color-neutral-40);}
   .editbox.Audit .line .form-cell {border-bottom: 0rem solid var(--color-neutral-40);}
   .dp-n {display: none;}
@@ -481,6 +484,7 @@
   .editbox .form-table .form-cell .df{display:block}
   .editbox .form-table .form-cell .type9{display:block;width:100%}
   .editbox .form-table .form-cell .type10{display:block;width:100%;margin-left:0}
+  .editbox .form-table .form-cell .type11{display:block;width:100%;margin-left:0}
 
   .user-wrap{display:block;width:100%}
   .user-wrap .user-box{display:block;width:100%}
@@ -748,6 +752,7 @@
   .editbox.Audit .form-table .form-cell{padding:1rem 0 0rem 0;}
   .editbox .form-table .form-cell .form-group.Position-w{width:65%}
   .editbox .form-table .form-cell .Position-end{position:absolute;right:0;top:-4rem;width:15.0rem}
+  .editbox .form-table .form-cell1 {width: 100%;}
 
 
   .detail-form .detail-list .form-table {display: flex; align-items: flex-end; justify-content: flex-start; flex-wrap: wrap; width: 100%;}
@@ -878,6 +883,7 @@
   .editbox .form-table .form-cell .df{display:block}
   .editbox .form-table .form-cell .type9{display:block;width:100%}
   .editbox .form-table .form-cell .type10{display:block;width:100%;margin-left:0}
+  .editbox .form-table .form-cell .type11{display:block;width:100%;margin-left:0}
 
   .user-wrap{display:block;width:100%}
   .user-wrap .user-box{display:block;width:100%}

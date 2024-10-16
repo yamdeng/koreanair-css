@@ -49,6 +49,7 @@
 .form-group .type8{position:relative;width:30%;margin-left:3rem}
 .form-group .type9{position:relative;width:80%}
 .form-group .type10{position:relative;width:20%;margin-top:0;margin-left:3rem}
+.form-group .type11{position:relative;width:20%;margin-top:0;margin-left:3rem}
 .form-group .df .type6.Wd{width:100%}
 .form-group .df + .df{margin-top:1rem} 
 
@@ -283,6 +284,7 @@ meter::-webkit-meter-optimum-value {
 
 
 .detailForm{padding:1.5rem 0.5rem}
+.detailForm.pd-no {padding: 0 0.5rem;}
 .detailForm-detail-box{position:relative;overflow:hidden;padding:0.8rem 0rem;width:100%;border:0}
 .detailForm-detail{position:relative;overflow:hidden;padding:1.0rem;width:100%;border:0.1rem solid var(--color-neutral-30);border-radius:0.8rem}
 .detailForm-detail-2deps{position:relative;overflow:hidden;padding:1.0rem;width:100%;border:0.1rem solid var(--color-neutral-30);border-radius:0.8rem}
@@ -572,6 +574,7 @@ meter::-webkit-meter-optimum-value {
 .editbox .form-table .form-cell .type9  .text-desc-type1{position:relative;display:block;width:100%;/* padding-right: 0.8rem; */font-weight:400;color:var(--color-neutral-90);text-align: left;overflow:hidden;word-break:break-all;text-overflow:ellipsis;white-space:pre-wrap;font-size:1.5rem}
 .editarea-box.Audit{padding:0;border:0}
 .editbox .type10 .form-table .form-cell{padding:1rem 1rem 1rem 0}
+.editbox .type11 .form-table .form-cell{padding:1rem 0}
 .editbox .type10 .form-table .form-cell .editarea-box.view{padding:1rem 0rem 0.4rem 0rem}
 .checklist-contents.edit > .editbox.edit-detile.Audit{display:block;padding:0 3rem 1.5rem 1.5rem}
 .editbox.Audit .form-table .form-cell{padding:1rem 0 0 0}
@@ -1641,5 +1644,5 @@ keyframes
 
   .delete{position:absolute; top:0.9rem; right: 1.0rem; background:url(/src/resources/images/delete-text.svg) center center no-repeat; font-size:0; width:2rem; height:2rem}
 }
-
+.pd-lr10 {padding: 0 1.5rem}
 .pd-center {position: relative; top: 0.7rem; left: 1.0rem;}
