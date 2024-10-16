@@ -62,7 +62,21 @@ function AdminESPList() {
         </div>
       </div>
 
-      <div className="sub-tab">
+      {/* 업무관련 버튼 */}
+      <div className="process-btns">
+        <button type="button" className="btn-sm btn_text btn-blue">
+          보고서 묶기 처리
+        </button>
+        <button type="button" className="btn-sm btn_text btn-blue">
+          SRC Approval
+        </button>
+        <button type="button" className="btn-sm btn_text btn-blue">
+          SRC Reject
+        </button>
+      </div>
+      {/* //  업무관련 버튼 */}
+
+      {/* <div className="sub-tab">
         <ul>
           <li>
             <a href="javascript:void(0);" className="active">
@@ -78,7 +92,7 @@ function AdminESPList() {
             </a>
           </li>
         </ul>
-      </div>
+      </div> */}
 
       {/*검색영역 */}
       <div className="boxForm">
