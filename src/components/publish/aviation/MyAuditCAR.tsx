@@ -452,21 +452,51 @@ function MyAuditCAR() {
                                     <div className="form-cell wid50">
                                       <div className="form-group wid100">
                                         <AppTextInput label="Step 1" />
+                                        <div className="step-box">
+                                          <span>[AES04] :</span>Improper use of Improper use of
+                                          <a href="javascript:void(0);">
+                                            <span className="delete">X</span>
+                                          </a>
+                                        </div>
                                       </div>
                                     </div>
                                     <div className="form-cell wid50">
                                       <div className="form-group wid100">
                                         <AppTextInput label="Step 2" />
+                                        <div className="step-box">
+                                          <span>[AES04] :</span>Improper use of Improper use of
+                                          <a href="javascript:void(0);">
+                                            <span className="delete">X</span>
+                                          </a>
+                                        </div>
                                       </div>
                                     </div>
                                     <div className="form-cell wid50">
                                       <div className="form-group wid100">
                                         <AppTextInput label="Step 3" />
+                                        <div className="step-box">
+                                          <span>[AES04] :</span>Improper use of Improper use of
+                                          <a href="javascript:void(0);">
+                                            <span className="delete">X</span>
+                                          </a>
+                                        </div>
                                       </div>
                                     </div>
                                     <div className="form-cell wid50">
                                       <div className="form-group wid100">
                                         <AppTextInput label="Step 4" />
+                                        <div className="step-box">
+                                          <span>[AES04] :</span>Improper use of Improper use of
+                                          <a href="javascript:void(0);">
+                                            <span className="delete">X</span>
+                                          </a>
+                                        </div>
+                                        <div className="step-box">
+                                          <span>[AES04] :</span>Improper use of Improper use of
+                                          <a href="javascript:void(0);">
+                                            <span className="delete">X</span>
+                                          </a>
+                                        </div>
                                       </div>
                                     </div>
                                   </div>

@@ -1612,7 +1612,7 @@ keyframes
   .team-box {
     display: block;
     width: 100%;
-    padding-right: 2.0rem;
+    padding-right: 1.0rem;
 
     .team {border: 0.1rem solid var(--color-neutral-40); border-radius: 0.5rem;}
     .team li {padding: 1.0rem 1.5rem; position: relative;}
@@ -1623,4 +1623,23 @@ keyframes
     width: 100%;
   }
 }
+.step-box {
+  span {font-size: 1.3rem;}
+
+  width: 100%;
+  position: relative;
+  background-color: var(--color-neutral-20);
+  border: 0.1rem solid var(--color-neutral-30);
+  border-radius: 99.9rem;
+  padding: 0.8rem 3.0rem 0.8rem 1.5rem;
+  margin: 0.4rem 0;
+  font-size: 1.3rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  min-width: 10.0rem;
+
+  .delete{position:absolute; top:0.9rem; right: 1.0rem; background:url(/src/resources/images/delete-text.svg) center center no-repeat; font-size:0; width:2rem; height:2rem}
+}
+
 .pd-center {position: relative; top: 0.7rem; left: 1.0rem;}
