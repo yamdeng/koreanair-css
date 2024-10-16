@@ -62,19 +62,16 @@ function AdminESPList() {
         </div>
       </div>
 
-      {/* 업무관련 버튼 */}
+      {/* 탭 버튼 */}
       <div className="process-btns">
-        <button type="button" className="btn-sm btn_text btn-blue">
-          보고서 묶기 처리
+        <button type="button" className="btn-sm btn_text active">
+          연도별
         </button>
-        <button type="button" className="btn-sm btn_text btn-blue">
-          SRC Approval
-        </button>
-        <button type="button" className="btn-sm btn_text btn-blue">
-          SRC Reject
+        <button type="button" className="btn-sm btn_text btn-lightblue">
+          이벤트 연관 GSE
         </button>
       </div>
-      {/* //  업무관련 버튼 */}
+      {/* //  탭 버튼 */}
 
       {/* <div className="sub-tab">
         <ul>

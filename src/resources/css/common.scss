@@ -339,6 +339,16 @@ input, select{font-family:'KoreanAirSans'}
 }
 .text_color_neutral-10{color:var(--color-neutral-10)}
 
+/* 리포트 프로세스*/
+.process-btns{position:relative;margin-bottom:1.5rem}
+.process-btns > button{margin:0 0.5rem}
+.process-btns .btn-sm{padding:0.5rem 2.8rem;border-radius:99.9rem}
+.process-btns .btn_text{font-family:"KoreanAirSans";font-weight:400;font-size:1.6rem}
+.process-btns .btn-blue{background-color:var(--color-lightblue-100);color:var(--color-neutral-10)}
+.process-btns > button.active{background-color:var(--color-lightblue-100);color:var(--color-neutral-10)}
+.process-btns .btn-lightblue{border:solid 0.1rem var(--color-lightblue-40);background-color:var(--color-lightblue-40);color:var(--color-darkblue-100)}
+
+
 /*그리드 위버튼*/
 .btns-area{
   > button{margin:0 0.5rem}
