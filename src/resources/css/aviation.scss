@@ -150,7 +150,7 @@ meter::-webkit-meter-optimum-value {
 .info-list + .info-list{margin-top:2rem}
 .tag-list{position:relative;display:flex;overflow: auto hidden;width:100%}
 .tag-list ul{box-sizing: content-box;transform: translateZ(0);}
-.tag-list ul li{position:relative;display:inline-block;margin:0.2rem;align-items:center}
+.tag-list ul li{position:relative;display:inline-block;line-height:1.8;align-items:center}
 .tag-list ul li button{font-size:1.2rem;line-height:1.8rem;color:var(--color-neutral-90);background-color:var(--color-neutral-20);border-radius:99.9rem;padding:0 1.8rem}
 .tag-list > ul li .delete{position:absolute;right: 0;background: url(/src/resources/images/delete-text.svg) center center no-repeat;font-size: 0;width: 2rem;height: 2rem}
 

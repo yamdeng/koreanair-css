@@ -215,31 +215,146 @@ function PRiskEdit() {
                   </div>
                   <div className="form-table">
                     <div className="form-cell wid50">
-                      <div className="group-box-wrap1 wid50">
+                      <div className="group-box-wrap1 wid100">
                         <span className="txt">참고문서번호</span>
-                        <div className="round-wrap num error">
-                          <span className="icon_report"></span>{' '}
-                        </div>
-                        {/*문서번호 리스트 */}
-                        <div className="tag-list">
-                          <ul>
-                            <li>
-                              <button type="botton">
-                                ASR-104407{' '}
-                                <a href="javascript:void(0);">
-                                  <span className="delete">X</span>
-                                </a>
-                              </button>
-                            </li>
-                            <li>
-                              <button type="botton">
-                                ASR-104407{' '}
-                                <a href="javascript:void(0);">
-                                  <span className="delete">X</span>
-                                </a>
-                              </button>
-                            </li>
-                          </ul>
+                        <div className="round-wrap num ">
+                          <div className="df">
+                            <div className="icon_report"></div>
+
+                            {/*문서번호 리스트 */}
+                            <div className="tag-list">
+                              <ul>
+                                <li>
+                                  <button type="botton">
+                                    ASR-104407{' '}
+                                    <a href="javascript:void(0);">
+                                      <span className="delete">X</span>
+                                    </a>
+                                  </button>
+                                </li>
+                                <li>
+                                  <button type="botton">
+                                    ASR-104407{' '}
+                                    <a href="javascript:void(0);">
+                                      <span className="delete">X</span>
+                                    </a>
+                                  </button>
+                                </li>
+                                <li>
+                                  <button type="botton">
+                                    ASR-104407{' '}
+                                    <a href="javascript:void(0);">
+                                      <span className="delete">X</span>
+                                    </a>
+                                  </button>
+                                </li>
+                                <li>
+                                  <button type="botton">
+                                    ASR-104407{' '}
+                                    <a href="javascript:void(0);">
+                                      <span className="delete">X</span>
+                                    </a>
+                                  </button>
+                                </li>
+                                <li>
+                                  <button type="botton">
+                                    ASR-104407{' '}
+                                    <a href="javascript:void(0);">
+                                      <span className="delete">X</span>
+                                    </a>
+                                  </button>
+                                </li>
+                                <li>
+                                  <button type="botton">
+                                    ASR-104407{' '}
+                                    <a href="javascript:void(0);">
+                                      <span className="delete">X</span>
+                                    </a>
+                                  </button>
+                                </li>
+                                <li>
+                                  <button type="botton">
+                                    ASR-104407{' '}
+                                    <a href="javascript:void(0);">
+                                      <span className="delete">X</span>
+                                    </a>
+                                  </button>
+                                </li>
+                                <li>
+                                  <button type="botton">
+                                    ASR-104407{' '}
+                                    <a href="javascript:void(0);">
+                                      <span className="delete">X</span>
+                                    </a>
+                                  </button>
+                                </li>
+                                <li>
+                                  <button type="botton">
+                                    ASR-104407{' '}
+                                    <a href="javascript:void(0);">
+                                      <span className="delete">X</span>
+                                    </a>
+                                  </button>
+                                </li>
+                                <li>
+                                  <button type="botton">
+                                    ASR-104407{' '}
+                                    <a href="javascript:void(0);">
+                                      <span className="delete">X</span>
+                                    </a>
+                                  </button>
+                                </li>
+                                <li>
+                                  <button type="botton">
+                                    ASR-104407{' '}
+                                    <a href="javascript:void(0);">
+                                      <span className="delete">X</span>
+                                    </a>
+                                  </button>
+                                </li>
+                                <li>
+                                  <button type="botton">
+                                    ASR-104407{' '}
+                                    <a href="javascript:void(0);">
+                                      <span className="delete">X</span>
+                                    </a>
+                                  </button>
+                                </li>
+                                <li>
+                                  <button type="botton">
+                                    ASR-104407{' '}
+                                    <a href="javascript:void(0);">
+                                      <span className="delete">X</span>
+                                    </a>
+                                  </button>
+                                </li>
+                                <li>
+                                  <button type="botton">
+                                    ASR-104407{' '}
+                                    <a href="javascript:void(0);">
+                                      <span className="delete">X</span>
+                                    </a>
+                                  </button>
+                                </li>
+                                <li>
+                                  <button type="botton">
+                                    ASR-104407{' '}
+                                    <a href="javascript:void(0);">
+                                      <span className="delete">X</span>
+                                    </a>
+                                  </button>
+                                </li>
+                                <li>
+                                  <button type="botton">
+                                    ASR-104407{' '}
+                                    <a href="javascript:void(0);">
+                                      <span className="delete">X</span>
+                                    </a>
+                                  </button>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
                         </div>
                       </div>
                     </div>
