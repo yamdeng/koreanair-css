@@ -370,6 +370,71 @@ function MyAuditCAR() {
                                           </h3>
                                         </div>
                                         <button className="btn-select">Select</button>
+                                        <div className="user-add-box">
+                                          <div className="team-box">
+                                            <ul className="team">
+                                              <li>
+                                                안전기획팀
+                                                <a href="javascript:void(0);">
+                                                  <span className="delete">X</span>
+                                                </a>
+                                              </li>
+                                            </ul>
+                                          </div>
+                                          <div className="add-box">
+                                            <div className="form-group wid100">
+                                              <div className="UserChicebox error">
+                                                <div className="form-group wid100">
+                                                  <AppAutoComplete label="d" />
+                                                  <div className="SelectedList Payment mt10">
+                                                    <ul>
+                                                      <li>
+                                                        <span className="InfoBox"></span>
+                                                        <div className="Info">
+                                                          <div className="Name">홍길동 (170****)</div>
+                                                          <div className="Dept">상무대우수석사무장 / (주)대한항공</div>
+                                                        </div>
+                                                        <div className="column-box">
+                                                          <span className="column-btn">
+                                                            <a href="javascript:void(0);">
+                                                              <span className="up">up</span>
+                                                            </a>
+                                                            <a href="javascript:void(0);">
+                                                              <span className="down">down</span>
+                                                            </a>
+                                                          </span>
+                                                        </div>
+                                                        <a href="javascript:void(0);">
+                                                          <span className="delete">X</span>
+                                                        </a>
+                                                      </li>
+                                                      <li>
+                                                        <span className="InfoBox"></span>
+                                                        <div className="Info">
+                                                          <div className="Name">홍길동 (170****)</div>
+                                                          <div className="Dept">상무대우수석사무장 / (주)대한항공</div>
+                                                        </div>
+                                                        <div className="column-box">
+                                                          <span className="column-btn">
+                                                            <a href="javascript:void(0);">
+                                                              <span className="up">up</span>
+                                                            </a>
+                                                            <a href="javascript:void(0);">
+                                                              <span className="down">down</span>
+                                                            </a>
+                                                          </span>
+                                                        </div>
+                                                        <a href="javascript:void(0);">
+                                                          <span className="delete">X</span>
+                                                        </a>
+                                                      </li>
+                                                    </ul>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
                                       </div>
                                     </div>
                                   </div>
