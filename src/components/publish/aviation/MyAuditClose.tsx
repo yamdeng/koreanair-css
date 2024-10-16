@@ -149,26 +149,57 @@ function MyAuditClose() {
             <h3 className="audit-tit mb-10">공유 대상</h3>
             <div className="editbox ">
               <div className="form-table">
-                <div className="form-cell wid50">
-                  <div className="form-group wid100">
+                <div className="form-cell wid20">
+                  <div className="form-group wid100 dp-flax">
                     <div className="btn-tit">
                       <h3>공유 대상</h3>
                     </div>
-                    <button className="btn-select">Team Select</button>
+                    <div className="btn-select-box">
+                      <button className="btn-select wid100">Team Select</button>
+                      <div className="step-box">
+                        안전품질평가팀<span>(7명)</span>
+                        <a href="javascript:void(0);">
+                          <span className="delete">X</span>
+                        </a>
+                      </div>
+
+                      <div className="step-box">
+                        안전조사팀<span>(13명)</span>
+                        <a href="javascript:void(0);">
+                          <span className="delete">X</span>
+                        </a>
+                      </div>
+                      <div className="step-box">
+                        지상안전팀<span>(3명)</span>
+                        <a href="javascript:void(0);">
+                          <span className="delete">X</span>
+                        </a>
+                      </div>
+                    </div>
                   </div>
                 </div>
-                <div className="form-cell wid50">
+                <div className="form-cell wid30">
                   <div className="form-group wid100">
                     <AppAutoComplete label="d" />
+                    <div className="step-box">
+                      신상훈
+                      <a href="javascript:void(0);">
+                        <span className="delete">X</span>
+                      </a>
+                    </div>
                   </div>
                 </div>
-                <div className="btn-area">
-                  <button type="button" name="button" className="btn-sm btn_text btn-darkblue-line">
-                    공유하기
-                  </button>
-                  <button type="button" name="button" className="btn-sm btn_text btn-darkblue-line">
-                    공유현황
-                  </button>
+                <div className="form-cell wid30">
+                  <div className="form-group wid100">
+                    <div className="btn-area pd-0">
+                      <button type="button" name="button" className="btn-sm btn_text btn-darkblue-line">
+                        공유하기
+                      </button>
+                      <button type="button" name="button" className="btn-sm btn_text btn-darkblue-line">
+                        공유현황
+                      </button>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
