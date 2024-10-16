@@ -8,6 +8,7 @@ import iconSettingImage from '@/resources/images/icon_setting.svg';
 import closeImage from '@/resources/images/close.svg';
 import { useStore } from 'zustand';
 import useAppStore from '@/store/useAppStore';
+import classNames from 'classnames';
 
 export default function AviationLayout() {
   const { isAviationPortal } = useStore(useAppStore, (state) => state) as any;
@@ -15,6 +16,11 @@ export default function AviationLayout() {
   const toggleLeftMenu = () => {
     setDisplayLeftMenu(!displayLeftMenu);
   };
+
+  const applyClassName = classNames('contents', {
+    expand: displayLeftMenu,
+    Aviation: isAviationPortal,
+  });
 
   return (
     <div className="wrap">
@@ -227,7 +233,7 @@ export default function AviationLayout() {
         </div>
       </div>
 
-      <div className={isAviationPortal ? 'contents Aviation' : 'contents'}>
+      <div className={applyClassName}>
         <Outlet />
       </div>
     </div>
