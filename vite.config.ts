@@ -33,6 +33,7 @@ export default defineConfig(({ mode }) => {
     plugins: pluginList,
     server: {
       open: false,
+      host: '0.0.0.0'
     },
   };
 });

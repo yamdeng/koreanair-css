@@ -155,7 +155,6 @@ function HomePortal1() {
       <div className="fix-card-conts">
         <img src={SafetyPolicy} />
         {/* 우측 아이콘 영역 클릭시 나오는 이미지 영역*/}
-        {/* (이미지활성화 -'active') */}
       </div>
       <div className="bottom-arrow" onClick={nextSlide}>
         <a href="javascript:void(0);">
@@ -165,9 +164,6 @@ function HomePortal1() {
           Scroll
         </a>
       </div>
-      {/*<div className="fix-card">
-        <span className="txt">안전정책</span>
-      </div>*/}
       <ReactFullpage
         licenseKey={'YOUR_KEY_HERE'}
         navigation

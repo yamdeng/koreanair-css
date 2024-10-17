@@ -983,13 +983,13 @@
     transition: all 0.2s;
   }
   .top_menu_btn .line1 {
-    top: 18px;
+    top: 1.8rem;
   }
   .top_menu_btn .line2 {
-    top: 28px;
+    top: 2.8rem;
   }
   .top_menu_btn .line3 {
-  top: 38px;
+  top: 3.8rem;
   }
   .top_menu_btn.close .line1 {
     top: 2.8rem;
@@ -1079,7 +1079,16 @@
   .pop_cont {height: 100%; max-height: none;}
 
   .main-wrap .grid-item .main-graph-box .graph-box {width: 50%;}
-}
+  .fix-card {bottom: 13.0rem;}
+  .fix-card-conts.active {  
+    bottom: 26.0rem; 
+    right: 0rem;
+    width: 100% !important;
+    height: auto !important;
+  }
+    
+    .fix-card-conts img {width: 100%;}
+  }
 
 
 
@@ -1142,4 +1151,14 @@
   /*통합홈*/
   .videovisual .title {font-size: 2.6rem;}
   #visual02 .subtitle {font-size: 1.6rem; width: 100%;}
+
+  .fix-card {bottom: 10.0rem;}
+  .fix-card-conts.active {  
+    bottom: 20.0rem; 
+    right: 0rem;
+    width: 100% !important;
+    height: auto !important;
+  }
+    
+  .fix-card-conts img {width: 100%;}
 }

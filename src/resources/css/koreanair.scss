@@ -1000,7 +1000,7 @@
 .top_menu_btn {
   display:none;
 }
-.top_menu.active {
+.top_menu {
   display:block;
   float:right;
 }
@@ -1577,12 +1577,13 @@
   display: block;
   position: fixed;
   bottom: 14.0rem; 
-	right: 100px;
-	width: 600px !important;
-	height: 620px !important;
+	right: 10.0rem;
+	width: 60.0rem !important;
+	height: 62.0rem !important;
   z-index: 10;
   cursor: pointer;
 }
+.fix-card-conts img {width: 100%;}
 
 /*.dropdownmenu {display: none;}
 .dropdownmenu {
