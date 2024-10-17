@@ -149,13 +149,13 @@ function MyAuditClose() {
             <h3 className="audit-tit mb-10">공유 대상</h3>
             <div className="editbox ">
               <div className="form-table">
-                <div className="form-cell wid20">
+                <div className="form-cell wid70 audit-close">
                   <div className="form-group wid100 dp-flax">
                     <div className="input-group">
                       <div className="btn-tit">
                         <h3>공유 대상</h3>
                       </div>
-                      <div className="btn-select-box">
+                      <div className="btn-select-box wid-300">
                         <button className="btn-select wid100">Team Select</button>
                         <div className="step-box">
                           안전품질평가팀<span>(7명)</span>
