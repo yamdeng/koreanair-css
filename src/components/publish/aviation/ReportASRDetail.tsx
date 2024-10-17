@@ -1031,6 +1031,16 @@ function ReportASRDetail() {
                                                           <div className="Dept">상무대우수석사무장 / (주)대한항공</div>
                                                         </div>
                                                         <span className="class ">Leader</span>
+                                                        <a href="javascript:void(0);">
+                                                          <span className="delete">X</span>
+                                                        </a>
+                                                        {/*툴팁 */}
+                                                        <div className="tip">
+                                                          <span className="tooltiptext tooltip-right">
+                                                            <button type="button">To Leader</button>
+                                                          </span>
+                                                        </div>
+                                                        {/*//툴팁 */}
                                                       </li>
                                                     </ul>
                                                   </div>

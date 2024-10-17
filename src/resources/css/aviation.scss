@@ -542,9 +542,18 @@ meter::-webkit-meter-optimum-value {
 .SelectedList > ul li .column-box{display:flex}
 .SelectedList > ul li .column-box .column-btn{flex-direction:row}
 
-.SelectedList.memberClass > ul .delete{position:absolute;right: 0;top:0.1rem;background:url(/src/resources/images/delete-text.svg) center center no-repeat;font-size:0;width:2rem;height:2rem}
+.SelectedList.memberClass > ul .delete{position:absolute;right:0;background:url(/src/resources/images/delete-text.svg) center center no-repeat;font-size:0;width:2rem;height:2rem}
 .SelectedList.memberClass > ul li .Info{width:70%}
 .SelectedList.Location > ul .delete{position:absolute;right:0;top:0rem;background:url(/src/resources/images/delete-text.svg) center center no-repeat;font-size:0;width:2rem;height:2rem}
+.SelectedList.memberClass > ul li:hover{background-color:var(--color-btn-blue1);cursor:pointer}
+.SelectedList.memberClass > ul li .tip{position:absolute;left:35rem}
+.SelectedList.memberClass > ul li .tip .tooltiptext{/*visibility:hidden;*/position:absolute; z-index:99;width:9rem;font-size:1.2rem;background-color:var(--color-neutral-80);color: var(--color-neutral-10);border-radius:99.9rem;padding:0.8rem}
+.SelectedList.memberClass > ul li .tip .tooltiptext button{font-size:1.2rem;color: var(--color-neutral-10);display:list-item;padding-left: 0.6rem;background-color:var(--color-neutral-80)}
+.SelectedList.memberClass > ul li .tip:hover .tooltiptext{/*visibility:visible;*/}
+.SelectedList.memberClass > ul li .tip .tooltiptext::after{content:'';position: absolute;border-style:solid;border-width:0.4rem}
+.SelectedList.memberClass > ul li .tip .tooltip-right{top:-2rem;right:2rem}
+.SelectedList.memberClass > ul li .tip .tooltip-right::after{top:1.6rem;right:100%;margin-top:-0.3rem;border-color: transparent var(--color-neutral-80) transparent transparent}
+
 
 /*AUDIT 체크리스트*/
 .btn-area.Audit{
