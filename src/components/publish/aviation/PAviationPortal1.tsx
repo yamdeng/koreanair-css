@@ -49,53 +49,53 @@ function PAviationPortal1() {
         <ul>
           <li>
             <a href="javascript:void(0);" className="asr active">
-              <span className="bg ">Air Safety Repot</span>
+              <span className="active-bg ">Air Safety Repot</span>
             </a>
           </li>
           <li>
             <a href="javascript:void(0);" className="csr">
-              <span className="active-bg">객실안전보고서</span>
+              <span className="bg">객실안전보고서</span>
               {/*hover시 */}
             </a>
           </li>
           <li>
             <a href="javascript:void(0);" className="msr">
-              <span className="active-bg">장비안전보고서</span>
+              <span className="bg">장비안전보고서</span>
             </a>
           </li>
           <li>
             <a href="javascript:void(0);" className="gsr">
-              <span className="active-bg">지상안전보고서</span>
+              <span className="bg">지상안전보고서</span>
             </a>
           </li>
           <li>
             <a href="javascript:void(0);" className="dsr">
-              <span className="active-bg">운항관리안전보고서</span>
+              <span className="bg">운항관리안전보고서</span>
             </a>
           </li>
           <li>
             <a href="javascript:void(0);" className="rsr">
-              <span className="active-bg">램프안전보고서</span>
+              <span className="bg">램프안전보고서</span>
             </a>
           </li>
           <li>
             <a href="javascript:void(0);" className="foqa">
-              <span className="active-bg">FOQA</span>
+              <span className="bg">FOQA</span>
             </a>
           </li>
           <li>
             <a href="javascript:void(0);" className="hazard">
-              <span className="active-bg">HAZARD</span>
+              <span className="bg">HAZARD</span>
             </a>
           </li>
           <li>
             <a href="javascript:void(0);" className="Safety Repot">
-              <span className="active-bg">Safety Repot</span>
+              <span className="bg">Safety Repot</span>
             </a>
           </li>
           <li>
             <a href="javascript:void(0);" className="amo">
-              <span className="active-bg">AMO</span>
+              <span className="bg">AMO</span>
             </a>
           </li>
         </ul>
@@ -519,7 +519,7 @@ function PAviationPortal1() {
             </ul>
           </h3>
           {/*공지사항 */}
-          <div id="" className="main-table-box" style={{ display: 'none' }}>
+          <div id="" className="main-table-box">
             <table className="main-table">
               <colgroup>
                 <col width="65%" />
@@ -584,7 +584,7 @@ function PAviationPortal1() {
             </table>
           </div>
           {/*사고준사고 */}
-          <div id="" className="main-table-box" style={{ broder: 'solid  ' }}></div>
+          <div id="" className="main-table-box" style={{ display: 'none' }}></div>
         </div>
       </div>
       {/*}
