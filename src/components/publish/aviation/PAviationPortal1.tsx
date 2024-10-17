@@ -49,7 +49,7 @@ function PAviationPortal1() {
         <ul>
           <li>
             <a href="javascript:void(0);" className="asr active">
-              <span className="active-bg">Air Safety Repot</span>
+              <span className="bg ">Air Safety Repot</span>
             </a>
           </li>
           <li>

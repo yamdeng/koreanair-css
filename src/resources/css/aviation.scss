@@ -1159,7 +1159,7 @@ meter::-webkit-meter-optimum-value {
   display: block;
   height: 5.0rem;
   /*line-height: 5.0rem;*/
-  padding: 0 calc(1em + 160px) 0 2em;
+  padding: 0 calc(1em + 160px) 0 2.5em;
   color: rgba(255, 255, 255, 0.7);
   font-size: 1.4rem;
   -webkit-transition: color 0.2s;
@@ -1332,10 +1332,16 @@ meter::-webkit-meter-optimum-value {
   -moz-animation-delay: 0.05s;
   animation-delay: 0.05s;
 }
-.cd-stretchy-nav.nav-is-visible ul li:first-of-type span.active-bg{
+.cd-stretchy-nav.nav-is-visible ul li:first-of-type span.bg{
   position:absolute;top:1rem;right:7rem;padding:0 1.0rem;line-height:3rem;
   border-radius:0.2rem;transition: opacity 0.2s, visibility 0.2s;text-align:center;
   background-color:rgb(87 187 235 / 80%);color:var(--color-neutral-10);border-top-left-radius:0.8rem;border-bottom-left-radius:0.8rem
+}
+.cd-stretchy-nav.nav-is-visible ul li:first-of-type span.active-bg{
+  position:absolute;top:1rem;right:7rem;padding:0 1.0rem;line-height:3rem;
+  border-radius:0.2rem;transition: opacity 0.2s, visibility 0.2s;text-align:center;
+  border:solid 0.1rem var(--color-darkblue-100);
+  background-color:rgba(255, 255, 255, 0.8);color:var(--color-neutral-60);border-top-left-radius:0.8rem;border-bottom-left-radius:0.8rem
 }
 .cd-stretchy-nav.nav-is-visible ul li:first-of-type span.active-bg:after{
   content: '';position: absolute;
@@ -1357,7 +1363,8 @@ meter::-webkit-meter-optimum-value {
 .cd-stretchy-nav.nav-is-visible ul li:nth-of-type(2) span.active-bg{
   position:absolute;top:1rem;right:7rem;padding:0 1.0rem;line-height:3rem;
   border-radius:0.2rem;transition: opacity 0.2s, visibility 0.2s;text-align:center;
-  background-color:rgb(87 187 235 / 80%);color:var(--color-neutral-10);border-top-left-radius:0.8rem;border-bottom-left-radius:0.8rem
+  border:solid 0.1rem var(--color-darkblue-100);
+  background-color:rgba(255, 255, 255, 0.8);color:var(--color-neutral-60);border-top-left-radius:0.8rem;border-bottom-left-radius:0.8rem
 }
 .cd-stretchy-nav.nav-is-visible ul li:nth-of-type(2) span.active-bg:after{
   content: '';position: absolute;
