@@ -672,13 +672,13 @@ AviationPageInfo.list = [
     description: '',
     success: true,
   },
-  {
+  /*{
     title: '[06.AUDIT] MyAuditPlanDetail',
     Component: MyAuditPlanDetail,
     path: 'MyAuditPlanDetail',
     description: '',
     success: false,
-  },
+  },*/
   {
     title: '[06.AUDIT] MyAuditConduct',
     Component: MyAuditConduct,
@@ -705,7 +705,7 @@ AviationPageInfo.list = [
     Component: MyAuditClose,
     path: 'MyAuditClose',
     description: '',
-    success: false,
+    success: true,
   },
   {
     title: '[06.AUDIT] 품질심사원프로필',
