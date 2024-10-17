@@ -867,7 +867,7 @@ meter::-webkit-meter-optimum-value {
 
 // }
   .grid-item .grid-group:nth-of-type(1) .risk-conts-area .risk-box .risk-conts{width:100%;padding:2.5rem 2.5rem 2rem 2.5rem}
-  .grid-item .grid-group:nth-of-type(1) .risk-conts-area .risk-box .risk-conts .txt{height:4.5rem;text-align:left;font-size:1.8rem;font-weight: 700; color:var(--color-darkblue-100);overflow:hidden}
+  .grid-item .grid-group:nth-of-type(1) .risk-conts-area .risk-box .risk-conts .txt{height:4.5rem;text-align:left;font-size:1.8rem;font-weight:700;color:var(--color-darkblue-100);overflow:hidden}
   .grid-item .grid-group:nth-of-type(1) .risk-conts-area .risk-box .risk-conts .sub-txt{font-size:1.2rem;color:#009FFF}
   .grid-item .grid-group:nth-of-type(1) .risk-conts-area .risk-box .risk-conts .sub-txt strong{font-size:1.8rem;color:#009FFF}
   .grid-item .grid-group:nth-of-type(1) .risk-conts-area .risk-box .risk-bottom{display:flex;justify-content:flex-end;align-items:center;padding:0 2.5rem 1rem 2.5rem}
@@ -938,7 +938,24 @@ meter::-webkit-meter-optimum-value {
   .grid-item.photo .slick-slider .slick-dots li button{display:block;font-size:0;border-radius:99.9rem;margin:0.5rem 0;width:1rem;height:1rem;background-color:var(--color-darkblue-40);cursor:pointer}
   .grid-item.photo .slick-slider .slick-dots li.slick-active button{background-color:var(--color-darkblue-100);width:2rem}
 
-
+/*메인 레이아웃*/
+  .av-submain-wrap{
+    display:flex;flex:auto;flex-direction:column;min-height:0;box-sizing:border-box;border:solid 1px red;
+    .av-layout-content{position:relative;display:flex; flex: auto;flex-direction: column;}
+    .h3{font-size:10.0rem;color:var(--color-neutral-40);}
+    .av-area{min-height: 100%;display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      -webkit-box-align: center;
+      align-items: center;
+      position: relative;
+      padding-top: 100px;
+      padding-bottom: 30px;}
+      .av-box{background-color:var(--color-neutral-10);
+        padding: 26px 40px 30px;
+        border-radius: 20px;
+    }
+  }
   /*항공안전-myaudit*/
 .myaudit-container {
   .ad-number {font-size: 1.8rem; font-weight: 700; display: inline-block; padding-bottom: 1.0rem; text-wrap: nowrap;}

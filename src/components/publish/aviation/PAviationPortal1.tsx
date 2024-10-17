@@ -145,11 +145,7 @@ function PAviationPortal1() {
                       <span className="ico-tag">2</span>
                     </div>
                     <div className="risk-conts">
-                      <div className="txt">
-                        GPWS
-                        <br />
-                        (Don't sink)
-                      </div>
+                      <div className="txt">GPWS (Don't sink)</div>
                       <span className="sub-txt">
                         Number of occurrence <strong>1</strong>
                       </span>
@@ -215,11 +211,7 @@ function PAviationPortal1() {
                       <span className="ico-tag">2</span>
                     </div>
                     <div className="risk-conts">
-                      <div className="txt">
-                        GPWS
-                        <br />
-                        (Don't sink)
-                      </div>
+                      <div className="txt">GPWS (Don't sink)</div>
                       <span className="sub-txt">
                         Number of occurrence <strong>1</strong>
                       </span>

@@ -64,22 +64,12 @@ function CustomColumnComponent3() {
 function CustomColumnComponent4() {
   return (
     <div className="Audit-table-cell">
-      <div className="list-box">
-        <ul>
-          <li>
-            <a href="javascript:void(0);" className="">
-              2024-06-25
-            </a>
-          </li>
-          {/* <li>
-            <a href="javascript:void(0);">-</a>
-          </li>
-          <li>
-            <a href="javascript:void(0);" className="text-red">
-              2024-06-26 (D+6)
-            </a>
-          </li> */}
-        </ul>
+      <div className="tooltip">
+        <span className="tooltiptext1 tooltip-right">
+          <ul>
+            <li>발견 : 이벤트 발생 시점 미정 항목에 대한 보고</li>
+          </ul>
+        </span>
       </div>
     </div>
   );

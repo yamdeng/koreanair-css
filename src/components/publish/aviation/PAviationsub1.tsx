@@ -41,7 +41,14 @@ function PAviationsub1() {
   }, []);
   return (
     <>
-      <div className="av-submain-wrap"></div>
+      <div className="av-submain-wrap">
+        <div className="av-layout-content">
+          <div className="h3">Air Safety Report</div>
+          <div className="av-area">
+            <div className="av-box"></div>
+          </div>
+        </div>
+      </div>
     </>
   );
 }
