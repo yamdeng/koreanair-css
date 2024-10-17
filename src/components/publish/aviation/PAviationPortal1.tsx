@@ -55,6 +55,7 @@ function PAviationPortal1() {
           <li>
             <a href="javascript:void(0);" className="csr">
               <span className="active-bg">객실안전보고서</span>
+              {/*hover시 */}
             </a>
           </li>
           <li>
@@ -88,25 +89,15 @@ function PAviationPortal1() {
             </a>
           </li>
           <li>
+            <a href="javascript:void(0);" className="Safety Repot">
+              <span className="active-bg">Safety Repot</span>
+            </a>
+          </li>
+          <li>
             <a href="javascript:void(0);" className="amo">
               <span className="active-bg">AMO</span>
             </a>
           </li>
-          {/* <li>
-            <a href="javascript:void(0);">
-              <span>1010</span>
-            </a>
-          </li>
-          <li>
-            <a href="javascript:void(0);">
-              <span>1111</span>
-            </a>
-          </li>
-          <li>
-            <a href="javascript:void(0);">
-              <span>DD</span>
-            </a>
-          </li> */}
         </ul>
 
         <span aria-hidden="true" className="stretchy-nav-bg"></span>
@@ -528,7 +519,7 @@ function PAviationPortal1() {
             </ul>
           </h3>
           {/*공지사항 */}
-          <div id="" className="main-table-box">
+          <div id="" className="main-table-box" style={{ display: 'none' }}>
             <table className="main-table">
               <colgroup>
                 <col width="65%" />
@@ -593,6 +584,7 @@ function PAviationPortal1() {
             </table>
           </div>
           {/*사고준사고 */}
+          <div id="" className="main-table-box" style={{ broder: 'solid  ' }}></div>
         </div>
       </div>
       {/*}

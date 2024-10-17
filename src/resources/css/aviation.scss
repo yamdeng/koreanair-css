@@ -1239,13 +1239,15 @@ meter::-webkit-meter-optimum-value {
   width:1.8rem;
   height:1.8rem;background:url(/src/resources/images/icon_hr.svg)center center no-repeat;background-size:1.8rem
 }
-.cd-stretchy-nav ul li:nth-of-type(9) a.amo::after {
+.cd-stretchy-nav ul li:nth-of-type(9) a.Safety::after {
   //background-position: 0 0;
   width:1.8rem;
   height:1.8rem;background:url(/src/resources/images/icon_hr.svg)center center no-repeat;background-size:1.8rem
 }
-.cd-stretchy-nav ul li:nth-of-type(10) a::after {
-  background-position: -1.6rem 0;
+.cd-stretchy-nav ul li:nth-of-type(10) a.amo::after {
+  //background-position: 0 0;
+  width:1.8rem;
+  height:1.8rem;background:url(/src/resources/images/icon_hr.svg)center center no-repeat;background-size:1.8rem
 }
 .cd-stretchy-nav ul li:nth-of-type(11) a::after {
   background-position: -3.2rem 0;
@@ -1335,7 +1337,17 @@ meter::-webkit-meter-optimum-value {
 .cd-stretchy-nav.nav-is-visible ul li:first-of-type span.bg{
   position:absolute;top:1rem;right:7rem;padding:0 1.0rem;line-height:3rem;
   border-radius:0.2rem;transition: opacity 0.2s, visibility 0.2s;text-align:center;
-  background-color:rgb(87 187 235 / 80%);color:var(--color-neutral-10);border-top-left-radius:0.8rem;border-bottom-left-radius:0.8rem
+  background-color:rgb(5 23 102 / 100%);color:var(--color-neutral-10);border-top-left-radius:0.8rem;border-bottom-left-radius:0.8rem
+}
+.cd-stretchy-nav.nav-is-visible ul li:first-of-type span.bg:after{
+  content: '';position: absolute;
+  left: 100%;top: 50%;bottom: auto;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+  height:0;width: 0;border:0.4rem solid transparent;border-left-color: rgb(5 23 102 / 100%)
 }
 .cd-stretchy-nav.nav-is-visible ul li:first-of-type span.active-bg{
   position:absolute;top:1rem;right:7rem;padding:0 1.0rem;line-height:3rem;
@@ -1351,7 +1363,7 @@ meter::-webkit-meter-optimum-value {
   -ms-transform: translateY(-50%);
   -o-transform: translateY(-50%);
   transform: translateY(-50%);
-  height:0;width: 0;border:0.4rem solid transparent;border-left-color: rgb(87 187 235 / 80%)
+  height:0;width: 0;border:0.4rem solid transparent;border-left-color: rgb(299 91 21 / 80%)
 }
 
 .cd-stretchy-nav.nav-is-visible ul li:nth-of-type(2) a::after,
@@ -1364,7 +1376,7 @@ meter::-webkit-meter-optimum-value {
   position:absolute;top:1rem;right:7rem;padding:0 1.0rem;line-height:3rem;
   border-radius:0.2rem;transition: opacity 0.2s, visibility 0.2s;text-align:center;
   border:solid 0.1rem var(--color-darkblue-100);
-  background-color:rgba(255, 255, 255, 0.8);color:var(--color-neutral-60);border-top-left-radius:0.8rem;border-bottom-left-radius:0.8rem
+  background-color:rgba(5, 23, 102, 0.8);color:var(--color-neutral-60);border-top-left-radius:0.8rem;border-bottom-left-radius:0.8rem
 }
 .cd-stretchy-nav.nav-is-visible ul li:nth-of-type(2) span.active-bg:after{
   content: '';position: absolute;
@@ -1374,7 +1386,7 @@ meter::-webkit-meter-optimum-value {
   -ms-transform: translateY(-50%);
   -o-transform: translateY(-50%);
   transform: translateY(-50%);
-  height:0;width: 0;border:0.4rem solid transparent;border-left-color: rgb(87 187 235 / 80%)
+  height:0;width: 0;border:0.4rem solid transparent;border-left-color: rgb(299 91 21 / 80%)
 }
 
 .cd-stretchy-nav.nav-is-visible ul li:nth-of-type(3) a::after,
@@ -1529,6 +1541,21 @@ meter::-webkit-meter-optimum-value {
   -webkit-animation-delay: 0.5s;
   -moz-animation-delay: 0.5s;
   animation-delay: 0.5s;
+}
+.cd-stretchy-nav.nav-is-visible ul li:nth-of-type(10) span.active-bg{
+  position:absolute;top:1rem;right:7rem;padding:0 1.0rem;line-height:3rem;
+  border-radius:0.2rem;transition: opacity 0.2s, visibility 0.2s;text-align:center;
+  background-color:rgb(87 187 235 / 80%);color:var(--color-neutral-10);border-top-left-radius:0.8rem;border-bottom-left-radius:0.8rem
+}
+.cd-stretchy-nav.nav-is-visible ul li:nth-of-type(10) span.active-bg:after{
+  content: '';position: absolute;
+  left: 100%;top: 50%;bottom: auto;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+  height:0;width: 0;border:0.4rem solid transparent;border-left-color: rgb(87 187 235 / 80%)
 }
 .cd-stretchy-nav.nav-is-visible ul li:nth-of-type(11) a::after,
 .cd-stretchy-nav.nav-is-visible ul li:nth-of-type(11) span {
