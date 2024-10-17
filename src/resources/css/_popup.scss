@@ -165,7 +165,7 @@
     }
   }
 }
-
+.pop_full_cont_box.type01 {overflow: initial !important;}
 .pop_full_cont_box {
   position: relative;
   height:calc(100vh - 18.5rem);
@@ -174,6 +174,7 @@
   /*overflow-y: auto;
   overflow-x: hidden;*/
   padding-top: 2.0rem;
+  
   .list_form,
   .tb_wrap_scroll {
     margin-bottom: 3.0rem;
@@ -701,7 +702,7 @@
 .yellow{background-color:#FFDD33}
 .green{background-color:#02C27F}
 
-.RiskLevel-box{display:flex;width:100%;height:63.0rem;overflow:auto;gap:0 2.0rem}
+.RiskLevel-box{display:flex;width:100%;height:63.0rem;/*overflow:auto;*/gap:0 2.0rem}
 .RiskLevel-box .RiskLevel-list{width:45%;/*padding:2.0rem;overflow:hidden;height:100%;border-radius:0.8rem;*//*border:0.1rem solid var(--color-neutral-40);background-color: var(--color-neutral-20)*/}
 .RiskLevel-box .RiskLevel-top-box{display:block;width:100%;margin-bottom:1.0rem}
 .RiskLevel-box .RiskLevel-top-box .RiskLevel-Left{float:left;width:47%;}
@@ -747,12 +748,12 @@
 .RiskLevel-box .RiskLevel-list .box-list .list li{line-height:3;text-overflow:ellipsis;white-space:nowrap;border-bottom:solid 0.1rem var(--color-neutral-30)}
 .RiskLevel-box .RiskLevel-list .box-list .list li.active{font-weight:700;background-color:var(--color-lightblue-10);color:var(--color-darkblue-100)}
 .RiskLevel-box .RiskLevel-list .box-list .list li:hover{background-color:var(--color-lightblue-10)}
-.RiskLevel-box .RiskLevel-list .list-box-b{width:33%;height:100%;margin-left:1.5rem}
+.RiskLevel-box .RiskLevel-list .list-box-b{width:33%;height:100%;margin-left:0.5rem}
 .RiskLevel-box .RiskLevel-list .list-box-b > .chk-wrap{width:100%}
 .RiskLevel-box .RiskLevel-list .list-box-b > .chk-wrap > label > input:checked + span{color:var(--color-darkblue-100);font-size:1.4rem;width:auto;background: none}
 .RiskLevel-box .RiskLevel-list .list-box-b > .chk-wrap > label .txt{text-align:right}
 .RiskLevel-box .RiskLevel-list .list-box-b > .chk-wrap > label .txt em{color:var( --color-negative)}
-.RiskLevel-box .RiskLevel-list .list-box-c{width:33%;height:100%;margin-left:1.5rem}
+.RiskLevel-box .RiskLevel-list .list-box-c{width:33%;height:100%;margin-left:0.5rem}
 .RiskLevel-box .RiskLevel-list .list-box-c > .chk-wrap{width:100%}
 .RiskLevel-box .RiskLevel-list .list-box-c > .chk-wrap > label > input:checked + span{color:var(--color-darkblue-100);font-size:1.4rem;width:auto;background: none}
 .RiskLevel-box .RiskLevel-list .list-box-c > .chk-wrap > label .txt{text-align:right}
@@ -793,8 +794,8 @@
 .RiskLevelTable.Risk td{position:relative;font-weight:600;vertical-align:text-top;height:5.5rem}
 .flag-tag1{gap:0 0.5rem}
 .flag-tag .icon-flag{border-radius:99.9rem;padding:0.3rem 0.6rem}
-.flag-tag1 .icon-flag1{border-radius:99.9rem;padding:0.3rem 2.0rem}
-.flag-tag1 .icon-flag1 + .icon-flag1{margin-left:0.5rem}
+.flag-tag1 .icon-flag1{border-radius:99.9rem;padding:0.3rem 1.0rem}
+.flag-tag1 .icon-flag1 + .icon-flag1{margin-left:0.3rem}
 .flag-tag .icon-flag.txt{font-family:"KoreanAirSans";font-weight:400;font-size:1.3rem;line-height:1.2rem;color:var(--color-neutral-90);text-decoration:underline}
 .flag-tag .icon-flag.btn-blue{background-color:#c0eaff;color:var(--color-darkblue-100);border:solid 0.1rem var(--color-darkblue-100);box-shadow:0.2rem 0.5rem 0.5rem rgba(0, 0, 0, 0.1)}
 .flag-tag .icon-flag.btn-wh{padding:0.2rem 1rem;line-height:1.2;color:var(--color-neutral-90)}
