@@ -151,41 +151,42 @@ function MyAuditClose() {
               <div className="form-table">
                 <div className="form-cell wid20">
                   <div className="form-group wid100 dp-flax">
-                    <div className="btn-tit">
-                      <h3>공유 대상</h3>
-                    </div>
-                    <div className="btn-select-box">
-                      <button className="btn-select wid100">Team Select</button>
-                      <div className="step-box">
-                        안전품질평가팀<span>(7명)</span>
-                        <a href="javascript:void(0);">
-                          <span className="delete">X</span>
-                        </a>
+                    <div className="input-group">
+                      <div className="btn-tit">
+                        <h3>공유 대상</h3>
                       </div>
+                      <div className="btn-select-box">
+                        <button className="btn-select wid100">Team Select</button>
+                        <div className="step-box">
+                          안전품질평가팀<span>(7명)</span>
+                          <a href="javascript:void(0);">
+                            <span className="delete">X</span>
+                          </a>
+                        </div>
 
-                      <div className="step-box">
-                        안전조사팀<span>(13명)</span>
-                        <a href="javascript:void(0);">
-                          <span className="delete">X</span>
-                        </a>
-                      </div>
-                      <div className="step-box">
-                        지상안전팀<span>(3명)</span>
-                        <a href="javascript:void(0);">
-                          <span className="delete">X</span>
-                        </a>
+                        <div className="step-box">
+                          안전조사팀<span>(13명)</span>
+                          <a href="javascript:void(0);">
+                            <span className="delete">X</span>
+                          </a>
+                        </div>
+                        <div className="step-box">
+                          지상안전팀<span>(3명)</span>
+                          <a href="javascript:void(0);">
+                            <span className="delete">X</span>
+                          </a>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                </div>
-                <div className="form-cell wid30">
-                  <div className="form-group wid100">
-                    <AppAutoComplete label="d" />
-                    <div className="step-box">
-                      신상훈
-                      <a href="javascript:void(0);">
-                        <span className="delete">X</span>
-                      </a>
+
+                    <div className="form-group wid100 ml-10">
+                      <AppAutoComplete label="d" />
+                      <div className="step-box">
+                        신상훈
+                        <a href="javascript:void(0);">
+                          <span className="delete">X</span>
+                        </a>
+                      </div>
                     </div>
                   </div>
                 </div>
