@@ -1836,7 +1836,14 @@ keyframes
   }
 }
 .step-box {
-  span {font-size: 1.3rem;}
+  li {
+    span {font-size: 1.3rem;}
+
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  min-width: 10.0rem;
+  }
 
   width: 100%;
   position: relative;
@@ -1846,11 +1853,8 @@ keyframes
   padding: 0.8rem 3.0rem 0.8rem 1.5rem;
   margin: 0.4rem 0;
   font-size: 1.3rem;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  min-width: 10.0rem;
-
+  
+  .stit {font-size: 1.3rem; color: var(--color-neutral-60);}
   .delete{position:absolute; top:0.9rem; right: 1.0rem; background:url(/src/resources/images/delete-text.svg) center center no-repeat; font-size:0; width:2rem; height:2rem}
 }
 .pd-lr10 {padding: 0 1.5rem !important}
