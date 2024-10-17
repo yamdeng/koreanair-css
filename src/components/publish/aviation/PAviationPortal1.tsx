@@ -48,51 +48,51 @@ function PAviationPortal1() {
         </a>
         <ul>
           <li>
-            <a href="javascript:void(0);" className="active">
-              <span className="active-bg">Safety Repot</span>
+            <a href="javascript:void(0);" className="asr active">
+              <span className="active-bg">Air Safety Repot</span>
             </a>
           </li>
           <li>
-            <a href="javascript:void(0);">
+            <a href="javascript:void(0);" className="csr">
               <span className="active-bg">객실안전보고서</span>
             </a>
           </li>
           <li>
-            <a href="javascript:void(0);">
+            <a href="javascript:void(0);" className="msr">
               <span className="active-bg">장비안전보고서</span>
             </a>
           </li>
           <li>
-            <a href="javascript:void(0);">
+            <a href="javascript:void(0);" className="gsr">
               <span className="active-bg">지상안전보고서</span>
             </a>
           </li>
           <li>
-            <a href="javascript:void(0);">
+            <a href="javascript:void(0);" className="dsr">
               <span className="active-bg">운항관리안전보고서</span>
             </a>
           </li>
           <li>
-            <a href="javascript:void(0);">
+            <a href="javascript:void(0);" className="rsr">
               <span className="active-bg">램프안전보고서</span>
             </a>
           </li>
           <li>
-            <a href="javascript:void(0);">
+            <a href="javascript:void(0);" className="foqa">
               <span className="active-bg">FOQA</span>
             </a>
           </li>
           <li>
-            <a href="javascript:void(0);">
+            <a href="javascript:void(0);" className="hazard">
               <span className="active-bg">HAZARD</span>
             </a>
           </li>
-          {/* <li>
-            <a href="javascript:void(0);">
-              <span>HAZARD</span>
+          <li>
+            <a href="javascript:void(0);" className="amo">
+              <span className="active-bg">AMO</span>
             </a>
           </li>
-          <li>
+          {/* <li>
             <a href="javascript:void(0);">
               <span>1010</span>
             </a>
