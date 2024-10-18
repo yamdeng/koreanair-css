@@ -117,10 +117,16 @@ function UserEditModal(props) {
     >
       <div className="popup-container">
         <h3 className="pop_title">Select Risk Level</h3>
-
-        <div className="">
-          <button className="btn_text text_color_neutral-90 btn_close">작성정보 참고</button>
+        <div className="tag-info-wrap-end2">
+          <div className="tip">
+            <div>
+              <a href="javascript:void(0);" className="txt">
+                작성정보 참고
+              </a>
+            </div>
+          </div>
         </div>
+
         <div className="pop_cont Risk">
           <table className="RiskLevelTable Risk">
             <caption></caption>
