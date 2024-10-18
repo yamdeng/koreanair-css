@@ -175,7 +175,7 @@ function PTableCustomColumn() {
   return (
     <>
       <div>
-        <AppTable rowData={rowData} columns={columns} customButtons={customButtons} />
+        <AppTable rowData={rowData} columns={columns} customButtons={customButtons} pagination />
       </div>
     </>
   );

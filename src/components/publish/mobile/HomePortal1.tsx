@@ -153,8 +153,8 @@ function HomePortal1() {
         <span className="txt">안전정책</span>
       </div>
       <div className="fix-card-conts">
+        {/* 이미지 active */}
         <img src={SafetyPolicy} />
-        {/* 우측 아이콘 영역 클릭시 나오는 이미지 영역*/}
       </div>
       <div className="bottom-arrow" onClick={nextSlide}>
         <a href="javascript:void(0);">
@@ -239,7 +239,29 @@ function HomePortal1() {
                         <img src={cont01} />
                       </div>
                       <div className="swiper-slide">
-                        <img src={cont02} />
+                        <div className="page1_conts_txtbox">
+                          <div className="page1_title">
+                            <div className="title">2024년 항공안전목표</div>
+                            <div className="subtitle">
+                              <div className="subtitle-bg">
+                                <div className="subtitle-box">
+                                  <span>정성목표</span>
+                                  <ul>
+                                    <li>대한항공 임직원의 안전하고 쾌적한 근무 환경 조성</li>
+                                    <li>위험성평가 중심의 유해위험요인 관리 및 자율안전예방체계 구축</li>
+                                  </ul>
+                                </div>
+                                <div className="subtitle-box">
+                                  <span>정량목표</span>
+                                  <ul>
+                                    <li>재해율 0.58, 강도율 0.13 달성</li>
+                                    <li>중대재해 및 중상재해 ZERO 달성</li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
                       </div>
                     </Slider>
                   </div>

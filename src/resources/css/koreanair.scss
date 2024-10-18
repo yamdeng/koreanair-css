@@ -1379,6 +1379,89 @@
     border-radius: 1.5rem
     /*object-fit: cover;*/
     }
+  .page1_conts_txtbox {
+    width: 100%; 
+    height: 100%;
+  }
+  .page1_conts_txtbox .page1_title {
+    display: flex;
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+  }
+  .page1_conts_txtbox .page1_title .title {
+    position:absolute;
+    top:0;
+    width:100%;
+    font-family: 'KoreanAirSans';
+    font-size:5.0rem;
+    color:var(--color-neutral-10);
+    opacity:0;
+    transition:all 1s;
+  }
+  .page1_conts_txtbox .page1_title .title {
+    top:0;
+    left: 0;
+    width: 100%;
+    opacity:1;
+    font-weight: 700;
+    /*display: inline-flex;
+    justify-content: center;*/
+  }
+
+  .page1_title .subtitle {
+    position:absolute;
+    top:0;
+    width:100%;
+    font-family: 'KoreanAirSans';
+    font-size:1.6rem;
+    color:rgba(255,255,255,0.6);
+    opacity:0;
+    transition:all 1s;
+  }
+  .page1_conts_txtbox .page1_title .subtitle {
+    top:8.0rem;
+    opacity:1;
+  }
+  .page1_conts_txtbox .page1_title .subtitle .subtitle-bg {
+    display: inline-flex;
+    width: 100%; 
+    margin: 0 auto; 
+    background-color: rgba(5, 23, 102, 1); 
+    padding: 2.5rem 1.5rem; 
+    border-radius: 1.5rem; 
+  }
+  .page1_conts_txtbox .page1_title .subtitle .subtitle-box {
+    display: inline-flex;
+    color: var(--color-neutral-10);
+    width: 50%;
+    text-align: left;
+    align-items: flex-start;
+  }
+  .page1_conts_txtbox .page1_title .subtitle .subtitle-box span {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-lightblue-100);
+    border-radius: 99.9rem;
+    padding: 0.6rem 2.0rem;
+    text-align: center;
+    font-size: 2.1rem;
+    color: var(--color-neutral-10);
+    font-weight: normal;
+    height: 35px;
+  }
+  .page1_conts_txtbox .page1_title .subtitle .subtitle-box ul li {
+    line-height: 150%;
+    font-size: 1.8rem;
+    font-weight: normal;
+    background: url(../images/dot.png) left 1.4rem no-repeat;
+    padding: 0 0 0 1.0rem;
+    color: var(--color-neutral-10);
+    margin: 0 1.0rem;
+  }
+
 
 .main-visual02 {
   position: relative;
