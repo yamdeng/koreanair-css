@@ -7,10 +7,11 @@
 
    /*위험레벨조회 팝업*/
   .risk-level-search-content {width:90%}
-  .RiskLevel-searchbox .search-area .form-table .form-area{display:block;border:solid 1px red}
+  .RiskLevel-searchbox .search-area .form-table .form-area{display:block}
   .RiskLevel-box{display:block}
-  .RiskLevel-box .RiskLevel-list{width:100%;padding:0 1.5rem}
+  .RiskLevel-box .RiskLevel-list{display:block;width:100%;}
   .RiskLevel-box .RiskLevel-list .box-list{height:30rem}
+
   .RiskLevel-box .RiskLevel-area{width:100%;margin-top:3rem}
 
   .left-box {width: 35%;}
@@ -129,7 +130,7 @@
   .contents-btns > button.btn-type01:nth-child(odd) {margin-right:0.2rem;}
   /*위험레벨조회 팝업*/
   .RiskLevel-box{display:block}
-  .RiskLevel-box .RiskLevel-list{width:100%;padding:0 1.5rem}
+  .RiskLevel-box .RiskLevel-list{display:block;width:100%;}
   .RiskLevel-box .RiskLevel-list .box-list{height:30rem}
   .RiskLevel-box .RiskLevel-area{width:100%;margin-top:3rem}
 
@@ -400,7 +401,7 @@
 
    /*위험레벨조회 팝업*/
   .RiskLevel-box{display:block;height: calc(100vh - 51.9rem);}
-  .RiskLevel-box .RiskLevel-list{width:100%;padding:0 1.5rem}
+  .RiskLevel-box .RiskLevel-list{display:block;width:100%;}
   .RiskLevel-box .RiskLevel-list .box-list{height:30rem}
   .RiskLevel-box .RiskLevel-area{display:block;width:100%}
   .RiskLevel-box .RiskLevel-area .search-area .form-table{display:inline-table}
@@ -686,7 +687,7 @@
 
   .RiskLevel-searchbox{width:100%}
   .RiskLevel-searchbox .boxForm{display:block}
-  .RiskLevel-searchbox .boxForm .form-table .form-cell .form-group{display: block; width:auto}
+  .RiskLevel-searchbox .boxForm .form-table .form-cell .form-group{display:block;width:auto}
 
 
   .table-header .btns-area {display: none;}
@@ -782,10 +783,8 @@
 
    /*위험레벨조회 팝업*/
   .RiskLevel-box{display:block}
-  .RiskLevel-box .RiskLevel-list{width:100%;padding:0 1.5rem}
+  .RiskLevel-box .RiskLevel-list{display:block;width:100%;}
   .RiskLevel-box .RiskLevel-top-box .boxlist-wrap{margin-bottom:2rem}
-  .RiskLevel-box .RiskLevel-list .df{width:100%}
-  .RiskLevel-box .RiskLevel-list .box-list{height:30rem}
   .RiskLevel-box .RiskLevel-area{width:100%}
   .RiskLevel-box .RiskLevel-area .Level-area{display:block}
 
@@ -1103,6 +1102,8 @@
 @media screen and (max-width: 375px) {  
   .LNB .LNB_menu .m-lnb_top_logo a span {display: none;}
   .pop_full_cont_box {height: calc(100vh - 12.0rem);}
+  .pop_full_cont_box.type01{padding:0}
+  .RiskLevel-searchbox .boxForm .form-table .form-cell .form-group .flag-tag1 .icon-flag1{padding:0.3rem 0.6rem}
 
   /*상단타이틀*/
   
@@ -1130,10 +1131,8 @@
 
    /*위험레벨조회 팝업*/
   .RiskLevel-box{display:block}
-  .RiskLevel-box .RiskLevel-list{width:100%;padding:0 1.5rem}
-  .RiskLevel-box .RiskLevel-list .box-list{height:30rem}
-  .RiskLevel-box .RiskLevel-top-box .RiskLevel-Left{width:40%}
-  .RiskLevel-box .RiskLevel-top-box .RiskLevel-Right{width:40%}
+  .RiskLevel-box .RiskLevel-list{display:block;width:100%;}
+  .RiskLevel-box .RiskLevel-area{display: block;}
   .RiskLevel-box .RiskLevel-top-box .h4-tit{font-size:1.6rem;line-height:1.4;margin-bottom:1.0rem}
 
   .menu-tab a{display:inline-flex;font-size:1.3rem;line-height:1.3;min-height:4rem}

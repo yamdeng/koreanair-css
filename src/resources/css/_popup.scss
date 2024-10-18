@@ -165,7 +165,7 @@
     }
   }
 }
-.pop_full_cont_box.type01 {overflow: initial !important;}
+.pop_full_cont_box.type01 {overflow: initial !important;padding-top:0}
 .pop_full_cont_box {
   position: relative;
   height:calc(100vh - 18.5rem);
@@ -702,11 +702,11 @@
 .yellow{background-color:#FFDD33}
 .green{background-color:#02C27F}
 
-.RiskLevel-box{display:flex;width:100%;height:63.0rem;/*overflow:auto;*/gap:0 2.0rem}
-.RiskLevel-box .RiskLevel-list{width:45%;/*padding:2.0rem;overflow:hidden;height:100%;border-radius:0.8rem;*//*border:0.1rem solid var(--color-neutral-40);background-color: var(--color-neutral-20)*/}
-.RiskLevel-box .RiskLevel-top-box{display:block;width:100%;margin-bottom:1.0rem}
-.RiskLevel-box .RiskLevel-top-box .RiskLevel-Left{float:left;width:47%;}
-.RiskLevel-box .RiskLevel-top-box .RiskLevel-Right{float:right;width:47%;}
+.RiskLevel-box{display:flex;justify-content: space-between;width:100%;height:63.0rem;/*overflow:auto;*/gap:0 2.0rem}
+.RiskLevel-box .RiskLevel-list{display:flex;width:50%;justify-content: space-between;gap:0 0.5rem/*padding:2.0rem;overflow:hidden;height:100%;border-radius:0.8rem;*//*border:0.1rem solid var(--color-neutral-40);background-color: var(--color-neutral-20)*/}
+.RiskLevel-box .RiskLevel-top-box{display:block;justify-content: space-between;width:100%;margin-bottom:1.0rem}
+// .RiskLevel-box .RiskLevel-top-box .RiskLevel-Left{float:left;width:47%;}
+// .RiskLevel-box .RiskLevel-top-box .RiskLevel-Right{float:right;width:47%;}
 .RiskLevel-box .RiskLevel-top-box > .pop_btns_{display:block;padding-top:10rem;margin-bottom:3rem}
 .pop_btns_{
   > button {
@@ -737,7 +737,8 @@
 .h4-tit{position:relative;margin-bottom:1.0rem;font-size:1.8rem;font-weight:600;line-height:1.8;text-indent:0;padding-left:1.5rem;color:var(--color-darkblue-100);text-align:left}
 .h4-tit::before{content:'·';display:block;position:absolute;top:0;left:0.2rem}
 .h5-tit{position:relative;margin:0.5rem 0;font-size:1.7rem;font-weight:600;color:var(--color-darkblue-100)}
-.RiskLevel-box .RiskLevel-list .list-box-a{width:33%;height:100%}
+
+.RiskLevel-box .RiskLevel-list .list-box-a{width:100%;height:100%}
 .RiskLevel-box .RiskLevel-list .list-box-a > .chk-wrap{width:100%}
 .RiskLevel-box .RiskLevel-list .list-box-a > .chk-wrap > label > input:checked + span{color:var(--color-darkblue-100);font-size:1.4rem;width:auto;background: none}
 .RiskLevel-box .RiskLevel-list .list-box-a > .chk-wrap > label .txt{text-align:right}
@@ -745,15 +746,15 @@
 .RiskLevel-box .RiskLevel-list .box-list{position:relative;margin-top:1rem;border:solid 0.1rem var(--color-neutral-40);border-radius:0.8rem;padding:1.5rem;height:65.0rem;overflow-y:auto}
 .RiskLevel-box .RiskLevel-list .box-list .list{position:relative;height:100%;margin:3rem 0}
 .RiskLevel-box .RiskLevel-list .box-list .list:first-child{margin-top:0}
-.RiskLevel-box .RiskLevel-list .box-list .list li{line-height:3;text-overflow:ellipsis;white-space:nowrap;border-bottom:solid 0.1rem var(--color-neutral-30)}
+.RiskLevel-box .RiskLevel-list .box-list .list li{line-height:2.2;text-overflow:ellipsis;white-space:nowrap;overflow:hidden;border-bottom:solid 0.1rem var(--color-neutral-30)}
 .RiskLevel-box .RiskLevel-list .box-list .list li.active{font-weight:700;background-color:var(--color-lightblue-10);color:var(--color-darkblue-100)}
 .RiskLevel-box .RiskLevel-list .box-list .list li:hover{background-color:var(--color-lightblue-10)}
-.RiskLevel-box .RiskLevel-list .list-box-b{width:33%;height:100%;margin-left:0.5rem}
+.RiskLevel-box .RiskLevel-list .list-box-b{width:100%;height:100%}
 .RiskLevel-box .RiskLevel-list .list-box-b > .chk-wrap{width:100%}
 .RiskLevel-box .RiskLevel-list .list-box-b > .chk-wrap > label > input:checked + span{color:var(--color-darkblue-100);font-size:1.4rem;width:auto;background: none}
 .RiskLevel-box .RiskLevel-list .list-box-b > .chk-wrap > label .txt{text-align:right}
 .RiskLevel-box .RiskLevel-list .list-box-b > .chk-wrap > label .txt em{color:var( --color-negative)}
-.RiskLevel-box .RiskLevel-list .list-box-c{width:33%;height:100%;margin-left:0.5rem}
+.RiskLevel-box .RiskLevel-list .list-box-c{width:100%;height:100%}
 .RiskLevel-box .RiskLevel-list .list-box-c > .chk-wrap{width:100%}
 .RiskLevel-box .RiskLevel-list .list-box-c > .chk-wrap > label > input:checked + span{color:var(--color-darkblue-100);font-size:1.4rem;width:auto;background: none}
 .RiskLevel-box .RiskLevel-list .list-box-c > .chk-wrap > label .txt{text-align:right}

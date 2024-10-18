@@ -71,370 +71,285 @@ function ReportLevelModal(props) {
             </div>
             <div className="RiskLevel-box">
               <div className="RiskLevel-list">
-                {/* <div className="RiskLevel-top-box">
-                <div className="RiskLevel-Left">
-                  <div className="h4-tit">Potential Consequence</div>
-                  <div className="boxlist-wrap">
-                    <div className="form-table">
-                      <div className="form-cell">
-                        <div className="form-group wid100">
-                          <AppSelect
-                            id="select1"
-                            style={{ width: '100%' }}
-                            className="label-select"
-                            options={[
-                              {
-                                value: 'jack',
-                                label: 'Jack',
-                              },
-                              {
-                                value: 'lucy',
-                                label: 'Lucy',
-                              },
-                              {
-                                value: 'Yiminghe',
-                                label: 'yiminghe',
-                              },
-                              {
-                                value: 'disabled',
-                                label: 'Disabled',
-                                disabled: true,
-                              },
-                            ]}
-                          />
-                          <label className="f-label" htmlFor="select1">
-                            선택
-                          </label>
-                        </div>
+                <div className="list-box-a">
+                  <div className="chk-wrap">
+                    <label>
+                      <input type="checkbox" checked />
+                      <span>
+                        Event Type :{' '}
+                        <span className="txt">
+                          <em>866</em>건
+                        </span>
+                      </span>
+                    </label>
+                  </div>
+                  <div className="form-table">
+                    <div className="form-cell">
+                      <div className="form-group wid100">
+                        <AppSelect
+                          id="select1"
+                          style={{ width: '100%' }}
+                          className="label-select"
+                          options={[
+                            {
+                              value: 'jack',
+                              label: 'Jack',
+                            },
+                            {
+                              value: 'lucy',
+                              label: 'Lucy',
+                            },
+                            {
+                              value: 'Yiminghe',
+                              label: 'yiminghe',
+                            },
+                            {
+                              value: 'disabled',
+                              label: 'Disabled',
+                              disabled: true,
+                            },
+                          ]}
+                        />
+                        <label className="f-label" htmlFor="select1">
+                          선택
+                        </label>
                       </div>
                     </div>
+                  </div>
+                  <div className="box-list">
+                    <ul className="list">
+                      <li className="active">
+                        <a href="javascript:void(0);">Aircraft Change</a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0);">Boarding Refusal</a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0);">Bomb threat</a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0);">Cabin Crew Illness</a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0);">Cabin Crew Incapacitation due to injury</a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0);">COVID-19 Cluster Infection</a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0);">Crew/Pax Injury</a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0);">Boarding Refusal</a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0);">Bomb threat</a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0);">Cabin Crew Illness</a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0);">Cabin Crew Incapacitation due to injury</a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0);">COVID-19 Cluster Infection</a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0);">Crew/Pax Injury</a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0);">Boarding Refusal</a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0);">Bomb threat</a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0);">Cabin Crew Illness</a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0);">Cabin Crew Incapacitation due to injury</a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0);">COVID-19 Cluster Infection</a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0);">Crew/Pax Injury</a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0);">Bomb threat</a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0);">Cabin Crew Illness</a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0);">Cabin Crew Incapacitation due to injury</a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0);">COVID-19 Cluster Infection</a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0);">Crew/Pax Injury</a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0);">Cabin Crew Illness</a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0);">Cabin Crew Incapacitation due to injury</a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0);">COVID-19 Cluster Infection</a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0);">Crew/Pax Injury</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div className="list-box-b">
+                  <div className="chk-wrap">
+                    <label>
+                      <input type="checkbox" checked />
+                      <span>
+                        Hazard Taxonomy :{' '}
+                        <span className="txt">
+                          <em>866</em>건
+                        </span>
+                      </span>
+                    </label>
+                  </div>
+                  <div className="form-table">
+                    <div className="form-cell">
+                      <div className="form-group wid100">
+                        <AppSelect
+                          id="select1"
+                          style={{ width: '100%' }}
+                          className="label-select"
+                          options={[
+                            {
+                              value: 'jack',
+                              label: 'Jack',
+                            },
+                            {
+                              value: 'lucy',
+                              label: 'Lucy',
+                            },
+                            {
+                              value: 'Yiminghe',
+                              label: 'yiminghe',
+                            },
+                            {
+                              value: 'disabled',
+                              label: 'Disabled',
+                              disabled: true,
+                            },
+                          ]}
+                        />
+                        <label className="f-label" htmlFor="select1">
+                          선택
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="box-list">
+                    <ul className="list">
+                      <li>
+                        <a href="javascript:void(0);">Hail(300)</a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0);" className="active">
+                          Lightning strike(200)
+                        </a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0);">Sandstorm(145)</a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0);">Heavy rain(67)</a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0);">Thunderstorm(20)</a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0);">Typhoon/Cyclone(13)</a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0);">Snow/Slush encounter(9)</a>
+                      </li>
+                    </ul>
                   </div>
                 </div>
 
-                <div className="RiskLevel-Right">
-                  <div className="h4-tit">Hazard Taxonomy</div>
-                  <div className="boxlist-wrap">
-                    <div className="form-table">
-                      <div className="form-cell">
-                        <div className="form-group wid100">
-                          <AppSelect
-                            id="select1"
-                            style={{ width: '100%' }}
-                            className="label-select"
-                            options={[
-                              {
-                                value: 'jack',
-                                label: 'Jack',
-                              },
-                              {
-                                value: 'lucy',
-                                label: 'Lucy',
-                              },
-                              {
-                                value: 'Yiminghe',
-                                label: 'yiminghe',
-                              },
-                              {
-                                value: 'disabled',
-                                label: 'Disabled',
-                                disabled: true,
-                              },
-                            ]}
-                          />
-                          <label className="f-label" htmlFor="select1">
-                            선택
-                          </label>
-                        </div>
+                <div className="list-box-c">
+                  <div className="chk-wrap">
+                    <label>
+                      <input type="checkbox" checked />
+                      <span>
+                        Potential Consequence :{' '}
+                        <span className="txt">
+                          <em>866</em>건
+                        </span>
+                      </span>
+                    </label>
+                  </div>
+                  <div className="form-table">
+                    <div className="form-cell">
+                      <div className="form-group wid100">
+                        <AppSelect
+                          id="select1"
+                          style={{ width: '100%' }}
+                          className="label-select"
+                          options={[
+                            {
+                              value: 'jack',
+                              label: 'Jack',
+                            },
+                            {
+                              value: 'lucy',
+                              label: 'Lucy',
+                            },
+                            {
+                              value: 'Yiminghe',
+                              label: 'yiminghe',
+                            },
+                            {
+                              value: 'disabled',
+                              label: 'Disabled',
+                              disabled: true,
+                            },
+                          ]}
+                        />
+                        <label className="f-label" htmlFor="select1">
+                          선택
+                        </label>
                       </div>
                     </div>
                   </div>
-                </div>
-
-                <div className="pop_btns_">
-                  <button className="btn_text text_color_neutral-10 btn_confirm">초기화</button>
-                </div>
-              </div> */}
-
-                <div className="df">
-                  <div className="list-box-a">
-                    <div className="chk-wrap">
-                      <label>
-                        <input type="checkbox" checked />
-                        <span>
-                          Event Type :{' '}
-                          <span className="txt">
-                            <em>866</em>건
-                          </span>
-                        </span>
-                      </label>
-                    </div>
-                    <div className="form-table">
-                      <div className="form-cell">
-                        <div className="form-group wid100">
-                          <AppSelect
-                            id="select1"
-                            style={{ width: '100%' }}
-                            className="label-select"
-                            options={[
-                              {
-                                value: 'jack',
-                                label: 'Jack',
-                              },
-                              {
-                                value: 'lucy',
-                                label: 'Lucy',
-                              },
-                              {
-                                value: 'Yiminghe',
-                                label: 'yiminghe',
-                              },
-                              {
-                                value: 'disabled',
-                                label: 'Disabled',
-                                disabled: true,
-                              },
-                            ]}
-                          />
-                          <label className="f-label" htmlFor="select1">
-                            선택
-                          </label>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="box-list">
-                      <ul className="list">
-                        <li className="active">
-                          <a href="javascript:void(0);">Aircraft Change</a>
-                        </li>
-                        <li>
-                          <a href="javascript:void(0);">Boarding Refusal</a>
-                        </li>
-                        <li>
-                          <a href="javascript:void(0);">Bomb threat</a>
-                        </li>
-                        <li>
-                          <a href="javascript:void(0);">Cabin Crew Illness</a>
-                        </li>
-                        <li>
-                          <a href="javascript:void(0);">Cabin Crew Incapacitation due to injury</a>
-                        </li>
-                        <li>
-                          <a href="javascript:void(0);">COVID-19 Cluster Infection</a>
-                        </li>
-                        <li>
-                          <a href="javascript:void(0);">Crew/Pax Injury</a>
-                        </li>
-                        <li>
-                          <a href="javascript:void(0);">Boarding Refusal</a>
-                        </li>
-                        <li>
-                          <a href="javascript:void(0);">Bomb threat</a>
-                        </li>
-                        <li>
-                          <a href="javascript:void(0);">Cabin Crew Illness</a>
-                        </li>
-                        <li>
-                          <a href="javascript:void(0);">Cabin Crew Incapacitation due to injury</a>
-                        </li>
-                        <li>
-                          <a href="javascript:void(0);">COVID-19 Cluster Infection</a>
-                        </li>
-                        <li>
-                          <a href="javascript:void(0);">Crew/Pax Injury</a>
-                        </li>
-                        <li>
-                          <a href="javascript:void(0);">Boarding Refusal</a>
-                        </li>
-                        <li>
-                          <a href="javascript:void(0);">Bomb threat</a>
-                        </li>
-                        <li>
-                          <a href="javascript:void(0);">Cabin Crew Illness</a>
-                        </li>
-                        <li>
-                          <a href="javascript:void(0);">Cabin Crew Incapacitation due to injury</a>
-                        </li>
-                        <li>
-                          <a href="javascript:void(0);">COVID-19 Cluster Infection</a>
-                        </li>
-                        <li>
-                          <a href="javascript:void(0);">Crew/Pax Injury</a>
-                        </li>
-                        <li>
-                          <a href="javascript:void(0);">Bomb threat</a>
-                        </li>
-                        <li>
-                          <a href="javascript:void(0);">Cabin Crew Illness</a>
-                        </li>
-                        <li>
-                          <a href="javascript:void(0);">Cabin Crew Incapacitation due to injury</a>
-                        </li>
-                        <li>
-                          <a href="javascript:void(0);">COVID-19 Cluster Infection</a>
-                        </li>
-                        <li>
-                          <a href="javascript:void(0);">Crew/Pax Injury</a>
-                        </li>
-                        <li>
-                          <a href="javascript:void(0);">Cabin Crew Illness</a>
-                        </li>
-                        <li>
-                          <a href="javascript:void(0);">Cabin Crew Incapacitation due to injury</a>
-                        </li>
-                        <li>
-                          <a href="javascript:void(0);">COVID-19 Cluster Infection</a>
-                        </li>
-                        <li>
-                          <a href="javascript:void(0);">Crew/Pax Injury</a>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div className="list-box-b">
-                    <div className="chk-wrap">
-                      <label>
-                        <input type="checkbox" checked />
-                        <span>
-                          Hazard Taxonomy :{' '}
-                          <span className="txt">
-                            <em>866</em>건
-                          </span>
-                        </span>
-                      </label>
-                    </div>
-                    <div className="form-table">
-                      <div className="form-cell">
-                        <div className="form-group wid100">
-                          <AppSelect
-                            id="select1"
-                            style={{ width: '100%' }}
-                            className="label-select"
-                            options={[
-                              {
-                                value: 'jack',
-                                label: 'Jack',
-                              },
-                              {
-                                value: 'lucy',
-                                label: 'Lucy',
-                              },
-                              {
-                                value: 'Yiminghe',
-                                label: 'yiminghe',
-                              },
-                              {
-                                value: 'disabled',
-                                label: 'Disabled',
-                                disabled: true,
-                              },
-                            ]}
-                          />
-                          <label className="f-label" htmlFor="select1">
-                            선택
-                          </label>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="box-list">
-                      <ul className="list">
-                        <li>
-                          <a href="javascript:void(0);">Hail(300)</a>
-                        </li>
-                        <li>
-                          <a href="javascript:void(0);" className="active">
-                            Lightning strike(200)
-                          </a>
-                        </li>
-                        <li>
-                          <a href="javascript:void(0);">Sandstorm(145)</a>
-                        </li>
-                        <li>
-                          <a href="javascript:void(0);">Heavy rain(67)</a>
-                        </li>
-                        <li>
-                          <a href="javascript:void(0);">Thunderstorm(20)</a>
-                        </li>
-                        <li>
-                          <a href="javascript:void(0);">Typhoon/Cyclone(13)</a>
-                        </li>
-                        <li>
-                          <a href="javascript:void(0);">Snow/Slush encounter(9)</a>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div className="list-box-c">
-                    <div className="chk-wrap">
-                      <label>
-                        <input type="checkbox" checked />
-                        <span>
-                          Potential Consequence :{' '}
-                          <span className="txt">
-                            <em>866</em>건
-                          </span>
-                        </span>
-                      </label>
-                    </div>
-                    <div className="form-table">
-                      <div className="form-cell">
-                        <div className="form-group wid100">
-                          <AppSelect
-                            id="select1"
-                            style={{ width: '100%' }}
-                            className="label-select"
-                            options={[
-                              {
-                                value: 'jack',
-                                label: 'Jack',
-                              },
-                              {
-                                value: 'lucy',
-                                label: 'Lucy',
-                              },
-                              {
-                                value: 'Yiminghe',
-                                label: 'yiminghe',
-                              },
-                              {
-                                value: 'disabled',
-                                label: 'Disabled',
-                                disabled: true,
-                              },
-                            ]}
-                          />
-                          <label className="f-label" htmlFor="select1">
-                            선택
-                          </label>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="box-list">
-                      <ul className="list">
-                        <li>
-                          <a href="javascript:void(0);">Hail(300)</a>
-                        </li>
-                        <li>
-                          <a href="javascript:void(0);" className="active">
-                            Lightning strike(200)
-                          </a>
-                        </li>
-                        <li>
-                          <a href="javascript:void(0);">Sandstorm(145)</a>
-                        </li>
-                        <li>
-                          <a href="javascript:void(0);">Heavy rain(67)</a>
-                        </li>
-                        <li>
-                          <a href="javascript:void(0);">Thunderstorm(20)</a>
-                        </li>
-                        <li>
-                          <a href="javascript:void(0);">Typhoon/Cyclone(13)</a>
-                        </li>
-                        <li>
-                          <a href="javascript:void(0);">Snow/Slush encounter(9)</a>
-                        </li>
-                      </ul>
-                    </div>
+                  <div className="box-list">
+                    <ul className="list">
+                      <li>
+                        <a href="javascript:void(0);">Hail(300)</a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0);" className="active">
+                          Lightning strike(200)
+                        </a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0);">Sandstorm(145)</a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0);">Heavy rain(67)</a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0);">Thunderstorm(20)</a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0);">Typhoon/Cyclone(13)</a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0);">Snow/Slush encounter(9)</a>
+                      </li>
+                    </ul>
                   </div>
                 </div>
               </div>
