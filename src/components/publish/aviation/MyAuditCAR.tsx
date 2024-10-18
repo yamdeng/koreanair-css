@@ -325,6 +325,28 @@ function MyAuditCAR() {
                                           </h3>
                                         </div>
                                         <button className="btn-select">Select</button>
+                                        <div className="step-box type01">
+                                          <ul>
+                                            <li>
+                                              <span>[AES04] :</span>Improper use of Improper use of
+                                            </li>
+                                            <li className="stit">Improper use of Improper use of</li>
+                                          </ul>
+                                          <a href="javascript:void(0);">
+                                            <span className="delete">X</span>
+                                          </a>
+                                        </div>
+                                        <div className="step-box type01">
+                                          <ul>
+                                            <li>
+                                              <span>[AES04] :</span>Improper use of Improper use of
+                                            </li>
+                                            <li className="stit">Improper use of Improper use of</li>
+                                          </ul>
+                                          <a href="javascript:void(0);">
+                                            <span className="delete">X</span>
+                                          </a>
+                                        </div>
                                       </div>
                                     </div>
                                   </div>
@@ -379,14 +401,12 @@ function MyAuditCAR() {
 
                                         <div className="user-add-box">
                                           <div className="team-box">
-                                            <ul className="team">
-                                              <li>
-                                                안전기획팀
-                                                <a href="javascript:void(0);">
-                                                  <span className="delete">X</span>
-                                                </a>
-                                              </li>
-                                            </ul>
+                                            <button className="team">
+                                              안전기획팀
+                                              <a href="javascript:void(0);">
+                                                <span className="delete">X</span>
+                                              </a>
+                                            </button>
                                           </div>
                                           <div className="add-box">
                                             <div className="form-group wid100">

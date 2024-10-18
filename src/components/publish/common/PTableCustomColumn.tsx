@@ -100,7 +100,11 @@ function CustomColumnComponent7() {
   );
 }
 function CustomColumnComponent8() {
-  return <div style={{ fontWeight: 'normal', textDecoration: 'underline' }}>custom 컴포넌트8</div>;
+  return (
+    <div style={{ fontWeight: 'normal', textDecoration: 'underline' }}>
+      <div>dfsdafdsafd</div>
+    </div>
+  );
 }
 function CustomColumnComponent9() {
   return <div style={{ fontWeight: 'normal', textDecoration: 'underline' }}>custom 컴포넌트9</div>;

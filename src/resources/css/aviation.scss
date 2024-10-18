@@ -1039,7 +1039,7 @@ meter::-webkit-meter-optimum-value {
 .edit-tab .tab-list li {display: inline-block; padding: 0 1.0rem 0.6rem;}
 .edit-tab .tab-list li.active {border-bottom: 0.2rem solid var(--color-darkblue-100); color: var(--color-darkblue-100); font-weight: 700;}
 
-.btn-tit {display: inline-flex; padding-right: 1.5rem; white-space: nowrap; position: relative; top: 0.9rem;}
+.btn-tit {display: inline-flex; padding-right: 1.5rem; white-space: nowrap; position: relative; /*top: 0.9rem;*/}
 .btn-tit h3 {font-size: 1.6rem;}
 .btn-tit .required {color:var(--color-negative); vertical-align: text-top;}
 .dp-flax {display: flex;}
@@ -1826,9 +1826,8 @@ keyframes
     width: 100%;
     padding-right: 1.0rem;
 
-    .team {border: 0.1rem solid var(--color-neutral-40); border-radius: 0.5rem;}
-    .team li {padding: 1.0rem 1.5rem; position: relative;}
-    .team li span.delete{position:absolute; top:1rem; right: 1.0rem; background:url(/src/resources/images/delete-text.svg) center center no-repeat; font-size:0; width:2rem; height:2rem}
+    .team {width: 100%; text-align: left; border: 0.1rem solid var(--color-neutral-40); border-radius: 0.5rem; padding: 1.0rem 1.5rem; position: relative;}
+    .team span.delete{position:absolute; top:1rem; right: 1.0rem; background:url(/src/resources/images/delete-text.svg) center center no-repeat; font-size:0; width:2rem; height:2rem}
   }
   .add-box {
     display: block;
@@ -1856,6 +1855,11 @@ keyframes
   
   .stit {font-size: 1.3rem; color: var(--color-neutral-60);}
   .delete{position:absolute; top:0.9rem; right: 1.0rem; background:url(/src/resources/images/delete-text.svg) center center no-repeat; font-size:0; width:2rem; height:2rem}
+}
+.step-box.type01 {
+  display: inline-flex;
+  width: auto;
+  margin: 0 0.5rem;
 }
 .pd-lr10 {padding: 0 1.5rem !important}
 .pd-center {position: relative; top: 0.7rem; left: 1.0rem;}

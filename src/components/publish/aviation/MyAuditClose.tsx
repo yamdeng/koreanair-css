@@ -157,6 +157,14 @@ function MyAuditClose() {
                       </div>
                       <div className="btn-select-box wid-300">
                         <button className="btn-select wid100">Team Select</button>
+                        <div className="team-box">
+                          <button className="team">
+                            안전품질평가팀<span>(7명)</span>
+                            <a href="javascript:void(0);">
+                              <span className="delete">X</span>
+                            </a>
+                          </button>
+                        </div>
                         <div className="step-box">
                           안전품질평가팀<span>(7명)</span>
                           <a href="javascript:void(0);">
