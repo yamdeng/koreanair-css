@@ -878,3 +878,7 @@ input, select{font-family:'KoreanAirSans'}
   overflow: hidden;
 }
 .ag-header-group-cell-label, .ag-header-cell-label {justify-content: center;}
+.grid-delete{text-align:center;align-items:center}
+.grid-delete a, a:visited{color:var(--color-mblue-100)}
+.grid-delete a:hover, .grid-delete a:focus{color:var(--color-darkblue-100)}
+.grid-delete span {background-color: var(--color-darkblue-100); border-radius: 99.9rem; padding: 0.2rem 1.5rem; color: var(--color-neutral-10);}

@@ -6,6 +6,7 @@ import wordicon from '@/resources/images/file-word.svg';
 import excelicon from '@/resources/images/file-excel.svg';
 import ppticon from '@/resources/images/file-ppt.svg';
 import pdficon from '@/resources/images/file-pdf.svg';
+import imgicon from '@/resources/images/file-img.svg';
 
 function CustomColumnComponent1() {
   return (
@@ -135,12 +136,25 @@ function CustomColumnComponent9() {
             <img src={pdficon} />
           </a>
         </li>
+        <li>
+          <a href="javascript:void(0);">
+            <img src={imgicon} />
+          </a>
+        </li>
       </ul>
     </div>
   );
 }
 function CustomColumnComponent10() {
-  return <div style={{ fontWeight: 'normal', textDecoration: 'underline' }}>custom 컴포넌트10</div>;
+  return (
+    <div style={{ fontWeight: 'normal', textDecoration: 'underline' }}>
+      <div className="grid-delete">
+        <a href="javascript:void(0);">
+          <span>삭제</span>
+        </a>
+      </div>
+    </div>
+  );
 }
 function CustomColumnComponent11() {
   return <div style={{ fontWeight: 'normal', textDecoration: 'underline' }}>custom 컴포넌트11</div>;
