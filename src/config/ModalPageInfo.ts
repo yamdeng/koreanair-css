@@ -65,6 +65,7 @@ import PRiskModal from '@/components/publish/modal/PRiskModal';
 import PReportDeleteModal from '@/components/publish/modal/PReportDeleteModal';
 import PAdminTotreportModal from '@/components/publish/modal/PAdminTotreportModal';
 import risklevelModal from '@/components/publish/modal/risklevelModal';
+import AMO3DetileModal from '@/components/publish/modal/AMO3DetileModal';
 
 const ModalPageInfo: any = {};
 
@@ -199,6 +200,13 @@ ModalPageInfo.list = [
     title: '[항공안전>AMO] 게시판 리스트',
     Component: AMO3Modal,
     path: 'AMO3Modal',
+    description: '',
+    success: true,
+  },
+  {
+    title: '[항공안전>AMO] 게시판 상세',
+    Component: AMO3DetileModal,
+    path: 'AMO3DetileModal',
     description: '',
     success: true,
   },
