@@ -42,9 +42,11 @@
 
 /*통합홈메인*/
 
-.page1_conts .swiper .page1_conts .swiper.slick-prev, .slick-next, .slick-prev:before, .slick-next:before {color: transparent;}
-.page1_conts .swiper .slick-prev, .slick-prev:before {left: 0; background: url(../images/arrow-left.svg) center center no-repeat; width: 3.6rem; height: 3.6rem; background-size: 3.6rem; z-index: 10;}
-.page1_conts .swiper .slick-next, .slick-next:before {right: 0; background: url(../images/arrow-right.svg) center center no-repeat; width: 3.6rem; height: 3.6rem;  background-size: 3.6rem; z-index: 10;}
+.page1_conts .swiper .slick-prev, .slick-prev:before {left: 0; z-index: 10;}
+.page1_conts .swiper .slick-next, .slick-next:before {right: 0; z-index: 10;}
+.page1_conts .swiper .page1_conts .swiper .slick-prev, .slick-next, .slick-prev:before, .slick-next:before {color: white;}
+/*.page1_conts .swiper .slick-prev, .slick-prev:before {left: 0; background: url(../images/arrow-left.svg) center center no-repeat; width: 3.6rem; height: 3.6rem; background-size: 3.6rem; z-index: 10;}
+.page1_conts .swiper .slick-next, .slick-next:before {right: 0; background: url(../images/arrow-right.svg) center center no-repeat; width: 3.6rem; height: 3.6rem;  background-size: 3.6rem; z-index: 10;}*/
 .page1_conts .swiper .slick-dots {bottom: -2.5rem;}
 
 /*.slick-dots li {width: 1.0rem; height: 1.0rem;}

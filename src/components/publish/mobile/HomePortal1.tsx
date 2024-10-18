@@ -235,7 +235,7 @@ function HomePortal1() {
                 <div className="page1_conts">
                   <div className="swiper">
                     <Slider {...settings}>
-                      <div className="swiper-slide">
+                      <div className="swiper-slide pd-lr30">
                         <img src={cont01} />
                       </div>
                       <div className="swiper-slide">
