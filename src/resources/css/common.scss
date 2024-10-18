@@ -865,3 +865,16 @@ input, select{font-family:'KoreanAirSans'}
 .sub-tab li{display:inline;width:100%;text-align:center;padding: 0 0 0 1rem}
 .sub-tab li a{font-size: 1.8rem;font-weight:700;color:var(--color-neutral-80);text-wrap:nowrap;padding:1.3rem 1rem 1.3rem 0}
 .sub-tab li a.active{color:var(--color-darkblue-100);border-bottom: 0.3rem solid var(--color-darkblue-100)}
+
+/* 그리드 */
+.ag-cell-wrapper {width: 100%; height: auto;}
+.ag-cell {    
+  display: flex;
+  position: absolute;
+  white-space: nowrap;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.ag-header-group-cell-label, .ag-header-cell-label {justify-content: center;}

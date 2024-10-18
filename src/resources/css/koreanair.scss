@@ -1688,3 +1688,8 @@
   height: calc(100vh - 38.5rem);
   .grid-height {height: calc(100% - 11.0rem) !important;}
 }
+
+.icon-box {width: 100%; height: 3.0rem; text-align: center; vertical-align: middle;}
+.icon-box img {width: 3.0rem; height: 3.0rem; }
+.icon-box ul {display: flex; justify-content: center;}
+.icon-box ul li {float: left; text-align: center;}

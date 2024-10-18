@@ -1,6 +1,11 @@
 import AppTable from '@/components/common/AppTable';
 import { getAllData } from '@/data/grid/example-data-new';
 import { testColumnInfos } from '@/data/grid/table-column';
+import noticeicon from '@/resources/images/pin.svg';
+import wordicon from '@/resources/images/file-word.svg';
+import excelicon from '@/resources/images/file-excel.svg';
+import ppticon from '@/resources/images/file-ppt.svg';
+import pdficon from '@/resources/images/file-pdf.svg';
 
 function CustomColumnComponent1() {
   return (
@@ -101,13 +106,38 @@ function CustomColumnComponent7() {
 }
 function CustomColumnComponent8() {
   return (
-    <div style={{ fontWeight: 'normal', textDecoration: 'underline' }}>
-      <div>dfsdafdsafd</div>
+    <div className="icon-box" style={{ fontWeight: 'normal', textDecoration: 'underline' }}>
+      <img src={noticeicon} />
     </div>
   );
 }
 function CustomColumnComponent9() {
-  return <div style={{ fontWeight: 'normal', textDecoration: 'underline' }}>custom 컴포넌트9</div>;
+  return (
+    <div className="icon-box" style={{ fontWeight: 'normal', textDecoration: 'underline' }}>
+      <ul>
+        <li>
+          <a href="javascript:void(0);">
+            <img src={wordicon} />
+          </a>
+        </li>
+        <li>
+          <a href="javascript:void(0);">
+            <img src={excelicon} />
+          </a>
+        </li>
+        <li>
+          <a href="javascript:void(0);">
+            <img src={ppticon} />
+          </a>
+        </li>
+        <li>
+          <a href="javascript:void(0);">
+            <img src={pdficon} />
+          </a>
+        </li>
+      </ul>
+    </div>
+  );
 }
 function CustomColumnComponent10() {
   return <div style={{ fontWeight: 'normal', textDecoration: 'underline' }}>custom 컴포넌트10</div>;
