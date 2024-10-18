@@ -128,6 +128,7 @@ import PSaferRiskEdit from '@/components/publish/aviation/PSaferRiskEdit';
 import RiskList2 from '@/components/publish/aviation/RiskList2';
 import RiskList3 from '@/components/publish/aviation/RiskList3';
 import MyAuditProfileDetail from '@/components/publish/aviation/MyAuditProfileDetail';
+import AdminCordDetail from '@/components/publish/aviation/AdminCordDetail';
 
 import { fa, fakerLV } from '@faker-js/faker';
 import { fail } from 'assert';
@@ -781,6 +782,13 @@ AviationPageInfo.list = [
     title: '[07.관리자] 장비코드관리 리스트',
     Component: AdminCordList,
     path: 'AdminCordList',
+    description: '',
+    success: true,
+  },
+  {
+    title: '[07.관리자] 장비코드관리 상세',
+    Component: AdminCordDetail,
+    path: 'AdminCordDetail',
     description: '',
     success: true,
   },
