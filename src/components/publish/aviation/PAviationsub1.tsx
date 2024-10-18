@@ -4,7 +4,7 @@ import useAppStore from '@/store/useAppStore';
 import AppSelect from '@/components/common/AppSelect';
 import mainphoto from '@/resources/images/av-img.jpg';
 import mainphoto2 from '@/resources/images/img.jpg';
-import chartasr from '@/resources/images/ASR-box.svg';
+import chartasr from '@/resources/images/icon_asr.svg';
 import chartmsr from '@/resources/images/MSR-box.svg';
 import Slider from 'react-slick';
 
@@ -45,7 +45,19 @@ function PAviationsub1() {
         <div className="av-layout-content">
           <div className="h3">Air Safety Report</div>
           <div className="av-area">
-            <div className="av-box"></div>
+            <div className="av-box">
+              <a href="javascript:void(0);">
+                <div className="tit-wrap"></div>
+                <i className="icon-img">
+                  <img src={chartasr} className="" alt="ASR" />
+                </i>
+              </a>
+            </div>
+            <div className="av-box">
+              <a href="javascript:void(0);">
+                <div className=""></div>
+              </a>
+            </div>
           </div>
         </div>
       </div>
