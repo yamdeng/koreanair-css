@@ -64,6 +64,7 @@ import rootcauseModal from '@/components/publish/modal/rootcauseModal';
 import PRiskModal from '@/components/publish/modal/PRiskModal';
 import PReportDeleteModal from '@/components/publish/modal/PReportDeleteModal';
 import PAdminTotreportModal from '@/components/publish/modal/PAdminTotreportModal';
+import risklevelModal from '@/components/publish/modal/risklevelModal';
 
 const ModalPageInfo: any = {};
 
@@ -373,6 +374,13 @@ ModalPageInfo.list = [
     title: '[항공안전 > 06.AUDIT] Root Cause 팝업창',
     Component: rootcauseModal,
     path: 'rootcauseModal',
+    description: '',
+    success: true,
+  },
+  {
+    title: '[항공안전 > 06.AUDIT] Risk Level 팝업창',
+    Component: risklevelModal,
+    path: 'risklevelModal',
     description: '',
     success: true,
   },

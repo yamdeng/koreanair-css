@@ -1096,7 +1096,9 @@
   .popup-container {height: calc(100vh - 150px) !important}
   .popup-container1 {height: calc(100vh - 150px) !important}
   .popup-container1 > .pop_full_cont_box.type01 {overflow: initial !important;}
+  .popup-container2 > .pop_cont.Risk{overflow: initial !important}
   .pop_cont {height: 100%; max-height: none;}
+  .pop_cont.Risk{overflow:hidden}
 
   .main-wrap .grid-item .main-graph-box .graph-box {width: 50%;}
   .fix-card {right: 2.0rem; bottom: 2.0rem;}
