@@ -226,15 +226,7 @@ function AMO3Modal(props) {
         </div>
 
         <div className="pop_btns">
-          <button className="btn_text text_color_neutral-90 btn_close" onClick={closeModal}>
-            취소
-          </button>
-          <button disabled className="btn_text text_color_neutral-90 btn-disabled" onClick={closeModal}>
-            취소
-          </button>
-          <button className="btn_text text_color_neutral-10 btn_confirm" onClick={closeModal}>
-            확인
-          </button>
+          <button className="btn_text btn_list btn-type01">목록</button>
         </div>
         <span className="pop_close" onClick={closeModal}>
           X
