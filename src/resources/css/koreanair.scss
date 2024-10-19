@@ -1461,6 +1461,78 @@
     color: var(--color-neutral-10);
     margin: 0 1.0rem;
   }
+  .main-visual01 .page1_contents {
+    width: 100%;
+    max-width: 144.0rem;
+    margin: 0 auto;
+    position:relative;
+    top: 0;
+    left: 0;
+    text-align: center;
+    opacity: 0;
+    transition: all 1s;
+  }
+  .main-visual01.active .page1_contents {
+    width: 100%;
+    left: 0;
+    top:20.0rem;
+    opacity:1;
+    text-align: center;
+  }
+  .page1_contents .contents-box {
+    display: inline-block;
+    color: var(--color-neutral-10);
+    width: 100%;
+    height: 100%;
+    vertical-align: top;
+    background: var(--color-neutral-10);
+    border-radius: 1.5rem;
+  }
+  .page1_contents .conts-graph-box {
+    width: 100%;
+    padding: 2.5rem;
+  }
+  .page1_contents .conts-graph-box .home-graph-tit {
+    display: inline-block;
+    width: 30%;
+  }
+  .page1_contents .conts-graph-box .home-graph-tit .title {font-size: 2.8rem;}
+  .page1_contents .conts-graph-box .home-graph-tit .stit1 {font-size: 3.0rem;}
+  .page1_contents .conts-graph-box .home-graph-tit .stit2 {font-size: 2.4rem;}
+  .page1_contents .conts-graph-box .home-graph-tit .date {font-size: 2.2rem;}
+  .page1_contents .conts-graph-box .home-graph {
+    display: inline-block;
+    width: 70%;
+  }
+  .page1_contents .conts-graph-box .home-graph ul li {display: inline-block;}
+  .page1_contents .conts-graph-box .home-graph ul li .tit li {
+    padding: 0 0.5rem; 
+    font-size: 1.2rem; 
+    font-weight: 500;
+    color: var(--color-darkblue-100);
+  }
+  .page1_contents .conts-graph-box .home-graph ul li .tit span {
+    display: inline-block;
+    width: 0.8rem;
+    height: 0.8rem;
+    border-radius: 99.9rem;
+    background-color: var(--color-darkblue-100);
+    font-size: 0;
+    margin-right: 0.3rem;
+  }
+  .page1_contents .conts-graph-box .home-graph ul li .tit span.dotted {
+    display: inline-block; 
+    position: relative; 
+    top: -0.4rem; 
+    height: 0.2rem; 
+    background: none; 
+    border-radius: 0; 
+    border-bottom: 0.2rem solid var(--color-Warning); 
+    border-style: dotted;
+  }
+  .page1_contents .conts-graph-box .home-graph ul li.graph {
+    display: block;
+  }
 
 
 .main-visual02 {
@@ -1623,6 +1695,31 @@
   background: var(--color-neutral-10);
   border-radius: 1.5rem;
   padding: 2.0rem;
+}
+.page2_contents .contents-box .graph-box .graph-box-bg ul li {
+  display: inline-block;
+  font-size: 1.2rem;
+  color: var(--color-darkblue-100);
+  padding: 0 0.5rem;
+}
+.page2_contents .contents-box .graph-box .graph-box-bg ul li span {
+  display: inline-block;
+  width: 0.8rem;
+  height: 0.8rem;
+  border-radius: 99.9rem;
+  background-color: var(--color-darkblue-100);
+  font-size: 0;
+  margin-right: 0.3rem;
+}
+.page2_contents .contents-box .graph-box .graph-box-bg ul li span.dotted {
+  display: inline-block; 
+  position: relative; 
+  top: -0.4rem; 
+  height: 0.2rem; 
+  background: none; 
+  border-radius: 0; 
+  border-bottom: 0.2rem solid var(--color-Warning); 
+  border-style: dotted;
 }
 .page2_contents .contents-box .graph-box .graph-box-bg .main-graph img {
   display: block;

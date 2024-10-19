@@ -1067,7 +1067,7 @@
     display: none;
   } 
 
-  .main-visual01 .page1_conts_txtbox {width: 100%; padding: 0 2.4rem;}
+  .main-visual01 .page1_conts_txtbox {width: 100%; /*padding: 0 2.4rem;*/}
 
   .page1_conts .swiper .swiper-slide img {height: 100%;}
   .page1_conts_txtbox .page1_title {height: calc(100vh - 39rem);}
@@ -1086,7 +1086,7 @@
   
   #fp-nav {top: 18%;}
   
-  .main-visual02 .page2_conts {width: 100%; padding: 0 2.4rem;}
+  .main-visual02 .page2_conts {width: 100%; /*padding: 0 2.4rem;*/}
   .page2_title .title {font-size: 3.0rem;}
   .main-visual02.active .page2_title .subtitle {top: 17.0rem;}
   .main-visual02 .page2_title .subtitle .subtitle-box {display: block; width: 100%;}

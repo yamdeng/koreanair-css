@@ -37,7 +37,6 @@ function HomePortal1() {
             <div className="line2"></div>
             <div className="line3"></div>
           </button>
-          {/*'active' - 모바일메뉴활성화 */}
           <div className="top_menu dropmenu">
             <ul>
               <li>
@@ -235,9 +234,6 @@ function HomePortal1() {
                 <div className="page1_conts">
                   <div className="swiper">
                     <Slider {...settings}>
-                      <div className="swiper-slide pd-lr30">
-                        <img src={cont01} />
-                      </div>
                       <div className="swiper-slide">
                         <div className="page1_conts_txtbox">
                           <div className="page1_title">
@@ -261,7 +257,48 @@ function HomePortal1() {
                               </div>
                             </div>
                           </div>
+                          <div className="page1_contents">
+                            <div className="contents-box">
+                              <div className="conts-graph-box">
+                                <div className="home-graph-tit">
+                                  <ul>
+                                    <li className="title">국가 안전성과지표(SPI) 현황</li>
+                                    <li className="stit1">1.27</li>
+                                    <li className="stit2">24. SPT: 1.45</li>
+                                    <li className="date">2024.10.21</li>
+                                  </ul>
+                                </div>
+                                <div className="home-graph">
+                                  <ul>
+                                    <li>
+                                      <ul className="tit">
+                                        <li>
+                                          <span></span>발생건수(24')
+                                        </li>
+                                        <li>
+                                          <span></span>발생건수(23')
+                                        </li>
+                                        <li>
+                                          <span></span>누적 발생률(24')
+                                        </li>
+                                        <li>
+                                          <span></span>누적 발생률(23')
+                                        </li>
+                                        <li>
+                                          <span className="dotted"></span>KE 목표(24')
+                                        </li>
+                                      </ul>
+                                    </li>
+                                    <li className="graph">그래프영역</li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
                         </div>
+                      </div>
+                      <div className="swiper-slide pd-lr30">
+                        <img src={cont01} />
                       </div>
                     </Slider>
                   </div>
@@ -308,7 +345,25 @@ function HomePortal1() {
                       </div>
                       <div className="graph-box pr-10">
                         <div className="graph-box-bg">
-                          {/*<div>타이틀</div>*/}
+                          <div>
+                            <ul>
+                              <li>
+                                <span></span>23년 재해건(월별)
+                              </li>
+                              <li>
+                                <span></span>24년 재해건(월별)
+                              </li>
+                              <li>
+                                <span></span>23년 재해율(누적)
+                              </li>
+                              <li>
+                                <span></span>24년 재해율(누적)
+                              </li>
+                              <li>
+                                <span className="dotted"></span>재해율 목표
+                              </li>
+                            </ul>
+                          </div>
                           <div className="main-graph">
                             <img src={cont03} />
                           </div>
@@ -329,7 +384,25 @@ function HomePortal1() {
                       </div>
                       <div className="graph-box pl-10">
                         <div className="graph-box-bg">
-                          {/*<div className="">타이틀</div>*/}
+                          <div className="">
+                            <ul>
+                              <li>
+                                <span></span>23년 근로손실일수(월별)
+                              </li>
+                              <li>
+                                <span></span>24년 근로손실일수(월별)
+                              </li>
+                              <li>
+                                <span></span>23년 강도율(평균)
+                              </li>
+                              <li>
+                                <span></span>24년 강도율(평균)
+                              </li>
+                              <li>
+                                <span className="dotted"></span>강도율 목표
+                              </li>
+                            </ul>
+                          </div>
                           <div className="main-graph">
                             <img src={cont031} />
                           </div>
