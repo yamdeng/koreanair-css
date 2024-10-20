@@ -129,6 +129,7 @@ import RiskList2 from '@/components/publish/aviation/RiskList2';
 import RiskList3 from '@/components/publish/aviation/RiskList3';
 import MyAuditProfileDetail from '@/components/publish/aviation/MyAuditProfileDetail';
 import AdminCordDetail from '@/components/publish/aviation/AdminCordDetail';
+import Auditcarsearch from '@/components/publish/aviation/Auditcarsearch';
 
 import { fa, fakerLV } from '@faker-js/faker';
 import { fail } from 'assert';
@@ -731,8 +732,8 @@ AviationPageInfo.list = [
   },
   {
     title: '[06.AUDIT] 개선조치 CAR 조회',
-    Component: MyAuditClose,
-    path: 'MyAuditClose',
+    Component: Auditcarsearch,
+    path: 'Auditcarsearch',
     description: '',
     success: false,
   },
