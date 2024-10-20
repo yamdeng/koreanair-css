@@ -195,8 +195,120 @@ function MyAuditProfileDetail() {
                       <td>2024-12-31</td>
                     </tr>
                     <tr>
-                      <td>전사 품질(5)</td>
-                      <td>홍길동</td>
+                      <td rowSpan={3}>보안부문(3)</td>
+                      <td>홍길동9</td>
+                      <td>0001</td>
+                      <td>대리</td>
+                      <td>2024-12-31</td>
+                    </tr>
+                    <tr>
+                      <td>홍길동9</td>
+                      <td>0001</td>
+                      <td>대리</td>
+                      <td>2024-12-31</td>
+                    </tr>
+                    <tr>
+                      <td>홍길동9</td>
+                      <td>0001</td>
+                      <td>대리</td>
+                      <td>2024-12-31</td>
+                    </tr>
+                    <tr>
+                      <td>정비부문(1)</td>
+                      <td>홍길동9</td>
+                      <td>0001</td>
+                      <td>대리</td>
+                      <td>2024-12-31</td>
+                    </tr>
+                    <tr>
+                      <td>종합통제(1)</td>
+                      <td>홍길동9</td>
+                      <td>0001</td>
+                      <td>대리</td>
+                      <td>2024-12-31</td>
+                    </tr>
+                    <tr>
+                      <td>여객부문(1)</td>
+                      <td>홍길동9</td>
+                      <td>0001</td>
+                      <td>대리</td>
+                      <td>2024-12-31</td>
+                    </tr>
+                    <tr>
+                      <td rowSpan={13}>화물부문(13)</td>
+                      <td>홍길동9</td>
+                      <td>0001</td>
+                      <td>대리</td>
+                      <td>2024-12-31</td>
+                    </tr>
+                    <tr>
+                      <td>홍길동9</td>
+                      <td>0001</td>
+                      <td>대리</td>
+                      <td>2024-12-31</td>
+                    </tr>
+                    <tr>
+                      <td>홍길동9</td>
+                      <td>0001</td>
+                      <td>대리</td>
+                      <td>2024-12-31</td>
+                    </tr>
+                    <tr>
+                      <td>홍길동9</td>
+                      <td>0001</td>
+                      <td>대리</td>
+                      <td>2024-12-31</td>
+                    </tr>
+                    <tr>
+                      <td>홍길동9</td>
+                      <td>0001</td>
+                      <td>대리</td>
+                      <td>2024-12-31</td>
+                    </tr>
+                    <tr>
+                      <td>홍길동9</td>
+                      <td>0001</td>
+                      <td>대리</td>
+                      <td>2024-12-31</td>
+                    </tr>
+                    <tr>
+                      <td>홍길동9</td>
+                      <td>0001</td>
+                      <td>대리</td>
+                      <td>2024-12-31</td>
+                    </tr>
+                    <tr>
+                      <td>홍길동9</td>
+                      <td>0001</td>
+                      <td>대리</td>
+                      <td>2024-12-31</td>
+                    </tr>
+                    <tr>
+                      <td>홍길동9</td>
+                      <td>0001</td>
+                      <td>대리</td>
+                      <td>2024-12-31</td>
+                    </tr>
+                    <tr>
+                      <td>홍길동9</td>
+                      <td>0001</td>
+                      <td>대리</td>
+                      <td>2024-12-31</td>
+                    </tr>
+                    <tr>
+                      <td>홍길동9</td>
+                      <td>0001</td>
+                      <td>대리</td>
+                      <td>2024-12-31</td>
+                    </tr>
+                    <tr>
+                      <td>홍길동9</td>
+                      <td>0001</td>
+                      <td>대리</td>
+                      <td>2024-12-31</td>
+                    </tr>
+                    <tr>
+                      <td>홍길동9</td>
                       <td>0001</td>
                       <td>대리</td>
                       <td>2024-12-31</td>
@@ -225,14 +337,16 @@ function MyAuditProfileDetail() {
                 <div className="form-table">
                   <div className="form-cell wid100">
                     <div className="form-group wid100">
-                      <AppTextArea label="" style={{ width: '100%', height: 80 }} errorMessage="" />
-                    </div>
-                  </div>
-                </div>
-                <div className="form-table">
-                  <div className="form-cell wid100">
-                    <div className="form-group wid100">
-                      <AppDatePicker label="date1" />
+                      {/* <AppTextArea label="" style={{ width: '100%', height: 80 }} errorMessage="" /> */}
+                      <div className="list">
+                        <div className="txt1">Corporate aviation safety strategy Department</div>
+                        <div className="txt1">
+                          Current Team Audit Experience <span className="point-col">(5Y 3M)</span>
+                        </div>
+                        <div className="txt1">
+                          Total Audit Experience <span className="point-col">(10Y 2M)</span>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -243,7 +357,13 @@ function MyAuditProfileDetail() {
                 <div className="form-table">
                   <div className="form-cell wid100">
                     <div className="form-group wid100 h8">
-                      {/* <AppTextArea label="" style={{ width: '100%', height: 80 }} errorMessage="" /> */}
+                      <div className="list">
+                        <ul>
+                          <li>22 : 18 Times / CAR 9</li>
+                          <li>22 : 18 Times / CAR 9</li>
+                          <li>22 : 18 Times / CAR 9</li>
+                        </ul>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -255,7 +375,15 @@ function MyAuditProfileDetail() {
                 <div className="form-table">
                   <div className="form-cell wid100">
                     <div className="form-group wid100">
-                      <AppTextArea label="" style={{ width: '100%', height: 80 }} errorMessage="" />
+                      {/* <AppTextArea label="" style={{ width: '100%', height: 80 }} errorMessage="" />
+                       */}
+                      <div className="list">
+                        <ul>
+                          <li>22 : 18 Times / CAR 9</li>
+                          <li>22 : 18 Times / CAR 9</li>
+                          <li>22 : 18 Times / CAR 9</li>
+                        </ul>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -267,7 +395,14 @@ function MyAuditProfileDetail() {
                 <div className="form-table">
                   <div className="form-cell wid100">
                     <div className="form-group wid100">
-                      <AppTextArea label="" style={{ width: '100%', height: 80 }} errorMessage="" />
+                      {/* <AppTextArea label="" style={{ width: '100%', height: 80 }} errorMessage="" /> */}
+                      <div className="list">
+                        <ul>
+                          <li>22 : 18 Times / CAR 9</li>
+                          <li>SMS </li>
+                          <li>Lead Auditor Training</li>
+                        </ul>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -282,22 +417,10 @@ function MyAuditProfileDetail() {
             <div className="use-right">
               <div className="editbox equip">
                 <div className="form-table">
-                  <div className="form-cell wid30">
+                  <div className="form-cell wid100">
                     <div className="form-group wid100">
-                      <AppSelect label={'Audit 부문 '} required />
-                    </div>
-                  </div>
-                  <div className="form-cell wid50">
-                    <div className="form-group wid100">
-                      <AppAutoComplete label={'Search Auditor Name'} />
-                    </div>
-                  </div>
-                </div>
-                <hr className="line"></hr>
-                <div className="form-table">
-                  <div className="form-cell wid50">
-                    <div className="form-group wid100">
-                      <AppTextArea label="Auditor Info" style={{ width: '100%', height: 80 }} errorMessage="" />
+                      <div className="name">Hong Gill-Dong5</div>
+                      <div className="info-tit">General Manager / Team Leader Auditor</div>
                     </div>
                   </div>
                 </div>

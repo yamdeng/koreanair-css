@@ -450,15 +450,26 @@ meter::-webkit-meter-optimum-value {
   .list-table th:nth-child(1), .list-table td:nth-child(1){width:10%}
   .list-table th:nth-child(2), .list-table td:nth-child(2){width:50%}
   .list-table th:nth-child(3), .list-table td:nth-child(3){width:40%;padding-right:1rem}
-  .list-table th{border-top: 0.1rem solid var(--color-darkblue-100);color:var(--color-darkblue-100);background-color: var(--color-neutral-20); font-weight: 500;}
+  .list-table th{border-top: 0.1rem solid var(--color-darkblue-100);color:var(--color-darkblue-100);background-color:var(--color-neutral-20); font-weight: 500;}
   .list-table td{color: var(--color-neutral-70);}
   .list-table tbody{display:block; height: 16rem; overflow-y: scroll;}
   .list-table tbody tr:hover, .list-table tbody tr:active {width:100%;background-color: var(--color-lightblue-10); cursor: pointer;}
 }
 .equipbox{display:inline-flex;width:100%}
-.equipbox .left-box{display:inline-table;vertical-align:top;padding-right:3rem;width:100%;}
+.equipbox .left-box{display:inline-table;vertical-align:top;padding-right:3rem;width:100%}
 .equipbox .right-box{display:inline-block;width:100%;margin-top:2rem}
 .equipbox .right-box .use-wrap .use-right > .editbox.equip .form-table .form-cell .form-group + .form-group{margin-top:1.5rem}
+
+.equipbox .right-box .use-wrap .use-right > .editbox.equip .form-table .form-cell .form-group .name{display:inline-table;width:100%;font-size:3.0rem;line-height:2.0;font-weight:700;text-align:center;color:var(--color-darkblue-100)}
+.equipbox .right-box .use-wrap .use-right > .editbox.equip .form-table .form-cell .form-group .info-tit{display:inline-block;text-align:center;width:100%;}
+
+.equipbox .right-box .use-wrap .use-left > .mu-wrap .form-table .form-cell .form-group .list{border-top:solid 0.1rem var(--color-neutral-40)}
+.equipbox .right-box .use-wrap .use-left > .mu-wrap .form-table .form-cell .form-group .list .txt1{display:block;font-size:1.2rem;line-height: 1.3;color:var(--color-neutral-40)}
+.equipbox .right-box .use-wrap .use-left > .mu-wrap .form-table .form-cell .form-group .list .txt1{}
+.equipbox .right-box .use-wrap .use-left > .mu-wrap .form-table .form-cell .form-group .list .txt1 + .txt1{padding-top:0.5rem}
+
+.equipbox .right-box .use-wrap .use-left > .mu-wrap .form-table .form-cell .form-group .list li{font-size:1.2rem;color:var(--color-neutral-40)}
+
 .list-view{
   display:block; 
   width:100%;
@@ -482,7 +493,7 @@ meter::-webkit-meter-optimum-value {
   .equip-table tbody{display:block; height: 16rem; overflow-y: scroll;}
   .equip-table tbody tr:hover, .equip-table tbody tr:active {width:100%;background-color: var(--color-lightblue-10); cursor: pointer;}
 
-  .pro-table{display:grid;border-top: 0.1rem solid var(--color-darkblue-100);width:100%;overflow-y:scroll;height:100%;max-height:80.0rem}
+  .pro-table{display:grid;border-top: 0.1rem solid var(--color-darkblue-100);width:100%;overflow-y:scroll;height:100%;max-height:115.0rem}
   .pro-table thead tr, .pro-table tbody tr{/*display:table;*/width:100%}
   .pro-table th{padding:1.5rem 0;border-bottom:0.1rem solid var(--color-neutral-40);text-align:center}
   .pro-table td{padding:1.5rem 0.3rem;border-bottom:0.1rem solid var(--color-neutral-40);text-align:center}
@@ -713,7 +724,7 @@ meter::-webkit-meter-optimum-value {
 .use-wrap .use-right{width:70%;background-color:var(--color-neutral-20)}
 
 .equipbox .right-box .use-wrap .use-right .editbox.equip .form-table.scroll .btn-box{position:relative}
-.equipbox .right-box .use-wrap .use-right .editbox.equip .form-table.scroll .btn-box .btn-more{position:absolute;top:-2.2rem;left:100%;transform:translate(-100%, 0%);display:flex;justify-content:flex-end;z-index:1;width:2.2rem;height:2.0rem;padding:1.5rem;border:solid 0.1rem var(--color-neutral-40);background:url(../images/plus-btn.svg) center center no-repeat;align-items:center}
+.equipbox .right-box .use-wrap .use-right .editbox.equip .form-table.scroll .btn-box .btn-more{position:absolute;top:-2.6rem;left:100%;transform:translate(-100%, 0%);display:flex;justify-content:flex-end;z-index:1;width:2.2rem;height:3.5rem;padding:1.5rem;border:solid 0.1rem var(--color-neutral-40);background:url(../images/plus-btn.svg) center center no-repeat;align-items:center}
 
 .editbox.equip .form-table{padding:0 2rem}
 .editbox.equip .form-table.scroll{display:inline-block;max-height:30.0rem;overflow-y:scroll}
