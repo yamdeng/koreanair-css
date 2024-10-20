@@ -297,7 +297,7 @@ meter::-webkit-meter-optimum-value {
 
 /*인풋박스 안 툴팁*/
 .contents .form-table .form-cell .form-group{position:relative}
-.contents .form-table .form-cell .form-group label.t-label{display:block;color:var(--color-neutral-70);line-height:2.3;font-weight:400;font-size:1.5rem;white-space: nowrap;}
+.contents .form-table .form-cell .form-group label.t-label{display:block;color:var(--color-neutral-60);line-height:2.3;font-weight:400;font-size:1.3rem;white-space: nowrap;}
 .contents .form-table .form-cell .form-group .tooltip{position:relative;display:block;float:inline-end;background: url(../images/tooltip.svg) left center no-repeat;background-size: 2rem;font-size:0;width:2rem;height:2.0rem; top:0.1rem; cursor:pointer}
 .contents .form-table .form-cell .form-group .tooltip .tooltiptext{visibility:hidden;position: absolute; z-index:1;width:25.0rem;font-size:1.2rem;background-color:var(--color-neutral-80);color: var(--color-neutral-10);text-align:left;border-radius:0.8rem;padding:1.5rem 2.0rem}
 .contents .form-table .form-cell .form-group .tooltip .tooltiptext li::marker{content:''; color: var(--color-neutral-10);font-size:1rem}
