@@ -886,3 +886,9 @@ input, select{font-family:'KoreanAirSans'}
 .grid-delete a, a:visited{color:var(--color-mblue-100)}
 .grid-delete a:hover, .grid-delete a:focus{color:var(--color-darkblue-100)}
 .grid-delete span {background-color: var(--color-darkblue-100); border-radius: 99.9rem; padding: 0.2rem 1.5rem; color: var(--color-neutral-10);}
+/*사진첨부아이콘색상변경*/
+.ant-upload-wrapper.ant-upload-picture-card-wrapper .ant-upload-list.ant-upload-list-picture-card .ant-upload-list-item-actions .anticon-eye svg, 
+.ant-upload-wrapper.ant-upload-picture-card-wrapper .ant-upload-list.ant-upload-list-picture-card .ant-upload-list-item-actions .anticon-eye:hover {
+  color: var(--color-neutral-10) !important;
+  fill: var(--color-neutral-10);
+}
