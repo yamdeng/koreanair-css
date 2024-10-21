@@ -130,6 +130,7 @@ import RiskList3 from '@/components/publish/aviation/RiskList3';
 import MyAuditProfileDetail from '@/components/publish/aviation/MyAuditProfileDetail';
 import AdminCordDetail from '@/components/publish/aviation/AdminCordDetail';
 import Auditcarsearch from '@/components/publish/aviation/Auditcarsearch';
+import AdminSPIPList from '@/components/publish/aviation/AdminSPIPList';
 
 import { fa, fakerLV } from '@faker-js/faker';
 import { fail } from 'assert';
@@ -987,6 +988,13 @@ AviationPageInfo.list = [
     title: '[07.관리자] 게시판 관리 > SPI게시판 등록',
     Component: AdminBoardEdit,
     path: 'AdminBoardEdit',
+    description: '',
+    success: true,
+  },
+  {
+    title: '[07.관리자] 게시판 관리 > SPIP(안전장려금제도 관리) List',
+    Component: AdminSPIPList,
+    path: 'AdminSPIPList',
     description: '',
     success: true,
   },
