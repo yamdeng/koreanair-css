@@ -55,183 +55,337 @@ function Auditcarsearch() {
       <div className="user-wrap">
         <div className="user-box wid40">
           <div className="user-box-cons">
-            <div className="form-table">
-              <div className="form-cell wid100">
-                <div className="form-group wid100">
-                  <div className="cons-wrap">
-                    {/*Year */}
-                    <div className="cons-box">
-                      <div className="txt">Year</div>
-                      <div className="cons-list">
-                        <ul className="list">
-                          <li>
-                            <div className="list-area">
-                              <button type="button" className="btn-wrap">
-                                2020
-                              </button>
-                              <button type="button" className="btn-wrap">
-                                2021
-                              </button>
-                            </div>
-                          </li>
-                          <li>
-                            <div className="list-area">
-                              <button type="button" className="btn-wrap">
-                                2022
-                              </button>
-                              <button type="button" className="btn-wrap">
-                                2023
-                              </button>
-                            </div>
-                          </li>
-                          <li>
-                            <div className="list-area">
-                              <button type="button" className="btn-wrap">
-                                2024
-                              </button>
-                              <button type="button" className="btn-wrap">
-                                2025
-                              </button>
-                            </div>
-                          </li>
-                        </ul>
+            <div className="cons-wrap">
+              {/*Year */}
+              <div className="cons-box">
+                <div className="txt">Year</div>
+                <div className="cons-list">
+                  <ul className="list">
+                    <li>
+                      <div className="list-area">
+                        <button type="button" className="btn-wrap blue active btn-txt ">
+                          2020
+                        </button>
+                        <button type="button" className="btn-wrap blue active btn-txt">
+                          2021
+                        </button>
                       </div>
-                    </div>
-                    {/*Airline */}
-                    <div className="cons-box">
-                      <div className="txt">Airline</div>
-                      <div className="cons-list">
-                        <ul className="list">
-                          <li>
-                            <div className="list-area">
-                              <button type="button" className="btn-wrap">
-                                KE
-                              </button>
-                              <button type="button" className="btn-wrap">
-                                OZ
-                              </button>
-                            </div>
-                          </li>
-                        </ul>
+                    </li>
+                    <li>
+                      <div className="list-area">
+                        <button type="button" className="btn-wrap blue btn-txt active">
+                          2022
+                        </button>
+                        <button type="button" className="btn-wrap blue btn-txt">
+                          2023
+                        </button>
                       </div>
-                    </div>
-                    {/*CAR */}
-                    <div className="cons-box">
-                      <div className="txt">CAR</div>
-                      <div className="cons-list">
-                        <ul className="list">
-                          <li>
-                            <div className="list-area">
-                              <button type="button" className="btn-wrap">
-                                Finding
-                              </button>
-                            </div>
-                          </li>
-                          <li>
-                            <div className="list-area">
-                              <button type="button" className="btn-wrap">
-                                Observation
-                              </button>
-                            </div>
-                          </li>
-                        </ul>
+                    </li>
+                    <li>
+                      <div className="list-area">
+                        <button type="button" className="btn-wrap blue active btn-txt">
+                          2024
+                        </button>
+                        <button type="button" className="btn-wrap blue active btn-txt">
+                          2025
+                        </button>
                       </div>
-                    </div>
-                    {/*Auditor */}
-                    <div className="cons-box">
-                      <div className="txt">Auditor</div>
-                      <div className="cons-list">
-                        <ul className="list">
-                          <li>
-                            <div className="list-area">
-                              <button type="button" className="btn-wrap">
-                                2020
-                              </button>
-                              <button type="button" className="btn-wrap">
-                                2021
-                              </button>
-                            </div>
-                          </li>
-                        </ul>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              {/*Airline */}
+              <div className="cons-box">
+                <div className="txt">Airline</div>
+                <div className="cons-list">
+                  <ul className="list">
+                    <li>
+                      <div className="list-area">
+                        <button type="button" className="btn-wrap blue active btn-txt">
+                          KE
+                        </button>
+                        <button type="button" className="btn-wrap blue active btn-txt">
+                          OZ
+                        </button>
                       </div>
-                    </div>
-                    {/*CAR */}
-                    <div className="cons-box">
-                      <div className="txt">CAR</div>
-                      <div className="cons-list">
-                        <ul className="list">
-                          <li>
-                            <div className="list-area">
-                              <button type="button" className="btn-wrap">
-                                2020
-                              </button>
-                              <button type="button" className="btn-wrap">
-                                2021
-                              </button>
-                            </div>
-                          </li>
-                        </ul>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              {/*CAR */}
+              <div className="cons-box">
+                <div className="txt">CAR</div>
+                <div className="cons-list">
+                  <ul className="list">
+                    <li>
+                      <div className="list-area">
+                        <button type="button" className="btn-wrap blue active btn-txt">
+                          Finding
+                        </button>
                       </div>
-                    </div>
-                    {/*CAR */}
-                    <div className="cons-box">
-                      <div className="txt">CAR</div>
-                      <div className="cons-list">
-                        <ul className="list">
-                          <li>
-                            <div className="list-area">
-                              <button type="button" className="btn-wrap">
-                                2020
-                              </button>
-                              <button type="button" className="btn-wrap">
-                                2021
-                              </button>
-                            </div>
-                          </li>
-                        </ul>
+                    </li>
+                    <li>
+                      <div className="list-area">
+                        <button type="button" className="btn-wrap blue active btn-txt">
+                          Observation
+                        </button>
                       </div>
-                    </div>
-                    {/*CAR */}
-                    <div className="cons-box">
-                      <div className="txt">CAR</div>
-                      <div className="cons-list">
-                        <ul className="list">
-                          <li>
-                            <div className="list-area">
-                              <button type="button" className="btn-wrap">
-                                2020
-                              </button>
-                              <button type="button" className="btn-wrap">
-                                2021
-                              </button>
-                            </div>
-                          </li>
-                        </ul>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              {/*Auditor */}
+              <div className="cons-box">
+                <div className="txt">Auditor</div>
+                <div className="cons-list scroll">
+                  <ul className="list">
+                    <li>
+                      <div className="list-area">
+                        <button type="button" className="btn-wrap blue active btn-txt">
+                          홍길동1
+                        </button>
+                        <button type="button" className="btn-wrap blue active btn-txt">
+                          홍길동2
+                        </button>
                       </div>
-                    </div>
-
-                    {/* <div className="cons-right">
-                      <div className="cons-box">
-                        <div className="cons-box">
-                          <div className="txt">Auditor</div>
-                          <div className="cons-list">
-                            <ul className="list">
-                              <li>
-                                <div className="list-area">
-                                  <button type="button" className="btn-wrap">
-                                    2020
-                                  </button>
-                                  <button type="button" className="btn-wrap">
-                                    2021
-                                  </button>
-                                </div>
-                              </li>
-                            </ul>
-                          </div>
-                        </div>
+                    </li>
+                    <li>
+                      <div className="list-area">
+                        <button type="button" className="btn-wrap blue active btn-txt">
+                          홍길동1
+                        </button>
+                        <button type="button" className="btn-wrap blue active btn-txt">
+                          홍길동2
+                        </button>
                       </div>
-                    </div> */}
-                  </div>
+                    </li>
+                    <li>
+                      <div className="list-area">
+                        <button type="button" className="btn-wrap blue active btn-txt">
+                          홍길동1
+                        </button>
+                        <button type="button" className="btn-wrap blue active btn-txt">
+                          홍길동2
+                        </button>
+                      </div>
+                    </li>
+                    <li>
+                      <div className="list-area">
+                        <button type="button" className="btn-wrap blue active btn-txt">
+                          홍길동1
+                        </button>
+                        <button type="button" className="btn-wrap blue active btn-txt">
+                          홍길동2
+                        </button>
+                      </div>
+                    </li>
+                    <li>
+                      <div className="list-area">
+                        <button type="button" className="btn-wrap blue active btn-txt">
+                          홍길동1
+                        </button>
+                        <button type="button" className="btn-wrap blue active btn-txt">
+                          홍길동2
+                        </button>
+                      </div>
+                    </li>
+                    <li>
+                      <div className="list-area">
+                        <button type="button" className="btn-wrap blue active btn-txt">
+                          홍길동1
+                        </button>
+                        <button type="button" className="btn-wrap blue active btn-txt">
+                          홍길동2
+                        </button>
+                      </div>
+                    </li>
+                    <li>
+                      <div className="list-area">
+                        <button type="button" className="btn-wrap blue active btn-txt">
+                          홍길동1
+                        </button>
+                        <button type="button" className="btn-wrap blue active btn-txt">
+                          홍길동2
+                        </button>
+                      </div>
+                    </li>
+                    <li>
+                      <div className="list-area">
+                        <button type="button" className="btn-wrap blue active btn-txt">
+                          홍길동1
+                        </button>
+                        <button type="button" className="btn-wrap blue active btn-txt">
+                          홍길동2
+                        </button>
+                      </div>
+                    </li>
+                    <li>
+                      <div className="list-area">
+                        <button type="button" className="btn-wrap blue active btn-txt">
+                          홍길동1
+                        </button>
+                        <button type="button" className="btn-wrap blue active btn-txt">
+                          홍길동2
+                        </button>
+                      </div>
+                    </li>
+                    <li>
+                      <div className="list-area">
+                        <button type="button" className="btn-wrap blue active btn-txt">
+                          홍길동1
+                        </button>
+                        <button type="button" className="btn-wrap blue active btn-txt">
+                          홍길동2
+                        </button>
+                      </div>
+                    </li>
+                    <li>
+                      <div className="list-area">
+                        <button type="button" className="btn-wrap blue active btn-txt">
+                          홍길동1
+                        </button>
+                        <button type="button" className="btn-wrap blue active btn-txt">
+                          홍길동2
+                        </button>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              {/*Month */}
+              <div className="cons-box">
+                <div className="txt">Month</div>
+                <div className="cons-list">
+                  <ul className="list">
+                    <li>
+                      <div className="list-area">
+                        <button type="button" className="btn-wrap blue active btn-txt">
+                          1월
+                        </button>
+                        <button type="button" className="btn-wrap blue active btn-txt">
+                          2월
+                        </button>
+                        <button type="button" className="btn-wrap blue active btn-txt">
+                          3월
+                        </button>
+                      </div>
+                    </li>
+                    <li>
+                      <div className="list-area">
+                        <button type="button" className="btn-wrap blue active btn-txt">
+                          4월
+                        </button>
+                        <button type="button" className="btn-wrap blue active btn-txt">
+                          5월
+                        </button>
+                        <button type="button" className="btn-wrap blue active btn-txt">
+                          6월
+                        </button>
+                      </div>
+                    </li>
+                    <li>
+                      <div className="list-area">
+                        <button type="button" className="btn-wrap blue active btn-txt">
+                          7월
+                        </button>
+                        <button type="button" className="btn-wrap blue active btn-txt">
+                          8월
+                        </button>
+                        <button type="button" className="btn-wrap blue btn-txt">
+                          9월
+                        </button>
+                      </div>
+                    </li>
+                    <li>
+                      <div className="list-area">
+                        <button type="button" className="btn-wrap blue btn-txt">
+                          10월
+                        </button>
+                        <button type="button" className="btn-wrap blue btn-txt">
+                          11월
+                        </button>
+                        <button type="button" className="btn-wrap blue btn-txt">
+                          12월
+                        </button>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              {/*Division*/}
+              <div className="cons-box">
+                <div className="txt">Division</div>
+                <div className="cons-list">
+                  <ul className="list">
+                    <li>
+                      <div className="list-area">
+                        <button type="button" className="btn-wrap blue btn-txt">
+                          SELOC
+                        </button>
+                        <button type="button" className="btn-wrap blue active btn-txt">
+                          SELOQA
+                        </button>
+                      </div>
+                    </li>
+                    <li>
+                      <div className="list-area">
+                        <button type="button" className="btn-wrap blue btn-txt">
+                          SELOC
+                        </button>
+                        <button type="button" className="btn-wrap blue active btn-txt">
+                          SELOQA
+                        </button>
+                      </div>
+                    </li>
+                    <li>
+                      <div className="list-area">
+                        <button type="button" className="btn-wrap blue btn-txt">
+                          SELOC
+                        </button>
+                        <button type="button" className="btn-wrap blue active btn-txt">
+                          SELOQA
+                        </button>
+                      </div>
+                    </li>
+                    <li>
+                      <div className="list-area">
+                        <button type="button" className="btn-wrap blue btn-txt">
+                          SELOC
+                        </button>
+                        <button type="button" className="btn-wrap blue active btn-txt">
+                          SELOQA
+                        </button>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              {/*Status */}
+              <div className="cons-box">
+                <div className="txt">Status</div>
+                <div className="cons-list">
+                  <ul className="list">
+                    <li>
+                      <div className="list-area">
+                        <button type="button" className="btn-wrap blue active btn-txt">
+                          Plan
+                        </button>
+                        <button type="button" className="btn-wrap blue active btn-txt">
+                          Conduct
+                        </button>
+                      </div>
+                    </li>
+                    <li>
+                      <div className="list-area">
+                        <button type="button" className="btn-wrap blue active btn-txt">
+                          Plan
+                        </button>
+                        <button type="button" className="btn-wrap blue btn-txt">
+                          Conduct
+                        </button>
+                      </div>
+                    </li>
+                  </ul>
                 </div>
               </div>
             </div>
@@ -240,10 +394,114 @@ function Auditcarsearch() {
 
         <div className="user-box wid30">
           <div className="user-box-cons">
-            <div className="form-table user-head">
-              <div className="form-cell wid100">
-                <div className="form-group wid70">
-                  <div className="h4">Div. Audit</div>
+            <div className="cons-wrap2">
+              {/*Region */}
+              <div className="cons-box">
+                <div className="txt">Region</div>
+                <div className="cons-list">
+                  <ul className="list">
+                    <li>
+                      <div className="list-area">
+                        <button type="button" className="btn-wrap blue active btn-txt active">
+                          국내공항
+                        </button>
+                        <button type="button" className="btn-wrap blue active btn-txt">
+                          대양주
+                        </button>
+                      </div>
+                    </li>
+                    <li>
+                      <div className="list-area">
+                        <button type="button" className="btn-wrap blue active btn-txt">
+                          동남아
+                        </button>
+                        <button type="button" className="btn-wrap blue active btn-txt">
+                          미주
+                        </button>
+                      </div>
+                    </li>
+                    <li>
+                      <div className="list-area">
+                        <button type="button" className="btn-wrap blue active btn-txt">
+                          비행점검
+                        </button>
+                        <button type="button" className="btn-wrap blue active btn-txt">
+                          유럽
+                        </button>
+                      </div>
+                    </li>
+                    <li>
+                      <div className="list-area">
+                        <button type="button" className="btn-wrap blue active btn-txt">
+                          일본
+                        </button>
+                        <button type="button" className="btn-wrap blue active btn-txt">
+                          중국
+                        </button>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              {/*Airport*/}
+              <div className="cons-box">
+                <div className="txt">Airport</div>
+                <div className="cons-list">
+                  <ul className="list">
+                    <li>
+                      <div className="list-area">
+                        <button type="button" className="btn-wrap blue btn-txt">
+                          국내공항
+                        </button>
+                      </div>
+                      <div className="list-area">
+                        <button type="button" className="btn-wrap blue active btn-txt">
+                          김포
+                        </button>
+                        <button type="button" className="btn-wrap blue active btn-txt">
+                          인천
+                        </button>
+                        <button type="button" className="btn-wrap blue active btn-txt">
+                          서울
+                        </button>
+                        <button type="button" className="btn-wrap blue active btn-txt">
+                          부산
+                        </button>
+                        <button type="button" className="btn-wrap blue active btn-txt">
+                          울산
+                        </button>
+                        <button type="button" className="btn-wrap blue active btn-txt">
+                          제주
+                        </button>
+                        <button type="button" className="btn-wrap blue active btn-txt">
+                          인천
+                        </button>
+                        <button type="button" className="btn-wrap blue active btn-txt">
+                          창원
+                        </button>
+                      </div>
+                      <div className="list-area"></div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              {/*CAR */}
+              <div className="cons-box">
+                <div className="txt">CAR</div>
+                <div className="cons-list">
+                  <ul className="list">
+                    <li>
+                      <div className="list-area">
+                        <button type="button" className="btn-wrap blue active btn-txt">
+                          2020
+                        </button>
+                        <button type="button" className="btn-wrap blue active btn-txt">
+                          2021
+                        </button>
+                      </div>
+                    </li>
+                  </ul>
                 </div>
               </div>
             </div>
@@ -323,7 +581,7 @@ function Auditcarsearch() {
                     <span>CAR 펼치기</span>
                   </label>
                 </div>
-                <div className="btn-wrap">
+                <div className="btn-wrap blue active">
                   <button type="button" name="button" className="btn-sm btn_text btn-darkblue-line">
                     조회
                   </button>
