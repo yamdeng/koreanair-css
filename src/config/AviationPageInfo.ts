@@ -131,6 +131,8 @@ import MyAuditProfileDetail from '@/components/publish/aviation/MyAuditProfileDe
 import AdminCordDetail from '@/components/publish/aviation/AdminCordDetail';
 import Auditcarsearch from '@/components/publish/aviation/Auditcarsearch';
 import AdminSPIPList from '@/components/publish/aviation/AdminSPIPList';
+import AdminSPIPEdit from '@/components/publish/aviation/AdminSPIPEdit';
+import AdminSPIPDetail from '@/components/publish/aviation/AdminSPIPDetail';
 
 import { fa, fakerLV } from '@faker-js/faker';
 import { fail } from 'assert';
@@ -995,6 +997,20 @@ AviationPageInfo.list = [
     title: '[07.관리자] 게시판 관리 > SPIP(안전장려금제도 관리) List',
     Component: AdminSPIPList,
     path: 'AdminSPIPList',
+    description: '',
+    success: true,
+  },
+  {
+    title: '[07.관리자] 게시판 관리 > SPIP(안전장려금제도 관리) 신규',
+    Component: AdminSPIPEdit,
+    path: 'AdminSPIPEdit',
+    description: '',
+    success: true,
+  },
+  {
+    title: '[07.관리자] 게시판 관리 > SPIP(안전장려금제도 관리) 상세',
+    Component: AdminSPIPDetail,
+    path: 'AdminSPIPDetail',
     description: '',
     success: true,
   },
