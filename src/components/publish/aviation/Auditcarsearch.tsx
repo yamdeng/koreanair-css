@@ -458,30 +458,30 @@ function Auditcarsearch() {
                       <div className="list-area">
                         <ul>
                           <li>
-                            <button type="button" className="btn-wrap gr active btn-txt">
+                            <button type="button" className="btn-wrap gr w-min active btn-txt">
                               김포
                             </button>
-                            <button type="button" className="btn-wrap gr active btn-txt">
+                            <button type="button" className="btn-wrap gr w-min active btn-txt">
                               인천
                             </button>
-                            <button type="button" className="btn-wrap gr active btn-txt">
+                            <button type="button" className="btn-wrap gr w-min active btn-txt">
                               서울
                             </button>
-                            <button type="button" className="btn-wrap gr active btn-txt">
+                            <button type="button" className="btn-wrap gr w-min active btn-txt">
                               부산
                             </button>
                           </li>
                           <li>
-                            <button type="button" className="btn-wrap gr active btn-txt">
+                            <button type="button" className="btn-wrap gr w-min active btn-txt">
                               울산
                             </button>
-                            <button type="button" className="btn-wrap gr active btn-txt">
+                            <button type="button" className="btn-wrap gr w-min active btn-txt">
                               제주
                             </button>
-                            <button type="button" className="btn-wrap gr active btn-txt">
+                            <button type="button" className="btn-wrap gr w-min active btn-txt">
                               인천
                             </button>
-                            <button type="button" className="btn-wrap gr active btn-txt">
+                            <button type="button" className="btn-wrap gr w-min active btn-txt">
                               창원
                             </button>
                           </li>
@@ -497,30 +497,30 @@ function Auditcarsearch() {
                       <div className="list-area">
                         <ul>
                           <li>
-                            <button type="button" className="btn-wrap gr active btn-txt">
+                            <button type="button" className="btn-wrap gr w-min active btn-txt">
                               ABC
                             </button>
-                            <button type="button" className="btn-wrap gr btn-txt">
+                            <button type="button" className="btn-wrap gr w-min btn-txt">
                               AKL
                             </button>
-                            <button type="button" className="btn-wrap gr btn-txt">
+                            <button type="button" className="btn-wrap gr w-min btn-txt">
                               AWS
                             </button>
-                            <button type="button" className="btn-wrap gr btn-txt">
+                            <button type="button" className="btn-wrap gr w-min btn-txt">
                               AWS
                             </button>
                           </li>
                           <li>
-                            <button type="button" className="btn-wrap blue active btn-txt">
+                            <button type="button" className="btn-wrap gr w-min active btn-txt">
                               AWS
                             </button>
-                            <button type="button" className="btn-wrap blue active btn-txt">
+                            <button type="button" className="btn-wrap gr w-min active btn-txt">
                               AWS
                             </button>
-                            <button type="button" className="btn-wrap blue active btn-txt">
+                            <button type="button" className="btn-wrap gr w-min active btn-txt">
                               AWS
                             </button>
-                            <button type="button" className="btn-wrap blue active btn-txt">
+                            <button type="button" className="btn-wrap gr w-min active btn-txt">
                               AWS
                             </button>
                           </li>
@@ -536,30 +536,30 @@ function Auditcarsearch() {
                       <div className="list-area">
                         <ul>
                           <li>
-                            <button type="button" className="btn-wrap gr active btn-txt">
+                            <button type="button" className="btn-wrap gr w-min active btn-txt">
                               ABC
                             </button>
-                            <button type="button" className="btn-wrap gr active btn-txt">
+                            <button type="button" className="btn-wrap gr w-min active btn-txt">
                               AKL
                             </button>
-                            <button type="button" className="btn-wrap gr active btn-txt">
+                            <button type="button" className="btn-wrap gr w-min active btn-txt">
                               AWS
                             </button>
-                            <button type="button" className="btn-wrap gr active btn-txt">
+                            <button type="button" className="btn-wrap gr w-min active btn-txt">
                               AWS
                             </button>
                           </li>
                           <li>
-                            <button type="button" className="btn-wrap gr active btn-txt">
+                            <button type="button" className="btn-wrap gr w-min active btn-txt">
                               AWS
                             </button>
-                            <button type="button" className="btn-wrap gr active btn-txt">
+                            <button type="button" className="btn-wrap gr w-min active btn-txt">
                               AWS
                             </button>
-                            <button type="button" className="btn-wrap gr active btn-txt">
+                            <button type="button" className="btn-wrap gr w-min active btn-txt">
                               AWS
                             </button>
-                            <button type="button" className="btn-wrap gr active btn-txt">
+                            <button type="button" className="btn-wrap gr w-min active btn-txt">
                               AWS
                             </button>
                           </li>
@@ -620,6 +620,7 @@ function Auditcarsearch() {
                 </ul>
               </div>
             </div>
+            <div className="cons-box">search</div>
           </div>
         </div>
       </div>

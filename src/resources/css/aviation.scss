@@ -691,11 +691,12 @@ meter::-webkit-meter-optimum-value {
 .cons-list .list li:first-child{position:relative;display:flex;-webkit-box-pack: start;justify-content: start;align-items: flex-start;margin-top:0.5rem}
 .cons-list .list li .list-area .btn-wrap.blue.active{width:100%;color:var(--color-darkblue-80);border:solid 0.1rem var(--color-darkblue-60);background-color:var(--color-darkblue-40);border-radius:0.3rem;padding:0.3rem 0.5rem}
 .cons-list .list li .list-area .btn-wrap.blue{width:100%;color:var(--color-darkblue-60);border:solid 0.1rem var(--color-darkblue-60);background-color:var(--color-darkblue-10);border-radius:0.3rem;padding:0.3rem 0.5rem}
-.cons-list .list li .list-area .btn-txt{font-size:1.2rem;font-weight:400;}
-
-.cons-list .list li .list-area .btn-wrap.gr.active{width:100%;color:var(--color-aud-green-font);border:solid 0.1rem var(--color-aud-green);background-color:var(--color-aud-green);border-radius:0.3rem;padding:0.3rem 0.5rem}
+.cons-list .list li .list-area .btn-txt{font-size:1.2rem;font-weight:400;width:100%}
+.cons-list .list li .list-area .btn-txt.w-min{min-width:4.0rem}
+.cons-list .list li .list-area .btn-wrap.gr.w-min.active{min-width:4.0rem}
+.cons-list .list li .list-area .btn-wrap.gr.active{color:var(--color-aud-green-font);border:solid 0.1rem var(--color-aud-green);background-color:var(--color-aud-green);border-radius:0.3rem;padding:0.3rem 0.5rem}
 .cons-list .list li .list-area .btn-wrap.gr{width:100%;color:var(--color-aud-green-bg-font);border:solid 0.1rem var(--color-aud-greene);background-color:var(--color-aud-green-bg);border-radius:0.3rem;padding:0.3rem 0.5rem}
-
+.cons-list .list li .list-area .btn-wrap.gr.w-min{min-width:4.0rem}
 
 .user-wrap .user-box{position:relative;display:flex;flex-wrap:wrap;counter-reset:myCounter;align-items: stretch;}
 .user-wrap .user-box .user-box-top{position:relative;flex:1;/*width:49%;*/padding:1.2rem;border:solid 0.1rem var(--color-neutral-01);border-radius:0.8rem;box-shadow:0.3rem 0.3rem 0.5rem rgba(0, 0, 0, .1)}
