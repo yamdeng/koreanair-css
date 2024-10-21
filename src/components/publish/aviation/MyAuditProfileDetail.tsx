@@ -424,11 +424,21 @@ function MyAuditProfileDetail() {
                     </div>
                   </div>
                 </div>
-                <hr className="line"></hr>
+
                 <div className="form-table">
                   <div className="form-cell wid50">
                     <div className="form-group wid100">
-                      <AppTextArea label="Summary" style={{ width: '100%', height: 80 }} errorMessage="" />
+                      <div className="cots-area">
+                        <div className="title">Summary</div>
+                        <div className="detail">
+                          <ul>
+                            <li>Summary text</li>
+                            <li>Summary text</li>
+                            <li>Summary text</li>
+                            <li>Summary text</li>
+                          </ul>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -436,68 +446,65 @@ function MyAuditProfileDetail() {
                 <div className="form-table">
                   <div className="form-cell wid50">
                     <div className="form-group wid100">
-                      <AppTextArea label="Work Experience" style={{ width: '100%', height: 80 }} errorMessage="" />
+                      <div className="cots-area">
+                        <div className="title">Work Experience</div>
+                        <div className="detail">
+                          <ul>
+                            <li>Maintenance & Engineering - Base Maintenance (7 years)</li>
+                            <li>Maintenance & Engineering - Line Maintenance (2 years)</li>
+                            <li>Quality Assurance in M&E Division  (4 years)</li>
+                            <li>Cabin Safety in Cabin Service Division  (4 years)</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <hr className="line"></hr>
+
+                <div className="form-table scroll">
+                  <div className="form-cell wid100">
+                    <div className="form-group wid100">
+                      <div className="cots-area">
+                        <div className="title">Training Records</div>
+                        <div className="detail">
+                          <ul>
+                            <li>
+                              <a href="javascript:void(0);">2020 JUL | PROS Lead Auditor Training</a>
+                            </li>
+                            <li>
+                              <a href="javascript:void(0);">2020 JUL | PROS Lead Auditor Training</a>
+                            </li>
+                            <li>
+                              <a href="javascript:void(0);">2020 JUL | PROS Lead Auditor Training</a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
                 <hr className="line"></hr>
                 {/* 파일첨부영역 : drag */}
                 <div className="form-table scroll">
-                  {/* form-cell 영역이 한 그룹입니다. */}
                   <div className="form-cell wid100">
-                    <div className="form-group wid70">
-                      <AppTextInput label={'Training Records'} />
-                    </div>
-                    <div className="form-group wid30">
-                      <div className="btn-box">
-                        <button type="button" name="button" className="btn-more">
-                          <span className="hide">더보기</span>
-                        </button>
-                      </div>
-                    </div>
                     <div className="form-group wid100">
-                      {/* 파일첨부영역 : drag */}
-                      <div className="filebox error">
-                        <Dragger {...props}>
-                          <p className="ant-upload-text ">
-                            + 이 곳을 클릭하거나 마우스로 업로드할 파일을 끌어서 놓으세요.
-                          </p>
-                        </Dragger>
-                        <label htmlFor="file" className="file-label">
-                          첨부파일 <span className="required">*</span>
-                        </label>
+                      <div className="cots-area">
+                        <div className="title">Recurrent Training</div>
+                        <div className="detail">
+                          <ul>
+                            <li>
+                              <a href="javascript:void(0);">2020 JUL | PROS Lead Auditor Training</a>
+                            </li>
+                            <li>
+                              <a href="javascript:void(0);">2020 JUL | PROS Lead Auditor Training</a>
+                            </li>
+                            <li>
+                              <a href="javascript:void(0);">2020 JUL | PROS Lead Auditor Training</a>
+                            </li>
+                          </ul>
+                        </div>
                       </div>
-                      <span className="errorText">fileerror</span>
-                    </div>
-                  </div>
-                </div>
-                <hr className="line"></hr>
-                {/* 파일첨부영역 : drag */}
-                <div className="form-table scroll">
-                  <div className="form-cell wid100">
-                    <div className="form-group wid70">
-                      <AppTextInput label={'Recurrent Training'} />
-                    </div>
-                    <div className="form-group wid30">
-                      <div className="btn-box">
-                        <button type="button" name="button" className="btn-more">
-                          <span className="hide">더보기</span>
-                        </button>
-                      </div>
-                    </div>
-                    <div className="form-group wid100">
-                      {/* 파일첨부영역 : drag */}
-                      <div className="filebox error">
-                        <Dragger {...props}>
-                          <p className="ant-upload-text ">
-                            + 이 곳을 클릭하거나 마우스로 업로드할 파일을 끌어서 놓으세요.
-                          </p>
-                        </Dragger>
-                        <label htmlFor="file" className="file-label">
-                          첨부파일 <span className="required">*</span>
-                        </label>
-                      </div>
-                      <span className="errorText">fileerror</span>
                     </div>
                   </div>
                 </div>

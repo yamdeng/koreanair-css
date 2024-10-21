@@ -358,9 +358,7 @@ function ReportLevelModal(props) {
                   <div className="LevelTop">
                     <div className="flex-box">
                       <div className="h5-tit">Risk</div>
-                      {/* <span className="total">
-                      <span className="text_color-Warning">861</span>건
-                    </span> */}
+                      <span className="total">* 해당기간동안 평가된 횟수</span>
                     </div>
                     <div className="">
                       <table className="RiskLevelTable Risk">
