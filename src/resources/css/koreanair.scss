@@ -1503,17 +1503,24 @@
   }
   .page1_contents .conts-graph-box .home-graph-tit {
     display: inline-block;
-    width: 30%;
+    width: 35%;
+    vertical-align: top;
   }
-  .page1_contents .conts-graph-box .home-graph-tit .title {font-size: 2.8rem;}
-  .page1_contents .conts-graph-box .home-graph-tit .stit1 {font-size: 3.0rem;}
-  .page1_contents .conts-graph-box .home-graph-tit .stit2 {font-size: 2.4rem;}
-  .page1_contents .conts-graph-box .home-graph-tit .date {font-size: 2.2rem;}
+  .page1_contents .conts-graph-box .home-graph-tit li {padding-bottom: 1.0rem;}
+  .page1_contents .conts-graph-box .home-graph-tit li:last-child {padding-bottom: 0;}
+
+  .page1_contents .conts-graph-box .home-graph-tit .title {font-size: 2.8rem; color: var(--color-darkblue-100);}
+  .page1_contents .conts-graph-box .home-graph-tit .stit1 {font-size: 3.6rem;}
+  .page1_contents .conts-graph-box .home-graph-tit .stit2 {font-size: 2.4rem; color: var(--color-neutral-70);}
+  .page1_contents .conts-graph-box .home-graph-tit .date {font-size: 2.2rem; font-weight: normal; color: var(--color-neutral-70);}
   .page1_contents .conts-graph-box .home-graph {
     display: inline-block;
-    width: 70%;
+    width: 65%;
+    vertical-align: top;
   }
-  .page1_contents .conts-graph-box .home-graph ul li {display: inline-block;}
+  .page1_contents .conts-graph-box .home-graph .graph {background-color: #E35B4F;}
+  .page1_contents .conts-graph-box .home-graph ul li {display: inline-block; padding-bottom: 1.0rem;}
+  .page1_contents .conts-graph-box .home-graph ul li:last-child {padding-bottom: 0;}
   .page1_contents .conts-graph-box .home-graph ul li .tit li {
     padding: 0 0.5rem; 
     font-size: 1.2rem; 
@@ -1529,18 +1536,24 @@
     font-size: 0;
     margin-right: 0.3rem;
   }
+  .page1_contents .conts-graph-box .home-graph ul li .tit span.type01 {background-color: var(--color-lightblue-80);}
+  .page1_contents .conts-graph-box .home-graph ul li .tit span.type02 {background-color: var(--color-darkblue-80);}
+  .page1_contents .conts-graph-box .home-graph ul li .tit span.type03 {background-color: var(--color-darkblue-100);}
+  .page1_contents .conts-graph-box .home-graph ul li .tit span.type04 {background-color: var(--color-neutral-60);}
+
   .page1_contents .conts-graph-box .home-graph ul li .tit span.dotted {
     display: inline-block; 
     position: relative; 
-    top: -0.4rem; 
+    top: -0.3rem; 
     height: 0.2rem; 
     background: none; 
     border-radius: 0; 
     border-bottom: 0.2rem solid var(--color-Warning); 
     border-style: dotted;
   }
-  .page1_contents .conts-graph-box .home-graph ul li.graph {
+  .page1_contents .conts-graph-box .home-graph ul li.portal-graph {
     display: block;
+    background-color: #2DCB9B;
   }
 
 
@@ -1666,7 +1679,7 @@
 .main-visual02.active .page2_contents {
   width: 100%;
   left: 0;
-  top:34.0rem;
+  top:32.0rem;
 	opacity:1;
 	text-align: center;
 }
@@ -1705,6 +1718,7 @@
   border-radius: 1.5rem;
   padding: 2.0rem;
 }
+.page2_contents .contents-box .graph-box .graph-box-bg .main-tit {padding-bottom: 1.0rem;}
 .page2_contents .contents-box .graph-box .graph-box-bg ul li {
   display: inline-block;
   font-size: 1.2rem;
@@ -1720,21 +1734,22 @@
   font-size: 0;
   margin-right: 0.3rem;
 }
+.page2_contents .contents-box .graph-box .graph-box-bg ul li span.type01 {background-color: var(--color-lightblue-80);}
+.page2_contents .contents-box .graph-box .graph-box-bg ul li span.type02 {background-color: var(--color-darkblue-80);}
+.page2_contents .contents-box .graph-box .graph-box-bg ul li span.type03 {background-color: var(--color-darkblue-100);}
+.page2_contents .contents-box .graph-box .graph-box-bg ul li span.type04 {background-color: var(--color-neutral-60);}
 .page2_contents .contents-box .graph-box .graph-box-bg ul li span.dotted {
   display: inline-block; 
   position: relative; 
-  top: -0.4rem; 
+  top: -0.3rem; 
   height: 0.2rem; 
   background: none; 
   border-radius: 0; 
   border-bottom: 0.2rem solid var(--color-Warning); 
   border-style: dotted;
 }
-.page2_contents .contents-box .graph-box .graph-box-bg .main-graph img {
-  display: block;
-    width: 100%;
-    height: 28.0rem;
-    border-radius: 1.5rem
+.page2_contents .contents-box .graph-box .graph-box-bg .main-graph {
+  background-color: #2DCB9B;
   
 }
 

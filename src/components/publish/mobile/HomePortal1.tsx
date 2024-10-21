@@ -273,23 +273,23 @@ function HomePortal1() {
                                     <li>
                                       <ul className="tit">
                                         <li>
-                                          <span></span>발생건수(24')
+                                          <span className="type01"></span>발생건수(24')
                                         </li>
                                         <li>
-                                          <span></span>발생건수(23')
+                                          <span className="type02"></span>발생건수(23')
                                         </li>
                                         <li>
-                                          <span></span>누적 발생률(24')
+                                          <span className="type03"></span>누적 발생률(24')
                                         </li>
                                         <li>
-                                          <span></span>누적 발생률(23')
+                                          <span className="type04"></span>누적 발생률(23')
                                         </li>
                                         <li>
                                           <span className="dotted"></span>KE 목표(24')
                                         </li>
                                       </ul>
                                     </li>
-                                    <li className="graph">그래프영역</li>
+                                    <li className="portal-graph">그래프영역</li>
                                   </ul>
                                 </div>
                               </div>
@@ -297,7 +297,7 @@ function HomePortal1() {
                           </div>
                         </div>
                       </div>
-                      <div className="swiper-slide pd-lr30">
+                      <div className="swiper-slide">
                         <img src={cont01} />
                       </div>
                     </Slider>
@@ -345,28 +345,26 @@ function HomePortal1() {
                       </div>
                       <div className="graph-box pr-10">
                         <div className="graph-box-bg">
-                          <div>
+                          <div className="main-tit">
                             <ul>
                               <li>
-                                <span></span>23년 재해건(월별)
+                                <span className="type01"></span>23년 재해건(월별)
                               </li>
                               <li>
-                                <span></span>24년 재해건(월별)
+                                <span className="type02"></span>24년 재해건(월별)
                               </li>
                               <li>
-                                <span></span>23년 재해율(누적)
+                                <span className="type03"></span>23년 재해율(누적)
                               </li>
                               <li>
-                                <span></span>24년 재해율(누적)
+                                <span className="type04"></span>24년 재해율(누적)
                               </li>
                               <li>
                                 <span className="dotted"></span>재해율 목표
                               </li>
                             </ul>
                           </div>
-                          <div className="main-graph">
-                            <img src={cont03} />
-                          </div>
+                          <div className="main-graph">그래프영역</div>
                         </div>
                       </div>
                     </div>
@@ -384,28 +382,26 @@ function HomePortal1() {
                       </div>
                       <div className="graph-box pl-10">
                         <div className="graph-box-bg">
-                          <div className="">
+                          <div className="main-tit">
                             <ul>
                               <li>
-                                <span></span>23년 근로손실일수(월별)
+                                <span className="type01"></span>23년 근로손실일수(월별)
                               </li>
                               <li>
-                                <span></span>24년 근로손실일수(월별)
+                                <span className="type02"></span>24년 근로손실일수(월별)
                               </li>
                               <li>
-                                <span></span>23년 강도율(평균)
+                                <span className="type03"></span>23년 강도율(평균)
                               </li>
                               <li>
-                                <span></span>24년 강도율(평균)
+                                <span className="type04"></span>24년 강도율(평균)
                               </li>
                               <li>
                                 <span className="dotted"></span>강도율 목표
                               </li>
                             </ul>
                           </div>
-                          <div className="main-graph">
-                            <img src={cont031} />
-                          </div>
+                          <div className="main-graph">그래프영역</div>
                         </div>
                       </div>
                     </div>
