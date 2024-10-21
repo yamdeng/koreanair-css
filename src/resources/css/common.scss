@@ -32,6 +32,8 @@
   --color-negative-bg:#FFF5F5;
   --color-ag-header-row:#f8f9fc;
   --color-aud-green: #02C27F;
+  --color-aud-green-font: #0b3526;
+  --color-aud-green-bg-font: #709682;
   --color-aud-green-bg: #c9e9d8;
   /*위험도컬러*/
   --color-Level:#DA291C;
@@ -75,7 +77,9 @@ body::-webkit-scrollbar {
 .wid20{width:20%}
 .wid25{width:25%}
 .wid30{width:30%}
+.wid35{width:35%}
 .wid40{width:40%}
+.wid45{width:45%}
 .wid50{width:50%}
 .wid60{width:60%}
 .wid70{width:70%}

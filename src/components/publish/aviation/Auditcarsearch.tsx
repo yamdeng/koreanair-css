@@ -53,7 +53,7 @@ function Auditcarsearch() {
 
       {/*조회 */}
       <div className="user-wrap">
-        <div className="user-box wid40">
+        <div className="user-box wid45">
           <div className="user-box-cons">
             <div className="cons-wrap">
               {/*Year */}
@@ -392,50 +392,50 @@ function Auditcarsearch() {
           </div>
         </div>
 
-        <div className="user-box wid30">
+        <div className="user-box wid35">
           <div className="user-box-cons">
             <div className="cons-wrap2">
               {/*Region */}
-              <div className="cons-box">
+              <div className="cons-box gr">
                 <div className="txt">Region</div>
                 <div className="cons-list">
                   <ul className="list">
                     <li>
                       <div className="list-area">
-                        <button type="button" className="btn-wrap blue active btn-txt active">
+                        <button type="button" className="btn-wrap gr active btn-txt active">
                           국내공항
                         </button>
-                        <button type="button" className="btn-wrap blue active btn-txt">
+                        <button type="button" className="btn-wrap gr btn-txt">
                           대양주
                         </button>
                       </div>
                     </li>
                     <li>
                       <div className="list-area">
-                        <button type="button" className="btn-wrap blue active btn-txt">
+                        <button type="button" className="btn-wrap gr btn-txt">
                           동남아
                         </button>
-                        <button type="button" className="btn-wrap blue active btn-txt">
+                        <button type="button" className="btn-wrap gr active btn-txt">
                           미주
                         </button>
                       </div>
                     </li>
                     <li>
                       <div className="list-area">
-                        <button type="button" className="btn-wrap blue active btn-txt">
+                        <button type="button" className="btn-wrap gr btn-txt">
                           비행점검
                         </button>
-                        <button type="button" className="btn-wrap blue active btn-txt">
+                        <button type="button" className="btn-wrap gr active btn-txt">
                           유럽
                         </button>
                       </div>
                     </li>
                     <li>
                       <div className="list-area">
-                        <button type="button" className="btn-wrap blue active btn-txt">
+                        <button type="button" className="btn-wrap gr active btn-txt">
                           일본
                         </button>
-                        <button type="button" className="btn-wrap blue active btn-txt">
+                        <button type="button" className="btn-wrap gr active btn-txt">
                           중국
                         </button>
                       </div>
@@ -452,7 +452,7 @@ function Auditcarsearch() {
                     <li>
                       <div className="list-area">
                         <button type="button" className="btn-wrap gr btn-txt">
-                          국내
+                          국내공항
                         </button>
                       </div>
                       <div className="list-area">
@@ -490,23 +490,23 @@ function Auditcarsearch() {
                     </li>
                     <li>
                       <div className="list-area">
-                        <button type="button" className="btn-wrap blue btn-txt">
+                        <button type="button" className="btn-wrap gr btn-txt">
                           미주
                         </button>
                       </div>
                       <div className="list-area">
                         <ul>
                           <li>
-                            <button type="button" className="btn-wrap blue active btn-txt">
+                            <button type="button" className="btn-wrap gr active btn-txt">
                               ABC
                             </button>
-                            <button type="button" className="btn-wrap blue active btn-txt">
+                            <button type="button" className="btn-wrap gr btn-txt">
                               AKL
                             </button>
-                            <button type="button" className="btn-wrap blue active btn-txt">
+                            <button type="button" className="btn-wrap gr btn-txt">
                               AWS
                             </button>
-                            <button type="button" className="btn-wrap blue active btn-txt">
+                            <button type="button" className="btn-wrap gr btn-txt">
                               AWS
                             </button>
                           </li>
@@ -529,7 +529,7 @@ function Auditcarsearch() {
                     </li>
                     <li>
                       <div className="list-area">
-                        <button type="button" className="btn-wrap green btn-txt">
+                        <button type="button" className="btn-wrap gr btn-txt">
                           일본
                         </button>
                       </div>
@@ -569,18 +569,18 @@ function Auditcarsearch() {
                   </ul>
                 </div>
               </div>
-              {/*CAR */}
-              <div className="cons-box">
-                <div className="txt">CAR</div>
+              {/*Other */}
+              <div className="cons-box gr">
+                <div className="txt">Other</div>
                 <div className="cons-list">
                   <ul className="list">
                     <li>
                       <div className="list-area">
                         <button type="button" className="btn-wrap gr active btn-txt">
-                          2020
+                          DIV
                         </button>
-                        <button type="button" className="btn-wrap gr active btn-txt">
-                          2021
+                        <button type="button" className="btn-wrap gr btn-txt">
+                          OSR
                         </button>
                       </div>
                     </li>
@@ -591,13 +591,33 @@ function Auditcarsearch() {
           </div>
         </div>
 
-        <div className="user-box wid30">
+        <div className="user-box wid20">
           <div className="user-box-cons">
-            <div className="form-table user-head">
-              <div className="form-cell wid100">
-                <div className="form-group wid70">
-                  <div className="h4">Div. Audit</div>
-                </div>
+            {/*Risk Level */}
+            <div className="cons-box">
+              <div className="txt">Risk Level</div>
+              <div className="cons-list scroll">
+                <ul className="list">
+                  <li>
+                    <div className="list-area">
+                      <button type="button" className="btn-wrap blue active btn-txt">
+                        1A
+                      </button>
+                      <button type="button" className="btn-wrap blue active btn-txt">
+                        1B
+                      </button>
+                      <button type="button" className="btn-wrap blue active btn-txt">
+                        1C
+                      </button>
+                      <button type="button" className="btn-wrap blue active btn-txt">
+                        1D
+                      </button>
+                      <button type="button" className="btn-wrap blue active btn-txt">
+                        1E
+                      </button>
+                    </div>
+                  </li>
+                </ul>
               </div>
             </div>
           </div>

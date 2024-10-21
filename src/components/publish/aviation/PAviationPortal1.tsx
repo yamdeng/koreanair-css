@@ -501,19 +501,19 @@ function PAviationPortal1() {
           <h3>
             <ul className="main-tab">
               <li>
-                <a className="" href="javascript:void(0);">
+                <a className="active" href="javascript:void(0);">
                   공지사항
                 </a>
               </li>
               <li>
-                <a className="active" href="javascript:void(0);">
+                <a className="" href="javascript:void(0);">
                   사고준사고 현황
                 </a>
               </li>
             </ul>
           </h3>
           {/*공지사항 */}
-          <div id="" className="main-table-box" style={{ display: 'none' }}>
+          <div id="" className="main-table-box">
             <table className="main-table">
               <colgroup>
                 <col width="65%" />
@@ -578,7 +578,7 @@ function PAviationPortal1() {
             </table>
           </div>
           {/*사고준사고 */}
-          <div id="" className="main-table-box">
+          <div id="" className="main-table-box" style={{ display: 'none' }}>
             <div className="graph-area">
               <div className="graph-box">
                 <canvas id="reportCvs0" width="250" height="175" style={{ cursor: 'default' }}></canvas>
