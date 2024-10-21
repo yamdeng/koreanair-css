@@ -922,10 +922,10 @@
   .av-main-wrap .grid-item:nth-child(2){display:inline-block;width:100%;/*display:inline-table;grid-template-rows:0*/}
   .av-main-wrap .grid-item:nth-child(3){width:100%}
   .av-main-wrap .grid-item:nth-of-type(4){display:inline-block;width:100%;/*grid-column-start: 1; grid-column-end: span 1;grid-template-rows:auto*/}
-  .av-main-wrap .grid-item .grid-group:nth-of-type(1) .slick-slider .slick-list .slick-track .slick-slide .risk-conts-area .risk-box{display:block;width:95%}
+  .av-main-wrap .grid-item .grid-group:nth-of-type(1) .slick-slider .slick-list .slick-track .slick-slide .risk-conts-area .risk-box{display:block;width:100%}
   .av-main-wrap .grid-item .grid-group:nth-of-type(1) .slick-slider .slick-list .slick-track .slick-slide .risk-conts-area .risk-box + .risk-box{margin-left:0}
-  .av-main-wrap .grid-item .grid-group:nth-of-type(1) .risk-slider-container .slick-slider > .slick-dots{position: absolute; width:5%;top: 0rem;right: 0;bottom: 0;}
-  .av-main-wrap .grid-item .grid-group:nth-of-type(1) .risk-slider-container .slick-slider > .slick-dots li{margin:0}
+  .av-main-wrap .grid-item .grid-group:nth-of-type(1) .risk-slider-container .slick-slider > .slick-dots{position:fixed;width:auto;top:119px;right:60px;bottom:0}
+  // .av-main-wrap .grid-item .grid-group:nth-of-type(1) .risk-slider-container .slick-slider > .slick-dots li{margin:0}
   
 
 
