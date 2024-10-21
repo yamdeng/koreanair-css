@@ -62,12 +62,13 @@ function POccupationPortal1() {
             </table>
           </div>
         </div>
-        <div className="grid-item pd-photo">
+        <div className="grid-item photo">
           <div className="main-photo">
             <img src={mainphoto} className="" alt="photo" />
           </div>
-          <h3 className="img-tit">2024년 1분기 산업안전보건 모범직원</h3>
-
+          <div className="img-tit">
+            <h3>2024년 1분기 산업안전보건 모범직원</h3>
+          </div>
           <ul className="main-photo-btn">
             <li className="active">1</li>
             <li>2</li>

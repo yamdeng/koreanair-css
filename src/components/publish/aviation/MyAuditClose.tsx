@@ -157,32 +157,42 @@ function MyAuditClose() {
                       </div>
                       <div className="btn-select-box wid-300">
                         <button className="btn-select wid100">Team Select</button>
-                        <div className="team-box">
-                          <button className="team">
-                            안전품질평가팀<span>(7명)</span>
-                            <a href="javascript:void(0);">
-                              <span className="delete">X</span>
-                            </a>
-                          </button>
-                        </div>
-                        <div className="step-box">
-                          안전품질평가팀<span>(7명)</span>
-                          <a href="javascript:void(0);">
-                            <span className="delete">X</span>
-                          </a>
-                        </div>
+                        <div className="user-add-box">
+                          <div className="team-box">
+                            <button className="team">
+                              안전품질평가팀<span>(7명)</span>
+                              <a href="javascript:void(0);">
+                                <span className="delete">X</span>
+                              </a>
+                            </button>
+                          </div>
 
-                        <div className="step-box">
-                          안전조사팀<span>(13명)</span>
-                          <a href="javascript:void(0);">
-                            <span className="delete">X</span>
-                          </a>
-                        </div>
-                        <div className="step-box">
-                          지상안전팀<span>(3명)</span>
-                          <a href="javascript:void(0);">
-                            <span className="delete">X</span>
-                          </a>
+                          <div className="team-box">
+                            <button className="team">
+                              안전조사팀<span>(13명)</span>
+                              <a href="javascript:void(0);">
+                                <span className="delete">X</span>
+                              </a>
+                            </button>
+                          </div>
+
+                          <div className="team-box">
+                            <button className="team">
+                              안전품질평가팀<span>(7명)</span>
+                              <a href="javascript:void(0);">
+                                <span className="delete">X</span>
+                              </a>
+                            </button>
+                          </div>
+
+                          <div className="team-box">
+                            <button className="team">
+                              지상안전팀<span>(3명)</span>
+                              <a href="javascript:void(0);">
+                                <span className="delete">X</span>
+                              </a>
+                            </button>
+                          </div>
                         </div>
                       </div>
                     </div>

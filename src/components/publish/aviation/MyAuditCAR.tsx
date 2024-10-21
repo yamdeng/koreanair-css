@@ -408,6 +408,14 @@ function MyAuditCAR() {
                                               </a>
                                             </button>
                                           </div>
+                                          <div className="team-box">
+                                            <button className="team">
+                                              안전기획팀
+                                              <a href="javascript:void(0);">
+                                                <span className="delete">X</span>
+                                              </a>
+                                            </button>
+                                          </div>
                                           <div className="add-box">
                                             <div className="form-group wid100">
                                               <div className="UserChicebox error">
