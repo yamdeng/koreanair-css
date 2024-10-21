@@ -671,6 +671,11 @@ meter::-webkit-meter-optimum-value {
 .user-wrap .user-box .user-box-cons .cons-box{border:solid 0.1rem var(--color-darkblue-60);border-radius:0.8rem}
 .user-wrap .user-box .user-box-cons .cons-box .txt{font-weight:700;line-height:2rem;border-bottom:solid 0.1rem var(--color-darkblue-60);padding:0.3rem 1rem}
 .user-wrap .user-box .user-box-cons .cons-box:nth-last-of-type(4){grid-row: span 2}
+
+.user-wrap .user-box .user-box-cons .cons-box.gr{border:solid 0.1rem var(--color-aud-green);border-radius:0.8rem}
+.user-wrap .user-box .user-box-cons .cons-box.gr .txt{font-weight:700;line-height:2rem;border-bottom:solid 0.1rem var(--color-aud-green);padding:0.3rem 1rem}
+.user-wrap .user-box .user-box-cons .cons-box.gr:nth-last-of-type(4){grid-row: span 2}
+
 .user-wrap .user-box .user-box-cons .cons-right{width:100%;border:solid 1px red}
 
 .user-wrap .user-box .user-box-cons .cons-wrap2{display:grid;grid-gap:0.5rem;grid-template-columns: 1fr 1fr;width:100%}
@@ -679,13 +684,17 @@ meter::-webkit-meter-optimum-value {
 .cons-list{display:inline-block;width:100%;height:11.7rem;overflow-y:scroll}
 .cons-list.scroll{display:inline-block;width:100%;height:27.0rem;overflow-y:scroll}
 .cons-list .list{position:relative;width: 100%;align-self: flex-start;}
-.cons-list .list li{position:relative;display:flex;-webkit-box-pack: start;justify-content: start;-webkit-box-align: center;align-items: center;margin:0.3rem 0rem 0.3rem 0.5rem}
+.cons-list .list li{position:relative;display:flex;-webkit-box-pack: start;justify-content: start;-webkit-box-align: center;align-items:flex-start;margin:0.3rem 0rem 0.3rem 0.5rem}
 .cons-list .list li .list-area{display:flex;justify-content:space-between;gap: 0 0.2rem;width:100%}
-.cons-list .list li .list-area + .list-area{display: inline-block;}
+.cons-list .list li .list-area + .list-area li{margin-top:0}
+.cons-list .list li .list-area + .list-area li button + button{margin-left:0.2rem}
 .cons-list .list li:first-child{position:relative;display:flex;-webkit-box-pack: start;justify-content: start;align-items: flex-start;margin-top:0.5rem}
 .cons-list .list li .list-area .btn-wrap.blue.active{width:100%;color:var(--color-darkblue-80);border:solid 0.1rem var(--color-darkblue-60);background-color:var(--color-darkblue-40);border-radius:0.3rem;padding:0.3rem 0.5rem}
 .cons-list .list li .list-area .btn-wrap.blue{width:100%;color:var(--color-darkblue-60);border:solid 0.1rem var(--color-darkblue-60);background-color:var(--color-darkblue-10);border-radius:0.3rem;padding:0.3rem 0.5rem}
 .cons-list .list li .list-area .btn-txt{font-size:1.2rem;font-weight:400;}
+
+.cons-list .list li .list-area .btn-wrap.gr.active{width:100%;color:var(--color-aud-green);border:solid 0.1rem var(--color-aud-green);background-color:var(--color-aud-green);border-radius:0.3rem;padding:0.3rem 0.5rem}
+.cons-list .list li .list-area .btn-wrap.gr{width:100%;color:var(--color-aud-green);border:solid 0.1rem var(--color-positive);background-color:var(--color-aud-green-bg);border-radius:0.3rem;padding:0.3rem 0.5rem}
 
 
 .user-wrap .user-box{position:relative;display:flex;flex-wrap:wrap;counter-reset:myCounter;align-items: stretch;}
@@ -972,6 +981,12 @@ meter::-webkit-meter-optimum-value {
   .grid-item .main-table-box .main-table-todo td.date{text-align:center}
   .grid-item .main-table-box .main-table-todo td a {font-size:1.4rem;font-weight:500;color:var(--color-neutral-80);-webkit-line-clamp:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;padding:1rem}
   .grid-item .main-table-box .main-table-todo td a:hover{text-decoration: underline; color: var(--color-darkblue-100);}
+  .grid-item .main-table-box .graph-area{display:flex;width:100%;gap:0 1rem}
+  .grid-item .main-table-box .graph-area .graph-box{position:relative;box-sizing:border-box;margin:0 auto}
+  .grid-item .main-table-box .graph-area .graph-box .txt-box{margin:0 auto;text-align:center}
+  .grid-item .main-table-box .graph-area .graph-box .txt-box .txt{font-size:1.4rem}
+  .grid-item .main-table-box .graph-area .graph-box .txt-box .num{display:block;font-size:2.0rem;font-weight:700;text-align:center}
+  .grid-item .main-table-box .graph-area .graph-box .txt-box .txt-bttom{font-size:1.2rem}
 }
 
   .av-table-tit{color:var(--color-darkblue-100);font-size:1.6rem;font-weight: normal;/*padding-bottom: 1.0rem;*/}

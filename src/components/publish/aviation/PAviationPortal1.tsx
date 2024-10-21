@@ -501,17 +501,19 @@ function PAviationPortal1() {
           <h3>
             <ul className="main-tab">
               <li>
-                <a className="active" href="javascript:void(0);">
+                <a className="" href="javascript:void(0);">
                   공지사항
                 </a>
               </li>
               <li>
-                <a href="javascript:void(0);">사고준사고 현황</a>
+                <a className="active" href="javascript:void(0);">
+                  사고준사고 현황
+                </a>
               </li>
             </ul>
           </h3>
           {/*공지사항 */}
-          <div id="" className="main-table-box">
+          <div id="" className="main-table-box" style={{ display: 'none' }}>
             <table className="main-table">
               <colgroup>
                 <col width="65%" />
@@ -576,7 +578,26 @@ function PAviationPortal1() {
             </table>
           </div>
           {/*사고준사고 */}
-          <div id="" className="main-table-box" style={{ display: 'none' }}></div>
+          <div id="" className="main-table-box">
+            <div className="graph-area">
+              <div className="graph-box">
+                <canvas id="reportCvs0" width="250" height="175" style={{ cursor: 'default' }}></canvas>
+                <div className="txt-box">
+                  <span className="txt">Accident rate/10,000flts</span>
+                  <span className="num">0.000</span>
+                  <span className="txt-bttom">0 이전 연도 기준</span>
+                </div>
+              </div>
+              <div className="graph-box">
+                <canvas id="reportCvs0" width="250" height="175" style={{ cursor: 'default' }}></canvas>
+                <div className="txt-box">
+                  <span className="txt">Accident rate/10,000flts</span>
+                  <span className="num">0.000</span>
+                  <span className="txt-bttom">0 이전 연도 기준</span>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
       {/*}
