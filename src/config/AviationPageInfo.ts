@@ -721,7 +721,7 @@ AviationPageInfo.list = [
     Component: MyAuditProfileDetail,
     path: 'MyAuditProfileDetail',
     description: '',
-    success: false,
+    success: true,
   },
   {
     title: '[06.AUDIT] 예외 Audit 관리',
