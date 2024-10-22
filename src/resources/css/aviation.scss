@@ -293,7 +293,12 @@ meter::-webkit-meter-optimum-value {
 .detailForm-detail-3deps{border:0;overflow:hidden}
 .detailForm-detail-4deps{border:0;overflow:hidden}
 
-
+.box-view-list .view-list .text-desc-type1 .opinion > .edit-area .detailForm .editbox.report + .editbox.report{margin-top:2rem}
+.box-view-list .view-list .text-desc-type1 .opinion > .edit-area .detailForm .editbox.report .box-view-list .view-list .accumlate-list .text-desc-type1 .info-board .edit-area.report{padding:1rem 0rem}
+.box-view-list .view-list .text-desc-type1 .opinion > .edit-area .detailForm .editbox.report .box-view-list .view-list .accumlate-list .text-desc-type1 .info-box{display:inline}
+.box-view-list .view-list .text-desc-type1 .opinion > .edit-area .detailForm .editbox.report .box-view-list .view-list .accumlate-list .text-desc-type1 .info-box li{display:inline-block}
+.box-view-list .view-list .text-desc-type1 .opinion > .edit-area .detailForm .editbox.report .box-view-list .view-list .accumlate-list .text-desc-type1 .info-box li .tt{display:inline-block;padding:0rem 0.8rem;border:solid 0.1rem var(--color-neutral-50);background-color:var(--color-neutral-20);border-radius:99.9rem;}
+.box-view-list .view-list .text-desc-type1 .opinion > .edit-area .detailForm .editbox.report .box-view-list .view-list .accumlate-list .text-desc-type1 .info-box li + li{margin-left:1.5rem}
 
 /*인풋박스 안 툴팁*/
 .contents .form-table .form-cell .form-group{position:relative}

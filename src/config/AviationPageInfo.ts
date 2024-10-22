@@ -135,6 +135,7 @@ import AdminSPIPEdit from '@/components/publish/aviation/AdminSPIPEdit';
 import AdminSPIPDetail from '@/components/publish/aviation/AdminSPIPDetail';
 import AuditList from '@/components/publish/aviation/AuditList';
 import AuditDetail from '@/components/publish/aviation/AuditDetail';
+import AuditQuality from '@/components/publish/aviation/AuditQuality';
 import { fa, fakerLV } from '@faker-js/faker';
 import { fail } from 'assert';
 
@@ -750,8 +751,8 @@ AviationPageInfo.list = [
   },
   {
     title: '[06.AUDIT] 품질심사 현황',
-    Component: MyAuditClose,
-    path: 'MyAuditClose',
+    Component: AuditQuality,
+    path: 'AuditQuality',
     description: '',
     success: false,
   },

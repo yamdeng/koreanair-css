@@ -6,9 +6,30 @@ import AppTextInput from '@/components/common/AppTextInput';
 import { getAllData } from '@/data/grid/example-data-new';
 import { testColumnInfos } from '@/data/grid/table-column';
 import AppTextArea from '@/components/common/AppTextArea';
+import { useState } from 'react';
 import AppAutoComplete from '@/components/common/AppAutoComplete';
 
 function PayDetail() {
+  const [inputValue, setInputValue] = useState('');
+  const [firstExpaned, setFirstExpaned] = useState(true);
+  const [secondExpaned, setSecondExpaned] = useState(true);
+  const [thirdExpaned, setThirdExpaned] = useState(true);
+  const [fourExpaned, setFourExpaned] = useState(true);
+  const [fiveExpaned, setFiveExpaned] = useState(true);
+  const [sixExpaned, setSixExpaned] = useState(true);
+  const [sevenExpaned, setSevenExpaned] = useState(true);
+  const [eightExpaned, setEightExpaned] = useState(true);
+  const [nineExpaned, setNineExpaned] = useState(true);
+  const [tenExpaned, setTenExpaned] = useState(true);
+  const [elevenExpaned, setElevenExpaned] = useState(true);
+  const [twelveExpaned, setTwelveExpaned] = useState(true);
+  const [thirteenExpaned, setThirteenExpaned] = useState(true);
+  const [fourteenExpaned, setFourteenExpaned] = useState(true);
+  const [fifteenExpaned, setFifteenExpaned] = useState(true);
+  const [sixteenExpaned, setSixteenExpaned] = useState(true);
+  const toggleTr = () => {
+    setSixteenExpaned(!sixteenExpaned);
+  };
   const rowData = getAllData();
   const columns = testColumnInfos;
   return (
@@ -108,7 +129,417 @@ function PayDetail() {
                       <span className="required"></span>
                     </label>
                     <span className="text-desc-type1">
-                      <div className="opinion">조회영역</div>
+                      <div className="opinion">
+                        <div className="edit-area">
+                          <div className="detailForm">
+                            {/* 보고서내용보기 상세*/}
+                            <div className="editbox report">
+                              {/* <div className="header-tit">보고서내용</div> */}
+                              <div className="form-table line">
+                                <div className="form-cell wid100">
+                                  <div className="form-group wid100">
+                                    <div className="box-view-list">
+                                      <ul className="view-list">
+                                        <li className="accumlate-list">
+                                          <label className="t-label">Subject</label>
+                                          <span className="text-desc-type1">GPS SIGNAL INTERFERENCE IN ANKARA FIR</span>
+                                        </li>
+                                      </ul>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div className="form-table line">
+                                <div className="form-cell wid100">
+                                  <div className="form-group wid100">
+                                    <div className="box-view-list">
+                                      <ul className="view-list">
+                                        <li className="accumlate-list">
+                                          <label className="t-label">Description</label>
+                                          <span className="text-desc-type1">
+                                            ANKARA FIR 진입 후 "ADS-B OUT" 시현. 관련 CHECK LIST 및 POM 절차수행후
+                                            FLIGHT MAINTENANCE LOG 기입.{' '}
+                                          </span>
+                                        </li>
+                                      </ul>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+
+                            <div className="editbox report">
+                              {/* <div className="header-tit">Risk Assesment</div> */}
+                              <div className="form-table line">
+                                <div className="form-cell wid100">
+                                  <div className="form-group wid100">
+                                    <div className="box-view-list">
+                                      <ul className="view-list">
+                                        <li className="accumlate-list">
+                                          <label className="t-label">Risk Assesment</label>
+                                          <span className="text-desc-type1">
+                                            <div className="listtable">
+                                              <table className="info-board">
+                                                <colgroup>
+                                                  <col width="25%" />
+                                                  <col width="18%" />
+                                                  <col width="12%" />
+                                                  <col width="8%" />
+                                                  <col width="18%" />
+                                                  <col width="10%" />
+                                                  <col width="9%" />
+                                                </colgroup>
+                                                <thead>
+                                                  <tr>
+                                                    <th>Hazard</th>
+                                                    <th>Potential Consequence</th>
+                                                    <th>Risk Level 1</th>
+                                                    <th>Mitigation</th>
+                                                    <th>Register</th>
+                                                    <th>Status</th>
+                                                    <th>Action</th>
+                                                  </tr>
+                                                </thead>
+                                                <tbody>
+                                                  <tr>
+                                                    <td className="tl">Lightning strike Environmental/Weather</td>
+                                                    <td className="tl">Aircraft Change</td>
+                                                    <td>
+                                                      <div className="Safety-table-cell">
+                                                        <span className="Safety-tag riskLevel level1">3A</span>
+                                                      </div>
+                                                    </td>
+                                                    <td className="fix vm">
+                                                      <div className="radio-wrap center">
+                                                        <label className="text-no">
+                                                          <input type="checkbox" />
+                                                          <span className="text-no"></span>
+                                                        </label>
+                                                      </div>
+                                                    </td>
+                                                    <td className="tl">LSC김리더(LeaderKim)</td>
+                                                    <td>평가중</td>
+                                                    <td>
+                                                      <a href="javascript:void(0);" className="btn-modify">
+                                                        delete
+                                                      </a>
+                                                    </td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td className="tl">Sandstorm Environmental/Weather</td>
+                                                    <td className="tl">Escape slide deployment</td>
+                                                    <td>
+                                                      <div className="Safety-table-cell">
+                                                        <span className="Safety-tag riskLevel level3">2B</span>
+                                                      </div>
+                                                    </td>
+                                                    <td className="fix vm">
+                                                      <div className="radio-wrap center">
+                                                        <label className="text-no">
+                                                          <input type="checkbox" />
+                                                          <span className="text-no"></span>
+                                                        </label>
+                                                      </div>
+                                                    </td>
+                                                    <td className="tl">LSC김리더(LeaderKim)</td>
+                                                    <td>평가중</td>
+                                                    <td>
+                                                      <a href="javascript:void(0);" className="btn-modify">
+                                                        delete
+                                                      </a>
+                                                    </td>
+                                                  </tr>
+                                                </tbody>
+                                              </table>
+                                            </div>
+                                          </span>
+                                        </li>
+                                      </ul>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div className="form-table line">
+                                <div className="form-cell wid100">
+                                  <div className="form-group wid100">
+                                    <div className="box-view-list">
+                                      <ul className="view-list">
+                                        <li className="accumlate-list">
+                                          <label className="t-label">수행지정정보</label>
+                                          <span className="text-desc-type1">
+                                            <div className="info-box">
+                                              <ul>
+                                                <li>
+                                                  <span className="tt">부서</span> 운항본부
+                                                </li>
+                                                <li>
+                                                  <span className="tt">리더</span> 홍길동
+                                                </li>
+                                                <li>
+                                                  <span className="tt">팀원</span> 이씨, 김씨, 홍씨
+                                                </li>
+                                              </ul>
+                                            </div>
+                                          </span>
+                                        </li>
+                                      </ul>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+
+                            <div className="editbox report">
+                              {/* <div className="header-tit">Risk Assesment</div> */}
+                              <div className="form-table line">
+                                <div className="form-cell wid100">
+                                  <div className="form-group wid100">
+                                    <div className="box-view-list">
+                                      <ul className="view-list">
+                                        <li className="accumlate-list">
+                                          <label className="t-label">Risk Assesment</label>
+                                          <span className="text-desc-type1">
+                                            <div className="listtable">
+                                              <table className="info-board">
+                                                <colgroup>
+                                                  <col width="25%" />
+                                                  <col width="18%" />
+                                                  <col width="8%" />
+                                                  <col width="8%" />
+                                                  <col width="14%" />
+                                                  <col width="10%" />
+                                                  <col width="8%" />
+                                                  <col width="9%" />
+                                                </colgroup>
+                                                <thead>
+                                                  <tr>
+                                                    <th>Hazard</th>
+                                                    <th>Potential Consequence</th>
+                                                    <th>Risk Level 1</th>
+                                                    <th>Team</th>
+                                                    <th>Mitigation Result</th>
+                                                    <th>Risk Level 2</th>
+                                                    <th>Status</th>
+                                                    <th>Action</th>
+                                                  </tr>
+                                                </thead>
+                                                <tbody>
+                                                  <tr onClick={() => toggleTr()}>
+                                                    <td className="tl">Lightning strike Environmental/Weather</td>
+                                                    <td className="tl">Aircraft Change</td>
+                                                    <td>
+                                                      <div className="Safety-table-cell">
+                                                        <span className="Safety-tag riskLevel level1">3A</span>
+                                                      </div>
+                                                    </td>
+                                                    <td className="fix vm">운항지원팀</td>
+                                                    <td className="tl"></td>
+                                                    <td>
+                                                      <div className="Safety-table-cell">
+                                                        <span className="Safety-tag riskLevel level4">1B</span>
+                                                      </div>
+                                                    </td>
+                                                    <td>대기</td>
+                                                    <td></td>
+                                                  </tr>
+                                                  <tr style={{ display: sixteenExpaned ? '' : 'none' }}>
+                                                    <td colSpan={8} className="tl">
+                                                      {/*상세조회 */}
+                                                      <div className="edit-area report">
+                                                        <div className="detail-form">
+                                                          <div className="detail-list">
+                                                            <div className="form-table">
+                                                              <div className="form-cell wid50">
+                                                                <div className="form-group wid100">
+                                                                  <div className="box-view-list">
+                                                                    <ul className="view-list">
+                                                                      <li className="accumlate-list">
+                                                                        <label className="t-label">Flight Crew</label>
+                                                                        <span className="text-desc-type1">
+                                                                          <div className="MemberClass">
+                                                                            <div className="flex-e">
+                                                                              <span className="ant-tag">PF</span>
+                                                                              <span className="InfoBox"></span>
+                                                                              <div className="Info">
+                                                                                <div className="Name">
+                                                                                  홍길동 (170****)
+                                                                                </div>
+                                                                                <div className="Dept">
+                                                                                  상무대우수석사무장 / (주)대한항공
+                                                                                </div>
+                                                                              </div>
+                                                                            </div>
+                                                                            <div className="flex-e">
+                                                                              <span className="ant-tag">PF</span>
+                                                                              <span className="InfoBox"></span>
+                                                                              <div className="Info">
+                                                                                <div className="Name">
+                                                                                  홍길동 (170****)
+                                                                                </div>
+                                                                                <div className="Dept">
+                                                                                  상무대우수석사무장 / (주)대한항공
+                                                                                </div>
+                                                                              </div>
+                                                                            </div>
+                                                                          </div>
+                                                                        </span>
+                                                                      </li>
+                                                                    </ul>
+                                                                  </div>
+                                                                </div>
+                                                              </div>
+                                                            </div>
+                                                            <div className="form-table">
+                                                              <div className="form-cell wid50">
+                                                                <div className="form-group wid100">
+                                                                  <div className="box-view-list">
+                                                                    <ul className="view-list">
+                                                                      <li className="accumlate-list">
+                                                                        <label className="t-label">Plan Due Date</label>
+                                                                        <span className="text-desc-type1">
+                                                                          2024-10-30
+                                                                        </span>
+                                                                      </li>
+                                                                    </ul>
+                                                                  </div>
+                                                                </div>
+                                                              </div>
+                                                              <div className="form-cell wid50">
+                                                                <div className="form-group wid100">
+                                                                  <div className="box-view-list">
+                                                                    <ul className="view-list">
+                                                                      <li className="accumlate-list">
+                                                                        <label className="t-label">Plan</label>
+                                                                        <span className="text-desc-type1">
+                                                                          PlanPlanPlanPlanPlanPlan
+                                                                        </span>
+                                                                      </li>
+                                                                    </ul>
+                                                                  </div>
+                                                                </div>
+                                                              </div>
+                                                            </div>
+                                                            <div className="form-table">
+                                                              <div className="form-cell wid50">
+                                                                <div className="form-group wid100">
+                                                                  <div className="box-view-list">
+                                                                    <ul className="view-list">
+                                                                      <li className="accumlate-list">
+                                                                        <label className="t-label">Plan Due Date</label>
+                                                                        <span className="text-desc-type1">
+                                                                          2024-10-30
+                                                                        </span>
+                                                                      </li>
+                                                                    </ul>
+                                                                  </div>
+                                                                </div>
+                                                              </div>
+                                                              <div className="form-cell wid50">
+                                                                <div className="form-group wid100">
+                                                                  <div className="box-view-list">
+                                                                    <ul className="view-list">
+                                                                      <li className="accumlate-list">
+                                                                        <label className="t-label">Result</label>
+                                                                        <span className="text-desc-type1">
+                                                                          ResultResultResultResult
+                                                                        </span>
+                                                                      </li>
+                                                                    </ul>
+                                                                  </div>
+                                                                </div>
+                                                              </div>
+                                                            </div>
+                                                            <div className="form-table">
+                                                              <div className="form-cell wid50">
+                                                                <div className="form-group wid100">
+                                                                  <div className="box-view-list">
+                                                                    <ul className="view-list">
+                                                                      <li className="accumlate-list">
+                                                                        <label className="t-label">
+                                                                          Result Input Data{' '}
+                                                                        </label>
+                                                                        <span className="text-desc-type1">
+                                                                          2024-10-30
+                                                                        </span>
+                                                                      </li>
+                                                                    </ul>
+                                                                  </div>
+                                                                </div>
+                                                              </div>
+                                                              <div className="form-cell wid50">
+                                                                <div className="form-group wid100">
+                                                                  <div className="box-view-list">
+                                                                    <ul className="view-list">
+                                                                      <li className="accumlate-list">
+                                                                        <label className="t-label">첨부파일</label>
+                                                                        <span className="text-desc-type1">
+                                                                          <div className="desc-file">
+                                                                            <a href="javascript:void(0);">
+                                                                              <span className="download"></span>
+                                                                              <span>첨부파일.zip</span>
+                                                                            </a>
+                                                                          </div>
+                                                                        </span>
+                                                                      </li>
+                                                                    </ul>
+                                                                  </div>
+                                                                </div>
+                                                              </div>
+                                                            </div>
+                                                          </div>
+                                                        </div>
+                                                      </div>
+                                                    </td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td className="tl">Sandstorm Environmental/Weather</td>
+                                                    <td className="tl">Escape slide deployment</td>
+                                                    <td>
+                                                      <div className="Safety-table-cell">
+                                                        <span className="Safety-tag riskLevel level3">2B</span>
+                                                      </div>
+                                                    </td>
+                                                    <td className="fix vm">정비안전보건팀</td>
+                                                    <td className="tl"></td>
+                                                    <td>
+                                                      <div className="Safety-table-cell">
+                                                        <span className="Safety-tag riskLevel level4">1B</span>
+                                                      </div>
+                                                    </td>
+                                                    <td>대기</td>
+                                                    <td></td>
+                                                  </tr>
+                                                </tbody>
+                                              </table>
+                                            </div>
+                                          </span>
+                                        </li>
+                                      </ul>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div className="form-table line">
+                                <div className="form-cell wid100">
+                                  <div className="form-group wid100">
+                                    <div className="box-view-list">
+                                      <ul className="view-list">
+                                        <li className="accumlate-list">
+                                          <label className="t-label">Mitigation</label>
+                                          <span className="text-desc-type1">
+                                            ANKARA FIR 진입 후 "ADS-B OUT" 시현. 관련 CHECK LIST 및 POM 절차수행후
+                                            FLIGHT MAINTENANCE LOG 기입.{' '}
+                                          </span>
+                                        </li>
+                                      </ul>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                     </span>
                   </li>
                 </ul>
