@@ -133,7 +133,8 @@ import Auditcarsearch from '@/components/publish/aviation/Auditcarsearch';
 import AdminSPIPList from '@/components/publish/aviation/AdminSPIPList';
 import AdminSPIPEdit from '@/components/publish/aviation/AdminSPIPEdit';
 import AdminSPIPDetail from '@/components/publish/aviation/AdminSPIPDetail';
-
+import AuditList from '@/components/publish/aviation/AuditList';
+import AuditDetail from '@/components/publish/aviation/AuditDetail';
 import { fa, fakerLV } from '@faker-js/faker';
 import { fail } from 'assert';
 
@@ -727,9 +728,16 @@ AviationPageInfo.list = [
     success: true,
   },
   {
-    title: '[06.AUDIT] 예외 Audit 관리',
-    Component: MyAuditClose,
-    path: 'MyAuditClose',
+    title: '[06.AUDIT] 예외 Audit 관리 리스트',
+    Component: AuditList,
+    path: 'AuditList',
+    description: '',
+    success: true,
+  },
+  {
+    title: '[06.AUDIT] 예외 Audit 관리 상세',
+    Component: AuditDetail,
+    path: 'AuditDetail',
     description: '',
     success: false,
   },
