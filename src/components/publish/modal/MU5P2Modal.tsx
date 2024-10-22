@@ -152,9 +152,9 @@ function UserEditModal(props) {
                   <td>4</td>
                   <td>
                     <span className="tit"> 피해가 발생할 가능성이 높음</span>
-                    <br /> 가드ㆍ방호덮개, 기타 <span className="red">안전장치가 없거나</span> 상당한 불비(不備)가 있고,
-                    비상정지장치, 표시ㆍ표지는 웬만큼 설치되어 있으며, 안전수칙ㆍ작업표준 등은 있지만 지키기 어렵고 많은
-                    주의를 해야 함
+                    <br /> 가드ㆍ방호덮개, 기타 <span className="txt-red">안전장치가 없거나</span> 상당한 불비(不備)가
+                    있고, 비상정지장치, 표시ㆍ표지는 웬만큼 설치되어 있으며, 안전수칙ㆍ작업표준 등은 있지만 지키기
+                    어렵고 많은 주의를 해야 함
                     <br />
                   </td>
                 </tr>
@@ -166,8 +166,8 @@ function UserEditModal(props) {
                     <span className="tit">부주의하면 피해가 발생할 가능성이 있음</span>
                     <br />
                     가드ㆍ방호덮개 등 안전장치는 설치되어 있지만, 가드가 낮거나 간격이 벌어져 있는 등 불비(不備)가 있고,
-                    <span className="red">위험영역 접근, 위험원과의 접촉</span>이 있을 수 있으며, 안전수칙 등은 있지만{' '}
-                    <span className="red">일부 준수하기 어려움</span>
+                    <span className="txt-red">위험영역 접근, 위험원과의 접촉</span>이 있을 수 있으며, 안전수칙 등은
+                    있지만 <span className="txt-red">일부 준수하기 어려움</span>
                   </td>
                 </tr>
                 <tr>
