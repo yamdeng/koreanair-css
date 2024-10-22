@@ -41,23 +41,86 @@ function PAviationsub1() {
   }, []);
   return (
     <>
+      <div className="h3-tit">Air Safety Report</div>
       <div className="av-submain-wrap">
-        <div className="av-layout-content">
-          <div className="h3">Air Safety Report</div>
-          <div className="av-area">
-            <div className="av-box">
-              <a href="javascript:void(0);">
-                <div className="tit-wrap"></div>
-                <i className="icon-img">
-                  <img src={chartasr} className="" alt="ASR" />
-                </i>
-              </a>
-            </div>
-            <div className="av-box">
-              <a href="javascript:void(0);">
-                <div className=""></div>
-              </a>
-            </div>
+        <div className="av-area">
+          <div className="av-box">
+            <div className="tit-wrap">Air Safety Report</div>
+            <a href="javascript:void(0);">
+              <i className="icon-img">
+                <img src={chartasr} className="" alt="ASR" />
+              </i>
+            </a>
+          </div>
+        </div>
+        <div className="av-area">
+          <div className="av-box">
+            <div className="tit-wrap">객실안전보고서</div>
+            <a href="javascript:void(0);">
+              <i className="icon-img">
+                <img src={chartasr} className="" alt="ASR" />
+              </i>
+            </a>
+          </div>
+        </div>
+        <div className="av-area">
+          <div className="av-box">
+            <div className="tit-wrap">정비안전보고서</div>
+            <a href="javascript:void(0);">
+              <i className="icon-img">
+                <img src={chartasr} className="" alt="ASR" />
+              </i>
+            </a>
+          </div>
+        </div>
+        <div className="av-area">
+          <div className="av-box">
+            <a href="javascript:void(0);">
+              <div className="tit-wrap">지상안전보고서</div>
+              <i className="icon-img">
+                <img src={chartasr} className="" alt="ASR" />
+              </i>
+            </a>
+          </div>
+        </div>
+        <div className="av-area">
+          <div className="av-box">
+            <a href="javascript:void(0);">
+              <div className="tit-wrap">운항관리사안전보고서</div>
+              <i className="icon-img">
+                <img src={chartasr} className="" alt="ASR" />
+              </i>
+            </a>
+          </div>
+        </div>
+        <div className="av-area">
+          <div className="av-box">
+            <a href="javascript:void(0);">
+              <div className="tit-wrap">램프안전보고서</div>
+              <i className="icon-img">
+                <img src={chartasr} className="" alt="ASR" />
+              </i>
+            </a>
+          </div>
+        </div>
+        <div className="av-area">
+          <div className="av-box">
+            <a href="javascript:void(0);">
+              <div className="tit-wrap">FOQA</div>
+              <i className="icon-img">
+                <img src={chartasr} className="" alt="ASR" />
+              </i>
+            </a>
+          </div>
+        </div>
+        <div className="av-area">
+          <div className="av-box">
+            <div className="tit-wrap">Hazard Report</div>
+            <a href="javascript:void(0);">
+              <i className="icon-img">
+                <img src={chartasr} className="" alt="ASR" />
+              </i>
+            </a>
           </div>
         </div>
       </div>

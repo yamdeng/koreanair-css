@@ -33,6 +33,12 @@ function PAviationPortal1() {
     slidesToShow: 1,
     slidesToScroll: 1,
   };
+
+  const [icon, setIcon] = useState('');
+  const handleMouseOver = (a) => {
+    setIcon(a);
+  };
+
   useEffect(() => {
     setIsAviationPortal(true);
     return () => {
@@ -48,19 +54,46 @@ function PAviationPortal1() {
         </a>
         <ul>
           <li>
-            <a href="javascript:void(0);" className="asr active">
-              <span className="active-bg ">Air Safety Repot</span>
+            <a
+              href="javascript:void(0);"
+              className={icon === 'asr' ? 'asr active' : 'asr'}
+              onMouseEnter={() => {
+                handleMouseOver('asr');
+              }}
+              onMouseLeave={() => {
+                handleMouseOver('');
+              }}
+            >
+              <span className={icon === 'asr' ? 'active-bg' : 'bg'}>Air Safety Repot</span>
             </a>
           </li>
           <li>
-            <a href="javascript:void(0);" className="csr">
-              <span className="bg">객실안전보고서</span>
+            <a
+              href="javascript:void(0);"
+              className={icon === 'csr' ? 'csr active' : 'csr'}
+              onMouseEnter={() => {
+                handleMouseOver('csr');
+              }}
+              onMouseLeave={() => {
+                handleMouseOver('');
+              }}
+            >
+              <span className={icon === 'csr' ? 'active-bg' : 'bg'}>객실안전보고서</span>
               {/*hover시 */}
             </a>
           </li>
           <li>
-            <a href="javascript:void(0);" className="msr">
-              <span className="bg">장비안전보고서</span>
+            <a
+              href="javascript:void(0);"
+              className={icon === 'msr' ? 'msr active' : 'msr'}
+              onMouseEnter={() => {
+                handleMouseOver('msr');
+              }}
+              onMouseLeave={() => {
+                handleMouseOver('');
+              }}
+            >
+              <span className={icon === 'msr' ? 'active-bg' : 'bg'}>장비안전보고서</span>
             </a>
           </li>
           <li>

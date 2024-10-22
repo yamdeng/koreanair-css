@@ -1012,28 +1012,41 @@ meter::-webkit-meter-optimum-value {
   .grid-item.photo .slick-slider .slick-dots li.slick-active button{background-color:var(--color-darkblue-100);width:2rem}
 
 /* 서브 메인 레이아웃*/
-.av-submain-wrap{display:flex;flex:auto;flex-direction:column;min-height:0;box-sizing:border-box;border:solid 1px red;}
-.av-submain-wrap .av-layout-content{position:relative;display:flex; flex: auto;flex-direction: column;}
-.av-submain-wrap .av-layout-content .h3{font-size:10.0rem;color:var(--color-neutral-40);}
-.av-submain-wrap .av-layout-content .av-area{display:flex;justify-content: flex-end;gap:0 1rem;
-  // flex-direction: column;
-  // justify-content: space-around;
-  -webkit-box-align: center;
-  align-items: center;
-  position: relative;
-  padding-top: 100px;
-  padding-bottom: 30px;}
-.av-submain-wrap .av-layout-content .av-area .av-box{position:relative;background-color:var(--color-neutral-10);padding: 26px 40px 30px;border-radius:20px}
-.av-submain-wrap .av-layout-content .av-area .av-box a{display:block}
-.av-submain-wrap .av-layout-content .av-area .av-box a .tit-wrap{}
-.av-submain-wrap .av-layout-content .av-area .av-box > a .icon-img {
-  width: 105px;
-  height: 95px;display: inline-flex;
+.h3-tit{width:100%;font-size:10.0rem;font-weight:700;color:var(--color-neutral-40);}
+.av-submain-wrap{display:flex;
+  justify-content:flex-end;
+  flex-flow: row wrap;
+  width: 100%;margin-top: 300px;
+  box-sizing: border-box;padding: 0 0 2rem;/*display:flex;flex:auto;flex-direction:column;min-height:0;box-sizing:border-box*/}
+
+
+// .av-submain-wrap .av-area{display:flex;justify-content:flex-end;gap:0 1rem;
+// -webkit-box-align: center;align-items: center;position:relative;padding-top:220px;padding-bottom: 30px;}
+.av-submain-wrap .av-area{display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;gap:0 0.5rem;
+    width: 20%;margin: 1rem 0 0rem;
+    box-sizing: border-box;
+    overflow: hidden;}
+.av-submain-wrap .av-area .av-box{position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 0.8rem;
+  padding: 1.2rem 1rem;
+  margin-right: 1rem;
+  border: solid 0rem var(--color-neutral-01);
+  background-color: var(--color-neutral-10);
+}
+.av-submain-wrap .av-area .av-box a{display: inline-flex;justify-content: end;width: 100%;}
+.av-submain-wrap .av-area .av-box .tit-wrap{}
+.av-submain-wrap .av-area .av-box > a .icon-img {display: inline-flex;
+  width: 105px;border-radius: 100%;
+  height:105px;        background-color: var(--color-aviation-mainBg);
   -webkit-box-pack: center;
   justify-content: center;
   -webkit-box-align: center;
   align-items: center;
-  margin-top: 20px;border:solid 1px red
+  margin-top: 20px;
 }
 
 
