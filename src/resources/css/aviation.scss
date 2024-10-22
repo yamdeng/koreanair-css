@@ -1026,8 +1026,7 @@ meter::-webkit-meter-optimum-value {
     justify-content: flex-start;
     flex-wrap: wrap;gap:0 0.5rem;
     width: 20%;margin: 1rem 0 0rem;
-    box-sizing: border-box;
-    overflow: hidden;}
+    box-sizing: border-box }
 .av-submain-wrap .av-area .av-box{position: relative;
   width: 100%;
   height: 100%;
@@ -1035,8 +1034,7 @@ meter::-webkit-meter-optimum-value {
   padding: 1.2rem 1rem;
   margin-right: 1rem;
   border: solid 0rem var(--color-neutral-01);
-  background-color: var(--color-neutral-10);
-}
+  background-color: var(--color-neutral-10);box-shadow: 0.3rem 0.3rem 0.5rem rgba(0, 0, 0, 0.1)}
 .av-submain-wrap .av-area .av-box a{display: inline-flex;justify-content: end;width: 100%;}
 .av-submain-wrap .av-area .av-box .tit-wrap{}
 .av-submain-wrap .av-area .av-box > a .icon-img {display: inline-flex;

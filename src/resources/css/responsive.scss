@@ -95,7 +95,7 @@
   .main-visual01.active .page1_conts .swiper {width: 100%; padding: 0 2.4rem;}
 
   .av-submain-wrap{display: flex;justify-content: flex-start;flex-flow: row wrap;width: 100%;}
-  .av-submain-wrap .av-area{display: flex;justify-content: flex-start;flex-wrap: wrap;gap:0 0.5rem;width:50%;margin: 1rem 0 0rem;box-sizing: border-box;overflow: hidden;}
+  .av-submain-wrap .av-area{display: flex;justify-content: flex-start;flex-wrap: wrap;gap:0 0.5rem;width:50%;margin: 1rem 0 0rem;box-sizing: border-box}
 }
 
 
@@ -350,8 +350,8 @@
 
     .editbox .form-table .form-cell.audit-close {width: 80%;}
 
-  .av-submain-wrap{display: flex;justify-content: flex-start;flex-flow: row wrap;width: 100%;}
-  .av-submain-wrap .av-area{display: flex;justify-content: flex-start;flex-wrap: wrap;gap:0 0.5rem;width:50%;margin: 1rem 0 0rem;box-sizing: border-box;overflow: hidden;}
+.av-submain-wrap{display:flex;justify-content:flex-start;flex-flow: row wrap;width:100%}
+.av-submain-wrap .av-area{display:flex;justify-content:flex-start;flex-wrap:wrap;gap:0 0.5rem;width:50%;margin:1rem 0 0rem;box-sizing:border-box}
     
 }
 
@@ -715,8 +715,8 @@
 
     .editbox .form-table .form-cell.audit-close {width: 80%;}
 
-.av-submain-wrap{display: flex;justify-content: flex-start;flex-flow: row wrap;width: 100%;}
-.av-submain-wrap .av-area{display: flex;justify-content: flex-start;flex-wrap: wrap;gap:0 0.5rem;width:50%;margin: 1rem 0 0rem;box-sizing: border-box;overflow: hidden;}
+.av-submain-wrap{display:flex;justify-content:flex-start;flex-flow:row wrap;width:100%}
+.av-submain-wrap .av-area{display:flex;justify-content:flex-start;flex-wrap: wrap;gap:0 0.5rem;width:50%;margin:1rem 0 0rem;box-sizing:border-box}
 }
 
 
@@ -1191,8 +1191,8 @@
 
     .info-wrap > dl > dt .btn-tg{font-size:1.8rem;}
 
-.av-submain-wrap{display: flex;justify-content: flex-start;flex-flow: row wrap;width: 100%;}
-.av-submain-wrap .av-area{display: flex;justify-content: flex-start;flex-wrap: wrap;gap:0 0.5rem;width:100%;margin: 1rem 0 0rem;box-sizing: border-box;overflow: hidden;}
+.av-submain-wrap{display:flex;justify-content:flex-start;flex-flow:row wrap;width:100%}
+.av-submain-wrap .av-area{display:flex;justify-content:flex-start;flex-wrap:wrap;gap:0 0.5rem;width:100%;margin: 1rem 0 0rem;box-sizing: border-box}
 
   }
 
@@ -1289,6 +1289,6 @@
 
   .info-wrap > dl > dt .btn-tg{font-size:1.6rem;}
 
-.av-submain-wrap{display: flex;justify-content: flex-start;flex-flow: row wrap;width: 100%;}
-.av-submain-wrap .av-area{display: flex;justify-content: flex-start;flex-wrap: wrap;gap:0 0.5rem;width:100%;margin: 1rem 0 0rem;box-sizing: border-box;overflow: hidden;}
+.av-submain-wrap{display:flex;justify-content:flex-start;flex-flow:row wrap;width:100%}
+.av-submain-wrap .av-area{display:flex;justify-content:flex-start;flex-wrap:wrap;gap:0 0.5rem;width:100%;margin:1rem 0 0rem;box-sizing:border-box}
 }
