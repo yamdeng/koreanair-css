@@ -993,7 +993,7 @@ meter::-webkit-meter-optimum-value {
   .grid-item .main-table-box .main-table-todo td.date{text-align:center}
   .grid-item .main-table-box .main-table-todo td a {font-size:1.4rem;font-weight:500;color:var(--color-neutral-80);-webkit-line-clamp:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;padding:1rem}
   .grid-item .main-table-box .main-table-todo td a:hover{text-decoration: underline; color: var(--color-darkblue-100);}
-  .grid-item .main-table-box .graph-area{display:none;display:flex;width:100%;gap:0 1rem}
+  .grid-item .main-table-box .graph-area{display:flex;width:100%;gap:0 1rem}
   .grid-item .main-table-box .graph-area .graph-box{position:relative;box-sizing:border-box;margin:0 auto}
   .grid-item .main-table-box .graph-area .graph-box .txt-box{margin:0 auto;text-align:center}
   .grid-item .main-table-box .graph-area .graph-box .txt-box .txt{font-size:1.4rem}
