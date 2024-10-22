@@ -13,15 +13,15 @@ function Auditcarsearch() {
   const columns = testColumnInfos;
   const customButtons = [
     {
-      title: '일괄업로드',
+      title: '검색',
       onClick: () => {
-        alert('일괄업로드');
+        alert('검색');
       },
     },
     {
-      title: '+ Add Plan',
+      title: '다운로드',
       onClick: () => {
-        alert('+ Add Plan');
+        alert('다운로드');
       },
     },
     {
@@ -594,25 +594,25 @@ function Auditcarsearch() {
         <div className="user-box wid20">
           <div className="user-box-cons">
             {/*Risk Level */}
-            <div className="cons-box">
+            <div className="cons-box yell">
               <div className="txt">Risk Level</div>
               <div className="cons-list scroll">
                 <ul className="list">
                   <li>
                     <div className="list-area">
-                      <button type="button" className="btn-wrap blue active btn-txt">
+                      <button type="button" className="btn-wrap yell active btn-txt">
                         1A
                       </button>
-                      <button type="button" className="btn-wrap blue active btn-txt">
+                      <button type="button" className="btn-wrap yell active btn-txt">
                         1B
                       </button>
-                      <button type="button" className="btn-wrap blue active btn-txt">
+                      <button type="button" className="btn-wrap yell active btn-txt">
                         1C
                       </button>
-                      <button type="button" className="btn-wrap blue active btn-txt">
+                      <button type="button" className="btn-wrap yell btn-txt">
                         1D
                       </button>
-                      <button type="button" className="btn-wrap blue active btn-txt">
+                      <button type="button" className="btn-wrap yell btn-txt">
                         1E
                       </button>
                     </div>
@@ -620,14 +620,13 @@ function Auditcarsearch() {
                 </ul>
               </div>
             </div>
-            <div className="cons-box">search</div>
           </div>
         </div>
       </div>
       {/*//조회*/}
 
       {/*검색영역 */}
-      {/* <div className="boxForm">
+      <div className="boxForm">
         <div id="" className="area-detail myaudit active">
           <div className="form-table">
             <div className="form-cell wid30">
@@ -685,14 +684,14 @@ function Auditcarsearch() {
                     <span>CAR 펼치기</span>
                   </label>
                 </div>
-                <div className="btn-wrap blue active">
+                {/* <div className="btn-wrap blue active">
                   <button type="button" name="button" className="btn-sm btn_text btn-darkblue-line">
                     조회
                   </button>
                   <button type="button" name="button" className="btn-sm btn_text btn-darkblue-line">
                     Guide
                   </button>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>
@@ -701,11 +700,18 @@ function Auditcarsearch() {
         <button type="button" name="button" className="arrow button _control active">
           <span className="hide">접기</span>
         </button>
-      </div> */}
+      </div>
       {/* //검색영역 */}
 
       {/*그리드영역 */}
-      <div className=""></div>
+      <div className="table-area">
+        <h3 className="table-tit"> 운항부분(KE)</h3>
+        <AppTable rowData={rowData} columns={columns} customButtons={customButtons} style={{ height: '100px' }} />
+      </div>
+      <div className="table-area">
+        <h3 className="table-tit">운항부분(KE) - LSA</h3>
+        <AppTable rowData={rowData} columns={columns} customButtons={customButtons} style={{ height: '100px' }} />
+      </div>
       {/*//그리드영역 */}
     </>
   );

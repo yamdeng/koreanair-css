@@ -145,7 +145,7 @@ AviationPageInfo.list = [
     Component: PAviationPortal1,
     path: 'PAviationPortal1',
     description: '',
-    success: false,
+    success: true,
   },
   {
     title: '[서브메인] 메인(안전보고서)',
@@ -738,7 +738,7 @@ AviationPageInfo.list = [
     Component: Auditcarsearch,
     path: 'Auditcarsearch',
     description: '',
-    success: false,
+    success: true,
   },
   {
     title: '[06.AUDIT] 품질심사 현황',
