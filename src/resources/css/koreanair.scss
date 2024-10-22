@@ -555,11 +555,11 @@
 
 .searchbox {display: flex; width: 100%;}
 .left-box {display: inline-table; vertical-align: top; padding-right: 3.0rem;}
-.left-box .tree-box {display: inline-block; max-height: 68rem; width: 100%; /*overflow: auto;*/ background: var(--color-neutral-20); border-radius: 0.8rem; padding: 2.0rem;}
-.left-box .tree-box .tree {min-width: 25.0rem; max-height: 58rem; overflow-y: auto;}
+.left-box .tree-box {display: inline-block; width: 100%; height: calc(100vh - 22.3rem); /*max-height: 68rem; overflow: auto;*/ background: var(--color-neutral-20); border-radius: 0.8rem; padding: 2.0rem;}
+.left-box .tree-box .tree {min-width: 30.0rem; max-height: 58rem; overflow: auto;}
 .left-box .tree-box .tree-list {display: flex;}
 .left-box .tree-box .tree-list .list {display: none;}
-.left-box .tree-box .tree-list .list.active {display: block; height: 100%; width: 100%; vertical-align: top; min-width: 26.0rem; margin-left: 2.0rem;
+.left-box .tree-box .tree-list .list.active {display: block; height: 100%; width: 100%; vertical-align: top; width: 26.0rem; margin-left: 2.0rem;
   .list-table {width: 100%;}
   .list-table thead tr, .list-table tbody tr, .list-table tfoot tr {display: table; width: 100%;}
   .list-table th, .list-table td {padding: 1.0rem 0;border-bottom: 0.1rem solid var(--color-neutral-40); text-align:center;}
@@ -570,6 +570,8 @@
   .list-table tbody {display: block; max-height: 46.2rem; overflow-y: scroll;}
   .list-table tfoot td {color: var(--color-darkblue-100); background-color: var(--color-neutral-30); font-weight: 500;}
 }
+.ant-tree-list-scrollbar-thumb {background:var(--color-neutral-40)}
+
 .right-box {display: inline-block; width: 100%; height: 100%; vertical-align: top;}
 
 .searchlist {display: block; width: 100%;}
@@ -592,7 +594,7 @@
   .list-table th:nth-child(10), .list-table td:nth-child(10){width: 9%;}
   .list-table th {border-top: 0.1rem solid var(--color-darkblue-100); color: var(--color-darkblue-100); background-color: var(--color-neutral-20); font-weight: 500;}
   .list-table td {color: var(--color-neutral-70); font-size: 1.2rem;}
-  .list-table tbody {display: block; height: 16rem; overflow-y: scroll;}
+  .list-table tbody {display: block; height: 15rem; overflow-y: scroll;}
   .list-table tbody tr:hover, .list-table tbody tr:active {width:100%;background-color: var(--color-lightblue-10); cursor: pointer;}
 }
 .searchlist .list-dtail {
@@ -828,8 +830,8 @@
 
   .grid-item.photo{position:relative;padding:0;overflow: hidden;}
   .grid-item .main-photo{height:100%}
-  .grid-item .main-photo img{width:100%;height:100%;object-fit:cover;border-radius:0.8rem}
-  .grid-item .img-tit{display:flex;position:relative;bottom:8.0rem;width:100%;justify-content:center;align-items:center}
+  .grid-item .main-photo img{width:100%;height:100%;object-fit:cover;border-radius:0.8rem;object-position: center;}
+  .grid-item .img-tit{display:flex;position:absolute;top:17.8rem;width:100%;justify-content:center;align-items:center}
   .grid-item .img-tit h3{display:flex;width:100%;justify-content:center;align-items:center;padding:1.0rem 0;background-color:rgba(0,0,0,0.4);font-size:1.8rem;color:var(--color-neutral-10);font-weight:500}
   .grid-item .main-photo-btn{position:absolute;bottom: 0.1rem;width:100%;text-align:center;z-index:99}
   .grid-item .main-photo-btn li{display:inline-block;font-size: 0; margin: 0 0.2rem; cursor: pointer;background-color:var(--color-darkblue-40);border-radius:99.9rem;width:1.0rem;height:1.0rem}
