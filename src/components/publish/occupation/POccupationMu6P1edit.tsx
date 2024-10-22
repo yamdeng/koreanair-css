@@ -79,33 +79,28 @@ function POccupationMu6P1edit() {
             <a href="javascript:void(0);">홈</a>
           </li>
           <li className="breadcrumb-item">
-            <a href="javascript:void(0);">위험성 평가</a>
+            <a href="javascript:void(0);">안전신고</a>
           </li>
           <li className="breadcrumb-item">
-            <a href="javascript:void(0);">협력사 위험성 평가 등록</a>
+            <a href="javascript:void(0);">Hazard Report 등록</a>
           </li>
         </ol>
       </div>
       {/*경로 */}
       <div className="conts-title">
-        <h2>협력사 위험성 평가 등록</h2>
+        <h2>Hazard Report 등록</h2>
       </div>
       {/* 입력영역 */}
       <div className="editbox">
         <div className="form-table line">
           <div className="form-cell wid50">
             <div className="form-group wid100">
-              <AppTextInput label="부문" required disabled />
+              <AppSelect label="비밀보장" required />
             </div>
           </div>
           <div className="form-cell wid50">
             <div className="form-group wid100">
-              <AppTextInput label="부서" required disabled />
-            </div>
-          </div>
-          <div className="form-cell wid50">
-            <div className="form-group wid100">
-              <AppTextInput label="작성자" required disabled />
+              <AppSelect label="KAIRS제출 동의" required />
             </div>
           </div>
         </div>
@@ -113,22 +108,12 @@ function POccupationMu6P1edit() {
         <div className="form-table line">
           <div className="form-cell wid50">
             <div className="form-group wid100">
-              <AppSelect label={'작성일자'} required disabled />
+              <AppSelect label="처리결과 회신" required />
             </div>
           </div>
           <div className="form-cell wid50">
             <div className="form-group wid100">
-              <AppSelect label={'평가년도'} />
-            </div>
-          </div>
-          <div className="form-cell wid50">
-            <div className="form-group wid100">
-              <AppTextInput label="평가구분" />
-            </div>
-          </div>
-          <div className="form-cell wid50">
-            <div className="form-group wid100">
-              <AppTextInput label="협력사" />
+              <AppTextInput label="개인 이메일" required />
             </div>
           </div>
         </div>
@@ -136,7 +121,15 @@ function POccupationMu6P1edit() {
         <div className="form-table">
           <div className="form-cell wid50">
             <div className="form-group wid100">
-              <AppTextInput label="제목" />
+              <AppTextInput label="제목" required />
+            </div>
+          </div>
+        </div>
+        <hr className="line"></hr>
+        <div className="form-table">
+          <div className="form-cell wid50">
+            <div className="form-group wid100">
+              <AppEditor placeholder="입력해주세요." />
             </div>
           </div>
         </div>
