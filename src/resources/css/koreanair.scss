@@ -602,14 +602,23 @@
   width: 100%; 
   h3 {font-size: 1.8rem; font-weight: 500; color: var(--color-darkblue-100); padding: 1.5rem 0 0 0;}
   .list-table {width: 100%; margin-top: 1.0rem;}
-  .list-table thead tr, .list-table tbody tr {width: 100%;}
+  .list-table tr {width: 100%;}
   .list-table th, .list-table td {padding: 1.0rem 0;border-bottom: 0.1rem solid var(--color-neutral-40); text-align:center;}
   .list-table th {border-top: 0.1rem solid var(--color-darkblue-100); color: var(--color-darkblue-100); background-color: var(--color-neutral-20); font-weight: 500;}
   .list-table td {color: var(--color-neutral-70);}
-  .list-table thead th.border-no {border-bottom: 0.1rem solid var(--color-neutral-20); border-right: 0.1rem solid var(--color-neutral-40);}
-  .list-table tbody th {border-right: 0.1rem solid var(--color-neutral-40);}
+  .list-table td.pd-no {padding: 0;}
+  .list-table th.border-no {border-bottom: 0.1rem solid var(--color-neutral-20);}
+  .list-table th.line {border-right: 0.1rem solid var(--color-neutral-40); vertical-align: middle;}
   .pd-style01 {padding: 1.6rem 0.5rem;}
 }
+.tbody-list {display: block; max-height: 8.2rem; overflow-y: auto;}
+.tbody-list .list-table-type2 {width: 100%;}
+.tbody-list .list-table-type2 tr {width: 100%;}
+.tbody-list .list-table-type2 tr td {padding: 1.0rem 0 !important;border-bottom: 0.1rem solid var(--color-neutral-40); text-align:center;}
+.tbody-list .list-table-type2 tr:last-child td {border-bottom: 0 !important;}
+
+
+
 .radio-btn {padding: 0.4rem 1.0rem; background-color: var(--color-lightblue-100); color: var(--color-neutral-10); border-radius: 0.4rem; vertical-align: top; margin: 0.3rem 2.0rem 0 1.0rem; font-size: 1.2rem;}
 .agree {border: 0.1rem solid var(--color-neutral-40); border-radius: 0.8rem; background-color: var(--color-neutral-20); padding: 2.0rem; line-height: 180%; font-size: 1.4rem;}
 

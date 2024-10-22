@@ -383,22 +383,46 @@ function POccupationMu1P3list() {
                   <hr className="line dp-n"></hr>
                 </div>
                 <table className="list-table">
-                  <thead>
+                  <colgroup>
+                    <col width="20%" />
+                    <col width="40%" />
+                    <col width="40%" />
+                  </colgroup>
+                  <tbody>
                     <tr>
-                      <th className="border-no"></th>
+                      <th className="line" rowSpan={2}>
+                        변동내역
+                      </th>
                       <th>일자</th>
                       <th>임명/임면</th>
                     </tr>
-                  </thead>
-                  <tbody>
                     <tr>
-                      <th rowSpan={2}>변동내역</th>
-                      <td>2024.08.29</td>
-                      <td>임명</td>
-                    </tr>
-                    <tr>
-                      <td>2024.08.29</td>
-                      <td>임면</td>
+                      <td className="pd-no" colSpan={2}>
+                        <div className="tbody-list">
+                          <table className="list-table-type2">
+                            <colgroup>
+                              <col width="50%" />
+                              <col width="50%" />
+                            </colgroup>
+                            <tr>
+                              <td>2024-00-00</td>
+                              <td>임명</td>
+                            </tr>
+                            <tr>
+                              <td>2024-00-00</td>
+                              <td>임면</td>
+                            </tr>
+                            <tr>
+                              <td>2024-00-00</td>
+                              <td>임명</td>
+                            </tr>
+                            <tr>
+                              <td>2024-00-00</td>
+                              <td>임면</td>
+                            </tr>
+                          </table>
+                        </div>
+                      </td>
                     </tr>
                   </tbody>
                 </table>
