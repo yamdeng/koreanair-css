@@ -2299,7 +2299,26 @@ function ReportASRDetail() {
                                                   </div>
                                                 </td>
                                                 <td className="tl">LSC김리더(LeaderKim)</td>
-                                                <td>평가중</td>
+                                                <td>
+                                                  {/*사유 툴팁 */}
+                                                  <div className="tag-info-wrap-end1">
+                                                    <div className="anticon">
+                                                      <a href="javascript:void(0);" className="txt"></a>
+                                                    </div>
+                                                  </div>
+                                                  <div className="ant-popover ant-popover-placement-top">
+                                                    <div className="ant-popover-content">
+                                                      <div className="ant-popover-arrow">
+                                                        <span className="ant-popover-arrow-content"></span>
+                                                      </div>
+                                                      <div className="ant-popover-inner" role="tooltip">
+                                                        <div className="ant-popover-title">사유</div>
+                                                        <div className="ant-popover-inner-content">ㅇㄹㅇㄹㅇㄹ</div>
+                                                      </div>
+                                                    </div>
+                                                  </div>
+                                                  평가중
+                                                </td>
                                                 <td>
                                                   <a href="javascript:void(0);" className="btn-modify">
                                                     delete
