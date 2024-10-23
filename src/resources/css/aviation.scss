@@ -610,7 +610,26 @@ meter::-webkit-meter-optimum-value {
   .pro-table td{color: var(--color-neutral-70);}
   .pro-table tbody{}
   .pro-table tbody tr:hover, .pro-table tbody tr:active{width:100%;background-color:var(--color-lightblue-10);cursor:pointer}
+}
 
+.listbox{width: 100%;
+  padding: 2rem 2rem 1rem;
+  .toplisk-table{width:100%;border:1px}
+  .toplisk-table thead tr, .toplisk-table tbody tr{display:table;width:100%}
+  .toplisk-table th{padding:1.0rem 0;border-bottom:0.1rem solid var(--color-neutral-40);text-align:center}
+  .toplisk-table td{padding:0.5rem 0.6rem;border-bottom:0.1rem solid var(--color-neutral-40);text-align:center}
+  .toplisk-table th:nth-child(1), .toplisk-table td:nth-child(1){width:7%;vertical-align:middle}
+  .toplisk-table th:nth-child(2){width:35%;text-align:center}
+  .toplisk-table td:nth-child(2){width:35%;text-align:left}
+  .toplisk-table th:nth-child(3), .toplisk-table td:nth-child(3){width:8%}
+  .toplisk-table th:nth-child(4), .toplisk-table td:nth-child(4){width:10%}
+  .toplisk-table th:nth-child(5), .toplisk-table td:nth-child(5){width:10%}
+  .toplisk-table th:nth-child(6), .toplisk-table td:nth-child(6){width:20%}
+  .toplisk-table th:nth-child(7), .toplisk-table td:nth-child(7){width:10%;padding-right:0}
+  .toplisk-table th{border-top: 0.1rem solid var(--color-darkblue-100);color:var(--color-darkblue-100);background-color: var(--color-neutral-20); font-weight: 500;}
+  .toplisk-table td{color: var(--color-neutral-70);}
+  .toplisk-table tbody{display:block;height:25rem;overflow-y:scroll}
+  .toplisk-table tbody tr:hover, .toplisk-table tbody tr:active {width:100%;background-color: var(--color-lightblue-10); cursor: pointer;}
 }
 .list-dtail{
   display:block; 
@@ -619,6 +638,7 @@ meter::-webkit-meter-optimum-value {
   .form-group .type7{width:100%}
 }
 .CheckList-Title{display:flex;width:100%;align-items:center;vertical-align:middle}
+
 
 .chart-wrap{display:flex;width:100%;justify-content: flex-start;flex-flow: row wrap;box-sizing: border-box;background-color:var(--color-neutral-20);border-radius:0.8rem;padding:2rem 3rem;margin:2rem 0;align-items: center;}
 .chart-wrap .chart-box{position: relative;box-sizing:border-box;width:10%;height: 15rem;}

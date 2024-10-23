@@ -769,7 +769,9 @@ input, select{font-family:'KoreanAirSans'}
   min-height:4rem !important
 }
 .label-select .css-13cymwt-control{height: 4.0rem; border-color: var(--color-neutral-40);}
-.css-t3ipsp-control {height: 4.0rem; box-shadow: none !important;}
+.label-select .css-13cymwt-control .css-1kdzs7b-menu{height:30rem !important}
+.label-select .css-13cymwt-control .css-1nmdiq5-menu{height:30rem !important;background-color: #009bfa;}
+.css-t3ipsp-control {height: 4.0rem; box-shadow: none !important}
 .ant-picker-focused.ant-picker-status-error {
   border:0.1rem solid var(--color-mblue-100) !important;color:var(--color-mblue-100) !important
 }

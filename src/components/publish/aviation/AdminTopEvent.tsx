@@ -5,6 +5,7 @@ import { getAllData } from '@/data/grid/example-data-new';
 import { testColumnInfos } from '@/data/grid/table-column';
 import AppDatePicker from '@/components/common/AppDatePicker';
 import AppSelect from '@/components/common/AppSelect';
+import AppTextInput from '@/components/common/AppTextInput';
 
 function AdminTopEvent() {
   const [inputValue, setInputValue] = useState('');
@@ -102,6 +103,140 @@ function AdminTopEvent() {
           <div className="checklist">
             <div className="h3">Top Event List by Risk Level Score</div>
             <div className="listbox">
+              <div>
+                <table className="toplisk-table">
+                  <thead>
+                    <tr>
+                      <th>
+                        <div className="chk-wrap center">
+                          <label className="text-no">
+                            <input type="checkbox" checked />
+                            <span className="text-no"></span>
+                          </label>
+                        </div>
+                      </th>
+                      <th>event명</th>
+                      <th>건수</th>
+                      <th>낮은심각도</th>
+                      <th>높은심각도</th>
+                      <th>계산값</th>
+                      <th>순서</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <div className="radio-wrap center">
+                          <label className="text-no">
+                            <input type="checkbox" checked />
+                            <span className="text-no"></span>
+                          </label>
+                        </div>
+                      </td>
+                      <td>Gps signal interference</td>
+                      <td>1</td>
+                      <td>D</td>
+                      <td>D</td>
+                      <td className="tr">2,048</td>
+                      <td>
+                        <div className="form-group wid100">
+                          <AppTextInput inputType="number" label="" placeholder="1" className="tc" />
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div className="radio-wrap center">
+                          <label className="text-no">
+                            <input type="checkbox" checked />
+                            <span className="text-no"></span>
+                          </label>
+                        </div>
+                      </td>
+                      <td>Gps signal interference</td>
+                      <td>211</td>
+                      <td>D</td>
+                      <td>D</td>
+                      <td className="tr">2,048</td>
+                      <td>
+                        <div className="form-group wid100">
+                          <AppTextInput type="number" label="" />
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div className="radio-wrap center">
+                          <label className="text-no">
+                            <input type="checkbox" checked />
+                            <span className="text-no"></span>
+                          </label>
+                        </div>
+                      </td>
+                      <td>Gps signal interference</td>
+                      <td>211</td>
+                      <td>D</td>
+                      <td>D</td>
+                      <td className="tr">2,048</td>
+                      <td>
+                        <div className="form-group wid100">
+                          <AppTextInput type="number" label="" />
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div className="radio-wrap center">
+                          <label className="text-no">
+                            <input type="checkbox" checked />
+                            <span className="text-no"></span>
+                          </label>
+                        </div>
+                      </td>
+                      <td>Gps signal interference</td>
+                      <td>211</td>
+                      <td>D</td>
+                      <td>D</td>
+                      <td className="tr">2,048</td>
+                      <td>
+                        <div className="form-group wid100">
+                          <AppTextInput type="number" label="" />
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div className="radio-wrap center">
+                          <label className="text-no">
+                            <input type="checkbox" checked />
+                            <span className="text-no"></span>
+                          </label>
+                        </div>
+                      </td>
+                      <td>Gps signal interference</td>
+                      <td>211</td>
+                      <td>D</td>
+                      <td>D</td>
+                      <td className="tr">2,048</td>
+                      <td>
+                        <div className="form-group wid100">
+                          <AppTextInput type="number" label="" />
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div className="form-cell">
+                <div className="chk-wrap">
+                  <label>
+                    <input type="checkbox" checked />
+                    <span className="ck-list">사용</span>
+                  </label>
+                </div>
+              </div>
+            </div>
+            {/* <div className="listbox">
               <div className="search-list">
                 <ul className="list">
                   <li>
@@ -184,84 +319,134 @@ function AdminTopEvent() {
                   </label>
                 </div>
               </div>
-            </div>
+            </div> */}
           </div>
           <div className="checklist">
             <div className="h3">Top Event List by Risk Level Score(이상값제거)</div>
             <div className="listbox">
-              <div className="search-list">
-                <ul className="list">
-                  <li>
-                    <div className="form-cell">
-                      <div className="chk-wrap">
-                        <label>
-                          <input type="checkbox" checked />
-                          <span className="ck-list">Crew schedule</span>
-                        </label>
-                      </div>
-                    </div>
-                  </li>
-                  <li>
-                    <div className="form-cell">
-                      <div className="chk-wrap">
-                        <label>
-                          <input type="checkbox" />
-                          <span className="ck-list">Flap placard speed over</span>
-                        </label>
-                      </div>
-                    </div>
-                  </li>
-                  <li>
-                    <div className="form-cell">
-                      <div className="chk-wrap">
-                        <label>
-                          <input type="checkbox" />
-                          <span className="ck-list">Securify irregularity(General)Uh-schedule engine removal</span>
-                        </label>
-                      </div>
-                    </div>
-                  </li>
-                  <li>
-                    <div className="form-cell">
-                      <div className="chk-wrap">
-                        <label>
-                          <input type="checkbox" />
-                          <span className="ck-list">Flap placard speed over</span>
-                        </label>
-                      </div>
-                    </div>
-                  </li>
-                  <li>
-                    <div className="form-cell">
-                      <div className="chk-wrap">
-                        <label>
-                          <input type="checkbox" />
-                          <span className="ck-list">Flap placard speed over</span>
-                        </label>
-                      </div>
-                    </div>
-                  </li>
-                  <li>
-                    <div className="form-cell">
-                      <div className="chk-wrap">
-                        <label>
-                          <input type="checkbox" />
-                          <span className="ck-list">Flap placard speed over</span>
-                        </label>
-                      </div>
-                    </div>
-                  </li>
-                  <li>
-                    <div className="form-cell">
-                      <div className="chk-wrap">
-                        <label>
-                          <input type="checkbox" />
-                          <span className="ck-list">Flap placard speed over</span>
-                        </label>
-                      </div>
-                    </div>
-                  </li>
-                </ul>
+              <div>
+                <table className="toplisk-table">
+                  <thead>
+                    <tr>
+                      <th>
+                        <div className="chk-wrap center">
+                          <label className="text-no">
+                            <input type="checkbox" checked />
+                            <span className="text-no"></span>
+                          </label>
+                        </div>
+                      </th>
+                      <th>event명</th>
+                      <th>건수</th>
+                      <th>낮은심각도</th>
+                      <th>높은심각도</th>
+                      <th>계산값</th>
+                      <th>순서</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <div className="radio-wrap center">
+                          <label className="text-no">
+                            <input type="checkbox" checked />
+                            <span className="text-no"></span>
+                          </label>
+                        </div>
+                      </td>
+                      <td>Gps signal interference</td>
+                      <td>1</td>
+                      <td>D</td>
+                      <td>D</td>
+                      <td className="tr">2,048</td>
+                      <td>
+                        <div className="form-group wid100">
+                          <AppTextInput inputType="number" label="" placeholder="1" className="tc" />
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div className="radio-wrap center">
+                          <label className="text-no">
+                            <input type="checkbox" checked />
+                            <span className="text-no"></span>
+                          </label>
+                        </div>
+                      </td>
+                      <td>Gps signal interference</td>
+                      <td>211</td>
+                      <td>D</td>
+                      <td>D</td>
+                      <td className="tr">2,048</td>
+                      <td>
+                        <div className="form-group wid100">
+                          <AppTextInput type="number" label="" />
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div className="radio-wrap center">
+                          <label className="text-no">
+                            <input type="checkbox" checked />
+                            <span className="text-no"></span>
+                          </label>
+                        </div>
+                      </td>
+                      <td>Gps signal interference</td>
+                      <td>211</td>
+                      <td>D</td>
+                      <td>D</td>
+                      <td className="tr">2,048</td>
+                      <td>
+                        <div className="form-group wid100">
+                          <AppTextInput type="number" label="" />
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div className="radio-wrap center">
+                          <label className="text-no">
+                            <input type="checkbox" checked />
+                            <span className="text-no"></span>
+                          </label>
+                        </div>
+                      </td>
+                      <td>Gps signal interference</td>
+                      <td>211</td>
+                      <td>D</td>
+                      <td>D</td>
+                      <td className="tr">2,048</td>
+                      <td>
+                        <div className="form-group wid100">
+                          <AppTextInput type="number" label="" />
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div className="radio-wrap center">
+                          <label className="text-no">
+                            <input type="checkbox" checked />
+                            <span className="text-no"></span>
+                          </label>
+                        </div>
+                      </td>
+                      <td>Gps signal interference</td>
+                      <td>211</td>
+                      <td>D</td>
+                      <td>D</td>
+                      <td className="tr">2,048</td>
+                      <td>
+                        <div className="form-group wid100">
+                          <AppTextInput type="number" label="" />
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
               </div>
               <div className="form-cell">
                 <div className="chk-wrap">
@@ -282,12 +467,146 @@ function AdminTopEvent() {
           <div className="checklist wid100">
             <div className="h3">이상값 검출 Event List</div>
             <div className="listbox">
+              <div>
+                <table className="toplisk-table">
+                  <thead>
+                    <tr>
+                      <th>
+                        <div className="chk-wrap center">
+                          <label className="text-no">
+                            <input type="checkbox" checked />
+                            <span className="text-no"></span>
+                          </label>
+                        </div>
+                      </th>
+                      <th>event명</th>
+                      <th>건수</th>
+                      <th>낮은심각도</th>
+                      <th>높은심각도</th>
+                      <th>계산값</th>
+                      <th>순서</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <div className="radio-wrap center">
+                          <label className="text-no">
+                            <input type="checkbox" checked />
+                            <span className="text-no"></span>
+                          </label>
+                        </div>
+                      </td>
+                      <td>Gps signal interference</td>
+                      <td>1</td>
+                      <td>D</td>
+                      <td>D</td>
+                      <td className="tr">2,048</td>
+                      <td>
+                        <div className="form-group wid100">
+                          <AppTextInput inputType="number" label="" placeholder="1" className="tc" />
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div className="radio-wrap center">
+                          <label className="text-no">
+                            <input type="checkbox" checked />
+                            <span className="text-no"></span>
+                          </label>
+                        </div>
+                      </td>
+                      <td>Gps signal interference</td>
+                      <td>211</td>
+                      <td>D</td>
+                      <td>D</td>
+                      <td className="tr">2,048</td>
+                      <td>
+                        <div className="form-group wid100">
+                          <AppTextInput type="number" label="" />
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div className="radio-wrap center">
+                          <label className="text-no">
+                            <input type="checkbox" checked />
+                            <span className="text-no"></span>
+                          </label>
+                        </div>
+                      </td>
+                      <td>Gps signal interference</td>
+                      <td>211</td>
+                      <td>D</td>
+                      <td>D</td>
+                      <td className="tr">2,048</td>
+                      <td>
+                        <div className="form-group wid100">
+                          <AppTextInput type="number" label="" />
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div className="radio-wrap center">
+                          <label className="text-no">
+                            <input type="checkbox" checked />
+                            <span className="text-no"></span>
+                          </label>
+                        </div>
+                      </td>
+                      <td>Gps signal interference</td>
+                      <td>211</td>
+                      <td>D</td>
+                      <td>D</td>
+                      <td className="tr">2,048</td>
+                      <td>
+                        <div className="form-group wid100">
+                          <AppTextInput type="number" label="" />
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div className="radio-wrap center">
+                          <label className="text-no">
+                            <input type="checkbox" checked />
+                            <span className="text-no"></span>
+                          </label>
+                        </div>
+                      </td>
+                      <td>Gps signal interference</td>
+                      <td>211</td>
+                      <td>D</td>
+                      <td>D</td>
+                      <td className="tr">2,048</td>
+                      <td>
+                        <div className="form-group wid100">
+                          <AppTextInput type="number" label="" />
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div className="form-cell">
+                <div className="chk-wrap">
+                  <label>
+                    <input type="checkbox" checked />
+                    <span className="ck-list">사용</span>
+                  </label>
+                </div>
+              </div>
+            </div>
+            {/* <div className="listbox">
               <div className="search-list">
                 <ul className="list">
                   <div>그리드자리</div>
                 </ul>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
         <div className="info-text">* 주) 분석포함을 선택하면 원래 평가값을 적용하여 재 계산 됩니다.</div>
