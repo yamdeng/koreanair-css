@@ -468,7 +468,7 @@ function AdminTopEvent() {
             <div className="h3">이상값 검출 Event List</div>
             <div className="listbox">
               <div>
-                <table className="toplisk-table">
+                <table className="toplisk1-table">
                   <thead>
                     <tr>
                       <th>
@@ -480,11 +480,11 @@ function AdminTopEvent() {
                         </div>
                       </th>
                       <th>event명</th>
-                      <th>건수</th>
-                      <th>낮은심각도</th>
-                      <th>높은심각도</th>
-                      <th>계산값</th>
-                      <th>순서</th>
+                      <th>Report Type</th>
+                      <th>Doc.No.</th>
+                      <th>Subject</th>
+                      <th>이상값</th>
+                      <th>조정값</th>
                     </tr>
                   </thead>
                   <tbody>
@@ -498,15 +498,11 @@ function AdminTopEvent() {
                         </div>
                       </td>
                       <td>Gps signal interference</td>
-                      <td>1</td>
+                      <td>ASR</td>
+                      <td>ASR-104031</td>
+                      <td className="tl">예측불가운항상황으로 인한 최대승무시간 및 비행근무시간초과</td>
                       <td>D</td>
-                      <td>D</td>
-                      <td className="tr">2,048</td>
-                      <td>
-                        <div className="form-group wid100">
-                          <AppTextInput inputType="number" label="" placeholder="1" className="tc" />
-                        </div>
-                      </td>
+                      <td>E</td>
                     </tr>
                     <tr>
                       <td>
@@ -518,75 +514,11 @@ function AdminTopEvent() {
                         </div>
                       </td>
                       <td>Gps signal interference</td>
-                      <td>211</td>
+                      <td>ASR</td>
+                      <td>ASR-104031</td>
+                      <td className="tl">예측불가운항상황으로 인한 최대승무시간 및 비행근무시간초과</td>
                       <td>D</td>
-                      <td>D</td>
-                      <td className="tr">2,048</td>
-                      <td>
-                        <div className="form-group wid100">
-                          <AppTextInput type="number" label="" />
-                        </div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <div className="radio-wrap center">
-                          <label className="text-no">
-                            <input type="checkbox" checked />
-                            <span className="text-no"></span>
-                          </label>
-                        </div>
-                      </td>
-                      <td>Gps signal interference</td>
-                      <td>211</td>
-                      <td>D</td>
-                      <td>D</td>
-                      <td className="tr">2,048</td>
-                      <td>
-                        <div className="form-group wid100">
-                          <AppTextInput type="number" label="" />
-                        </div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <div className="radio-wrap center">
-                          <label className="text-no">
-                            <input type="checkbox" checked />
-                            <span className="text-no"></span>
-                          </label>
-                        </div>
-                      </td>
-                      <td>Gps signal interference</td>
-                      <td>211</td>
-                      <td>D</td>
-                      <td>D</td>
-                      <td className="tr">2,048</td>
-                      <td>
-                        <div className="form-group wid100">
-                          <AppTextInput type="number" label="" />
-                        </div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <div className="radio-wrap center">
-                          <label className="text-no">
-                            <input type="checkbox" checked />
-                            <span className="text-no"></span>
-                          </label>
-                        </div>
-                      </td>
-                      <td>Gps signal interference</td>
-                      <td>211</td>
-                      <td>D</td>
-                      <td>D</td>
-                      <td className="tr">2,048</td>
-                      <td>
-                        <div className="form-group wid100">
-                          <AppTextInput type="number" label="" />
-                        </div>
-                      </td>
+                      <td>E</td>
                     </tr>
                   </tbody>
                 </table>
