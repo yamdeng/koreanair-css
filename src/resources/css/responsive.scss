@@ -96,6 +96,9 @@
 
   .av-submain .av-submain-wrap{display:flex;flex-flow:row wrap;width:100%;overflow-y:auto;top:0}
   .av-submain .av-submain-wrap .av-area{display: flex;justify-content: flex-start;flex-wrap: wrap;gap:0 0.5rem;width:50%;margin: 1rem 0 0rem;box-sizing: border-box}
+
+
+
 }
 
 
@@ -352,7 +355,10 @@
 
 .av-submain .av-submain-wrap{display:flex;flex-flow:row wrap;width:100%;overflow-y:auto;top:0}
 .av-submain .av-submain-wrap .av-area{display:flex;justify-content:flex-start;flex-wrap:wrap;gap:0 0.5rem;width:50%;margin:1rem 0 0rem;box-sizing:border-box}
-    
+
+.checkbox-wrap .checkbox-area{display:block;width:100%}
+.checkbox-wrap .checkbox-area .checklist{width:100%}
+.checkbox-wrap .checkbox-area .checklist + .checklist{display:block;width:100%;margin-top:1.5rem}
 }
 
 
@@ -717,6 +723,11 @@
 
 .av-submain .av-submain-wrap{display:flex;flex-flow:row wrap;width:100%;overflow-y:auto;top:0}
 .av-submain .av-submain-wrap .av-area{display:flex;justify-content:flex-start;flex-wrap: wrap;gap:0 0.5rem;width:50%;margin:1rem 0 0rem;box-sizing:border-box}
+
+.checkbox-wrap .checkbox-area{display:block;width:100%}
+.checkbox-wrap .checkbox-area .checklist{width:100%}
+.checkbox-wrap .checkbox-area .checklist + .checklist{display:block;width:100%;margin-top:1.5rem}
+
 }
 
 
@@ -1194,6 +1205,9 @@
 .av-submain .av-submain-wrap{display:flex;flex-flow:row wrap;width:100%;overflow-y:auto;top:0}
 .av-submain .av-submain-wrap .av-area{display:flex;justify-content:flex-start;flex-wrap:wrap;gap:0 0.5rem;width:100%;margin: 1rem 0 0rem;box-sizing: border-box}
 
+.checkbox-wrap .checkbox-area{display:block;width:100%}
+.checkbox-wrap .checkbox-area .checklist{width:100%}
+.checkbox-wrap .checkbox-area .checklist + .checklist{display:block;width:100%;margin-top:1.5rem}
   }
 
 
