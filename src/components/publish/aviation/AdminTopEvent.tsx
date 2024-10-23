@@ -104,6 +104,9 @@ function AdminTopEvent() {
             <div className="h3">Top Event List by Risk Level Score</div>
             <div className="listbox">
               <div>
+                <div className="num">
+                  <span>30</span>건
+                </div>
                 <table className="toplisk-table">
                   <thead>
                     <tr>
@@ -325,6 +328,9 @@ function AdminTopEvent() {
             <div className="h3">Top Event List by Risk Level Score(이상값제거)</div>
             <div className="listbox">
               <div>
+                <div className="num">
+                  <span>30</span>건
+                </div>
                 <table className="toplisk-table">
                   <thead>
                     <tr>
@@ -460,7 +466,7 @@ function AdminTopEvent() {
           </div>
         </div>
         <div className="info-text">
-          * 주) Top Event List 중 사용을 원하는 항목에 check해 주십시오. Check된 항목이 항공안전 Home의 Top 10 Event로
+          * (주) Top Event List 중 사용을 원하는 항목에 check해 주십시오. Check된 항목이 항공안전 Home의 Top 10 Event로
           표출됩니다.
         </div>
         <div className="checkbox-area mt20">
@@ -468,6 +474,9 @@ function AdminTopEvent() {
             <div className="h3">이상값 검출 Event List</div>
             <div className="listbox">
               <div>
+                <div className="num">
+                  <span>30</span>건
+                </div>
                 <table className="toplisk1-table">
                   <thead>
                     <tr>
@@ -541,7 +550,7 @@ function AdminTopEvent() {
             </div> */}
           </div>
         </div>
-        <div className="info-text">* 주) 분석포함을 선택하면 원래 평가값을 적용하여 재 계산 됩니다.</div>
+        <div className="info-text">* (주) 분석포함을 선택하면 원래 평가값을 적용하여 재 계산 됩니다.</div>
       </div>
       {/*//컨텐츠영역 */}
     </>
