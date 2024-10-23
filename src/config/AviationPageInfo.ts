@@ -136,6 +136,8 @@ import AdminSPIPDetail from '@/components/publish/aviation/AdminSPIPDetail';
 import AuditList from '@/components/publish/aviation/AuditList';
 import AuditDetail from '@/components/publish/aviation/AuditDetail';
 import AuditQuality from '@/components/publish/aviation/AuditQuality';
+import ClosingPayDetail from '@/components/publish/aviation/ClosingPayDetail';
+import ReceiptPayDetail from '@/components/publish/aviation/ReceiptPayDetail';
 import { fa, fakerLV } from '@faker-js/faker';
 import { fail } from 'assert';
 
@@ -315,6 +317,20 @@ AviationPageInfo.list = [
     title: '[03.안전위험관리] 결제관리 > 결제관리 상세',
     Component: PayDetail,
     path: 'PayDetail',
+    description: '',
+    success: true,
+  },
+  {
+    title: '[03.안전위험관리] 안전조사 접수 결제관리 > 결제관리 상세',
+    Component: ReceiptPayDetail,
+    path: 'ReceiptPayDetail',
+    description: '',
+    success: true,
+  },
+  {
+    title: '[03.안전위험관리] 안전조사 종결 결제관리 > 결제관리 상세',
+    Component: ClosingPayDetail,
+    path: 'ClosingPayDetail',
     description: '',
     success: true,
   },

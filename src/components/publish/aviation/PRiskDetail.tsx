@@ -675,7 +675,7 @@ function PRiskDetail() {
                             </thead>
                             <tbody>
                               <tr>
-                                <td className="left">
+                                <td className="tc">
                                   <a href="javascript:void(0);">240715A-1-R1</a>
                                 </td>
                                 <td className="left">운항 중 발생한 사항 중 발생한 사항에 대..</td>
