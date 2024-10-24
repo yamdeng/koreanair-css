@@ -50,7 +50,7 @@ function PAviationsub1() {
         <div className="av-submain-bg">
           <div className="av-submain-wrap">
             <div className="line-bg">
-              <span className="img"></span>
+              <div className="img"></div>
               <div className="h3-tit">Air Safety Report</div>
             </div>
             <div className="av-area">
