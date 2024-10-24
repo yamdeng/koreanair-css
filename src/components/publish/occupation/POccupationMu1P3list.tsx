@@ -67,6 +67,11 @@ function POccupationMu1P3list() {
       {/*경로 */}
       <div className="conts-title">
         <h2>산업안전보건 조직도</h2>
+        <div className="btn-area-type02">
+          <button type="button" name="button" className="btn_confirm">
+            버튼영역
+          </button>
+        </div>
       </div>
       <div className="searchbox">
         <div className="left-box">

@@ -552,6 +552,15 @@
   border-radius: 0.8rem;
   h3 {font-size: 1.8rem; font-weight: 500; color: var(--color-darkblue-100); padding-bottom: 2.0rem;}
 }
+.btn-area-type02 {
+  text-align:right;
+    > button{margin:0 0.5rem}
+    button + button{margin-left:0.5rem}
+    .btn_text{font-family:'KoreanAirSans';font-weight:700;font-size:1.6rem}
+    .btn_confirm{padding:0.6rem 2.8rem;border-radius:99.9rem;background: var(--color-darkblue-100); color: var(--color-neutral-10);}
+    .btn_close{padding:0.6rem 2.8rem;border-radius:99.9rem;background: var(--color-neutral-30); color: var(--color-neutral-70);}
+}
+
 
 .searchbox {display: flex; width: 100%;}
 .left-box {display: inline-table; vertical-align: top; padding-right: 3.0rem;}
