@@ -97,7 +97,7 @@
   .av-submain .av-submain-wrap{display:flex;flex-flow:row wrap;width:100%;overflow-y:auto;top:0}
   .av-submain .av-submain-wrap .av-area{display: flex;justify-content: flex-start;flex-wrap: wrap;gap:0 0.5rem;width:50%;margin: 1rem 0 0rem;box-sizing: border-box}
 
-
+  .step-box li {max-width: 16.0rem;}
 
 }
 
@@ -126,6 +126,7 @@
  
   .dp-n {display: none;}
 
+  .step-box li {max-width: 30.0rem;}
 
   .editbox.report .form-table{align-items:normal}
   .editbox.report .form-group{height:100%}
@@ -754,6 +755,11 @@
   .RiskLevel-searchbox .boxForm{display:block}
   .RiskLevel-searchbox .boxForm .form-table .form-cell .form-group{display:block;width:auto}
 
+  .step-box li {max-width: 60rem;}
+
+  .user-add-box {display: block; width: 100%;}
+  .user-add-box .team-box {max-width: 100%; padding-right: 0; padding-bottom: 1.0rem;}
+  .user-add-box .add-box {max-width: 100%;}
 
   .table-header .btns-area {display: none;}
   .boxForm .form-table {display: block;}

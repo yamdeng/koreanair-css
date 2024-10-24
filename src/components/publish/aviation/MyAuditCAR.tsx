@@ -313,6 +313,10 @@ function MyAuditCAR() {
                                           </h3>
                                         </div>
                                         <button className="btn-select">Select</button>
+                                        <div className="audit-rist-level">
+                                          <span className="Safety-tag type01 riskLevel level1">3A</span>
+                                          <p>Severity:보통(Remote), Probability:위험(Major)</p>
+                                        </div>
                                       </div>
                                     </div>
                                   </div>

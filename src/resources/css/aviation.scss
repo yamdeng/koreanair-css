@@ -928,9 +928,14 @@ meter::-webkit-meter-optimum-value {
 --color-Leve5: #cef761;
 --color-Leve6: #ffb533;}
 
+.audit-rist-level {display: inline-flex;}
+.audit-rist-level p {display: flex; align-items: center;}
+.Safety-tag.type01 {padding: 0.9rem 2rem; margin-left: 1.0rem;}
+
+
 .Safety-table-cell{text-align:center;align-items:center}
 .Safety-table-cell a, a:visited{color:var(--color-mblue-100)}
-.Safety-table-celle a:hover, .Safety-table-cell a:focus{color:var(--color-darkblue-100)}
+.Safety-table-cell a:hover, .Safety-table-cell a:focus{color:var(--color-darkblue-100)}
 .Safety-tag{display:inline-block;box-sizing:border-box;color:var(-color-neutral-10);font-size:1.4rem;font-family:'KoreanAirSans';border-radius:99.9rem;line-height:1.5715;margin:0 0.8rem 0 0;padding:0.1rem 1.5rem;white-space:nowrap}
 .Safety-tag.riskLevel.level4{background-color:var(--color-Leve4)}/*그린*/
 .Safety-tag.riskLevel.level3{background-color:var(--color-Leve3)}/*옐로우*/
@@ -1206,7 +1211,7 @@ meter::-webkit-meter-optimum-value {
 .edit-tab .tab-list li {display: inline-block; padding: 0 1.0rem 0.6rem;}
 .edit-tab .tab-list li.active {border-bottom: 0.2rem solid var(--color-darkblue-100); color: var(--color-darkblue-100); font-weight: 700;}
 
-.btn-tit {display: inline-flex; padding-right: 1.5rem; white-space: nowrap; position: relative; /*top: 0.9rem;*/}
+.btn-tit {display: inline-flex; padding-right: 1.5rem; align-items: center; white-space: nowrap; position: relative; /*top: 0.9rem;*/ min-width: 16.0rem;}
 .btn-tit h3 {font-size: 1.6rem;}
 .btn-tit .required {color:var(--color-negative); vertical-align: text-top;}
 .dp-flax {display: flex;}
@@ -1991,14 +1996,18 @@ keyframes
   .team-box {
     display: block;
     width: 100%;
+    max-width: 30.0rem;
     padding-right: 1.0rem;
 
-    .team {width: 100%; text-align: left; border: 0.1rem solid var(--color-neutral-40); border-radius: 0.5rem; padding: 1.0rem 1.5rem; position: relative;}
+    .team {width: 100%; text-align: left; border: 0.1rem solid var(--color-neutral-40); border-radius: 0.5rem; padding: 1.0rem 1.5rem; position: relative; margin: 0.5rem 0;}
+    .team:first-child {margin-top: 0rem;}
+    .team:last-child {margin-bottom: 0rem;}
     .team span.delete{position:absolute; top:1rem; right: 1.0rem; background:url(/src/resources/images/delete-text.svg) center center no-repeat; font-size:0; width:2rem; height:2rem}
   }
   .add-box {
     display: block;
     width: 100%;
+    max-width: 50.0rem;
   }
 }
 .step-box {
@@ -2008,7 +2017,7 @@ keyframes
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  min-width: 10.0rem;
+  max-width: 24.0rem;
   }
 
   width: 100%;
