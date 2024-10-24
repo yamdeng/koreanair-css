@@ -2207,6 +2207,13 @@ function ReportASRDetail() {
                                     <button type="button" className="tg-btn">
                                       위험평가<span className={sixExpaned ? 'active' : ''}></span>
                                       <div className="tag-info-wrap-end">
+                                        {/*코멘트아이콘 */}
+                                        <div className="tag-info-wrap-end1">
+                                          <div className="anticon">
+                                            <a href="javascript:void(0);" className="txt"></a>
+                                          </div>
+                                        </div>
+                                        {/*//코멘트아이콘 */}
                                         <div className="tip">
                                           <div>
                                             <a href="javascript:void(0);" className="txt">
