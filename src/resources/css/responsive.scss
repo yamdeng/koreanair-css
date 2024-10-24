@@ -729,6 +729,7 @@
 .checkbox-wrap .checkbox-area .checklist{width:100%}
 .checkbox-wrap .checkbox-area .checklist + .checklist{display:block;width:100%;margin-top:1.5rem}
 
+
 }
 
 
@@ -756,6 +757,7 @@
   .RiskLevel-searchbox .boxForm .form-table .form-cell .form-group{display:block;width:auto}
 
   .step-box li {max-width: 60rem;}
+  .step-box.type01 { display: block; margin: 0.5rem 0;}
 
   .user-add-box {display: block; width: 100%;}
   .user-add-box .team-box {max-width: 100%; padding-right: 0; padding-bottom: 1.0rem;}
@@ -1214,6 +1216,8 @@
 .checkbox-wrap .checkbox-area{display:block;width:100%}
 .checkbox-wrap .checkbox-area .checklist{width:100%}
 .checkbox-wrap .checkbox-area .checklist + .checklist{display:block;width:100%;margin-top:1.5rem}
+
+
   }
 
 
