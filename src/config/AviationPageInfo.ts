@@ -156,7 +156,7 @@ AviationPageInfo.list = [
     Component: PAviationsub1,
     path: 'PAviationsub1',
     description: '',
-    success: false,
+    success: true,
   },
   {
     title: '[서브메인] 객실안전보고서 메인',
