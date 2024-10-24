@@ -47,112 +47,117 @@ function PAviationsub1() {
   return (
     <>
       <div className="av-submain">
-        <div className="av-submain-wrap">
-          <div className="h3-tit">Air Safety Report</div>
-          <div className="av-area">
-            <div className="av-box">
-              <div className="tit-wrap">
-                Air <br />
-                Safety Report
-              </div>
-              <a href="javascript:void(0);">
-                <i className="icon-img">
-                  <img src={asrimg} className="" alt="ASR" />
-                </i>
-              </a>
+        <div className="av-submain-bg">
+          <div className="av-submain-wrap">
+            <div className="line-bg">
+              <span className="img"></span>
+              <div className="h3-tit">Air Safety Report</div>
             </div>
-          </div>
-          <div className="av-area">
-            <div className="av-box">
-              <div className="tit-wrap">
-                객실
-                <br />
-                안전 보고서
+            <div className="av-area">
+              <div className="av-box">
+                <div className="tit-wrap">
+                  Air <br />
+                  Safety Report
+                </div>
+                <a href="javascript:void(0);">
+                  <i className="icon-img">
+                    <img src={asrimg} className="" alt="ASR" />
+                  </i>
+                </a>
               </div>
-              <a href="javascript:void(0);">
-                <i className="icon-img">
-                  <img src={csrimg} className="" alt="CSR" />
-                </i>
-              </a>
             </div>
-          </div>
-          <div className="av-area">
-            <div className="av-box">
-              <div className="tit-wrap">
-                정비
-                <br />
-                안전 보고서
+            <div className="av-area">
+              <div className="av-box">
+                <div className="tit-wrap">
+                  객실
+                  <br />
+                  안전 보고서
+                </div>
+                <a href="javascript:void(0);">
+                  <i className="icon-img">
+                    <img src={csrimg} className="" alt="CSR" />
+                  </i>
+                </a>
               </div>
-              <a href="javascript:void(0);">
-                <i className="icon-img">
-                  <img src={msrimg} className="" alt="MSR" />
-                </i>
-              </a>
             </div>
-          </div>
-          <div className="av-area">
-            <div className="av-box">
-              <div className="tit-wrap">
-                지상
-                <br />
-                안전 보고서
+            <div className="av-area">
+              <div className="av-box">
+                <div className="tit-wrap">
+                  정비
+                  <br />
+                  안전 보고서
+                </div>
+                <a href="javascript:void(0);">
+                  <i className="icon-img">
+                    <img src={msrimg} className="" alt="MSR" />
+                  </i>
+                </a>
               </div>
-              <a href="javascript:void(0);">
-                <i className="icon-img">
-                  <img src={gsrimg} className="" alt="GSR" />
-                </i>
-              </a>
             </div>
-          </div>
-          <div className="av-area">
-            <div className="av-box">
-              <div className="tit-wrap">
-                운항관리사
-                <br />
-                안전 보고서
+            <div className="av-area">
+              <div className="av-box">
+                <div className="tit-wrap">
+                  지상
+                  <br />
+                  안전 보고서
+                </div>
+                <a href="javascript:void(0);">
+                  <i className="icon-img">
+                    <img src={gsrimg} className="" alt="GSR" />
+                  </i>
+                </a>
               </div>
-              <a href="javascript:void(0);">
-                <i className="icon-img">
-                  <img src={dsrimg} className="" alt="DSR" />
-                </i>
-              </a>
             </div>
-          </div>
-          <div className="av-area">
-            <div className="av-box">
-              <div className="tit-wrap">
-                램프
-                <br />
-                안전 보고서
+            <div className="av-area">
+              <div className="av-box">
+                <div className="tit-wrap">
+                  운항관리사
+                  <br />
+                  안전 보고서
+                </div>
+                <a href="javascript:void(0);">
+                  <i className="icon-img">
+                    <img src={dsrimg} className="" alt="DSR" />
+                  </i>
+                </a>
               </div>
-              <a href="javascript:void(0);">
-                <i className="icon-img">
-                  <img src={rsrimg} className="" alt="RSR" />
-                </i>
-              </a>
             </div>
-          </div>
-          <div className="av-area">
-            <div className="av-box">
-              <div className="tit-wrap">FOQA</div>
-              <a href="javascript:void(0);">
-                <i className="icon-img">
-                  <img src={foqaimg} className="" alt="FOQA" />
-                </i>
-              </a>
-            </div>
-          </div>
-          <div className="av-area">
-            <div className="av-box">
-              <div className="tit-wrap">
-                Hazard <br />
-                Report
+            <div className="av-area">
+              <div className="av-box">
+                <div className="tit-wrap">
+                  램프
+                  <br />
+                  안전 보고서
+                </div>
+                <a href="javascript:void(0);">
+                  <i className="icon-img">
+                    <img src={rsrimg} className="" alt="RSR" />
+                  </i>
+                </a>
               </div>
-              <a href="javascript:void(0);">
-                <i className="icon-img">
-                  <img src={hrimg} className="" alt="HRD" />
-                </i>
-              </a>
+            </div>
+            <div className="av-area">
+              <div className="av-box">
+                <div className="tit-wrap">FOQA</div>
+                <a href="javascript:void(0);">
+                  <i className="icon-img">
+                    <img src={foqaimg} className="" alt="FOQA" />
+                  </i>
+                </a>
+              </div>
+            </div>
+            <div className="av-area">
+              <div className="av-box">
+                <div className="tit-wrap">
+                  Hazard <br />
+                  Report
+                </div>
+                <a href="javascript:void(0);">
+                  <i className="icon-img">
+                    <img src={hrimg} className="" alt="HRD" />
+                  </i>
+                </a>
+              </div>
             </div>
           </div>
         </div>

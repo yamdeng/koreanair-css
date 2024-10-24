@@ -55,12 +55,23 @@ function PRightCommentLayer() {
                           <span className="btnclear">X</span>
                         </button>
                       </div>
+                    </li>
+                    <li>
+                      <div className="txt-top">
+                        <span className="name">관리자</span>
+                        <button type="button" name="button" className="btn-list editChapter">
+                          <span className="hide">등록</span>
+                        </button>
+                        <button type="button" className="">
+                          <span className="btnclear">X</span>
+                        </button>
+                      </div>
                       <div className="txt-cons">
                         <span>
                           글영역글영역글영역글영역글영역글영역글영역글영역글영역글영역글영역글영역글영역글영역글영역글영역글영역글영역글영역글영역글영역글영역글영역글영역글영역글영역글영역
                           글영역글영역글영역글영역글영역
                         </span>
-                        {/* <span>
+                        <span>
                           <div className="wid100">
                             <AppTextArea
                               label=""
@@ -69,7 +80,169 @@ function PRightCommentLayer() {
                               placeholder=""
                             />
                           </div>
-                        </span> */}
+                        </span>
+                      </div>
+                    </li>
+                    <li>
+                      <div className="txt-top">
+                        <span className="name">관리자</span>
+                        <button type="button" name="button" className="btn-list editChapter">
+                          <span className="hide">등록</span>
+                        </button>
+                        <button type="button" className="">
+                          <span className="btnclear">X</span>
+                        </button>
+                      </div>
+                      <div className="txt-cons">
+                        <span>
+                          글영역글영역글영역글영역글영역글영역글영역글영역글영역글영역글영역글영역글영역글영역글영역글영역글영역글영역글영역글영역글영역글영역글영역글영역글영역글영역글영역
+                          글영역글영역글영역글영역글영역
+                        </span>
+                        <span>
+                          <div className="wid100">
+                            <AppTextArea
+                              label=""
+                              style={{ width: '100%', height: 82 }}
+                              errorMessage=""
+                              placeholder=""
+                            />
+                          </div>
+                        </span>
+                      </div>
+                    </li>
+                    <li>
+                      <div className="txt-top">
+                        <span className="name">관리자</span>
+                        <button type="button" name="button" className="btn-list editChapter">
+                          <span className="hide">등록</span>
+                        </button>
+                        <button type="button" className="">
+                          <span className="btnclear">X</span>
+                        </button>
+                      </div>
+                      <div className="txt-cons">
+                        <span>
+                          글영역글영역글영역글영역글영역글영역글영역글영역글영역글영역글영역글영역글영역글영역글영역글영역글영역글영역글영역글영역글영역글영역글영역글영역글영역글영역글영역
+                          글영역글영역글영역글영역글영역
+                        </span>
+                        <span>
+                          <div className="wid100">
+                            <AppTextArea
+                              label=""
+                              style={{ width: '100%', height: 82 }}
+                              errorMessage=""
+                              placeholder=""
+                            />
+                          </div>
+                        </span>
+                      </div>
+                    </li>
+                    <li>
+                      <div className="txt-top">
+                        <span className="name">관리자</span>
+                        <button type="button" name="button" className="btn-list editChapter">
+                          <span className="hide">등록</span>
+                        </button>
+                        <button type="button" className="">
+                          <span className="btnclear">X</span>
+                        </button>
+                      </div>
+                      <div className="txt-cons">
+                        <span>
+                          글영역글영역글영역글영역글영역글영역글영역글영역글영역글영역글영역글영역글영역글영역글영역글영역글영역글영역글영역글영역글영역글영역글영역글영역글영역글영역글영역
+                          글영역글영역글영역글영역글영역
+                        </span>
+                        <span>
+                          <div className="wid100">
+                            <AppTextArea
+                              label=""
+                              style={{ width: '100%', height: 82 }}
+                              errorMessage=""
+                              placeholder=""
+                            />
+                          </div>
+                        </span>
+                      </div>
+                    </li>
+                    <li>
+                      <div className="txt-top">
+                        <span className="name">관리자</span>
+                        <button type="button" name="button" className="btn-list editChapter">
+                          <span className="hide">등록</span>
+                        </button>
+                        <button type="button" className="">
+                          <span className="btnclear">X</span>
+                        </button>
+                      </div>
+                      <div className="txt-cons">
+                        <span>
+                          글영역글영역글영역글영역글영역글영역글영역글영역글영역글영역글영역글영역글영역글영역글영역글영역글영역글영역글영역글영역글영역글영역글영역글영역글영역글영역글영역
+                          글영역글영역글영역글영역글영역
+                        </span>
+                        <span>
+                          <div className="wid100">
+                            <AppTextArea
+                              label=""
+                              style={{ width: '100%', height: 82 }}
+                              errorMessage=""
+                              placeholder=""
+                            />
+                          </div>
+                        </span>
+                      </div>
+                    </li>
+                    <li>
+                      <div className="txt-top">
+                        <span className="name">관리자</span>
+                        <button type="button" name="button" className="btn-list editChapter">
+                          <span className="hide">등록</span>
+                        </button>
+                        <button type="button" className="">
+                          <span className="btnclear">X</span>
+                        </button>
+                      </div>
+                      <div className="txt-cons">
+                        <span>
+                          글영역글영역글영역글영역글영역글영역글영역글영역글영역글영역글영역글영역글영역글영역글영역글영역글영역글영역글영역글영역글영역글영역글영역글영역글영역글영역글영역
+                          글영역글영역글영역글영역글영역
+                        </span>
+                        <span>
+                          <div className="wid100">
+                            <AppTextArea
+                              label=""
+                              style={{ width: '100%', height: 82 }}
+                              errorMessage=""
+                              placeholder=""
+                            />
+                          </div>
+                        </span>
+                      </div>
+                    </li>
+                    <li>
+                      <div className="txt-top">
+                        <span className="name">관리자</span>
+                        <button type="button" name="button" className="btn-list editChapter">
+                          <span className="hide">등록</span>
+                        </button>
+                        <button type="button" className="">
+                          <span className="btnclear">X</span>
+                        </button>
+                      </div>
+                      <div className="txt-cons">
+                        <span>
+                          글영역글영역글영역글영역글영역글영역글영역글영역글영역글영역글영역글영역글영역글영역글영역글영역글영역글영역글영역글영역글영역글영역글영역글영역글영역글영역글영역
+                          글영역글영역글영역글영역글영역
+                        </span>
+                        <span>
+                          <div className="wid100">
+                            <AppTextArea
+                              label=""
+                              style={{ width: '100%', height: 82 }}
+                              errorMessage=""
+                              placeholder=""
+                            />
+                          </div>
+                        </span>
                       </div>
                     </li>
                   </ul>
