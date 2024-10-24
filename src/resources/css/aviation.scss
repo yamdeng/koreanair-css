@@ -1117,7 +1117,7 @@ meter::-webkit-meter-optimum-value {
 .av-submain .av-submain-wrap .av-area{display:flex;justify-content:flex-start;flex-wrap:wrap;gap:0 0.5rem;width:12.5%;box-sizing:border-box;cursor:pointer}
 .av-submain .av-submain-wrap .av-area .av-box{position:relative;width:100%;height:100%;border-radius: 0.8rem;padding:2rem 1.5rem;margin-right:1rem;background:url(../images/bg_thead.png) repeat;border:solid 0.1rem var(--color-neutral-40);/*background-color:var(--color-neutral-10);*/box-shadow: 0.3rem 0.3rem 0.5rem rgba(0, 0, 0, 0.1)}
 .av-submain .av-submain-wrap .av-area .av-box:hover{border:solid 0.1rem var( --color-neutral-60)}
-.av-submain .av-submain-wrap .av-area .av-box a{display:inline-flex;justify-content:center;width:100%}
+.av-submain .av-submain-wrap .av-area .av-box a{display:inline-flex;justify-content:center;width:100%;color:var(--color-darkblue-100)}
 .av-submain .av-submain-wrap .av-area .av-box .tit-wrap{font-size:1.6rem;font-weight:500;text-align:center}
 .av-submain .av-submain-wrap .av-area .av-box > a .icon-img{display:inline-flex;width:105px;border-radius:100%;height:105px;background-color:var(--color-neutral-50);-webkit-box-pack: center;justify-content: center;-webkit-box-align: center; align-items: center;margin-top:20px}
 
@@ -1235,7 +1235,7 @@ meter::-webkit-meter-optimum-value {
   width: 6.0rem;
   height: 6.0rem;
   border-radius: 3.0rem;
-  background: var(--color-lightblue-100);
+  background: var(--color-mblue-00);
   box-shadow: 0 0.1rem 0.4rem rgba(0, 0, 0, 0.2);
   -webkit-transition: height 0.2s, box-shadow 0.2s;
   -moz-transition: height 0.2s, box-shadow 0.2s;
@@ -1441,7 +1441,7 @@ meter::-webkit-meter-optimum-value {
 .cd-stretchy-nav ul li:nth-of-type(10) a.amo::after {
   //background-position: 0 0;
   width:1.8rem;cursor:pointer;
-  height:1.8rem;background:url(/src/resources/images/icon_msr_amo.svg)center center no-repeat;background-size:1.8rem
+  height:1.8rem;background:url(/src/resources/images/icon_msr_amo.svg)center center no-repeat;background-size:2.5rem
 }
 .cd-stretchy-nav ul li:nth-of-type(11) a::after {
   background-position: -3.2rem 0;
@@ -1531,8 +1531,8 @@ meter::-webkit-meter-optimum-value {
 .cd-stretchy-nav.nav-is-visible ul li:first-of-type span.bg{
   position:absolute;top:1rem;right:7rem;padding:0 1.0rem;line-height:3rem;
   border-radius:0.2rem;transition: opacity 0.2s, visibility 0.2s;text-align:center;
-  border:solid 0.1rem var(--color-neutral-40);
-  background-color:rgba(255, 255, 255, 0.9);color:var(--color-neutral-60);border-top-left-radius:0.8rem;border-bottom-left-radius:0.8rem
+  //border:solid 0.1rem var(--color-mblue-00);
+  background-color:var(--color-mblue-00);color:var(--color-neutral-10);border-top-left-radius:0.8rem;border-bottom-left-radius:0.8rem
 }
 .cd-stretchy-nav.nav-is-visible ul li:first-of-type span.bg:after{
   content: '';position: absolute;
@@ -1542,7 +1542,7 @@ meter::-webkit-meter-optimum-value {
   -ms-transform: translateY(-50%);
   -o-transform: translateY(-50%);
   transform: translateY(-50%);
-  height:0;width: 0;border:0.4rem solid transparent;border-left-color: rgb(255, 255, 255, 0.9)
+  height:0;width: 0;border:0.4rem solid transparent;border-left-color:var(--color-mblue-00)
 }
 .cd-stretchy-nav.nav-is-visible ul li:first-of-type span.active-bg{
   position:absolute;top:1rem;right:7rem;padding:0 1.0rem;line-height:3rem;cursor:pointer;

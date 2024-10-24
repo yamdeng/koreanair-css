@@ -261,8 +261,8 @@ function ClosingPayDetail() {
                             </div>
 
                             <div className="info-wrap toggle">
-                              <dl className={sixExpaned ? 'tg-item active' : 'tg-item'}>
-                                <dt onClick={() => setSixExpaned(!sixExpaned)}>
+                              <dl className={firstExpaned ? 'tg-item active' : 'tg-item'}>
+                                <dt onClick={() => setFirstExpaned(!firstExpaned)}>
                                   <button type="button" className="btn-tg">
                                     안전권고
                                     {/* <div className="tag-info-wrap-end">
@@ -270,10 +270,10 @@ function ClosingPayDetail() {
                                         + ADD ROW
                                       </button>
                                     </div> */}
-                                    <span className={sixExpaned ? 'active' : ''}></span>
+                                    <span className={firstExpaned ? 'active' : ''}></span>
                                   </button>
                                 </dt>
-                                <dd className="tg-conts" style={{ display: sixExpaned ? '' : 'none' }}>
+                                <dd className="tg-conts" style={{ display: firstExpaned ? '' : 'none' }}>
                                   <div className="edit-area">
                                     <div className="detail-form">
                                       <div className="detail-list">
@@ -324,8 +324,8 @@ function ClosingPayDetail() {
                                   </div>
                                 </dd>
                               </dl>
-                              <dl className={sevenExpaned ? 'tg-item active' : 'tg-item'}>
-                                <dt onClick={() => setSevenExpaned(!sevenExpaned)}>
+                              <dl className={secondExpaned ? 'tg-item active' : 'tg-item'}>
+                                <dt onClick={() => setSecondExpaned(!secondExpaned)}>
                                   <button type="button" className="btn-tg">
                                     Safety Action
                                     {/* <div className="tag-info-wrap-end">
@@ -333,10 +333,10 @@ function ClosingPayDetail() {
                                         + ADD ROW
                                       </button>
                                     </div> */}
-                                    <span className={sevenExpaned ? 'active' : ''}></span>
+                                    <span className={secondExpaned ? 'active' : ''}></span>
                                   </button>
                                 </dt>
-                                <dd className="tg-conts" style={{ display: sevenExpaned ? '' : 'none' }}>
+                                <dd className="tg-conts" style={{ display: secondExpaned ? '' : 'none' }}>
                                   <div className="edit-area">
                                     <div className="detail-form">
                                       <div className="detail-list">
@@ -369,6 +369,115 @@ function ClosingPayDetail() {
                                                       </td>
                                                       <td className="">운항본부1팀</td>
                                                       <td className="">2024-07-15</td>
+                                                    </tr>
+                                                  </tbody>
+                                                </table>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </dd>
+                              </dl>
+                              <dl className={thirdExpaned ? 'tg-item active' : 'tg-item'}>
+                                <dt onClick={() => setThirdExpaned(!thirdExpaned)}>
+                                  <button type="button" className="btn-tg">
+                                    1st Risk Assessment
+                                    <span className={thirdExpaned ? 'active' : ''}></span>
+                                  </button>
+                                </dt>
+                                <dd className="tg-conts" style={{ display: thirdExpaned ? '' : 'none' }}>
+                                  <div className="edit-area">
+                                    <div className="detail-form">
+                                      <div className="detail-list">
+                                        <div className="form-table">
+                                          <div className="form-cell wid50">
+                                            <div className="form-group wid100">
+                                              <div className="info-list">
+                                                <h3>
+                                                  추정원인<span className="required">*</span>
+                                                </h3>
+                                                <table className="info-board">
+                                                  <colgroup>
+                                                    <col width="35%" />
+                                                    <col width="40%" />
+                                                    <col width="15%" />
+                                                    <col width="10%" />
+                                                  </colgroup>
+                                                  <thead>
+                                                    <tr>
+                                                      <th>Hazard</th>
+                                                      <th>Potential Consequence</th>
+                                                      <th>1st Risk Level</th>
+                                                      <th>2st Risk Level</th>
+                                                    </tr>
+                                                  </thead>
+                                                  <tbody>
+                                                    <tr>
+                                                      <td className="left">Lightning strike</td>
+                                                      <td className="left">Aircraft system failure (Powerplant)</td>
+                                                      <td className="">
+                                                        {/* <div className="Safety-table-cell">
+                                                          <a href="javascript:void(0);">
+                                                            <span className="Safety-tag Select">Select</span>
+                                                          </a>
+                                                        </div> */}
+                                                        <div className="Safety-table-cell">
+                                                          <a href="javascript:void(0);">
+                                                            <span className="Safety-tag riskLevel level1">5B</span>
+                                                          </a>
+                                                        </div>
+                                                      </td>
+                                                      <td className="">
+                                                        <div className="Safety-table-cell">
+                                                          <a href="javascript:void(0);">
+                                                            <span className="Safety-tag riskLevel level1">5B</span>
+                                                          </a>
+                                                        </div>
+                                                      </td>
+                                                    </tr>
+                                                  </tbody>
+                                                </table>
+                                              </div>
+                                              <div className="info-list">
+                                                <h3>
+                                                  부수요인<span className="required">*</span>
+                                                </h3>
+                                                <table className="info-board">
+                                                  <colgroup>
+                                                    <col width="35%" />
+                                                    <col width="40%" />
+                                                    <col width="15%" />
+                                                    <col width="10%" />
+                                                  </colgroup>
+                                                  <thead>
+                                                    <tr>
+                                                      <th>Hazard</th>
+                                                      <th>Potential Consequence</th>
+                                                      <th>1st Risk Level</th>
+                                                      <th>2st Risk Level</th>
+                                                    </tr>
+                                                  </thead>
+                                                  <tbody>
+                                                    <tr>
+                                                      <td className="left">Hail</td>
+                                                      <td className="left">Old Equipment</td>
+                                                      <td className="">
+                                                        <div className="Safety-table-cell">
+                                                          <a href="javascript:void(0);">
+                                                            <span className="Safety-tag riskLevel level1">5B</span>
+                                                          </a>
+                                                        </div>
+                                                      </td>
+                                                      <td className="">
+                                                        <div className="Safety-table-cell">
+                                                          <a href="javascript:void(0);">
+                                                            <span className="Safety-tag riskLevel level1">5B</span>
+                                                          </a>
+                                                        </div>
+                                                      </td>
                                                     </tr>
                                                   </tbody>
                                                 </table>
