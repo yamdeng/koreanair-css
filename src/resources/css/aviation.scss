@@ -2044,3 +2044,21 @@ keyframes
 .pd-lr10 {padding: 0 1.5rem !important}
 .pd-center {position: relative; top: 0.7rem; left: 1.0rem;}
 .input-group {display: flex;}
+
+
+.bounce-in-left {
+	animation-direction:normal;
+  animation-name:direction; 
+  animation-duration:4s;
+  animation-iteration-count:1;
+  animation-timing-function:ease-in;
+}
+
+@-webkit-keyframes direction {
+  from{
+    left: 0;
+  }
+  to{
+    left:50.0rem;
+  }
+}
