@@ -1022,6 +1022,8 @@
   .main-wrap .grid-item {margin: 2.4rem 0;}
   .main-wrap .grid-item:first-child {margin-top: 0;}
   .main-wrap .grid-item:last-child {margin-bottom: 0;}
+  .main-wrap .grid-item {padding: 2rem 2rem;}
+  .main-wrap .grid-item .Status li p {max-width: 45%;}
 
   .RiskLevel-Wrap{display:inline-block}
   .RiskLevel-Wrap .RiskLevel-Left{width:100%}
@@ -1267,6 +1269,9 @@
   .pop_full_cont_box {height: calc(100vh - 12.0rem);}
   .pop_full_cont_box.type01{padding:0}
   .RiskLevel-searchbox .boxForm .form-table .form-cell .form-group .flag-tag1 .icon-flag1{padding:0.3rem 0.6rem}
+
+
+  .main-wrap .grid-item .Status li p {max-width: 35%;}
 
   /*상단타이틀*/
   
