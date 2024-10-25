@@ -207,7 +207,9 @@ export default function OccupationLayout() {
       </div>
 
       <div className={isAviationPortal ? 'contents Aviation' : 'contents'}>
-        <Outlet />
+        <div className="contents-box">
+          <Outlet />
+        </div>
       </div>
     </div>
   );
