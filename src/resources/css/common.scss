@@ -886,9 +886,9 @@ input, select{font-family:'KoreanAirSans'}
 .sub-tab li a{font-size: 1.8rem;font-weight:700;color:var(--color-neutral-80);text-wrap:nowrap;padding:1.3rem 1rem 1.3rem 0}
 .sub-tab li a.active{color:var(--color-darkblue-100);border-bottom: 0.3rem solid var(--color-darkblue-100)}
 
-/* 그리드 */
-.ag-cell-wrapper {width: 100%; height: auto;}
-.ag-cell {    
+/* 그리드 center정렬 */
+//.ag-cell-wrapper {width: 100%; height: auto;}
+/*.ag-cell {    
   display: flex;
   position: absolute;
   white-space: nowrap;
@@ -896,7 +896,7 @@ input, select{font-family:'KoreanAirSans'}
   justify-content: center;
   align-items: center;
   overflow: hidden;
-}
+}*/
 .ag-header-group-cell-label, .ag-header-cell-label {justify-content: center;}
 .grid-delete{text-align:center;align-items:center}
 .grid-delete a, a:visited{color:var(--color-mblue-100)}
