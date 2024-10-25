@@ -234,7 +234,9 @@ export default function AviationLayout() {
       </div>
 
       <div className={applyClassName}>
-        <Outlet />
+        <div className="contents-box">
+          <Outlet />
+        </div>
       </div>
     </div>
   );
