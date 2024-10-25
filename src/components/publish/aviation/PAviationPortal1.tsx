@@ -167,9 +167,9 @@ function PAviationPortal1() {
                     <div className="risk-bottom">
                       <ul className="sort-box">
                         <li className="gray">0</li>
-                        <li className="orange">1234</li>
+                        <li className="orange">14</li>
                         <li className="yellow">1234</li>
-                        <li className="gray">0000</li>
+                        <li className="green">5678</li>
                       </ul>
                     </div>
                   </div>
@@ -185,7 +185,7 @@ function PAviationPortal1() {
                     </div>
                     <div className="risk-bottom">
                       <ul className="sort-box">
-                        <li className="gray">0</li>
+                        <li className="red">0</li>
                         <li className="gray">0</li>
                         <li className="yellow">1</li>
                         <li className="gray">0</li>
@@ -322,7 +322,7 @@ function PAviationPortal1() {
                         <li className="gray">0</li>
                         <li className="gray">0</li>
                         <li className="yellow">1</li>
-                        <li className="gray">0</li>
+                        <li className="green">0</li>
                       </ul>
                     </div>
                   </div>

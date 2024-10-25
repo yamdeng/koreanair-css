@@ -1099,7 +1099,8 @@ meter::-webkit-meter-optimum-value {
   .grid-item .main-table-box .main-table-todo td a {font-size:1.4rem;font-weight:500;color:var(--color-neutral-80);-webkit-line-clamp:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;padding:1rem}
   .grid-item .main-table-box .main-table-todo td a:hover{text-decoration: underline; color: var(--color-darkblue-100);}
   .grid-item .main-table-box .graph-area{display:flex;width:100%;gap:0 1rem}
-  .grid-item .main-table-box .graph-area .graph-box{position:relative;box-sizing:border-box;margin:0 auto;width:100%}
+  .grid-item .main-table-box .graph-area .graph-box{position:relative;box-sizing:border-box;margin:0 auto}
+  .grid-item .main-table-box .graph-area .graph-box canvas{width:100%;vertical-align:top}
   .grid-item .main-table-box .graph-area .graph-box .txt-box{margin:0 auto;text-align:center}
   .grid-item .main-table-box .graph-area .graph-box .txt-box .txt{font-size:1.4rem}
   .grid-item .main-table-box .graph-area .graph-box .txt-box .num{display:block;font-size:2.0rem;font-weight:700;text-align:center}
@@ -1120,15 +1121,29 @@ meter::-webkit-meter-optimum-value {
   .av-submain{position:relative;width:100%;height:100%}
   .av-submain .av-submain-bg{width:100%;height:100%;background: url(../images/air.png) center center no-repeat;background-size:cover}
   .av-submain .av-submain-bg .av-submain-wrap .line-bg{position:relative;width:100%;border-top:dotted 0.4rem var(--color-neutral-40);margin-top:1rem}
-  .av-submain .av-submain-bg .av-submain-wrap .line-bg .img{position: absolute;top:-1rem;left:0;background: url(../images/airplane.svg) center center no-repeat; background-size: 1.8rem; vertical-align: middle;background-position: 50% 50%; width: 1.8rem; height: 1.8rem; transition-timing-function: linear}
-  .av-submain .av-submain-bg .av-submain-wrap .line-bg .h3-tit{display:inline-block;width:100%;font-size:7.0rem;height:6rem;font-weight:700;color:var(--color-neutral-40);letter-spacing:-0.5rem;text-align:left;padding-right:2rem}
-  .av-submain .av-submain-bg .av-submain-wrap{display:flex;justify-content:flex-end;flex-flow: row wrap;position:absolute;bottom:30%;width:100%;box-sizing: border-box;/*display:flex;flex:auto;flex-direction:column;min-height:0;box-sizing:border-box*/}
-  .av-submain .av-submain-bg .av-submain-wrap .av-area{display:flex;justify-content:flex-start;flex-wrap:wrap;gap:0 0.5rem;width:12.5%;margin-top:1rem;box-sizing:border-box;cursor:pointer}
-  .av-submain .av-submain-bg .av-submain-wrap .av-area .av-box{position:relative;width:100%;height:100%;border-radius: 0.8rem;padding:2rem 1.5rem;margin-right:1rem;/*background:url(../images/bg_thead.png) repeat;*/border:solid 0.1rem var(--color-neutral-40);background-color:rgba(255, 255, 255, 0.8);box-shadow: 0.3rem 0.3rem 0.5rem rgba(0, 0, 0, 0.1)}
-  .av-submain .av-submain-bg .av-submain-wrap .av-area .av-box:hover{border:solid 0.1rem var(--color-neutral-50);background-color:rgba(255, 255, 255, 100)}
+  .av-submain .av-submain-bg .av-submain-wrap .line-bg .img{position:absolute;top:-1rem;left:0;background: url(../images/airplane.svg) center center no-repeat; background-size: 1.8rem; vertical-align: middle;background-position: 50% 50%; width: 1.8rem; height: 1.8rem; transition-timing-function: linear}
+  .av-submain .av-submain-bg .av-submain-wrap .h3-tit{display:inline-block;width:100%;font-size:7.0rem;height:6rem;font-weight:700;color:var(--color-neutral-40);letter-spacing:-0.5rem;text-align:left;padding-right:2rem}
+  .av-submain .av-submain-bg .av-submain-wrap{display:flex;justify-content:flex-start;flex-flow:row wrap;position:absolute;bottom:30%;width:100%;box-sizing: border-box;/*display:flex;flex:auto;flex-direction:column;min-height:0;box-sizing:border-box*/}
+  .av-submain .av-submain-bg .av-submain-wrap .av-area{display:flex;justify-content:flex-start;flex-wrap:wrap;gap:0 0.5rem;width:10.5%;margin-top:1rem;box-sizing:border-box;cursor:pointer}
+  .av-submain .av-submain-bg .av-submain-wrap .av-area .av-box{position:relative;width:100%;height:100%;border-radius:0.8rem;padding:2rem 1.5rem;margin-right:1rem;/*background:url(../images/bg_thead.png) repeat;*/border:solid 0.1rem var(--color-neutral-40);background-color:rgba(255, 255, 255, 0.8);box-shadow: 0.3rem 0.5rem 0.5rem rgba(0, 0, 0, 0.1)}
+  .av-submain .av-submain-bg .av-submain-wrap .av-area .av-box:hover{border:solid 0rem var(--color-neutral-50);/*background-color:rgba(255, 255, 255, 100)*/}
   .av-submain .av-submain-bg .av-submain-wrap .av-area .av-box a{display:inline-flex;justify-content:center;width:100%;color:var(--color-darkblue-100)}
   .av-submain .av-submain-bg .av-submain-wrap .av-area .av-box .tit-wrap{font-size:1.6rem;font-weight:500;text-align:center}
-  .av-submain .av-submain-bg .av-submain-wrap .av-area .av-box > a .icon-img{display:inline-flex;width:105px;border-radius:100%;height:105px;background-color:var(--color-neutral-50);-webkit-box-pack: center;justify-content: center;-webkit-box-align: center; align-items: center;margin-top:20px}
+  .av-submain .av-submain-bg .av-submain-wrap .av-area .av-box > a .icon-img{display:inline-flex;width:105px;border-radius:100%;height:105px;background-color:var(--color-darkblue-100);-webkit-box-pack: center;justify-content: center;-webkit-box-align: center; align-items: center;margin-top:20px}
+  .av-submain .av-submain-bg .av-submain-wrap .av-area:nth-child(9) .av-box > a .icon-img{margin-top:42px}
+
+  .av-submain .av-submain-bg .av-submain-wrap.gsr .line-bg{position:relative;width:100%;border-top:dotted 0.4rem var(--color-neutral-40);margin-top:1rem}
+  .av-submain .av-submain-bg .av-submain-wrap.gsr .line-bg .img{position:absolute;top:-1rem;left:0;background: url(../images/airplane.svg) center center no-repeat; background-size: 1.8rem; vertical-align: middle;background-position: 50% 50%; width: 1.8rem; height: 1.8rem; transition-timing-function: linear}
+  .av-submain .av-submain-bg .av-submain-wrap.gsr .h3-tit .tit-color{font-size:7.0rem;height:6rem;font-weight:700;color:var(--color-darkblue-40);letter-spacing:-0.5rem;text-align:left}
+  .av-submain .av-submain-bg .av-submain-wrap.gsr .av-area{display:flex;justify-content:flex-start;flex-wrap:wrap;gap:0 0.5rem;width:13.5%;margin-top:1rem;box-sizing:border-box;cursor:pointer}
+  .av-submain .av-submain-bg .av-submain-wrap.gsr .av-area .av-box{position:relative;width:100%;height:100%;border-radius:0.8rem;padding:2rem 1.5rem;margin-right:1rem;/*background:url(../images/bg_thead.png) repeat;*/border:solid 0.1rem var(--color-neutral-40);background-color:rgba(255, 255, 255, 0.8);box-shadow: 0.3rem 0.5rem 0.5rem rgba(0, 0, 0, 0.1)}
+  .av-submain .av-submain-bg .av-submain-wrap.gsr .av-area .av-box:hover{border:solid 0rem var(--color-neutral-50);/*background-color:rgba(255, 255, 255, 100)*/}
+  .av-submain .av-submain-bg .av-submain-wrap.gsr .av-area .av-box a{display:inline-flex;justify-content:center;width:100%;color:var(--color-darkblue-100)}
+  .av-submain .av-submain-bg .av-submain-wrap.gsr .av-area .av-box .tit-wrap{font-size:1.6rem;font-weight:500;text-align:center}
+  .av-submain .av-submain-bg .av-submain-wrap.gsr .av-area .av-box > a .icon-img{display:inline-flex;width:105px;border-radius:100%;height:105px;background-color:var(--color-darkblue-100);-webkit-box-pack: center;justify-content: center;-webkit-box-align: center; align-items: center;margin-top:20px}
+
+
+
 
 
 

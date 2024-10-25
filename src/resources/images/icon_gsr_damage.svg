@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="52" height="47.654" viewBox="0 0 52 47.654">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="사각형_900" data-name="사각형 900" width="52" height="47.654" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="icon_gsr_01" transform="translate(0 0)">
+    <g id="그룹_554" data-name="그룹 554" transform="translate(0 0)" clip-path="url(#clip-path)">
+      <path id="패스_835" data-name="패스 835" d="M42.1,47.654H9.9A9.885,9.885,0,0,1,1.34,32.828l16.1-27.886a9.884,9.884,0,0,1,17.12,0l16.1,27.886A9.884,9.884,0,0,1,42.1,47.654M26,3.7a6.121,6.121,0,0,0-5.355,3.092L4.545,34.679A6.183,6.183,0,0,0,9.9,43.954H42.1a6.183,6.183,0,0,0,5.354-9.275L31.355,6.793A6.12,6.12,0,0,0,26,3.7M19.043,5.868h0Z" transform="translate(0 0)" fill="#fff"/>
+      <path id="패스_836" data-name="패스 836" d="M27.927,12.42h0a2.163,2.163,0,0,0-2.163,2.163V29.744a2.163,2.163,0,1,0,4.326,0V14.583a2.163,2.163,0,0,0-2.163-2.163" transform="translate(-1.928 -0.929)" fill="#fff"/>
+      <path id="패스_837" data-name="패스 837" d="M27.927,37.554h0a2.163,2.163,0,1,0,2.163,2.163,2.163,2.163,0,0,0-2.163-2.163" transform="translate(-1.928 -2.809)" fill="#fff"/>
+    </g>
+  </g>
+</svg>
