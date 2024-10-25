@@ -100,6 +100,15 @@ function TaxonomyEdit() {
               <AppTextInput label="Level1" disabled />
             </div>
           </div>
+          <div className="form-cell wid100">
+            <div className="form-group wid100">
+              <div className="btn-area tax">
+                <button type="button" name="button" className="btn-sm btn_text btn-darkblue-line">
+                  신규
+                </button>
+              </div>
+            </div>
+          </div>
         </div>
         <hr className="line dp-n"></hr>
         <div className="form-table line">

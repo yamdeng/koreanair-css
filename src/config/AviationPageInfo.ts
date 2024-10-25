@@ -138,6 +138,7 @@ import AuditDetail from '@/components/publish/aviation/AuditDetail';
 import AuditQuality from '@/components/publish/aviation/AuditQuality';
 import ClosingPayDetail from '@/components/publish/aviation/ClosingPayDetail';
 import ReceiptPayDetail from '@/components/publish/aviation/ReceiptPayDetail';
+import PAviationsub2 from '@/components/publish/aviation/PAviationsub2';
 import PAviationsub3 from '@/components/publish/aviation/PAviationsub3';
 import { fa, fakerLV } from '@faker-js/faker';
 import { fail } from 'assert';
