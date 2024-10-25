@@ -340,17 +340,6 @@ function MyAuditCAR() {
                                             <span className="delete">X</span>
                                           </a>
                                         </div>
-                                        <div className="step-box type01">
-                                          <ul>
-                                            <li>
-                                              <span>[AES04] :</span>Improper use of Improper use of
-                                            </li>
-                                            <li className="stit">Improper use of Improper use of</li>
-                                          </ul>
-                                          <a href="javascript:void(0);">
-                                            <span className="delete">X</span>
-                                          </a>
-                                        </div>
                                       </div>
                                     </div>
                                   </div>

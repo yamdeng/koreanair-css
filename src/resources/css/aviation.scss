@@ -2022,7 +2022,7 @@ keyframes
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  max-width: 24.0rem;
+  max-width: 30.0rem;
   }
 
   width: 100%;
@@ -2039,8 +2039,11 @@ keyframes
 }
 .step-box.type01 {
   display: inline-flex;
-  width: auto;
+  width: 50.0rem;
   margin: 0 0.5rem;
+}
+.step-box.type01 li {
+  max-width: 45.0rem;
 }
 .pd-lr10 {padding: 0 1.5rem !important}
 .pd-center {position: relative; top: 0.7rem; left: 1.0rem;}
