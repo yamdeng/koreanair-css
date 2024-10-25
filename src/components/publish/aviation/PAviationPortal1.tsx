@@ -161,15 +161,15 @@ function PAviationPortal1() {
                         Diversion(Technicalreasons)
                       </div>
                       <span className="sub-txt">
-                        Number of occurrence <strong>5</strong>
+                        Number of occurrence <strong>1234</strong>
                       </span>
                     </div>
                     <div className="risk-bottom">
                       <ul className="sort-box">
                         <li className="gray">0</li>
-                        <li className="orange">1</li>
-                        <li className="yellow">4</li>
-                        <li className="gray">0</li>
+                        <li className="orange">1234</li>
+                        <li className="yellow">1234</li>
+                        <li className="gray">0000</li>
                       </ul>
                     </div>
                   </div>
@@ -555,7 +555,9 @@ function PAviationPortal1() {
               <tbody>
                 <tr>
                   <td>
-                    <a href="javascript:void(0);">[공지] 안전장려금 제33차 운영 현황 안내</a>
+                    <a href="javascript:void(0);">
+                      [일반공지] 신규 스카이패스 할인 및 엑설런트 보딩패스 제휴 (코엑스 아쿠아리움)
+                    </a>
                   </td>
                   <td>
                     <span className="date">2024-00-00</span>
@@ -614,7 +616,7 @@ function PAviationPortal1() {
           <div id="" className="main-table-box" style={{ display: 'none' }}>
             <div className="graph-area">
               <div className="graph-box">
-                <canvas id="reportCvs0" width="250" height="175" style={{ cursor: 'default' }}></canvas>
+                <canvas id="reportCvs0" width="190" height="175" style={{ cursor: 'default' }}></canvas>
                 <div className="txt-box">
                   <span className="txt">Accident rate/10,000flts</span>
                   <span className="num">0.000</span>
@@ -622,7 +624,7 @@ function PAviationPortal1() {
                 </div>
               </div>
               <div className="graph-box">
-                <canvas id="reportCvs0" width="250" height="175" style={{ cursor: 'default' }}></canvas>
+                <canvas id="reportCvs0" width="190" height="175" style={{ cursor: 'default' }}></canvas>
                 <div className="txt-box">
                   <span className="txt">Accident rate/10,000flts</span>
                   <span className="num">0.000</span>

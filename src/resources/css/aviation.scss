@@ -1068,14 +1068,15 @@ meter::-webkit-meter-optimum-value {
   .grid-item h3 span.siren {display: inline-block; font-size: 0; background: url(../images/siren.svg)center center no-repeat; background-size: 2.6rem; vertical-align: top; width: 2.6rem;}
   .grid-item h3 .main-tab li {display: inline-block; padding: 0 1.0rem;}
   .grid-item h3 .main-tab li:first-child {padding-left: 0;}
-  .grid-item h3 .main-tab li a {font-size: 1.6rem; color:var( --color-neutral-70);}
-  .grid-item h3 .main-tab li a.active {font-size:2rem; color: var(--color-darkblue-100);}
+  .grid-item h3 .main-tab li a {font-size: 1.6rem; color:var( --color-neutral-70);cursor:pointer}
+  .grid-item h3 .main-tab li a.active{font-size:2rem; color: var(--color-darkblue-100);cursor:pointer}
 
   .grid-item .main-table-box{width:100%;/*margin-top:-1rem*/}
   .grid-item .main-table-box .main-table{width:100%;display:block;}
   .grid-item .main-table-box .main-table tbody{display:block;max-height:25.5rem;overflow-y:auto}
   .grid-item .main-table-box .main-table tr{display:table;border-top:solid 0.1rem #ddd;vertical-align: middle;padding:1rem 0}
   .grid-item .main-table-box .main-table td{text-align:left;width:100%;padding:1.0rem;text-overflow:ellipsis;white-space:nowrap;overflow:hidden;-webkit-line-clamp:1}
+  .grid-item .main-table-box .main-table td:nth-child(1){max-width:3.5rem}
   .grid-item .main-table-box .main-table td a{font-size:1.4rem;font-weight:500;color:var(--color-neutral-80);-webkit-line-clamp:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
   .grid-item .main-table-box .main-table td a:hover{text-decoration:underline; color: var(--color-darkblue-100);}
 
@@ -1098,7 +1099,7 @@ meter::-webkit-meter-optimum-value {
   .grid-item .main-table-box .main-table-todo td a {font-size:1.4rem;font-weight:500;color:var(--color-neutral-80);-webkit-line-clamp:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;padding:1rem}
   .grid-item .main-table-box .main-table-todo td a:hover{text-decoration: underline; color: var(--color-darkblue-100);}
   .grid-item .main-table-box .graph-area{display:flex;width:100%;gap:0 1rem}
-  .grid-item .main-table-box .graph-area .graph-box{position:relative;box-sizing:border-box;margin:0 auto}
+  .grid-item .main-table-box .graph-area .graph-box{position:relative;box-sizing:border-box;margin:0 auto;width:100%;border:solid 1px red}
   .grid-item .main-table-box .graph-area .graph-box .txt-box{margin:0 auto;text-align:center}
   .grid-item .main-table-box .graph-area .graph-box .txt-box .txt{font-size:1.4rem}
   .grid-item .main-table-box .graph-area .graph-box .txt-box .num{display:block;font-size:2.0rem;font-weight:700;text-align:center}
