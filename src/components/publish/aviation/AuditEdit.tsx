@@ -7,7 +7,7 @@ import AppDatePicker from '@/components/common/AppDatePicker';
 import AppTextInput from '@/components/common/AppTextInput';
 import AppSelect from '@/components/common/AppSelect';
 
-function AuditDetail() {
+function AuditEdit() {
   const [inputValue, setInputValue] = useState('');
   const rowData = getAllData();
   const columns = testColumnInfos;
@@ -51,4 +51,4 @@ function AuditDetail() {
   );
 }
 
-export default AuditDetail;
+export default AuditEdit;

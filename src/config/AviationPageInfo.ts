@@ -134,7 +134,7 @@ import AdminSPIPList from '@/components/publish/aviation/AdminSPIPList';
 import AdminSPIPEdit from '@/components/publish/aviation/AdminSPIPEdit';
 import AdminSPIPDetail from '@/components/publish/aviation/AdminSPIPDetail';
 import AuditList from '@/components/publish/aviation/AuditList';
-import AuditDetail from '@/components/publish/aviation/AuditDetail';
+import AuditEdit from '@/components/publish/aviation/AuditEdit';
 import AuditQuality from '@/components/publish/aviation/AuditQuality';
 import ClosingPayDetail from '@/components/publish/aviation/ClosingPayDetail';
 import ReceiptPayDetail from '@/components/publish/aviation/ReceiptPayDetail';
@@ -754,9 +754,9 @@ AviationPageInfo.list = [
     success: true,
   },
   {
-    title: '[06.AUDIT] 예외 Audit 관리 상세',
-    Component: AuditDetail,
-    path: 'AuditDetail',
+    title: '[06.AUDIT] 예외 Audit 관리 등록및수정',
+    Component: AuditEdit,
+    path: 'AuditEdit',
     description: '',
     success: false,
   },
