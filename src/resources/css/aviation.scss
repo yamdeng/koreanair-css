@@ -1252,6 +1252,7 @@ meter::-webkit-meter-optimum-value {
 .equip-container .equip-contents{display:inline-flex;width:100%}
 .equip-container .equip-contents .equip-left-box{vertical-align:top;padding-right:3rem;width:100%}
 .equip-container .equip-contents .equip-left-box .plan-box{}
+.equip-container .equip-contents .equip-left-box .plan-box .boxForm{padding:0 2rem 0}
 .equip-container .equip-contents .equip-left-box .plan-box + .plan-box{margin-top:2rem}
 .equip-container .equip-contents .equip-left-box .plan-box .graph-area{width:100%}
 .equip-container .equip-contents .equip-left-box .plan-box .boxcons{display:flex;width:100%}
@@ -1263,17 +1264,20 @@ meter::-webkit-meter-optimum-value {
 .equip-container .equip-contents .equip-left-box .plan-box .box-wrap .box-area .box-area-top{padding:1rem}
 .equip-container .equip-contents .equip-left-box .plan-box .box-wrap .box-area .box-area-top .tit{display:inline-block;border-radius:99.9rem;padding:0.2rem 1.2rem;background-color: var(--color-lightblue-10)}
 .equip-container .equip-contents .equip-left-box .plan-box .box-wrap .box-area .box-area-top .tit .tit-top{font-size:1.2rem}
-.equip-container .equip-contents .equip-left-box .plan-box .box-wrap .box-area .box-area-top .num{text-align:center;font-size:1.6rem}
-.equip-container .equip-contents .equip-left-box .plan-box .box-wrap .box-area .box-area-top .num .num-color{color:var(--color-btn-blue3);font-size:1.8rem;font-weight:700;}
+.equip-container .equip-contents .equip-left-box .plan-box .box-wrap .box-area .box-area-top .num{text-align:center;font-size:1.7rem;line-height:4rem}
+.equip-container .equip-contents .equip-left-box .plan-box .box-wrap .box-area .box-area-top .num .num-color{color:var(--color-btn-blue3);font-size:2rem;font-weight:700}
 .equip-container .equip-contents .equip-left-box .plan-box .box-wrap .box-area .box-area-bottom{background-color:var(--color-neutral-20);}
 .equip-container .equip-contents .equip-left-box .plan-box .box-wrap .box-area .box-area-bottom .text-bottom{padding:0.5rem 1rem;font-size:1.2rem;}
 
-
+.equip-container .equip-contents .equip-left-box .plan-box .box-wrap .box-area .box-area-bottom .text-bottom ul li{display:inline-block;width:50%;text-align:center;font-size:1.2rem;border-right:solid 0.1rem var(--color-neutral-40)}
+.equip-container .equip-contents .equip-left-box .plan-box .box-wrap .box-area .box-area-bottom .text-bottom ul li:last-child{border-right:0}
 .equip-container .equip-contents .equip-right-box{display:inline-block;width:100%}
-.equip-container .equip-contents .equip-right-box .boxForm.audit{position: relative;display:inline-table;width:100%;background-color:transparent;padding:0;}
-.equip-container .equip-contents .equip-right-box .form-table.audit{display:flex;width:100%}
+.equip-container .equip-contents .equip-right-box .boxForm.audit{position: relative;display:inline-table;width:100%;padding:0 2rem 0}
+.equip-container .equip-contents .equip-right-box .form-table.audit{display:flex;width:100%;padding-bottom:0}
+.equip-container .equip-contents .equip-right-box .boxForm{padding:0 2rem 0}
 .equip-container .equip-contents .equip-right-box .form-table.audit .form-cell .menu-tab-nav{justify-content:flex-end}
-.equip-container .equip-contents .equip-right-box .form-table.audit .form-cell .menu-tab-nav .menu-tab a{min-height:3.8rem}
+.equip-container .equip-contents .equip-right-box .form-table.audit .form-cell .menu-tab-nav .menu-tab a{min-height:3.8rem;padding:0 2rem}
+.equip-container .equip-contents .equip-right-box .graph-area{width:100%;border:solid 1px red}
 
 /*항공안전 메인 플로팅메뉴*/
 .cd-stretchy-nav{position:fixed;z-index: 2;bottom:2.0rem;right:3%}

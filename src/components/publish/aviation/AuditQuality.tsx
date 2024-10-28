@@ -107,45 +107,72 @@ function AuditQuality() {
                     </div>
                     <div className="box-area-bottom">
                       <div className="text-bottom">
-                        <dl>
-                          <dt> 접수:</dt>
-                          <dd>10건</dd>
-                        </dl>
+                        <ul>
+                          <li>접수:10건</li>
+                          <li>종결 : 20건</li>
+                        </ul>
                       </div>
                     </div>
                   </div>
                 </div>
                 <div className="box-wrap">
                   <div className="box-area">
-                    <div className="tit">
-                      <span className="tit-top">운항</span>
+                    <div className="box-area-top">
+                      <div className="tit">
+                        <span className="tit-top">운항</span>
+                      </div>
+                      <div className="num">
+                        42/<span className="num-color">97%</span>
+                      </div>
                     </div>
-                    <div className="num">
-                      87/<span className="num-color">95%</span>
+                    <div className="box-area-bottom">
+                      <div className="text-bottom">
+                        <ul>
+                          <li>접수:10건</li>
+                          <li>종결 : 20건</li>
+                        </ul>
+                      </div>
                     </div>
-                    <div className="text-bottom">접수:10건</div>
                   </div>
                 </div>
                 <div className="box-wrap">
                   <div className="box-area">
-                    <div className="tit">
-                      <span>총괄</span>
+                    <div className="box-area-top">
+                      <div className="tit">
+                        <span className="tit-top">종합</span>
+                      </div>
+                      <div className="num">
+                        75/<span className="num-color">83%</span>
+                      </div>
                     </div>
-                    <div className="num">
-                      87/<span>95%</span>
+                    <div className="box-area-bottom">
+                      <div className="text-bottom">
+                        <ul>
+                          <li>접수:10건</li>
+                          <li>종결 : 20건</li>
+                        </ul>
+                      </div>
                     </div>
-                    <div className="text-bottom">접수:10건</div>
                   </div>
                 </div>
                 <div className="box-wrap">
                   <div className="box-area">
-                    <div className="tit">
-                      <span>총괄</span>
+                    <div className="box-area-top">
+                      <div className="tit">
+                        <span className="tit-top">정비</span>
+                      </div>
+                      <div className="num">
+                        50/<span className="num-color">60%</span>
+                      </div>
                     </div>
-                    <div className="num">
-                      87/<span>95%</span>
+                    <div className="box-area-bottom">
+                      <div className="text-bottom">
+                        <ul>
+                          <li>접수:10건</li>
+                          <li>종결 : 20건</li>
+                        </ul>
+                      </div>
                     </div>
-                    <div className="text-bottom">접수:10건</div>
                   </div>
                 </div>
               </div>
@@ -153,13 +180,22 @@ function AuditQuality() {
               <div className="boxcons">
                 <div className="box-wrap">
                   <div className="box-area">
-                    <div className="tit">
-                      <span>총괄</span>
+                    <div className="box-area-top">
+                      <div className="tit">
+                        <span className="tit-top">객실</span>
+                      </div>
+                      <div className="num">
+                        90/<span className="num-color">33%</span>
+                      </div>
                     </div>
-                    <div className="num">
-                      87/<span>95%</span>
+                    <div className="box-area-bottom">
+                      <div className="text-bottom">
+                        <ul>
+                          <li>접수:10건</li>
+                          <li>종결 : 20건</li>
+                        </ul>
+                      </div>
                     </div>
-                    <div className="text-bottom">접수:10건</div>
                   </div>
                 </div>
                 <div className="box-wrap">
@@ -231,6 +267,7 @@ function AuditQuality() {
                 </div>
               </div>
             </div>
+            <div className="graph-area">그래프 영역</div>
           </div>
         </div>
       </div>
