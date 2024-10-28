@@ -138,8 +138,9 @@ import AuditEdit from '@/components/publish/aviation/AuditEdit';
 import AuditQuality from '@/components/publish/aviation/AuditQuality';
 import ClosingPayDetail from '@/components/publish/aviation/ClosingPayDetail';
 import ReceiptPayDetail from '@/components/publish/aviation/ReceiptPayDetail';
-import PAviationsub2 from '@/components/publish/aviation/PAviationsub2';
+import CabinSafety from '@/components/publish/aviation/CabinSafety';
 import PAviationsub3 from '@/components/publish/aviation/PAviationsub3';
+import PAviationsub4 from '@/components/publish/aviation/PAviationsub4';
 import { fa, fakerLV } from '@faker-js/faker';
 import { fail } from 'assert';
 
@@ -165,12 +166,19 @@ AviationPageInfo.list = [
     Component: CabinSafety,
     path: 'CabinSafety',
     description: '',
-    success: false,
+    success: true,
   },
   {
     title: '[서브메인] 지상안전보고서 메인',
     Component: PAviationsub3,
     path: 'PAviationsub3',
+    description: '',
+    success: true,
+  },
+  {
+    title: '[서브메인] 장비안전보고서 메인',
+    Component: PAviationsub4,
+    path: 'PAviationsub4',
     description: '',
     success: false,
   },

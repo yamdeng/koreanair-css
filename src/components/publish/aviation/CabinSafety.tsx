@@ -4,9 +4,16 @@ import useAppStore from '@/store/useAppStore';
 import AppSelect from '@/components/common/AppSelect';
 import mainphoto from '@/resources/images/av-img.jpg';
 import mainphoto2 from '@/resources/images/img.jpg';
-import chartasr from '@/resources/images/ASR-box.svg';
-import chartmsr from '@/resources/images/MSR-box.svg';
-import Slider from 'react-slick';
+import inspimg from '@/resources/images/icon_csr_insp.svg';
+import depimg from '@/resources/images/icon_csr_depi.svg';
+import injimg from '@/resources/images/icon_csr_inj.svg';
+import patiimg from '@/resources/images/icon_csr_pati.svg';
+import crewpatiimg from '@/resources/images/icon_csr_crewpatiimg.svg';
+import crewinjimg from '@/resources/images/icon_csr_crewinj.svg';
+import actsimg from '@/resources/images/icon_csr_acts.svg';
+import smokingimg from '@/resources/images/icon_csr_smoking.svg';
+import maintimg from '@/resources/images/icon_csr_maint.svg';
+import othersimg from '@/resources/images/icon_csr_others.svg';
 
 function CabinSafety() {
   const { setIsAviationPortal } = useStore(useAppStore, (state) => state) as any;
@@ -41,83 +48,114 @@ function CabinSafety() {
   }, []);
   return (
     <>
-      {/*nav-is-visible - 펼침 */}
-      <div className={rightIconVisible ? 'cd-stretchy-nav nav-is-visible' : 'cd-stretchy-nav'}>
-        <a href="javascript:void(0);" className="cd-nav-trigger" onClick={() => togglerightIconVisible()}>
-          <span aria-hidden="true"></span>
-        </a>
-        <ul>
-          <li>
-            <a href="javascript:void(0);" className="active">
-              <span>Safety Repot</span>
-            </a>
-          </li>
-          <li>
-            <a href="javascript:void(0);">
-              <span>객실안전보고서</span>
-            </a>
-          </li>
-          <li>
-            <a href="javascript:void(0);">
-              <span>장비안전보고서</span>
-            </a>
-          </li>
-          <li>
-            <a href="javascript:void(0);">
-              <span>지상안전보고서</span>
-            </a>
-          </li>
-          <li>
-            <a href="javascript:void(0);">
-              <span>운항관리안전보고서</span>
-            </a>
-          </li>
-          <li>
-            <a href="javascript:void(0);">
-              <span>램프안전보고서</span>
-            </a>
-          </li>
-          <li>
-            <a href="javascript:void(0);">
-              <span>FOQA</span>
-            </a>
-          </li>
-          <li>
-            <a href="javascript:void(0);">
-              <span>HAZARD</span>
-            </a>
-          </li>
-          {/* <li>
-            <a href="javascript:void(0);">
-              <span>HAZARD</span>
-            </a>
-          </li>
-          <li>
-            <a href="javascript:void(0);">
-              <span>1010</span>
-            </a>
-          </li>
-          <li>
-            <a href="javascript:void(0);">
-              <span>1111</span>
-            </a>
-          </li>
-          <li>
-            <a href="javascript:void(0);">
-              <span>DD</span>
-            </a>
-          </li> */}
-        </ul>
-
-        <span aria-hidden="true" className="stretchy-nav-bg"></span>
-      </div>
-
-      <div className="av-main-wrap">
-        {/* Top 10 RISK AREAS*/}
-        <div className="grid-item">
-          <div className="grid-group">
-            <div className="head-top">
-              <h3>Top 10 Events</h3>
+      <div className="av-submain">
+        <div className="av-submain-bg">
+          <div className="av-submain-wrap csr">
+            <div className="h3-tit">
+              <span className="tit-color">CSR</span> Safety Report
+            </div>
+            <div className="line-bg">
+              <div className="img bounce-in-left"></div>
+            </div>
+            <div className="av-area">
+              <div className="av-box">
+                <div className="tit-wrap">Inspection</div>
+                <a href="javascript:void(0);">
+                  <i className="icon-img">
+                    <img src={inspimg} className="" alt="Inspection" />
+                  </i>
+                </a>
+              </div>
+            </div>
+            <div className="av-area">
+              <div className="av-box">
+                <div className="tit-wrap">Pax Deplane</div>
+                <a href="javascript:void(0);">
+                  <i className="icon-img">
+                    <img src={depimg} className="" alt="Pax Deplane" />
+                  </i>
+                </a>
+              </div>
+            </div>
+            <div className="av-area">
+              <div className="av-box">
+                <div className="tit-wrap">Pax Patient</div>
+                <a href="javascript:void(0);">
+                  <i className="icon-img">
+                    <img src={patiimg} className="" alt="Pax Patient" />
+                  </i>
+                </a>
+              </div>
+            </div>
+            <div className="av-area">
+              <div className="av-box">
+                <div className="tit-wrap">PAX Injury</div>
+                <a href="javascript:void(0);">
+                  <i className="icon-img">
+                    <img src={injimg} className="" alt="PAX Injury" />
+                  </i>
+                </a>
+              </div>
+            </div>
+            <div className="av-area">
+              <div className="av-box">
+                <div className="tit-wrap">Crew Patient</div>
+                <a href="javascript:void(0);">
+                  <i className="icon-img">
+                    <img src={crewpatiimg} className="" alt="Crew Patient" />
+                  </i>
+                </a>
+              </div>
+            </div>
+            <div className="av-area">
+              <div className="av-box">
+                <div className="tit-wrap">Crew Injury</div>
+                <a href="javascript:void(0);">
+                  <i className="icon-img">
+                    <img src={crewinjimg} className="" alt="Crew Injury" />
+                  </i>
+                </a>
+              </div>
+            </div>
+            <div className="av-area">
+              <div className="av-box">
+                <div className="tit-wrap">Acts of Unlawful Interference</div>
+                <a href="javascript:void(0);">
+                  <i className="icon-img">
+                    <img src={actsimg} className="" alt="Acts of Unlawful Interference" />
+                  </i>
+                </a>
+              </div>
+            </div>
+            <div className="av-area">
+              <div className="av-box">
+                <div className="tit-wrap">Smoking</div>
+                <a href="javascript:void(0);">
+                  <i className="icon-img">
+                    <img src={smokingimg} className="" alt="Smoking" />
+                  </i>
+                </a>
+              </div>
+            </div>
+            <div className="av-area">
+              <div className="av-box">
+                <div className="tit-wrap">Maintenance</div>
+                <a href="javascript:void(0);">
+                  <i className="icon-img">
+                    <img src={maintimg} className="" alt="Maintenance" />
+                  </i>
+                </a>
+              </div>
+            </div>
+            <div className="av-area">
+              <div className="av-box">
+                <div className="tit-wrap">Others</div>
+                <a href="javascript:void(0);">
+                  <i className="icon-img">
+                    <img src={othersimg} className="" alt="Others" />
+                  </i>
+                </a>
+              </div>
             </div>
           </div>
         </div>

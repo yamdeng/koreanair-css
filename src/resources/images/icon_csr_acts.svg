@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="44.477" height="41.225" viewBox="0 0 44.477 41.225">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="사각형_873" data-name="사각형 873" width="44.477" height="41.225" transform="translate(0 0)" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="icon_csr_07" transform="translate(0 0)">
+    <g id="그룹_516" data-name="그룹 516">
+      <g id="그룹_515" data-name="그룹 515" clip-path="url(#clip-path)">
+        <line id="선_820" data-name="선 820" y1="5.084" transform="translate(22.04 1.75)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="3.5"/>
+      </g>
+    </g>
+    <line id="선_821" data-name="선 821" x1="3.595" y1="3.595" transform="translate(7.958 7.17)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="3.5"/>
+    <line id="선_822" data-name="선 822" y1="3.595" x2="3.595" transform="translate(32.924 7.17)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="3.5"/>
+    <g id="그룹_518" data-name="그룹 518">
+      <g id="그룹_517" data-name="그룹 517" clip-path="url(#clip-path)">
+        <path id="패스_775" data-name="패스 775" d="M22.009,12.045h0A10.884,10.884,0,0,0,11.125,22.929V33.424H32.893V22.929A10.884,10.884,0,0,0,22.009,12.045Z" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="3.5"/>
+        <path id="패스_776" data-name="패스 776" d="M27.784,24.126a7.653,7.653,0,0,0-3.015-6.236" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="3.5"/>
+        <line id="선_823" data-name="선 823" x1="5.084" transform="translate(1.75 21.252)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="3.5"/>
+        <line id="선_824" data-name="선 824" x2="5.084" transform="translate(37.642 21.252)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="3.5"/>
+        <rect id="사각형_874" data-name="사각형 874" width="31.044" height="6.051" transform="translate(6.487 33.424)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="3.5"/>
+      </g>
+    </g>
+  </g>
+</svg>
