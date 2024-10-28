@@ -49,8 +49,10 @@ import POccupationMu3P1detail from '@/components/publish/occupation/POccupationM
 import POccupationMu3P2list from '@/components/publish/occupation/POccupationMu3P2list';
 import POccupationMu3P2list1 from '@/components/publish/occupation/POccupationMu3P2list1';
 import POccupationMu3P2edit from '@/components/publish/occupation/POccupationMu3P2edit';
+import POccupationMu3P2detail from '@/components/publish/occupation/POccupationMu3P2detail';
 import POccupationMu3P3list from '@/components/publish/occupation/POccupationMu3P3list';
 import POccupationMu3P3edit from '@/components/publish/occupation/POccupationMu3P3edit';
+import POccupationMu3P3detail from '@/components/publish/occupation/POccupationMu3P3detail';
 import POccupationMu3P4list from '@/components/publish/occupation/POccupationMu3P4list';
 import POccupationMu3P4list1 from '@/components/publish/occupation/POccupationMu3P4list1';
 import POccupationMu3P4edit from '@/components/publish/occupation/POccupationMu3P4edit';
@@ -60,6 +62,7 @@ import POccupationMu3P5edit from '@/components/publish/occupation/POccupationMu3
 import POccupationMu3P5detail from '@/components/publish/occupation/POccupationMu3P5detail';
 import POccupationMu3P6list from '@/components/publish/occupation/POccupationMu3P6list';
 import POccupationMu3P6edit from '@/components/publish/occupation/POccupationMu3P6edit';
+import POccupationMu3P6detail from '@/components/publish/occupation/POccupationMu3P6detail';
 import POccupationMu3P6list1 from '@/components/publish/occupation/POccupationMu3P6list1';
 import POccupationMu3P6edit1 from '@/components/publish/occupation/POccupationMu3P6edit1';
 import POccupationMu3P7list from '@/components/publish/occupation/POccupationMu3P7list';
@@ -67,6 +70,7 @@ import POccupationMu3P7edit from '@/components/publish/occupation/POccupationMu3
 import POccupationMu3P7detail from '@/components/publish/occupation/POccupationMu3P7detail';
 import POccupationMu3P8list from '@/components/publish/occupation/POccupationMu3P8list';
 import POccupationMu3P8edit from '@/components/publish/occupation/POccupationMu3P8edit';
+import POccupationMu3P8detail from '@/components/publish/occupation/POccupationMu3P8detail';
 import POccupationMu4P1list from '@/components/publish/occupation/POccupationMu4P1list';
 import POccupationMu4P1edit from '@/components/publish/occupation/POccupationMu4P1edit';
 import POccupationMu4P2list from '@/components/publish/occupation/POccupationMu4P2list';
@@ -460,6 +464,13 @@ OccupationPageInfo.list = [
     success: true,
   },
   {
+    title: '안전관리 > 위험기계기구-조회-상세',
+    Component: POccupationMu3P2detail,
+    path: 'POccupationMu3P2detail',
+    description: '',
+    success: false,
+  },
+  {
     title: '안전관리 > 작업환경측정-리스트',
     Component: POccupationMu3P3list,
     path: 'POccupationMu3P3list',
@@ -472,6 +483,13 @@ OccupationPageInfo.list = [
     path: 'POccupationMu3P3edit',
     description: '',
     success: true,
+  },
+  {
+    title: '안전관리 > 작업환경측정-상세',
+    Component: POccupationMu3P3detail,
+    path: 'POccupationMu3P3detail',
+    description: '',
+    success: false,
   },
   {
     title: '안전관리 > 외주작업허가-현황-리스트',
@@ -537,6 +555,13 @@ OccupationPageInfo.list = [
     success: true,
   },
   {
+    title: '안전관리 > 적격수급업체평가-평가-상세',
+    Component: POccupationMu3P6detail,
+    path: 'POccupationMu3P6detail',
+    description: '',
+    success: false,
+  },
+  {
     title: '안전관리 > 적격수급업체평가-업체관리-리스트',
     Component: POccupationMu3P6list1,
     path: 'POccupationMu3P6list1',
@@ -584,6 +609,13 @@ OccupationPageInfo.list = [
     path: 'POccupationMu3P8edit',
     description: '',
     success: true,
+  },
+  {
+    title: '안전관리 > 관리감독자평가-상세',
+    Component: POccupationMu3P8detail,
+    path: 'POccupationMu3P8detail',
+    description: '',
+    success: false,
   },
   {
     title: '안전점검 > 점검표관리-리스트',
