@@ -55,10 +55,7 @@ function PAviationsub1() {
             </div>
             <div className="av-area">
               <div className="av-box">
-                <div className="tit-wrap">
-                  Air <br />
-                  Safety Report
-                </div>
+                <div className="tit-wrap">Air Safety Report</div>
                 <a href="javascript:void(0);">
                   <i className="icon-img">
                     <img src={asrimg} className="" alt="ASR" />
@@ -68,11 +65,7 @@ function PAviationsub1() {
             </div>
             <div className="av-area">
               <div className="av-box">
-                <div className="tit-wrap">
-                  객실
-                  <br />
-                  안전 보고서
-                </div>
+                <div className="tit-wrap">Canin Safety Report</div>
                 <a href="javascript:void(0);">
                   <i className="icon-img">
                     <img src={csrimg} className="" alt="CSR" />
@@ -82,11 +75,7 @@ function PAviationsub1() {
             </div>
             <div className="av-area">
               <div className="av-box">
-                <div className="tit-wrap">
-                  정비
-                  <br />
-                  안전 보고서
-                </div>
+                <div className="tit-wrap">Maintenance Safety Report</div>
                 <a href="javascript:void(0);">
                   <i className="icon-img">
                     <img src={msrimg} className="" alt="MSR" />
@@ -96,11 +85,7 @@ function PAviationsub1() {
             </div>
             <div className="av-area">
               <div className="av-box">
-                <div className="tit-wrap">
-                  지상
-                  <br />
-                  안전 보고서
-                </div>
+                <div className="tit-wrap">Ground Safety Report</div>
                 <a href="javascript:void(0);">
                   <i className="icon-img">
                     <img src={gsrimg} className="" alt="GSR" />
@@ -110,11 +95,7 @@ function PAviationsub1() {
             </div>
             <div className="av-area">
               <div className="av-box">
-                <div className="tit-wrap">
-                  운항관리사
-                  <br />
-                  안전 보고서
-                </div>
+                <div className="tit-wrap">Dispatcher Safety Report</div>
                 <a href="javascript:void(0);">
                   <i className="icon-img">
                     <img src={dsrimg} className="" alt="DSR" />
@@ -124,11 +105,7 @@ function PAviationsub1() {
             </div>
             <div className="av-area">
               <div className="av-box">
-                <div className="tit-wrap">
-                  램프
-                  <br />
-                  안전 보고서
-                </div>
+                <div className="tit-wrap">Ramp Safety Report</div>
                 <a href="javascript:void(0);">
                   <i className="icon-img">
                     <img src={rsrimg} className="" alt="RSR" />
@@ -148,10 +125,7 @@ function PAviationsub1() {
             </div>
             <div className="av-area">
               <div className="av-box">
-                <div className="tit-wrap">
-                  Hazard <br />
-                  Report
-                </div>
+                <div className="tit-wrap">Hazard Report</div>
                 <a href="javascript:void(0);">
                   <i className="icon-img">
                     <img src={hrimg} className="" alt="HRD" />
