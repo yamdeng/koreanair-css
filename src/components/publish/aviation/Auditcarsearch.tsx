@@ -251,36 +251,8 @@ function Auditcarsearch() {
                         <button type="button" className="btn-wrap blue btn-txt">
                           SELOC
                         </button>
-                        <button type="button" className="btn-wrap blue active btn-txt">
-                          SELOQA
-                        </button>
                       </div>
-                    </li>
-                    <li>
                       <div className="list-area">
-                        <button type="button" className="btn-wrap blue btn-txt">
-                          SELOC
-                        </button>
-                        <button type="button" className="btn-wrap blue active btn-txt">
-                          SELOQA
-                        </button>
-                      </div>
-                    </li>
-                    <li>
-                      <div className="list-area">
-                        <button type="button" className="btn-wrap blue btn-txt">
-                          SELOC
-                        </button>
-                        <button type="button" className="btn-wrap blue active btn-txt">
-                          SELOQA
-                        </button>
-                      </div>
-                    </li>
-                    <li>
-                      <div className="list-area">
-                        <button type="button" className="btn-wrap blue btn-txt">
-                          SELOC
-                        </button>
                         <button type="button" className="btn-wrap blue active btn-txt">
                           SELOQA
                         </button>
@@ -299,9 +271,6 @@ function Auditcarsearch() {
                         <button type="button" className="btn-wrap blue active btn-txt">
                           Plan
                         </button>
-                        <button type="button" className="btn-wrap blue active btn-txt">
-                          Conduct
-                        </button>
                       </div>
                     </li>
                     <li>
@@ -309,6 +278,8 @@ function Auditcarsearch() {
                         <button type="button" className="btn-wrap blue active btn-txt">
                           Plan
                         </button>
+                      </div>
+                      <div className="list-area">
                         <button type="button" className="btn-wrap blue btn-txt">
                           Conduct
                         </button>
@@ -387,14 +358,45 @@ function Auditcarsearch() {
                 <div className="cons-list scroll">
                   <ul className="list">
                     <li>
-                      <div className="list-area">
+                      <div className="list-area0">
                         <button type="button" className="btn-wrap gr btn-txt">
                           국내공항
                         </button>
                       </div>
-                      <div className="list-area">
-                        <div className="list-box">
-                          <ul>
+                      <div className="list-area0">
+                        <ul>
+                          <li>
+                            <div className="list-box">
+                              <button type="button" className="btn-wrap gr w-min active btn-txt">
+                                김포
+                              </button>
+                            </div>
+                            <div className="list-box">
+                              <button type="button" className="btn-wrap gr w-min active btn-txt">
+                                인천
+                              </button>
+                            </div>
+                            <div className="list-box">
+                              <button type="button" className="btn-wrap gr w-min active btn-txt">
+                                서울
+                              </button>
+                            </div>
+                            <div className="list-box">
+                              <button type="button" className="btn-wrap gr w-min active btn-txt">
+                                부산
+                              </button>
+                            </div>
+                          </li>
+                          <li>
+                            <div className="list-box">
+                              <button type="button" className="btn-wrap gr w-min active btn-txt">
+                                울산
+                              </button>
+                            </div>
+                          </li>
+                        </ul>
+                        {/* <div className="list-box">
+                          ㅊ
                             <li>
                               <button type="button" className="btn-wrap gr w-min active btn-txt">
                                 김포
@@ -405,9 +407,9 @@ function Auditcarsearch() {
                               <button type="button" className="btn-wrap gr w-min active btn-txt">
                                 서울
                               </button>
-                              {/* <button type="button" className="btn-wrap gr w-min active btn-txt">
+                              <button type="button" className="btn-wrap gr w-min active btn-txt">
                                 부산
-                              </button> */}
+                              </button>
                             </li>
                             <li>
                               <button type="button" className="btn-wrap gr w-min active btn-txt">
@@ -424,16 +426,16 @@ function Auditcarsearch() {
                               </button>
                             </li>
                           </ul>
-                        </div>
+                        </div> */}
                       </div>
                     </li>
                     <li>
-                      <div className="list-area">
+                      <div className="list-area0">
                         <button type="button" className="btn-wrap gr btn-txt">
                           미주
                         </button>
                       </div>
-                      <div className="list-area">
+                      <div className="list-area0">
                         <ul>
                           <li>
                             <button type="button" className="btn-wrap gr w-min active btn-txt">
@@ -466,7 +468,7 @@ function Auditcarsearch() {
                         </ul>
                       </div>
                     </li>
-                    <li>
+                    {/* <li>
                       <div className="list-area">
                         <button type="button" className="btn-wrap gr btn-txt">
                           일본
@@ -504,7 +506,7 @@ function Auditcarsearch() {
                           </li>
                         </ul>
                       </div>
-                    </li>
+                    </li> */}
                   </ul>
                 </div>
               </div>
@@ -518,6 +520,8 @@ function Auditcarsearch() {
                         <button type="button" className="btn-wrap gr active btn-txt">
                           DIV
                         </button>
+                      </div>
+                      <div className="list-area">
                         <button type="button" className="btn-wrap gr btn-txt">
                           OSR
                         </button>
@@ -538,21 +542,36 @@ function Auditcarsearch() {
               <div className="cons-list scroll">
                 <ul className="list">
                   <li>
-                    <div className="list-area">
+                    <div className="list-area5">
                       <button type="button" className="btn-wrap yell active btn-txt">
                         1A
                       </button>
+                    </div>
+                    <div className="list-area5">
                       <button type="button" className="btn-wrap yell active btn-txt">
                         1B
                       </button>
+                    </div>
+                    <div className="list-area5">
                       <button type="button" className="btn-wrap yell active btn-txt">
                         1C
                       </button>
+                    </div>
+                    <div className="list-area5">
                       <button type="button" className="btn-wrap yell btn-txt">
                         1D
                       </button>
+                    </div>
+                    <div className="list-area5">
                       <button type="button" className="btn-wrap yell btn-txt">
                         1E
+                      </button>
+                    </div>
+                  </li>
+                  <li>
+                    <div className="list-area5">
+                      <button type="button" className="btn-wrap yell active btn-txt">
+                        1A
                       </button>
                     </div>
                   </li>

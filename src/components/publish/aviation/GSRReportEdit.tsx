@@ -658,7 +658,12 @@ function GSRReportEdit() {
                                               <AppTextInput inputType="text" label={''} value="aaa" />
                                             </td>
                                             <td className="Sel">
-                                              <AppTextInput inputType="text" label={''} value="aaa" />
+                                              <AppTextInput
+                                                inputType="text"
+                                                label={''}
+                                                value="aaa"
+                                                errorMessage="aaa"
+                                              />
                                             </td>
                                             <td className="Sel">
                                               <AppSelect

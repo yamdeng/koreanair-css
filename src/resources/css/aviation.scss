@@ -789,10 +789,21 @@ meter::-webkit-meter-optimum-value {
 .cons-list .list{position:relative;width: 100%;align-self: flex-start;}
 .cons-list .list li{position:relative;display:flex;-webkit-box-pack: start;justify-content: start;-webkit-box-align: center;align-items:flex-start;margin:0.3rem 0rem 0.3rem 0.5rem}
 .cons-list .list li .list-area{display:flex;justify-content:space-between;gap:0 0.2rem;width:50%}
+.cons-list .list li .list-area0{display:flex;justify-content:space-between;gap:0 0.2rem;width:100%}
 .cons-list .list li .list-area3{display:flex;justify-content:space-between;gap:0 0.2rem;width:32%}
 .cons-list .list li .list-area3 + .list-area3{margin-left:0.2rem}
+.cons-list .list li .list-area5{display:flex;justify-content:space-between;gap:0 0.2rem;width:19%}
+.cons-list .list li .list-area5 + .list-area5{margin-left:0.2rem}
+.cons-list .list li .list-area0 + .list-area0{margin-left:0.2rem}
 .cons-list .list li .list-area + .list-area{margin-left:0.2rem}
 .cons-list .list li .list-area + .list-area li{margin-top:0}
+.cons-list .list li .list-area0 + .list-area0 li{margin-top:0}
+.cons-list .list li .list-area0 .list-box{    display: flex;
+  justify-content: space-between;
+  gap: 0 0.2rem;
+  //width: 24%;
+  }
+  .cons-list .list li .list-area0 .list-box + .list-box{margin-left:0.2rem}
 .cons-list .list li .list-area + .list-area li button + button{margin-left:0.2rem}
 .cons-list .list li .list-area .list-box{width:100%}
 .cons-list .list li .list-area3 .list-box{width:100%}
@@ -805,6 +816,15 @@ meter::-webkit-meter-optimum-value {
 .cons-list .list li .list-area3 .btn-wrap.blue{width:100%;color:var(--color-neutral-60);border:solid 0.1rem var(--color-darkblue-60);background-color:var(--color-darkblue-10);border-radius:0.3rem;padding:0.3rem 0.5rem}
 .cons-list .list li .list-area3 .btn-txt{font-size:1.2rem;font-weight:400;width:100%}
 .cons-list .list li .list-area3 .btn-txt.w-min{min-width:4.0rem}
+.cons-list .list li .list-area5 .btn-txt{font-size:1.2rem;font-weight:400;width:100%}
+.cons-list .list li .list-area5 .btn-txt.w-min{min-width:4.0rem}
+.cons-list .list li .list-area0 .btn-txt{font-size:1.2rem;font-weight:400;width:100%}
+.cons-list .list li .list-area0 .btn-txt.w-min{min-width:4.0rem}
+.cons-list .list li .list-area0 .btn-wrap.gr.w-min.active{min-width:4.0rem}
+.cons-list .list li .list-area0 .btn-wrap.gr.active{color:var(--color-neutral-80);border:solid 0.1rem var( --color-aud-green-bg-font);background-color:var(--color-aud-green);border-radius:0.3rem;padding:0.3rem 0.5rem}
+.cons-list .list li .list-area0 .btn-wrap.gr{width:100%;color:var(--color-neutral-60);border:solid 0.1rem var( --color-aud-green-bg-font);background-color:var(--color-aud-green-bg);border-radius:0.3rem;padding:0.3rem 0.5rem}
+.cons-list .list li .list-area0 .btn-wrap.gr.w-min{min-width:4.0rem}
+
 
 .cons-list .list li .list-area .btn-wrap.gr.w-min.active{min-width:4.0rem}
 .cons-list .list li .list-area .btn-wrap.gr.active{color:var(--color-neutral-80);border:solid 0.1rem var( --color-aud-green-bg-font);background-color:var(--color-aud-green);border-radius:0.3rem;padding:0.3rem 0.5rem}
@@ -812,6 +832,9 @@ meter::-webkit-meter-optimum-value {
 .cons-list .list li .list-area .btn-wrap.gr.w-min{min-width:4.0rem}
 .cons-list .list li .list-area .btn-wrap.yell.active{color:var(--color-neutral-80);border:solid 0.1rem var(--color-aud-yell);background-color:var(--color-aud-yell);border-radius:0.3rem;padding:0.3rem 0.5rem}
 .cons-list .list li .list-area .btn-wrap.yell{width:100%;color:var(--color-neutral-60);border:solid 0.1rem var(--color-aud-yell);background-color:var(--color-aud-yell-bg);border-radius:0.3rem;padding:0.3rem 0.5rem}
+
+.cons-list .list li .list-area5 .btn-wrap.yell.active{color:var(--color-neutral-80);border:solid 0.1rem var(--color-aud-yell);background-color:var(--color-aud-yell);border-radius:0.3rem;padding:0.3rem 0.5rem}
+.cons-list .list li .list-area5 .btn-wrap.yell{width:100%;color:var(--color-neutral-60);border:solid 0.1rem var(--color-aud-yell);background-color:var(--color-aud-yell-bg);border-radius:0.3rem;padding:0.3rem 0.5rem}
 
 .user-wrap{position:relative;display:flex;justify-content: space-between;align-items:center;width:100%;margin-bottom:1.5rem;gap:0 0.8rem}
 .user-wrap .user-box{position:relative;display:flex;flex-wrap:wrap;counter-reset:myCounter;align-items: stretch;}
