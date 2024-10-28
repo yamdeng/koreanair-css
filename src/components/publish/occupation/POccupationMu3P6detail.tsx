@@ -105,8 +105,15 @@ function POccupationMu3P6detail() {
                 <div className="detail-list">
                   <div className="form-table">
                     <div className="form-cell wid50">
-                      <div className="form-group wid-300">
-                        <AppDatePicker label="작성일자" disabled />
+                      <div className="form-group wid100">
+                        <div className="box-view-list">
+                          <ul className="view-list">
+                            <li className="accumlate-list">
+                              <label className="t-label">작성일자</label>
+                              <span className="text-desc-type1">0000-00-00</span>
+                            </li>
+                          </ul>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -126,22 +133,50 @@ function POccupationMu3P6detail() {
                   <div className="form-table">
                     <div className="form-cell wid50">
                       <div className="form-group wid100">
-                        <AppTextInput label="부문" disabled />
+                        <div className="box-view-list">
+                          <ul className="view-list">
+                            <li className="accumlate-list">
+                              <label className="t-label">부문</label>
+                              <span className="text-desc-type1">부문</span>
+                            </li>
+                          </ul>
+                        </div>
                       </div>
                     </div>
                     <div className="form-cell wid50">
                       <div className="form-group wid100">
-                        <AppTextInput label="부서" disabled />
+                        <div className="box-view-list">
+                          <ul className="view-list">
+                            <li className="accumlate-list">
+                              <label className="t-label">부서</label>
+                              <span className="text-desc-type1">부서</span>
+                            </li>
+                          </ul>
+                        </div>
                       </div>
                     </div>
                     <div className="form-cell wid50">
                       <div className="form-group wid100">
-                        <AppTextInput label="작성자" disabled />
+                        <div className="box-view-list">
+                          <ul className="view-list">
+                            <li className="accumlate-list">
+                              <label className="t-label">작성자</label>
+                              <span className="text-desc-type1">작성자</span>
+                            </li>
+                          </ul>
+                        </div>
                       </div>
                     </div>
                     <div className="form-cell wid50">
                       <div className="form-group wid100">
-                        <AppDatePicker label="작성일자" disabled />
+                        <div className="box-view-list">
+                          <ul className="view-list">
+                            <li className="accumlate-list">
+                              <label className="t-label">작성일자</label>
+                              <span className="text-desc-type1">0000-00-00</span>
+                            </li>
+                          </ul>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -161,33 +196,27 @@ function POccupationMu3P6detail() {
                   <div className="form-table">
                     <div className="form-cell wid50">
                       <div className="form-group wid100">
-                        <AppTextInput label="업체명" required disabled />
+                        <div className="box-view-list">
+                          <ul className="view-list">
+                            <li className="accumlate-list">
+                              <label className="t-label">
+                                업체명<span className="required">*</span>
+                              </label>
+                              <span className="text-desc-type1">업체명</span>
+                            </li>
+                          </ul>
+                        </div>
                       </div>
                     </div>
                     <div className="form-cell wid50">
                       <div className="form-group wid100">
-                        <AppTextInput label="대표자" disabled />
-                      </div>
-                    </div>
-                  </div>
-                  <div className="form-table">
-                    <div className="form-cell wid50">
-                      <div className="form-group wid100">
-                        <AppTextInput label="주소" disabled />
-                      </div>
-                    </div>
-                  </div>
-                  <div className="form-table">
-                    <div className="form-cell wid100">
-                      <div className="form-group form-glow">
-                        <div className="df">
-                          <div className="date1">
-                            <AppDatePicker label="계약기간" required disabled />
-                          </div>
-                          <span className="unt">~</span>
-                          <div className="date2">
-                            <AppDatePicker label="계약기간" required disabled />
-                          </div>
+                        <div className="box-view-list">
+                          <ul className="view-list">
+                            <li className="accumlate-list">
+                              <label className="t-label">대표자</label>
+                              <span className="text-desc-type1">대표자</span>
+                            </li>
+                          </ul>
                         </div>
                       </div>
                     </div>
@@ -195,27 +224,56 @@ function POccupationMu3P6detail() {
                   <div className="form-table">
                     <div className="form-cell wid50">
                       <div className="form-group wid100">
-                        <AppTextInput label="계약명" disabled />
+                        <div className="box-view-list">
+                          <ul className="view-list">
+                            <li className="accumlate-list">
+                              <label className="t-label">주소</label>
+                              <span className="text-desc-type1">주소</span>
+                            </li>
+                          </ul>
+                        </div>
                       </div>
                     </div>
                   </div>
                   <div className="form-table">
                     <div className="form-cell wid50">
                       <div className="form-group wid100">
-                        <textarea
-                          disabled
-                          id="testArea1"
-                          className="form-tag custom_textarea"
-                          style={{ width: '100%' }}
-                          name="testArea1"
-                          value={inputValue}
-                          onChange={(event) => {
-                            setInputValue(event.target.value);
-                          }}
-                        />
-                        <label className="f-label" htmlFor="testArea1">
-                          주요업무
-                        </label>
+                        <div className="box-view-list">
+                          <ul className="view-list">
+                            <li className="accumlate-list">
+                              <label className="t-label">계약기간</label>
+                              <span className="text-desc-type1">0000-00-00 ~ 0000-00-00</span>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="form-table">
+                    <div className="form-cell wid50">
+                      <div className="form-group wid100">
+                        <div className="box-view-list">
+                          <ul className="view-list">
+                            <li className="accumlate-list">
+                              <label className="t-label">계약명</label>
+                              <span className="text-desc-type1">계약명</span>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="form-table">
+                    <div className="form-cell wid50">
+                      <div className="form-group wid100">
+                        <div className="box-view-list">
+                          <ul className="view-list">
+                            <li className="accumlate-list">
+                              <label className="t-label">주요업무</label>
+                              <span className="text-desc-type1">주요업무</span>
+                            </li>
+                          </ul>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -241,12 +299,26 @@ function POccupationMu3P6detail() {
                   <div className="form-table">
                     <div className="form-cell wid50">
                       <div className="form-group wid100">
-                        <AppSelect label="평가분류" required />
+                        <div className="box-view-list">
+                          <ul className="view-list">
+                            <li className="accumlate-list">
+                              <label className="t-label">평가분류</label>
+                              <span className="text-desc-type1">평가분류</span>
+                            </li>
+                          </ul>
+                        </div>
                       </div>
                     </div>
                     <div className="form-cell wid50">
                       <div className="form-group wid100">
-                        <AppSelect label="기준등급" required />
+                        <div className="box-view-list">
+                          <ul className="view-list">
+                            <li className="accumlate-list">
+                              <label className="t-label">기준등급</label>
+                              <span className="text-desc-type1">기준등급</span>
+                            </li>
+                          </ul>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -269,12 +341,8 @@ function POccupationMu3P6detail() {
                             <th>일반원칙</th>
                             <th>도급•수급인의 안전보건방침 적정여부</th>
                             <th>5</th>
-                            <td>
-                              <AppTextInput label="" />
-                            </td>
-                            <td>
-                              <AppTextInput label="" />
-                            </td>
+                            <td>5</td>
+                            <td>평가의견평가의견</td>
                           </tr>
                         </tbody>
                       </table>
@@ -302,17 +370,38 @@ function POccupationMu3P6detail() {
                   <div className="form-table">
                     <div className="form-cell wid50">
                       <div className="form-group wid100">
-                        <AppTextInput label="평가년도" disabled />
+                        <div className="box-view-list">
+                          <ul className="view-list">
+                            <li className="accumlate-list">
+                              <label className="t-label">평가년도</label>
+                              <span className="text-desc-type1">0000-00-00</span>
+                            </li>
+                          </ul>
+                        </div>
                       </div>
                     </div>
                     <div className="form-cell wid50">
                       <div className="form-group wid100">
-                        <AppTextInput label="득점" disabled />
+                        <div className="box-view-list">
+                          <ul className="view-list">
+                            <li className="accumlate-list">
+                              <label className="t-label">득점</label>
+                              <span className="text-desc-type1">득점</span>
+                            </li>
+                          </ul>
+                        </div>
                       </div>
                     </div>
                     <div className="form-cell wid50">
                       <div className="form-group wid100">
-                        <AppTextInput label="등급" disabled />
+                        <div className="box-view-list">
+                          <ul className="view-list">
+                            <li className="accumlate-list">
+                              <label className="t-label">등급</label>
+                              <span className="text-desc-type1">등급</span>
+                            </li>
+                          </ul>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -335,19 +424,30 @@ function POccupationMu3P6detail() {
                     <div className="form-table">
                       <div className="form-cell wid50">
                         <div className="form-group wid100">
-                          <div className="filebox ">
-                            <Upload {...props}>
-                              <div className="btn-area">
-                                <button type="button" name="button" className="btn-big btn_text btn-darkblue-line mg-n">
-                                  + Upload
-                                </button>
-                              </div>
-                            </Upload>
-                            <label htmlFor="file" className="file-label">
-                              파일 첨부 <span className="required">*</span>
-                            </label>
+                          <div className="box-view-list">
+                            <ul className="view-list">
+                              <li className="accumlate-list">
+                                <label className="t-label">
+                                  첨부파일<span className="required">*</span>
+                                </label>
+                                <span className="text-desc-type1">
+                                  <div className="filebox view">
+                                    <Upload {...props}>
+                                      <div className="btn-area" style={{ display: 'none' }}>
+                                        <button
+                                          type="button"
+                                          name="button"
+                                          className="btn-big btn_text btn-darkblue-line mg-n"
+                                        >
+                                          + Upload
+                                        </button>
+                                      </div>
+                                    </Upload>
+                                  </div>
+                                </span>
+                              </li>
+                            </ul>
                           </div>
-                          {/*<span className="errorText">fileerror</span>*/}
                         </div>
                       </div>
                     </div>

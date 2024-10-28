@@ -391,6 +391,7 @@
 @media screen and (min-width: 767px) and (max-width: 1024px){
   .header .GNB  {display: none;}
   .LNB_bg.active {display: block;} 
+  .main-search.active {width: 90%;}
   .list-common-modal-content, .org-select-modal-content, .org-change-modal-content {width: 90%;}
   .risk-level-search-content{width:90%}
   .boxForm .form-table {display: block;}
@@ -786,6 +787,7 @@
   .LNB {margin-top: 0; max-width: none; z-index: 11;}
   .LNB .LNB_menu {display: block;}
   .conts-title h2 {font-size: 2.2rem;}
+  .main-search.active {width: 90%;}
 
   .list-common-modal-content, .org-select-modal-content, .org-change-modal-content, .risk-level-search-content{width: 100%; height: 100%; border-radius: 0 !important;}
   .pop_full_cont_box, .pop_lg_cont_box {height: calc(100vh - 12.0rem); padding-bottom: 0;}

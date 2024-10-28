@@ -91,9 +91,10 @@ export default function OccupationLayout() {
             </li>
           </ul>
         </div>
+        {/* 상단 검색창활성화 - active */}
         <div className="main-search">
-          <div className="form-group wid100">
-            <AppSearchInput label="검색" />
+          <div className="form-group main-searchbox wid100">
+            <AppSearchInput label="" />
           </div>
         </div>
       </header>

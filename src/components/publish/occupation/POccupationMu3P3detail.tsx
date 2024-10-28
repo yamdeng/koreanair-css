@@ -95,56 +95,115 @@ function POccupationMu3P3detail() {
         <div className="form-table line">
           <div className="form-cell wid50">
             <div className="form-group wid100">
-              <AppTextInput label="작성일자" required disabled />
-            </div>
-          </div>
-          <div className="form-cell wid50">
-            <div className="form-group wid100">
-              <AppTextInput label="작성자" required disabled />
-            </div>
-          </div>
-          <div className="form-cell wid50">
-            <div className="form-group wid100">
-              <AppSelect label={'측정년도'} required />
-            </div>
-          </div>
-        </div>
-        <hr className="line dp-n"></hr>
-        <div className="form-table line">
-          <div className="form-cell wid50">
-            <div className="form-group wid100">
-              <AppSelect label={'반기'} required />
-            </div>
-          </div>
-          <div className="form-cell wid50">
-            <div className="form-group wid100">
-              <AppSelect label="구분" required />
-            </div>
-          </div>
-          <div className="form-cell wid50">
-            <div className="form-group wid100">
-              <AppSelect label="권역" required />
-            </div>
-          </div>
-        </div>
-        <hr className="line dp-n"></hr>
-        <div className="form-table line">
-          <div className="form-cell wid50">
-            <div className="form-group form-glow">
-              <div className="df">
-                <div className="date1">
-                  <AppDatePicker label="측정기간" required />
-                </div>
-                <span className="unt">~</span>
-                <div className="date2">
-                  <AppDatePicker label="측정기간" required />
-                </div>
+              <div className="box-view-list">
+                <ul className="view-list">
+                  <li className="accumlate-list">
+                    <label className="t-label">
+                      작성일자<span className="required">*</span>
+                    </label>
+                    <span className="text-desc-type1">0000-00-00</span>
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
           <div className="form-cell wid50">
             <div className="form-group wid100">
-              <AppTextInput label="측정기관" required />
+              <div className="box-view-list">
+                <ul className="view-list">
+                  <li className="accumlate-list">
+                    <label className="t-label">
+                      작성자<span className="required">*</span>
+                    </label>
+                    <span className="text-desc-type1">홍길동</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div className="form-cell wid50">
+            <div className="form-group wid100">
+              <div className="box-view-list">
+                <ul className="view-list">
+                  <li className="accumlate-list">
+                    <label className="t-label">
+                      측정년도<span className="required">*</span>
+                    </label>
+                    <span className="text-desc-type1">0000</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div className="form-cell wid50">
+            <div className="form-group wid100">
+              <div className="box-view-list">
+                <ul className="view-list">
+                  <li className="accumlate-list">
+                    <label className="t-label">
+                      반기<span className="required">*</span>
+                    </label>
+                    <span className="text-desc-type1">반기</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div className="form-cell wid50">
+            <div className="form-group wid100">
+              <div className="box-view-list">
+                <ul className="view-list">
+                  <li className="accumlate-list">
+                    <label className="t-label">
+                      구분<span className="required">*</span>
+                    </label>
+                    <span className="text-desc-type1">구분</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div className="form-cell wid50">
+            <div className="form-group wid100">
+              <div className="box-view-list">
+                <ul className="view-list">
+                  <li className="accumlate-list">
+                    <label className="t-label">
+                      권역<span className="required">*</span>
+                    </label>
+                    <span className="text-desc-type1">권역</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr className="line dp-n"></hr>
+        <div className="form-table line">
+          <div className="form-cell wid50">
+            <div className="form-group wid100">
+              <div className="box-view-list">
+                <ul className="view-list">
+                  <li className="accumlate-list">
+                    <label className="t-label">측정기간</label>
+                    <span className="text-desc-type1">0000-00-00 ~ 0000-00-00</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div className="form-cell wid50">
+            <div className="form-group wid100">
+              <div className="box-view-list">
+                <ul className="view-list">
+                  <li className="accumlate-list">
+                    <label className="t-label">
+                      측정기관<span className="required">*</span>
+                    </label>
+                    <span className="text-desc-type1">측정기관</span>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
@@ -152,19 +211,16 @@ function POccupationMu3P3detail() {
         <div className="form-table">
           <div className="form-cell wid50">
             <div className="form-group wid100">
-              <textarea
-                id="testArea1"
-                className="form-tag custom_textarea"
-                style={{ width: '100%' }}
-                name="testArea1"
-                value={inputValue}
-                onChange={(event) => {
-                  setInputValue(event.target.value);
-                }}
-              />
-              <label className="f-label" htmlFor="testArea1">
-                측정결과 <span className="required">*</span>
-              </label>
+              <div className="box-view-list">
+                <ul className="view-list">
+                  <li className="accumlate-list">
+                    <label className="t-label">
+                      측정결과<span className="required">*</span>
+                    </label>
+                    <span className="text-desc-type1">측정결과</span>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
@@ -172,19 +228,14 @@ function POccupationMu3P3detail() {
         <div className="form-table">
           <div className="form-cell wid50">
             <div className="form-group wid100">
-              <textarea
-                id="testArea1"
-                className="form-tag custom_textarea"
-                style={{ width: '100%' }}
-                name="testArea1"
-                value={inputValue}
-                onChange={(event) => {
-                  setInputValue(event.target.value);
-                }}
-              />
-              <label className="f-label" htmlFor="testArea1">
-                의견
-              </label>
+              <div className="box-view-list">
+                <ul className="view-list">
+                  <li className="accumlate-list">
+                    <label className="t-label">의견</label>
+                    <span className="text-desc-type1">의견</span>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
@@ -193,28 +244,48 @@ function POccupationMu3P3detail() {
         <div className="form-table">
           <div className="form-cell wid50">
             <div className="form-group wid100">
-              <Upload {...props}>
-                <div className="btn-area">
-                  <button type="button" name="button" className="btn-big btn_text btn-darkblue-line">
-                    결과보고서 업로드
-                  </button>
-                </div>
-              </Upload>
+              <div className="box-view-list">
+                <ul className="view-list">
+                  <li className="accumlate-list">
+                    <label className="t-label">결과보고서 업로드</label>
+                    <span className="text-desc-type1">
+                      <div className="filebox view">
+                        <Upload {...props}>
+                          <div className="btn-area" style={{ display: 'none' }}>
+                            <button type="button" name="button" className="btn-big btn_text btn-darkblue-line mg-n">
+                              + Upload
+                            </button>
+                          </div>
+                        </Upload>
+                      </div>
+                    </span>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
-        </div>
-        <hr className="line"></hr>
-        {/* 파일첨부영역 : button */}
-        <div className="form-table">
+          {/* 파일첨부영역 : button */}
+
           <div className="form-cell wid50">
             <div className="form-group wid100">
-              <Upload {...props}>
-                <div className="btn-area">
-                  <button type="button" name="button" className="btn-big btn_text btn-darkblue-line">
-                    화학물질 사용량조사 업로드
-                  </button>
-                </div>
-              </Upload>
+              <div className="box-view-list">
+                <ul className="view-list">
+                  <li className="accumlate-list">
+                    <label className="t-label">화학물질 사용량조사 업로드</label>
+                    <span className="text-desc-type1">
+                      <div className="filebox view">
+                        <Upload {...props}>
+                          <div className="btn-area" style={{ display: 'none' }}>
+                            <button type="button" name="button" className="btn-big btn_text btn-darkblue-line mg-n">
+                              + Upload
+                            </button>
+                          </div>
+                        </Upload>
+                      </div>
+                    </span>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>

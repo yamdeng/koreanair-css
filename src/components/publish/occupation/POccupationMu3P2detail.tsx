@@ -214,9 +214,6 @@ function POccupationMu3P2detail() {
               </div>
             </div>
           </div>
-        </div>
-        <hr className="line dp-n"></hr>
-        <div className="form-table line">
           <div className="form-cell wid50">
             <div className="form-group wid100">
               <div className="box-view-list">
@@ -257,6 +254,7 @@ function POccupationMu3P2detail() {
               </div>
             </div>
           </div>
+          <hr className="line dp-n"></hr>
         </div>
         <hr className="line dp-n"></hr>
         <div className="form-table">
@@ -317,9 +315,6 @@ function POccupationMu3P2detail() {
               </div>
             </div>
           </div>
-        </div>
-        <hr className="line dp-n"></hr>
-        <div className="form-table line">
           <div className="form-cell wid50">
             <div className="form-group wid100">
               <div className="box-view-list">
@@ -401,9 +396,6 @@ function POccupationMu3P2detail() {
               </div>
             </div>
           </div>
-        </div>
-        <hr className="line dp-n"></hr>
-        <div className="form-table line">
           <div className="form-cell wid50">
             <div className="form-group wid100">
               <div className="box-view-list">
@@ -416,7 +408,7 @@ function POccupationMu3P2detail() {
               </div>
             </div>
           </div>
-          <div className="form-cell wid50 dp-no">
+          <div className="form-cell wid50">
             <div className="form-group wid100">
               <div className="box-view-list">
                 <ul className="view-list">
@@ -428,7 +420,7 @@ function POccupationMu3P2detail() {
               </div>
             </div>
           </div>
-          <div className="form-cell wid50">
+          <div className="form-cell wid50 dp-no">
             <div className="form-group wid100">
               <div className="box-view-list">
                 <ul className="view-list">

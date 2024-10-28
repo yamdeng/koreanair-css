@@ -106,19 +106,40 @@ function POccupationMu3P8detail() {
                   <div className="form-table">
                     <div className="form-cell wid50">
                       <div className="form-group wid100">
-                        <AppDatePicker label="년도" disabled />
+                        <div className="box-view-list">
+                          <ul className="view-list">
+                            <li className="accumlate-list">
+                              <label className="t-label">년도</label>
+                              <span className="text-desc-type1">0000</span>
+                            </li>
+                          </ul>
+                        </div>
                       </div>
                     </div>
                     <div className="form-cell wid50">
                       <div className="form-group wid100">
-                        <AppSelect label="분기" />
+                        <div className="box-view-list">
+                          <ul className="view-list">
+                            <li className="accumlate-list">
+                              <label className="t-label">분기</label>
+                              <span className="text-desc-type1">분기</span>
+                            </li>
+                          </ul>
+                        </div>
                       </div>
                     </div>
                   </div>
                   <div className="form-table">
                     <div className="form-cell wid50">
                       <div className="form-group wid100">
-                        <AppTextInput label="제목" />
+                        <div className="box-view-list">
+                          <ul className="view-list">
+                            <li className="accumlate-list">
+                              <label className="t-label">제목</label>
+                              <span className="text-desc-type1">제목제목제목</span>
+                            </li>
+                          </ul>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -138,34 +159,74 @@ function POccupationMu3P8detail() {
                   <div className="form-table">
                     <div className="form-cell wid50">
                       <div className="form-group wid100">
-                        <AppTextInput label="부문" disabled />
+                        <div className="box-view-list">
+                          <ul className="view-list">
+                            <li className="accumlate-list">
+                              <label className="t-label">부문</label>
+                              <span className="text-desc-type1">부문</span>
+                            </li>
+                          </ul>
+                        </div>
                       </div>
                     </div>
                     <div className="form-cell wid50">
                       <div className="form-group wid100">
-                        <AppTextInput label="부서" disabled />
+                        <div className="box-view-list">
+                          <ul className="view-list">
+                            <li className="accumlate-list">
+                              <label className="t-label">부서</label>
+                              <span className="text-desc-type1">부서</span>
+                            </li>
+                          </ul>
+                        </div>
                       </div>
                     </div>
                     <div className="form-cell wid50">
                       <div className="form-group wid100">
-                        <AppTextInput label="팀" disabled />
-                      </div>
-                    </div>
-                  </div>
-                  <div className="form-table">
-                    <div className="form-cell wid50">
-                      <div className="form-group wid100">
-                        <AppTextInput label="그룹" disabled />
-                      </div>
-                    </div>
-                    <div className="form-cell wid50">
-                      <div className="form-group wid100">
-                        <AppAutoComplete label="반/섹션" disabled />
+                        <div className="box-view-list">
+                          <ul className="view-list">
+                            <li className="accumlate-list">
+                              <label className="t-label">팀</label>
+                              <span className="text-desc-type1">팀</span>
+                            </li>
+                          </ul>
+                        </div>
                       </div>
                     </div>
                     <div className="form-cell wid50">
                       <div className="form-group wid100">
-                        <AppAutoComplete label="이름" />
+                        <div className="box-view-list">
+                          <ul className="view-list">
+                            <li className="accumlate-list">
+                              <label className="t-label">그룹</label>
+                              <span className="text-desc-type1">그룹</span>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="form-cell wid50">
+                      <div className="form-group wid100">
+                        <div className="box-view-list">
+                          <ul className="view-list">
+                            <li className="accumlate-list">
+                              <label className="t-label">반/섹션</label>
+                              <span className="text-desc-type1">반/섹션</span>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="form-cell wid50">
+                      <div className="form-group wid100">
+                        <div className="box-view-list">
+                          <ul className="view-list">
+                            <li className="accumlate-list">
+                              <label className="t-label">이름</label>
+                              <span className="text-desc-type1">이름</span>
+                            </li>
+                          </ul>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -185,12 +246,26 @@ function POccupationMu3P8detail() {
                   <div className="form-table">
                     <div className="form-cell wid50">
                       <div className="form-group wid100">
-                        <AppSelect label="부문" />
+                        <div className="box-view-list">
+                          <ul className="view-list">
+                            <li className="accumlate-list">
+                              <label className="t-label">부문</label>
+                              <span className="text-desc-type1">부문</span>
+                            </li>
+                          </ul>
+                        </div>
                       </div>
                     </div>
                     <div className="form-cell wid50">
                       <div className="form-group wid100">
-                        <AppTextInput label="평가인원" />
+                        <div className="box-view-list">
+                          <ul className="view-list">
+                            <li className="accumlate-list">
+                              <label className="t-label">평가인원</label>
+                              <span className="text-desc-type1">평가인원</span>
+                            </li>
+                          </ul>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -210,19 +285,14 @@ function POccupationMu3P8detail() {
                   <div className="form-table">
                     <div className="form-cell wid50">
                       <div className="form-group wid100">
-                        <textarea
-                          id="testArea1"
-                          className="form-tag custom_textarea"
-                          style={{ width: '100%' }}
-                          name="testArea1"
-                          value={inputValue}
-                          onChange={(event) => {
-                            setInputValue(event.target.value);
-                          }}
-                        />
-                        <label className="f-label" htmlFor="testArea1">
-                          비고
-                        </label>
+                        <div className="box-view-list">
+                          <ul className="view-list">
+                            <li className="accumlate-list">
+                              <label className="t-label">비고</label>
+                              <span className="text-desc-type1">비고</span>
+                            </li>
+                          </ul>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -230,54 +300,48 @@ function POccupationMu3P8detail() {
                   <div className="form-table">
                     <div className="form-cell wid50">
                       <div className="form-group wid100">
-                        <div className="filebox ">
-                          <Upload {...props}>
-                            <div className="btn-area">
-                              <button type="button" name="button" className="btn-big btn_text btn-darkblue-line mg-n">
-                                + Upload
-                              </button>
-                            </div>
-                          </Upload>
-                          <label htmlFor="file" className="file-label">
-                            첨부파일 <span className="required">*</span>
-                          </label>
+                        <div className="box-view-list">
+                          <ul className="view-list">
+                            <li className="accumlate-list">
+                              <label className="t-label">
+                                첨부파일<span className="required">*</span>
+                              </label>
+                              <span className="text-desc-type1">
+                                <div className="filebox view">
+                                  <Upload {...props}>
+                                    <div className="btn-area" style={{ display: 'none' }}>
+                                      <button
+                                        type="button"
+                                        name="button"
+                                        className="btn-big btn_text btn-darkblue-line mg-n"
+                                      >
+                                        + Upload
+                                      </button>
+                                    </div>
+                                  </Upload>
+                                </div>
+                              </span>
+                            </li>
+                          </ul>
                         </div>
-                        {/*<span className="errorText">fileerror</span>*/}
                       </div>
                     </div>
                   </div>
                   <div className="form-table">
                     <div className="form-cell wid50">
-                      <div className="group-box-wrap line wid100">
-                        <span className="txt">링크첨부{/*<span className="required">*</span>*/}</span>
-                        <button type="button" name="button" className="btn-plus">
-                          추가
-                        </button>
-                        <div className="file-link">
-                          <div className="link-box">
-                            <a href="javascript:void(0);">첨부Link첨부Link첨부Link</a>
-                            <a href="javascript:void(0);">
-                              <span className="close-btn">close</span>
-                            </a>
-                          </div>
-                          <div className="link-box">
-                            <a href="javascript:void(0);">첨부Link</a>
-                            <a href="javascript:void(0);">
-                              <span className="close-btn">close</span>
-                            </a>
-                          </div>
-                          <div className="link-box">
-                            <a href="javascript:void(0);">첨부Link</a>
-                            <a href="javascript:void(0);">
-                              <span className="close-btn">close</span>
-                            </a>
-                          </div>
-                          <div className="link-box">
-                            <a href="javascript:void(0);">첨부Link</a>
-                            <a href="javascript:void(0);">
-                              <span className="close-btn">close</span>
-                            </a>
-                          </div>
+                      <div className="form-group wid100">
+                        <div className="box-view-list">
+                          <ul className="view-list">
+                            <li className="accumlate-list">
+                              <label className="t-label">링크첨부</label>
+                              <span className="text-desc-type2">
+                                <a href="javascript:void(0);">링크파일첨부</a>
+                              </span>
+                              <span className="text-desc-type2">
+                                <a href="javascript:void(0);">http://www.www.com</a>
+                              </span>
+                            </li>
+                          </ul>
                         </div>
                       </div>
                     </div>
