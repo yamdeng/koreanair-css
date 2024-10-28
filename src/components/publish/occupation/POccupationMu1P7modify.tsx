@@ -78,9 +78,6 @@ function POccupationMu1P7modify() {
               <AppTextInput label="총 목표일수" />
             </div>
           </div>
-        </div>
-        <hr className="line dp-n"></hr>
-        <div className="form-table line">
           <div className="form-cell wid50">
             <div className="form-group wid100">
               <AppTextInput label="기준 목표일수" />

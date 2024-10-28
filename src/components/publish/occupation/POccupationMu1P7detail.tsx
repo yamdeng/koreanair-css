@@ -87,9 +87,6 @@ function POccupationMu1P7detail() {
               </div>
             </div>
           </div>
-        </div>
-        <hr className="line dp-n"></hr>
-        <div className="form-table line">
           <div className="form-cell wid100">
             <div className="form-group wid100">
               <div className="box-view-list">
@@ -139,6 +136,8 @@ function POccupationMu1P7detail() {
             </div>
           </div>
         </div>
+        <hr className="line dp-n"></hr>
+        <div className="form-table line"></div>
         <hr className="line dp-n"></hr>
       </div>
       {/*//상세페이지*/}

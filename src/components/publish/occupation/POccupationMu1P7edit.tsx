@@ -33,17 +33,12 @@ function POccupationMu1P7edit() {
       </div>
       {/* 입력영역 */}
       <div className="editbox">
-        <div className="form-table">
-          <div className="form-table line">
-            <div className="form-cell wid50">
-              <div className="form-group wid100">
-                <AppAutoComplete label={'부서'} />
-              </div>
+        <div className="form-table line">
+          <div className="form-cell wid50">
+            <div className="form-group wid100">
+              <AppAutoComplete label={'부서'} />
             </div>
           </div>
-        </div>
-        <hr className="line dp-n"></hr>
-        <div className="form-table line">
           <div className="form-cell wid50">
             <div className="form-group wid100">
               <AppTextInput label="달성 목표 배수" />
