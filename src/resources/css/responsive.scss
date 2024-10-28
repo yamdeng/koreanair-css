@@ -391,6 +391,7 @@
 @media screen and (min-width: 767px) and (max-width: 1024px){
   .header .GNB  {display: none;}
   .LNB_bg.active {display: block;} 
+
   .main-search.active {width: 90%;}
   .list-common-modal-content, .org-select-modal-content, .org-change-modal-content {width: 90%;}
   .risk-level-search-content{width:90%}
@@ -784,7 +785,7 @@
   .header .logo {width: 4.0rem;}
   .header .logo .top-logo {display: none;}
   .header .util .util-list .btn {display: none;}
-  .LNB {margin-top: 0; max-width: none; z-index: 11;}
+  .LNB {margin-top: 0; max-width: none; z-index: 11; flex-shrink: inherit;}
   .LNB .LNB_menu {display: block;}
   .conts-title h2 {font-size: 2.2rem;}
   .main-search.active {width: 90%;}

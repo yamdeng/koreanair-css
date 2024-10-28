@@ -132,7 +132,7 @@
 
 .LNB {
   display: flex;
-  //flex-shrink: 0;
+  flex-shrink: 0;
   //flex-direction: row;
   //height: calc(100vh - 0rem);
   /*margin-top: 8.0rem;*/
@@ -234,6 +234,7 @@
   margin-top: 8.8rem;
   box-sizing: border-box;
   //position: fixed;
+
 }
 .LNB_side::-webkit-Scrollbar {
   width:0.3em;
