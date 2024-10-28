@@ -278,13 +278,13 @@
       transition: all 0.2s;
     }
     .top_menu_btn .line1 {
-      top: 18px;
+      top: 1.8rem;
     }
     .top_menu_btn .line2 {
-      top: 28px;
+      top: 2.8rem;
     }
     .top_menu_btn .line3 {
-    top: 38px;
+    top: 3.8rem;
     }
     .top_menu_btn.close .line1 {
       top: 2.8rem;
@@ -625,13 +625,13 @@
     transition: all 0.2s;
   }
   .top_menu_btn .line1 {
-    top: 18px;
+    top: 1.8rem;
   }
   .top_menu_btn .line2 {
-    top: 28px;
+    top: 2.8rem;
   }
   .top_menu_btn .line3 {
-    top: 38px;
+    top: 3.8rem;
   }
   .top_menu_btn.close .line1 {
     top: 2.8rem;
@@ -788,6 +788,7 @@
   .LNB .LNB_menu {display: block;}
   .conts-title h2 {font-size: 2.2rem;}
   .main-search.active {width: 90%;}
+  .LNB_side {position: fixed;}
 
   .list-common-modal-content, .org-select-modal-content, .org-change-modal-content, .risk-level-search-content{width: 100%; height: 100%; border-radius: 0 !important;}
   .pop_full_cont_box, .pop_lg_cont_box {height: calc(100vh - 12.0rem); padding-bottom: 0;}
@@ -931,7 +932,7 @@
 
   .ant-col-md-2{display:block;flex:0 0 8.33333333%;max-width:11.33333333%}
 
-  .tooltip .tooltiptext {width:30rem !important;}
+  .tooltip .tooltiptext {width:25rem !important;}
   .ck-edit-box {display: block;}
   .ck-edit-box .ck-list {display: block; width: 100%; margin-bottom: 2.0rem;}
   .ck-edit-box .ck-edit {display: block; width: 100%; margin-left: 0;}
@@ -1241,8 +1242,8 @@
   .main-visual02 .page2_title .subtitle .subtitle-bg .subtitle-box {display: block; width: 100%;}
   .page2_contents .contents-box {display: none;}
 
-  .popup-container {height: calc(100vh - 150px) !important}
-  .popup-container1 {height: calc(100vh - 150px) !important}
+  .popup-container {height: calc(100vh - 15.0rem) !important}
+  .popup-container1 {height: calc(100vh - 15.0rem) !important}
   .popup-container1 > .pop_full_cont_box.type01 {overflow: initial !important;}
   .popup-container2 > .pop_cont.Risk{overflow: initial !important}
   .pop_cont {height: 100%; max-height: none;}
@@ -1307,12 +1308,12 @@
   
   .conts-title h2 span{font-size:2rem;color:var(--color-mblue-100)}
 
-  .Report-process li { width: 100%;margin-bottom: 40px; }
+  .Report-process li { width: 100%;margin-bottom: 4.0rem; }
   .Report-process li br{ display: none; }
-  .Report-process li span{ width: 100%;height: auto;border-radius: 0;padding: 20px; }
-  .Report-process li:before{ left: 50%;margin-left: -12px;transform: rotate(90deg);right: auto;bottom: -40px;top: auto;margin-top: 0; }
+  .Report-process li span{ width: 100%;height: auto;border-radius: 0;padding: 2.0rem; }
+  .Report-process li:before{ left: 50%;margin-left: -1.2rem;transform: rotate(90deg);right: auto;bottom: -4.0rem;top: auto;margin-top: 0; }
 
-  .Report-process li span, .Report-process li span:first-child { font-size:18px;width:100%;height: 100px;padding: 0 5px; padding-top: 40px; border-radius:0}
+  .Report-process li span, .Report-process li span:first-child { font-size:1.8rem;width:100%;height: 10.0rem;padding: 0 0.5rem; padding-top: 4.0rem; border-radius:0}
   .checklist-contents{display:flex;width:100%}
   .checklist-contents .checklist-row{width:100% !important;margin:0 !important}
 
