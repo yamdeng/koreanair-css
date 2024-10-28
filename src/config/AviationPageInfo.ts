@@ -138,9 +138,9 @@ import AuditEdit from '@/components/publish/aviation/AuditEdit';
 import AuditQuality from '@/components/publish/aviation/AuditQuality';
 import ClosingPayDetail from '@/components/publish/aviation/ClosingPayDetail';
 import ReceiptPayDetail from '@/components/publish/aviation/ReceiptPayDetail';
-import CabinSafety from '@/components/publish/aviation/CabinSafety';
 import PAviationsub3 from '@/components/publish/aviation/PAviationsub3';
 import PAviationsub4 from '@/components/publish/aviation/PAviationsub4';
+import Admindashnew from '@/components/publish/aviation/Admindashnew';
 import { fa, fakerLV } from '@faker-js/faker';
 import { fail } from 'assert';
 
@@ -180,7 +180,7 @@ AviationPageInfo.list = [
     Component: PAviationsub4,
     path: 'PAviationsub4',
     description: '',
-    success: false,
+    success: true,
   },
   {
     title: '[메인] 알림(공통)',
@@ -933,6 +933,13 @@ AviationPageInfo.list = [
     title: '[07.관리자] 보고서키워드 관리 > 이벤트',
     Component: AdminkeywordEventList,
     path: 'AdminkeywordEventList',
+    description: '',
+    success: true,
+  },
+  {
+    title: '[07.관리자] SMS성숙도점검 > 대시보드관리',
+    Component: Admindashnew,
+    path: 'Admindashnew',
     description: '',
     success: true,
   },

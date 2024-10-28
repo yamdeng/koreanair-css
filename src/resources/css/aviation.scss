@@ -98,6 +98,7 @@ meter::-webkit-meter-optimum-value {
 .c-step-list{counter-reset:stepCounter}
 .c-step-list.default{display:flex;font-size:1.2rem;text-align:center;margin-left:-1.5rem}
 
+.editbox.dashbord > .form-table .form-cell{flex-grow:0;}
 .editbox.no{border-top:0}
 .edit-area .form-table .form-cell.Add{border-bottom:0}
 .edit-area .editbox.report .boxForm .form-table .form-cell{border-bottom:0}
@@ -1130,7 +1131,7 @@ meter::-webkit-meter-optimum-value {
   .av-submain .av-submain-bg .av-submain-wrap .av-area .av-box a{display:inline-flex;justify-content:center;width:100%;color:var(--color-darkblue-100)}
   .av-submain .av-submain-bg .av-submain-wrap .av-area .av-box .tit-wrap{font-size:1.6rem;line-height:1.2;height:4rem;font-weight:500;text-align:center}
   .av-submain .av-submain-bg .av-submain-wrap .av-area .av-box .tit-wrap .sub-tit{display:block;font-size:1.4rem}
-  .av-submain .av-submain-bg .av-submain-wrap .av-area .av-box > a .icon-img{display:inline-flex;width:105px;border-radius:100%;height:105px;background-color:var(--color-darkblue-100);-webkit-box-pack: center;justify-content: center;-webkit-box-align: center; align-items: center;margin-top:20px}
+  .av-submain .av-submain-bg .av-submain-wrap .av-area .av-box > a .icon-img{display:inline-flex;width:90px;border-radius:100%;height:90px;background-color:var(--color-darkblue-100);-webkit-box-pack: center;justify-content: center;-webkit-box-align: center; align-items: center;margin-top:20px}
 
 
   .av-submain .av-submain-bg .av-submain-wrap.gsr .line-bg{position:relative;width:100%;border-top:dotted 0.4rem var(--color-neutral-40);margin-top:1rem}
@@ -1141,7 +1142,7 @@ meter::-webkit-meter-optimum-value {
   .av-submain .av-submain-bg .av-submain-wrap.gsr .av-area .av-box:hover{border:solid 0rem var(--color-neutral-50);/*background-color:rgba(255, 255, 255, 100)*/}
   .av-submain .av-submain-bg .av-submain-wrap.gsr .av-area .av-box a{display:inline-flex;justify-content:center;width:100%;color:var(--color-darkblue-100)}
   .av-submain .av-submain-bg .av-submain-wrap.gsr .av-area .av-box .tit-wrap{font-size:1.6rem;font-weight:500;text-align:center}
-  .av-submain .av-submain-bg .av-submain-wrap.gsr .av-area .av-box > a .icon-img{display:inline-flex;width:105px;border-radius:100%;height:105px;background-color:var(--color-darkblue-100);-webkit-box-pack: center;justify-content: center;-webkit-box-align: center; align-items: center;margin-top:20px}
+  .av-submain .av-submain-bg .av-submain-wrap.gsr .av-area .av-box > a .icon-img{display:inline-flex;width:90px;border-radius:100%;height:90px;background-color:var(--color-darkblue-100);-webkit-box-pack: center;justify-content: center;-webkit-box-align: center; align-items: center;margin-top:20px}
 
 
 
