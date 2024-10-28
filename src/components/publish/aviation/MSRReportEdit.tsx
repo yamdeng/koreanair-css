@@ -165,7 +165,9 @@ function MSRReportEdit() {
                         <span className="ant-input-group-addon1">KE</span>
                         <div className="ant-input-group-addon1-input wid50 df">
                           {/*비행편명 */}
-                          <AppTextInput label="비행편명" required />
+                          <AppSearchInput label="비행편명3" required value="aaa" errorMessage="aaa" />
+                          {/* <AppTextInput label="비행편명3" required value="aaa" /> */}
+
                           <div className="btn-area">
                             <button type="button" name="button" className="btn-sm btn_text btn-darkblue-line">
                               Search
@@ -709,7 +711,7 @@ function MSRReportEdit() {
         <dl className={fourExpaned ? 'tg-item active' : 'tg-item'}>
           <dt onClick={() => setFourExpaned(!fourExpaned)}>
             <button type="button" className="btn-tg">
-              이벤트 내용
+              이벤트 내용2
               <span className={fourExpaned ? 'active' : ''}></span>
             </button>
           </dt>
@@ -754,6 +756,7 @@ function MSRReportEdit() {
                             },
                           }}
                         />
+                        <span className="errorText">asdasdasd</span>
                       </div>
                     </div>
                   </div>

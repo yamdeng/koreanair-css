@@ -1269,8 +1269,11 @@ meter::-webkit-meter-optimum-value {
 .equip-container .equip-contents .equip-left-box .plan-box .box-wrap .box-area .box-area-bottom .text-bottom{padding:0.5rem 1rem;font-size:1.2rem;}
 
 
-.equip-container .equip-contents .equip-right-box{display: inline-block;width:100%}
+.equip-container .equip-contents .equip-right-box{display:inline-block;width:100%}
+.equip-container .equip-contents .equip-right-box .boxForm.audit{position: relative;display:inline-table;width:100%;background-color:transparent;padding:0;}
 .equip-container .equip-contents .equip-right-box .form-table.audit{display:flex;width:100%}
+.equip-container .equip-contents .equip-right-box .form-table.audit .form-cell .menu-tab-nav{justify-content:flex-end}
+.equip-container .equip-contents .equip-right-box .form-table.audit .form-cell .menu-tab-nav .menu-tab a{min-height:3.8rem}
 
 /*항공안전 메인 플로팅메뉴*/
 .cd-stretchy-nav{position:fixed;z-index: 2;bottom:2.0rem;right:3%}

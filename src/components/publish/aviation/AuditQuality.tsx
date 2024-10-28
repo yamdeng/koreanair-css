@@ -199,32 +199,34 @@ function AuditQuality() {
             </div>
           </div>
           <div className="equip-right-box">
-            <div className="form-table audit">
-              <div className="form-cell wid20">
-                <div className="form-group wid100">
-                  <AppSelect label={'2024'} />
+            <div className="boxForm audit">
+              <div className="form-table audit">
+                <div className="form-cell wid20">
+                  <div className="form-group wid100">
+                    <AppSelect label={'2024'} />
+                  </div>
                 </div>
-              </div>
-              <div className="form-cell wid30">
-                <div className="form-group wid100">
-                  <AppSelect label={'부문'} />
+                <div className="form-cell wid30">
+                  <div className="form-group wid100">
+                    <AppSelect label={'부문'} />
+                  </div>
                 </div>
-              </div>
-              <div className="form-cell wid100">
-                <div className="menu-tab-nav">
-                  <div className="menu-tab">
-                    <a href="javascript:void(0);" className="active" data-label="HZR 전사 TOP RISK 분석 현황">
-                      지역별현황
-                    </a>
-                    <a href="javascript:void(0);" className="" data-label="TOP EVENT 현황">
-                      ESP
-                    </a>
-                    <a href="javascript:void(0);" className="" data-label="TOP EVENT 현황">
-                      비행단계별
-                    </a>
-                    <a href="javascript:void(0);" className="" data-label="TOP EVENT 현황">
-                      TOP 10 CAR
-                    </a>
+                <div className="form-cell wid100">
+                  <div className="menu-tab-nav">
+                    <div className="menu-tab">
+                      <a href="javascript:void(0);" className="active" data-label="HZR 전사 TOP RISK 분석 현황">
+                        지역별현황
+                      </a>
+                      <a href="javascript:void(0);" className="" data-label="TOP EVENT 현황">
+                        ESP
+                      </a>
+                      <a href="javascript:void(0);" className="" data-label="TOP EVENT 현황">
+                        비행단계별
+                      </a>
+                      <a href="javascript:void(0);" className="" data-label="TOP EVENT 현황">
+                        TOP 10 CAR
+                      </a>
+                    </div>
                   </div>
                 </div>
               </div>

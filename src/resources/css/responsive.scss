@@ -376,6 +376,7 @@
 .checkbox-wrap .checkbox-area .checklist{width:100%}
 .checkbox-wrap .checkbox-area .checklist + .checklist{display:block;width:100%;margin-top:1.5rem}
 
+.equip-container .equip-contents{display: block;width: 100%;}
 .equip-container .equip-contents .equip-right-box{display: block;width: 100%;}
 
 }
@@ -758,6 +759,10 @@
 .checkbox-wrap .checkbox-area{display:block;width:100%}
 .checkbox-wrap .checkbox-area .checklist{width:100%}
 .checkbox-wrap .checkbox-area .checklist + .checklist{display:block;width:100%;margin-top:1.5rem}
+
+.equip-container .equip-contents{display:block;width:100%}
+.equip-container .equip-contents .equip-right-box{display:block;width:100%}
+.equip-container .equip-contents .equip-right-box .form-table.audit{display:block;width:100%}
 
 
 }
@@ -1263,6 +1268,8 @@
 .checkbox-wrap .checkbox-area .checklist{width:100%}
 .checkbox-wrap .checkbox-area .checklist + .checklist{display:block;width:100%;margin-top:1.5rem}
 
+.equip-container .equip-contents .equip-right-box{display:block;width:100%}
+.equip-container .equip-contents .equip-right-box .form-table.audit{display:block;width:100%}
 
   }
 
