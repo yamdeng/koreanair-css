@@ -66,8 +66,10 @@ function Auditcarsearch() {
                         <button type="button" className="btn-wrap blue active btn-txt ">
                           2020
                         </button>
-                        <button type="button" className="btn-wrap blue active btn-txt">
-                          2021
+                      </div>
+                      <div className="list-area">
+                        <button type="button" className="btn-wrap blue active btn-txt ">
+                          2020
                         </button>
                       </div>
                     </li>
@@ -76,6 +78,8 @@ function Auditcarsearch() {
                         <button type="button" className="btn-wrap blue btn-txt active">
                           2022
                         </button>
+                      </div>
+                      <div className="list-area">
                         <button type="button" className="btn-wrap blue btn-txt">
                           2023
                         </button>
@@ -86,8 +90,17 @@ function Auditcarsearch() {
                         <button type="button" className="btn-wrap blue active btn-txt">
                           2024
                         </button>
+                      </div>
+                    </li>
+                    <li>
+                      <div className="list-area">
                         <button type="button" className="btn-wrap blue active btn-txt">
-                          2025
+                          2024
+                        </button>
+                      </div>
+                      <div className="list-area">
+                        <button type="button" className="btn-wrap blue active btn-txt">
+                          2024
                         </button>
                       </div>
                     </li>
@@ -104,6 +117,8 @@ function Auditcarsearch() {
                         <button type="button" className="btn-wrap blue active btn-txt">
                           KE
                         </button>
+                      </div>
+                      <div className="list-area">
                         <button type="button" className="btn-wrap blue active btn-txt">
                           OZ
                         </button>
@@ -118,14 +133,14 @@ function Auditcarsearch() {
                 <div className="cons-list">
                   <ul className="list">
                     <li>
-                      <div className="list-area">
+                      <div className="list-area wid100">
                         <button type="button" className="btn-wrap blue active btn-txt">
                           Finding
                         </button>
                       </div>
                     </li>
                     <li>
-                      <div className="list-area">
+                      <div className="list-area wid100">
                         <button type="button" className="btn-wrap blue active btn-txt">
                           Observation
                         </button>
@@ -144,6 +159,15 @@ function Auditcarsearch() {
                         <button type="button" className="btn-wrap blue active btn-txt">
                           홍길동1
                         </button>
+                      </div>
+                      <div className="list-area">
+                        <button type="button" className="btn-wrap blue active btn-txt">
+                          홍길동2
+                        </button>
+                      </div>
+                    </li>
+                    <li>
+                      <div className="list-area">
                         <button type="button" className="btn-wrap blue active btn-txt">
                           홍길동2
                         </button>
@@ -154,9 +178,6 @@ function Auditcarsearch() {
                         <button type="button" className="btn-wrap blue active btn-txt">
                           홍길동1
                         </button>
-                        <button type="button" className="btn-wrap blue active btn-txt">
-                          홍길동2
-                        </button>
                       </div>
                     </li>
                     <li>
@@ -164,86 +185,10 @@ function Auditcarsearch() {
                         <button type="button" className="btn-wrap blue active btn-txt">
                           홍길동1
                         </button>
-                        <button type="button" className="btn-wrap blue active btn-txt">
-                          홍길동2
-                        </button>
                       </div>
                     </li>
                     <li>
                       <div className="list-area">
-                        <button type="button" className="btn-wrap blue active btn-txt">
-                          홍길동1
-                        </button>
-                        <button type="button" className="btn-wrap blue active btn-txt">
-                          홍길동2
-                        </button>
-                      </div>
-                    </li>
-                    <li>
-                      <div className="list-area">
-                        <button type="button" className="btn-wrap blue active btn-txt">
-                          홍길동1
-                        </button>
-                        <button type="button" className="btn-wrap blue active btn-txt">
-                          홍길동2
-                        </button>
-                      </div>
-                    </li>
-                    <li>
-                      <div className="list-area">
-                        <button type="button" className="btn-wrap blue active btn-txt">
-                          홍길동1
-                        </button>
-                        <button type="button" className="btn-wrap blue active btn-txt">
-                          홍길동2
-                        </button>
-                      </div>
-                    </li>
-                    <li>
-                      <div className="list-area">
-                        <button type="button" className="btn-wrap blue active btn-txt">
-                          홍길동1
-                        </button>
-                        <button type="button" className="btn-wrap blue active btn-txt">
-                          홍길동2
-                        </button>
-                      </div>
-                    </li>
-                    <li>
-                      <div className="list-area">
-                        <button type="button" className="btn-wrap blue active btn-txt">
-                          홍길동1
-                        </button>
-                        <button type="button" className="btn-wrap blue active btn-txt">
-                          홍길동2
-                        </button>
-                      </div>
-                    </li>
-                    <li>
-                      <div className="list-area">
-                        <button type="button" className="btn-wrap blue active btn-txt">
-                          홍길동1
-                        </button>
-                        <button type="button" className="btn-wrap blue active btn-txt">
-                          홍길동2
-                        </button>
-                      </div>
-                    </li>
-                    <li>
-                      <div className="list-area">
-                        <button type="button" className="btn-wrap blue active btn-txt">
-                          홍길동1
-                        </button>
-                        <button type="button" className="btn-wrap blue active btn-txt">
-                          홍길동2
-                        </button>
-                      </div>
-                    </li>
-                    <li>
-                      <div className="list-area">
-                        <button type="button" className="btn-wrap blue active btn-txt">
-                          홍길동1
-                        </button>
                         <button type="button" className="btn-wrap blue active btn-txt">
                           홍길동2
                         </button>
@@ -258,54 +203,38 @@ function Auditcarsearch() {
                 <div className="cons-list">
                   <ul className="list">
                     <li>
-                      <div className="list-area">
+                      <div className="list-area3">
                         <button type="button" className="btn-wrap blue active btn-txt">
                           1월
                         </button>
+                      </div>
+                      <div className="list-area3">
                         <button type="button" className="btn-wrap blue active btn-txt">
                           2월
                         </button>
+                      </div>
+                      <div className="list-area3">
                         <button type="button" className="btn-wrap blue active btn-txt">
                           3월
                         </button>
                       </div>
                     </li>
                     <li>
-                      <div className="list-area">
+                      <div className="list-area3">
                         <button type="button" className="btn-wrap blue active btn-txt">
                           4월
                         </button>
-                        <button type="button" className="btn-wrap blue active btn-txt">
-                          5월
-                        </button>
-                        <button type="button" className="btn-wrap blue active btn-txt">
-                          6월
-                        </button>
                       </div>
                     </li>
                     <li>
-                      <div className="list-area">
-                        <button type="button" className="btn-wrap blue active btn-txt">
-                          7월
-                        </button>
-                        <button type="button" className="btn-wrap blue active btn-txt">
-                          8월
-                        </button>
-                        <button type="button" className="btn-wrap blue btn-txt">
-                          9월
-                        </button>
-                      </div>
-                    </li>
-                    <li>
-                      <div className="list-area">
+                      <div className="list-area3">
                         <button type="button" className="btn-wrap blue btn-txt">
                           10월
                         </button>
+                      </div>
+                      <div className="list-area3">
                         <button type="button" className="btn-wrap blue btn-txt">
                           11월
-                        </button>
-                        <button type="button" className="btn-wrap blue btn-txt">
-                          12월
                         </button>
                       </div>
                     </li>
@@ -405,6 +334,8 @@ function Auditcarsearch() {
                         <button type="button" className="btn-wrap gr active btn-txt active">
                           국내공항
                         </button>
+                      </div>
+                      <div className="list-area">
                         <button type="button" className="btn-wrap gr btn-txt">
                           대양주
                         </button>
@@ -415,6 +346,8 @@ function Auditcarsearch() {
                         <button type="button" className="btn-wrap gr btn-txt">
                           동남아
                         </button>
+                      </div>
+                      <div className="list-area">
                         <button type="button" className="btn-wrap gr active btn-txt">
                           미주
                         </button>
@@ -425,6 +358,8 @@ function Auditcarsearch() {
                         <button type="button" className="btn-wrap gr btn-txt">
                           비행점검
                         </button>
+                      </div>
+                      <div className="list-area">
                         <button type="button" className="btn-wrap gr active btn-txt">
                           유럽
                         </button>
@@ -435,6 +370,8 @@ function Auditcarsearch() {
                         <button type="button" className="btn-wrap gr active btn-txt">
                           일본
                         </button>
+                      </div>
+                      <div className="list-area">
                         <button type="button" className="btn-wrap gr active btn-txt">
                           중국
                         </button>
@@ -456,36 +393,38 @@ function Auditcarsearch() {
                         </button>
                       </div>
                       <div className="list-area">
-                        <ul>
-                          <li>
-                            <button type="button" className="btn-wrap gr w-min active btn-txt">
-                              김포
-                            </button>
-                            <button type="button" className="btn-wrap gr w-min active btn-txt">
-                              인천
-                            </button>
-                            <button type="button" className="btn-wrap gr w-min active btn-txt">
-                              서울
-                            </button>
-                            <button type="button" className="btn-wrap gr w-min active btn-txt">
-                              부산
-                            </button>
-                          </li>
-                          <li>
-                            <button type="button" className="btn-wrap gr w-min active btn-txt">
-                              울산
-                            </button>
-                            <button type="button" className="btn-wrap gr w-min active btn-txt">
-                              제주
-                            </button>
-                            <button type="button" className="btn-wrap gr w-min active btn-txt">
-                              인천
-                            </button>
-                            <button type="button" className="btn-wrap gr w-min active btn-txt">
-                              창원
-                            </button>
-                          </li>
-                        </ul>
+                        <div className="list-box">
+                          <ul>
+                            <li>
+                              <button type="button" className="btn-wrap gr w-min active btn-txt">
+                                김포
+                              </button>
+                              <button type="button" className="btn-wrap gr w-min active btn-txt">
+                                인천
+                              </button>
+                              <button type="button" className="btn-wrap gr w-min active btn-txt">
+                                서울
+                              </button>
+                              {/* <button type="button" className="btn-wrap gr w-min active btn-txt">
+                                부산
+                              </button> */}
+                            </li>
+                            <li>
+                              <button type="button" className="btn-wrap gr w-min active btn-txt">
+                                울산
+                              </button>
+                              <button type="button" className="btn-wrap gr w-min active btn-txt">
+                                제주
+                              </button>
+                              <button type="button" className="btn-wrap gr w-min active btn-txt">
+                                인천
+                              </button>
+                              <button type="button" className="btn-wrap gr w-min active btn-txt">
+                                창원
+                              </button>
+                            </li>
+                          </ul>
+                        </div>
                       </div>
                     </li>
                     <li>

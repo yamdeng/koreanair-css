@@ -648,19 +648,31 @@ function GSRReportEdit() {
                                               </a>
                                             </td>
                                             <td className="Sel">
-                                              <AppSelect label={''} />
+                                              <AppSelect
+                                                label={''}
+                                                options={[{ label: 'Test', value: 'aaa' }]}
+                                                value="aaa"
+                                              />
                                             </td>
                                             <td className="Sel">
-                                              <AppTextInput inputType="text" label={''} />
+                                              <AppTextInput inputType="text" label={''} value="aaa" />
                                             </td>
                                             <td className="Sel">
-                                              <AppTextInput inputType="text" label={''} />
+                                              <AppTextInput inputType="text" label={''} value="aaa" />
                                             </td>
                                             <td className="Sel">
-                                              <AppSelect label={''} />
+                                              <AppSelect
+                                                label={''}
+                                                options={[{ label: 'Test', value: 'aaa' }]}
+                                                value="aaa"
+                                              />
                                             </td>
                                             <td className="Sel">
-                                              <AppSelect label={''} />
+                                              <AppSelect
+                                                label={''}
+                                                options={[{ label: 'Test', value: 'aaa' }]}
+                                                value="aaa"
+                                              />
                                             </td>
                                             <td className="btns">
                                               <a href="javascript:void(0);" className="btn-modify">

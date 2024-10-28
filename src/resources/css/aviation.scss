@@ -110,6 +110,7 @@ meter::-webkit-meter-optimum-value {
 .notice-board td.plus > .btn-plus{position:absolute;left:0;top:0;background: url(/src/resources/images/plus-btn.svg) center center no-repeat;width: 4rem;height: 4rem;background-size: 2.4rem;font-size:0;margin-left:0}
 .notice-board td.plus > .btn-minus{position:absolute;left:0;top:20%;background: url(/src/resources/images/btn-minus.svg) center center no-repeat;width: 4rem;height: 4rem;background-size: 2.4rem;font-size:0;margin-left:0}
 
+.notice-board.Air2 td.Sel .btnclear{top:30%}
 .notice-board td.btns a:first-child{margin-right:0.5rem}
 .btn-modify{border:0.1rem solid var(--color-btn-blue2);color:var(--color-btn-blue2);border-radius:99.9rem;font-size:1.4rem;padding:0rem 0.5rem}
 .btn-modify + .btn-modify{margin-left:0.5rem}
@@ -787,14 +788,24 @@ meter::-webkit-meter-optimum-value {
 .cons-list.scroll1{display:inline-block;width:100%;height:22.0rem;overflow-y:scroll}
 .cons-list .list{position:relative;width: 100%;align-self: flex-start;}
 .cons-list .list li{position:relative;display:flex;-webkit-box-pack: start;justify-content: start;-webkit-box-align: center;align-items:flex-start;margin:0.3rem 0rem 0.3rem 0.5rem}
-.cons-list .list li .list-area{display:flex;justify-content:space-between;gap: 0 0.2rem;width:100%}
+.cons-list .list li .list-area{display:flex;justify-content:space-between;gap:0 0.2rem;width:50%}
+.cons-list .list li .list-area3{display:flex;justify-content:space-between;gap:0 0.2rem;width:32%}
+.cons-list .list li .list-area3 + .list-area3{margin-left:0.2rem}
+.cons-list .list li .list-area + .list-area{margin-left:0.2rem}
 .cons-list .list li .list-area + .list-area li{margin-top:0}
 .cons-list .list li .list-area + .list-area li button + button{margin-left:0.2rem}
+.cons-list .list li .list-area .list-box{width:100%}
+.cons-list .list li .list-area3 .list-box{width:100%}
 .cons-list .list li:first-child{position:relative;display:flex;-webkit-box-pack: start;justify-content: start;align-items: flex-start;margin-top:0.5rem}
 .cons-list .list li .list-area .btn-wrap.blue.active{width:100%;color:var(--color-neutral-80);border:solid 0.1rem var(--color-darkblue-60);background-color:var(--color-darkblue-30);border-radius:0.3rem;padding:0.3rem 0.5rem}
 .cons-list .list li .list-area .btn-wrap.blue{width:100%;color:var(--color-neutral-60);border:solid 0.1rem var(--color-darkblue-60);background-color:var(--color-darkblue-10);border-radius:0.3rem;padding:0.3rem 0.5rem}
 .cons-list .list li .list-area .btn-txt{font-size:1.2rem;font-weight:400;width:100%}
 .cons-list .list li .list-area .btn-txt.w-min{min-width:4.0rem}
+.cons-list .list li .list-area3 .btn-wrap.blue.active{width:100%;color:var(--color-neutral-80);border:solid 0.1rem var(--color-darkblue-60);background-color:var(--color-darkblue-30);border-radius:0.3rem;padding:0.3rem 0.5rem}
+.cons-list .list li .list-area3 .btn-wrap.blue{width:100%;color:var(--color-neutral-60);border:solid 0.1rem var(--color-darkblue-60);background-color:var(--color-darkblue-10);border-radius:0.3rem;padding:0.3rem 0.5rem}
+.cons-list .list li .list-area3 .btn-txt{font-size:1.2rem;font-weight:400;width:100%}
+.cons-list .list li .list-area3 .btn-txt.w-min{min-width:4.0rem}
+
 .cons-list .list li .list-area .btn-wrap.gr.w-min.active{min-width:4.0rem}
 .cons-list .list li .list-area .btn-wrap.gr.active{color:var(--color-neutral-80);border:solid 0.1rem var( --color-aud-green-bg-font);background-color:var(--color-aud-green);border-radius:0.3rem;padding:0.3rem 0.5rem}
 .cons-list .list li .list-area .btn-wrap.gr{width:100%;color:var(--color-neutral-60);border:solid 0.1rem var( --color-aud-green-bg-font);background-color:var(--color-aud-green-bg);border-radius:0.3rem;padding:0.3rem 0.5rem}
@@ -1280,6 +1291,8 @@ meter::-webkit-meter-optimum-value {
 .equip-container .equip-contents .equip-right-box .form-table.audit .form-cell .menu-tab-nav{justify-content:flex-end}
 .equip-container .equip-contents .equip-right-box .form-table.audit .form-cell .menu-tab-nav .menu-tab a{min-height:3.8rem;padding:0 2rem}
 .equip-container .equip-contents .equip-right-box .graph-area{width:100%;border:solid 1px red}
+
+.equip-container .equip-bottom-box{display:inline-block;width:100%}
 
 /*항공안전 메인 플로팅메뉴*/
 .cd-stretchy-nav{position:fixed;z-index: 2;bottom:2.0rem;right:3%}
