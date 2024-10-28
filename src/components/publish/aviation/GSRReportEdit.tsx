@@ -730,6 +730,7 @@ function GSRReportEdit() {
                                     <span>No</span>
                                   </label>
                                 </div>
+                                <span className="errorText">용성에러 체크</span>
                               </div>
                             </div>
                             <div className="df">
