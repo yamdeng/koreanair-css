@@ -9,6 +9,7 @@ import closeImage from '@/resources/images/close.svg';
 import { useStore } from 'zustand';
 import useAppStore from '@/store/useAppStore';
 import classNames from 'classnames';
+import AppSelect from '@/components/common/AppSelect';
 
 export default function AviationLayout() {
   const { isAviationPortal } = useStore(useAppStore, (state) => state) as any;
@@ -230,7 +231,17 @@ export default function AviationLayout() {
               <a href="javascript:void(0);">프론트가이드</a>
             </li>
           </ul>
-          <div className=""></div>
+          {/*배너광고영역 */}
+          <div className="LNB_bottom-box">
+            <div className="form-table">
+              <div className="form-cell">
+                <div className="form-group wid100">
+                  <AppSelect label={''} />
+                </div>
+              </div>
+            </div>
+          </div>
+          {/*//배너광고영역 */}
         </div>
       </div>
 
