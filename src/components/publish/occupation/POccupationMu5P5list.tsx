@@ -62,7 +62,7 @@ function POccupationMu5P5list() {
         {/*그리드영역 */}
         <div className="right-table">
           <h3 className="table-tit">위험성 평가 현황</h3>
-          <AppTable className="tight-table-grid" rowData={rowData} columns={columns} />
+          <AppTable className="right-table-grid" rowData={rowData} columns={columns} />
         </div>
         {/*//그리드영역 */}
       </div>
