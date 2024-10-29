@@ -147,7 +147,7 @@ function PSaferiskdashboard() {
                     <span className="text-desc-type1">
                       <div className="graph">
                         <div className="graph-left">
-                          <canvas width="1200" height="450"></canvas>
+                          <canvas width="1100" height="450"></canvas>
                         </div>
                         <div className="graph-right">
                           <div className="tit">누적건수</div>

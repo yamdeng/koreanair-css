@@ -230,6 +230,7 @@ export default function AviationLayout() {
               <a href="javascript:void(0);">프론트가이드</a>
             </li>
           </ul>
+          <div className=""></div>
         </div>
       </div>
 
