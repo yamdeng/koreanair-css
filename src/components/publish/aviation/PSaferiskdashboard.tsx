@@ -69,8 +69,6 @@ function PSaferiskdashboard() {
                 <AppSelect label={'Event Class'} />
               </div>
             </div>
-          </div>
-          <div className="form-table">
             <div className="form-cell wid50">
               <div className="btn-area">
                 <button type="button" name="button" className="btn-sm btn_text btn-darkblue-line">
@@ -146,7 +144,32 @@ function PSaferiskdashboard() {
                       최근 3년간 월별 추이
                       <span className="required"></span>
                     </label>
-                    <span className="text-desc-type1">그래프영역</span>
+                    <span className="text-desc-type1">
+                      <div className="graph">
+                        <div className="graph-left">
+                          <canvas width="1200" height="450"></canvas>
+                        </div>
+                        <div className="graph-right">
+                          <div className="tit">누적건수</div>
+                          <div className="box-area">
+                            <ul>
+                              <li>
+                                <div className="year">2022</div>
+                                <div className="num blue-color">537</div>
+                              </li>
+                              <li>
+                                <div className="year">2023</div>
+                                <div className="num yellow-color">169</div>
+                              </li>
+                              <li>
+                                <div className="year">2024</div>
+                                <div className="num red-color">40</div>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </span>
                   </li>
                 </ul>
               </div>

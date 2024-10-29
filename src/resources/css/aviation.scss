@@ -302,6 +302,17 @@ meter::-webkit-meter-optimum-value {
 .box-view-list .view-list .text-desc-type1 .opinion > .edit-area .detailForm .editbox.report .box-view-list .view-list .accumlate-list .text-desc-type1 .info-box li .tt{display:inline-block;padding:0rem 0.8rem;border:solid 0.1rem var(--color-neutral-50);background-color:var(--color-neutral-20);border-radius:99.9rem;}
 .box-view-list .view-list .text-desc-type1 .opinion > .edit-area .detailForm .editbox.report .box-view-list .view-list .accumlate-list .text-desc-type1 .info-box li + li{margin-left:1.5rem}
 
+.box-view-list .view-list .accumlate-list .text-desc-type1 .graph{padding:0;align-items:inherit}
+.box-view-list .view-list .accumlate-list .text-desc-type1 .graph .graph-left{width:90%}
+.box-view-list .view-list .accumlate-list .text-desc-type1 .graph .graph-right{display:inline-block;width:10%;vertical-align:top;background-color:var(--color-neutral-20);border-radius:0.8rem;padding:2rem}
+.box-view-list .view-list .accumlate-list .text-desc-type1 .graph .graph-right .tit{font-size:1.5rem;font-weight:700;padding-bottom:1rem;margin-bottom:2rem;border-bottom:0.1rem solid var(--color-neutral-40)}
+.box-view-list .view-list .accumlate-list .text-desc-type1 .graph .graph-right .box-area ul li{height:8rem}
+.box-view-list .view-list .accumlate-list .text-desc-type1 .graph .graph-right .box-area ul li .year{font-size:1.4rem;}
+.box-view-list .view-list .accumlate-list .text-desc-type1 .graph .graph-right .box-area ul li .num{font-size:2.8rem;font-weight:700;}
+.box-view-list .view-list .accumlate-list .text-desc-type1 .graph .graph-right .box-area ul li .num.blue-color{color:var(--color-mblue-00)}
+.box-view-list .view-list .accumlate-list .text-desc-type1 .graph .graph-right .box-area ul li .num.yellow-color{color:var(--color-aud-yell-1)}
+.box-view-list .view-list .accumlate-list .text-desc-type1 .graph .graph-right .box-area ul li .num.red-color{color:var(--color-Warning)}
+
 /*인풋박스 안 툴팁*/
 .contents .form-table .form-cell .form-group{position:relative}
 .contents .form-table .form-cell .form-group label.t-label{display:block;color:var(--color-neutral-60);line-height:2.3;font-weight:400;font-size:1.3rem;white-space: nowrap;}
