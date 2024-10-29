@@ -163,17 +163,18 @@ function MSRReportEdit() {
                     <div className="form-cell wid50">
                       <div className="form-group va-t ant-input wid100">
                         <span className="ant-input-group-addon1">KE</span>
-                        <div className="ant-input-group-addon1-input wid50 df">
+                        <div className="ant-input-group-addon1-input wid50">
                           {/*비행편명 */}
                           <AppSearchInput label="비행편명3" required value="aaa" errorMessage="aaa" />
                           {/* <AppTextInput label="비행편명3" required value="aaa" /> */}
-
-                          <div className="btn-area">
-                            <button type="button" name="button" className="btn-sm btn_text btn-darkblue-line">
-                              Search
-                            </button>
-                          </div>
                         </div>
+                      </div>
+                    </div>
+                    <div className="form-cell wid50">
+                      <div className="btn-area tl">
+                        <button type="button" name="button" className="btn-sm btn_text btn-darkblue-line">
+                          Search
+                        </button>
                       </div>
                     </div>
                   </div>
@@ -183,14 +184,14 @@ function MSRReportEdit() {
                         <span className="ant-input-group-addon1">HL</span>
                         <div className="ant-input-group-addon1-input wid50">
                           {/*등록번호 */}
-                          <AppTextInput label="등록번호" required />
+                          <AppTextInput label="등록번호" required errorMessage="aaa" />
                         </div>
                       </div>
                     </div>
                     <div className="form-cell wid50">
                       <div className="form-group wid100">
                         {/*항공기유형 */}
-                        <AppSelect label="항공기유형" required />
+                        <AppSelect label="항공기유형" required errorMessage="aaa" />
                       </div>
                     </div>
                   </div>

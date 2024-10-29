@@ -78,6 +78,11 @@ function AdminTopEvent() {
               </div>
             </div>
           </div>
+          <div className="form-cell wid30">
+            <div className="form-group wid100">
+              <AppSelect label="부문" required errorMessage="aaa" />
+            </div>
+          </div>
           <div className="form-cell wid50">
             <div className="btn-area">
               <button type="button" name="button" className="btn-sm btn_text btn-darkblue-line">
