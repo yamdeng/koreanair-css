@@ -493,7 +493,7 @@ function AdminTopEvent() {
                           </label>
                         </div>
                       </th>
-                      <th>event명</th>
+                      <th>Hazard 명</th>
                       <th>Report Type</th>
                       <th>Doc.No.</th>
                       <th>Subject</th>
@@ -514,7 +514,7 @@ function AdminTopEvent() {
                       <td>Gps signal interference</td>
                       <td>ASR</td>
                       <td>ASR-104031</td>
-                      <td className="tl">예측불가운항상황으로 인한 최대승무시간 및 비행근무시간초과</td>
+                      <td className="tl">LIGHTNING STRIKE SUSPECTED (ENG PARAMETER , NAV , RADIO) NORMAL OPERATION </td>
                       <td>D</td>
                       <td>E</td>
                     </tr>
