@@ -95,17 +95,18 @@ function MSRReportEdit() {
         </h2>
       </div>
 
-      {/*검색영역 
-      <div className="boxForm">
-        <div className="form-table">
-          <div className="form-cell wid100">
-            <div className="form-group wid100">
-              <AppTextInput label="subject" required />
-            </div>
-          </div>
+      {/*탭 */}
+      <div className="menu-tab-nav">
+        <div className="menu-tab">
+          <a href="javascript:void(0);" className="active" data-label="Flight">
+            Flight
+          </a>
+          <a href="javascript:void(0);" className="" data-label="Heavy Maintenance">
+            Heavy Maintenance
+          </a>
         </div>
       </div>
-      //검색영역 */}
+
       <div className="info-wrap toggle">
         <dl className="{firstExpaned ? 'tg-item active' : 'tg-item'}">
           {/* 비행정보 */}
@@ -114,13 +115,12 @@ function MSRReportEdit() {
             <button type="button" className="btn-tg">
               비행정보
               {/* 체크박스 선택*/}
-              <div className="chk-wrap TopCheck">
-                {/*TopCheck */}
+              {/* <div className="chk-wrap TopCheck">
                 <label>
                   <input type="checkbox" />
                   <span>Heavy Maintenance</span>
                 </label>
-              </div>
+              </div> */}
               {/* //체크박스 선택*/}
               <span className={firstExpaned ? 'active' : ''}></span>
               {/* info*/}
