@@ -842,7 +842,7 @@
   display: grid;
   grid-gap: 2.4rem;
   grid-template-columns: 1fr 1fr 1fr;
-  height: calc(100vh - 13.6rem);
+  // height: calc(100vh - 13.6rem);
 
   .grid-item {border: 0.1rem solid var(--color-neutral-40); border-radius: 0.8rem; padding: 2.0rem 3.0rem; background-color: rgba(255, 255, 255, .4); /*overflow: hidden;*/}
   .grid-item:nth-of-type(3) {grid-row: span 2;}
