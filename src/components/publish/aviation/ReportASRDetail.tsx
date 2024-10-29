@@ -2230,6 +2230,30 @@ function ReportASRDetail() {
                                         <div className="form-table line">
                                           <div className="form-cell wid50">
                                             <div className="form-group wid100">
+                                              <div className="chk-wrap">
+                                                <label>
+                                                  <input type="checkbox" />
+                                                  <span>
+                                                    항공HZD여부 <span className="required">*</span>
+                                                  </span>
+                                                </label>
+                                                <label>
+                                                  <input type="checkbox" />
+                                                  <span>
+                                                    산업HZD여부 <span className="required">*</span>
+                                                  </span>
+                                                </label>
+                                                <label>
+                                                  <input type="checkbox" />
+                                                  <span>보안HZD여부</span>
+                                                </label>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div className="form-table line">
+                                          <div className="form-cell wid50">
+                                            <div className="form-group wid100">
                                               <AppSelect label={'Hazard'} required />
                                             </div>
                                           </div>
@@ -2238,9 +2262,11 @@ function ReportASRDetail() {
                                               <AppSelect label={'Potential Consequence'} required />
                                             </div>
                                             <div className="form-group wid50">
-                                              <div className="tag-info-wrap-end1">
-                                                <div className="tip">
-                                                  <a href="javascript:void(0);" className="txt"></a>
+                                              <div className="form-group wid100">
+                                                <div className="tag-info-wrap-end1">
+                                                  <div className="tip">
+                                                    <a href="javascript:void(0);" className="txt"></a>
+                                                  </div>
                                                 </div>
                                               </div>
                                             </div>
@@ -2333,6 +2359,9 @@ function ReportASRDetail() {
                                                 </td>
                                               </tr>
                                               <tr>
+                                                <td colSpan={7}>No Data</td>
+                                              </tr>
+                                              <tr>
                                                 <td className="tl">Sandstorm Environmental/Weather</td>
                                                 <td className="tl">Escape slide deployment</td>
                                                 <td>
@@ -2355,6 +2384,49 @@ function ReportASRDetail() {
                                                     delete
                                                   </a>
                                                 </td>
+                                              </tr>
+                                            </tbody>
+                                          </table>
+                                        </div>
+                                        <div className="form-table line">
+                                          <div className="form-cell wid50">
+                                            <div className="form-group wid100">
+                                              <AppSelect label={'Hazard'} required />
+                                            </div>
+                                          </div>
+                                          <div className="form-cell wid50">
+                                            <div className="form-group wid100">
+                                              <AppSelect label={'Potential Consequence'} required />
+                                            </div>
+                                          </div>
+                                        </div>
+                                        {/* 버튼*/}
+                                        <div className="contents-btns">
+                                          <button
+                                            type="button"
+                                            name="button"
+                                            className="btn_text text_color_neutral-10 btn_confirm"
+                                          >
+                                            + Add
+                                          </button>
+                                        </div>
+                                        {/* //버튼*/}
+
+                                        <div className="listtable">
+                                          <table className="info-board">
+                                            <colgroup>
+                                              <col width="40%" />
+                                              <col width="60%" />
+                                            </colgroup>
+                                            <thead>
+                                              <tr>
+                                                <th>Hazard</th>
+                                                <th>Potential Consequence</th>
+                                              </tr>
+                                            </thead>
+                                            <tbody>
+                                              <tr>
+                                                <td colSpan={2}>No Data</td>
                                               </tr>
                                             </tbody>
                                           </table>
@@ -2483,29 +2555,6 @@ function ReportASRDetail() {
                                     <div className="edit-area">
                                       <div className="editbox">
                                         <div className="form-table line">
-                                          <div className="form-cell wid50">
-                                            <div className="group-box-wrap wid100">
-                                              {/* <span className="txt"></span> */}
-                                              <div className="radio-wrap ">
-                                                <label>
-                                                  <input type="checkbox" checked />
-                                                  <span>
-                                                    항공HZD여부 <span className="required">*</span>
-                                                  </span>
-                                                </label>
-                                                <label>
-                                                  <input type="checkbox" />
-                                                  <span>
-                                                    산업HZD여부 <span className="required">*</span>
-                                                  </span>
-                                                </label>
-                                                <label>
-                                                  <input type="checkbox" />
-                                                  <span>보안HZD여부</span>
-                                                </label>
-                                              </div>
-                                            </div>
-                                          </div>
                                           <div className="form-cell wid50">
                                             <div className="form-group wid100">
                                               <AppSelect label={'Hazard'} required />
