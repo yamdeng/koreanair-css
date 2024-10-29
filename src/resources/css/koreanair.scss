@@ -834,7 +834,7 @@
 
 
 .table-wrap {display: flex; width: 100%; height: calc(100% - 20.0rem);/*padding-bottom: 2.0rem;*/}
-.table-wrap .left-table {display: inline-block; width: 40%; vertical-align: top; padding-right: 3.0rem;}
+.table-wrap .left-table {display: inline-block; width: 40%; vertical-align: top; text-align: center; padding-right: 3.0rem;}
 .table-wrap .right-table {display: inline-block; width: 60%;  vertical-align: top;}
 .table-wrap .right-table .tight-table-grid {height: calc(100% - 15.0rem) !important;}
 
