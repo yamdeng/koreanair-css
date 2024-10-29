@@ -87,7 +87,14 @@ function SMSDashBoardList2() {
         <div className="DashBoard-chart">
           <div className="DashBoard-row">
             <div className="DashBoard-col">
-              <p className="h4">1. 안전 데이터 비율</p>
+              <div className="form-table">
+                <div className="form-cell">
+                  <p className="h4">안전 데이터 비율</p>
+                </div>
+                <div className="form-cell">
+                  <AppSelect label={'부문'} />
+                </div>
+              </div>
               <div className="DashBoard-box">
                 <AppTable rowData={rowData} columns={columns} />
               </div>
