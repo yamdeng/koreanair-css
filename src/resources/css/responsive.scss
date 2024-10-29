@@ -102,6 +102,7 @@
   .av-submain .av-submain-bg .av-submain-wrap{display:flex;/*flex-flow:row wrap;*/width:90%;overflow-y:auto;/*top:5%;bottom:10%*/}
   .av-submain .av-submain-bg .av-submain-wrap .line-bg{display: block;width:100%}
   .av-submain .av-submain-bg .av-submain-wrap .av-area{display: flex;justify-content: flex-start;flex-wrap: wrap;gap:0 0.5rem;width:20%;margin: 1rem 0 0rem;box-sizing: border-box}
+  .av-submain .av-submain-bg .av-submain-wrap.gsr .av-area{width:18%;}
   .av-submain .av-submain-bg .av-submain-wrap .h3-tit{padding-top:1.5rem}
   .av-submain .av-submain-bg .av-submain-wrap .av-area .av-box{}
   .step-box li {max-width: 16.0rem;}
@@ -372,7 +373,9 @@
 
 .av-submain .av-submain-bg .av-submain-wrap{display:flex;flex-flow:row wrap;width:100%;overflow-y:auto;/*top:5%;*/bottom:0}
 .av-submain .av-submain-bg .av-submain-wrap .line-bg{display:block;width:100%}
+.av-submain .av-submain-bg .av-submain-wrap.gsr .line-bg{display:block;width:100%}
 .av-submain .av-submain-bg .av-submain-wrap .av-area{display:flex;justify-content: flex-start;flex-wrap: wrap;gap:0 0.5rem;width:20%;max-height:20rem;margin: 1rem 0 0rem;box-sizing: border-box}
+.av-submain .av-submain-bg .av-submain-wrap.gsr .av-area{width:20%;}
 @-webkit-keyframes direction {
   from{
     left: 0;
@@ -381,7 +384,7 @@
     left:68.0rem;
   }
 }
-.av-submain .av-submain-bg .av-submain-wrap .h3-tit{padding-top:1.5rem;height:2rem}
+.av-submain .av-submain-bg .av-submain-wrap .h3-tit{padding-top:1.5rem;}
 .checkbox-wrap .checkbox-area{display:block;width:100%}
 .checkbox-wrap .checkbox-area .checklist{width:100%}
 .checkbox-wrap .checkbox-area .checklist + .checklist{display:block;width:100%;margin-top:1.5rem}
