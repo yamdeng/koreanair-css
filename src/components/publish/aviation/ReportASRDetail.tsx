@@ -620,6 +620,202 @@ function ReportASRDetail() {
                   </div>
                 </div>
 
+                {/* 날씨*/}
+                <div className="editbox report">
+                  <div className="header-tit">날씨</div>
+                  <div className="form-table line">
+                    <div className="form-cell wid100">
+                      <div className="form-group wid100">
+                        <div className="box-view-list">
+                          <ul className="view-list">
+                            <li className="accumlate-list">
+                              <label className="t-label">Met</label>
+                              <span className="text-desc-type1">아이엠씨</span>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="form-table line">
+                    <div className="form-cell wid100">
+                      <div className="form-group wid100">
+                        <div className="box-view-list">
+                          <ul className="view-list">
+                            <li className="accumlate-list">
+                              <label className="t-label">실제날씨</label>
+                              <span className="text-desc-type1">
+                                <div className="info-box">
+                                  <ul>
+                                    <li>
+                                      <span className="tt">바람</span> 11 / 22
+                                    </li>
+                                    <li>
+                                      <span className="tt">격발</span> 33 케츠
+                                    </li>
+                                    <li>
+                                      <span className="tt">시계</span> 111
+                                    </li>
+                                    <li>
+                                      <span className="tt">구름</span> 샤이
+                                    </li>
+                                    <li>
+                                      <span className="tt">온도</span> 28 ℃
+                                    </li>
+                                    <li>
+                                      <span className="tt">고도계</span> 11 / 헤르츠파
+                                    </li>
+                                  </ul>
+                                </div>
+                              </span>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="form-cell wid100">
+                      <div className="form-group wid100">
+                        <div className="box-view-list">
+                          <ul className="view-list">
+                            <li className="accumlate-list">
+                              <label className="t-label">심각한 날씨(다중 섹션)</label>
+                              <span className="text-desc-type1">
+                                <div className="info-box list">
+                                  <ul>
+                                    <li>
+                                      <span className="tt">lIGHT</span>
+                                    </li>
+                                    <li>
+                                      <span className="tt">MODERATE</span>
+                                    </li>
+                                  </ul>
+                                </div>
+                              </span>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                {/* 조류충돌*/}
+                <div className="editbox report">
+                  <div className="header-tit">조류충돌</div>
+                  <div className="form-table line">
+                    <div className="form-cell wid100">
+                      <div className="form-group wid100">
+                        <div className="box-view-list">
+                          <ul className="view-list">
+                            <li className="accumlate-list">
+                              <label className="t-label">새의 종류</label>
+                              <span className="text-desc-type1">앵그리버드</span>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="form-cell wid100">
+                      <div className="form-group wid100">
+                        <div className="box-view-list">
+                          <ul className="view-list">
+                            <li className="accumlate-list">
+                              <label className="t-label">새의 크기</label>
+                              <span className="text-desc-type1">작음</span>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="form-cell wid100">
+                      <div className="form-group wid100">
+                        <div className="box-view-list">
+                          <ul className="view-list">
+                            <li className="accumlate-list">
+                              <label className="t-label">본 숫자</label>
+                              <span className="text-desc-type1">11-100</span>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="form-cell wid100">
+                      <div className="form-group wid100">
+                        <div className="box-view-list">
+                          <ul className="view-list">
+                            <li className="accumlate-list">
+                              <label className="t-label">타격된 숫자</label>
+                              <span className="text-desc-type1">11-100</span>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="form-table line">
+                    <div className="form-cell wid100">
+                      <div className="form-group wid100">
+                        <div className="box-view-list">
+                          <ul className="view-list">
+                            <li className="accumlate-list">
+                              <label className="t-label">시간</label>
+                              <span className="text-desc-type1">낮</span>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="form-cell wid100">
+                      <div className="form-group wid100">
+                        <div className="box-view-list">
+                          <ul className="view-list">
+                            <li className="accumlate-list">
+                              <label className="t-label">랜딩 라이트</label>
+                              <span className="text-desc-type1">N</span>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="form-cell wid100">
+                      <div className="form-group wid100">
+                        <div className="box-view-list">
+                          <ul className="view-list">
+                            <li className="accumlate-list">
+                              <label className="t-label">조종사가 새에 대해 경고 받음</label>
+                              <span className="text-desc-type1">N</span>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="form-cell wid100">
+                      <div className="form-group wid100">
+                        <div className="box-view-list">
+                          <ul className="view-list">
+                            <li className="accumlate-list">
+                              <label className="t-label">충격점</label>
+                              <span className="text-desc-type1">-</span>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="form-cell wid100">
+                      <div className="form-group wid100">
+                        <div className="box-view-list">
+                          <ul className="view-list">
+                            <li className="accumlate-list">
+                              <label className="t-label">설명: 손상, 부상 및 기타 정보</label>
+                              <span className="text-desc-type1">아이라인</span>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
                 {/* 관련자 세부 정보*/}
                 <div className="editbox report">
                   <div className="header-tit">Person Involved Detail</div>

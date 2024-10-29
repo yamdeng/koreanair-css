@@ -316,6 +316,14 @@ meter::-webkit-meter-optimum-value {
 .box-view-list .view-list .accumlate-list .text-desc-type1 .graph .graph-right .box-area ul li .num.yellow-color{color:var(--color-aud-yell-1)}
 .box-view-list .view-list .accumlate-list .text-desc-type1 .graph .graph-right .box-area ul li .num.red-color{color:var(--color-Warning)}
 
+.box-view-list .view-list .accumlate-list .text-desc-type1 .info-box{display:inline}
+.box-view-list .view-list .accumlate-list .text-desc-type1 .info-box li{display:inline-block}
+.box-view-list .view-list .accumlate-list .text-desc-type1 .info-box li .tt{display:inline-block;padding:0rem 0.8rem;border:solid 0.1rem var(--color-neutral-50);background-color: var(--color-neutral-20);border-radius: 99.9rem}
+.box-view-list .view-list .accumlate-list .text-desc-type1 .info-box li + li{margin-left:1.5rem}
+.box-view-list .view-list .accumlate-list .text-desc-type1 .info-box.list li{display:inline-block}
+.box-view-list .view-list .accumlate-list .text-desc-type1 .info-box.list li .tt{display:inline-block;padding:0rem 0.8rem;border:solid 0.1rem var(--color-neutral-30);background-color: var(--color-neutral-20);border-radius: 99.9rem}
+.box-view-list .view-list .accumlate-list .text-desc-type1 .info-box.list li + li{margin-left:1.0rem}
+
 /*인풋박스 안 툴팁*/
 .contents .form-table .form-cell .form-group{position:relative}
 .contents .form-table .form-cell .form-group label.t-label{display:block;color:var(--color-neutral-60);line-height:2.3;font-weight:400;font-size:1.3rem;white-space: nowrap;}
@@ -2162,6 +2170,6 @@ keyframes
     left: 0;
   }
   to{
-    left:150.0rem;
+    left:95%;
   }
 }
