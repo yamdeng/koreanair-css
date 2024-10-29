@@ -142,6 +142,9 @@ hr.line{border:none;height:0.1rem;background:var(--color-neutral-40);margin: 0;p
 
 input[type=checkbox],input[type=radio]{padding:0;vertical-align:middle;margin-top:-0.3rem;*margin-top:-0.2rem}
 
+
+.unvisible{visibility:hidden}
+
 /* checkbox, radio */
 [class^='radio-wrap'] > label{position:relative;overflow:hidden;cursor:pointer}
 [class^='radio-wrap'] > label > input{position:absolute;top:0;left:0;width:0;height:0;opacity:0}

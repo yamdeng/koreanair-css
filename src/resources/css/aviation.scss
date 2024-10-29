@@ -1064,7 +1064,7 @@ meter::-webkit-meter-optimum-value {
   .grid-item.photo{position:relative;padding:0;overflow: hidden;}
 //  .grid-item .main-photo{position: relative; width: 100%; height: 0; padding-top: 75%; overflow: hidden;}
 //  .grid-item .main-photo img {position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;}
- .grid-item .main-photo{height:33.8rem}
+ .grid-item .main-photo{max-height:33.8rem}
   .grid-item .main-photo img{width:100%;height:100%;/*background-size:cover;*/object-fit:cover;border-radius:0.8rem 0.8rem 0 0}
   .grid-item .ph-img-tit{display:flex;position:relative;bottom:20%;width:100%;justify-content:center;align-items:center}
   .grid-item .ph-img-tit h3{display:flex;width:100%;justify-content:center;align-items:center;padding:1.0rem 0;background-color:rgba(0,0,0,0.4);font-size:1.8rem;color:var(--color-neutral-10);font-weight:500}
@@ -1148,7 +1148,7 @@ meter::-webkit-meter-optimum-value {
   .grid-item .main-table-box .main-table-todo td a:hover{text-decoration: underline; color: var(--color-darkblue-100);}
   .grid-item .main-table-box .graph-area{display:flex;width:100%;gap:0 1rem}
   .grid-item .main-table-box .graph-area .graph-box{position:relative;box-sizing:border-box;margin:0 auto}
-  .grid-item .main-table-box .graph-area .graph-box canvas{width:100%;vertical-align:top}
+  .grid-item .main-table-box .graph-area .graph-box canvas{width:100%;height:175px;vertical-align:top}
   .grid-item .main-table-box .graph-area .graph-box .txt-box{margin:0 auto;text-align:center}
   .grid-item .main-table-box .graph-area .graph-box .txt-box .txt{font-size:1.4rem}
   .grid-item .main-table-box .graph-area .graph-box .txt-box .num{display:block;font-size:2.0rem;font-weight:700;text-align:center}
