@@ -897,7 +897,7 @@ input, select{font-family:'KoreanAirSans'}
 .sub-tab li a.active{color:var(--color-darkblue-100);border-bottom: 0.3rem solid var(--color-darkblue-100)}
 
 /* 그리드 center정렬 */
-//.ag-cell-wrapper {width: 100%; height: auto;}
+//.ag-cell-wrapper {width: 100%; height: auto;     display: flex;align-items: center;justify-content: center;height: 100%;}
 /*.ag-cell {    
   display: flex;
   position: absolute;

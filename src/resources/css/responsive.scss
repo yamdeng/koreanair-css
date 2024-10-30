@@ -1028,7 +1028,11 @@
 
 
   .table-wrap {display: block;}
-  .table-wrap .left-table {padding-right: 0rem;}
+  .table-wrap .left-table {width: 100%; padding-right: 0rem;}
+  .table-wrap .right-table {width: 100%;}
+  .table-wrap .left-table-type01 {display: block; width: 100%; padding-right: 0;}
+  .table-wrap .right-table-type01 {display: block; width: 100%;}
+  .table-wrap .right-table-type01 .right-table-grid {height: auto;}
 
   .editbox.edit-detile.Audit > .form-table .form-group .df{display:block}
   .editbox.edit-detile.Audit > .form-table .form-group .type7{display:block;width:100%}
