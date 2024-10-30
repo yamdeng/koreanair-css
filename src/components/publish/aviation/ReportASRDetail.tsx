@@ -126,8 +126,8 @@ function ReportASRDetail() {
             <em>(3)</em>
           </ul>
         </h2>
-        <div className="">
-          <button type="button">열람24</button>
+        <div className="viewright">
+          <a href="javascript:void(0);">열람24</a>
         </div>
       </div>
       <div className="Report-step-area">
