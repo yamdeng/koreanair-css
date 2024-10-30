@@ -2529,6 +2529,7 @@ function ReportASRDetail() {
                                                 </td>
                                                 <td className="tl">LSC김리더(LeaderKim)</td>
                                                 <td>
+                                                  평가중
                                                   {/*사유 툴팁 */}
                                                   <div className="tag-info-wrap-end1">
                                                     <div className="anticon">
@@ -2546,7 +2547,6 @@ function ReportASRDetail() {
                                                       </div>
                                                     </div>
                                                   </div>
-                                                  평가중
                                                 </td>
                                                 <td>
                                                   <a href="javascript:void(0);" className="btn-modify">
@@ -2584,6 +2584,8 @@ function ReportASRDetail() {
                                             </tbody>
                                           </table>
                                         </div>
+                                        {/* 산업안전*/}
+                                        <div className="occuptitle">산업안전</div>
                                         <div className="form-table line">
                                           <div className="form-cell wid50">
                                             <div className="form-group wid100">
@@ -2608,7 +2610,7 @@ function ReportASRDetail() {
                                         </div>
                                         {/* //버튼*/}
 
-                                        <div className="listtable">
+                                        <div className="listtable mb15">
                                           <table className="info-board">
                                             <colgroup>
                                               <col width="40%" />
@@ -2627,6 +2629,7 @@ function ReportASRDetail() {
                                             </tbody>
                                           </table>
                                         </div>
+                                        {/* //산업안전*/}
                                         <div className="form-table line">
                                           <div className="form-cell wid100">
                                             <div className="form-group wid100">
