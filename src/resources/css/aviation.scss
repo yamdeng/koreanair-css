@@ -105,6 +105,10 @@ meter::-webkit-meter-optimum-value {
 .edit-area .form-table .form-cell.Add{border-bottom:0}
 .edit-area .editbox.report .boxForm .form-table .form-cell{border-bottom:0}
 
+.edit-area.report .detail-form .detail-list .form-table .form-cell .form-group{position:relative}
+.edit-area.report .detail-form .detail-list .form-table .form-cell .form-group .delete{position:absolute;top:0;right:0;background: url(/src/resources/images/delete-text.svg) center center no-repeat;font-size: 0;width: 2rem;height: 2rem}
+
+.notice-board{position:relative}
 .notice-board td{position:relative;padding:1.0rem 0.3rem}
 .notice-board td .delete{position:absolute;top:1rem;background:url(/src/resources/images/delete-text.svg) center center no-repeat;font-size:0;width:2rem;height:2rem}
 .notice-board td.deps-conts{width:100%;background-color:var(--color-neutral-20);padding:1rem 2rem}
@@ -479,7 +483,8 @@ meter::-webkit-meter-optimum-value {
 .history-info .left-box{display:inline-table;vertical-align:top;padding-right:3rem;width:50%;}
 .listtable{
     display:block; 
-    width:100%; 
+    width:100%;
+    overflow-x:auto;
     .list-table{width:100%}
     .list-table thead tr, .list-table tbody tr{display:table;width:100%}
     .list-table th, .list-table td {padding:1.5rem 0;border-bottom:0.1rem solid var(--color-neutral-40);text-align:center}

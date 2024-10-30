@@ -3314,7 +3314,7 @@ function ReportASRDetail() {
                                                         <div className="form-cell wid50 ">
                                                           <div className="form-group wid100">
                                                             <AppTextArea
-                                                              label="Result"
+                                                              label="Mitigation 1"
                                                               style={{ width: '100%', height: 100 }}
                                                               errorMessage=""
                                                               placeholder=""
@@ -3324,13 +3324,63 @@ function ReportASRDetail() {
                                                       </div>
                                                       <div className="form-table">
                                                         <div className="form-cell wid50">
-                                                          <div className="form-group wid50">
-                                                            <div className="date2">
-                                                              <AppDatePicker label="Result Input Data" required />
+                                                          <div className="form-group wid100">
+                                                            <div className="df">
+                                                              <div className="date1">
+                                                                <AppDatePicker label={'일자'} />
+                                                              </div>
+                                                              <span className="unt">~</span>
+                                                              <div className="date2">
+                                                                <AppDatePicker label={'일자'} />
+                                                              </div>
                                                             </div>
                                                           </div>
                                                         </div>
+                                                        <div className="form-cell wid50">
+                                                          <div className="form-group wid100">
+                                                            <div className="chk-wrap">
+                                                              <label>
+                                                                <input type="checkbox" />
+                                                                <span>0%</span>
+                                                              </label>
+                                                              <label>
+                                                                <input type="checkbox" />
+                                                                <span>25%</span>
+                                                              </label>
+                                                              <label>
+                                                                <input type="checkbox" />
+                                                                <span>50%</span>
+                                                              </label>
+                                                              <label>
+                                                                <input type="checkbox" />
+                                                                <span>75%</span>
+                                                              </label>
+                                                              <label>
+                                                                <input type="checkbox" />
+                                                                <span>100%</span>
+                                                              </label>
+                                                            </div>
+                                                          </div>
+                                                        </div>
+                                                        <div className="form-cell wid20">
+                                                          <div className="form-group wid100">
+                                                            <a href="javascript:void(0);">
+                                                              <span className="delete">X</span>
+                                                            </a>
+                                                          </div>
+                                                        </div>
                                                       </div>
+                                                      {/* 버튼*/}
+                                                      <div className="contents-btns">
+                                                        <button
+                                                          type="button"
+                                                          name="button"
+                                                          className="btn_text text_color_neutral-10 btn_confirm"
+                                                        >
+                                                          + Add
+                                                        </button>
+                                                      </div>
+                                                      {/* //버튼*/}
                                                       {/* 파일첨부영역 : drag */}
                                                       <div className="form-table ">
                                                         <div className="form-cell wid50">
