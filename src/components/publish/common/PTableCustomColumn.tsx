@@ -7,6 +7,9 @@ import excelicon from '@/resources/images/file-excel.svg';
 import ppticon from '@/resources/images/file-ppt.svg';
 import pdficon from '@/resources/images/file-pdf.svg';
 import imgicon from '@/resources/images/file-img.svg';
+import iconadd from '@/resources/images/plus-btn.svg';
+import icondelete from '@/resources/images/delete.svg';
+import iconregister from '@/resources/images/register.svg';
 
 function CustomColumnComponent1() {
   return (
@@ -109,6 +112,15 @@ function CustomColumnComponent8() {
   return (
     <div className="icon-box" style={{ fontWeight: 'normal', textDecoration: 'underline' }}>
       <img src={noticeicon} />
+      <a href="javascript:void(0);">
+        <img src={iconadd} />
+      </a>
+      <a href="javascript:void(0);">
+        <img src={icondelete} />
+      </a>
+      <a href="javascript:void(0);">
+        <img src={iconregister} />
+      </a>
     </div>
   );
 }
