@@ -728,12 +728,12 @@
 
 .check-table {clear: both; width: 100%; box-sizing: border-box;}
 .check-table th, .check-table td {padding: 1.0rem; font-size: 1.4rem; text-align: center; line-height: 150%; border: 0.1rem solid var(--color-neutral-40); vertical-align:middle;}
-.check-table th:nth-child(1), .check-table td:nth-child(1){width: 15%;}
-.check-table th:nth-child(2), .check-table td:nth-child(2){width: 15%;}
-.check-table th:nth-child(3), .check-table td:nth-child(3){width: 30%;}
-.check-table th:nth-child(4), .check-table td:nth-child(4){width: 5%;}
-.check-table th:nth-child(5), .check-table td:nth-child(5){width: 5%;}
-.check-table th:nth-child(6), .check-table td:nth-child(6){width: 30%;}
+//.check-table th:nth-child(1), .check-table td:nth-child(1){width: 15%}
+//.check-table th:nth-child(2), .check-table td:nth-child(2){width: 15%}
+//.check-table th:nth-child(3), .check-table td:nth-child(3){width: 30%}
+//.check-table th:nth-child(4), .check-table td:nth-child(4){width: 5%;}
+//.check-table th:nth-child(5), .check-table td:nth-child(5){width: 5%;}
+//.check-table th:nth-child(6), .check-table td:nth-child(6){width: 30%}
 .check-table th {background-color: var(--color-neutral-20); border-top: 0.1rem solid var(--color-darkblue-100); }
 .check-table tr {border-bottom: 0.1rem solid var(--color-neutral-40);}
 

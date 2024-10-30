@@ -253,7 +253,15 @@ function POccupationMu3P6edit() {
                   <div className="form-table">
                     <div className="form-group wid100">
                       <table className="check-table">
-                        <thead>
+                        <colgroup>
+                          <col width="15%;" />
+                          <col width="15%;" />
+                          <col width="30%;" />
+                          <col width="5%;" />
+                          <col width="5%;" />
+                          <col width="30%;" />
+                        </colgroup>
+                        <tbody>
                           <tr>
                             <th>평가구분</th>
                             <th>평가항목</th>
@@ -262,10 +270,42 @@ function POccupationMu3P6edit() {
                             <th>득점</th>
                             <th>평가의견</th>
                           </tr>
-                        </thead>
-                        <tbody>
+
                           <tr>
-                            <th>안전보건관리체계</th>
+                            <th rowSpan={4}>안전보건관리체계</th>
+                            <th>일반원칙</th>
+                            <th>도급•수급인의 안전보건방침 적정여부</th>
+                            <th>5</th>
+                            <td>
+                              <AppTextInput label="" />
+                            </td>
+                            <td>
+                              <AppTextInput label="" />
+                            </td>
+                          </tr>
+                          <tr>
+                            <th>일반원칙</th>
+                            <th>도급•수급인의 안전보건방침 적정여부</th>
+                            <th>5</th>
+                            <td>
+                              <AppTextInput label="" />
+                            </td>
+                            <td>
+                              <AppTextInput label="" />
+                            </td>
+                          </tr>
+                          <tr>
+                            <th>일반원칙</th>
+                            <th>도급•수급인의 안전보건방침 적정여부</th>
+                            <th>5</th>
+                            <td>
+                              <AppTextInput label="" />
+                            </td>
+                            <td>
+                              <AppTextInput label="" />
+                            </td>
+                          </tr>
+                          <tr>
                             <th>일반원칙</th>
                             <th>도급•수급인의 안전보건방침 적정여부</th>
                             <th>5</th>
