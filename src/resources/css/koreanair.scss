@@ -872,8 +872,8 @@
   .grid-item.photo .slick-slider .slick-dots{position:absolute;top:85%;width:100%;text-align:center;padding: 0.6rem 0;}
   .grid-item.photo .slick-slider .slick-dots li button{display:block;font-size:0;border-radius:99.9rem;margin:0.5rem 0;width:1rem;height:1rem;background-color:var(--color-darkblue-40);cursor:pointer}
   .grid-item.photo .slick-slider .slick-dots li.slick-active button{background-color:var(--color-darkblue-100);width:2rem}
-  .grid-item .main-photo{position:relative;max-height:24.7rem;overflow: hidden;}
-  .grid-item .main-photo img{width:100%;height:25rem;object-fit:cover;border-radius:0.8rem;object-position: center;}
+  .grid-item .main-photo{position:relative;max-height:24.7rem;}
+  .grid-item .main-photo img{width:100%;height:30rem;object-fit:cover;border-radius:0.8rem;object-position: center;}
   .grid-item .img-tit{position:absolute;top:17.8rem;width:100%}
   .grid-item .img-tit h3{display:flex;width:100%;justify-content:center;align-items:center;padding:1.0rem 0;background-color:rgba(0,0,0,0.4);font-size:1.8rem;color:var(--color-neutral-10);font-weight:500}
   .grid-item .main-photo-btn{position:absolute;bottom: 0.1rem;width:100%;text-align:center;z-index:99}
@@ -937,14 +937,18 @@
   .grid-item .main-graph .main-graph-group .main-graph-tit .graph-optimum-bg .txt-optimum {color: var(--color-positive); font-size: 1.2rem;}
 
   .grid-item .main-graph-box {display: inline-block; width: 100%;}
-  .grid-item .main-graph-box .graph-box {display: inline-block; position: relative; vertical-align:top; width: 16.6%; /*padding: 1.0rem 0*/}
-  .grid-item .main-graph-box .graph-box li {display: flex; justify-content: center; text-align: center; /*margin-bottom: 1.0rem;*/}
-  .grid-item .main-graph-box .graph-box li span.low {display: block; background-color: var(--color-negative-bg); border-radius: 99.9rem; padding: 0.5rem 2.0rem; width: 10.0rem; color: var(--color-negative); font-size: 1.4rem; font-weight: 700;}
-  .grid-item .main-graph-box .graph-box li span.high {display: block; background-color: var(--color-Warning-bg); border-radius: 99.9rem; padding: 0.5rem 2.0rem; width: 10.0rem; color: var(--color-Warning); font-size: 1.4rem; font-weight: 700;}
-  .grid-item .main-graph-box .graph-box li span.optimum {display: block; background-color: var(--color-positive-bg); border-radius: 99.9rem; padding: 0.5rem 2.0rem; width: 10.0rem; color: var(--color-positive); font-size: 1.4rem; font-weight: 700;}
-  .grid-item .main-graph-box .graph-box li.tit {width:100%; position: absolute; bottom: 10%; color: var(--color-neutral-90); font-weight: 700;}
-  .grid-item .main-graph-box .graph-box li.tit li.percent {font-size: 2.8rem; margin-bottom: 1.2rem;}
-  .grid-item .main-graph-box .graph-box li.tit li.title {font-size: 1.8rem; font-weight: 500;}
+  //.grid-item .main-graph-box .graph-box {display: inline-block; position: relative; vertical-align:top; width: 16.6%; /*padding: 1.0rem 0*/}
+  //.grid-item .main-graph-box .graph-box li {display: flex; justify-content: center; text-align: center; /*margin-bottom: 1.0rem;*/}
+  //.grid-item .main-graph-box .graph-box li span.low {display: block; background-color: var(--color-negative-bg); border-radius: 99.9rem; padding: 0.5rem 2.0rem; width: 10.0rem; color: var(--color-negative); font-size: 1.4rem; font-weight: 700;}
+  //.grid-item .main-graph-box .graph-box li span.high {display: block; background-color: var(--color-Warning-bg); border-radius: 99.9rem; padding: 0.5rem 2.0rem; width: 10.0rem; color: var(--color-Warning); font-size: 1.4rem; font-weight: 700;}
+  //.grid-item .main-graph-box .graph-box li span.optimum {display: block; background-color: var(--color-positive-bg); border-radius: 99.9rem; padding: 0.5rem 2.0rem; width: 10.0rem; color: var(--color-positive); font-size: 1.4rem; font-weight: 700;}
+  //.grid-item .main-graph-box .graph-box li.tit {width:100%; position: absolute; bottom: 10%; color: var(--color-neutral-90); font-weight: 700;}
+  //.grid-item .main-graph-box .graph-box li.tit li.percent {font-size: 2.8rem; margin-bottom: 1.2rem;}
+  //.grid-item .main-graph-box .graph-box li.tit li.title {font-size: 1.8rem; font-weight: 500;}
+
+  .grid-item .main-graph-box.graph-list {display: flex; justify-content: flex-start; overflow: hidden; width: 100%; height: calc(100% - 5rem);}
+  .grid-item .main-graph-box.graph-list .graph-box {position: relative; width: 14.28%; height: 100%; display: flex; align-items: center;}
+  .grid-item .main-graph-box.graph-list .graph-box canvas.canvas {position: absolute; width: 100% !important; height: auto;}
 
   /* meter 크기 설정 */
   meter {

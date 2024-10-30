@@ -282,120 +282,36 @@ function POccupationPortal1() {
               </li>
             </ul>
           </h3>
-          <div className="main-graph-box">
+          <div className="main-graph-box graph-list">
             <div className="graph-box">
-              <ul>
-                <li>
-                  <span className="low">경계</span>
-                </li>
-                <li>
-                  <img src={maingraph2} className="" alt="graph" />
-                  {/* 그래프영역 */}
-                </li>
-                <li className="tit">
-                  <div>
-                    <ul>
-                      <li className="percent">0.58</li>
-                      <li className="title">전체</li>
-                    </ul>
-                  </div>
-                </li>
-              </ul>
-            </div>
-            <div className="graph-box">
-              <ul>
-                <li>
-                  <span className="optimum">달성</span>
-                </li>
-                <li>
-                  <img src={maingraph} className="" alt="graph" />
-                  {/* 그래프영역 */}
-                </li>
-                <li className="tit">
-                  <div>
-                    <ul>
-                      <li className="percent">0.36</li>
-                      <li className="title">정비</li>
-                    </ul>
-                  </div>
-                </li>
-              </ul>
-            </div>
-            <div className="graph-box">
-              <ul>
-                <li>
-                  <span className="high">미달성</span>
-                </li>
-                <li>
-                  <img src={maingraph1} className="" alt="graph" />
-                  {/* 그래프영역 */}
-                </li>
-                <li className="tit">
-                  <div>
-                    <ul>
-                      <li className="percent">0.38</li>
-                      <li className="title">항공우주</li>
-                    </ul>
-                  </div>
-                </li>
-              </ul>
-            </div>
-            <div className="graph-box">
-              <ul>
-                <li>
-                  <span className="optimum">달성</span>
-                </li>
-                <li>
-                  <img src={maingraph} className="" alt="graph" />
-                  {/* 그래프영역 */}
-                </li>
-                <li className="tit">
-                  <div>
-                    <ul>
-                      <li className="percent">0.58</li>
-                      <li className="title">여객</li>
-                    </ul>
-                  </div>
-                </li>
-              </ul>
-            </div>
-            <div className="graph-box">
-              <ul>
-                <li>
-                  <span className="optimum">달성</span>
-                </li>
-                <li>
-                  <img src={maingraph} className="" alt="graph" />
-                  {/* 그래프영역 */}
-                </li>
-                <li className="tit">
-                  <div>
-                    <ul>
-                      <li className="percent">0.58</li>
-                      <li className="title">화물</li>
-                    </ul>
-                  </div>
-                </li>
-              </ul>
-            </div>
-            <div className="graph-box">
-              <ul>
-                <li>
-                  <span className="optimum">달성</span>
-                </li>
-                <li>
-                  <img src={maingraph} className="" alt="graph" />
-                  {/* 그래프영역 */}
-                </li>
-                <li className="tit">
-                  <div>
-                    <ul>
-                      <li className="percent">0.58</li>
-                      <li className="title">객실</li>
-                    </ul>
-                  </div>
-                </li>
-              </ul>
+              <div className="graph-box">
+                {/*그래프영역*/}
+                <canvas className="canvas" id="" height="150" width="300"></canvas>
+              </div>
+              <div className="graph-box">
+                {/*그래프영역*/}
+                <canvas className="canvas" id="" height="150" width="300"></canvas>
+              </div>
+              <div className="graph-box">
+                {/*그래프영역*/}
+                <canvas className="canvas" id="" height="150" width="300"></canvas>
+              </div>
+              <div className="graph-box">
+                {/*그래프영역*/}
+                <canvas className="canvas" id="" height="150" width="300"></canvas>
+              </div>
+              <div className="graph-box">
+                {/*그래프영역*/}
+                <canvas className="canvas" id="" height="150" width="300"></canvas>
+              </div>
+              <div className="graph-box">
+                {/*그래프영역*/}
+                <canvas className="canvas" id="" height="150" width="300"></canvas>
+              </div>
+              <div className="graph-box">
+                {/*그래프영역*/}
+                <canvas className="canvas" id="" height="150" width="300"></canvas>
+              </div>
             </div>
           </div>
         </div>
