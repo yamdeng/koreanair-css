@@ -714,7 +714,7 @@ function ReportASRDetail() {
                                 <div className="info-box list">
                                   <ul>
                                     <li>
-                                      <span className="tt">lIGHT</span>
+                                      <span className="tt">lIGHT / lIGHTlIGHTlIGHTlIGHT</span>
                                     </li>
                                     <li>
                                       <span className="tt">MODERATE</span>

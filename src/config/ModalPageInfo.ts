@@ -66,6 +66,7 @@ import PReportDeleteModal from '@/components/publish/modal/PReportDeleteModal';
 import PAdminTotreportModal from '@/components/publish/modal/PAdminTotreportModal';
 import risklevelModal from '@/components/publish/modal/risklevelModal';
 import AMO3DetileModal from '@/components/publish/modal/AMO3DetileModal';
+import PReporviewModal from '@/components/publish/modal/PReporviewModal';
 
 const ModalPageInfo: any = {};
 
@@ -207,6 +208,13 @@ ModalPageInfo.list = [
     title: '[항공안전>AMO] 게시판 상세',
     Component: AMO3DetileModal,
     path: 'AMO3DetileModal',
+    description: '',
+    success: true,
+  },
+  {
+    title: '[항공안전>03.안전위험관리] 보고서분석 > 열람 팝업창',
+    Component: PReporviewModal,
+    path: 'PReporviewModal',
     description: '',
     success: true,
   },
