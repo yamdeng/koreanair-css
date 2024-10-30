@@ -586,6 +586,15 @@ function Auditcarsearch() {
         </div>
       </div>
       {/*//조회*/}
+      <div className="form-table wid100">
+        <div className="form-cell">
+          <div className="btn-area audit">
+            <button type="button" name="button" className="btn-sm btn_text btn-darkblue-line">
+              조회
+            </button>
+          </div>
+        </div>
+      </div>
 
       {/*검색영역 */}
       <div className="boxForm">
