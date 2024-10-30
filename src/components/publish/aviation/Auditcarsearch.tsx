@@ -152,7 +152,7 @@ function Auditcarsearch() {
               {/*Auditor */}
               <div className="cons-box">
                 <div className="txt">Auditor</div>
-                <div className="cons-list scroll">
+                <div className="cons-list">
                   <ul className="list">
                     <li>
                       <div className="list-area">
@@ -288,6 +288,26 @@ function Auditcarsearch() {
                   </ul>
                 </div>
               </div>
+              {/*Other */}
+              <div className="cons-box">
+                <div className="txt">Other</div>
+                <div className="cons-list">
+                  <ul className="list">
+                    <li>
+                      <div className="list-area">
+                        <button type="button" className="btn-wrap blue active btn-txt">
+                          DIV
+                        </button>
+                      </div>
+                      <div className="list-area">
+                        <button type="button" className="btn-wrap blue btn-txt">
+                          OSR
+                        </button>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -298,53 +318,40 @@ function Auditcarsearch() {
               {/*Region */}
               <div className="cons-box gr">
                 <div className="txt">Region</div>
-                <div className="cons-list">
+                <div className="cons-list scroll">
                   <ul className="list">
                     <li>
-                      <div className="list-area">
+                      <div className="list-area wid100">
                         <button type="button" className="btn-wrap gr active btn-txt active">
                           국내공항
                         </button>
                       </div>
-                      <div className="list-area">
+                    </li>
+                    <li>
+                      <div className="list-area wid100">
                         <button type="button" className="btn-wrap gr btn-txt">
                           대양주
                         </button>
                       </div>
                     </li>
                     <li>
-                      <div className="list-area">
+                      <div className="list-area wid100">
                         <button type="button" className="btn-wrap gr btn-txt">
                           동남아
                         </button>
                       </div>
-                      <div className="list-area">
-                        <button type="button" className="btn-wrap gr active btn-txt">
-                          미주
-                        </button>
-                      </div>
                     </li>
                     <li>
-                      <div className="list-area">
-                        <button type="button" className="btn-wrap gr btn-txt">
-                          비행점검
-                        </button>
-                      </div>
-                      <div className="list-area">
+                      <div className="list-area wid100">
                         <button type="button" className="btn-wrap gr active btn-txt">
                           유럽
                         </button>
                       </div>
                     </li>
                     <li>
-                      <div className="list-area">
+                      <div className="list-area wid100">
                         <button type="button" className="btn-wrap gr active btn-txt">
                           일본
-                        </button>
-                      </div>
-                      <div className="list-area">
-                        <button type="button" className="btn-wrap gr active btn-txt">
-                          중국
                         </button>
                       </div>
                     </li>
@@ -510,26 +517,6 @@ function Auditcarsearch() {
                   </ul>
                 </div>
               </div>
-              {/*Other */}
-              <div className="cons-box gr">
-                <div className="txt">Other</div>
-                <div className="cons-list">
-                  <ul className="list">
-                    <li>
-                      <div className="list-area">
-                        <button type="button" className="btn-wrap gr active btn-txt">
-                          DIV
-                        </button>
-                      </div>
-                      <div className="list-area">
-                        <button type="button" className="btn-wrap gr btn-txt">
-                          OSR
-                        </button>
-                      </div>
-                    </li>
-                  </ul>
-                </div>
-              </div>
             </div>
           </div>
         </div>
@@ -543,12 +530,12 @@ function Auditcarsearch() {
                 <ul className="list">
                   <li>
                     <div className="list-area5">
-                      <button type="button" className="btn-wrap yell active btn-txt">
+                      <button type="button" className="btn-wrap redcor active btn-txt">
                         1A
                       </button>
                     </div>
                     <div className="list-area5">
-                      <button type="button" className="btn-wrap yell active btn-txt">
+                      <button type="button" className="btn-wrap redcor btn-txt">
                         1B
                       </button>
                     </div>
@@ -570,7 +557,24 @@ function Auditcarsearch() {
                   </li>
                   <li>
                     <div className="list-area5">
-                      <button type="button" className="btn-wrap yell active btn-txt">
+                      <button type="button" className="btn-wrap orangcor active btn-txt">
+                        1A
+                      </button>
+                    </div>
+                    <div className="list-area5">
+                      <button type="button" className="btn-wrap orangcor btn-txt">
+                        1A
+                      </button>
+                    </div>
+                  </li>
+                  <li>
+                    <div className="list-area5">
+                      <button type="button" className="btn-wrap greencor active btn-txt">
+                        1A
+                      </button>
+                    </div>
+                    <div className="list-area5">
+                      <button type="button" className="btn-wrap greencor btn-txt">
                         1A
                       </button>
                     </div>

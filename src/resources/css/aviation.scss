@@ -765,8 +765,7 @@ meter::-webkit-meter-optimum-value {
 .cons-list .list li .list-area + .list-area{margin-left:0.2rem}
 .cons-list .list li .list-area + .list-area li{margin-top:0}
 .cons-list .list li .list-area0 + .list-area0 li{margin-top:0}
-.cons-list .list li .list-area0 .list-box{    display: flex;
-  justify-content: space-between;
+.cons-list .list li .list-area0 .list-box{    display: flex;justify-content: space-between;
   gap: 0 0.2rem;
   //width: 24%;
   }
@@ -775,12 +774,12 @@ meter::-webkit-meter-optimum-value {
 .cons-list .list li .list-area .list-box{width:100%}
 .cons-list .list li .list-area3 .list-box{width:100%}
 .cons-list .list li:first-child{position:relative;display:flex;-webkit-box-pack: start;justify-content: start;align-items: flex-start;margin-top:0.5rem}
-.cons-list .list li .list-area .btn-wrap.blue.active{width:100%;color:var(--color-neutral-80);border:solid 0.1rem var(--color-darkblue-60);background-color:var(--color-darkblue-30);border-radius:0.3rem;padding:0.3rem 0.5rem}
-.cons-list .list li .list-area .btn-wrap.blue{width:100%;color:var(--color-neutral-60);border:solid 0.1rem var(--color-darkblue-60);background-color:var(--color-darkblue-10);border-radius:0.3rem;padding:0.3rem 0.5rem}
+.cons-list .list li .list-area .btn-wrap.blue.active{width:100%;color:var(--color-neutral-80);border:solid 0.1rem #e5e9ff;background-color:#e5e9ff;border-radius:0.3rem;padding:0.3rem 0.5rem}
+.cons-list .list li .list-area .btn-wrap.blue{width:100%;color:var(--color-neutral-60);border:solid 0.1rem #fcfcfe;background-color:#fcfcfe;border-radius:0.3rem;padding:0.3rem 0.5rem}
 .cons-list .list li .list-area .btn-txt{font-size:1.2rem;font-weight:400;width:100%}
 .cons-list .list li .list-area .btn-txt.w-min{min-width:4.0rem}
-.cons-list .list li .list-area3 .btn-wrap.blue.active{width:100%;color:var(--color-neutral-80);border:solid 0.1rem var(--color-darkblue-60);background-color:var(--color-darkblue-30);border-radius:0.3rem;padding:0.3rem 0.5rem}
-.cons-list .list li .list-area3 .btn-wrap.blue{width:100%;color:var(--color-neutral-60);border:solid 0.1rem var(--color-darkblue-60);background-color:var(--color-darkblue-10);border-radius:0.3rem;padding:0.3rem 0.5rem}
+.cons-list .list li .list-area3 .btn-wrap.blue.active{width:100%;color:var(--color-neutral-80);border:solid 0.1rem #e5e9ff;background-color:#e5e9ff;border-radius:0.3rem;padding:0.3rem 0.5rem}
+.cons-list .list li .list-area3 .btn-wrap.blue{width:100%;color:var(--color-neutral-60);border:solid 0.1rem #fcfcfe;background-color:#fcfcfe;border-radius:0.3rem;padding:0.3rem 0.5rem}
 .cons-list .list li .list-area3 .btn-txt{font-size:1.2rem;font-weight:400;width:100%}
 .cons-list .list li .list-area3 .btn-txt.w-min{min-width:4.0rem}
 .cons-list .list li .list-area5 .btn-txt{font-size:1.2rem;font-weight:400;width:100%}
@@ -788,20 +787,29 @@ meter::-webkit-meter-optimum-value {
 .cons-list .list li .list-area0 .btn-txt{font-size:1.2rem;font-weight:400;width:100%}
 .cons-list .list li .list-area0 .btn-txt.w-min{min-width:4.0rem}
 .cons-list .list li .list-area0 .btn-wrap.gr.w-min.active{min-width:4.0rem}
-.cons-list .list li .list-area0 .btn-wrap.gr.active{color:var(--color-neutral-80);border:solid 0.1rem var( --color-aud-green-bg-font);background-color:var(--color-aud-green);border-radius:0.3rem;padding:0.3rem 0.5rem}
-.cons-list .list li .list-area0 .btn-wrap.gr{width:100%;color:var(--color-neutral-60);border:solid 0.1rem var( --color-aud-green-bg-font);background-color:var(--color-aud-green-bg);border-radius:0.3rem;padding:0.3rem 0.5rem}
+.cons-list .list li .list-area0 .btn-wrap.gr.active{color:var(--color-neutral-80);border:solid 0.1rem var( --color-aud-green);background-color:var(--color-aud-green);border-radius:0.3rem;padding:0.3rem 0.5rem}
+.cons-list .list li .list-area0 .btn-wrap.gr{width:100%;color:var(--color-neutral-60);border:solid 0.1rem var(--color-aud-green-bg);background-color:var(--color-aud-green-bg);border-radius:0.3rem;padding:0.3rem 0.5rem}
 .cons-list .list li .list-area0 .btn-wrap.gr.w-min{min-width:4.0rem}
 
 
 .cons-list .list li .list-area .btn-wrap.gr.w-min.active{min-width:4.0rem}
-.cons-list .list li .list-area .btn-wrap.gr.active{color:var(--color-neutral-80);border:solid 0.1rem var( --color-aud-green-bg-font);background-color:var(--color-aud-green);border-radius:0.3rem;padding:0.3rem 0.5rem}
-.cons-list .list li .list-area .btn-wrap.gr{width:100%;color:var(--color-neutral-60);border:solid 0.1rem var( --color-aud-green-bg-font);background-color:var(--color-aud-green-bg);border-radius:0.3rem;padding:0.3rem 0.5rem}
+.cons-list .list li .list-area .btn-wrap.gr.active{color:var(--color-neutral-80);border:solid 0.1rem var(--color-aud-green);background-color:var(--color-aud-green);border-radius:0.3rem;padding:0.3rem 0.5rem}
+.cons-list .list li .list-area .btn-wrap.gr{width:100%;color:var(--color-neutral-60);border:solid 0.1rem var(--color-aud-green-bg);background-color:var(--color-aud-green-bg);border-radius:0.3rem;padding:0.3rem 0.5rem}
 .cons-list .list li .list-area .btn-wrap.gr.w-min{min-width:4.0rem}
 .cons-list .list li .list-area .btn-wrap.yell.active{color:var(--color-neutral-80);border:solid 0.1rem var(--color-aud-yell);background-color:var(--color-aud-yell);border-radius:0.3rem;padding:0.3rem 0.5rem}
 .cons-list .list li .list-area .btn-wrap.yell{width:100%;color:var(--color-neutral-60);border:solid 0.1rem var(--color-aud-yell);background-color:var(--color-aud-yell-bg);border-radius:0.3rem;padding:0.3rem 0.5rem}
 
 .cons-list .list li .list-area5 .btn-wrap.yell.active{color:var(--color-neutral-80);border:solid 0.1rem var(--color-aud-yell);background-color:var(--color-aud-yell);border-radius:0.3rem;padding:0.3rem 0.5rem}
-.cons-list .list li .list-area5 .btn-wrap.yell{width:100%;color:var(--color-neutral-60);border:solid 0.1rem var(--color-aud-yell);background-color:var(--color-aud-yell-bg);border-radius:0.3rem;padding:0.3rem 0.5rem}
+.cons-list .list li .list-area5 .btn-wrap.yell{width:100%;color:var(--color-neutral-60);border:solid 0.1rem var(--color-aud-yell-bg);background-color:var(--color-aud-yell-bg);border-radius:0.3rem;padding:0.3rem 0.5rem}
+
+.cons-list .list li .list-area5 .btn-wrap.redcor.active{color:var(--color-neutral-80);border:solid 0.1rem #fe8980;background-color:#fe8980;border-radius:0.3rem;padding:0.3rem 0.5rem}
+.cons-list .list li .list-area5 .btn-wrap.redcor{width:100%;color:var(--color-neutral-60);border:solid 0.1rem #ffe4e2;background-color:#ffe4e2;border-radius:0.3rem;padding:0.3rem 0.5rem}
+
+.cons-list .list li .list-area5 .btn-wrap.orangcor.active{color:var(--color-neutral-80);border:solid 0.1rem #ffba6b;background-color:#ffba6b;border-radius:0.3rem;padding:0.3rem 0.5rem}
+.cons-list .list li .list-area5 .btn-wrap.orangcor{width:100%;color:var(--color-neutral-60);border:solid 0.1rem #fee6cb;background-color:#fee6cb;border-radius:0.3rem;padding:0.3rem 0.5rem}
+
+.cons-list .list li .list-area5 .btn-wrap.greencor.active{color:var(--color-neutral-80);border:solid 0.1rem #3bf6b5;background-color:#3bf6b5;border-radius:0.3rem;padding:0.3rem 0.5rem}
+.cons-list .list li .list-area5 .btn-wrap.greencor{width:100%;color:var(--color-neutral-60);border:solid 0.1rem #b6ffe6;background-color:#b6ffe6;border-radius:0.3rem;padding:0.3rem 0.5rem}
 
 .user-wrap{position:relative;display:flex;justify-content: space-between;align-items:center;width:100%;margin-bottom:1.5rem;gap:0 0.8rem}
 .user-wrap .user-box{position:relative;display:flex;flex-wrap:wrap;counter-reset:myCounter;align-items: stretch;}
@@ -812,7 +820,7 @@ meter::-webkit-meter-optimum-value {
 .user-wrap .user-box .user-box-cons .cons-box{border:solid 0.1rem var(--color-darkblue-60);border-radius:0.8rem}
 .user-wrap .user-box .user-box-cons .cons-box.noline{border:solid 0rem var(--color-darkblue-60);border-radius:0.8rem}
 .user-wrap .user-box .user-box-cons .cons-box .txt{font-weight:700;line-height:2rem;border-bottom:solid 0.1rem var(--color-darkblue-60);padding:0.3rem 1rem}
-.user-wrap .user-box .user-box-cons .cons-box:nth-last-of-type(4){grid-row: span 2}
+// .user-wrap .user-box .user-box-cons .cons-box:nth-last-of-type(4){grid-row: span 2}
 
 .user-wrap .user-box .user-box-cons .cons-box.gr{border:solid 0.1rem var(--color-aud-green-bg-font);border-radius:0.8rem}
 .user-wrap .user-box .user-box-cons .cons-box.gr .txt{font-weight:700;line-height:2rem;border-bottom:solid 0.1rem var(--color-aud-green-bg-font);padding:0.3rem 1rem}
@@ -823,8 +831,10 @@ meter::-webkit-meter-optimum-value {
 
 .user-wrap .user-box .user-box-cons .cons-right{width:100%;}
 
-.user-wrap .user-box .user-box-cons .cons-wrap2{display:grid;grid-gap:0.5rem;grid-template-columns: 1fr 1fr;width:100%}
-.user-wrap .user-box .user-box-cons .cons-wrap2 .cons-box:nth-last-of-type(2){grid-row: span 2}
+.user-wrap .user-box .user-box-cons .cons-wrap2{display:flex;grid-gap:0.5rem;grid-template-columns: 1fr 1fr;width:100%}
+.user-wrap .user-box .user-box-cons .cons-wrap2 .cons-box:nth-child(1).gr{width:50%}
+.user-wrap .user-box .user-box-cons .cons-wrap2 .cons-box:nth-child(2).gr{width:100%}
+// .user-wrap .user-box .user-box-cons .cons-wrap2 .cons-box:nth-last-of-type(2){grid-row: span 2}
 
 
 
