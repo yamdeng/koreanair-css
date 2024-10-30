@@ -104,7 +104,6 @@ import EPSList1 from '@/components/publish/aviation/EPSList1';
 import RiskList1 from '@/components/publish/aviation/RiskList1';
 import AdminCordList from '@/components/publish/aviation/AdminCordList';
 import AdminNoticeList from '@/components/publish/aviation/AdminNoticeList';
-import AdminPreferences from '@/components/publish/aviation/AdminPreferences';
 import AdminEquipList from '@/components/publish/aviation/AdminEquipList';
 import CentralizedReportDetail from '@/components/publish/aviation/CentralizedReportDetail';
 import AdminBannerList from '@/components/publish/aviation/AdminBannerList';
@@ -189,13 +188,7 @@ AviationPageInfo.list = [
     description: '',
     success: true,
   },
-  {
-    title: '[메인] 관리자(공통)',
-    Component: AdminPreferences,
-    path: 'AdminPreferences',
-    description: '',
-    success: false,
-  },
+
   {
     title: '[01.안전보고서] Centralized Report 리스트',
     Component: CentralizedReportList,
