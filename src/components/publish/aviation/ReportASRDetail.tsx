@@ -126,6 +126,9 @@ function ReportASRDetail() {
             <em>(3)</em>
           </ul>
         </h2>
+        <div className="">
+          <button type="button">열람24</button>
+        </div>
       </div>
       <div className="Report-step-area">
         <div className="c-step-wrap">
@@ -254,6 +257,34 @@ function ReportASRDetail() {
             <div className="edit-area">
               <div className="detailForm">
                 {/* 보고서내용보기 상세*/}
+                {/* 첨부파일리스트*/}
+                <div className="form-table">
+                  <div className="form-cell wid100">
+                    <div className="form-group wid100">
+                      <div className="box-view-list bgcolor">
+                        <ul className="view-list">
+                          <li className="accumlate-list">
+                            <div className="filebox view">
+                              <Upload {...props}>
+                                <div className="btn-area" style={{ display: 'none' }}>
+                                  <button
+                                    type="button"
+                                    name="button"
+                                    className="btn-big btn_text btn-darkblue-line mg-n"
+                                  >
+                                    + Upload
+                                  </button>
+                                </div>
+                              </Upload>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                {/* //첨부파일리스트*/}
+
                 {/* 비행정보*/}
                 <div className="editbox report">
                   <div className="header-tit">비행정보</div>
