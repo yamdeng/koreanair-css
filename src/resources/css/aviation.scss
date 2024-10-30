@@ -756,7 +756,9 @@ meter::-webkit-meter-optimum-value {
 .cons-list .list{position:relative;width: 100%;align-self: flex-start;}
 .cons-list .list li{position:relative;display:flex;-webkit-box-pack: start;justify-content: start;-webkit-box-align: center;align-items:flex-start;margin:0.3rem 0rem 0.3rem 0.5rem}
 .cons-list .list li .list-area{display:flex;justify-content:space-between;gap:0 0.2rem;width:50%}
-.cons-list .list li .list-area0{display:flex;justify-content:space-between;gap:0 0.2rem;width:100%}
+.cons-list .list li .list-area0{display:inline-block;/*justify-content:space-between;gap:0 0.2rem;*/width:100%}
+.cons-list .list li .list-area0:first-child{width:25%}
+.cons-list .list li .list-area0:nth-child(2){width:80%}
 .cons-list .list li .list-area3{display:flex;justify-content:space-between;gap:0 0.2rem;width:32%}
 .cons-list .list li .list-area3 + .list-area3{margin-left:0.2rem}
 .cons-list .list li .list-area5{display:flex;justify-content:space-between;gap:0 0.2rem;width:19%}
@@ -765,9 +767,9 @@ meter::-webkit-meter-optimum-value {
 .cons-list .list li .list-area + .list-area{margin-left:0.2rem}
 .cons-list .list li .list-area + .list-area li{margin-top:0}
 .cons-list .list li .list-area0 + .list-area0 li{margin-top:0}
-.cons-list .list li .list-area0 .list-box{    display: flex;justify-content: space-between;
-  gap: 0 0.2rem;
-  //width: 24%;
+.cons-list .list li .list-area0 .list-box{    display: inline-block;/*justify-content: space-between;
+  gap: 0 0.2rem;*/
+  width: 24.4%;
   }
   .cons-list .list li .list-area0 .list-box + .list-box{margin-left:0.2rem}
 .cons-list .list li .list-area + .list-area li button + button{margin-left:0.2rem}

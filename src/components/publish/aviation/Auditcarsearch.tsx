@@ -394,13 +394,6 @@ function Auditcarsearch() {
                               </button>
                             </div>
                           </li>
-                          <li>
-                            <div className="list-box">
-                              <button type="button" className="btn-wrap gr w-min active btn-txt">
-                                울산
-                              </button>
-                            </div>
-                          </li>
                         </ul>
                         {/* <div className="list-box">
                           ㅊ
