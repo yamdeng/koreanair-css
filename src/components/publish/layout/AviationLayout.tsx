@@ -17,7 +17,59 @@ export default function AviationLayout() {
   const toggleLeftMenu = () => {
     setDisplayLeftMenu(!displayLeftMenu);
   };
+  const props: any = {
+    name: 'file',
+    multiple: true,
+    defaultFileList: [
+      {
+        uid: '1',
+        name: 'xxx.png',
+        // status: 'uploading',
+        url: 'http://www.baidu.com/xxx.png',
+        percent: 33,
+      },
+      {
+        uid: '2',
+        name: 'yyy.png',
+        status: 'done',
+        url: 'http://www.baidu.com/yyy.png',
+      },
+      {
+        uid: '3',
+        name: 'zzz.png',
+        status: 'error',
+        response: 'Server Error 500',
+        // custom error message to show
+        url: 'http://www.baidu.com/zzz.png',
+      },
+    ],
+    action: 'https://660d2bd96ddfa2943b33731c.mockapi.io/api/upload',
 
+    onChange(info) {
+      const { status } = info.file;
+      if (status !== 'uploading') {
+        console.log(info.file, info.fileList);
+      }
+      if (status === 'done') {
+        alert(`${info.file.name} file uploaded successfully.`);
+      } else if (status === 'error') {
+        alert(`${info.file.name} file upload failed.`);
+      }
+    },
+
+    onRemove(file) {
+      return false;
+    },
+
+    onPreview(file) {
+      return false;
+    },
+
+    onDrop(e) {
+      console.log('Dropped files', e.dataTransfer.files);
+    },
+  };
+  const { closeModal } = props;
   const applyClassName = classNames('contents', {
     expand: displayLeftMenu,
     Aviation: isAviationPortal,
@@ -138,20 +190,84 @@ export default function AviationLayout() {
 
                   {/*알림설정 */}
                   <div className="alarm-list">
-                    <ul className="Info-menu">
-                      <li>
-                        <div className="radio-wrap main">
-                          <label>
-                            <input type="radio" checked />
-                            <span>국문</span>
-                          </label>
-                          <label>
-                            <input type="radio" />
-                            <span>영문</span>
-                          </label>
+                    <h3 className="pop_title">알림</h3>
+
+                    {/*검색영역 */}
+                    <div className="boxForm">
+                      <div className="form-table">
+                        <div className="form-cell wid50">
+                          <div className="btn-area">
+                            <button type="button" name="button" className="btn-sm btn_text btn-darkblue-line">
+                              모두
+                            </button>
+                            <button type="button" name="button" className="btn-sm btn_text btn-darkblue-line">
+                              읽지않음
+                            </button>
+                            <button type="button" name="button" className="menu-more">
+                              <span className="hide">더보기</span>
+                            </button>
+                          </div>
                         </div>
-                      </li>
-                    </ul>
+                      </div>
+                    </div>
+                    {/* //검색영역 */}
+                    <div className="alarm-conts">
+                      {/*리스트영역 */}
+                      <div className="alarmlist-wrap">
+                        <div className="alarmlist">
+                          <dl>
+                            <dt>
+                              MSR-draft-115508 보고서 미제출 안내
+                              <span className="commt">하루 전</span>
+                            </dt>
+                            <dd>
+                              MSR-draft-115508의 보고서 저장 후 제출되지 않은 상태입니다. 보고서를 제출 해 주시기
+                              바랍니다.
+                            </dd>
+                          </dl>
+                          <dl>
+                            <dt>
+                              MSR-draft-115508 보고서 미제출 안내
+                              {/*non붙이면 -> 회색컬러 */}
+                              <span className="commt non">하루 전</span>
+                            </dt>
+                            <dd>
+                              MSR-draft-115508의 보고서 저장 후 제출되지 않은 상태입니다. 보고서를 제출 해 주시기
+                              바랍니다.
+                            </dd>
+                          </dl>
+                          <dl>
+                            <dt>
+                              MSR-draft-115508 보고서 미제출 안내
+                              <span className="commt">하루 전</span>
+                            </dt>
+                            <dd>
+                              MSR-draft-115508의 보고서 저장 후 제출되지 않은 상태입니다. 보고서를 제출 해 주시기
+                              바랍니다.
+                            </dd>
+                          </dl>
+                          <dl>
+                            <dt>
+                              MSR-draft-115508 보고서 미제출 안내
+                              <span className="commt">하루 전</span>
+                            </dt>
+                            <dd>
+                              MSR-draft-115508의 보고서 저장 후 제출되지 않은 상태입니다. 보고서를 제출 해 주시기
+                              바랍니다.
+                            </dd>
+                          </dl>
+                        </div>
+                      </div>
+                    </div>
+                    {/*//리스트영역 */}
+
+                    <div className="btn-wrap">
+                      <a href="javascript:void(0);">전체보기</a>
+                    </div>
+
+                    <span className="pop_close" onClick={closeModal}>
+                      X
+                    </span>
                   </div>
                   {/*//알림설정 */}
                 </li>

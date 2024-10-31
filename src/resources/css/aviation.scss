@@ -1462,62 +1462,56 @@ meter::-webkit-meter-optimum-value {
   transform: translateX(0.3rem) translateY(-50%) scaleY(0);
   background-color: var(--color-darkblue-100);
 }
-.cd-stretchy-nav ul li:first-of-type a.asr::after {
+.cd-stretchy-nav ul li a.asr::after {
   /* change custom icon using image sprites
   background-position: -3.2rem 0; */
   width:1.8rem;cursor:pointer;
   height:1.8rem;background:url(/src/resources/images/icon_asr.svg)center center no-repeat;background-size:1.8rem
 }
-.cd-stretchy-nav ul li:nth-of-type(2) a.csr::after {
+.cd-stretchy-nav ul li a.csr::after {
   // background-position: -6.4rem 0;
   width:1.8rem;cursor:pointer;
   height:1.8rem;background:url(/src/resources/images/icon_csr.svg)center center no-repeat;background-size:1.8rem
 }
-.cd-stretchy-nav ul li:nth-of-type(3) a.msr::after {
+.cd-stretchy-nav ul li a.msr::after {
   //background-position: -4.8rem 0;
   width:1.8rem;cursor:pointer;
   height:1.8rem;background:url(/src/resources/images/icon_msr.svg)center center no-repeat;background-size:1.8rem
 }
-.cd-stretchy-nav ul li:nth-of-type(4) a.gsr::after {
+.cd-stretchy-nav ul li a.gsr::after {
   //background-position: 0 0;
   width:1.8rem;cursor:pointer;
   height:1.8rem;background:url(/src/resources/images/icon_gsr.svg)center center no-repeat;background-size:1.8rem
 }
-.cd-stretchy-nav ul li:nth-of-type(5) a.dsr::after {
+.cd-stretchy-nav ul li a.dsr::after {
   //background-position: -1.6rem 0;
   width:1.8rem;cursor:pointer;
   height:1.8rem;background:url(/src/resources/images/icon_dsr.svg)center center no-repeat;background-size:1.8rem
 }
-.cd-stretchy-nav ul li:nth-of-type(6) a.rsr::after {
+.cd-stretchy-nav ul li a.rsr::after {
   //background-position: -3.2rem 0;
   width:1.8rem;cursor:pointer;
   height:1.8rem;background:url(/src/resources/images/icon_rsr.svg)center center no-repeat;background-size:1.8rem
 }
-.cd-stretchy-nav ul li:nth-of-type(7) a.foqa::after {
+.cd-stretchy-nav ul li a.foqa::after {
   //ackground-position: -6.4rem 0;
   width:1.8rem;cursor:pointer;
   height:1.8rem;background:url(/src/resources/images/icon_foqa.svg)center center no-repeat;background-size:1.8rem
 }
-.cd-stretchy-nav ul li:nth-of-type(8) a.hazard::after {
+.cd-stretchy-nav ul li a.hzr::after {
   // background-position: -4.8rem 0;
   width:1.8rem;cursor:pointer;
   height:1.8rem;background:url(/src/resources/images/icon_hr.svg)center center no-repeat;background-size:1.8rem
 }
-.cd-stretchy-nav ul li:nth-of-type(9) a.Safety::after {
+.cd-stretchy-nav ul li a.osr::after {
   //background-position: 0 0;
   width:1.8rem;cursor:pointer;
   height:1.8rem;background:url(/src/resources/images/icon_hr.svg)center center no-repeat;background-size:1.8rem
 }
-.cd-stretchy-nav ul li:nth-of-type(10) a.amo::after {
+.cd-stretchy-nav ul li a.amo::after {
   //background-position: 0 0;
   width:1.8rem;cursor:pointer;
   height:1.8rem;background:url(/src/resources/images/icon_msr_amo.svg)center center no-repeat;background-size:2.5rem
-}
-.cd-stretchy-nav ul li:nth-of-type(11) a::after {
-  background-position: -3.2rem 0;
-}
-.cd-stretchy-nav ul li:nth-of-type(12) a::after {
-  background-position: -6.4rem 0;
 }
 .cd-stretchy-nav ul span {
   /* navigation item labels */

@@ -886,6 +886,12 @@ input, select{font-family:'KoreanAirSans'}
 .header .util .util-list .util-icon li > .alarm-list .Info-menu > li .radio-wrap.main > label{margin:0;padding: 0rem 0.9rem 0.2rem 2.0rem}
 .header .util .util-list .util-icon li > .alarm-list{/*display:none;*/position:absolute;top:4.8rem;right:0;width:45.5rem;background:var(--color-neutral-10);border-radius: 0 0 1.4rem 1.4rem;box-shadow:0 0.5rem 1.0rem rgba(0, 0, 0, .1);z-index:200}
 .header .util .util-list .util-icon li > .alarm-list .Info-menu > li{display:flex;justify-content:left;align-items:center;padding:0 0.8rem;width:100%;border-bottom: 0.1rem solid #eee;line-height:4.0rem;text-align:left;}
+.header .util .util-list .util-icon li > .alarm-list > .pop_title{padding:1rem 2rem}
+.header .util .util-list .util-icon li > .alarm-list > .boxForm{padding:0rem 1rem}
+.header .util .util-list .util-icon li > .alarm-list .alarm-conts{padding:1rem 2rem;overflow-y:auto;max-height:30.0rem}
+.header .util .util-list .util-icon li > .alarm-list .btn-wrap{text-align:center;padding:0 0 1.5rem 0}
+.header .util .util-list .util-icon li > .alarm-list > .boxForm .btn-area .menu-more{width: 3.2rem;height: 3rem;padding: 0 1rem;font-size:0;background: url(/src/resources/images/icon-option.svg) center center no-repeat}
+
 .alarm-list .Info-menu a{display:block;font-size:1.4rem}
 .alarm-list .Info-menu a .ico{display: inline-flex;width:2.4rem;height:2.4rem;vertical-align:middle;margin-right:0.8rem}
 

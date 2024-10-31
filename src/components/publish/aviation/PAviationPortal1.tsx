@@ -117,12 +117,12 @@ function PAviationPortal1() {
             </a>
           </li>
           <li>
-            <a href="javascript:void(0);" className="hazard">
+            <a href="javascript:void(0);" className="hzr">
               <span className="bg">HAZARD</span>
             </a>
           </li>
           <li>
-            <a href="javascript:void(0);" className="Safety Repot">
+            <a href="javascript:void(0);" className="osr">
               <span className="bg">Safety Repot</span>
             </a>
           </li>
