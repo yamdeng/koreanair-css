@@ -832,12 +832,7 @@ input, select{font-family:'KoreanAirSans'}
 .ag-theme-quartz .ag-root-wrapper .ag-row-odd{background-color:var(--color-neutral-20)}
 
 /* 공통컴포넌트 그리드 rowspan 클래스 반영 */
-.ag-theme-quartz .cell-span {
-  background-color: #ffffff;
-  display: grid;
-  align-items: center;
-  border-bottom-width: 0;
-}
+.ag-theme-quartz .cell-span{display:grid;background-color:var(--color-neutral-10);align-items: center;border-bottom-width: 0;align-content: start}
 
 .left-box {display: inline-block; width: 32.0rem; vertical-align: top; padding-right: 3.0rem;}
 .left-box .tree-box {height: 100vh; width: 100%; overflow: auto; background: var(--color-lightblue-10); border-radius: 0.8rem; padding: 2.0rem 01.0rem;}
@@ -885,6 +880,14 @@ input, select{font-family:'KoreanAirSans'}
 .header .util .util-list .util-icon li > .Info-list .Info-menu > li{display:flex;justify-content:left;align-items:center;padding:0 0.8rem;width:100%;border-bottom: 0.1rem solid #eee;line-height:4.0rem;text-align:left;}
 .Info-list .Info-menu a{display:block;font-size:1.4rem}
 .Info-list .Info-menu a .ico{display: inline-flex;width:2.4rem;height:2.4rem;vertical-align:middle;margin-right:0.8rem}
+
+/*탑 사용자설정*/
+.header .util .util-list .util-icon li > .alarm-list .Info-menu > li .radio-wrap.main{border:0}
+.header .util .util-list .util-icon li > .alarm-list .Info-menu > li .radio-wrap.main > label{margin:0;padding: 0rem 0.9rem 0.2rem 2.0rem}
+.header .util .util-list .util-icon li > .alarm-list{/*display:none;*/position:absolute;top:4.8rem;right:0;width:16.5rem;background:var(--color-neutral-10);border-radius: 0 0 1.4rem 1.4rem;box-shadow:0 0.5rem 1.0rem rgba(0, 0, 0, .1);z-index:200}
+.header .util .util-list .util-icon li > .alarm-list .Info-menu > li{display:flex;justify-content:left;align-items:center;padding:0 0.8rem;width:100%;border-bottom: 0.1rem solid #eee;line-height:4.0rem;text-align:left;}
+.alarm-list .Info-menu a{display:block;font-size:1.4rem}
+.alarm-list .Info-menu a .ico{display: inline-flex;width:2.4rem;height:2.4rem;vertical-align:middle;margin-right:0.8rem}
 
 .ant-select-focused.ant-select-outlined:not(.ant-select-disabled):not(.ant-select-customize-input):not(.ant-pagination-size-changer) .ant-select-selector {box-shadow: none;}
 .ant-select-outlined.ant-select-disabled:not(.ant-select-customize-input) .ant-select-selector {background-color: var(--color-neutral-20);}
