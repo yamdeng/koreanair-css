@@ -430,6 +430,39 @@ function Auditcarsearch() {
                       </div>
                     </li>
                     <li>
+                      <div className="list-area0 unvisible">
+                        <button type="button" className="btn-wrap gr btn-txt">
+                          국내공항
+                        </button>
+                      </div>
+                      <div className="list-area0">
+                        <ul>
+                          <li>
+                            <div className="list-box">
+                              <button type="button" className="btn-wrap gr w-min active btn-txt">
+                                김포
+                              </button>
+                            </div>
+                            <div className="list-box">
+                              <button type="button" className="btn-wrap gr w-min active btn-txt">
+                                인천
+                              </button>
+                            </div>
+                            <div className="list-box">
+                              <button type="button" className="btn-wrap gr w-min active btn-txt">
+                                서울
+                              </button>
+                            </div>
+                            <div className="list-box">
+                              <button type="button" className="btn-wrap gr w-min active btn-txt">
+                                부산
+                              </button>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li>
                       <div className="list-area0">
                         <button type="button" className="btn-wrap gr btn-txt">
                           미주
@@ -438,75 +471,63 @@ function Auditcarsearch() {
                       <div className="list-area0">
                         <ul>
                           <li>
-                            <button type="button" className="btn-wrap gr w-min active btn-txt">
-                              ABC
-                            </button>
-                            <button type="button" className="btn-wrap gr w-min btn-txt">
-                              AKL
-                            </button>
-                            <button type="button" className="btn-wrap gr w-min btn-txt">
-                              AWS
-                            </button>
-                            <button type="button" className="btn-wrap gr w-min btn-txt">
-                              AWS
-                            </button>
-                          </li>
-                          <li>
-                            <button type="button" className="btn-wrap gr w-min active btn-txt">
-                              AWS
-                            </button>
-                            <button type="button" className="btn-wrap gr w-min active btn-txt">
-                              AWS
-                            </button>
-                            <button type="button" className="btn-wrap gr w-min active btn-txt">
-                              AWS
-                            </button>
-                            <button type="button" className="btn-wrap gr w-min active btn-txt">
-                              AWS
-                            </button>
+                            <div className="list-box">
+                              <button type="button" className="btn-wrap gr w-min active btn-txt">
+                                김포
+                              </button>
+                            </div>
+                            <div className="list-box">
+                              <button type="button" className="btn-wrap gr w-min active btn-txt">
+                                인천
+                              </button>
+                            </div>
+                            <div className="list-box">
+                              <button type="button" className="btn-wrap gr w-min active btn-txt">
+                                서울
+                              </button>
+                            </div>
+                            <div className="list-box">
+                              <button type="button" className="btn-wrap gr w-min active btn-txt">
+                                부산
+                              </button>
+                            </div>
                           </li>
                         </ul>
                       </div>
                     </li>
-                    {/* <li>
-                      <div className="list-area">
+                    <li>
+                      <div className="list-area0 unvisible">
                         <button type="button" className="btn-wrap gr btn-txt">
-                          일본
+                          미주
                         </button>
                       </div>
-                      <div className="list-area">
+                      <div className="list-area0">
                         <ul>
                           <li>
-                            <button type="button" className="btn-wrap gr w-min active btn-txt">
-                              ABC
-                            </button>
-                            <button type="button" className="btn-wrap gr w-min active btn-txt">
-                              AKL
-                            </button>
-                            <button type="button" className="btn-wrap gr w-min active btn-txt">
-                              AWS
-                            </button>
-                            <button type="button" className="btn-wrap gr w-min active btn-txt">
-                              AWS
-                            </button>
-                          </li>
-                          <li>
-                            <button type="button" className="btn-wrap gr w-min active btn-txt">
-                              AWS
-                            </button>
-                            <button type="button" className="btn-wrap gr w-min active btn-txt">
-                              AWS
-                            </button>
-                            <button type="button" className="btn-wrap gr w-min active btn-txt">
-                              AWS
-                            </button>
-                            <button type="button" className="btn-wrap gr w-min active btn-txt">
-                              AWS
-                            </button>
+                            <div className="list-box">
+                              <button type="button" className="btn-wrap gr w-min active btn-txt">
+                                ABC
+                              </button>
+                            </div>
+                            <div className="list-box">
+                              <button type="button" className="btn-wrap gr w-min active btn-txt">
+                                ABC
+                              </button>
+                            </div>
+                            <div className="list-box">
+                              <button type="button" className="btn-wrap gr w-min active btn-txt">
+                                AWS
+                              </button>
+                            </div>
+                            <div className="list-box">
+                              <button type="button" className="btn-wrap gr w-min active btn-txt">
+                                AWS
+                              </button>
+                            </div>
                           </li>
                         </ul>
                       </div>
-                    </li> */}
+                    </li>
                   </ul>
                 </div>
               </div>
