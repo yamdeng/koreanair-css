@@ -393,40 +393,13 @@ function Auditcarsearch() {
                                 부산
                               </button>
                             </div>
-                          </li>
-                        </ul>
-                        {/* <div className="list-box">
-                          ㅊ
-                            <li>
-                              <button type="button" className="btn-wrap gr w-min active btn-txt">
-                                김포
-                              </button>
-                              <button type="button" className="btn-wrap gr w-min active btn-txt">
-                                인천
-                              </button>
-                              <button type="button" className="btn-wrap gr w-min active btn-txt">
-                                서울
-                              </button>
+                            <div className="list-box unvisible">
                               <button type="button" className="btn-wrap gr w-min active btn-txt">
                                 부산
                               </button>
-                            </li>
-                            <li>
-                              <button type="button" className="btn-wrap gr w-min active btn-txt">
-                                울산
-                              </button>
-                              <button type="button" className="btn-wrap gr w-min active btn-txt">
-                                제주
-                              </button>
-                              <button type="button" className="btn-wrap gr w-min active btn-txt">
-                                인천
-                              </button>
-                              <button type="button" className="btn-wrap gr w-min active btn-txt">
-                                창원
-                              </button>
-                            </li>
-                          </ul>
-                        </div> */}
+                            </div>
+                          </li>
+                        </ul>
                       </div>
                     </li>
                     <li>
@@ -458,6 +431,11 @@ function Auditcarsearch() {
                                 부산
                               </button>
                             </div>
+                            <div className="list-box ">
+                              <button type="button" className="btn-wrap gr w-min active btn-txt">
+                                부산
+                              </button>
+                            </div>
                           </li>
                         </ul>
                       </div>
@@ -514,21 +492,26 @@ function Auditcarsearch() {
                                 ABC
                               </button>
                             </div>
-                            {/* <div className="list-box">
+                            <div className="list-box unvisible">
                               <button type="button" className="btn-wrap gr w-min active btn-txt">
                                 ABC
                               </button>
                             </div>
-                            <div className="list-box">
+                            <div className="list-box unvisible">
                               <button type="button" className="btn-wrap gr w-min active btn-txt">
                                 AWS
                               </button>
                             </div>
-                            <div className="list-box">
+                            <div className="list-box unvisible">
                               <button type="button" className="btn-wrap gr w-min active btn-txt">
                                 AWS
                               </button>
-                            </div> */}
+                            </div>
+                            <div className="list-box unvisible">
+                              <button type="button" className="btn-wrap gr w-min active btn-txt">
+                                AWS
+                              </button>
+                            </div>
                           </li>
                         </ul>
                       </div>
