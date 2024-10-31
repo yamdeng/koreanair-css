@@ -189,7 +189,7 @@ export default function AviationLayout() {
                   {/*//사용자설정 */}
 
                   {/*알림설정 */}
-                  <div className="alarm-list">
+                  <div className="alarm-list" style={{ display: 'none' }}>
                     <h3 className="pop_title">알림</h3>
 
                     {/*검색영역 */}

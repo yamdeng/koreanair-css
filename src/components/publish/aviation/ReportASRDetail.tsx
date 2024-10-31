@@ -1008,7 +1008,22 @@ function ReportASRDetail() {
                                                 <input type="checkbox" />
                                                 <span>SPI 지표포함</span>
                                               </label>
+                                              <label>
+                                                <input type="checkbox" />
+                                                <span>항공Hazard여부</span>
+                                              </label>
+                                              <label>
+                                                <input type="checkbox" />
+                                                <span>산업Hazard여부</span>
+                                              </label>
+                                              <label>
+                                                <input type="checkbox" />
+                                                <span>보안Hazard여부</span>
+                                              </label>
                                             </div>
+                                          </div>
+                                          <div className="form-cell wid100">
+                                            <span className="text-info">CERTIFICATION : AMO</span>
                                           </div>
                                         </div>
 
