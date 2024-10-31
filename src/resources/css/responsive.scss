@@ -235,6 +235,8 @@
     grid-template-rows: auto;
   }
 
+  .main-wrap .grid-item .main-graph-box.graph-list .graph-box {height: auto;}
+
   .RiskLevel-Wrap{display:inline-block}
   .RiskLevel-Wrap .RiskLevel-Left{width:100%}
   .RiskLevel-Wrap .RiskLevel-Right{display:block;width:100%}
@@ -597,6 +599,8 @@
   .audit-left-box {width: 100%; margin-right:0 !important; padding-right: 0 !important; border: none !important;}
   .audit-right-box {width: 100%; padding-top: 1.5rem;}
 
+  .main-wrap .grid-item .main-graph-box.graph-list .graph-box {height: auto;}
+
   /*항공안전 메인*/
   .av-main-wrap .grid-item .grid-group:nth-of-type(1) .head-top .form-cell > .radio-wrap{width:35%}
 
@@ -956,7 +960,7 @@
   .main-top-wrrap .ReprtBox{width:100%}
 
 
-
+  .main-wrap .grid-item .main-graph-box.graph-list .graph-box {height: auto;}
 
   .ant-col-md-2{display:block;flex:0 0 8.33333333%;max-width:11.33333333%}
 
