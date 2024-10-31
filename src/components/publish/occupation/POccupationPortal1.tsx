@@ -220,7 +220,7 @@ function POccupationPortal1() {
           </div>
         </div>
         <div className="grid-item">
-          <div className="head-top">
+          <div className="head-top guide">
             <h3>
               <ul className="main-tab">
                 <li>
