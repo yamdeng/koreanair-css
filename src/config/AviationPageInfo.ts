@@ -194,7 +194,7 @@ AviationPageInfo.list = [
     Component: setting,
     path: 'setting',
     description: '',
-    success: false,
+    success: true,
   },
   {
     title: '[01.안전보고서] Centralized Report 리스트',

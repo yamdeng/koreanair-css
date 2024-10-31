@@ -97,7 +97,7 @@ function setting() {
                   <td className="ta-c">
                     <div className="form-cell wid-150">
                       <div className="form-group wid100">
-                        <AppSelect label={''} />
+                        <AppSelect label="" />
                       </div>
                     </div>
                   </td>
@@ -107,7 +107,7 @@ function setting() {
                   <td className="ta-c">
                     <div className="form-cell wid-150">
                       <div className="form-group wid100">
-                        <AppSelect label={''} />
+                        <AppSelect label="" />
                       </div>
                     </div>
                   </td>
@@ -117,7 +117,7 @@ function setting() {
                   <td className="ta-c">
                     <div className="form-cell wid-150">
                       <div className="form-group wid100">
-                        <AppSelect label={''} />
+                        <AppSelect label="" />
                       </div>
                     </div>
                   </td>
@@ -127,7 +127,7 @@ function setting() {
                   <td className="ta-c">
                     <div className="form-cell wid-150">
                       <div className="form-group wid100">
-                        <AppSelect label={''} />
+                        <AppSelect label="" />
                       </div>
                     </div>
                   </td>
@@ -137,7 +137,7 @@ function setting() {
                   <td className="ta-c">
                     <div className="form-cell wid-150">
                       <div className="form-group wid100">
-                        <AppSelect label={''} />
+                        <AppSelect label="" />
                       </div>
                     </div>
                   </td>
@@ -147,7 +147,7 @@ function setting() {
                   <td className="ta-c">
                     <div className="form-cell wid-150">
                       <div className="form-group wid100">
-                        <AppSelect label={''} />
+                        <AppSelect label="" />
                       </div>
                     </div>
                   </td>
@@ -157,7 +157,7 @@ function setting() {
                   <td className="ta-c">
                     <div className="form-cell wid-150">
                       <div className="form-group wid100">
-                        <AppSelect label={''} />
+                        <AppSelect label="" />
                       </div>
                     </div>
                   </td>
@@ -167,7 +167,7 @@ function setting() {
                   <td className="ta-c">
                     <div className="form-cell wid-150">
                       <div className="form-group wid100">
-                        <AppSelect label={''} />
+                        <AppSelect label="" />
                       </div>
                     </div>
                   </td>
@@ -177,7 +177,7 @@ function setting() {
                   <td className="ta-c">
                     <div className="form-cell wid-150">
                       <div className="form-group wid100">
-                        <AppSelect label={''} />
+                        <AppSelect label="" />
                       </div>
                     </div>
                   </td>
@@ -188,6 +188,13 @@ function setting() {
         </table>
       </div>
       {/*//리스트영역 */}
+      {/* 하단버튼영역 */}
+      <div className="contents-btns">
+        <button type="button" name="button" className="btn_text text_color_neutral-10 btn_confirm">
+          저장
+        </button>
+      </div>
+      {/*//하단버튼영역*/}
     </>
   );
 }
