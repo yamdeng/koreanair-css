@@ -137,7 +137,7 @@ export default function AviationLayout() {
                   {/*//사용자설정 */}
 
                   {/*알림설정 */}
-                  <div className="alarm-list" style={{ border: 'solid 1px blue' }}>
+                  <div className="alarm-list">
                     <ul className="Info-menu">
                       <li>
                         <div className="radio-wrap main">
@@ -150,38 +150,6 @@ export default function AviationLayout() {
                             <span>영문</span>
                           </label>
                         </div>
-                      </li>
-                      <li>
-                        <a href="javascript:void(0);">
-                          <i className="ico">
-                            <img src={iconAlarmImage} alt="알림" />
-                          </i>
-                          마이페이지
-                        </a>
-                      </li>
-                      <li>
-                        <a href="javascript:void(0);">
-                          <i className="ico">
-                            <img src={iconAlarmImage} alt="알림" />
-                          </i>
-                          환경설정
-                        </a>
-                      </li>
-                      <li>
-                        <a href="javascript:void(0);">
-                          <i className="ico">
-                            <img src={iconAlarmImage} alt="알림" />
-                          </i>
-                          알림
-                        </a>
-                      </li>
-                      <li>
-                        <a href="javascript:void(0);">
-                          <i className="ico">
-                            <img src={iconAlarmImage} alt="로그아웃" />
-                          </i>
-                          로그아웃
-                        </a>
                       </li>
                     </ul>
                   </div>

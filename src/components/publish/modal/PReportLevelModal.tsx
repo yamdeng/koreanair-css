@@ -18,7 +18,7 @@ function ReportLevelModal(props) {
     >
       <div className="popup-container1">
         <h3 className="pop_title">위험레벨 조회</h3>
-        <div className="pop_cont">
+        <div className="pop_cont mb10">
           <div className="pop_full_cont_box type01">
             <div className="RiskLevel-searchbox">
               {/*검색영역*/}
