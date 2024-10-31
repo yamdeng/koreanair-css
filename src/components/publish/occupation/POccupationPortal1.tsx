@@ -26,7 +26,14 @@ function POccupationPortal1() {
       </div>
       <div className="main-wrap">
         <div className="grid-item">
-          <h3>내 태스크</h3>
+          <div className="head-top">
+            <h3>내 태스크</h3>
+            <ul className="more-btn">
+              <li>
+                <a href="javascript:void(0);">more</a>
+              </li>
+            </ul>
+          </div>
           <div className="main-table-box">
             <table className="main-table">
               <tr>
@@ -77,7 +84,14 @@ function POccupationPortal1() {
           </ul>
         </div>
         <div className="grid-item">
-          <h3>작업허가현황</h3>
+          <div className="head-top">
+            <h3>작업허가현황</h3>
+            <ul className="more-btn">
+              <li>
+                <a href="javascript:void(0);">more</a>
+              </li>
+            </ul>
+          </div>
           <div>
             <ul className="Status">
               <li className="ing-bar">
@@ -114,21 +128,28 @@ function POccupationPortal1() {
           </div>
         </div>
         <div className="grid-item">
-          <h3>
-            <ul className="main-tab">
+          <div className="head-top">
+            <h3>
+              <ul className="main-tab">
+                <li>
+                  <a className="active" href="javascript:void(0);">
+                    공지사항
+                  </a>
+                </li>
+                <li>
+                  <a href="javascript:void(0);">산업안전보건위원회</a>
+                </li>
+                <li>
+                  <a href="javascript:void(0);">개정법규</a>
+                </li>
+              </ul>
+            </h3>
+            <ul className="more-btn">
               <li>
-                <a className="active" href="javascript:void(0);">
-                  공지사항
-                </a>
-              </li>
-              <li>
-                <a href="javascript:void(0);">산업안전보건위원회</a>
-              </li>
-              <li>
-                <a href="javascript:void(0);">개정법규</a>
+                <a href="javascript:void(0);">more</a>
               </li>
             </ul>
-          </h3>
+          </div>
           <div className="main-table-box">
             <table className="main-table">
               <tr>
@@ -156,14 +177,16 @@ function POccupationPortal1() {
           </div>
         </div>
         <div className="grid-item">
-          <h3>
-            <span className="siren">아이콘</span>KSMS 사이렌
-          </h3>
-          <ul className="more-btn">
-            <li>
-              <a href="javascript:void(0);">more</a>
-            </li>
-          </ul>
+          <div className="head-top">
+            <h3>
+              <span className="siren">아이콘</span>KSMS 사이렌
+            </h3>
+            <ul className="more-btn">
+              <li>
+                <a href="javascript:void(0);">more</a>
+              </li>
+            </ul>
+          </div>
           <div className="main-table-box">
             <table className="main-table">
               <tr>
@@ -197,32 +220,34 @@ function POccupationPortal1() {
           </div>
         </div>
         <div className="grid-item">
-          <h3>
-            <ul className="main-tab">
+          <div className="head-top">
+            <h3>
+              <ul className="main-tab">
+                <li>
+                  <a className="active" href="javascript:void(0);">
+                    Hazard Report
+                  </a>
+                </li>
+                <li>
+                  <a href="javascript:void(0);">시정개선관리</a>
+                </li>
+              </ul>
+            </h3>
+            <ul className="guide-info">
               <li>
-                <a className="active" href="javascript:void(0);">
-                  Hazard Report
-                </a>
+                <span className="color green"></span>90%이상
               </li>
               <li>
-                <a href="javascript:void(0);">시정개선관리</a>
+                <span className="color yellow"></span>90%~
+              </li>
+              <li>
+                <span className="color orange"></span>80%~
+              </li>
+              <li>
+                <span className="color red"></span>60%미만
               </li>
             </ul>
-          </h3>
-          <ul className="guide-info">
-            <li>
-              <span className="color green"></span>90%이상
-            </li>
-            <li>
-              <span className="color yellow"></span>90%~80%
-            </li>
-            <li>
-              <span className="color orange"></span>80%~60%
-            </li>
-            <li>
-              <span className="color red"></span>60%미만
-            </li>
-          </ul>
+          </div>
           <div className="main-graph">
             <div className="main-graph-group">
               <ul className="main-graph-tit">

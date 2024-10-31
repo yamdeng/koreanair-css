@@ -857,8 +857,14 @@
   .grid-item h3 span.siren {display: inline-block; font-size: 0; background: url(../images/siren.svg)center center no-repeat; background-size: 2.6rem; vertical-align: top; width: 2.6rem;}
   .grid-item h3 .main-tab li {display: inline-block; padding: 0 1.0rem;}
   .grid-item h3 .main-tab li:first-child {padding-left: 0;}
-  .grid-item h3 .main-tab li a {font-size: 1.6rem; color: var(--color-neutral-70);}
-  .grid-item h3 .main-tab li a.active {font-size: 1.8rem; color: var(--color-darkblue-100);}
+  .grid-item h3 .main-tab li:last-child {padding-right: 0;}
+  .grid-item h3 .main-tab li a {font-size: 1.6rem; color: var(--color-neutral-70); letter-spacing:-0.1rem;}
+  .grid-item h3 .main-tab li a.active {font-size: 1.8rem; color: var(--color-darkblue-100); letter-spacing:-0.1rem;}
+  .grid-item .head-top {display: flex; width: 100%; justify-content: space-between;}
+  .grid-item .head-top .more-btn li {/*border: 0 solid var(--color-neutral-40); border-radius: 99.9rem; background-color: var(--color-darkblue-100);*/}
+  .grid-item .head-top .more-btn li::after {content: ""; width: 100%; height: 0.6rem; display: inline-block; background: var(--color-lightblue-80); position: absolute; top: 1.4rem; left: 0; z-index: -1; transition: .2s all;}
+  .grid-item .head-top .more-btn li a {font-size: 1.2rem; color: var(--color-neutral-70); padding: 0.1rem 0;}
+
   
   //.grid-item.pd-photo {padding: 0; position: relative;}
   //.grid-item .main-photo {width: 100%; height: 100%; max-height: 25.0rem;}
@@ -928,7 +934,7 @@
   .grid-item .more-btn {position: relative; top:0; right: 0;}
 
   .grid-item .guide-info {margin-bottom: 0.5rem; display: flex; justify-content: flex-end; align-items: flex-start;}
-  .grid-item .guide-info li{display: inline-flex;justify-content: center;align-items: center;font-size: 1.2rem;padding: 0 0.5rem;}
+  .grid-item .guide-info li{display: inline-flex;justify-content: center;align-items: center;font-size: 1.0rem;padding: 0 0.2rem;}
   .grid-item .guide-info li .color{width: 0.8rem;height: 0.8rem;border-radius: 99.9rem;font-size: 0;margin-right: 0.3rem;}
 
   .grid-item .main-graph {display: inline-grid; grid-template-columns: 1fr 1fr; gap: 1.0rem 2.0rem; width: 100%;}
