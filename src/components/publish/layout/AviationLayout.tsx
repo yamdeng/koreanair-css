@@ -206,6 +206,13 @@ export default function AviationLayout() {
                             <button type="button" name="button" className="menu-more">
                               <span className="hide">더보기</span>
                             </button>
+                            {/*툴팁 */}
+                            <div className="tip">
+                              <span className="tooltiptext tooltip-right">
+                                <button type="button">모두 읽지않은 상태로 표시</button>
+                              </span>
+                            </div>
+                            {/*//툴팁 */}
                           </div>
                         </div>
                       </div>

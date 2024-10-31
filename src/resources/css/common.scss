@@ -889,9 +889,44 @@ input, select{font-family:'KoreanAirSans'}
 .header .util .util-list .util-icon li > .alarm-list > .pop_title{padding:1rem 2rem}
 .header .util .util-list .util-icon li > .alarm-list > .boxForm{padding:0rem 1rem}
 .header .util .util-list .util-icon li > .alarm-list .alarm-conts{padding:1rem 2rem;overflow-y:auto;max-height:30.0rem}
-.header .util .util-list .util-icon li > .alarm-list .btn-wrap{text-align:center;padding:0 0 1.5rem 0}
+.header .util .util-list .util-icon li > .alarm-list .btn-wrap{position:relative;text-align:center;padding:0 0 1.5rem 0}
 .header .util .util-list .util-icon li > .alarm-list > .boxForm .btn-area .menu-more{width: 3.2rem;height: 3rem;padding: 0 1rem;font-size:0;background: url(/src/resources/images/icon-option.svg) center center no-repeat}
+.header .util .util-list .util-icon li > .alarm-list > .boxForm .btn-area .tip {position:absolute;left:38rem}
 
+.header .util .util-list .util-icon li > .alarm-list > .boxForm .btn-area .tip .tooltip-right {
+  top: -4rem;
+  right:-2rem;
+}
+.header .util .util-list .util-icon li > .alarm-list > .boxForm .btn-area .tip .tooltip-right::after {
+  top: 1.6rem;
+  right:-0.8rem;
+  margin-top: -0.3rem;
+  border-color: transparent  transparent transparent var(--color-neutral-80);
+}
+.header .util .util-list .util-icon li > .alarm-list > .boxForm .btn-area .tip .tooltiptext {
+  /* visibility: hidden; */
+  position: absolute;
+  z-index: 99;
+  width:16rem;
+  font-size: 1.2rem;
+  background-color: var(--color-neutral-80);
+  color: var(--color-neutral-10);
+  border-radius: 99.9rem;
+  padding: 0.8rem;
+}
+.header .util .util-list .util-icon li > .alarm-list > .boxForm .btn-area .tip .tooltiptext button {
+  font-size: 1.2rem;
+  color: var(--color-neutral-10);
+  display: list-item;
+  padding-left: 0.6rem;
+  background-color: var(--color-neutral-80);
+}
+.header .util .util-list .util-icon li > .alarm-list > .boxForm .btn-area .tip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  border-style: solid;
+  border-width: 0.4rem;
+}
 .alarm-list .Info-menu a{display:block;font-size:1.4rem}
 .alarm-list .Info-menu a .ico{display: inline-flex;width:2.4rem;height:2.4rem;vertical-align:middle;margin-right:0.8rem}
 
