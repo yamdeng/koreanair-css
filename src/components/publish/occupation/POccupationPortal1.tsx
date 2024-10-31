@@ -159,6 +159,11 @@ function POccupationPortal1() {
           <h3>
             <span className="siren">아이콘</span>KSMS 사이렌
           </h3>
+          <ul className="more-btn">
+            <li>
+              <a href="javascript:void(0);">more</a>
+            </li>
+          </ul>
           <div className="main-table-box">
             <table className="main-table">
               <tr>
@@ -196,7 +201,7 @@ function POccupationPortal1() {
             <ul className="main-tab">
               <li>
                 <a className="active" href="javascript:void(0);">
-                  Hazard Report 현황
+                  Hazard Report
                 </a>
               </li>
               <li>
@@ -204,6 +209,20 @@ function POccupationPortal1() {
               </li>
             </ul>
           </h3>
+          <ul className="guide-info">
+            <li>
+              <span className="color green"></span>90%이상
+            </li>
+            <li>
+              <span className="color yellow"></span>90%~80%
+            </li>
+            <li>
+              <span className="color orange"></span>80%~60%
+            </li>
+            <li>
+              <span className="color red"></span>60%미만
+            </li>
+          </ul>
           <div className="main-graph">
             <div className="main-graph-group">
               <ul className="main-graph-tit">

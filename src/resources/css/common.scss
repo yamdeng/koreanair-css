@@ -92,6 +92,7 @@ body::-webkit-scrollbar {
 .wid70{width:70%}
 .wid80{width:80%}
 .wid100{width:100% !important}
+.wid-150{width:15.0rem;}
 .h4{height:4.0rem}
 .pr5{padding-right:0.5rem !important}
 .pr10{padding-right:1rem !important}
@@ -872,6 +873,20 @@ input, select{font-family:'KoreanAirSans'}
 .alarmlist-wrap .alarmlist > dl > dt .commt.non{position:relative}
 .alarmlist-wrap .alarmlist > dl > dt .commt.non:after{content:'';display:block;position:absolute;top:0.2rem;right:-0.8rem;width:0.5rem;height:0.5rem;background:var(--color-neutral-40);border-radius:100%}
 .alarmlist-wrap .alarmlist > dl > dd{width:100%;font-size:1.5rem;color: var(--color-neutral-70);font-weight:400;padding-bottom:1.5rem;word-wrap:break-word;-webkit-line-clamp:2;text-overflow: ellipsis}
+
+/*환경설정*/
+.setting-wrap{position:relative;width:100%;}
+.setting-wrap table.setting-list {width: 100%; text-align: left; border-top: 0.1rem solid var(--color-darkblue-100);}
+.setting-wrap table.setting-list tr {border-bottom: 0.1rem solid var(--color-neutral-40);}
+.setting-wrap table.setting-list th {background-color: var(--color-neutral-20); }
+.setting-wrap table.setting-list th:nth-of-type(1) {border-right: 0.1rem solid var(--color-neutral-40);}
+.setting-wrap table.setting-list th, .setting-wrap table.setting-list td {padding: 1.0rem;}
+.setting-wrap table.setting-list td.pd-no {padding: 0;}
+.setting-wrap table.setting-list td .setting-list-type01 {width: 100%; text-align: center;}
+.setting-wrap table.setting-list td .setting-list-type01 tr {border-bottom: 0.1rem solid var(--color-neutral-40);}
+.setting-wrap table.setting-list td .setting-list-type01 tr:last-child {border: none;}
+.setting-wrap table.setting-list td .setting-list-type01 th {border: none;}
+.setting-wrap table.setting-list td .setting-list-type01 td.ta-c {text-align: center; display: flex; justify-content: center;}
 
 /*탑 사용자설정*/
 .header .util .util-list .util-icon li > .Info-list .Info-menu > li .radio-wrap.main{border:0}

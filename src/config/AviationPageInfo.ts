@@ -140,6 +140,7 @@ import ReceiptPayDetail from '@/components/publish/aviation/ReceiptPayDetail';
 import PAviationsub3 from '@/components/publish/aviation/PAviationsub3';
 import PAviationsub4 from '@/components/publish/aviation/PAviationsub4';
 import Admindashnew from '@/components/publish/aviation/Admindashnew';
+import setting from '@/components/publish/aviation/setting';
 import { fa, fakerLV } from '@faker-js/faker';
 import { fail } from 'assert';
 
@@ -188,7 +189,13 @@ AviationPageInfo.list = [
     description: '',
     success: true,
   },
-
+  {
+    title: '[메인] 환경설정(공통)',
+    Component: setting,
+    path: 'setting',
+    description: '',
+    success: false,
+  },
   {
     title: '[01.안전보고서] Centralized Report 리스트',
     Component: CentralizedReportList,

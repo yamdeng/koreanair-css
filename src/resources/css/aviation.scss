@@ -650,6 +650,7 @@ meter::-webkit-meter-optimum-value {
 .number-r{position:relative;display:flex;width: 100%;}
 .number-r .title{display:inline-block;line-height:4rem;padding-right:1rem;font-size:1.6rem;font-weight:700}
 
+.SelectedList.type01 {border: none;pointer-events: none;}
 .SelectedList{position:relative;display:flex;float:right;width:100%;min-height:4.0rem;max-height:16.0rem;overflow:auto;border:0.1rem solid var(--color-neutral-40);border-radius:0.8rem;padding:1rem;align-items:center}
 .SelectedList > ul{position:relative;width:100%;align-self:flex-start}
 .SelectedList > ul li{position:relative;display:flex;-webkit-box-pack:start;justify-content:start;-webkit-box-align:center;align-items:center;margin-bottom:1rem}
