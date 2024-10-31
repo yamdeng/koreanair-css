@@ -767,11 +767,8 @@ meter::-webkit-meter-optimum-value {
 .cons-list .list li .list-area + .list-area{margin-left:0.2rem}
 .cons-list .list li .list-area + .list-area li{margin-top:0}
 .cons-list .list li .list-area0 + .list-area0 li{margin-top:0}
-.cons-list .list li .list-area0 .list-box{    display: inline-block;/*justify-content: space-between;
-  gap: 0 0.2rem;*/
-  width: 24.4%;
-  }
-  .cons-list .list li .list-area0 .list-box + .list-box{margin-left:0.2rem}
+.cons-list .list li .list-area0 .list-box{display:inline-block;width:100%;max-width:24.4%}
+.cons-list .list li .list-area0 .list-box + .list-box{margin-left:0.2rem}
 .cons-list .list li .list-area + .list-area li button + button{margin-left:0.2rem}
 .cons-list .list li .list-area .list-box{width:100%}
 .cons-list .list li .list-area3 .list-box{width:100%}

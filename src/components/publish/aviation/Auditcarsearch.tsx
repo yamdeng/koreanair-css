@@ -491,6 +491,11 @@ function Auditcarsearch() {
                                 부산
                               </button>
                             </div>
+                            <div className="list-box">
+                              <button type="button" className="btn-wrap gr w-min active btn-txt">
+                                부산
+                              </button>
+                            </div>
                           </li>
                         </ul>
                       </div>
@@ -509,7 +514,7 @@ function Auditcarsearch() {
                                 ABC
                               </button>
                             </div>
-                            <div className="list-box">
+                            {/* <div className="list-box">
                               <button type="button" className="btn-wrap gr w-min active btn-txt">
                                 ABC
                               </button>
@@ -523,7 +528,7 @@ function Auditcarsearch() {
                               <button type="button" className="btn-wrap gr w-min active btn-txt">
                                 AWS
                               </button>
-                            </div>
+                            </div> */}
                           </li>
                         </ul>
                       </div>
