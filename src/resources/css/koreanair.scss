@@ -853,8 +853,9 @@
   .grid-item:nth-of-type(3) {grid-row: span 2;}
 
   .grid-item:nth-of-type(7) {grid-column-start: 2; grid-column-end: span 2;/* background-color: transparent; border: 0; padding: 0;*/}
-  .grid-item h3 {font-size: 1.8rem; font-weight: 700; color: var(--color-neutral-90); padding-bottom: 1.5rem;}
+  .grid-item h3 {font-size: 1.8rem; font-weight: 700; color: var(--color-neutral-90); padding-bottom: 1.5rem; white-space: nowrap;}
   .grid-item h3 span.siren {display: inline-block; font-size: 0; background: url(../images/siren.svg)center center no-repeat; background-size: 2.6rem; vertical-align: top; width: 2.6rem;}
+  .grid-item h3.tab {overflow-x: auto; max-width: 85%;}
   .grid-item h3 .main-tab li {display: inline-block; padding: 0 1.0rem;}
   .grid-item h3 .main-tab li:first-child {padding-left: 0;}
   .grid-item h3 .main-tab li:last-child {padding-right: 0;}

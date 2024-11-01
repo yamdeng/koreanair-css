@@ -129,7 +129,7 @@ function POccupationPortal1() {
         </div>
         <div className="grid-item">
           <div className="head-top">
-            <h3>
+            <h3 className="tab">
               <ul className="main-tab">
                 <li>
                   <a className="active" href="javascript:void(0);">
