@@ -88,6 +88,7 @@ function AdminkeywordEventList() {
                   <th>화물</th>
                   <th>OYI</th>
                   <th>OYS</th>
+                  <th>추가</th>
                 </tr>
               </thead>
               <tbody>
@@ -164,6 +165,14 @@ function AdminkeywordEventList() {
                       </label>
                     </div>
                   </td>
+                  <td>
+                    <div className="chk-wrap center">
+                      <label className="text-no">
+                        <input type="checkbox" checked />
+                        <span className="text-no"></span>
+                      </label>
+                    </div>
+                  </td>
                 </tr>
                 <tr>
                   <td className="tl"> Smoke</td>
@@ -231,6 +240,14 @@ function AdminkeywordEventList() {
                   </td>
                   <td>
                     {' '}
+                    <div className="chk-wrap center">
+                      <label className="text-no">
+                        <input type="checkbox" checked />
+                        <span className="text-no"></span>
+                      </label>
+                    </div>
+                  </td>
+                  <td>
                     <div className="chk-wrap center">
                       <label className="text-no">
                         <input type="checkbox" checked />
@@ -312,6 +329,14 @@ function AdminkeywordEventList() {
                       </label>
                     </div>
                   </td>
+                  <td>
+                    <div className="chk-wrap center">
+                      <label className="text-no">
+                        <input type="checkbox" checked />
+                        <span className="text-no"></span>
+                      </label>
+                    </div>
+                  </td>
                 </tr>
                 <tr>
                   <td className="tl"> Smoke</td>
@@ -379,6 +404,14 @@ function AdminkeywordEventList() {
                   </td>
                   <td>
                     {' '}
+                    <div className="chk-wrap center">
+                      <label className="text-no">
+                        <input type="checkbox" checked />
+                        <span className="text-no"></span>
+                      </label>
+                    </div>
+                  </td>
+                  <td>
                     <div className="chk-wrap center">
                       <label className="text-no">
                         <input type="checkbox" checked />
