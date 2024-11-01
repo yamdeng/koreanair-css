@@ -249,6 +249,10 @@ function POccupationPortal1() {
             </ul>
           </div>
           <div className="main-graph">
+            <div className="main-graph-group">그래프영역{/*canvas className="canvas" 추가*/}</div>
+          </div>
+          {/*
+          <div className="main-graph">
             <div className="main-graph-group">
               <ul className="main-graph-tit">
                 <li>전체</li>
@@ -312,6 +316,7 @@ function POccupationPortal1() {
               <meter className="main-graph-meter" min={0} max={100} low={30} high={79} optimum={100} value={5}></meter>
             </div>
           </div>
+          */}
         </div>
         <div className="grid-item">
           <h3>
