@@ -940,7 +940,7 @@
   .grid-item .guide-info li{display: inline-flex;justify-content: center;align-items: center;font-size: 1.0rem;padding: 0 0.2rem;}
   .grid-item .guide-info li .color{width: 0.8rem;height: 0.8rem;border-radius: 99.9rem;font-size: 0;margin-right: 0.3rem;}
 
-  .grid-item .main-graph {width: 100%; display: flex; justify-content: center; align-items: center; min-height: 12.5rem; background-color: #2DCB9B;}
+  .grid-item .main-graph {width: 100%; display: flex; justify-content: center; align-items: center; min-height: 12.5rem;}
   .grid-item .main-graph .main-graph-group {position: relative; width: 100%; height: 100%; display: flex; align-items: center;}
   .grid-item .main-graph .main-graph-group canvas.canvas {position: absolute; width: 100% !important; height: auto;}
   //.grid-item .main-graph {display: inline-grid; grid-template-columns: 1fr 1fr; gap: 1.0rem 2.0rem; width: 100%;}
