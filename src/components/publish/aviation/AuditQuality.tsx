@@ -52,11 +52,11 @@ function AuditQuality() {
                       <AppSelect label={'2024'} />
                     </div>
                   </div>
-                  <div className="form-cell wid20">
-                    <span>부문별 Audit계획대비실적</span>
+                  <div className="form-cell wid50">
+                    <span className="title">부문별 Audit계획대비실적</span>
                   </div>
-                  <div className="form-cell wid20">
-                    <span>AVG. 72%</span>
+                  <div className="form-cell wid50">
+                    <span className="info-tit">AVG. 72%</span>
                   </div>
                   <div className="form-cell wid20">
                     <div className="btn-area">
@@ -79,11 +79,11 @@ function AuditQuality() {
                       <AppSelect label={'2024'} />
                     </div>
                   </div>
-                  <div className="form-cell wid20">
-                    <span>부문별 CAR 처리현황</span>
+                  <div className="form-cell wid50">
+                    <span className="title">부문별 CAR 처리현황</span>
                   </div>
-                  <div className="form-cell wid20">
-                    <span>AVG. 58%</span>
+                  <div className="form-cell wid50">
+                    <span className="info-tit">AVG. 58%</span>
                   </div>
                   <div className="form-cell wid20">
                     <div className="btn-area">
@@ -102,7 +102,7 @@ function AuditQuality() {
                         <span className="tit-top">총괄</span>
                       </div>
                       <div className="num">
-                        87/<span className="num-color">95%</span>
+                        87 / <span className="num-color">95%</span>
                       </div>
                     </div>
                     <div className="box-area-bottom">
@@ -122,7 +122,7 @@ function AuditQuality() {
                         <span className="tit-top">운항</span>
                       </div>
                       <div className="num">
-                        42/<span className="num-color">97%</span>
+                        42 / <span className="num-color">97%</span>
                       </div>
                     </div>
                     <div className="box-area-bottom">
@@ -142,7 +142,7 @@ function AuditQuality() {
                         <span className="tit-top">종합</span>
                       </div>
                       <div className="num">
-                        75/<span className="num-color">83%</span>
+                        75 / <span className="num-color">83%</span>
                       </div>
                     </div>
                     <div className="box-area-bottom">
@@ -162,7 +162,7 @@ function AuditQuality() {
                         <span className="tit-top">정비</span>
                       </div>
                       <div className="num">
-                        50/<span className="num-color">60%</span>
+                        50 / <span className="num-color">60%</span>
                       </div>
                     </div>
                     <div className="box-area-bottom">
@@ -185,7 +185,7 @@ function AuditQuality() {
                         <span className="tit-top">객실</span>
                       </div>
                       <div className="num">
-                        90/<span className="num-color">33%</span>
+                        90 / <span className="num-color">33%</span>
                       </div>
                     </div>
                     <div className="box-area-bottom">
@@ -205,7 +205,7 @@ function AuditQuality() {
                         <span className="tit-top">여객</span>
                       </div>
                       <div className="num">
-                        90/<span className="num-color">33%</span>
+                        90 / <span className="num-color">33%</span>
                       </div>
                     </div>
                     <div className="box-area-bottom">
@@ -225,7 +225,7 @@ function AuditQuality() {
                         <span className="tit-top">화물</span>
                       </div>
                       <div className="num">
-                        90/<span className="num-color">33%</span>
+                        90 / <span className="num-color">33%</span>
                       </div>
                     </div>
                     <div className="box-area-bottom">
@@ -245,7 +245,7 @@ function AuditQuality() {
                         <span className="tit-top">보안</span>
                       </div>
                       <div className="num">
-                        90/<span className="num-color">33%</span>
+                        90 / <span className="num-color">33%</span>
                       </div>
                     </div>
                     <div className="box-area-bottom">
@@ -261,6 +261,7 @@ function AuditQuality() {
               </div>
             </div>
           </div>
+          {/*탭*/}
           <div className="equip-right-box">
             <div className="boxForm audit">
               <div className="form-table audit">
@@ -294,10 +295,87 @@ function AuditQuality() {
                 </div>
               </div>
             </div>
-            <div className="graph-area">그래프 영역</div>
+            <div className="graph-area">
+              <div className="">운항 영역</div>
+              <div className="">객실 영역</div>
+              <div className="">그리드</div>
+            </div>
           </div>
         </div>
-        <div className="equip-bottom-box">dd</div>
+
+        {/*년도별 car평균*/}
+        <div className="equip-bottom-box">
+          <div className="boxForm ">
+            <div className="form-table">
+              <div className="form-cell wid10">
+                <span className="title">년도별 CAR 평균</span>
+              </div>
+              <div className="form-cell wid100">
+                <div className="radio-wrap border-no">
+                  <label>
+                    <input type="checkbox" />
+                    <span>ESP 포함</span>
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="user-box-cons">
+            <div className="cons-wrap2">
+              {/*Region */}
+              <div className="cons-box gr">
+                <div className="txt">Region</div>
+                <div className="cons-list scroll">
+                  <ul className="list">
+                    <li>
+                      <div className="list-area wid100">
+                        <button type="button" className="btn-wrap gr active btn-txt active">
+                          KOR
+                        </button>
+                      </div>
+                    </li>
+                    <li>
+                      <div className="list-area wid100">
+                        <button type="button" className="btn-wrap gr btn-txt">
+                          AME
+                        </button>
+                      </div>
+                    </li>
+                    <li>
+                      <div className="list-area wid100">
+                        <button type="button" className="btn-wrap gr btn-txt">
+                          EUR,MEA
+                        </button>
+                      </div>
+                    </li>
+                    <li>
+                      <div className="list-area wid100">
+                        <button type="button" className="btn-wrap gr active btn-txt">
+                          CHN
+                        </button>
+                      </div>
+                    </li>
+                    <li>
+                      <div className="list-area wid100">
+                        <button type="button" className="btn-wrap gr active btn-txt">
+                          JPN
+                        </button>
+                      </div>
+                    </li>
+                    <li>
+                      <div className="list-area wid100">
+                        <button type="button" className="btn-wrap gr active btn-txt">
+                          SEA,OCN
+                        </button>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div className="cons-box gr">그래프영역</div>
+            </div>
+          </div>
+        </div>
       </div>
     </>
   );

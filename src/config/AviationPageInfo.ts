@@ -780,7 +780,7 @@ AviationPageInfo.list = [
     Component: AuditQuality,
     path: 'AuditQuality',
     description: '',
-    success: false,
+    success: true,
   },
   {
     title: '[07.관리자] 지상관리 > 입력항목관리',

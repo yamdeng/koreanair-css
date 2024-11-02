@@ -107,6 +107,7 @@
   .av-submain .av-submain-bg .av-submain-wrap .av-area .av-box{}
   .step-box li {max-width: 16.0rem;}
 
+  .equip-container .equip-bottom-box .boxForm .form-table .form-cell .title{width:30%}
 
 
 }
@@ -262,6 +263,8 @@
 
 
 
+
+
     /*통합홈*/
     .intro-top-menu .top_container {width: 100%; padding: 0 3.2rem;}
     .intro-top-menu .top_container .dropmenu li:hover div {right: 3%;}
@@ -391,8 +394,9 @@
 .checkbox-wrap .checkbox-area .checklist{width:100%}
 .checkbox-wrap .checkbox-area .checklist + .checklist{display:block;width:100%;margin-top:1.5rem}
 
-.equip-container .equip-contents{display: block;width: 100%;}
-.equip-container .equip-contents .equip-right-box{display: block;width: 100%;}
+.equip-container .equip-contents{display:block;width:100%}
+.equip-container .equip-contents .equip-right-box{display:block;width:100%;margin-top:2rem}
+
 
 .box-view-list .view-list .accumlate-list .text-desc-type1 .graph{display:block}
 .box-view-list .view-list .accumlate-list .text-desc-type1 .graph .graph-left{width:100%}
@@ -401,6 +405,8 @@
 .box-view-list .view-list .accumlate-list .text-desc-type1 .graph .graph-right .box-area ul li{display:inline-flex;height:0}
 .box-view-list .view-list .accumlate-list .text-desc-type1 .graph .graph-right .box-area ul li .year{margin-right:1rem}
 .box-view-list .view-list .accumlate-list .text-desc-type1 .graph .graph-right .box-area ul li + li{margin-left:3.0rem}
+
+
 }
 
 
@@ -793,8 +799,10 @@
 .checkbox-wrap .checkbox-area .checklist + .checklist{display:block;width:100%;margin-top:1.5rem}
 
 .equip-container .equip-contents{display:block;width:100%}
-.equip-container .equip-contents .equip-right-box{display:block;width:100%}
+.equip-container .equip-contents .equip-right-box{display:block;width:100%;margin-top:2rem}
 .equip-container .equip-contents .equip-right-box .form-table.audit{display:block;width:100%}
+.equip-container .equip-contents .equip-right-box{padding-right:0}
+.equip-container .equip-bottom-box .boxForm .form-table .form-cell{width:30%}
 
 
 .av-submain .av-submain-bg .av-submain-wrap .h3-tit{padding-top:1.5rem}
@@ -806,7 +814,9 @@
 .box-view-list .view-list .accumlate-list .text-desc-type1 .graph .graph-right .box-area ul li{display:inline-flex;height:0}
 .box-view-list .view-list .accumlate-list .text-desc-type1 .graph .graph-right .box-area ul li .year{margin-right:1rem}
 .box-view-list .view-list .accumlate-list .text-desc-type1 .graph .graph-right .box-area ul li + li{margin-left:3.0rem}
-
+.equip-container .equip-bottom-box .user-box-cons .cons-wrap2{display:block;width:100%}
+.equip-container .equip-bottom-box .user-box-cons .cons-wrap2 .cons-box:nth-child(1).gr{display:block;width:100%}
+.equip-container .equip-bottom-box .user-box-cons .cons-wrap2 .cons-box:nth-child(2).gr{display:block;width:100%}
 
 }
 
@@ -1327,8 +1337,11 @@
 
 .equip-container .equip-contents{display:block;width:100%}
 .equip-container .equip-contents .equip-left-box{padding-right:0}
-.equip-container .equip-contents .equip-right-box{display:block;width:100%}
+.equip-container .equip-contents .equip-left-box .plan-box .box-wrap .box-area .box-area-top .num{font-size:1.4rem;}
+.equip-container .equip-contents .equip-right-box{display:block;width:100%;margin-top:2rem}
 .equip-container .equip-contents .equip-right-box .form-table.audit{display:block;width:100%}
+.equip-container .equip-contents .equip-right-box{padding-right:0}
+.equip-container .equip-contents .equip-right-box .form-table.audit .form-cell .menu-tab-nav .menu-tab a{font-size:1.4rem;padding: 0 1.6rem;}
 
 .box-view-list .view-list .accumlate-list .text-desc-type1 .graph{display:block}
 .box-view-list .view-list .accumlate-list .text-desc-type1 .graph .graph-left{width:100%}
