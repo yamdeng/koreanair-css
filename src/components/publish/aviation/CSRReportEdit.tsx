@@ -274,17 +274,15 @@ function CSRReportEdit() {
                     <div className="form-cell wid50">
                       <div className="form-group wid50">
                         <div className="UserChicebox Flight error">
-                          <div className="form-cell">
-                            <AppSelect label={''} className="" />
+                          <div className="form-group wid100">
+                            <AppSelect label={'선택'} />
+                            <label htmlFor="file" className="file-label">
+                              비행승무원<span className="required"></span>
+                            </label>
                           </div>
+                          <div className="form-group wid100 mt10">
+                            <AppAutoComplete label="d" />
 
-                          <div className="form-cell">
-                            <div className="form-group ">
-                              <AppAutoComplete label="d" />
-                              <label htmlFor="file" className="file-label">
-                                비행승무원 <span className="required"></span>
-                              </label>
-                            </div>
                             <div className="SelectedList memberClass mt10">
                               <ul>
                                 <li>
