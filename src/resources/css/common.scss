@@ -336,7 +336,7 @@ input, select{font-family:'KoreanAirSans'}
   .btn-darkblue-line{border:solid 0.2rem var(--color-darkblue-100);color:var(--color-darkblue-100)}
 }
 
-.UserChicebox{border:0.1rem solid var(--color-neutral-40);border-radius:1.0rem;padding:2.0rem 1.0rem 1.0rem}
+.UserChicebox{position:relative;border:0.1rem solid var(--color-neutral-40);border-radius:1.0rem;padding:2.0rem 1.0rem 1.0rem}
 .UserChicebox.error{border:0.1rem solid var(--color-negative);border-radius:1.0rem;padding:2.0rem 1.0rem 1.0rem}
 .UserChicebox.view{border:none;}
 .UserChicebox .file-label{display:inline-block;position:absolute;left: 1rem;top: -2.9rem;background: var(--color-neutral-10);padding: 0 0.4rem;line-height: 1.4em;font-size: 1.4rem !important;transition: all 0.2s ease}

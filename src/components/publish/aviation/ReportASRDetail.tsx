@@ -2630,52 +2630,55 @@ function ReportASRDetail() {
                                             </tbody>
                                           </table>
                                         </div>
-                                        {/* 산업안전*/}
-                                        <div className="occuptitle">산업안전</div>
-                                        <div className="form-table line">
-                                          <div className="form-cell wid50">
-                                            <div className="form-group wid100">
-                                              <AppSelect label={'Hazard'} required />
-                                            </div>
-                                          </div>
-                                          <div className="form-cell wid50">
-                                            <div className="form-group wid100">
-                                              <AppSelect label={'Potential Consequence'} required />
-                                            </div>
-                                          </div>
-                                        </div>
-                                        {/* 버튼*/}
-                                        <div className="contents-btns">
-                                          <button
-                                            type="button"
-                                            name="button"
-                                            className="btn_text text_color_neutral-10 btn_confirm"
-                                          >
-                                            + Add
-                                          </button>
-                                        </div>
-                                        {/* //버튼*/}
 
-                                        <div className="listtable mb15">
-                                          <table className="info-board">
-                                            <colgroup>
-                                              <col width="40%" />
-                                              <col width="60%" />
-                                            </colgroup>
-                                            <thead>
-                                              <tr>
-                                                <th>Hazard</th>
-                                                <th>Potential Consequence</th>
-                                              </tr>
-                                            </thead>
-                                            <tbody>
-                                              <tr>
-                                                <td colSpan={2}>No Data</td>
-                                              </tr>
-                                            </tbody>
-                                          </table>
+                                        {/* 산업안전*/}
+                                        <div className="UserChicebox mt10">
+                                          <div className="occuptitle av">산업안전</div>
+                                          <div className="form-table line">
+                                            <div className="form-cell wid50">
+                                              <div className="form-group wid100">
+                                                <AppSelect label={'Hazard'} required />
+                                              </div>
+                                            </div>
+                                            <div className="form-cell wid50">
+                                              <div className="form-group wid100">
+                                                <AppSelect label={'Potential Consequence'} required />
+                                              </div>
+                                            </div>
+                                          </div>
+                                          {/* 버튼*/}
+                                          <div className="contents-btns">
+                                            <button
+                                              type="button"
+                                              name="button"
+                                              className="btn_text text_color_neutral-10 btn_confirm"
+                                            >
+                                              + Add
+                                            </button>
+                                          </div>
+                                          {/* //버튼*/}
+
+                                          <div className="listtable mb15">
+                                            <table className="info-board">
+                                              <colgroup>
+                                                <col width="40%" />
+                                                <col width="60%" />
+                                              </colgroup>
+                                              <thead>
+                                                <tr>
+                                                  <th>Hazard</th>
+                                                  <th>Potential Consequence</th>
+                                                </tr>
+                                              </thead>
+                                              <tbody>
+                                                <tr>
+                                                  <td colSpan={2}>No Data</td>
+                                                </tr>
+                                              </tbody>
+                                            </table>
+                                          </div>
+                                          {/* //산업안전*/}
                                         </div>
-                                        {/* //산업안전*/}
                                         <div className="form-table line">
                                           <div className="form-cell wid100">
                                             <div className="form-group wid100">
