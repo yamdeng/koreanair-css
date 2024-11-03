@@ -766,7 +766,7 @@ AviationPageInfo.list = [
     Component: AuditEdit,
     path: 'AuditEdit',
     description: '',
-    success: false,
+    success: true,
   },
   {
     title: '[06.AUDIT] 개선조치 CAR 조회',
