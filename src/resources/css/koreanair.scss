@@ -1962,6 +1962,10 @@
   height: calc(100vh - 38.5rem);
   .grid-height {height: calc(100% - 11.0rem) !important;}
 }
+.grid-height-box-type03 {
+  height: calc(100% - 47.0rem);
+  .grid-height {height: calc(100% - 11.0rem) !important;}
+}
 
 .icon-box {width: 100%; text-align: center; vertical-align: middle;}
 .icon-box img {width: 2.4rem; height: 2.4rem; vertical-align: middle;}

@@ -311,18 +311,18 @@ function POccupationMu2P6detail() {
         </dl>
       </div>
       {/*//입력영역*/}
-      {/*그리드영역 */}
-      <div className="mt-30">
+      {/*그리드영역 높이값css className="grid-height-box-type03"추가 - 그리드에 className="grid-height" 추가 */}
+      <div className="grid-height-box-type03 mt-30">
         <h3 className="table-tit">강사 정보</h3>
-        <AppTable rowData={rowData} columns={columns} customButtons={customButtons} />
+        <AppTable className="grid-height" rowData={rowData} columns={columns} customButtons={customButtons} />
       </div>
-      <div className="mt-30">
+      <div className="grid-height-box-type03 mt-30">
         <h3 className="table-tit">입과자 정보</h3>
-        그리드영역
+        <AppTable className="grid-height" rowData={rowData} columns={columns} customButtons={customButtons} />
       </div>
-      <div className="mt-30">
+      <div className="grid-height-box-type03 mt-30">
         <h3 className="table-tit">결재자 정보</h3>
-        그리드영역
+        <AppTable className="grid-height" rowData={rowData} columns={columns} customButtons={customButtons} />
       </div>
       {/*//그리드영역 */}
 
