@@ -36,6 +36,7 @@ import POccupationMu2P4list from '@/components/publish/occupation/POccupationMu2
 import POccupationMu2P5list from '@/components/publish/occupation/POccupationMu2P5list';
 import POccupationMu2P6list from '@/components/publish/occupation/POccupationMu2P6list';
 import POccupationMu2P6edit from '@/components/publish/occupation/POccupationMu2P6edit';
+import POccupationMu2P6detail from '@/components/publish/occupation/POccupationMu2P6detail';
 import POccupationMu2P7list from '@/components/publish/occupation/POccupationMu2P7list';
 import POccupationMu2P7list1 from '@/components/publish/occupation/POccupationMu2P7list1';
 import POccupationMu2P7edit from '@/components/publish/occupation/POccupationMu2P7edit';
@@ -369,6 +370,13 @@ OccupationPageInfo.list = [
     title: '안전교육 > 작업내용 변경시 교육-등록',
     Component: POccupationMu2P6edit,
     path: 'POccupationMu2P6edit',
+    description: '',
+    success: true,
+  },
+  {
+    title: '안전교육 > 작업내용 변경시 교육-상세',
+    Component: POccupationMu2P6detail,
+    path: 'POccupationMu2P6detail',
     description: '',
     success: true,
   },
