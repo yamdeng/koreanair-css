@@ -3,8 +3,10 @@ import { useState } from 'react';
 import iconMenuFriesImage from '@/resources/images/icon-menu-fries.svg';
 import koreanairSymbolImage from '@/resources/images/koreanair-symbol.svg';
 import iconSearchImage from '@/resources/images/icon_search.svg';
+import iconMypageImage from '@/resources/images/icon_mypage.svg';
 import iconAlarmImage from '@/resources/images/icon_alram.svg';
 import iconSettingImage from '@/resources/images/icon_setting.svg';
+import iconLogoutImage from '@/resources/images/icon_logout.svg';
 import closeImage from '@/resources/images/close.svg';
 import { useStore } from 'zustand';
 import useAppStore from '@/store/useAppStore';
@@ -155,7 +157,7 @@ export default function AviationLayout() {
                       <li>
                         <a href="javascript:void(0);">
                           <i className="ico">
-                            <img src={iconAlarmImage} alt="알림" />
+                            <img src={iconMypageImage} alt="마이페이지" />
                           </i>
                           마이페이지
                         </a>
@@ -163,7 +165,7 @@ export default function AviationLayout() {
                       <li>
                         <a href="javascript:void(0);">
                           <i className="ico">
-                            <img src={iconAlarmImage} alt="알림" />
+                            <img src={iconSettingImage} alt="환경설정" />
                           </i>
                           환경설정
                         </a>
@@ -179,7 +181,7 @@ export default function AviationLayout() {
                       <li>
                         <a href="javascript:void(0);">
                           <i className="ico">
-                            <img src={iconAlarmImage} alt="로그아웃" />
+                            <img src={iconLogoutImage} alt="로그아웃" />
                           </i>
                           로그아웃
                         </a>

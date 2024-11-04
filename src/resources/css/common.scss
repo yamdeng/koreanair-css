@@ -895,7 +895,7 @@ input, select{font-family:'KoreanAirSans'}
 .header .util .util-list .util-icon li > .Info-list .Info-menu > li{display:flex;justify-content:left;align-items:center;padding:0 0.8rem;width:100%;border-bottom: 0.1rem solid #eee;line-height:4.0rem;text-align:left;}
 .Info-list .Info-menu a{display:block;font-size:1.4rem}
 .Info-list .Info-menu a .ico{display: inline-flex;width:2.4rem;height:2.4rem;vertical-align:middle;margin-right:0.8rem}
-.Info-list .Info-menu a .ico img {width: 2.4rem; height: 2.4rem;}
+.Info-list .Info-menu a i.ico img {width: 2.2rem !important; height: 2.2rem !important;}
 
 /*탑 사용자설정*/
 .header .util .util-list .util-icon li > .alarm-list .Info-menu > li .radio-wrap.main{border:0}
