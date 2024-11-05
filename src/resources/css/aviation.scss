@@ -1041,7 +1041,7 @@ meter::-webkit-meter-optimum-value {
   .grid-item:nth-of-type(1){display:flex;grid-column-start:1;grid-column-end:span 3;grid-gap:2.4rem;border:0;background:none;padding:0}
 
   .grid-item .grid-group:nth-of-type(1) .slick-slider{position:relative;display:flex;overflow:hidden;width:100%;border:0rem solid var(--color-neutral-40)}
-  .grid-item .grid-group:nth-of-type(1) .slick-slider .slick-list{width:100%}
+  .grid-item .grid-group:nth-of-type(1) .slick-slider .slick-list{width:calc(100% - 2rem);}
   .grid-item .grid-group:nth-of-type(1) .slick-slider .slick-list .slick-track .slick-slide .risk-conts-area{display:flex;justify-content:flex-start;flex-flow:row wrap;box-sizing: border-box;width:100%;padding: 0 0 2rem}
   .grid-item .grid-group:nth-of-type(1) .slick-slider .slick-list .slick-track .slick-slide .risk-conts-area:last-child{padding-bottom:0}
   .grid-item .grid-group:nth-of-type(1) .slick-slider .slick-list .slick-track .slick-slide .risk-conts-area .risk-box{position:relative;display:inline-block;width:31.2%;/*height:169px;*/ margin-bottom:1.8rem;box-sizing: border-box; border:solid 0.2rem var(--color-darkblue-100);background-color:var(--color-neutral-10);border-radius:0.8rem;box-shadow:0.2rem 0.5rem 0.5rem rgba(0, 0, 0, 0.1)}
@@ -1127,8 +1127,9 @@ meter::-webkit-meter-optimum-value {
   .grid-item.photo .slick-slider .slick-list{width:100%;}
   .grid-item.photo .slick-slider .slick-slide{display:inline-block;}
   .grid-item.photo .slick-slider .slick-arrow{width:0px;padding:0rem;font-size:0}
-  .grid-item.photo .slick-slider .slick-dots{position:absolute;top:90%;width:100%;text-align:center;padding: 0.6rem 0;}
-  .grid-item.photo .slick-slider .slick-dots li button{display:block;font-size:0;border-radius:99.9rem;margin:0.5rem 0;width:1rem;height:1rem;background-color:var(--color-darkblue-40);cursor:pointer}
+  .grid-item.photo .slick-slider .slick-dots{position:absolute;bottom:0.5rem;width:100%;text-align:center;padding: 0.6rem 0;}
+  .grid-item.photo .slick-slider .slick-dots li {display:inline-block;margin:0px 0.2rem;}
+  .grid-item.photo .slick-slider .slick-dots li button{display:block;font-size:0;border-radius:99.9rem;margin:0.5rem 0;padding:0rem;width:1rem;height:1rem;background-color:var(--color-darkblue-40);cursor:pointer}
   .grid-item.photo .slick-slider .slick-dots li.slick-active button{background-color:var(--color-darkblue-100);width:2rem}
 
   /* 서브 메인 레이아웃*/
@@ -1312,7 +1313,7 @@ meter::-webkit-meter-optimum-value {
 .equip-container .equip-bottom-box .user-box-cons .cons-box.gr .txt{font-weight: 700;line-height: 2rem;border-bottom: solid 0.1rem var(--color-aud-green-bg-font);padding: 0.3rem 1rem}
 
 /*항공안전 메인 플로팅메뉴*/
-.cd-stretchy-nav{position:fixed;z-index: 2;bottom:2.0rem;right:3%;height:0}
+.cd-stretchy-nav{position:fixed;z-index: 2;bottom:2.0rem;right:2rem;height:0}
 .cd-stretchy-nav.nav-is-visible{height:auto}
 .cd-stretchy-nav .stretchy-nav-bg{
   /* this is the stretching navigation background */

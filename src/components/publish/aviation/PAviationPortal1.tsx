@@ -18,6 +18,7 @@ function PAviationPortal1() {
 
   const topRiskSettings = {
     dots: true,
+    arrows: false,
     infinite: true,
     speed: 500,
     vertical: true,
@@ -28,6 +29,7 @@ function PAviationPortal1() {
 
   const bannerSettings = {
     dots: true,
+    arrows: false,
     infinite: true,
     speed: 500,
     slidesToShow: 1,
