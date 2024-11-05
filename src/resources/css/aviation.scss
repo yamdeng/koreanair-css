@@ -1194,10 +1194,10 @@ meter::-webkit-meter-optimum-value {
     .myaudit-tab li {display: inline; width: 100%; text-align: center; padding: 0 0 0 1.0rem; /*background: url(../images/arrow-right.svg)center right no-repeat; background-size: 2.0rem; padding-right: 2.5rem;*/}
     .myaudit-tab li:first-child {padding: 0;}
     .myaudit-tab li a {font-size: 1.8rem; font-weight: 700; color: var(--color-neutral-80); text-wrap: nowrap; padding: 1.3rem 1.0rem 1.3rem 0;}
-    .myaudit-tab li a.active {color: var(--color-darkblue-100); border-bottom: 0.3rem solid var(--color-darkblue-100);}
+    .myaudit-tab li a.active {color: var(--color-darkblue-100); border-bottom: 0.3rem solid var(--color-darkblue-100); transform: rotate(90deg); transition: all ease 1s;}
     .myaudit-tab li a.disabled {color: var(--color-neutral-50);}
-    .myaudit-tab li a .myaudit-tab-icon {display: inline-block; font-size: 0; /*margin-right: 0.5rem;*/ background: url(../images/arrow-right.svg) center center no-repeat; background-size: 1.8rem; vertical-align: middle; /*border: 0.1rem solid var(--color-neutral-40); border-radius: 99.9rem;*/ background-position: 50% 50%; width: 1.8rem; height: 1.8rem; transition: all ease 1s;}
-    .myaudit-tab li a.active .myaudit-tab-icon.active { transform: rotate(90deg); transition: all ease 1s;}
+    .myaudit-tab li a .myaudit-tab-icon {display: inline-block; font-size: 0; /*margin-right: 0.5rem;*/ background: url(../images/arrow-right.svg) center center no-repeat; background-size: 2.2rem; vertical-align: middle; /*border: 0.1rem solid var(--color-neutral-40); border-radius: 99.9rem;*/ background-position: 50% 50%; width: 2.2rem; height: 2.2rem; transform: rotate(0); transition: all ease 1s;}
+    .myaudit-tab li a.active .myaudit-tab-icon.active {transform: rotate(90deg); transition: all ease 1s;}
     .myaudit-tab li a.disabled .myaudit-tab-icon {background: none;}
     /*.myaudit-tab li a.active {border-bottom: 0.2rem solid var(--color-darkblue-100);}*/
    
