@@ -28,7 +28,7 @@
 }
 .header .logo {
   float: left;
-  width: 23.6rem;
+  width: 30rem;
 }
 .header .logo .menu {
   display: flex;
@@ -53,12 +53,13 @@
 .header .logo .top-logo a span {
   color: var(--color-darkblue-100);
   font-family: "KoreanAirSans";
-  font-size: 2.8rem;
+  font-size: 2.6rem;
   font-style: normal;
   font-weight: 700;
   display: flex;
   align-items: center;
-  margin-bottom: 0.4rem;
+  margin-bottom: 0.2rem;
+
 }
 .header .GNB {
   float: left;
