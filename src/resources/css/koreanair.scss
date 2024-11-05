@@ -598,7 +598,8 @@
   .list-table tbody {display: block; max-height: 46.2rem; overflow-y: scroll;}
   .list-table tfoot td {color: var(--color-darkblue-100); background-color: var(--color-neutral-30); font-weight: 500;}
 }
-.ant-tree-list-scrollbar-thumb {background:var(--color-neutral-40)}
+/*산업안전 조직도스크롤색상지정*/
+.ant-tree-list-scrollbar-thumb {background:var(--color-neutral-40) !important}
 
 .right-box {display: inline-block; width: 100%; height: 100%; vertical-align: top;}
 
