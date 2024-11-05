@@ -270,7 +270,7 @@ function POccupationMu1P1detail() {
                   <li className="accumlate-list">
                     <label className="t-label">첨부파일</label>
                     <span className="text-desc-type1">
-                      <div className="filebox view">
+                      <div className="filebox view imgsize">
                         <Upload {...props} listType="picture-card" fileList={fileList}>
                           <div className="btn-area" style={{ display: 'none' }}>
                             <button type="button" name="button" className="btn-big btn_text btn-darkblue-line mg-n">

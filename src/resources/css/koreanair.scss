@@ -1973,3 +1973,7 @@
 .icon-box img {width: 2.4rem; height: 2.4rem; vertical-align: middle;}
 .icon-box ul {display: flex; justify-content: center;}
 .icon-box ul li {float: left; text-align: center;}
+
+
+/*사진파일첨부 사진사이즈*/
+.imgsize .ant-upload-list.ant-upload-list-picture-card .ant-upload-list-item-container {width: 30.0rem !important; height: 30.0rem !important;}
