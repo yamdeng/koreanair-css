@@ -83,10 +83,10 @@ export default function OccupationLayout() {
             </li>
             <li className="btn">
               <a href="javascript:void(0);">
-                <span>항공안전</span>
+                <span>Aviation</span>
               </a>
               <a href="javascript:void(0);">
-                <span className="active">산업안전</span>
+                <span className="active">Occupational</span>
               </a>
             </li>
           </ul>
@@ -110,10 +110,10 @@ export default function OccupationLayout() {
           <div className="m-lnb_top_btn">
             <div className="tab_btn">
               <a href="javascript:void(0);">
-                <span className="active">항공</span>
+                <span className="active">Aviation</span>
               </a>
               <a href="javascript:void(0);">
-                <span>산업</span>
+                <span>Occupational</span>
               </a>
             </div>
             <div className="close">
