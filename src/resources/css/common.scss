@@ -670,7 +670,7 @@ input, select{font-family:'KoreanAirSans'}
 .ant-select-disabled + .f-label, .ant-picker-disabled + .f-label {color:var(--color-neutral-60); background: linear-gradient(to top, rgba(247, 247, 247, 1) 59%, rgba(255, 255, 255, 0) 30%);}
 
 // .form-tag:not([value=""]) + .f-label{color:var(--color-neutral-80)}
-.form-tag:disabled{background:var(--color-neutral-20); opacity: 1 !important;}
+.form-tag:disabled{background:var(--color-neutral-20); color: rgba(0, 0, 0, 0.25); opacity: 1 !important;}
 // .form-tag:not([value=""]){border:0.1rem solid var(--color-neutral-40)}
 .form-tag:focus+.f-label{color:var(--color-mblue-100) !important}
 .form-tag-select:disabled + .f-label, .form-tag-select:focus + .f-label, .form-tag-select.active + .f-label, .form-tag-select.isValue + .f-label, .form-tag-select.invalid + .f-label{left:1.0rem;top:-2.0rem;font-size:1.3rem;transition: all 0.3s ease}
@@ -949,7 +949,7 @@ input, select{font-family:'KoreanAirSans'}
 .alarm-list .Info-menu a .ico{display: inline-flex;width:2.4rem;height:2.4rem;vertical-align:middle;margin-right:0.8rem}
 
 .ant-select-focused.ant-select-outlined:not(.ant-select-disabled):not(.ant-select-customize-input):not(.ant-pagination-size-changer) .ant-select-selector {box-shadow: none;}
-.ant-select-outlined.ant-select-disabled:not(.ant-select-customize-input) .ant-select-selector {background-color: var(--color-neutral-20);}
+.ant-select-outlined.ant-select-disabled:not(.ant-select-customize-input) .ant-select-selector {background-color: var(--color-neutral-20); color: rgba(0, 0, 0, 0.25);}
 
 /* 관리자 ESP 관리*/
 .sub-tab{width:100%;padding-bottom:1.5rem;border-bottom:0.1rem solid}
