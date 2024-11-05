@@ -2141,3 +2141,9 @@ keyframes
 
 
 .edit-area .form-table .form-cell .text-info{padding: 1.5rem 0.5rem;line-height:4.0rem}
+
+.admin-table-box {width: 100%; overflow-x: auto;}
+.admin-table {width: 100%;  min-width: 140.0rem; text-align: center; border-top: 0.1rem solid var(--color-darkblue-100);}
+.admin-table tr {border-bottom:  0.1rem solid var(--color-neutral-40);}
+.admin-table tr th {background-color: var(--color-neutral-20);}
+.admin-table tr th, .admin-table tr td {padding: 1.0rem; vertical-align: middle;}
