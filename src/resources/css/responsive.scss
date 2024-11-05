@@ -420,6 +420,8 @@
   .boxForm .form-table {display: block;}
   .boxForm .form-table .form-cell {width: 100%; padding-right:0;}
   .boxForm .form-table .form-cell .form-group{width:100%}
+  .UserChicebox.Flight .form-group + .form-group.mt-0 {margin-top: 1.0rem;}
+  .detail-form .form-table .form-cell .btn-area button:first-child {margin-left: 0;}
   .boxForm .form-table .wid-300 {max-width: 100%;}
   .detail-form .form-table .wid-300 {width: 100%;}
   .editbox .form-table .wid-300{width: 100%;}
@@ -866,6 +868,8 @@
   .editbox .form-table + .form-table.SelList{margin-top:-2.0rem}
   .detail-form .form-table .wid-300 {width: 100%;}
   .detail-form .detail-list .form-table .form-cell .form-group{width:100%}
+  .UserChicebox.Flight .form-group + .form-group.mt-0 {margin-top: 1.0rem;}
+  .detail-form .form-table .form-cell .btn-area button:first-child {margin-left: 0;}
   .detail-form .detail-list .form-table .form-cell .group-box-wrap{width: 100%;}
   .detail-form .detail-list .form-table .form-cell .btn-area.inbtn{display:block;width:100%}
   .detail-form .detail-list .form-table .form-cell .btn-area.inbtn > .btn-x-sm{padding:0.6rem 2.8rem;}

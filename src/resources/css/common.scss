@@ -342,6 +342,7 @@ input, select{font-family:'KoreanAirSans'}
 .UserChicebox .file-label{display:inline-block;position:absolute;left: 1rem;top: -2.9rem;background: var(--color-neutral-10);padding: 0 0.4rem;line-height: 1.4em;font-size: 1.4rem !important;transition: all 0.2s ease}
 .UserChicebox.Flight .form-group:nth-child(1){margin-top:0}
 .UserChicebox.Flight .form-group + .form-group{margin-top:1.0rem}
+.UserChicebox.Flight .form-group + .form-group.mt-0{margin-top:0}
 
 .UserChicebox.report{border:0.1rem solid var(--color-neutral-40);border-radius:1.0rem;padding:0.8rem 1.0rem 1.0rem}
 .UserChicebox.report .txt{position:absolute;left: 1rem;top: -1rem;background: var(--color-neutral-10);padding: 0 0.4rem;line-height: 1.4em;font-size: 1.4rem !important;transition: all 0.2s ease}
