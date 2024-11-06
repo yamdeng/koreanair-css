@@ -110,6 +110,8 @@
   .equip-container .equip-bottom-box .boxForm .form-table .form-cell .title{width:30%}
 
 
+
+
 }
 
 
@@ -215,9 +217,9 @@
   .av-main-wrap .grid-item:nth-of-type(1) .grid-group {display: grid; width: 100%;}
   .av-main-wrap .grid-item .grid-group:nth-of-type(1) .slick-slider .slick-list{display:grid;/*height:38.0rem*/}
   .av-main-wrap .grid-item:nth-child(2) {display:inline-table;grid-template-rows: 4.6rem 0;}
-  .av-main-wrap .grid-item .grid-group:nth-of-type(2) .main-conts-graph{margin: 0 auto;text-align:center}
-  .av-main-wrap .grid-item .grid-group:nth-of-type(2) .main-conts-graph .graph-box canvas{width:200px}
-  .av-main-wrap .grid-item .grid-group:nth-of-type(2) .main-conts-graph .graph-box{width:100%}
+  //.av-main-wrap .grid-item .grid-group:nth-of-type(2) .main-conts-graph{margin: 0 auto;text-align:center}
+  //.av-main-wrap .grid-item .grid-group:nth-of-type(2) .main-conts-graph .graph-box canvas{width:200px}
+  //.av-main-wrap .grid-item .grid-group:nth-of-type(2) .main-conts-graph .graph-box{width:100%}
   .av-main-wrap .grid-item:nth-of-type(4) {grid-column-start: 1; grid-column-end: span 2;grid-template-rows:auto}
 
   .av-main-wrap .grid-item .grid-group:nth-of-type(1) .slick-slider {position: initial;}
@@ -1084,7 +1086,7 @@
   .btn-area .btn_text{font-size:1.4rem}
 
   
-  .av-main-wrap {display:inline-block;width:100%;grid-template-columns: 1fr; height:auto; grid-template-rows: none;}
+  .av-main-wrap {/*display:inline-block;*/width:100%;grid-template-columns: 1fr; height:auto; grid-template-rows: none;}
   .av-main-wrap .grid-item:nth-of-type(1){display:inline-table;grid-column-end: span 1;}
   .av-main-wrap .grid-item:nth-of-type(1) .grid-group{display:grid;width:100%}
   .av-main-wrap .grid-item .grid-group:nth-of-type(1) .slick-slider .slick-list{display:grid;/*height:38.0rem*/}
@@ -1096,7 +1098,7 @@
  // .av-main-wrap .grid-item .grid-group:nth-of-type(1) .risk-slider-container .slick-slider > .slick-dots{position:fixed;width:auto;top:119px;right:60px;bottom:0}
   // .av-main-wrap .grid-item .grid-group:nth-of-type(1) .risk-slider-container .slick-slider > .slick-dots li{margin:0}
   
-
+  .av-main-wrap .grid-item .grid-group:nth-of-type(1) .slick-slider .slick-list {width: 100%;}
 
   .main-wrap {display: block; height: auto;}
   .main-wrap .grid-item {margin: 2.4rem 0;}
