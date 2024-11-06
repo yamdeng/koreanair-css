@@ -379,6 +379,7 @@ input, select{font-family:'KoreanAirSans'}
 /*그리드 위버튼*/
 .btns-area{
   > button{margin:0 0.5rem}
+  button:disabled {background:var(--color-neutral-30);color:var(--color-neutral-50);border:0;}
   button + button{margin-left:0.2rem}
   .btn_text{font-family:'KoreanAirSans';font-size:1.4rem}
   .btn-darkblue-line{border:solid 0.2rem var(--color-darkblue-100);color:var(--color-darkblue-100)}
