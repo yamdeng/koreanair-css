@@ -34,7 +34,7 @@
 //.grid-item .grid-group:nth-of-type(1) .slick-slider .slick-dots li button{display:block;font-size:0;border-radius:99.9rem;margin:0.5rem 0;width:1rem;height:1rem;background-color:var(--color-darkblue-40);cursor:pointer}
 //.grid-item .grid-group:nth-of-type(1) .slick-slider .slick-dots li.slick-active button{background-color:var(--color-darkblue-100);width:1rem;height:2.5rem}
 .risk-slider-container{width:100%;height:100%;/*position:relative;height:34.2rem;*/overflow:hidden}
-.risk-slider-container .slick-slider > .slick-dots{display:flex;position:absolute;width:3%;top:0rem;right:0;bottom:0;justify-content:center}
+.risk-slider-container .slick-slider > .slick-dots{display: block;/*display:flex;*/position:absolute;width:3%;top:0rem;right:0;bottom:0;justify-content:center}
 .slick-dots li button{height:3.0rem}
 .risk-slider-container .slick-slider > .slick-dots li button:before{font-size:12px;height:1rem;border-radius:99.9rem;color:var(--color-darkblue-100); /* dot 색상 설정 */}
 .risk-slider-container > .slick-dots li.slick-active button:before{display:block;font-size:0;border-radius:99.9rem;margin:0.5rem 0;width:1rem;height:1rem;background-color:var(--color-darkblue-40);cursor:pointer/* color: #ff6347; 선택된 dot 색상 */}
@@ -44,6 +44,9 @@
 .risk-slider-container .slick-slider .slick-dots li button::before {display: none;}
 .risk-slider-container .slick-slider .slick-dots li.slick-active button {background: var(--color-darkblue-100); opacity: 1; width: 1.0rem; height: 2.0rem; border-radius: 99.9rem}
 .risk-slider-container .slick-slider .slick-dots li.slick-active button::before {display: none;}
+
+.av-main-wrap .grid-item .grid-group .slick-next, .av-main-wrap .grid-item .grid-group .slick-next:before, 
+.av-main-wrap .grid-item .grid-group .slick-prev, .av-main-wrap .grid-item .grid-group .slick-prev:before {display: none;}
 
 /*산업안전*/
 .main-wrap .grid-item.pd-photo .slick-slider {overflow: hidden;}

@@ -35,6 +35,7 @@ import SPIIndicatorList from '@/components/publish/aviation/SPIIndicatorList';
 import SafetyMeetingEdit from '@/components/publish/aviation/SafetyMeetingEdit';
 import SafetyMeetingDetail from '@/components/publish/aviation/SafetyMeetingDetail';
 import AdminSafetyList from '@/components/publish/aviation/AdminSafetyList';
+import AdminSafetyEdit from '@/components/publish/aviation/AdminSafetyEdit';
 import AdminBoardList from '@/components/publish/aviation/AdminBoardList';
 import AdminBoardEdit from '@/components/publish/aviation/AdminBoardEdit';
 import CheckDetail from '@/components/publish/aviation/CheckDetail';
@@ -1020,7 +1021,13 @@ AviationPageInfo.list = [
     description: '',
     success: true,
   },
-
+  {
+    title: '[07.관리자] 게시판 관리 > 안전목표 Edit',
+    Component: AdminSafetyEdit,
+    path: 'AdminSafetyEdit',
+    description: '',
+    success: true,
+  },
   {
     title: '[07.관리자] 게시판 관리 > SPI게시판 List',
     Component: AdminBoardList,

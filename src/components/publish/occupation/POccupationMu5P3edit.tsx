@@ -389,19 +389,21 @@ function POccupationMu5P3edit() {
                             </div>
                             <span className="errorText">fileerror</span>
                           </div>
-                          {previewImage && (
-                            <Image
-                              wrapperStyle={{
-                                display: 'none',
-                              }}
-                              preview={{
-                                visible: previewOpen,
-                                onVisibleChange: (visible) => setPreviewOpen(visible),
-                                afterOpenChange: (visible) => !visible && setPreviewImage(''),
-                              }}
-                              src={previewImage}
-                            />
-                          )}
+                          <div className="imgsize">
+                            {previewImage && (
+                              <Image
+                                wrapperStyle={{
+                                  display: 'none',
+                                }}
+                                preview={{
+                                  visible: previewOpen,
+                                  onVisibleChange: (visible) => setPreviewOpen(visible),
+                                  afterOpenChange: (visible) => !visible && setPreviewImage(''),
+                                }}
+                                src={previewImage}
+                              />
+                            )}
+                          </div>
                         </div>
                       </div>
                       <hr className="line dp-n"></hr>
