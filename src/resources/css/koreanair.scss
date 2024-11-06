@@ -97,6 +97,9 @@
   float: left;
   margin: 0 0.3rem;
 }
+.header .util .util-list .util-icon {
+  margin-right:3rem;
+}
 .header .util .util-list .util-icon li {
   display: flex;
   position: relative;
@@ -278,8 +281,8 @@
   font-size: 1.6rem;
 }
 .LNB_list li a:hover{text-decoration-line: underline;}
-.LNB_list li a.up-icon {background: url(../images/icon-arrow-up.svg) right center no-repeat;}
-.LNB_list li a.down-icon {background: url(../images/icon-arrow-down.svg) right center no-repeat;}
+.LNB_list li a.up-icon {background: url(../images/icon-arrow-down.svg) right center no-repeat;}
+.LNB_list li a.down-icon {background: url(../images/icon-arrow-up.svg) right center no-repeat;}
 .LNB_list li a.active{position:relative;font-weight:700}
 .LNB_list li .mu-2depth {
   display: flex;

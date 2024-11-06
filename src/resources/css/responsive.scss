@@ -1462,3 +1462,70 @@
 
   
 }
+
+
+
+/* 그리드 세로 높이 가변 세팅 */
+
+/* 안전매뉴얼 - SafetyManual */
+.safety_manual_grid {height:calc(100% - 29rem);}.safety_manual_grid .ag-theme-quartz {height:calc(100% - 4rem) !important;}
+
+/* 안전회의체관리 - SafetyMeetingList */
+.safety_meeting_list_grid {height:calc(100% - 39.2rem);}.safety_meeting_list_grid .ag-theme-quartz {height:calc(100% - 4rem) !important;}
+
+/* 결제관리 - PayList (보류중) */
+.pay_list_grid {height:calc(100% - 24.8rem);}.pay_list_grid.active {height:calc(100% - 36.7rem);}.pay_list_grid .ag-theme-quartz {height:calc(100% - 4rem) !important;}
+
+
+/* 조사보고서 - PRiskList (보류중)
+.p_risk_list_grid {height:calc(100% - 29rem);}.p_risk_list_grid .ag-theme-quartz {height:calc(100% - 4rem) !important;}
+*/
+
+/* 지상안전 조사보고서 - PSaferRiskList (보류중)
+.p_safer_risk_list_grid {height:calc(100% - 29rem);}.p_safer_risk_list_grid .ag-theme-quartz {height:calc(100% - 4rem) !important;}
+*/
+
+/* 게시판 - SPIBoardList */
+.spi_board_list_grid {height:calc(100% - 29rem);}.spi_board_list_grid .ag-theme-quartz {height:calc(100% - 4rem) !important;}
+
+/* Report List - SPIReportList */
+.spi_report_list_grid {height:calc(100% - 29rem);}.spi_report_list_grid .ag-theme-quartz {height:calc(100% - 4rem) !important;}
+
+/* 지표관리 - SPIIndicatorList */
+.spi_indicator_list_grid {height:calc(100% - 29rem);}.spi_indicator_list_grid .ag-theme-quartz {height:calc(100% - 4rem) !important;}
+
+/* 지적사항 - SMSintellectualList (보류중)
+.sms_intellectual_list_grid {height:calc(100% - 29rem);}.sms_intellectual_list_grid .ag-theme-quartz {height:calc(100% - 4rem) !important;}
+*/
+
+/* 자료실 - SMSdataList */
+.sms_data_list_grid {height:calc(100% - 29rem);}.sms_data_list_grid .ag-theme-quartz {height:calc(100% - 4rem) !important;}
+
+/* News Letter - NewsletterList */
+.news_letter_list_grid {height:calc(100% - 29rem);}.news_letter_list_grid .ag-theme-quartz {height:calc(100% - 4rem) !important;}
+
+/* 교육현황 - EducationList */
+.education_list_grid {height:calc(100% - 29rem);}.education_list_grid .ag-theme-quartz {height:calc(100% - 4rem) !important;}
+
+/* 강사이력현황 - SMSinstructorList */
+.sms_instructor_list_grid {height:calc(100% - 29rem);}.sms_instructor_list_grid .ag-theme-quartz {height:calc(100% - 4rem) !important;}
+
+/* 안전문화 설문 - CultureList */
+.culture_list_grid {height:calc(100% - 29rem);}.culture_list_grid .ag-theme-quartz {height:calc(100% - 4rem) !important;}
+
+/* WorkShop - WorkShopList */
+.work_shop_list_grid {height:calc(100% - 29rem);}.work_shop_list_grid .ag-theme-quartz {height:calc(100% - 4rem) !important;}
+
+/* Safety Day - SafetyDayList */
+.safety_day_list_grid {height:calc(100% - 29rem);}.safety_day_list_grid .ag-theme-quartz {height:calc(100% - 4rem) !important;}
+
+/* Excellence - ExcellenceList */
+.excellence_list_grid {height:calc(100% - 29rem);}.excellence_list_grid .ag-theme-quartz {height:calc(100% - 4rem) !important;}
+
+/* 유효성평가관리 - effectiveList (보류중)
+.effective_list_grid {height:calc(100% - 29rem);}.effective_list_grid .ag-theme-quartz {height:calc(100% - 4rem) !important;}
+*/
+
+/* My Audit - MyAuditList (보류중)
+.my_audit_list_grid {height:calc(100% - 29rem);}.my_audit_list_grid .ag-theme-quartz {height:calc(100% - 4rem) !important;}
+*/
