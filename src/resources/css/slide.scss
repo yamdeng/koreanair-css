@@ -45,6 +45,9 @@
 .risk-slider-container .slick-slider .slick-dots li.slick-active button {background: var(--color-darkblue-100); opacity: 1; width: 1.0rem; height: 2.0rem; border-radius: 99.9rem}
 .risk-slider-container .slick-slider .slick-dots li.slick-active button::before {display: none;}
 
+.av-main-wrap .grid-item .grid-group .slick-next, .av-main-wrap .grid-item .grid-group .slick-next:before, 
+.av-main-wrap .grid-item .grid-group .slick-prev, .av-main-wrap .grid-item .grid-group .slick-prev:before {display: none;}
+
 /*산업안전*/
 .main-wrap .grid-item.pd-photo .slick-slider {overflow: hidden;}
 
