@@ -350,6 +350,7 @@ input, select{font-family:'KoreanAirSans'}
 /*컨텐츠상단버튼*/
 .btn-area{
   > button{margin:0 0.5rem}
+  button:disabled {background:var(--color-neutral-30);color:var(--color-neutral-50);border:0;}
   button + button{margin-left:0.5rem}
   .btn_text{font-family:'KoreanAirSans';font-weight:700;font-size:1.6rem}
   .btn-darkblue-line{border:solid 0.2rem var(--color-darkblue-100);color:var(--color-darkblue-100)}
@@ -444,8 +445,8 @@ input, select{font-family:'KoreanAirSans'}
   .btn-share span {display: inline-block; color: var(--color-neutral-10); vertical-align: top;}
   .btn-share{}
   .btn-type01 {}
-  text-align:right
-}
+  .refresh img {width: 2.4rem; height: 2.4rem;}
+  text-align:right}
 /* 상단 타이틀 */
 .conts-title{position:relative;display:flex;justify-content:space-between;align-items:center;padding:1.0rem 0 4.0rem 0;/*margin-bottom:1.0rem*/}
 .conts-title .viewright{color:var(--color-mblue-100);font-weight:500}

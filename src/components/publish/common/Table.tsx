@@ -1,4 +1,5 @@
 import shareImage from '@/resources/images/share.svg';
+import iconrefresh from '@/resources/images/icon_refresh.svg';
 
 function Table() {
   return (
@@ -88,6 +89,9 @@ function Table() {
         <button className="btn_text text_color_neutral-10 btn_confirm btn-type01">저장</button>
         <button className="btn_text btn-del btn-type01">취소</button>
         <button className="btn_text btn_list btn-type01">목록</button>
+        <button className="btn-type01 refresh">
+          <img src={iconrefresh} />
+        </button>
         <button type="button" name="button" className="btn_text btn-share btn-type01">
           <img src={shareImage} />
           <span>공유</span>
