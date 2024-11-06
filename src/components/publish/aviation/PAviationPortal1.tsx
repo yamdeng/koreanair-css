@@ -379,19 +379,19 @@ function PAviationPortal1() {
             <div className="main-conts-graph">
               <div className="graph-box">
                 {/* <canvas id="reportCvs0" width="155" height="155" style={{ cursor: 'default' }}></canvas> */}
-                <img src={chartasr} className="" alt="ASR" />
+                {/* <img src={chartasr} className="" alt="ASR" />*/}
               </div>
               <div className="graph-box">
                 {/* <canvas id="reportCvs0" width="155" height="155" style={{ cursor: 'default' }}></canvas> */}
-                <img src={chartmsr} className="" alt="MSR" />
+                {/* <img src={chartmsr} className="" alt="MSR" />*/}
               </div>
               <div className="graph-box">
                 {/* <canvas id="reportCvs0" width="155" height="155" style={{ cursor: 'default' }}></canvas> */}
-                <img src={chartmsr} className="" alt="GSR" />
+                {/* <img src={chartmsr} className="" alt="GSR" />*/}
               </div>
               <div className="graph-box">
                 {/* <canvas id="reportCvs0" width="155" height="155" style={{ cursor: 'default' }}></canvas> */}
-                <img src={chartmsr} className="" alt="DSR" />
+                {/* <img src={chartmsr} className="" alt="DSR" />*/}
               </div>
             </div>
             <div className="main-conts-graph">
