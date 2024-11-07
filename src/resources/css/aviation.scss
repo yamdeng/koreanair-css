@@ -1123,7 +1123,7 @@ meter::-webkit-meter-optimum-value {
   .av-table-tit{color:var(--color-darkblue-100);font-size:1.6rem;font-weight: normal;/*padding-bottom: 1.0rem;*/}
 
   .grid-item.photo .slick-slider{position:relative;overflow:hidden;width:100%;border:0rem;}
-  .grid-item.photo .slick-slider .slick-list{width:100%;}
+  .grid-item.photo .slick-slider .slick-list{width:100%; min-height: 33.8rem;}
   .grid-item.photo .slick-slider .slick-slide{display:inline-block;}
   .grid-item.photo .slick-slider .slick-arrow{width:0px;padding:0rem;font-size:0}
   .grid-item.photo .slick-slider .slick-dots{position:absolute;bottom:0.5rem;width:100%;text-align:center;padding: 0.6rem 0;}
