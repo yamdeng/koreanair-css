@@ -5,6 +5,8 @@ import AppTextInput from '@/components/common/AppTextInput';
 import { useState } from 'react';
 import AppAutoComplete from '@/components/common/AppAutoComplete';
 import AppTextArea from '@/components/common/AppTextArea';
+import AppTable from '@/components/common/AppTable';
+import { getAllData } from '@/data/grid/example-data-new';
 import { Upload } from 'antd';
 const { Dragger } = Upload;
 const props: any = {
@@ -71,6 +73,8 @@ function SafetyDetail() {
   const [sevenExpaned, setSevenExpaned] = useState(true);
   const [eightExpaned, setEightExpaned] = useState(true);
   const [nineExpaned, setNineExpaned] = useState(true);
+  const rowData = getAllData();
+  const columns = testColumnInfos;
 
   return (
     <>
@@ -229,8 +233,213 @@ function SafetyDetail() {
           {/*//접수단계 step*/}
         </div>
       </div>
-      {/* 보고서 상세 toggle*/}
+      {/* 위험도 관리 toggle*/}
       <div className="info-wrap toggle">
+        <dl className={firstExpaned ? 'tg-item active' : 'tg-item'}>
+          <dt onClick={() => setFirstExpaned(!firstExpaned)}>
+            <button type="button" className="btn-tg">
+              {/* toggle 열어지면 active붙임*/}
+              위험도 관리<span className={firstExpaned ? 'active' : ''}></span>
+            </button>
+          </dt>
+          <dd className="tg-conts" style={{ display: firstExpaned ? '' : 'none' }}>
+            <div className="edit-area">
+              <div className="detailForm">
+                <div className="editbox report">
+                  <div className="form-table line">
+                    <div className="form-cell wid100">
+                      <div className="form-group wid100">
+                        <div className="box-view-list">
+                          <ul className="view-list">
+                            <li className="accumlate-list">
+                              <label className="t-label">일자(De-ID)</label>
+                              <span className="text-desc-type1"> 2024-08-02</span>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="form-cell wid100">
+                      <div className="form-group wid100">
+                        <div className="box-view-list">
+                          <ul className="view-list">
+                            <li className="accumlate-list">
+                              <label className="t-label">위험도 유형</label>
+                              <span className="text-desc-type1">Monthly</span>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="form-cell wid100">
+                      <div className="form-group wid100">
+                        <div className="box-view-list">
+                          <ul className="view-list">
+                            <li className="accumlate-list">
+                              <label className="t-label">기종</label>
+                              <span className="text-desc-type1">HL7783</span>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="form-table line">
+                    <div className="form-cell wid100">
+                      <div className="form-group wid100">
+                        <div className="box-view-list">
+                          <ul className="view-list">
+                            <li className="accumlate-list">
+                              <label className="t-label">위험도 이벤트</label>
+                              <span className="text-desc-type1">ㅇㅇ</span>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="form-cell wid100">
+                      <div className="form-group wid100">
+                        <div className="box-view-list">
+                          <ul className="view-list">
+                            <li className="accumlate-list">
+                              <label className="t-label">관련 Doc No.</label>
+                              <span className="text-desc-type1">D737-220558</span>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    {/*내용없이 줄맞춤영역 S */}
+                    <div className="form-cell wid100 dp-no">
+                      <div className="form-group wid100">
+                        <div className="box-view-list">
+                          <ul className="view-list">
+                            <li className="accumlate-list">
+                              <label className="t-label"></label>
+                              <span className="text-desc-type1"></span>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    {/*내용없이 줄맞춤영역 E */}
+                  </div>
+                  <div className="form-table line">
+                    <div className="form-cell wid100">
+                      <div className="form-group wid100">
+                        <div className="box-view-list">
+                          <ul className="view-list">
+                            <li className="accumlate-list">
+                              <label className="t-label">유해요인 상태</label>
+                              <span className="text-desc-type1">
+                                {/*그리드영역 */}
+                                <div className="grid-height-box">
+                                  <AppTable className="grid-height" rowData={rowData} columns={columns} />
+                                </div>
+                                {/*//그리드영역 */}
+                              </span>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="form-table line">
+                    <div className="form-cell wid100">
+                      <div className="form-group wid100">
+                        <div className="box-view-list">
+                          <ul className="view-list">
+                            <li className="accumlate-list">
+                              <label className="t-label">FOQA 위험도</label>
+                              <span className="text-desc-type1">3</span>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="form-cell wid100">
+                      <div className="form-group wid100">
+                        <div className="box-view-list">
+                          <ul className="view-list">
+                            <li className="accumlate-list">
+                              <label className="t-label">Event Occur</label>
+                              <span className="text-desc-type1">5</span>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="form-cell wid100">
+                      <div className="form-group wid100">
+                        <div className="box-view-list">
+                          <ul className="view-list">
+                            <li className="accumlate-list">
+                              <label className="t-label">TTL hazard</label>
+                              <span className="text-desc-type1">5</span>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="form-table line">
+                    <div className="form-cell wid100">
+                      <div className="form-group wid100">
+                        <div className="box-view-list">
+                          <ul className="view-list">
+                            <li className="accumlate-list">
+                              <label className="t-label">높음</label>
+                              <span className="text-desc-type1">5</span>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="form-cell wid100">
+                      <div className="form-group wid100">
+                        <div className="box-view-list">
+                          <ul className="view-list">
+                            <li className="accumlate-list">
+                              <label className="t-label">중간</label>
+                              <span className="text-desc-type1">5</span>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="form-cell wid100">
+                      <div className="form-group wid100">
+                        <div className="box-view-list">
+                          <ul className="view-list">
+                            <li className="accumlate-list">
+                              <label className="t-label">낮음</label>
+                              <span className="text-desc-type1">5</span>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="form-table line">
+                    <div className="form-cell wid100">
+                      <div className="form-group wid100">
+                        <div className="box-view-list">
+                          <ul className="view-list">
+                            <li className="accumlate-list">
+                              <label className="t-label">제목</label>
+                              <span className="text-desc-type1">ㄹㅇㄴㅁㄹㅇㄴㅁㄹㅇㄴㅁㄹㅇㄴ</span>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </dd>
+        </dl>
+
         <dl className={firstExpaned ? 'tg-item active' : 'tg-item'}>
           <dt onClick={() => setFirstExpaned(!firstExpaned)}>
             <button type="button" className="btn-tg">
