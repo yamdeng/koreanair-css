@@ -100,6 +100,9 @@
 .header .util .util-list .util-icon {
   margin-right:3rem;
 }
+.header .util .util-list .util-icon.mr-0 {
+  margin-right:0rem;
+}
 .header .util .util-list .util-icon li {
   display: flex;
   position: relative;
@@ -107,6 +110,8 @@
   align-items: center;
   height: 4.0rem;
 }
+.header .util .util-list .util-icon li.txt {font-size: 1.2rem;}
+.header .util .util-list .util-icon li .name {font-size: 1.4rem; font-weight: 700; color: var(--color-darkblue-100);}
 .header .util .util-list .util-icon li a img {
   width: 4.0rem;
   height: 4.0rem;

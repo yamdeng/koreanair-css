@@ -11,9 +11,23 @@ body, button, input, textarea, select, label{font-family:'KoreanAirSans';font-we
 .w100{width:100px !important}
 
 
-.wrap{position:relative;flex-direction:row;width:100%;height:calc(100vh - 0px);overflow-x:hidden}
+.adminwrap{display: flex;width:100%;height:calc(100vh - 0px);overflow-x:hidden; min-width: 192.0rem;}
+
+.topmenu {
+  display: block;
+  position: fixed; 
+  top: 0; 
+  min-width: 32.0rem;
+  width: 100%; 
+  height: 8.8rem;
+  border-bottom: 0.3rem solid var(--color-darkblue-100);
+  z-index: 10;
+  padding: 0 2.4rem;
+  background-color: var(--color-neutral-10); 
+}
+
 .leftMenu{position:relative;float:left;margin:0 0 0 -260px;height:calc(100vh - 0px)}
-.leftMenu .LNB_side{position:fixed;left:0;top:0px;max-width:260px;width:100%;height:100%;border-right:solid 1px #d9d9d9}
+.leftMenu .LNB_side{position:fixed;left:0;top:8.8rem;max-width:260px;width:100%;height:100%;border-right:solid 1px #d9d9d9}
 .leftMenu .LNB_list{padding:12px}
 .leftMenu .LNB_list li{font-family:'KoreanAirSans';font-size:16px;font-style:normal;font-weight:400;line-height:150%;color:var(--color-text-body, #051766);padding:12px;border-bottom: 1px solid #D9D9D9;  display:flex;flex-direction: column;align-items: flex-start;gap:8px;flex-shrink:0}
 .leftMenu .LNB_list li a{width:100%;background:url(../images/icon-arrow-up.svg) right center no-repeat}
@@ -26,7 +40,7 @@ body, button, input, textarea, select, label{font-family:'KoreanAirSans';font-we
 .leftMenu .LNB_list li .mu-2depth li .mu-3depth li{background: url(../images/icon-dot.svg) no-repeat left center;border:none;font-size:16px;color:var(--color-text-enabled, #5E5E5E);display:flex;padding:8px 12px;align-items:flex-start;gap: var(--size-1, 4px);align-self:stretch}
 .leftMenu .LNB_list li .mu-2depth li .mu-3depth li.active{background: url(../images/icon-dot.svg) no-repeat left center;text-decoration-line:underline;color:var(--color-text-body, #051766);font-weight:600}
   
-.contents{position:relative;margin:0 0 0 260px;width:100%;padding:0 3.0rem 3.0rem 3.0rem;box-sizing:border-box;background-color:var(--color-neutral10);background-color:var(--color-lightgray0);}
+//.contents{position:relative;margin:8.8rem 0 0 260px;width:100%;padding:0 3.0rem 3.0rem 3.0rem;box-sizing:border-box;background-color:var(--color-neutral10);background-color:var(--color-lightgray0);}
 .contents .Rightconts{width:calc(100% - 260px)}
 /*상단 타이틀*/
 .conts-title{position:relative;align-items:center;padding:20px 0 40px 0px;margin-bottom:10px}
@@ -80,11 +94,10 @@ body, button, input, textarea, select, label{font-family:'KoreanAirSans';font-we
 
 
 
-
-
 @media (max-width: 1920px) {
-    .wrap {
-        min-width:1060px
+    .adminwrap {
+        min-width:192.0rem;
+        header {min-width: 192.0rem;}
     }
 }
 
