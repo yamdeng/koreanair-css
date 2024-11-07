@@ -112,8 +112,8 @@
 
   .av-main-wrap .grid-item .grid-group:nth-of-type(1) .slick-slider {position: initial;}
   .av-main-wrap .grid-item:nth-of-type(1) .grid-group:nth-of-type(1) .risk-slider-container .slick-slider > .slick-dots{right:0rem; top: 1.0rem; display: flex !important;}
-  .grid-item .grid-group:nth-of-type(2) .main-conts-graph{height: 100%;min-height: 30.0rem !important;}
-  .av-main-wrap .grid-item .grid-group:nth-of-type(2) .main-conts-graph .graph-box canvas {padding: 2.0rem;}
+  .grid-item .grid-group:nth-of-type(2) .main-conts-graph{height: 100%;min-height: 34.0rem !important;}
+
 
 }
 
@@ -221,8 +221,9 @@
   .av-main-wrap .grid-item .grid-group:nth-of-type(1) .slick-slider .slick-list{display:grid;/*height:38.0rem*/}
   .av-main-wrap .grid-item:nth-child(2) {display:inline-table;grid-template-rows: 4.6rem 0;}
 
-  .grid-item .grid-group:nth-of-type(2) .main-conts-graph{height: 100%;min-height: 25rem !important;}
-  .av-main-wrap .grid-item .grid-group:nth-of-type(2) .main-conts-graph .graph-box canvas {padding: 2.0rem;}
+  .grid-item .grid-group:nth-of-type(2) .main-conts-graph{height: 100%;min-height: 30rem !important}
+  .av-main-wrap .grid-item .grid-group:nth-of-type(2) .main-conts-graph .graph-box canvas {width: 100%; height: initial;}
+
   //.av-main-wrap .grid-item .grid-group:nth-of-type(2) .main-conts-graph{margin: 0 auto;text-align:center}
   //.av-main-wrap .grid-item .grid-group:nth-of-type(2) .main-conts-graph .graph-box canvas{width:200px}
   //.av-main-wrap .grid-item .grid-group:nth-of-type(2) .main-conts-graph .graph-box{width:100%}
@@ -591,11 +592,10 @@
   .av-main-wrap .grid-item:nth-child(2) .main-table-box{margin-top:0}
   .av-main-wrap .grid-item:nth-of-type(4){grid-column-start: 1; grid-column-end: span 1;grid-template-rows:auto}
 
-  .av-main-wrap .grid-item .grid-group:nth-of-type(2) .main-conts-graph{margin: 0 auto;text-align:center}
-  .av-main-wrap .grid-item .grid-group:nth-of-type(2) .main-conts-graph .graph-box canvas{width:200px}
+
   .av-main-wrap .grid-item .grid-group:nth-of-type(2) .main-conts-graph .graph-box{width:100%}
-  .grid-item .grid-group:nth-of-type(2) .main-conts-graph{height: 100%;min-height: 16rem !important;}
-  .av-main-wrap .grid-item .grid-group:nth-of-type(2) .main-conts-graph .graph-box canvas {padding: 2.0rem;}
+  .grid-item .grid-group:nth-of-type(2) .main-conts-graph{height: 100%;min-height: 25rem !important;}
+  .av-main-wrap .grid-item .grid-group:nth-of-type(2) .main-conts-graph .graph-box canvas {width: 100%; height: initial;}
 
 
   .av-main-wrap .grid-item .grid-group:nth-of-type(1) .slick-slider {position: initial;}
@@ -1382,11 +1382,10 @@
 .box-view-list .view-list .accumlate-list .text-desc-type1 .graph .graph-right .box-area ul li .year{margin-right:1rem}
 .box-view-list .view-list .accumlate-list .text-desc-type1 .graph .graph-right .box-area ul li + li{margin-left:3.0rem}
 
-.grid-item .grid-group:nth-of-type(2) .main-conts-graph{height: 100%;min-height: 9rem !important;}
-.av-main-wrap .grid-item .grid-group:nth-of-type(2) .main-conts-graph .graph-box canvas {padding: 0rem;}
+.grid-item .grid-group:nth-of-type(2) .main-conts-graph{height: 100%;min-height: 18rem !important;}
 
 
-  }
+}
 
 
 
@@ -1485,7 +1484,7 @@
 
   .info-wrap > dl > dt .btn-tg{font-size:1.6rem;}
 
-
+  .grid-item .grid-group:nth-of-type(2) .main-conts-graph{height: 100%;min-height: 10rem !important;}
   
 }
 
