@@ -64,15 +64,11 @@ function CultureList() {
             </div>
           </div>
         </div>
-        {/*__control명 옆에 active  */}
-        <button type="button" name="button" className="arrow button _control active">
-          <span className="hide">접기</span>
-        </button>
       </div>
       {/* //검색영역 */}
 
       {/*그리드영역 */}
-      <div className="">
+      <div className="search_1row_static_grid">
         <AppTable rowData={rowData} columns={columns} />
       </div>
       {/*//그리드영역 */}

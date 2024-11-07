@@ -93,7 +93,7 @@ function SafetyMeetingList() {
       {/* //신규버튼 */}
 
       {/*그리드영역 */}
-      <div className="">
+      <div className="safety_meeting_list_grid">
         <AppTable rowData={rowData} columns={columns} />
       </div>
       {/*//그리드영역 */}

@@ -37,9 +37,9 @@ function AuditList() {
         </ol>
       </div>
       {/*경로 */}
-      {/* <div className="conts-title">
+      <div className="conts-title">
         <h2>예외 Audit 관리</h2>
-      </div> */}
+      </div>
 
       {/*검색영역 */}
       <div className="boxForm">
@@ -74,7 +74,7 @@ function AuditList() {
       {/* //검색영역 */}
 
       {/*그리드영역 */}
-      <div className="">
+      <div className="search_1row_static_grid">
         <AppTable rowData={rowData} columns={columns} customButtons={customButtons} />
       </div>
       {/*//그리드영역 */}

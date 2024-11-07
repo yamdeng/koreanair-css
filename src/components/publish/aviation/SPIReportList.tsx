@@ -86,7 +86,7 @@ function SPIReportList() {
       {/* //검색영역 */}
 
       {/*그리드영역 */}
-      <div className="">
+      <div className="search_1row_static_grid">
         <AppTable rowData={rowData} columns={columns} />
       </div>
       {/*//그리드영역 */}

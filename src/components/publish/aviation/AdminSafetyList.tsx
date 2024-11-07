@@ -34,7 +34,7 @@ function AdminSafetyList() {
       </div>
 
       {/*그리드영역 */}
-      <div className="">
+      <div className="no_search_grid">
         <AppTable rowData={rowData} columns={columns} />
       </div>
       {/*//그리드영역 */}
