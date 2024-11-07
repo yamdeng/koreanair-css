@@ -694,6 +694,8 @@ meter::-webkit-meter-optimum-value {
   .btn_confirm{padding:0.6rem 2.8rem;border-radius:99.9rem;background: var(--color-darkblue-100)}
   .btn-lightblue{border:solid 0.1rem var(--color-lightblue-40);background-color:var(--color-lightblue-40);color:var(--color-darkblue-100)}
   .btn-sm{padding:0rem 2.8rem;border-radius:99.9rem;align-items:center}
+  .refresh {border:solid 0.2rem var(--color-neutral-60);color:var(--color-neutral-60);border-radius:99.9rem; padding: 0.5rem 2.5rem 0.1rem 2.5rem;}
+  .refresh img {width: 2.6rem; height: 2.6rem;}
   width:100%; padding-top:1.2rem;display:inline-flex;justify-content: space-between; text-align:left
 }
 .btn-area.Audit .btn-area-box{display:inline-flex;justify-content:end;flex:1}
@@ -1028,6 +1030,7 @@ meter::-webkit-meter-optimum-value {
   .grid-item:nth-child(4){grid-template-rows:4.6rem 0;display:inline}
   .grid-item:nth-child(3){}
   .grid-item.photo{position:relative;padding:0;overflow: hidden;}
+  .grid-item.photo .slick-slider .slick-list {min-height: 33.8rem;}
 //  .grid-item .main-photo{position: relative; width: 100%; height: 0; padding-top: 75%; overflow: hidden;}
 //  .grid-item .main-photo img {position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;}
  .grid-item .main-photo{max-height:33.8rem;min-height:33.8rem;height: 100%; position:relative;}
@@ -1065,11 +1068,11 @@ meter::-webkit-meter-optimum-value {
   .grid-item .grid-group:nth-of-type(1) .risk-conts-area .risk-box .risk-bottom .sort-box li{display:inline-block;min-width:1.8rem;max-width:4.0rem;height:1.8rem;line-height:1.8rem;color:var(--color-neutral-10);font-weight:700;text-align:center;font-size:1.2rem;padding:0 0.4rem}
   .grid-item .grid-group:nth-of-type(1) .risk-conts-area .risk-box .risk-bottom .sort-box li + li{margin-left:0.6rem}
 
-  .grid-item .grid-group:nth-of-type(2){width: 40%;/*width:60.5rem;padding:2rem 0rem 2.5rem 0rem*/}
-  .grid-item .grid-group:nth-of-type(2) .main-conts-graph{display:flex;width:100%;justify-content:center;align-items: center;/*flex-flow:row wrap;padding:0 0 2rem;overflow: hidden;*/box-sizing:border-box;border-bottom:dotted 1.5px var(--color-neutral-40);height: calc(100% - 21rem);/*min-height: 16.5rem;*/}
-  .grid-item .grid-group:nth-of-type(2) .main-conts-graph .graph-box{position:relative;width:25%;display: flex;justify-content: center;align-items: center;/*padding-right:1rem;box-sizing:border-box;height:15.0rem;padding: 0.5rem 1.0rem;*//*background-color:var(--color-green)*/}
-  .grid-item .grid-group:nth-of-type(2) .main-conts-graph .graph-box img{width:100%;height:16.5rem;/*object-fit:cover;*/background-size: cover;/*border-radius: 0.8rem;*/}
-  .grid-item .grid-group:nth-of-type(2) .main-conts-graph .graph-box canvas{width:100%; position: absolute;/*height:100%;object-fit:cover;background-size:cover;border-radius:99.9rem;*/}
+  .grid-item .grid-group:nth-of-type(2){width: 40%;}
+  .grid-item .grid-group:nth-of-type(2) .main-conts-graph{display:flex;width:100%;justify-content:center;align-items: center;box-sizing:border-box;border-bottom:dotted 1.5px var(--color-neutral-40);height: calc(100% - 21rem);min-height: 16rem;}
+  .grid-item .grid-group:nth-of-type(2) .main-conts-graph .graph-box{position:relative;width:100%;height:100%;display: flex;justify-content: center;align-items: center;}
+  //.grid-item .grid-group:nth-of-type(2) .main-conts-graph .graph-box img{width:100%;height:16.5rem;/*object-fit:cover;*/background-size: cover;/*border-radius: 0.8rem;*/}
+  .grid-item .grid-group:nth-of-type(2) .main-conts-graph .graph-box canvas{width:auto; height: 100%; position: absolute; padding:1.0rem}
   /*.grid-item .grid-group:nth-of-type(2) .main-conts-graph .graph-box + .graph-box{margin-left:1.7rem;}*/
   //.grid-item .grid-group:nth-of-type(2) .main-conts-graph:last-child{padding-bottom:0;border-bottom:0;padding-top:2rem}
 
@@ -1123,7 +1126,7 @@ meter::-webkit-meter-optimum-value {
   .av-table-tit{color:var(--color-darkblue-100);font-size:1.6rem;font-weight: normal;/*padding-bottom: 1.0rem;*/}
 
   .grid-item.photo .slick-slider{position:relative;overflow:hidden;width:100%;border:0rem;}
-  .grid-item.photo .slick-slider .slick-list{width:100%;}
+  .grid-item.photo .slick-slider .slick-list{width:100%; min-height: 33.8rem;}
   .grid-item.photo .slick-slider .slick-slide{display:inline-block;}
   .grid-item.photo .slick-slider .slick-arrow{width:0px;padding:0rem;font-size:0}
   .grid-item.photo .slick-slider .slick-dots{position:absolute;bottom:0.5rem;width:100%;text-align:center;padding: 0.6rem 0;}

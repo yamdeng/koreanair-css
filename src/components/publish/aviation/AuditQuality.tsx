@@ -6,6 +6,7 @@ import { testColumnInfos } from '@/data/grid/table-column';
 import AppDatePicker from '@/components/common/AppDatePicker';
 import AppTextInput from '@/components/common/AppTextInput';
 import AppSelect from '@/components/common/AppSelect';
+import iconrefresh from '@/resources/images/icon_refresh.svg';
 
 function AuditQuality() {
   const [inputValue, setInputValue] = useState('');
@@ -60,8 +61,8 @@ function AuditQuality() {
                   </div>
                   <div className="form-cell wid20">
                     <div className="btn-area">
-                      <button type="button" name="button" className="btn-sm btn_text btn-darkblue-line">
-                        새로고침
+                      <button className="refresh">
+                        <img src={iconrefresh} />
                       </button>
                     </div>
                   </div>
