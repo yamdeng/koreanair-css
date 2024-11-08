@@ -60,7 +60,7 @@ function AdminDeptSearch() {
               <AppAutoComplete label={'검색'} />
             </div>
           </div>
-          <div className="group-tree mt-10">
+          <div className="group-tree type01 mt-10">
             <Tree
               className="draggable-tree bg"
               defaultExpandedKeys={expandedKeys}
@@ -170,6 +170,141 @@ function AdminDeptSearch() {
               </div>
             </div>
             <hr className="line"></hr>
+            <div className="contents-btns">
+              <button className="btn_text text_color_neutral-10 btn_confirm">저장</button>
+              <button className="btn_text btn_list">삭제</button>
+            </div>
+          </div>
+          <h3 className="table-tit">메뉴</h3>
+          <div className="editbox">
+            <div className="form-table">
+              <div className="form-cell wid50">
+                <div className="form-group wid100">
+                  <AppSelect label={''} required />
+                </div>
+              </div>
+            </div>
+            <hr className="line"></hr>
+          </div>
+          <h3 className="table-tit mt-30">
+            그룹관리자<span className="required">*</span>
+          </h3>
+          <div className="editbox">
+            <div className="form-table">
+              <div className="form-cell wid100">
+                <div className="form-group wid100">
+                  <div className="box-view-list">
+                    <ul className="view-list">
+                      <li className="accumlate-list">
+                        <span className="text-desc-type1">KAWAMURA KENICHI / / 일본지역본부</span>
+                        <a href="javascript:void(0);">
+                          <span className="delete">X</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <hr className="line"></hr>
+            <div className="form-table">
+              <div className="form-cell wid100">
+                <div className="form-group wid100">
+                  <div className="box-view-list">
+                    <ul className="view-list">
+                      <li className="accumlate-list">
+                        <span className="text-desc-type1">관리계정 / / (주)대한항공</span>
+                        <a href="javascript:void(0);">
+                          <span className="delete">X</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <hr className="line"></hr>
+            <div className="form-table">
+              <div className="form-cell wid100">
+                <div className="form-group wid100">
+                  <div className="box-view-list">
+                    <ul className="view-list">
+                      <li className="accumlate-list">
+                        <span className="text-desc-type1">곽노석 / / (본사)</span>
+                        <a href="javascript:void(0);">
+                          <span className="delete">X</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <hr className="line"></hr>
+            <div className="contents-btns">
+              <button className="btn_text text_color_neutral-10 btn_confirm">신규</button>
+              <button className="btn_text btn_list">전체삭제</button>
+            </div>
+          </div>
+          <h3 className="table-tit">
+            그룹멤버<span className="required">*</span>
+          </h3>
+          <div className="editbox">
+            <div className="form-table">
+              <div className="form-cell wid100">
+                <div className="form-group wid100">
+                  <div className="box-view-list">
+                    <ul className="view-list">
+                      <li className="accumlate-list">
+                        <span className="text-desc-type1">관리계정 / / (주)대한항공</span>
+                        <a href="javascript:void(0);">
+                          <span className="delete">X</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <hr className="line"></hr>
+            <div className="form-table">
+              <div className="form-cell wid100">
+                <div className="form-group wid100">
+                  <div className="box-view-list">
+                    <ul className="view-list">
+                      <li className="accumlate-list">
+                        <span className="text-desc-type1">관리계정 / / (주)대한항공</span>
+                        <a href="javascript:void(0);">
+                          <span className="delete">X</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <hr className="line"></hr>
+            <div className="form-table">
+              <div className="form-cell wid100">
+                <div className="form-group wid100">
+                  <div className="box-view-list">
+                    <ul className="view-list">
+                      <li className="accumlate-list">
+                        <span className="text-desc-type1">관리계정 / / (주)대한항공</span>
+                        <a href="javascript:void(0);">
+                          <span className="delete">X</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <hr className="line"></hr>
+            <div className="contents-btns">
+              <button className="btn_text text_color_neutral-10 btn_confirm">신규</button>
+              <button className="btn_text btn_list">전체삭제</button>
+            </div>
           </div>
           {/*//상세페이지*/}
         </div>
@@ -177,7 +312,7 @@ function AdminDeptSearch() {
 
       {/* 하단버튼영역 */}
       <div className="contents-btns">
-        <button className="btn_text text_color_neutral-10 btn_confirm">저장</button>
+        <button className="btn_text text_color_neutral-10 btn_confirm pb-0">저장</button>
       </div>
       {/* //하단버튼영역 */}
     </>
