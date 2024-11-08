@@ -1510,7 +1510,6 @@
 ======================================
 안전정책 > 안전매뉴얼 - SafetyManual
 안전보증 > 게시판 - SPIBoardList
-안전보증 > Report List - SPIReportList
 안전보증 > 지표관리 - SPIIndicatorList
 안전보증 > 자료실 - SMSdataList
 안전증진 > News Letter - NewsletterList
@@ -1536,35 +1535,56 @@ AUDIT > 예외 Audit관리 - AuditList
 .search_1row_static_grid {height:calc(100% - 29rem);}.search_1row_static_grid .ag-theme-quartz {height:calc(100% - 4rem) !important;}
 
 
+/* 조회 2단 고정 목록
+======================================
+안전보증 > Report List - SPIReportList
+*/
+.search_2row_static_grid {height:calc(100% - 34.1rem);}.search_2row_static_grid .ag-theme-quartz {height:calc(100% - 4rem) !important;}
+
+
+/* 조회 3단 고정 목록
+======================================
+관리자 > Potential Consequence - PotentialConList
+*/
+.search_3row_static_grid {height:calc(100% - 39.3rem);}.search_3row_static_grid .ag-theme-quartz {height:calc(100% - 4rem) !important;}
+
+
 /* 조회 2단 가변 목록
 ======================================
-결제관리 - PayList
-조사보고서 - PRiskList
-지상안전 조사보고서 - PSaferRiskList
-장비코드관리 - AdminCordList
-Potential Consequence - PotentialConList
-EVENT TYPE - EventtypeList 
-유효성평가관리 - effectiveList
+안전위험관리 > 결제관리 - PayList
+안전증진 > 유효성평가관리 - effectiveList
+관리자 > 장비코드관리 - AdminCordList
+관리자 > EVENT TYPE - EventtypeList 
+
 */
 .search_2row_expand_grid {height:calc(100% - 24.8rem);}.search_2row_expand_grid.active {height:calc(100% - 36.7rem);}.search_2row_expand_grid .ag-theme-quartz {height:calc(100% - 4rem) !important;}
 
 
+/* 조회 2단 가변 + 프로세스 목록 - 사이즈 수정 필요
+======================================
+안전위험관리 > 조사보고서 - PRiskList
+안전위험관리 > 지상안전 조사보고서 - PSaferRiskList
+*/
+.search_2row_expand_p_grid {height:calc(100% - 24.8rem);}.search_2row_expand_p_grid.active {height:calc(100% - 36.7rem);}.search_2row_expand_p_grid .ag-theme-quartz {height:calc(100% - 4rem) !important;}
+
+
+
 /* 조회 3단 가변 목록 - 사이즈수정필요
 ======================================
-Taxonomy 관리 - TaxonomyList
+관리자 > Taxonomy 관리 - TaxonomyList
 */
 .search_3row_expand_grid {height:calc(100% - 24.8rem);}.search_3row_expand_grid.active {height:calc(100% - 36.7rem);}.search_3row_expand_grid .ag-theme-quartz {height:calc(100% - 4rem) !important;}
 
 
 
-/* 안전회의체관리 - SafetyMeetingList (기타 유형)*/
+/* 안전정책 > 안전회의체관리 - SafetyMeetingList (기타 유형)*/
 .safety_meeting_list_grid {height:calc(100% - 39.2rem);}.safety_meeting_list_grid .ag-theme-quartz {height:calc(100% - 4rem) !important;}
 
-/* 지적사항 - SMSintellectualList (조회 1단 기타 가변)
+/* 안전보증 > 지적사항 - SMSintellectualList (조회 1단 기타 가변)
 .sms_intellectual_list_grid {height:calc(100% - 29rem);}.sms_intellectual_list_grid .ag-theme-quartz {height:calc(100% - 4rem) !important;}
 */
 
-/* My Audit - MyAuditList (기타 가변)
+/* AUDIT > My Audit - MyAuditList (기타 가변)
 .my_audit_list_grid {height:calc(100% - 29rem);}.my_audit_list_grid .ag-theme-quartz {height:calc(100% - 4rem) !important;}
 */
 
