@@ -53,7 +53,7 @@ export default function AdminLayout() {
                 <a className="up-icon active" href="javascript:void(0);">
                   안전보고서
                 </a>
-                {/* ul className="mu-2depth">
+                <ul className="mu-2depth">
                   <li className="active">
                     <a href="">My Report</a>
                     <ul className="mu-3depth">
@@ -77,7 +77,7 @@ export default function AdminLayout() {
                   <li>
                     <a href="#">Report List</a>
                   </li>
-                </ul*/}
+                </ul>
               </li>
               <li className="active">
                 <a href="javascript:void(0);">안전정책</a>
@@ -101,14 +101,14 @@ export default function AdminLayout() {
                 <ul className="mu-2depth">
                   <li className="">
                     <a href="">HAZARD 관리</a>
-                    {/* ul className="mu-3depth">
+                    <ul className="mu-3depth">
                       <li className="active">
                         <a href="">Taxonomy</a>
                       </li>
                       <li>
                         <a href="">Potential Consequence</a>
                       </li>
-                    </ul*/}
+                    </ul>
                   </li>
                   <li>
                     <a href="#">EVENT TYPE 관리</a>

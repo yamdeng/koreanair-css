@@ -11,8 +11,6 @@ body, button, input, textarea, select, label{font-family:'KoreanAirSans';font-we
 .w100{width:100px !important}
 
 
-.adminwrap{display: flex;width:100%;height:calc(100vh - 0px);overflow-x:hidden; min-width: 192.0rem;}
-
 .topmenu {
   display: block;
   position: fixed; 
@@ -94,19 +92,5 @@ body, button, input, textarea, select, label{font-family:'KoreanAirSans';font-we
 
 
 
-@media (max-width: 1920px) {
-    .adminwrap {
-        min-width:192.0rem;
-        header {min-width: 192.0rem;}
-    }
-}
 
-
-.select-in-valid {
-  border: 1px solid red !important;
-}
-
-.editor-in-valid .toastui-editor-defaultUI {
-  border: 1px solid red !important;
-}
 

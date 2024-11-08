@@ -5,7 +5,9 @@ import AdminUseView from '@/components/publish/admin/AdminUseView';
 import AdminBasicForm2 from '@/components/publish/admin/AdminBasicForm2';
 import AdminBasicFormOther from '@/components/publish/admin/AdminBasicFormOther';
 import AdminDeptSearch from '@/components/publish/admin/AdminDeptSearch';
+import Adminpage01 from '@/components/publish/admin/Adminpage01';
 import AdminCodeManage from '@/components/publish/admin/AdminCodeManage';
+Adminpage01;
 
 const AdminPageInfo: any = {};
 
@@ -53,9 +55,16 @@ AdminPageInfo.list = [
     success: false,
   },
   {
-    title: '부서검색',
+    title: '가상그룹권한관리',
     Component: AdminDeptSearch,
     path: 'AdminDeptSearch',
+    description: '',
+    success: true,
+  },
+  {
+    title: '부서관리',
+    Component: Adminpage01,
+    path: 'Adminpage01',
     description: '',
     success: true,
   },
