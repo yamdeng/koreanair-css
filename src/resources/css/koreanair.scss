@@ -1,5 +1,21 @@
 @charset "UTF-8";
 
+@media (max-width: 1920px) {
+  .adminwrap {
+      min-width:192.0rem;
+      header {min-width: 192.0rem;}
+  }
+}
+
+
+.select-in-valid {
+border: 1px solid red !important;
+}
+
+.editor-in-valid .toastui-editor-defaultUI {
+border: 1px solid red !important;
+}
+
 .wrap {
   display: flex; 
   box-sizing: border-box; 
@@ -11,6 +27,12 @@
   width: 100%;
   // position: fixed;
   left: 0;
+}
+.adminwrap{
+  display: flex;
+  width:100%;
+  height:calc(100vh - 0px);
+  overflow-x:hidden; 
 }
 .header {
   display: block;
@@ -606,6 +628,15 @@
   .list-table tbody {display: block; max-height: 46.2rem; overflow-y: scroll;}
   .list-table tfoot td {color: var(--color-darkblue-100); background-color: var(--color-neutral-30); font-weight: 500;}
 }
+.groupbox {display: flex; width: 100%;}
+.groupbox.height-fix {height: calc(100% - 16.0rem);}
+.groupbox .group-left {width: 100%; height: 100%; max-width: 32.0rem; margin-right: 3.0rem; }
+.groupbox .group-left .group-tree {width: 100%; height: 58.7rem; background-color: var(--color-neutral-20); border-radius: 0.8rem; padding: 2.5rem; overflow: auto;}
+.groupbox .group-left.fix {height: 100%;}
+.groupbox .group-left.fix .tree-box {display: grid; row-gap: 1.0rem;}
+.groupbox .group-right {width: 100%;}
+.groupbox .group-right.fix {height: 100%; overflow-y: auto;}
+
 /*산업안전 조직도스크롤색상지정*/
 .ant-tree-list-scrollbar-thumb {background:var(--color-neutral-40) !important}
 
