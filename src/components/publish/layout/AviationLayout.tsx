@@ -89,7 +89,7 @@ export default function AviationLayout() {
           <div className="top-logo">
             <a href="javascript:void(0);">
               <img src={koreanairSymbolImage} />
-              <span>항공안전</span>
+              <span>SafeNet<div className="plus_icon">+</div></span>
             </a>
           </div>
         </div>

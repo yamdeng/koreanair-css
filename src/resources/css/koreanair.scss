@@ -66,6 +66,7 @@ border: 1px solid red !important;
   margin: 0 1.0rem;
 }
 .header .logo .top-logo a span {
+  position:relative;
   color: var(--color-darkblue-100);
   font-family: "KoreanAirSans";
   font-size: 2.6rem;
@@ -76,6 +77,28 @@ border: 1px solid red !important;
   margin-bottom: 0.2rem;
 
 }
+.header .logo .top-logo a span .plus_icon {
+  position:absolute;
+  top:0px;
+  right:-2rem;
+  font-size:2rem;
+  width:2rem;
+  height:2rem;
+  line-height:2rem;
+  text-align: center;
+  transform:rotate(45deg);
+  color:red;
+
+  animation-name:plus_ani;
+  animation-duration:2s;
+  animation-iteration-count:infinite;
+}
+@keyframes plus_ani {
+  0% {transform:rotate(0deg)}
+  100% {transform:rotate(360deg)}
+}
+
+
 .header .GNB {
   float: left;
   display: flex;
