@@ -120,7 +120,61 @@ function PRiskdashboard1() {
                   <div className="form-table line">
                     <div className="form-cell wid100">
                       <div className="form-group wid100">
-                        <div className="box-view-list">
+                        <div className="DashBoardWrap">
+                          <div className="DashBoard-chart">
+                            <div className="DashBoard-row">
+                              <div className="DashBoard-col">
+                                <p className="h4">1. 이벤트 Top 10</p>
+                                <div className="DashBoard-box">
+                                  <AppTable rowData={rowData} columns={columns} />
+                                </div>
+                              </div>
+                            </div>
+                            <div className="DashBoard-row">
+                              <div className="DashBoard-col">
+                                <p className="h4">Confidential / Non-confidential</p>
+                                <div className="DashBoard-box">
+                                  <ul className="total-box">
+                                    <li>
+                                      <ul className="total-list">
+                                        <li>Total</li>
+                                        <li className="tit01">405</li>
+                                        <li>
+                                          전년대비 <span>21.8%</span>
+                                        </li>
+                                      </ul>
+                                    </li>
+                                    <li>
+                                      <ul className="total-list">
+                                        <li>confidential</li>
+                                        <li className="tit01-1">162</li>
+                                        <li>
+                                          전년대비 <span>12.4%</span>
+                                        </li>
+                                      </ul>
+                                    </li>
+                                    <li>
+                                      <ul className="total-list">
+                                        <li>non-confidential</li>
+                                        <li className="tit01-1">243</li>
+                                        <li>
+                                          전년대비
+                                          <span>
+                                            27.0%
+                                            <span>
+                                              <img />
+                                            </span>
+                                          </span>
+                                        </li>
+                                      </ul>
+                                    </li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        {/*(<div className="box-view-list">
                           <ul className="view-list">
                             <li className="accumlate-list">
                               <label className="t-label">1. 이벤트 Top 10</label>
@@ -150,7 +204,7 @@ function PRiskdashboard1() {
                               </span>
                             </li>
                           </ul>
-                        </div>
+                        </div>*/}
                       </div>
                     </div>
                   </div>
