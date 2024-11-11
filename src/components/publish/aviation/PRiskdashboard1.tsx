@@ -5,6 +5,7 @@ import { getAllData } from '@/data/grid/example-data-new';
 import { testColumnInfos } from '@/data/grid/table-column';
 import AppDatePicker from '@/components/common/AppDatePicker';
 import AppSelect from '@/components/common/AppSelect';
+import iconup from '@/resources/images/up-btn.svg';
 
 function PRiskdashboard1() {
   const [inputValue, setInputValue] = useState('');
@@ -121,7 +122,7 @@ function PRiskdashboard1() {
                     <div className="form-cell wid100">
                       <div className="form-group wid100">
                         <div className="DashBoardWrap">
-                          <div className="DashBoard-chart">
+                          <div className="DashBoard-chart height-fix">
                             <div className="DashBoard-row">
                               <div className="DashBoard-col">
                                 <p className="h4">1. 이벤트 Top 10</p>
@@ -137,7 +138,7 @@ function PRiskdashboard1() {
                                   <ul className="total-box">
                                     <li>
                                       <ul className="total-list">
-                                        <li>Total</li>
+                                        <li className="tit00">Total</li>
                                         <li className="tit01">405</li>
                                         <li>
                                           전년대비 <span>21.8%</span>
@@ -146,7 +147,7 @@ function PRiskdashboard1() {
                                     </li>
                                     <li>
                                       <ul className="total-list">
-                                        <li>confidential</li>
+                                        <li className="tit00">Confidential</li>
                                         <li className="tit01-1">162</li>
                                         <li>
                                           전년대비 <span>12.4%</span>
@@ -155,14 +156,14 @@ function PRiskdashboard1() {
                                     </li>
                                     <li>
                                       <ul className="total-list">
-                                        <li>non-confidential</li>
+                                        <li className="tit00">Non-Confidential</li>
                                         <li className="tit01-1">243</li>
                                         <li>
                                           전년대비
                                           <span>
                                             27.0%
-                                            <span>
-                                              <img />
+                                            <span className="icon-up">
+                                              <img src={iconup} />
                                             </span>
                                           </span>
                                         </li>
