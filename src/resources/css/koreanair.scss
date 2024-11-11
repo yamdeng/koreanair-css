@@ -80,21 +80,22 @@ border: 1px solid red !important;
 .header .logo .top-logo a span .plus_icon {
   position:absolute;
   top:0px;
-  right:-2rem;
-  font-size:2rem;
+  right:-2.2rem;
+  font-size:3rem;
   width:2rem;
   height:2rem;
   line-height:2rem;
   text-align: center;
   transform:rotate(45deg);
-  color:red;
+  color:var(--color-darkblue-100);
 
   animation-name:plus_ani;
-  animation-duration:2s;
+  animation-duration:5s;
   animation-iteration-count:infinite;
 }
 @keyframes plus_ani {
   0% {transform:rotate(0deg)}
+  30% {transform:rotate(360deg)}
   100% {transform:rotate(360deg)}
 }
 
