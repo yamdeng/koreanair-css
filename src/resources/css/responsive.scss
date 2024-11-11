@@ -1165,6 +1165,7 @@
 
   /*항공안전 메인*/
   .av-main-wrap .grid-item .grid-group:nth-of-type(1) .head-top .form-cell > .radio-wrap{width:40%}
+  .av-main-wrap .grid-item .grid-group:nth-of-type(2) .main-conts-graph .graph-box canvas {width: 100% !important; height: initial !important;}
 
   .modal-group-box {display: block;}
 
@@ -1398,6 +1399,7 @@
 .box-view-list .view-list .accumlate-list .text-desc-type1 .graph .graph-right .box-area ul li + li{margin-left:3.0rem}
 
 .grid-item .grid-group:nth-of-type(2) .main-conts-graph{height: 100%;min-height: 18rem !important;}
+
 
 
 }
