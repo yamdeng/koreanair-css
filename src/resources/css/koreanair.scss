@@ -147,6 +147,7 @@ border: 1px solid red !important;
   justify-content: center;
   align-items: center;
   height: 4.0rem;
+  cursor:pointer;
 }
 .header .util .util-list .util-icon li.txt {font-size: 1.2rem;}
 .header .util .util-list .util-icon li .name {font-size: 1.4rem; font-weight: 700; color: var(--color-darkblue-100);}
@@ -162,6 +163,7 @@ border: 1px solid red !important;
   outline: 0.1rem solid var(--color-neutral-30);
   border-radius: 3.0rem; 
   height: 4.0rem;
+  cursor:pointer;
 }
 .header .util .util-list .btn a span {
   display: block;
@@ -317,6 +319,7 @@ border: 1px solid red !important;
   align-items: flex-start;
   gap: 0.5rem;
   flex-shrink: 0;
+  cursor:pointer;
 }
 .LNB_list li a {
   width: 100%; 
