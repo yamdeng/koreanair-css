@@ -217,16 +217,18 @@ meter::-webkit-meter-optimum-value {
 
 
 .DashBoardWrap .DashBoard-chart.height-fix .DashBoard-row .DashBoard-col .DashBoard-box .ag-theme-quartz {height: 24.0rem !important;}
+.DashBoardWrap .DashBoard-chart.height-fix .DashBoard-row .DashBoard-col .DashBoard-box {height: 100%;}
 .DashBoardWrap .DashBoard-chart.height-fix .DashBoard-row .DashBoard-col .DashBoard-box .total-box {width: 100%;}
 .DashBoardWrap .DashBoard-chart.height-fix .DashBoard-row .DashBoard-col .DashBoard-box .total-box li {display: inline-flex; width: 33.3%; justify-content: center;}
-.DashBoardWrap .DashBoard-chart.height-fix .DashBoard-row .DashBoard-col .DashBoard-box .total-box {background-color: var(--color-neutral-20); border-radius: 0.8rem; height: 100%;}
+.DashBoardWrap .DashBoard-chart.height-fix .DashBoard-row .DashBoard-col .DashBoard-box .total-box {background-color: var(--color-neutral-20); border-radius: 0.8rem; height: calc(100% - 4.0rem); display: flex; justify-content: center; align-items: center;}
 .DashBoardWrap .DashBoard-chart.height-fix .DashBoard-row .DashBoard-col .DashBoard-box .total-box li .total-list li {display: flex; width: 100%; justify-content: center; font-size: 1.8rem; color: var(--color-neutral-80); padding: 2.0rem; } 
 .DashBoardWrap .DashBoard-chart.height-fix .DashBoard-row .DashBoard-col .DashBoard-box .total-box li .total-list li.tit00 {font-size: 2.0rem; font-weight: 700;}
 .DashBoardWrap .DashBoard-chart.height-fix .DashBoard-row .DashBoard-col .DashBoard-box .total-box li .total-list li.tit01 {font-size: 3.6rem; color: var(--color-darkblue-100); font-weight: 700;}
 .DashBoardWrap .DashBoard-chart.height-fix .DashBoard-row .DashBoard-col .DashBoard-box .total-box li .total-list li.tit01-1 {font-size: 3.6rem; color: var(--color-darkblue-80); font-weight: 700;}
 .DashBoardWrap .DashBoard-chart.height-fix .DashBoard-row .DashBoard-col .DashBoard-box .total-box li .total-list li span {color: var(--color-lightblue-100); font-size: 1.8rem; padding: 0 1.0rem;}
 
-.DashBoardWrap .DashBoard-chart.height-fix .DashBoard-row .DashBoard-col .DashBoard-box .total-box li .total-list li span .icon-up img {fill: var(--color-lightblue-100); width: 2.0rem;}
+.DashBoardWrap .DashBoard-chart.height-fix .DashBoard-row .DashBoard-col .DashBoard-box .total-box li .total-list li span .icon-up {background: url(../images/icon-percent-up.svg) center center no-repeat; background-size: 2.0rem; background-position: 50% 50%;}
+.DashBoardWrap .DashBoard-chart.height-fix .DashBoard-row .DashBoard-col .DashBoard-box .total-box li .total-list li span .icon-down {background: url(../images/icon-percent-down.svg) center center no-repeat; background-size: 2.03rem; background-position: 50% 50%;}
 
 /* 리포트 프로세스*/
 .process-btns{position:relative;margin-bottom:1.5rem}

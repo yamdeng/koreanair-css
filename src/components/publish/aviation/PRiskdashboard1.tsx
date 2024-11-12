@@ -141,7 +141,10 @@ function PRiskdashboard1() {
                                         <li className="tit00">Total</li>
                                         <li className="tit01">405</li>
                                         <li>
-                                          전년대비 <span>21.8%</span>
+                                          전년대비
+                                          <span>
+                                            21.8%<span className="icon-down"></span>
+                                          </span>
                                         </li>
                                       </ul>
                                     </li>
@@ -150,7 +153,10 @@ function PRiskdashboard1() {
                                         <li className="tit00">Confidential</li>
                                         <li className="tit01-1">162</li>
                                         <li>
-                                          전년대비 <span>12.4%</span>
+                                          전년대비
+                                          <span>
+                                            12.4%<span className="icon-down"></span>
+                                          </span>
                                         </li>
                                       </ul>
                                     </li>
@@ -162,9 +168,7 @@ function PRiskdashboard1() {
                                           전년대비
                                           <span>
                                             27.0%
-                                            <span className="icon-up">
-                                              <img src={iconup} />
-                                            </span>
+                                            <span className="icon-up"></span>
                                           </span>
                                         </li>
                                       </ul>
