@@ -2037,3 +2037,12 @@ border: 1px solid red !important;
 
 /*사진파일첨부 사진사이즈*/
 .imgsize .ant-upload-list.ant-upload-list-picture-card .ant-upload-list-item-container {width: 30.0rem !important; height: 30.0rem !important;}
+
+/*에러 페이지*/
+.contents .contents-box .error-box {width: 100%; height: 100%; display: flex; justify-content: center; align-items: center; padding: 0; background: url(../images/KAL_motif_bg.svg)center center no-repeat;}
+.contents .contents-box .error-box li {font-size: 2.0rem; color: var(--color-darkblue-100); text-align: center; padding: 0.5rem 0;}
+.contents .contents-box .error-box li.tit {font-size: 3.0rem; font-weight: 700;}
+.contents .contents-box .error-box li button {padding: 0.8rem 2.0rem; border: 0.1rem solid var(--color-darkblue-100); border-radius: 0.8rem; font-size: 1.6rem; color: var(--color-darkblue-100);}
+.contents .contents-box .error-box li:nth-of-type(1) {background: url(../images/error.svg) center center no-repeat; width: 100%; height: 9.6rem; background-size: 9.6rem; font-size: 0;}
+.contents .contents-box .error-box li:nth-of-type(2) {padding: 1.0rem 0 3.0rem 0;}
+.contents .contents-box .error-box li:nth-of-type(4) {padding-bottom: 3.0rem;}
