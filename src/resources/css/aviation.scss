@@ -228,6 +228,10 @@ meter::-webkit-meter-optimum-value {
 .DashBoardWrap .DashBoard-chart.height-fix .DashBoard-row .DashBoard-col .DashBoard-box .total-box li .total-list li span .icon-up {background: url(../images/icon-percent-up.svg) center center no-repeat; background-size: 2.0rem; background-position: 50% 50%;}
 .DashBoardWrap .DashBoard-chart.height-fix .DashBoard-row .DashBoard-col .DashBoard-box .total-box li .total-list li span .icon-down {background: url(../images/icon-percent-down.svg) center center no-repeat; background-size: 2.03rem; background-position: 50% 50%;}
 
+/* 장비관리 > 대시보드 */
+.equipMgmt_custom .DashBoard-col {overflow-x:auto;}
+.equipMgmt_custom .DashBoard-col .DashBoard-box {width:10000px;}
+
 /* 리포트 프로세스*/
 .process-btns{position:relative;margin-bottom:1.5rem}
 .process-btns > button{margin:0 0.5rem}
