@@ -1059,7 +1059,7 @@ meter::-webkit-meter-optimum-value {
   .grid-item .main-photo-btn li{display:inline-block;font-size: 0; margin: 0 0.2rem; cursor: pointer;background-color:var(--color-darkblue-40);border-radius:99.9rem;width:1.0rem;height:1.0rem}
   .grid-item .main-photo-btn li.active{background-color:var(--color-darkblue-100);width:2.0rem}
 
-  .grid-item:nth-of-type(1){display:flex;grid-column-start:1;grid-column-end:span 3;grid-gap:2.4rem;border:0;background:none;padding:0}
+  .grid-item:nth-of-type(1){display:flex;grid-column-start:1;grid-column-end:span 3;grid-gap:2rem;border:0;background:none;padding:0}
 
   .grid-item .grid-group:nth-of-type(1) .slick-slider{position:relative;display:flex;overflow:hidden;width:100%;border:0rem solid var(--color-neutral-40)}
   .grid-item .grid-group:nth-of-type(1) .slick-slider .slick-list{width:calc(100% - 2rem);}
@@ -1087,10 +1087,10 @@ meter::-webkit-meter-optimum-value {
   .grid-item .grid-group:nth-of-type(1) .risk-conts-area .risk-box .risk-bottom .sort-box li + li{margin-left:0.6rem}
 
   .grid-item .grid-group:nth-of-type(2){width: 40%;}
-  .grid-item .grid-group:nth-of-type(2) .main-conts-graph{display:flex;width:100%;justify-content:center;align-items: center;box-sizing:border-box;border-bottom:dotted 1.5px var(--color-neutral-40);height: calc(100% - 21rem);min-height: 16rem;}
+  .grid-item .grid-group:nth-of-type(2) .main-conts-graph{display:flex;width:100%;justify-content:center;align-items: center;box-sizing:border-box;border-bottom:dotted 1.5px var(--color-neutral-40);height:auto;min-height: 16rem;}
   .grid-item .grid-group:nth-of-type(2) .main-conts-graph .graph-box{position:relative;width:100%;height:100%;display: flex;justify-content: center;align-items: center;}
   //.grid-item .grid-group:nth-of-type(2) .main-conts-graph .graph-box img{width:100%;height:16.5rem;/*object-fit:cover;*/background-size: cover;/*border-radius: 0.8rem;*/}
-  .grid-item .grid-group:nth-of-type(2) .main-conts-graph .graph-box canvas{width:auto; height: 100%; position: absolute; padding:1.0rem}
+  .grid-item .grid-group:nth-of-type(2) .main-conts-graph .graph-box canvas{width:100%; height: auto; position: absolute;}
   /*.grid-item .grid-group:nth-of-type(2) .main-conts-graph .graph-box + .graph-box{margin-left:1.7rem;}*/
   //.grid-item .grid-group:nth-of-type(2) .main-conts-graph:last-child{padding-bottom:0;border-bottom:0;padding-top:2rem}
 
