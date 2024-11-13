@@ -18,8 +18,10 @@ border: 1px solid red !important;
 
   min-width: 32.0rem;
   width: 100%;
+  max-width:144rem;
   // position: fixed;
   left: 0;
+  margin:0 auto;
 }
 .adminwrap{
   display: flex;
@@ -31,6 +33,7 @@ border: 1px solid red !important;
   display: block;
   position: fixed; 
   top: 0; 
+  left:0;
   min-width: 32.0rem;
   width: 100%; 
   /*max-width: 1920px;*/
