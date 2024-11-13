@@ -41,12 +41,18 @@ border: 1px solid red !important;
   /*border-bottom: 0.3rem solid var(--color-darkblue-100);*/
   border-bottom: 0.3rem solid var(--color-darkblue-100);
   z-index: 10;
-  padding: 0 2.4rem;
   background-color: var(--color-neutral-10); 
+}
+.header .header-wrap {
+  position:relative;
+  width:100%;
+  max-width:144rem;
+  height:100%;
+  margin:0 auto;
 }
 .header .logo {
   float: left;
-  width: 30rem;
+  width: 25rem;
 }
 .header .logo .menu {
   display: flex;
@@ -108,11 +114,11 @@ border: 1px solid red !important;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 2.8rem 0;
+  margin: 3.3rem 0;
 }
 .header .GNB .gnb-list li {
   float: left;
-  margin: 0 0.8rem;
+  margin: 0 0.2rem;
   padding: 0 2.0rem;
 }
 .header .GNB .gnb-list li a{
@@ -190,7 +196,7 @@ border: 1px solid red !important;
   //height: calc(100vh - 0rem);
   /*margin-top: 8.0rem;*/
   width: 100%;
-  max-width: 29rem;
+  max-width: 26rem;
   z-index: 9;
   overflow: hidden auto;
 }
@@ -304,7 +310,6 @@ border: 1px solid red !important;
   background:var(--color-neutral-30)
 }
 .LNB_list {
-  padding: 1.2rem 2rem;
   width: 100%;
   overflow-y: auto;
   height: calc(100dvh - 8.8rem);

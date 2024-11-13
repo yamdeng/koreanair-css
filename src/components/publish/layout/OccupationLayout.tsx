@@ -19,82 +19,84 @@ export default function OccupationLayout() {
   return (
     <div className="wrap">
       <header className="header">
-        <div className="logo">
-          <div className="menu" onClick={toggleLeftMenu}>
-            <a href="javascript:void(0);">
-              <img src={iconMenuFriesImage} />
-            </a>
+        <div className="header-wrap">
+          <div className="logo">
+            <div className="menu" onClick={toggleLeftMenu}>
+              <a href="javascript:void(0);">
+                <img src={iconMenuFriesImage} />
+              </a>
+            </div>
+            <div className="top-logo">
+              <a href="javascript:void(0);">
+                <img src={koreanairSymbolImage} />
+                <span>산업안전</span>
+              </a>
+            </div>
           </div>
-          <div className="top-logo">
-            <a href="javascript:void(0);">
-              <img src={koreanairSymbolImage} />
-              <span>산업안전</span>
-            </a>
-          </div>
-        </div>
 
-        <div className="GNB">
-          <ul className="gnb-list">
-            <li>
-              <a className="active" href="javascript:void(0);">
-                Report
-              </a>
-            </li>
-            <li>
-              <a href="javascript:void(0);">Policy</a>
-            </li>
-            <li>
-              <a href="javascript:void(0);">SRM</a>
-            </li>
-            <li>
-              <a href="javascript:void(0);">Assurance</a>
-            </li>
-            <li>
-              <a href="javascript:void(0);">Promotion</a>
-            </li>
-            <li>
-              <a href="javascript:void(0);">AUDIT</a>
-            </li>
-            <li>
-              <a href="javascript:void(0);">Admin</a>
-            </li>
-          </ul>
-        </div>
-        <div className="util">
-          <ul className="util-list">
-            <li className="util-icon">
-              <ul>
-                <li>
-                  <a href="javascript:void(0);">
-                    <img src={iconSearchImage} />
-                  </a>
-                </li>
-                <li>
-                  <a href="javascript:void(0);">
-                    <img src={iconAlarmImage} />
-                  </a>
-                </li>
-                <li>
-                  <a href="javascript:void(0);">
-                    <img src={iconSettingImage} />
-                  </a>
-                </li>
-              </ul>
-            </li>
-            <li className="btn">
-              <a href="javascript:void(0);">
-                <span>Aviation</span>
-              </a>
-              <a href="javascript:void(0);">
-                <span className="active">Occupational</span>
-              </a>
-            </li>
-          </ul>
-        </div>
-        {/* 상단 검색창활성화 - active */}
-        <div className="main-search">
-          <div className="form-group main-searchbox wid100">
-            <AppSearchInput label="" />
+          <div className="GNB">
+            <ul className="gnb-list">
+              <li>
+                <a className="active" href="javascript:void(0);">
+                  Report
+                </a>
+              </li>
+              <li>
+                <a href="javascript:void(0);">Policy</a>
+              </li>
+              <li>
+                <a href="javascript:void(0);">SRM</a>
+              </li>
+              <li>
+                <a href="javascript:void(0);">Assurance</a>
+              </li>
+              <li>
+                <a href="javascript:void(0);">Promotion</a>
+              </li>
+              <li>
+                <a href="javascript:void(0);">AUDIT</a>
+              </li>
+              <li>
+                <a href="javascript:void(0);">Admin</a>
+              </li>
+            </ul>
+          </div>
+          <div className="util">
+            <ul className="util-list">
+              <li className="util-icon">
+                <ul>
+                  <li>
+                    <a href="javascript:void(0);">
+                      <img src={iconSearchImage} />
+                    </a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0);">
+                      <img src={iconAlarmImage} />
+                    </a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0);">
+                      <img src={iconSettingImage} />
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li className="btn">
+                <a href="javascript:void(0);">
+                  <span>Aviation</span>
+                </a>
+                <a href="javascript:void(0);">
+                  <span className="active">Occupational</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+          {/* 상단 검색창활성화 - active */}
+          <div className="main-search">
+            <div className="form-group main-searchbox wid100">
+              <AppSearchInput label="" />
+            </div>
           </div>
         </div>
       </header>

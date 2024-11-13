@@ -80,217 +80,219 @@ export default function AviationLayout() {
   return (
     <div className="wrap">
       <header className="header">
-        <div className="logo">
-          <div className="menu" onClick={toggleLeftMenu}>
-            <a href="javascript:void(0);">
-              <img src={iconMenuFriesImage} />
-            </a>
-          </div>
-          <div className="top-logo">
-            <a href="javascript:void(0);">
-              <img src={koreanairSymbolImage} />
-              <span>SafeNet<div className="plus_icon">+</div></span>
-            </a>
-          </div>
-        </div>
-
-        <div className="GNB">
-          <ul className="gnb-list">
-            <li>
-              <a className="active" href="javascript:void(0);">
-                Report
+        <div className="header-wrap">
+          <div className="logo">
+            <div className="menu" onClick={toggleLeftMenu}>
+              <a href="javascript:void(0);">
+                <img src={iconMenuFriesImage} />
               </a>
-            </li>
-            <li>
-              <a href="javascript:void(0);">Policy</a>
-            </li>
-            <li>
-              <a href="javascript:void(0);">SRM</a>
-            </li>
-            <li>
-              <a href="javascript:void(0);">Assurance</a>
-            </li>
-            <li>
-              <a href="javascript:void(0);">Promotion</a>
-            </li>
-            <li>
-              <a href="javascript:void(0);">AUDIT</a>
-            </li>
-            <li>
-              <a href="javascript:void(0);">Admin</a>
-            </li>
-          </ul>
-        </div>
-        <div className="util">
-          <ul className="util-list">
-            <li className="util-icon">
-              <ul>
-                <li>
-                  <a href="javascript:void(0);">
-                    <img src={iconSearchImage} />
-                  </a>
-                </li>
-                <li>
-                  <a href="javascript:void(0);">
-                    <img src={iconAlarmImage} alt="알림" />
-                  </a>
-                </li>
-                <li>
-                  <a href="javascript:void(0);">
-                    <img src={iconSettingImage} alt="관리자" />
-                  </a>
-                  {/*사용자설정 */}
-                  <div className="Info-list">
-                    <ul className="Info-menu">
-                      <li>
-                        <div className="radio-wrap main">
-                          <label>
-                            <input type="radio" checked />
-                            <span>국문</span>
-                          </label>
-                          <label>
-                            <input type="radio" />
-                            <span>영문</span>
-                          </label>
-                        </div>
-                      </li>
-                      <li>
-                        <a href="javascript:void(0);">
-                          <i className="ico">
-                            <img src={iconMypageImage} alt="마이페이지" />
-                          </i>
-                          마이페이지
-                        </a>
-                      </li>
-                      <li>
-                        <a href="javascript:void(0);">
-                          <i className="ico">
-                            <img src={iconSettingImage} alt="환경설정" />
-                          </i>
-                          환경설정
-                        </a>
-                      </li>
-                      <li>
-                        <a href="javascript:void(0);">
-                          <i className="ico">
-                            <img src={iconAlarmImage} alt="알림" />
-                          </i>
-                          알림
-                        </a>
-                      </li>
-                      <li>
-                        <a href="javascript:void(0);">
-                          <i className="ico">
-                            <img src={iconLogoutImage} alt="로그아웃" />
-                          </i>
-                          로그아웃
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
-                  {/*//사용자설정 */}
+            </div>
+            <div className="top-logo">
+              <a href="javascript:void(0);">
+                <img src={koreanairSymbolImage} />
+                <span>SafeNet<div className="plus_icon">+</div></span>
+              </a>
+            </div>
+          </div>
 
-                  {/*알림설정 */}
-                  <div className="alarm-list" style={{ display: 'none' }}>
-                    <h3 className="pop_title">알림</h3>
+          <div className="GNB">
+            <ul className="gnb-list">
+              <li>
+                <a className="active" href="javascript:void(0);">
+                  Report
+                </a>
+              </li>
+              <li>
+                <a href="javascript:void(0);">Policy</a>
+              </li>
+              <li>
+                <a href="javascript:void(0);">SRM</a>
+              </li>
+              <li>
+                <a href="javascript:void(0);">Assurance</a>
+              </li>
+              <li>
+                <a href="javascript:void(0);">Promotion</a>
+              </li>
+              <li>
+                <a href="javascript:void(0);">AUDIT</a>
+              </li>
+              <li>
+                <a href="javascript:void(0);">Admin</a>
+              </li>
+            </ul>
+          </div>
+          <div className="util">
+            <ul className="util-list">
+              <li className="util-icon">
+                <ul>
+                  <li>
+                    <a href="javascript:void(0);">
+                      <img src={iconSearchImage} />
+                    </a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0);">
+                      <img src={iconAlarmImage} alt="알림" />
+                    </a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0);">
+                      <img src={iconSettingImage} alt="관리자" />
+                    </a>
+                    {/*사용자설정 */}
+                    <div className="Info-list">
+                      <ul className="Info-menu">
+                        <li>
+                          <div className="radio-wrap main">
+                            <label>
+                              <input type="radio" checked />
+                              <span>국문</span>
+                            </label>
+                            <label>
+                              <input type="radio" />
+                              <span>영문</span>
+                            </label>
+                          </div>
+                        </li>
+                        <li>
+                          <a href="javascript:void(0);">
+                            <i className="ico">
+                              <img src={iconMypageImage} alt="마이페이지" />
+                            </i>
+                            마이페이지
+                          </a>
+                        </li>
+                        <li>
+                          <a href="javascript:void(0);">
+                            <i className="ico">
+                              <img src={iconSettingImage} alt="환경설정" />
+                            </i>
+                            환경설정
+                          </a>
+                        </li>
+                        <li>
+                          <a href="javascript:void(0);">
+                            <i className="ico">
+                              <img src={iconAlarmImage} alt="알림" />
+                            </i>
+                            알림
+                          </a>
+                        </li>
+                        <li>
+                          <a href="javascript:void(0);">
+                            <i className="ico">
+                              <img src={iconLogoutImage} alt="로그아웃" />
+                            </i>
+                            로그아웃
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                    {/*//사용자설정 */}
 
-                    {/*검색영역 */}
-                    <div className="boxForm">
-                      <div className="form-table">
-                        <div className="form-cell wid50">
-                          <div className="btn-area">
-                            <button type="button" name="button" className="btn-sm btn_text btn-darkblue-line">
-                              모두
-                            </button>
-                            <button type="button" name="button" className="btn-sm btn_text btn-darkblue-line">
-                              읽지않음
-                            </button>
-                            <button type="button" name="button" className="menu-more">
-                              <span className="hide">더보기</span>
-                            </button>
-                            {/*툴팁 */}
-                            <div className="tip">
-                              <span className="tooltiptext tooltip-right">
-                                <button type="button">모두 읽지않은 상태로 표시</button>
-                              </span>
+                    {/*알림설정 */}
+                    <div className="alarm-list" style={{ display: 'none' }}>
+                      <h3 className="pop_title">알림</h3>
+
+                      {/*검색영역 */}
+                      <div className="boxForm">
+                        <div className="form-table">
+                          <div className="form-cell wid50">
+                            <div className="btn-area">
+                              <button type="button" name="button" className="btn-sm btn_text btn-darkblue-line">
+                                모두
+                              </button>
+                              <button type="button" name="button" className="btn-sm btn_text btn-darkblue-line">
+                                읽지않음
+                              </button>
+                              <button type="button" name="button" className="menu-more">
+                                <span className="hide">더보기</span>
+                              </button>
+                              {/*툴팁 */}
+                              <div className="tip">
+                                <span className="tooltiptext tooltip-right">
+                                  <button type="button">모두 읽지않은 상태로 표시</button>
+                                </span>
+                              </div>
+                              {/*//툴팁 */}
                             </div>
-                            {/*//툴팁 */}
                           </div>
                         </div>
                       </div>
-                    </div>
-                    {/* //검색영역 */}
-                    <div className="alarm-conts">
-                      {/*리스트영역 */}
-                      <div className="alarmlist-wrap">
-                        <div className="alarmlist">
-                          <dl>
-                            <dt>
-                              MSR-draft-115508 보고서 미제출 안내
-                              <span className="commt">하루 전</span>
-                            </dt>
-                            <dd>
-                              MSR-draft-115508의 보고서 저장 후 제출되지 않은 상태입니다. 보고서를 제출 해 주시기
-                              바랍니다.
-                            </dd>
-                          </dl>
-                          <dl>
-                            <dt>
-                              MSR-draft-115508 보고서 미제출 안내
-                              {/*non붙이면 -> 회색컬러 */}
-                              <span className="commt non">하루 전</span>
-                            </dt>
-                            <dd>
-                              MSR-draft-115508의 보고서 저장 후 제출되지 않은 상태입니다. 보고서를 제출 해 주시기
-                              바랍니다.
-                            </dd>
-                          </dl>
-                          <dl>
-                            <dt>
-                              MSR-draft-115508 보고서 미제출 안내
-                              <span className="commt">하루 전</span>
-                            </dt>
-                            <dd>
-                              MSR-draft-115508의 보고서 저장 후 제출되지 않은 상태입니다. 보고서를 제출 해 주시기
-                              바랍니다.
-                            </dd>
-                          </dl>
-                          <dl>
-                            <dt>
-                              MSR-draft-115508 보고서 미제출 안내
-                              <span className="commt">하루 전</span>
-                            </dt>
-                            <dd>
-                              MSR-draft-115508의 보고서 저장 후 제출되지 않은 상태입니다. 보고서를 제출 해 주시기
-                              바랍니다.
-                            </dd>
-                          </dl>
+                      {/* //검색영역 */}
+                      <div className="alarm-conts">
+                        {/*리스트영역 */}
+                        <div className="alarmlist-wrap">
+                          <div className="alarmlist">
+                            <dl>
+                              <dt>
+                                MSR-draft-115508 보고서 미제출 안내
+                                <span className="commt">하루 전</span>
+                              </dt>
+                              <dd>
+                                MSR-draft-115508의 보고서 저장 후 제출되지 않은 상태입니다. 보고서를 제출 해 주시기
+                                바랍니다.
+                              </dd>
+                            </dl>
+                            <dl>
+                              <dt>
+                                MSR-draft-115508 보고서 미제출 안내
+                                {/*non붙이면 -> 회색컬러 */}
+                                <span className="commt non">하루 전</span>
+                              </dt>
+                              <dd>
+                                MSR-draft-115508의 보고서 저장 후 제출되지 않은 상태입니다. 보고서를 제출 해 주시기
+                                바랍니다.
+                              </dd>
+                            </dl>
+                            <dl>
+                              <dt>
+                                MSR-draft-115508 보고서 미제출 안내
+                                <span className="commt">하루 전</span>
+                              </dt>
+                              <dd>
+                                MSR-draft-115508의 보고서 저장 후 제출되지 않은 상태입니다. 보고서를 제출 해 주시기
+                                바랍니다.
+                              </dd>
+                            </dl>
+                            <dl>
+                              <dt>
+                                MSR-draft-115508 보고서 미제출 안내
+                                <span className="commt">하루 전</span>
+                              </dt>
+                              <dd>
+                                MSR-draft-115508의 보고서 저장 후 제출되지 않은 상태입니다. 보고서를 제출 해 주시기
+                                바랍니다.
+                              </dd>
+                            </dl>
+                          </div>
                         </div>
                       </div>
-                    </div>
-                    {/*//리스트영역 */}
+                      {/*//리스트영역 */}
 
-                    <div className="btn-wrap">
-                      <a href="javascript:void(0);">전체보기</a>
-                    </div>
+                      <div className="btn-wrap">
+                        <a href="javascript:void(0);">전체보기</a>
+                      </div>
 
-                    <span className="pop_close" onClick={closeModal}>
-                      X
-                    </span>
-                  </div>
-                  {/*//알림설정 */}
-                </li>
-              </ul>
-            </li>
-            <li className="btn">
-              <a href="javascript:void(0);">
-                <span className="active">항공안전</span>
-              </a>
-              <a href="javascript:void(0);">
-                <span>산업안전</span>
-              </a>
-            </li>
-          </ul>
+                      <span className="pop_close" onClick={closeModal}>
+                        X
+                      </span>
+                    </div>
+                    {/*//알림설정 */}
+                  </li>
+                </ul>
+              </li>
+              <li className="btn">
+                <a href="javascript:void(0);">
+                  <span className="active">항공안전</span>
+                </a>
+                <a href="javascript:void(0);">
+                  <span>산업안전</span>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
       </header>
       {/* LNB hide 처리 */}
