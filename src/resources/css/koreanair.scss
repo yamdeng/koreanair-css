@@ -2056,13 +2056,26 @@ border: 1px solid red !important;
 .contents .contents-box .error-box li:nth-of-type(4) {padding-bottom: 3.0rem;}
 
 /*앱 페이지*/
-.contents .contents-box .app-box {width: 100%; height: 100%; display: flex; justify-content: center; align-items: center; padding: 0; background: url(../images/KAL_motif_bg.svg)center center no-repeat;}
-.contents .contents-box .app-box li {font-size: 2.0rem; color: var(--color-darkblue-100); text-align: center; padding: 1.0rem 0;}
+.app-box {
+  width: 100%; 
+  height: 100dvh; 
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  padding: 0; 
+  background: url(../images/KAL_motif_bg.svg)center center no-repeat;
+}
+.app-box li {
+  font-size: 2.6rem; 
+  color: var(--color-darkblue-100); 
+  text-align: center; 
+  padding: 1.0rem 0;
+}
 
-.contents .contents-box .app-box .top-logo {
+.app-box .top-logo {
   position:relative;
   color: var(--color-darkblue-100);
-  font-size: 2.6rem;
+  font-size: 4.6rem;
   font-style: normal;
   font-weight: 700;
   display: flex;
@@ -2070,10 +2083,10 @@ border: 1px solid red !important;
   justify-content: center;
 
 }
-.contents .contents-box .app-box .top-logo .plus_icon {
+.app-box .top-logo .plus_icon {
   position:absolute;
   top:0px;
-  right:7.2rem;
+  right:-2.5rem;
   font-size:3rem;
   width:2rem;
   height:2rem;
