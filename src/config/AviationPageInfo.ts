@@ -45,6 +45,7 @@ import AdminMailEdit from '@/components/publish/aviation/AdminMailEdit';
 import AdminMailDetail from '@/components/publish/aviation/AdminMailDetail';
 import SMSDashBoardList from '@/components/publish/aviation/SMSDashBoardList';
 import SMSDashBoardList2 from '@/components/publish/aviation/SMSDashBoardList2';
+import SMSDashBoardList3 from '@/components/publish/aviation/SMSDashBoardList3';
 import SMSmaturitylevelDashBoard from '@/components/publish/aviation/SMSmaturitylevelDashBoard';
 import SMSintellectualList from '@/components/publish/aviation/SMSintellectualList';
 import SMSdataList from '@/components/publish/aviation/SMSdataList';
@@ -564,6 +565,13 @@ AviationPageInfo.list = [
     path: 'SMSDashBoardList2',
     description: '',
     success: true,
+  },
+  {
+    title: '[04.안전보증] SMS종합분석현황 > 대시보드 > TOP EVENT 현황',
+    Component: SMSDashBoardList3,
+    path: 'SMSDashBoardList3',
+    description: '',
+    success: false,
   },
   {
     title: '[04.안전보증] SMS종합분석현황 > 종힙분석결과보고서',

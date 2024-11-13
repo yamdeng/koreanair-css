@@ -2169,3 +2169,31 @@ keyframes
 .admin-table tr {border-bottom:  0.1rem solid var(--color-neutral-40);}
 .admin-table tr th {background-color: var(--color-neutral-20);}
 .admin-table tr th, .admin-table tr td {padding: 1.0rem; vertical-align: middle;}
+
+
+/*위험도레벨*/
+.av-RiskLevel-box{display:inline-block;width:100%;gap:0 2.0rem}
+.av-RiskLevel-box .RiskLevel-list{display:flex;width:100%;justify-content: space-between;gap:0 0.5rem}
+.av-RiskLevel-box .RiskLevel-top-box{display:block;justify-content: space-between;width:100%;margin-bottom:1.0rem}
+
+.av-RiskLevel-box .RiskLevel-list .list-box-a{width:100%;height:100%}
+.av-RiskLevel-box .RiskLevel-list .list-box-a > .chk-wrap{width:100%}
+.av-RiskLevel-box .RiskLevel-list .list-box-a > .chk-wrap > label > input:checked + span{color:var(--color-darkblue-100);font-size:1.4rem;width:auto;background: none}
+.av-RiskLevel-box .RiskLevel-list .list-box-a > .chk-wrap > label .txt{text-align:right}
+.av-RiskLevel-box .RiskLevel-list .list-box-a > .chk-wrap > label .txt em{color:var( --color-negative)}
+.av-RiskLevel-box .RiskLevel-list .box-list{position:relative;margin-top:1rem;border:solid 0.1rem var(--color-neutral-40);border-radius:0.8rem;padding:1.5rem;height:65.0rem;overflow-y:auto}
+.av-RiskLevel-box .RiskLevel-list .box-list .list{position:relative;height:100%;margin:3rem 0}
+.av-RiskLevel-box .RiskLevel-list .box-list .list:first-child{margin-top:0}
+.av-RiskLevel-box .RiskLevel-list .box-list .list li{line-height:2.2;text-overflow:ellipsis;white-space:nowrap;overflow:hidden;border-bottom:solid 0.1rem var(--color-neutral-30)}
+.av-RiskLevel-box .RiskLevel-list .box-list .list li.active{font-weight:700;background-color:var(--color-lightblue-10);color:var(--color-darkblue-100)}
+.av-RiskLevel-box .RiskLevel-list .box-list .list li:hover{background-color:var(--color-lightblue-10)}
+.av-RiskLevel-box .RiskLevel-list .list-box-b{width:100%;height:100%}
+.av-RiskLevel-box .RiskLevel-list .list-box-b > .chk-wrap{width:100%}
+.av-RiskLevel-box .RiskLevel-list .list-box-b > .chk-wrap > label > input:checked + span{color:var(--color-darkblue-100);font-size:1.4rem;width:auto;background: none}
+.av-RiskLevel-box .RiskLevel-list .list-box-b > .chk-wrap > label .txt{text-align:right}
+.av-RiskLevel-box .RiskLevel-list .list-box-b > .chk-wrap > label .txt em{color:var( --color-negative)}
+.av-RiskLevel-box .RiskLevel-list .list-box-c{width:100%;height:100%}
+.av-RiskLevel-box .RiskLevel-list .list-box-c > .chk-wrap{width:100%}
+.av-RiskLevel-box .RiskLevel-list .list-box-c > .chk-wrap > label > input:checked + span{color:var(--color-darkblue-100);font-size:1.4rem;width:auto;background: none}
+.av-RiskLevel-box .RiskLevel-list .list-box-c > .chk-wrap > label .txt{text-align:right}
+.av-RiskLevel-box .RiskLevel-list .list-box-c > .chk-wrap > label .txt em{color:var( --color-negative)}
