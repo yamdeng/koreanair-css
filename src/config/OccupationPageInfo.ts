@@ -104,6 +104,7 @@ import POccupationMu6P4list2 from '@/components/publish/occupation/POccupationMu
 import POccupationMu6P4list3 from '@/components/publish/occupation/POccupationMu6P4list3';
 import POccupationMu6P5list from '@/components/publish/occupation/POccupationMu6P5list';
 import Error from '@/components/publish/occupation/Error';
+import apppage from '@/components/publish/occupation/apppage';
 
 const OccupationPageInfo: any = {};
 
@@ -847,6 +848,13 @@ OccupationPageInfo.list = [
     title: '에러페이지',
     Component: Error,
     path: 'Error',
+    description: '',
+    success: true,
+  },
+  {
+    title: '앱페이지',
+    Component: apppage,
+    path: 'apppage',
     description: '',
     success: true,
   },
