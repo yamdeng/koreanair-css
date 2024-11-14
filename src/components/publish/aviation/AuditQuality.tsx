@@ -297,7 +297,7 @@ function AuditQuality() {
               </div>
             </div>
             <div className="graph-area">
-              <div className="">운항 영역</div>
+              <div className="world">운항 영역</div>
               <div className="">객실 영역</div>
               <div className="">그리드</div>
             </div>
