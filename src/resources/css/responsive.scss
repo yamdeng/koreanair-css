@@ -1524,11 +1524,17 @@
 /* 조회 1단 고정 */
 .search_1row_static_grid {height:calc(100% - 29rem);}.search_1row_static_grid .ag-theme-quartz {height:calc(100% - 4rem) !important;}
 
+/* 조회 1단 고정 + 플로우 */
+.search_1row_static_f_grid {height:calc(100% - 37.8rem);}.search_1row_static_f_grid .ag-theme-quartz {height:calc(100% - 4rem) !important;}
+
 /* 조회 2단 고정 */
 .search_2row_static_grid {height:calc(100% - 34.1rem);}.search_2row_static_grid .ag-theme-quartz {height:calc(100% - 4rem) !important;}
 
 /* 조회 3단 고정 */
 .search_3row_static_grid {height:calc(100% - 39.3rem);}.search_3row_static_grid .ag-theme-quartz {height:calc(100% - 4rem) !important;}
+
+
+
 
 /* 조회 2단 가변  */
 .search_2row_expand_grid {height:calc(100% - 24.8rem);}.search_2row_expand_grid.active {height:calc(100% - 36.7rem);}.search_2row_expand_grid .ag-theme-quartz {height:calc(100% - 4rem) !important;}
