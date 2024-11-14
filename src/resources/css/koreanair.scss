@@ -60,6 +60,7 @@ border: 1px solid red !important;
   justify-content: center;
   align-items: center;
   float: left;
+  cursor:pointer;
 }
 .header .logo .top-logo a {
   display:inline-flex;
@@ -187,23 +188,21 @@ border: 1px solid red !important;
 
 
 
-.LNB {
+.LNB,
+.LNB-hide {
+  position:relative;
   display: flex;
   flex-shrink: 0;
-  //flex-direction: row;
-  //height: calc(100vh - 0rem);
-  /*margin-top: 8.0rem;*/
-  width: 100%;
-  max-width: 30rem;
+  width: 30rem;
   z-index: 9;
   overflow: hidden auto;
-}
-.LNB.hide {
-  width: 0;
   transition: width 0.3s ease;
+}
+.LNB-hide {
+  width: 0rem;
   overflow: hidden;
 }
-.LNB.hide .LNB_menu {
+.LNB-hide .LNB_menu {
   display: none;
 }
 .LNB_menu {
@@ -283,12 +282,14 @@ border: 1px solid red !important;
 
 
 .LNB_side {
-  position:relative;
+  position:absolute;
+  top:0rem;
+  right:0rem;
   background-color: var(--color-neutral-10); 
   border-right: 0.1rem solid var(--color-neutral-40);  
  // overflow-y: auto;
   overflow: hidden;
-  width: 100%;
+  width:30rem;
   margin-top: 8.8rem;
   box-sizing: border-box;
   //position: fixed;
