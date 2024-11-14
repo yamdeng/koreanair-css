@@ -376,9 +376,10 @@ input[type=checkbox],input[type=radio]{padding:0;vertical-align:middle;margin-to
 .radio-wrap > label > input:checked + span{color:var(--color-neutral-80);font-size:1.4rem}
 .radio-wrap > label > input + span:before, .radio-wrap > label > input + span:after{content:'';position:absolute;top:50%}
 .radio-wrap > label > input + .type01:before, .radio-wrap > label > input + .type01:after{content:'';position:absolute;top:1.0rem}
-.radio-wrap > label > input + span:before{left:0;width:1.6rem;height:1.6rem;background:transparent;border:0.1rem solid var(--color-neutral-60); border-radius:50%; -webkit-transform:translateY(-50%); transform:translateY(-50%)}
+.radio-wrap > label > input[type="radio"]  + span:before{left:0;width:1.6rem;height:1.6rem;background:transparent;border:0.1rem solid var(--color-darkblue-100); border-radius:50%; -webkit-transform:translateY(-50%); transform:translateY(-50%)}
+.radio-wrap > label > input[type="checkbox"] + span:before{left:0;width:1.6rem;height:1.6rem;background:transparent;border:0.1rem solid var(--color-neutral-60); border-radius:0.2rem; -webkit-transform:translateY(-50%); transform:translateY(-50%)}
 .radio-wrap > label > input[type="checkbox"] + span:after{left:0.7rem;margin-top:-0.3rem;width:0.8rem;height:0.5rem;border:solid var(--color-neutral-60); border-width:0 0 0.1rem 0.1rem; -webkit-transform:rotate(-45deg) translateY(-50%); transform:rotate(-45deg) translateY(-50%)}
-.radio-wrap > label > input[type="radio"] + span:after{left:0.3rem;width:1.0rem;height:1.0rem;border:0.1rem solid var(--color-neutral-60); border-radius:50%; -webkit-transform:translateY(-50%); transform:translateY(-50%)}
+.radio-wrap > label > input[type="radio"] + span:after{left:0.3rem;width:1.0rem;height:1.0rem;border:0.1rem solid transparent; border-radius:50%; -webkit-transform:translateY(-50%); transform:translateY(-50%)}
 .radio-wrap > label > input:checked + span:before{border-color:var(--color-darkblue-100);background:var(--color-neutral-10)}
 .radio-wrap > label > input:checked + span:after{background:var(--color-darkblue-100)}
 .radio-wrap > label > input:checked[type="checkbox"] + span:before{border-color:var(--color-darkblue-100);background:var(--color-darkblue-100)}
@@ -398,12 +399,12 @@ input[type=checkbox],input[type=radio]{padding:0;vertical-align:middle;margin-to
 .radio-wrap-type01 > label > input + span {display:block;color:var(--color-neutral-60);font-size:1.4rem}
 .radio-wrap-type01 > label > input:checked + span{color:var(--color-neutral-80);font-size:1.4rem}
 .radio-wrap-type01 > label > input + span:before, .radio-wrap-type01 > label > input + span:after{content:'';position:absolute;top:50%}
-.radio-wrap-type01 > label > input + span:before{left:0;width:1.6rem;height:1.6rem;background:transparent;border:0.1rem solid var(--color-neutral-60); border-radius:50%; -webkit-transform:translateY(-50%); transform:translateY(-50%)}
+.radio-wrap-type01 > label > input + span:before{left:0;width:1.6rem;height:1.6rem;-webkit-transform:translateY(-50%); transform:translateY(-50%)}
 .radio-wrap-type01 > label > input[type="checkbox"] + span:after{left:0.7rem;margin-top:-0.3rem;width:0.8rem;height:0.5rem;border:solid var(--color-neutral-60); border-width:0 0 0.1rem 0.1rem; -webkit-transform:rotate(-45deg) translateY(-50%); transform:rotate(-45deg) translateY(-50%)}
 .radio-wrap-type01 > label > input[type="radio"] + span:after{left:0.3rem;width:1.0rem;height:1.0rem;border:0.1rem solid var(--color-neutral-60); border-radius:50%; -webkit-transform:translateY(-50%); transform:translateY(-50%)}
 .radio-wrap-type01 > label > input:checked + span:before{border-color:var(--color-darkblue-100);background:var(--color-neutral-10)}
 .radio-wrap-type01 > label > input:checked + span:after{background:var(--color-darkblue-100)}
-.radio-wrap-type01 > label > input:checked[type="checkbox"] + span:before{border-color:var(--color-darkblue-100);background:var(--color-darkblue-100)}
+.radio-wrap-type01 > label > input:checked[type="checkbox"] + span:before{background: #fff url(../images/ico-radio.svg) no-repeat 50% 50%;}
 .radio-wrap-type01 > label > input:checked[type="checkbox"] + span:after{border-color:var(--color-neutral-10)}
 
 
@@ -431,7 +432,7 @@ input[type=checkbox],input[type=radio]{padding:0;vertical-align:middle;margin-to
 .chk-wrap > label > input + span {display:block;color:var(--color-neutral-90);font-size:1.4rem;width:auto;background:none}
 .chk-wrap > label > input:checked + span{color:var(--color-neutral-80);font-size:1.4rem;width:auto;background:none}
 .chk-wrap > label > input + span:before, .chk-wrap > label > input + span:after{content:'';position:absolute;top:50%}
-.chk-wrap > label > input + span:before{left:0;width:1.6rem;height:1.6rem;background:transparent;border:0.1rem solid var(--color-neutral-60);border-radius:50%;-webkit-transform:translateY(-50%);transform:translateY(-50%)}
+.chk-wrap > label > input + span:before{left:0;width:1.6rem;height:1.6rem;background:transparent;border:0.1rem solid var(--color-neutral-60);border-radius:0.2rem;-webkit-transform:translateY(-50%);transform:translateY(-50%)}
 .chk-wrap > label > input[type="checkbox"] + span:after{left:0.7rem;margin-top:-0.3rem;width:0.8rem;height:0.5rem;border:solid var(--color-neutral-60); border-width:0 0 0.1rem 0.1rem; -webkit-transform:rotate(-45deg) translateY(-50%); transform:rotate(-45deg) translateY(-50%)}
 .chk-wrap > label > input[type="radio"] + span:after{left:0.3rem;width:1.0rem;height:1.0rem;border:0.1rem solid var(--color-neutral-60); border-radius:50%; -webkit-transform:translateY(-50%); transform:translateY(-50%)}
 .chk-wrap > label > input:checked + span:before {border-color:var(--color-darkblue-100);background:var(--color-darkblue-100)}

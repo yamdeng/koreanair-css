@@ -567,7 +567,7 @@ AviationPageInfo.list = [
     success: true,
   },
   {
-    title: '[04.안전보증] SMS종합분석현황 > 대시보드 > TOP EVENT 현황',
+    title: '[04.안전보증] SMS종합분석현황 > 대시보드 > TOP EVENT 현황-2',
     Component: SMSDashBoardList3,
     path: 'SMSDashBoardList3',
     description: '',
