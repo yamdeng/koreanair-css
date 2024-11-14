@@ -230,7 +230,7 @@ function SMSDashBoardList3() {
               <label>
                 <input type="checkbox" checked />
                 <span>
-                  Hazard Taxonomy :{' '}
+                  Hazard Taxonomy :
                   <span className="txt">
                     <em>866</em>건
                   </span>
@@ -304,7 +304,7 @@ function SMSDashBoardList3() {
               <label>
                 <input type="checkbox" checked />
                 <span>
-                  Potential Consequence :{' '}
+                  Potential Consequence :
                   <span className="txt">
                     <em>866</em>건
                   </span>
@@ -373,10 +373,27 @@ function SMSDashBoardList3() {
             </div>
           </div>
         </div>
+        {/*탭 */}
+        <div className="menu-tab-nav mt-30">
+          <div className="menu-tab">
+            <a href="javascript:void(0);" className="" data-label="HZR 전사 TOP RISK 분석 현황">
+              HZR 전사 TOP RISK 분석 현황
+            </a>
+            <a href="javascript:void(0);" className="" data-label="TOP EVENT 현황">
+              TOP EVENT 현황
+            </a>
+            <a href="javascript:void(0);" className="active" data-label="위험도레벨">
+              위험도레벨
+            </a>
+            <a href="javascript:void(0);" className="" data-label="Risk">
+              Risk
+            </a>
+          </div>
+        </div>
         <div className="RiskLevel-area">
           <div className="Level-area">
             <div className="LevelTop">
-              <div className="flex-box mt-30">
+              <div className="flex-box">
                 <div className="h5-tit">Risk</div>
                 <span className="total">* 해당기간동안 평가된 횟수</span>
               </div>
