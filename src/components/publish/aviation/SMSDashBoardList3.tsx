@@ -45,8 +45,11 @@ function SMSDashBoardList3() {
           <a href="javascript:void(0);" className="" data-label="TOP EVENT 현황">
             TOP EVENT 현황
           </a>
-          <a href="javascript:void(0);" className="active" data-label="TOP EVENT 현황">
+          <a href="javascript:void(0);" className="active" data-label="위험도레벨">
             위험도레벨
+          </a>
+          <a href="javascript:void(0);" className="" data-label="Risk">
+            Risk
           </a>
         </div>
       </div>
@@ -677,6 +680,196 @@ function SMSDashBoardList3() {
         </div>
       </div>
       {/*//대시보드 */}
+
+      {/* Risk영역만 */}
+      <div className="Level-area">
+        <div className="LevelTop">
+          <div className="flex-box">
+            <div className="h5-tit">Risk</div>
+            <span className="total">* 해당기간동안 평가된 횟수</span>
+          </div>
+          <div className="">
+            <table className="RiskLevelTable Risk">
+              <caption></caption>
+              <colgroup></colgroup>
+              <thead>
+                <tr>
+                  <th rowSpan={2}>
+                    발생
+                    <br />
+                    가능성
+                  </th>
+                  <th colSpan={5}>심각도</th>
+                </tr>
+                <tr>
+                  <th>LevelA</th>
+                  <th>LevelB</th>
+                  <th>LevelC</th>
+                  <th>LevelD</th>
+                  <th>LevelE</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th>5</th>
+                  {/* 선택되면 selected 붙임 */}
+                  <td className="red selected">
+                    5A
+                    {/* 툴팁 */}
+                    <div className="flag-tag tooltip">
+                      <span className="icon-flag txt">233</span>
+                      <div>
+                        <span className="tooltiptext1 tooltip-right">
+                          <ul>
+                            <li>해당기간동안 평가된 횟수</li>
+                          </ul>
+                        </span>
+                      </div>
+                    </div>
+                    <div className="IcoTags">
+                      <span className="ico-tag">추천</span>
+                    </div>
+                  </td>
+                  <td className="level1">
+                    5B
+                    <div className="flag-tag tooltip">
+                      {/* <span className="icon-flag txt">23</span> */}
+                      <div>
+                        <span className="tooltiptext1 tooltip-right">
+                          <ul>
+                            <li>해당기간동안 평가된 횟수</li>
+                          </ul>
+                        </span>
+                      </div>
+                    </div>
+                  </td>
+                  <td className="level1">
+                    5C
+                    <div className="flag-tag tooltip">
+                      {/* <span className="icon-flag txt">99</span> */}
+                      <div>
+                        <span className="tooltiptext1 tooltip-right">
+                          <ul>
+                            <li>해당기간동안 평가된 횟수</li>
+                          </ul>
+                        </span>
+                      </div>
+                    </div>
+                  </td>
+                  <td className="level2">
+                    5D
+                    <div className="flag-tag tooltip">
+                      {/* <span className="icon-flag txt">233</span> */}
+                      <div>
+                        <span className="tooltiptext1 tooltip-right">
+                          <ul>
+                            <li>해당기간동안 평가된 횟수</li>
+                          </ul>
+                        </span>
+                      </div>
+                    </div>
+                    <div className="IcoTags">
+                      <span className="ico-tag">추천</span>
+                    </div>
+                  </td>
+                  <td className="level3">
+                    5E
+                    <div className="IcoTags">
+                      <span className="ico-tag">추천</span>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <th>4</th>
+                  <td className="level1">4A</td>
+                  <td className="level1">
+                    4B
+                    <div className="flag-tag tooltip">
+                      <span className="icon-flag txt">233</span>
+                      <div>
+                        <span className="tooltiptext1 tooltip-right">
+                          <ul>
+                            <li>해당기간동안 평가된 횟수</li>
+                          </ul>
+                        </span>
+                      </div>
+                    </div>
+                  </td>
+                  <td className="level2">4C</td>
+                  <td className="level3">4D</td>
+                  <td className="level4">
+                    4E
+                    <div className="IcoTags">
+                      <span className="ico-tag">추천</span>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <th>3</th>
+                  <td className="level1">3A</td>
+                  <td className="level2">3B</td>
+                  <td className="level3">3C</td>
+                  <td className="level3">3D</td>
+                  <td className="level4">
+                    3E
+                    <div className="flag-tag tooltip">
+                      <span className="icon-flag txt">233</span>
+                      <div>
+                        <span className="tooltiptext1 tooltip-right">
+                          <ul>
+                            <li>해당기간동안 평가된 횟수</li>
+                          </ul>
+                        </span>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <th>2</th>
+                  <td className="level2">2A</td>
+                  <td className="level3">2B</td>
+                  <td className="level3">2C</td>
+                  <td className="level4">
+                    2D
+                    <div className="flag-tag tooltip">
+                      <span className="icon-flag txt">233</span>
+                      <div>
+                        <span className="tooltiptext1 tooltip-right">
+                          <ul>
+                            <li>해당기간동안 평가된 횟수</li>
+                          </ul>
+                        </span>
+                      </div>
+                    </div>
+                  </td>
+                  <td className="level4">2E</td>
+                </tr>
+                <tr>
+                  <th>1</th>
+                  <td className="level2">1A</td>
+                  <td className="level3">1B</td>
+                  <td className="level4">1C</td>
+                  <td className="level4">1D</td>
+                  <td className="level4">
+                    1E
+                    <div className="flag-tag tooltip">
+                      {/* <span className="icon-flag txt">233</span> */}
+                      <div>
+                        <span className="tooltiptext1 tooltip-right">
+                          <ul>
+                            <li>해당기간동안 평가된 횟수</li>
+                          </ul>
+                        </span>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+      {/* Risk영역만 */}
     </>
   );
 }

@@ -2181,7 +2181,7 @@ keyframes
 .av-RiskLevel-box .RiskLevel-list .list-box-a > .chk-wrap > label > input:checked + span{color:var(--color-darkblue-100);font-size:1.4rem;width:auto;background: none}
 .av-RiskLevel-box .RiskLevel-list .list-box-a > .chk-wrap > label .txt{text-align:right}
 .av-RiskLevel-box .RiskLevel-list .list-box-a > .chk-wrap > label .txt em{color:var( --color-negative)}
-.av-RiskLevel-box .RiskLevel-list .box-list{position:relative;margin-top:1rem;border:solid 0.1rem var(--color-neutral-40);border-radius:0.8rem;padding:1.5rem;height:65.0rem;overflow-y:auto}
+.av-RiskLevel-box .RiskLevel-list .box-list{position:relative;margin-top:1rem;border:solid 0.1rem var(--color-neutral-40);border-radius:0.8rem;padding:1.5rem;height:35.0rem;overflow-y:auto}
 .av-RiskLevel-box .RiskLevel-list .box-list .list{position:relative;height:100%;margin:3rem 0}
 .av-RiskLevel-box .RiskLevel-list .box-list .list:first-child{margin-top:0}
 .av-RiskLevel-box .RiskLevel-list .box-list .list li{line-height:2.2;text-overflow:ellipsis;white-space:nowrap;overflow:hidden;border-bottom:solid 0.1rem var(--color-neutral-30)}
@@ -2197,3 +2197,4 @@ keyframes
 .av-RiskLevel-box .RiskLevel-list .list-box-c > .chk-wrap > label > input:checked + span{color:var(--color-darkblue-100);font-size:1.4rem;width:auto;background: none}
 .av-RiskLevel-box .RiskLevel-list .list-box-c > .chk-wrap > label .txt{text-align:right}
 .av-RiskLevel-box .RiskLevel-list .list-box-c > .chk-wrap > label .txt em{color:var( --color-negative)}
+.av-RiskLevel-box  .Level-area-bottom .tableTop {overflow-x: auto;}
