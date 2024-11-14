@@ -266,7 +266,8 @@ function PRiskdashboard1() {
                       <div className="DashBoard-row">
                         <div className="DashBoard-col">
                           <p className="h4">공항 별 Top10</p>
-                          <div className="DashBoard-box"></div>
+                          <span className="date">2024-01-01~2024-01-01</span>
+                          <div className="DashBoard-box">ㄹㅇㄴㄹㅇ</div>
                         </div>
                       </div>
                     </div>
