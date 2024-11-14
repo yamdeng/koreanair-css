@@ -298,7 +298,7 @@ export default function AviationLayout() {
         </div>
       </header>
       {/* LNB hide 처리 */}
-      <div className={displayLeftMenu ? 'LNB' : 'LNB hide'}>
+      <div className={displayLeftMenu ? 'LNB' : 'LNB-hide'}>
         <div className="LNB_menu">
           <div className="m-lnb_top_logo">
             <a href="javascript:void(0);">
