@@ -812,19 +812,26 @@
 .RiskLevelTable td.level3{background-color:var(--color-Leve3)}
 .RiskLevelTable td.level4{background-color:var(--color-Leve4)}
 
-.RiskLevelTable.Risk td{position:relative;font-weight:600;vertical-align:text-top;height:5.5rem}
+.RiskLevelTable.Risk td{position:relative;font-weight:600;vertical-align:text-top;height:5.5rem;padding-top:0.6rem;
+  -webkit-touch-callout: none;
+    -webkit-user-select: none;
+     -khtml-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+}
 .flag-tag1{gap:0 0.5rem}
 .flag-tag .icon-flag{border-radius:99.9rem;padding:0.3rem 0.6rem}
 .flag-tag1 .icon-flag1{border-radius:99.9rem;padding:0.3rem 1.0rem}
 .flag-tag1 .icon-flag1 + .icon-flag1{margin-left:0.3rem}
-.flag-tag .icon-flag.txt{font-family:"KoreanAirSans";font-weight:400;font-size:1.3rem;line-height:1.2rem;color:var(--color-neutral-90);}
+.flag-tag .icon-flag.txt{font-family:"KoreanAirSans";font-weight:400;font-size:1.3rem;line-height:1.2rem;color:var(--color-neutral-90);pointer-events: none;}
 .flag-tag .icon-flag.btn-blue{background-color:#c0eaff;color:var(--color-darkblue-100);border:solid 0.1rem var(--color-darkblue-100);box-shadow:0.2rem 0.5rem 0.5rem rgba(0, 0, 0, 0.1)}
 .flag-tag .icon-flag.btn-wh{padding:0.2rem 1rem;line-height:1.2;color:var(--color-neutral-90)}
 .flag-tag1 .icon-flag1.btn-lightblue{background-color:var(--color-lightblue-40);font-size:1.4rem;line-height:2.8}
 .flag-tag1 .icon-flag1:last-child{margin-right:2rem}
 .flag-tag1 .icon-flag1.active{text-decoration:underline;font-weight:600}
 .flag-tag{position:relative;width:100%}
-.flag-tag.tooltip{cursor:pointer
+.flag-tag.tooltip{cursor:pointer;pointer-events: none;
   //display:flex;
   //float: inline-end;
   //background: url(/src/resources/images/ico-information-i.svg) left center no-repeat;
@@ -852,9 +859,7 @@
 
 .pop-img-size {width: 100%; height: 100%; object-fit:cover;}
 
-.RiskLevelTable.Risk td span{/*display:block;font-size:1.5rem*/}
-//.RiskLevelTable.Risk td:hover{border:solid 0.4rem var(--color-lightblue-10)!important;cursor:pointer}
-.RiskLevelTable.Risk td.selected{border:solid 0.3rem #ffbc00 !important;color:var(--color-neutral-10)}
+.RiskLevelTable.Risk td.selected{box-shadow:inset 0px 5px 18px rgba(0,0,0,0.5);}
 .RiskLevelTable.severity th{height:4.0rem}
 .RiskLevelTable.severity td{vertical-align:top;padding:1rem;text-align:left;line-height:1.4;color:var(--color-neutral-80);border:solid 0.1rem var(--color-neutral-40)}
 .Level-area-bottom > .RiskLevelTable:last-child{display:inline-table;margin-bottom:3rem}
