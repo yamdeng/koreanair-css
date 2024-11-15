@@ -111,14 +111,13 @@ function POccupationMu5P2edit() {
             첨부문서
           </a>
         </div>
-        <div className="btn-area tab-right-btn">
-          <button type="button" name="button" className="btn_text btn_confirm">
-            저장
-          </button>
-        </div>
       </div>
       {/*//탭 */}
-
+      <div className="btn-area tab-right-btn">
+        <button type="button" name="button" className="btn_text btn_confirm">
+          추가
+        </button>
+      </div>
       {/* 입력영역 */}
       <div className="info-wrap toggle">
         <dl className="tg-item active">
@@ -225,7 +224,9 @@ function POccupationMu5P2edit() {
                         <div className="ck-list mwid60 h-fix">
                           <h3 className="table-tit">추진팀 구성</h3>
                           {/* 그리드 class명 grid-fix */}
-                          <AppTable className="grid-fix" rowData={rowData} columns={columns} />
+                          <div className="grid-height">
+                            <AppTable className="grid-fix" rowData={rowData} columns={columns} />
+                          </div>
                         </div>
                         <div className="ck-edit mwid40">
                           <div className="boxForm">
@@ -344,9 +345,11 @@ function POccupationMu5P2edit() {
                         <div className="ck-list mwid60 h-fix01">
                           <h3 className="table-tit">추진팀 구성</h3>
                           {/* 그리드 class명 grid-fix */}
-                          <AppTable className="grid-fix" rowData={rowData} columns={columns} />
+                          <div className="grid-height">
+                            <AppTable className="grid-fix" rowData={rowData} columns={columns} />
+                          </div>
                         </div>
-                        <div className="ck-edit mwid40">
+                        <div className="ck-edit height-fix mwid40">
                           <div className="boxForm">
                             <div className="form-table">
                               <div className="form-cell wid100">
