@@ -1180,7 +1180,7 @@ meter::-webkit-meter-optimum-value {
 
   /* 서브 메인 레이아웃*/
   .av-submain{position:relative;width:100%;height:100%}
-  .av-submain .av-submain-bg{width:100%;height:100%;background: url(../images/air.png) center center no-repeat;background-size:cover; padding:2.4rem;}
+  .av-submain .av-submain-bg{width:calc(100% + 4rem);height:calc(100% + 4rem); margin:-2rem 0 0 -2rem;background: url(../images/air.png) center center no-repeat;background-size:cover; padding:2.4rem;}
   .av-submain .av-submain-bg .av-submain-wrap .line-bg{position:relative;width:100%;border-top:dotted 0.4rem var(--color-neutral-40);margin-top:1rem}
   .av-submain .av-submain-bg .av-submain-wrap .line-bg .img{position:absolute;top:-1rem;left:0;background: url(../images/airplane.svg) center center no-repeat; background-size: 1.8rem; vertical-align: middle;background-position: 50% 50%; width: 1.8rem; height: 1.8rem; transition-timing-function: linear}
   .av-submain .av-submain-bg .av-submain-wrap .h3-tit{display:inline-block;width:100%;font-size:7.0rem;height:6rem;font-weight:700;color:var(--color-neutral-40);letter-spacing:-0.5rem;text-align:left;padding-right:2rem}
