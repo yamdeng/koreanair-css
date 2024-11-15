@@ -202,7 +202,8 @@ border: 1px solid red !important;
   width: 0rem;
   overflow: hidden;
 }
-.LNB-hide .LNB_menu {
+.LNB-hide .LNB_menu,
+.LNB-hide .LNB_side {
   display: none;
 }
 .LNB_menu {
