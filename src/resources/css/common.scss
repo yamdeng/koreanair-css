@@ -1203,3 +1203,50 @@ input, select{font-family:'KoreanAirSans'}
 //.ag-aria-description-container {height: auto !important; position: initial;}
 
 .ag-header-group-text {color: var(--color-darkblue-100);}
+
+
+// 스크롤 바 스타일
+.ag-body-vertical-scroll,
+.ag-body-vertical-scroll-viewport {
+  width:15px !important;
+  max-width:15px !important;
+  min-width:15px !important;
+}
+.ag-body-horizontal-scroll,
+.ag-body-horizontal-scroll-viewport {
+  height:15px !important;
+  max-height:15px !important;
+  min-height:15px !important;
+}
+.LNB_list::-webkit-scrollbar,
+.contents-box::-webkit-scrollbar,
+.ag-body-vertical-scroll-viewport::-webkit-scrollbar,
+.ag-body-horizontal-scroll-viewport::-webkit-scrollbar  {
+	width:15px;
+	height:15px;
+}
+.LNB_list::-webkit-scrollbar-track,
+.contents-box::-webkit-scrollbar-track,
+.ag-body-vertical-scroll-viewport::-webkit-scrollbar-track,
+.ag-body-horizontal-scroll-viewport::-webkit-scrollbar-track {
+	background-color:transparent;
+}
+.LNB_list::-webkit-scrollbar-thumb,
+.contents-box::-webkit-scrollbar-thumb,
+.ag-body-vertical-scroll-viewport::-webkit-scrollbar-thumb,
+.ag-body-horizontal-scroll-viewport::-webkit-scrollbar-thumb {
+	background-color:var(--color-darkblue-40);
+	border-radius:10px;
+	border:5px solid var(--color-neutral-10);
+}
+.LNB_list::-webkit-scrollbar-thumb {background-color:var(--color-darkblue-10);}
+
+.LNB_list::-webkit-scrollbar-thumb:hover,
+.contents-box::-webkit-scrollbar-thumb:hover,
+.ag-body-vertical-scroll-viewport::-webkit-scrollbar-thumb:hover,
+.ag-body-horizontal-scroll-viewport::-webkit-scrollbar-thumb:hover {
+	background-color:var(--color-darkblue-60);
+	border-radius:10px;
+	border:2px solid var(--color-neutral-10);
+}
+.LNB_list::-webkit-scrollbar-thumb:hover {background-color:var(--color-darkblue-20)}
