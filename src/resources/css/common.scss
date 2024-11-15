@@ -289,16 +289,19 @@ body::-webkit-scrollbar {
 .contents legend{visibility:hidden;height:0;line-height:0}
 .required{color:var(--color-negative)}
 .table-tit .required {color:var(--color-negative); vertical-align: text-top;}
+.wid-10{width:1.0rem}
 .wid10{width:10%}
 .wid20{width:20%}
 .wid25{width:25%}
 .wid30{width:30%}
 .wid35{width:35%}
+.wid35-ipt {width:35% !important}
 .wid40{width:40%}
 .wid45{width:45%}
 .wid50{width:50%}
 .wid60{width:60%}
 .wid70{width:70%}
+.wid75{width:75% !important}
 .wid80{width:80%}
 .wid100{width:100% !important}
 .wid-150{width:15.0rem;}
