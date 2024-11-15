@@ -224,7 +224,10 @@ function POccupationMu5P2edit() {
                       <div className="ck-edit-box">
                         <div className="ck-list mwid65">
                           <h3 className="table-tit">추진팀 구성</h3>
-                          그리드영역
+                          <div className="h-fix">
+                            {/* 그리드 class명 grid-fix */}
+                            <AppTable className="grid-fix" rowData={rowData} columns={columns} />
+                          </div>
                         </div>
                         <div className="ck-edit mwid35">
                           <div className="boxForm">
@@ -342,7 +345,7 @@ function POccupationMu5P2edit() {
                       <div className="ck-edit-box">
                         <div className="ck-list">
                           <h3 className="table-tit">평가항목 선정</h3>
-                          그리드영역
+                          <div className="h-fix">{/* 그리드 class명 grid-fix */}그리드영역</div>
                         </div>
                       </div>
                     </div>
