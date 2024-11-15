@@ -214,13 +214,13 @@ function POccupationMu5P2edit() {
                     </div>
                   </div>
                   <div className="form-table">
-                    <div className="form-cell wid50">
+                    <div className="form-cell wid100">
                       <div className="ck-edit-box">
-                        <div className="ck-list">
+                        <div className="ck-list wid75">
                           <h3 className="table-tit">추진팀 구성</h3>
                           그리드영역
                         </div>
-                        <div className="ck-edit">
+                        <div className="ck-edit wid35-ipt">
                           <div className="boxForm">
                             <div className="form-table">
                               <div className="form-cell wid100">
