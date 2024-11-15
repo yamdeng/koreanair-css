@@ -242,17 +242,19 @@ function HomePortal1() {
                               <div className="subtitle-bg">
                                 <div className="subtitle-box">
                                   <span>정성목표</span>
-                                  <ul>
-                                    <li>대한항공 임직원의 안전하고 쾌적한 근무 환경 조성</li>
-                                    <li>위험성평가 중심의 유해위험요인 관리 및 자율안전예방체계 구축</li>
-                                  </ul>
+                                  <div className="txt">
+                                    대한항공 임직원의 안전하고 쾌적한 근무 환경 조성
+                                    <br />
+                                    위험성평가 중심의 유해위험요인 관리 및 자율안전예방체계 구축
+                                  </div>
                                 </div>
                                 <div className="subtitle-box">
                                   <span>정량목표</span>
-                                  <ul>
-                                    <li>재해율 0.58, 강도율 0.13 달성</li>
-                                    <li>중대재해 및 중상재해 ZERO 달성</li>
-                                  </ul>
+                                  <div className="txt">
+                                    재해율 0.58, 강도율 0.13 달성
+                                    <br />
+                                    중대재해 및 중상재해 ZERO 달성
+                                  </div>
                                 </div>
                               </div>
                             </div>
@@ -315,17 +317,19 @@ function HomePortal1() {
                       <div className="subtitle-bg">
                         <div className="subtitle-box">
                           <span>정성목표</span>
-                          <ul>
-                            <li>대한항공 임직원의 안전하고 쾌적한 근무 환경 조성</li>
-                            <li>위험성평가 중심의 유해위험요인 관리 및 자율안전예방체계 구축</li>
-                          </ul>
+                          <div className="txt">
+                            대한항공 임직원의 안전하고 쾌적한 근무 환경 조성
+                            <br />
+                            위험성평가 중심의 유해위험요인 관리 및 자율안전예방체계 구축
+                          </div>
                         </div>
                         <div className="subtitle-box">
                           <span>정량목표</span>
-                          <ul>
-                            <li>재해율 0.58, 강도율 0.13 달성</li>
-                            <li>중대재해 및 중상재해 ZERO 달성</li>
-                          </ul>
+                          <div className="txt">
+                            재해율 0.58, 강도율 0.13 달성
+                            <br />
+                            중대재해 및 중상재해 ZERO 달성
+                          </div>
                         </div>
                       </div>
                     </div>
