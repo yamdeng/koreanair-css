@@ -222,14 +222,12 @@ function POccupationMu5P2edit() {
                   <div className="form-table">
                     <div className="form-cell wid100">
                       <div className="ck-edit-box">
-                        <div className="ck-list mwid65">
+                        <div className="ck-list mwid60 h-fix">
                           <h3 className="table-tit">추진팀 구성</h3>
-                          <div className="h-fix">
-                            {/* 그리드 class명 grid-fix */}
-                            <AppTable className="grid-fix" rowData={rowData} columns={columns} />
-                          </div>
+                          {/* 그리드 class명 grid-fix */}
+                          <AppTable className="grid-fix" rowData={rowData} columns={columns} />
                         </div>
-                        <div className="ck-edit mwid35">
+                        <div className="ck-edit mwid40">
                           <div className="boxForm">
                             <div className="form-table">
                               <div className="form-cell wid100">
@@ -341,11 +339,30 @@ function POccupationMu5P2edit() {
                     </div>
                   </div>
                   <div className="form-table">
-                    <div className="form-cell wid50">
+                    <div className="form-cell wid100">
                       <div className="ck-edit-box">
-                        <div className="ck-list">
-                          <h3 className="table-tit">평가항목 선정</h3>
-                          <div className="h-fix">{/* 그리드 class명 grid-fix */}그리드영역</div>
+                        <div className="ck-list mwid60 h-fix01">
+                          <h3 className="table-tit">추진팀 구성</h3>
+                          {/* 그리드 class명 grid-fix */}
+                          <AppTable className="grid-fix" rowData={rowData} columns={columns} />
+                        </div>
+                        <div className="ck-edit mwid40">
+                          <div className="boxForm">
+                            <div className="form-table">
+                              <div className="form-cell wid100">
+                                <div className="form-group wid100">
+                                  <AppSelect label="구분" />
+                                </div>
+                              </div>
+                            </div>
+                            <div className="form-table">
+                              <div className="form-cell wid50">
+                                <div className="form-group wid100">
+                                  <AppAutoComplete label="이름" disabled />
+                                </div>
+                              </div>
+                            </div>
+                          </div>
                         </div>
                       </div>
                     </div>
