@@ -1223,6 +1223,7 @@ input, select{font-family:'KoreanAirSans'}
 }
 .LNB_list::-webkit-scrollbar,
 .contents-box::-webkit-scrollbar,
+.alarm-conts::-webkit-scrollbar,
 .ag-body-vertical-scroll-viewport::-webkit-scrollbar,
 .ag-body-horizontal-scroll-viewport::-webkit-scrollbar  {
 	width:15px;
@@ -1230,12 +1231,14 @@ input, select{font-family:'KoreanAirSans'}
 }
 .LNB_list::-webkit-scrollbar-track,
 .contents-box::-webkit-scrollbar-track,
+.alarm-conts::-webkit-scrollbar-track,
 .ag-body-vertical-scroll-viewport::-webkit-scrollbar-track,
 .ag-body-horizontal-scroll-viewport::-webkit-scrollbar-track {
 	background-color:transparent;
 }
 .LNB_list::-webkit-scrollbar-thumb,
 .contents-box::-webkit-scrollbar-thumb,
+.alarm-conts::-webkit-scrollbar-thumb,
 .ag-body-vertical-scroll-viewport::-webkit-scrollbar-thumb,
 .ag-body-horizontal-scroll-viewport::-webkit-scrollbar-thumb {
 	background-color:var(--color-darkblue-40);
@@ -1252,6 +1255,7 @@ input, select{font-family:'KoreanAirSans'}
 
 .LNB_list::-webkit-scrollbar-thumb:hover,
 .contents-box::-webkit-scrollbar-thumb:hover,
+.alarm-conts::-webkit-scrollbar-thumb:hover,
 .ag-body-vertical-scroll-viewport::-webkit-scrollbar-thumb:hover,
 .ag-body-horizontal-scroll-viewport::-webkit-scrollbar-thumb:hover {
 	background-color:var(--color-darkblue-60);
