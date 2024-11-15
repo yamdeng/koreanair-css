@@ -292,7 +292,11 @@
   .equipbox .right-box .use-wrap .use-right .editbox.equip .form-table.scroll .btn-box .btn-more{position:absolute;top:-3.5rem;left:100%;transform:translate(-100%, 0%);display:flex;justify-content:flex-end;z-index:1;padding:1.5rem;border:solid 0.1rem var(--color-neutral-40);background:url(../images/plus-btn.svg) center center no-repeat;align-items:center}
   .use-wrap .use-left .mu-wrap .h4{font-size:1.4rem}
 
-
+  .ck-edit-box {display: block;}
+  .ck-edit-box .ck-list {display: block; width: 100%; margin-bottom: 2.0rem;}
+  .ck-edit-box .ck-list.mwid65 {max-width: 100% !important;}
+  .ck-edit-box .ck-edit {display: block; width: 100%; max-width: 100%; margin-left: 0;}
+  .ck-edit-box .ck-edit.mwid35 {max-width: 100% !important;}
 
 
 
@@ -538,7 +542,9 @@
 
   .ck-edit-box {display: block;}
   .ck-edit-box .ck-list {display: block; width: 100%; margin-bottom: 2.0rem;}
-  .ck-edit-box .ck-edit {display: block; width: 100%; margin-left: 0;}
+  .ck-edit-box .ck-list.mwid65 {max-width: 100% !important;}
+  .ck-edit-box .ck-edit {display: block; width: 100%; max-width: 100%; margin-left: 0;}
+  .ck-edit-box .ck-edit.mwid35 {max-width: 100% !important;}
   .ck-edit-box .ck-edit .boxForm {padding: 0 1rem;}
   .ck-edit-box .ck-edit .mg-top {margin: 1.2rem 0;}
   .ck-edit-box .ck-edit .btn-area-type01 > button {width: 50%; margin:0;}
@@ -1036,7 +1042,9 @@
   .tooltip .tooltiptext {width:25rem !important;}
   .ck-edit-box {display: block;}
   .ck-edit-box .ck-list {display: block; width: 100%; margin-bottom: 2.0rem;}
+  .ck-edit-box .ck-list.mwid65 {max-width: 100% !important;}
   .ck-edit-box .ck-edit {display: block; width: 100%; margin-left: 0;}
+  .ck-edit-box .ck-edit.mwid35 {max-width: 100% !important;}
   .ck-edit-box .ck-edit .boxForm {padding: 0 1rem;}
   .ck-edit-box .ck-edit .mg-top {margin: 1.2rem 0;}
   .ck-edit-box .ck-edit .btn-area-type01 > button {width: 50%; margin:0;}
