@@ -107,6 +107,7 @@ import RiskList1 from '@/components/publish/aviation/RiskList1';
 import AdminCordList from '@/components/publish/aviation/AdminCordList';
 import AdminNoticeList from '@/components/publish/aviation/AdminNoticeList';
 import AdminEquipList from '@/components/publish/aviation/AdminEquipList';
+import AdminEquipEdit from '@/components/publish/aviation/AdminEquipEdit';
 import CentralizedReportDetail from '@/components/publish/aviation/CentralizedReportDetail';
 import AdminBannerList from '@/components/publish/aviation/AdminBannerList';
 import PSaferiskdashboard from '@/components/publish/aviation/PSaferiskdashboard';
@@ -853,6 +854,13 @@ AviationPageInfo.list = [
     path: 'AdminEquipList',
     description: '',
     success: true,
+  },
+  {
+    title: '[07.관리자] 장비점검등록',
+    Component: AdminEquipEdit,
+    path: 'AdminEquipEdit',
+    description: '',
+    success: false,
   },
   {
     title: '[07.관리자] ESP 관리',
