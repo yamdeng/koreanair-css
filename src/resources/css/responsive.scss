@@ -144,6 +144,7 @@
   .boxForm.det .form-table .form-cell{display: block;  width: 100%;}
   .radio-wrap{width: 100%;}
   .btn-area {width: 100%;}
+  .btn-area.tab-right-btn {display: block; width: 100%; top: -7rem;}
   .checklist-contents{display:flex;justify-content:flex-start;flex-wrap:wrap;width:100%}
   .checklist-contents .checklist-row.list{display:flex;justify-content:flex-start;flex-wrap:wrap;width:50%;padding-right:0;margin:0}
 
@@ -483,6 +484,7 @@
   
   
   .btn-area {display:flex; width: 100%;}
+  .btn-area.tab-right-btn {display: block; width: 100%; top: -7rem;}
   .btn-area .btn-sm {width: 100%;}
   .btn-area > button + button {width: 50%;}
   .btn-area > button {margin: 0;}
@@ -936,6 +938,7 @@
   .boxForm .form-table .form-cell .form-group{width:100%}
 
   .btn-area {display:block;width:100%;}
+  .btn-area.tab-right-btn {display: block; width: 100%; top: -7rem;}
   .btn-area .btn-sm{width:100%}
   .btn-area > button + button{/*width:50%;*/margin-left:0;margin-top:1rem}
   .btn-area.inbtn > button + button{/*width:50%;*/margin-left:0;margin-top:0rem}

@@ -111,8 +111,14 @@ function POccupationMu5P2edit() {
             첨부문서
           </a>
         </div>
+        <div className="btn-area tab-right-btn">
+          <button type="button" name="button" className="btn_text btn_confirm">
+            저장
+          </button>
+        </div>
       </div>
       {/*//탭 */}
+
       {/* 입력영역 */}
       <div className="info-wrap toggle">
         <dl className="tg-item active">
