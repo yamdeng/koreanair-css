@@ -1243,6 +1243,9 @@ input, select{font-family:'KoreanAirSans'}
 .contents-box::-webkit-scrollbar-thumb {
   background-color:var(--color-darkblue-20);
 }
+.contents.Aviation .contents-box::-webkit-scrollbar-thumb {
+  border:5px solid var(--color-aviation-mainBg);
+}
 
 .LNB_list::-webkit-scrollbar-thumb:hover,
 .contents-box::-webkit-scrollbar-thumb:hover,
@@ -1255,4 +1258,7 @@ input, select{font-family:'KoreanAirSans'}
 .LNB_list::-webkit-scrollbar-thumb:hover,
 .contents-box::-webkit-scrollbar-thumb:hover {
   background-color:var(--color-darkblue-40)
+}
+.contents.Aviation .contents-box::-webkit-scrollbar-thumb:hover {
+  border:5px solid var(--color-aviation-mainBg);
 }
