@@ -876,27 +876,25 @@
 
 
 @media screen and (max-width: 767px){
-  .header {padding:0rem 1.5rem;
-  }
+  .header {padding:0rem 1.5rem;}
   .header .GNB  {display: none;}
   .header .logo {width: 4.0rem;}
   .header .logo .top-logo {display: none;}
   .header .util .util-list .btn {display: none;}
   .header .util .util-list .util-icon {margin-right:0rem;}
   .LNB_menu .m-lnb_top_logo a span {display: none;}
+  .LNB,
+  .LNB-hide{position:absolute;top:0rem;height:100%;z-index: 11; flex-shrink: inherit;transition:left 0.5s;}
   .LNB {margin-top: 0; width:100%; left:0%; }
-  
-  .conts-title h2 {font-size: 2.2rem;}
-  .main-search.active {width: 90%;}
+  .LNB-hide {left:-100%;width:100%;transition:left 0.5s;}
   .LNB_menu {position:absolute;top:0;left:0;display: block;}
   .LNB_side {position: absolute; top:8.8rem;left:0; width:100%; height:calc(100% - 8.8rem);margin-top:0;}
-
-  .LNB,.LNB-hide{position:absolute;top:0rem;height:100%;z-index: 11; flex-shrink: inherit;transition:left 0.5s;}
-  .contents .contents-box {padding:2rem;}
-  .LNB-hide {left:-100%;width:100%;transition:left 0.5s;}
   .LNB-hide .LNB_menu, 
   .LNB-hide .LNB_side {display:block; position:absolute;}
-
+  .conts-title h2 {font-size: 2.2rem;}
+  .main-search.active {width: 90%;}
+  .contents .contents-box {padding:2rem;}
+  
   .main-wrap .grid-item .head-top.guide {display: block;}
   .main-wrap .grid-item .main-graph-box.graph-list {display: block;}
   .main-wrap .grid-item .main-graph-box.graph-list .graph-box {display: inline-block; width: 33.3%;}

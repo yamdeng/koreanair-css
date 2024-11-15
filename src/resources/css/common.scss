@@ -1278,3 +1278,11 @@ input, select{font-family:'KoreanAirSans'}
 .contents.Aviation .contents-box::-webkit-scrollbar-thumb:hover {
   border:2px solid var(--color-aviation-mainBg);
 }
+
+/* 차트 툴팁 */
+.chart-tooltip {
+  width:auto !important;
+  height:auto !important;
+  background-color:#000000 !important;
+  padding:0.8px 2px !important;
+}
