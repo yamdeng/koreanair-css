@@ -835,7 +835,6 @@ meter::-webkit-meter-optimum-value {
 .cons-list .list li .list-area5 .btn-wrap.greencor{width:100%;color:var(--color-neutral-60);border:solid 0.1rem var(--color-aud-green-bg);background-color:var(--color-aud-green-bg);border-radius:0.3rem;padding:0.3rem 0.5rem}
 
 // Audit Dashboard 지역별현황 (세계지도 내 대륙별 Audit 표기)
-// Audit Dashboard 지역별현황 (세계지도 내 대륙별 Audit 표기)
 .world-wrap { width: 100%; max-width: 65.0rem; margin: 0 auto; position: relative;}
 .world-image { width: 100%; height: auto; position: relative; display: flex; justify-content: center; align-items: center;}
 .world-image img {width: 100%;}
@@ -884,7 +883,19 @@ meter::-webkit-meter-optimum-value {
 .user-wrap .user-box .user-box-cons .cons-wrap2 .cons-box:nth-child(2).gr{width:100%}
 // .user-wrap .user-box .user-box-cons .cons-wrap2 .cons-box:nth-last-of-type(2){grid-row: span 2}
 
+.flight-text-lsa-all { position: absolute; top: 92%; left: 50%; transform: translate(-15%, -110%); font-size:1.5rem;font-weight:600;}
+.flight-text-lsa-1 { position: absolute; top: 30%; left: 10%; transform: translate(-15%, -110%); font-size:1.5rem;font-weight:500;}
+.flight-text-lsa-2 { position: absolute; top: 30%; left: 31%; transform: translate(-15%, -110%); font-size:1.5rem;font-weight:500;}
+.flight-text-lsa-3 { position: absolute; top: 42%; left: 52%; transform: translate(-15%, -110%); font-size:1.5rem;font-weight:500;}
+.flight-text-lsa-4 { position: absolute; top: 30%; left: 69%; transform: translate(-15%, -110%); font-size:1.5rem;font-weight:500;}
+.flight-text-lsa-5 { position: absolute; top: 30%; left: 89%; transform: translate(-15%, -110%); font-size:1.5rem;font-weight:500;}
 
+.flight-text-ufa-all { position: absolute; top: 92%; left: 50%; transform: translate(-15%, -110%); font-size:1.5rem;font-weight:600;}
+.flight-text-ufa-1 { position: absolute; top: 30%; left: 8%; transform: translate(-15%, -110%); font-size:1.5rem;font-weight:500;}
+.flight-text-ufa-2 { position: absolute; top: 30%; left: 28%; transform: translate(-15%, -110%); font-size:1.5rem;font-weight:500;}
+.flight-text-ufa-3 { position: absolute; top: 42%; left: 52%; transform: translate(-15%, -110%); font-size:1.5rem;font-weight:500;}
+.flight-text-ufa-4 { position: absolute; top: 30%; left: 71%; transform: translate(-15%, -110%); font-size:1.5rem;font-weight:500;}
+.flight-text-ufa-5 { position: absolute; top: 37%; left: 90%; transform: translate(-15%, -110%); font-size:1.5rem;font-weight:500;}
 
 
 .user-wrap .user-box{position:relative;display:flex;flex-wrap:wrap;counter-reset:myCounter;align-items: stretch;}
