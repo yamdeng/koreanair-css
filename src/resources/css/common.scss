@@ -491,7 +491,7 @@ input[type=checkbox],input[type=radio]{padding:0;vertical-align:middle;margin-to
 .tag-info-wrap-end button.btn_confirm{padding:0.6rem 1.8rem;border-radius:99.9rem;background: var(--color-darkblue-100)}
 .tag-info-wrap-end button:last-child{margin-left:0.5rem}
 
-.tag-info-wrap-end1{/*position:absolute;left:0;top:25%;*/display:inline-flex;justify-content:flex-end}
+.tag-info-wrap-end1{/*position:absolute;left:0;top:25%;display:inline-flex;justify-content:flex-end*/display: inline-block; vertical-align: super;}
 .tag-info-wrap-end1 .tip{background:url(/src/resources/images/tooltip.svg) left center no-repeat;background-size:3.0rem;font-size:0;height:3.0rem;line-height:3.0rem;cursor:pointer}
 .tag-info-wrap-end1 .tip a.txt{display: inline;font-size:1.5rem;margin-left:3.0rem}
 
@@ -948,7 +948,7 @@ input, select{font-family:'KoreanAirSans'}
 .info-wrap .edit-area{border-top:0.1rem solid var(--color-darkblue-100);/*border-bottom:0.1rem solid var(--color-neutral-30);background-color:var(--color-neutral-20);*/color:var(--color-neutral-80);line-height:2.0rem;font-size:1.6rem}
 .info-wrap .edit-area.border-no {border-top: 0;}
 .toggle .btn-tg{position:relative;font-family:"KoreanAirSans";font-size:1.6rem;color:var(--color-darkblue-100);text-align:left;width:100%;padding:0}
-.toggle .btn-tg span {display:inline-block;float:right;background:url(../images/arrow-down.svg)center right no-repeat;background-size:3.2rem;width:3.2rem;height:3.2rem;vertical-align:middle;transition: all ease .8s;}
+.toggle .btn-tg span {display:inline-block;float:right;background:url(../images/arrow-down.svg)center right no-repeat;background-size:3.2rem;width:3.2rem;height:3.2rem;vertical-align:middle;transition: all ease .8s; position: absolute; left: 50%;}
 .toggle .btn-tg span.active {transform: rotate(-180deg);transition: all ease .8s;}
 .toggle .btn-tg:after{content:'';display:inline-block;position:absolute;top:50%;right:0;/*width:0.7rem;height:0.7rem;transform: translateY(-50%) rotate(45deg);*/margin:0 0 0 1.3rem;-webkit-transform: translateY(-50%) rotate(45deg);-webkit-transform-origin: center;transform-origin:center}
 .toggle .active .btn-tg:after{-webkit-transform:translateY(-50%) rotate(-135deg);transform:translateY(-50%) rotate(-135deg)}

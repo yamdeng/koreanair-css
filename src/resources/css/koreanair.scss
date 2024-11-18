@@ -1625,6 +1625,12 @@ border: 1px solid red !important;
     color: var(--color-neutral-10);
     margin: 0 1.0rem;
   }
+  .page1_conts_txtbox .page1_title .subtitle .subtitle-box .txt p {
+    line-height: 150%;
+    font-size: 1.8rem;
+    font-weight: normal;
+    color: var(--color-neutral-10);
+  }
   .main-visual01 .page1_contents {
     width: 100%;
     max-width: 144.0rem;
@@ -1828,6 +1834,12 @@ border: 1px solid red !important;
   padding: 0 0 0 1.0rem;
   color: var(--color-neutral-10);
   margin: 0 1.0rem;
+}
+.main-visual02 .page2_title .subtitle .subtitle-box .txt p {
+  line-height: 150%;
+  font-size: 1.8rem;
+  font-weight: normal;
+  color: var(--color-neutral-10);
 }
 .main-visual02 .page2_contents {
   width: 100%;
