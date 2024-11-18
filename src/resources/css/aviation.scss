@@ -1201,7 +1201,7 @@ meter::-webkit-meter-optimum-value {
   .grid-item .main-table-box .main-table-todo th a {font-size:1.4rem;font-weight:500;color:var(--color-neutral-80);-webkit-line-clamp:1;overflow:hidden;text-overflow:ellipsis;}
   .grid-item .main-table-box .main-table-todo th a:hover{text-decoration:underline;color: var(--color-darkblue-100);}
   .grid-item .main-table-box .main-table-todo tbody{display:block;overflow-y:auto;max-height:21.2rem}
-  .grid-item .main-table-box .main-table-todo td {text-align:left;font-weight:500;max-width:3.5rem;color:var(--color-neutral-80);-webkit-line-clamp:1;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;padding:1rem}
+  .grid-item .main-table-box .main-table-todo td {text-align:left;font-weight:500;max-width:1.5rem;color:var(--color-neutral-80);-webkit-line-clamp:1;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;padding:1rem}
   .grid-item .main-table-box .main-table-todo td.date{text-align:center}
   .grid-item .main-table-box .main-table-todo td a {font-size:1.4rem;font-weight:500;color:var(--color-neutral-80);-webkit-line-clamp:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;padding:1rem}
   .grid-item .main-table-box .main-table-todo td a:hover{text-decoration: underline; color: var(--color-darkblue-100);}
