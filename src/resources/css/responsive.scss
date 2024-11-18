@@ -1348,7 +1348,13 @@
   .page1_contents .contents-box {display: none;}
   .page1_conts .swiper .page1_conts .swiper .slick-prev, .slick-next, .slick-prev:before, .slick-next:before  {display: none;}
   
-
+  .toggle .btn-tg span,
+  .detailForm-detail-1deps.list-group .list.bx-toggle .tg-btn span,
+  .detailForm-detail-2deps.list-group .list.bx-toggle .tg-btn span,
+  .detailForm-detail-3deps.list-group .list.bx-toggle .tg-btn span,
+  .detailForm-detail-4deps.list-group .list.bx-toggle .tg-btn span {
+    margin-left: 0; position: relative; left: inherit; right: 0;
+  }
 
   
   #fp-nav {top: 12rem;}

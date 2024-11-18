@@ -211,8 +211,8 @@ meter::-webkit-meter-optimum-value {
 .DashBoardWrap .DashBoard-chart .DashBoard-row .DashBoard-col .DashBoard-box{width:100%;padding:1rem}
 .DashBoardWrap .DashBoard-chart .DashBoard-row .DashBoard-col .DashBoard-box canvas{width:100%}
 .DashBoardWrap .DashBoard-chart .DashBoard-1row{display:flex;justify-content:flex-start;flex-wrap:wrap;width:100%;box-sizing:border-box;overflow:hidden;padding:1rem}
-.DashBoardWrap .DashBoard-chart .DashBoard-1row .DashBoard-col{position:relative;width:100%;;height:100%;border-radius:0.8rem;padding:1.2rem 1rem;border:solid 0.2rem var(--color-neutral-01);background-color:var(--color-neutral-10);box-shadow:0 0.2rem 0.4rem 0 rgba(0, 0, 0, .05)}
-.DashBoardWrap .DashBoard-chart .DashBoard-1row .DashBoard-col .DashBoard-box canvas{width:100%}
+.DashBoardWrap .DashBoard-chart .DashBoard-1row .DashBoard-col .DashBoard-box {position: relative; min-height: 60.0rem; padding: 1.0rem; overflow: hidden; width: 100%; display: flex; justify-content: center; align-items: center;}
+.DashBoardWrap .DashBoard-chart .DashBoard-1row .DashBoard-col .DashBoard-box canvas{width:100%; position: absolute; display: flex; justify-content: center; align-items: center;}
 
 
 .DashBoardWrap .DashBoard-chart.height-fix .DashBoard-row .DashBoard-col .DashBoard-box .ag-theme-quartz {height: 24.0rem !important;}
