@@ -1007,7 +1007,7 @@ meter::-webkit-meter-optimum-value {
 .Safety-table-cell{text-align:center;align-items:center}
 .Safety-table-cell a, a:visited{color:var(--color-mblue-100)}
 .Safety-table-cell a:hover, .Safety-table-cell a:focus{color:var(--color-darkblue-100)}
-.Safety-tag{display:inline-block;box-sizing:border-box;color:var(-color-neutral-10);font-size:1.4rem;font-family:'KoreanAirSans';border-radius:99.9rem;line-height:1.5715;margin:0 0.8rem 0 0;padding:0.1rem 1.5rem;white-space:nowrap}
+.Safety-tag{display:inline-block;box-sizing:border-box;color:var(-color-neutral-10);font-size:1.4rem;font-family:'KoreanAirSans';border-radius:99.9rem;line-height:1.5715;margin:0 0.8rem 0 0;padding:0.1rem 1.5rem;white-space:nowrap;cursor: pointer;}
 .Safety-tag.riskLevel.level4{background-color:var(--color-Leve4)}/*그린*/
 .Safety-tag.riskLevel.level3{background-color:var(--color-Leve3)}/*옐로우*/
 .Safety-tag.riskLevel.level2{background-color:var(--color-Leve2)}/*오렌지*/
@@ -1042,7 +1042,7 @@ meter::-webkit-meter-optimum-value {
 .info-board th:last-child{border-right:0}
 .info-board td.left{text-align:left;padding-left:0.8rem}
 .info-board td.right{text-align:right;padding-right:0.8rem}
-.info-board td{position:relative;text-align:center;padding:1.0rem;border-bottom:0.1rem solid var(--color-neutral-40);border-right: 0.1rem solid var(--color-neutral-40)}
+.info-board td{position:relative;text-align:center;vertical-align: middle;padding:1.0rem;border-bottom:0.1rem solid var(--color-neutral-40);border-right: 0.1rem solid var(--color-neutral-40)}
 .info-board td:last-child{border-right:0}
 .info-board td a, a:visited {color:var(--color-mblue-100)}
 .info-board tr.cons-bottom{background-color:var(--color-neutral-20)}
