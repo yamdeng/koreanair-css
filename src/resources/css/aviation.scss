@@ -28,7 +28,7 @@
 .h3:after{content:'';display:block}
 .info-tit{line-height:3.5rem;padding:0 0.5rem}
 .flex-e{display:flex;justify-content:flex-end !important}
-.-mb-8n-3{margin:2.4rem 2.4rem 0 !important}
+.-mb-8n-3{margin:2.4rem 0 0 0 !important}
 .vm{vertical-align:middle !important}
 .vt{vertical-align:top !important}
 .flex-end{display:flex;justify-content:flex-end}
@@ -248,33 +248,62 @@ meter::-webkit-meter-optimum-value {
 .c-step-wrap{margin-bottom:2rem}
 .c-step-wrap.bg-white[class*=c-step-list-type]{background-color:var(--color-neutral-10)}
 .flex-e{display:flex;justify-content:flex-end !important}
-.c-step-list.default{display:flex;font-size:12px;text-align:center;overflow-x:auto}
-.c-step-list{counter-reset:stepCounter}
-.c-step-list.default>li{position:relative}
-.c-step-list.default>li:nth-child(1){min-width:27.0rem}
-.c-step-list.default>li:nth-child(2){min-width:18.5rem}
-.c-step-list.default>li:nth-child(3){min-width:16.5rem}
-.c-step-list.default>li:nth-child(4){min-width:13.0rem}
-.c-step-list.default>li:nth-child(5){min-width:13.0rem}
-.c-step-list.default>li:nth-child(6){min-width:13.0rem}
-.c-step-list.default>li:nth-child(7){min-width:15.0rem}
-.c-step-list.default>li:nth-child(8){min-width:15.0rem}
-.c-step-list.default>li:nth-child(9){min-width:16.5rem}
+.c-step-list.default{display:flex;font-size:12px;text-align:center;overflow-x:auto;}
+.c-step-list{counter-reset:stepCounter;}
+.c-step-list.default>li{position:relative; min-width:calc(100% / 9)}
 .c-step-list>li{counter-increment:stepCounter}
 .c-step-list.default .active .info-title{color:var(--color-mblue-100)}
-.c-step-list.default>li .info-title{color:var(--color-neutral-90)}
-.c-step-list.default .active .info-title:before{background-color:var(--color-neutral-10);border-width:0.2rem;border-color:var(--color-mblue-100);color:var(--color-mblue-100);font-weight:700}
-.c-step-list.default .info-title:before{display:flex;content:counter(stepCounter);position:relative;z-index:1;justify-content:center;align-items:center;width:3.2rem;height:3.2rem;border-radius:50%;background-color:var(--color-neutral-10);border: 1px solid #666;margin:0 auto 0.8rem}
+.c-step-list.default>li .info-title {font-weight:700;}
+.c-step-list.default>li:nth-child(1) .info-title{color:var(--color-purple-400)}
+.c-step-list.default>li:nth-child(2) .info-title,
+.c-step-list.default>li:nth-child(3) .info-title{color:var(--color-blue-400)}
+.c-step-list.default>li:nth-child(4) .info-title,
+.c-step-list.default>li:nth-child(5) .info-title{color:var(--color-teal-400)}
+.c-step-list.default>li:nth-child(6) .info-title,
+.c-step-list.default>li:nth-child(7) .info-title{color:var(--color-mint-400)}
+.c-step-list.default>li:nth-child(8) .info-title,
+.c-step-list.default>li:nth-child(9) .info-title{color:var(--color-green-400)}
+.c-step-list.default .active .info-title:before{color:var(--color-neutral-10);font-weight:700}
+.c-step-list.default .info-title:before{display:flex;content:counter(stepCounter);position:relative;z-index:1;justify-content:center;align-items:center;width:3.2rem;height:3.2rem;border-radius:50%;margin:0 auto 0.8rem}
+.c-step-list.default>li:nth-child(1) .info-title:before{border: 0.2rem solid var(--color-purple-400);background-color:var(--color-neutral-10);}
+.c-step-list.default>li:nth-child(2) .info-title:before,
+.c-step-list.default>li:nth-child(3) .info-title:before{border: 0.2rem solid var(--color-blue-400);background-color:var(--color-neutral-10);}
+.c-step-list.default>li:nth-child(4) .info-title:before,
+.c-step-list.default>li:nth-child(5) .info-title:before{border: 0.2rem solid var(--color-teal-400);background-color:var(--color-neutral-10);}
+.c-step-list.default>li:nth-child(6) .info-title:before,
+.c-step-list.default>li:nth-child(7) .info-title:before{border: 0.2rem solid var(--color-mint-400);background-color:var(--color-neutral-10);}
+.c-step-list.default>li:nth-child(8) .info-title:before,
+.c-step-list.default>li:nth-child(9) .info-title:before{border: 0.2rem solid var(--color-green-400);background-color:var(--color-neutral-10);}
+
+.c-step-list.default>li:nth-child(1).active .info-title:before{border: 0.2rem solid var(--color-purple-400);background-color:var(--color-purple-400);}
+.c-step-list.default>li:nth-child(2).active .info-title:before,
+.c-step-list.default>li:nth-child(3).active .info-title:before{border: 0.2rem solid var(--color-blue-400);background-color:var(--color-blue-400);}
+.c-step-list.default>li:nth-child(4).active .info-title:before,
+.c-step-list.default>li:nth-child(5).active .info-title:before{border: 0.2rem solid var(--color-teal-400);background-color:var(--color-teal-400);}
+.c-step-list.default>li:nth-child(6).active .info-title:before,
+.c-step-list.default>li:nth-child(7).active .info-title:before{border: 0.2rem solid var(--color-mint-400);background-color:var(--color-mint-400);}
+.c-step-list.default>li:nth-child(8).active .info-title:before,
+.c-step-list.default>li:nth-child(9).active .info-title:before{border: 0.2rem solid var(--color-green-400);background-color:var(--color-green-400);}
+
 .c-step-list.default>li:after{content:'';position:absolute;top:1.6rem;left:0;width:100%;height:0.1rem;background-color:#ddd}
 .c-step-list.default>li:last-of-type:after{left:auto;right:50%}
 .c-step-list.default>li:first-of-type:after{left:50%}
 
 
-[class*=c-step-list-type]{display:flex;justify-content:flex-start;border:0.1rem solid var(--color-neutral-40);background-color:var(--color-neutral-10);border-radius:0.8rem;overflow:hidden;counter-reset:stepCounter}
+[class*=c-step-list-type]{display:flex;justify-content:flex-start;border:0.3rem solid var(--color-neutral-10);background-color:var(--color-neutral-10);border-radius:0.8rem;overflow:hidden;counter-reset:stepCounter}
 [class*=c-step-list-type]>li{position:relative;flex:1}
-[class*=c-step-list-type]>li.active{border-top:solid 0.3rem var(--color-mblue-100);background-color:var(--color-lightblue-10);}
+[class*=c-step-list-type]>li:nth-child(1){background-color:var(--color-purple-50);}
+[class*=c-step-list-type]>li:nth-child(2){background-color:var(--color-blue-15);}
+[class*=c-step-list-type]>li:nth-child(3){background-color:var(--color-teal-50);}
+[class*=c-step-list-type]>li:nth-child(4){background-color:var(--color-mint-50);}
+[class*=c-step-list-type]>li:nth-child(5){background-color:var(--color-green-50);}
+[class*=c-step-list-type]>li:nth-child(1).active{border-top:solid 0.3rem var(--color-purple-400);}
+[class*=c-step-list-type]>li:nth-child(2).active{border-top:solid 0.3rem var(--color-blue-400);}
+[class*=c-step-list-type]>li:nth-child(3).active{border-top:solid 0.3rem var(--color-teal-400);}
+[class*=c-step-list-type]>li:nth-child(4).active{border-top:solid 0.3rem var(--color-mint-400);}
+[class*=c-step-list-type]>li:nth-child(5).active{border-top:solid 0.3rem var(--color-green-400);}
 [class*=c-step-list-type]>li:before{position:absolute;left:32px;top:22px;counter-increment:stepCounter;content:counter(stepCounter);font-weight:400;color:var(--color-neutral-80);font-size:68px;line-height:1}
-[class*=c-step-list-type]>li~li{border-left:0.1rem solid var(--color-neutral-40)}
+[class*=c-step-list-type]>li~li{border-left:0.2rem solid var(--color-neutral-10)}
 
 [class*=c-step-list-type]>li:first-of-type{border-top-left-radius:0.8rem;border-bottom-left-radius:0.8rem}
 [class*=c-step-list-type]>li:last-of-type{border-top-right-radius:0.8rem;border-bottom-right-radius:0.8rem}
@@ -284,13 +313,19 @@ meter::-webkit-meter-optimum-value {
 [class*=c-step-list-type][class*=-list-type-0]>li:before{display:block;position:static;content:'Other Report';font-weight:700;font-size:1.5rem;/*margin-bottom:0.5rem;*/line-height:1.5rem}
 [class*=c-step-list-type][class*=-list-type-0] .info-title{font-weight:400;font-size:1.8rem}
 
+[class*=c-step-list-type][class*=-list-type-5]{box-shadow:0 0.5rem 1.5rem rgba(0,0,0,0.1);}
 [class*=c-step-list-type][class*=-list-type-5]>li:first-child{padding:1.3rem 4.0rem 1.3rem 3.2rem}
 [class*=c-step-list-type][class*=-list-type-5]>li{padding:1.3rem 4.0rem 1.3rem}
 [class*=c-step-list-type][class*=-list-type-5]>li:before{display:block;position:static;content:"0" counter(stepCounter);font-weight:400;font-size:1.5rem;/*margin-bottom:0.5rem;*/line-height:1.5rem}
 [class*=c-step-list-type][class*=-list-type-5] .info-title{font-weight:400;font-size:1.8rem}
 [class*=c-step-list-type][class*=-list-type-5] .info-title.active{color:var(--color-mblue-100)}
-[class*=c-step-list-type][class*=-list-type-5]>li .after-arrow{position:absolute;top:calc(50% - 0.8rem);right:-0.9rem;height:1.6rem;width:1.6rem;transform:rotate(315deg);background:var(--color-neutral-10);z-index:10}
-[class*=c-step-list-type][class*=-list-type-5]>li .after-arrow:after{content:'';display:inline-block;position:absolute;width:1.6rem;height:1.6rem;left:0;top:0;border-left-color:var(--color-neutral-40);border-bottom:0.1rem solid var(--color-neutral-40);border-right:0.1rem solid var(--color-neutral-40);border-top-color:var(--color-neutral-40)}
+[class*=c-step-list-type][class*=-list-type-5]>li .after-arrow{position:absolute;top:calc(50% - 0.8rem);right:-0.9rem;height:1.6rem;width:1.6rem;transform:rotate(315deg);;z-index:10}
+[class*=c-step-list-type][class*=-list-type-5]>li:nth-child(1) .after-arrow{background-color:var(--color-purple-50);}
+[class*=c-step-list-type][class*=-list-type-5]>li:nth-child(2) .after-arrow{background-color:var(--color-blue-15);}
+[class*=c-step-list-type][class*=-list-type-5]>li:nth-child(3) .after-arrow{background-color:var(--color-teal-50);}
+[class*=c-step-list-type][class*=-list-type-5]>li:nth-child(4) .after-arrow{background-color:var(--color-mint-50);}
+[class*=c-step-list-type][class*=-list-type-5]>li:nth-child(5) .after-arrow{background-color:var(--color-green-50);}
+[class*=c-step-list-type][class*=-list-type-5]>li .after-arrow:after{content:'';display:inline-block;position:absolute;width:1.6rem;height:1.6rem;left:0;top:0;border-left-color:var(--color-neutral-10);border-bottom:0.2rem solid var(--color-neutral-10);border-right:0.2rem solid var(--color-neutral-10);border-top-color:var(--color-neutral-10)}
 [class*=c-step-list-type][class*=-list-type-0] .info-title{font-weight:400;font-size:1.8rem}
 [class*=c-step-list-type][class*=-list-type-0] .info-title.active{color:var(--color-mblue-100)}
 
