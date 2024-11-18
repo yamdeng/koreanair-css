@@ -126,6 +126,11 @@ function AMO3Modal(props) {
                 게시판
               </a>
             </div>
+            <div className="btn-area">
+              <button type="button" name="button" className="btn_confirm text_color_neutral-10">
+                등록ㄹㅇㄴㅁㄹㅇㄴㅁㄹㅇㄴㄹㅇㄴㄹㅇㄴㅁㄹㅇ
+              </button>
+            </div>
           </div>
           <div className="pop_flex_group">
             <div className="pop_cont_form">

@@ -211,6 +211,7 @@ meter::-webkit-meter-optimum-value {
 .DashBoardWrap .DashBoard-chart .DashBoard-row .DashBoard-col .DashBoard-box{width:100%;padding:1rem}
 .DashBoardWrap .DashBoard-chart .DashBoard-row .DashBoard-col .DashBoard-box canvas{width:100%}
 .DashBoardWrap .DashBoard-chart .DashBoard-1row{display:flex;justify-content:flex-start;flex-wrap:wrap;width:100%;box-sizing:border-box;overflow:hidden;padding:1rem}
+.DashBoardWrap .DashBoard-chart .DashBoard-1row .DashBoard-col {width: 100%;}
 .DashBoardWrap .DashBoard-chart .DashBoard-1row .DashBoard-col .DashBoard-box {position: relative; min-height: 60.0rem; padding: 1.0rem; overflow: hidden; width: 100%; display: flex; justify-content: center; align-items: center;}
 .DashBoardWrap .DashBoard-chart .DashBoard-1row .DashBoard-col .DashBoard-box canvas{width:100%; position: absolute; display: flex; justify-content: center; align-items: center;}
 
