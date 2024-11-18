@@ -477,12 +477,12 @@
   /*-webkit-overflow-scrolling: touch;*/
   border-radius: 0.6rem;
   outline: none;
-  top: 50%;
+  top: 5rem;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, 0%);
   box-shadow: 0 3.0rem 6.0rem 0 rgba(0, 0, 0, 0.15);
   overflow: hidden;
-  /*height: calc(100% - 50px);*/
+  height: calc(100% - 10rem);
   &::after {
     content: '';
     clear: both;
