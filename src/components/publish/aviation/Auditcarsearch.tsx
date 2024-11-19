@@ -152,7 +152,7 @@ function Auditcarsearch() {
               {/*Auditor */}
               <div className="cons-box">
                 <div className="txt">Auditor</div>
-                <div className="cons-list">
+                <div className="cons-list scroll">
                   <ul className="list">
                     <li>
                       <div className="list-area">
@@ -282,26 +282,6 @@ function Auditcarsearch() {
                       <div className="list-area">
                         <button type="button" className="btn-wrap blue btn-txt">
                           Conduct
-                        </button>
-                      </div>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              {/*Other */}
-              <div className="cons-box">
-                <div className="txt">Other</div>
-                <div className="cons-list">
-                  <ul className="list">
-                    <li>
-                      <div className="list-area">
-                        <button type="button" className="btn-wrap blue active btn-txt">
-                          DIV
-                        </button>
-                      </div>
-                      <div className="list-area">
-                        <button type="button" className="btn-wrap blue btn-txt">
-                          OSR
                         </button>
                       </div>
                     </li>
