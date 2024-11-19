@@ -53,91 +53,59 @@ function HomePortal1() {
                 <div>
                   <table className="portal-menu">
                     <tr>
-                      <th>
-                        <a href="javascript:void(0);">운항</a>
-                      </th>
                       <td>
-                        <a href="javascript:void(0);">ASR</a>
-                      </td>
-                      <td>
-                        <a href="javascript:void(0);">HZR</a>
-                      </td>
-                      <td></td>
-                    </tr>
-                    <tr>
-                      <th>
-                        <a href="javascript:void(0);">객실</a>
-                      </th>
-                      <td>
-                        <a href="javascript:void(0);">CSR</a>
-                      </td>
-                      <td>
-                        <a href="javascript:void(0);">HZR</a>
-                      </td>
-                      <td></td>
-                    </tr>
-                    <tr>
-                      <th>
-                        <a href="javascript:void(0);">정비</a>
-                      </th>
-                      <td>
-                        <a href="javascript:void(0);">MSR</a>
-                      </td>
-                      <td>
-                        <a href="javascript:void(0);">HZR</a>
-                      </td>
-                      <td></td>
-                    </tr>
-                    <tr>
-                      <th>
-                        <a href="javascript:void(0);">통제</a>
-                      </th>
-                      <td>
-                        <a href="javascript:void(0);">GSR</a>
-                      </td>
-                      <td>
-                        <a href="javascript:void(0);">DSR</a>
-                      </td>
-                      <td>
-                        <a href="javascript:void(0);">HZR</a>
+                        <a href="javascript:void(0);">
+                          <span className="icon01"></span>기장보고서
+                        </a>
                       </td>
                     </tr>
                     <tr>
-                      <th>
-                        <a href="javascript:void(0);">여객</a>
-                      </th>
                       <td>
-                        <a href="javascript:void(0);">GSR</a>
+                        <a href="javascript:void(0);">
+                          <span className="icon02"></span>객실안전보고서
+                        </a>
                       </td>
-                      <td>
-                        <a href="javascript:void(0);">HZR</a>
-                      </td>
-                      <td></td>
                     </tr>
                     <tr>
-                      <th>
-                        <a href="javascript:void(0);">화물</a>
-                      </th>
                       <td>
-                        <a href="javascript:void(0);">GSR</a>
+                        <a href="javascript:void(0);">
+                          <span className="icon03"></span>정비안전보고서
+                        </a>
                       </td>
-                      <td>
-                        <a href="javascript:void(0);">HZR</a>
-                      </td>
-                      <td></td>
                     </tr>
                     <tr>
-                      <th>
-                        <a href="javascript:void(0);">안전</a>
-                      </th>
                       <td>
-                        <a href="javascript:void(0);">GSR</a>
+                        <a href="javascript:void(0);">
+                          <span className="icon04"></span>지상안전보고서
+                        </a>
                       </td>
+                    </tr>
+                    <tr>
                       <td>
-                        <a href="javascript:void(0);">HZR</a>
+                        <a href="javascript:void(0);">
+                          <span className="icon05"></span>운항관리사안전보고서
+                        </a>
                       </td>
+                    </tr>
+                    <tr>
                       <td>
-                        <a href="javascript:void(0);">RSR</a>
+                        <a href="javascript:void(0);">
+                          <span className="icon06"></span>램프안전보고서
+                        </a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <a href="javascript:void(0);">
+                          <span className="icon07"></span>FOQA
+                        </a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <a href="javascript:void(0);">
+                          <span className="icon08"></span>Hazard Report
+                        </a>
                       </td>
                     </tr>
                   </table>

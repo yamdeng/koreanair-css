@@ -1192,6 +1192,7 @@ border: 1px solid red !important;
 	/*top:1em;
 	/*left:0;*/
 	}
+
 	.dropmenu li:hover div {
   position: fixed;
   top: 8.8rem;
@@ -1203,17 +1204,20 @@ border: 1px solid red !important;
   box-shadow: 0 0 0.5rem rgba(0,0,0,0.3);
 	
 	}
-  .dropmenu li:hover div .portal-menu {width: 100%; display: inline-table;}
-  .dropmenu li:hover div .portal-menu tr {border-bottom: 0.1rem solid var(--color-neutral-30); padding: 0.3rem 0;}
-  .dropmenu li:hover div .portal-menu th {padding-right: 0.6rem;}
-  .dropmenu li:hover div .portal-menu th, .dropmenu li:hover div .portal-menu td {/*padding: 0.5rem; height: 3.0rem; line-height: 3.0rem;*/}
-  .dropmenu li:hover div .portal-menu th a {background: var(--color-darkblue-80); border-radius: 99.9rem;  color: var(--color-neutral-10); line-height: 2.0rem; padding: 0.4rem 1.5rem; /*height: 3.0rem;  line-height: 1.0rem;*/ font-size: 1.4rem; font-weight: 700;}
-  .dropmenu li:hover div .portal-menu td a {color: var(--color-neutral-80); /*height: 3.0rem; line-height: 1.0rem; padding: 0 1.0rem;*/ line-height: 2.0rem; padding: 1.0rem; font-size: 1.4rem; font-weight: 500;}
+  .dropmenu li div .portal-menu {width: 100%; display: inline-table;}
+  .dropmenu li div .portal-menu tr {border-bottom: 0.1rem solid var(--color-neutral-30); padding: 0.3rem 0; line-height: 3.0rem;}
+  .dropmenu li div .portal-menu td a span {display: inline-flex; align-items: center; background: var(--color-darkblue-100); width: 2.6rem; height: 2.6rem; border-radius: 99.9rem; margin-right: 1.0rem;}
+  .dropmenu li div .portal-menu td a span.icon01 {background: var(--color-darkblue-100) url(../images/icon_asr.svg)center center no-repeat; background-size: 1.4rem;}
+  .dropmenu li div .portal-menu td a span.icon02 {background: var(--color-darkblue-100) url(../images/icon_csr.svg)center center no-repeat; background-size: 1.4rem;}
+  .dropmenu li div .portal-menu td a span.icon03 {background: var(--color-darkblue-100) url(../images/icon_msr.svg)center center no-repeat; background-size: 1.4rem;}
+  .dropmenu li div .portal-menu td a span.icon04 {background: var(--color-darkblue-100) url(../images/icon_gsr.svg)center center no-repeat; background-size: 1.4rem;}
+  .dropmenu li div .portal-menu td a span.icon05 {background: var(--color-darkblue-100) url(../images/icon_dsr.svg)center center no-repeat; background-size: 1.4rem;}
+  .dropmenu li div .portal-menu td a span.icon06 {background: var(--color-darkblue-100) url(../images/icon_rsr.svg)center center no-repeat; background-size: 1.4rem;}
+  .dropmenu li div .portal-menu td a span.icon07 {background: var(--color-darkblue-100) url(../images/icon_foqa.svg)center center no-repeat; background-size: 1.4rem;}
+  .dropmenu li div .portal-menu td a span.icon08 {background: var(--color-darkblue-100) url(../images/icon_hr.svg)center center no-repeat; background-size: 1.4rem;}
 
-  .dropmenu li:hover div .portal-menu td a {
-    position: relative;
-  }
-  .dropmenu li:hover div .portal-menu td a::after {
+  .dropmenu li div .portal-menu td a {display: inline-flex; justify-content: left; align-items: center; width: 100%; position: relative; width: 100%; color: var(--color-neutral-80); background-position: 50% 50%; line-height: 3.0rem; padding: 1.0rem; font-size: 1.4rem; font-weight: 500;}
+  .dropmenu li div .portal-menu td a::after {
     content: "";
     position: absolute;
     left: 0;
@@ -1224,7 +1228,7 @@ border: 1px solid red !important;
     transform: scale(0);
     transition: transform 0.3s;
   }
-  .dropmenu li:hover div .portal-menu td a:hover::after {
+  .dropmenu li div .portal-menu td a:hover::after {
     transform: scale(1);
   }
 
