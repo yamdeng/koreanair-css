@@ -185,6 +185,60 @@ function POccupationMu3P2list() {
               <li>0</li>
             </ul>
           </div>
+          <div className="group">
+            <ul className="group-box">
+              <li>기타</li>
+              <li>0</li>
+            </ul>
+          </div>
+          <div className="group">
+            <ul className="group-box">
+              <li>기타</li>
+              <li>0</li>
+            </ul>
+          </div>
+          <div className="group">
+            <ul className="group-box">
+              <li>기타</li>
+              <li>0</li>
+            </ul>
+          </div>
+          <div className="group">
+            <ul className="group-box">
+              <li>기타</li>
+              <li>0</li>
+            </ul>
+          </div>
+          <div className="group">
+            <ul className="group-box">
+              <li>기타</li>
+              <li>0</li>
+            </ul>
+          </div>
+          <div className="group">
+            <ul className="group-box">
+              <li>기타</li>
+              <li>0</li>
+            </ul>
+          </div>
+          <div className="group">
+            <ul className="group-box">
+              <li>기타</li>
+              <li>0</li>
+            </ul>
+          </div>
+          <div className="group">
+            <ul className="group-box">
+              <li>기타</li>
+              <li>0</li>
+            </ul>
+          </div>
+          <div className="group">
+            <ul className="group-box">
+              <li>기타</li>
+              <li>0</li>
+            </ul>
+          </div>
         </div>
         <div className="right-table">
           <div className="group-box">

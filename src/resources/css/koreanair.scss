@@ -491,12 +491,10 @@ border: 1px solid red !important;
       display: inline-flex;
       justify-content: flex-end; 
       flex-direction: row;
-      height: calc(100% - 22.2rem);
+      height: calc(100% - 33.5rem);
       width: 100%;
       text-align: left;
-    .left-table {width: 100%; height: 100%; overflow-y: auto; margin-right: 1.0rem; vertical-align: top;}
-    
-  
+    //.left-table {width: 100%; height: 100%; overflow-y: auto; margin-right: 1.0rem; vertical-align: top;}
     .left-table .group {display:inline-block;}
     .left-table .group .group-box {border: 0.1rem solid var(--color-neutral-40); box-sizing: border-box; margin: 0.2rem;}
     .left-table .group .group-box li {text-align: center; width: 100%; min-width: 11.0rem; padding: 1.0rem; display: inline-block;}
@@ -505,6 +503,16 @@ border: 1px solid red !important;
     .left-table .group .group-box:hover li:first-child, .left-table .group .group-box:active li:first-child {background-color: var(--color-lightblue-20);}
     .left-table .group .group-box:hover li, .left-table .group .group-box:active li {background-color: var(--color-lightblue-10);}
  
+    .left-table {
+      width: calc(100% - 2rem);
+      height: 100%;
+      overflow-y: auto;
+      vertical-align: top;
+      display: grid;
+      gap: 0.2rem;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+      margin-right: 2.0rem;
+    }
 
     .right-table {display: inline-block; width: 100%; vertical-align: top; height: 100%; overflow-y: auto; max-width: 65.0rem;}
     .right-table .group-box {border: 0.1rem solid var(--color-neutral-40); border-radius: 0.8rem; padding: 1.5rem 2.0rem; }
