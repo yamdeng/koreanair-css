@@ -1506,7 +1506,7 @@ meter::-webkit-meter-optimum-value {
   position: relative;
   display: block;
   height: 5.0rem;
-  padding: 0 calc(1em + 160px) 0 2.5em;
+  padding:1.4rem 6rem 1.4rem 2rem;
   color: rgba(255, 255, 255, 0.7);
   font-size: 1.4rem;
   transition: color 0.2s;
@@ -1571,6 +1571,8 @@ meter::-webkit-meter-optimum-value {
   /* navigation item labels */
   display: block;
   color:#fff;
+  word-break: keep-all;
+  white-space:nowrap;
 }
 
 .cd-stretchy-nav.nav-is-visible ul {
@@ -1580,19 +1582,19 @@ meter::-webkit-meter-optimum-value {
  position:absolute;
  right:0px;
  opacity:1;
- transition:all 0.5s;
+ transition:all 0.3s;
+ cursor:pointer;
 }
-.cd-stretchy-nav.nav-is-visible ul li:nth-child(1) {bottom:60px;}
-.cd-stretchy-nav.nav-is-visible ul li:nth-child(2) {bottom:120px;}
-.cd-stretchy-nav.nav-is-visible ul li:nth-child(3) {bottom:180px;}
-.cd-stretchy-nav.nav-is-visible ul li:nth-child(4) {bottom:240px;}
-.cd-stretchy-nav.nav-is-visible ul li:nth-child(5) {bottom:300px;}
-.cd-stretchy-nav.nav-is-visible ul li:nth-child(6) {bottom:360px;}
-.cd-stretchy-nav.nav-is-visible ul li:nth-child(7) {bottom:420px;}
-.cd-stretchy-nav.nav-is-visible ul li:nth-child(8) {bottom:480px;}
-.cd-stretchy-nav.nav-is-visible ul li:nth-child(9) {bottom:540px;}
-.cd-stretchy-nav.nav-is-visible ul li:nth-child(10) {bottom:600px;}
-.cd-stretchy-nav.nav-is-visible ul li:nth-child(11) {bottom:60px;}
+.cd-stretchy-nav.nav-is-visible ul li:nth-child(10) {bottom:60px;}
+.cd-stretchy-nav.nav-is-visible ul li:nth-child(9) {bottom:115px;}
+.cd-stretchy-nav.nav-is-visible ul li:nth-child(8) {bottom:170px;}
+.cd-stretchy-nav.nav-is-visible ul li:nth-child(7) {bottom:225px;}
+.cd-stretchy-nav.nav-is-visible ul li:nth-child(6) {bottom:280px;}
+.cd-stretchy-nav.nav-is-visible ul li:nth-child(5) {bottom:335px;}
+.cd-stretchy-nav.nav-is-visible ul li:nth-child(4) {bottom:390px;}
+.cd-stretchy-nav.nav-is-visible ul li:nth-child(3) {bottom:445px;}
+.cd-stretchy-nav.nav-is-visible ul li:nth-child(2) {bottom:500px;}
+.cd-stretchy-nav.nav-is-visible ul li:nth-child(1) {bottom:555px;}
 .cd-stretchy-nav.nav-is-visible ul a::after {
   transform: translateY(-50%) scale(1);
 }
