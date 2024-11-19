@@ -717,14 +717,14 @@
 .selectlist .title p .icon {position: absolute; top: 0; right: 0; width: 4.0rem; height: 4.0rem; background: url(../images/delete.svg)center center no-repeat;}
 .selectlist .uesrlist {width: 100%;}
 .selectlist .uesrlist .stitle {width: 100%; height: 4.0rem; border-radius: 0.8rem; background-color: var(--color-lightblue-10); color: var(--color-darkblue-100); display: flex; align-items: center; justify-content: center;}
-.selectlist .uesrlist .list {margin: 1.0rem 0; position: relative; height: 23.9rem; overflow: auto;}
-.selectlist .uesrlist .list li {width: 28.0rem; height: 3.0rem; margin: 0.3rem 0; text-overflow:ellipsis; white-space: nowrap; overflow: hidden;}
-.selectlist .uesrlist .list .delete {background: url(../images/delete-text.svg)center center no-repeat; font-size: 0; width: 2.0rem; height: 2.0rem;position: absolute; right: 0;}
+.selectlist .uesrlist .list {margin: 1.0rem 0; position: relative; height: 23.4rem; overflow: auto;}
+.selectlist .uesrlist .list li {width: 100%; height: 3.0rem; margin: 0.3rem 0; text-overflow:ellipsis; white-space: nowrap; overflow: hidden; display: flex; align-items: center; justify-content: space-between;}
+.selectlist .uesrlist .list .delete {background: url(../images/delete-text.svg)center center no-repeat; font-size: 0; width: 2.0rem; height: 2.0rem; display: flex; align-items: center;}
 .selectlist .departmentlist {width: 100%;}
 .selectlist .departmentlist .stitle {width: 100%; height: 4.0rem; border-radius: 0.8rem; background-color: var(--color-lightblue-10); color: var(--color-darkblue-100); display: flex; align-items: center; justify-content: center;}
-.selectlist .departmentlist .list {margin: 1.0rem 0 0 0; position: relative; height: 23.9rem; overflow: auto;}
-.selectlist .departmentlist .list li {width: 28.0rem; height: 3.0rem; margin: 0.3rem 0; text-overflow:ellipsis; white-space: nowrap; overflow: hidden;}
-.selectlist .departmentlist .delete{background: url(../images/delete-text.svg)center center no-repeat; font-size: 0; width: 2.0rem; height: 2.0rem;position: absolute; right: 0;}
+.selectlist .departmentlist .list {margin: 1.0rem 0 0 0; position: relative; height: 23.4rem; overflow: auto;}
+.selectlist .departmentlist .list li {width:  100%; height: 3.0rem; margin: 0.3rem 0; text-overflow:ellipsis; white-space: nowrap; overflow: hidden; display: flex; align-items: center; justify-content: space-between;}
+.selectlist .departmentlist .delete{background: url(../images/delete-text.svg)center center no-repeat; font-size: 0; width: 2.0rem; height: 2.0rem; display: flex; align-items: center;}
 
 .modal-group-box {display: inline-flex; width: 100%; column-gap: 2.0rem;}
 .modal-group-box .left-group {width: 100%; display: inline-block;}
