@@ -2,6 +2,7 @@ import { Tree } from 'antd';
 import { useState } from 'react';
 import Modal from 'react-modal';
 import AppSelect from '@/components/common/AppSelect';
+import AppTextInput from '@/components/common/AppTextInput';
 
 function TestModal(props) {
   const { isOpen, closeModal } = props;
@@ -51,8 +52,8 @@ function TestModal(props) {
       shouldCloseOnOverlayClick={false}
       isOpen={isOpen}
       ariaHideApp={false}
-      overlayClassName={'alert-modal-overlay'}
-      className={'list-common-modal-content'}
+      overlayClassName={'full-modal-overlay'}
+      className={'subject-search2-modal-content'}
       onRequestClose={() => {
         closeModal();
       }}
@@ -66,33 +67,7 @@ function TestModal(props) {
                 <div className="tree_form">
                   <div className="form-cell">
                     <div className="form-group wid100">
-                      <AppSelect
-                        id="select1"
-                        style={{ width: '100%' }}
-                        className="label-select"
-                        options={[
-                          {
-                            value: 'jack',
-                            label: 'Jack',
-                          },
-                          {
-                            value: 'lucy',
-                            label: 'Lucy',
-                          },
-                          {
-                            value: 'Yiminghe',
-                            label: 'yiminghe',
-                          },
-                          {
-                            value: 'disabled',
-                            label: 'Disabled',
-                            disabled: true,
-                          },
-                        ]}
-                      />
-                      <label className="f-label" htmlFor="select1">
-                        부서
-                      </label>
+                      <AppTextInput label="부서" />
                     </div>
                   </div>
                 </div>
@@ -122,6 +97,14 @@ function TestModal(props) {
                     />
                     <label className="f-label">사용자 검색</label>
                     <button type="button" className="icon-sch"></button>
+                  </div>
+                </div>
+                <div className="form-cell mb-10">
+                  <div className="chk-wrap pl-10">
+                    <label className="mt-0">
+                      <input type="checkbox" />
+                      <span className="ck-list">전체선택</span>
+                    </label>
                   </div>
                 </div>
                 <div className="search-list">
@@ -182,6 +165,26 @@ function TestModal(props) {
                           <label>
                             <input type="checkbox" />
                             <span className="ck-list">김영기(YKKIM) / 전산1급 / 대한항공 KBSYS</span>
+                          </label>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div className="form-cell">
+                        <div className="chk-wrap">
+                          <label>
+                            <input type="checkbox" />
+                            <span className="ck-list">김영기(YKKIM) / 전산1급 / 대한항공 KBSYS11111</span>
+                          </label>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div className="form-cell">
+                        <div className="chk-wrap">
+                          <label>
+                            <input type="checkbox" />
+                            <span className="ck-list">김영기(YKKIM) / 전산1급 / 대한항공 KBSYS11111</span>
                           </label>
                         </div>
                       </div>
