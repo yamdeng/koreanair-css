@@ -323,7 +323,7 @@ export default function AviationLayout() {
           </div>
         </div>
         <div className="LNB_side">
-          <ul className="LNB_list">
+          <ul className="LNB_list av">
             <li>
               <a className="active" href="javascript:void(0);">
                 안전보고서
