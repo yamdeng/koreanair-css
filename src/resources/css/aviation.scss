@@ -1440,49 +1440,49 @@ meter::-webkit-meter-optimum-value {
   border-radius: 50%;
   overflow: hidden;
   white-space: nowrap;
-  color: transparent;
   cursor: pointer;
-
-  background-color:#000;
+  background-color:var(--color-darkblue-40);
 }
 .cd-nav-trigger span {
-  position: absolute;
-  width: 3.0rem;
-  height: 3.0rem;
-  background: url(../images/ico-register.svg)center center no-repeat;
+  position:absolute;
+  width:5rem;
+  height:5rem;
+  left:0rem;
+  top:0rem;
+  border-radius:3rem;
+  background-image: url(../images/ico-register.svg);
+  background-repeat:no-repeat;
+  background-position:center;
   background-size: 3.0rem;
-  top: 25%;
-  left: 25%;
-}
-.nav-is-visible .cd-nav-trigger span, 
-.nav-is-visible .cd-nav-trigger span::after, 
-.nav-is-visible .cd-nav-trigger span::before {
-  /* this is the hamburger icon */
-  position: absolute;
-  width: 1.6rem;
-  height: 0.2rem;
-  background-color: var(--color-neutral-10);
+  background-color:var(--color-ashblue-100);
+  transition:top 0.3s;
+  z-index:5;
 }
 .nav-is-visible .cd-nav-trigger span {
   /* middle line of the hamburger icon */
-  left: 50%;
-  top: 50%;
-  transform:translate(-50%, -50%);
-  background-color: transparent;
+  width:5rem;
+  height:5rem;
+  top: -5rem;
+  background-color:var(--color-darkblue-40);
+  transition:top 0.3s;
 }
-.nav-is-visible .cd-nav-trigger span::after, 
-.nav-is-visible .cd-nav-trigger span::before {
+.cd-nav-trigger::after, 
+.cd-nav-trigger::before {
   /* top and bottom lines of the hamburger icon */
   content: '';
-  top: 0;
-  left: 0;
-  -webkit-backface-visibility: hidden;
+  position:absolute;
+  top: 50%;
+  left: 1.5rem;
+  width:2rem;
+  height:0.2rem;
+  background-color:#fff;
+  transform:translate(-50%, -50%);
   backface-visibility: hidden;
 }
-.nav-is-visible .cd-nav-trigger span::before {
+.cd-nav-trigger::before {
   transform: rotate(-45deg);
 }
-.nav-is-visible .cd-nav-trigger span::after {
+.cd-nav-trigger::after {
   transform: rotate(45deg);
 }
 
@@ -1508,7 +1508,7 @@ meter::-webkit-meter-optimum-value {
   height: 5.0rem;
   padding:1.4rem 2rem 1.4rem 5.5rem;
   font-size: 1.4rem;
-  background-color:#000;
+  background-color:var(--color-ashblue-100);
 }
 
 .cd-stretchy-nav ul a::after{
@@ -1550,11 +1550,13 @@ meter::-webkit-meter-optimum-value {
  right:0px;
  opacity:1;
  transition:all 0.3s;
+ box-shadow:0 0 1rem 0.3rem rgba(255,255,255,0.5);
  cursor:pointer;
 }
 .cd-stretchy-nav.nav-is-visible ul li:hover {
   width:auto;
   max-width:20rem;
+  background-color:var(--color-ashblue-200);
   transition:all 0.3s;
 }
 .cd-stretchy-nav.nav-is-visible ul li:nth-child(1) {bottom:5.5rem;}
@@ -1567,27 +1569,7 @@ meter::-webkit-meter-optimum-value {
 .cd-stretchy-nav.nav-is-visible ul li:nth-child(8) {bottom:44rem;}
 .cd-stretchy-nav.nav-is-visible ul li:nth-child(9) {bottom:49.5rem;}
 .cd-stretchy-nav.nav-is-visible ul li:nth-child(10) {bottom:55rem;}
-.cd-stretchy-nav.nav-is-visible ul a::after {
-  transform: translateY(-50%) scale(1);
-}
-.cd-stretchy-nav.nav-is-visible ul a.active {
-  color: var(--color-lightblue-10);
-}
-.cd-stretchy-nav.nav-is-visible ul a.active::after {
-  opacity: 1;
-}
-.cd-stretchy-nav.nav-is-visible ul span {
-  opacity: 1;
-}
-.no-touch .cd-stretchy-nav.nav-is-visible ul a:hover {
-  color: var(--color-lightblue-10);
-}
-.no-touch .cd-stretchy-nav.nav-is-visible ul a:hover::after {
-  opacity: 1;
-}
-.no-touch .cd-stretchy-nav.nav-is-visible ul a:hover span {
-  transform: translateX(-0.5rem);
-}
+
 
 
 
