@@ -1556,8 +1556,11 @@ meter::-webkit-meter-optimum-value {
 .cd-stretchy-nav.nav-is-visible ul li:hover {
   width:auto;
   max-width:20rem;
-  background-color:var(--color-ashblue-200);
   transition:all 0.3s;
+}
+.cd-stretchy-nav.nav-is-visible ul li:hover a {
+  background-color:var(--color-darkblue-100);
+  transition:all 0.5s;
 }
 .cd-stretchy-nav.nav-is-visible ul li:nth-child(1) {bottom:5.5rem;}
 .cd-stretchy-nav.nav-is-visible ul li:nth-child(2) {bottom:11rem;}
