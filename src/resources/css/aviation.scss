@@ -285,7 +285,7 @@ meter::-webkit-meter-optimum-value {
 .c-step-list.default>li:nth-child(8).active .info-title:before{border: 0.2rem solid var(--color-mint-400);background-color:var(--color-mint-400);}
 .c-step-list.default>li:nth-child(9).active .info-title:before{border: 0.2rem solid var(--color-green-400);background-color:var(--color-green-400);}
 
-.c-step-list.default>li:after{content:'';position:absolute;top:1.6rem;left:0;width:100%;height:0.1rem;background-color:#ddd}
+.c-step-list.default>li:after{content:'';position:absolute;top:1.6rem;left:0;width:100%;height:0.1rem;background-color: var(--color-neutral-40)}
 .c-step-list.default>li:last-of-type:after{left:auto;right:50%}
 .c-step-list.default>li:first-of-type:after{left:50%}
 
@@ -1191,7 +1191,7 @@ meter::-webkit-meter-optimum-value {
   .grid-item .main-table-box{width:100%;/*margin-top:-1rem*/}
   .grid-item .main-table-box .main-table{width:100%;display:block;}
   .grid-item .main-table-box .main-table tbody{display:block;max-height:25.5rem;overflow-y:auto}
-  .grid-item .main-table-box .main-table tr{display:table;border-top:solid 0.1rem #ddd;vertical-align: middle;padding:1rem 0}
+  .grid-item .main-table-box .main-table tr{display:table;border-top:solid 0.1rem  var(--color-neutral-40);vertical-align: middle;padding:1rem 0}
   .grid-item .main-table-box .main-table td{text-align:left;width:100%;padding:1.0rem;text-overflow:ellipsis;white-space:nowrap;overflow:hidden;-webkit-line-clamp:1}
   .grid-item .main-table-box .main-table td:nth-child(1){max-width:3.5rem}
   .grid-item .main-table-box .main-table td a{font-size:1.4rem;font-weight:500;color:var(--color-neutral-80);-webkit-line-clamp:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
@@ -1207,7 +1207,7 @@ meter::-webkit-meter-optimum-value {
   .grid-item .main-table-box .main-table-todo{display:block;width:100%}
   .grid-item .main-table-box .main-table-todo thead{display:block;width:100%;}
   .grid-item .main-table-box .main-table-todo thead th{background:var( --color-neutral-30);text-align:center;max-width:3.5rem;padding:0.8rem;-webkit-line-clamp:1;overflow:hidden;text-overflow:ellipsis}
-  .grid-item .main-table-box .main-table-todo tr{display:table;width:100%;border-top:solid 0.1rem #ddd;vertical-align: middle;padding:1rem 0}
+  .grid-item .main-table-box .main-table-todo tr{display:table;width:100%;border-top:solid 0.1rem  var(--color-neutral-40);vertical-align: middle;padding:1rem 0}
   .grid-item .main-table-box .main-table-todo th a {font-size:1.4rem;font-weight:500;color:var(--color-neutral-80);-webkit-line-clamp:1;overflow:hidden;text-overflow:ellipsis;}
   .grid-item .main-table-box .main-table-todo th a:hover{text-decoration:underline;color: var(--color-darkblue-100);}
   .grid-item .main-table-box .main-table-todo tbody{display:block;overflow-y:auto;max-height:21.2rem}
@@ -1215,7 +1215,7 @@ meter::-webkit-meter-optimum-value {
   .grid-item .main-table-box .main-table-todo td.date{text-align:center}
   .grid-item .main-table-box .main-table-todo td a {font-size:1.4rem;font-weight:500;color:var(--color-neutral-80);-webkit-line-clamp:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;padding:1rem}
   .grid-item .main-table-box .main-table-todo td a:hover{text-decoration: underline; color: var(--color-darkblue-100);}
-  .grid-item .main-table-box .graph-area{display:flex;width:100%;gap:0 1rem}
+  .grid-item .main-table-box .graph-area{display:flex;width:100%;gap:0 1rem;padding-top:3rem; border-top:0.1rem solid var(--color-neutral-40);}
   .grid-item .main-table-box .graph-area .graph-box{position:relative;box-sizing:border-box;margin:0 auto}
   .grid-item .main-table-box .graph-area .graph-box canvas{width:100%;height:175px;vertical-align:top}
   .grid-item .main-table-box .graph-area .graph-box .txt-box{margin:0 auto;text-align:center}
