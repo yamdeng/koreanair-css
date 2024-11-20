@@ -1435,8 +1435,8 @@ meter::-webkit-meter-optimum-value {
   z-index: 3;
   bottom: 0;
   right: 0;
-  height: 6.0rem;
-  width: 6.0rem;
+  height: 5rem;
+  width: 5rem;
   border-radius: 50%;
   overflow: hidden;
   white-space: nowrap;
@@ -1489,9 +1489,6 @@ meter::-webkit-meter-optimum-value {
 .cd-stretchy-nav ul {
   position: relative;
   z-index: 2;
-  padding: 1.0rem 0 6.0rem;
-  visibility: hidden;
-  transition: visibility 0.3s;
   text-align:right
 }
 .cd-stretchy-nav ul li{
@@ -1499,19 +1496,18 @@ meter::-webkit-meter-optimum-value {
   right:0px;
   bottom:0px;
   opacity:0;
-  margin-bottom:1rem;
+  width:5rem;
+  max-width:5rem;
+  border-radius:3rem;
+  overflow:hidden;
   transition:all 0.2s;
 }
 .cd-stretchy-nav ul a {
   position: relative;
   display: block;
   height: 5.0rem;
-  padding:1.4rem 6rem 1.4rem 2rem;
-  color: rgba(255, 255, 255, 0.7);
+  padding:1.4rem 2rem 1.4rem 5.5rem;
   font-size: 1.4rem;
-  transition: color 0.2s;
-
-  border-radius:30px;
   background-color:#000;
 }
 
@@ -1519,54 +1515,25 @@ meter::-webkit-meter-optimum-value {
   /* navigation item icons */
   content: '';
   position: absolute;
-  height: 1.6rem;
-  width: 1.6rem;
-  right: 2.0rem;
+  height: 2.6rem;
+  width: 2.6rem;
+  left: 1.2rem;
   top: 50%;
-  transform: translateY(-50%) scale(0);
+  background-size:2.6rem !important;
+  transform: translateY(-50%);
+  cursor:pointer;
 }
 
-.cd-stretchy-nav ul li a.asr::after {
-  /* change custom icon using image sprites*/
-  width:1.8rem;cursor:pointer;
-  height:1.8rem;background:url(/src/resources/images/icon_asr.svg)center center no-repeat;background-size:1.8rem
-}
-.cd-stretchy-nav ul li a.csr::after {
-  width:1.8rem;cursor:pointer;
-  height:1.8rem;background:url(/src/resources/images/icon_csr.svg)center center no-repeat;background-size:1.8rem
-}
-.cd-stretchy-nav ul li a.msr::after {
-  width:1.8rem;cursor:pointer;
-  height:1.8rem;background:url(/src/resources/images/icon_msr.svg)center center no-repeat;background-size:1.8rem
-}
-.cd-stretchy-nav ul li a.gsr::after {
-  width:1.8rem;cursor:pointer;
-  height:1.8rem;background:url(/src/resources/images/icon_gsr.svg)center center no-repeat;background-size:1.8rem
-}
-.cd-stretchy-nav ul li a.dsr::after {
-  width:1.8rem;cursor:pointer;
-  height:1.8rem;background:url(/src/resources/images/icon_dsr.svg)center center no-repeat;background-size:1.8rem
-}
-.cd-stretchy-nav ul li a.rsr::after {
-  width:1.8rem;cursor:pointer;
-  height:1.8rem;background:url(/src/resources/images/icon_rsr.svg)center center no-repeat;background-size:1.8rem
-}
-.cd-stretchy-nav ul li a.foqa::after {
-  width:1.8rem;cursor:pointer;
-  height:1.8rem;background:url(/src/resources/images/icon_foqa.svg)center center no-repeat;background-size:1.8rem
-}
-.cd-stretchy-nav ul li a.hzr::after {
-  width:1.8rem;cursor:pointer;
-  height:1.8rem;background:url(/src/resources/images/icon_hr.svg)center center no-repeat;background-size:1.8rem
-}
-.cd-stretchy-nav ul li a.osr::after {
-  width:1.8rem;cursor:pointer;
-  height:1.8rem;background:url(/src/resources/images/icon_hr.svg)center center no-repeat;background-size:1.8rem
-}
-.cd-stretchy-nav ul li a.amo::after {
-  width:1.8rem;cursor:pointer;
-  height:1.8rem;background:url(/src/resources/images/icon_msr_amo.svg)center center no-repeat;background-size:2.5rem
-}
+.cd-stretchy-nav ul li a.asr::after {background:url(/src/resources/images/icon_asr.svg)center center no-repeat;}
+.cd-stretchy-nav ul li a.csr::after {background:url(/src/resources/images/icon_csr.svg)center center no-repeat;}
+.cd-stretchy-nav ul li a.msr::after {background:url(/src/resources/images/icon_msr.svg)center center no-repeat;}
+.cd-stretchy-nav ul li a.gsr::after {background:url(/src/resources/images/icon_gsr.svg)center center no-repeat;}
+.cd-stretchy-nav ul li a.dsr::after {background:url(/src/resources/images/icon_dsr.svg)center center no-repeat;}
+.cd-stretchy-nav ul li a.rsr::after {background:url(/src/resources/images/icon_rsr.svg)center center no-repeat;}
+.cd-stretchy-nav ul li a.foqa::after {background:url(/src/resources/images/icon_foqa.svg)center center no-repeat;}
+.cd-stretchy-nav ul li a.hzr::after {background:url(/src/resources/images/icon_hr.svg)center center no-repeat;}
+.cd-stretchy-nav ul li a.osr::after {background:url(/src/resources/images/icon_hr.svg)center center no-repeat;}
+.cd-stretchy-nav ul li a.AMO::after {background:url(/src/resources/images/icon_msr_amo.svg)center center no-repeat;}
 .cd-stretchy-nav ul span {
   /* navigation item labels */
   display: block;
@@ -1585,16 +1552,21 @@ meter::-webkit-meter-optimum-value {
  transition:all 0.3s;
  cursor:pointer;
 }
-.cd-stretchy-nav.nav-is-visible ul li:nth-child(10) {bottom:60px;}
-.cd-stretchy-nav.nav-is-visible ul li:nth-child(9) {bottom:115px;}
-.cd-stretchy-nav.nav-is-visible ul li:nth-child(8) {bottom:170px;}
-.cd-stretchy-nav.nav-is-visible ul li:nth-child(7) {bottom:225px;}
-.cd-stretchy-nav.nav-is-visible ul li:nth-child(6) {bottom:280px;}
-.cd-stretchy-nav.nav-is-visible ul li:nth-child(5) {bottom:335px;}
-.cd-stretchy-nav.nav-is-visible ul li:nth-child(4) {bottom:390px;}
-.cd-stretchy-nav.nav-is-visible ul li:nth-child(3) {bottom:445px;}
-.cd-stretchy-nav.nav-is-visible ul li:nth-child(2) {bottom:500px;}
-.cd-stretchy-nav.nav-is-visible ul li:nth-child(1) {bottom:555px;}
+.cd-stretchy-nav.nav-is-visible ul li:hover {
+  width:auto;
+  max-width:20rem;
+  transition:all 0.3s;
+}
+.cd-stretchy-nav.nav-is-visible ul li:nth-child(1) {bottom:5.5rem;}
+.cd-stretchy-nav.nav-is-visible ul li:nth-child(2) {bottom:11rem;}
+.cd-stretchy-nav.nav-is-visible ul li:nth-child(3) {bottom:16.5rem;}
+.cd-stretchy-nav.nav-is-visible ul li:nth-child(4) {bottom:22rem;}
+.cd-stretchy-nav.nav-is-visible ul li:nth-child(5) {bottom:27.5rem;}
+.cd-stretchy-nav.nav-is-visible ul li:nth-child(6) {bottom:33rem;}
+.cd-stretchy-nav.nav-is-visible ul li:nth-child(7) {bottom:38.5rem;}
+.cd-stretchy-nav.nav-is-visible ul li:nth-child(8) {bottom:44rem;}
+.cd-stretchy-nav.nav-is-visible ul li:nth-child(9) {bottom:49.5rem;}
+.cd-stretchy-nav.nav-is-visible ul li:nth-child(10) {bottom:55rem;}
 .cd-stretchy-nav.nav-is-visible ul a::after {
   transform: translateY(-50%) scale(1);
 }
