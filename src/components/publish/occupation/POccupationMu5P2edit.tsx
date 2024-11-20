@@ -323,32 +323,44 @@ function POccupationMu5P2edit() {
                             <span className="list-tit">1. 산업재해 및 아차사고 발생 사례 (5개년 이상)</span>
                             <ul className="list-input">
                               <li>
-                                <div className="box-view-list">
-                                  <ul className="view-list">
-                                    <li className="accumlate-list">
-                                      <label className="t-label">첨부파일</label>
-                                      <span className="text-desc-type1">
-                                        <div className="filebox view">
-                                          <Upload {...props}>
-                                            <div className="btn-area" style={{ display: 'none' }}>
-                                              <button
-                                                type="button"
-                                                name="button"
-                                                className="btn-big btn_text btn-darkblue-line mg-n"
-                                              >
-                                                + Upload
-                                              </button>
-                                            </div>
-                                          </Upload>
-                                        </div>
-                                      </span>
-                                    </li>
-                                    <li>fdsafds</li>
-                                    <li>
-                                      <AppTextInput label="" placeholder="19년 랜딩기어 손가락 협착" />
-                                    </li>
-                                  </ul>
+                                <div className="form-group wid100">
+                                  <Upload {...props}>
+                                    <div className="btn-area">
+                                      <button
+                                        type="button"
+                                        name="button"
+                                        className="btn-big btn_text btn-darkblue-line ml-0"
+                                      >
+                                        + Upload
+                                      </button>
+                                    </div>
+                                  </Upload>
                                 </div>
+                              </li>
+                              <li>
+                                <div className="group-box-wrap line wid100 height-auto">
+                                  <span className="txt">법령상세링크{/*<span className="required">*</span>*/}</span>
+                                  <button type="button" name="button" className="btn-plus">
+                                    추가
+                                  </button>
+                                  <div className="file-link">
+                                    <div className="link-box">
+                                      <a href="javascript:void(0);">첨부Link첨부Link첨부Link</a>
+                                      <a href="javascript:void(0);">
+                                        <span className="close-btn">close</span>
+                                      </a>
+                                    </div>
+                                    <div className="link-box">
+                                      <a href="javascript:void(0);">첨부Link</a>
+                                      <a href="javascript:void(0);">
+                                        <span className="close-btn">close</span>
+                                      </a>
+                                    </div>
+                                  </div>
+                                </div>
+                              </li>
+                              <li>
+                                <AppTextInput label="" placeholder="19년 랜딩기어 손가락 협착" />
                               </li>
                             </ul>
                           </li>

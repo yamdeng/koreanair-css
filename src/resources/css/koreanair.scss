@@ -839,11 +839,13 @@ border: 1px solid red !important;
 
 .tg-tit {position: relative; font-size: 1.8rem; font-weight: 700; color: var(--color-darkblue-100);}
 
+.height-auto {height: auto !important ;}
 
 .list-input-box {display: block; width: 100%;}
 .list-input-box li {width: 100%; display: inline-flex; line-height: 150%; margin: 0.2rem 0; align-items: flex-start; justify-content: left;}
-.list-input-box li .list-tit {display: inline-block; width: 100%; vertical-align: top;}
-.list-input-box li .list-input li {width: 100%;}
+.list-input-box li .list-tit {display: inline-block; width: 30%; vertical-align: top;}
+.list-input-box li .list-input {width: 100%; display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 0.5rem;}
+.list-input-box li .list-input li {display: inline-flex; width: 100%;}
 
 .round-wrap .icon_report{display:block;width:3rem;height:3rem;padding:2.5rem 1rem 1rem;background:url(/src/resources/images/icon-documents.svg) no-repeat center center;border:0;cursor:pointer}
 
@@ -1407,7 +1409,7 @@ border: 1px solid red !important;
 	animation-delay:1s;
 	animation-fill-mode: both;
 	animation-timing-function: cubic-bezier(0.35, 1.15, 1, 1);
-	animation-direction:alternate;
+	list-input-direction:alternate;
 }
 #visual01 .title .plus {
   color: var(--color-neutral-10);
