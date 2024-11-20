@@ -571,6 +571,10 @@ border: 1px solid red !important;
       font-weight: normal;
       padding: 1.0rem 0 0;
     }
+    .ck-edit-box {height: calc(100vh - 31.2rem)}
+    .ck-edit-box .ck-list {height: calc(100vh - 0rem);}
+    .ck-edit-box .ck-list .ag-theme-quartz {height: calc(100vh - 50rem) !important;}
+
     .ck-edit-box .ck-list.h-fix {height: calc(100vh - 46.5rem); overflow: hidden;}
     .ck-edit-box .ck-list.h-fix .grid-height {height:calc(100dvh - 30.0rem); overflow-y: auto;}
     .ck-edit-box .ck-list.h-fix .grid-fix {height: calc(100% - 22rem) !important;}
