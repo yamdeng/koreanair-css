@@ -34,7 +34,7 @@ function HomePortal1() {
               <ul className="potal-toggle-btn">
                 <li>
                   <a className="active" href="javascript:void(0);">
-                    한글
+                    국문
                   </a>
                 </li>
                 <li>

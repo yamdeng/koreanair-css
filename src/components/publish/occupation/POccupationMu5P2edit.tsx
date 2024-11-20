@@ -321,7 +321,36 @@ function POccupationMu5P2edit() {
                         <ul className="list-input-box">
                           <li>
                             <span className="list-tit">1. 산업재해 및 아차사고 발생 사례 (5개년 이상)</span>
-                            <AppTextInput label="" placeholder="19년 랜딩기어 손가락 협착" />
+                            <ul className="list-input">
+                              <li>
+                                <div className="box-view-list">
+                                  <ul className="view-list">
+                                    <li className="accumlate-list">
+                                      <label className="t-label">첨부파일</label>
+                                      <span className="text-desc-type1">
+                                        <div className="filebox view">
+                                          <Upload {...props}>
+                                            <div className="btn-area" style={{ display: 'none' }}>
+                                              <button
+                                                type="button"
+                                                name="button"
+                                                className="btn-big btn_text btn-darkblue-line mg-n"
+                                              >
+                                                + Upload
+                                              </button>
+                                            </div>
+                                          </Upload>
+                                        </div>
+                                      </span>
+                                    </li>
+                                    <li>fdsafds</li>
+                                    <li>
+                                      <AppTextInput label="" placeholder="19년 랜딩기어 손가락 협착" />
+                                    </li>
+                                  </ul>
+                                </div>
+                              </li>
+                            </ul>
                           </li>
                           <li>
                             <span className="list-tit">2. 설비, 기계, 기구 보유 현황</span>

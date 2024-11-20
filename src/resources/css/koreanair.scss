@@ -571,16 +571,19 @@ border: 1px solid red !important;
       font-weight: normal;
       padding: 1.0rem 0 0;
     }
-    .ck-edit-box {height: calc(100vh - 31.2rem)}
-    .ck-edit-box .ck-list {height: calc(100vh - 0rem);}
-    .ck-edit-box .ck-list .ag-theme-quartz {height: calc(100vh - 50rem) !important;}
+    .ck-edit-box {height: calc(100% - 0rem)}
+    .ck-edit-box .ck-list {height: calc(100% - 0rem);}
+    .ck-edit-box .ck-list .grid-height {height: calc(100% - 0rem)}
+    .ck-edit-box .ck-list .ag-theme-quartz {height: calc(100% - 3rem)!important;}
+    .ck-edit-box .ck-list .ag-theme-quartz .h-fix-type01 {height: calc(100% - 57rem) !important;}
 
-    .ck-edit-box .ck-list.h-fix {height: calc(100vh - 46.5rem); overflow: hidden;}
-    .ck-edit-box .ck-list.h-fix .grid-height {height:calc(100dvh - 30.0rem); overflow-y: auto;}
-    .ck-edit-box .ck-list.h-fix .grid-fix {height: calc(100% - 22rem) !important;}
-    .ck-edit-box .ck-list.h-fix01 {height: calc(100vh - 60rem); overflow: hidden;}
-    .ck-edit-box .ck-list.h-fix01 .grid-height {height:calc(100dvh - 30.0rem); overflow-y: auto;}
-    .ck-edit-box .ck-list.h-fix01 .grid-fix {height: calc(100% - 34rem) !important;}
+
+    //.ck-edit-box .ck-list.h-fix {height: calc(100vh - 46.5rem); overflow: hidden;}
+    //.ck-edit-box .ck-list.h-fix .grid-height {height:calc(100dvh - 30.0rem); overflow-y: auto;}
+    //.ck-edit-box .ck-list.h-fix .grid-fix {height: calc(100% - 22rem) !important;}
+    //.ck-edit-box .ck-list.h-fix01 {height: calc(100vh - 60rem); overflow: hidden;}
+    //.ck-edit-box .ck-list.h-fix01 .grid-height {height:calc(100dvh - 30.0rem); overflow-y: auto;}
+    //.ck-edit-box .ck-list.h-fix01 .grid-fix {height: calc(100% - 34rem) !important;}
     .ck-edit-box {
       width: 100%; 
       padding: 1.0rem 0 0;
@@ -838,9 +841,9 @@ border: 1px solid red !important;
 
 
 .list-input-box {display: block; width: 100%;}
-.list-input-box li {width: 100%; display: inline-flex; line-height: 150%; margin: 0.2rem 0; align-items:center;}
-.list-input-box li .list-tit {display: inline-block; width: 100%;}
-
+.list-input-box li {width: 100%; display: inline-flex; line-height: 150%; margin: 0.2rem 0; align-items: flex-start; justify-content: left;}
+.list-input-box li .list-tit {display: inline-block; width: 100%; vertical-align: top;}
+.list-input-box li .list-input li {width: 100%;}
 
 .round-wrap .icon_report{display:block;width:3rem;height:3rem;padding:2.5rem 1rem 1rem;background:url(/src/resources/images/icon-documents.svg) no-repeat center center;border:0;cursor:pointer}
 
@@ -1249,6 +1252,56 @@ border: 1px solid red !important;
   .dropmenu li div .portal-menu td a:hover::after {
     transform: scale(1);
   }
+  .potal-btnbox {
+    padding: 0; 
+    margin-left: 7.0rem; 
+    line-height: 150% !important; 
+    position: absolute;
+    left: 23.0rem;
+    top: 50%;
+    margin-top: -2.0rem;
+  }
+  .potal-btnbox .potal-toggle-btn {
+      border: 0.1rem solid var(--color-neutral-40);
+      border-radius: 3rem;
+      height: 4.0rem;
+      display: flex; 
+      align-items: center;
+      justify-content: center;
+      background-color: rgba(255, 255, 255, 0.4)
+  }
+  .potal-btnbox .potal-toggle-btn li {
+      margin-left: 0;
+      line-height: 150% !important; 
+      height: 4.0rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      
+  }
+  .potal-btnbox .potal-toggle-btn li a {
+      font-size: 1.6rem;
+      margin-left: 0;
+      line-height: 150% !important; 
+      height: 4.0rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 1.2rem 2.0rem;
+      color: var(--color-darkblue-100);
+      font-weight: 700 ;      
+  }
+  .potal-btnbox .potal-toggle-btn li a.active {
+      background: var(--color-darkblue-100);
+      border-radius: 99.9rem;
+      padding: 1.2rem 2.0rem;
+      color: var(--color-neutral-10);
+      font-weight: 700;
+      height: 3.6rem;
+      width: 98%;
+  }
+
+
 
 #visual01,#visual02,#visual03 {
 	display:none;
@@ -1348,7 +1401,6 @@ border: 1px solid red !important;
 #visual01 .title {
 	bottom:32.0rem;
 	opacity:0;
-	
 	/* animation */
 	animation-name:visual01_title;
 	animation-duration:2s;
@@ -1356,6 +1408,13 @@ border: 1px solid red !important;
 	animation-fill-mode: both;
 	animation-timing-function: cubic-bezier(0.35, 1.15, 1, 1);
 	animation-direction:alternate;
+}
+#visual01 .title .plus {
+  color: var(--color-neutral-10);
+  font-size: 3rem;
+  position: relative;
+  top: -3rem;
+  right: 0rem;
 }
 @keyframes visual01_title {
 	0% {bottom:32.0rem; opacity:0;}
