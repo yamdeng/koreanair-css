@@ -30,6 +30,18 @@ function HomePortal1() {
             <a href="javascript:void(0);">
               <img src={koreanairLogoImage} />
             </a>
+            <div className="potal-btnbox">
+              <ul className="potal-toggle-btn">
+                <li>
+                  <a className="active" href="javascript:void(0);">
+                    한글
+                  </a>
+                </li>
+                <li>
+                  <a href="javascript:void(0);">영문</a>
+                </li>
+              </ul>
+            </div>
           </div>
           {/*'close'-모바일메뉴활성화 */}
           <button className="top_menu_btn">
@@ -55,56 +67,56 @@ function HomePortal1() {
                     <tr>
                       <td>
                         <a href="javascript:void(0);">
-                          <span className="icon01"></span>기장보고서
+                          <span className="asr"></span>기장보고서
                         </a>
                       </td>
                     </tr>
                     <tr>
                       <td>
                         <a href="javascript:void(0);">
-                          <span className="icon02"></span>객실안전보고서
+                          <span className="csr"></span>객실안전보고서
                         </a>
                       </td>
                     </tr>
                     <tr>
                       <td>
                         <a href="javascript:void(0);">
-                          <span className="icon03"></span>정비안전보고서
+                          <span className="msr"></span>정비안전보고서
                         </a>
                       </td>
                     </tr>
                     <tr>
                       <td>
                         <a href="javascript:void(0);">
-                          <span className="icon04"></span>지상안전보고서
+                          <span className="gsr"></span>지상안전보고서
                         </a>
                       </td>
                     </tr>
                     <tr>
                       <td>
                         <a href="javascript:void(0);">
-                          <span className="icon05"></span>운항관리사안전보고서
+                          <span className="dsr"></span>운항관리사안전보고서
                         </a>
                       </td>
                     </tr>
                     <tr>
                       <td>
                         <a href="javascript:void(0);">
-                          <span className="icon06"></span>램프안전보고서
+                          <span className="rsr"></span>램프안전보고서
                         </a>
                       </td>
                     </tr>
                     <tr>
                       <td>
                         <a href="javascript:void(0);">
-                          <span className="icon07"></span>FOQA
+                          <span className="FOQA"></span>FOQA
                         </a>
                       </td>
                     </tr>
                     <tr>
                       <td>
                         <a href="javascript:void(0);">
-                          <span className="icon08"></span>Hazard Report
+                          <span className="hzr"></span>Hazard Report
                         </a>
                       </td>
                     </tr>
