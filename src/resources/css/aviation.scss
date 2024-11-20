@@ -1181,12 +1181,12 @@ meter::-webkit-meter-optimum-value {
   .grid-item .grid-group:nth-of-type(2) .head-top .guide-info li{display: inline-flex;justify-content: center;align-items: center;font-size: 1.2rem;padding: 0 0.5rem;}
   .grid-item .grid-group:nth-of-type(2) .head-top .guide-info li .color{width: 0.8rem;height: 0.8rem;border-radius: 99.9rem;font-size: 0;margin-right: 0.3rem;}
 
-  .grid-item h3 {font-size:2rem; font-weight:700; color: var( --color-neutral-90); padding-bottom: 2.5rem;}
+  .grid-item h3 {font-size:1.8rem; font-weight:700; color: var( --color-neutral-90); padding-bottom: 2.5rem;}
   .grid-item h3 span.siren {display: inline-block; font-size: 0; background: url(../images/siren.svg)center center no-repeat; background-size: 2.6rem; vertical-align: top; width: 2.6rem;}
-  .grid-item h3 .main-tab li {display: inline-block; padding: 0 1.0rem;}
-  .grid-item h3 .main-tab li:first-child {padding-left: 0;}
-  .grid-item h3 .main-tab li a {font-size: 1.6rem; color:var( --color-neutral-70);cursor:pointer}
-  .grid-item h3 .main-tab li a.active{font-size:2rem; color: var(--color-darkblue-100);cursor:pointer}
+  .grid-item h3 .main-tab li {display: inline-block;height:2rem; padding: 0 1.0rem;border-left:0.1rem solid var(--color-neutral-50);}
+  .grid-item h3 .main-tab li:first-child {padding-left: 0;border-left:none;}
+  .grid-item h3 .main-tab li a {display:inline-block;font-size: 1.8rem; margin-top:-0.6rem; color: var(--color-neutral-70);padding:0.5rem 0; letter-spacing:-0.1rem;cursor:pointer;}
+  .grid-item h3 .main-tab li a.active{font-size: 1.8rem; color: var(--color-darkblue-100); letter-spacing:-0.1rem; border-bottom:0.3rem solid var(--color-darkblue-100);}
 
   .grid-item .main-table-box{width:100%;/*margin-top:-1rem*/}
   .grid-item .main-table-box .main-table{width:100%;display:block;}

@@ -952,11 +952,11 @@ border: 1px solid red !important;
   .grid-item h3 {font-size: 1.8rem; font-weight: 700; color: var(--color-neutral-90); padding-bottom: 1.5rem; white-space: nowrap;}
   .grid-item h3 span.siren {display: inline-block; font-size: 0; background: url(../images/siren.svg)center center no-repeat; background-size: 2.6rem; vertical-align: top; width: 2.6rem;}
   .grid-item h3.tab {overflow-x: auto; max-width: 85%;}
-  .grid-item h3 .main-tab li {display: inline-block; padding: 0 1.0rem;}
-  .grid-item h3 .main-tab li:first-child {padding-left: 0;}
+  .grid-item h3 .main-tab li {display: inline-block;height:2rem; padding: 0 1.0rem;border-left:0.1rem solid var(--color-neutral-50);}
+  .grid-item h3 .main-tab li:first-child {padding-left: 0;border-left:none;}
   .grid-item h3 .main-tab li:last-child {padding-right: 0;}
-  .grid-item h3 .main-tab li a {font-size: 1.6rem; color: var(--color-neutral-70); letter-spacing:-0.1rem;}
-  .grid-item h3 .main-tab li a.active {font-size: 1.8rem; color: var(--color-darkblue-100); letter-spacing:-0.1rem;}
+  .grid-item h3 .main-tab li a {display:inline-block;font-size: 1.8rem; margin-top:-0.6rem; color: var(--color-neutral-70);padding:0.5rem 0; letter-spacing:-0.1rem;}
+  .grid-item h3 .main-tab li a.active {font-size: 1.8rem; color: var(--color-darkblue-100); letter-spacing:-0.1rem; border-bottom:0.3rem solid var(--color-darkblue-100);}
   .grid-item .head-top {display: flex; width: 100%; justify-content: space-between;}
   .grid-item .head-top .more-btn li {/*border: 0 solid var(--color-neutral-40); border-radius: 99.9rem; background-color: var(--color-darkblue-100);*/}
   .grid-item .head-top .more-btn li::after {content: ""; width: 100%; height: 0.6rem; display: inline-block; background: var(--color-lightblue-80); position: absolute; top: 1.4rem; left: 0; z-index: -1; transition: .2s all;}
