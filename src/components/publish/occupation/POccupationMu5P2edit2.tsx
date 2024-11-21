@@ -140,6 +140,11 @@ function POccupationMu5P2edit2() {
                   </div>
                 </div>
               </div>
+              <div className="btn-area tab-right-btn-type01">
+                <button type="button" name="button" className="btn_text btn_confirm">
+                  추가
+                </button>
+              </div>
             </button>
           </dt>
           <dd className="tg-conts">
