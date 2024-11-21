@@ -224,7 +224,7 @@ function POccupationMu5P2edit() {
                         <div className="ck-list mwid60">
                           <h3 className="table-tit">추진팀 구성</h3>
                           <div className="grid-height">
-                            <AppTable className="" rowData={rowData} columns={columns} />
+                            <AppTable className="h-fix-type01" rowData={rowData} columns={columns} />
                           </div>
                         </div>
                         <div className="ck-edit mwid40">

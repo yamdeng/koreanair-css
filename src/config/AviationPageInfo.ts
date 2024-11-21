@@ -115,6 +115,7 @@ import SPIEquipdashbosrdList from '@/components/publish/aviation/SPIEquipdashbos
 import PSaferRiskList from '@/components/publish/aviation/PSaferRiskList';
 import PSaferRiskDetail from '@/components/publish/aviation/PSaferRiskDetail';
 import PRiskdashboard2 from '@/components/publish/aviation/PRiskdashboard2';
+import PRiskdashboard3 from '@/components/publish/aviation/PRiskdashboard3';
 import SafetyDayList from '@/components/publish/aviation/SafetyDayList';
 import CultureList from '@/components/publish/aviation/CultureList';
 import MyAuditProfile from '@/components/publish/aviation/MyAuditProfile';
@@ -422,6 +423,13 @@ AviationPageInfo.list = [
     title: '[03.안전위험관리] 지상조사 > 대시보드',
     Component: PRiskdashboard2,
     path: 'PRiskdashboard2',
+    description: '',
+    success: true,
+  },
+  {
+    title: '[03.안전위험관리] 지상조사 > 대시보드1',
+    Component: PRiskdashboard3,
+    path: 'PRiskdashboard3',
     description: '',
     success: true,
   },

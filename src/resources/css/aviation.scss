@@ -215,6 +215,15 @@ meter::-webkit-meter-optimum-value {
 .DashBoardWrap .DashBoard-chart .DashBoard-1row .DashBoard-col .DashBoard-box {position: relative; min-height: 60.0rem; padding: 1.0rem; overflow: hidden; width: 100%; display: flex; justify-content: center; align-items: center;}
 .DashBoardWrap .DashBoard-chart .DashBoard-1row .DashBoard-col .DashBoard-box canvas{width:100%; position: absolute; display: flex; justify-content: center; align-items: center;}
 
+.DashBoardWrap .DashBoard-chart .DashBoard-2row{display:flex;justify-content:flex-start;flex-wrap:wrap;width:33.3%;box-sizing:border-box;overflow:hidden;padding:1rem}
+.DashBoardWrap .DashBoard-chart .DashBoard-2row .DashBoard-col{position:relative;width:100%;;height:100%;border-radius:0.8rem;padding:1.2rem 1rem;border:solid 0.2rem var(--color-neutral-01);background-color:var(--color-neutral-10);box-shadow:0 0.2rem 0.4rem 0 rgba(0, 0, 0, .05)}
+.DashBoardWrap .DashBoard-chart .DashBoard-2row .DashBoard-col .form-table{display:flex;width:100%;justify-content:space-between}
+.DashBoardWrap .DashBoard-chart .DashBoard-2row .DashBoard-col .h4{position:relative;display:inline-block;width:100%;color:var(--color-darkblue-100);font-weight:500;font-size:2.0rem;line-height:1.8;letter-spacing:-0.1rem}
+.DashBoardWrap .DashBoard-chart .DashBoard-2row .DashBoard-col .h4 span{color:var(--color-negative)}
+.DashBoardWrap .DashBoard-chart .DashBoard-2row .DashBoard-col .date {position: absolute; right: 1.0rem; top: 1.2rem;}
+.DashBoardWrap .DashBoard-chart .DashBoard-2row .DashBoard-col .DashBoard-box{position: relative; width:100%;padding:1rem}
+.DashBoardWrap .DashBoard-chart .DashBoard-2row .DashBoard-col .DashBoard-box canvas{width:100%;}
+
 
 .DashBoardWrap .DashBoard-chart.height-fix .DashBoard-row .DashBoard-col .DashBoard-box .ag-theme-quartz {height: 24.0rem !important;}
 .DashBoardWrap .DashBoard-chart.height-fix .DashBoard-row .DashBoard-col .DashBoard-box {height: 100%;}
