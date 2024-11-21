@@ -223,7 +223,6 @@ function POccupationMu5P2edit() {
                       <div className="ck-edit-box">
                         <div className="ck-list mwid60">
                           <h3 className="table-tit">추진팀 구성</h3>
-                          {/* 그리드 class명 grid-fix */}
                           <div className="grid-height">
                             <AppTable className="" rowData={rowData} columns={columns} />
                           </div>
@@ -317,10 +316,12 @@ function POccupationMu5P2edit() {
                   <div className="form-table">
                     <div className="form-cell wid50">
                       <h3>다음 각 호의 사항을 조사하여 위험성평가에 활용한다.</h3>
+
                       <div>
                         <ul className="list-input-box">
                           <li>
                             <span className="list-tit">1. 산업재해 및 아차사고 발생 사례 (5개년 이상)</span>
+                            {/* 추가화면S */}
                             <ul className="list-input">
                               <li>
                                 <div className="form-group wid100">
@@ -338,8 +339,8 @@ function POccupationMu5P2edit() {
                                 </div>
                               </li>
                               <li>
-                                <div className="group-box-wrap line wid100 height-auto">
-                                  <span className="txt">법령상세링크{/*<span className="required">*</span>*/}</span>
+                                <div className="group-box-wrap line wid100 mt-10 height-auto">
+                                  <span className="txt">첨부링크{/*<span className="required">*</span>*/}</span>
                                   <button type="button" name="button" className="btn-plus">
                                     추가
                                   </button>
@@ -363,18 +364,148 @@ function POccupationMu5P2edit() {
                                 <AppTextInput label="" placeholder="19년 랜딩기어 손가락 협착" />
                               </li>
                             </ul>
+                            {/* 추가화면E */}
                           </li>
                           <li>
                             <span className="list-tit">2. 설비, 기계, 기구 보유 현황</span>
-                            <AppTextInput label="" />
+                            {/* 추가화면S */}
+                            <ul className="list-input">
+                              <li>
+                                <div className="form-group wid100">
+                                  <Upload {...props}>
+                                    <div className="btn-area">
+                                      <button
+                                        type="button"
+                                        name="button"
+                                        className="btn-big btn_text btn-darkblue-line ml-0"
+                                      >
+                                        + Upload
+                                      </button>
+                                    </div>
+                                  </Upload>
+                                </div>
+                              </li>
+                              <li>
+                                <div className="group-box-wrap line wid100 mt-10 height-auto">
+                                  <span className="txt">첨부링크{/*<span className="required">*</span>*/}</span>
+                                  <button type="button" name="button" className="btn-plus">
+                                    추가
+                                  </button>
+                                  <div className="file-link">
+                                    <div className="link-box">
+                                      <a href="javascript:void(0);">첨부Link첨부Link첨부Link</a>
+                                      <a href="javascript:void(0);">
+                                        <span className="close-btn">close</span>
+                                      </a>
+                                    </div>
+                                    <div className="link-box">
+                                      <a href="javascript:void(0);">첨부Link</a>
+                                      <a href="javascript:void(0);">
+                                        <span className="close-btn">close</span>
+                                      </a>
+                                    </div>
+                                  </div>
+                                </div>
+                              </li>
+                              <li>
+                                <AppTextInput label="" placeholder="19년 랜딩기어 손가락 협착" />
+                              </li>
+                            </ul>
+                            {/* 추가화면E */}
                           </li>
                           <li>
                             <span className="list-tit">3. 작업표준서, 작업절차</span>
-                            <AppTextInput label="" />
+                            {/* 추가화면S */}
+                            <ul className="list-input">
+                              <li>
+                                <div className="form-group wid100">
+                                  <Upload {...props}>
+                                    <div className="btn-area">
+                                      <button
+                                        type="button"
+                                        name="button"
+                                        className="btn-big btn_text btn-darkblue-line ml-0"
+                                      >
+                                        + Upload
+                                      </button>
+                                    </div>
+                                  </Upload>
+                                </div>
+                              </li>
+                              <li>
+                                <div className="group-box-wrap line wid100 mt-10 height-auto">
+                                  <span className="txt">첨부링크{/*<span className="required">*</span>*/}</span>
+                                  <button type="button" name="button" className="btn-plus">
+                                    추가
+                                  </button>
+                                  <div className="file-link">
+                                    <div className="link-box">
+                                      <a href="javascript:void(0);">첨부Link첨부Link첨부Link</a>
+                                      <a href="javascript:void(0);">
+                                        <span className="close-btn">close</span>
+                                      </a>
+                                    </div>
+                                    <div className="link-box">
+                                      <a href="javascript:void(0);">첨부Link</a>
+                                      <a href="javascript:void(0);">
+                                        <span className="close-btn">close</span>
+                                      </a>
+                                    </div>
+                                  </div>
+                                </div>
+                              </li>
+                              <li>
+                                <AppTextInput label="" placeholder="19년 랜딩기어 손가락 협착" />
+                              </li>
+                            </ul>
+                            {/* 추가화면E */}
                           </li>
                           <li>
                             <span className="list-tit">4. 협력사 혼재작업 시 위험성 및 작업상황 정보</span>
-                            <AppTextInput label="" />
+                            {/* 추가화면S */}
+                            <ul className="list-input">
+                              <li>
+                                <div className="form-group wid100">
+                                  <Upload {...props}>
+                                    <div className="btn-area">
+                                      <button
+                                        type="button"
+                                        name="button"
+                                        className="btn-big btn_text btn-darkblue-line ml-0"
+                                      >
+                                        + Upload
+                                      </button>
+                                    </div>
+                                  </Upload>
+                                </div>
+                              </li>
+                              <li>
+                                <div className="group-box-wrap line wid100 mt-10 height-auto">
+                                  <span className="txt">첨부링크{/*<span className="required">*</span>*/}</span>
+                                  <button type="button" name="button" className="btn-plus">
+                                    추가
+                                  </button>
+                                  <div className="file-link">
+                                    <div className="link-box">
+                                      <a href="javascript:void(0);">첨부Link첨부Link첨부Link</a>
+                                      <a href="javascript:void(0);">
+                                        <span className="close-btn">close</span>
+                                      </a>
+                                    </div>
+                                    <div className="link-box">
+                                      <a href="javascript:void(0);">첨부Link</a>
+                                      <a href="javascript:void(0);">
+                                        <span className="close-btn">close</span>
+                                      </a>
+                                    </div>
+                                  </div>
+                                </div>
+                              </li>
+                              <li>
+                                <AppTextInput label="" placeholder="19년 랜딩기어 손가락 협착" />
+                              </li>
+                            </ul>
+                            {/* 추가화면E */}
                           </li>
                         </ul>
                       </div>
