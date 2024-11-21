@@ -505,7 +505,7 @@ border: 1px solid red !important;
  
     .left-table {
       width: calc(100% - 2rem);
-      height: calc(100% - 19rem);
+      height: calc(100% - 9rem);
       overflow-y: auto;
       vertical-align: top;
       display: grid;
@@ -566,18 +566,20 @@ border: 1px solid red !important;
       padding: 1.0rem 0;
     }
     .input-box-tit {
-      color: var(--color-darkblue-100);
+      color: var(--color-darkblue-100); 
       font-size: 1.6rem;
       font-weight: normal;
       padding: 1.0rem 0 0;
     }
     .ck-edit-box {height: calc(100% - 0rem)}
     .ck-edit-box .ck-list {height: calc(100% - 0rem);}
-    .ck-edit-box .ck-list .grid-height {height: calc(100% - 3.0rem)}
-    //.ck-edit-box .ck-list .ag-theme-quartz {height: calc(100% - 3rem)!important;}
-    .ck-edit-box .ck-list .ag-theme-quartz .h-fix-type01 {height: calc(100% - 4rem) !important;}
+    .ck-edit-box .ck-list .grid-height {height: calc(100% - 0.5rem)}
+    .ck-edit-box .ck-list .ag-theme-quartz {height: calc(100% - 3rem)!important;}
+    .ck-edit-box .ck-list .ag-theme-quartz.h-fix-type01 {height: calc(100% - 4rem) !important;}
+    .ck-edit-box .ck-list .h-fix-type02 {height: calc(100% - -4rem) !important;}
 
-    .ck-edit-box.type01 {padding-bottom: 15rem; height: calc(100% - -14rem);}
+    .ck-edit-box.type01 {padding-bottom: 15rem; height: calc(100% - -14.5rem);}
+    .ck-edit-box .ck-edit.h-fix {height: initial !important;}
 
 
     //.ck-edit-box .ck-list.h-fix {height: calc(100vh - 46.5rem); overflow: hidden;}
