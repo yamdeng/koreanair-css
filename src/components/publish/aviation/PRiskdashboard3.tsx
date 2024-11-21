@@ -94,7 +94,7 @@ function PRiskdashboard3() {
         <div className="DashBoard-chart">
           <div className="DashBoard-row">
             <div className="DashBoard-col">
-              <h4>Event 수준 현황</h4>
+              <p className="h4">Event 수준 현황</p>
               <div className="DashBoard-box">
                 <canvas>대시보드</canvas>
               </div>
@@ -102,7 +102,7 @@ function PRiskdashboard3() {
           </div>
           <div className="DashBoard-row">
             <div className="DashBoard-col">
-              <h4>Event 수준 현황</h4>
+              <p className="h4">Event 수준 현황</p>
               <div className="DashBoard-box">
                 <canvas>대시보드</canvas>
               </div>
@@ -112,7 +112,7 @@ function PRiskdashboard3() {
         <div className="DashBoard-chart">
           <div className="DashBoard-2row">
             <div className="DashBoard-col">
-              <h4>Event 수준 현황</h4>
+              <p className="h4">Event 수준 현황</p>
               <div className="DashBoard-box">
                 <canvas>대시보드</canvas>
               </div>
@@ -120,7 +120,7 @@ function PRiskdashboard3() {
           </div>
           <div className="DashBoard-2row">
             <div className="DashBoard-col">
-              <h4>Event 수준 현황</h4>
+              <p className="h4">Event 수준 현황</p>
               <div className="DashBoard-box">
                 <canvas>대시보드</canvas>
               </div>
@@ -128,7 +128,7 @@ function PRiskdashboard3() {
           </div>
           <div className="DashBoard-2row">
             <div className="DashBoard-col">
-              <h4>Event 수준 현황</h4>
+              <p className="h4">Event 수준 현황</p>
               <div className="DashBoard-box">
                 <canvas>대시보드</canvas>
               </div>
