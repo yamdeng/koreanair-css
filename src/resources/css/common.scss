@@ -285,7 +285,7 @@ body * {
 body::-webkit-scrollbar {
   display: none;
 }
-
+strong{color:inherit;}
 .contents legend{visibility:hidden;height:0;line-height:0}
 .required{color:var(--color-negative)}
 .table-tit .required {color:var(--color-negative); vertical-align: text-top;}
