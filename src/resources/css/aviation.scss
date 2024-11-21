@@ -109,7 +109,7 @@ meter::-webkit-meter-optimum-value {
 .edit-area.report .detail-form .detail-list .form-table .form-cell .form-group .delete{position:absolute;top:0;right:0;background: url(/src/resources/images/delete-text.svg) center center no-repeat;font-size: 0;width: 2rem;height: 2rem}
 
 .notice-board{position:relative}
-.notice-board td{position:relative;padding:1.0rem 0.3rem}
+.notice-board td{position:relative;padding:1.0rem 0.3rem;vertical-align: middle;}
 .notice-board td .delete{position:absolute;top:1rem;background:url(/src/resources/images/delete-text.svg) center center no-repeat;font-size:0;width:2rem;height:2rem}
 .notice-board td.deps-conts{width:100%;background-color:var(--color-neutral-20);padding:1rem 2rem}
 .notice-board td.plus{position:relative}
