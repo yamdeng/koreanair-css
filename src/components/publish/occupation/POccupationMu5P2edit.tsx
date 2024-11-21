@@ -221,11 +221,11 @@ function POccupationMu5P2edit() {
                   <div className="form-table">
                     <div className="form-cell wid100">
                       <div className="ck-edit-box">
-                        <div className="ck-list mwid60 h-fix">
+                        <div className="ck-list mwid60">
                           <h3 className="table-tit">추진팀 구성</h3>
                           {/* 그리드 class명 grid-fix */}
                           <div className="grid-height">
-                            <AppTable className="grid-fix" rowData={rowData} columns={columns} />
+                            <AppTable className="" rowData={rowData} columns={columns} />
                           </div>
                         </div>
                         <div className="ck-edit mwid40">
@@ -383,14 +383,14 @@ function POccupationMu5P2edit() {
                   <div className="form-table">
                     <div className="form-cell wid100">
                       <div className="ck-edit-box">
-                        <div className="ck-list mwid60 h-fix01">
+                        <div className="ck-list mwid60">
                           <h3 className="table-tit">추진팀 구성</h3>
                           {/* 그리드 class명 grid-fix */}
                           <div className="grid-height">
-                            <AppTable className="grid-fix" rowData={rowData} columns={columns} />
+                            <AppTable className="" rowData={rowData} columns={columns} />
                           </div>
                         </div>
-                        <div className="ck-edit height-fix mwid40">
+                        <div className="ck-edit mwid40 pt30">
                           <div className="boxForm">
                             <div className="form-table">
                               <div className="form-cell wid100">
