@@ -521,7 +521,7 @@ function POccupationMu5P2edit() {
                             <AppTable className="" rowData={rowData} columns={columns} />
                           </div>
                         </div>
-                        <div className="ck-edit mwid40 pt30">
+                        <div className="ck-edit mwid40">
                           <div className="boxForm">
                             <div className="form-table">
                               <div className="form-cell wid100">
