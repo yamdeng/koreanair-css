@@ -505,7 +505,7 @@ border: 1px solid red !important;
  
     .left-table {
       width: calc(100% - 2rem);
-      height: 100%;
+      height: calc(100% - 19rem);
       overflow-y: auto;
       vertical-align: top;
       display: grid;
