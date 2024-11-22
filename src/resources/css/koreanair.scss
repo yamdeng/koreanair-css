@@ -929,7 +929,8 @@ border: 1px solid red !important;
 .calendar-box .calendar-list .list-table {width: 100%; height: calc(100% - 7.1rem);border-top: 0.1rem solid var(--color-darkblue-100);}
 .calendar-box .calendar-list .list-table thead tr, .calendar-box .calendar-list .list-table tbody tr, .calendar-box .calendar-list .list-table tfoot tr {display: flex; width: 100%;}
 .calendar-box .calendar-list .list-table th:nth-child(1), .calendar-box .calendar-list .list-table td:nth-child(1){width: 35%;}
-.calendar-box .calendar-list .list-table th:nth-child(2), .calendar-box .calendar-list .list-table td:nth-child(2){width: 75%;}
+.calendar-box .calendar-list .list-table th:nth-child(1):last-child, .calendar-box .calendar-list .list-table td:nth-child(1):last-child {width: 100%;}
+.calendar-box .calendar-list .list-table th:nth-child(2), .calendar-box .calendar-list .list-table td:nth-child(2){width: 65%;}
 .calendar-box .calendar-list .list-table thead th, .calendar-box .calendar-list .list-table tbody td {text-align: left; border-bottom: 0.1rem solid var(--color-neutral-40); padding: 1.0rem; font-size: 1.4rem;}
 .calendar-box .calendar-list .list-table thead th {background-color: var(--color-neutral-10); border-top: 0.1rem solid var(--color-darkblue-100);}
 .calendar-box .calendar-list .list-table tbody {display: block; height: 100%; overflow-y: auto;}
