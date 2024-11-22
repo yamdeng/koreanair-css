@@ -1,6 +1,6 @@
 @charset "utf-8";
 
-/* 대한항공 신 폰트 사용 보류*/
+/* 대한항공 신 폰트 사용 보류
 @font-face {
 	font-family: 'KoreanAirSans';
   font-style:normal;
@@ -22,9 +22,9 @@
 		src: url('../fonts/KoreanAirSans-Light_W.woff') format('woff'),
 		url('../fonts/KoreanAirSans-Light_W.woff2') format('woff2');  
 }
+*/
 
-
-/* 임시 NotoSans 사용 
+/* 임시 NotoSans 사용 */
 @font-face {
 	font-family: 'KoreanAirSans';
   font-style:normal;
@@ -49,4 +49,4 @@
 		url('../fonts/NotoSansKR-Bold.woff2') format('woff2'),
 		url('../font/NotoSansKR-Bold.ttf') format('truetype');  
 }
-		*/
+		
