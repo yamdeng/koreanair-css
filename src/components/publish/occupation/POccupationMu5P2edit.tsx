@@ -339,24 +339,19 @@ function POccupationMu5P2edit() {
                                 </div>
                               </li>
                               <li>
-                                <div className="group-box-wrap line wid100 mt-10 height-auto">
-                                  <span className="txt">첨부링크{/*<span className="required">*</span>*/}</span>
-                                  <button type="button" name="button" className="btn-plus">
-                                    추가
-                                  </button>
-                                  <div className="file-link">
-                                    <div className="link-box">
-                                      <a href="javascript:void(0);">첨부Link첨부Link첨부Link</a>
-                                      <a href="javascript:void(0);">
-                                        <span className="close-btn">close</span>
-                                      </a>
-                                    </div>
-                                    <div className="link-box">
-                                      <a href="javascript:void(0);">첨부Link</a>
-                                      <a href="javascript:void(0);">
-                                        <span className="close-btn">close</span>
-                                      </a>
-                                    </div>
+                                <div className="form-group wid100">
+                                  <div className="box-view-list">
+                                    <ul className="view-list">
+                                      <li className="accumlate-list">
+                                        <label className="t-label">첨부 Link</label>
+                                        <span className="text-desc-type2">
+                                          <a href="javascript:void(0);">첨부파일링크링크</a>
+                                        </span>
+                                        <span className="text-desc-type2">
+                                          <a href="javascript:void(0);">첨부파일</a>
+                                        </span>
+                                      </li>
+                                    </ul>
                                   </div>
                                 </div>
                               </li>

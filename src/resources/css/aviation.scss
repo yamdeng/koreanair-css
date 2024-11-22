@@ -382,7 +382,7 @@ meter::-webkit-meter-optimum-value {
 .detailForm-detail-2deps{position:relative;overflow:hidden;padding:1.0rem;width:100%;border:0.1rem solid var(--color-neutral-30);border-radius:0.8rem}
 .detailForm-detail-2deps::after{content:'';display:block;position:absolute;left:0rem;top:0.1rem;bottom:0.1rem;width:0.8rem;border-radius:0.8rem 0 0 0.8rem}
 .detailForm-detail-2deps.rbox:after{background-color:var(--color-darkblue-40)}
-.detailForm-detail-3deps{border:5px solid var(--color-darkblue-20);border-radius:0.8rem;margin-bottom:2rem;overflow:hidden}
+.detailForm-detail-3deps{border:5px solid var(--color-darkblue-20);border-radius:0.8rem;margin-bottom:2rem;/*overflow:hidden*/}
 .detailForm-detail-3deps:last-child{margin-bottom:0rem;}
 .detailForm-detail-4deps{border:0;overflow:hidden}
 
@@ -446,8 +446,10 @@ meter::-webkit-meter-optimum-value {
 
 .occuptitle{font-size:1.8rem;font-weight:600;color:var(--color-darkblue-60);margin-top:3rem}
 .occuptitle.av{font-size:1.8rem;font-weight:600;color:var(--color-darkblue-60);margin-top:0}
+
+
 .ant-popover-content{position:relative}
-.ant-popover{position:absolute;top:-5.5rem;/*right: 0;*/z-index:1030;box-sizing: border-box;margin: 0;padding: 0;font-size:1.4rem;line-height:1.5715;list-style: none;font-feature-settings: "tnum";font-weight: 400; white-space: normal;text-align: left;cursor:auto}
+.ant-popover{position:absolute;top:-14.5rem;right:-13.8re;width:40.0rem;z-index:1030;box-sizing: border-box;margin: 0;padding: 0;font-size:1.4rem;line-height:1.5715;list-style: none;font-feature-settings: "tnum";font-weight: 400; white-space: normal;text-align: left;cursor:auto}
 .ant-popover-arrow-content {content:'';display:block;position:absolute;top:0;right: 0;bottom: 0;left: 0;width: 11.3137085px;height: 11.3137085px;margin: auto;background-color:var(--color-neutral-10);pointer-events: auto;border-radius: 0 0 2px;pointer-events: none;}
 .ant-popover-placement-top .ant-popover-arrow, .ant-popover-placement-topLeft .ant-popover-arrow, .ant-popover-placement-topRight .ant-popover-arrow{bottom:0;transform: translateY(100%)}
 .ant-popover-placement-top .ant-popover-arrow-content, .ant-popover-placement-topLeft .ant-popover-arrow-content, .ant-popover-placement-topRight .ant-popover-arrow-content{box-shadow: 3px 3px 7px rgba(0, 0, 0, .07);transform: translateY(-11px) rotate(45deg)}
@@ -508,7 +510,7 @@ meter::-webkit-meter-optimum-value {
 .listtable{
     display:block; 
     width:100%;
-    overflow-x:auto;
+    /*overflow-x:auto;*/
     .list-table{width:100%}
     .list-table thead tr, .list-table tbody tr{display:table;width:100%}
     .list-table th, .list-table td {padding:1.5rem 0;border-bottom:0.1rem solid var(--color-neutral-40);text-align:center}
