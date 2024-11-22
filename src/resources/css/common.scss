@@ -514,6 +514,7 @@ textarea.textBox{width:100%;line-height:2.0rem !important;padding:0.5rem}
 input, select{font-family:'KoreanAirSans'}
 
 /*첨부파일*/
+.ant-upload-wrapper .ant-upload-list .ant-upload-list-item:first-child {margin-top: 0 !important;}
 .filebox .upload-name {
   position: relative;
   display: inline-block;
@@ -529,7 +530,7 @@ input, select{font-family:'KoreanAirSans'}
 }
 .filebox{border:0.1rem solid var(--color-neutral-40); border-radius: 1.0rem; padding:1.0rem}
 .filebox.error{border:0.1rem solid var(--color-negative);border-radius:1.0rem;padding:1.0rem}
-.filebox.view{border:none;}
+.filebox.view{border:none; padding: 0 !important}
 .filebox .file-label{display:inline-block;
   position:absolute;
   left: 1rem;

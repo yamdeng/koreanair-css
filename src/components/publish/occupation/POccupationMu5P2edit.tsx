@@ -340,7 +340,7 @@ function POccupationMu5P2edit() {
                               </li>
                               <li>
                                 <div className="form-group wid100">
-                                  <div className="box-view-list">
+                                  <div className="box-view-list pd-l0">
                                     <ul className="view-list">
                                       <li className="accumlate-list">
                                         <label className="t-label">첨부 Link</label>
