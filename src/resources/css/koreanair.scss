@@ -916,7 +916,7 @@ border: 1px solid red !important;
 .calendar-box .calendar-wrap .calendar-table tbody td .cld_date .schedule li a.complete span {font-size: 1.2rem; font-weight: 700; color: var(--color-neutral-70);}
 
 .calendar-box .calendar-wrap .calendar-table tbody td:hover, .calendar-box .calendar-wrap .calendar-table tbody td:active {background-color: var(--color-lightblue-10); cursor: pointer;}
-.calendar-box .calendar-list {display: block; width: 100%; padding: 2.0rem; border: 0.1rem solid var(--color-neutral-40); border-radius: 0.8rem; margin-left: 2.0rem; max-width: 35.0rem;}
+.calendar-box .calendar-list {display: block; width: 100%; padding: 2.0rem; border: 0.1rem solid var(--color-neutral-40); border-radius: 0.8rem; margin-left: 2.0rem; margin-top:5.5rem; max-width: 35.0rem;}
 .calendar-box .calendar-list .table-tit {color: var(--color-darkblue-100); font-size: 1.8rem; font-weight: normal; padding: 0;}
 .calendar-box .calendar-list .schedule-guide {margin: 0.5rem 0;}
 .calendar-box .calendar-list .schedule-guide li {display: inline-flex; justify-content: center; align-items: center; font-size: 1.2rem; padding: 0 0.5rem;}
