@@ -1568,8 +1568,11 @@
 .search_4row_expand_grid {height:calc(100% - 24.8rem);}.search_4row_expand_grid.active {height:calc(100% - 36.7rem);}.search_4row_expand_grid .ag-theme-quartz {height:calc(100% - 4rem) !important;}
 
 
+/* 탭 page wrap */
+.tab_page {height:calc(100% - 15.5rem);}
 /* 조회 1단 고정 + 탭 */
 .search_1row_static_t_grid {height:calc(100% - 34.2rem);}.search_1row_static_t_grid .ag-theme-quartz {height:calc(100% - 4rem) !important;}
+.tab_page .search_1row_static_t_grid {height:calc(100% - 18.7rem);}
 
 /* 조회 2단 가변 + 탭 */
 .search_2row_expand_t_grid {height:calc(100% - 30.1rem);}.search_2row_expand_t_grid.active {height:calc(100% - 45.7rem);}.search_2row_expand_t_grid .ag-theme-quartz {height:calc(100% - 4rem) !important;}
