@@ -91,6 +91,13 @@ function Checklist1() {
             <button type="button" name="button" className="menu-tab-nav-more" onClick={clickMore}>
               <span className="hide">더보기</span>
             </button>
+            {/* 더보기버튼 리스트 추가 S */}
+            <div className="menu-tab-nav-more-list">
+              <ul>
+                <li>fdsafdsafds</li>
+              </ul>
+            </div>
+            {/* 더보기버튼 리스트 추가 E */}
           </div>
         </div>
       </div>
