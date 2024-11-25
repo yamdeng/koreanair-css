@@ -92,7 +92,7 @@ function PRiskdashboard3() {
 
       <div className="DashBoardWrap">
         <div className="DashBoard-chart">
-          <div className="DashBoard-row">
+          <div className="DashBoard-2row">
             <div className="DashBoard-col">
               <p className="h4">Event 수준 현황</p>
               <div className="DashBoard-box">
@@ -100,7 +100,7 @@ function PRiskdashboard3() {
               </div>
             </div>
           </div>
-          <div className="DashBoard-row">
+          <div className="DashBoard-2row">
             <div className="DashBoard-col">
               <p className="h4">Event 수준 현황</p>
               <div className="DashBoard-box">
