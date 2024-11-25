@@ -1,3 +1,21 @@
+.pdf-download-modal-content {
+  width: 110.0rem;
+  box-sizing: border-box;
+  padding: 2.0rem 3.0rem;
+  @include mobile {
+    width: 100%;
+    padding: 0;
+    height: 100%;
+    border-radius: 0 !important;
+    .popup-container {
+      height: 100%;
+    }
+    .txt-guide-list {padding: 0 2.0rem;}
+    .txt-guide {padding: 0 2.0rem; line-height: 150%;}
+  }
+}
+
+
 .alert-modal-content,
 .confirm-modal-content {
   width: 50.0rem;
