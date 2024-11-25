@@ -67,10 +67,18 @@ import PAdminTotreportModal from '@/components/publish/modal/PAdminTotreportModa
 import risklevelModal from '@/components/publish/modal/risklevelModal';
 import AMO3DetileModal from '@/components/publish/modal/AMO3DetileModal';
 import PReporviewModal from '@/components/publish/modal/PReporviewModal';
+import PPdfModal from '@/components/publish/modal/PPdfModal';
 
 const ModalPageInfo: any = {};
 
 ModalPageInfo.list = [
+  {
+    title: 'PPdfModal',
+    Component: PPdfModal,
+    path: 'PPdfModal',
+    description: '',
+    success: false,
+  },
   {
     title: 'alert 공통',
     Component: PAlertModal,
