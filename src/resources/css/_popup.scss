@@ -296,7 +296,7 @@
   }
 }
 .pdf_document {width: 100%; height:100vh; overflow: auto;}
-.pdf_document .loading-bar .bg {width: 100%; height: 100vh; background: rgba(0, 0, 0, 0.3);}
+.loading-bar.bg {width: 100%; height: 100vh; background: rgba(0, 0, 0, 0.4); border-radius: 0;}
 .pdf_document iframe {width: 100%; height: calc(100% - 20rem) !important;}
 .pop_cont.Risk {
   margin-top: 1.2rem;

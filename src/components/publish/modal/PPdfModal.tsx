@@ -15,6 +15,7 @@ function PdfModal(props) {
         closeModal();
       }}
     >
+      {/* 로딩바 */}
       <div className="loading-bar bg"></div>
       <div className="popup-container">
         <h3 className="pop_title">
