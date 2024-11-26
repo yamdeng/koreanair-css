@@ -15,25 +15,15 @@ function PdfModal(props) {
         closeModal();
       }}
     >
+      <div className="loading-bar bg"></div>
       <div className="popup-container">
         <h3 className="pop_title">
           <h3 className="pop_title">{'Manual'}</h3>
         </h3>
-        <div className="pop_cont pb_0">
-          <div className="editbox">
-            <div className="form-table wid100">
-              <div className="form-cell wid100">
-                <iframe style={{ width: '100%', height: '100vh' }} src={pdfDownloadUrl}></iframe>
-              </div>
-            </div>
-          </div>
+        <div className="pdf_document">
+          <iframe style={{ width: '100%', height: '100vh' }} src={pdfDownloadUrl}></iframe>
         </div>
 
-        <div className="pop_btns mt-20">
-          <button className="btn_text text_color_neutral-10 btn_confirm" onClick={closeModal}>
-            확인
-          </button>
-        </div>
         <span className="pop_close" onClick={closeModal}>
           X
         </span>
