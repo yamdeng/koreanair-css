@@ -609,6 +609,12 @@ border: 1px solid red !important;
         vertical-align: top;
       }
       .ck-list-grid {height: 100%; overflow-y: auto;}
+      .ck-left-list {
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+        vertical-align: top;
+      }
       .ck-right-list {
         display: inline-block;
         width: calc(100% - 2.0rem);
