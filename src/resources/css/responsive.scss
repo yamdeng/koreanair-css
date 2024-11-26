@@ -138,6 +138,18 @@
 
 @media screen and (min-width: 1024px) and (max-width: 1280px){
   .header .GNB  {display: none;} 
+
+  .LNB,
+  .LNB-hide{position:absolute;top:0rem;height:100%;z-index: 11; flex-shrink: inherit;transition:left 0.5s;}
+  .LNB {margin-top: 0; width:40rem; left:0%; }
+  .LNB-hide {left:-100%;width:40rem;transition:left 0.5s;}
+  .LNB_menu {position:absolute;top:0;left:0;display: block;}
+  .LNB_side {position: absolute; top:8.8rem;left:0; width:100%; height:calc(100% - 8.8rem);margin-top:0;}
+  .LNB-hide .LNB_menu, 
+  .LNB-hide .LNB_side {display:block; position:absolute;}
+  .LNB_menu .m-lnb_top_btn .tab_btn {display:none;}
+
+
   .list-common-modal-content, .org-select-modal-content, .org-change-modal-content, .risk-level-search-content {width: 90%;}
   .boxForm .form-table {display: flex; align-items: flex-end; justify-content: flex-start; flex-wrap: wrap; width: 100%;}
   .boxForm .form-table .form-cell {display: flex; align-items: flex-end; justify-content: flex-start; flex-wrap: wrap; width: 50%}
@@ -446,6 +458,17 @@
 @media screen and (min-width: 767px) and (max-width: 1024px){
   .header .GNB  {display: none;}
   .LNB_bg.active {display: block;} 
+
+  .LNB,
+  .LNB-hide{position:absolute;top:0rem;height:100%;z-index: 11; flex-shrink: inherit;transition:left 0.5s;}
+  .LNB {margin-top: 0; width:40rem; left:0%; }
+  .LNB-hide {left:-100%;width:40rem;transition:left 0.5s;}
+  .LNB_menu {position:absolute;top:0;left:0;display: block;}
+  .LNB_side {position: absolute; top:8.8rem;left:0; width:100%; height:calc(100% - 8.8rem);margin-top:0;}
+  .LNB-hide .LNB_menu, 
+  .LNB-hide .LNB_side {display:block; position:absolute;}
+  .LNB_menu .m-lnb_top_btn .tab_btn {display:none;}
+
 
   .main-search.active {width: 90%;}
   .list-common-modal-content, .org-select-modal-content, .org-change-modal-content {width: 90%;}
