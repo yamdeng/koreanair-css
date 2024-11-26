@@ -92,9 +92,20 @@ function Checklist1() {
               <span className="hide">더보기</span>
             </button>
             {/* 더보기버튼 리스트 추가 S */}
-            <div className="menu-tab-nav-more-list">
+            <div className="menu-tab-nav-more-list active">
               <ul>
-                <li>fdsafdsafds</li>
+                <li>
+                  <a href="javascript:void(0);">안전보안일반12</a>
+                </li>
+                <li>
+                  <a href="javascript:void(0);">항공보안</a>
+                </li>
+                <li>
+                  <a href="javascript:void(0);">운항품질</a>
+                </li>
+                <li>
+                  <a href="javascript:void(0);">정비품질보증</a>
+                </li>
               </ul>
             </div>
             {/* 더보기버튼 리스트 추가 E */}
