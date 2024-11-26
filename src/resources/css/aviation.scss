@@ -211,7 +211,7 @@ meter::-webkit-meter-optimum-value {
 .DashBoardWrap .DashBoard-chart .DashBoard-row .DashBoard-col .DashBoard-box{width:100%;padding:1rem}
 .DashBoardWrap .DashBoard-chart .DashBoard-row .DashBoard-col .DashBoard-box canvas{width:100%}
 .DashBoardWrap .DashBoard-chart .DashBoard-1row{display:flex;justify-content:flex-start;flex-wrap:wrap;width:100%;box-sizing:border-box;overflow:hidden;padding:1rem}
-.DashBoardWrap .DashBoard-chart .DashBoard-1row .DashBoard-col {width: 100%;}
+.DashBoardWrap .DashBoard-chart .DashBoard-1row .DashBoard-col {width: 100%;border-radius:0.8rem;padding:1.2rem 1rem;border:solid 0.2rem var(--color-neutral-01);background-color:var(--color-neutral-10);box-shadow:0 0.2rem 0.4rem 0 rgba(0, 0, 0, .05)}
 .DashBoardWrap .DashBoard-chart .DashBoard-1row .DashBoard-col .DashBoard-box {position: relative; min-height: 60.0rem; padding: 1.0rem; overflow: hidden; width: 100%; display: flex; justify-content: center; align-items: center;}
 .DashBoardWrap .DashBoard-chart .DashBoard-1row .DashBoard-col .DashBoard-box canvas{width:100%; position: absolute; display: flex; justify-content: center; align-items: center;}
 
@@ -1297,7 +1297,7 @@ meter::-webkit-meter-optimum-value {
   .av-submain .av-submain-bg .av-submain-wrap.gsr .av-area .av-box:hover .tit-wrap .sub-tit{color:#ffffff; transition:all 0.3s;}
   .av-submain .av-submain-bg .av-submain-wrap.gsr .av-area .av-box > a .icon-img{display:inline-flex;width:90px;border-radius:100%;height:90px;background-color:var(--color-darkblue-100);-webkit-box-pack: center;justify-content: center;-webkit-box-align: center; align-items: center;margin-top:20px}
 
-
+  .report-status {width:100%; height:32rem;overflow-y:auto;}
 
 
 
