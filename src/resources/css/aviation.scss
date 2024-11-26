@@ -1122,7 +1122,7 @@ meter::-webkit-meter-optimum-value {
 .info-board td.right{text-align:right;padding-right:0.8rem}
 .info-board td{position:relative;text-align:center;vertical-align: middle;padding:1.0rem;border-bottom:0.1rem solid var(--color-neutral-40);border-right: 0.1rem solid var(--color-neutral-40)}
 .info-board td:last-child{border-right:0}
-.info-board td a, a:visited {color:var(--color-mblue-100)}
+.info-board td a, a:visited {color:var(--color-mblue-100); cursor: pointer;}
 .info-board tr.cons-bottom{background-color:var(--color-neutral-20)}
 .info-board tbody td .delete{position:absolute;top:1rem;background: url(/src/resources/images/delete-text.svg) center center no-repeat;font-size: 0;width: 2rem;height: 2rem}
 
