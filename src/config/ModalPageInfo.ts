@@ -68,10 +68,18 @@ import risklevelModal from '@/components/publish/modal/risklevelModal';
 import AMO3DetileModal from '@/components/publish/modal/AMO3DetileModal';
 import PReporviewModal from '@/components/publish/modal/PReporviewModal';
 import PPdfModal from '@/components/publish/modal/PPdfModal';
+import flightModal from '@/components/publish/modal/flightModal';
 
 const ModalPageInfo: any = {};
 
 ModalPageInfo.list = [
+  {
+    title: 'flightModal',
+    Component: flightModal,
+    path: 'flightModal',
+    description: '',
+    success: false,
+  },
   {
     title: 'PPdfModal',
     Component: PPdfModal,
