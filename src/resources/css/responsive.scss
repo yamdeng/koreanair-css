@@ -151,6 +151,7 @@
 
   .cd-stretchy-nav ul li {width:auto; max-width:none;}
   .cd-stretchy-nav.nav-is-visible ul li {width:auto; max-width:none;}
+  .cd-stretchy-nav.nav-is-visible ul li:hover a {background-color:var(--color-ashblue-100);}
   .cd-stretchy-nav ul a {padding:1.4rem 5.5rem 1.4rem 2rem;}
   .cd-stretchy-nav ul a::after{left:auto;right: 1.2rem;}
 
@@ -481,6 +482,7 @@
 
   .cd-stretchy-nav ul li {width:auto; max-width:none;}
   .cd-stretchy-nav.nav-is-visible ul li {width:auto; max-width:none;}
+  .cd-stretchy-nav.nav-is-visible ul li:hover a {background-color:var(--color-ashblue-100);}
   .cd-stretchy-nav ul a {padding:1.4rem 5.5rem 1.4rem 2rem;}
   .cd-stretchy-nav ul a::after{left:auto;right: 1.2rem;}
 
@@ -929,6 +931,7 @@
 
   .cd-stretchy-nav ul li {width:auto; max-width:none;}
   .cd-stretchy-nav.nav-is-visible ul li {width:auto; max-width:none;}
+  .cd-stretchy-nav.nav-is-visible ul li:hover a {background-color:var(--color-ashblue-100);}
   .cd-stretchy-nav ul a {padding:1.4rem 5.5rem 1.4rem 2rem;}
   .cd-stretchy-nav ul a::after{left:auto;right: 1.2rem;}
 
