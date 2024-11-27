@@ -250,12 +250,14 @@ meter::-webkit-meter-optimum-value {
 .process-btns .btn_text{font-family:"KoreanAirSans";font-weight:400;font-size:1.6rem}
 .process-btns .btn-blue{background-color:var(--color-lightblue-100);color:var(--color-neutral-10)}
 
-.Report-step-area{position:relative;background-color:var(--color-neutral-20);padding:2.5rem;border-radius:0.8rem;margin-bottom:2rem}
+.Report-step-area{position:relative;background-color:var(--color-neutral-20);padding:2.5rem;border-radius:0.8rem;margin-bottom:2rem;overflow-x:auto;}
 .process-box{display:flex;width:100%;gap:0 1rem}
 .process-box .c-step-wrap:nth-child(1){width:80%}
 .process-box .c-step-wrap:nth-child(2){width:19%}
-.c-step-wrap{margin-bottom:2rem}
+.c-step-wrap{margin-bottom:2rem;min-width:900px;}
 .c-step-wrap.bg-white[class*=c-step-list-type]{background-color:var(--color-neutral-10)}
+.boxForm + .c-step-wrap {overflow-x:auto;min-width:auto;}
+.boxForm + .c-step-wrap ol {min-width:900px;}
 .flex-e{display:flex;justify-content:flex-end !important}
 .c-step-list.default{display:flex;font-size:12px;text-align:center;overflow-x:auto;}
 .c-step-list{counter-reset:stepCounter;}
@@ -340,7 +342,7 @@ meter::-webkit-meter-optimum-value {
 [class*=c-step-list-type][class*=-list-type-5]>li:nth-child(4).active:before{color:var(--color-mint-50);}
 [class*=c-step-list-type][class*=-list-type-5]>li:nth-child(5).active:before{color:var(--color-green-50);}
 [class*=c-step-list-type][class*=-list-type-5]>li:nth-child(6).active:before{color:var(--color-yellow-10);}
-[class*=c-step-list-type][class*=-list-type-5] .info-title{font-weight:700;font-size:1.5rem;color:rgba(0,0,0,0.4);}
+[class*=c-step-list-type][class*=-list-type-5] .info-title{font-weight:700;font-size:1.5rem;color:rgba(0,0,0,0.4);letter-spacing: -0.5px;}
 [class*=c-step-list-type][class*=-list-type-5] .active .info-title{font-weight:700;font-size:1.5rem;color:rgba(0,0,0,0.7)}
 [class*=c-step-list-type][class*=-list-type-5]>li .after-arrow{position:absolute;top:calc(50% - 0.8rem);right:-0.9rem;height:1.6rem;width:1.6rem;transform:rotate(315deg);;z-index:10}
 [class*=c-step-list-type][class*=-list-type-5]>li:nth-child(1) .after-arrow{background-color:var(--color-purple-50);}
