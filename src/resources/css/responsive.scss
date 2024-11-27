@@ -149,7 +149,11 @@
   .LNB-hide .LNB_side {display:block; position:absolute;}
   .LNB_menu .m-lnb_top_btn .tab_btn {display:none;}
 
-
+  .cd-stretchy-nav ul li {width:auto; max-width:none;}
+  .cd-stretchy-nav.nav-is-visible ul li {width:auto; max-width:none;}
+  .cd-stretchy-nav ul a {padding:1.4rem 5.5rem 1.4rem 2rem;}
+  .cd-stretchy-nav ul a::after{left:auto;right: 1.2rem;}
+  
   .list-common-modal-content, .org-select-modal-content, .org-change-modal-content, .risk-level-search-content {width: 90%;}
   .boxForm .form-table {display: flex; align-items: flex-end; justify-content: flex-start; flex-wrap: wrap; width: 100%;}
   .boxForm .form-table .form-cell {display: flex; align-items: flex-end; justify-content: flex-start; flex-wrap: wrap; width: 50%}
@@ -251,14 +255,16 @@
   .grid-item .grid-group:nth-of-type(2) .main-conts-graph{height: 100%;min-height: 30rem !important}
   .av-main-wrap .grid-item .grid-group:nth-of-type(2) .main-conts-graph .graph-box canvas {width: 100% !important; height: initial !important;}
 
+
+
   //.av-main-wrap .grid-item .grid-group:nth-of-type(2) .main-conts-graph{margin: 0 auto;text-align:center}
   //.av-main-wrap .grid-item .grid-group:nth-of-type(2) .main-conts-graph .graph-box canvas{width:200px}
   //.av-main-wrap .grid-item .grid-group:nth-of-type(2) .main-conts-graph .graph-box{width:100%}
   .av-main-wrap .grid-item:nth-of-type(4) {grid-column-start: 1; grid-column-end: span 2;grid-template-rows:auto}
 
   .av-main-wrap .grid-item .grid-group:nth-of-type(1) .slick-slider .slick-list{display:grid; width: 100%;/*height:38.0rem*/}
-  .av-main-wrap .grid-item .grid-group:nth-of-type(1) .slick-slider .slick-list .slick-track .slick-slide .risk-conts-area .risk-box + .risk-box {margin-left: 0;}
-  .av-main-wrap .grid-item .grid-group:nth-of-type(1) .slick-slider .slick-list .slick-track .slick-slide .risk-conts-area .risk-box{display:block;width:100%}
+  //.av-main-wrap .grid-item .grid-group:nth-of-type(1) .slick-slider .slick-list .slick-track .slick-slide .risk-conts-area .risk-box + .risk-box {margin-left: 0;}
+  .av-main-wrap .grid-item .grid-group:nth-of-type(1) .slick-slider .slick-list .slick-track .slick-slide .risk-conts-area .risk-box{width:calc(33.3% - 2.0rem);}
   .risk-slider-container .slick-slider .slick-dots li.slick-active button {width: 2.0rem !important; height: 1.0rem !important;}
   .av-main-wrap .grid-item .grid-group:nth-of-type(1) .slick-slider {position: initial;}
   .av-main-wrap .grid-item:nth-of-type(1) .grid-group:nth-of-type(1) .risk-slider-container .slick-slider > .slick-dots{right:0rem; top: 1.0rem; display: flex !important;}
@@ -469,6 +475,10 @@
   .LNB-hide .LNB_side {display:block; position:absolute;}
   .LNB_menu .m-lnb_top_btn .tab_btn {display:none;}
 
+  .cd-stretchy-nav ul li {width:auto; max-width:none;}
+  .cd-stretchy-nav.nav-is-visible ul li {width:auto; max-width:none;}
+  .cd-stretchy-nav ul a {padding:1.4rem 5.5rem 1.4rem 2rem;}
+  .cd-stretchy-nav ul a::after{left:auto;right: 1.2rem;}
 
   .main-search.active {width: 90%;}
   .list-common-modal-content, .org-select-modal-content, .org-change-modal-content {width: 90%;}
@@ -642,8 +652,8 @@
 
   .av-main-wrap .grid-item .grid-group:nth-of-type(1) .slick-slider {position: initial;}
   .av-main-wrap .grid-item:nth-of-type(1) .grid-group:nth-of-type(1) .risk-slider-container .slick-slider > .slick-dots{right:0rem; top: 1.0rem; display: flex !important;}
-  .av-main-wrap .grid-item .grid-group:nth-of-type(1) .slick-slider .slick-list .slick-track .slick-slide .risk-conts-area .risk-box{display:block;width:100%}
-  .av-main-wrap .grid-item .grid-group:nth-of-type(1) .slick-slider .slick-list .slick-track .slick-slide .risk-conts-area .risk-box + .risk-box{margin-left:0}
+  .av-main-wrap .grid-item .grid-group:nth-of-type(1) .slick-slider .slick-list .slick-track .slick-slide .risk-conts-area .risk-box{width:100%}
+  .av-main-wrap .grid-item .grid-group:nth-of-type(1) .slick-slider .slick-list .slick-track .slick-slide .risk-conts-area .risk-box{width:calc(33.3% - 2.0rem);}
   .risk-slider-container .slick-slider .slick-dots li.slick-active button {width: 2.0rem !important; height: 1.0rem !important;}
   .main-wrap {display: block; height: auto;}
   .main-wrap .grid-item {margin: 2.4rem 0;}
@@ -911,6 +921,12 @@
   .main-wrap .grid-item .head-top.guide {display: block;}
   .main-wrap .grid-item .main-graph-box.graph-list {display: block;}
   .main-wrap .grid-item .main-graph-box.graph-list .graph-box {display: inline-block; width: 33.3%;}
+
+
+  .cd-stretchy-nav ul li {width:auto; max-width:none;}
+  .cd-stretchy-nav.nav-is-visible ul li {width:auto; max-width:none;}
+  .cd-stretchy-nav ul a {padding:1.4rem 5.5rem 1.4rem 2rem;}
+  .cd-stretchy-nav ul a::after{left:auto;right: 1.2rem;}
 
   .table-box .left-table {grid-template-columns: 1fr 1fr; height: 100% !important;}
 
