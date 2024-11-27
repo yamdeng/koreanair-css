@@ -153,7 +153,7 @@
   .cd-stretchy-nav.nav-is-visible ul li {width:auto; max-width:none;}
   .cd-stretchy-nav ul a {padding:1.4rem 5.5rem 1.4rem 2rem;}
   .cd-stretchy-nav ul a::after{left:auto;right: 1.2rem;}
-  
+
   .list-common-modal-content, .org-select-modal-content, .org-change-modal-content, .risk-level-search-content {width: 90%;}
   .boxForm .form-table {display: flex; align-items: flex-end; justify-content: flex-start; flex-wrap: wrap; width: 100%;}
   .boxForm .form-table .form-cell {display: flex; align-items: flex-end; justify-content: flex-start; flex-wrap: wrap; width: 50%}
@@ -326,7 +326,8 @@
       background-color: transparent;
       z-index: 11;
     }
-    .top_menu_btn .line1, .top_menu_btn .line2, .top_menu_btn .line3 {
+    .top_menu_btn .line1, .top_menu_btn .line2, .top_menu_btn .line3,
+    .top_menu_btn .line1_active, .top_menu_btn .line2_active, .top_menu_btn .line3_active  {
       position: absolute;
       left: 1.5rem;
       width: 3.0rem;
@@ -344,15 +345,15 @@
     .top_menu_btn .line3 {
     top: 3.8rem;
     }
-    .top_menu_btn.close .line1 {
+    .top_menu_btn .line1_active {
       top: 2.8rem;
       transform: rotate(45deg);
       background-color: var(--color-darkblue-100);
     }
-    .top_menu_btn.close .line2 {
+    .top_menu_btn .line2_active {
       display: none;
     }
-    .top_menu_btn.close .line3 {
+    .top_menu_btn .line3_active {
       top: 2.8rem;
       transform: rotate(-45deg);
       background-color: var(--color-darkblue-100);
@@ -366,6 +367,9 @@
       padding: 7.0rem 3.0rem 2.0rem 3.0rem;
       border-radius: 2.0rem;
       background-color: var(--color-neutral-10);
+    }
+    .top_menu.active {
+      display:block;
     }
     .top_menu li {
       float: none;
@@ -714,7 +718,8 @@
     background-color: transparent;
     z-index: 11;
   }
-  .top_menu_btn .line1, .top_menu_btn .line2, .top_menu_btn .line3 {
+  .top_menu_btn .line1, .top_menu_btn .line2, .top_menu_btn .line3,
+  .top_menu_btn .line1_active, .top_menu_btn_active .line2, .top_menu_btn .line3_active {
     position: absolute;
     left: 1.5rem;
     width: 3.0rem;
@@ -732,15 +737,15 @@
   .top_menu_btn .line3 {
     top: 3.8rem;
   }
-  .top_menu_btn.close .line1 {
+  .top_menu_btn .line1_active {
     top: 2.8rem;
     transform: rotate(45deg);
     background-color: var(--color-darkblue-100);
   }
-  .top_menu_btn.close .line2 {
+  .top_menu_btn .line2_active {
     display: none;
   }
-  .top_menu_btn.close .line3 {
+  .top_menu_btn .line3_active {
     top: 2.8rem;
     transform: rotate(-45deg);
     background-color: var(--color-darkblue-100);
@@ -755,6 +760,9 @@
     border-radius: 2.0rem;
     background-color: var(--color-neutral-10);
     }
+  .top_menu.active {
+    display:block;
+  }
   .top_menu li {
     float: none;
     width: 12.0rem;
@@ -1271,7 +1279,8 @@
     background-color: transparent;
     z-index: 11;
   }
-  .top_menu_btn .line1, .top_menu_btn .line2, .top_menu_btn .line3 {
+  .top_menu_btn .line1, .top_menu_btn .line2, .top_menu_btn .line3,
+  .top_menu_btn .line1_active, .top_menu_btn .line2_active, .top_menu_btn .line3_active {
     position: absolute;
     left: 1.5rem;
     width: 3.0rem;
@@ -1289,15 +1298,15 @@
   .top_menu_btn .line3 {
   top: 3.8rem;
   }
-  .top_menu_btn.close .line1 {
+  .top_menu_btn .line1_active {
     top: 2.8rem;
     transform: rotate(45deg);
     background-color: var(--color-darkblue-100);
   }
-  .top_menu_btn.close .line2 {
+  .top_menu_btn .line2_active {
     display: none;
   }
-  .top_menu_btn.close .line3 {
+  .top_menu_btn .line3_active {
     top: 2.8rem;
     transform: rotate(-45deg);
     background-color: var(--color-darkblue-100);
@@ -1311,6 +1320,9 @@
     padding: 7.0rem 3.0rem 2.0rem 3.0rem;
     border-radius: 2.0rem;
     background-color: var(--color-neutral-10);
+  }
+  .top_menu.active {
+    display:block;
   }
   .top_menu li {
     float: none;
