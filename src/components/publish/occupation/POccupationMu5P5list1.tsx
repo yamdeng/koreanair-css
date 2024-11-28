@@ -56,13 +56,25 @@ function POccupationMu5P5list1() {
       {/* //검색영역 */}
 
       {/*그래프 영역 */}
-      <div className="graph">
-        <div className="">그래프영역</div>
-        <div>그래프영역</div>
-        <div>그래프영역</div>
-        <div>그래프영역</div>
-        <div>그래프영역</div>
-        <div>그래프영역</div>
+      <div className="graph-list">
+        <div className="graph-list-box">
+          <canvas>캔버스영역</canvas>
+        </div>
+        <div className="graph-list-box">
+          <canvas>캔버스영역</canvas>
+        </div>
+        <div className="graph-list-box">
+          <canvas>캔버스영역</canvas>
+        </div>
+        <div className="graph-list-box">
+          <canvas>캔버스영역</canvas>
+        </div>
+        <div className="graph-list-box">
+          <canvas>캔버스영역</canvas>
+        </div>
+        <div className="graph-list-box">
+          <canvas>캔버스영역</canvas>
+        </div>
       </div>
       {/*//그래프 영역 */}
 

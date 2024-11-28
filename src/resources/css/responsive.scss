@@ -463,6 +463,9 @@
 .DashBoardWrap .DashBoard-chart .DashBoard-row {width: 100%;}
 .DashBoardWrap .DashBoard-chart .DashBoard-2row {width: 100%;}
 
+
+.graph-list {grid-template-columns: 1fr 1fr;}
+
 }
 
 
@@ -901,6 +904,8 @@
 
 .DashBoardWrap .DashBoard-chart .DashBoard-row {width: 100%;}
 .DashBoardWrap .DashBoard-chart .DashBoard-2row {width: 100%;}
+
+.graph-list {grid-template-columns: 1fr;}
 }
 
 
@@ -1486,6 +1491,8 @@
 .equip-container .equip-bottom-box .user-box-cons .graph-box.wid-fix {margin-top: 3.0rem;}
 
 .LNB_bottom-box {width: 100%;}
+
+.graph-list {grid-template-columns: 1fr;}
 }
 
 
