@@ -1172,7 +1172,7 @@ meter::-webkit-meter-optimum-value {
 //  .grid-item .main-photo img {position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;}
  .grid-item .main-photo{max-height:33.8rem;min-height:33.8rem;height: 100%; position:relative;}
   .grid-item .main-photo img{width:100%;height:35rem;/*background-size:cover;*/object-fit:cover;object-position: center;border-radius:0.8rem}
-  .grid-item .ph-img-tit{position:absolute;bottom:2.0rem;width:100%;/*display:flex;justify-content:center;align-items:center*/}
+  .grid-item .ph-img-tit{position:absolute;bottom:4.0rem;width:100%;/*display:flex;justify-content:center;align-items:center*/}
   .grid-item .ph-img-tit h3{display:flex;width:100%;justify-content:center;align-items:center;padding:1.0rem 0;background-color:rgba(0,0,0,0.4);font-size:1.8rem;color:var(--color-neutral-10);font-weight:500}
   .grid-item .main-photo-btn{position:absolute;top:45%;width:100%;text-align:center;z-index:99}
   .grid-item .main-photo-btn li{display:inline-block;font-size: 0; margin: 0 0.2rem; cursor: pointer;background-color:var(--color-darkblue-40);border-radius:99.9rem;width:1.0rem;height:1.0rem}
