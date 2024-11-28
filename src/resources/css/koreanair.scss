@@ -253,7 +253,6 @@ border: 1px solid red !important;
   justify-content: center;
   align-items: center;
   background-color: var(--color-neutral-10);
-  /*border: 0.1rem solid #ddd; */
   outline: 0.1rem solid var(--color-neutral-30);
   border-radius: 3.0rem; 
   height: 4.0rem;
@@ -920,7 +919,7 @@ border: 1px solid red !important;
 .calendar-box .calendar-wrap .calendar-table tbody td .cld_date .cld_day {font-weight: 700;}
 .calendar-box .calendar-wrap .calendar-table tbody td .cld_date .cld_day.active {background-color: var(--color-darkblue-100); color: var(--color-neutral-10); width: 2.5rem; height: 2.5rem; border-radius: 99.9rem; display: flex; justify-content: center; align-items: center;}
 
-.calendar-box .calendar-wrap .calendar-table tbody td .cld_date .cld_day.s_day {color: #E35B4F;}
+.calendar-box .calendar-wrap .calendar-table tbody td .cld_date .cld_day.s_day {color: var(--color-red-300);}
 .calendar-box .calendar-wrap .calendar-table tbody td .cld_date .schedule li {margin: 0.5rem 0;}
 .calendar-box .calendar-wrap .calendar-table tbody td .cld_date .schedule li a {font-size: 1.2rem;}
 .calendar-box .calendar-wrap .calendar-table tbody td .cld_date .schedule li:hover {text-decoration: underline;}
@@ -1117,13 +1116,13 @@ border: 1px solid red !important;
 
   /* meter 최적값에 근접한 색상 설정 */
   meter::-webkit-meter-suboptimum-value {
-    background-color: #FF9C02;
+    background-color: var(--color-orange-300);
     border-radius: 99.9rem;
   }
 
   /* meter 최적값 색상 설정 */
   meter::-webkit-meter-optimum-value {
-    background-color: #2DCB9B ;
+    background-color: var(--color-mint-400) ;
     border-radius: 99.9rem;
   }
 }
@@ -2033,7 +2032,7 @@ border: 1px solid red !important;
   border-style: dotted;
 }
 .page2_contents .contents-box .graph-box .graph-box-bg .main-graph {
-  background-color: #2DCB9B;
+  background-color: var(--color-mint-400);
   
 }
 

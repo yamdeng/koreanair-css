@@ -519,7 +519,7 @@
 // 팝업 공통
 .ReactModal__Content {
   position: absolute;
-  background: #fff;
+  background: var(--color-neutral-10);
   box-sizing: border-box;
   /*-webkit-overflow-scrolling: touch;*/
   border-radius: 0.6rem;
@@ -570,12 +570,12 @@
   border-radius:50%;
   text-align:center;
   font-size: 0;
-  caret-color: #fff;
+  caret-color: var(--color-neutral-10);
 }
 .loading-bar:before
 {
   content:'';
-  caret-color: #fff;
+  caret-color:var(--color-neutral-10);
   position:absolute;
   top:-0.3rem;
   left:-0.3rem;
@@ -601,7 +601,7 @@
 .loading-bar span:before
 {
   content:'';
-  caret-color: #fff;
+  caret-color: var(--color-neutral-10);
   position:absolute;
   width:1.6rem;
   height:1.6rem;
@@ -765,10 +765,10 @@
 
 
 /*위험레벨 조회*/
-.red{background-color:#DA291C}
-.orange{background-color:#FF8902}
-.yellow{background-color:#FFDD33}
-.green{background-color:#02C27F}
+.red{background-color:var(--color-red-500)}
+.orange{background-color:var(--color-orange-400)}
+.yellow{background-color:var(--color-yellow-500)}
+.green{background-color:var(--color-green-400)}
 
 .RiskLevel-box{display:flex;/*justify-content: space-between;*/width:100%;height:63.0rem;/*overflow:auto;*/gap:0 2.0rem}
 .RiskLevel-box .RiskLevel-list{display:flex;width:50%;justify-content: space-between;gap:0 0.5rem/*padding:2.0rem;overflow:hidden;height:100%;border-radius:0.8rem;*//*border:0.1rem solid var(--color-neutral-40);background-color: var(--color-neutral-20)*/}
@@ -873,7 +873,7 @@
 .flag-tag1 .icon-flag1{border-radius:99.9rem;padding:0.3rem 1.0rem}
 .flag-tag1 .icon-flag1 + .icon-flag1{margin-left:0.3rem}
 .flag-tag .icon-flag.txt{font-family:"KoreanAirSans";font-weight:400;font-size:1.3rem;line-height:1.2rem;color:var(--color-neutral-90);pointer-events: none;}
-.flag-tag .icon-flag.btn-blue{background-color:#c0eaff;color:var(--color-darkblue-100);border:solid 0.1rem var(--color-darkblue-100);box-shadow:0.2rem 0.5rem 0.5rem rgba(0, 0, 0, 0.1)}
+.flag-tag .icon-flag.btn-blue{background-color:var(--color-lightblue-40);color:var(--color-darkblue-100);border:solid 0.1rem var(--color-darkblue-100);box-shadow:0.2rem 0.5rem 0.5rem rgba(0, 0, 0, 0.1)}
 .flag-tag .icon-flag.btn-wh{padding:0.2rem 1rem;line-height:1.2;color:var(--color-neutral-90)}
 .flag-tag1 .icon-flag1.btn-lightblue{background-color:var(--color-lightblue-40);font-size:1.4rem;line-height:2.8}
 .flag-tag1 .icon-flag1:last-child{margin-right:2rem}

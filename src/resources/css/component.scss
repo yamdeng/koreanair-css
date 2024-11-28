@@ -2,19 +2,18 @@
 
 :root {
     --color-darkblue100: #051766;
-    --color-mblue100:#0064de;
+    --color-mblue100:#395FB8; //--color-ashblue-100
     --color-lightblue10:#eef8fd;
     --color-lightblue20:#ddf1fb;
     --color-lightblue60:#98d5f3;
-    --color-lightgray0:#fafbfb;
-    --color-neutral10:#fff;
+    --color-lightgray0:#F7F7F8; //--color-gray-04
+    --color-neutral10:#ffffff;
     --color-neutral20:#f7f7f7;
     --color-neutral30:#ededed;
     --color-neutral40:#d9d9d9;
     --color-neutral60:#a4a4a4;
-    --color-neutral80:#333;
+    --color-neutral80:#333333;
    }
-
 
 table {width:100%;border-collapse:collapse;border-spacing:0;table-layout:fixed}
 textarea{resize:none}
@@ -25,7 +24,7 @@ a, a * {cursor:pointer}
 
 input[type="checkbox"],
 input[type="radio"] {opacity: 0; margin: 0; position: absolute; cursor: pointer; width: 100%; height:100%}
-input[type="checkbox"]:disabled + label span.info-text__item{color:#aaa}
+input[type="checkbox"]:disabled + label span.info-text__item{color:var(--color-neutral-60)}
 .radio__input[type="radio"]{width:0;height:0}
 sup{vertical-align:super;font-size:0.5em}
 a,
@@ -52,12 +51,12 @@ body, button, input, textarea, select, label{font-family:'KoreanAirSans';font-we
 .topInputArea .input-group .input-tit{background:var(--color-lightblue10)}
 /* input group Row 2개이상*/
 .input-group .input-tit{min-height:25px}
-.input-group .input-tit{width:145px;text-align:left;padding:5px 0 5px 5px;background: #f2f5f5;height:100%;margin-left:-5px;margin-right:5px}
+.input-group .input-tit{width:145px;text-align:left;padding:5px 0 5px 5px;background: var(--color-neutral-20);height:100%;margin-left:-5px;margin-right:5px}
 .topInputArea.border-box{margin-bottom:15px}
-.border-box{border:solid 1px #98d5f3;border-radius:3px}
+.border-box{border:solid 1px var(--color-lightblue-60);border-radius:3px}
 .border-box .inpup-group-wrap{border:0}
 .border-box .inpup-group-wrap > .row{border-bottom-color:var(--color-lightblue60)}
-.inpup-group-wrap > .row{border-bottom:1px dotted #999}
+.inpup-group-wrap > .row{border-bottom:1px dotted var(--color-neutral-60)}
 .inpup-group-wrap > .row:last-child{border-bottom:0}
 .inpup-group-wrap > .row > div{min-height:38px;line-height:38px}
 
@@ -65,19 +64,19 @@ body, button, input, textarea, select, label{font-family:'KoreanAirSans';font-we
 
 /*input*/
 input,button{vertical-align:middle}
-.textBox{border:1px solid #ccc;color:var(--color-darkblue100);font-size:15px;border-radius:3px;padding:0 5px;transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out}
+.textBox{border:1px solid var(--color-gray-100);color:var(--color-darkblue100);font-size:15px;border-radius:3px;padding:0 5px;transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out}
 .textBox:hover, .textBox:focus{border-color:var(--color-mblue100)}
 input, select{font-family:'KoreanAirSans'}
 
-input[type="text"]:disabled,input[disabled],textarea:disabled,input[type="time"]:disabled{background:#f6f6f6 !important;outline: none;transition:unset;border-color: #ccc !important;color:#888 !important;cursor:not-allowed}
-input[type="text"]:disabled:focus,input[type="text"]:read-only:focus,.textBox:disabled:focus,input[type="time"]:disabled:focus{box-shadow: none !important;border-color:#ccc}
-input[type="text"]:read-only,textarea:read-only,input[readonly],input[type="time"]:read-only{background:#f6f6f6;outline: none;transition:unset;border-color: #ccc;color:#888;}
+input[type="text"]:disabled,input[disabled],textarea:disabled,input[type="time"]:disabled{background:var(--color-gray-04) !important;outline: none;transition:unset;border-color: var(--color-gray-100) !important;color:var(--color-gray-300) !important;cursor:not-allowed}
+input[type="text"]:disabled:focus,input[type="text"]:read-only:focus,.textBox:disabled:focus,input[type="time"]:disabled:focus{box-shadow: none !important;border-color:var(--color-gray-100)}
+input[type="text"]:read-only,textarea:read-only,input[readonly],input[type="time"]:read-only{background:var(--color-gray-04);outline: none;transition:unset;border-color: var(--color-gray-100);color:var(--color-gray-300);}
 input[type="text"].textBox,input[type="number"].textBox,input[type="password"].textBox{height:30px;line-height:30px}
 textarea.textBox{width:100%;line-height:20px !important;padding:5px}
 
 
 /*select*/
-.searchSelect{padding:3px 5px 5px;width:100%;border:solid 1px #ccc;border-radius:3px}
+.searchSelect{padding:3px 5px 5px;width:100%;border:solid 1px var(--color-gray-100);border-radius:3px}
 .searchSelect:hover, .searchSelect:focus{border-color:var(--color-mblue100)}
 
 
@@ -226,13 +225,13 @@ textarea.textBox{width:100%;line-height:20px !important;padding:5px}
 .pagination .first{position:relative}
 .pagination .first:before{content:'';position:absolute;box-sizing:content-box;top:0%;left:0%;width:32px;height:32px;background:url(../images/first-prev.png)no-repeat center center}
 .pagination .prev{position:relative}
-.pagination .prev:before{content:'';position:absolute;box-sizing:content-box;top:50%;left:50%;width:6px;height:6px;transform:translate(-50%, -50%) rotate(45deg);margin-left:2px;border-left:1px solid #868e96; border-bottom:1px solid #868e96}
+.pagination .prev:before{content:'';position:absolute;box-sizing:content-box;top:50%;left:50%;width:6px;height:6px;transform:translate(-50%, -50%) rotate(45deg);margin-left:2px;border-left:1px solid var(--color-gray-300); border-bottom:1px solid var(--color-gray-300)}
 .pagination .first, .pagination .prev, .pagination .next, .pagination .last{display:inline-block;width:32px;height:32px;vertical-align:top}
 .pagination span{display:inline-block;margin:0 9px}
 .pagination span a, .pagination span strong{display:inline-block;width:32px;height:32px;border-radius:9999px;text-align:center;color:var(--color-neutral80);font-size:15px;line-height:32px}
 .pagination span strong{background-color:var(--color-lightblue10);color:var(--color-darkblue100)}
 .pagination .next{position:relative}
-.pagination .next:before{content:'';position:absolute;box-sizing:content-box;top:50%;left:50%;width:6px;height:6px;transform:translate(-50%, -50%) rotate(45deg);margin-left:-2px;border-right:1px solid #868e96; border-top:1px solid #868e96}
+.pagination .next:before{content:'';position:absolute;box-sizing:content-box;top:50%;left:50%;width:6px;height:6px;transform:translate(-50%, -50%) rotate(45deg);margin-left:-2px;border-right:1px solid var(--color-gray-300); border-top:1px solid var(--color-gray-300)}
 .pagination .last{position:relative}
 .pagination .last:before{content:'';position:absolute;box-sizing:content-box;top:0%;left:0%;width:32px;height:32px;background:url(../images/last-next.png)no-repeat center center}
 .sr-only{position:absolute; z-index: -1;overflow:hidden;width:1px;height:1px;margin: 0 !important;font-size:1px;line-height:2;opacity:0}
