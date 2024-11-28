@@ -954,7 +954,7 @@ input, select{font-family:'KoreanAirSans'}
 
 /*toggle*/
 .info-wrap{border-top:0rem solid var(--color-darkblue-100);background-color:var(--color-neutral-10)}
-.info-wrap > dl > dt{position:relative;padding:1.0rem 0rem 1.0rem;border-bottom:0.1rem solid #ccc}
+.info-wrap > dl > dt{position:relative;padding:1.0rem 0rem 1.0rem;border-bottom:0.1rem solid var(--color-gray-100)}
 .info-wrap > dl > dt .btn-tg{font-family:"KoreanAirSans";font-weight:600;font-size:2.0rem;color:var(--color-darkblue-100)}
 .info-wrap > dl > dd{/*margin:0 -2.0rem 1.0rem*/}
 .info-wrap .edit-area{border-top:0.1rem solid var(--color-darkblue-100);/*border-bottom:0.1rem solid var(--color-neutral-30);background-color:var(--color-neutral-20);*/color:var(--color-neutral-80);line-height:2.0rem;font-size:1.6rem}
@@ -1027,7 +1027,7 @@ input, select{font-family:'KoreanAirSans'}
 }
 .label-select .css-13cymwt-control{height: auto !important; border-color: var(--color-neutral-40);}
 .label-select .css-13cymwt-control .css-1kdzs7b-menu{height:30rem !important}
-.label-select .css-13cymwt-control .css-1nmdiq5-menu{height:30rem !important;background-color: #009bfa;}
+.label-select .css-13cymwt-control .css-1nmdiq5-menu{height:30rem !important;background-color:var(--color-midblue-80);}
 .css-t3ipsp-control {height: auto !important; box-shadow: none !important}
 .ant-picker-focused.ant-picker-status-error {
   border:0.1rem solid var(--color-mblue-100) !important;color:var(--color-mblue-100) !important
@@ -1099,7 +1099,7 @@ input, select{font-family:'KoreanAirSans'}
 
 
 /* 하이라이트 공통 */
-.highlight{font-weight:700;color:#222;background-color:#f3ff64}
+.highlight{font-weight:700;color:var(--color-neutral-90);background-color:var(--color-yellow-150)}
 
 /* 그리드 상단 select 공통 */
 .table-header .btns-area .ant-select-selector{width:8.0rem;text-align:left}
@@ -1138,7 +1138,7 @@ input, select{font-family:'KoreanAirSans'}
 .header .util .util-list .util-icon li > .Info-list .Info-menu > li .radio-wrap.main{border:0}
 .header .util .util-list .util-icon li > .Info-list .Info-menu > li .radio-wrap.main > label{margin:0;padding: 0rem 0.9rem 0.2rem 2.0rem}
 .header .util .util-list .util-icon li > .Info-list{display:none;position:absolute;top:4.8rem;right:0;width:20rem;background:var(--color-neutral-10);border-radius: 0 0 1.4rem 1.4rem;box-shadow:0 0.5rem 1.0rem rgba(0, 0, 0, .1);z-index:200}
-.header .util .util-list .util-icon li > .Info-list .Info-menu > li{display:flex;justify-content:left;align-items:center;padding:0 0.8rem;width:100%;border-bottom: 0.1rem solid #eee;line-height:4.0rem;text-align:left;}
+.header .util .util-list .util-icon li > .Info-list .Info-menu > li{display:flex;justify-content:left;align-items:center;padding:0 0.8rem;width:100%;border-bottom: 0.1rem solid var(--color-gray-10);line-height:4.0rem;text-align:left;}
 .Info-list .Info-menu a{display:block;font-size:1.4rem}
 .Info-list .Info-menu a .ico{display: inline-flex;width:2.4rem;height:2.4rem;vertical-align:middle;margin-right:0.8rem}
 .Info-list .Info-menu a i.ico img {width: 2.2rem !important; height: 2.2rem !important;}
@@ -1147,7 +1147,7 @@ input, select{font-family:'KoreanAirSans'}
 .header .util .util-list .util-icon li > .alarm-list .Info-menu > li .radio-wrap.main{border:0}
 .header .util .util-list .util-icon li > .alarm-list .Info-menu > li .radio-wrap.main > label{margin:0;padding: 0rem 0.9rem 0.2rem 2.0rem}
 .header .util .util-list .util-icon li > .alarm-list{/*display:none;*/position:absolute;top:4.8rem;right:0;width:45.5rem;background:var(--color-neutral-10);border-radius: 0 0 1.4rem 1.4rem;box-shadow:0 0.5rem 1.0rem rgba(0, 0, 0, .1);z-index:200;padding: 0 1.0rem;}
-.header .util .util-list .util-icon li > .alarm-list .Info-menu > li{display:flex;justify-content:left;align-items:center;padding:0 0.8rem;width:100%;border-bottom: 0.1rem solid #eee;line-height:4.0rem;text-align:left;}
+.header .util .util-list .util-icon li > .alarm-list .Info-menu > li{display:flex;justify-content:left;align-items:center;padding:0 0.8rem;width:100%;border-bottom: 0.1rem solid var(--color-gray-10);line-height:4.0rem;text-align:left;}
 .header .util .util-list .util-icon li > .alarm-list > .pop_title{padding:1rem 0;}
 .header .util .util-list .util-icon li > .alarm-list > .boxForm{padding:0rem 1rem; margin-bottom: 0;}
 .header .util .util-list .util-icon li > .alarm-list .alarm-conts{padding:1rem;overflow-y:auto;max-height:30.0rem}
@@ -1296,13 +1296,13 @@ input, select{font-family:'KoreanAirSans'}
 .chart-tooltip {
   width:auto !important;
   height:auto !important;
-  background-color:#000000 !important;
+  background-color:var(--color-black) !important;
   padding:0.8rem 2rem !important;
 }
 .bar-chart-tooltip {
   width:auto !important;
   height:auto !important;
-  background-color:#000000 !important;
+  background-color:var(--color-black) !important;
   padding:1rem !important;
   color:var(--color-neutral-10) !important;
 }

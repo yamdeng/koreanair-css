@@ -894,9 +894,9 @@
 .IcoTags{position:absolute;top:0.1rem;right:0}
 .IcoTags .ico-tag{position:relative;border-bottom-left-radius:0.7rem;
   padding:0.3rem 1rem;
-  background-color:#ffbc00;box-shadow:0.2rem 0.5rem 0.5rem rgba(0, 0, 0, 0.1);
+  background-color:var(--color-neutral-90);box-shadow:0.2rem 0.5rem 0.5rem rgba(0, 0, 0, 0.1);
   font-size:1.2rem;border-bottom:solid 0rem var(--color-neutral-90);border-left:solid 0rem var(--color-neutral-90);
-  color:var(--color-neutral-90);
+  color:var(--color-neutral-10);
   width:4.2rem;
 }
 
