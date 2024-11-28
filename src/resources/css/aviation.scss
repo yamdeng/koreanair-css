@@ -451,11 +451,11 @@ meter::-webkit-meter-optimum-value {
 
 
 .ant-popover-content{position:relative}
-.ant-popover{position:absolute;top: -14.5rem;right: -10.0rem;width:40.0rem;z-index:1030;box-sizing: border-box;margin: 0;padding: 0;font-size:1.4rem;line-height:1.5715;list-style: none;font-feature-settings: "tnum";font-weight: 400; white-space: normal;text-align: left;cursor:auto}
+.ant-popover{position:absolute;top: -14.5rem;right: 50%;transform: translate(50%, 0%);width:40.0rem;z-index:1030;box-sizing: border-box;margin: 0;padding: 0;font-size:1.4rem;line-height:1.5715;list-style: none;font-feature-settings: "tnum";font-weight: 400; white-space: normal;text-align: left;cursor:auto}
 .ant-popover-arrow-content {content:'';display:block;position:absolute;top:0;right: 0;bottom: 0;left: 0;width: 11.3137085px;height: 11.3137085px;margin: auto;background-color:var(--color-neutral-10);pointer-events: auto;border-radius: 0 0 2px;pointer-events: none;}
 .ant-popover-placement-top .ant-popover-arrow, .ant-popover-placement-topLeft .ant-popover-arrow, .ant-popover-placement-topRight .ant-popover-arrow{bottom:0;transform: translateY(100%)}
 .ant-popover-placement-top .ant-popover-arrow-content, .ant-popover-placement-topLeft .ant-popover-arrow-content, .ant-popover-placement-topRight .ant-popover-arrow-content{box-shadow: 3px 3px 7px rgba(0, 0, 0, .07);transform: translateY(-11px) rotate(45deg)}
-.ant-popover-placement-top .ant-popover-arrow{left:60%;transform:translateY(100%) translateX(-50%)}
+.ant-popover-placement-top .ant-popover-arrow{left:56%;transform:translateY(100%) translateX(-50%)}
 .ant-popover-arrow{position:absolute;display:block;width:22px;height:22px;overflow: hidden;background:transparent;pointer-events: none}
 .ant-popover-inner{background-color:var(--color-neutral-10);background-clip: padding-box;border-radius:0.2rem;box-shadow: 0 3px 6px -4px rgba(0, 0, 0, .12), 0 6px 16px 0 rgba(0, 0, 0, .08), 0 9px 28px 8px rgba(0, 0, 0, .05);box-shadow: 0 0 8px rgba(0, 0, 0, .15) \9}
 .ant-popover-title{min-width:177px;min-height:32px;margin: 0;padding:0.5rem 1rem;font-weight: 500;border-bottom:0.1rem solid var(--color-gray-06)}
